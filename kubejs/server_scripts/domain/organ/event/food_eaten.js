@@ -20,7 +20,7 @@ const OrganFoodEatenStrategy = new OrganStrategyModel()
 
 ItemEvents.foodEaten(event => {
     let customData = {}
-    OrganFoodEatenStrategy.run(GetPlayerChestCavityInventory(event.player), [event], customData)
+    OrganFoodEatenStrategy.run(GetEntityChestCavityInventory(event.entity), [event], customData)
 })
 
 ServerEvents.tags('item', event => {

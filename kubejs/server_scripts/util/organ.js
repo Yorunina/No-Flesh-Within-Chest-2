@@ -2,9 +2,9 @@
 
 /**
  * 
- * @param {Internal.ServerPlayer} player 
+ * @param {Internal.LivingEntity} entity 
  * @returns {Internal.ChestCavityInventory}
  */
-function GetPlayerChestCavityInventory(player) {
-    return player.chestCavityInstance.inventory
+function GetEntityChestCavityInventory(entity) {
+    return entity.chestCavityInstance.inventory
 }

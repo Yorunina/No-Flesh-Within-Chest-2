@@ -1,0 +1,10 @@
+{
+  "list": [
+    {
+      "id": "irons_spellbooks:blood_magic_resist",
+      "intrinsic": 0.0,
+      "order": 11000,
+      "usePercent": false
+    }
+  ]
+}

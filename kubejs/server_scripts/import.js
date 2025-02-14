@@ -10,3 +10,4 @@ const $StructureMode = Java.loadClass('net.minecraft.world.level.block.state.pro
 
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
+const $Float = Java.loadClass('java.lang.Float')

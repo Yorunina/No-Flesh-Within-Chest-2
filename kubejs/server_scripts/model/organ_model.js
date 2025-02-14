@@ -30,3 +30,7 @@ ServerEvents.highPriorityData(event => {
         event.addJson(`kubejs:organs/kubejs/${item}.json`, { itemID: organ.itemId, pseudoOrgan: organ.pseudoOrgan, organScores: organ.organScores })
     })
 })
+
+ServerEvents.tags('item', event => {
+    event.add('kubejs:organ', OrganList.map(organ => organ.itemId))
+})

@@ -1,0 +1,90 @@
+
+#Welcome to the Nyctophobia Config!
+#
+#Configure the weight of the biomes by changing "nyctophobiaBiomesWeight".
+#Configure which minecraft biomes can be replaced by Nyctophobia biomes.
+#A full list of all the biomes can be found here https:minecraft.fandom.com/wiki/Biome#Biome_IDs.
+#Configure fog density and fog height.
+#
+["Nyctophobia - Biome Config"]
+
+	["Nyctophobia - Biome Config".nyctophobia_weight]
+		#Set weight of the Nyctophobia biomes
+		#Range: 0 ~ 100
+		weight = 1
+
+	["Nyctophobia - Biome Config".ancient_dead_coral_reef]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Nyctophobia biome will spawn: 
+		replaceableBiomes = ["beach"]
+
+	["Nyctophobia - Biome Config".haunted_forest]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Nyctophobia biome will spawn: 
+		replaceableBiomes = ["windswept_forest"]
+
+	["Nyctophobia - Biome Config".haunted_lakes]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Nyctophobia biome will spawn: 
+		replaceableBiomes = ["swamp"]
+
+	["Nyctophobia - Biome Config".eroded_haunted_forest]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Nyctophobia biome will spawn: 
+		replaceableBiomes = ["meadow"]
+
+	["Nyctophobia - Biome Config".deep_dark_forest]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Nyctophobia biome will spawn: 
+		replaceableBiomes = ["dark_forest"]
+
+["Nyctophobia - Biome Fog Config"]
+
+	["Nyctophobia - Biome Fog Config".fog_haunted_forest]
+		#Enable fog in the biome: 
+		generate = true
+		#Set density of the fog (smaller values = denser): 
+		#Range: 0.0 ~ 32.0
+		density = 0.35
+		#Set Y value, where the fog starts: 
+		#Range: -64 ~ 256
+		minY = 63
+		#Set Y value, where the fog ends: 
+		#Range: -64 ~ 256
+		maxY = 148
+
+	["Nyctophobia - Biome Fog Config".fog_haunted_lakes]
+		#Enable fog in the biome: 
+		generate = true
+		#Set density of the fog (smaller values = denser): 
+		#Range: 0.0 ~ 32.0
+		density = 0.3
+		#Set Y value, where the fog starts: 
+		#Range: -64 ~ 256
+		minY = 63
+		#Set Y value, where the fog ends: 
+		#Range: -64 ~ 256
+		maxY = 128
+
+	["Nyctophobia - Biome Fog Config".fog_eroded_haunted_forest]
+		#Enable fog in the biome: 
+		generate = true
+		#Set density of the fog (smaller values = denser): 
+		#Range: 0.0 ~ 32.0
+		density = 0.35
+		#Set Y value, where the fog starts: 
+		#Range: -64 ~ 256
+		minY = 93
+		#Set Y value, where the fog ends: 
+		#Range: -64 ~ 256
+		maxY = 160
+
+["Nyctophobia - Misc Config"]
+	#Soul Lanterns will spawn instead of candles in the Haunted Lakes.
+	haunted_lakes_soul_lanterns = false
+
