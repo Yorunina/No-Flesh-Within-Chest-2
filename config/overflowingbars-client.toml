@@ -48,7 +48,7 @@
 	#Only include completely filled rows for the row count.
 	count_full_rows_only = false
 	#Force drawing row count using the font renderer, will make numbers display larger.
-	force_font_renderer = false
+	force_font_renderer = true
 	#Show row count also when only one row is present.
 	always_render_row_count = false
 	#Render an 'x' together with the row count number.

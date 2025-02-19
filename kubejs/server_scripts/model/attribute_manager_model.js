@@ -49,7 +49,7 @@ AttributeManagerModel.prototype = {
                 // 这应当是一个本不存在的状态
                 this.allAddModifier = this.allAddModifier + num
             } else if (modifierType == 'multiple') {
-                this.allMultiModifier = this.allMultiModifier * num
+                this.allMultiModifier = this.allMultiModifier + num
             }
         }
         return this

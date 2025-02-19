@@ -1,5 +1,6 @@
 // priority: 1000
 const OrganList = []
+const PseudoOrganList = []
 function Organ(itemId) {
     this.itemId = itemId
     this.pseudoOrgan = false
@@ -24,8 +25,18 @@ function RegistryOrgan(itemId) {
     return organ
 }
 
+function RegistryPseudoOrgan(itemId) {
+    let organ = new Organ(itemId).setPseudo(true)
+    PseudoOrganList.push(organ)
+    return organ
+}
+
 ServerEvents.highPriorityData(event => {
     OrganList.forEach(organ => {
+        let item = organ.itemId.split(':')[1]
+        event.addJson(`kubejs:organs/kubejs/${item}.json`, { itemID: organ.itemId, pseudoOrgan: organ.pseudoOrgan, organScores: organ.organScores })
+    })
+    PseudoOrganList.forEach(organ => {
         let item = organ.itemId.split(':')[1]
         event.addJson(`kubejs:organs/kubejs/${item}.json`, { itemID: organ.itemId, pseudoOrgan: organ.pseudoOrgan, organScores: organ.organScores })
     })
@@ -33,4 +44,5 @@ ServerEvents.highPriorityData(event => {
 
 ServerEvents.tags('item', event => {
     event.add('kubejs:organ', OrganList.map(organ => organ.itemId))
+    event.add('kubejs:pseudo_organ', PseudoOrganList.map(organ => organ.itemId))
 })

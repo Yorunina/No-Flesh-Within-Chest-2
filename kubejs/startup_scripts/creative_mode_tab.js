@@ -1,5 +1,5 @@
 // priority: 999
 StartupEvents.modifyCreativeTab('kubejs:tab', event => {
-	event.icon = 'kubejs:candy_heart'
+	event.icon = 'kubejs:infinity_beats'
 	event.displayName = 'No Flesh Within Chest'
 })

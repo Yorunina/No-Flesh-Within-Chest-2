@@ -1,0 +1,77 @@
+{
+  "replace": true,
+  "list": [
+    {
+      "id": "minecraft:generic.max_health",
+      "intrinsic": 0.0,
+      "order": 1000,
+      "usePercent": false
+    },
+    {
+      "id": "minecraft:generic.armor",
+      "intrinsic": 0.0,
+      "order": 2000,
+      "usePercent": false
+    },
+    {
+      "id": "minecraft:generic.armor_toughness",
+      "intrinsic": 0.0,
+      "order": 3000,
+      "usePercent": false
+    },
+    {
+      "id": "minecraft:generic.knockback_resistance",
+      "intrinsic": 0.0,
+      "order": 4000,
+      "usePercent": false
+    },
+    {
+      "id": "minecraft:generic.movement_speed",
+      "intrinsic": 0.0,
+      "order": 5000,
+      "usePercent": false
+    },
+    {
+      "id": "minecraft:generic.attack_damage",
+      "intrinsic": 0.0,
+      "order": 6000,
+      "usePercent": false
+    },
+    {
+      "id": "minecraft:generic.attack_speed",
+      "intrinsic": 0.0,
+      "order": 7000,
+      "usePercent": false
+    },
+    {
+      "id": "forge:block_reach",
+      "intrinsic": 0.0,
+      "order": 8000,
+      "usePercent": false
+    },
+    {
+      "id": "forge:entity_reach",
+      "intrinsic": 0.0,
+      "order": 9000,
+      "usePercent": false
+    },
+    {
+      "id": "minecraft:generic.luck",
+      "intrinsic": 0.0,
+      "order": 10000,
+      "usePercent": false
+    },
+    {
+      "id": "attributeslib:healing_received",
+      "intrinsic": 0.0,
+      "order": 10001,
+      "usePercent": true
+    },
+    {
+      "id": "irons_spellbooks:blood_magic_resist",
+      "intrinsic": 0.0,
+      "order": 10002,
+      "usePercent": true
+    }
+  ]
+}

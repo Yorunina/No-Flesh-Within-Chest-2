@@ -1,6 +1,6 @@
 {
     "slotDefinitions": [
-        {"x": 8, "y": 18, "type": "rose_spread"},
+        {"x": 8, "y": 18},
         {"x": 26, "y": 18},
         {"x": 44, "y": 18},
         {"x": 62, "y": 18},
@@ -17,7 +17,7 @@
         {"x": 98, "y": 36},
         {"x": 116, "y": 36},
         {"x": 134, "y": 36},
-        {"x": 152, "y": 36},
+        {"x": 152, "y": 36, "type": "rosy_explosion"},
         {"x": 8, "y": 54},
         {"x": 26, "y": 54},
         {"x": 44, "y": 54},
@@ -26,7 +26,7 @@
         {"x": 98, "y": 54},
         {"x": 116, "y": 54},
         {"x": 134, "y": 54},
-        {"x": 152, "y": 54}
+        {"x": 152, "y": 54, "type": "rosy_explosion"}
     ],
     "backgroundTexture": "kubejs:textures/gui/chest_cavity.png",
     "playerInventoryPosition": {

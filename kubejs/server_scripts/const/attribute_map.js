@@ -25,3 +25,10 @@ RegistryAttributeIdentifier(
         .setBaseMultiUUID('37C6324D-7034-430F-AA43-5CB3B1DB2EAF')
         .setAllMultiUUID('33F001E2-9C07-4FFB-8894-3340E5497DEE')
 )
+
+RegistryAttributeIdentifier(
+    new AttributeUUIDModel('minecraft:generic.armor')
+        .setBaseAddUUID('E358E610-DF23-4DD8-9431-30DB6E94319A')
+        .setBaseMultiUUID('23E366D5-5EC3-44AA-8E83-231E809F7257')
+        .setAllMultiUUID('CFEF9CB9-1A85-45E6-B195-5F0ADD2D1616')
+)

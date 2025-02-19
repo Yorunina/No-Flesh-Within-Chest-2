@@ -109,6 +109,7 @@ OrganChestCavityUpdateStrategyModel.prototype = {
 function renderMpm(ccInstance, customData) {
     let player = ccInstance.owner
     if (!player instanceof $ServerPlayer) return
+    if (!player.inventory) return
     /** @type {Internal.MpmPartData[]} */
     let mpmPartIdList = []
     for (let mpmPart of customData.mpmParts) {

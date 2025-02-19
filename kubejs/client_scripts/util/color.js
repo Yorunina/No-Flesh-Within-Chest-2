@@ -37,6 +37,7 @@ function Gradient(startColor, endColor, step) {
  * @param {Internal.MutableComponent} text 
  * @param {string} startColor 
  * @param {string} endColor 
+ * @returns {Internal.MutableComponent}
  */
 function GradientText(text, startColor, endColor) {
     let textString = text.getString()

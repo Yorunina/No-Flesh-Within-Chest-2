@@ -17,3 +17,8 @@ function GetEntityChestCavityInventory(entity) {
 function GetChestCavitySlotType(cc, index) {
     return cc.getInventoryTypeData().getSlotType(index)
 }
+
+
+function GetCustomDataOrDefault(customData, key, defaultValue) {
+    return customData[key] ? customData[key] : defaultValue
+}
