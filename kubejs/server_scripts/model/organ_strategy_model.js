@@ -1,74 +1,36 @@
-// priority: 900
-function OrganStrategyModel() {
-    /**@type {Object<string, function(...any): void>} */
+// priority: 1000
+const $EventIdType = 'item_right_clicked' || 'player_tick' || 'key_pressed' || 'entity_do_damage' || 'chest_cavity_update' || 'item_eaten' || 'block_broken' || 'entity_be_hurt' || 'player_enchant' || 'entity_loot' || 'chest_loot' || 'organ_take_off' || 'mpm_render'
+
+function OrganStrategyModel(itemId) {
+    this.itemId = itemId
+    /** @type {Object.<string, Function>} */
     this.strategyMap = {}
+    /** @type {Object.<string, Function>} */
     this.onlyStrategyMap = {}
-    this.init = (args) => { }
-    this.defer = (args) => { }
+    this.relatedEventIds = []
     return this
 }
-
 OrganStrategyModel.prototype = {
     /**
-     * @param {Object<string, function(...any): void>} strategyMap
+     * 
+     * @param {$EventIdType} eventId 
+     * @param {*} func 
+     * @returns 
      */
-    setStrategyMap: function (strategyMap) {
-        this.strategyMap = strategyMap
+    addStrategy: function (eventId, func) {
+        this.strategyMap[eventId] = func
+        AddIfNotExist(this.relatedEventIds, eventId)
         return this
     },
     /**
-     * @param {String} id
-     * @param {function(any[]): void} func
+     * 
+     * @param {$EventIdType} eventId 
+     * @param {*} func 
+     * @returns 
      */
-    addStrategy: function (id, func) {
-        this.strategyMap[id] = func
-
+    addOnlyStrategy: function (eventId, func) {
+        this.onlyStrategyMap[eventId] = func
+        AddIfNotExist(this.relatedEventIds, eventId)
         return this
-    },
-    /**
-     * @param {String} id
-     * @param {function(any[]): void} func
-     */
-    addOnlyStrategy: function (id, func) {
-        this.onlyStrategyMap[id] = func
-        return this
-    },
-    /**
-     * @param {function(...any): void} data
-     */
-    setInit: function (initFunc) {
-        this.init = initFunc
-        return this
-    },
-    /**
- * @param {function(...any): void} data
- */
-    setDefer: function (deferFunc) {
-        this.defer = deferFunc
-        return this
-    },
-    /**
-     * @param {Internal.ChestCavityInventory} ccInv
-     * @param {any[]} args 
-     * @param {any} customData
-     */
-    run: function (ccInv, args, customData) {
-        args.unshift(customData)
-        this.init.apply(null, args)
-        let onlySet = new Set()
-        for (let i = 0; i < ccInv.getSlots(); i++) {
-            let curItem = ccInv.getStackInSlot(i)
-            if (!curItem || curItem.isEmpty()) continue
-            let itemId = curItem.id
-            if (this.onlyStrategyMap[itemId] && !onlySet.has(itemId)) {
-                onlySet.add(itemId)
-                this.onlyStrategyMap[itemId].apply(null, args.concat(curItem, i))
-            }
-            if (this.strategyMap[itemId]) {
-                this.strategyMap[itemId].apply(null, args.concat(curItem, i))
-            }
-        }
-        this.defer.apply(null, args)
-        return
     },
 }

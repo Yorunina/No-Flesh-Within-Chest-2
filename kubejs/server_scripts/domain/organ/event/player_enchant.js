@@ -1,5 +1,5 @@
 // priority: 801
-const OrganPlayerEnchantStrategy = new OrganStrategyModel()
+const OrganPlayerEnchantEvent = new OrganEventModel('player_enchant')
     .setInit(
         /** 
          * @param {any} customData
@@ -18,13 +18,9 @@ const OrganPlayerEnchantStrategy = new OrganStrategyModel()
     )
 
 MoreJSEvents.enchantmentTableChanged(event => {
-    if (!event.player) return
+    const player = event.player
+    if (!player) return
     let customData = {}
-    OrganPlayerEnchantStrategy.run(GetEntityChestCavityInventory(event.player), [event], customData)
-})
-
-ServerEvents.tags('item', event => {
-    event.add('kubejs:player_enchant', Object.keys(OrganPlayerEnchantStrategy.strategyMap))
-    event.add('kubejs:player_enchant_only', Object.keys(OrganPlayerEnchantStrategy.onlyStrategyMap))
+    OrganPlayerEnchantEvent.run(player, customData, [event])
 })
 

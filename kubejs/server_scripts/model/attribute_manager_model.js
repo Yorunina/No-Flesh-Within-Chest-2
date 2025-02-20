@@ -6,9 +6,9 @@
 function AttributeManagerModel(attr) {
     this.attr = attr
     this.baseAddModifier = 0
-    this.baseMultiModifier = 1
+    this.baseMultiModifier = 0
     this.allAddModifier = 0
-    this.allMultiModifier = 1
+    this.allMultiModifier = 0
     this.isModified = false
 }
 
@@ -27,7 +27,7 @@ AttributeManagerModel.prototype = {
      * @returns {number}
      */
     calResult: function () {
-        return (this.attr * this.baseMultiModifier + this.baseAddModifier) * this.allMultiModifier + this.allAddModifier
+        return (this.attr * (1 + this.baseMultiModifier) + this.baseAddModifier) * (1 + this.allMultiModifier) + this.allAddModifier
     },
     /**
      * 

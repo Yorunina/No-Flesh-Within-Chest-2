@@ -1,5 +1,5 @@
-// priority: 801
-const OrganBlockBrokenStrategy = new OrganStrategyModel()
+// priority: 500
+const OrganBlockBrokenEvent = new OrganEventModel('block_broken')
     .setInit(
         /** 
          * @param {any} customData
@@ -19,12 +19,12 @@ const OrganBlockBrokenStrategy = new OrganStrategyModel()
 
 
 BlockEvents.broken(event => {
+    const entity = event.entity
+    if (!entity) return
     let customData = {}
-    OrganBlockBrokenStrategy.run(GetEntityChestCavityInventory(event.entity), [event], customData)
+    OrganBlockBrokenEvent.run(entity, customData, [event])
 })
 
-ServerEvents.tags('item', event => {
-    event.add('kubejs:block_broken', Object.keys(OrganBlockBrokenStrategy.strategyMap))
-    event.add('kubejs:block_broken_only', Object.keys(OrganBlockBrokenStrategy.onlyStrategyMap))
-})
+
+
 

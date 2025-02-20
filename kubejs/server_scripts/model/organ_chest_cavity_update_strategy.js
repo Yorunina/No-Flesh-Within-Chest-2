@@ -1,8 +1,8 @@
 // priority: 900
+const MPMEventId = 'mpm_render'
 function OrganChestCavityUpdateStrategyModel() {
     /**@type {Object<string, function(...any): void>} */
-    this.strategyMap = {}
-    this.onlyStrategyMap = {}
+    this.eventId = 'chest_cavity_update'
     this.mpmPartsStrategyMap = {}
     this.init = (args) => { }
     this.defer = (args) => { }
@@ -15,22 +15,6 @@ OrganChestCavityUpdateStrategyModel.prototype = {
      */
     setStrategyMap: function (strategyMap) {
         this.strategyMap = strategyMap
-        return this
-    },
-    /**
-     * @param {String} id
-     * @param {function(any[]): void} func
-     */
-    addStrategy: function (id, func) {
-        this.strategyMap[id] = func
-        return this
-    },
-    /**
-     * @param {String} id
-     * @param {function(any[]): void} func
-     */
-    addOnlyStrategy: function (id, func) {
-        this.onlyStrategyMap[id] = func
         return this
     },
     /**
@@ -65,28 +49,50 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         args.unshift(customData)
         this.init.apply(null, args)
         let needLoadMpm = ccInstance.owner.isPlayer() && IsLoadedMPM
-        let onlySet = new Set()
+        const onlySet = new Set()
+        
         /**@type {Set<Internal.MpmPartData>} */
-        let onlyMPMSet = new Set()
+        const onlyMPMSet = new Set()
+        ccInstance.clearListenerMap()
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
-            if (!curItem || curItem.isEmpty()) continue
             let itemId = curItem.id
-            // 唯一策略
-            if (this.onlyStrategyMap[itemId] && !onlySet.has(itemId)) {
-                onlySet.add(itemId)
-                this.onlyStrategyMap[itemId].apply(null, args.concat(curItem, i))
+            if (OrganStrategyMap[itemId]) {
+                let strategyModel = OrganStrategyMap[itemId]
+                strategyModel.relatedEventIds.forEach(eventId => {
+                    ccInstance.addListener(eventId, i)
+                })
             }
-            // 策略
-            if (this.strategyMap[itemId]) {
-                this.strategyMap[itemId].apply(null, args.concat(curItem, i))
+
+            // 执行常规更新器官效果策略
+            if (!curItem || curItem.isEmpty()) continue
+            
+            let strategyModel = OrganStrategyMap[itemId]
+            if (!strategyModel) continue
+            let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
+    
+            if (onlyOrganStrategy && !onlySet.has(itemId)) {
+                onlySet.add(itemId)
+                onlyOrganStrategy.apply(null, args.concat(curItem, i))
+            }
+            let organStrategy = strategyModel.strategyMap[this.eventId]
+            if (organStrategy) {
+                organStrategy.apply(null, args.concat(curItem, i))
             }
 
             // MPM策略
             if (needLoadMpm) {
-                if (this.mpmPartsStrategyMap[itemId] && !onlyMPMSet.has(itemId)) {
+                let mpmStrategyModel = OrganStrategyMap[MPMEventId]
+                if (!mpmStrategy) continue
+                let onlyMpmStrategy = mpmStrategyModel.onlyStrategyMap[MPMEventId]
+        
+                if (onlyMpmStrategy && !onlyMPMSet.has(itemId)) {
                     onlyMPMSet.add(itemId)
-                    this.mpmPartsStrategyMap[itemId].apply(null, args.concat(curItem, i))
+                    onlyMpmStrategy.apply(null, args.concat(curItem, i))
+                }
+                let mpmStrategy = mpmStrategyModel.strategyMap[MPMEventId]
+                if (mpmStrategy) {
+                    mpmStrategy.apply(null, args.concat(curItem, i))
                 }
             }
         }

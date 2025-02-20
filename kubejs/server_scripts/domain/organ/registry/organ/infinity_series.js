@@ -38,7 +38,6 @@ function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex) {
 
     customData.thornsDamage = Math.floor(value / 4)
 }
-OrganEntityDoDamageStrategy.addOnlyStrategy('kubejs:infinity_beats', InfinityBeatsEntityDoDamage)
 
 /**
  * @param {any} customData
@@ -51,7 +50,12 @@ function InfinityBeatsTakeOff(customData, event, organItem, organIndex) {
     let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
     attributeInstance.removeModifier(InfinityBeatsTempAttackUpUUID)
 }
-OrganTakeOffStrategy.addOnlyStrategy('kubejs:infinity_beats', InfinityBeatsTakeOff)
+
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:infinity_beats')
+        .addStrategy('entity_do_damage', InfinityBeatsEntityDoDamage)
+        .addOnlyStrategy('organ_take_off', InfinityBeatsTakeOff)
+)
 
 
 /** ============================================================== */
@@ -68,7 +72,7 @@ function InfinityForceChestCavityUpdate(customData, event, organItem, organIndex
     let value = organItem.nbt.getInt('forgeTimes')
     customData.attackDamage.addAttributeModifier(value, 'addition', 'base')
 }
-OrganChestCavityUpdateStrategy.addOnlyStrategy('kubejs:infinity_force', InfinityForceChestCavityUpdate)
+
 
 /**
  * @param {any} customData
@@ -89,7 +93,10 @@ function InfinityForceEntityLoot(customData, event, organItem, organIndex) {
         event.addLoot(Item.of('kubejs:infinity_force', { forgeTimes: Math.floor(Math.random() * forgeTimes) }))
     }
 }
-OrganEntityLootStrategy.addOnlyStrategy('kubejs:infinity_force', InfinityForceEntityLoot)
-
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:infinity_force')
+        .addStrategy('chest_cavity_update', InfinityForceChestCavityUpdate)
+        .addOnlyStrategy('entity_loot', InfinityForceEntityLoot)
+)
 
 /** ============================================================== */

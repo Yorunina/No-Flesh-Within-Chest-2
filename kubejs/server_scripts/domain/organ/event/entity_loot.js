@@ -1,9 +1,9 @@
-// priority: 801
-const OrganEntityLootStrategy = new OrganStrategyModel()
+// priority: 500
+const OrganEntityLootEvent = new OrganEventModel('entity_loot')
     .setInit(
         /** 
          * @param {any} customData
-         * @param {Internal.LootContextJS} event
+         * @param {Internal.FoodEatenEventJS} event
          */
         (customData, event) => {
         }
@@ -11,24 +11,20 @@ const OrganEntityLootStrategy = new OrganStrategyModel()
     .setDefer(
         /**
          * @param {any} customData
-         * @param {Internal.LootContextJS} event
+         * @param {Internal.FoodEatenEventJS} event
          */
         (customData, event) => {
         }
     )
 
 
+
 LootJS.modifiers(context => {
     context.addLootTypeModifier(LootType.ENTITY)
         .apply(event => {
-            if (!event.killerEntity) return
+            const entity = event.killerEntity
+            if (!entity) return
             let customData = {}
-            OrganEntityLootStrategy.run(GetEntityChestCavityInventory(event.killerEntity), [event], customData)
+            OrganEntityLootEvent.run(entity, customData, [event])
         })
 })
-
-ServerEvents.tags('item', event => {
-    event.add('kubejs:entity_loot', Object.keys(OrganEntityLootStrategy.strategyMap))
-    event.add('kubejs:entity_loot_only', Object.keys(OrganEntityLootStrategy.onlyStrategyMap))
-})
-

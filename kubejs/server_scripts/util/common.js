@@ -154,3 +154,9 @@ function RandomWithPlayerLuck(player) {
 function UnionArry(arr1, arr2) {
     return arr1.concat(arr2.filter(function (v) { return !(arr1.indexOf(v) > -1) }))
 }
+
+function AddIfNotExist(arr, item) {
+    if (arr.indexOf(item) == -1) {
+        arr.push(item)
+    }
+}

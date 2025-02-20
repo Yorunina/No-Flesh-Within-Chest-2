@@ -1,5 +1,5 @@
-// priority: 801
-const OrganPlayerTickStrategy = new OrganStrategyModel()
+// priority: 500
+const OrganPlayerTickEvent = new OrganEventModel('player_tick')
     .setInit(
         /** 
          * @param {any} customData
@@ -19,12 +19,8 @@ const OrganPlayerTickStrategy = new OrganStrategyModel()
 
 
 PlayerEvents.tick(event => {
-    if (!event.player) return
+    const player = event.player
+    if (!player || player.age % 10 != 0) return
     let customData = {}
-    OrganPlayerTickStrategy.run(GetEntityChestCavityInventory(event.player), [event], customData)
-})
-
-ServerEvents.tags('item', event => {
-    event.add('kubejs:player_tick', Object.keys(OrganPlayerTickStrategy.strategyMap))
-    event.add('kubejs:player_tick_only', Object.keys(OrganPlayerTickStrategy.onlyStrategyMap))
+    OrganPlayerTickEvent.run(player, customData, [event])
 })

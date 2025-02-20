@@ -1,5 +1,5 @@
-// priority: 801
-const OrganFoodEatenStrategy = new OrganStrategyModel()
+// priority: 500
+const OrganFoodEatenEvent = new OrganEventModel('item_eaten')
     .setInit(
         /** 
          * @param {any} customData
@@ -19,13 +19,9 @@ const OrganFoodEatenStrategy = new OrganStrategyModel()
 
 
 ItemEvents.foodEaten(event => {
-    if (!event.entity) return
+    const entity = event.entity
+    if (!entity) return
     let customData = {}
-    OrganFoodEatenStrategy.run(GetEntityChestCavityInventory(event.entity), [event], customData)
-})
-
-ServerEvents.tags('item', event => {
-    event.add('kubejs:item_eaten', Object.keys(OrganFoodEatenStrategy.strategyMap))
-    event.add('kubejs:item_eaten_only', Object.keys(OrganFoodEatenStrategy.onlyStrategyMap))
+    OrganFoodEatenEvent.run(entity, customData, [event])
 })
 

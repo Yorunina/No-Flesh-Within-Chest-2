@@ -48,7 +48,10 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
             return
     }
 }
-OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_muscle', RoseQuartzMuscleChestCavityUpdate)
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:rose_quartz_muscle')
+        .addStrategy('chest_cavity_update', RoseQuartzMuscleChestCavityUpdate)
+)
 
 /** ============================================================== */
 
@@ -74,7 +77,10 @@ function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organInd
             return
     }
 }
-OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_heart', RoseQuartzHeartChestCavityUpdate)
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:rose_quartz_heart')
+        .addStrategy('chest_cavity_update', RoseQuartzHeartChestCavityUpdate)
+)
 
 /** ============================================================== */
 
@@ -91,7 +97,6 @@ function RoseQuartzRibChestCavityUpdate(customData, event, organItem, organIndex
     switch (GetChestCavitySlotType(chestCavity, organIndex)) {
         case 'rosy_explosion':
             // 爆发条件下，将临时玫瑰化全部转换为乘区生命值*0.01
-            console.log(GetCustomDataOrDefault(customData, 'tempRosy', 0))
             customData.armor.addAttributeModifier(GetCustomDataOrDefault(customData, 'tempRosy', 0) * 0.01, 'multiple', 'all')
             customData['tempRosy'] = 0
             return
@@ -101,7 +106,10 @@ function RoseQuartzRibChestCavityUpdate(customData, event, organItem, organIndex
             return
     }
 }
-OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_rib', RoseQuartzRibChestCavityUpdate)
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:rose_quartz_rib')
+        .addStrategy('chest_cavity_update', RoseQuartzRibChestCavityUpdate)
+)
 
 /** ============================================================== */
 
@@ -126,7 +134,10 @@ function RoseQuartzDialyzerChestCavityUpdate(customData, event, organItem, organ
             return
     }
 }
-OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_dialyzer', RoseQuartzDialyzerChestCavityUpdate)
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:rose_quartz_dialyzer')
+        .addStrategy('chest_cavity_update', RoseQuartzDialyzerChestCavityUpdate)
+)
 
 /** ============================================================== */
 
@@ -151,4 +162,7 @@ function RoseQuartzLiverChestCavityUpdate(customData, event, organItem, organInd
     }
 
 }
-OrganChestCavityUpdateStrategy.addStrategy('kubejs:rose_quartz_liver', RoseQuartzLiverChestCavityUpdate)
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:rose_quartz_liver')
+        .addStrategy('chest_cavity_update', RoseQuartzLiverChestCavityUpdate)
+)

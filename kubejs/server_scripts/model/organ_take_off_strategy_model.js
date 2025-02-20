@@ -1,8 +1,6 @@
 // priority: 900
 function OrganTakeOffStrategyModel() {
-    /**@type {Object<string, function(...any): void>} */
-    this.strategyMap = {}
-    this.onlyStrategyMap = {}
+    this.eventId = 'organ_take_off'
     this.init = (args) => { }
     this.defer = (args) => { }
     return this
@@ -14,23 +12,6 @@ OrganTakeOffStrategyModel.prototype = {
      */
     setStrategyMap: function (strategyMap) {
         this.strategyMap = strategyMap
-        return this
-    },
-    /**
-     * @param {String} id
-     * @param {function(any[]): void} func
-     */
-    addStrategy: function (id, func) {
-        this.strategyMap[id] = func
-
-        return this
-    },
-    /**
-     * @param {String} id
-     * @param {function(any[]): void} func
-     */
-    addOnlyStrategy: function (id, func) {
-        this.onlyStrategyMap[id] = func
         return this
     },
     /**
@@ -65,14 +46,18 @@ OrganTakeOffStrategyModel.prototype = {
             if (!oldItem || oldItem.isEmpty()) continue
             let newItem = ccInv.getStackInSlot(i)
             if (oldItem.equals(newItem, true)) continue
-
             let itemId = oldItem.id
-            if (this.onlyStrategyMap[itemId] && !onlySet.has(itemId)) {
+            let strategyModel = OrganStrategyMap[itemId]
+            if (!strategyModel) continue
+            let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
+    
+            if (onlyOrganStrategy && !onlySet.has(itemId)) {
                 onlySet.add(itemId)
-                this.onlyStrategyMap[itemId].apply(null, args.concat(oldItem, i))
+                onlyOrganStrategy.apply(null, args.concat(oldItem, i))
             }
-            if (this.strategyMap[itemId]) {
-                this.strategyMap[itemId].apply(null, args.concat(oldItem, i))
+            let organStrategy = strategyModel.strategyMap[this.eventId]
+            if (organStrategy) {
+                organStrategy.apply(null, args.concat(oldItem, i))
             }
         }
 

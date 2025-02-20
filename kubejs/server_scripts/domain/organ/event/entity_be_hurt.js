@@ -1,9 +1,9 @@
-// priority: 801
-const OrganEntityBeHurtStrategy = new OrganStrategyModel()
+// priority: 500
+const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
     .setInit(
         /** 
          * @param {any} customData
-         * @param {Internal.LivingDamageEvent} event
+         * @param {Internal.LivingHurtEvent} event
          */
         (customData, event) => {
         }
@@ -11,7 +11,7 @@ const OrganEntityBeHurtStrategy = new OrganStrategyModel()
     .setDefer(
         /**
          * @param {any} customData
-         * @param {Internal.LivingDamageEvent} event
+         * @param {Internal.LivingHurtEvent} event
          */
         (customData, event) => {
         }
@@ -20,14 +20,8 @@ const OrganEntityBeHurtStrategy = new OrganStrategyModel()
 
     /**
      * 
-     * @param {Internal.LivingDamageEvent} event 
+     * @param {Internal.LivingHurtEvent} event 
      */
 function OrganEntityBeHurt(event, customData) {
-    OrganEntityBeHurtStrategy.run(GetEntityChestCavityInventory(event.entity), [event], customData)
+    OrganEntityBeHurtEvent.run(event.source.actual, customData, [event])
 }
-
-ServerEvents.tags('item', event => {
-    event.add('kubejs:entity_be_hurt', Object.keys(OrganEntityBeHurtStrategy.strategyMap))
-    event.add('kubejs:entity_be_hurt_only', Object.keys(OrganEntityBeHurtStrategy.onlyStrategyMap))
-})
-

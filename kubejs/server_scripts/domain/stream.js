@@ -9,7 +9,6 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', /
     }
     OrganEntityDoDamage(event, customData)
     if (customData.thornsDamage != 0 && event.entity) {
-        event.source.actual.tell(customData.thornsDamage)
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
     }

@@ -1,5 +1,5 @@
 // priority: 801
-const OrganItemRightClickedStrategy = new OrganStrategyModel()
+const OrganItemRightClickedEvent = new OrganEventModel('item_right_clicked')
     .setInit(
         /** 
          * @param {any} customData
@@ -19,13 +19,8 @@ const OrganItemRightClickedStrategy = new OrganStrategyModel()
 
 
 ItemEvents.rightClicked(event => {
-    if (!event.player) return
+    const player = event.player
+    if (!player) return
     let customData = {}
-    OrganItemRightClickedStrategy.run(GetEntityChestCavityInventory(event.player), [event], customData)
+    OrganItemRightClickedEvent.run(player, customData, [event])
 })
-
-ServerEvents.tags('item', event => {
-    event.add('kubejs:item_right_clicked', Object.keys(OrganItemRightClickedStrategy.strategyMap))
-    event.add('kubejs:item_right_clicked_only', Object.keys(OrganItemRightClickedStrategy.onlyStrategyMap))
-})
-

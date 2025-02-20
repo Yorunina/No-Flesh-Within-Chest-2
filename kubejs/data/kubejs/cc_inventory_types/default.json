@@ -24,9 +24,11 @@
         {"x": 62, "y": 54},
         {"x": 80, "y": 54},
         {"x": 98, "y": 54},
-        {"x": 116, "y": 54}
+        {"x": 116, "y": 54},
+        {"x": 134, "y": 54},
+        {"x": 152, "y": 54, "type": "rosy_explosion"}
     ],
-    "backgroundTexture": "kubejs:textures/gui/shulker_box.png",
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity.png",
     "playerInventoryPosition": {
         "x": 0,
         "y": 0

@@ -12,4 +12,7 @@ RegistryOrgan('kubejs:greedy_stomach')
 function GreedyStomachItemEaten(customData, event, organItem, organIndex) {
     event.player.giveExperiencePoints(10)
 }
-OrganFoodEatenStrategy.addStrategy('kubejs:greedy_stomach', GreedyStomachItemEaten)
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:greedy_stomach')
+        .addStrategy('item_eaten', GreedyStomachItemEaten)
+)
