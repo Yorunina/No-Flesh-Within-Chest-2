@@ -5,7 +5,7 @@ function MpmDataModel(id) {
     this.usePlayerSkin = false
     this.url = ''
     this.texture = ''
-    this.color = 0xffffff
+    this.color = '#ffffff'
     return this
 }
 MpmDataModel.prototype = {
@@ -32,14 +32,13 @@ MpmDataModel.prototype = {
     serializNbt : function() {
         let nbt = new $CompoundTag()
         let color = HexToRgb(this.color)
-        console.log(color)
-        nbt.putString('Id', 'moreplayermodels:parts/legs/legs_naga.json')
+        nbt.putString('Id', this.id)
         nbt.putBoolean('UsePlayerSkin', this.usePlayerSkin)
         nbt.putString('Url', this.url)
         nbt.putString('Texture', this.texture)
-        nbt.putInt('ColorR', color[0])
-        nbt.putInt('ColorG', color[1])
-        nbt.putInt('ColorB', color[2])
+        nbt.putInt('ColorR', Math.floor(color[0] / 128))
+        nbt.putInt('ColorG', Math.floor(color[1] / 128))
+        nbt.putInt('ColorB', Math.floor(color[2] / 128))
         return nbt
     },
     exportModelData: function() {

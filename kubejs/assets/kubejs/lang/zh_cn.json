@@ -227,6 +227,8 @@
 
     "slot_type.chestcavity.rosy_explosion.name": "瑰红爆发",
     "slot_type.chestcavity.rosy_explosion.desc": " ■ 可用于激活§c玫瑰类§r器官，以在较少的槽位下爆发出远超常规的能力。",
+    "slot_type.chestcavity.default.name": "默认槽",
+    "slot_type.chestcavity.default.desc": " ■ 最基础的胸腔槽位，为各种器官提供了植入空间。",
     "slot_type.kubejs.default.1": "    ■ 默认槽",
     "slot_type.kubejs.high_adaptability.1": "    ■ 高适应槽",
     "slot_type.kubejs.rosy_explosion.1": "    ■ 瑰红爆发",

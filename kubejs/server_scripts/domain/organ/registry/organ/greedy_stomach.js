@@ -8,8 +8,9 @@ RegistryOrgan('kubejs:greedy_stomach')
  * @param {Internal.FoodEatenEventJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function GreedyStomachItemEaten(customData, event, organItem, organIndex) {
+function GreedyStomachItemEaten(customData, event, organItem, organIndex, slotType) {
     event.player.giveExperiencePoints(10)
 }
 RegistryOrganStrategy(

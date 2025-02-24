@@ -33,24 +33,24 @@ OrganEventModel.prototype = {
         let ccInstance = ccEntity.getChestCavityInstance()
         let ccInv = ccInstance.inventory
 
-        const onlySet = new Set()
+        const onlyMap = new Map()
         args.unshift(customData)
-        let slotList = ccInstance.getListenerList(this.eventId)
-        if (!slotList) return
-        slotList.forEach(slotIndex => {
+        let slotMap = ccInstance.getListenerMap(this.eventId)
+        if (!slotMap) return
+        slotMap.forEach((slotIndex, slotType) => {
             let curItem = ccInv.getStackInSlot(slotIndex)
             if (!curItem || curItem.isEmpty()) return
-            let itemId = curItem.id
+            let itemId = String(curItem.id)
             let strategyModel = OrganStrategyMap[itemId]
             let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
 
-            if (onlyOrganStrategy && !onlySet.has(itemId)) {
-                onlySet.add(itemId)
-                onlyOrganStrategy.apply(null, args.concat(curItem, slotIndex))
+            if (onlyOrganStrategy && !onlyMap.has(itemId)) {
+                onlyMap.set(itemId, true)
+                onlyOrganStrategy.apply(null, args.concat(curItem, slotIndex, slotType))
             }
             let organStrategy = strategyModel.strategyMap[this.eventId]
             if (organStrategy) {
-                organStrategy.apply(null, args.concat(curItem, slotIndex))
+                organStrategy.apply(null, args.concat(curItem, slotIndex, slotType))
             }
         })
     }

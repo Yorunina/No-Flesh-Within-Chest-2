@@ -87,8 +87,9 @@ RegistryOrganStrategy(
  * @param {Internal.OpenedEntityTickJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function BurningCoreEntityTick(customData, event, organItem, organIndex) {
+function BurningCoreEntityTick(customData, event, organItem, organIndex, slotType) {
     let attributeInstance = event.entity.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
     if (organItem.getDamageValue() + 5 <= organItem.getMaxDamage()) {
@@ -106,8 +107,9 @@ function BurningCoreEntityTick(customData, event, organItem, organIndex) {
  * @param {Internal.LivingHurtEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function BurningCoreDoDamage(customData, event, organItem, organIndex) {
+function BurningCoreDoDamage(customData, event, organItem, organIndex, slotType) {
     event.amount = event.amount * 2
 }
 

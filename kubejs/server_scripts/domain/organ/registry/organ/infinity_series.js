@@ -18,13 +18,13 @@ const InfinityBeatsTempAttackUpUUID = UUID.fromString('686F8285-3FBF-4A22-9F2A-B
  * @param {Internal.LivingHurtEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex) {
+function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     if (!sourceEntity.isAlive()) return
     if (sourceEntity.hasItemInSlot('mainhand') || sourceEntity.hasItemInSlot('offhand')) return
-
     let value = 4
     let attributeInstance = sourceEntity.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
@@ -45,8 +45,9 @@ function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex) {
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function InfinityBeatsTakeOff(customData, event, organItem, organIndex) {
+function InfinityBeatsTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
     let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
@@ -55,7 +56,7 @@ function InfinityBeatsTakeOff(customData, event, organItem, organIndex) {
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:infinity_beats')
-        .addStrategy('entity_do_damage', InfinityBeatsEntityDoDamage)
+        .addOnlyStrategy('entity_do_damage', InfinityBeatsEntityDoDamage)
         .addOnlyStrategy('organ_take_off', InfinityBeatsTakeOff)
 )
 
@@ -68,8 +69,9 @@ RegistryOrganStrategy(
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function InfinityForceChestCavityUpdate(customData, event, organItem, organIndex) {
+function InfinityForceChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     if (!organItem.hasNBT() || !organItem.nbt.contains('forgeTimes')) return
     let value = organItem.nbt.getInt('forgeTimes')
     customData.attackDamage.addAttributeModifier(value, 'addition', 'base')
@@ -81,8 +83,9 @@ function InfinityForceChestCavityUpdate(customData, event, organItem, organIndex
  * @param {Internal.LootContextJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function InfinityForceEntityLoot(customData, event, organItem, organIndex) {
+function InfinityForceEntityLoot(customData, event, organItem, organIndex, slotType) {
     if (Math.random() > Math.max(0.03 * event.killerEntity.getLuck(), 0.03)) {
         return
     }

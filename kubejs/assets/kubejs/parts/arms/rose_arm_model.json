@@ -2,7 +2,6 @@
   "name": "rose_arm",
   "render_type": "bedrock",
   "hidden_parts": [
-    "left_arm"
   ],
   "render_data": {
     "format_version": "1.12.0",
@@ -176,9 +175,9 @@
     0
   ],
   "scale": [
-    1.0,
-    1.0,
-    1.0
+    1.1,
+    1.1,
+    1.1
   ],
   "rotate_offset": [
     0,

@@ -10,8 +10,9 @@ RegistryOrgan('kubejs:prismarine_crown')
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function PrismarineCrownChestCavityUpdate(customData, event, organItem, organIndex) {
+function PrismarineCrownChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const { chestCavity } = event
     chestCavity.organScores.forEach((key, value) => {
         if (value < 0) {

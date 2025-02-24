@@ -31,12 +31,13 @@ RegistryOrgan('kubejs:rose_quartz_liver')
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIndex) {
+function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     customData.attackDamage.addAttributeModifier(rosyValue, 'addition', 'base')
-    switch (GetChestCavitySlotType(chestCavity, organIndex)) {
+    switch (slotType) {
         case 'rosy_explosion':
             // 爆发条件下，将临时玫瑰化全部转换为乘区 * 0.01
             customData.attackDamage.addAttributeModifier(GetCustomDataOrDefault(customData, 'tempRosy', 0) * 0.01, 'multiple', 'all')
@@ -48,9 +49,25 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
             return
     }
 }
+
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function RoseQuartzMuscleMpmRender(customData, event, organItem, organIndex, slotType) {
+    const chestCavity = event.chestCavity
+    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
+    if (rosyValue > 3) {
+        let mpmData = new MpmDataModel('kubejs:parts/arms/rose_arm_model.json').exportModelData()
+        customData.mpmParts.push(mpmData)
+    }
+}
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_muscle')
         .addStrategy('chest_cavity_update', RoseQuartzMuscleChestCavityUpdate)
+        .addOnlyStrategy('mpm_render', RoseQuartzMuscleMpmRender)
 )
 
 /** ============================================================== */
@@ -63,12 +80,13 @@ RegistryOrganStrategy(
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organIndex) {
+function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     customData.maxHealth.addAttributeModifier(rosyValue, 'addition', 'base')
-    switch (GetChestCavitySlotType(chestCavity, organIndex)) {
+    switch (slotType) {
         case 'rosy_explosion':
             // 爆发条件下，将临时玫瑰化全部转换为乘区生命值*0.01
             customData.maxHealth.addAttributeModifier(GetCustomDataOrDefault(customData, 'tempRosy', 0) * 0.01, 'multiple', 'all')
@@ -87,11 +105,11 @@ function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organInd
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function RoseQuartzHeartMpmRender(customData, event, organItem, organIndex) {
+function RoseQuartzHeartMpmRender(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     if (rosyValue > 3) {
-        let mpmData = new MpmDataModel('kubejs:parts/body/rose_body_model.json')
+        let mpmData = new MpmDataModel('kubejs:parts/body/rose_body_model.json').exportModelData()
         customData.mpmParts.push(mpmData)
     }
 }
@@ -109,12 +127,13 @@ RegistryOrganStrategy(
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function RoseQuartzRibChestCavityUpdate(customData, event, organItem, organIndex) {
+function RoseQuartzRibChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     customData.armor.addAttributeModifier(rosyValue * 0.1, 'addition', 'base')
-    switch (GetChestCavitySlotType(chestCavity, organIndex)) {
+    switch (slotType) {
         case 'rosy_explosion':
             // 爆发条件下，将临时玫瑰化全部转换为乘区生命值*0.01
             customData.armor.addAttributeModifier(GetCustomDataOrDefault(customData, 'tempRosy', 0) * 0.01, 'multiple', 'all')
@@ -138,12 +157,13 @@ RegistryOrganStrategy(
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function RoseQuartzDialyzerChestCavityUpdate(customData, event, organItem, organIndex) {
+function RoseQuartzDialyzerChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     let machinizedValue = chestCavity.getOrganScore('kubejs:mechanized')
     chestCavity.setOrganScore('kubejs:mechanized', 0)
-    switch (GetChestCavitySlotType(chestCavity, organIndex)) {
+    switch (slotType) {
         case 'rosy_explosion':
             // 爆发条件下，机械化值全部转换为实际玫瑰化属性
             chestCavity.setOrganScore('kubejs:rosy', chestCavity.getOrganScore('kubejs:rosy') + machinizedValue)
@@ -166,8 +186,9 @@ RegistryOrganStrategy(
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function RoseQuartzLiverChestCavityUpdate(customData, event, organItem, organIndex) {
+function RoseQuartzLiverChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     switch (GetChestCavitySlotType(chestCavity, organIndex)) {
         case 'rosy_explosion':

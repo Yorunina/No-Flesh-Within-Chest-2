@@ -49,14 +49,13 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         args.unshift(customData)
         this.init.apply(null, args)
         let needLoadMpm = ccInstance.owner.isPlayer() && IsLoadedMPM
-        const onlySet = new Set()
-        
-        /**@type {Set<Internal.MpmPartData>} */
-        const onlyMPMSet = new Set()
+        const onlyMap = new Map()
+        const onlyMPMMap = new Map()
         ccInstance.clearListenerMap()
+        const invTypeData = ccInstance.getInventoryTypeData()
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
-            let itemId = curItem.id
+            let itemId = String(curItem.id)
             if (OrganStrategyMap[itemId]) {
                 let strategyModel = OrganStrategyMap[itemId]
                 strategyModel.relatedEventIds.forEach(eventId => {
@@ -66,33 +65,32 @@ OrganChestCavityUpdateStrategyModel.prototype = {
 
             // 执行常规更新器官效果策略
             if (!curItem || curItem.isEmpty()) continue
-            
+
             let strategyModel = OrganStrategyMap[itemId]
             if (!strategyModel) continue
+            let slotType = invTypeData.getSlotType(i)
             let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
     
-            if (onlyOrganStrategy && !onlySet.has(itemId)) {
-                onlySet.add(itemId)
-                onlyOrganStrategy.apply(null, args.concat(curItem, i))
+            if (onlyOrganStrategy && !onlyMap.has(itemId)) {
+                onlyMap.set(itemId, true)
+                onlyOrganStrategy.apply(null, args.concat(curItem, i, slotType))
             }
             let organStrategy = strategyModel.strategyMap[this.eventId]
             if (organStrategy) {
-                organStrategy.apply(null, args.concat(curItem, i))
+                organStrategy.apply(null, args.concat(curItem, i, slotType))
             }
 
             // MPM策略
             if (needLoadMpm) {
-                let mpmStrategyModel = OrganStrategyMap[MPMEventId]
-                if (!mpmStrategy) continue
-                let onlyMpmStrategy = mpmStrategyModel.onlyStrategyMap[MPMEventId]
+                let onlyMpmStrategy = strategyModel.onlyStrategyMap[MPMEventId]
         
-                if (onlyMpmStrategy && !onlyMPMSet.has(itemId)) {
-                    onlyMPMSet.add(itemId)
-                    onlyMpmStrategy.apply(null, args.concat(curItem, i))
+                if (onlyMpmStrategy && !onlyMPMMap.has(itemId)) {
+                    onlyMPMMap.set(itemId, true)
+                    onlyMpmStrategy.apply(null, args.concat(curItem, i, slotType))
                 }
-                let mpmStrategy = mpmStrategyModel.strategyMap[MPMEventId]
+                let mpmStrategy = strategyModel.strategyMap[MPMEventId]
                 if (mpmStrategy) {
-                    mpmStrategy.apply(null, args.concat(curItem, i))
+                    mpmStrategy.apply(null, args.concat(curItem, i, slotType))
                 }
             }
         }
@@ -115,33 +113,28 @@ OrganChestCavityUpdateStrategyModel.prototype = {
 function renderMpm(ccInstance, customData) {
     let player = ccInstance.owner
     if (!player instanceof $ServerPlayer) return
-    if (!player.inventory) return
-    /** @type {Internal.MpmPartData[]} */
-    let mpmPartIdList = []
-    for (let mpmPart of customData.mpmParts) {
-        mpmPartIdList.push(mpmPart.partId) 
+    if (!player.inventory) {
+        return
     }
     let modelData = $ModelData.get(player)
     let needUpdate = false
-    if (modelData.mpmParts.length != mpmPartIdList.length) {
+    if (modelData.mpmParts.length != customData.mpmParts.length) {
         needUpdate = true
     } else {
         for (let i = 0; i < modelData.mpmParts.length; i++) {
-            if (modelData.mpmParts[i].partId != mpmPartIdList[i]) {
+            if (!modelData.mpmParts[i].partId.equals(customData.mpmParts[i].partId)) {
                 needUpdate = true
                 break
             }
         }
     }
-    
     if (needUpdate) {
         modelData.mpmParts.clear()
-        
         customData.mpmParts.forEach(mpmPart => {
             modelData.mpmParts.add(mpmPart)
         })
         modelData.refreshParts()
         modelData.updateTransate()
         $MpmPackets.sendNearby(player, new $PacketPlayerDataSend(player.getUuid(), modelData.writeToNBT()))
-    } 
+    }
 }
