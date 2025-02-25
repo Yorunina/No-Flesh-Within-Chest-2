@@ -164,8 +164,9 @@
     "tooltips.kubejs.tag.kubejs:chest_loot_only": "唯一箱子战利品",
     "tooltips.kubejs.tag.kubejs:entity_tick": "实体刻",
     "tooltips.kubejs.tag.kubejs:entity_tick_only": "唯一实体刻",
+    "tooltips.kubejs.tag.kubejs:spell_selection": "法术添加",
+    "tooltips.kubejs.tag.kubejs:spell_selection_only": "唯一法术添加",
     
-
     "_comment.multi_state_tooltips": "多态Tooltips",
     "tooltips.kubejs.multi_state.shift.1": "§6·§r 按住 §e§l[ shift ]§r 查看器官基础属性",
     "tooltips.kubejs.multi_state.ctrl.1": "§6·§r 按住 §e§l[ ctrl ]§r 查看槽位激活效果",

@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 3000
 /**
  * 从容器中取出第一个满足条件的物品
  * @param {Internal.Inventory} inv 

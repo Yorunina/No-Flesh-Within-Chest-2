@@ -16,12 +16,24 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
     const { chestCavity } = event
     chestCavity.organScores.forEach((key, value) => {
         if (value < 0) {
-            chestCavity.setOrganScores(key, 0)
+            chestCavity.setOrganScore(key, 0)
         }
     })
+}
+/**
+ * @param {any} customData
+ * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function PrismarineCrownSpellSelection(customData, event, organItem, organIndex, slotType) {
+    event.entity.tell(1)
+    event.addSelectionOption(new $SpellData(new $ArrowVolleySpell(), 10), 'chestcavity', 100)
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:prismarine_crown')
-        .addStrategy('chest_cavity_update', PrismarineCrownChestCavityUpdate)
+        .addOnlyStrategy('spell_selection', PrismarineCrownSpellSelection)
+        .addOnlyStrategy('chest_cavity_update', PrismarineCrownChestCavityUpdate)
 )

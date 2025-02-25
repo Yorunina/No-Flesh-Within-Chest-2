@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 3000
 /**
  * @param {Vec3i} vec3i 
  * @returns {BlockPos}

@@ -12,6 +12,7 @@ const EventId2TagId = {
     'entity_loot': 'kubejs:entity_loot',
     'chest_loot': 'kubejs:chest_loot',
     'entity_tick': 'kubejs:entity_tick',
+    'spell_selection': 'kubejs:spell_selection',
 }
 
 

@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 2000
 function AttributeUUIDModel(attributeKey) {
     this.attributeKey = attributeKey
     /**@type {Internal.UUID} */

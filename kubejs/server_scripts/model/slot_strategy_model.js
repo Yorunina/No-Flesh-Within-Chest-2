@@ -1,4 +1,4 @@
-// priority: 900
+// priority: 1900
 function SlotStrategyModel() {
     /**@type {Object<string, function(...any): void>} */
     this.strategyMap = {}

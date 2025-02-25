@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 2000
 
 function OrganEventModel(eventId) {
     this.eventId = eventId
@@ -32,7 +32,6 @@ OrganEventModel.prototype = {
         let ccEntity = optional.get()
         let ccInstance = ccEntity.getChestCavityInstance()
         let ccInv = ccInstance.inventory
-
         const onlyMap = new Map()
         args.unshift(customData)
         let slotMap = ccInstance.getListenerMap(this.eventId)
@@ -43,7 +42,6 @@ OrganEventModel.prototype = {
             let itemId = String(curItem.id)
             let strategyModel = OrganStrategyMap[itemId]
             let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
-
             if (onlyOrganStrategy && !onlyMap.has(itemId)) {
                 onlyMap.set(itemId, true)
                 onlyOrganStrategy.apply(null, args.concat(curItem, slotIndex, slotType))

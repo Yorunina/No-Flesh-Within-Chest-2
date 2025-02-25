@@ -29,3 +29,12 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent',
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
     }
 })
+
+
+
+NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent', /** @param {Internal.SpellSelectionManager$SpellSelectionEvent} event */ event => {
+    if (!event.entity) return
+    let customData = {}
+    OrganSpellSelection(event, customData)
+})
+

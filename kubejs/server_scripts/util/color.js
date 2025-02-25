@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 3000
 
 function RgbToHex(r, g, b) {
     let hex = ((r << 16) | (g << 8) | b).toString(16)

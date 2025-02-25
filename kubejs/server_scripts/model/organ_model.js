@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 2000
 const OrganList = []
 const PseudoOrganList = []
 function Organ(itemId) {

@@ -1,4 +1,4 @@
-// priority: 900
+// priority: 1900
 function OrganTakeOffStrategyModel() {
     this.eventId = 'organ_take_off'
     this.init = (args) => { }

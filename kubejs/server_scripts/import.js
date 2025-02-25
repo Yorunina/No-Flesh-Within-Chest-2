@@ -40,3 +40,7 @@ const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPl
 const $SimpleMenuProvider = Java.loadClass('net.minecraft.world.SimpleMenuProvider')
 const $ChestCavityScreenHandler = Java.loadClass('net.tigereye.chestcavity.ui.ChestCavityScreenHandler')
 const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.ChestCavityEntity')
+
+
+const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
+const $ArrowVolleySpell = Java.loadClass('io.redspace.ironsspellbooks.spells.evocation.ArrowVolleySpell')

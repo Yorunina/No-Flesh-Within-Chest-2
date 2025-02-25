@@ -1,4 +1,4 @@
-// priority: 900
+// priority: 1900
 const MPMEventId = 'mpm_render'
 function OrganChestCavityUpdateStrategyModel() {
     /**@type {Object<string, function(...any): void>} */

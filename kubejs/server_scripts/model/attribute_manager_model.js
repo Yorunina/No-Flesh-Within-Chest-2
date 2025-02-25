@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 2000
 /**
  * 属性管理模型，用于解决自定义结构的乘算加算等数值问题
  * @param {number} attr

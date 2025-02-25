@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 3000
 /**
  * @callback isValidTarget
  * @param {Internal.BlockContainerJS}
