@@ -65,6 +65,9 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
          */
         (customData, event) => {
             const entity = event.entity
+            if (entity.isPlayer() && entity.inventory) {
+                new $SpellSelectionManager(entity)
+            }
             customData.attackDamage.applyOnEntityByAttributeKey(entity, 'minecraft:generic.attack_damage', 'OrganAttackDamage')
             customData.maxHealth.applyOnEntityByAttributeKey(entity,'minecraft:generic.max_health', 'OrganMaxHealth')
             customData.armor.applyOnEntityByAttributeKey(entity,'minecraft:generic.armor', 'OrganArmor')
@@ -79,5 +82,5 @@ ChestCavityEvents.evaluateChestCavity(event => {
     OrganTakeOffStrategy.run(chestCavity, [event], customData)
     
     OrganChestCavityUpdateStrategy.run(chestCavity, [event], customData)
-    SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData)
+    SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData) 
 })

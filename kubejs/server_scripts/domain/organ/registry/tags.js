@@ -12,7 +12,6 @@ const EventId2TagId = {
     'entity_loot': 'kubejs:entity_loot',
     'chest_loot': 'kubejs:chest_loot',
     'entity_tick': 'kubejs:entity_tick',
-    'spell_selection': 'kubejs:spell_selection',
 }
 
 
@@ -20,11 +19,12 @@ ServerEvents.tags('item', event => {
     Object.keys(OrganStrategyMap).forEach(itemId => {
         Object.keys(OrganStrategyMap[itemId].strategyMap).forEach(eventId => {
             if (!EventId2TagId[eventId]) return
-            event.add(EventId2TagId[eventId], itemId)
-        })
-        Object.keys(OrganStrategyMap[itemId].onlyStrategyMap).forEach(eventId => {
-            if (!EventId2TagId[eventId]) return
-            event.add(EventId2TagId[eventId] + '_only', itemId)
+            let organStrategy =  OrganStrategyMap[itemId].strategyMap[eventId]
+            if (organStrategy['default']) {
+                event.add(EventId2TagId[eventId], itemId)
+            } else if (organStrategy['only']) {
+                event.add(EventId2TagId[eventId] + '_only', itemId)
+            }
         })
     })
 })

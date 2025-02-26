@@ -28,28 +28,34 @@ OrganEventModel.prototype = {
      */
     run: function (entity, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
+
         if (!optional.isPresent()) return
+        args.unshift(customData)
+        this.init.apply(null, args)
         let ccEntity = optional.get()
         let ccInstance = ccEntity.getChestCavityInstance()
         let ccInv = ccInstance.inventory
         const onlyMap = new Map()
-        args.unshift(customData)
         let slotMap = ccInstance.getListenerMap(this.eventId)
-        if (!slotMap) return
-        slotMap.forEach((slotIndex, slotType) => {
-            let curItem = ccInv.getStackInSlot(slotIndex)
-            if (!curItem || curItem.isEmpty()) return
-            let itemId = String(curItem.id)
-            let strategyModel = OrganStrategyMap[itemId]
-            let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
-            if (onlyOrganStrategy && !onlyMap.has(itemId)) {
-                onlyMap.set(itemId, true)
-                onlyOrganStrategy.apply(null, args.concat(curItem, slotIndex, slotType))
-            }
-            let organStrategy = strategyModel.strategyMap[this.eventId]
-            if (organStrategy) {
-                organStrategy.apply(null, args.concat(curItem, slotIndex, slotType))
-            }
-        })
+        if (slotMap) {
+            slotMap.forEach((slotIndex, slotType) => {
+                let curItem = ccInv.getStackInSlot(slotIndex)
+                if (!curItem || curItem.isEmpty()) return
+                let itemId = String(curItem.id)
+                let strategyModel = OrganStrategyMap[itemId]
+                if (!strategyModel) return
+                let organEventStrategy = strategyModel.strategyMap[this.eventId]
+                if (!organEventStrategy) return
+                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                    onlyMap.set(itemId, true)
+                    organEventStrategy['only'].apply(null, args.concat(curItem, slotIndex, slotType))
+                }
+                if (organEventStrategy['default']) {
+                    organEventStrategy['default'].apply(null, args.concat(curItem, slotIndex, slotType))
+                }
+            })
+        }
+
+        this.defer.apply(null, args)
     }
 }

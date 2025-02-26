@@ -1,7 +1,7 @@
 // priority: 1900
 const MPMEventId = 'mpm_render'
 function OrganChestCavityUpdateStrategyModel() {
-    /**@type {Object<string, function(...any): void>} */
+    /**@type {Object<string, Object<string, function(...any)>: void>} */
     this.eventId = 'chest_cavity_update'
     this.mpmPartsStrategyMap = {}
     this.init = (args) => { }
@@ -11,7 +11,7 @@ function OrganChestCavityUpdateStrategyModel() {
 
 OrganChestCavityUpdateStrategyModel.prototype = {
     /**
-     * @param {Object<string, function(...any): void>} strategyMap
+     * @param {Object<string, Object<string, function(...any)>: void>} strategyMap
      */
     setStrategyMap: function (strategyMap) {
         this.strategyMap = strategyMap
@@ -58,7 +58,7 @@ OrganChestCavityUpdateStrategyModel.prototype = {
             let itemId = String(curItem.id)
             if (OrganStrategyMap[itemId]) {
                 let strategyModel = OrganStrategyMap[itemId]
-                strategyModel.relatedEventIds.forEach(eventId => {
+                Object.keys(strategyModel.strategyMap).forEach(eventId => {
                     ccInstance.addListener(eventId, i)
                 })
             }
@@ -69,28 +69,31 @@ OrganChestCavityUpdateStrategyModel.prototype = {
             let strategyModel = OrganStrategyMap[itemId]
             if (!strategyModel) continue
             let slotType = invTypeData.getSlotType(i)
-            let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
+
+            let organEventStrategy = strategyModel.strategyMap[this.eventId]
+            // 器官更新策略
+            if (organEventStrategy) {
+                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                    onlyMap.set(itemId, true)
+                    organEventStrategy['only'].apply(null, args.concat(curItem, i, slotType))
+                }
     
-            if (onlyOrganStrategy && !onlyMap.has(itemId)) {
-                onlyMap.set(itemId, true)
-                onlyOrganStrategy.apply(null, args.concat(curItem, i, slotType))
+                if (organEventStrategy['default']) {
+                    organEventStrategy['default'].apply(null, args.concat(curItem, i, slotType))
+                }
             }
-            let organStrategy = strategyModel.strategyMap[this.eventId]
-            if (organStrategy) {
-                organStrategy.apply(null, args.concat(curItem, i, slotType))
-            }
+
 
             // MPM策略
             if (needLoadMpm) {
-                let onlyMpmStrategy = strategyModel.onlyStrategyMap[MPMEventId]
-        
-                if (onlyMpmStrategy && !onlyMPMMap.has(itemId)) {
+                let mpmEventStrategy = strategyModel.strategyMap[MPMEventId]
+                if (!mpmEventStrategy) continue
+                if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
                     onlyMPMMap.set(itemId, true)
-                    onlyMpmStrategy.apply(null, args.concat(curItem, i, slotType))
+                    mpmEventStrategy['only'].apply(null, args.concat(curItem, i, slotType))
                 }
-                let mpmStrategy = strategyModel.strategyMap[MPMEventId]
-                if (mpmStrategy) {
-                    mpmStrategy.apply(null, args.concat(curItem, i, slotType))
+                if (mpmEventStrategy['default']) {
+                    mpmEventStrategy['default'].apply(null, args.concat(curItem, i, slotType))
                 }
             }
         }
@@ -122,10 +125,14 @@ function renderMpm(ccInstance, customData) {
         needUpdate = true
     } else {
         for (let i = 0; i < modelData.mpmParts.length; i++) {
-            if (!modelData.mpmParts[i].partId.equals(customData.mpmParts[i].partId)) {
-                needUpdate = true
-                break
+            let flag = true
+            for (let j = 0; j < customData.mpmParts.length; j++) {
+                if (modelData.mpmParts[i].partId.equals(customData.mpmParts[j].partId)) {
+                    flag = false
+                    break
+                }
             }
+            needUpdate = needUpdate || flag
         }
     }
     if (needUpdate) {

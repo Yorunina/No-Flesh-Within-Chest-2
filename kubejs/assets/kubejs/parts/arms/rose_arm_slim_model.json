@@ -1,0 +1,194 @@
+{
+  "name": "rose_arm",
+  "render_type": "bedrock",
+  "hidden_parts": [],
+  "parent": "kubejs:parts/arms/rose_arm_wide_model.json",
+  "render_data": {
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+      {
+        "description": {
+          "identifier": "geometry.steve",
+          "texture_width": 32,
+          "texture_height": 32,
+          "visible_bounds_width": 2,
+          "visible_bounds_height": 3.5,
+          "visible_bounds_offset": [
+            0,
+            1.25,
+            0
+          ]
+        },
+        "bones": [
+          {
+            "name": "left_arm",
+            "pivot": [
+              4.3,
+              22,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4,
+                  12,
+                  -2
+                ],
+                "size": [
+                  4,
+                  3,
+                  4
+                ],
+                "uv": [
+                  16,
+                  0
+                ]
+              },
+              {
+                "origin": [
+                  4,
+                  15,
+                  -2
+                ],
+                "size": [
+                  4,
+                  7,
+                  4
+                ],
+                "uv": [
+                  0,
+                  0
+                ]
+              },
+              {
+                "origin": [
+                  5,
+                  20,
+                  -2
+                ],
+                "size": [
+                  4,
+                  5,
+                  4
+                ],
+                "uv": [
+                  0,
+                  11
+                ]
+              }
+            ]
+          },
+          {
+            "name": "box",
+            "parent": "left_arm",
+            "pivot": [
+              6,
+              24,
+              0
+            ],
+            "rotation": [
+              -45,
+              0,
+              42.5
+            ]
+          },
+          {
+            "name": "bone",
+            "parent": "box",
+            "pivot": [
+              5.69305,
+              24.76019,
+              -0.76019
+            ],
+            "rotation": [
+              30,
+              0,
+              0
+            ],
+            "cubes": [
+              {
+                "origin": [
+                  4.19305,
+                  23.26019,
+                  -2.26019
+                ],
+                "size": [
+                  3,
+                  3,
+                  3
+                ],
+                "pivot": [
+                  5.69305,
+                  23.76019,
+                  -0.76019
+                ],
+                "rotation": [
+                  7.43656,
+                  -44.5119,
+                  -10.54684
+                ],
+                "uv": [
+                  16,
+                  7
+                ]
+              },
+              {
+                "origin": [
+                  4.19305,
+                  23.26019,
+                  -2.26019
+                ],
+                "size": [
+                  3,
+                  3,
+                  3
+                ],
+                "pivot": [
+                  5.69305,
+                  24.76019,
+                  -0.76019
+                ],
+                "rotation": [
+                  49.66569,
+                  4.20854,
+                  -9.07947
+                ],
+                "uv": [
+                  16,
+                  7
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "texture": "kubejs:textures/mpm/rose_arm.png",
+  "body_part": "arms",
+  "menu": "part.arms",
+  "animation_type": "arms",
+  "preview_rotation": 40,
+  "translate": [
+    0,
+    0,
+    0
+  ],
+  "scale": [
+    0.85,
+    1.03,
+    1.1
+  ],
+  "rotate_offset": [
+    0,
+    0,
+    0.0
+  ],
+  "rotate": [
+    0.0,
+    0,
+    0.0
+  ],
+  "can_use_player_skin": false,
+  "author": "野营组 浅色丸子"
+}

@@ -61,6 +61,4 @@ const OrganTagMap = {
     'chestcavity:salvageable': Text.gold(Text.translatable('tooltips.kubejs.tag.chestcavity:salvageable')),
     'kubejs:entity_tick_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick_only')),
     'kubejs:entity_tick': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick')),
-    'kubejs:spell_selection_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:spell_selection_only')),
-    'kubejs:spell_selection': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:spell_selection')),
 }

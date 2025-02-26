@@ -1,6 +1,6 @@
 // priority: 1900
 function SlotStrategyModel() {
-    /**@type {Object<string, function(...any): void>} */
+    /**@type {Object<string, Object<string, function(...any)>: void>} */
     this.strategyMap = {}
     this.init = (args) => { }
     this.defer = (args) => { }
@@ -9,7 +9,7 @@ function SlotStrategyModel() {
 
 SlotStrategyModel.prototype = {
     /**
-     * @param {Object<string, function(...any): void>} strategyMap
+     * @param {Object<string, Object<string, function(...any)>: void>} strategyMap
      */
     setStrategyMap: function (strategyMap) {
         this.strategyMap = strategyMap
@@ -20,8 +20,10 @@ SlotStrategyModel.prototype = {
      * @param {function(any[]): void} func
      */
     addStrategy: function (id, func) {
-        this.strategyMap[id] = func
-
+        if (!this.strategyMap[id]) {
+            this.strategyMap[id] = {}
+        }
+        this.strategyMap[id]['default'] = func
         return this
     },
     /**
@@ -29,7 +31,10 @@ SlotStrategyModel.prototype = {
      * @param {function(any[]): void} func
      */
     addOnlyStrategy: function (id, func) {
-        this.onlyStrategyMap[id] = func
+        if (!this.strategyMap[id]) {
+            this.strategyMap[id] = {}
+        }
+        this.strategyMap[id]['only'] = func
         return this
     },
     /**
@@ -55,13 +60,20 @@ SlotStrategyModel.prototype = {
         const ccInv = chestCavity.inventory
         const invTypeData = chestCavity.getInventoryTypeData()
         args.unshift(customData)
+        const onlyMap = new Map()
         this.init.apply(null, args)
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
             if (!curItem || curItem.isEmpty()) continue
             let slotType = invTypeData.getSlotType(i)
-            if (this.strategyMap[slotType]) {
-                this.strategyMap[slotType].apply(null, args.concat(curItem, i))
+            let strategyModel = this.strategyMap[slotType]
+            if (!strategyModel) continue
+            if (strategyModel['only'] && !onlyMap.has(itemId)) {
+                onlyMap.set(itemId, true)
+                strategyModel['only'].apply(null, args.concat(curItem, i))
+            }
+            if (strategyModel['default']) {
+                strategyModel['default'].apply(null, args.concat(curItem, i))
             }
         }
         this.defer.apply(null, args)

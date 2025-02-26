@@ -3,10 +3,17 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    let cc = player.chestCavityInstance
-    cc.getListenerMap('spell_selection').forEach((slotIndex, slotType) => {
-       player.tell(slotIndex) 
-    })
+    let test = {}
+    player.tell(test)
+    // let testData = new $CompoundTag()
+    // let testDataList = new $ListTag()
+    // let testSpellData = new $CompoundTag()
+    // testSpellData.putString('spellId','irons_spellbooks:gust')
+    // testSpellData.putInt('level', 1)
+    // testDataList.add(testSpellData)
+    // testData.put('spellList', testDataList)
+    // player.sendData('spell_selection_data', testData)
+    // player.tell(testData)
     // let res = ChestCavityUtils.setInventoryTypeData(player.getOffHandItem(), new ResourceLocation('kubejs:cc_inventory_types/rose.json'))
     // res.forEach((item) => {
     //     player.give(item)

@@ -1,13 +1,10 @@
 // priority: 2000
-const $EventIdType = 'item_right_clicked' || 'player_tick' || 'key_pressed' || 'entity_do_damage' || 'chest_cavity_update' || 'item_eaten' || 'block_broken' || 'entity_be_hurt' || 'player_enchant' || 'entity_loot' || 'chest_loot' || 'organ_take_off' || 'mpm_render' || 'entity_tick' || 'spell_selection'
+const $EventIdType = 'item_right_clicked' || 'player_tick' || 'key_pressed' || 'entity_do_damage' || 'chest_cavity_update' || 'item_eaten' || 'block_broken' || 'entity_be_hurt' || 'player_enchant' || 'entity_loot' || 'chest_loot' || 'organ_take_off' || 'mpm_render' || 'entity_tick'
 
 function OrganStrategyModel(itemId) {
     this.itemId = itemId
-    /** @type {Object.<string, Function>} */
+    /** @type {Object<string, Object<string, function(...any)>: void>} */
     this.strategyMap = {}
-    /** @type {Object.<string, Function>} */
-    this.onlyStrategyMap = {}
-    this.relatedEventIds = []
     return this
 }
 OrganStrategyModel.prototype = {
@@ -18,8 +15,10 @@ OrganStrategyModel.prototype = {
      * @returns 
      */
     addStrategy: function (eventId, func) {
-        this.strategyMap[eventId] = func
-        AddIfNotExist(this.relatedEventIds, eventId)
+        if (!this.strategyMap[eventId]) {
+            this.strategyMap[eventId] = {}
+        }
+        this.strategyMap[eventId]['default'] = func
         return this
     },
     /**
@@ -29,8 +28,10 @@ OrganStrategyModel.prototype = {
      * @returns 
      */
     addOnlyStrategy: function (eventId, func) {
-        this.onlyStrategyMap[eventId] = func
-        AddIfNotExist(this.relatedEventIds, eventId)
+        if (!this.strategyMap[eventId]) {
+            this.strategyMap[eventId] = {}
+        }
+        this.strategyMap[eventId]['only'] = func
         return this
     },
 }

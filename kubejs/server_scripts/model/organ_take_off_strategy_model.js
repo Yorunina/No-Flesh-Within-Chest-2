@@ -8,7 +8,7 @@ function OrganTakeOffStrategyModel() {
 
 OrganTakeOffStrategyModel.prototype = {
     /**
-     * @param {Object<string, function(...any): void>} strategyMap
+     * @param {Object<string, Object<string, Function: void>} strategyMap
      */
     setStrategyMap: function (strategyMap) {
         this.strategyMap = strategyMap
@@ -39,7 +39,7 @@ OrganTakeOffStrategyModel.prototype = {
         if (!oldccInv) return
         args.unshift(customData)
         this.init.apply(null, args)
-        let onlySet = new Set()
+        const onlyMap = new Map()
         let oldContainerSize = oldccInv.getContainerSize()
         for (let i = 0; i < oldContainerSize; i++) {
             let oldItem = oldccInv.getStackInSlot(i)
@@ -49,15 +49,14 @@ OrganTakeOffStrategyModel.prototype = {
             let itemId = oldItem.id
             let strategyModel = OrganStrategyMap[itemId]
             if (!strategyModel) continue
-            let onlyOrganStrategy = strategyModel.onlyStrategyMap[this.eventId]
-    
-            if (onlyOrganStrategy && !onlySet.has(itemId)) {
-                onlySet.add(itemId)
-                onlyOrganStrategy.apply(null, args.concat(oldItem, i))
+            let organEventStrategy = strategyModel.strategyMap[this.eventId]
+            if (!organEventStrategy) continue
+            if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                onlyMap.set(itemId, true)
+                organEventStrategy['only'].apply(null, args.concat(oldItem, i))
             }
-            let organStrategy = strategyModel.strategyMap[this.eventId]
-            if (organStrategy) {
-                organStrategy.apply(null, args.concat(oldItem, i))
+            if (organEventStrategy['default']) {
+                organEventStrategy['default'].apply(null, args.concat(oldItem, i))
             }
         }
 

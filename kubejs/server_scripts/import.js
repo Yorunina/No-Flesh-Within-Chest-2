@@ -19,19 +19,6 @@ const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attr
 
 const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageTypes')
 const $DamageSources = Java.loadClass('net.minecraft.world.damagesource.DamageSources')
-const $DefaultLunarEvents = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.DefaultLunarEvents')
-const $LunarEvent = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.LunarEvent')
-const $ImmutableMap = Java.loadClass('com.google.common.collect.ImmutableMap')
-const $LunarEventClientSettings = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.client.LunarEventClientSettings')
-const $ColorSettings = Java.loadClass('corgitaco.enhancedcelestials.api.client.ColorSettings')
-const $LunarTextComponents = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.LunarTextComponents')
-const $CustomTranslationTextComponent = Java.loadClass('corgitaco.enhancedcelestials.util.CustomTranslationTextComponent')
-const $LunarMobSettings = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.LunarMobSettings')
-const $LunarMobSpawnInfo = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.LunarMobSpawnInfo')
-const $MobSpawnSettings = Java.loadClass('net.minecraft.world.level.biome.MobSpawnSettings')
-const $FlipCondition = Java.loadClass('corgitaco.corgilib.entity.condition.FlipCondition')
-const $AnyCondition = Java.loadClass('corgitaco.corgilib.entity.condition.AnyCondition')
-const $DropSettings = Java.loadClass('corgitaco.enhancedcelestials.api.lunarevent.DropSettings')
 
 const $ModelData = Java.loadClass('noppes.mpm.ModelData')
 const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
@@ -42,5 +29,4 @@ const $ChestCavityScreenHandler = Java.loadClass('net.tigereye.chestcavity.ui.Ch
 const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.ChestCavityEntity')
 
 
-const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
-const $ArrowVolleySpell = Java.loadClass('io.redspace.ironsspellbooks.spells.evocation.ArrowVolleySpell')
+const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')

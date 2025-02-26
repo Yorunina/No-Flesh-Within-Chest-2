@@ -57,12 +57,13 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
  * @param {number} organIndex
  */
 function RoseQuartzMuscleMpmRender(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
-    if (rosyValue > 3) {
-        let mpmData = new MpmDataModel('kubejs:parts/arms/rose_arm_model.json').exportModelData()
-        customData.mpmParts.push(mpmData)
+    /**@type {Internal.ServerPlayer} */
+    let player = event.entity
+    let mpmData = new MpmDataModel('kubejs:parts/arms/rose_arm_slim_model.json').exportModelData()
+    if (player.profile.isLegacy()) {
+         mpmData = new MpmDataModel('kubejs:parts/arms/rose_arm_wide_model.json').exportModelData()
     }
+    customData.mpmParts.push(mpmData)
 }
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_muscle')
@@ -106,12 +107,8 @@ function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organInd
  * @param {number} organIndex
  */
 function RoseQuartzHeartMpmRender(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
-    if (rosyValue > 3) {
-        let mpmData = new MpmDataModel('kubejs:parts/body/rose_body_model.json').exportModelData()
-        customData.mpmParts.push(mpmData)
-    }
+    let mpmData = new MpmDataModel('kubejs:parts/body/rose_body_model.json').exportModelData()
+    customData.mpmParts.push(mpmData)
 }
 
 RegistryOrganStrategy(

@@ -28,8 +28,7 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
  * @param {string} slotType
  */
 function PrismarineCrownSpellSelection(customData, event, organItem, organIndex, slotType) {
-    event.entity.tell(1)
-    event.addSelectionOption(new $SpellData(new $ArrowVolleySpell(), 10), 'chestcavity', 100)
+    AddSelectionOption(event, customData, 'irons_spellbooks:gust', 1)
 }
 
 RegistryOrganStrategy(

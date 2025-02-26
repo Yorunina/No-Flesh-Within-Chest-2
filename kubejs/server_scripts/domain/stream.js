@@ -34,7 +34,11 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent',
 
 NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent', /** @param {Internal.SpellSelectionManager$SpellSelectionEvent} event */ event => {
     if (!event.entity) return
-    let customData = {}
+    if (event.entity.level.isClientSide()) return
+    if (!event.entity.isAlive()) return
+    let customData = {
+        OrganSpellMap: {}
+    }
     OrganSpellSelection(event, customData)
 })
 
