@@ -1,5 +1,4 @@
 // priority: 2000
-
 function OrganEventModel(eventId) {
     this.eventId = eventId
     this.init = (args) => { }
@@ -55,7 +54,7 @@ OrganEventModel.prototype = {
                 }
             })
         }
-
+        ExcretionSlot(customData, ccInstance)
         this.defer.apply(null, args)
     }
 }

@@ -3,8 +3,7 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    let test = {}
-    player.tell(test)
+    player.chestCavityInstance.setInventoryType(new ResourceLocation('kubejs:cc_inventory_types/test.json'))
     // let testData = new $CompoundTag()
     // let testDataList = new $ListTag()
     // let testSpellData = new $CompoundTag()

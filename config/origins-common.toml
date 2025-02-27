@@ -91,3 +91,66 @@
 		"origins:fragile" = true
 		"origins:phantomize_overlay" = true
 
+	[origins."origins_backgrounds:athlete"]
+		enabled = true
+		"origins_backgrounds:faster_speed" = true
+
+	[origins."origins_backgrounds:scribe"]
+		enabled = true
+		"origins_backgrounds:paperbacks" = true
+
+	[origins."origins_backgrounds:novice_mage"]
+		enabled = true
+		"origins_backgrounds:potion_food" = true
+
+	[origins."origins_backgrounds:fresh_face"]
+		enabled = true
+
+	[origins."origins_backgrounds:sailor"]
+		enabled = true
+		"origins_backgrounds:attack_in_ocean" = true
+
+	[origins."origins_backgrounds:coalminer"]
+		enabled = true
+		"origins_backgrounds:ore_harvesting" = true
+
+	[origins."origins_backgrounds:cultist"]
+		enabled = true
+		"origins_backgrounds:sacrifice" = true
+
+	[origins."origins_backgrounds:guard"]
+		enabled = true
+		"origins_backgrounds:shield_prowess" = true
+
+	[origins."origins_backgrounds:farmhand"]
+		enabled = true
+		"origins_backgrounds:trusty_hoe" = true
+
+	[origins."origins_backgrounds:soldier"]
+		enabled = true
+		"origins_backgrounds:swordsmanship" = true
+
+	[origins."origins_backgrounds:fisher"]
+		enabled = true
+		"origins_backgrounds:cooked_fishes" = true
+
+	[origins."origins_backgrounds:haunted"]
+		enabled = true
+		"origins_backgrounds:hello_darkness" = true
+
+	[origins."origins_backgrounds:pirate"]
+		enabled = true
+		"origins_backgrounds:eyepatch" = true
+
+	[origins."origins_backgrounds:acolyte"]
+		enabled = true
+		"origins_backgrounds:improved_healing" = true
+
+	[origins."origins_backgrounds:cryptkeeper"]
+		enabled = true
+		"origins_backgrounds:graves" = true
+
+	[origins."origins_backgrounds:retainer"]
+		enabled = true
+		"origins_backgrounds:legacy_sword" = true
+

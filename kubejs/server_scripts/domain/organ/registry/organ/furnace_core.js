@@ -13,8 +13,9 @@ const FurnaceCoreTempAttackUpUUID = UUID.fromString('858D6175-7E75-41BC-9E70-A42
  * @param {Internal.OpenedEntityTickJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function FurnaceCoreEntityTick(customData, event, organItem, organIndex) {
+function FurnaceCoreEntityTick(customData, event, organItem, organIndex, slotType) {
     let attributeInstance = event.entity.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
     if (organItem.getDamageValue() + 1 <= organItem.getMaxDamage()) {
@@ -44,15 +45,16 @@ function FurnaceCoreEntityTick(customData, event, organItem, organIndex) {
  * @param {Internal.LivingHurtEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function FurnaceCoreDoDamage(customData, event, organItem, organIndex) {
+function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     if (!sourceEntity.isAlive()) return
     if (organItem.getDamageValue() > 3) {
         organItem.setDamageValue(organItem.getDamageValue() - 3)
     } else {
-        sourceEntity.chestCavityInstance.inventory.setItemNoUpdate(organIndex, Item.of('kubejs:burning_heart'))
+        SetOrganWithoutUpdate(customData, sourceEntity.chestCavityInstance, Item.of('kubejs:burning_heart'), organIndex, slotType)
     }
 }
 
@@ -62,8 +64,9 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex) {
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
+ * @param {string} slotType
  */
-function FurnaceCoreTakeOff(customData, event, organItem, organIndex) {
+function FurnaceCoreTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
     let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
@@ -80,8 +83,6 @@ RegistryOrganStrategy(
         .addOnlyStrategy('entity_do_damage', FurnaceCoreDoDamage)
 )
 
-
-
 /**
  * @param {any} customData
  * @param {Internal.OpenedEntityTickJS} event 
@@ -97,7 +98,7 @@ function BurningCoreEntityTick(customData, event, organItem, organIndex, slotTyp
     } else {
         let replaceItem = Item.of('kubejs:furnace_core')
         replaceItem.setDamageValue(100)
-        event.chestCavity.inventory.setItemNoUpdate(organIndex, replaceItem)
+        SetOrganWithoutUpdate(customData, event.chestCavity, replaceItem, organIndex, slotType)
     }
 }
 

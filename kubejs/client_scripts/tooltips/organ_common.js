@@ -14,14 +14,28 @@ ItemEvents.tooltip(tooltip => {
             lineNum = AddForTextLines(text, [Text.of('🔎  ').append(JoinWithSeparator('   ', organTagTooltipsList))], lineNum)
         }
 
-        let organData = $ChestCavityUtil.lookupOrgan(item, null)
         let scoreTooltipsList = []
-        organData.organScores.forEach((score, value) => {
-            let roundValue = RoundFix(value, 2)
-            let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).getString()
-            let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
-            scoreTooltipsList.push(scoreTooltips)
-        })
+        if (item.hasNBT() && item.getNbt().contains('organData')) {
+            let organData = item.getNbt().getCompound('organData')
+            organData.allKeys.forEach((score) => {
+                let value = organData[score]
+                let roundValue = RoundFix(value, 2)
+                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score}`).getString()
+                let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
+                scoreTooltipsList.push(scoreTooltips)
+            })
+        } else {
+            let organData = $ChestCavityUtil.lookupOrgan(item, null)
+            if (organData) {
+                organData.organScores.forEach((score, value) => {
+                    let roundValue = RoundFix(value, 2)
+                    let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).getString()
+                    let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
+                    scoreTooltipsList.push(scoreTooltips)
+                })
+            }
+        }
+
 
         let customToolTips = OrganTooltipRegistryMap[item.id] ? OrganTooltipRegistryMap[item.id] : new MultiStateTooltip(item.id)
 
@@ -78,15 +92,27 @@ ItemEvents.tooltip(tooltip => {
         if (!item.hasTag('kubejs:pseudo_organ')) return
 
         let lineNum = 1
-
-        let organData = $ChestCavityUtil.lookupOrgan(item, null)
         let scoreTooltipsList = []
-        organData.organScores.forEach((score, value) => {
-            let roundValue = RoundFix(value, 2)
-            let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).getString()
-            let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
-            scoreTooltipsList.push(scoreTooltips)
-        })
+        if (item.hasNBT() && item.getNbt().contains('organData')) {
+            let organData = item.getNbt().getCompound('organData')
+            organData.allKeys.forEach((score) => {
+                let value = organData[key]
+                let roundValue = RoundFix(value, 2)
+                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score}`).getString()
+                let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
+                scoreTooltipsList.push(scoreTooltips)
+            })
+        } else {
+            let organData = $ChestCavityUtil.lookupOrgan(item, null)
+            if (organData) {
+                organData.organScores.forEach((score, value) => {
+                    let roundValue = RoundFix(value, 2)
+                    let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).getString()
+                    let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
+                    scoreTooltipsList.push(scoreTooltips)
+                })
+            }
+        }
 
         if (tooltip.isShift()) {
             if (scoreTooltipsList.length > 0) {
