@@ -3,7 +3,9 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    player.chestCavityInstance.setInventoryType(new ResourceLocation('kubejs:cc_inventory_types/test.json'))
+    let pos = GenDungeonIslands(event.level)
+    player.tell(pos)
+
     // let testData = new $CompoundTag()
     // let testDataList = new $ListTag()
     // let testSpellData = new $CompoundTag()

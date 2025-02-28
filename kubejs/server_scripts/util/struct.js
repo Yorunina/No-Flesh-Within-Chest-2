@@ -5,19 +5,9 @@ const DUNGEON_DIM = new ResourceLocation('kubejs:dungeon')
 // todo 确认是否需要如此大的范围
 const ISLAND_SIDE_LENGTH = 48
 const ISLAND_BUILD_INTERVAL = 128
-const ISLAND_BUILD_RANDOM_OFFSET = 48
+const ISLAND_BUILD_RANDOM_OFFSET = 24
 
 const MAINISLAND_TEMPLATE_LIST = ['kubejs:test']
-const SUBISLAND_TEMPLATE_LIST = []
-const BUILDPOS_OFFSET = [
-    new Vec3i(-ISLAND_SIDE_LENGTH, 0, ISLAND_SIDE_LENGTH),
-    new Vec3i(ISLAND_SIDE_LENGTH, 0, ISLAND_SIDE_LENGTH),
-    new Vec3i(ISLAND_SIDE_LENGTH, 0, -ISLAND_SIDE_LENGTH),
-    new Vec3i(-ISLAND_SIDE_LENGTH, 0, -ISLAND_SIDE_LENGTH),
-    new Vec3i(ISLAND_SIDE_LENGTH, 0, 0),
-    new Vec3i(-ISLAND_SIDE_LENGTH, 0, 0),
-    new Vec3i(0, 0, ISLAND_SIDE_LENGTH),
-    new Vec3i(0, 0, -ISLAND_SIDE_LENGTH)]
 
 /**
  * 获取某维度的某坐标对应的Chunk信息
@@ -49,6 +39,7 @@ function GetChunkFromMap(level, chunkMap, pos) {
 
 /**
  * @param {Internal.Level} level 
+ * @return {BlockPos}
  */
 function GenDungeonIslands(level) {
     let minecraftServer = level.getServer()
@@ -61,6 +52,7 @@ function GenDungeonIslands(level) {
     
     console.log('Generate Dungeon Island', dungeonNum)
     let buildOffset = calculateStructureCenterPos(dungeonNum)
+    console.log(buildOffset)
     let buildX = buildOffset.x * ISLAND_BUILD_INTERVAL + Math.random() * ISLAND_BUILD_RANDOM_OFFSET
     let buildZ = buildOffset.z * ISLAND_BUILD_INTERVAL + Math.random() * ISLAND_BUILD_RANDOM_OFFSET
     console.log('buildX:', buildX, 'buildZ:', buildZ)
@@ -76,10 +68,11 @@ function GenDungeonIslands(level) {
     // 主岛
     let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
     mainIslandTemplate.placeInWorld(dungeonLevel, mainIslandBuildPos, mainIslandSizeRange, placementSettings, dungeonLevel.getRandom(), 2)
-    HandleDataBlock(mainIslandTemplate, mainIslandBuildPos, placementSettings)
+    HandleDataBlock(level, mainIslandTemplate, mainIslandBuildPos, placementSettings)
 
 
     dungeonLevel.persistentData.putInt('islandNum', dungeonNum + 1)
+    return mainIslandBuildPos
 }
 
 /**
@@ -99,17 +92,23 @@ function ConvertBlockPos2Vec3d(blockPos) {
 }
 
 /**
+ * @param {Internal.Level} level
  * @param {Internal.StructureTemplate} template 
  * @param {BlockPos} position
  * @param {Internal.StructurePlaceSettings} placementSettings
  */
-function HandleDataBlock(template, position, placementSettings) {
+function HandleDataBlock(level, template, position, placementSettings) {
     // 结构行为
     template.filterBlocks(position, placementSettings, Blocks.STRUCTURE_BLOCK).forEach(block => {
         if (block.nbt()) {
             let structureMode = $StructureMode.valueOf(block.nbt().getString('mode'))
             if (structureMode == $StructureMode.DATA) {
-
+                let nbt = ConvertPos2Nbt(position.above(10))
+                let nextLevelBlock = Block.getBlock('kubejs:locker_block').defaultBlockState()
+                level.setBlock(block.pos(), nextLevelBlock, 3)
+                let spawnedBlock = level.getBlock(block.pos())
+                spawnedBlock.entity.persistentData.put('SpawnPos', nbt)
+                spawnedBlock.entity.setChanged()
             }
         }
         return
@@ -159,13 +158,11 @@ const Z_POINT_MODIFIER = [-1, 1, 1, -1]
 function calculateStructureCenterPos(n) {
     if (n == 0) return {x: 0, z: 0}
     let rad = Math.floor((Math.pow(n, 1 / 2) + 1) / 2)
-
     let perimeter = 8 * rad
     let sideLength = 2 * rad + 1
     let left = perimeter - Math.pow(sideLength, 2) + n
-
-    let sideNum = Math.floor(left / sideLength)
-    let moveNum = left % sideLength
+    let sideNum = Math.floor(left / (sideLength - 1))
+    let moveNum = left - (sideLength - 1) * sideNum
     let x = rad * X_POINT_MODIFIER[sideNum] + X_SIDE_MODIFIER[sideNum] * moveNum
     let z = rad * Z_POINT_MODIFIER[sideNum] + Z_SIDE_MODIFIER[sideNum] * moveNum
     return {x: x, z: z}
