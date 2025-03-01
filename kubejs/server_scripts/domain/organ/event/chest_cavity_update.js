@@ -1,11 +1,4 @@
 // priority: 801
-/**
- * @typedef {Object} OrganChestCavityUpdateStrategyCustomData
- * @property {AttributeManagerModel} attackDamage
- * @property {AttributeManagerModel} maxHealth
- * @property {AttributeManagerModel} armor
- * @property {Internal.MpmPartData[]} mpmParts
- */
 
 const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
     .setInit(

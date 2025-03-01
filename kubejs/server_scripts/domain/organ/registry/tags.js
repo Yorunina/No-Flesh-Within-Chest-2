@@ -2,7 +2,7 @@
 const EventId2TagId = {
     'item_right_clicked': 'kubejs:item_right_clicked',
     'player_tick': 'kubejs:player_tick',
-    'key_pressed': 'kubejs:key_pressed',
+    'key_active': 'kubejs:key_active',
     'entity_do_damage': 'kubejs:entity_do_damage',
     'chest_cavity_update': 'kubejs:chest_cavity_update',
     'item_eaten': 'kubejs:item_eaten',

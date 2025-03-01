@@ -46,6 +46,8 @@ OrganChestCavityUpdateStrategyModel.prototype = {
      */
     run: function (ccInstance, args, customData) {
         const ccInv = ccInstance.inventory
+        customData.localDefer = []
+
         args.unshift(customData)
         this.init.apply(null, args)
         let needLoadMpm = ccInstance.owner.isPlayer() && IsLoadedMPM
@@ -103,6 +105,9 @@ OrganChestCavityUpdateStrategyModel.prototype = {
             renderMpm(ccInstance, customData)
         }
 
+        customData.localDefer.forEach((func) => {
+            func.apply(null, args) 
+        })
         this.defer.apply(null, args)
         return
     },

@@ -2,7 +2,7 @@
 const OrganEntityTickEvent = new OrganEventModel('entity_tick')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.OpenedEntityTickJS} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganEntityTickEvent = new OrganEventModel('entity_tick')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.OpenedEntityTickJS} event
          */
         (customData, event) => {

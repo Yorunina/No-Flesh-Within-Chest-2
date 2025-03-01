@@ -27,7 +27,7 @@ const TumorAttriBute = [
 ]
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex

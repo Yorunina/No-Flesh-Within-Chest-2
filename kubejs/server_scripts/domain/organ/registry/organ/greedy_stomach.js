@@ -4,7 +4,7 @@ RegistryOrgan('kubejs:greedy_stomach')
     .addScore('chestcavity:health', 1)
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.FoodEatenEventJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex

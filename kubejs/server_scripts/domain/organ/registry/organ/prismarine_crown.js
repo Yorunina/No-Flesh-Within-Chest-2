@@ -6,7 +6,7 @@ RegistryOrgan('kubejs:prismarine_crown')
 
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -21,7 +21,7 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
     })
 }
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex

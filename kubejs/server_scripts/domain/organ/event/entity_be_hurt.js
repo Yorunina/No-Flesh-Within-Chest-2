@@ -2,7 +2,7 @@
 const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.LivingHurtEvent} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.LivingHurtEvent} event
          */
         (customData, event) => {

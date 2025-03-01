@@ -2,7 +2,7 @@
 SlotChestCavityUpdateStrategy.addStrategy('high_adaptability', HighAdaptabilitySlot)
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex

@@ -2,7 +2,7 @@
 const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event
          */
         (customData, event) => {
@@ -35,7 +35,7 @@ const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
 /**
  * 
  * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event 
- * @param {any} customData 
+ * @param {OrganEventCustomData} customData 
  */
 // todo
 function OrganSpellSelection(event, customData) {

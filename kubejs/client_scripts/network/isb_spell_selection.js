@@ -24,4 +24,3 @@ NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManage
         event.addSelectionOption(element, 'chestcavity', 0)
     })
 })
-

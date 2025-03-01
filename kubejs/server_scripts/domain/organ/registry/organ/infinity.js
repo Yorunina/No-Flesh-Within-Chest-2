@@ -14,7 +14,7 @@ RegistryOrgan('kubejs:infinity_force')
 
 const InfinityBeatsTempAttackUpUUID = UUID.fromString('686F8285-3FBF-4A22-9F2A-B1D6BA452BA8')
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.LivingHurtEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -41,7 +41,7 @@ function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex, s
 }
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -79,7 +79,7 @@ function InfinityForceChestCavityUpdate(customData, event, organItem, organIndex
 
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.LootContextJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex

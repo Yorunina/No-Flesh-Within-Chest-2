@@ -1,6 +1,8 @@
 {
     "_comment.base_info": "基础信息",
     "kubejs.gameinfo.modpack.name": "No Flesh Within Chest",
+    "kubejs.expansion_info.offical.description": "官方扩展包 - 扩展包基础支持",
+    "kubejs.expansion_info.offical.name": "官方扩展包",
     
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
     "tooltips.kubejs.score_tag.chestcavity:filtration": "血液过滤效率",
@@ -145,7 +147,8 @@
     "tooltips.kubejs.tag.kubejs:item_right_clicked": "右键点击",
     "tooltips.kubejs.tag.kubejs:player_tick_only": "唯一玩家刻",
     "tooltips.kubejs.tag.kubejs:player_tick": "玩家刻",
-    "tooltips.kubejs.tag.kubejs:key_pressed": "按键激活",
+    "tooltips.kubejs.tag.kubejs:key_active": "按键激活",
+    "tooltips.kubejs.tag.kubejs:key_active_only": "唯一按键激活",
     "tooltips.kubejs.tag.kubejs:entity_do_damage_only": "唯一伤害",
     "tooltips.kubejs.tag.kubejs:entity_do_damage": "伤害",
     "tooltips.kubejs.tag.kubejs:chest_cavity_update": "胸腔更新",
@@ -236,12 +239,16 @@
     "slot_type.kubejs.rosy_explosion.1": "    ■ 瑰红爆发",
 
 
+    "_comment.status_msg": "物品",
     "status_msg.kubejs.chestopener.fail.obstructed": "无法对穿戴护甲的目标开胸",
     "status_msg.kubejs.chestopener.fail.healthy": "无法对过于健康的目标开胸",
-    "item_name.kubejs.glass_vial.suffix": "的血清",
+    "status_msg.kubejs.warden_core.key_active.cooldown": "%s 冷却时间：%s 秒",
 
+    
     "_comment.item": "物品",
     "item.chestcavity.surgical_box": "手术盒",
+    "item_name.kubejs.glass_vial.suffix": "的血清",
+
 
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
@@ -249,11 +256,9 @@
     "gui.chestcavity.surgical_box.title": "手术盒内部空间",
 
     "_comment.msg": "消息",
-    "msg.kubejs.expansion_content.has_expansion_content": "No Flesh Within Chest 提醒：\n检测到游戏中存在拓展包。如果游戏出现了问题，请先检测是否为拓展包的问题。\n拓展包列表：",
-    "msg.kubejs.expansion_content.yes": "§a是§r",
-    "msg.kubejs.expansion_content.no": "§c否§r",
-    "msg.kubejs.expansion_content.modid": "拓展包ID：%s",
-    "msg.kubejs.expansion_content.description": "拓展包描述：%s",
-    "msg.kubejs.expansion_content.is_official": "是否来自GoCampingTeam官方：%s",
-    "msg.kubejs.expansion_content.is_trusted": "是否受GoCampingTeam官方信任：%s"
+    "msg.kubejs.expansion_content.load_expansion.1": "No Flesh Within Chest已加载 %s 份拓展包。",
+    "msg.kubejs.expansion_content.load_expansion.2": "点击此处以查看已安装的扩展包列表。",
+    "msg.kubejs.expansion_content.list.1": "        - ",
+    "msg.kubejs.expansion_content.list.2": "- 扩展包ID：%s \n- 扩展包版本：%s \n- 扩展包作者：%s \n- 扩展包描述：%s"
+
 }

@@ -2,7 +2,7 @@
 const OrganItemRightClickedEvent = new OrganEventModel('item_right_clicked')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.ItemClickedEventJS} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganItemRightClickedEvent = new OrganEventModel('item_right_clicked')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.ItemClickedEventJS} event
          */
         (customData, event) => {

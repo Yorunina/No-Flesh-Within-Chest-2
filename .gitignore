@@ -27,3 +27,11 @@ TrashSlotSaveState.json
 usercache.json
 usernamecache.json
 XaeroWaypoints*
+config/worldedit/
+config/jei/
+config\embeddium*
+minemenu/
+config/inventoryprofilesnext/
+!config/inventoryprofilesnext/inventoryprofiles.json
+!config/inventoryprofilesnext/integrationHints
+config/oculus*

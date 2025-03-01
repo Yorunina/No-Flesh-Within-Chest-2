@@ -1,6 +1,6 @@
 // priority: 500
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.ChestCavityInstance} ccInstance 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex\
@@ -19,7 +19,7 @@ function SetOrganWithoutUpdate(customData, ccInstance, organItem, organIndex, sl
 
 
 /**
- * @param {any} customData 
+ * @param {OrganEventCustomData} customData 
  * @param {Internal.ChestCavityInstance} ccInstance 
  * @returns 
  */

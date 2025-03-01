@@ -54,7 +54,7 @@ SlotStrategyModel.prototype = {
     /**
      * @param {Internal.ChestCavityInstance} chestCavity
      * @param {any[]} args 
-     * @param {any} customData
+     * @param {OrganEventCustomData} customData
      */
     run: function (chestCavity, args, customData) {
         const ccInv = chestCavity.inventory

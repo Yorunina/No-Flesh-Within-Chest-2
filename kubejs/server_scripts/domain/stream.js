@@ -15,9 +15,6 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', /
 })
 
 
-
-
-
 NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', /** @param {Internal.LivingDamageEvent} event */ event => {
     if (!event.entity) return
     let customData = {

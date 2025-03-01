@@ -3,8 +3,8 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    let pos = GenDungeonIslands(event.level)
-    player.tell(pos)
+    // let pos = GenDungeonIslands(event.level)
+    player.tell(player.offHandItem.serializeNBT())
 
     // let testData = new $CompoundTag()
     // let testDataList = new $ListTag()

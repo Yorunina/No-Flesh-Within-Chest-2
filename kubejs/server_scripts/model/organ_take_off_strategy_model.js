@@ -31,7 +31,7 @@ OrganTakeOffStrategyModel.prototype = {
     /**
      * @param {Internal.ChestCavityInstance} ccInstance
      * @param {any[]} args 
-     * @param {any} customData
+     * @param {OrganEventCustomData} customData
      */
     run: function (ccInstance, args, customData) {
         const ccInv = ccInstance.inventory

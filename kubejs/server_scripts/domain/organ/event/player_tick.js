@@ -2,7 +2,7 @@
 const OrganPlayerTickEvent = new OrganEventModel('player_tick')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.SimplePlayerEventJS} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganPlayerTickEvent = new OrganEventModel('player_tick')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.SimplePlayerEventJS} event
          */
         (customData, event) => {

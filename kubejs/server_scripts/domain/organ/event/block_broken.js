@@ -2,7 +2,7 @@
 const OrganBlockBrokenEvent = new OrganEventModel('block_broken')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.BlockBrokenEventJS} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganBlockBrokenEvent = new OrganEventModel('block_broken')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.BlockBrokenEventJS} event
          */
         (customData, event) => {

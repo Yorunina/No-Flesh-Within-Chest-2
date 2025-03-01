@@ -9,7 +9,7 @@ RegistryOrgan('kubejs:burning_heart')
 
 const FurnaceCoreTempAttackUpUUID = UUID.fromString('858D6175-7E75-41BC-9E70-A42AAFE7A337')
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -41,7 +41,7 @@ function FurnaceCoreEntityTick(customData, event, organItem, organIndex, slotTyp
 }
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.LivingHurtEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -60,7 +60,7 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
 
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -84,7 +84,7 @@ RegistryOrganStrategy(
 )
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -104,7 +104,7 @@ function BurningCoreEntityTick(customData, event, organItem, organIndex, slotTyp
 
 
 /**
- * @param {any} customData
+ * @param {OrganEventCustomData} customData
  * @param {Internal.LivingHurtEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex

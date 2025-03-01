@@ -8,6 +8,7 @@ const $ChunkStatus = Java.loadClass('net.minecraft.world.level.chunk.ChunkStatus
 const $PalettedContainer = Java.loadClass('net.minecraft.world.level.chunk.PalettedContainer')
 const $StructureMode = Java.loadClass('net.minecraft.world.level.block.state.properties.StructureMode')
 const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
+const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
 
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')

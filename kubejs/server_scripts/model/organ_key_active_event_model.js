@@ -1,11 +1,11 @@
 // priority: 2000
-function OrganEventModel(eventId) {
+function OrganKeyActiveEventModel(eventId) {
     this.eventId = eventId
     this.init = (args) => { }
     this.defer = (args) => { }
     return this
 }
-OrganEventModel.prototype = {
+OrganKeyActiveEventModel.prototype = {
     /**
      * @param {function(...any): void} data
      */
@@ -22,10 +22,11 @@ OrganEventModel.prototype = {
     },
     /**
      * @param {Internal.Entity} entity
+     * @param {Internal.ItemStack} item
      * @param {OrganEventCustomData} customData
      * @param {any[]} args 
      */
-    run: function (entity, customData, args) {
+    run: function (entity, item, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
         customData.localDefer = []
 
@@ -35,13 +36,15 @@ OrganEventModel.prototype = {
         let ccEntity = optional.get()
         let ccInstance = ccEntity.getChestCavityInstance()
         let ccInv = ccInstance.inventory
+        let itemId = String(item.id)
         const onlyMap = new Map()
         let slotMap = ccInstance.getListenerMap(this.eventId)
+        console.log(itemId)
         if (slotMap) {
             slotMap.forEach((slotIndex, slotType) => {
                 let curItem = ccInv.getStackInSlot(slotIndex)
-                if (!curItem || curItem.isEmpty()) return
-                let itemId = String(curItem.id)
+                if (!curItem || curItem.isEmpty() || curItem.id != itemId) return
+                console.log(slotIndex)
                 let strategyModel = OrganStrategyMap[itemId]
                 if (!strategyModel) return
                 let organEventStrategy = strategyModel.strategyMap[this.eventId]
@@ -56,7 +59,7 @@ OrganEventModel.prototype = {
             })
         }
         ExcretionSlot(customData, ccInstance)
-        
+
         customData.localDefer.forEach((func) => {
             func.apply(null, args) 
         })

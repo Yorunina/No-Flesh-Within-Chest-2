@@ -2,7 +2,7 @@
 const OrganPlayerEnchantEvent = new OrganEventModel('player_enchant')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.LootContextJS} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganPlayerEnchantEvent = new OrganEventModel('player_enchant')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.LootContextJS} event
          */
         (customData, event) => {

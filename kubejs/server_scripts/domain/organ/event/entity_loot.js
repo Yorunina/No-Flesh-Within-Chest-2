@@ -2,7 +2,7 @@
 const OrganEntityLootEvent = new OrganEventModel('entity_loot')
     .setInit(
         /** 
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.FoodEatenEventJS} event
          */
         (customData, event) => {
@@ -10,7 +10,7 @@ const OrganEntityLootEvent = new OrganEventModel('entity_loot')
     )
     .setDefer(
         /**
-         * @param {any} customData
+         * @param {OrganEventCustomData} customData
          * @param {Internal.FoodEatenEventJS} event
          */
         (customData, event) => {
