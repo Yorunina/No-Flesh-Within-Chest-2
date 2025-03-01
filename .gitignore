@@ -1,0 +1,29 @@
+.vscode/
+crash-reports/
+defaultconfigs/
+emi.json
+fancymenu_data
+fancymenu_setups
+keybinding presets/
+kubejs/jsconfig.json
+lightspeed-cache/
+local/
+logs/
+modernfix/
+moreplayermodels/
+No Flesh Within Chest 1.20.1-natives/
+options.txt
+patchouli_data.json
+PCL/
+quests_structures
+resourcepacks/
+rhino.local.properties
+saves/
+schematics
+screenshots/
+servers*
+shaderpacks/
+TrashSlotSaveState.json
+usercache.json
+usernamecache.json
+XaeroWaypoints*

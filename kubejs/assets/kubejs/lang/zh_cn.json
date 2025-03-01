@@ -246,5 +246,14 @@
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
 	"gui.kubejs.title.chestcavity": "胸腔",
-    "gui.chestcavity.surgical_box.title": "手术盒内部空间"
+    "gui.chestcavity.surgical_box.title": "手术盒内部空间",
+
+    "_comment.msg": "消息",
+    "msg.kubejs.expansion_content.has_expansion_content": "No Flesh Within Chest 提醒：\n检测到游戏中存在拓展包。如果游戏出现了问题，请先检测是否为拓展包的问题。\n拓展包列表：",
+    "msg.kubejs.expansion_content.yes": "§a是§r",
+    "msg.kubejs.expansion_content.no": "§c否§r",
+    "msg.kubejs.expansion_content.modid": "拓展包ID：%s",
+    "msg.kubejs.expansion_content.description": "拓展包描述：%s",
+    "msg.kubejs.expansion_content.is_official": "是否来自GoCampingTeam官方：%s",
+    "msg.kubejs.expansion_content.is_trusted": "是否受GoCampingTeam官方信任：%s"
 }
