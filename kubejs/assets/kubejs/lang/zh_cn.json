@@ -1,7 +1,6 @@
 {
     "_comment.base_info": "基础信息",
     "kubejs.gameinfo.modpack.name": "No Flesh Within Chest",
-    
     "_comment.organ_score_tooltips": "器官 Score Tooltips",
     "tooltips.kubejs.score_tag.chestcavity:filtration": "血液过滤效率",
     "tooltips.kubejs.score_tag.chestcavity:breath_recovery": "呼吸效率",
@@ -107,7 +106,6 @@
     "tooltips.kubejs.score_tag.hover.chestcavity:rotgut": "能够使你可以食用腐肉",
     "tooltips.kubejs.score_tag.hover.chestcavity:ease_of_access": "能使该生物满血被开胸，且不会因此损失血量",
     "tooltips.kubejs.score_tag.hover.kubejs:rosy": "玫瑰化程度能够表示你对玫瑰系列器官的能力的发挥程度",
-
     "_comment.organ_tag_tooltips": "器官 Tag Tooltips",
     "tooltips.kubejs.tag.kubejs:appendix": "阑尾",
     "tooltips.kubejs.tag.kubejs:heart": "心脏",
@@ -164,7 +162,6 @@
     "tooltips.kubejs.tag.kubejs:chest_loot_only": "唯一箱子战利品",
     "tooltips.kubejs.tag.kubejs:entity_tick": "实体刻",
     "tooltips.kubejs.tag.kubejs:entity_tick_only": "唯一实体刻",
-    
     "_comment.multi_state_tooltips": "多态Tooltips",
     "tooltips.kubejs.multi_state.shift.1": "§6·§r 按住 §e§l[ shift ]§r 查看器官基础属性",
     "tooltips.kubejs.multi_state.ctrl.1": "§6·§r 按住 §e§l[ ctrl ]§r 查看槽位激活效果",
@@ -172,19 +169,15 @@
     "tooltips.kubejs.multi_state.shift_holding.1": "§7▼ 按住 §8§l[ shift ]§r§7 查看器官基础属性",
     "tooltips.kubejs.multi_state.ctrl_holding.1": "§7▼ 按住 §8§l[ ctrl ]§r§7 查看槽位激活效果",
     "tooltips.kubejs.multi_state.alt_holding.1": "§7▼ 按住 §8§l[ alt ]§r§7 查看器官特殊效果",
-
     "tooltips.kubejs.pseudo_organ.shift.1": "§7· 按住 §8§l[ shift ]§r §7查看潜在器官属性",
     "tooltips.kubejs.pseudo_organ.shift_holding.1": "§7▼ 按住 §8§l[ shift ]§r §7查看潜在器官属性",
-
     "_comment.tool_tooltips": "工具Tooltips",
     "tooltips.kubejs.glass_vial.1": "§6·§r 按住 §e§l[ shift ]§r 查看血清样本信息",
     "tooltips.kubejs.glass_vial.2": "§7▼ 按住 §8§l[ shift ]§r§7 查看血清样本信息",
     "tooltips.kubejs.glass_vial.3": "    §6·§r %s : %s",
     "tooltips.kubejs.glass_vial.4": "§6·§r %s : %s",
-
     "_comment.organ_tooltips": "器官 Tooltips",
     "tooltips.kubejs.common_organ.1": "    §6★§r 每 %s 个该器官提供 %s 点 %s ",
-
     "_comment.organ": "器官",
     "item.kubejs.greedy_stomach": "贪婪之胃",
     "tooltips.kubejs.greedy_stomach.default.1": "它贪婪地等待你的进食",
@@ -223,7 +216,6 @@
     "tooltips.kubejs.rose_quartz_liver.default.1": "温柔若玉，坚韧若冰",
     "tooltips.kubejs.rose_quartz_liver.ctrl.1": "        -  位于此类槽位将会累积 %s 点§c临时玫瑰化§r",
     "tooltips.kubejs.rose_quartz_liver.ctrl.2": "        -  位于此类槽位将会将消耗所有 §c临时玫瑰化§r，以提高 §c玫瑰化§c §6临时玫瑰化 / 2§6 点",
-
     "slot_type.chestcavity.rosy_explosion.name": "瑰红爆发",
     "slot_type.chestcavity.rosy_explosion.desc": " ■ 可用于激活§c玫瑰类§r器官，以在较少的槽位下爆发出远超常规的能力。",
     "slot_type.chestcavity.default.name": "默认槽",
@@ -234,17 +226,21 @@
     "slot_type.kubejs.excretion_slot.1": "    ■ 排泄槽",
     "slot_type.kubejs.high_adaptability.1": "    ■ 高适应槽",
     "slot_type.kubejs.rosy_explosion.1": "    ■ 瑰红爆发",
-
-
     "status_msg.kubejs.chestopener.fail.obstructed": "无法对穿戴护甲的目标开胸",
     "status_msg.kubejs.chestopener.fail.healthy": "无法对过于健康的目标开胸",
     "item_name.kubejs.glass_vial.suffix": "的血清",
-
     "_comment.item": "物品",
     "item.chestcavity.surgical_box": "手术盒",
-
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
-	"gui.kubejs.title.chestcavity": "胸腔",
-    "gui.chestcavity.surgical_box.title": "手术盒内部空间"
+    "gui.kubejs.title.chestcavity": "胸腔",
+    "gui.chestcavity.surgical_box.title": "手术盒内部空间",
+    "_comment.msg": "消息",
+    "msg.kubejs.expansion_content.has_expansion_content": "No Flesh Within Chest 提醒：\n检测到游戏中存在拓展包。如果游戏出现了问题，请先检测是否为拓展包的问题。\n拓展包列表：",
+    "msg.kubejs.expansion_content.yes": "§a是§r",
+    "msg.kubejs.expansion_content.no": "§c否§r",
+    "msg.kubejs.expansion_content.modid": "拓展包ID：%s",
+    "msg.kubejs.expansion_content.description": "拓展包描述：%s",
+    "msg.kubejs.expansion_content.is_official": "是否来自GoCampingTeam官方：%s",
+    "msg.kubejs.expansion_content.is_trusted": "是否受GoCampingTeam官方信任：%s"
 }
