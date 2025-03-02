@@ -24,5 +24,18 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.DARK_PURPLE)
 
+    event.create('lethal_toxins')
+       .harmful()
+       .effectTick(entity => {
+            if (!(entity.isAlive() && entity.chestCavityInstance)) return
+            const chestCavity = entity.chestCavityInstance
+            if (!chestCavity.customEntityDataMap.containsKey('lethalToxins')) return
+            let lethalToxinsDamage = chestCavity.customEntityDataMap.get('lethalToxins')
+            let effect = entity.getEffect('kubejs:lethal_toxins')
+            if (!effect) return
+            entity.attack(entity.damageSources().magic(), lethalToxinsDamage * 0.1 * (effect.getAmplifier() + 1))
+       })
+       .color(Color.DARK_PURPLE)
+
 })
 
