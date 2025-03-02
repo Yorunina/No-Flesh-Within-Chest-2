@@ -4,8 +4,10 @@ function OrganChestCavityUpdateStrategyModel() {
     /**@type {Object<string, Object<string, function(...any)>: void>} */
     this.eventId = 'chest_cavity_update'
     this.mpmPartsStrategyMap = {}
-    this.init = (args) => { }
-    this.defer = (args) => { }
+    /**@type {function[]} */
+    this.inits = []
+    /**@type {function[]} */
+    this.defers = []
     return this
 }
 
@@ -28,15 +30,15 @@ OrganChestCavityUpdateStrategyModel.prototype = {
     /**
      * @param {function(...any): void} data
      */
-    setInit: function (initFunc) {
-        this.init = initFunc
+    addInit: function (initFunc) {
+        this.inits.push(initFunc)
         return this
     },
     /**
  * @param {function(...any): void} data
  */
-    setDefer: function (deferFunc) {
-        this.defer = deferFunc
+    addDefer: function (deferFunc) {
+        this.defers.push(deferFunc)
         return this
     },
     /**
@@ -49,7 +51,9 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         customData.localDefer = []
 
         args.unshift(customData)
-        this.init.apply(null, args)
+        this.inits.forEach(init => {
+            init.apply(null, args)
+        })
         let needLoadMpm = ccInstance.owner.isPlayer() && IsLoadedMPM
         const onlyMap = new Map()
         const onlyMPMMap = new Map()
@@ -108,7 +112,9 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         customData.localDefer.forEach((func) => {
             func.apply(null, args) 
         })
-        this.defer.apply(null, args)
+        this.defers.forEach(defer => {
+            defer.apply(null, args)
+        })
         return
     },
 }

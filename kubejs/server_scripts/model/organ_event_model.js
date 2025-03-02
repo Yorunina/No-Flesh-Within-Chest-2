@@ -1,23 +1,25 @@
 // priority: 2000
 function OrganEventModel(eventId) {
     this.eventId = eventId
-    this.init = (args) => { }
-    this.defer = (args) => { }
+    /**@type {function[]} */
+    this.inits = []
+    /**@type {function[]} */
+    this.defers = []
     return this
 }
 OrganEventModel.prototype = {
     /**
      * @param {function(...any): void} data
      */
-    setInit: function (initFunc) {
-        this.init = initFunc
+    addInit: function (initFunc) {
+        this.inits.push(initFunc)
         return this
     },
     /**
      * @param {function(...any): void} data
      */
-    setDefer: function (deferFunc) {
-        this.defer = deferFunc
+    addDefer: function (deferFunc) {
+        this.defers.push(deferFunc)
         return this
     },
     /**
@@ -31,7 +33,9 @@ OrganEventModel.prototype = {
 
         if (!optional.isPresent()) return
         args.unshift(customData)
-        this.init.apply(null, args)
+        this.inits.forEach(init => {
+            init.apply(null, args)
+        })
         let ccEntity = optional.get()
         let ccInstance = ccEntity.getChestCavityInstance()
         let ccInv = ccInstance.inventory
@@ -60,6 +64,8 @@ OrganEventModel.prototype = {
         customData.localDefer.forEach((func) => {
             func.apply(null, args) 
         })
-        this.defer.apply(null, args)
+        this.defers.forEach(defer => {
+            defer.apply(null, args)
+        })
     }
 }

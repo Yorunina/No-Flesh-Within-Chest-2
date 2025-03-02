@@ -47,6 +47,7 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
             })
         }
     }
+    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.warden.sonic_boom', player.getSoundSource(), 0.5, 1)
     player.addItemCooldown('kubejs:warden_core', Math.max(20 * 60 - counter * 40, 0))
 }
 

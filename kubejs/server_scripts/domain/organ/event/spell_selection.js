@@ -1,14 +1,6 @@
 // priority: 500
 const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
-    .setInit(
-        /** 
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
+    .addDefer(
         /**
          * @param {OrganEventCustomData} customData
          * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event

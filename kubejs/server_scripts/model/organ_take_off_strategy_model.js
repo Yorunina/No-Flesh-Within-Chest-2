@@ -1,8 +1,10 @@
 // priority: 1900
 function OrganTakeOffStrategyModel() {
     this.eventId = 'organ_take_off'
-    this.init = (args) => { }
-    this.defer = (args) => { }
+    /**@type {function[]} */
+    this.inits = []
+    /**@type {function[]} */
+    this.defers = []
     return this
 }
 
@@ -17,15 +19,15 @@ OrganTakeOffStrategyModel.prototype = {
     /**
      * @param {function(...any): void} data
      */
-    setInit: function (initFunc) {
-        this.init = initFunc
+    addInit: function (initFunc) {
+        this.inits.push(initFunc)
         return this
     },
     /**
- * @param {function(...any): void} data
- */
-    setDefer: function (deferFunc) {
-        this.defer = deferFunc
+     * @param {function(...any): void} data
+     */
+    addDefer: function (deferFunc) {
+        this.defers.push(deferFunc)
         return this
     },
     /**
@@ -37,8 +39,11 @@ OrganTakeOffStrategyModel.prototype = {
         const ccInv = ccInstance.inventory
         const oldccInv = ccInstance.oldInventory
         if (!oldccInv) return
+        customData.localDefer = []
         args.unshift(customData)
-        this.init.apply(null, args)
+        this.inits.forEach(init => {
+            init.apply(null, args)
+        })
         const onlyMap = new Map()
         let oldContainerSize = oldccInv.getContainerSize()
         for (let i = 0; i < oldContainerSize; i++) {
@@ -60,7 +65,12 @@ OrganTakeOffStrategyModel.prototype = {
             }
         }
 
-        this.defer.apply(null, args)
+        customData.localDefer.forEach((func) => {
+            func.apply(null, args) 
+        })
+        this.defers.forEach(defer => {
+            defer.apply(null, args)
+        })
         return
     },
 }

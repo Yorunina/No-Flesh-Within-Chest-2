@@ -3,8 +3,10 @@
 function StrategyModel() {
     /**@type {Object<string, function(...any): void>} */
     this.strategyMap = {}
-    this.init = (args) => {}
-    this.defer = (args) => {}
+    /**@type {function[]} */
+    this.inits = []
+    /**@type {function[]} */
+    this.defers = []
     return this
 }
 
@@ -27,15 +29,15 @@ StrategyModel.prototype = {
     /**
      * @param {function(...any): void} data
      */
-    setInit: function (initFunc) {
-        this.init = initFunc
+    addInit: function (initFunc) {
+        this.inits.push(initFunc)
         return this
     },
-        /**
+    /**
      * @param {function(...any): void} data
      */
-    setDefer: function (deferFunc) {
-        this.defer = deferFunc
+    addDefer: function (deferFunc) {
+        this.defers.push(deferFunc)
         return this
     },
     /**
@@ -43,13 +45,22 @@ StrategyModel.prototype = {
      * @param {any[]} args 
      */
     run: function (ids, args, customData) {
+        customData.localDefer = []
         args.unshift(customData)
-        this.init.apply(null, args)
+        this.inits.forEach(init => {
+            init.apply(null, args)
+        })
         ids.forEach(id => {
             if (!this.strategyMap[id]) return
             this.strategyMap[id].apply(null, args)
         })
-        this.defer.apply(null, args)
+
+        customData.localDefer.forEach((func) => {
+            func.apply(null, args) 
+        })
+        this.defers.forEach(defer => {
+            defer.apply(null, args)
+        })
         return
     },
 }

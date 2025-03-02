@@ -1,21 +1,5 @@
 // priority: 801
 const OrganPlayerEnchantEvent = new OrganEventModel('player_enchant')
-    .setInit(
-        /** 
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.LootContextJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
-        /**
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.LootContextJS} event
-         */
-        (customData, event) => {
-        }
-    )
 
 MoreJSEvents.enchantmentTableChanged(event => {
     const player = event.player

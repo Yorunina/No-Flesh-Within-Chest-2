@@ -1,22 +1,5 @@
 // priority: 500
 const OrganFoodEatenEvent = new OrganEventModel('item_eaten')
-    .setInit(
-        /** 
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.FoodEatenEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
-        /**
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.FoodEatenEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
-
 
 ItemEvents.foodEaten(event => {
     const entity = event.entity

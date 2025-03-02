@@ -1,21 +1,5 @@
 // priority: 500
 const OrganBlockBrokenEvent = new OrganEventModel('block_broken')
-    .setInit(
-        /** 
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.BlockBrokenEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
-        /**
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.BlockBrokenEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
 
 
 BlockEvents.broken(event => {

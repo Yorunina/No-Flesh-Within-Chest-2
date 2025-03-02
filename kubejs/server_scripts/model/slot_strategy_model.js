@@ -2,8 +2,10 @@
 function SlotStrategyModel() {
     /**@type {Object<string, Object<string, function(...any)>: void>} */
     this.strategyMap = {}
-    this.init = (args) => { }
-    this.defer = (args) => { }
+    /**@type {function[]} */
+    this.inits = []
+    /**@type {function[]} */
+    this.defers = []
     return this
 }
 
@@ -40,15 +42,15 @@ SlotStrategyModel.prototype = {
     /**
      * @param {function(...any): void} data
      */
-    setInit: function (initFunc) {
-        this.init = initFunc
+    addInit: function (initFunc) {
+        this.inits.push(initFunc)
         return this
     },
     /**
      * @param {function(...any): void} data
      */
-    setDefer: function (deferFunc) {
-        this.defer = deferFunc
+    addDefer: function (deferFunc) {
+        this.defers.push(deferFunc)
         return this
     },
     /**
@@ -58,10 +60,13 @@ SlotStrategyModel.prototype = {
      */
     run: function (chestCavity, args, customData) {
         const ccInv = chestCavity.inventory
+        customData.localDefer = []
         const invTypeData = chestCavity.getInventoryTypeData()
         args.unshift(customData)
         const onlyMap = new Map()
-        this.init.apply(null, args)
+        this.inits.forEach(init => {
+            init.apply(null, args)
+        })
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
             if (!curItem || curItem.isEmpty()) continue
@@ -76,7 +81,12 @@ SlotStrategyModel.prototype = {
                 strategyModel['default'].apply(null, args.concat(curItem, i))
             }
         }
-        this.defer.apply(null, args)
+        customData.localDefer.forEach((func) => {
+            func.apply(null, args) 
+        })
+        this.defers.forEach(defer => {
+            defer.apply(null, args)
+        })
         return
     },
 }

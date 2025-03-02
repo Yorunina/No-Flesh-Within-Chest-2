@@ -1,21 +1,6 @@
 // priority: 500
 const OrganKeyBindEvent = new OrganKeyActiveEventModel('key_active')
-    .setInit(
-        /** 
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.NetworkEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
-        /**
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.NetworkEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
+
 NetworkEvents.dataReceived('mine_menu_use_item', event => {
     const player = event.player
     const nbt = event.data

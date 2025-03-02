@@ -1,23 +1,5 @@
 // priority: 500
 const OrganEntityLootEvent = new OrganEventModel('entity_loot')
-    .setInit(
-        /** 
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.FoodEatenEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
-        /**
-         * @param {OrganEventCustomData} customData
-         * @param {Internal.FoodEatenEventJS} event
-         */
-        (customData, event) => {
-        }
-    )
-
-
 
 LootJS.modifiers(context => {
     context.addLootTypeModifier(LootType.ENTITY)

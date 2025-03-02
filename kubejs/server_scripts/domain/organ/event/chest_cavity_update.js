@@ -1,7 +1,7 @@
 // priority: 801
 
 const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
-    .setInit(
+    .addInit(
         /** 
          * @param {OrganChestCavityUpdateStrategyCustomData} customData
          * @param {Internal.EvaluateChestCavityJS} event
@@ -13,45 +13,12 @@ const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
             customData.armor = new AttributeManagerModel(1)
         }
     )
-    .setDefer(
-        /**
-         * @param {OrganChestCavityUpdateStrategyCustomData} customData
-         * @param {Internal.EvaluateChestCavityJS} event
-         */
-        (customData, event) => {
-        }
-    )
-
 
 const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
-    .setInit(
-        /** 
-         * @param {OrganChestCavityUpdateStrategyCustomData} customData
-         * @param {Internal.EvaluateChestCavityJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
-        /**
-         * @param {OrganChestCavityUpdateStrategyCustomData} customData
-         * @param {Internal.EvaluateChestCavityJS} event
-         */
-        (customData, event) => {
-        }
-    )
 
 
 const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
-    .setInit(
-        /** 
-         * @param {OrganChestCavityUpdateStrategyCustomData} customData
-         * @param {Internal.EvaluateChestCavityJS} event
-         */
-        (customData, event) => {
-        }
-    )
-    .setDefer(
+    .addDefer(
         /**
          * @param {OrganChestCavityUpdateStrategyCustomData} customData
          * @param {Internal.EvaluateChestCavityJS} event

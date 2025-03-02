@@ -1,1 +1,15 @@
-{}
+{
+  "main": {
+    "5": {
+      "title": "º‡ ÿ’ﬂ",
+      "icon": {
+        "stack": "{Count:1b,id:\"kubejs:warden_core\"}"
+      },
+      "action": {
+        "item": {
+          "stack": "{Count:1b,id:\"kubejs:warden_core\",tag:{}}"
+        }
+      }
+    }
+  }
+}

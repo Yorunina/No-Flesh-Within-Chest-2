@@ -1,4 +1,7 @@
 // priority: 500
+/**
+ * 用于管理扩展包
+ */
 /** @type {Map<string, ExpansionInfoModel>} */
 const ExpansionInfoMap = new Map()
 function ExpansionInfoModel(id) {
@@ -53,10 +56,7 @@ ServerEvents.highPriorityData(event => {
     if (FilesJS.exists('kubejs/expansion_info')) {
         ExpansionInfoMap.clear()
         FilesJS.listFiles('kubejs/expansion_info').forEach(file => {
-            // todo filejs存在安全问题
-            console.log(file)
             let expansionInfoJsonObj = JsonIO.parseRaw(FilesJS.readFile(file)).getAsJsonObject()
-            console.log(expansionInfoJsonObj)
             if (!expansionInfoJsonObj || !expansionInfoJsonObj.has('id')) return
             let expansionInfo = new ExpansionInfoModel(expansionInfoJsonObj.get('id').getAsString())
             expansionInfo.readFromJson(expansionInfoJsonObj)
