@@ -31,3 +31,6 @@ const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.C
 
 
 const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
+
+const $PositionGoopEmitter = Java.loadClass('absolutelyaya.goop.api.emitter.PositionGoopEmitter')
+const $ExtraGoopData = Java.loadClass('absolutelyaya.goop.api.ExtraGoopData')
