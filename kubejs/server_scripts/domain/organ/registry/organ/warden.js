@@ -20,7 +20,6 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
     let distance = ray.distance
     let damageSource = player.damageSources().sonicBoom(player)
     let vec3Nor = player.getLookAngle().normalize()
-    console.log(vec3Nor)
     let counter = 0
     let xpLevel = player.getXpLevel()
     if (ray.entity && ray.entity.isLiving()) {

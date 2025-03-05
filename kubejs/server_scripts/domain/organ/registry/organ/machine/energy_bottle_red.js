@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:energy_bottle_red')
-    .addScore('chestcavity:metabolism', 2)
-    .addScore('chestcavity:strength', 1.5)
+    .addScore('chestcavity:metabolism', 1)
+
 
 
 /**
@@ -32,9 +32,9 @@ function EnergyBottleRedDoDamage(customData, event, organItem, organIndex, slotT
 
     if (chestCavity.customEntityDataMap.getOrDefault('isBurningHeart', false)) {
         if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
-            organItem.setDamageValue(organItem.getDamageValue() + 10)
             let value = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
-            SetCustomData(customData, 'burningItemDamageBoost', value + organItem.getDamageValue())
+            SetCustomData(customData, 'burningItemDamageBoost', value + organItem.getMaxDamage() - organItem.getDamageValue())
+            organItem.setDamageValue(organItem.getDamageValue() + 10)
         }
     }
 }

@@ -5,7 +5,7 @@ RegistryOrgan('kubejs:rose_quartz_muscle')
     .addScore('kubejs:rosy', 0.5)
 
 RegistryOrgan('kubejs:rose_quartz_heart')
-    .addScore('chestcavity:health', 1.5)
+    .addScore('chestcavity:health', 1)
     .addScore('chestcavity:nerves', -0.25)
     .addScore('kubejs:rosy', 0.5)
 

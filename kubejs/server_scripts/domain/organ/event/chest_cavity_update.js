@@ -13,7 +13,7 @@ const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
             customData.armor = new AttributeManagerModel(1)
         }
     )
-
+const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
 const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
 
 
@@ -38,8 +38,9 @@ ChestCavityEvents.evaluateChestCavity(event => {
     const { chestCavity, entity } = event
     let customData = {}
     if (!entity.isAlive()) return
-    
+
     OrganTakeOffStrategy.run(chestCavity, [event], customData)
+    OrganTakeOnStrategy.run(chestCavity, [event], customData)
     
     OrganChestCavityUpdateStrategy.run(chestCavity, [event], customData)
     SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData) 

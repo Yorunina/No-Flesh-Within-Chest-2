@@ -43,12 +43,10 @@ OrganKeyActiveEventModel.prototype = {
         let itemId = String(item.id)
         const onlyMap = new Map()
         let slotMap = ccInstance.getListenerMap(this.eventId)
-        console.log(itemId)
         if (slotMap) {
             slotMap.forEach((slotIndex, slotType) => {
                 let curItem = ccInv.getStackInSlot(slotIndex)
                 if (!curItem || curItem.isEmpty() || curItem.id != itemId) return
-                console.log(slotIndex)
                 let strategyModel = OrganStrategyMap[itemId]
                 if (!strategyModel) return
                 let organEventStrategy = strategyModel.strategyMap[this.eventId]

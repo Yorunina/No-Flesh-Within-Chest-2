@@ -1,6 +1,6 @@
 // priority: 1900
-function OrganTakeOffStrategyModel() {
-    this.eventId = 'organ_take_off'
+function OrganTakeOnStrategyModel() {
+    this.eventId = 'organ_take_on'
     /**@type {function[]} */
     this.inits = []
     /**@type {function[]} */
@@ -8,7 +8,7 @@ function OrganTakeOffStrategyModel() {
     return this
 }
 
-OrganTakeOffStrategyModel.prototype = {
+OrganTakeOnStrategyModel.prototype = {
     /**
      * @param {Object<string, Object<string, Function: void>} strategyMap
      */
@@ -48,27 +48,28 @@ OrganTakeOffStrategyModel.prototype = {
         let oldContainerSize = oldccInv.getContainerSize()
         let newContainerSize = ccInv.getContainerSize()
 
-        for (let i = 0; i < oldContainerSize; i++) {
-            let oldItem = oldccInv.getStackInSlot(i)
-            if (!oldItem || oldItem.isEmpty()) continue
-            if (i <= newContainerSize) {
-                let newItem = ccInv.getStackInSlot(i)
-                if (oldItem.equals(newItem, true)) continue
+        for (let i = 0; i < newContainerSize; i++) {
+            let newItem = ccInv.getStackInSlot(i)
+            if (!newItem || newItem.isEmpty()) continue
+            if (i <= oldContainerSize) {
+                let oldItem = oldccInv.getStackInSlot(i)
+                if (newItem.equals(oldItem, true)) continue
             }
 
-            let itemId = oldItem.id
+            let itemId = newItem.id
             let strategyModel = OrganStrategyMap[itemId]
             if (!strategyModel) continue
             let organEventStrategy = strategyModel.strategyMap[this.eventId]
             if (!organEventStrategy) continue
             if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
                 onlyMap.set(itemId, true)
-                organEventStrategy['only'].apply(null, args.concat(oldItem, i))
+                organEventStrategy['only'].apply(null, args.concat(newItem, i))
             }
             if (organEventStrategy['default']) {
-                organEventStrategy['default'].apply(null, args.concat(oldItem, i))
+                organEventStrategy['default'].apply(null, args.concat(newItem, i))
             }
         }
+
 
         if (customData.localDefer.length > 0) {
             customData.localDefer.sort((a, b) => {

@@ -1,11 +1,11 @@
 // priority: 500
 RegistryOrgan('kubejs:furnace_core')
     .addScore('chestcavity:knockback_resistant', 0.5)
-    .addScore('chestcavity:health', 2)
+    .addScore('chestcavity:health', 1.5)
 
 RegistryOrgan('kubejs:burning_heart')
     .addScore('chestcavity:knockback_resistant', 0.5)
-    .addScore('chestcavity:health', 2)
+    .addScore('chestcavity:health', 1.5)
 
 const FurnaceCoreTempAttackUpUUID = UUID.fromString('858D6175-7E75-41BC-9E70-A42AAFE7A337')
 /**
@@ -31,11 +31,10 @@ function FurnaceCoreEntityTickDefer(customData, event, organItem, organIndex, sl
 
         attributeInstance.removeModifier(FurnaceCoreTempAttackUpUUID)
         attributeInstance.addTransientModifier(attributeModifier)
-        chestCavity.customEntityDataMap.put('isFurnaceCore', true)
     } else {
         value = -3
         let oldModifier = attributeInstance.getModifier(FurnaceCoreTempAttackUpUUID)
-        if (oldModifier) value = Math.min(oldModifier.amount + value, 0)
+        if (oldModifier) value = Math.max(oldModifier.amount + value, 0)
 
         attributeInstance.removeModifier(FurnaceCoreTempAttackUpUUID)
         if (value <= 0) return
@@ -78,10 +77,29 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
             SetOrganEffect(chestCavity, organEffect)
         }
     } else {
+        // 熔火 -> 心火
         let replaceItem = Item.of('kubejs:burning_heart')
-        SetOrganWithoutUpdate(customData, chestCavity, replaceItem, organIndex, slotType)
         chestCavity.customEntityDataMap.put('isBurningHeart', true)
         chestCavity.customEntityDataMap.put('isFuranceCore', false)
+        SetOrganWithoutUpdate(customData, chestCavity, replaceItem, organIndex, slotType)
+
+
+        // 革命之钟触发烈焰加压器
+        if (chestCavity.customEntityDataMap.getOrDefault('haveRevolutionBell', false)) {
+            let counter = 5
+            if (sourceEntity instanceof $ServerPlayer) {
+                if (!sourceEntity.getCooldowns().isOnCooldown('kubejs:blaze_pressurizer')) {
+                    chestCavity.customEntityDataMap.put('blazePressurizerCounter', counter)
+                    let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(200).setCustomText(counter.toFixed(0))
+                    SetOrganEffect(chestCavity, organEffect)
+                    sourceEntity.addItemCooldown('kubejs:blaze_pressurizer', 20 * 30) 
+                }
+            } else {
+                // 非玩家直接触发
+                chestCavity.customEntityDataMap.put('blazePressurizerCounter', counter)
+            }
+        }
+
         if (sourceEntity instanceof $ServerPlayer) {
             let organEffect = new OragnEffectModel(replaceItem).setPriority(100).setCustomText((replaceItem.getMaxDamage() - replaceItem.getDamageValue()).toFixed(0))
             SetOrganEffect(chestCavity, organEffect)
@@ -108,12 +126,28 @@ function FurnaceCoreTakeOff(customData, event, organItem, organIndex, slotType) 
     }
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function FurnaceCoreTakeOn(customData, event, organItem, organIndex, slotType) {
+    const { chestCavity, entity } = event
+    chestCavity.customEntityDataMap.put('isFuranceCore', true)
+    if (entity instanceof $ServerPlayer) {
+        let organEffect = new OragnEffectModel(organItem).setPriority(100).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
+        SetOrganEffect(chestCavity, organEffect)
+    }
+}
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:furnace_core')
         .addOnlyStrategy('entity_tick', FurnaceCoreEntityTick)
         .addOnlyStrategy('organ_take_off', FurnaceCoreTakeOff)
         .addOnlyStrategy('entity_do_damage', FurnaceCoreDoDamage)
+        .addOnlyStrategy('organ_take_on', FurnaceCoreTakeOn)
 )
 
 /**
@@ -130,17 +164,28 @@ function BurningCoreEntityTickDefer(customData, event, organItem, organIndex, sl
     if (!attributeInstance) return
     if (organItem.getDamageValue() + damageValue <= organItem.getMaxDamage()) {
         organItem.setDamageValue(organItem.getDamageValue() + damageValue)
-        chestCavity.customEntityDataMap.put('isBurningHeart', true)
         if (entity instanceof $ServerPlayer) {
             let organEffect = new OragnEffectModel(organItem).setPriority(100).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
             SetOrganEffect(chestCavity, organEffect)
         }
     } else {
+        // 心火 -> 熔火
         let replaceItem = Item.of('kubejs:furnace_core')
-        replaceItem.setDamageValue(100)
+        let damageValue = replaceItem.getMaxDamage()
+        /**@type {number} */
+        let blazerCount = chestCavity.customEntityDataMap.getOrDefault('blazePressurizerCounter', 0)
+        if (blazerCount > 0) {
+            damageValue = Math.max(damageValue - blazerCount * 10, 0)
+            chestCavity.customEntityDataMap.put('blazePressurizerCounter', 0)
+            if (entity instanceof $ServerPlayer) {
+                RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
+            }
+        }
+        replaceItem.setDamageValue(damageValue)
         SetOrganWithoutUpdate(customData, event.chestCavity, replaceItem, organIndex, slotType)
         chestCavity.customEntityDataMap.put('isFurnaceCore', true)
         chestCavity.customEntityDataMap.put('isBurningHeart', false)
+
         if (entity instanceof $ServerPlayer) {
             let organEffect = new OragnEffectModel(replaceItem).setPriority(100).setCustomText((replaceItem.getMaxDamage() - replaceItem.getDamageValue()).toFixed(0))
             SetOrganEffect(chestCavity, organEffect)
@@ -168,11 +213,42 @@ function BurningCoreEntityTick(customData, event, organItem, organIndex, slotTyp
  * @param {number} organIndex
  * @param {string} slotType
  */
-function BurningCoreDoDamage(customData, event, organItem, organIndex, slotType) {
-    let damageBoost = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0)
-    let multiplierBoost = GetCustomDataOrDefault(customData, 'burningItemMultiplierBoost', 0)
+function BurningCoreDoDamageDefer(customData, event, organItem, organIndex, slotType) {
+    /**@type {Internal.LivingEntity} */
+    const sourceEntity = event.source.actual
+    const chestCavity = sourceEntity.chestCavityInstance
+    let blazerBoost = 1
+    /**@type {number} */
+    let blazerCount = chestCavity.customEntityDataMap.getOrDefault('blazePressurizerCounter', 0)
+    if (blazerCount > 0) {
+        blazerBoost = 1.5
+        blazerCount = blazerCount - 1
+        chestCavity.customEntityDataMap.put('blazePressurizerCounter', blazerCount)
+        if (sourceEntity instanceof $ServerPlayer) {
+            if (blazerCount <= 0) {
+                RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer') 
+            } else {
+                let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(200).setCustomText(blazerCount.toFixed(0))
+                SetOrganEffect(chestCavity, organEffect)
+            }
+        }
+    }
+    let damageBoost = GetCustomDataOrDefault(customData, 'burningItemDamageBoost', 0) * blazerBoost
+    let multiplierBoost = GetCustomDataOrDefault(customData, 'burningItemMultiplierBoost', 0) * blazerBoost
     event.amount = (event.amount + damageBoost) * (2 + multiplierBoost)
 }
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingHurtEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function BurningCoreDoDamage(customData, event, organItem, organIndex, slotType) {
+    customData.localDefer.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningCoreDoDamageDefer, organIndex))
+}
+
 
 
 /**
@@ -193,10 +269,27 @@ function BurningCoreTakeOff(customData, event, organItem, organIndex, slotType) 
     }
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function BurningCoreTakeOn(customData, event, organItem, organIndex, slotType) {
+    const { chestCavity, entity } = event
+    chestCavity.customEntityDataMap.put('isBurningHeart', true)
+    if (entity instanceof $ServerPlayer) {
+        let organEffect = new OragnEffectModel(organItem).setPriority(100).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
+        SetOrganEffect(chestCavity, organEffect)
+    }
+}
+
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:burning_heart')
         .addOnlyStrategy('entity_tick', BurningCoreEntityTick)
         .addOnlyStrategy('organ_take_off', BurningCoreTakeOff)
         .addOnlyStrategy('entity_do_damage', BurningCoreDoDamage)
+        .addOnlyStrategy('organ_take_on', BurningCoreTakeOn)
 )

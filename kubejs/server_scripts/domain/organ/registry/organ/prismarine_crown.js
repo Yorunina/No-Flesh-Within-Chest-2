@@ -1,8 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:prismarine_crown')
-    .addScore('chestcavity:water_breath', 2)
+    .addScore('chestcavity:water_breath', 1)
     .addScore('chestcavity:swim_speed', 1)
-    .addScore('chestcavity:luck', 1)
 
 
 /**
