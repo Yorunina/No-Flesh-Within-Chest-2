@@ -34,3 +34,4 @@ const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.m
 
 const $PositionGoopEmitter = Java.loadClass('absolutelyaya.goop.api.emitter.PositionGoopEmitter')
 const $ExtraGoopData = Java.loadClass('absolutelyaya.goop.api.ExtraGoopData')
+const $WaterHandling = Java.loadClass('absolutelyaya.goop.api.WaterHandling')

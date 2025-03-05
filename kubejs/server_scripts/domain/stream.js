@@ -17,10 +17,14 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', /
 
 NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', /** @param {Internal.LivingDamageEvent} event */ event => {
     if (!event.entity) return
+    const amount = event.amount
     let customData = {
         thornsDamage: 0
     }
     OrganEntityBeHurt(event, customData)
+    if (amount > 0) {
+        OrganScoreDamagedEffect(event, customData)
+    }
     if (customData.thornsDamage != 0 && event.source.actual) {
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)

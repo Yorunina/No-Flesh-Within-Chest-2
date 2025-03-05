@@ -8,8 +8,8 @@ ItemEvents.rightClicked('stick', event => {
     // nbt.putString('replaceBlock', 'minecraft:deepslate')
     // nbt.putString('mode', 'mark')
     // console.log(nbt)
-    let pos = GenDungeonIslands(event.level)
-    player.tell(pos)
+    // let pos = GenDungeonIslands(event.level)
+    // player.tell(pos)
     // let pos = player.blockPosition()
     // let vec3 = new Vec3d(pos.x, pos.y, pos.z)
 
@@ -22,4 +22,14 @@ ItemEvents.rightClicked('stick', event => {
     // map.set('4', new OragnEffectModel(Item.of('kubejs:warden_core')).setPriority(100).setCustomText('测试5'))
     // player.chestCavityInstance.customEntityDataMap.put('organEffectMap', map)
     // player.chestCavityInstance.customEntityDataMap.put('organEffectChanged', true)
+})
+
+
+ItemEvents.entityInteracted('minecraft:blaze_rod', event => {
+    /**@type {Internal.LivingEntity} */
+    const entity = event.target
+    const chestCavity = entity.chestCavityInstance
+    chestCavity.setOrganScore('chestcavity:nutrition', -10)
+    const player = event.player
+    player.tell(chestCavity.getOrganScore('chestcavity:nutrition'))
 })
