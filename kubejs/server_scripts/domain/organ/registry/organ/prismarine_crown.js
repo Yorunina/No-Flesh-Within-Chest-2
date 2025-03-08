@@ -18,9 +18,22 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
             chestCavity.setOrganScore(key, 0)
         }
     })
+    event.entity.chestCavityInstance.customEntityDataMap.put('refreshSpell', true)
+}
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function PrismarineCrownSpellSelection(customData, event, organItem, organIndex, slotType) {
+    AddSelectionOption(event, customData, 'irons_spellbooks:gust', 1)
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:prismarine_crown')
+        .addOnlyStrategy('spell_selection', PrismarineCrownSpellSelection)
         .addOnlyStrategy('chest_cavity_update', PrismarineCrownChestCavityUpdate)
 )

@@ -25,23 +25,21 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
          */
         (customData, event) => {
             const entity = event.entity
-            if (entity.isPlayer() && entity.inventory) {
-                new $SpellSelectionManager(entity)
-            }
             customData.attackDamage.applyOnEntityByAttributeKey(entity, 'minecraft:generic.attack_damage', 'OrganAttackDamage')
             customData.maxHealth.applyOnEntityByAttributeKey(entity,'minecraft:generic.max_health', 'OrganMaxHealth')
             customData.armor.applyOnEntityByAttributeKey(entity,'minecraft:generic.armor', 'OrganArmor')
         }
     )
 
+
+
 ChestCavityEvents.evaluateChestCavity(event => {
     const { chestCavity, entity } = event
     let customData = {}
     if (!entity.isAlive()) return
-
     OrganTakeOffStrategy.run(chestCavity, [event], customData)
     OrganTakeOnStrategy.run(chestCavity, [event], customData)
     
     OrganChestCavityUpdateStrategy.run(chestCavity, [event], customData)
-    SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData) 
+    SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData)
 })

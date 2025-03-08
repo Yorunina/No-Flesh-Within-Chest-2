@@ -35,6 +35,22 @@ function OrganSpellSelection(event, customData) {
 }
 
 
+PlayerEvents.loggedIn(event => {
+    /**@type {Internal.ServerPlayer} */
+    const player = event.player
+    if (!player.connection) return
+    new $SpellSelectionManager(player)
+})
+
+PlayerEvents.tick(event => {
+    const player = event.player
+    if (!player.connection) return
+    if (player.age % 10 != 0) return
+    if (!player.chestCavityInstance.customEntityDataMap.getOrDefault('refreshSpell', false)) return
+    new $SpellSelectionManager(player)
+})
+
+
 /**
  * 
  * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event 

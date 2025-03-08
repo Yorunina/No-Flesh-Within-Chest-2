@@ -61,10 +61,8 @@ AttributeManagerModel.prototype = {
      * @returns {AttributeManagerModel}
      */
     applyOnEntityByAttributeKey: function (entity, attributeKey, identifier) {
-
         if (!AttributeIdentifierMap[attributeKey]) return
         let attributeUUIDModel = AttributeIdentifierMap[attributeKey]
-        
         let attributeInstance = entity.getAttribute(attributeKey)
         if (!attributeInstance) return
         attributeInstance.modifiers.forEach(modifier => {

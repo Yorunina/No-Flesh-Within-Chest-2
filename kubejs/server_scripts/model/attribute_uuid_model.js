@@ -3,7 +3,9 @@ function AttributeUUIDModel(attributeKey) {
     this.attributeKey = attributeKey
     /**@type {Internal.UUID} */
     this.baseAdd = null
+    /**@type {Internal.UUID} */
     this.baseMulti = null
+    /**@type {Internal.UUID} */
     this.allMulti = null
     return this
 }
