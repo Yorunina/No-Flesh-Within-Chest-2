@@ -81,7 +81,7 @@
 	#When enabled, the outline of the experience level text will be tweaked.
 	tweakExperienceText = true
 	#Control the anti-aliasing of raw glyph rasterization.
-	antiAliasing = true
+	antiAliasing = false
 	#Control the FreeType linear metrics and font hinting of raw glyph metrics.
 	#Disable if on low-res monitor; enable for linear text.
 	linearMetrics = true

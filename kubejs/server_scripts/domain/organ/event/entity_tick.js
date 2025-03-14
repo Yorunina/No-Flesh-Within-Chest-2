@@ -1,6 +1,7 @@
 // priority: 500
-const OrganEntityTickEvent = new OrganEventModel('entity_tick')
+publicField.NFWC.events.OrganEntityTickEvent = new OrganEventModel('entity_tick')
 
+const OrganEntityTickEvent = publicField.NFWC.events.OrganEntityTickEvent
 ChestCavityEvents.openedEntityTick(event => {
     const entity = event.entity
     if (!entity || entity.age % 20 != 0) return

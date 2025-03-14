@@ -1,5 +1,5 @@
 // priority: 500
-const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
+publicField.NFWC.events.OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
     .addDefer(
         /**
          * @param {OrganEventCustomData} customData
@@ -21,7 +21,7 @@ const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
             }
         }
     )
-
+const OrganSpellSelectionEvent = publicField.NFWC.events.OrganSpellSelectionEvent
 
 
 /**

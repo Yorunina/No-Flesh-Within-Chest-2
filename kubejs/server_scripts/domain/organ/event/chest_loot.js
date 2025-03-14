@@ -1,5 +1,7 @@
 // priority: 500
-const OrganChestLootEvent = new OrganEventModel('chest_loot')
+
+publicField.NFWC.events.OrganChestLootEvent =  new OrganEventModel('chest_loot')
+const OrganChestLootEvent = publicField.NFWC.events.OrganChestLootEvent
 
 LootJS.modifiers(context => {
     context.addLootTypeModifier(LootType.CHEST)

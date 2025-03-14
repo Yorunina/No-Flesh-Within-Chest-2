@@ -1,6 +1,7 @@
 // priority: 500
-const OrganFoodEatenEvent = new OrganEventModel('item_eaten')
+publicField.NFWC.events.OrganFoodEatenEvent = new OrganEventModel('item_eaten')
 
+const OrganFoodEatenEvent = publicField.NFWC.events.OrganFoodEatenEvent
 ItemEvents.foodEaten(event => {
     const entity = event.entity
     if (!entity) return

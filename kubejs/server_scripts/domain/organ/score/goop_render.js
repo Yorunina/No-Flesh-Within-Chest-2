@@ -1,5 +1,6 @@
 // priority: 500
-const OrganScoreGoopRenderStrategy = []
+publicField.NFWC.organManager.OrganScoreGoopRenderStrategy = []
+const OrganScoreGoopRenderStrategy = publicField.NFWC.organManager.OrganScoreGoopRenderStrategy
 
 /**
  * 
@@ -8,7 +9,7 @@ const OrganScoreGoopRenderStrategy = []
 function RegisterOrganScoreGoopRenderStrategy(strategy) {
     OrganScoreGoopRenderStrategy.push(strategy)
 }
-
+publicField.NFWC.organManager.utils.RegisterOrganScoreGoopRenderStrategy = RegisterOrganScoreGoopRenderStrategy
 /**
  * 
  * @param {Internal.LivingDamageEvent} event 

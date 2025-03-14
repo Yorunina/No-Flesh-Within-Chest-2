@@ -1,5 +1,5 @@
 // priority: 1000
-const BossEntityTypeList = [
+publicField.NFWC.entity.BossEntityTypeList = [
     'cataclysm:netherite_monstrosity',
     'cataclysm:ender_guardian',
     'cataclysm:ignis',
@@ -17,3 +17,4 @@ const BossEntityTypeList = [
     "minecraft:ender_dragon",
     "minecraft:wither",
 ]
+const BossEntityTypeList = publicField.NFWC.entity.BossEntityTypeList

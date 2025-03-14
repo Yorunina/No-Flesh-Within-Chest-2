@@ -2,8 +2,9 @@
 /**
  * @type {Object<string, OrganStrategyModel>}
  */
-const OrganStrategyMap = {}
-
+publicField.NFWC.organManager.OrganStrategyMap = {}
+const OrganStrategyMap = publicField.NFWC.organManager.OrganStrategyMap
 function RegistryOrganStrategy(strategyModel) {
     OrganStrategyMap[strategyModel.itemId] = strategyModel
 }
+

@@ -1,5 +1,6 @@
 // priority: 500
-const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
+publicField.NFWC.events.OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
+const OrganEntityBeHurtEvent = publicField.NFWC.events.OrganEntityBeHurtEvent
 
 /**
  * 

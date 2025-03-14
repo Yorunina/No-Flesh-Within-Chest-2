@@ -1,5 +1,6 @@
 // priority: 500
-const OrganKeyBindEvent = new OrganKeyActiveEventModel('key_active')
+publicField.NFWC.events.OrganKeyBindEvent = new OrganKeyActiveEventModel('key_active')
+const OrganKeyBindEvent = publicField.NFWC.events.OrganKeyBindEvent
 
 NetworkEvents.dataReceived('mine_menu_use_item', event => {
     const player = event.player

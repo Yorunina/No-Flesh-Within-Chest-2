@@ -1,6 +1,6 @@
 // priority: 801
-const OrganItemRightClickedEvent = new OrganEventModel('item_right_clicked')
-
+publicField.NFWC.events.OrganItemRightClickedEvent = new OrganEventModel('item_right_clicked')
+const OrganItemRightClickedEvent = publicField.NFWC.events.OrganItemRightClickedEvent
 
 ItemEvents.rightClicked(event => {
     const player = event.player

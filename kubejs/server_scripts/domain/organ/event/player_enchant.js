@@ -1,6 +1,7 @@
 // priority: 801
-const OrganPlayerEnchantEvent = new OrganEventModel('player_enchant')
+publicField.NFWC.events.OrganPlayerEnchantEvent = new OrganEventModel('player_enchant')
 
+const OrganPlayerEnchantEvent = publicField.NFWC.events.OrganPlayerEnchantEvent
 MoreJSEvents.enchantmentTableChanged(event => {
     const player = event.player
     if (!player) return

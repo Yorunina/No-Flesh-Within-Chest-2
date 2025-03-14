@@ -1,6 +1,6 @@
 // priority: 801
 
-const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
+publicField.NFWC.events.OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
     .addInit(
         /** 
          * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -13,11 +13,14 @@ const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
             customData.armor = new AttributeManagerModel(1)
         }
     )
-const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
-const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
+const OrganChestCavityUpdateStrategy = publicField.NFWC.events.OrganChestCavityUpdateStrategy
 
+publicField.NFWC.events.OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
+publicField.NFWC.events.OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
+const OrganTakeOnStrategy = publicField.NFWC.events.OrganTakeOnStrategy
+const OrganTakeOffStrategy = publicField.NFWC.events.OrganTakeOffStrategy
 
-const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
+publicField.NFWC.events.SlotChestCavityUpdateStrategy = new SlotStrategyModel()
     .addDefer(
         /**
          * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -30,7 +33,7 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
             customData.armor.applyOnEntityByAttributeKey(entity,'minecraft:generic.armor', 'OrganArmor')
         }
     )
-
+const SlotChestCavityUpdateStrategy = publicField.NFWC.events.SlotChestCavityUpdateStrategy
 
 
 ChestCavityEvents.evaluateChestCavity(event => {
