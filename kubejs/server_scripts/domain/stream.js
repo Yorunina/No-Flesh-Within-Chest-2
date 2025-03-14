@@ -37,9 +37,7 @@ NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManage
     if (!event.entity) return
     if (event.entity.level.isClientSide()) return
     if (!event.entity.isAlive() || !event.entity.isPlayer()) return
-    let customData = {
-        OrganSpellMap: {}
-    }
+    let customData = {}
     OrganSpellSelection(event, customData)
 })
 

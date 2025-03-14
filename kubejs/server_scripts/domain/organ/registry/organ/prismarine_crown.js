@@ -18,7 +18,8 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
             chestCavity.setOrganScore(key, 0)
         }
     })
-    event.entity.chestCavityInstance.customEntityDataMap.put('refreshSpell', true)
+    AddRefreshClientSpellSelectionOption(customData, 'irons_spellbooks:gust', 1)
+    // event.entity.chestCavityInstance.customEntityDataMap.put('refreshSpell', true)
 }
 
 /**
@@ -29,7 +30,7 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
  * @param {string} slotType
  */
 function PrismarineCrownSpellSelection(customData, event, organItem, organIndex, slotType) {
-    AddSelectionOption(event, customData, 'irons_spellbooks:gust', 1)
+    AddSpellSelectionOption(event, 'irons_spellbooks:gust', 1)
 }
 
 RegistryOrganStrategy(

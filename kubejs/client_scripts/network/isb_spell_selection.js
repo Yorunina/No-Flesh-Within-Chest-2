@@ -1,26 +1,50 @@
 // priority: 500
-const OrganAdditionSpellSelectionList = []
+/**
+ * @type {Map<string, SpellData>}
+ */
+const OrganAdditionSpellSelectionMap = new Map()
 
 NetworkEvents.dataReceived('spell_selection_data', event => {
     /**@type {Internal.ListTag} */
     const spellDataNbt = event.getData()
-    OrganAdditionSpellSelectionList.length = 0
+    let mode = spellDataNbt.getString('mode')
     let spellListNbt = spellDataNbt.get('spellList')
-    spellListNbt.forEach(/**@param {Internal.CompoundTag} element */ element => {
-        OrganAdditionSpellSelectionList.push(
-            new SpellData(
-                SpellRegistry["getSpell(java.lang.String)"](element.getString('spellId')),
-                element.getInt('level')
-            )
-        )
-    })
+    switch (mode) {
+        case 'add':
+            spellListNbt.forEach(/**@param {Internal.CompoundTag} element */ element => {
+                let spellId = element.getString('spellId')
+                let lvl = element.getInt('level')
+                OrganAdditionSpellSelectionMap.set(spellId, new SpellData(
+                    SpellRegistry["getSpell(java.lang.String)"](spellId),
+                    lvl
+                ))
+            })
+            break
+        case 'remove':
+            spellListNbt.forEach(/**@param {Internal.CompoundTag} element */ element => {
+                let spellId = element.getString('spellId')
+                OrganAdditionSpellSelectionMap.delete(spellId)
+            })
+            break
+        case 'refresh':
+            OrganAdditionSpellSelectionMap.clear()
+            spellListNbt.forEach(/**@param {Internal.CompoundTag} element */ element => {
+                let spellId = element.getString('spellId')
+                let lvl = element.getInt('level')
+                OrganAdditionSpellSelectionMap.set(spellId, new SpellData(
+                    SpellRegistry["getSpell(java.lang.String)"](spellId),
+                    lvl
+                ))
+            })
+            break
+    }
     $ClientMagicData.updateSpellSelectionManager()
 })
 
 NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent', /** @param {Internal.SpellSelectionManager$SpellSelectionEvent} event */ event => {
     if (!event.entity) return
     if (!event.entity.level.isClientSide()) return
-    OrganAdditionSpellSelectionList.forEach(/** @param {SpellData} element */ element => {
+    OrganAdditionSpellSelectionMap.forEach(element => {
         event.addSelectionOption(element, 'chestcavity', 0)
     })
 })
