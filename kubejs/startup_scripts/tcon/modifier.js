@@ -24,4 +24,17 @@ TConJSEvents.modifierRegistry(event => {
             itemStack.setDamageValue(Math.max(itemStack.getDamageValue() - repairedValue, 0))
         })
     })
+
+    event.createNew('shield_slam', builder => {
+        builder.canBlockAttacked((toolView, lvl, context, slotType, source, amount) => {
+            if (!source.actual || !source.actual.isAlive()) return false
+            const entity = context.entity
+            if (!entity.isBlocking()) return false
+            const level = context.level
+            let damageAmount = entity.getArmorValue() * lvl * 0.5
+            source.actual.attack(level.damageSources().mobAttack(entity), damageAmount)
+            TinkerDamageHelper.damageAnimated(toolView, amount, entity, slotType);
+            return true
+        })
+    })
 })

@@ -3,7 +3,7 @@ ItemEvents.rightClicked('kubejs:blood_extractor', event => {
     const player = event.player
     const item = event.item
 
-    let nbt = { organSocres: {} }
+    let nbt = { organScores: {} }
     let ray = player.rayTrace(4, false)
     let target = player
     if (ray.entity && ray.entity.isAlive()) {
@@ -11,7 +11,7 @@ ItemEvents.rightClicked('kubejs:blood_extractor', event => {
     }
     if (!target.isAlive() || !target.chestCavityInstance) return
     target.getChestCavityInstance().getOrganScores().forEach((key, value) => {
-        nbt.organSocres[key] = value
+        nbt.organScores[key] = value
     })
 
     let name = Text.empty()
@@ -27,10 +27,10 @@ ItemEvents.entityInteracted('kubejs:blood_extractor', event => {
     const target = event.target
     const item = event.item
 
-    let nbt = { organSocres: {} }
+    let nbt = { organScores: {} }
     if (!target.isAlive() || !target.chestCavityInstance) return
     target.getChestCavityInstance().getOrganScores().forEach((key, value) => {
-        nbt.organSocres[key] = value
+        nbt.organScores[key] = value
     })
     let name = Text.empty()
     name.append(target.getName()).append(Text.translatable('item_name.kubejs.glass_vial.suffix'))

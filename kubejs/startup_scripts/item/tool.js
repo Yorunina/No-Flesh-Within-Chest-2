@@ -159,10 +159,10 @@ StartupEvents.registry('item', event => {
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
-            if (!itemstack.nbt?.organSocres) return itemstack
+            if (!itemstack.nbt?.organScores) return itemstack
 
-            itemstack.nbt.organSocres.getAllKeys().forEach(key => {
-                let roundValue = FloorFix(itemstack.nbt.organSocres[key], 2)
+            itemstack.nbt.organScores.getAllKeys().forEach(key => {
+                let roundValue = FloorFix(itemstack.nbt.organScores[key], 2)
                 let scoreString = Text.translate(`tooltips.kubejs.score_tag.${key}`).getString()
                 let scoreTooltips = Text.translatable('tooltips.kubejs.glass_vial.4', Text.yellow(scoreString), Text.yellow(roundValue)).hover(Text.translate(`tooltips.kubejs.score_tag.hover.${key}`))
                 entity.tell(scoreTooltips)
