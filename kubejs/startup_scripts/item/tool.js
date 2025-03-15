@@ -162,7 +162,7 @@ StartupEvents.registry('item', event => {
             if (!itemstack.nbt?.organScores) return itemstack
 
             itemstack.nbt.organScores.getAllKeys().forEach(key => {
-                let roundValue = FloorFix(itemstack.nbt.organScores[key], 2)
+                let roundValue = RoundFix(itemstack.nbt.organScores[key], 2)
                 let scoreString = Text.translate(`tooltips.kubejs.score_tag.${key}`).getString()
                 let scoreTooltips = Text.translatable('tooltips.kubejs.glass_vial.4', Text.yellow(scoreString), Text.yellow(roundValue)).hover(Text.translate(`tooltips.kubejs.score_tag.hover.${key}`))
                 entity.tell(scoreTooltips)

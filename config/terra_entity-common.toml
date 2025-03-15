@@ -10,10 +10,10 @@
 	boss_clear_when_no_target = false
 	#Multiplier for boss attributes health.
 	#Range: 0.0625 ~ 10.0
-	boss_attributes_multiplier_health = 0.5
+	boss_attributes_multiplier_health = 1
 	#Multiplier for boss attributes damage.
 	#Range: 0.0625 ~ 10.0
-	boss_attributes_multiplier_damage = 0.699999988079071
+	boss_attributes_multiplier_damage = 1
 	#Should the boss have no physics? Only for some bosses.
 	boss_no_physics = true
 	#Should the boss leave on day? Only for some bosses.
@@ -22,7 +22,7 @@
 	display_summon_items = true
 	#Should all monsters be enhanced?
 	#If false, only specific monsters in this mod.
-	enhance_all_monster = false
+	enhance_all_monster = true
 	#Multiplier for monster attributes health.
 	#Range: 0.0625 ~ 100.0
 	monster_attributes_multiplier_health = 1.0
