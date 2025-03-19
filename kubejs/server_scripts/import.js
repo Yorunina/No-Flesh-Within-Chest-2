@@ -50,3 +50,5 @@ const $SpawnMobAreaKubeEvent = Java.loadClass('snownee.loquat.spawner.SpawnMobAr
 const $CustomBossEvent = Java.loadClass('net.minecraft.server.bossevents.CustomBossEvent')
 const $BossBarColor = Java.loadClass('net.minecraft.world.BossEvent$BossBarColor')
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
+
+const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')

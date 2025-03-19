@@ -44,6 +44,7 @@ NetworkEvents.dataReceived('spell_selection_data', event => {
 NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent', /** @param {Internal.SpellSelectionManager$SpellSelectionEvent} event */ event => {
     if (!event.entity) return
     if (!event.entity.level.isClientSide()) return
+    let index = 0
     OrganAdditionSpellSelectionMap.forEach(element => {
         event.addSelectionOption(element, 'chestcavity', 0)
     })

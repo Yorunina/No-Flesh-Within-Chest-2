@@ -3,9 +3,9 @@
 const DUNGEON_DIM = new ResourceLocation('kubejs:dungeon')
 
 // todo 确认是否需要如此大的范围
-const ISLAND_SIDE_LENGTH = 48
-const ISLAND_BUILD_INTERVAL = 128
-const ISLAND_BUILD_RANDOM_OFFSET = 24
+const STRUCT_SIDE_LENGTH = 48
+const STRUCT_BUILD_INTERVAL = 128
+const STRUCT_BUILD_RANDOM_OFFSET = 24
 
 const X_SIDE_MODIFIER = [0, -1, 0, 1]
 const Z_SIDE_MODIFIER = [1, 0, -1, 0]
@@ -32,31 +32,30 @@ function GetRandomDungeonStructureId() {
  * @param {Internal.ServerLevel} level 
  * @return {BlockPos}
  */
-function GenDungeonIslands(level) {
+function GenDungeonStruct(level) {
     let dungeonStructManager = level.getStructureManager()
     let dungeonNum = 0
-    if (level.persistentData.contains('islandNum')) {
-        dungeonNum = level.persistentData.getInt('islandNum')
+    if (level.persistentData.contains('dungeonNum')) {
+        dungeonNum = level.persistentData.getInt('dungeonNum')
     }
     let buildOffset = calculateStructureCenterPos(dungeonNum)
-    let buildX = buildOffset.x * ISLAND_BUILD_INTERVAL + Math.random() * ISLAND_BUILD_RANDOM_OFFSET
-    let buildZ = buildOffset.z * ISLAND_BUILD_INTERVAL + Math.random() * ISLAND_BUILD_RANDOM_OFFSET
-    let mainIslandId = GetRandomDungeonStructureId()
-    let mainIslandTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(mainIslandId))
-    let mainIslandSizeRange = ConvertVec3i2BlockPos(mainIslandTemplate.getSize())
-    let mainIslandBuildPos = new BlockPos(buildX, 0, buildZ)
-    let chunkAccess = GetChunkAccess(level, mainIslandBuildPos)
+    let buildX = buildOffset.x * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
+    let buildZ = buildOffset.z * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
+    let structId = GetRandomDungeonStructureId()
+    let structTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(structId))
+    let structSizeRange = ConvertVec3i2BlockPos(structTemplate.getSize())
+    let structBuildPos = new BlockPos(buildX, 0, buildZ)
+    let chunkAccess = GetChunkAccess(level, structBuildPos)
     if (!chunkAccess) return
 
-    // 主岛
     let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
-    mainIslandTemplate.placeInWorld(level, mainIslandBuildPos, mainIslandSizeRange, placementSettings, level.getRandom(), 2)
+    structTemplate.placeInWorld(level, structBuildPos, structSizeRange, placementSettings, level.getRandom(), 2)
 
-    HandleDataBlock(level, mainIslandTemplate, mainIslandBuildPos, placementSettings)
+    HandleDataBlock(level, structTemplate, structBuildPos, placementSettings)
 
-    level.persistentData.putInt('islandNum', dungeonNum + 1)
-    // todo 确认建筑的offset
-    return mainIslandBuildPos.offset(mainIslandSizeRange.x / 2, 2, mainIslandSizeRange.z / 2)
+    level.persistentData.putInt('dungeonNum', dungeonNum + 1)
+    
+    return structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
 }
 
 /**

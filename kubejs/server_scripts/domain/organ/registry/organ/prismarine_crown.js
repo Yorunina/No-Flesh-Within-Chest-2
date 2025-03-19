@@ -18,23 +18,31 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
             chestCavity.setOrganScore(key, 0)
         }
     })
-    AddRefreshClientSpellSelectionOption(customData, 'irons_spellbooks:gust', 1)
-    // event.entity.chestCavityInstance.customDataMap.put('refreshSpell', true)
+    if (event.entity.isPlayer()) {
+        AddSpellSelection(customData, chestCavity.customDataMap, 'irons_spellbooks:gust', 1)
+        AddClientISSSpellDataDefer(customData, event.entity, organIndex)
+    }
 }
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.SpellSelectionManager$SpellSelectionEvent} event 
+ * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  */
-function PrismarineCrownSpellSelection(customData, event, organItem, organIndex, slotType) {
-    AddSpellSelectionOption(event, 'irons_spellbooks:gust', 1)
+function PrismarineCrownTakeOff(customData, event, organItem, organIndex, slotType) {
+    const { entity, chestCavity } = event
+    if (entity.isPlayer()) {
+        RemoveSpellSelection(customData, chestCavity.customDataMap, 'irons_spellbooks:gust', 1)
+        AddClientISSSpellDataDefer(customData, entity, organIndex)
+    }
 }
+
+
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:prismarine_crown')
-        .addOnlyStrategy('spell_selection', PrismarineCrownSpellSelection)
         .addOnlyStrategy('chest_cavity_update', PrismarineCrownChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', PrismarineCrownTakeOff)
 )

@@ -1,12 +1,11 @@
 // priority: 500
 
 // todo 调试方法
-const PositionEmitter = new $PositionGoopEmitter()
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
     let minecraftServer = event.level.server
     let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    let pos = GenDungeonIslands(dungeonLevel)
+    let pos = GenDungeonStruct(dungeonLevel)
     
     player.teleportTo(dungeonLevel.getDimension(), pos.x, pos.y, pos.z, 0, 0)
     let area = GenDungeonLevelArea(dungeonLevel, pos)

@@ -29,22 +29,6 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
             customData.attackDamage.applyOnEntityByAttributeKey(entity, 'minecraft:generic.attack_damage', 'OrganAttackDamage')
             customData.maxHealth.applyOnEntityByAttributeKey(entity,'minecraft:generic.max_health', 'OrganMaxHealth')
             customData.armor.applyOnEntityByAttributeKey(entity,'minecraft:generic.armor', 'OrganArmor')
-
-            // 统一更新法术数据
-            if (entity.isPlayer() && entity.connection) {
-                let spellIds = Object.keys(customData.OrganSpellMap)
-                let syncSpellData = new $CompoundTag()
-                let spellDataList = new $ListTag()
-                spellIds.forEach(/** @param {string} spellId */ spellId => {
-                    let spellData = new $CompoundTag()
-                    spellData.putString('spellId', spellId)
-                    spellData.putInt('level', customData.OrganSpellMap[spellId])
-                    spellDataList.add(spellData)
-                })
-                syncSpellData.put('spellList', spellDataList)
-                syncSpellData.putString('mode', 'refresh')
-                entity.sendData('spell_selection_data', syncSpellData)
-            }
         }
     )
 

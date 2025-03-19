@@ -10,6 +10,7 @@ ItemEvents.rightClicked('kubejs:blood_extractor', event => {
     if (ray.entity && ray.entity.isAlive()) {
         target = ray.entity
     }
+    
     if (!target.isAlive() || !target.chestCavityInstance) return
     target.getChestCavityInstance().getOrganScores().forEach((key, value) => {
         nbt.organScores[key] = value
