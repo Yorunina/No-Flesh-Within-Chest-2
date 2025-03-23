@@ -3,15 +3,16 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     let player = event.player
-    let minecraftServer = event.level.server
-    let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    let pos = GenDungeonStruct(dungeonLevel)
+    UnlockPlayerTitle(player, 'kubejs:chest_opener')
+    // let minecraftServer = event.level.server
+    // let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
+    // let pos = GenDungeonStruct(dungeonLevel)
     
-    player.teleportTo(dungeonLevel.getDimension(), pos.x, pos.y, pos.z, 0, 0)
-    let area = GenDungeonLevelArea(dungeonLevel, pos)
-    if (!area) return
-    let manager = LoquatAreaManager.of(dungeonLevel)
-    manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
+    // player.teleportTo(dungeonLevel.getDimension(), pos.x, pos.y, pos.z, 0, 0)
+    // let area = GenDungeonLevelArea(dungeonLevel, pos)
+    // if (!area) return
+    // let manager = LoquatAreaManager.of(dungeonLevel)
+    // manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'test', 1, 0))
 
 
 
@@ -49,3 +50,14 @@ ItemEvents.rightClicked('stick', event => {
 //     const player = event.player
 //     player.tell(chestCavity.getOrganScore('chestcavity:nutrition'))
 // })
+
+
+
+
+ItemEvents.entityInteracted('minecraft:blaze_rod', event => {
+    /**@type {Internal.LivingEntity} */
+    const entity = event.target
+    const player = event.player
+    entity.potionEffects.add('kubejs:vita_toxins', 20 * 60, 0)
+    entity.chestCavityInstance.customDataMap.put('vitaToxinsSource', player.getUuid().toString())
+})

@@ -1,0 +1,26 @@
+{
+    "defaultChestCavity": [],
+    "baseOrganScores": [
+        {
+            "id": "chestcavity:health",
+            "value": "1"
+        },
+        {
+            "id": "chestcavity:breath_recovery",
+            "value": "2"
+        },
+        {
+            "id": "chestcavity:breath_capacity",
+            "value": "2"
+        },
+        {
+            "id": "chestcavity:detoxification",
+            "value": "1"
+        },
+        {
+            "id": "chestcavity:filtration",
+            "value": "1"
+        }
+    ],
+    "inventoryType": "kubejs:cc_inventory_types/functional_entity.json"
+}

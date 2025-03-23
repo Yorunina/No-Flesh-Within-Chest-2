@@ -1,4 +1,4 @@
-// priority: 100
+// priority: 500
 StartupEvents.registry('mob_effect', event => {
     event.create('burning_heart')
         .beneficial()
@@ -24,18 +24,6 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.DARK_PURPLE)
 
-    event.create('lethal_toxins')
-       .harmful()
-       .effectTick(entity => {
-            if (!entity.isAlive() || !entity instanceof $LivingEntity) return
-            /**@type {Internal.ChestCavityInstance} */
-            const chestCavity = entity.chestCavityInstance
-            if (!chestCavity.customDataMap.containsKey('lethalToxins')) return
-            let lethalToxinsDamage = chestCavity.customDataMap.get('lethalToxins')
-            let effect = entity.getEffect('kubejs:lethal_toxins')
-            if (!effect) return
-            entity.attack(entity.damageSources().magic(), lethalToxinsDamage * (effect.getAmplifier() + 1))
-       })
-       .color(Color.DARK_PURPLE)
+
 })
 

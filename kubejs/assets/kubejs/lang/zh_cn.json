@@ -315,5 +315,9 @@
     "_comment.boss_bar": "bossBar",
     "boss_bar.kubejs.dungeon.default.title.1": "",
     "boss_bar.kubejs.dungeon.kill_amount_task.title.1": "击杀 %s / %s 个敌人",
-    "boss_bar.kubejs.dungeon.wait.title.1": "等待本波次开始"
+    "boss_bar.kubejs.dungeon.wait.title.1": "等待本波次开始",
+    "_comment.titles": "头衔",
+    "titles.kubejs.chest_opener.defaultDisplay": "开膛手",
+    "titles.kubejs.chest_opener.variantDisplay": "开膛手",
+    "titles.kubejs.chest_opener.flavorText": "这是你第一次开启胸腔；第二次、第三次. . .你迟早会对此上瘾。"
 }

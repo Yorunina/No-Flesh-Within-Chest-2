@@ -2,7 +2,7 @@
 	"name": "originium_dragon_arm",
 	"render_type": "bedrock",
 	"hidden_parts": [],
-	"parent": "moreplayermodels:parts/gocampingteam/originium_dragon_arm_wide_model.json",
+	"parent": "kubejs:parts/arms/originium_dragon_arm_wide_model.json",
 	"render_data": {
 		"format_version": "1.12.0",
 		"minecraft:geometry": [

@@ -1,0 +1,8 @@
+{
+  "type": "advancement",
+  "isPrefix": "true",
+  "rarity": "common",
+  "defaultDisplay": "titles.kubejs.chest_opener.defaultDisplay",
+  "variantDisplay": "titles.kubejs.chest_opener.variantDisplay",
+  "flavorText": "titles.kubejs.chest_opener.flavorText"
+}

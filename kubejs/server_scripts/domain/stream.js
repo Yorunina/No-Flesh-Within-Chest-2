@@ -1,12 +1,12 @@
 // priority: 100
 /**
- * 造成伤害（未过护甲结算）节点，适合用于结算伤害效果
+ * 造成伤害（未过护甲结算）节点，适合用于结算造成伤害效果
  */
 NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', /** @param {Internal.LivingHurtEvent} event */ event => {
     if (!event.source.actual) return
 
     if (event.source.is($DamageTypes.THORNS)) return
-    
+
     let customData = {
         thornsDamage: 0
     }
@@ -37,16 +37,3 @@ NativeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent',
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
     }
 })
-
-
-
-NativeEvents.onEvent('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent', /** @param {Internal.SpellSelectionManager$SpellSelectionEvent} event */ event => {
-    const entity = event.entity
-    if (!entity) return
-    if (entity.level.isClientSide()) return
-    if (!entity.isAlive() || !entity.isPlayer()) return
-    let customData = {}
-    OrganSpellSelection(event, customData)
-    ApplyPlayerSpellSelection(event)
-})
-

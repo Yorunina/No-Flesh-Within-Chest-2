@@ -1,0 +1,23 @@
+// priority: 500
+const OrganSpellLevelModify = new OrganEventModel('spell_level_modify')
+
+/**
+ * 法术等级修正
+ */
+NativeEvents.onEvent('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent', /** @param {Internal.ModifySpellLevelEvent} event */ event => {
+    const entity = event.entity
+    if (!entity) return
+    if (entity.level.isClientSide()) return
+    if (!entity.isAlive() || !entity.isPlayer()) return
+    let customData = {}
+    OrganModifySpellLevel(event, customData)
+})
+
+/**
+ * 法术等级修正
+ * @param {Internal.ModifySpellLevelEvent} event 
+ * @param {OrganEventCustomData} customData 
+ */
+function OrganModifySpellLevel(event, customData) {
+    OrganSpellLevelModify.run(player, customData, [event])
+}

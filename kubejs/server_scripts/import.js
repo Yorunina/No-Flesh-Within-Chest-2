@@ -1,4 +1,4 @@
-// priority: 2000
+// priority: 5000
 const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
 const $UUID = Java.loadClass('java.util.UUID')
@@ -52,3 +52,4 @@ const $BossBarColor = Java.loadClass('net.minecraft.world.BossEvent$BossBarColor
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
 
 const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
+const $TitleManager = Java.loadClass('aurilux.titles.common.core.TitleManager')

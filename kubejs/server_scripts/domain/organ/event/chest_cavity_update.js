@@ -46,4 +46,5 @@ ChestCavityEvents.evaluateChestCavity(event => {
 
     OrganChestCavityUpdateStrategy.run(chestCavity, [event], customData)
     SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData)
+    UpdateClientISSSpellDataEvent(customData, entity)
 })
