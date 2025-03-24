@@ -32,11 +32,6 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
         }
     )
 
-PlayerEvents.loggedIn(event => {
-    const player = event.player
-    $ChestCavityUtil.evaluateChestCavity(player.chestCavityInstance)
-})
-
 ChestCavityEvents.evaluateChestCavity(event => {
     const { chestCavity, entity } = event
     let customData = {}

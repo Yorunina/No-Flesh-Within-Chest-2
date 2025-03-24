@@ -6,9 +6,7 @@ const OrganSpellLevelModify = new OrganEventModel('spell_level_modify')
  */
 NativeEvents.onEvent('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent', /** @param {Internal.ModifySpellLevelEvent} event */ event => {
     const entity = event.entity
-    if (!entity) return
-    if (entity.level.isClientSide()) return
-    if (!entity.isAlive() || !entity.isPlayer()) return
+    if (!entity.isAlive()) return
     let customData = {}
     OrganModifySpellLevel(event, customData)
 })
@@ -19,5 +17,6 @@ NativeEvents.onEvent('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEve
  * @param {OrganEventCustomData} customData 
  */
 function OrganModifySpellLevel(event, customData) {
-    OrganSpellLevelModify.run(player, customData, [event])
+    const entity = event.entity
+    OrganSpellLevelModify.run(entity, customData, [event])
 }

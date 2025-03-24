@@ -22,4 +22,5 @@ function OrganSpellSelection(event, customData) {
     const entity = event.entity
     OrganSpellSelectionEvent.run(entity, customData, [event])
     UpdateClientISSSpellDataEvent(customData, entity)
+    ApplyPlayerSpellSelection(event)
 }

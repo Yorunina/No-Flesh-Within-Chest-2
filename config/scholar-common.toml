@@ -1,0 +1,27 @@
+
+[ui]
+	#Vanilla book view/edit screens will be replaced with Scholar's two-paged view/edit screens. Default: true
+	in_hand_two_page_book_screens = true
+	#Vanilla lectern book view screen will be replaced with Scholar's two-paged view/edit screens.
+	#Can be disabled if you want to use different screen for lectern (such as from Amendments (but Scholar now has lectern editing, so...)). Default: true
+	lectern_two_page_book_screens = true
+	#Holding sneak while opening a book screen will show vanilla screen. Default: false
+	sneaking_opens_vanilla_book_screen = false
+
+[book_coloring]
+	#Writable Book (Book and Quill) can be colored like Leather armor. Default: true
+	writable_book_coloring = true
+	#Written Book can be colored like Leather armor. Default: false
+	written_book_coloring = false
+
+[misc]
+	#Colored books in Chiseled Bookshelf will have correct colors displayed on the block. Default: true
+	#Note: resourepacks that modify Chiseled Bookshelf may break the coloring.
+	#Note 2: even if this setting is disabled - bookshelf will not look quite the same if you look closely.
+	#To restore fully - overwrite bookshelf slot models added by Scholar using a resourcepack.
+	chiseled_bookshelf_colors = true
+	#Hovering over a slot in a Chiseled Bookshelf will show tooltip of a book that's stored in that slot. Default: true
+	chiseled_bookshelf_tooltip = true
+	#Written books will have an enchantment glint on them. Default: false
+	written_book_enchantment_glint = false
+

@@ -7,5 +7,4 @@ RegistryOrgan('kubejs:cherry_bone')
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:cherry_bone')
-    
 )

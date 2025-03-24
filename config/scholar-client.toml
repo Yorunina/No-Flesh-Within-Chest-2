@@ -1,0 +1,25 @@
+
+[ui]
+	#Singleplayer game will be paused when book edit/view screen is open.
+	#Default: false, Vanilla: true
+	book_screen_pause = false
+	#Show 'Done' button in the Scholar book screens. Default: false
+	book_screen_show_done_button = false
+	#Additional tool buttons will be shown in book edit screen.
+	#This setting can be toggled in-game by pressing F1 button (by default) or clicking on question mark in top right corner. Initial value: false
+	book_edit_screen_show_extra_tools = false
+
+	[ui.colors]
+		#Color of the book text. Default: FF7B593D
+		text_color = "FF7B593D"
+		#Color of the page numbers. Default: FFEFE4CA
+		page_numbers_color = "FFEFE4CA"
+		#Color of the 'Enter Book Title' text in the signing screen. Default: FFF5EBD0
+		enter_title_color = "FFF5EBD0"
+		#Color of the 'by <author>' text in the signing screen. Default: FFC7B496
+		by_author_color = "FFC7B496"
+		#Color of the selection. Default: FF664488
+		selection_color = "FF664488"
+		#Color of the selection when text box is not focused. Default: FF827B88
+		selection_unfocused_color = "FF827B88"
+

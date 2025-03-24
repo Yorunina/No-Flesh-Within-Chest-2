@@ -3,7 +3,7 @@ StartupEvents.registry('mob_effect', event => {
     event.create('putrid_toxins')
         .harmful()
         .effectTick((entity, lvl)  => {
-            if (entity.age % 20 != 0) return
+            if (entity.age % 40 != 0) return
             if (!entity.isAlive() || !entity instanceof $LivingEntity) return
             /**@type {Internal.ChestCavityInstance} */
             const chestCavity = entity.chestCavityInstance

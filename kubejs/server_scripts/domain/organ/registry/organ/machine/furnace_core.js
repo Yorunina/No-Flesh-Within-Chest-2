@@ -85,13 +85,12 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
         let replaceItem = Item.of('kubejs:burning_heart')
         SetOrganWithoutUpdate(customData, chestCavity, replaceItem, organIndex, slotType)
 
-
         // 革命之钟触发烈焰加压器
         if (chestCavity.inventory.find('kubejs:revolution_bell') > 0) {
             if (sourceEntity instanceof $ServerPlayer) {
                 if (!sourceEntity.getCooldowns().isOnCooldown('kubejs:blaze_pressurizer')) {
                     let counter = BlazePressurizerActive(chestCavity, slotType)
-                    let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(200).setCustomText(counter.toFixed(0))
+                    let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(101).setCustomText(counter.toFixed(0))
                     SetOrganEffect(chestCavity, organEffect)
                     sourceEntity.addItemCooldown('kubejs:blaze_pressurizer', 20 * 30)
                 }
@@ -232,7 +231,7 @@ function BurningCoreDoDamageDefer(customData, event, organItem, organIndex, slot
             if (blazerCount <= 0) {
                 RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
             } else {
-                let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(200).setCustomText(blazerCount.toFixed(0))
+                let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(101).setCustomText(blazerCount.toFixed(0))
                 SetOrganEffect(chestCavity, organEffect)
             }
         }

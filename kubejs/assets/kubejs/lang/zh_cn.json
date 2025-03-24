@@ -319,5 +319,10 @@
     "_comment.titles": "头衔",
     "titles.kubejs.chest_opener.defaultDisplay": "开膛手",
     "titles.kubejs.chest_opener.variantDisplay": "开膛手",
-    "titles.kubejs.chest_opener.flavorText": "这是你第一次开启胸腔；第二次、第三次. . .你迟早会对此上瘾。"
+    "titles.kubejs.chest_opener.flavorText": "这是你第一次开启胸腔；第二次、第三次. . .你迟早会对此上瘾。",
+    "_comment.effect": "效果",
+    "effect.kubejs.putrid_toxins": "恶腐蚀毒",
+    "effect.minecraft.putrid_toxins.desc": "每 40 刻造成 恶腐蚀性层数 * level 点魔法伤害",
+    "effect.kubejs.vita_toxins": "活肉霉毒",
+    "effect.minecraft.vita_toxins.desc": "每 40 刻造成等同于 赋予毒素者某属性 * 活肉霉毒效率 * level 点魔法伤害"
 }

@@ -4,6 +4,10 @@
  */
 const OrganAdditionSpellSelectionMap = new Map()
 
+ClientEvents.loggedIn(event => {
+   event.player.sendData('spell_selection_init') 
+})
+
 NetworkEvents.dataReceived('spell_selection_data', event => {
     /**@type {Internal.ListTag} */
     const spellDataNbt = event.getData()

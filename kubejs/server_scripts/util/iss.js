@@ -29,9 +29,31 @@ function UpdateClientISSSpellDataEvent(customData, entity) {
             if (isSame) return
         }
     }
-
     entityDataMap.put('old_organ_spell_selection', new Map(organSpellSelection))
+    let syncSpellData = new $CompoundTag()
+    let spellNBTList = new $ListTag()
+    organSpellSelection.forEach(/** @param {SpellData} spellData */ spellData => {
+        let spellNBT = new $CompoundTag()
+        spellNBT.putString('spellId', spellData.getSpell().getSpellId())
+        spellNBT.putInt('level', spellData.getLevel())
+        spellNBTList.add(spellNBT)
+    })
+    syncSpellData.put('spellList', spellNBTList)
+    syncSpellData.putString('mode', 'refresh')
+    entity.sendData('spell_selection_data', syncSpellData)
+}
 
+/**
+ * 强制初始化客户端的法术数据，用于补偿客户端数据丢失的情况
+ * @param {Internal.ServerPlayer} entity
+ */
+function InitClientISSSpellData(entity) {
+    const chestCavity = entity.chestCavityInstance
+    const entityDataMap = chestCavity.customDataMap
+    if (!entityDataMap || !entityDataMap.containsKey('organ_spell_selection')) return
+    /**@type {Map<string, SpellData>} */
+    const organSpellSelection = entityDataMap.get('organ_spell_selection')
+    entityDataMap.put('old_organ_spell_selection', new Map(organSpellSelection))
     let syncSpellData = new $CompoundTag()
     let spellNBTList = new $ListTag()
     organSpellSelection.forEach(/** @param {SpellData} spellData */ spellData => {
