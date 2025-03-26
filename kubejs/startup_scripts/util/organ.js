@@ -1,34 +1,4 @@
 // priority: 3000
-
-/**
- * 
- * @param {Internal.LivingEntity} entity 
- * @returns {Internal.ChestCavityInventory}
- */
-function GetEntityChestCavityInventory(entity) {
-    return entity.chestCavityInstance.inventory
-}
-
-/**
- * 
- * @param {Internal.ChestCavityInstance} cc 
- * @param {Number} index 
- */
-function GetChestCavitySlotType(cc, index) {
-    return cc.getInventoryTypeData().getSlotType(index)
-}
-
-function GetCustomDataOrDefault(customData, key, defaultValue) {
-    if (!customData[key]) {
-        customData[key] = defaultValue
-    }
-    return customData[key]
-}
-
-function SetCustomData(customData, key, value) {
-    customData[key] = value
-}
-
 /**
  * 
  * @param {Internal.LivingEntity} target 
@@ -77,10 +47,28 @@ function SetVitaToxinsType(target, type) {
 }
 
 /**
+ * 
+ * @param {Internal.LivingEntity} target 
+ * @returns 
+ */
+function GetVitaToxinsType(target) {
+    return target.persistentData.contains('vitaToxinsType') ? target.persistentData.getString('vitaToxinsType') : 'attack_damage'
+}
+
+/**
  *
  * @param {Internal.LivingEntity} target
  * @param {number} coe
  */
 function SetVitaToxinsCoe(target, coe) {
     target.persistentData.putFloat('vitaToxinsCoe', coe)
+}
+
+/**
+ * 
+ * @param {Internal.LivingEntity} target 
+ * @returns 
+ */
+function GetVitaToxinsCoe(target) {
+    return target.persistentData.contains('vitaToxinsCoe') ? target.persistentData.getFloat('vitaToxinsCoe') : 1
 }

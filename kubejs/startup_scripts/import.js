@@ -11,3 +11,4 @@ const $RangedAttribute = Java.loadClass('net.minecraft.world.entity.ai.attribute
 const $EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
 const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
 const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
+const $CommonUtil = Java.loadClass('net.tigereye.chestcavity.util.CommonUtil')

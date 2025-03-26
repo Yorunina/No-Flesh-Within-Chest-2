@@ -4,11 +4,7 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .effectTick((entity, lvl)  => {
             if (entity.age % 40 != 0) return
-            if (!entity.isAlive() || !entity instanceof $LivingEntity) return
-            /**@type {Internal.ChestCavityInstance} */
-            const chestCavity = entity.chestCavityInstance
-            if (!chestCavity.customDataMap.containsKey('putridToxinsDamage')) return
-            let putridToxinsDamage = chestCavity.customDataMap.get('putridToxinsDamage')
+            let putridToxinsDamage = GetPutridToxinsDamage(entity)
             entity.attack(entity.damageSources().magic(), putridToxinsDamage * (lvl * 0.5 + 1))
         })
         .color(Color.DARK_PURPLE)

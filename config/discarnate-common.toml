@@ -1,0 +1,10 @@
+
+#General configuration settings
+[general]
+	pumpkinToStart = true
+	pumpkinToContinue = true
+	#Range: > 0
+	minLevel = 1
+	#Range: > 0
+	levelCost = 1
+

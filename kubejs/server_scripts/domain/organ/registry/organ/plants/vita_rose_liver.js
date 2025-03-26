@@ -19,7 +19,12 @@ function VitaRoseLiverDoDamage(customData, event, organItem, organIndex, slotTyp
     if (target.getHealth() < target.getMaxHealth() * 0.99) return
     target.potionEffects.add('kubejs:vita_toxins', 20 * 60, 0, false, false)
     if (!sourceEntity.getUuid()) return
-    SetVitaToxinsSource(target, sourceEntity.getUuid().toString())
+    const chestCavity = sourceEntity.chestCavityInstance
+    SetVitaToxinsSource(target, sourceEntity.getUuid())
+    if (chestCavity.inventory.find('kubejs:vita_berry') > 0) {
+        SetVitaToxinsType(target, 'max_health')
+        SetVitaToxinsCoe(target, 5)
+    }
 }
 
 RegistryOrganStrategy(
