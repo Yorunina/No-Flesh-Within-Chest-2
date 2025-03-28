@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const OrganEntityLootEvent = new OrganEventModel('entity_loot')
 
 LootJS.modifiers(context => {

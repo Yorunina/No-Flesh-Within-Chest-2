@@ -3,14 +3,14 @@ const $ScoreType = 'chestcavity:filtration' ||'chestcavity:breath_recovery' ||'c
 
 const OrganList = []
 const PseudoOrganList = []
-function Organ(itemId) {
+function OrganItemModel(itemId) {
     this.itemId = itemId
     this.pseudoOrgan = false
     this.organScores = []
     this.maxStackSize = 1
 }
 
-Organ.prototype = {
+OrganItemModel.prototype = {
     /**
      * 
      * @param {$ScoreType} score 
@@ -27,14 +27,24 @@ Organ.prototype = {
     },
 }
 
+/**
+ * 
+ * @param {String} itemId 
+ * @returns 
+ */
 function RegistryOrgan(itemId) {
-    let organ = new Organ(itemId)
+    let organ = new OrganItemModel(itemId)
     OrganList.push(organ)
     return organ
 }
 
+/**
+ * 
+ * @param {String} itemId 
+ * @returns 
+ */
 function RegistryPseudoOrgan(itemId) {
-    let organ = new Organ(itemId).setPseudo(true)
+    let organ = new OrganItemModel(itemId).setPseudo(true)
     PseudoOrganList.push(organ)
     return organ
 }

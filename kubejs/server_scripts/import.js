@@ -1,4 +1,4 @@
-// priority: 5000
+// priority: 10000
 const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
 const $UUID = Java.loadClass('java.util.UUID')

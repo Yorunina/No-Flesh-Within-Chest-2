@@ -1,4 +1,4 @@
-// priority: 801
+// priority: 999
 const OrganItemRightClickedEvent = new OrganEventModel('item_right_clicked')
 
 

@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const OrganEntityDoDamageEvent = new OrganEventModel('entity_do_damage')
 
 /**

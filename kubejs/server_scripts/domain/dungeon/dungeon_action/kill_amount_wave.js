@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 2000
 /**
  * 创建一个击杀指定数量的波次
  * @param {number} maxKillAmount 需要击杀的数额

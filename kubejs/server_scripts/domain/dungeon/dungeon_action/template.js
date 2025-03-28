@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 1000
 const testDungeonSpawner = new DungeonEventActionModel('test')
     .setInitAction((level, context, areaManager) => {
     })

@@ -1,4 +1,4 @@
-// priority: 801
+// priority: 999
 const OrganPlayerEnchantEvent = new OrganEventModel('player_enchant')
 
 MoreJSEvents.enchantmentTableChanged(event => {

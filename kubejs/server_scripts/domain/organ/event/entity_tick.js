@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const OrganEntityTickEvent = new OrganEventModel('entity_tick')
 
 ChestCavityEvents.openedEntityTick(event => {

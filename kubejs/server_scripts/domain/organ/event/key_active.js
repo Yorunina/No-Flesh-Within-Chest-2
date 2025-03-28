@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const OrganKeyBindEvent = new OrganKeyActiveEventModel('key_active')
 
 NetworkEvents.dataReceived('mine_menu_use_item', event => {

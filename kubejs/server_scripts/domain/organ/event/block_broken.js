@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const OrganBlockBrokenEvent = new OrganEventModel('block_broken')
 
 

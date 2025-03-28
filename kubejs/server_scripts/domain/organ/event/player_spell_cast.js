@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const PlayerSpellCastEvent = new OrganEventModel('player_spell_cast')
 
 

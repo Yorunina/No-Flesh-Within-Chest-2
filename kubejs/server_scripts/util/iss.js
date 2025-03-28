@@ -1,4 +1,4 @@
-// priority: 2500
+// priority: 3000
 /**
  * 更新客户端的法术数据，不存在在tick策略中
  * @param {OrganEventCustomData} customData

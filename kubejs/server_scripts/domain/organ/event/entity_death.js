@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const OrganEntityDeathEvent = new OrganEventModel('entity_death')
 const OrganEntityKillEvent = new OrganEventModel('entity_kill')
 

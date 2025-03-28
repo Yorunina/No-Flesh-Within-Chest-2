@@ -40,8 +40,6 @@ const OrganTagMap = {
     'kubejs:chest_cavity_update': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_cavity_update')),
     'kubejs:item_right_clicked_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_right_clicked_only')),
     'kubejs:item_right_clicked': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_right_clicked')),
-    'kubejs:player_tick_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_tick_only')),
-    'kubejs:player_tick': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_tick')),
     'kubejs:key_active': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:key_active')),
     'kubejs:key_active_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:key_active_only')),
     'kubejs:entity_do_damage_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_do_damage_only')),

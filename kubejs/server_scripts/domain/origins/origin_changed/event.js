@@ -1,4 +1,4 @@
-// priority: 800
+// priority: 999
 OriginsEvents.originChanged(event => {
     const origin = event.getOrigin()
     if (origin.getPath() == 'empty') return

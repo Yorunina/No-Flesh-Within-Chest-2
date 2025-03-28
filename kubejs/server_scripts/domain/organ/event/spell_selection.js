@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const OrganSpellSelectionEvent = new OrganEventModel('spell_selection')
 
 /**
