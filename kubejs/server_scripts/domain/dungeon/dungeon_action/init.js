@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 999
 const DungeonSpawnerIdMap = {
     'test': testDungeonSpawner
 }

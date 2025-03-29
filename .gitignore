@@ -36,3 +36,4 @@ config/inventoryprofilesnext/
 !config/inventoryprofilesnext/inventoryprofiles.json
 !config/inventoryprofilesnext/integrationHints
 config/oculus*
+kubejs/pack_resources

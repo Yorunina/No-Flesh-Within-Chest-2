@@ -1,6 +1,6 @@
 // priority: 998
 const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
-const serverField = {}
+
 if (IsLoadedKubeloader) {
     serverField.core = {
         funcs:{

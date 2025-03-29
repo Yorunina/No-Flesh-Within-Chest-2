@@ -4,6 +4,10 @@
  */
 const OrganStrategyMap = {}
 
+/**
+ * 
+ * @param {OrganStrategyModel} strategyModel 
+ */
 function RegistryOrganStrategy(strategyModel) {
     OrganStrategyMap[strategyModel.itemId] = strategyModel
 }

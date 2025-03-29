@@ -1,0 +1,18 @@
+
+#.
+#Change some parameters of the hologram display.
+[optical-hologram]
+	#.
+	#.
+	#Regulate the transparency of the hologram in general.
+	#Range: 0.0 ~ 1.0
+	generalTransparency = 1.0
+	#.
+	#Regulate the transparency of the non bright texture.
+	#Range: 0.0 ~ 1.0
+	normalTransparency = 0.75
+	#.
+	#Regulate the transparency of the bright texture.
+	#Range: 0.0 ~ 1.0
+	additiveTransparency = 1.0
+

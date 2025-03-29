@@ -71,6 +71,8 @@
 				#Specifies Sol Z-axis rotation
 				#Range: 0 ~ 360
 				sol_z_rotation = 0
+				#Uses the Vanilla Moon texture for rendering
+				vanilla_moon = false
 
 	["Stellar View Client Config"."Nether Config"]
 
