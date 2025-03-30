@@ -29,8 +29,11 @@ function TwistingWeepingIntestineKeyActiveOnly(customData, event, organItem, org
 * @param {string} slotType
 */
 function TwistingWeepingIntestineChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
     const chestCavity = event.chestCavity
-    RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')
+    if (entity instanceof $ServerPlayer) {
+        RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')
+    }
 }
 
 /**

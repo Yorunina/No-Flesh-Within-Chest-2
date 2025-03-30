@@ -140,12 +140,24 @@ function FurnaceCoreTakeOn(customData, event, organItem, organIndex, slotType) {
     }
 }
 
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function BurningHeartMpmRender(customData, event, organItem, organIndex, slotType) {
+    customData.mpmParts.push(new MpmDataModel('kubejs:parts/body/burning_heart_body_model.json').exportModelData())
+    customData.mpmParts.push(new MpmDataModel('kubejs:parts/arms/burning_heart_arm_model.json').exportModelData())
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:furnace_core')
         .addOnlyStrategy('entity_tick', FurnaceCoreEntityTick)
         .addOnlyStrategy('organ_take_off', FurnaceCoreTakeOff)
         .addOnlyStrategy('entity_do_damage', FurnaceCoreDoDamage)
         .addOnlyStrategy('organ_take_on', FurnaceCoreTakeOn)
+        .addOnlyStrategy('mpm_render', BurningHeartMpmRender)
 )
 
 /**
@@ -155,7 +167,7 @@ RegistryOrganStrategy(
  * @param {number} organIndex
  * @param {string} slotType
  */
-function BurningCoreEntityTickDefer(customData, event, organItem, organIndex, slotType) {
+function BurningHeartEntityTickDefer(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
     let attributeInstance = event.entity.getAttribute('minecraft:generic.attack_damage')
     let damageValue = Math.max(10 - chestCavity.customDataMap.getOrDefault('burningHeartDelay', 0), 0)
@@ -202,8 +214,8 @@ function BurningCoreEntityTickDefer(customData, event, organItem, organIndex, sl
  * @param {number} organIndex
  * @param {string} slotType
  */
-function BurningCoreEntityTick(customData, event, organItem, organIndex, slotType) {
-    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningCoreEntityTickDefer, organIndex))
+function BurningHeartEntityTick(customData, event, organItem, organIndex, slotType) {
+    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningHeartEntityTickDefer, organIndex))
 }
 
 
@@ -214,7 +226,7 @@ function BurningCoreEntityTick(customData, event, organItem, organIndex, slotTyp
  * @param {number} organIndex
  * @param {string} slotType
  */
-function BurningCoreDoDamageDefer(customData, event, organItem, organIndex, slotType) {
+function BurningHeartDoDamageDefer(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     const chestCavity = sourceEntity.chestCavityInstance
@@ -248,8 +260,8 @@ function BurningCoreDoDamageDefer(customData, event, organItem, organIndex, slot
  * @param {number} organIndex
  * @param {string} slotType
  */
-function BurningCoreDoDamage(customData, event, organItem, organIndex, slotType) {
-    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningCoreDoDamageDefer, organIndex))
+function BurningHeartDoDamage(customData, event, organItem, organIndex, slotType) {
+    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningHeartDoDamageDefer, organIndex))
 }
 
 
@@ -261,7 +273,7 @@ function BurningCoreDoDamage(customData, event, organItem, organIndex, slotType)
  * @param {number} organIndex
  * @param {string} slotType
  */
-function BurningCoreTakeOff(customData, event, organItem, organIndex, slotType) {
+function BurningHeartTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
     let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
@@ -278,7 +290,7 @@ function BurningCoreTakeOff(customData, event, organItem, organIndex, slotType) 
  * @param {number} organIndex
  * @param {string} slotType
  */
-function BurningCoreTakeOn(customData, event, organItem, organIndex, slotType) {
+function BurningHeartTakeOn(customData, event, organItem, organIndex, slotType) {
     const { chestCavity, entity } = event
     if (entity instanceof $ServerPlayer) {
         let organEffect = new OragnEffectModel(organItem).setPriority(100).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
@@ -289,8 +301,9 @@ function BurningCoreTakeOn(customData, event, organItem, organIndex, slotType) {
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:burning_heart')
-        .addOnlyStrategy('entity_tick', BurningCoreEntityTick)
-        .addOnlyStrategy('organ_take_off', BurningCoreTakeOff)
-        .addOnlyStrategy('entity_do_damage', BurningCoreDoDamage)
-        .addOnlyStrategy('organ_take_on', BurningCoreTakeOn)
+        .addOnlyStrategy('entity_tick', BurningHeartEntityTick)
+        .addOnlyStrategy('organ_take_off', BurningHeartTakeOff)
+        .addOnlyStrategy('entity_do_damage', BurningHeartDoDamage)
+        .addOnlyStrategy('organ_take_on', BurningHeartTakeOn)
+        .addOnlyStrategy('mpm_render', BurningHeartMpmRender)
 )

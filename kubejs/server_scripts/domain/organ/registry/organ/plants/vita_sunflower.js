@@ -40,8 +40,25 @@ function VitaSunflowerEntityTick(customData, event, organItem, organIndex, slotT
     }
 }
 
+/**
+* @param {OrganChestCavityUpdateStrategyCustomData} customData
+* @param {Internal.EvaluateChestCavityJS} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function VitaSunflowerChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    const chestCavity = event.chestCavity
+    if (entity instanceof $ServerPlayer) {
+        RemoveOrganEffect(chestCavity, 'kubejs:vita_sunflower')
+    }
+}
+
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:vita_sunflower')
         .addOnlyStrategy('entity_do_damage', VitaSunflowerDoDamage)
         .addOnlyStrategy('entity_tick', VitaSunflowerEntityTick)
+        .addOnlyStrategy('organ_take_off', VitaSunflowerChestCavityTakeOffOnly)
 )

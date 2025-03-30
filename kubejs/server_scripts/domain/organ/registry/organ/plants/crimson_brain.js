@@ -19,7 +19,7 @@ function CrimsonBrainEntityKill(customData, event, organItem, organIndex, slotTy
     let duration = effect.duration
     let amplifier = effect.amplifier
     let damage = GetPutridToxinsDamage(entity)
-    let entityList = GetLivingWithinRadius(level, entity.position(), 5, (pLevel, pEntity) => {
+    let entityList = GetLivingWithinRadius(level, entity.position(), 4, (pLevel, pEntity) => {
         if (pEntity.isPlayer()) return false
         if (pEntity instanceof $TamableAnimal) {
             if (pEntity.getOwner() && pEntity.getOwner().isPlayer()) return false

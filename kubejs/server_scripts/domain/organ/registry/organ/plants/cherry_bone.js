@@ -17,8 +17,11 @@ function CherryBoneEntityBeHurt(customData, event, organItem, organIndex, slotTy
     if (sourceEntity.hasEffect('kubejs:vita_toxins')) {
         let effect = sourceEntity.getEffect('kubejs:vita_toxins')
         if (effect.duration > event.amount * 20) {
-            effect.setDuration(Math.max(effect.duration - event.amount * 20, 10))
+            effect.setDuration(effect.duration - event.amount * 20)
             event.amount = 0
+        } else {
+            event.amount -= effect.duration / 20
+            sourceEntity.removeEffect('kubejs:vita_toxins')
         }
     }
 }

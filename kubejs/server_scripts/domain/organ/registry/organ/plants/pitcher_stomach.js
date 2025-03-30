@@ -49,8 +49,11 @@ function PitcherStomachDoDamage(customData, event, organItem, organIndex, slotTy
 * @param {string} slotType
 */
 function PitcherStomachChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
     const chestCavity = event.chestCavity
-    RemoveOrganEffect(chestCavity, 'kubejs:pitcher_stomach')
+    if (entity instanceof $ServerPlayer) {
+        RemoveOrganEffect(chestCavity, 'kubejs:pitcher_stomach')
+    }
 }
 
 RegistryOrganStrategy(

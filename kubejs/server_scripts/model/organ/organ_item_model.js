@@ -3,6 +3,10 @@ const $ScoreType = 'chestcavity:filtration' ||'chestcavity:breath_recovery' ||'c
 
 const OrganList = []
 const PseudoOrganList = []
+/**
+ * 
+ * @param {String} itemId 
+ */
 function OrganItemModel(itemId) {
     this.itemId = itemId
     this.pseudoOrgan = false

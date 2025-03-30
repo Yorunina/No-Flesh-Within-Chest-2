@@ -11,5 +11,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:cherry_bone').maxStackSize(1).texture('kubejs:item/organs/plants/cherry_bone').tag('kubejs:plants').tag('kubejs:rib')
 
     event.create('kubejs:vita_berry').maxStackSize(1).texture('kubejs:item/organs/plants/vita_berry').tag('kubejs:plants')
-    event.create('kubejs:vita_sunflower').maxStackSize(1).texture('kubejs:item/organs/plants/vita_sunflower').maxDamage(60).tag('kubejs:plants')
+    event.create('kubejs:vita_sunflower').maxStackSize(1).texture('kubejs:item/organs/plants/vita_sunflower').maxDamage(15).tag('kubejs:plants')
 })

@@ -167,9 +167,12 @@ RegistryOrganStrategy(
 * @param {string} slotType
 */
 function BlazePressurizerChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
     const chestCavity = event.chestCavity
     chestCavity.customDataMap.put('blazePressurizerCounter', 0)
-    RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
+    if (entity instanceof $ServerPlayer) {
+        RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
+    }
 }
 
 /**

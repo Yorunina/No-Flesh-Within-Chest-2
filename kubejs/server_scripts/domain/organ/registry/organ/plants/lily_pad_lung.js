@@ -25,7 +25,7 @@ function LilyPadLungDoDamageDefer(customData, event, organItem, organIndex, slot
     if (source.isPlayer()) {
         source.addItemCooldown('kubejs:lily_pad_lung', 20 * 3)
     }
-    target.potionEffects.add('kubejs:putrid_toxins', effect.duration, Math.min(effect.amplifier + 1, 9), false, false)
+    target.potionEffects.add('kubejs:putrid_toxins', effect.duration, Math.min(effect.amplifier + 1, 4), false, false)
 }
 
 /**

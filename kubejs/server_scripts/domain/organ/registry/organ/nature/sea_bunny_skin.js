@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:sea_bunny_gland')
+RegistryOrgan('kubejs:sea_bunny_skin')
     .addScore('chestcavity:defense', 1.5)
 /**
  * @param {OrganEventCustomData} customData
@@ -26,6 +26,6 @@ function SeaBunnyGlandEntityTick(customData, event, organItem, organIndex, slotT
 
 
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:sea_bunny_gland')
+    new OrganStrategyModel('kubejs:sea_bunny_skin')
         .addOnlyStrategy('entity_tick', SeaBunnyGlandEntityTick)
 )

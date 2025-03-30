@@ -23,7 +23,7 @@ function VitaRoseLiverDoDamage(customData, event, organItem, organIndex, slotTyp
     SetVitaToxinsSource(target, sourceEntity.getUuid())
     if (chestCavity.inventory.find('kubejs:vita_berry') > 0) {
         SetVitaToxinsType(target, 'max_health')
-        SetVitaToxinsCoe(target, 3)
+        SetVitaToxinsCoe(target, 2)
     } else {
         SetVitaToxinsType(target, 'attack_damage')
         SetVitaToxinsCoe(target, 1)
