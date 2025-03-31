@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=lower":  { "model": "kubejs:block/dungeon_obelisk_bottom" },
+    "half=upper": { "model": "kubejs:block/dungeon_obelisk_top"}
+  }
+}

@@ -18,8 +18,9 @@
         {"x": 82, "y": 87},
         {"x": 100, "y": 87},
         {"x": 122, "y": 87, "type": "machinary_lubricant"},
-        {"x": 113, "y": 21, "type": "revolution_flame"},
-        {"x": 181, "y": 74, "type": "revolution_flame"}
+        {"x": 113, "y": 21, "type": "machinary_lubricant"},
+        {"x": 181, "y": 74, "type": "machinary_lubricant"},
+        {"x": 181, "y": 19, "type": "revolution_flame"}
     ],
     "backgroundTexture": "kubejs:textures/gui/chest_cavity/revolution_machine.png",
     "titlePosition": {

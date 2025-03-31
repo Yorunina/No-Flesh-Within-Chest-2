@@ -56,3 +56,4 @@ const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellD
 const $TitleManager = Java.loadClass('aurilux.titles.common.core.TitleManager')
 const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal')
 const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
+const $DoubleBlockHalf = Java.loadClass('net.minecraft.world.level.block.state.properties.DoubleBlockHalf')

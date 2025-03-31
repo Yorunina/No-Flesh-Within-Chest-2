@@ -1,10 +1,12 @@
 // priority: 500
 RegistryOrgan('kubejs:furnace_core')
     .addScore('chestcavity:knockback_resistant', 0.5)
+    .addScore('chestcavity:nerves', -0.5)
     .addScore('chestcavity:health', 1.5)
 
 RegistryOrgan('kubejs:burning_heart')
     .addScore('chestcavity:knockback_resistant', 0.5)
+    .addScore('chestcavity:nerves', -0.5)
     .addScore('chestcavity:health', 1.5)
 
 const FurnaceCoreTempAttackUpUUID = UUID.fromString('858D6175-7E75-41BC-9E70-A42AAFE7A337')
