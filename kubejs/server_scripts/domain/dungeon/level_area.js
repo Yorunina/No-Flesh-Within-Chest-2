@@ -29,7 +29,7 @@ function GenDungeonLevelArea(level, centerPos) {
     let areaUuid = area.getUuid()
     entityAABBList.forEach(entity => {
         // 清空AABB里面可能的生物残留
-        if (entity.persistentData.contains('relatedArea') && entity.persistentData.getUUID('relatedArea').equals(areaUuid)) {
+        if (entity.getPersistentData().contains('relatedArea') && entity.getPersistentData().getUUID('relatedArea').equals(areaUuid)) {
             entity.remove('discarded')
             return
         }

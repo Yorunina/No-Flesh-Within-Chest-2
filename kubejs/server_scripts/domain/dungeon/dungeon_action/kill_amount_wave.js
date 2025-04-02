@@ -23,7 +23,7 @@ function NewKillAmountWave(maxKillAmount, waveTicks, entityGenerator) {
             let playerList = []
             entityAABBList.forEach(entity => {
                 // 清空AABB里面可能的生物残留
-                if (entity.persistentData.contains('relatedArea') && entity.persistentData.getUUID('relatedArea').equals(areaUuid)) {
+                if (entity.getPersistentData().contains('relatedArea') && entity.getPersistentData().getUUID('relatedArea').equals(areaUuid)) {
                     entity.remove('discarded')
                     return
                 }
@@ -125,7 +125,7 @@ function NewContinousKillAmountWave(maxKillAmount, waveTicks, entityGenerator) {
             let playerList = []
             entityAABBList.forEach(entity => {
                 // 清空AABB里面可能的生物残留
-                if (entity.persistentData.contains('relatedArea') && entity.persistentData.getUUID('relatedArea').equals(areaUuid)) {
+                if (entity.getPersistentData().contains('relatedArea') && entity.getPersistentData().getUUID('relatedArea').equals(areaUuid)) {
                     entity.remove('discarded')
                     return
                 }

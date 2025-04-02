@@ -35,7 +35,7 @@ function SetCustomData(customData, key, value) {
  * @param {number} damage 
  */
 function SetPutridToxinsDamage(target, damage) {
-    target.persistentData.putFloat('putridToxinsDamage', damage)
+    target.getPersistentData().putFloat('putridToxinsDamage', damage)
 }
 
 /**
@@ -44,7 +44,7 @@ function SetPutridToxinsDamage(target, damage) {
  * @returns {number}
  */
 function GetPutridToxinsDamage(target) {
-    return target.persistentData.contains('putridToxinsDamage') ? target.persistentData.getFloat('putridToxinsDamage') : 0
+    return target.getPersistentData().contains('putridToxinsDamage') ? target.getPersistentData().getFloat('putridToxinsDamage') : 0
 }
 
 
@@ -55,7 +55,7 @@ function GetPutridToxinsDamage(target) {
  * @param {Internal.UUID} uuid
  */
 function SetVitaToxinsSource(target, uuid) {
-    target.persistentData.putUUID('vitaToxinsSource', uuid)
+    target.getPersistentData().putUUID('vitaToxinsSource', uuid)
 }
 
 /**
@@ -64,7 +64,7 @@ function SetVitaToxinsSource(target, uuid) {
  * @return {Internal.UUID}
  */
 function GetVitaToxinsSource(target) {
-    return target.persistentData.contains('vitaToxinsSource') ? target.persistentData.getUUID('vitaToxinsSource') : null
+    return target.getPersistentData().contains('vitaToxinsSource') ? target.getPersistentData().getUUID('vitaToxinsSource') : null
 }
 
 /**
@@ -73,7 +73,7 @@ function GetVitaToxinsSource(target) {
  * @param {string} type
  */
 function SetVitaToxinsType(target, type) {
-    target.persistentData.putString('vitaToxinsType', type)
+    target.getPersistentData().putString('vitaToxinsType', type)
 }
 
 /**
@@ -82,5 +82,5 @@ function SetVitaToxinsType(target, type) {
  * @param {number} coe
  */
 function SetVitaToxinsCoe(target, coe) {
-    target.persistentData.putFloat('vitaToxinsCoe', coe)
+    target.getPersistentData().putFloat('vitaToxinsCoe', coe)
 }

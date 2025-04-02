@@ -35,8 +35,8 @@ ServerEvents.highPriorityData(event => {
 function GenDungeonStruct(level) {
     let dungeonStructManager = level.getStructureManager()
     let dungeonNum = 0
-    if (level.persistentData.contains('dungeonNum')) {
-        dungeonNum = level.persistentData.getInt('dungeonNum')
+    if (level.getPersistentData().contains('dungeonNum')) {
+        dungeonNum = level.getPersistentData().getInt('dungeonNum')
     }
     let buildOffset = calculateStructureCenterPos(dungeonNum)
     let buildX = buildOffset.x * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
@@ -53,7 +53,7 @@ function GenDungeonStruct(level) {
 
     HandleDataBlock(level, structTemplate, structBuildPos, placementSettings)
 
-    level.persistentData.putInt('dungeonNum', dungeonNum + 1)
+    level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
 
     return structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
 }
@@ -83,7 +83,7 @@ function HandleDataBlock(level, template, position, placementSettings) {
                         /** @type {Internal.BlockContainerJS} */
                         let obeliskBlockLower = Block.getBlock('kubejs:dungeon_obelisk')
                         obeliskBlockLower.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER)
-                        obeliskBlockLower.entity.persistentData.put('SpawnPos', spawnPosNbt)
+                        obeliskBlockLower.entity.getPersistentData().put('SpawnPos', spawnPosNbt)
                         obeliskBlockLower.entity.setChanged()
                         level.setBlock(position.above(1), obeliskBlockLower, 3)
                         level.setBlock(position.above(2), obeliskBlockUpper, 3)
