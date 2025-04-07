@@ -1,0 +1,20 @@
+{
+    "type": "origins:burn",
+    "interval": 20,
+    "burn_duration": 1,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:empty"
+                }
+            },
+            {
+                "type": "origins:exposed_to_sun"
+            }
+        ]
+    }
+}

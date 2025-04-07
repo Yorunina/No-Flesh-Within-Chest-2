@@ -91,3 +91,15 @@
 		"origins:fragile" = true
 		"origins:phantomize_overlay" = true
 
+	[origins."kubejs:lich"]
+		enabled = true
+		"kubejs:disable_exhaustion" = true
+		"kubejs:disable_air_supply" = true
+
+	[origins."origins:lich"]
+		enabled = true
+		"origins:disable_exhaustion" = true
+		"origins:disable_air_supply" = true
+		"origins:lich_burn" = true
+		"origins:lich_weak_health" = true
+

@@ -1,0 +1,8 @@
+{
+    "type": "origins:attribute",
+    "modifier": {
+        "attribute": "minecraft:generic.attack_damage",
+        "value": -0.25,
+        "operation": "multiply_base"
+      }
+}

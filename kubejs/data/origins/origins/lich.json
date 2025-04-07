@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"origins:disable_exhaustion",
+		"origins:disable_air_supply",
+		"origins:lich_burn",
+		"origins:lich_weak_health",
+		"origins:lich_weak_attack"
+	],
+	"icon": {
+		"item": "minecraft:feather"
+	},
+	"order": 0,
+	"impact": 1
+}
