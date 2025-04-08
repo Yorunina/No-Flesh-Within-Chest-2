@@ -102,4 +102,5 @@
 		"origins:disable_air_supply" = true
 		"origins:lich_burn" = true
 		"origins:lich_weak_health" = true
+		"origins:lich_weak_attack" = true
 
