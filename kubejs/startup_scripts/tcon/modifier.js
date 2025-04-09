@@ -44,9 +44,20 @@ TConJSEvents.modifierRegistry(event => {
     event.createNew('ventricular_fibrillation', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
-            if (!target.isAlive()) return
             const chestCavity = target.chestCavityInstance
-            chestCavity.setOrganScore('chestcavity:health', chestCavity.getOrganScore('chestcavity:health') - amount * 0.001 * lvl)
+            if (!target.isAlive() || !chestCavity) return
+            chestCavity.setOrganScore('chestcavity:health', chestCavity.getOrganScore('chestcavity:health') - 0.01 * lvl)
+        })
+    })
+
+    // 标记目标；在造成暴击伤害时，对目标施加标记效果，持续 5 * 等级 秒   
+    event.createNew('marking_target', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            /**@type {Internal.LivingEntity} */
+            const target = context.target
+            if (context.isCritical() && target && target.isAlive()) {
+                target.potionEffects.add('kubejs:marked', 20 * 5 * lvl, 0, false, false)
+            }
         })
     })
 })

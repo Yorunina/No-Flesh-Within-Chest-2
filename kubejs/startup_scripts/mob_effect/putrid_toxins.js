@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 1000
 StartupEvents.registry('mob_effect', event => {
     event.create('putrid_toxins')
         .harmful()
