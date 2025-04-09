@@ -340,6 +340,7 @@
     "status_msg.chestcavity.chestopener.fail.obstructed": "无法对穿戴护甲的目标开胸",
     "status_msg.chestcavity.chestopener.fail.healthy": "无法对过于健康的目标开胸",
     "status_msg.kubejs.warden_core.key_active.cooldown": "%s 冷却时间：%s 秒",
+    "status_msg.kubejs.dungeon_obelisk.cannot_active_for_peacful": "无法在和平模式下激活地牢石碑",
     "_comment.item": "物品",
     "item.chestcavity.surgical_box": "手术盒",
     "item_name.kubejs.glass_vial.suffix": "的血清",

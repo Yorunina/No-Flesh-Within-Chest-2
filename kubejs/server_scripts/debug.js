@@ -2,16 +2,16 @@
 
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
-    let player = event.player
-    player.triggerAnimation('kubejs:hittingiron.animation')
+    const { player } = event
+    // player.triggerAnimation('kubejs:inject_animation', false)
+    // player.triggerAnimation('kubejs:head_fly_animation', false)
+    // player.triggerAnimation('kubejs:punch_animation', false)
 
+    let minecraftServer = event.level.server
+    let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
+    const { structCenterPos } = GenDungeonStruct(dungeonLevel)
 
-    // let minecraftServer = event.level.server
-    // let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    // let structBuildPos = GenDungeonStruct(dungeonLevel)
-    // let centerPos = structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
-    
-    // player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
+    player.teleportTo(dungeonLevel.getDimension(), structCenterPos.x, structCenterPos.y, structCenterPos.z, 0, 0)
     // let area = GenDungeonLevelArea(dungeonLevel, centerPos)
     // if (!area) return
     // let manager = LoquatAreaManager.of(dungeonLevel)
@@ -22,7 +22,7 @@ ItemEvents.rightClicked('stick', event => {
     // player.tell(pos)
     // let pos = player.blockPosition()
     // let vec3 = new Vec3d(pos.x, pos.y, pos.z)
-    
+
     // let res = []
     // $ForgeRegistries.ENTITY_TYPES.getEntries().forEach(entityType => {
     //     if (entityType.getValue().getCategory().toString() == 'MISC') return

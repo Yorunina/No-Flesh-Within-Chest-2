@@ -17,6 +17,7 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
         let dungeonEventModel = DungeonSpawnerIdMap[context.spawnerId]
         customDataMap.put('dungeonEventAction', dungeonEventModel)
         dungeonEventModel.initAction(level, context, areaManager)
+        SetDungeonObeliskState(level, area, 1)
     }
 
     /**@type {DungeonEventActionModel} */
@@ -25,6 +26,7 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
     // 如果波次不存在，认为成功
     if (dungeonEventModel.waves.length <= waveId || waveId < 0) {
         dungeonEventModel.finishAction(level, context, areaManager, true)
+        SetDungeonObeliskState(level, area, 2)
         areaManager.remove(area.getUuid())
         areaManager.setDirty()
         return
@@ -44,6 +46,13 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
                 if (!waveAction.endTester(level, context, areaManager)) {
                     waveAction.finishAction(level, context, areaManager, false)
                     dungeonEventModel.finishAction(level, context, areaManager, false)
+                    GetAreaPlayerList(level, area).forEach(player => {
+                        // todo 本地化
+                        player.tell('§c§l波次失败')
+                        level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.trident.thunder', player.getSoundSource(), 0.5, 1)
+                    })
+                    
+                    SetDungeonObeliskState(level, area, 3)
                     areaManager.remove(area.getUuid())
                     areaManager.setDirty()
                     return
@@ -56,6 +65,7 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
                 let dungeonSuccess = waveAction.finishAction(level, context, areaManager, true)
                 if (dungeonSuccess) {
                     dungeonEventModel.finishAction(level, context, areaManager, true)
+                    SetDungeonObeliskState(level, area, 2)
                     areaManager.remove(area.getUuid())
                     areaManager.setDirty()
                     return
@@ -70,6 +80,7 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
             // 未知状态，直接回收
             areaManager.remove(area.getUuid())
             areaManager.setDirty()
+            SetDungeonObeliskState(level, area, 0)
             return
     }
 })

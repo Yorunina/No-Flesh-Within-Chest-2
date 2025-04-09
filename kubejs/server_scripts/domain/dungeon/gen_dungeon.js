@@ -28,7 +28,7 @@ if (FilesJS.exists(DungeonStructureFileLocation)) {
 
 /**
  * @param {Internal.ServerLevel} level 
- * @return {BlockPos}
+ * @return {Object}
  */
 function GenDungeonStruct(level) {
     const dungeonStructManager = level.getStructureManager()
@@ -44,6 +44,7 @@ function GenDungeonStruct(level) {
     let structTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(structId))
     let structSizeRange = ConvertVec3i2BlockPos(structTemplate.getSize())
     let structBuildPos = new BlockPos(buildX, 0, buildZ)
+    let centerPos = structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
     let chunkAccess = GetChunkAccess(level, structBuildPos)
     if (!chunkAccess) return
 
@@ -52,7 +53,7 @@ function GenDungeonStruct(level) {
     HandleDataBlock(level, structTemplate, structBuildPos, placementSettings)
     level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
 
-    return structBuildPos
+    return { 'structBuildPos': structBuildPos, 'structCenterPos': centerPos }
 }
 
 /**

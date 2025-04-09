@@ -71,3 +71,22 @@ function SetWaveStatus(customDataMap, status) {
 function GetWaveStatus(customDataMap) {
     return customDataMap.getOrDefault('waveStatus', 0)
 }
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.Area} area 
+ * @returns {Internal.ServerPlayer[]}
+ */
+function GetAreaPlayerList(level, area) {
+    let playerList = []
+    let aabb = area.getRoughAABB()
+    let entityAABBList = level.getEntitiesWithin(aabb)
+    entityAABBList.forEach(entity => {
+        if (entity.isPlayer() && entity instanceof $ServerPlayer) {
+            playerList.push(entity)
+            return
+        }
+    })
+    return playerList
+}

@@ -1,6 +1,12 @@
 {
   "variants": {
-    "half=lower":  { "model": "kubejs:block/dungeon_obelisk_bottom" },
-    "half=upper": { "model": "kubejs:block/dungeon_obelisk_top"}
+    "half=lower,obelisks_state=0":  { "model": "kubejs:block/dungeon_obelisk_bottom" },
+    "half=upper,obelisks_state=0": { "model": "kubejs:block/dungeon_obelisk_top"},
+    "half=lower,obelisks_state=1":  { "model": "kubejs:block/dungeon_obelisk_bottom" },
+    "half=upper,obelisks_state=1": { "model": "kubejs:block/dungeon_obelisk_top"},
+    "half=lower,obelisks_state=2":  { "model": "kubejs:block/dungeon_obelisk_bottom" },
+    "half=upper,obelisks_state=2": { "model": "kubejs:block/dungeon_obelisk_top"},
+    "half=lower,obelisks_state=3":  { "model": "kubejs:block/dungeon_obelisk_bottom" },
+    "half=upper,obelisks_state=3": { "model": "kubejs:block/dungeon_obelisk_top"}
   }
 }
