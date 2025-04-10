@@ -90,3 +90,55 @@ function GetAreaPlayerList(level, area) {
     })
     return playerList
 }
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.Area} area
+ * @param {number} state 
+ * @returns 
+ */
+function SetDungeonObeliskState(level, area, state) {
+    const persistentData = area.getPersistentData()
+    if (!persistentData.contains('obeliskBlockPos')) {
+        return
+    }
+    let blockPosNbt = persistentData.get('obeliskBlockPos')
+    let blockPos = ConvertNbt2Pos(blockPosNbt)
+    let blockState = level.getBlockState(blockPos)
+    let upperBlockState = level.getBlockState(blockPos.above())
+    if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF) || !upperBlockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
+    level.setBlockAndUpdate(blockPos, blockState.setValue(OBELISK_STATE, Int2Integer(state)))
+    level.setBlockAndUpdate(blockPos.above(), upperBlockState.setValue(OBELISK_STATE, Int2Integer(state)))
+}
+
+/**
+ * 
+ * @param {Internal.Area} area 
+ * @returns 
+ */
+function GetAreaDifficulty(area) {
+    const persistentData = area.getPersistentData()
+    if (!persistentData.contains('difficulty')) {
+        return 0
+    }
+    return persistentData.getInt('difficulty')
+}
+
+/**
+ * 
+ * @param {Internal.PathfinderMob} entity 
+ * @param {number} difficulty 
+ * @returns 
+ */
+function CommonDungeonEntityDifficultyModifier(entity, difficulty) {
+    const attributes = entity.getAttributes()
+    if (attributes.hasAttribute('minecraft:generic.max_health')) {
+        entity.setAttributeBaseValue('minecraft:generic.max_health', entity.getAttribute('minecraft:generic.max_health').getValue() * (1 + difficulty * 0.2))
+        entity.setHealth(entity.getMaxHealth())
+    }
+    if (attributes.hasAttribute('minecraft:generic.attack_damage')) {
+        entity.setAttributeBaseValue('minecraft:generic.attack_damage', entity.getAttribute('minecraft:generic.attack_damage').getValue() * (1 + difficulty * 0.05))
+    }
+    return entity
+}

@@ -10,9 +10,12 @@ const testDungeonSpawner = new DungeonEventActionModel('test')
         }
     })
     .addWave(NewKillAmountWave(1, 20 * 5, (level, context, areaManager) => {
+        const area = context.area
+        const difficulty = GetAreaDifficulty(area)
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('minecraft:zombie')
+            CommonDungeonEntityDifficultyModifier(entity, difficulty)
             DungeonCreateEntity(level, context, entity)
         }
     }))
@@ -20,6 +23,7 @@ const testDungeonSpawner = new DungeonEventActionModel('test')
         for (let i = 0; i < 8; i++) {
             /**@type {Internal.PathfinderMob} */
             let entity = level.createEntity('minecraft:zombie')
+            CommonDungeonEntityDifficultyModifier(entity, difficulty)
             DungeonCreateEntity(level, context, entity)
         }
     }))

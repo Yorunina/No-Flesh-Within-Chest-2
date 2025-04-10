@@ -9,9 +9,9 @@ ItemEvents.rightClicked('stick', event => {
 
     let minecraftServer = event.level.server
     let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    const { structCenterPos } = GenDungeonStruct(dungeonLevel)
+    const centerPos = GenDungeonStruct(dungeonLevel, 10)
 
-    player.teleportTo(dungeonLevel.getDimension(), structCenterPos.x, structCenterPos.y, structCenterPos.z, 0, 0)
+    player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
     // let area = GenDungeonLevelArea(dungeonLevel, centerPos)
     // if (!area) return
     // let manager = LoquatAreaManager.of(dungeonLevel)

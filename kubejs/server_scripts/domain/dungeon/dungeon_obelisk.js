@@ -35,27 +35,6 @@ BlockEvents.placed('kubejs:dungeon_obelisk', event => {
     }
 })
 
-/**
- * 
- * @param {Internal.Level} level 
- * @param {Internal.Area} area
- * @param {number} state 
- * @returns 
- */
-function SetDungeonObeliskState(level, area, state) {
-    const persistentData = area.getPersistentData()
-    if (!persistentData.contains('obeliskBlockPos')) {
-        return
-    }
-    let blockPosNbt = persistentData.get('obeliskBlockPos')
-    let blockPos = ConvertNbt2Pos(blockPosNbt)
-    let blockState = level.getBlockState(blockPos)
-    let upperBlockState = level.getBlockState(blockPos.above())
-    if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF) || !upperBlockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
-    level.setBlockAndUpdate(blockPos, blockState.setValue(OBELISK_STATE, Int2Integer(state)))
-    level.setBlockAndUpdate(blockPos.above(), upperBlockState.setValue(OBELISK_STATE, Int2Integer(state)))
-}
-
 BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
     let block = event.block
     const level = event.level
@@ -83,26 +62,28 @@ BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
     let upperBlockState = level.getBlockState(upperBlockPos)
     let obeliskBlockEntity = level.getBlockEntity(blockPos)
     if (!obeliskBlockEntity) return
+    const persistentData = obeliskBlockEntity.getPersistentData()
+    const curDifficulty = persistentData.contains('difficulty') ? persistentData.getInt('difficulty') : 0
     switch (stage) {
         case 0:
-            if (!obeliskBlockEntity.getPersistentData().contains('spawnId')) return
-            let spawnId = obeliskBlockEntity.getPersistentData().getString('spawnId')
+            if (!persistentData.contains('spawnId')) return
+            let spawnId = persistentData.getString('spawnId')
             let area = GenDungeonLevelArea(level, blockPos)
             if (!area) return
             let manager = LoquatAreaManager.of(level)
             let areaEvent = new $SpawnMobAreaKubeEvent(area, spawnId, 1, 0)
             let areaPersistentData = area.getPersistentData()
             areaPersistentData.put('obeliskBlockPos', ConvertPos2Nbt(blockPos))
-            // todo 难度透传
-            areaPersistentData.putInt('difficulty', 0)
+            areaPersistentData.putInt('difficulty', curDifficulty)
             manager.addEvent(areaEvent)
             break
         case 1:
             break
         case 2:
-            if (!obeliskBlockEntity.getPersistentData().contains('spawnPos')) return
-            let spawnPosNbt = obeliskBlockEntity.getPersistentData().get('spawnPos')
+            if (!persistentData.contains('spawnPos')) return
+            let spawnPosNbt = persistentData.get('spawnPos')
             let spawnPos = ConvertNbt2Pos(spawnPosNbt)
+            if (spawnPos.getY() + 9 > level.getMaxBuildHeight()) return
             BuildNewDungeonLevel(level, spawnPos)
             level.setBlockAndUpdate(blockPos, blockState.setValue(OBELISK_STATE, Int2Integer(3)))
             level.setBlockAndUpdate(upperBlockPos, upperBlockState.setValue(OBELISK_STATE, Int2Integer(3)))
