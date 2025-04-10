@@ -92,7 +92,7 @@ function RevolutionRelayChestCavityTakeOffOnly(customData, event, organItem, org
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:revolution_relay')
-        .addOnlyStrategy('chest_cavity_update', RevolutionRelayChestCavityUpdateOnly)
+        .addOnlyStrategy('chest_cavity_update', RevolutionRelayChestCavityUpdateOnly, 1)
         .addStrategy('chest_cavity_update', RevolutionRelayChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', RevolutionRelayChestCavityTakeOffOnly)
 )
@@ -146,11 +146,10 @@ function RevolutionDelayChestCavityTakeOffOnly(customData, event, organItem, org
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:revolution_delay')
-        .addOnlyStrategy('chest_cavity_update', RevolutionDelayChestCavityUpdateOnly)
+        .addOnlyStrategy('chest_cavity_update', RevolutionDelayChestCavityUpdateOnly, 1)
         .addStrategy('chest_cavity_update', RevolutionDelayChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', RevolutionDelayChestCavityTakeOffOnly)
 )
-
 
 
 RegistryOrganStrategy(

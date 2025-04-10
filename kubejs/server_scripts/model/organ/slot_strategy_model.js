@@ -60,30 +60,41 @@ SlotStrategyModel.prototype = {
      */
     run: function (chestCavity, args, customData) {
         const ccInv = chestCavity.inventory
-        customData.localDefers = []
         const invTypeData = chestCavity.getInventoryTypeData()
         args.unshift(customData)
         const onlyMap = new Map()
         this.inits.forEach(init => {
             init.apply(null, args)
         })
+        const strategyFuncList = []
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
             if (!curItem || curItem.isEmpty()) continue
             let slotType = invTypeData.getSlotType(i)
             let strategyModel = this.strategyMap[slotType]
             if (!strategyModel) continue
-            if (strategyModel['only'] && !onlyMap.has(itemId)) {
+            if (strategyModel['only'] && strategyModel['only'].length > 0 && !onlyMap.has(itemId)) {
                 onlyMap.set(itemId, true)
-                strategyModel['only'].apply(null, args.concat(curItem, i))
+                strategyFuncList.concat({
+                    'strategyModel': strategyModel['only'],
+                    'arg': args.concat(curItem, i)
+                })
             }
-            if (strategyModel['default']) {
-                strategyModel['default'].apply(null, args.concat(curItem, i))
+            if (strategyModel['default'] && strategyModel['default'].length > 0) {
+                strategyFuncList.concat({
+                    'strategyModel': strategyModel['default'],
+                    'arg': args.concat(curItem, i)
+                })
             }
         }
-        customData.localDefers.forEach((func) => {
-            func.apply(null, args) 
-        })
+        if (strategyFuncList.length > 0) {
+            strategyFuncList.sort((a, b) => {
+                return a.strategyModel.priority - b.strategyModel.priority
+            })
+            strategyFuncList.forEach((model) => {
+                model.strategyModel.func.apply(null, strategyModel.arg)
+            })
+        }
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

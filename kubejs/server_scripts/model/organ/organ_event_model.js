@@ -29,7 +29,6 @@ OrganEventModel.prototype = {
      */
     run: function (entity, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
-        customData.localDefers = []
 
         if (!optional.isPresent()) return
         args.unshift(customData)
@@ -42,6 +41,7 @@ OrganEventModel.prototype = {
         const onlyMap = new Map()
         let slotMap = ccInstance.getListenerMap(this.eventId)
         if (slotMap) {
+            const strategyFuncList = []
             slotMap.forEach((slotIndex, slotType) => {
                 let curItem = ccInv.getStackInSlot(slotIndex)
                 if (!curItem || curItem.isEmpty()) return
@@ -50,26 +50,30 @@ OrganEventModel.prototype = {
                 if (!strategyModel) return
                 let organEventStrategy = strategyModel.strategyMap[this.eventId]
                 if (!organEventStrategy) return
-                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                if (organEventStrategy['only'] && organEventStrategy['only'].length > 0 && !onlyMap.has(itemId)) {
                     onlyMap.set(itemId, true)
-                    organEventStrategy['only'].apply(null, args.concat(curItem, slotIndex, slotType))
+                    strategyFuncList.concat({
+                        'strategyModel': organEventStrategy['only'],
+                        'arg': args.concat(curItem, slotIndex, slotType)
+                    })
                 }
-                if (organEventStrategy['default']) {
-                    organEventStrategy['default'].apply(null, args.concat(curItem, slotIndex, slotType))
+                if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
+                    strategyFuncList.concat({
+                        'strategyModel': organEventStrategy['default'],
+                        'arg': args.concat(curItem, slotIndex, slotType)
+                    })
                 }
             })
+            if (strategyFuncList.length > 0) {
+                strategyFuncList.sort((a, b) => {
+                    return a.strategyModel.priority - b.strategyModel.priority
+                })
+                strategyFuncList.forEach((model) => {
+                    model.strategyModel.func.apply(null, strategyModel.arg)
+                })
+            }
         }
         ExcretionSlot(customData, ccInstance)
-
-        if (customData.localDefers.length > 0) {
-            customData.localDefers.sort((a, b) => {
-                return a.priority - b.priority 
-            })
-            customData.localDefers.forEach((model) => {
-                // 当心自指引发stackOverflow，请不要用该model传递customData本身！
-                model.func.apply(null, [customData].concat(model.arg))
-            })
-        }
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

@@ -39,7 +39,6 @@ OrganTakeOnStrategyModel.prototype = {
         const ccInv = ccInstance.inventory
         const oldccInv = ccInstance.oldInventory
         if (!oldccInv || !ccInv) return
-        customData.localDefers = []
         args.unshift(customData)
         this.inits.forEach(init => {
             init.apply(null, args)
@@ -48,6 +47,7 @@ OrganTakeOnStrategyModel.prototype = {
         let oldContainerSize = oldccInv.getContainerSize()
         let newContainerSize = ccInv.getContainerSize()
 
+        const strategyFuncList = []
         for (let i = 0; i < newContainerSize; i++) {
             let newItem = ccInv.getStackInSlot(i)
             if (!newItem || newItem.isEmpty()) continue
@@ -61,24 +61,30 @@ OrganTakeOnStrategyModel.prototype = {
             if (!strategyModel) continue
             let organEventStrategy = strategyModel.strategyMap[this.eventId]
             if (!organEventStrategy) continue
-            if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+            if (organEventStrategy['only'] && organEventStrategy['only'].length > 0 && !onlyMap.has(itemId)) {
                 onlyMap.set(itemId, true)
-                organEventStrategy['only'].apply(null, args.concat(newItem, i))
+                strategyFuncList.concat({
+                    'strategyModel': organEventStrategy['only'],
+                    'arg': args.concat(newItem, i)
+                })
             }
-            if (organEventStrategy['default']) {
-                organEventStrategy['default'].apply(null, args.concat(newItem, i))
+            if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
+                strategyFuncList.concat({
+                    'strategyModel': organEventStrategy['default'],
+                    'arg': args.concat(newItem, i)
+                })
             }
         }
 
-
-        if (customData.localDefers.length > 0) {
-            customData.localDefers.sort((a, b) => {
-                return a.priority - b.priority 
+        if (strategyFuncList.length > 0) {
+            strategyFuncList.sort((a, b) => {
+                return a.strategyModel.priority - b.strategyModel.priority
             })
-            customData.localDefers.forEach((model) => {
-                model.func.apply(null, [customData].concat(model.arg))
+            strategyFuncList.forEach((model) => {
+                model.strategyModel.func.apply(null, strategyModel.arg)
             })
         }
+
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

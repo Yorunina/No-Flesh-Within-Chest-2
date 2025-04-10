@@ -45,7 +45,6 @@ StrategyModel.prototype = {
      * @param {any[]} args 
      */
     run: function (ids, args, customData) {
-        customData.localDefers = []
         args.unshift(customData)
         this.inits.forEach(init => {
             init.apply(null, args)
@@ -53,13 +52,6 @@ StrategyModel.prototype = {
         ids.forEach(id => {
             if (!this.strategyMap[id]) return
             this.strategyMap[id].apply(null, args)
-        })
-
-        customData.localDefers.forEach((func) => {
-            func.apply(null, args) 
-        })
-        this.defers.forEach(defer => {
-            defer.apply(null, args)
         })
         return
     },

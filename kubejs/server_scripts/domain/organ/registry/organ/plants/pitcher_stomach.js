@@ -31,17 +31,6 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
 }
 
 /**
- * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function PitcherStomachDoDamage(customData, event, organItem, organIndex, slotType) {
-    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], PitcherStomachDoDamageDefer, organIndex))
-}
-
-/**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.EvaluateChestCavityJS} event 
 * @param {Internal.ItemStack} organItem
@@ -58,7 +47,7 @@ function PitcherStomachChestCavityTakeOffOnly(customData, event, organItem, orga
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:pitcher_stomach')
-        .addOnlyStrategy('entity_do_damage', PitcherStomachDoDamage)
-       .addOnlyStrategy('organ_take_off', PitcherStomachChestCavityTakeOffOnly)
+        .addOnlyStrategy('entity_do_damage', PitcherStomachDoDamageDefer, -1)
+        .addOnlyStrategy('organ_take_off', PitcherStomachChestCavityTakeOffOnly)
 )
 

@@ -51,17 +51,6 @@ function FurnaceCoreEntityTickDefer(customData, event, organItem, organIndex, sl
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function FurnaceCoreEntityTick(customData, event, organItem, organIndex, slotType) {
-    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], FurnaceCoreEntityTickDefer, organIndex))
-}
-
-/**
- * @param {OrganEventCustomData} customData
  * @param {Internal.LivingHurtEvent} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
@@ -155,7 +144,7 @@ function BurningHeartMpmRender(customData, event, organItem, organIndex, slotTyp
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:furnace_core')
-        .addOnlyStrategy('entity_tick', FurnaceCoreEntityTick)
+        .addOnlyStrategy('entity_tick', FurnaceCoreEntityTickDefer, -1)
         .addOnlyStrategy('organ_take_off', FurnaceCoreTakeOff)
         .addOnlyStrategy('entity_do_damage', FurnaceCoreDoDamage)
         .addOnlyStrategy('organ_take_on', FurnaceCoreTakeOn)
@@ -209,17 +198,6 @@ function BurningHeartEntityTickDefer(customData, event, organItem, organIndex, s
     }
 }
 
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function BurningHeartEntityTick(customData, event, organItem, organIndex, slotType) {
-    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningHeartEntityTickDefer, organIndex))
-}
-
 
 /**
  * @param {OrganEventCustomData} customData
@@ -253,17 +231,6 @@ function BurningHeartDoDamageDefer(customData, event, organItem, organIndex, slo
     damageBoost = damageBoost * blazerBoost
     multiplierBoost = multiplierBoost * blazerBoost
     event.amount = (event.amount + damageBoost) * (2 + multiplierBoost)
-}
-
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function BurningHeartDoDamage(customData, event, organItem, organIndex, slotType) {
-    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], BurningHeartDoDamageDefer, organIndex))
 }
 
 
@@ -303,9 +270,9 @@ function BurningHeartTakeOn(customData, event, organItem, organIndex, slotType) 
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:burning_heart')
-        .addOnlyStrategy('entity_tick', BurningHeartEntityTick)
+        .addOnlyStrategy('entity_tick', BurningHeartEntityTickDefer, -1)
         .addOnlyStrategy('organ_take_off', BurningHeartTakeOff)
-        .addOnlyStrategy('entity_do_damage', BurningHeartDoDamage)
+        .addOnlyStrategy('entity_do_damage', BurningHeartDoDamageDefer)
         .addOnlyStrategy('organ_take_on', BurningHeartTakeOn)
         .addOnlyStrategy('mpm_render', BurningHeartMpmRender)
 )

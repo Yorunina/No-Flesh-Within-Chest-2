@@ -48,7 +48,6 @@ OrganChestCavityUpdateStrategyModel.prototype = {
      */
     run: function (ccInstance, args, customData) {
         const ccInv = ccInstance.inventory
-        customData.localDefers = []
 
         args.unshift(customData)
         this.inits.forEach(init => {
@@ -59,6 +58,7 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         const onlyMPMMap = new Map()
         ccInstance.clearListenerMap()
         const invTypeData = ccInstance.getInventoryTypeData()
+        const strategyFuncList = []
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
             let itemId = String(curItem.id)
@@ -79,13 +79,18 @@ OrganChestCavityUpdateStrategyModel.prototype = {
             let organEventStrategy = strategyModel.strategyMap[this.eventId]
             // 器官更新策略
             if (organEventStrategy) {
-                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                if (organEventStrategy['only'] && organEventStrategy['only'].length > 0 && !onlyMap.has(itemId)) {
                     onlyMap.set(itemId, true)
-                    organEventStrategy['only'].apply(null, args.concat(curItem, i, slotType))
+                    strategyFuncList.concat({
+                        'strategyModel': organEventStrategy['only'],
+                        'arg': args.concat(curItem, i, slotType)
+                    })
                 }
-    
-                if (organEventStrategy['default']) {
-                    organEventStrategy['default'].apply(null, args.concat(curItem, i, slotType))
+                if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
+                    strategyFuncList.concat({
+                        'strategyModel': organEventStrategy['default'],
+                        'arg': args.concat(curItem, i, slotType)
+                    })
                 }
             }
 
@@ -95,28 +100,36 @@ OrganChestCavityUpdateStrategyModel.prototype = {
                 let mpmEventStrategy = strategyModel.strategyMap[MPMEventId]
                 if (!mpmEventStrategy) continue
                 if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
-                    onlyMPMMap.set(itemId, true)
-                    mpmEventStrategy['only'].apply(null, args.concat(curItem, i, slotType))
+                    onlyMap.set(itemId, true)
+                    strategyFuncList.concat({
+                        'strategyModel': mpmEventStrategy['only'],
+                        'arg': args.concat(curItem, i, slotType)
+                    })
                 }
                 if (mpmEventStrategy['default']) {
-                    mpmEventStrategy['default'].apply(null, args.concat(curItem, i, slotType))
+                    strategyFuncList.concat({
+                        'strategyModel': mpmEventStrategy['default'],
+                        'arg': args.concat(curItem, i, slotType)
+                    })
                 }
             }
         }
 
+
+        if (strategyFuncList.length > 0) {
+            strategyFuncList.sort((a, b) => {
+                return a.strategyModel.priority - b.strategyModel.priority
+            })
+            strategyFuncList.forEach((model) => {
+                model.strategyModel.func.apply(null, strategyModel.arg)
+            })
+        }
+        
         // 渲染MPM
         if (needLoadMpm) {
             renderMpm(ccInstance, customData)
         }
 
-        if (customData.localDefers.length > 0) {
-            customData.localDefers.sort((a, b) => {
-                return a.priority - b.priority 
-            })
-            customData.localDefers.forEach((model) => {
-                model.func.apply(null, [customData].concat(model.arg))
-            })
-        }
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

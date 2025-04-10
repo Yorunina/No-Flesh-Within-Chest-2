@@ -13,6 +13,9 @@ RegistryOrgan('kubejs:lily_pad_lung')
 function LilyPadLungDoDamageDefer(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     const source = event.source.actual
+    if (source.isPlayer() && source.getCooldowns().isOnCooldown('kubejs:lily_pad_lung')) {
+        return
+    }
     /**@type {Internal.LivingEntity} */
     const target = event.entity
     if (!target.isAlive()) return
@@ -28,24 +31,8 @@ function LilyPadLungDoDamageDefer(customData, event, organItem, organIndex, slot
     target.potionEffects.add('kubejs:putrid_toxins', effect.duration, Math.min(effect.amplifier + 1, 4), false, false)
 }
 
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function LilyPadLungDoDamage(customData, event, organItem, organIndex, slotType) {
-    /**@type {Internal.LivingEntity} */
-    const source = event.source.actual
-    if (source.isPlayer() && source.getCooldowns().isOnCooldown('kubejs:lily_pad_lung')) {
-        return
-    }
-    customData.localDefers.push(new OrganLocalDeferModel([event, organItem, organIndex, slotType], LilyPadLungDoDamageDefer, organIndex))
-}
-
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:lily_pad_lung')
-        .addOnlyStrategy('entity_do_damage', LilyPadLungDoDamage)
+        .addOnlyStrategy('entity_do_damage', LilyPadLungDoDamageDefer, -1)
 )

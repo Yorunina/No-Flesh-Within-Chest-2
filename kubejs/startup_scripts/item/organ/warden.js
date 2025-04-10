@@ -5,4 +5,5 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .texture('kubejs:item/organs/relics/warden_core')
         .tag('kubejs:relics')
+
 })

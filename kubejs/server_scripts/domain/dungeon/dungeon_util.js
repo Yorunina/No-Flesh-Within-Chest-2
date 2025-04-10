@@ -99,12 +99,7 @@ function GetAreaPlayerList(level, area) {
  * @returns 
  */
 function SetDungeonObeliskState(level, area, state) {
-    const persistentData = area.getPersistentData()
-    if (!persistentData.contains('obeliskBlockPos')) {
-        return
-    }
-    let blockPosNbt = persistentData.get('obeliskBlockPos')
-    let blockPos = ConvertNbt2Pos(blockPosNbt)
+    let blockPos = GetAreaObeliskBlockPos(area)
     let blockState = level.getBlockState(blockPos)
     let upperBlockState = level.getBlockState(blockPos.above())
     if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF) || !upperBlockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
@@ -123,6 +118,21 @@ function GetAreaDifficulty(area) {
         return 0
     }
     return persistentData.getInt('difficulty')
+}
+
+/**
+ * 
+ * @param {Internal.Area} area 
+ * @returns 
+ */
+function GetAreaObeliskBlockPos(area) {
+    const persistentData = area.getPersistentData()
+    if (!persistentData.contains('obeliskBlockPos')) {
+        let centerPos = area.getCenter()
+        return new BlockPos(centerPos.x(), centerPos.y() - 2, centerPos.z())
+    }
+    let blockPosNbt = persistentData.get('obeliskBlockPos')
+    return ConvertNbt2Pos(blockPosNbt)
 }
 
 /**

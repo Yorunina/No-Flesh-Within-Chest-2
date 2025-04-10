@@ -8,7 +8,6 @@ if (IsLoadedKubeloader) {
             'TitleJsonModel': TitleJsonModel,
             'RegistryOrganStrategy': RegistryOrganStrategy,
             'OrganStrategyModel': OrganStrategyModel,
-            'OrganLocalDeferModel': OrganLocalDeferModel,
             'RegistryAttributeIdentifier': RegistryAttributeIdentifier,
             'AttributeUUIDModel': AttributeUUIDModel,
             'RegistryOrgan': RegistryOrgan,

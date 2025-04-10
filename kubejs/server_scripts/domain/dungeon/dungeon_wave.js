@@ -25,10 +25,7 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
     let waveId = context.waveId
     // 如果波次不存在，认为成功
     if (dungeonEventModel.waves.length <= waveId || waveId < 0) {
-        dungeonEventModel.finishAction(level, context, areaManager, true)
-        SetDungeonObeliskState(level, area, 2)
-        areaManager.remove(area.getUuid())
-        areaManager.setDirty()
+        dungeonSuccessAction(level, context, areaManager, dungeonEventModel)
         return
     }
     let waveStatus = GetWaveStatus(customDataMap)
@@ -46,15 +43,8 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
                 if (!waveAction.endTester(level, context, areaManager)) {
                     waveAction.finishAction(level, context, areaManager, false)
                     dungeonEventModel.finishAction(level, context, areaManager, false)
-                    GetAreaPlayerList(level, area).forEach(player => {
-                        // todo 本地化
-                        player.tell('§c§l波次失败')
-                        level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.trident.thunder', player.getSoundSource(), 0.5, 1)
-                    })
-                    
                     SetDungeonObeliskState(level, area, 3)
-                    areaManager.remove(area.getUuid())
-                    areaManager.setDirty()
+                    recycleArea(areaManager, area)
                     return
                 } else {
                     shouldFinishWave = true
@@ -64,10 +54,7 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
                 // 需要等待业务自行更改状态机
                 let dungeonSuccess = waveAction.finishAction(level, context, areaManager, true)
                 if (dungeonSuccess) {
-                    dungeonEventModel.finishAction(level, context, areaManager, true)
-                    SetDungeonObeliskState(level, area, 2)
-                    areaManager.remove(area.getUuid())
-                    areaManager.setDirty()
+                    dungeonSuccessAction(level, context, areaManager, dungeonEventModel)
                     return
                 }
                 return
@@ -77,10 +64,33 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
             // 等待中，不执行任何操作
             return
         default:
-            // 未知状态，直接回收
-            areaManager.remove(area.getUuid())
-            areaManager.setDirty()
-            SetDungeonObeliskState(level, area, 0)
+            // 未知状态，直接回收，并且置灰，禁止重试
+            recycleArea(areaManager, area)
+            SetDungeonObeliskState(level, area, 3)
             return
     }
 })
+
+/**
+ * 地牢成功行为
+ * @param {Internal.Level} level 
+ * @param {Internal.SpawnMobAreaKubeEvent} context 
+ * @param {LoquatAreaManager} areaManager 
+ * @param {DungeonEventActionModel} dungeonEventModel
+ */
+function dungeonSuccessAction(level, context, areaManager, dungeonEventModel) {
+    dungeonEventModel.finishAction(level, context, areaManager, true)
+    SetDungeonObeliskState(level, context.area, 2)
+    recycleArea(areaManager, context.area)
+}
+
+
+/**
+ * 回收区域
+ * @param {LoquatAreaManager} areaManager 
+ * @param {Internal.Area} area 
+ */
+function recycleArea(areaManager, area) {
+    areaManager.remove(area.getUuid())
+    areaManager.setDirty()
+}
