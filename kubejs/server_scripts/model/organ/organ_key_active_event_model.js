@@ -43,7 +43,7 @@ OrganKeyActiveEventModel.prototype = {
         const onlyMap = new Map()
         let slotMap = ccInstance.getListenerMap(this.eventId)
         if (slotMap) {
-            const strategyFuncList = []
+            let strategyFuncList = []
             slotMap.forEach((slotIndex, slotType) => {
                 let curItem = ccInv.getStackInSlot(slotIndex)
                 if (!curItem || curItem.isEmpty() || curItem.id != itemId) return
@@ -51,27 +51,31 @@ OrganKeyActiveEventModel.prototype = {
                 if (!strategyModel) return
                 let organEventStrategy = strategyModel.strategyMap[this.eventId]
                 if (!organEventStrategy) return
-                if (organEventStrategy['only'] && organEventStrategy['only'].length > 0 && !onlyMap.has(itemId)) {
+                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
                     onlyMap.set(itemId, true)
-                    strategyFuncList.concat({
-                        'strategyModel': organEventStrategy['only'],
-                        'arg': args.concat(curItem, slotIndex, slotType)
+                    organEventStrategy['only'].forEach(e => {
+                        strategyFuncList.push({
+                            'strategyModel': e,
+                            'arg': args.concat(curItem, slotIndex, slotType)
+                        })
                     })
                 }
                 if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
-                    strategyFuncList.concat({
-                        'strategyModel': organEventStrategy['default'],
-                        'arg': args.concat(curItem, slotIndex, slotType)
+                    organEventStrategy['default'].forEach(e => {
+                        strategyFuncList.push({
+                            'strategyModel': e,
+                            'arg': args.concat(curItem, slotIndex, slotType)
+                        })
                     })
                 }
             })
             
             if (strategyFuncList.length > 0) {
                 strategyFuncList.sort((a, b) => {
-                    return a.strategyModel.priority - b.strategyModel.priority
+                    return b['strategyModel']['priority'] - a['strategyModel']['priority']
                 })
                 strategyFuncList.forEach((model) => {
-                    model.strategyModel.func.apply(null, strategyModel.arg)
+                    model['strategyModel']['func'].apply(null, model['arg'])
                 })
             }
         }

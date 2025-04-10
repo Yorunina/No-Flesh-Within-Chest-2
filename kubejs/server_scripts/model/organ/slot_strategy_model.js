@@ -66,33 +66,37 @@ SlotStrategyModel.prototype = {
         this.inits.forEach(init => {
             init.apply(null, args)
         })
-        const strategyFuncList = []
+        let strategyFuncList = []
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
             if (!curItem || curItem.isEmpty()) continue
             let slotType = invTypeData.getSlotType(i)
             let strategyModel = this.strategyMap[slotType]
             if (!strategyModel) continue
-            if (strategyModel['only'] && strategyModel['only'].length > 0 && !onlyMap.has(itemId)) {
+            if (strategyModel['only'] && !onlyMap.has(itemId)) {
                 onlyMap.set(itemId, true)
-                strategyFuncList.concat({
-                    'strategyModel': strategyModel['only'],
-                    'arg': args.concat(curItem, i)
+                strategyModel['only'].forEach(e => {
+                    strategyFuncList.push({
+                        'strategyModel': e,
+                        'arg': args.concat(curItem, i)
+                    })
                 })
             }
-            if (strategyModel['default'] && strategyModel['default'].length > 0) {
-                strategyFuncList.concat({
-                    'strategyModel': strategyModel['default'],
-                    'arg': args.concat(curItem, i)
+            if (strategyModel['default']) {
+                strategyModel['default'].forEach(e => {
+                    strategyFuncList.push({
+                        'strategyModel': e,
+                        'arg': args.concat(curItem, i)
+                    })
                 })
             }
         }
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {
-                return a.strategyModel.priority - b.strategyModel.priority
+                return b['strategyModel']['priority'] - a['strategyModel']['priority']
             })
             strategyFuncList.forEach((model) => {
-                model.strategyModel.func.apply(null, strategyModel.arg)
+                model['strategyModel']['func'].apply(null, model['arg'])
             })
         }
         this.defers.forEach(defer => {

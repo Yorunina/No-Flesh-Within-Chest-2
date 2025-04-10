@@ -16,6 +16,7 @@ OrganStrategyModel.prototype = {
      * @returns 
      */
     addStrategy: function (eventId, func, priority) {
+        priority = priority ? priority: 0
         if (!this.strategyMap[eventId]) {
             this.strategyMap[eventId] = {
                 'default': [],
@@ -36,6 +37,7 @@ OrganStrategyModel.prototype = {
      * @returns 
      */
     addOnlyStrategy: function (eventId, func, priority) {
+        priority = priority ? priority: 0
         if (!this.strategyMap[eventId]) {
             this.strategyMap[eventId] = {
                 'default': [],

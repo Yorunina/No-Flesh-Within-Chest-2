@@ -58,7 +58,7 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         const onlyMPMMap = new Map()
         ccInstance.clearListenerMap()
         const invTypeData = ccInstance.getInventoryTypeData()
-        const strategyFuncList = []
+        let strategyFuncList = []
         for (let i = 0; i < ccInv.getSlots(); i++) {
             let curItem = ccInv.getStackInSlot(i)
             let itemId = String(curItem.id)
@@ -79,17 +79,21 @@ OrganChestCavityUpdateStrategyModel.prototype = {
             let organEventStrategy = strategyModel.strategyMap[this.eventId]
             // 器官更新策略
             if (organEventStrategy) {
-                if (organEventStrategy['only'] && organEventStrategy['only'].length > 0 && !onlyMap.has(itemId)) {
+                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
                     onlyMap.set(itemId, true)
-                    strategyFuncList.concat({
-                        'strategyModel': organEventStrategy['only'],
-                        'arg': args.concat(curItem, i, slotType)
+                    organEventStrategy['only'].forEach(e => {
+                        strategyFuncList.push({
+                            'strategyModel': e,
+                            'arg': args.concat(curItem, i, slotType)
+                        })
                     })
                 }
-                if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
-                    strategyFuncList.concat({
-                        'strategyModel': organEventStrategy['default'],
-                        'arg': args.concat(curItem, i, slotType)
+                if (organEventStrategy['default']) {
+                    organEventStrategy['default'].forEach(e => {
+                        strategyFuncList.push({
+                            'strategyModel': e,
+                            'arg': args.concat(curItem, i, slotType)
+                        })
                     })
                 }
             }
@@ -100,16 +104,20 @@ OrganChestCavityUpdateStrategyModel.prototype = {
                 let mpmEventStrategy = strategyModel.strategyMap[MPMEventId]
                 if (!mpmEventStrategy) continue
                 if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
-                    onlyMap.set(itemId, true)
-                    strategyFuncList.concat({
-                        'strategyModel': mpmEventStrategy['only'],
-                        'arg': args.concat(curItem, i, slotType)
+                    onlyMPMMap.set(itemId, true)
+                    mpmEventStrategy['only'].forEach(e => {
+                        strategyFuncList.push({
+                            'strategyModel': e,
+                            'arg': args.concat(curItem, i, slotType)
+                        })
                     })
                 }
                 if (mpmEventStrategy['default']) {
-                    strategyFuncList.concat({
-                        'strategyModel': mpmEventStrategy['default'],
-                        'arg': args.concat(curItem, i, slotType)
+                    mpmEventStrategy['default'].forEach(e => {
+                        strategyFuncList.push({
+                            'strategyModel': e,
+                            'arg': args.concat(curItem, i, slotType)
+                        })
                     })
                 }
             }
@@ -118,10 +126,10 @@ OrganChestCavityUpdateStrategyModel.prototype = {
 
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {
-                return a.strategyModel.priority - b.strategyModel.priority
+                return b['strategyModel']['priority'] - a['strategyModel']['priority']
             })
             strategyFuncList.forEach((model) => {
-                model.strategyModel.func.apply(null, strategyModel.arg)
+                model['strategyModel']['func'].apply(null, model['arg'])
             })
         }
         

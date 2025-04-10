@@ -47,7 +47,7 @@ function PitcherStomachChestCavityTakeOffOnly(customData, event, organItem, orga
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:pitcher_stomach')
-        .addOnlyStrategy('entity_do_damage', PitcherStomachDoDamageDefer, -1)
+        .addOnlyStrategy('entity_do_damage', PitcherStomachDoDamageDefer, -2)
         .addOnlyStrategy('organ_take_off', PitcherStomachChestCavityTakeOffOnly)
 )
 

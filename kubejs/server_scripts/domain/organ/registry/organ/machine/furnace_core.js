@@ -272,7 +272,7 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:burning_heart')
         .addOnlyStrategy('entity_tick', BurningHeartEntityTickDefer, -1)
         .addOnlyStrategy('organ_take_off', BurningHeartTakeOff)
-        .addOnlyStrategy('entity_do_damage', BurningHeartDoDamageDefer)
+        .addOnlyStrategy('entity_do_damage', BurningHeartDoDamageDefer, -1)
         .addOnlyStrategy('organ_take_on', BurningHeartTakeOn)
         .addOnlyStrategy('mpm_render', BurningHeartMpmRender)
 )
