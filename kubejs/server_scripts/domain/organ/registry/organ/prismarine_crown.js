@@ -24,5 +24,5 @@ function PrismarineCrownChestCavityUpdate(customData, event, organItem, organInd
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:prismarine_crown')
-        .addOnlyStrategy('chest_cavity_update', PrismarineCrownChestCavityUpdate)
+        .addOnlyStrategy('chest_cavity_update', PrismarineCrownChestCavityUpdate, 1)
 )

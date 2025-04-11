@@ -4,6 +4,8 @@ StartupEvents.registry('item', event => {
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
     event.create('full_mark').texture('kubejs:item/full_mark')
 
+    event.create('chestcavity_injection').maxStackSize(1).texture('kubejs:item/chestcavity_injection')
+
     event.create('kubejs:chicken_flavor_powder').texture('kubejs:item/chicken_flavor_powder').maxStackSize(64)
 
 

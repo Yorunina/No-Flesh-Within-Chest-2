@@ -25,3 +25,4 @@ ServerEvents.highPriorityData(event => {
 
 RegisterTitleJson(new TitleJsonModel('beginner').setRarity('uncommon').setType('advancement'))
 RegisterTitleJson(new TitleJsonModel('chest_opener'))
+RegisterTitleJson(new TitleJsonModel('ender_dancer').setRarity('rare').setType('advancement'))
