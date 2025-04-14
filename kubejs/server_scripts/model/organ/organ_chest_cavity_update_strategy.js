@@ -58,8 +58,11 @@ OrganChestCavityUpdateStrategyModel.prototype = {
         const onlyMPMMap = new Map()
         ccInstance.clearListenerMap()
         const invTypeData = ccInstance.getInventoryTypeData()
+        
         let strategyFuncList = []
         for (let i = 0; i < ccInv.getSlots(); i++) {
+            let slotType = invTypeData.getSlotType(i)
+            if (IsContainerSlot(slotType)) continue
             let curItem = ccInv.getStackInSlot(i)
             let itemId = String(curItem.id)
             if (OrganStrategyMap[itemId]) {
@@ -74,7 +77,6 @@ OrganChestCavityUpdateStrategyModel.prototype = {
 
             let strategyModel = OrganStrategyMap[itemId]
             if (!strategyModel) continue
-            let slotType = invTypeData.getSlotType(i)
 
             let organEventStrategy = strategyModel.strategyMap[this.eventId]
             // 器官更新策略

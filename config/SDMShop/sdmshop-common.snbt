@@ -1,0 +1,34 @@
+{
+	# Default: false
+	disable_key_bind: false
+	
+	# Default: true
+	send_notify: true
+	
+	# Default: "modern"
+	# Valid values: "legacy", "modern"
+	"Shop Style": "modern"
+	
+	# Default: "shadow"
+	# Valid values: "shadow", "pink", "desiderium", "vortex", "custom"
+	"Shop Theme": "shadow"
+	CUSTOM: {
+		# Default: "#5555FF"
+		background: "#5555FF"
+		
+		# Default: "#5555FF"
+		moneyTextColor: "#5555FF"
+		
+		# Default: "#5555FF"
+		react: "#5555FF"
+		
+		# Default: "#5555FF"
+		select_tab_color: "#5555FF"
+		
+		# Default: "#5555FF"
+		shadow: "#5555FF"
+		
+		# Default: "#5555FF"
+		stoke: "#5555FF"
+	}
+}

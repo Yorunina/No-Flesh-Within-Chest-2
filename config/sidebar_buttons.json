@@ -2,6 +2,9 @@
 	"ftbteams": {
 		"my_team": true
 	},
+	"sdmshoprework": {
+		"shop": true
+	},
 	"ftbquests": {
 		"quests": true
 	},

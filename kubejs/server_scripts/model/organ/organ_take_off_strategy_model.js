@@ -43,12 +43,15 @@ OrganTakeOffStrategyModel.prototype = {
         this.inits.forEach(init => {
             init.apply(null, args)
         })
+        const invTypeData = ccInstance.getInventoryTypeData()
         const onlyMap = new Map()
         let oldContainerSize = oldccInv.getContainerSize()
         let newContainerSize = ccInv.getContainerSize()
 
         let strategyFuncList = []
         for (let i = 0; i < oldContainerSize; i++) {
+            let slotType = invTypeData.getSlotType(i)
+            if (IsContainerSlot(slotType)) continue
             let oldItem = oldccInv.getStackInSlot(i)
             if (!oldItem || oldItem.isEmpty()) continue
             if (i <= newContainerSize) {
@@ -66,7 +69,7 @@ OrganTakeOffStrategyModel.prototype = {
                 organEventStrategy['only'].forEach(e => {
                     strategyFuncList.push({
                         'strategyModel': e,
-                        'arg': args.concat(oldItem, i)
+                        'arg': args.concat(oldItem, i, slotType)
                     })
                 })
             }
@@ -74,7 +77,7 @@ OrganTakeOffStrategyModel.prototype = {
                 organEventStrategy['default'].forEach(e => {
                     strategyFuncList.push({
                         'strategyModel': e,
-                        'arg': args.concat(oldItem, i)
+                        'arg': args.concat(oldItem, i, slotType)
                     })
                 })
             }

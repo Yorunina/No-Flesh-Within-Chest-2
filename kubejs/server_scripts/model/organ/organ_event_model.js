@@ -78,6 +78,7 @@ OrganEventModel.prototype = {
             }
         }
         ExcretionSlot(customData, ccInstance)
+        
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

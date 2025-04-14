@@ -3,23 +3,18 @@
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     const { player } = event
-    if (IsOriginUnlock(player, 'kubejs:lich') ) {
-        LockOrigin(player, 'kubejs:lich')
-    } else {
-        UnlockOrigin(player, 'kubejs:lich')
-    }
     
     // player.triggerAnimation('kubejs:inject_animation', false)
     // player.triggerAnimation('kubejs:head_fly_animation', false)
     // player.triggerAnimation('kubejs:punch_animation', false)
 
-    // let minecraftServer = event.level.server
-    // let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    // const centerPos = GenDungeonStruct(dungeonLevel, new DungeonAttributeModel())
+    let minecraftServer = event.level.server
+    let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
+    const centerPos = GenDungeonStruct(dungeonLevel, new DungeonAttributeModel())
 
-    // player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
+    player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
 
-    // console.log(DungeonSpawnerIdMap)
+    console.log(DungeonSpawnerIdMap)
 
     // let area = GenDungeonLevelArea(dungeonLevel, centerPos)
     // if (!area) return
