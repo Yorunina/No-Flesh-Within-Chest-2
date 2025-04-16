@@ -1,6 +1,6 @@
 {
   "showDev": false,
-  "fancyGoop": false,
+  "fancyGoop": true,
   "wrapToEdges": false,
   "randomRot": true,
   "permanent": false,
