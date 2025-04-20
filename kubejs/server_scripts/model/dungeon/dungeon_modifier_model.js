@@ -4,6 +4,8 @@ function DungeonModifierModel(id) {
     this.id = id
     /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager, Internal.PathfinderMob, DungeonAttributeModel): void} */
     this.createEntityModifier = () => { }
+    /**@type {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager, Internal.PathfinderMob, DungeonAttributeModel): void} */
+    this.lootModifier = () => { }
     return this
 }
 
@@ -17,4 +19,12 @@ DungeonModifierModel.prototype = {
         this.createEntityModifier = action
         return this
     },
+    /**
+     * 生成战利品时，会运行的战利品修饰器
+     * @param {function(Internal.Level, Internal.SpawnMobAreaKubeEvent, LoquatAreaManager, Internal.PathfinderMob, DungeonAttributeModel): void} action
+     */
+    setLootModifier: function (action) {
+        this.lootModifier = action
+        return this
+    }
 }

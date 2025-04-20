@@ -15,7 +15,7 @@ RegistryOrgan('kubejs:twisting_weeping_intestine')
 function TwistingWeepingIntestineKeyActiveOnly(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const chestCavity = player.chestCavityInstance
-    chestCavity.customDataMap.put('twistingIntestineAttackReady', true)
+    SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', true)
     let organEffect = new OragnEffectModel(organItem).setPriority(151)
     SetOrganEffect(chestCavity, organEffect)
     player.addItemCooldown(organItem, 20 * 30)
@@ -48,7 +48,7 @@ function TwistingWeepingIntestineDoDamage(customData, event, organItem, organInd
     const entity = event.source.actual
     const chestCavity = entity.chestCavityInstance
     /** @type {number} */
-    let twistingIntestineAttackReady = chestCavity.customDataMap.getOrDefault('twistingIntestineAttackReady', false)
+    let twistingIntestineAttackReady = GetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', false)
     if (!twistingIntestineAttackReady) return
     /** @type {Internal.LivingEntity} */
     const target = event.entity
@@ -57,7 +57,7 @@ function TwistingWeepingIntestineDoDamage(customData, event, organItem, organInd
 
     let damage = (effect.getAmplifier() + 1) * GetPutridToxinsDamage(target) * effect.getDuration() / 40
     event.amount = damage + event.amount
-    chestCavity.customDataMap.put('twistingIntestineAttackReady', false)
+    SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', false)
 
     if (entity instanceof $ServerPlayer) {
         RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')

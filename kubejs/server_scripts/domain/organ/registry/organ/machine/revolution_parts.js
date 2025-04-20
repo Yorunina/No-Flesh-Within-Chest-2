@@ -30,7 +30,7 @@ function RevolutionCableChestCavityUpdate(customData, event, organItem, organInd
     let revolutionCount = chestCavity.inventory.count('#kubejs:revolution')
     let total = revolutionCount + machineCount
     switch (slotType) {
-        case 'machinary_lubricant':
+        case MachinaryLubricant:
             customData.maxHealth.addAttributeModifier(total * 4, 'addition', 'base')
             break
         default:
@@ -54,7 +54,7 @@ RegistryOrganStrategy(
 */
 function RevolutionRelayChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customDataMap.put('furnaceCoreRelay', 0)
+    SetCustomDataMap(chestCavity, 'furnaceCoreRelay', 0)
 }
 
 /**
@@ -68,14 +68,14 @@ function RevolutionRelayChestCavityUpdate(customData, event, organItem, organInd
     const chestCavity = event.chestCavity
     let num = 1
     switch (slotType) {
-        case 'machinary_lubricant':
+        case MachinaryLubricant:
             num = num * 4
             break
         default:
             break
     }
-    let value = chestCavity.customDataMap.getOrDefault('furnaceCoreRelay', 0)
-    chestCavity.customDataMap.put('furnaceCoreRelay', value + num)
+    let value = GetCustomDataMap(chestCavity, 'furnaceCoreRelay', 0)
+    SetCustomDataMap(chestCavity, 'furnaceCoreRelay', value + num)
 }
 
 /**
@@ -87,7 +87,7 @@ function RevolutionRelayChestCavityUpdate(customData, event, organItem, organInd
 */
 function RevolutionRelayChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customDataMap.put('furnaceCoreRelay', 0)
+    SetCustomDataMap(chestCavity, 'furnaceCoreRelay', 0)
 }
 
 RegistryOrganStrategy(
@@ -106,7 +106,7 @@ RegistryOrganStrategy(
 */
 function RevolutionDelayChestCavityUpdateOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customDataMap.put('burningHeartDelay', 0)
+    SetCustomDataMap(chestCavity, 'burningHeartDelay', 0)
 }
 
 /**
@@ -120,14 +120,14 @@ function RevolutionDelayChestCavityUpdate(customData, event, organItem, organInd
     const chestCavity = event.chestCavity
     let num = 1
     switch (slotType) {
-        case 'machinary_lubricant':
+        case MachinaryLubricant:
             num = num * 4
             break
         default:
             break
     }
-    let value = chestCavity.customDataMap.getOrDefault('burningHeartDelay', 0)
-    chestCavity.customDataMap.put('burningHeartDelay', value + num)
+    let value = GetCustomDataMap(chestCavity, 'burningHeartDelay', 0)
+    SetCustomDataMap(chestCavity, 'burningHeartDelay', value + num)
 }
 
 /**
@@ -139,7 +139,7 @@ function RevolutionDelayChestCavityUpdate(customData, event, organItem, organInd
 */
 function RevolutionDelayChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.customDataMap.put('burningHeartDelay', 0)
+    SetCustomDataMap(chestCavity, 'burningHeartDelay', 0)
 }
 
 
@@ -168,7 +168,7 @@ RegistryOrganStrategy(
 function BlazePressurizerChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    chestCavity.customDataMap.put('blazePressurizerCounter', 0)
+    SetCustomDataMap(chestCavity, 'blazePressurizerCounter', 0)
     if (entity instanceof $ServerPlayer) {
         RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
     }
@@ -199,13 +199,13 @@ function BlazePressurizerKeyActiveOnly(customData, event, organItem, organIndex,
 function BlazePressurizerActive(chestCavity, slotType) {
     let counter = 3
     switch (slotType) {
-        case 'machinary_lubricant':
+        case MachinaryLubricant:
             counter = counter * 4
             break
         default:
             break
     }
-    chestCavity.customDataMap.put('blazePressurizerCounter', counter)
+    SetCustomDataMap(chestCavity, 'blazePressurizerCounter', counter)
     return counter
 }
 

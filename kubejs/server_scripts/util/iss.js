@@ -69,11 +69,12 @@ function InitClientISSSpellData(entity) {
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.Map<string, any>} entityDataMap 
+ * @param {Internal.ChestCavityInstance} chestCavity 
  * @param {string} spellId 
  * @param {number} spellLvl 
  */
 function AddSpellSelection(customData, entityDataMap, spellId, spellLvl) {
+    const entityDataMap = chestCavity.customDataMap
     /**@type {Map<string, SpellData>} */
     let spellSlectionMap = entityDataMap.getOrDefault('organ_spell_selection', new Map())
     spellId = String(spellId)
@@ -89,11 +90,12 @@ function AddSpellSelection(customData, entityDataMap, spellId, spellLvl) {
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.Map<string, any>} entityDataMap 
+ * @param {Internal.ChestCavityInstance} chestCavity 
  * @param {string} spellId 
  * @param {number} spellLvl 
  */
-function RemoveSpellSelection(customData, entityDataMap, spellId, spellLvl) {
+function RemoveSpellSelection(customData, chestCavity, spellId, spellLvl) {
+    const entityDataMap = chestCavity.customDataMap
     /**@type {Map<string, SpellData>} */
     let spellSlectionMap = entityDataMap.getOrDefault('organ_spell_selection', new Map())
     spellId = String(spellId)
@@ -109,11 +111,12 @@ function RemoveSpellSelection(customData, entityDataMap, spellId, spellLvl) {
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.Map<string, any>} entityDataMap 
+ * @param {Internal.ChestCavityInstance} chestCavity 
  * @param {string} spellId 
  * @param {number} spellLvl 
  */
-function RemoveSpellSelectionBySpellId(customData, entityDataMap, spellId) {
+function RemoveSpellSelectionBySpellId(customData, chestCavity, spellId) {
+    const entityDataMap = chestCavity.customDataMap
     /**@type {Map<string, SpellData>} */
     let spellSlectionMap = entityDataMap.getOrDefault('organ_spell_selection', new Map())
     if (spellSlectionMap.has(spellId)) {

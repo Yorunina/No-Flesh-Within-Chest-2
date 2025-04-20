@@ -127,7 +127,7 @@ function SubOriginiumsChestCavityUpdate(customData, event, organItem, organIndex
     let nbt = organItem.getOrCreateTag()
     let spellId = nbt.getString('spellId')
     let spellLvl = nbt.getInt('spellLvl')
-    AddSpellSelection(customData, chestCavity.customDataMap, spellId, spellLvl)
+    AddSpellSelection(customData, chestCavity, spellId, spellLvl)
 }
 
 /**
@@ -143,7 +143,7 @@ function SubOriginiumsTakeOff(customData, event, organItem, organIndex, slotType
     let nbt = organItem.getOrCreateTag()
     let spellId = nbt.getString('spellId')
     let spellLvl = nbt.getInt('spellLvl')
-    RemoveSpellSelection(customData, chestCavity.customDataMap, spellId, spellLvl)
+    RemoveSpellSelection(customData, chestCavity, spellId, spellLvl)
 }
 
 RegistryOrganStrategy(

@@ -11,14 +11,14 @@ RegistryOrgan('kubejs:beer_gland')
  * @param {string} slotType
  */
 function BeerGlandChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-   if (slotType == GulaSlot) {
-        customData['hasBeerGland'] = 2
-   } else {
-        customData['hasBeerGland'] = 1
-   }
+    if (slotType == DigestSlot) {
+        SetCustomData(customData, 'hasBeerGland', 2)
+    } else {
+        SetCustomData(customData, 'hasBeerGland', 1)
+    }
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:beer_gland')
-        .addOnlyStrategy('chest_cavity_update', BeerGlandChestCavityUpdate, 1)
+        .addOnlyStrategy('chest_cavity_update', BeerGlandChestCavityUpdate, 10)
 )
