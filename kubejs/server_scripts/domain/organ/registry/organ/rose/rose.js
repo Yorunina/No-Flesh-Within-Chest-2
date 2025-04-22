@@ -79,7 +79,7 @@ RegistryOrganStrategy(
  */
 function RoseQuartzHeartChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
+    let rosyValue = chestCavity.getOrganScore('kubejs:rosy') / 2
     switch (slotType) {
         case 'rosy_explosion': {
             rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:health') * chestCavity.inventory.countNonEmpty()

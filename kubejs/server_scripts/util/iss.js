@@ -73,7 +73,7 @@ function InitClientISSSpellData(entity) {
  * @param {string} spellId 
  * @param {number} spellLvl 
  */
-function AddSpellSelection(customData, entityDataMap, spellId, spellLvl) {
+function AddSpellSelection(customData, chestCavity, spellId, spellLvl) {
     const entityDataMap = chestCavity.customDataMap
     /**@type {Map<string, SpellData>} */
     let spellSlectionMap = entityDataMap.getOrDefault('organ_spell_selection', new Map())

@@ -10,52 +10,34 @@ const X_SIDE_MODIFIER = [0, -1, 0, 1]
 const Z_SIDE_MODIFIER = [1, 0, -1, 0]
 const X_POINT_MODIFIER = [1, 1, -1, -1]
 const Z_POINT_MODIFIER = [-1, 1, 1, -1]
-const DungeonStructureFileLocation = 'kubejs/data/kubejs/structures/infinity_dungeon'
 
-const DungeonStructIdList = []
-if (FilesJS.exists(DungeonStructureFileLocation)) {
-    FilesJS.listFilesRecursively(DungeonStructureFileLocation).forEach(file => {
-        if (file.endsWith('.nbt')) {
-            let reg = new RegExp(/structures\\(\S+)\.nbt/)
-            if (!reg.test(file)) return
-            let res = 'kubejs:' + RegExp.$1
-            res = res.replace('\\', '/')
-            DungeonStructIdList.push(res)
-        }
-    })
-}
+const MainSkylandStructureFileLocation = 'kubejs/data/kubejs/structures/main_skyland'
+const SideSkylandStructureFileLocation = 'kubejs/data/kubejs/structures/side_skyland'
 
-
-/**
- * @param {Internal.ServerLevel} level 
- * @param {DungeonAttributeModel} dungeonAttr
- * @return {Object}
- */
-function GenDungeonStruct(level, dungeonAttr) {
-    const dungeonStructManager = level.getStructureManager()
-    let dungeonNum = 0
-    if (level.getPersistentData().contains('dungeonNum')) {
-        dungeonNum = level.getPersistentData().getInt('dungeonNum')
-    }
-    let buildOffset = calculateStructureBuildPos(dungeonNum)
-    let buildX = buildOffset.x * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
-    let buildZ = buildOffset.z * STRUCT_BUILD_INTERVAL + Math.random() * STRUCT_BUILD_RANDOM_OFFSET
-    if (DungeonStructIdList.length == 0) return null
-    let structId = RandomGet(DungeonStructIdList)
-    let structTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(structId))
-    let structSizeRange = ConvertVec3i2BlockPos(structTemplate.getSize())
-    let structBuildPos = new BlockPos(buildX, 0, buildZ)
-    let centerPos = structBuildPos.offset(structSizeRange.x / 2, 2, structSizeRange.z / 2)
-    let chunkAccess = GetChunkAccess(level, structBuildPos)
-    if (!chunkAccess) return
-
-    let placementSettings = new $StructurePlaceSettings().setMirror($Mirror.NONE).setRotation($Rotation.NONE).setIgnoreEntities(false)
-    structTemplate.placeInWorld(level, structBuildPos, structSizeRange, placementSettings, level.getRandom(), 2)
-    HandleDataBlock(level, structTemplate, structBuildPos, centerPos, placementSettings, dungeonAttr)
-    level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
-
-    return centerPos
-}
+const MainSkylandStructIdList = []
+const SideSkylandStructIdList = []
+// if (FilesJS.exists(MainSkylandStructureFileLocation)) {
+//     FilesJS.listFilesRecursively(MainSkylandStructureFileLocation).forEach(file => {
+//         if (file.endsWith('.nbt')) {
+//             let reg = new RegExp(/structures\\(\S+)\.nbt/)
+//             if (!reg.test(file)) return
+//             let res = 'kubejs:' + RegExp.$1
+//             res = res.replace('\\', '/')
+//             MainSkylandStructIdList.push(res)
+//         }
+//     })
+// }
+// if (FilesJS.exists(SideSkylandStructureFileLocation)) {
+//     FilesJS.listFilesRecursively(SideSkylandStructureFileLocation).forEach(file => {
+//         if (file.endsWith('.nbt')) {
+//             let reg = new RegExp(/structures\\(\S+)\.nbt/)
+//             if (!reg.test(file)) return
+//             let res = 'kubejs:' + RegExp.$1
+//             res = res.replace('\\', '/')
+//             SideSkylandStructIdList.push(res)
+//         }
+//     })
+// }
 
 /**
  * @param {Internal.Level} level
@@ -97,7 +79,7 @@ function HandleDataBlock(level, template, position, centerPos, placementSettings
 /**
  * 
  * @param {number} n 
- * @returns {{x: number, z: number}}
+ * @returns {BlockPos}
  */
 function calculateStructureBuildPos(n) {
     if (n == 0) return { x: 0, z: 0 }
@@ -109,5 +91,109 @@ function calculateStructureBuildPos(n) {
     let moveNum = left - (sideLength - 1) * sideNum
     let x = rad * X_POINT_MODIFIER[sideNum] + X_SIDE_MODIFIER[sideNum] * moveNum
     let z = rad * Z_POINT_MODIFIER[sideNum] + Z_SIDE_MODIFIER[sideNum] * moveNum
-    return { x: x, z: z }
+    return new BlockPos(x, 0, z)
+}
+
+
+/**
+ * @param {Internal.ServerLevel} level 
+ * @param {DungeonAttributeModel} dungeonAttr
+ * @return {Object}
+ */
+function GenSkylandStruct(level, dungeonAttr) {
+    const dungeonStructManager = level.getStructureManager()
+    let dungeonNum = 0
+    if (level.getPersistentData().contains('dungeonNum')) {
+        dungeonNum = level.getPersistentData().getInt('dungeonNum')
+    }
+    const buildOffset = calculateStructureBuildPos(dungeonNum)
+    const startPos = new BlockPos(
+        buildOffset.getX() * STRUCT_BUILD_INTERVAL,
+        0,
+        buildOffset.getZ() * STRUCT_BUILD_INTERVAL
+    )
+
+
+    const seaLevel = level.getSeaLevel()
+    /**@type {Internal.BoundingBox[]} */
+    const boundingBoxList = []
+
+    // 主岛
+    if (MainSkylandStructIdList.length == 0) return null
+    const mainSkylandId = RandomGet(MainSkylandStructIdList)
+    const mainSkylandTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(mainSkylandId))
+    const mainSkylandSize = ConvertVec3i2BlockPos(mainSkylandTemplate.getSize())
+    const mainSkylandPos = new BlockPos(
+        startPos.getX() + Math.random() * STRUCT_BUILD_INTERVAL - mainSkylandSize.getX(),
+        Math.min(Math.ceil(seaLevel + Math.random() * 50 - 30), level.getMaxBuildHeight()) - mainSkylandSize.getY(),
+        startPos.getZ() + Math.random() * STRUCT_BUILD_INTERVAL - mainSkylandSize.getZ(),
+    )
+
+    const mainSkylandSetting = GetRandomStructPlacingSettings()
+    mainSkylandTemplate.getZeroPositionWithTransform(mainSkylandPos, mainSkylandSetting.getMirror(), mainSkylandSetting.getRotation())
+
+    boundingBoxList.push(mainSkylandTemplate.getBoundingBox(mainSkylandSetting, mainSkylandPos))
+    let mainSkylandCenterPos = new BlockPos(
+        mainSkylandPos.getX() + mainSkylandSize.getX() / 2,
+        0,
+        mainSkylandPos.getZ() + mainSkylandSize.getZ() / 2,
+    )
+
+    let chunkX = Math.floor(mainSkylandCenterPos.getX() / 16)
+    let chunkZ = Math.floor(mainSkylandCenterPos.getZ() / 16)
+    let blockX = mainSkylandCenterPos.getX() % 16
+    let blockZ = mainSkylandCenterPos.getZ() % 16
+
+    let mainSkylandChunk = level.getChunk(chunkX, chunkZ, $ChunkStatus.SURFACE, true)
+    if (!mainSkylandChunk) return null
+
+    let res = mainSkylandTemplate.placeInWorld(level, mainSkylandPos, mainSkylandSize, mainSkylandSetting, level.getRandom(), 2)
+
+    if (!res) return null
+    HandleDataBlock(level, mainSkylandTemplate, mainSkylandPos, mainSkylandCenterPos, mainSkylandSetting, dungeonAttr)
+    level.getPersistentData().putInt('dungeonNum', dungeonNum + 1)
+    let y = Math.min(mainSkylandChunk.getHeight('motion_blocking', blockX, blockZ), level.getMaxBuildHeight())
+    mainSkylandCenterPos = mainSkylandCenterPos.atY(y)
+    if (y <= -64) {
+        mainSkylandCenterPos = mainSkylandCenterPos.atY(64)
+        level.setBlockAndUpdate(mainSkylandCenterPos.atY(62), Blocks.SNOW_BLOCK.defaultBlockState())
+    }
+    
+
+    // 副岛
+    for (let i = 0; i < 4; i++) {
+        if (SideSkylandStructIdList.length == 0) break
+        let sideSkylandId = RandomGet(SideSkylandStructIdList)
+        let sideSkylandTemplate = dungeonStructManager.getOrCreate(new ResourceLocation(sideSkylandId))
+        let sideSkylandSize = ConvertVec3i2BlockPos(sideSkylandTemplate.getSize())
+        let sideSkylandPos = new BlockPos(
+            startPos.getX() + Math.random() * STRUCT_BUILD_INTERVAL - sideSkylandSize.getX(),
+            Math.min(Math.ceil(seaLevel + Math.random() * 100 - 30), level.getMaxBuildHeight()) - sideSkylandSize.getY(),
+            startPos.getZ() + Math.random() * STRUCT_BUILD_INTERVAL - sideSkylandSize.getZ(),
+        )
+        let sideSkylandSetting = GetRandomStructPlacingSettings()
+        let sideSkylandBoundingBox = sideSkylandTemplate.getBoundingBox(sideSkylandSetting, sideSkylandPos)
+        // 检测是否与主岛重叠
+        let isValid = true
+        for (let i = 0; i < boundingBoxList.length; i++) {
+            if (boundingBoxList[i].intersects(sideSkylandBoundingBox)) {
+                isValid = false
+                break
+            }
+        }
+        if (!isValid) continue
+        if (!GetChunkAccess(level, sideSkylandPos)) continue
+        sideSkylandTemplate.placeInWorld(level, sideSkylandPos, sideSkylandSize, sideSkylandSetting, level.getRandom(), 2)
+        boundingBoxList.push(sideSkylandBoundingBox)
+    }
+
+    return mainSkylandCenterPos
+}
+
+
+function GetRandomStructPlacingSettings() {
+    // let mirror = RandomGet([$Mirror.NONE, $Mirror.LEFT_RIGHT, $Mirror.FRONT_BACK])
+    // let rotation = RandomGet([$Rotation.NONE, $Rotation.CLOCKWISE_90, $Rotation.CLOCKWISE_180, $Rotation.COUNTERCLOCKWISE_90])
+    //.setMirror(mirror).setRotation(rotation)
+    return new $StructurePlaceSettings().setIgnoreEntities(false)
 }

@@ -1,0 +1,12 @@
+#Enable this for debugging purpose
+DEBUG = false
+#Out-of-combat timer only counts after Not-being-attacked timer counts more than this value.
+#Range: 0 ~ 9223372036854775807
+noAttackedTimeThreshold = 9223372036854775807
+#Out-of-combat timer only counts after No-attacking timer counts more than this value.
+#Range: 0 ~ 9223372036854775807
+noAttackingTimeThreshold = 9223372036854775807
+#When Out-of-combat timer counts exceeds this value, the player is considered out of combat.
+#Range: 0 ~ 9223372036854775807
+outOfCombatTimeThreshold = 9223372036854775807
+

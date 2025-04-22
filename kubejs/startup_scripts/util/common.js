@@ -154,3 +154,13 @@ function RandomWithPlayerLuck(player) {
 function UnionArry(arr1, arr2) {
     return arr1.concat(arr2.filter(function (v) { return !(arr1.indexOf(v) > -1) }))
 }
+
+
+/**
+ * 
+ * @param {number} num 
+ * @returns {number}
+ */
+function Int2Integer(num) {
+    return $Integer.valueOf(JavaMath.toIntExact(num))
+}

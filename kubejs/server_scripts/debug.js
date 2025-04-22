@@ -5,18 +5,24 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
     let level = event.level
-    let adlodList = ListGeneratedAdlodsAround(level, player.blockPosition(), 100)
-    console.log(adlodList)
-    /**@type {Internal.DepositGenResult} */
-    let target = RandomGet(adlodList)
-    player.teleportTo(level.getDimension(), target.pos.x, target.pos.y, target.pos.z, 0, 0)
+    let item = player.getOffHandItem()
+    player.tell(item.getFoodProperties(player).getNutrition())
+    player.tell(item.getFoodProperties(player).getSaturationModifier())
+    // let adlodList = ListGeneratedAdlodsAround(level, player.blockPosition(), 100)
+    // console.log(adlodList)
+    // /**@type {Internal.DepositGenResult} */
+    // let target = RandomGet(adlodList)
+    // player.teleportTo(level.getDimension(), target.pos.x, target.pos.y, target.pos.z, 0, 0)
+
+
+
     // player.triggerAnimation('kubejs:inject_animation', false)
     // player.triggerAnimation('kubejs:head_fly_animation', false)
     // player.triggerAnimation('kubejs:punch_animation', false)
 
     // let minecraftServer = event.level.server
     // let dungeonLevel = minecraftServer.getLevel(DUNGEON_DIM)
-    // const centerPos = GenDungeonStruct(dungeonLevel, new DungeonAttributeModel())
+    // const centerPos = GenSkylandStruct(dungeonLevel, new DungeonAttributeModel())
 
     // player.teleportTo(dungeonLevel.getDimension(), centerPos.x, centerPos.y, centerPos.z, 0, 0)
 

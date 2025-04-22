@@ -67,6 +67,7 @@ BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
         case 0:
             if (!persistentData.contains('spawnId')) return
             let spawnId = persistentData.getString('spawnId')
+            if (spawnId.length == 0) return
             let area = GenDungeonLevelArea(level, blockPos)
             if (!area) return
             let manager = LoquatAreaManager.of(level)

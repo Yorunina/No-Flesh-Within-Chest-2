@@ -13,6 +13,12 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
     const customDataMap = context.customDataMap
 
     if (!customDataMap.containsKey('dungeonEventAction')) {
+        if (!DungeonSpawnerIdMap[context.spawnerId]) {
+            // 未知状态，直接回收，但允许重试
+            recycleArea(areaManager, area)
+            SetDungeonObeliskState(level, area, 0)
+            return
+        }
         /**@type {DungeonEventActionModel} */
         let dungeonEventModel = DungeonSpawnerIdMap[context.spawnerId]
         customDataMap.put('dungeonEventAction', dungeonEventModel)
