@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:king_of_stomach')
     .addScore('chestcavity:endurance', -3)
+    .addScore('chestcavity:nutrition', -1)
     .addScore('chestcavity:metabolism', 1)
 
 const CakeFoodProperties = { 'minecraft:cake': { 'nutrition': 14, 'saturation': 2.8 }, 'bakery:strawberry_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:sweetberry_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_gateau': { 'nutrition': 20, 'saturation': 14 }, 'bakery:bundt_cake': { 'nutrition': 20, 'saturation': 14 }, 'bakery:linzer_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:apple_pie': { 'nutrition': 20, 'saturation': 14 }, 'bakery:glowberry_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:chocolate_tart': { 'nutrition': 20, 'saturation': 14 }, 'bakery:pudding': { 'nutrition': 20, 'saturation': 14 } }
@@ -84,26 +85,6 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
 
 
 /**
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function KingOfStomachChestCavityUpdateDefer(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    if (slotType == GulaSlot) {
-        chestCavity.setOrganScore('chestcavity:ease_of_access', 1)
-        chestCavity.setOrganScore('chestcavity:nerves', 2)
-        chestCavity.setOrganScore('chestcavity:endurance', 2)
-        chestCavity.setOrganScore('chestcavity:breath_capacity', 2)
-        chestCavity.setOrganScore('chestcavity:breath_recovery', 2)
-        chestCavity.setOrganScore('chestcavity:detoxification', 2)
-        chestCavity.setOrganScore('chestcavity:filtration', 2)
-    }
-}
-
-/**
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
@@ -136,5 +117,4 @@ RegistryOrganStrategy(
         .addOnlyStrategy('organ_take_on', KingOfStomachTakeOn)
         .addOnlyStrategy('organ_take_off', KingOfStomachTakeOff)
         .addOnlyStrategy('chest_cavity_update', KingOfStomachChestCavityUpdate)
-        .addOnlyStrategy('chest_cavity_update', KingOfStomachChestCavityUpdateDefer, -10)
 )

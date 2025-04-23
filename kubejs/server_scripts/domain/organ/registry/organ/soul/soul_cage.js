@@ -18,7 +18,7 @@ function SoulCageEntityKill(customData, event, organItem, organIndex, slotType) 
     const entity = event.entity
     const level = entity.level
     const difficulty = level.getDifficulty().getId()
-    let recoverValue = difficulty * Math.ceil(entity.getMaxHealth() * 0.1)
+    let recoverValue = difficulty
     if (damageValue > recoverValue) {
         organItem.setDamageValue(damageValue - recoverValue)
     } else {

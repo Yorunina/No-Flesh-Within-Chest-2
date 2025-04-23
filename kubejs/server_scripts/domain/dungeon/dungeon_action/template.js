@@ -35,8 +35,11 @@ new DungeonEventActionModel('killAmountTask_ZombieGroupTask_2')
     })
     .setFinishAction((level, context, areaManager, isWin) => {
         const area = context.area
+        const dungeonAttr = GetDungeonAttribute(context)
+        let lootList =[Item.of('minecraft:diamond')]
         ClearEntityRemainInArea(level, area)
-        CommonDungeonFinishAction(level, context, [Item.of('minecraft:diamond')], isWin)
+        ApplyLootModifier(level, context, areaManager, lootList, dungeonAttr)
+        CommonDungeonFinishAction(level, context, lootList, isWin)
     })
     .addWave(NewContinousKillAmountWave(10, 20 * 60, (level, context, areaManager) => {
         const dungeonAttr = GetDungeonAttribute(context)

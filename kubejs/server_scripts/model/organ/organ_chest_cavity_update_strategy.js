@@ -13,13 +13,6 @@ function OrganChestCavityUpdateStrategyModel() {
 
 OrganChestCavityUpdateStrategyModel.prototype = {
     /**
-     * @param {Object<string, Object<string, function(...any)>: void>} strategyMap
-     */
-    setStrategyMap: function (strategyMap) {
-        this.strategyMap = strategyMap
-        return this
-    },
-    /**
      * @param {String} id
      * @param {function(any[]): void} func
      */

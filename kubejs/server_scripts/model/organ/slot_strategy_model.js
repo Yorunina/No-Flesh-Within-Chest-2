@@ -11,32 +11,41 @@ function SlotStrategyModel() {
 
 SlotStrategyModel.prototype = {
     /**
-     * @param {Object<string, Object<string, function(...any)>: void>} strategyMap
+     * @param {String} id
+     * @param {function(any[]): void} func
+     * @param {number} priority
      */
-    setStrategyMap: function (strategyMap) {
-        this.strategyMap = strategyMap
+    addStrategy: function (id, func, priority) {
+        priority = priority ? priority: 0
+        if (!this.strategyMap[id]) {
+            this.strategyMap[id] = {
+                'default': [],
+                'only': [],
+            }
+        }
+        this.strategyMap[id]['default'].push({
+            'func': func,
+            'priority': priority,
+        })
         return this
     },
     /**
      * @param {String} id
      * @param {function(any[]): void} func
+     * @param {number} priority
      */
-    addStrategy: function (id, func) {
+    addOnlyStrategy: function (id, func, priority) {
+        priority = priority ? priority: 0
         if (!this.strategyMap[id]) {
-            this.strategyMap[id] = {}
+            this.strategyMap[id] = {
+                'default': [],
+                'only': [],
+            }
         }
-        this.strategyMap[id]['default'] = func
-        return this
-    },
-    /**
-     * @param {String} id
-     * @param {function(any[]): void} func
-     */
-    addOnlyStrategy: function (id, func) {
-        if (!this.strategyMap[id]) {
-            this.strategyMap[id] = {}
-        }
-        this.strategyMap[id]['only'] = func
+        this.strategyMap[id]['only'].push({
+            'func': func,
+            'priority': priority,
+        })
         return this
     },
     /**

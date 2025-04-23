@@ -1,6 +1,6 @@
 // priority: 500
 const HighAdaptabilitySlot = 'high_adaptability'
-SlotChestCavityUpdateStrategy.addStrategy('high_adaptability', HighAdaptabilitySlotEvent)
+SlotChestCavityUpdateStrategy.addStrategy(HighAdaptabilitySlot, HighAdaptabilitySlotEvent)
 
 /**
  * @param {OrganEventCustomData} customData

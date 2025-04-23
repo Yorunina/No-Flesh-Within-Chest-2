@@ -1,0 +1,11 @@
+// priority: 900
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:king_of_stomach')
+    .addDefault(Text.translatable('tooltips.kubejs.king_of_stomach.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.king_of_stomach.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.king_of_stomach.alt.2', Text.gold('0.25')))
+    .addAlt(Text.translatable('tooltips.kubejs.king_of_stomach.alt.3', Text.gold('0.25')))
+    .addAlt(Text.translatable('tooltips.kubejs.king_of_stomach.alt.4'))
+    .addCtrl(GulaSlotType)
+    .addCtrl(Text.translatable('tooltips.kubejs.king_of_stomach.ctrl.1'))
+    .addCtrl(Text.translatable('tooltips.kubejs.king_of_stomach.ctrl.2'))
+)

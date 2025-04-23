@@ -10,13 +10,6 @@ function OrganTakeOnStrategyModel() {
 
 OrganTakeOnStrategyModel.prototype = {
     /**
-     * @param {Object<string, Object<string, Function: void>} strategyMap
-     */
-    setStrategyMap: function (strategyMap) {
-        this.strategyMap = strategyMap
-        return this
-    },
-    /**
      * @param {function(...any): void} data
      */
     addInit: function (initFunc) {
