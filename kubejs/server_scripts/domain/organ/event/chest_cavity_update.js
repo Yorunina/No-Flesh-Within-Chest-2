@@ -12,6 +12,8 @@ const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
             customData.attackDamage = new AttributeManagerModel(1)
             customData.maxHealth = new AttributeManagerModel(1)
             customData.armor = new AttributeManagerModel(1)
+            customData.entityReach = new AttributeManagerModel(1)
+            customData.blockReach = new AttributeManagerModel(1)
         }
     )
 const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
@@ -29,6 +31,8 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
             customData.attackDamage.applyOnEntityByAttributeKey(entity, 'minecraft:generic.attack_damage', 'OrganAttackDamage')
             customData.maxHealth.applyOnEntityByAttributeKey(entity, 'minecraft:generic.max_health', 'OrganMaxHealth')
             customData.armor.applyOnEntityByAttributeKey(entity, 'minecraft:generic.armor', 'OrganArmor')
+            customData.entityReach.applyOnEntityByAttributeKey(entity, 'forge:entity_reach', 'OrganEntityReach')
+            customData.blockReach.applyOnEntityByAttributeKey(entity, 'forge:block_reach', 'OrganBlockReach')
         }
     )
 

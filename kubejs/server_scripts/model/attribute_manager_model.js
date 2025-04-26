@@ -56,7 +56,7 @@ AttributeManagerModel.prototype = {
     },
     /**
      * @param {Internal.LivingEntity} entity 
-     * @param {string} attributeKey
+     * @param {Internal.Attribute_} attributeKey
      * @param {string} identifier
      * @returns {AttributeManagerModel}
      */

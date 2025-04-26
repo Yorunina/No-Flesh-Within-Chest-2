@@ -1,5 +1,9 @@
 // priority: 2000
+/**
+ * @param {Internal.Attribute_} attributeKey
+ */
 function AttributeUUIDModel(attributeKey) {
+    /**@type {Internal.Attribute_} */
     this.attributeKey = attributeKey
     /**@type {Internal.UUID} */
     this.baseAdd = null
