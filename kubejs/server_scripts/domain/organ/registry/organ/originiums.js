@@ -90,26 +90,43 @@ function OriginiumsPlayerCastEvent(customData, event, organItem, organIndex, slo
 
     player.addItemCooldown(organItem, 20 * 30)
 }
+
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function OriginiumsMpmRender(customData, event, organItem, organIndex, slotType) {
+function OriginiumsMpmTakeOn(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     let player = event.entity
-    let mpmData = new MpmDataModel('kubejs:parts/arms/originium_dragon_arm_slim_model.json').exportModelData()
-    if (player.profile.isLegacy()) {
-        mpmData = new MpmDataModel('kubejs:parts/arms/originium_dragon_arm_wide_model.json').exportModelData()
+    let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/originium_dragon_arm_wide_model.json' : 'kubejs:parts/arms/originium_dragon_arm_slim_model.json'
+
+    let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
+
+    if (index == -1) {
+        customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
     }
-    customData.mpmParts.push(mpmData)
+}
+
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function OriginiumsMpmTakeOff(customData, event, organItem, organIndex, slotType) {
+    /**@type {Internal.ServerPlayer} */
+    let player = event.entity
+    let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/originium_dragon_arm_wide_model.json' : 'kubejs:parts/arms/originium_dragon_arm_slim_model.json'
+    customData.modelData.mpmParts.removeIf(mpmData => mpmData.partId.toString() == partId)
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:originiums')
         .addOnlyStrategy('player_spell_cast', OriginiumsPlayerCastEvent)
-        .addOnlyStrategy('mpm_render', OriginiumsMpmRender)
+        .addOnlyStrategy('mpm_render_take_on', OriginiumsMpmTakeOn)
+        .addOnlyStrategy('mpm_render_take_off', OriginiumsMpmTakeOff)
 )
 
 

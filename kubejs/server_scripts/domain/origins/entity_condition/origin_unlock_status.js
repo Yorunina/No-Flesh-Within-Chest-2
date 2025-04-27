@@ -1,10 +1,10 @@
 // priority: 500
-const DataPath = 'data'
-const OriginUnlockStatusData = 'data/origin_unlock_status.json'
+const DefaultConfigsPath = 'defaultconfigs'
+const OriginUnlockStatusData = 'defaultconfigs/origin_unlock_status.json'
 
 const OriginUnlockStatusUuidMap = {}
-if (!FilesJS.exists(DataPath)) {
-    FilesJS.createDirectory(DataPath)
+if (!FilesJS.exists(DefaultConfigsPath)) {
+    FilesJS.createDirectory(DefaultConfigsPath)
 }
 if (FilesJS.exists(OriginUnlockStatusData)) {
     let playerStatusJson = JsonIO.readJson(OriginUnlockStatusData).getAsJsonObject()

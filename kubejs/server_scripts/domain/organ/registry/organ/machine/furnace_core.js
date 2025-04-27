@@ -131,6 +131,26 @@ function FurnaceCoreTakeOn(customData, event, organItem, organIndex, slotType) {
         SetOrganEffect(chestCavity, organEffect)
     }
 }
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function BurningHeartMpmTakeOn(customData, event, organItem, organIndex, slotType) {
+    let bodyPartId = 'kubejs:parts/body/burning_heart_body_model.json'
+    let armPartId = 'kubejs:parts/arms/burning_heart_arm_model.json'
+
+    let bodyIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == bodyPartId)
+    if (bodyIndex == -1) {
+        customData.modelData.mpmParts.add(new MpmDataModel(bodyPartId).exportModelData())
+    }
+
+    let armorIndex = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == armPartId)
+    if (armorIndex == -1) {
+        customData.modelData.mpmParts.add(new MpmDataModel(armPartId).exportModelData())
+    }
+}
 
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -138,9 +158,10 @@ function FurnaceCoreTakeOn(customData, event, organItem, organIndex, slotType) {
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function BurningHeartMpmRender(customData, event, organItem, organIndex, slotType) {
-    customData.mpmParts.push(new MpmDataModel('kubejs:parts/body/burning_heart_body_model.json').exportModelData())
-    customData.mpmParts.push(new MpmDataModel('kubejs:parts/arms/burning_heart_arm_model.json').exportModelData())
+function BurningHeartMpmTakeOff(customData, event, organItem, organIndex, slotType) {
+    let bodyPartId = 'kubejs:parts/body/burning_heart_body_model.json'
+    let armPartId = 'kubejs:parts/arms/burning_heart_arm_model.json'
+    customData.modelData.mpmParts.removeIf(mpmData => mpmData.partId.toString() == bodyPartId || mpmData.partId.toString() == armPartId)
 }
 
 RegistryOrganStrategy(
@@ -149,7 +170,8 @@ RegistryOrganStrategy(
         .addOnlyStrategy('organ_take_off', FurnaceCoreTakeOff)
         .addOnlyStrategy('entity_do_damage', FurnaceCoreDoDamage)
         .addOnlyStrategy('organ_take_on', FurnaceCoreTakeOn)
-        .addOnlyStrategy('mpm_render', BurningHeartMpmRender)
+        .addOnlyStrategy('mpm_render_take_on', BurningHeartMpmTakeOn)
+        .addOnlyStrategy('mpm_render_take_off', BurningHeartMpmTakeOff)
 )
 
 /**
@@ -275,5 +297,6 @@ RegistryOrganStrategy(
         .addOnlyStrategy('organ_take_off', BurningHeartTakeOff)
         .addOnlyStrategy('entity_do_damage', BurningHeartDoDamageDefer, -1)
         .addOnlyStrategy('organ_take_on', BurningHeartTakeOn)
-        .addOnlyStrategy('mpm_render', BurningHeartMpmRender)
+        .addOnlyStrategy('mpm_render_take_on', BurningHeartMpmTakeOn)
+        .addOnlyStrategy('mpm_render_take_off', BurningHeartMpmTakeOff)
 )

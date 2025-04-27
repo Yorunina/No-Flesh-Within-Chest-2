@@ -44,25 +44,42 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
     customData.attackDamage.addAttributeModifier(rosyValue, 'addition', 'base')
 }
 
+
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  */
-function RoseQuartzMuscleMpmRender(customData, event, organItem, organIndex, slotType) {
+function RoseQuartzMuscleMpmTakeOn(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     let player = event.entity
-    let mpmData = new MpmDataModel('kubejs:parts/arms/rose_arm_slim_model.json').exportModelData()
-    if (player.profile.isLegacy()) {
-        mpmData = new MpmDataModel('kubejs:parts/arms/rose_arm_wide_model.json').exportModelData()
+    let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/rose_arm_wide_model.json' : 'kubejs:parts/arms/rose_arm_slim_model.json'
+
+    let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
+    if (index == -1) {
+        customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
     }
-    customData.mpmParts.push(mpmData)
 }
+
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function RoseQuartzMuscleMpmTakeOff(customData, event, organItem, organIndex, slotType) {
+    /**@type {Internal.ServerPlayer} */
+    let player = event.entity
+    let partId = player.profile.isLegacy() ? 'kubejs:parts/arms/rose_arm_wide_model.json' : 'kubejs:parts/arms/rose_arm_slim_model.json'
+    customData.modelData.mpmParts.removeIf(mpmData => mpmData.partId.toString() == partId)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_muscle')
         .addStrategy('chest_cavity_update', RoseQuartzMuscleChestCavityUpdate)
-        .addOnlyStrategy('mpm_render', RoseQuartzMuscleMpmRender)
+        .addOnlyStrategy('mpm_render_take_on', RoseQuartzMuscleMpmTakeOn)
+        .addOnlyStrategy('mpm_render_take_off', RoseQuartzMuscleMpmTakeOff)
 )
 
 /** ============================================================== */
@@ -100,10 +117,36 @@ function RoseQuartzHeartMpmRender(customData, event, organItem, organIndex, slot
     customData.mpmParts.push(mpmData)
 }
 
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function RoseQuartzHeartMpmTakeOn(customData, event, organItem, organIndex, slotType) {
+    let partId = 'kubejs:parts/body/rose_body_model.json'
+    let index = customData.modelData.mpmParts.findIndex(mpmData => mpmData.partId.toString() == partId)
+    if (index == -1) {
+        customData.modelData.mpmParts.add(new MpmDataModel(partId).exportModelData())
+    }
+}
+
+/**
+ * @param {OrganChestCavityUpdateStrategyCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ */
+function RoseQuartzHeartMpmTakeOff(customData, event, organItem, organIndex, slotType) {
+    let partId = 'kubejs:parts/body/rose_body_model.json'
+    customData.modelData.mpmParts.removeIf(mpmData => mpmData.partId.toString() == partId)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_heart')
         .addStrategy('chest_cavity_update', RoseQuartzHeartChestCavityUpdate)
-        .addOnlyStrategy('mpm_render', RoseQuartzHeartMpmRender)
+        .addOnlyStrategy('mpm_render_take_on', RoseQuartzHeartMpmTakeOn)
+        .addOnlyStrategy('mpm_render_take_off', RoseQuartzHeartMpmTakeOff)
 )
 
 /** ============================================================== */

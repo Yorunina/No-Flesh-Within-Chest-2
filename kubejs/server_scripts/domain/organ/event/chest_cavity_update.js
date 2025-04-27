@@ -1,14 +1,15 @@
 // priority: 999
 
 const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
+const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
+const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
     .addInit(
         /** 
          * @param {OrganChestCavityUpdateStrategyCustomData} customData
          * @param {Internal.EvaluateChestCavityJS} event
          */
         (customData, event) => {
-            customData.mpmParts = []
-            customData.OrganSpellMap = {}
+            customData.modelData = null
             customData.attackDamage = new AttributeManagerModel(1)
             customData.maxHealth = new AttributeManagerModel(1)
             customData.armor = new AttributeManagerModel(1)
@@ -16,8 +17,6 @@ const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
             customData.blockReach = new AttributeManagerModel(1)
         }
     )
-const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
-const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
 
 
 const SlotChestCavityUpdateStrategy = new SlotStrategyModel()

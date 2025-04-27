@@ -38,6 +38,8 @@ OrganTakeOffStrategyModel.prototype = {
         })
         const oldInvTypeData = ccInstance.getOldInventoryTypeData()
         const onlyMap = new Map()
+        const onlyMPMMap = new Map()
+        let needLoadMpm = ccInstance.owner.isPlayer() && IsLoadedMPM
         let oldContainerSize = oldccInv.getContainerSize()
         let newContainerSize = ccInv.getContainerSize()
 
@@ -54,25 +56,53 @@ OrganTakeOffStrategyModel.prototype = {
 
             let itemId = oldItem.id
             let strategyModel = OrganStrategyMap[itemId]
-            if (!strategyModel) continue
-            let organEventStrategy = strategyModel.strategyMap[this.eventId]
-            if (!organEventStrategy) continue
-            if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
-                onlyMap.set(itemId, true)
-                organEventStrategy['only'].forEach(e => {
-                    strategyFuncList.push({
-                        'strategyModel': e,
-                        'arg': args.concat(oldItem, i, slotType)
-                    })
-                })
+            if (strategyModel) {
+                let organEventStrategy = strategyModel.strategyMap[this.eventId]
+                if (organEventStrategy) {
+                    if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                        onlyMap.set(itemId, true)
+                        organEventStrategy['only'].forEach(e => {
+                            strategyFuncList.push({
+                                'strategyModel': e,
+                                'arg': args.concat(oldItem, i, slotType)
+                            })
+                        })
+                    }
+                    if (organEventStrategy['default']) {
+                        organEventStrategy['default'].forEach(e => {
+                            strategyFuncList.push({
+                                'strategyModel': e,
+                                'arg': args.concat(oldItem, i, slotType)
+                            })
+                        })
+                    }
+                }
             }
-            if (organEventStrategy['default']) {
-                organEventStrategy['default'].forEach(e => {
-                    strategyFuncList.push({
-                        'strategyModel': e,
-                        'arg': args.concat(oldItem, i, slotType)
-                    })
-                })
+            // MPM策略
+            if (needLoadMpm) {
+                let mpmEventStrategy = strategyModel.strategyMap['mpm_render_take_off']
+                if (mpmEventStrategy) {
+                    if (!customData.modelData) {
+                        customData.modelData = $ModelData.get(ccInstance.owner)
+                    }
+                    if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
+                        onlyMPMMap.set(itemId, true)
+                        mpmEventStrategy['only'].forEach(e => {
+                            strategyFuncList.push({
+                                'strategyModel': e,
+                                'arg': args.concat(oldItem, i, slotType)
+                            })
+                        })
+                    }
+                    if (mpmEventStrategy['default']) {
+                        mpmEventStrategy['default'].forEach(e => {
+                            strategyFuncList.push({
+                                'strategyModel': e,
+                                'arg': args.concat(oldItem, i, slotType)
+                            })
+                        })
+                    }
+                }
             }
         }
         if (strategyFuncList.length > 0) {

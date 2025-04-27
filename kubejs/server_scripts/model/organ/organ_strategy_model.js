@@ -1,5 +1,5 @@
 // priority: 2000
-const $EventIdType = 'item_right_clicked' || 'key_active' || 'entity_do_damage' || 'chest_cavity_update' || 'item_eaten' || 'block_broken' || 'entity_be_hurt' || 'player_enchant' || 'entity_loot' || 'chest_loot' || 'organ_take_off' || 'mpm_render' || 'entity_tick' || 'organ_take_on' || 'entity_kill' || 'entity_death'
+const $EventIdType = 'item_right_clicked' || 'key_active' || 'entity_do_damage' || 'chest_cavity_update' || 'item_eaten' || 'block_broken' || 'entity_be_hurt' || 'player_enchant' || 'entity_loot' || 'chest_loot' || 'organ_take_off' || 'mpm_render_take_on' || 'mpm_render_take_off' || 'entity_tick' || 'organ_take_on' || 'entity_kill' || 'entity_death'
 
 function OrganStrategyModel(itemId) {
     this.itemId = itemId
