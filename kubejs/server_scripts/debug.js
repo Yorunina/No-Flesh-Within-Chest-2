@@ -5,9 +5,10 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
     let level = event.level
-    let item = player.getOffHandItem()
-    player.tell(item.getFoodProperties(player).getNutrition())
-    player.tell(item.getFoodProperties(player).getSaturationModifier())
+    let deposits = GetDepositsByType(level, 'gold')
+    let depositPos = deposits[0].pos
+    player.teleportTo(level.getDimension(), depositPos.x, depositPos.y, depositPos.z, 0, 0)
+
     // let adlodList = ListGeneratedAdlodsAround(level, player.blockPosition(), 100)
     // console.log(adlodList)
     // /**@type {Internal.DepositGenResult} */
