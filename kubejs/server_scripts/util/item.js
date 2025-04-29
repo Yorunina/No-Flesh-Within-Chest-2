@@ -16,3 +16,15 @@ function DeserializeItemFromNbt(data) {
     }
     return res
 }
+
+function GetTreaseMapItem(level, pos) {
+    let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
+    $MapItem.renderBiomePreviewMap(level, mapItem)
+    $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)
+    return mapItem
+}
+
+// todo
+// let placementState = Block.getBlock('minecraft:chest').defaultBlockState()
+// level.setBlock(pos, placementState, 2)
+// $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)

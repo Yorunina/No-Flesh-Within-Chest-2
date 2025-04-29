@@ -63,3 +63,9 @@ const $EvaluateChestCavityJS = Java.loadClass('net.tigereye.chestcavity.compat.k
 const $WorldDeposits = Java.loadClass('com.endertech.minecraft.mods.adlods.world.WorldDeposits')
 const $AbstractOre = Java.loadClass('com.endertech.minecraft.mods.adlods.ore.AbstractOre')
 const $WineYears = Java.loadClass('net.satisfy.vinery.core.util.WineYears')
+
+const $MapItemSavedData = Java.loadClass('net.minecraft.world.level.saveddata.maps.MapItemSavedData')
+const $MapItem = Java.loadClass('net.minecraft.world.item.MapItem')
+const $MapDecorationType = Java.loadClass('net.minecraft.world.level.saveddata.maps.MapDecoration$Type')
+const $ModBlocks = Java.loadClass('noobanidus.mods.lootr.init.ModBlocks')
+const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity')
