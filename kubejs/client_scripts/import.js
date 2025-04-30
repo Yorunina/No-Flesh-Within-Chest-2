@@ -7,3 +7,8 @@ const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.mag
 const $KeyMapping = Java.loadClass("net.minecraft.client.KeyMapping")
 const $GLFWKey = Java.loadClass("org.lwjgl.glfw.GLFW")
 const $KeyMappingRegistry = Java.loadClass("dev.architectury.registry.client.keymappings.KeyMappingRegistry")
+
+const $ModelData = Java.loadClass('noppes.mpm.ModelData')
+const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
+const $MpmPackets = Java.loadClass('noppes.mpm.packets.Packets')
+const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPlayerDataSend')

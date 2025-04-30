@@ -24,11 +24,12 @@ OrganTakeOffStrategyModel.prototype = {
         return this
     },
     /**
-     * @param {Internal.ChestCavityInstance} ccInstance
-     * @param {any[]} args 
+     * @param {Internal.LivingEntity} entity
      * @param {OrganEventCustomData} customData
+     * @param {any[]} args 
      */
-    run: function (ccInstance, args, customData) {
+    run: function (entity, customData, args) {
+        const ccInstance = entity.chestCavityInstance
         const ccInv = ccInstance.inventory
         const oldccInv = ccInstance.oldInventory
         if (!oldccInv || !ccInv) return
@@ -39,7 +40,6 @@ OrganTakeOffStrategyModel.prototype = {
         const oldInvTypeData = ccInstance.getOldInventoryTypeData()
         const onlyMap = new Map()
         const onlyMPMMap = new Map()
-        let needLoadMpm = ccInstance.owner.isPlayer() && IsLoadedMPM
         let oldContainerSize = oldccInv.getContainerSize()
         let newContainerSize = ccInv.getContainerSize()
 
@@ -81,33 +81,35 @@ OrganTakeOffStrategyModel.prototype = {
                         })
                     }
                 }
-            }
-            // MPM策略
-            if (needLoadMpm) {
-                let mpmEventStrategy = strategyModel.strategyMap['mpm_render_take_off']
-                if (mpmEventStrategy) {
-                    if (!customData.modelData) {
-                        customData.modelData = $ModelData.get(ccInstance.owner)
-                    }
-                    if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
-                        onlyMPMMap.set(itemId, true)
-                        mpmEventStrategy['only'].forEach(e => {
-                            strategyFuncList.push({
-                                'strategyModel': e,
-                                'arg': args.concat(oldItem, i, slotType)
+
+                // MPM策略
+                if (customData.canLoadMpm) {
+                    let mpmEventStrategy = strategyModel.strategyMap['mpm_render_take_off']
+                    if (mpmEventStrategy) {
+                        if (!customData.modelData) {
+                            customData.modelData = $ModelData.get(ccInstance.owner)
+                        }
+                        if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
+                            onlyMPMMap.set(itemId, true)
+                            mpmEventStrategy['only'].forEach(e => {
+                                strategyFuncList.push({
+                                    'strategyModel': e,
+                                    'arg': args.concat(oldItem, i, slotType)
+                                })
                             })
-                        })
-                    }
-                    if (mpmEventStrategy['default']) {
-                        mpmEventStrategy['default'].forEach(e => {
-                            strategyFuncList.push({
-                                'strategyModel': e,
-                                'arg': args.concat(oldItem, i, slotType)
+                        }
+                        if (mpmEventStrategy['default']) {
+                            mpmEventStrategy['default'].forEach(e => {
+                                strategyFuncList.push({
+                                    'strategyModel': e,
+                                    'arg': args.concat(oldItem, i, slotType)
+                                })
                             })
-                        })
+                        }
                     }
                 }
             }
+
         }
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {

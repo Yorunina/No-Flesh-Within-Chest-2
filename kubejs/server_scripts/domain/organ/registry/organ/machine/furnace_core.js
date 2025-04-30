@@ -161,7 +161,7 @@ function BurningHeartMpmTakeOn(customData, event, organItem, organIndex, slotTyp
 function BurningHeartMpmTakeOff(customData, event, organItem, organIndex, slotType) {
     let bodyPartId = 'kubejs:parts/body/burning_heart_body_model.json'
     let armPartId = 'kubejs:parts/arms/burning_heart_arm_model.json'
-    customData.modelData.mpmParts.removeIf(mpmData => mpmData.partId.toString() == bodyPartId || mpmData.partId.toString() == armPartId)
+    customData.modelData.mpmParts.removeIf(mpmData => (mpmData.partId.toString() == bodyPartId) || (mpmData.partId.toString() == armPartId))
 }
 
 RegistryOrganStrategy(

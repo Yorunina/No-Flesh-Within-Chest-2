@@ -5,9 +5,10 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
     let level = event.level
-    let deposits = GetDepositsByType(level, 'gold')
-    let depositPos = deposits[0].pos
-    player.teleportTo(level.getDimension(), depositPos.x, depositPos.y, depositPos.z, 0, 0)
+    UpdateMpm(player, $ModelData.get(player))
+    // let deposits = GetDepositsByType(level, 'gold')
+    // let depositPos = deposits[0].pos
+    // player.teleportTo(level.getDimension(), depositPos.x, depositPos.y, depositPos.z, 0, 0)
 
     // let adlodList = ListGeneratedAdlodsAround(level, player.blockPosition(), 100)
     // console.log(adlodList)

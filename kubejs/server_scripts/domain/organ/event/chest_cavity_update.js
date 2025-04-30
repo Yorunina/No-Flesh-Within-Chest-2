@@ -1,6 +1,6 @@
 // priority: 999
 
-const OrganChestCavityUpdateStrategy = new OrganChestCavityUpdateStrategyModel()
+const OrganChestCavityUpdateStrategy = new OrganEventModel()
 const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
 const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
     .addInit(
@@ -9,7 +9,6 @@ const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
          * @param {Internal.EvaluateChestCavityJS} event
          */
         (customData, event) => {
-            customData.modelData = null
             customData.attackDamage = new AttributeManagerModel(1)
             customData.maxHealth = new AttributeManagerModel(1)
             customData.armor = new AttributeManagerModel(1)
@@ -36,19 +35,38 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
     )
 
 ChestCavityEvents.evaluateChestCavity(event => {
-    const { chestCavity, entity } = event
+    const entity = event.entity
     let customData = {}
     if (!entity.isAlive()) return
-    // 器官摘下 - 通常用于归位操作Å
-    OrganTakeOffStrategy.run(chestCavity, [event], customData)
-    OrganTakeOnStrategy.run(chestCavity, [event], customData)
+    // 器官摘下 - 通常用于归位操作
+    customData.modelData = null
+    customData.canLoadMpm = IsLoadedMPM && entity.isPlayer()
+    if (customData.canLoadMpm && !entity.connection) {
+        let modelData = $ModelData.get(entity)
+        modelData.mpmParts.clear()
+        customData.modelData = modelData
+    }
+    OrganTakeOffStrategy.run(entity, customData, [event])
+    OrganTakeOnStrategy.run(entity, customData, [event])
+    OrganChestCavityUpdateStrategy.run(entity, customData, [event])
+    SlotChestCavityUpdateStrategy.run(entity, customData, [event])
 
-    OrganChestCavityUpdateStrategy.run(chestCavity, [event], customData)
-    SlotChestCavityUpdateStrategy.run(chestCavity, [event], customData)
-
-    // 渲染MPM
-    if (ccInstance.owner.isPlayer() && IsLoadedMPM && customData.modelData) {
-        renderMpm(ccInstance, customData)
+    if (customData.canLoadMpm && customData.modelData) {
+        if (!entity.connection) {
+            SetCustomDataMap(entity.chestCavityInstance, 'mpmModelDataNBT', customData.modelData.writeToNBT())
+        } else {
+            UpdateMpm(entity, customData.modelData)
+        }
     }
     UpdateClientISSSpellDataEvent(customData, entity)
+})
+
+
+PlayerEvents.loggedIn(event => {
+    event.server.scheduleInTicks(20, () => {
+        const player = event.player
+        let mpmModelDataNBT = GetCustomDataMap(player.chestCavityInstance, 'mpmModelDataNBT', null)
+        if (!mpmModelDataNBT) return
+        $MpmPackets.sendNearby(player, new $PacketPlayerDataSend(player.getUuid(), mpmModelDataNBT))
+    })
 })

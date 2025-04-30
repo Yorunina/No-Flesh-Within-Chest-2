@@ -16,7 +16,7 @@ SlotStrategyModel.prototype = {
      * @param {number} priority
      */
     addStrategy: function (id, func, priority) {
-        priority = priority ? priority: 0
+        priority = priority ? priority : 0
         if (!this.strategyMap[id]) {
             this.strategyMap[id] = {
                 'default': [],
@@ -35,7 +35,7 @@ SlotStrategyModel.prototype = {
      * @param {number} priority
      */
     addOnlyStrategy: function (id, func, priority) {
-        priority = priority ? priority: 0
+        priority = priority ? priority : 0
         if (!this.strategyMap[id]) {
             this.strategyMap[id] = {
                 'default': [],
@@ -63,11 +63,12 @@ SlotStrategyModel.prototype = {
         return this
     },
     /**
-     * @param {Internal.ChestCavityInstance} chestCavity
-     * @param {any[]} args 
+     * @param {Internal.LivingEntity} entity
      * @param {OrganEventCustomData} customData
+     * @param {any[]} args 
      */
-    run: function (chestCavity, args, customData) {
+    run: function (entity, customData, args) {
+        const chestCavity = entity.chestCavityInstance
         const ccInv = chestCavity.inventory
         const invTypeData = chestCavity.getInventoryTypeData()
         args.unshift(customData)
