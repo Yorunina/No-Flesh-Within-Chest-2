@@ -69,3 +69,6 @@ const $MapItem = Java.loadClass('net.minecraft.world.item.MapItem')
 const $MapDecorationType = Java.loadClass('net.minecraft.world.level.saveddata.maps.MapDecoration$Type')
 const $ModBlocks = Java.loadClass('noobanidus.mods.lootr.init.ModBlocks')
 const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity')
+
+
+const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi")
