@@ -2,55 +2,6 @@
 RegistryOrgan('kubejs:originiums')
     .addScore('chestcavity:health', -1)
 
-RegistryOrgan('kubejs:sub_originiums')
-    .addScore('chestcavity:health', -0.5)
-
-const SubOriginiumsMagicList = [
-    {
-        id: "irons_spellbooks:starfall",
-        maxLevel: 10,
-    },
-    {
-        id: "irons_spellbooks:evasion",
-        maxLevel: 5,
-    },
-    {
-        id: "irons_spellbooks:magic_arrow",
-        maxLevel: 20,
-    },
-    {
-        id: "irons_spellbooks:magic_missile",
-        maxLevel: 15,
-    },
-    {
-        id: "irons_spellbooks:teleport",
-        maxLevel: 5,
-    },
-    {
-        id: "irons_spellbooks:echoing_strikes",
-        maxLevel: 5,
-    },
-    {
-        id: "irons_spellbooks:black_hole",
-        maxLevel: 6,
-    },
-    {
-        id: "irons_spellbooks:counterspell",
-        maxLevel: 1,
-    },
-    {
-        id: "irons_spellbooks:dragon_breath",
-        maxLevel: 10,
-    },
-    {
-        id: "irons_spellbooks:summon_ender_chest",
-        maxLevel: 1,
-    },
-    {
-        id: "irons_spellbooks:recall",
-        maxLevel: 1,
-    },
-]
 
 /**
  * @param {OrganEventCustomData} customData
@@ -59,36 +10,39 @@ const SubOriginiumsMagicList = [
  * @param {number} organIndex
  * @param {string} slotType
  */
-function OriginiumsPlayerCastEvent(customData, event, organItem, organIndex, slotType) {
-    const player = event.player
-    const manaCost = event.getManaCost()
-    const chestCavity = player.chestCavityInstance
-    let genProbability = Math.min(Math.pow(manaCost, 0.5) / 15, 1)
-    if (Math.random() < genProbability) return
-
-    let subOriginiums = Item.of('kubejs:sub_originiums')
-    let nbt = subOriginiums.getOrCreateTag()
-    let randomSpell = RandomGet(SubOriginiumsMagicList)
-    let spellLvl = Math.floor(Math.random() * randomSpell.maxLevel) + 1
-    nbt.putString('spellId', randomSpell.id)
-    nbt.putInt('spellLvl', spellLvl)
-
-    let canSetSlotList = []
-    for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) {
-        if (chestCavity.inventory.getItem(i).isEmpty()) {
-            canSetSlotList.push(i)
+function OriginiumsPlayerSpellCast(customData, event, organItem, organIndex, slotType) {
+    const maxDamage = organItem.getMaxDamage()
+    const curDamage = organItem.getDamageValue()
+    const entity = event.entity
+    const chestCavity = entity.chestCavityInstance
+    if (maxDamage - curDamage < maxDamage) {
+        organItem.setDamageValue(curDamage - 1)
+        if (entity instanceof $ServerPlayer) {
+            let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((maxDamage - curDamage + 1).toFixed(0))
+            SetOrganEffect(chestCavity, organEffect)
         }
+        return
     }
-    let targetIndex = -1
-    if (canSetSlotList.length == 0) {
-        targetIndex = Math.floor(Math.random() * chestCavity.inventory.getContainerSize())
-    } else {
-        targetIndex = RandomGet(canSetSlotList)
+    event.setSpellLevel(event.getSpellLevel() + Math.floor(maxDamage / 2))
+    organItem.setDamageValue(maxDamage)
+    if (entity instanceof $ServerPlayer) {
+        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText('0')
+        SetOrganEffect(chestCavity, organEffect)
     }
-    let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
-    SetChestCavityOrgan(customData, chestCavity, subOriginiums, targetIndex, targetSlotType, true)
+}
 
-    player.addItemCooldown(organItem, 20 * 30)
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function OriginiumsTakeOff(customData, event, organItem, organIndex, slotType) {
+    const { entity, chestCavity } = event
+    if (entity instanceof $ServerPlayer) {
+        RemoveOrganEffect(chestCavity, 'kubejs:originiums')
+    }
 }
 
 /**
@@ -124,47 +78,8 @@ function OriginiumsMpmTakeOff(customData, event, organItem, organIndex, slotType
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:originiums')
-        .addOnlyStrategy('player_spell_cast', OriginiumsPlayerCastEvent)
+        .addOnlyStrategy('player_spell_cast', OriginiumsPlayerSpellCast)
+        .addOnlyStrategy('organ_take_off', OriginiumsTakeOff)
         .addOnlyStrategy('mpm_render_take_on', OriginiumsMpmTakeOn)
         .addOnlyStrategy('mpm_render_take_off', OriginiumsMpmTakeOff)
-)
-
-
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function SubOriginiumsChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    if (!entity.isPlayer()) return
-    const chestCavity = event.chestCavity
-    let nbt = organItem.getOrCreateTag()
-    let spellId = nbt.getString('spellId')
-    let spellLvl = nbt.getInt('spellLvl')
-    AddSpellSelection(customData, chestCavity, spellId, spellLvl)
-}
-
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function SubOriginiumsTakeOff(customData, event, organItem, organIndex, slotType) {
-    const { entity, chestCavity } = event
-    if (!entity.isPlayer()) return
-    let nbt = organItem.getOrCreateTag()
-    let spellId = nbt.getString('spellId')
-    let spellLvl = nbt.getInt('spellLvl')
-    RemoveSpellSelection(customData, chestCavity, spellId, spellLvl)
-}
-
-RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:sub_originiums')
-        .addStrategy('chest_cavity_update', SubOriginiumsChestCavityUpdate)
-        .addStrategy('organ_take_off', SubOriginiumsTakeOff)
 )

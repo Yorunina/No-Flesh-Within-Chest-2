@@ -352,6 +352,17 @@
         "value": 100
       }
     },
+    "potioncore:projectile_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2147483647,
+        "value": 2147483647
+      }
+    },
     "terra_entity:player.summon_damage": {
       "enabled": false,
       "min": {
@@ -407,6 +418,17 @@
         "value": 1000
       }
     },
+    "potioncore:damage_resistance": {
+      "enabled": false,
+      "min": {
+        "default": -2147483648,
+        "value": -2147483648
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
     "irons_spellbooks:evocation_spell_power": {
       "enabled": false,
       "min": {
@@ -416,6 +438,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "potioncore:magic_shield": {
+      "enabled": false,
+      "min": {
+        "default": -2048,
+        "value": -2048
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "additionalentityattributes:critical_bonus_damage": {
@@ -473,6 +506,17 @@
         "value": 100
       }
     },
+    "potioncore:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": -2048,
+        "value": -2048
+      },
+      "max": {
+        "default": 2147483647,
+        "value": 2147483647
+      }
+    },
     "irons_spellbooks:lightning_spell_power": {
       "enabled": false,
       "min": {
@@ -482,6 +526,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "potioncore:dig_speed": {
+      "enabled": false,
+      "min": {
+        "default": -2048,
+        "value": -2048
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "attributeslib:mining_speed": {
@@ -658,6 +713,17 @@
       "max": {
         "default": 8,
         "value": 8
+      }
+    },
+    "potioncore:jump_height": {
+      "enabled": false,
+      "min": {
+        "default": -2048,
+        "value": -2048
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "modulargolems:golem_jump": {

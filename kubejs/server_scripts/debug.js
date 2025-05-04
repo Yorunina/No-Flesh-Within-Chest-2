@@ -5,7 +5,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
     let level = event.level
-    UpdateMpm(player, $ModelData.get(player))
+    player.tell(IsUnderComabt(player))
     // let deposits = GetDepositsByType(level, 'gold')
     // let depositPos = deposits[0].pos
     // player.teleportTo(level.getDimension(), depositPos.x, depositPos.y, depositPos.z, 0, 0)
