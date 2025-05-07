@@ -72,3 +72,5 @@ const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.le
 
 
 const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi")
+const $GravityChangerAPI = Java.loadClass("gravitychanger.api.GravityChangerAPI")
+const $RotationParameters = Java.loadClass("gravitychanger.api.RotationParameters")

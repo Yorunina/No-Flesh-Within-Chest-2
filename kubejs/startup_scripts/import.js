@@ -1,4 +1,4 @@
-// priority: 2000
+// priority: 5000
 const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
 
@@ -14,3 +14,4 @@ const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $CommonUtil = Java.loadClass('net.tigereye.chestcavity.util.CommonUtil')
 const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.IntegerProperty')
 const $Integer = Java.loadClass('java.lang.Integer')
+const $GravityChangerAPI = Java.loadClass("gravitychanger.api.GravityChangerAPI")

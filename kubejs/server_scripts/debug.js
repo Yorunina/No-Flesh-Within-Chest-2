@@ -5,7 +5,8 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
     let level = event.level
-    player.tell(IsUnderComabt(player))
+    let pos = player.blockPosition()
+    let radius = 4
     // let deposits = GetDepositsByType(level, 'gold')
     // let depositPos = deposits[0].pos
     // player.teleportTo(level.getDimension(), depositPos.x, depositPos.y, depositPos.z, 0, 0)

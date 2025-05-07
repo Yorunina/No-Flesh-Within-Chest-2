@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:originiums')
     .addScore('chestcavity:health', -1)
+    .addScore('chestcavity:nerves', 1.5)
 
 
 /**
@@ -23,7 +24,7 @@ function OriginiumsPlayerSpellCast(customData, event, organItem, organIndex, slo
         }
         return
     }
-    event.setSpellLevel(event.getSpellLevel() + Math.floor(maxDamage / 2))
+    event.setSpellLevel(event.getSpellLevel() + 3)
     organItem.setDamageValue(maxDamage)
     if (entity instanceof $ServerPlayer) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText('0')

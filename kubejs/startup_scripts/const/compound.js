@@ -1,0 +1,11 @@
+// priority: 1000
+const GET_BYTE_TYPE = 1
+const GET_SHORT_TYPE = 2
+const GET_INT_TYPE = 3
+const GET_LONG_TYPE = 4
+const GET_FLOAT_TYPE = 5
+const GET_DOUBLE_TYPE = 6
+const GET_BYTEARRAY_TYPE = 7
+const GET_STRING_TYPE = 8
+const GET_LIST_TYPE = 9
+const GET_COMPOUND_TYPE = 10
