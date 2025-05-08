@@ -15,8 +15,10 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     const chestCavity = sourceEntity.chestCavityInstance
-    if (organItem.getDamageValue() > 0) {
-        organItem.setDamageValue(organItem.getDamageValue() - 1)
+    const curDamage = organItem.getDamageValue()
+    if (curDamage == 1) CommonDingNotice(sourceEntity.level, sourceEntity)
+    if (curDamage > 0) {
+        organItem.setDamageValue(curDamage - 1)
     } else {
         /** @type {Internal.LivingEntity} */
         const target = event.entity
@@ -25,7 +27,7 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
         SetPutridToxinsDamage(target, event.amount)
     }
     if (sourceEntity instanceof $ServerPlayer) {
-        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
+        let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - curDamage).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
 }

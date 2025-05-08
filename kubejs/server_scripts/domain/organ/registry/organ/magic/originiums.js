@@ -14,6 +14,7 @@ RegistryOrgan('kubejs:originiums')
 function OriginiumsPlayerSpellCast(customData, event, organItem, organIndex, slotType) {
     const maxDamage = organItem.getMaxDamage()
     const curDamage = organItem.getDamageValue()
+    if (curDamage == 1) CommonDingNotice(event.level, event.player)
     const entity = event.entity
     const chestCavity = entity.chestCavityInstance
     if (maxDamage - curDamage < maxDamage) {

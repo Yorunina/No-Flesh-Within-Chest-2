@@ -113,3 +113,13 @@ function SetVitaToxinsType(target, type) {
 function SetVitaToxinsCoe(target, coe) {
     target.getPersistentData().putFloat('vitaToxinsCoe', coe)
 }
+
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.ServerPlayer} player 
+ */
+function CommonDingNotice(level, player) {
+    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.experience_orb.pickup', player.getSoundSource(), 3, 1)
+}

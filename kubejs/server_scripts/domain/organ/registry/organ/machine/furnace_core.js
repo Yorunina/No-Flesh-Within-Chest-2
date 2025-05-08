@@ -76,7 +76,6 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
         // 熔火 -> 心火
         let replaceItem = Item.of('kubejs:burning_heart')
         SetChestCavityOrgan(customData, chestCavity, replaceItem, organIndex, slotType, false)
-
         // 革命之钟触发烈焰加压器
         if (chestCavity.inventory.find('kubejs:revolution_bell') > 0) {
             if (sourceEntity instanceof $ServerPlayer) {
@@ -96,6 +95,7 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
             let organEffect = new OragnEffectModel(replaceItem).setPriority(organIndex).setCustomText((replaceItem.getMaxDamage() - replaceItem.getDamageValue()).toFixed(0))
             SetOrganEffect(chestCavity, organEffect)
             RemoveOrganEffect(chestCavity, 'kubejs:furnace_core')
+            CommonDingNotice(sourceEntity.level, sourceEntity)
         }
     }
 }
@@ -216,7 +216,7 @@ function BurningHeartEntityTickDefer(customData, event, organItem, organIndex, s
         if (entity instanceof $ServerPlayer) {
             let organEffect = new OragnEffectModel(replaceItem).setPriority(organIndex).setCustomText((replaceItem.getMaxDamage() - replaceItem.getDamageValue()).toFixed(0))
             SetOrganEffect(chestCavity, organEffect)
-            RemoveOrganEffect(chestCavity, 'kubejs:burning_heart')
+            CommonDingNotice(sourceEntity.level, sourceEntity)
         }
     }
 }
