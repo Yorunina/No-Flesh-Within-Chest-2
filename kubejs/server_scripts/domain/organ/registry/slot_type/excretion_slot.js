@@ -16,7 +16,7 @@ function SetChestCavityOrgan(customData, ccInstance, organItem, organIndex, slot
     } else {
         ccInstance.inventory.setItemNoUpdate(organIndex, organItem)
     }
-    
+
     if (slotType == ExcretionSlot) {
         if (!customData['excretionOrganList']) {
             customData['excretionOrganList'] = new Map()
@@ -66,27 +66,21 @@ function ExcretionSlotEvent(customData, ccInstance) {
         if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
             onlyMap.set(itemId, true)
             organEventStrategy['only'].forEach(e => {
-                strategyFuncList.push({
-                    'strategyModel': e,
-                    'arg': args.concat(item, index, slotType)
-                })
+                strategyFuncList.push(new PriorityArgsModel(e, args.concat(item, index, slotType)))
             })
         }
         if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
             organEventStrategy['default'].forEach(e => {
-                strategyFuncList.push({
-                    'strategyModel': e,
-                    'arg': args.concat(item, index, slotType)
-                })
+                strategyFuncList.push(new PriorityArgsModel(e, args.concat(item, index, slotType)))
             })
         }
     })
     if (strategyFuncList.length > 0) {
         strategyFuncList.sort((a, b) => {
-            return b['strategyModel']['priority'] - a['strategyModel']['priority']
+            return b.getPriority() - a.getPriority()
         })
         strategyFuncList.forEach((model) => {
-            model['strategyModel']['func'].apply(null, model['arg'])
+            model.getFunc().apply(null, model.getArgs())
         })
     }
     customData['excretionOrganList'].clear()

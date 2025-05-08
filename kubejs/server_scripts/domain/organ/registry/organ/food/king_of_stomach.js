@@ -27,7 +27,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
 
     inventory.allItems.forEach(item => {
         if (item.isEmpty()) return
-        if (!onlySet.has(item.getId())) {
+        if (!onlySet.has(String(item.getId()))) {
             let isGreedy = false
             if (item.hasNBT()) {
                 let nbt = item.getNbt()
@@ -39,6 +39,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
 
                 attackUp = attackUp + foodPro.saturation * 2
                 healthUp = healthUp + foodPro.nutrition / 4
+                console.log(item)
             } else if (item.hasTag('kubejs:sweets') && sweetsGlandEffect >= 1) {
                 let foodPro = item.getFoodProperties(entity)
                 if (!foodPro) return
@@ -74,7 +75,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
                     healthUp = healthUp + nutrition / 4
                 }
             }
-            onlySet.add(item.getId())
+            onlySet.add(String(item.getId()))
         }
 
     })

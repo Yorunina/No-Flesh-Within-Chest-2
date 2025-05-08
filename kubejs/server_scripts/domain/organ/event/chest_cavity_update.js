@@ -1,6 +1,6 @@
 // priority: 999
 
-const OrganChestCavityUpdateStrategy = new OrganEventModel()
+const OrganChestCavityUpdateStrategy = new OrganEventModel('chest_cavity_update')
 const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
 const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
     .addInit(

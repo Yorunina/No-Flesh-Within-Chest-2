@@ -85,7 +85,7 @@ AttributeManagerModel.prototype = {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.baseMulti, identifier + 'BaseMulti', this.baseMultiModifier, $Operation.MULTIPLY_BASE)
             attributeInstance.addTransientModifier(attributeModifier)
         }
-        if (this.allMultiModifier != 1) {
+        if (this.allMultiModifier != 0) {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.allMulti, identifier + 'AllMulti', this.allMultiModifier, $Operation.MULTIPLY_TOTAL)
             attributeInstance.addTransientModifier(attributeModifier)
         }

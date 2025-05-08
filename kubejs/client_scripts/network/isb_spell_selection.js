@@ -5,7 +5,8 @@
 const OrganAdditionSpellSelectionMap = new Map()
 
 ClientEvents.loggedIn(event => {
-   event.player.sendData('spell_selection_init') 
+    OrganAdditionSpellSelectionMap.clear()
+    event.player.sendData('spell_selection_init') 
 })
 
 NetworkEvents.dataReceived('spell_selection_data', event => {

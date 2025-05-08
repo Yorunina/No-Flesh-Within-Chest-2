@@ -53,32 +53,26 @@ OrganEventModel.prototype = {
                 if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
                     onlyMap.set(itemId, true)
                     organEventStrategy['only'].forEach(e => {
-                        strategyFuncList.push({
-                            'strategyModel': e,
-                            'arg': args.concat(curItem, slotIndex, slotType)
-                        })
+                        strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
                     })
                 }
                 if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
                     organEventStrategy['default'].forEach(e => {
-                        strategyFuncList.push({
-                            'strategyModel': e,
-                            'arg': args.concat(curItem, slotIndex, slotType)
-                        })
+                        strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
                     })
                 }
             })
             if (strategyFuncList.length > 0) {
                 strategyFuncList.sort((a, b) => {
-                    return b['strategyModel']['priority'] - a['strategyModel']['priority']
+                    return b.getPriority() - a.getPriority()
                 })
                 strategyFuncList.forEach((model) => {
-                    model['strategyModel']['func'].apply(null, model['arg'])
+                    model.getFunc().apply(null, model.getArgs())
                 })
             }
         }
         ExcretionSlotEvent(customData, ccInstance)
-        
+
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

@@ -1,6 +1,6 @@
 // priority: 2000
 
-function StrategyModel() {
+function PriorityStrategyModel() {
     /**@type {Object<string, function(...any): void>} */
     this.strategyMap = {}
     /**@type {function[]} */
@@ -10,20 +10,13 @@ function StrategyModel() {
     return this
 }
 
-StrategyModel.prototype = {
-    /**
-     * @param {Object<string, function(...any): void>} strategyMap
-     */
-    setStrategyMap: function (strategyMap) {
-        this.strategyMap = strategyMap
-        return this
-    },
+PriorityStrategyModel.prototype = {
     /**
      * @param {String} id
      * @param {function(any[]): void} func
      */
-    addStrategy: function (id, func) {
-        this.strategyMap[id] = func
+    addStrategy: function (id, func, priority) {
+        this.strategyMap[id] = new PriorityFuncModel(func, priority)
         return this
     },
     /**
@@ -49,10 +42,19 @@ StrategyModel.prototype = {
         this.inits.forEach(init => {
             init.apply(null, args)
         })
+        let strategyFuncList = []
         ids.forEach(id => {
             if (!this.strategyMap[id]) return
-            this.strategyMap[id].apply(null, args)
+            strategyFuncList.push(this.strategyMap[id])
         })
+        if (strategyFuncList.length > 0) {
+            strategyFuncList.sort((a, b) => {
+                return b.getPriority() - a.getPriority()
+            })
+            strategyFuncList.forEach((model) => {
+                model.getFunc().apply(null, args)
+            })
+        }
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

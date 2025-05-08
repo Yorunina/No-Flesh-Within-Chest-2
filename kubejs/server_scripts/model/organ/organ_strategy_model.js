@@ -10,24 +10,19 @@ function OrganStrategyModel(itemId) {
 
 OrganStrategyModel.prototype = {
     /**
-     * 
      * @param {$EventIdType} eventId 
      * @param {any} func 
      * @param {number} priority
      * @returns 
      */
     addStrategy: function (eventId, func, priority) {
-        priority = priority ? priority: 0
         if (!this.strategyMap[eventId]) {
             this.strategyMap[eventId] = {
                 'default': [],
                 'only': [],
             }
         }
-        this.strategyMap[eventId]['default'].push({
-            'func': func,
-            'priority': priority,
-        }) 
+        this.strategyMap[eventId]['default'].push(new PriorityFuncModel(func, priority))
         return this
     },
     /**
@@ -38,17 +33,13 @@ OrganStrategyModel.prototype = {
      * @returns 
      */
     addOnlyStrategy: function (eventId, func, priority) {
-        priority = priority ? priority: 0
         if (!this.strategyMap[eventId]) {
             this.strategyMap[eventId] = {
                 'default': [],
                 'only': [],
             }
         }
-        this.strategyMap[eventId]['only'].push({
-            'func': func,
-            'priority': priority,
-        })
+        this.strategyMap[eventId]['only'].push(new PriorityFuncModel(func, priority))
         return this
     },
 }

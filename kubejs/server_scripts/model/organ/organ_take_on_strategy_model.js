@@ -66,18 +66,12 @@ OrganTakeOnStrategyModel.prototype = {
                     if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
                         onlyMap.set(itemId, true)
                         organEventStrategy['only'].forEach(e => {
-                            strategyFuncList.push({
-                                'strategyModel': e,
-                                'arg': args.concat(newItem, i, slotType)
-                            })
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(newItem, i, slotType)))
                         })
                     }
                     if (organEventStrategy['default']) {
                         organEventStrategy['default'].forEach(e => {
-                            strategyFuncList.push({
-                                'strategyModel': e,
-                                'arg': args.concat(newItem, i, slotType)
-                            })
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(newItem, i, slotType)))
                         })
                     }
                 }
@@ -93,18 +87,12 @@ OrganTakeOnStrategyModel.prototype = {
                         if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
                             onlyMPMMap.set(itemId, true)
                             mpmEventStrategy['only'].forEach(e => {
-                                strategyFuncList.push({
-                                    'strategyModel': e,
-                                    'arg': args.concat(newItem, i, slotType)
-                                })
+                                strategyFuncList.push(new PriorityArgsModel(e, args.concat(newItem, i, slotType)))
                             })
                         }
                         if (mpmEventStrategy['default']) {
                             mpmEventStrategy['default'].forEach(e => {
-                                strategyFuncList.push({
-                                    'strategyModel': e,
-                                    'arg': args.concat(newItem, i, slotType)
-                                })
+                                strategyFuncList.push(new PriorityArgsModel(e, args.concat(newItem, i, slotType)))
                             })
                         }
                     }
@@ -114,10 +102,10 @@ OrganTakeOnStrategyModel.prototype = {
 
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {
-                return b['strategyModel']['priority'] - a['strategyModel']['priority']
+                return b.getPriority() - a.getPriority()
             })
             strategyFuncList.forEach((model) => {
-                model['strategyModel']['func'].apply(null, model['arg'])
+                model.getFunc().apply(null, model.getArgs())
             })
         }
 

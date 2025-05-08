@@ -1,6 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:sea_bunny_skin')
-    .addScore('chestcavity:defense', -1)
+    .addScore('kubejs:extreme_fitness', 1)
     .addScore('chestcavity:swim_speed', 1.5)
 /**
  * @param {OrganEventCustomData} customData

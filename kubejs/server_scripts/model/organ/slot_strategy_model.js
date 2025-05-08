@@ -16,17 +16,13 @@ SlotStrategyModel.prototype = {
      * @param {number} priority
      */
     addStrategy: function (id, func, priority) {
-        priority = priority ? priority : 0
         if (!this.strategyMap[id]) {
             this.strategyMap[id] = {
                 'default': [],
                 'only': [],
             }
         }
-        this.strategyMap[id]['default'].push({
-            'func': func,
-            'priority': priority,
-        })
+        this.strategyMap[id]['default'].push(new PriorityFuncModel(func, priority))
         return this
     },
     /**
@@ -35,17 +31,13 @@ SlotStrategyModel.prototype = {
      * @param {number} priority
      */
     addOnlyStrategy: function (id, func, priority) {
-        priority = priority ? priority : 0
         if (!this.strategyMap[id]) {
             this.strategyMap[id] = {
                 'default': [],
                 'only': [],
             }
         }
-        this.strategyMap[id]['only'].push({
-            'func': func,
-            'priority': priority,
-        })
+        this.strategyMap[id]['only'].push(new PriorityFuncModel(func, priority))
         return this
     },
     /**
@@ -86,27 +78,21 @@ SlotStrategyModel.prototype = {
             if (strategyModel['only'] && !onlyMap.has(slotType)) {
                 onlyMap.set(slotType, true)
                 strategyModel['only'].forEach(e => {
-                    strategyFuncList.push({
-                        'strategyModel': e,
-                        'arg': args.concat(curItem, i, slotType)
-                    })
+                    strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, i, slotType)))
                 })
             }
             if (strategyModel['default']) {
                 strategyModel['default'].forEach(e => {
-                    strategyFuncList.push({
-                        'strategyModel': e,
-                        'arg': args.concat(curItem, i, slotType)
-                    })
+                    strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, i, slotType)))
                 })
             }
         }
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {
-                return b['strategyModel']['priority'] - a['strategyModel']['priority']
+                return b.getPriority() - a.getPriority() 
             })
             strategyFuncList.forEach((model) => {
-                model['strategyModel']['func'].apply(null, model['arg'])
+                model.getFunc().apply(null, model.getArgs())
             })
         }
         this.defers.forEach(defer => {
