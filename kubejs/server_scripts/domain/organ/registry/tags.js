@@ -23,9 +23,9 @@ ServerEvents.tags('item', event => {
         Object.keys(OrganStrategyMap[itemId].strategyMap).forEach(eventId => {
             if (!EventId2TagId[eventId]) return
             let organStrategy =  OrganStrategyMap[itemId].strategyMap[eventId]
-            if (organStrategy['default']) {
+            if (organStrategy['default'].length > 0) {
                 event.add(EventId2TagId[eventId], itemId)
-            } else if (organStrategy['only']) {
+            } else if (organStrategy['only'].length > 0) {
                 event.add(EventId2TagId[eventId] + '_only', itemId)
             }
         })
