@@ -3,8 +3,6 @@ RegistryOrgan('kubejs:warden_core')
     .addScore('chestcavity:health', 1.5)
     .addScore('chestcavity:endurance', -0.25)
 
-/** ============================================================== */
-
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.NetworkEventJS} event 
