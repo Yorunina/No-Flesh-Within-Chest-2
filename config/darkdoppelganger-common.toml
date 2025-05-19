@@ -1,0 +1,28 @@
+
+#Dark Doppelganger Configuration
+[dark_doppelganger]
+	#Health of the Dark Doppelganger
+	#Range: 1.0 ~ 100000.0
+	health = 6000.0
+	#Attack Damage of the Dark Doppelganger
+	#Range: 1.0 ~ 100.0
+	attack_damage = 20.0
+	#Movement Speed of the Dark Doppelganger
+	#Range: 0.1 ~ 1.0
+	movement_speed = 0.2
+	#Knockback Resistance of the Dark Doppelganger
+	#Range: 0.0 ~ 1.0
+	knockback_resistance = 0.6
+	#Armor of the Dark Doppelganger
+	#Range: 0.0 ~ 100.0
+	armor = 20.0
+	#Follow Range of the Dark Doppelganger
+	#Range: 1.0 ~ 128.0
+	follow_range = 64.0
+	#Hard mode of the Dark Doppelganger
+	hard_mode = false
+	#List of banned armor items (format: modid:item_name or modid:* for full mod) that should not be copied to the Dark Doppelganger
+	banned_armor = ["cataclysm:cursium_helmet", "cataclysm:cursium_chestplate", "cataclysm:cursium_leggings", "cataclysm:cursium_boots", "mycoolmod:*"]
+	#List of all spells the Dark Doppelganger can use in the final phase (Hard mode must be enabled for custom spell usage ( TO works !))
+	final_phase_spells = ["irons_spellbooks:eldritch_blast", "irons_spellbooks:ray_of_frost", "traveloptics:tidal_grasp", "traveloptics:shadowed_miasma"]
+

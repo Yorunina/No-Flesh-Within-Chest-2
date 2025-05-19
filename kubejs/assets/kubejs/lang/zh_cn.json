@@ -342,7 +342,7 @@
     "tooltips.kubejs.vita_sunflower.alt.2": "    §6★§r 当你造成伤害时，如果对方具有§c活肉霉毒§r效果，且该器官耐久高于§610§r，该器官会消耗耐久以延长§c活肉霉毒§r的持续时间",
     "item.kubejs.sea_bunny_skin": "海兔皮",
     "tooltips.kubejs.sea_bunny_skin.default.1": "它总是那么引人注意",
-    "tooltips.kubejs.sea_bunny_skin.alt.1": "    §6★§r 每 %s 秒会使你嘲讽周围 %s 格的随机一个生物",
+    "tooltips.kubejs.sea_bunny_skin.alt.1": "    §6★§r 在受到攻击时会嘲讽攻击者",
     "item.kubejs.king_of_stomach": "大胃王",
     "tooltips.kubejs.king_of_stomach.default.1": "它保管着所有食物以供不时之需！",
     "tooltips.kubejs.king_of_stomach.alt.1": "    §6★§r 胸腔内拥有的食物将会提高你§6最大生命值§r和§6攻击力§r",
