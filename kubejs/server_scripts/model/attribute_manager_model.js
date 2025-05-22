@@ -79,15 +79,15 @@ AttributeManagerModel.prototype = {
 
         if (this.baseAddModifier != 0) {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.baseAdd, identifier + 'BaseAddition', this.baseAddModifier, $Operation.ADDITION)
-            attributeInstance.addTransientModifier(attributeModifier)
+            attributeInstance.addPermanentModifier(attributeModifier)
         }
         if (this.baseMultiModifier != 1) {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.baseMulti, identifier + 'BaseMulti', this.baseMultiModifier, $Operation.MULTIPLY_BASE)
-            attributeInstance.addTransientModifier(attributeModifier)
+            attributeInstance.addPermanentModifier(attributeModifier)
         }
         if (this.allMultiModifier != 0) {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.allMulti, identifier + 'AllMulti', this.allMultiModifier, $Operation.MULTIPLY_TOTAL)
-            attributeInstance.addTransientModifier(attributeModifier)
+            attributeInstance.addPermanentModifier(attributeModifier)
         }
     }
 }

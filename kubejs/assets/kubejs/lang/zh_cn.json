@@ -389,7 +389,7 @@
     "tooltips.kubejs.rootling_ectoplasm.alt.2": "    §6★§r 你每拥有 %s 的消化效率，那么每秒便会多尝试一次催熟行为",
     "item.kubejs.harvest_rune_bone": "符文骨片：收获",
     "tooltips.kubejs.harvest_rune_bone.default.1": "被赋予特殊力量的骨片之一",
-    "tooltips.kubejs.harvest_rune_bone.alt.1": "    §6★§r §6收割触丝§r收割作物时不会使作物生长阶段回退",
+    "tooltips.kubejs.harvest_rune_bone.alt.1": "    §6★§r 因器官效果引发的收割行为将不会使作物的生长阶段回退",
     "item.kubejs.tentacles_harvester": "收获触丝",
     "tooltips.kubejs.tentacles_harvester.default.1": "蠕动的触丝似乎想为你做些什么",
     "tooltips.kubejs.tentacles_harvester.alt.1": "    §6★§r §6木灵灵质§r催熟的作物如果已经成熟，§6收割触丝§r会将其收获",

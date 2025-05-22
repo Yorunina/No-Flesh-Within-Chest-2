@@ -35,7 +35,7 @@ function InfinityBeatsEntityDoDamage(customData, event, organItem, organIndex, s
     let attributeModifier = new $AttributeModifier(InfinityBeatsTempAttackUpUUID, 'InfinityBeatsTempAttackUp', value, $Operation.ADDITION)
 
     attributeInstance.removeModifier(InfinityBeatsTempAttackUpUUID)
-    attributeInstance.addTransientModifier(attributeModifier)
+    attributeInstance.addPermanentModifier(attributeModifier)
 
     customData.thornsDamage = Math.floor(value / 4)
 }

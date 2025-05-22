@@ -33,7 +33,7 @@ function FurnaceCoreEntityTickDefer(customData, event, organItem, organIndex, sl
         let attributeModifier = new $AttributeModifier(FurnaceCoreTempAttackUpUUID, 'FurnaceCoreTempAttackUp', value, $Operation.ADDITION)
 
         attributeInstance.removeModifier(FurnaceCoreTempAttackUpUUID)
-        attributeInstance.addTransientModifier(attributeModifier)
+        attributeInstance.addPermanentModifier(attributeModifier)
     } else {
         value = -3
         let oldModifier = attributeInstance.getModifier(FurnaceCoreTempAttackUpUUID)
@@ -42,7 +42,7 @@ function FurnaceCoreEntityTickDefer(customData, event, organItem, organIndex, sl
         attributeInstance.removeModifier(FurnaceCoreTempAttackUpUUID)
         if (value <= 0) return
         let attributeModifier = new $AttributeModifier(FurnaceCoreTempAttackUpUUID, 'FurnaceCoreTempAttackUp', value, $Operation.ADDITION)
-        attributeInstance.addTransientModifier(attributeModifier)
+        attributeInstance.addPermanentModifier(attributeModifier)
     }
     if (entity instanceof $ServerPlayer) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))

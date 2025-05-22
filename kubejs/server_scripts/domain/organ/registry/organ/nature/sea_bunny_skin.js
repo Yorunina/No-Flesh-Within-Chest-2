@@ -10,6 +10,7 @@ RegistryOrgan('kubejs:sea_bunny_skin')
  * @param {string} slotType
  */
 function SeaBunnyGlandEntityBeHurt(customData, event, organItem, organIndex, slotType) {
+    if (event.amount <= 0) return
     const entity = event.entity
     targetEntity.setTarget(entity)
 }

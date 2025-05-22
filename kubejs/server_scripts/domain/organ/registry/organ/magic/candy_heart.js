@@ -15,7 +15,6 @@ function CandyHeartEntitySpellCast(customData, event, organItem, organIndex, slo
     const entity = event.getEntity()
     const spell = event.getSpell()
     const manaCost = spell.getManaCost()
-
     let effectDuration = manaCost * 2
     let effectAmplifier = 0
     if (entity.hasEffect('kubejs:sweet_dream')) {

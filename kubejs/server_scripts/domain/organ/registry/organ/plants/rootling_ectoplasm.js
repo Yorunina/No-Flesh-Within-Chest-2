@@ -19,9 +19,11 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
     let growthCnt = Math.min(Math.floor(digestion / 5) + 1, 1)
     const hasTentaclesHarvester = GetCustomDataMap(chestCavity, 'hasTentaclesHarvester', 0)
     const hasHarvestRuneBone = GetCustomDataMap(chestCavity, 'hasHarvestRuneBone', 0)
+    const radius = Math.max(4 - GetCustomDataMap(chestCavity, 'hasShrinkRuneBoneAmount', 0), 0)
+    const diameter = radius * 2 + 1
     for (let i = 0; i < growthCnt; i++) {
-        let rx = Math.floor(Math.random() * 9) - 4
-        let rz = Math.floor(Math.random() * 9) - 4
+        let rx = Math.floor(Math.random() * diameter) - radius
+        let rz = Math.floor(Math.random() * diameter) - radius
         let entityBlockPos = entity.getOnPos()
         let targetBlockPos = new BlockPos(entityBlockPos.x + rx, Math.ceil(entityBlockPos.y) + 1, entityBlockPos.z + rz)
         let targetBlockState = level.getBlockState(targetBlockPos)
