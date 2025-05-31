@@ -3,8 +3,8 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
     event.create('dream_of_fireball')
         .setCastTime(40)
         .setCooldownSeconds(25)
-        .setBaseManaCost(60)
-        .setManaCostPerLevel(15)
+        .setBaseManaCost(150)
+        .setManaCostPerLevel(25)
         .setBaseSpellPower(1)
         .setSpellPowerPerLevel(1)
         .setCastType('long')
@@ -18,16 +18,16 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const eyePosition = entity.getEyePosition()
             const fireBallEntity = new $MagicFireball(level, entity)
             let damage = 10
-            let explosionRadius = 3
+            let explosionRadius = ctx.spellLevel + 2
             if (entity.hasEffect('kubejs:sweet_dream')) {
                 let sweetDreamEffect = entity.getEffect('kubejs:sweet_dream')
                 damage = damage + sweetDreamEffect.getDuration() / 20
-                explosionRadius = explosionRadius + sweetDreamEffect.getAmplifier()
+                explosionRadius = explosionRadius + sweetDreamEffect.getAmplifier() * 2
             }
             let spellPower = entity.getAttributeValue('irons_spellbooks:spell_power')
             let schoolSpellPower = entity.getAttributeValue('kubejs:candy_spell_power')
 
-            explosionRadius = explosionRadius * spellPower * schoolSpellPower
+            damage = damage * spellPower * schoolSpellPower
             fireBallEntity.setDamage(damage)
             fireBallEntity.setExplosionRadius(explosionRadius)
             fireBallEntity.setPos(eyePosition.add(entity.getForward()).subtract(0, fireBallEntity.getBbHeight() / 2, 0))

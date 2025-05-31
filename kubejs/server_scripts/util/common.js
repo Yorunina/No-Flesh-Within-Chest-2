@@ -201,4 +201,14 @@ function SliceChunkArray(array, chunkSize) {
     return chunks
 }
 
+/**
+ * 
+ * @param {number} num 
+ * @param {number} min 
+ * @param {number} max 
+ * @returns 
+ */
+function Clamp(num, min, max) {
+    return Math.min(Math.max(num, min), max)
+}
 
