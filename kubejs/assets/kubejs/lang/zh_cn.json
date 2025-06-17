@@ -386,7 +386,7 @@
     "item.kubejs.dragon_blood_heart": "龙血心脏",
     "tooltips.kubejs.dragon_blood_heart.default.1": "心的脉搏使末影泛起阵阵涟漪",
     "tooltips.kubejs.dragon_blood_heart.alt.1": "    §6★§r 主动使用该器官时，玩家获得一定时长的§5龙化§r效果",
-    "tooltips.kubejs.dragon_blood_heart.alt.2": "    §6★§r 在§5龙化§r效果持续期间，每次受伤将会使玩家获得 %s 点额外伤害吸收，最大不超过 %s §6* 最大生命值§r",
+    "tooltips.kubejs.dragon_blood_heart.alt.2": "    §6★§r 在§5龙化§r效果持续期间，每次受伤将会使玩家获得 §6效果等级 + §r%s 点额外伤害吸收，最大不超过 %s §6 * 最大生命值§r",
     "tooltips.kubejs.dragon_blood_heart.alt.3": "    §6★§r 神经效率将会一定程度上延长§5龙化§r效果的持续时间",
     "item.kubejs.rootling_ectoplasm": "木灵灵质",
     "tooltips.kubejs.rootling_ectoplasm.default.1": "它在不停的低语",

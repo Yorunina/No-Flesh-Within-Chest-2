@@ -13,7 +13,9 @@ RegistryOrgan('kubejs:dragon_blood_heart')
 */
 function DragonBloodHeartKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
-    player.potionEffects.add('kubejs:dragon_power', 20 * 10)
+    let nervesScore = player.chestCavityInstance.getOrganScore('chestcavity:nerves')
+    let duration = 20 * (10 + nervesScore * 2)
+    player.potionEffects.add('kubejs:dragon_power', duration, 0, false, false)
     player.addItemCooldown(organItem, 20 * 60)
 }
 
