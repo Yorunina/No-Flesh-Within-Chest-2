@@ -15,7 +15,6 @@ function HopKidneyKeyActive(customData, event, organItem, organIndex, slotType) 
     const player = event.player
     $AlcoholManager.drinkAlcohol(player)
     player.addItemCooldown(organItem, 20 * 5)
-    customData.attackDamage.addAttributeModifier()
 }
 
 RegistryOrganStrategy(

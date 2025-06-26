@@ -20,3 +20,15 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:leaf_insect_exoskeleton')
     .addDefault(Text.translatable('tooltips.kubejs.leaf_insect_exoskeleton.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.leaf_insect_exoskeleton.alt.1'))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:ferret_tail')
+    .addDefault(Text.translatable('tooltips.kubejs.ferret_tail.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.ferret_tail.alt.1', Text.gold('1')))
+
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:dumbo_octopus_hat')
+    .addDefault(Text.translatable('tooltips.kubejs.dumbo_octopus_hat.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.dumbo_octopus_hat.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.dumbo_octopus_hat.alt.2', Text.gold('60')))
+)
