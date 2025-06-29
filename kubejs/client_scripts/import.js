@@ -12,3 +12,7 @@ const $ModelData = Java.loadClass('noppes.mpm.ModelData')
 const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
 const $MpmPackets = Java.loadClass('noppes.mpm.packets.Packets')
 const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPlayerDataSend')
+
+const $MapDimension = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.MapDimension')
+const $WaypointImpl = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointImpl')
+const $WaypointType = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointType')

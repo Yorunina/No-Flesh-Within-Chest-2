@@ -11,5 +11,4 @@ ItemEvents.entityInteracted(event => {
     if (target && target.isAlive()) {
         OrganEntityBeInteractedEvent.run(target, customData, [event])
     }
-    UpdateClientISSSpellDataEvent(customData, entity)
 })

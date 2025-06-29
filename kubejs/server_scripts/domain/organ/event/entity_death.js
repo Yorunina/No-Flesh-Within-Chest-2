@@ -12,6 +12,4 @@ EntityEvents.death(event => {
     if (killer && killer.isAlive()) {
         OrganEntityKillEvent.run(killer, customData, [event])
     }
-    
-    UpdateClientISSSpellDataEvent(customData, entity)
 })

@@ -6,5 +6,4 @@ ItemEvents.foodEaten(event => {
     if (!entity) return
     let customData = {}
     OrganFoodEatenEvent.run(entity, customData, [event])
-    UpdateClientISSSpellDataEvent(customData, entity)
 })

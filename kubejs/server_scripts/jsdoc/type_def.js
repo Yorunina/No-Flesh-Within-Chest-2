@@ -12,3 +12,9 @@
  * @typedef {Object} OrganEventCustomData
  * @property {boolean} needRefreshSpellSelection
  */
+
+
+/**
+ * @typedef {Object} AirdropDeathEventCustomData
+ * @property {Internal.List<Internal.ItemStack>} lootList
+ */

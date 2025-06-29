@@ -238,3 +238,22 @@ function SpawnItemEntityWithMovement(level, pos, itemStack, movement) {
     itemEntity.setDefaultPickUpDelay()
     level.addFreshEntity(itemEntity)
 }
+
+/**
+ * @param {Internal.Level} level 
+ * @param {Internal.LivingEntity} entity
+ * @param {Internal.ItemStack[]} itemList 
+ */
+function PopItemFromAirdrop(level, entity, itemList) {
+    /**@type {Internal.ItemStack[][]} */
+    let itemChunks = SliceChunkArray(itemList, 10)
+    let tickCounter = 5
+    itemChunks.forEach(itemChunk => {
+        level.server.scheduleInTicks(tickCounter, callback => {
+            itemChunk.forEach(item => {
+                entity.block.popItem(item)
+            })
+        })
+        tickCounter = tickCounter + 10
+    })
+}

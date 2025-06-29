@@ -18,3 +18,5 @@ const $Integer = Java.loadClass('java.lang.Integer')
 
 const $MagicFireball = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.fireball.MagicFireball')
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')
+
+const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')

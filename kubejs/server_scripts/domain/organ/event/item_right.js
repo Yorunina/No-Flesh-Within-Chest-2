@@ -7,5 +7,4 @@ ItemEvents.rightClicked(event => {
     if (!player) return
     let customData = {}
     OrganItemRightClickedEvent.run(player, customData, [event])
-    UpdateClientISSSpellDataEvent(customData, player)
 })

@@ -1,0 +1,30 @@
+
+// priority: 999
+ItemEvents.entityInteracted('minecraft:shears', event => {
+    const target = event.target
+    const player = event.player
+    
+
+    if (!target.type.indexOf('airdrop') < 0) return
+    if (event.getHand() != 'main_hand') return
+    if (player && player.isCrouching()) return
+    target.kill()
+})
+
+EntityEvents.death(event => {
+    const { entity, level } = event
+    if (!entity.type.indexOf('airdrop') < 0) return
+    let customData = {
+        lootList: []
+    }
+    let type = entity.persistentData.getString('type')
+    AirdropDeathStrategy.run([type], [event], customData)
+    if (customData.lootList.length <= 0) return
+    PopItemFromAirdrop(level, entity, customData.lootList)
+})
+
+const AirdropDeathStrategy = new StrategyModel()
+
+function RegisterAirDropDeathStrategy(id, func) {
+    AirdropDeathStrategy.addStrategy(id, func)
+}

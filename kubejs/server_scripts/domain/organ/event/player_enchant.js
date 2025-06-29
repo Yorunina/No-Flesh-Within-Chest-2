@@ -6,6 +6,5 @@ MoreJSEvents.enchantmentTableChanged(event => {
     if (!player) return
     let customData = {}
     OrganPlayerEnchantEvent.run(player, customData, [event])
-    UpdateClientISSSpellDataEvent(customData, player)
 })
 

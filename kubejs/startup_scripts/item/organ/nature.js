@@ -8,6 +8,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:dumbo_octopus_hat').maxStackSize(1).texture('kubejs:item/organs/nature/dumbo_octopus_hat').tag('kubejs:nature')
     event.create('kubejs:ferret_tail').maxStackSize(1).texture('kubejs:item/organs/nature/ferret_tail').tag('kubejs:nature')
     event.create('kubejs:jumping_spider_leg').maxStackSize(1).texture('kubejs:item/organs/nature/jumping_spider_leg').tag('kubejs:nature')
-    event.create('kubejs:dragonfly_wing').maxStackSize(1).texture('kubejs:item/organs/nature/dragonfly_wing').tag('kubejs:nature')
+    event.create('kubejs:koi_fish_scale').maxStackSize(1).texture('kubejs:item/organs/nature/koi_fish_scale').tag('kubejs:nature')
+    event.create('kubejs:otter_tooth').maxStackSize(1).texture('kubejs:item/organs/nature/otter_tooth').tag('kubejs:nature')
+    event.create('kubejs:red_panda_tail').maxStackSize(1).texture('kubejs:item/organs/nature/red_panda_tail').tag('kubejs:nature')
 })
 

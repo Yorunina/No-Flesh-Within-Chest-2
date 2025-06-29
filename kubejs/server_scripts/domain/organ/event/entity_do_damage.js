@@ -8,5 +8,4 @@ const OrganEntityDoDamageEvent = new OrganEventModel('entity_do_damage')
 function OrganEntityDoDamage(event, customData) {
     const entity = event.source.actual
     OrganEntityDoDamageEvent.run(entity, customData, [event])
-    UpdateClientISSSpellDataEvent(customData, entity)
 }

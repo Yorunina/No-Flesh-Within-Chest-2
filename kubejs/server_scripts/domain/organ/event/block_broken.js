@@ -7,5 +7,4 @@ BlockEvents.broken(event => {
     if (!entity) return
     let customData = {}
     OrganBlockBrokenEvent.run(entity, customData, [event])
-    UpdateClientISSSpellDataEvent(customData, entity)
 })
