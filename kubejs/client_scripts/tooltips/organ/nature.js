@@ -59,3 +59,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:red_panda_tail')
     .addDefault(Text.translatable('tooltips.kubejs.red_panda_tail.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.red_panda_tail.alt.1'))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:shima_enaga_feather')
+    .addDefault(Text.translatable('tooltips.kubejs.shima_enaga_feather.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.shima_enaga_feather.alt.1'))
+)

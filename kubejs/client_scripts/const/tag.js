@@ -29,6 +29,7 @@ const OrganTagMap = {
     'kubejs:warp': Text.darkPurple(Text.translatable('tooltips.kubejs.tag.kubejs:warp')),
     'kubejs:prehistory': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:prehistory')).color('#d6d124'),
     'kubejs:dragon': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:dragon')).color('#bc00bc'),
+    'kubejs:ender': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:ender')).color('#913dd1'),
     'kubejs:void': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:void')).color('#c2bec2'),
     'kubejs:fantasy': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:fantasy')).color('#cd9b9b'),
     'kubejs:infected': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:infected')).color('#00ba03'),

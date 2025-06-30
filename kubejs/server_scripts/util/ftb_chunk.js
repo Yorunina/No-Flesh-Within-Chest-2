@@ -9,5 +9,5 @@
  * @returns {void}
  */
 function CreateWaypoint(player, blockPos, name, color) {
-    player.sendData(global.WayPointCreateChannel, { 'x': blockPos.x, 'y': blockPos.y, 'z': blockPos.z, 'name': name, 'color': color })
+    player.sendData('ftb_chunk_waypoint', { 'x': blockPos.x, 'y': blockPos.y, 'z': blockPos.z, 'name': name, 'color': color })
 }

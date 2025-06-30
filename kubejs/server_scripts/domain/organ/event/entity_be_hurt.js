@@ -6,6 +6,6 @@ const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
  * @param {Internal.LivingDamageEvent} event 
  */
 function OrganEntityBeHurt(event, customData) {
-    const entity = event.source.actual
+    const entity = event.entity
     OrganEntityBeHurtEvent.run(entity, customData, [event])
 }

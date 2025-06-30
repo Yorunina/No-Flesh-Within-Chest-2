@@ -5,9 +5,7 @@
  * @param {OrganEventCustomData} customData 
  */
 function DragonPowerEntityBeHurt(event, customData) {
-    /**@type {Internal.ServerPlayer} */
     const entity = event.entity
-    if (!entity.isPlayer()) return
     if (!entity.hasEffect('kubejs:dragon_power')) return
     let dragonPowerEffect = entity.getEffect('kubejs:dragon_power')
     let amplifier = dragonPowerEffect.getAmplifier()

@@ -16,3 +16,7 @@ const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPl
 const $MapDimension = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.MapDimension')
 const $WaypointImpl = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointImpl')
 const $WaypointType = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointType')
+
+const $ScreenshakeInstance = Java.loadClass('team.lodestar.lodestone.systems.screenshake.ScreenshakeInstance')
+const $ScreenshakeHandler = Java.loadClass('team.lodestar.lodestone.handlers.ScreenshakeHandler')
+const $Easing = Java.loadClass('team.lodestar.lodestone.systems.easing.Easing')

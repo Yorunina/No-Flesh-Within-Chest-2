@@ -60,4 +60,11 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
+
+    // 薄葬
+    event.createNew('shallow_grave', builder => {
+        builder.projectileHitBlock((toolView, data, lvl, projectile, hitResult, entity) => {
+            entity.potionEffects.add('potioncore:revival', 20 * 3 * lvl)
+        })
+    })
 })

@@ -1,0 +1,10 @@
+// priority: 500
+StartupEvents.registry('item', event => {
+    event.create('kubejs:dragon_blood_heart').maxStackSize(1).texture('kubejs:item/organs/dragon/dragon_blood_heart').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:heart')
+    event.create('kubejs:dragon_blood_liver').maxStackSize(1).texture('kubejs:item/organs/dragon/dragon_blood_liver').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:liver')
+    event.create('kubejs:dragon_blood_lung').maxStackSize(1).texture('kubejs:item/organs/dragon/dragon_blood_lung').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:lung')
+    event.create('kubejs:dragon_blood_muscle').maxStackSize(1).texture('kubejs:item/organs/dragon/dragon_blood_muscle').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:muscle')
+    event.create('kubejs:dragon_blood_rib').maxStackSize(1).texture('kubejs:item/organs/dragon/dragon_blood_rib').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:rib')
+    event.create('kubejs:dragon_blood_kidney').maxStackSize(1).texture('kubejs:item/organs/dragon/dragon_blood_kidney').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:kidney')
+    event.create('kubejs:ender_golem_line').maxDamage(10).maxStackSize(1).texture('kubejs:item/organs/relics/ender_golem_line').tag('kubejs:ender')
+})

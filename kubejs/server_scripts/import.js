@@ -93,3 +93,4 @@ const $ClientboundSetEntityMotionPacket = Java.loadClass('net.minecraft.network.
 
 const $AxeItem = Java.loadClass('net.minecraft.world.item.AxeItem')
 const $SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')
+

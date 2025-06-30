@@ -8,6 +8,5 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.RED)
 
-
 })
 

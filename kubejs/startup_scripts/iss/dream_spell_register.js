@@ -8,28 +8,29 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setBaseSpellPower(1)
         .setSpellPowerPerLevel(1)
         .setCastType('long')
-        .setSchool('kubejs:candy')
+        .setSchool('kubejs:dream')
         .setMinRarity('legendary')
         .setMaxLevel(1)
         .onCast(ctx => {
             if (ctx.level.isClientSide()) return
             const entity = ctx.entity
             const level = ctx.level
-            const eyePosition = entity.getEyePosition()
-            const fireBallEntity = new $MagicFireball(level, entity)
+            const orb = new $FireBomb(level, entity)
 
             let damage = 10
-            let explosionRadius = ctx.spellLevel + 2
+            let explosionRadius = 30
             let spellPower = entity.getAttributeValue('irons_spellbooks:spell_power')
-            let schoolSpellPower = entity.getAttributeValue('kubejs:candy_spell_power')
+            let schoolSpellPower = entity.getAttributeValue('kubejs:dream_spell_power')
 
             damage = damage * spellPower * schoolSpellPower
-            fireBallEntity.setDamage(damage)
-            fireBallEntity.setExplosionRadius(explosionRadius)
-            fireBallEntity.setPos(eyePosition.add(entity.getForward()).subtract(0, fireBallEntity.getBbHeight() / 2, 0))
-            fireBallEntity.shoot(entity.getLookAngle())
-            
-            level.addFreshEntity(fireBallEntity)
+            orb.setPos(entity.position().add(0, entity.getEyeHeight() - orb.getBoundingBox().getYsize() * 0.5, 0).add(entity.getForward()))
+            orb.shoot(entity.getLookAngle())
+            orb.setDeltaMovement(orb.getDeltaMovement().add(0, 0.2, 0))
+            orb.setExplosionRadius(explosionRadius)
+            orb.setAoeDamage(damage)
+            orb.setDamage(damage)
+
+            level.addFreshEntity(orb)
         })
 })
 

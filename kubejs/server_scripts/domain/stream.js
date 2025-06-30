@@ -29,6 +29,8 @@ NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent}
     }
     SweetDreamEntityBeHurt(event, customData)
     OrganEntityBeHurt(event, customData)
+    FragileEntityBeHurt(event, customData)
+    DragonPowerEntityBeHurt(event, customData)
     if (amount > 0) {
         OrganScoreDamagedEffect(event, customData)
     }

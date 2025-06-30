@@ -16,7 +16,7 @@ const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.p
 const $Integer = Java.loadClass('java.lang.Integer')
 
 
-const $MagicFireball = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.fireball.MagicFireball')
+const $FireBomb = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magma_ball.FireBomb')
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')
 
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')

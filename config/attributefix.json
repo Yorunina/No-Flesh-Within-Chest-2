@@ -154,6 +154,17 @@
         "value": 1024
       }
     },
+    "kubejs:dream_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "additionalentityattributes:magic_protection": {
       "enabled": false,
       "min": {
@@ -1078,17 +1089,6 @@
         "value": 1000000
       }
     },
-    "kubejs:candy_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "lodestone:magic_resistance": {
       "enabled": false,
       "min": {
@@ -1153,17 +1153,6 @@
       "max": {
         "default": 100,
         "value": 100
-      }
-    },
-    "malum:soul_ward_integrity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
       }
     },
     "l2damagetracker:bow_strength": {
@@ -1320,17 +1309,6 @@
         "value": 1
       }
     },
-    "malum:spirit_spoils": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "ars_nouveau:ars_nouveau.perk.mana_regen": {
       "enabled": false,
       "min": {
@@ -1472,6 +1450,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "kubejs:dream_spell_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "tinkersjewelry:trade": {

@@ -11,5 +11,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:koi_fish_scale').maxStackSize(1).texture('kubejs:item/organs/nature/koi_fish_scale').tag('kubejs:nature')
     event.create('kubejs:otter_tooth').maxStackSize(1).texture('kubejs:item/organs/nature/otter_tooth').tag('kubejs:nature')
     event.create('kubejs:red_panda_tail').maxStackSize(1).texture('kubejs:item/organs/nature/red_panda_tail').tag('kubejs:nature')
+    event.create('kubejs:shima_enaga_feather').maxStackSize(1).texture('kubejs:item/organs/nature/shima_enaga_feather').tag('kubejs:nature')
 })
-
