@@ -84,3 +84,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:raccoon_paw')
     .addDefault(Text.translatable('tooltips.kubejs.raccoon_paw.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.raccoon_paw.alt.1'))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:boar_nose')
+    .addDefault(Text.translatable('tooltips.kubejs.boar_nose.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.boar_nose.alt.1'))
+)

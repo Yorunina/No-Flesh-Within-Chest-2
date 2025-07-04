@@ -1,0 +1,4 @@
+#item cooling reduction default number
+#Range: 0 ~ 100
+reductionNumber = 0
+
