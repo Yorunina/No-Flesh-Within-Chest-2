@@ -14,7 +14,6 @@ RegistryOrgan('kubejs:otter_tooth')
 function OtterToothBlockRightClicked(customData, event, organItem, organIndex, slotType) {
     const level = event.level
     const block = event.block
-    const player = event.player
     if (event.hand != 'main_hand') return
     if (!event.item.isEmpty()) return
     let resultBlockState = $AxeItem.getAxeStrippingState(block.blockState)

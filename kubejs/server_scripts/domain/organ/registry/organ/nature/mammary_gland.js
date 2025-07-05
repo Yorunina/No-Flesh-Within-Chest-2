@@ -18,7 +18,7 @@ function MammaryGlandEntityBeInteracted(customData, event, organItem, organIndex
     const entity = event.entity
     const target = event.target
     const targetType = target.getType()
-    if ( targetType== 'minecraft:cow') return
+    if (targetType == 'minecraft:cow') return
     if (item.isEmpty() || item.id != 'minecraft:bucket') return
     let bucketItem = Item.of('minecraft:milk_bucket')
     let recipe = MammaryGlandRecipes[targetType]
@@ -45,7 +45,7 @@ const MammaryGlandRecipes = {
         'item': Item.of('tconstruct:earth_slime_bucket'),
         'damage': 2,
     },
-   'tconstruct:sky_slime': {
+    'tconstruct:sky_slime': {
         'item': Item.of('tconstruct:sky_slime_bucket'),
         'damage': 2,
     },
