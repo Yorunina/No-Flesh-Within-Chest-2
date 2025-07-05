@@ -4,7 +4,7 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .effectTick((entity, lvl) => {
             if (entity.age % 40 != 0) return
-            if (!entity.isAlive() || !entity instanceof $LivingEntity) return
+            if (!(entity.isLiving() && entity instanceof $PathfinderMob)) return
             const level = entity.level
             /**@type {String} */
             let vitaToxinsSource = GetVitaToxinsSource(entity)
@@ -19,7 +19,7 @@ StartupEvents.registry('mob_effect', event => {
                     let attribute = sourceEntity.getAttribute('minecraft:generic.attack_damage')
                     if (!attribute) return
                     vitaToxinsDamage = attribute.getValue() * vitaToxinsCoe
-                    break 
+                    break
                 case 'max_health':
                     vitaToxinsDamage = sourceEntity.getMaxHealth() * vitaToxinsCoe
                     break

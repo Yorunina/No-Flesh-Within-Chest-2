@@ -13,7 +13,9 @@ const EventId2TagId = {
     'entity_tick': 'kubejs:entity_tick',
     'iss_player_spell_cast': 'kubejs:iss_player_spell_cast',
     'entity_kill': 'kubejs:entity_kill',
+    'entity_be_interacted': 'kubejs:entity_be_interacted',
     'entity_interact': 'kubejs:entity_interact',
+    'block_right_clicked': 'kubejs:block_right_clicked',
     'entity_death': 'kubejs:entity_death',
 }
 
@@ -22,7 +24,7 @@ ServerEvents.tags('item', event => {
     Object.keys(OrganStrategyMap).forEach(itemId => {
         Object.keys(OrganStrategyMap[itemId].strategyMap).forEach(eventId => {
             if (!EventId2TagId[eventId]) return
-            let organStrategy =  OrganStrategyMap[itemId].strategyMap[eventId]
+            let organStrategy = OrganStrategyMap[itemId].strategyMap[eventId]
             if (organStrategy['default'].length > 0) {
                 event.add(EventId2TagId[eventId], itemId)
             } else if (organStrategy['only'].length > 0) {
