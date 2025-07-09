@@ -5,9 +5,6 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     let player = event.player
     let level = event.level
-    const item = player.getOffhandItem()
-
-
 
     // let tempSphere = new SphereModel()
     //     .setShellProperties(Block.getBlock('minecraft:glass').defaultBlockState(), 5, 1)

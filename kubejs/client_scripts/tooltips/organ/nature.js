@@ -90,7 +90,7 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:raccoon_paw')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:boar_nose')
     .addDefault(Text.translatable('tooltips.kubejs.boar_nose.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.boar_nose.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.boar_nose.alt.1', LuckHover))
 )
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:minisheep_gland')
@@ -122,6 +122,6 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:bison_horn')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:turkey_gizzard')
     .addDefault(Text.translatable('tooltips.kubejs.turkey_gizzard.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.1', LuckHover))
     .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.2'))
 )

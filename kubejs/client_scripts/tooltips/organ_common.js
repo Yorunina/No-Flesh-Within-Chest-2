@@ -19,8 +19,9 @@ ItemEvents.tooltip(tooltip => {
         if (organData) {
             organData.organScores.forEach((score, value) => {
                 let roundValue = RoundFix(value, 2)
-                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).getString()
-                let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
+                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).hover([Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).gold(), NewLine, Text.translate(`tooltips.kubejs.score_tag.hover.${score.toString()}`)]).yellow().underlined()
+
+                let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), scoreString)
                 scoreTooltipsList.push(scoreTooltips)
             })
         }
