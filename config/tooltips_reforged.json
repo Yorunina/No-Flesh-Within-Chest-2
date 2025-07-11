@@ -1,0 +1,26 @@
+{
+  "common": {
+    "rarityTooltip": true,
+    "hungerTooltip": true,
+    "saturationTooltip": true,
+    "effectsTooltip": true,
+    "armorTooltip": true,
+    "bucketTooltip": true,
+    "spawnEggTooltip": false,
+    "enhancedDurabilityTooltip": true,
+    "durabilityBar": true,
+    "containerTooltip": true,
+    "paintingTooltip": true,
+    "bannerTooltip": true,
+    "mapTooltip": true,
+    "itemGroupTooltip": false,
+    "debugInfoTooltip": false,
+    "enchantmentTooltip": true,
+    "": {},
+    "usePlayer": false,
+    "scaleFactor": 1.0,
+    "useNameColor": true,
+    "backgroundColor": -267386864,
+    "effectsIcon": true
+  }
+}

@@ -1,8 +1,9 @@
 {
-  "type": "minecraft:overworld",
+  "type": "kubejs:void",
   "generator": {
     "type": "minecraft:flat",
     "settings": {
+      "biome": "kubejs:void",
       "lakes": false,
       "features": false,
       "layers": [],
