@@ -70,7 +70,7 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:revolution_bell')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:blaze_pressurizer')
     .addDefault(Text.translatable('tooltips.kubejs.blaze_pressurizer.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.blaze_pressurizer.alt.1', Text.gold('3')))
+    .addAlt(Text.translatable('tooltips.kubejs.blaze_pressurizer.alt.1', KeyActiveHover, Text.gold('3')))
     .addAlt(Text.translatable('tooltips.kubejs.blaze_pressurizer.alt.2'))
     .addAlt(Text.translatable('tooltips.kubejs.blaze_pressurizer.alt.3'))
     .addCtrl(MachinaryLubricantSlotType)

@@ -30,7 +30,7 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:rose_quartz_rib')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:rose_quartz_dialyzer')
     .addDefault(Text.translatable('tooltips.kubejs.rose_quartz_dialyzer.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.rose_quartz_dialyzer.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.rose_quartz_dialyzer.alt.1', KeyActiveHover))
     .addAlt(Text.translatable('tooltips.kubejs.rose_quartz_dialyzer.alt.2', Text.gold('1'), Text.gold('3')))
     .addCtrl(RosyExplosionSlotType)
     .addCtrl(Text.translatable('tooltips.kubejs.rose_quartz_dialyzer.ctrl.1'))

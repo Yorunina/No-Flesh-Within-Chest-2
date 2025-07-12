@@ -13,3 +13,4 @@ const DigestSlotType = Text.translatable('slot_type.kubejs.digest_slot.1').color
 
 const LuckHover= Text.translatable('tooltips.kubejs.hover.luck.0').green().underlined().hover(Text.translatable('tooltips.kubejs.hover.luck.1'))
 const PointAtHover= Text.translatable('tooltips.kubejs.hover.point_at.0').gold().underlined().hover(Text.translatable('tooltips.kubejs.hover.point_at.1'))
+const KeyActiveHover= Text.translatable('tooltips.kubejs.hover.key_active.0').gold().underlined().hover(Text.translatable('tooltips.kubejs.hover.key_active.1'))

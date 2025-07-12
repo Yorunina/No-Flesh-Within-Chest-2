@@ -12,7 +12,7 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:crimson_brain')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:hop_kidney')
     .addDefault(Text.translatable('tooltips.kubejs.hop_kidney.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.hop_kidney.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.hop_kidney.alt.1', KeyActiveHover))
 )
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:lily_pad_lung')
@@ -31,7 +31,7 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:pitcher_stomach')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:twisting_weeping_intestine')
     .addDefault(Text.translatable('tooltips.kubejs.twisting_weeping_intestine.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.twisting_weeping_intestine.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.twisting_weeping_intestine.alt.1', KeyActiveHover))
     .addAlt(Text.translatable('tooltips.kubejs.twisting_weeping_intestine.alt.2'))
     .addAlt(Text.translatable('tooltips.kubejs.twisting_weeping_intestine.alt.3'))
 )

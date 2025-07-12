@@ -6,6 +6,11 @@ ItemEvents.rightClicked('stick', event => {
     let player = event.player
     let level = event.level
 
+    
+    // let info = ParticleEmitterInfo.create(level, new ResourceLocation('kubejs:lightning')).position(new Vec3d(0, 56, 0)).scale(1, 1, 1)
+    // console.log(info.position())
+    // $AAALevel.addParticle(level, true, info)
+
     // let tempSphere = new SphereModel()
     //     .setShellProperties(Block.getBlock('minecraft:glass').defaultBlockState(), 5, 1)
     // let tempSphere = new GeodeSphereModel()

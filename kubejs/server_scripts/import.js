@@ -99,3 +99,5 @@ const $RecipeWrapper = Java.loadClass('net.minecraftforge.items.wrapper.RecipeWr
 const $ProcessingInventory = Java.loadClass('com.simibubi.create.content.processing.recipe.ProcessingInventory')
 
 const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelper')
+
+const $AAALevel = Java.loadClass('mod.chloeprime.aaaparticles.api.common.AAALevel')

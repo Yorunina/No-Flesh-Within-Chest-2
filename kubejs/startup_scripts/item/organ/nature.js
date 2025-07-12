@@ -21,7 +21,11 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:pelican_larynx').maxStackSize(1).texture('kubejs:item/organs/nature/pelican_larynx').tag('kubejs:nature')
     event.create('kubejs:owl_vertebrae').maxStackSize(1).texture('kubejs:item/organs/nature/owl_vertebrae').tag('kubejs:nature')
     event.create('kubejs:bison_horn').maxStackSize(1).texture('kubejs:item/organs/nature/bison_horn').tag('kubejs:nature')
-    event.create('kubejs:turkey_gizzard').maxStackSize(1).texture('kubejs:item/organs/nature/turkey_gizzard').tag('kubejs:nature')
+    event.create('kubejs:turkey_gizzard').maxStackSize(1).texture('kubejs:item/organs/nature/turkey_gizzard').tag('kubejs:nature').tag('kubejs:stomach')
     event.create('kubejs:penguin_flipper').maxStackSize(1).texture('kubejs:item/organs/nature/penguin_flipper').tag('kubejs:nature')
     event.create('kubejs:dog_tail').maxStackSize(1).texture('kubejs:item/organs/nature/dog_tail').tag('kubejs:nature')
+    event.create('kubejs:hedgehog_thorn').maxStackSize(1).texture('kubejs:item/organs/nature/hedgehog_thorn').tag('kubejs:nature')
+    event.create('kubejs:cassowary_muscle').maxStackSize(1).texture('kubejs:item/organs/nature/cassowary_muscle').tag('kubejs:nature').tag('kubejs:muscle')
+    event.create('kubejs:flamingo_beak').maxStackSize(1).texture('kubejs:item/organs/nature/flamingo_beak').tag('kubejs:nature')
 })
+
