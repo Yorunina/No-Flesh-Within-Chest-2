@@ -1,0 +1,12 @@
+
+["Configs for AStages Mod"]
+	#Enable or disable if mod show a title for each stage add to a player
+	"Enable Titles" = true
+	#If previous setting is enabled, set the color of the title that appears
+	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+	"Title color" = "RED"
+	#Every how many ticks the updating of the structures in which the player is located is required
+	"Tick Structure Updating" = 1
+	#Show logs related to dev things!
+	"Enable Logs" = true
+

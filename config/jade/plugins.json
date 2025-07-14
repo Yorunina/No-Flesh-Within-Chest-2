@@ -73,6 +73,9 @@
   "waystones": {
     "waystone": true
   },
+  "astages": {
+    "block_component_provider": true
+  },
   "balm": {
     "jade": true
   }

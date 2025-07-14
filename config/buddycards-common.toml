@@ -1,0 +1,101 @@
+
+[mobDrops]
+	#
+	#Odds of baby villager dropping base set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	villagerChance = 0.05
+	#
+	#Odds of baby piglin dropping nether set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	piglinChance = 0.05
+	#
+	#Odds of ender dragons dropping end set packs, 0 for 0%, 1 for 100%, default is 100%
+	#Range: 0.0 ~ 1.0
+	dragonChance = 1.0
+	#
+	#Maximum amount of packs dropped when a dragon drops packs, default is 4
+	#Range: 1 ~ 16
+	dragonMaxPacks = 4
+	#
+	#Odds of withers dropping nether set packs, 0 for 0%, 1 for 100%, default is 50%
+	#Range: 0.0 ~ 1.0
+	witherChance = 0.5
+	#
+	#Odds of baby zombie villager dropping base set packs, 0 for 0%, 1 for 100%, default is 10%
+	#Range: 0.0 ~ 1.0
+	zombieVillagerChance = 0.1
+	#
+	#Maximum amount of packs dropped when a wither drops packs, default is 3
+	#Range: 1 ~ 16
+	witherMaxPacks = 3
+	#Buddycards Core config
+	#
+	#Odds of baby zombie dropping base set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	zombieChance = 0.05
+	#
+	#Odds of baby zombie piglin dropping nether set , 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	zombiePiglinChance = 0.05
+	#
+	#Odds of shulkers dropping end set packs, 0 for 0%, 1 for 100%, default is 5%
+	#Range: 0.0 ~ 1.0
+	shulkerChance = 0.05
+
+[deckBuilding]
+	#
+	#Max duplicates of an uncommon card for a Buddycards deck, 0-16, default is 3
+	#Range: 1 ~ 16
+	uncommonDupeLimit = 3
+	#
+	#Max duplicates of a rare card for a Buddycards deck, 0-16, default is 2
+	#Range: 1 ~ 16
+	rareDupeLimit = 2
+	#
+	#Max duplicates of an epic card for a Buddycards deck, 0-16, default is 1
+	#Range: 1 ~ 16
+	epicDupeLimit = 1
+	#
+	#Max duplicates of a common card for a Buddycards deck, 0-16, default is 4
+	#Range: 1 ~ 16
+	commonDupeLimit = 4
+
+[luminis]
+	#
+	#Amount of Luminis blocks, on average, needed to make 1 Crimson Luminis in an explosion, default is 2
+	#Range: 1 ~ 16
+	explodeCrimsonAvg = 2
+	#
+	#Odds of a kinetic chamber properly converting Luminis blocks to Crimson Luminis, default is 80% 
+	#WARNING: FAILURE WILL CONSUME
+	#Range: 0.0 ~ 1.0
+	kineticCrimsonOdds = 0.800000011920929
+	#
+	#Odds of a kinetic chamber properly converting Crimson Luminis blocks to specialty items, default is 90% 
+	#WARNING: FAILURE WILL CONSUME
+	#Range: 0.0 ~ 1.0
+	kineticSpecialtyOdds = 0.8999999761581421
+	#
+	#Odds of an explosion triggering a Kinetic Chamber to activate, default is 100%
+	#Range: 0.0 ~ 1.0
+	kineticSuccessOdds = 1.0
+
+[battles]
+	#
+	#Enables Buddycards Battles Beta, default is false. Currently unfinished and buggy. Some bugged cards may cause crashes or other issues.
+	enabled = false
+
+[enderling]
+	#
+	#Odds for an Enderling to spawn with an Enderman in the Nether, 0-1, default is 0.5%
+	#Range: 0.0 ~ 1.0
+	netherOdds = 0.005
+	#
+	#Odds for an Enderling to spawn with an Enderman in the End, 0-1, default is 0.5%
+	#Range: 0.0 ~ 1.0
+	endOdds = 0.005
+	#
+	#Odds for an Enderling to spawn with an Enderman in the Overworld, 0-1, default is 1.5%
+	#Range: 0.0 ~ 1.0
+	overOdds = 0.015
+

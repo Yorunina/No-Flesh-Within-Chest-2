@@ -101,3 +101,6 @@ const $ProcessingInventory = Java.loadClass('com.simibubi.create.content.process
 const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelper')
 
 const $AAALevel = Java.loadClass('mod.chloeprime.aaaparticles.api.common.AAALevel')
+
+
+const $OpticManager = Java.loadClass('team.creative.opticmanager.OpticManager')
