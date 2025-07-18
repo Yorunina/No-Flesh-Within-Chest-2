@@ -106,4 +106,10 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:living_controller')
     .setIsBindEntity(true)
 )
 
-
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:prowler_rotating_shaft')
+    .addDefault(Text.translatable('tooltips.kubejs.prowler_rotating_shaft.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.prowler_rotating_shaft.alt.1', Text.gold('1'), PointAtHover))
+)
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:watcher_probe')
+    .addDefault(Text.translatable('tooltips.kubejs.watcher_probe.default.1').gray())
+)

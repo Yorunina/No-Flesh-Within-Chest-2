@@ -41,7 +41,7 @@ function HarvestStarGemArsEffectResolvePost(customData, event, organItem, organI
     /**@type {Internal.BlockHitResult} */
     const hitResult = event.rayTraceResult
     const spellStats = event.spellStats
-    if (!hitResult instanceof $BlockHitResult) return
+    if (!(hitResult instanceof $BlockHitResult)) return
     const shooter = event.shooter
     const level = event.world
     let aoeBlockPosList = $SpellUtil.calcAOEBlocks(shooter, hitResult.blockPos, hitResult, spellStats)

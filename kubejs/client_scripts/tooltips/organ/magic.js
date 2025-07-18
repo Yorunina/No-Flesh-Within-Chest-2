@@ -18,3 +18,14 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:heal_star_gem')
     .addDefault(Text.translatable('tooltips.kubejs.heal_star_gem.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.heal_star_gem.alt.1'))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:coral_armor')
+    .addDefault(Text.translatable('tooltips.kubejs.coral_armor.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.coral_armor.alt.1'))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:deepling_star_gem')
+    .addDefault(Text.translatable('tooltips.kubejs.deepling_star_gem.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.deepling_star_gem.alt.1', 20, FrozenHover))
+)
+

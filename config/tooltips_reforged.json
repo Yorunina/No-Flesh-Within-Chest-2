@@ -21,6 +21,6 @@
     "useNameColor": true,
     "backgroundColor": -267386864,
     "itemBorderColor": -5592406,
-    "mouseScrollTooltip": true
+    "mouseScrollTooltip": false
   }
 }

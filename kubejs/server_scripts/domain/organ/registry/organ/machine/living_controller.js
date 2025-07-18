@@ -5,7 +5,7 @@ RegistryOrgan('kubejs:living_controller')
 
 /**
  * 
- * @param {Internal.ServerPlayer} level 
+ * @param {Internal.ServerLevel} level 
  * @param {Internal.ItemStack} organItem 
  * @returns 
  */
@@ -22,7 +22,7 @@ ItemEvents.entityInteracted('kubejs:living_controller', event => {
     const target = event.target
     const item = event.item
     let nbt = item.getOrCreateTag()
-    if (target instanceof $PathfinderMob) {
+    if (target instanceof $PathfinderMob && !target.isPlayer()) {
         let bindEntityNbt = new $CompoundTag()
         bindEntityNbt.putUUID('uuid', target.getUuid())
         bindEntityNbt.putString('name', target.name.getString())

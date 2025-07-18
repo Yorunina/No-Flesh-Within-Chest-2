@@ -15,4 +15,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:lava_life_cycle_system').maxStackSize(1).texture('kubejs:item/organs/machine/lava_life_cycle_system').tag('kubejs:machine')
 
     event.create('kubejs:living_controller').maxStackSize(1).texture('kubejs:item/organs/machine/living_controller').tag('kubejs:machine')
+    event.create('kubejs:prowler_rotating_shaft').maxStackSize(1).texture('kubejs:item/organs/machine/prowler_rotating_shaft').tag('kubejs:machine')
+    event.create('kubejs:watcher_probe').maxStackSize(1).texture('kubejs:item/organs/machine/watcher_probe').tag('kubejs:machine')
 })

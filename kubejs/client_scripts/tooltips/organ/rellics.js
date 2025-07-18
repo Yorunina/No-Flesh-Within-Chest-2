@@ -31,8 +31,12 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:netherite_muscle')
     .addDefault(Text.translatable('tooltips.kubejs.netherite_muscle.default.1').gray())
 )
 
-
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:harbinger_lung')
     .addDefault(Text.translatable('tooltips.kubejs.harbinger_lung.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.harbinger_lung.alt.1', Text.gold('1')))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:leviathan_rib')
+    .addDefault(Text.translatable('tooltips.kubejs.leviathan_rib.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.leviathan_rib.alt.1', Text.gold('1'), Text.gold('3')))
 )

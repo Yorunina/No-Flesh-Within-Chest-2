@@ -17,7 +17,7 @@ function HealStarGemArsEffectResolvePost(customData, event, organItem, organInde
     /**@type {Internal.EntityHitResult} */
     const hitResult = event.rayTraceResult
     const spellStats = event.spellStats
-    if (!hitResult instanceof $EntityHitResult) return
+    if (!(hitResult instanceof $EntityHitResult)) return
     /**@type {Internal.LivingEntity } */
     let entity = hitResult.getEntity()
     let duration = Math.max(60, 20 * (spellStats.getAmpMultiplier() + 1) * 3)
