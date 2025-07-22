@@ -54,6 +54,9 @@
   "ars_nouveau": {
     "mob_jar": true
   },
+  "create_cultivation": {
+    "cultivation_tank": true
+  },
   "supplementaries": {
     "hat_stand": true
   },
@@ -67,9 +70,6 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "astages": {
-    "block_component_provider": true
   },
   "functionalstorage": {
     "armory": true

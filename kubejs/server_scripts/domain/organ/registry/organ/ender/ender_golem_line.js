@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:ender_golem_line')
 function EnderGolemLineKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const level = event.level
-    let playerPos = player.getPosition(1.0)
+    let playerPos = player.blockPosition()
     let entityList = GetLivingWithinRadius(level, playerPos, 10, (level, entity) => {
         return !entity.equals(player)
     })

@@ -76,7 +76,6 @@ const $MapDecorationType = Java.loadClass('net.minecraft.world.level.saveddata.m
 const $ModBlocks = Java.loadClass('noobanidus.mods.lootr.init.ModBlocks')
 const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity')
 
-const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
 
 const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')
 const $BoneMealItem = Java.loadClass('net.minecraft.world.item.BoneMealItem')
@@ -107,3 +106,5 @@ const $AAALevel = Java.loadClass('mod.chloeprime.aaaparticles.api.common.AAALeve
 const $OpticManager = Java.loadClass('team.creative.opticmanager.OpticManager')
 
 const $PlayerProgressionData = Java.loadClass('com.araxer.araxers_bestiary.data.PlayerProgressionData')
+const $AnimHeadSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimHeadSummon')
+const $AnimBlockSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimBlockSummon')

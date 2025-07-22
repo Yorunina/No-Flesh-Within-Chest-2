@@ -206,13 +206,13 @@ function NavigateWithDegrade(mob, pos, speed) {
 /**
 * 获取某个半径内的实体
 * @param {Internal.Level} level
-* @param {Vec3} pos
+* @param {BlockPos} pos
 * @param {Number} radius
 * @param {function(Internal.Level, Internal.PathfinderMob):boolean} entityTester
 * @returns {Array<Internal.Entity>}
 */
 function GetLivingWithinRadius(level, pos, radius, entityTester) {
-    let area = new AABB.of(pos.x() - radius, pos.y() - radius, pos.z() - radius, pos.x() + radius, pos.y() + radius, pos.z() + radius)
+    let area = AABB.of(pos.x - radius, pos.y - radius, pos.z - radius, pos.x + radius, pos.y + radius, pos.z + radius)
     let entityAABBList = level.getEntitiesWithin(area)
     let entityList = []
     entityAABBList.forEach(entity => {
@@ -238,6 +238,26 @@ function SpawnItemEntityWithMovement(level, pos, itemStack, movement) {
     itemEntity.setDefaultPickUpDelay()
     level.addFreshEntity(itemEntity)
 }
+
+/**
+* 获取某个半径内的实体
+* @param {Internal.Level} level
+* @param {BlockPos} pos
+* @param {Number} radius
+* @returns {Array<Internal.ItemEntity>}
+*/
+function GetItemEntityWithinRadius(level, pos, radius) {
+    let area = AABB.of(pos.x - radius, pos.y - radius, pos.z - radius, pos.x + radius, pos.y + radius, pos.z + radius)
+    let entityList = level.getEntitiesOfClass($ItemEntity, area, entity => {
+        if (entity.position() && entity.position().distanceTo(pos) <= radius) {
+            return true
+        }
+        return false
+    })
+
+    return entityList
+}
+
 
 /**
  * @param {Internal.Level} level 

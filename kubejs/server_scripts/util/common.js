@@ -170,6 +170,14 @@ function ConvertVec3i2BlockPos(vec3i) {
 }
 
 /**
+ * @param {vec3d} vec3d 
+ * @returns {BlockPos}
+ */
+function ConvertVec3d2BlockPos(vec3d) {
+    return new BlockPos(vec3d.x(), vec3d.y(), vec3d.z())
+}
+
+/**
  * @param {BlockPos} blockPos 
  * @returns {Vec3d}
  */

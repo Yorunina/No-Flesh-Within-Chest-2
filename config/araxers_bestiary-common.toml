@@ -1,5 +1,5 @@
-#Enable the progression system where entity information is gradually revealed as you kill more of them
-enableProgressionSystem = true
+#Enable the progression system where entity information is gradually revealed as you progress
+enableProgressionSystem = false
 #Number of kills required to unlock spawn locations
 #Range: > 5
 spawnLocationThreshold = 10
@@ -9,7 +9,7 @@ lootIconThreshold = 30
 #Number of kills required to unlock loot drop chances
 #Range: > 25
 lootChanceThreshold = 50
-#Hide entities with 0 kills when progression system is enabled
+#Hide entities with 0 kills when progression system is enabled (for kill-based progression)
 hideZeroKillEntities = true
 #List of mob categories to be considered as monsters (all categories: "monster", "creature", "water_creature", "underground_water_creature", "ambient", "water_ambient", "axolotls", "misc")
 monsterCategories = ["monster", "creature", "water_creature", "underground_water_creature", "ambient", "water_ambient", "axolotls", "misc"]
@@ -19,4 +19,78 @@ entityBlacklist = []
 enableKeybind = true
 #Which UI to use for the bestiary screen ("legacy" or "modern")
 uiType = "modern"
+#Type of progression system to use: "kills" (original system based on kill count) or "ranks" (rank-based system with chance to increase rank)
+progressionSystemType = "ranks"
+#Number of kills required to unlock advanced attributes (knockback resistance, armor, movement speed)
+#Range: > 15
+advancedAttributesThreshold = 30
+#Number of kills required to unlock entity descriptions
+#Range: > 5
+descriptionThreshold = 40
+#Base chance (0.0-1.0) to increase rank when killing an entity
+#Range: 0.01 ~ 1.0
+rankKillChance = 0.1
+#Base chance (0.0-1.0) to increase rank when feeding an entity
+#Range: 0.01 ~ 1.0
+rankFeedChance = 0.03
+#Base chance (0.0-1.0) to increase rank when hitting an entity
+#Range: 0.01 ~ 1.0
+rankHitChance = 0.01
+#Base chance (0.0-1.0) to increase rank when trading with a villager
+#Range: 0.01 ~ 1.0
+rankTradeChance = 0.1
+#Multiplier for rank increase chance when interacting with boss entities (higher value = easier)
+#Range: 1.0 ~ 10.0
+bossRankMultiplier = 5.0
+#Enable progressive rank difficulty (higher ranks are harder to achieve)
+enableProgressiveRankDifficulty = true
+#Difficulty multiplier for rank D (lower value = harder)
+#Range: 0.01 ~ 1.0
+rankDDifficultyMultiplier = 0.4
+#Difficulty multiplier for rank C (lower value = harder)
+#Range: 0.01 ~ 1.0
+rankCDifficultyMultiplier = 0.3
+#Difficulty multiplier for rank B (lower value = harder)
+#Range: 0.01 ~ 1.0
+rankBDifficultyMultiplier = 0.2
+#Difficulty multiplier for rank A (lower value = harder)
+#Range: 0.01 ~ 1.0
+rankADifficultyMultiplier = 0.1
+#Difficulty multiplier for rank S (lower value = harder)
+#Range: 0.01 ~ 1.0
+rankSDifficultyMultiplier = 0.05
+#Minimum rank required to unlock spawn locations (E, D, C, B, A, S)
+spawnLocationRank = "D"
+#Minimum rank required to unlock loot icons (E, D, C, B, A, S)
+lootIconRank = "C"
+#Minimum rank required to unlock loot drop chances (E, D, C, B, A, S)
+lootChanceRank = "A"
+#Minimum rank required to unlock advanced attributes (E, D, C, B, A, S)
+advancedAttributesRank = "B"
+#Minimum rank required to unlock entity descriptions (E, D, C, B, A, S)
+descriptionRank = "B"
+#Weight for rank E when discovering new entities (higher value = more common)
+#Range: 0 ~ 1000
+rankEWeight = 75
+#Weight for rank D when discovering new entities (higher value = more common)
+#Range: 0 ~ 1000
+rankDWeight = 10
+#Weight for rank C when discovering new entities (higher value = more common)
+#Range: 0 ~ 1000
+rankCWeight = 6
+#Weight for rank B when discovering new entities (higher value = more common)
+#Range: 0 ~ 1000
+rankBWeight = 5
+#Weight for rank A when discovering new entities (higher value = more common)
+#Range: 0 ~ 1000
+rankAWeight = 2
+#Weight for rank S when discovering new entities (higher value = more common)
+#Range: 0 ~ 1000
+rankSWeight = 2
+#Hide entities with no rank when progression system is enabled (for rank-based progression)
+hideNoRankEntities = true
+#Forces the obfuscation of entities when progression system is enabled (if ranks are none or kills are 0)
+forceObfuscation = false
+#List of entities that should be prioritized and included in the bestiary regardless of their category (format: "minecraft:sheep")
+entityIncludeList = []
 

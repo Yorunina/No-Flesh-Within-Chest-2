@@ -9,4 +9,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:embers_liver').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/relics/embers_liver').tag('kubejs:relics').tag('kubejs:nether').tag('kubejs:liver')
     event.create('kubejs:harbinger_lung').maxDamage(30).maxStackSize(1).texture('kubejs:item/organs/relics/harbinger_lung').tag('kubejs:relics').tag('kubejs:lung').tag('kubejs:machine')
     event.create('kubejs:leviathan_rib').maxStackSize(1).texture('kubejs:item/organs/relics/leviathan_rib').tag('kubejs:relics').tag('kubejs:rib').tag('kubejs:magic')
+    event.create('kubejs:remnant_heart').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/relics/remnant_heart').tag('kubejs:heart')
 })

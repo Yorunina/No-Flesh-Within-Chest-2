@@ -29,3 +29,17 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:deepling_star_gem')
     .addAlt(Text.translatable('tooltips.kubejs.deepling_star_gem.alt.1', 20, FrozenHover))
 )
 
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:animted_soul')
+    .addDefault(Text.translatable('tooltips.kubejs.animted_soul.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.animted_soul.alt.1', Text.gold('10'), Text.gold('1/2')))
+    .addAlt(Text.translatable('tooltips.kubejs.animted_soul.alt.2', Text.gold('60')))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:amethyst_core')
+    .addDefault(Text.translatable('tooltips.kubejs.amethyst_core.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.amethyst_core.alt.1', Text.gold('1/10')))
+)
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:deepling_ectoplasm')
+    .addDefault(Text.translatable('tooltips.kubejs.deepling_ectoplasm.default.1').gray())
+)

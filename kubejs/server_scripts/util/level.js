@@ -1,4 +1,3 @@
-
 // priority: 3000
 ServerEvents.loaded(event => {
     const server = event.server

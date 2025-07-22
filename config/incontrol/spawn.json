@@ -1,6 +1,6 @@
 [
     {
-        "dimension": "kubejs:dungeon",
+        "mob": "cataclysm:lionfish",
         "result": "deny"
     }
 ]

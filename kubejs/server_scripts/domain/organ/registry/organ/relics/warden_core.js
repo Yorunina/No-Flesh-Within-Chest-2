@@ -17,6 +17,7 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
     let ray = player.rayTrace(24, false)
     let distance = ray.distance
     let damageSource = player.damageSources().sonicBoom(player)
+    /**@type {Internal.Vec3d} */
     let vec3Nor = player.getLookAngle().normalize()
     let counter = 0
     let xpLevel = player.getXpLevel()
@@ -32,7 +33,7 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
         let vec3 = vec3Nor.scale(i).add(player.getEyePosition())
         level.spawnParticles($ParticleTypes.SONIC_BOOM, false, vec3.x(), vec3.y(), vec3.z(), 0, 0, 0, 1, 0)
         if (i % 2 == 0) {
-            let entityInRadius = GetLivingWithinRadius(level, vec3, 2, (curlevel, curEntity) => {
+            let entityInRadius = GetLivingWithinRadius(level, ConvertVec3d2BlockPos(vec3), 2, (curlevel, curEntity) => {
                 if (!curEntity.isPlayer()) {
                     return true
                 }
