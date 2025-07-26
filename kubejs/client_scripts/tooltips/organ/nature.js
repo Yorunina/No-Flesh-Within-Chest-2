@@ -148,3 +148,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:urchinkin_stinger')
     .addDefault(Text.translatable('tooltips.kubejs.urchinkin_stinger.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.urchinkin_stinger.alt.1', Text.gold('10')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:giant_claw')
+    .addDefault(Text.translatable('tooltips.kubejs.giant_claw.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.giant_claw.alt.1', Text.gold('20%'), LuckHover, Text.gold('5')))
+)

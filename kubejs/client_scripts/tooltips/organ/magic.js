@@ -63,3 +63,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:draugr_skull')
     .addDefault(Text.translatable('tooltips.kubejs.draugr_skull.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.draugr_skull.alt.1', FrozenHover, Text.gold('10')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:hippocamtus_scale')
+    .addDefault(Text.translatable('tooltips.kubejs.hippocamtus_scale.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.hippocamtus_scale.alt.1', FrozenHover, Text.gold('2'), FrozenHover, FrozenHover, Text.gold('3s')))
+)

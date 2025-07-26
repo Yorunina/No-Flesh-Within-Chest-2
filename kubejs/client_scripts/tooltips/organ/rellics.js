@@ -51,3 +51,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:maledictus_wing')
     .addDefault(Text.translatable('tooltips.kubejs.maledictus_wing.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.maledictus_wing.alt.1'))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:scylla_star_gem')
+    .addDefault(Text.translatable('tooltips.kubejs.scylla_star_gem.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.scylla_star_gem.alt.1', Text.gold('2'), FrozenHover))
+)

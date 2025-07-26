@@ -80,13 +80,6 @@ const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.le
 const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')
 const $BoneMealItem = Java.loadClass('net.minecraft.world.item.BoneMealItem')
 
-const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent')
-const $ModifySpellLevelEvent = Java.loadClass('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent')
-const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent')
-const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingDamageEvent')
-
-const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Post')
-const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
 const $EntityHitResult = Java.loadClass('net.minecraft.world.phys.EntityHitResult')
 const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult')
 const $SpellUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SpellUtil')
@@ -108,3 +101,12 @@ const $OpticManager = Java.loadClass('team.creative.opticmanager.OpticManager')
 const $PlayerProgressionData = Java.loadClass('com.araxer.araxers_bestiary.data.PlayerProgressionData')
 const $AnimHeadSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimHeadSummon')
 const $AnimBlockSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimBlockSummon')
+
+// native event
+const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent')
+const $ModifySpellLevelEvent = Java.loadClass('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent')
+const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent')
+const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingDamageEvent')
+const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Post')
+const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
+const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living.ShieldBlockEvent')

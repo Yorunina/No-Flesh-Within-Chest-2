@@ -54,8 +54,9 @@
   "ars_nouveau": {
     "mob_jar": true
   },
-  "create_cultivation": {
-    "cultivation_tank": true
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
   },
   "supplementaries": {
     "hat_stand": true

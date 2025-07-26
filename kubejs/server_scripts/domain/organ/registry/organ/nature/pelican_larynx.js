@@ -21,6 +21,7 @@ function PelicanLarynxEntityInteract(customData, event, organItem, organIndex, s
     if (event.getHand() != 'main_hand') return
     if (OrganItemCoolDown(player, organItem)) return
     if (player.getMaxHealth() <= target.getMaxHealth()) return
+    if (target.isPlayer()) return
     let itemNbt = new $CompoundTag()
     if (organItem.hasNBT()) {
         itemNbt = organItem.getNbt()

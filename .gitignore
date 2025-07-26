@@ -45,7 +45,8 @@ rhino.local.properties
 /config/forgeendertech
 /config/biomebeats
 /data/
-config/fabric/indigo-renderer.properties
-config/asyncparticles
-EffekseerNativeForJava.dll
-tconplanner
+/config/fabric/indigo-renderer.properties
+/config/asyncparticles
+/EffekseerNativeForJava.dll
+/tconplanner
+/exposures/

@@ -7,6 +7,8 @@
   "create_cultivation:cultivation_tank": null,
   "custommachinery:machine_component_provider": null,
   "custommachinery:machine_server_data_provider": null,
+  "exposure:lightroom": null,
+  "exposure:photograph_frame": null,
   "functionalstorage:armory": null,
   "goety:block_owner": null,
   "goety:servant_mode": null,

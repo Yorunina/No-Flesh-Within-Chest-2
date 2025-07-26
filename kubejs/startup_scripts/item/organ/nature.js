@@ -28,5 +28,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:cassowary_muscle').maxStackSize(1).texture('kubejs:item/organs/nature/cassowary_muscle').tag('kubejs:nature').tag('kubejs:muscle')
     event.create('kubejs:flamingo_beak').maxStackSize(1).texture('kubejs:item/organs/nature/flamingo_beak').tag('kubejs:nature')
     event.create('kubejs:urchinkin_stinger').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/urchinkin_stinger')
+    event.create('kubejs:giant_claw').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/giant_claw')
 })
 

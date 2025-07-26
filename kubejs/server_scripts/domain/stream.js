@@ -11,7 +11,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
         thornsDamage: 0
     }
     OrganEntityDoDamage(event, customData)
-    if (customData.thornsDamage != 0 && event.entity) {
+    if (customData.thornsDamage > 0 && event.entity) {
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
     }
@@ -34,7 +34,7 @@ NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent}
     if (amount > 0) {
         OrganScoreDamagedEffect(event, customData)
     }
-    if (customData.thornsDamage != 0 && event.source.actual) {
+    if (customData.thornsDamage > 0 && event.source.actual) {
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
     }

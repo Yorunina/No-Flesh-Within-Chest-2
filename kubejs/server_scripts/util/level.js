@@ -45,3 +45,20 @@ function GetDayDuration(server) {
     let dayDuration = server.persistentData.getInt('dayDuration')
     return dayDuration != 0 ? dayDuration : $OpticManager.CONFIG.dayDuration
 }
+
+
+/**
+ * 获取chunkPos对应的所有结构资源键
+ * @param {Internal.ServerLevel} level 
+ * @param {Internal.ChunkPos} chunkPos 
+ * @returns {Internal.ResourceKey[]}
+ */
+function GetChunkStructureResourceKeys(level, chunkPos) {
+    let result = []
+    let structList = level.structureManager().startsForStructure(chunkPos, _ => true)
+    structList.forEach(pStruct => {
+        let key = $ResourceKey.create($Registries.STRUCTURE, level.registryAccess().registryOrThrow($Registries.STRUCTURE).getKey(pStruct.getStructure()))
+        result.push(key)
+    })
+    return result
+}

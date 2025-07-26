@@ -1,24 +1,46 @@
 // priority: 500
 
+// ExposureEvents.modifyFrameData(event => {
+//     const player = event.player
+//     const server = event.server
+//     let entityInFrame = event.getEntitiesInFrame()
+//     let frameData = event.getFrame()
+
+//     let target = entityInFrame.get(0)
+
+//     let targetNbt = target.getNbt()
+//     let targetId = target.type
+//     frameData.putString('type', targetId)
+//     frameData.put('entityNbt', targetNbt)
+//     server.scheduleInTicks(2, () => {
+//         target.discard()
+//     })
+// })
+
+// ItemEvents.rightClicked('exposure:photograph', event => {
+//     const level = event.level
+//     const item = event.item
+//     const player = event.player
+//     let itemNbt = item.getNbt()
+//     if (itemNbt.contains('type')) {
+//         let targetNbt = itemNbt.get('entityNbt')
+//         let targetId = itemNbt.getString('type')
+//         let entity = level.createEntity(targetId)
+//         entity.setNbt(targetNbt)
+//         entity.setPos(player.getX(), player.getY(), player.getZ())
+//         entity.spawn()
+//     }
+//     item.shrink(1)
+// })
+
+
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
+    /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    let rad = JavaMath.toRadians(player.getYHeadRot() + 90)
-    let dx = JavaMath.cos(rad)
-    let dy = JavaMath.sin(rad)
-
-    let nowMove = player.getDeltaMovement().add(dx * 10, 0.5, dy * 10)
-    player.setDeltaMovement(nowMove)
-    player.connection.send(new $ClientboundSetEntityMotionPacket(player))
-    let timer = 0
-    server.scheduleRepeatingInTicks(2, (ctx) => {
-        level.spawnParticles($ParticleTypes.SONIC_BOOM, false, player.x, player.y, player.z, 0, 0, 0, 1, 0)
-        if (timer > 5) ctx.clear()
-        timer++
-    })
 
 
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())
