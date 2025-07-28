@@ -10,5 +10,7 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:nature', ['crittersandcompanions:dragonfly_wing'])
 
-    event.add('exposure:flashes', ['minecraft:oak_log'])
+    event.add('exposure:flashes', [])
+    event.add('exposure:lenses', ['kubejs:exorcism_lens'])
+    event.add('exposure:filters', [])
 })

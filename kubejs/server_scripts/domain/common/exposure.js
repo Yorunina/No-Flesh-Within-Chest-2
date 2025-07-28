@@ -7,7 +7,16 @@
 ExposureEvents.modifyFrameData(event => {
     const level = event.level
     const player = event.player
+    const cameraStack = event.cameraStack
+    let customData = {}
+
+    let attachmentList = ExposureGetAttachmentIds(cameraStack)
+    if (attachmentList.length > 0) {
+        ExposureAttachmentStrategy.run(attachmentList, [event], customData)
+    }
+
     let ray = player.rayTrace(32)
+    if (!ray.hit) return
     let hitPos = ConvertVec3d2BlockPos(ray.hit)
     let key = IsInAnySturcture(level, hitPos)
     if (!key) return
@@ -15,23 +24,46 @@ ExposureEvents.modifyFrameData(event => {
     frameData.putString('aimStructure', key.location().toString())
 })
 
+const ExposureAttachmentStrategy = new StrategyModel()
+
+function RegisterExposureAttachmentStrategy(id, func) {
+    ExposureAttachmentStrategy.addStrategy(id, func)
+}
+
+
+RegisterExposureAttachmentStrategy('kubejs:exorcism_lens', ExorcismLensStrategy)
+
 /**
- * 允许用户在没有胶卷的情况下触发快门动画
+ * @param {any} customData 
+ * @param {Internal.ModifyFrameDataEventJS} event 
  */
-ExposureEvents.shutterOpening(event => {
-    const level = event.level
-    const item = event.cameraStack
-    let nbt = new $CompoundTag()
-    let shutterSpeed = 60
-    if (item.hasNBT()) {
-        nbt = item.getNbt()
-        if (nbt.contains('ShutterSpeed')) {
-            shutterSpeed = parseInt(nbt.getString('ShutterSpeed'))
-        }
+function ExorcismLensStrategy(customData, event) {
+    const player = event.player
+    const cameraStack = event.cameraStack
+    const entityList = event.getEntitiesInFrame()
+    entityList.forEach(pEntity => {
+        pEntity.attack(player.damageSources().magic(), 5)
+    })
+}
+
+RegisterExposureAttachmentStrategy('exposure:dream_film', DreamFilmStrategy)
+
+/**
+ * @param {any} customData 
+ * @param {Internal.ModifyFrameDataEventJS} event 
+ */
+function DreamFilmStrategy(customData, event) {
+    const cameraStack = event.cameraStack
+    let cameraNbt = cameraStack.getNbt()
+    if (!cameraNbt.contains('Film')) return
+    let filmItemNbt = cameraNbt.getCompound('Film')
+    if (!filmItemNbt.contains('tag')) {
+        filmItemNbt.put('tag', new $CompoundTag())
     }
-    let shutterTicks = Math.max(shutterSpeed * 20 / 1000, 1)
-    nbt.putBoolean('ShutterOpen', true)
-    nbt.putInt("ShutterTicks", shutterTicks)
-    nbt.putLong("ShutterCloseTimestamp", level.getTime() + shutterTicks)
-    item.setNbt(nbt)
-})
+    let nbt = filmItemNbt.getCompound('tag')
+    if (!nbt.contains('Frames')) {
+        nbt.put('Frames', new $ListTag())
+    }
+    let frameList = nbt.getList('Frames', GET_COMPOUND_TYPE)
+    frameList.add(new $CompoundTag())
+}

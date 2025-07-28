@@ -4,7 +4,6 @@ StartupEvents.registry('item', event => {
     event.create('dungeon_key').maxStackSize(1).texture('kubejs:item/tool/dungeon_key')
     event.create('chestcavity_injection').maxStackSize(1).texture('kubejs:item/tool/chestcavity_injection')
     event.create('plastic_stem_cells').maxStackSize(1).texture('kubejs:item/tool/plastic_stem_cells')
-
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
         food.hunger(1).saturation(1).alwaysEdible().eaten(event => {
             if (!event.player) return

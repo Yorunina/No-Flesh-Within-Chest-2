@@ -222,8 +222,6 @@
     "tooltips.kubejs.tag.kubejs:organ_add_status_effect_only": "唯一药水生效",
     "tooltips.kubejs.tag.kubejs:exposure_modify_frame": "拍摄",
     "tooltips.kubejs.tag.kubejs:exposure_modify_frame_only": "唯一拍摄",
-    "tooltips.kubejs.tag.kubejs:exposure_shutter_open": "快门",
-    "tooltips.kubejs.tag.kubejs:exposure_shutter_open_only": "唯一快门",
     "tooltips.kubejs.tag.kubejs:shield_block": "格挡",
     "tooltips.kubejs.tag.kubejs:shield_block_only": "唯一格挡",
     "tooltips.kubejs.tag.kubejs:entity_death": "实体死亡",

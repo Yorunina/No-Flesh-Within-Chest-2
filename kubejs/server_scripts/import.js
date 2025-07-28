@@ -30,6 +30,7 @@ const $RandomPos = Java.loadClass('net.minecraft.world.entity.ai.util.RandomPos'
 const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance')
 const $LocationPredicate = Java.loadClass('net.minecraft.advancements.critereon.LocationPredicate')
 const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
+const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 
 const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageTypes')
 const $DamageSources = Java.loadClass('net.minecraft.world.damagesource.DamageSources')
