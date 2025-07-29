@@ -158,3 +158,8 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:cindaria_umbrella')
     .addDefault(Text.translatable('tooltips.kubejs.cindaria_umbrella.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.cindaria_umbrella.alt.1', Text.gold('10')))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:wilden_heart')
+    .addDefault(Text.translatable('tooltips.kubejs.wilden_heart.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.wilden_heart.alt.1', Text.gold('10')))
+)

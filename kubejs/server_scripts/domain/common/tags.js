@@ -14,3 +14,7 @@ ServerEvents.tags('item', event => {
     event.add('exposure:lenses', ['kubejs:exorcism_lens'])
     event.add('exposure:filters', [])
 })
+
+ServerEvents.tags('entity_type', event => {
+    event.add('ars_nouveau:drygmy_blacklist', BossEntityTypeList)
+})

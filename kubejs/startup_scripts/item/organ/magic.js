@@ -11,10 +11,11 @@ StartupEvents.registry('item', event => {
 
 
     // 星宝石
-    event.create('kubejs:harvest_star_gem').maxStackSize(1).texture('kubejs:item/organs/magic/harvest_star_gem').tag('kubejs:magic').tag('kubejs:gem')
+    event.create('kubejs:whirlisprig_star_gem').maxStackSize(1).texture('kubejs:item/organs/magic/whirlisprig_star_gem').tag('kubejs:magic').tag('kubejs:gem')
     event.create('kubejs:heal_star_gem').maxStackSize(1).texture('kubejs:item/organs/magic/heal_star_gem').tag('kubejs:magic').tag('kubejs:gem')
     event.create('kubejs:deepling_star_gem').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/deepling_star_gem').tag('kubejs:gem')
-
+    event.create('kubejs:drygmy_star_gem').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/drygmy_star_gem').tag('kubejs:gem')
+    event.create('kubejs:starbuncle_star_gem').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/starbuncle_star_gem').tag('kubejs:gem')
 
     event.create('kubejs:soul_cage').maxStackSize(1).maxDamage(50).texture('kubejs:item/organs/magic/soul_cage').tag('kubejs:magic')
     event.create('kubejs:soul_wing').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/soul_wing')
@@ -27,5 +28,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:aptrgangr_soul').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/aptrgangr_soul')
     event.create('kubejs:draugr_skull').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/draugr_skull')
     event.create('kubejs:hippocamtus_scale').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/hippocamtus_scale')
-    event.create('kubejs:umvuthi_grail').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/umvuthi_grail')
+
+    event.create('kubejs:dream_hippocampus').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/dream_hippocampus')
+
+
 })

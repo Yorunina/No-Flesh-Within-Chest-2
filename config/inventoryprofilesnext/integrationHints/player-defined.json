@@ -10,5 +10,11 @@
     },
     "io.github.mortuusars.exposure.menu.AlbumMenu": {
         "ignore": true
+    },
+    "io.github.mortuusars.exposure.gui.screen.ItemRenameScreen": {
+        "ignore": true
+    },
+    "io.github.mortuusars.exposure.menu.ItemRenameMenu": {
+        "ignore": true
     }
 }

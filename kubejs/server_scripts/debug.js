@@ -43,11 +43,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    let itemList = GetItemEntityWithinRadius(level, player.blockPosition(), 5)
-    itemList.forEach(pItem => {
-        console.log(pItem.getNbt())
-        console.log(pItem.type)
-    })
+
 
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())
     // blockSummon.setColor(0X00c9b5)

@@ -30,6 +30,7 @@ function RacconPawEntityInteract(customData, event, organItem, organIndex, slotT
                 }
                 i++
             })
+            if (allSlotsList.length == 0) return
             let randomObj = RandomGet(allSlotsList)
             SpawnLootAtLocation(event.level, player.blockPosition(), [randomObj.item])
             target.setItemSlot(EquimentSlotList[randomObj.slot], Item.empty)

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:harvest_star_gem')
+RegistryOrgan('kubejs:whirlisprig_star_gem')
     .addScore('chestcavity:defense', 1)
     .addScore('kubejs:magic_capacity', 1)
 
@@ -10,9 +10,9 @@ RegistryOrgan('kubejs:harvest_star_gem')
 * @param {number} organIndex
 * @param {string} slotType
 */
-function HarvestStarGemChestCavityTakeOn(customData, event, organItem, organIndex, slotType) {
+function WhirlisprigStarGemChestCavityTakeOn(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    SetCustomDataMap(chestCavity, 'hasHarvestStarGem', 1)
+    SetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 1)
 }
 
 /**
@@ -22,9 +22,9 @@ function HarvestStarGemChestCavityTakeOn(customData, event, organItem, organInde
 * @param {number} organIndex
 * @param {string} slotType
 */
-function HarvestStarGemChestCavityTakeOff(customData, event, organItem, organIndex, slotType) {
+function WhirlisprigStarGemChestCavityTakeOff(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    RemoveCustomDataMap(chestCavity, 'hasHarvestStarGem')
+    RemoveCustomDataMap(chestCavity, 'hasWhirlisprigStarGem')
 }
 
 
@@ -35,7 +35,7 @@ function HarvestStarGemChestCavityTakeOff(customData, event, organItem, organInd
 * @param {number} organIndex
 * @param {string} slotType
 */
-function HarvestStarGemArsEffectResolvePost(customData, event, organItem, organIndex, slotType) {
+function WhirlisprigStarGemArsEffectResolvePost(customData, event, organItem, organIndex, slotType) {
     const resolveEffect = event.resolveEffect
     if (resolveEffect.getRegistryName() != 'ars_nouveau:glyph_harvest') return
     /**@type {Internal.BlockHitResult} */
@@ -55,8 +55,8 @@ function HarvestStarGemArsEffectResolvePost(customData, event, organItem, organI
 
 
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:harvest_star_gem')
-        .addOnlyStrategy('organ_take_on', HarvestStarGemChestCavityTakeOn)
-        .addOnlyStrategy('organ_take_off', HarvestStarGemChestCavityTakeOff)
-        .addOnlyStrategy('ars_effect_resolve_post', HarvestStarGemArsEffectResolvePost)
+    new OrganStrategyModel('kubejs:whirlisprig_star_gem')
+        .addOnlyStrategy('organ_take_on', WhirlisprigStarGemChestCavityTakeOn)
+        .addOnlyStrategy('organ_take_off', WhirlisprigStarGemChestCavityTakeOff)
+        .addOnlyStrategy('ars_effect_resolve_post', WhirlisprigStarGemArsEffectResolvePost)
 )
