@@ -25,7 +25,7 @@ function RacconPawEntityInteract(customData, event, organItem, organIndex, slotT
             let allSlotsList = []
             let i = 0
             target.getAllSlots().forEach(item => {
-                if (!item.isEmpty()) {
+                if (!item.isEmpty() && !item.hasEnchantment('minecraft:binding_curse', 1)) {
                     allSlotsList.push({ item: item, slot: i })
                 }
                 i++

@@ -119,9 +119,11 @@ function RemoveSpellSelectionBySpellId(customData, chestCavity, spellId) {
     const entityDataMap = chestCavity.customDataMap
     /**@type {Map<string, SpellData>} */
     let spellSlectionMap = entityDataMap.getOrDefault('organ_spell_selection', new Map())
+    spellId = String(spellId)
     if (spellSlectionMap.has(spellId)) {
         spellSlectionMap.delete(spellId)
         entityDataMap.put('organ_spell_selection', spellSlectionMap)
+        customData.needRefreshSpellSelection = true
     }
 }
 

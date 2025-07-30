@@ -22,7 +22,7 @@ function JoinWithSeparator(separator, list) {
     list.forEach((text, index) => {
         if (index == list.length - 1) {
             result.append(text)
-            return result
+            return
         }
         result.append(text).append(separator)
     })

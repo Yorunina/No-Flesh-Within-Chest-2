@@ -41,7 +41,7 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:sweets_gland')
 
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:parasitism_stomach')
     .addDefault(Text.translatable('tooltips.kubejs.parasitism_stomach.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.parasitism_stomach.alt.1'), Text.gold('3'))
+    .addAlt(Text.translatable('tooltips.kubejs.parasitism_stomach.alt.1', Text.gold('3')))
     .addAlt(Text.translatable('tooltips.kubejs.parasitism_stomach.alt.2'))
     .addAlt(Text.translatable('tooltips.kubejs.parasitism_stomach.alt.3'))
 )

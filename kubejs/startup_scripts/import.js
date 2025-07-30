@@ -14,7 +14,8 @@ const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $CommonUtil = Java.loadClass('net.tigereye.chestcavity.util.CommonUtil')
 const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.IntegerProperty')
 const $Integer = Java.loadClass('java.lang.Integer')
-
+const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance')
+const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
 
 const $FireBomb = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magma_ball.FireBomb')
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')
@@ -22,3 +23,6 @@ const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.Ab
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 
 const $ChestCavityUtil = Java.loadClass('net.tigereye.chestcavity.util.ChestCavityUtil')
+const $SummonedZombie = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedZombie')
+const $SummonedSkeleton = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton')
+const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')

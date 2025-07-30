@@ -56,3 +56,10 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:scylla_star_gem')
     .addDefault(Text.translatable('tooltips.kubejs.scylla_star_gem.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.scylla_star_gem.alt.1', Text.gold('2'), FrozenHover))
 )
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:dying_heart')
+    .addDefault(Text.translatable('tooltips.kubejs.dying_heart.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.dying_heart.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.dying_heart.alt.2'))
+)
+

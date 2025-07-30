@@ -28,8 +28,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:aptrgangr_soul').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/aptrgangr_soul')
     event.create('kubejs:draugr_skull').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/draugr_skull')
     event.create('kubejs:hippocamtus_scale').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/hippocamtus_scale')
-
     event.create('kubejs:dream_hippocampus').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/dream_hippocampus')
-
-
 })

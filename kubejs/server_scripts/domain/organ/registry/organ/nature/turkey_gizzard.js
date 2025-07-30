@@ -14,8 +14,11 @@ RegistryOrgan('kubejs:turkey_gizzard')
 function TurkeyGizzardFoodEaten(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const level = event.level
-    if (event.item.getFoodProperties().canAlwaysEat()) return
-    if (RandomWithPlayerLuck(player) <= 0.8) return
+    const item = event.item
+    let foodProperties = item.getFoodProperties(player)
+    if (!foodProperties) return
+    if (foodProperties.canAlwaysEat()) return
+    if (RandomWithPlayerLuck(player) <= 0.6) return
     const chestCavity = player.chestCavityInstance
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()

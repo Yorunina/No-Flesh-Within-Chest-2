@@ -42,7 +42,8 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-
+    // SetDayDuration(server, 12000)
+    // SetNightDuration(server, 60)
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())
     // blockSummon.setColor(0X00c9b5)
     // blockSummon.setPos(player.blockPosition())
