@@ -36,39 +36,3 @@ function GetMobKillCount(level, player, entityType) {
 function GetPlayerProgressionData(level) {
     return $PlayerProgressionData.getOrCreate(level)
 }
-
-
-/** @type {Map<string,{channel:string,data:Internal.CompoundTag}[]>} */
-const S2CDataQueue = new Map()
-
-/**
- * 
- * @param {Internal.ServerPlayer} player 
- * @param {string} channel 
- */
-function EnqueueSendData(player, channel, data) {
-    if (player.connection) {
-        player.sendData(channel, data)
-    } else {
-        let playerUuid = String(player.uuid.toString())
-        let queue = S2CDataQueue.get(playerUuid)
-        if (!queue) {
-            queue = []
-            S2CDataQueue.set(playerUuid, queue)
-        }
-        queue.push({ 'channel': channel, 'data': data })
-    }
-}
-
-
-PlayerEvents.loggedIn(event => {
-    let player = event.player
-    let playerUuid = String(player.uuid.toString())
-    let queue = S2CDataQueue.get(playerUuid)
-    if (queue) {
-        queue.forEach(data => {
-            player.sendData(data.channel, data.data)
-        })
-        S2CDataQueue.delete(playerUuid)
-    }
-})

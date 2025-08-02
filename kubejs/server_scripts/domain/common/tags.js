@@ -13,6 +13,8 @@ ServerEvents.tags('item', event => {
     event.add('exposure:flashes', [])
     event.add('exposure:lenses', ['kubejs:exorcism_lens'])
     event.add('exposure:filters', [])
+
+    event.add('tconplanner:creative_material', ['kubejs:exorcism_lens'])
 })
 
 ServerEvents.tags('entity_type', event => {

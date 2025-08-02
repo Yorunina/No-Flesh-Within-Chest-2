@@ -115,3 +115,10 @@ const DefaultTypeHover = Text.translatable('tooltips.kubejs.hover.default_type.0
         Text.translatable('tooltips.kubejs.hover.default_type.0').gray(),
         Text.translatable('tooltips.kubejs.hover.default_type.1'),
     ]))
+
+const TimeStabilityHover = Text.translatable('tooltips.kubejs.hover.time_stability.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.time_stability.0').gray(),
+        Text.translatable('tooltips.kubejs.hover.time_stability.1'),
+    ]))
+    

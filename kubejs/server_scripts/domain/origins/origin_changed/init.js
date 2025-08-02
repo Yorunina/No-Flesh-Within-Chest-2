@@ -2,7 +2,9 @@
 OriginsEvents.originChanged(event => {
     const origin = event.getOrigin()
     if (origin.getPath() == 'empty') return
-    let key = `${origin.getNamespace()}:${origin.getPath()}`
+    
+    // let key = `${origin.getNamespace()}:${origin.getPath()}`
+    let key = origin.location().toString()
     let customData = {}
     OriginChangedStrategy.run([key], [event], customData)
 })

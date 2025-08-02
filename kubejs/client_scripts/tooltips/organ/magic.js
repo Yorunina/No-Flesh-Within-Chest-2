@@ -93,5 +93,12 @@ RegisteryOrganTooltip(new MultiStateTooltip('kubejs:calamity_bone_spur')
 RegisteryOrganTooltip(new MultiStateTooltip('kubejs:potion_skin')
     .addDefault(Text.translatable('tooltips.kubejs.potion_skin.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.potion_skin.alt.1'))
-    .addAlt(Text.translatable('tooltips.kubejs.potion_skin.alt.2', Text.gold('3'), MagicOverloadHover))
+    .addAlt(Text.translatable('tooltips.kubejs.potion_skin.alt.2', Text.gold('5'), MagicOverloadHover))
+)
+
+
+RegisteryOrganTooltip(new MultiStateTooltip('kubejs:soul_cage')
+    .addDefault(Text.translatable('tooltips.kubejs.soul_cage.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.soul_cage.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.soul_cage.alt.2', Text.gold('1'),Text.gold('2')))
 )

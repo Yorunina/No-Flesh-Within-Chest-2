@@ -1,0 +1,15 @@
+{
+    "type": "origins:starting_equipment",
+    "stacks": [
+        {
+            "item": "tconstruct:materials_and_you",
+            "amount": 1,
+            "slot": 1
+        },
+        {
+            "item": "kubejs:genesis_tinker_blueprint",
+            "amount": 1,
+            "slot": 2
+        }
+    ]
+}
