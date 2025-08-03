@@ -35,17 +35,11 @@ global.OriginEntityConditionServerEvent = (event) => {
     }
 }
 
-PlayerEvents.loggedIn(event => {
-    const player = event.player
-    syncPlayerOriginUnlockStatus(player)
-})
-
-
 /**
  * 
  * @param {Internal.ServerPlayer} player 
  */
-function syncPlayerOriginUnlockStatus(player) {
+function SyncPlayerOriginUnlockStatus(player) {
     let uuidString = player.getUuid().toString()
     let data = new $CompoundTag()
     if (OriginUnlockStatusUuidMap[uuidString]) {
@@ -107,7 +101,7 @@ function LockOrigin(player, id) {
             }
             originList.push(originId)
         })
-    } 
+    }
     playerStatusJson.add(uuidString, JsonIO.of(originList))
     JsonIO.write(OriginUnlockStatusData, playerStatusJson)
     if (!OriginUnlockStatusUuidMap[uuidString]) {

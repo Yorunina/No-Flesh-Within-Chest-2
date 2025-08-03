@@ -30,12 +30,13 @@ const SlotChestCavityUpdateStrategy = new SlotStrategyModel()
             customData.maxHealth.applyOnEntityByAttributeKey(entity, 'OrganMaxHealth')
             customData.armor.applyOnEntityByAttributeKey(entity, 'OrganArmor')
             customData.entityReach.applyOnEntityByAttributeKey(entity, 'OrganEntityReach')
-            customData.blockReach.applyOnEntityByAttributeKey(entity,  'OrganBlockReach')
+            customData.blockReach.applyOnEntityByAttributeKey(entity, 'OrganBlockReach')
         }
     )
 
 ChestCavityEvents.evaluateChestCavity(event => {
     const entity = event.entity
+    console.log(entity.type)
     let customData = {}
     if (!entity.isAlive()) return
     // 器官摘下 - 通常用于归位操作
@@ -59,14 +60,4 @@ ChestCavityEvents.evaluateChestCavity(event => {
         }
     }
     UpdateClientISSSpellDataEvent(customData, entity)
-})
-
-
-PlayerEvents.loggedIn(event => {
-    event.server.scheduleInTicks(20, () => {
-        const player = event.player
-        let mpmModelDataNBT = GetCustomDataMap(player.chestCavityInstance, 'mpmModelDataNBT', null)
-        if (!mpmModelDataNBT) return
-        $MpmPackets.sendNearby(player, new $PacketPlayerDataSend(player.getUuid(), mpmModelDataNBT))
-    })
 })

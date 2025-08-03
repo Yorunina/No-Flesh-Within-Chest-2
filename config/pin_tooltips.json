@@ -5,8 +5,8 @@
     "net.minecraft.client.gui.screens.PauseScreen",
     "net.minecraft.client.gui.screens.GenericDirtMessageScreen",
     "net.minecraft.client.gui.screens.ChatScreen",
-    "net.minecraft.client.gui.screens.ReceivingLevelScreen",
-    "net.minecraft.client.gui.screens.ProgressScreen"
+    "net.minecraft.client.gui.screens.ProgressScreen",
+    "net.minecraft.client.gui.screens.ReceivingLevelScreen"
   ],
   "hideMissingDescriptions": true,
   "jadeModEnchantmentModName": true

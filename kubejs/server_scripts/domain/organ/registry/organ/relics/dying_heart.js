@@ -33,6 +33,6 @@ function DyingHeartTakeOff(customData, event, organItem, organIndex, slotType) {
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:dying_heart')
-        .addStrategy('chest_cavity_update', DyingHeartChestCavityUpdate)
-        .addStrategy('organ_take_off', DyingHeartTakeOff)
+        .addOnlyStrategy('chest_cavity_update', DyingHeartChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', DyingHeartTakeOff)
 )

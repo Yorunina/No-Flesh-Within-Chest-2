@@ -33,6 +33,6 @@ function CalamityBoneSpurTakeOff(customData, event, organItem, organIndex, slotT
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:calamity_bone_spur')
-        .addStrategy('chest_cavity_update', CalamityBoneSpurChestCavityUpdate)
-        .addStrategy('organ_take_off', CalamityBoneSpurTakeOff)
+        .addOnlyStrategy('chest_cavity_update', CalamityBoneSpurChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', CalamityBoneSpurTakeOff)
 )

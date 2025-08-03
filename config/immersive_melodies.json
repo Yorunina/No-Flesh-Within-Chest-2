@@ -17,7 +17,7 @@
   "mobInstrumentDropFactor": 0.085,
   "showOtherPlayersMelodies": true,
   "forceMobsToPickUp": true,
-  "clickedHelp": false,
+  "clickedHelp": true,
   "loadInbuiltMidis": true,
   "stopGameMusicForPlayers": true,
   "stopGameMusicForMobs": false,

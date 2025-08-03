@@ -54,7 +54,3 @@ function GenDungeonLevelArea(level, centerPos) {
     })
     return area
 }
-
-PlayerEvents.loggedIn(event => {
-    $SSyncRestrictionPacket.sync(event.player)
-})

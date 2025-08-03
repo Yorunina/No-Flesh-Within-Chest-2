@@ -29,10 +29,11 @@ function CalamityBoneSpurTakeOff(customData, event, organItem, organIndex, slotT
     const { entity, chestCavity } = event
     if (!entity.isPlayer()) return
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'irons_spellbooks:oakskin')
+    console.log('test')
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:potion_skin')
-        .addStrategy('chest_cavity_update', CalamityBoneSpurChestCavityUpdate)
-        .addStrategy('organ_take_off', CalamityBoneSpurTakeOff)
+        .addOnlyStrategy('chest_cavity_update', CalamityBoneSpurChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', CalamityBoneSpurTakeOff)
 )

@@ -30,7 +30,7 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
     $MapItem.renderBiomePreviewMap(level, mapItem)
     $MapItemSavedData.addTargetDecoration(mapItem, airdropPos, "+", $MapDecorationType.RED_X)
     player.give(mapItem.withName(Text.translatable('map.kubejs.lost_treasure')))
-    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'patchouli:book_open', player.getSoundSource(), 0.5, 1)
+    level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.book.page_turn', player.getSoundSource(), 0.5, 1)
     // 增强功能
     // CreateWaypoint(player, airdropPos, new Date().toLocaleString(), 0xFC4C00)
     player.addItemCooldown('kubejs:koi_fish_scale', 20 * 300)

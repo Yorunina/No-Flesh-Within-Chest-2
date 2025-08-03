@@ -26,9 +26,11 @@ function EnqueueSendData(player, channel, data) {
     }
 }
 
-
-PlayerEvents.loggedIn(event => {
-    let player = event.player
+/**
+ * 
+ * @param {Internal.ServerPlayer} player 
+ */
+function SyncQueuedData(player) {
     let playerUuid = String(player.uuid.toString())
     let queue = S2CDataQueue.get(playerUuid)
     if (queue) {
@@ -37,4 +39,4 @@ PlayerEvents.loggedIn(event => {
         })
         S2CDataQueue.delete(playerUuid)
     }
-})
+}
