@@ -1,5 +1,5 @@
-RenderJSEvents.AddWorldRender(event => {
-    event.addWorldRender((context) => {
-        RenderJSWorldRender.renderBlock1
-    })
-})
+// RenderJSEvents.AddWorldRender(event => {
+//     event.addWorldRender((context) => {
+//         RenderJSWorldRender.renderBlock1
+//     })
+// })
