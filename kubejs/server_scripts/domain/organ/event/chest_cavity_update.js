@@ -42,7 +42,7 @@ ChestCavityEvents.evaluateChestCavity(event => {
     customData.modelData = null
     customData.canLoadMpm = IsLoadedMPM && entity.isPlayer()
     if (customData.canLoadMpm && !entity.connection) {
-        let modelData = $ModelData.get(entity)
+        let modelData = $MPMModelData.get(entity)
         modelData.mpmParts.clear()
         customData.modelData = modelData
     }

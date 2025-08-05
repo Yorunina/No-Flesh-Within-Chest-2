@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:soul_cage')
     .addScore('chestcavity:endurance', 1)
+    .addScore('chestcavity:nerves', 1)
 
 /**
  * @param {OrganEventCustomData} customData

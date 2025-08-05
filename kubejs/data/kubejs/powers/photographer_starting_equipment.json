@@ -5,6 +5,16 @@
             "item": "exposure:camera",
             "amount": 1,
             "slot": 1
+        },
+        {
+            "item": "exposure:dream_film",
+            "amount": 1,
+            "slot": 2
+        },
+        {
+            "item": "kubejs:exorcism_lens",
+            "amount": 1,
+            "slot": 3
         }
     ]
 }

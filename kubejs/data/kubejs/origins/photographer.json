@@ -1,9 +1,11 @@
 {
 	"powers": [
+		"kubejs:photographer_starting_equipment",
+		"kubejs:photographer_dream_hippocampus"
 	],
 	"icon": {
-		"item": "create:cogwheel"
+		"item": "exposure:camera"
 	},
-	"order": 1,
+	"order": 3,
 	"impact": 1
 }

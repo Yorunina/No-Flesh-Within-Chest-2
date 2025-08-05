@@ -3,13 +3,14 @@
 	"order": 0,
 	"enabled": true,
 	"origins": [
-		"origins:human",
+		"kubejs:normal",
 		"kubejs:lich",
-		"kubejs:machinist"
+		"kubejs:machinist",
+		"kubejs:photographer"
 	],
 	"allow_random": true,
 	"exclude_random": [
-		"origins:human"
+		"kubejs:normal"
 	],
 	"allow_random_unchoosable": false,
 	"hidden": false

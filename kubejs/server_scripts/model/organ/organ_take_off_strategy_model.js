@@ -88,7 +88,7 @@ OrganTakeOffStrategyModel.prototype = {
                     let mpmEventStrategy = strategyModel.strategyMap['mpm_render_take_off']
                     if (mpmEventStrategy) {
                         if (!customData.modelData) {
-                            customData.modelData = $ModelData.get(ccInstance.owner)
+                            customData.modelData = $MPMModelData.get(ccInstance.owner)
                         }
                         if (mpmEventStrategy['only'] && !onlyMPMMap.has(itemId)) {
                             onlyMPMMap.set(itemId, true)

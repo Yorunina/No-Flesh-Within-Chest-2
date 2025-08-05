@@ -36,7 +36,7 @@ const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageType
 const $DamageSources = Java.loadClass('net.minecraft.world.damagesource.DamageSources')
 const $GameRules = Java.loadClass('net.minecraft.world.level.GameRules')
 
-const $ModelData = Java.loadClass('noppes.mpm.ModelData')
+const $MPMModelData = Java.loadClass('noppes.mpm.ModelData')
 const $MpmPartData = Java.loadClass('noppes.mpm.client.parts.MpmPartData')
 const $MpmPackets = Java.loadClass('noppes.mpm.packets.Packets')
 const $PacketPlayerDataSend = Java.loadClass('noppes.mpm.packets.client.PacketPlayerDataSend')

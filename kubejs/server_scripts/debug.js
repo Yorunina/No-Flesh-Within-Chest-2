@@ -42,7 +42,11 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    UpdatePlaysTimeStabilityBar(server, level, player)
+    const blockPos = player.blockPosition()
+
+    let biomeHolder = level.getBiome(blockPos)
+    let temperature = biomeHolder.get().getTemperature(blockPos)
+    player.tell(temperature)
     // SetDayDuration(server, 12000)
     // SetNightDuration(server, 60)
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())

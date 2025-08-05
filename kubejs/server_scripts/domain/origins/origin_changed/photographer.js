@@ -1,11 +1,11 @@
 // priority: 500
-RegisterOriginChangedStrategy('kubejs:lich', LichOriginStrategy)
+RegisterOriginChangedStrategy('kubejs:photographer', PhotographerOriginStrategy)
 
 /**
  * @param {any} customData 
  * @param {Internal.OriginChangedJS} event 
  */
-function LichOriginStrategy(customData, event) {
+function PhotographerOriginStrategy(customData, event) {
     const player = event.player
     const chestCavity = player.chestCavityInstance
     chestCavity.setInventoryType(new ResourceLocation('kubejs:cc_inventory_types/default.json'))
@@ -13,5 +13,5 @@ function LichOriginStrategy(customData, event) {
     if (!targetItem.isEmpty()) {
         SpawnItemEntityWithMovement(event.level, player.blockPosition(), targetItem, new Vec3d(Math.random() - 0.5, 1, Math.random() - 0.5))
     }
-    chestCavity.inventory.setStackInSlot(13, Item.of('kubejs:soul_cage'))
+    chestCavity.inventory.setStackInSlot(13, Item.of('kubejs:dream_hippocampus'))
 }

@@ -1,5 +1,6 @@
 {
 	"powers": [
+		"kubejs:lich_soul_cage",
 		"kubejs:undead_burn",
 		"kubejs:disable_regen",
 		"kubejs:no_need_food",

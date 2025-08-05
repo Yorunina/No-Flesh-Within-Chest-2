@@ -58,6 +58,7 @@
 		"kubejs:no_need_food" = true
 		"kubejs:no_need_air" = true
 		"kubejs:mob_type_undead" = true
+		"kubejs:lich_soul_cage" = true
 
 	[origins."origins:elytrian"]
 		enabled = true
@@ -111,4 +112,12 @@
 		enabled = true
 		"kubejs:machinist_fragile_armor" = true
 		"kubejs:born_with_mechanical_wolf" = true
+		"kubejs:photographer_starting_equipment" = true
+		"kubejs:photographer_dream_hippocampus" = true
+
+	[origins."kubejs:human"]
+		enabled = true
+
+	[origins."kubejs:normal"]
+		enabled = true
 
