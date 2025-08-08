@@ -1,0 +1,16 @@
+{
+    "id": "example-pack",
+    "name": "Example Content Pack",
+    "description": "An example content pack demonstrating metadata format",
+    "version": "1.0.0",
+    "authors": [
+        ""
+    ],
+    "dependencies": [
+        {
+            "type": "REQUIRED",
+            "id": "kubejs",
+            "ordering": "AFTER"
+        }
+    ]
+}

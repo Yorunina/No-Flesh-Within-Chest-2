@@ -2,8 +2,9 @@
 const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
 
 if (IsLoadedKubeloader) {
-    serverField.core = {
-        funcs:{
+    let type = ContentPacks.type()
+    let serverField = {
+        funcs: {
             'RegisterTitleJson': RegisterTitleJson,
             'TitleJsonModel': TitleJsonModel,
             'RegistryOrganStrategy': RegistryOrganStrategy,
@@ -21,7 +22,7 @@ if (IsLoadedKubeloader) {
             'RegisterOriginChangedStrategy': RegisterOriginChangedStrategy,
             'SlotStrategyModel': SlotStrategyModel,
         },
-        consts:{
+        consts: {
             'OrganBlockBrokenEvent': OrganBlockBrokenEvent,
             'OrganChestCavityUpdateStrategy': OrganChestCavityUpdateStrategy,
             'OrganTakeOnStrategy': OrganTakeOnStrategy,
@@ -43,4 +44,6 @@ if (IsLoadedKubeloader) {
             'OrganScoreGoopRenderStrategy': OrganScoreGoopRenderStrategy,
         },
     }
+
+    ContentPacks.putShared(type, serverField)
 }
