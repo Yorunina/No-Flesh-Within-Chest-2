@@ -1,4 +1,4 @@
-// priority, 998
+// priority: 998
 const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
 
 if (IsLoadedKubeloader) {
