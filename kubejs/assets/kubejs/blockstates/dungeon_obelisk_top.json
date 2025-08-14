@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "obelisks_state=0":  { "model": "kubejs:block/dungeon_obelisk_top" },
+    "obelisks_state=1":  { "model": "kubejs:block/dungeon_obelisk_top" },
+    "obelisks_state=2":  { "model": "kubejs:block/dungeon_obelisk_top" },
+    "obelisks_state=3":  { "model": "kubejs:block/dungeon_obelisk_top" }
+  }
+}

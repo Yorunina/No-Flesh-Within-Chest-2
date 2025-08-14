@@ -93,22 +93,6 @@ function GetAreaPlayerList(level, area) {
 
 /**
  * 
- * @param {Internal.Level} level 
- * @param {Internal.Area} area
- * @param {number} state 
- * @returns 
- */
-function SetDungeonObeliskState(level, area, state) {
-    let blockPos = GetAreaObeliskBlockPos(area)
-    let blockState = level.getBlockState(blockPos)
-    let upperBlockState = level.getBlockState(blockPos.above())
-    if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF) || !upperBlockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
-    level.setBlockAndUpdate(blockPos, blockState.setValue(OBELISK_STATE, Int2Integer(state)))
-    level.setBlockAndUpdate(blockPos.above(), upperBlockState.setValue(OBELISK_STATE, Int2Integer(state)))
-}
-
-/**
- * 
  * @param {Internal.SpawnMobAreaKubeEvent} context 
  * @returns 
  */

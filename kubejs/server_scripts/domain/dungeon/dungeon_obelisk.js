@@ -1,93 +1,54 @@
 // priority: 500
-BlockEvents.broken('kubejs:dungeon_obelisk', event => {
+// 石碑上下位置同步破坏
+BlockEvents.broken('kubejs:dungeon_obelisk_base', event => {
     const block = event.block
     const level = event.level
-    if (!block.getBlockState().hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
-    const half = block.getBlockState().getValue(BlockProperties.DOUBLE_BLOCK_HALF)
     const pos = block.getPos()
-    switch (half) {
-        case 'lower':
-            let aboveBlock = level.getBlock(pos.above())
-            if (aboveBlock.id != 'kubejs:dungeon_obelisk') return
-            level.setBlock(pos.above(), Blocks.AIR.defaultBlockState(), 3)
-            break
-        case 'upper':
-            let belowBlock = level.getBlock(pos.below())
-            if (belowBlock.id != 'kubejs:dungeon_obelisk') return
-            level.setBlock(pos.below(), Blocks.AIR.defaultBlockState(), 3)
-            break
-    }
+    const abovePos = pos.above()
+    let aboveBlock = level.getBlock(abovePos)
+    if (aboveBlock.id != 'kubejs:dungeon_obelisk_top') return
+    level.setBlock(abovePos, Blocks.AIR.defaultBlockState(), 3)
 })
 
-BlockEvents.placed('kubejs:dungeon_obelisk', event => {
+BlockEvents.broken('kubejs:dungeon_obelisk_top', event => {
     const block = event.block
     const level = event.level
-    if (!block.getBlockState().hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
-    const half = block.getBlockState().getValue(BlockProperties.DOUBLE_BLOCK_HALF)
     const pos = block.getPos()
-    switch (half) {
-        case 'lower':
-            level.setBlock(pos.above(), block.blockState.setValue(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.UPPER), 3)
-            let obeliskBlockEntity = level.getBlockEntity(pos)
-            obeliskBlockEntity.persistentData.putString('purifyAction', 'default')
-            break
-        case 'upper':
-            level.setBlock(pos.below(), block.getBlockState().set(BlockProperties.DOUBLE_BLOCK_HALF, $DoubleBlockHalf.LOWER), 3)
-            break
-    }
+    const belowPos = pos.below()
+    let belowBlock = level.getBlock(belowPos)
+    if (belowBlock.id != 'kubejs:dungeon_obelisk_base') return
+    level.setBlock(belowPos, Blocks.AIR.defaultBlockState(), 3)
 })
 
-BlockEvents.rightClicked('kubejs:dungeon_obelisk', event => {
-    let block = event.block
+// 石碑上下位置同步放置
+BlockEvents.placed('kubejs:dungeon_obelisk_base', event => {
+    const block = event.block
     const level = event.level
-    const player = event.player
-    if (event.hand != 'main_hand') return
+    const pos = block.getPos()
+    const abovePos = pos.above()
+    level.setBlock(abovePos, Block.getBlock('kubejs:dungeon_obelisk_top').defaultBlockState(), 3)
+    let obeliskBlockEntity = level.getBlockEntity(pos)
+    obeliskBlockEntity.persistentData.putString('purifyAction', 'default')
+})
 
-    if (level.getDifficulty().getId() == 0) {
-        player.setStatusMessage(Text.translatable('status_msg.kubejs.dungeon_obelisk.cannot_active_for_peacful'))
-        return
-    }
+BlockEvents.placed('kubejs:dungeon_obelisk_top', event => {
+    const block = event.block
+    const level = event.level
+    const pos = block.getPos()
+    const belowPos = pos.below()
+    level.setBlock(belowPos, Block.getBlock('kubejs:dungeon_obelisk_base').defaultBlockState(), 3)
+    let obeliskBlockEntity = level.getBlockEntity(belowPos)
+    obeliskBlockEntity.persistentData.putString('purifyAction', 'default')
+})
 
-    let blockState = block.getBlockState()
-    if (!blockState.hasProperty(OBELISK_STATE)) return
-    if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF)) return
-    let blockPos = block.getPos()
-    if (blockState.getValue(BlockProperties.DOUBLE_BLOCK_HALF) == $DoubleBlockHalf.UPPER) {
-        blockPos = blockPos.below()
-        block = level.getBlock(blockPos)
-        blockState = block.getBlockState()
-        if (!blockState.hasProperty(BlockProperties.DOUBLE_BLOCK_HALF) || blockState.getValue(BlockProperties.DOUBLE_BLOCK_HALF) != $DoubleBlockHalf.LOWER) return
-    }
-
-    let stage = blockState.getValue(OBELISK_STATE).intValue()
-    let upperBlockPos = blockPos.above()
-    let upperBlockState = level.getBlockState(upperBlockPos)
-    let obeliskBlockEntity = level.getBlockEntity(blockPos)
-    if (!obeliskBlockEntity) return
-    const persistentData = obeliskBlockEntity.getPersistentData()
-    switch (stage) {
-        case 0:
-            if (!persistentData.contains('spawnId')) return
-            let spawnId = persistentData.getString('spawnId')
-            if (spawnId.length == 0) return
-            let area = GenDungeonLevelArea(level, blockPos)
-            if (!area) return
-            let manager = LoquatAreaManager.of(level)
-            let areaEvent = new $SpawnMobAreaKubeEvent(area, spawnId, 1, 0)
-            let areaPersistentData = area.getPersistentData()
-            areaPersistentData.put('obeliskBlockPos', ConvertPos2Nbt(blockPos))
-            if (persistentData.contains('dungeonAttr')) {
-                areaPersistentData.put('dungeonAttr', persistentData.get('dungeonAttr'))
-            }
-            manager.addEvent(areaEvent)
-            break
-        case 1:
-            break
-        case 2:
-            level.setBlockAndUpdate(blockPos, blockState.setValue(OBELISK_STATE, Int2Integer(3)))
-            level.setBlockAndUpdate(upperBlockPos, upperBlockState.setValue(OBELISK_STATE, Int2Integer(3)))
-            break
-        default:
-            break
-    }
+// 右键事件同步
+BlockEvents.rightClicked('kubejs:dungeon_obelisk_top', event => {
+    const block = event.block
+    const level = event.level
+    const pos = block.getPos()
+    const belowPos = pos.below()
+    let belowBlock = level.getBlock(belowPos)
+    if (belowBlock.id != 'kubejs:dungeon_obelisk_base') return
+    let machineTile = level.getBlockEntity(belowPos)
+    $CustomMachineContainer.open(event.player, machineTile)
 })

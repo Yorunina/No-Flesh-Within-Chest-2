@@ -112,3 +112,7 @@ const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api
 const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
 const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living.ShieldBlockEvent')
 const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')
+
+
+const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineContainer')
+const $MachineTile = Java.loadClass('fr.frinn.custommachinery.api.machine.MachineTile')

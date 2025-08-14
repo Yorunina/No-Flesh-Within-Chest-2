@@ -1,0 +1,178 @@
+{
+    "name": "block.kubejs.dungeon_obelisk",
+    "appearance": {
+        "custommachinery:block": "kubejs:machine/dungeon_obelisk",
+        "running": {
+            "light": 15,
+            "custommachinery:block": "kubejs:machine/dungeon_obelisk"
+        }
+    },
+    "tooltips": [],
+    "components": [
+        {
+            "type": "custommachinery:item",
+            "id": "input_1",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_2",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_3",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_4",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_5",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_6",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_7",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_8",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "input_9",
+            "mode": "input"
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "paper_input",
+            "mode": "input",
+            "filter": [
+                "minecraft:paper"
+            ],
+            "whitelist": true
+        },
+        {
+            "type": "custommachinery:item",
+            "id": "menu_output",
+            "mode": "output"
+        }
+    ],
+    "gui": [
+        {
+            "type": "custommachinery:player_inventory",
+            "x": 7,
+            "y": 83,
+            "width": 162,
+            "height": 76,
+            "texture": "kubejs:textures/gui/player_inventory.png"
+        },
+        {
+            "type": "custommachinery:background",
+            "texture": "kubejs:textures/gui/dungeon_obelisk_background.png",
+            "width": 176,
+            "height": 166
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 9,
+            "y": 19,
+            "id": "input_1",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 26,
+            "y": 19,
+            "id": "input_2",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 43,
+            "y": 19,
+            "id": "input_3",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 60,
+            "y": 19,
+            "id": "input_4",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 77,
+            "y": 19,
+            "id": "input_5",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 94,
+            "y": 19,
+            "id": "input_6",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 111,
+            "y": 19,
+            "id": "input_7",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 128,
+            "y": 19,
+            "id": "input_8",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 145,
+            "y": 19,
+            "id": "input_9",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 143,
+            "y": 47,
+            "id": "paper_input",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:slot",
+            "x": 77,
+            "y": 47,
+            "id": "menu_output",
+            "texture": "kubejs:textures/gui/solt_transparent.png"
+        },
+        {
+            "type": "custommachinery:button",
+            "x": 127,
+            "y": 42,
+            "id": "menu_button",
+            "texture": "kubejs:textures/gui/menu_button.png",
+            "texture_toogle": "kubejs:textures/gui/menu_button_pressed.png",
+            "texture_hovered": "kubejs:textures/gui/menu_button_pressed.png",
+            "texture_toogle_hovered": "kubejs:textures/gui/menu_button_pressed.png",
+            "hold_time": 20
+        }
+    ],
+    "jei": [],
+    "catalysts": []
+}
