@@ -75,7 +75,7 @@ const MagicOverloadHover = Text.translatable('tooltips.kubejs.hover.magic_overlo
         Text.translatable('tooltips.kubejs.hover.magic_overload.0').aqua(),
         Text.translatable('tooltips.kubejs.hover.magic_overload.1'),
     ]))
-    
+
 const ChestcavityTypeHover = Text.translatable('tooltips.kubejs.hover.chestcavity_type.0').gold().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.chestcavity_type.0').gold(),
@@ -121,4 +121,18 @@ const TimeStabilityHover = Text.translatable('tooltips.kubejs.hover.time_stabili
         Text.translatable('tooltips.kubejs.hover.time_stability.0').gray(),
         Text.translatable('tooltips.kubejs.hover.time_stability.1'),
     ]))
-    
+
+const ExperimentalWorldEditObeliskHover = Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.1'),
+        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.2'),
+        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.3'),
+    ]))
+
+const RepairProtocolHover = Text.translatable('tooltips.kubejs.hover.repair_protocol.0').red().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.repair_protocol.0').red(),
+        Text.translatable('tooltips.kubejs.hover.repair_protocol.1'),
+        Text.translatable('tooltips.kubejs.hover.repair_protocol.2'),
+    ]))

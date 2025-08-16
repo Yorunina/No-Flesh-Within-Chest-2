@@ -1,7 +1,12 @@
 // priority: 1000
 // 工具（具有独立功能的物品）
 StartupEvents.registry('item', event => {
-    event.create('dungeon_key').maxStackSize(1).texture('kubejs:item/tools/dungeon_key')
+    event.create('kubejs:signal_launch_permit').maxStackSize(1).texture('kubejs:item/tool/signal_launch_permit')
+    event.create('kubejs:preset_structure_data_storage').maxStackSize(1).texture('kubejs:item/tool/preset_structure_data_storage')
+    event.create('kubejs:rule_structure_data_storage').maxStackSize(1).texture('kubejs:item/tool/rule_structure_data_storage')
+    event.create('kubejs:extract_loot_data_storage').maxStackSize(1).texture('kubejs:item/tool/extract_loot_data_storage')
+    event.create('kubejs:biome_data_storage').maxStackSize(1).texture('kubejs:item/tool/biome_data_storage')
+
     event.create('plastic_stem_cells').maxStackSize(1).texture('kubejs:item/tools/plastic_stem_cells')
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
         food.hunger(1).saturation(1).alwaysEdible().eaten(event => {
