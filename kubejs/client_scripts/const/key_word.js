@@ -136,3 +136,11 @@ const RepairProtocolHover = Text.translatable('tooltips.kubejs.hover.repair_prot
         Text.translatable('tooltips.kubejs.hover.repair_protocol.1'),
         Text.translatable('tooltips.kubejs.hover.repair_protocol.2'),
     ]))
+
+const EntityEditProtocolHover = Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.0').red().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.0').red(),
+        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.1'),
+        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.2'),
+        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.3'),
+    ]))

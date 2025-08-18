@@ -1,22 +1,74 @@
 // priority: 500
+const DungeonObeliskBiomeTypeMap = {}
+const DungeonObeliskPurifyActionTypeMap = {}
+/**
+ * 
+ * @param {String} biomeInput 
+ * @param {String} biome 
+ */
+function RegisteyDungeonObeliskBiomeType(biomeInput, biome) {
+    DungeonObeliskBiomeTypeMap[biomeInput] = biome
+}
+/**
+ * 
+ * @param {String} purifyActionInput 
+ * @param {String} purifyAction 
+ */
+function RegisteyDungeonObeliskPurifyActionType(purifyActionInput, purifyAction) {
+    DungeonObeliskPurifyActionTypeMap[purifyActionInput] = purifyAction
+}
+
+
 ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:dungeon_obelisk', 180)
-        .requireItem('kubejs:signal_launch_permit', 'permit_input')
-        .requireFunctionOnStart(ctx => {
-            const machine = ctx.machine
-            const block = ctx.block
-            const level = block.level
-            const typeInput = machine.getItemStored()
-
-            return ctx.success()
-        })
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.machine
             const block = ctx.block
             const level = block.level
+            const pos = block.getPos()
+
+            let permitItem = machine.getItemStored('permit_input')
+            let permitLevel = 1
+            if (permitItem.hasNBT() && permitItem.getNbt().contains('level')) {
+                permitLevel = permitItem.getNbt().getInt('level')
+            }
+
+            let biomeInput = machine.getItemStored('biome_input')
+            let biomeInputStr = biomeInput ? biomeInput.id.toString() : 'random'
+            let dataStorageInput = machine.getItemStored('data_storage_input')
+            let dataStorageInputStr = dataStorageInput ? dataStorageInput.id.toString() : 'random'
+            let customInput1 = machine.getItemStored('custom_input_1')
+            let customInput2 = machine.getItemStored('custom_input_2')
+            let customInput3 = machine.getItemStored('custom_input_3')
+
+            let targetBiomeType = DungeonObeliskBiomeTypeMap[biomeInputStr] ?
+                DungeonObeliskBiomeTypeMap[biomeInputStr] :
+                DungeonObeliskBiomeTypeMap[RandomGet(Object.keys(DungeonObeliskBiomeTypeMap))]
+
+            let purifyActionType = DungeonObeliskPurifyActionTypeMap[dataStorageInputStr] ?
+                DungeonObeliskPurifyActionTypeMap[dataStorageInputStr] :
+                DungeonObeliskPurifyActionTypeMap[RandomGet(Object.keys(DungeonObeliskPurifyActionTypeMap))]
+
+
+            let area = GenDungeonLevelArea(level, pos)
+            if (!area) return ctx.error()
+            let areaPersistData = area.getPersistentData()
+            areaPersistData.putString('targetBiomeType', targetBiomeType)
+            areaPersistData.putString('purifyActionType', purifyActionType)
+            areaPersistData.put('actionInputItem1', ConverItemStack2NBT(customInput1.withCount(1)))
+            areaPersistData.put('actionInputItem2', ConverItemStack2NBT(customInput2.withCount(1)))
+            areaPersistData.put('actionInputItem3', ConverItemStack2NBT(customInput3.withCount(1)))
+
+            machine.setItemStored('custom_input_1', customInput1.withCount(customInput1.getCount() - 1))
+            machine.setItemStored('custom_input_2', customInput2.withCount(customInput2.getCount() - 1))
+            machine.setItemStored('custom_input_3', customInput3.withCount(customInput3.getCount() - 1))
+
+            let manager = LoquatAreaManager.of(level)
+            manager.addEvent(new $SpawnMobAreaKubeEvent(area, 'killAmountTask_ZombieGroupTask_1', 1, 0))
 
             return ctx.success()
         })
+        .requireItem('kubejs:signal_launch_permit', 'permit_input')
         .requireButtonPressed('launch_button')
         .resetOnError()
 })

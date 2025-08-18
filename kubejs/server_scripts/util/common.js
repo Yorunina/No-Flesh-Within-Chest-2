@@ -228,4 +228,3 @@ function SliceChunkArray(array, chunkSize) {
 function Clamp(num, min, max) {
     return Math.min(Math.max(num, min), max)
 }
-

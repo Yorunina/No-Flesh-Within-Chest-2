@@ -5,7 +5,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:preset_structure_data_storage').maxStackSize(1).texture('kubejs:item/tool/preset_structure_data_storage')
     event.create('kubejs:rule_structure_data_storage').maxStackSize(1).texture('kubejs:item/tool/rule_structure_data_storage')
     event.create('kubejs:extract_loot_data_storage').maxStackSize(1).texture('kubejs:item/tool/extract_loot_data_storage')
-    event.create('kubejs:biome_data_storage').maxStackSize(1).texture('kubejs:item/tool/biome_data_storage')
 
     event.create('plastic_stem_cells').maxStackSize(1).texture('kubejs:item/tools/plastic_stem_cells')
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {

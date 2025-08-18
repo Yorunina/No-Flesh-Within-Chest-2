@@ -20,17 +20,6 @@ ItemEvents.tooltip(tooltip => {
     })
 
 
-    tooltip.addAdvanced('kubejs:biome_data_storage', (item, advanced, text) => {
-        let lineNum = 1
-        lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.biome_data_storage.default.1`).gray()], lineNum)
-        if (tooltip.isShift()) {
-            lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.tool.shift_holding.1`)], lineNum)
-            lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.biome_data_storage.shift.1`, ExperimentalWorldEditObeliskHover)], lineNum)
-            lineNum = AddForTextLines(text, [Text.translatable(`tooltips.kubejs.biome_data_storage.shift.2`, RepairProtocolHover)], lineNum)
-        } else {
-            lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.tool.shift.1`)], lineNum)
-        }
-    })
 
     tooltip.addAdvanced('kubejs:preset_structure_data_storage', (item, advanced, text) => {
         let lineNum = 1

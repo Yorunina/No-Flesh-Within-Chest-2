@@ -8,14 +8,8 @@ function DoPurifyAction(level, area) {
     const obeliskBlockPos = GetAreaObeliskBlockPos(area)
     if (!obeliskBlockPos) return
     const obeliskBlockEntity = level.getBlockEntity(obeliskBlockPos)
-    let purifyActionType = GetObeliskPurifyActionType(obeliskBlockEntity)
-    if (purifyActionType == 'default') {
-        let weightRandomModel = new WeightRandomModel()
-        weightRandomModel.addWeightRandom('preset_skyland', 4)
-        weightRandomModel.addWeightRandom('gen_sphere', 1)
-        weightRandomModel.addWeightRandom('addition_loot', 1)
-        purifyActionType = weightRandomModel.getWeightRandomObj()
-    }
+    if (!area.persistentData.contains('purifyActionType')) return
+    let purifyActionType = area.persistentData.getString('purifyActionType')
     switch (purifyActionType) {
         case 'preset_skyland':
             genPresetSkyland(level, obeliskBlockPos)

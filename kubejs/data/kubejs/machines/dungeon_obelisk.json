@@ -11,11 +11,6 @@
     "components": [
         {
             "type": "custommachinery:item",
-            "id": "biome_data_storage_input",
-            "mode": "input"
-        },
-        {
-            "type": "custommachinery:item",
             "id": "biome_input",
             "mode": "input"
         },
@@ -59,13 +54,6 @@
             "texture": "kubejs:textures/gui/dungeon_obelisk_background.png",
             "width": 176,
             "height": 166
-        },
-        {
-            "type": "custommachinery:slot",
-            "x": 9,
-            "y": 19,
-            "id": "biome_data_storage_input",
-            "texture": "kubejs:textures/gui/solt_transparent.png"
         },
         {
             "type": "custommachinery:slot",

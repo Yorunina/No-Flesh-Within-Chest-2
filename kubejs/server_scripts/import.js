@@ -11,6 +11,7 @@ const $PalettedContainer = Java.loadClass('net.minecraft.world.level.chunk.Palet
 const $StructureMode = Java.loadClass('net.minecraft.world.level.block.state.properties.StructureMode')
 const $MobEffects = Java.loadClass('net.minecraft.world.effect.MobEffects')
 const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
+const $Player = Java.loadClass('net.minecraft.world.entity.player.Player')
 const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')

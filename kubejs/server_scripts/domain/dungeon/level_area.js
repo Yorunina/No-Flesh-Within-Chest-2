@@ -16,12 +16,14 @@ function GenDungeonLevelArea(level, centerPos) {
         rightConner
     )
 
+    // let players = level.getEntitiesOfClass($Player, aabb, _ => true)
     let players = level.getPlayers()
-    if (players.length == 0) return false
+    if (players.length == 0) return null
 
     let area = new $AABBArea(aabb)
     area.setUuid($UUID.randomUUID())
     let levelManager = LoquatAreaManager.of(level)
+    if (levelManager.byPosition(centerPos).length > 0) return null
     if (levelManager.contains(area)) return null
     levelManager.add(area)
 

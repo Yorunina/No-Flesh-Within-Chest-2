@@ -187,14 +187,3 @@ function SpawnLootAtLocation(level, blockPos, lootList) {
     })
 }
 
-
-/**
- * 获取净化行为（副本成功结束后的某种特殊行为）
- * @param {Internal.BlockEntity} blockEntity 
- * @returns 
- */
-function GetObeliskPurifyActionType(blockEntity) {
-    if (!blockEntity) return 'default'
-    const persistentData = blockEntity.persistentData
-    return persistentData.contains('purifyAction') ? persistentData.getString('purifyAction') : 'default'
-}

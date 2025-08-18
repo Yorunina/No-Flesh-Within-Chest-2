@@ -16,14 +16,12 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
         if (!DungeonSpawnerIdMap[context.spawnerId]) {
             // 未知状态，直接回收，但允许重试
             recycleArea(areaManager, area)
-            SetDungeonObeliskState(level, area, 0)
             return
         }
         /**@type {DungeonEventActionModel} */
         let dungeonEventModel = DungeonSpawnerIdMap[context.spawnerId]
         customDataMap.put('dungeonEventAction', dungeonEventModel)
         dungeonEventModel.initAction(level, context, areaManager)
-        SetDungeonObeliskState(level, area, 1)
     }
 
     /**@type {DungeonEventActionModel} */
@@ -49,7 +47,6 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
                 if (!waveAction.endTester(level, context, areaManager)) {
                     waveAction.finishAction(level, context, areaManager, false)
                     dungeonEventModel.finishAction(level, context, areaManager, false)
-                    SetDungeonObeliskState(level, area, 3)
                     recycleArea(areaManager, area)
                     return
                 } else {
@@ -72,7 +69,6 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
         default:
             // 未知状态，直接回收，并且置灰，禁止重试
             recycleArea(areaManager, area)
-            SetDungeonObeliskState(level, area, 3)
             return
     }
 })
@@ -86,7 +82,6 @@ LoquatEvents.areaSpawnMobWaveTick(event => {
  */
 function dungeonSuccessAction(level, context, areaManager, dungeonEventModel) {
     dungeonEventModel.finishAction(level, context, areaManager, true)
-    SetDungeonObeliskState(level, context.area, 2)
     recycleArea(areaManager, context.area)
     DoPurifyAction(level, context.area)
 }
