@@ -927,7 +927,7 @@
     "power.kubejs.tinker_heart.name": "神造匠心",
     "power.kubejs.tinker_heart.description": "胸腔的第13格被固定替换为神造匠心，使得你能够为武器添加额外的强化槽",
     "power.kubejs.tinker_forge.name": "锻炉传",
-    "power.kubejs.tinker_forge.description": "通过粘土块制作焦炉砖的配方产出翻倍",
+    "power.kubejs.tinker_forge.description": "通过粘土块批量制作砖泥的配方产出翻倍",
     "power.kubejs.tinker_less_exp_gain.name": "固执",
     "power.kubejs.tinker_less_exp_gain.description": "常年的匠造经历使你否定了其他工具的存在价值，获得经验量变为常规的一半",
     "_comment.spell": "法术",

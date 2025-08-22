@@ -1,8 +1,8 @@
 {
     "type": "origins:modify_crafting",
-    "recipe": "create:crafting/materials/andesite_alloy_from_zinc",
+    "recipe": "tconstruct:smeltery/seared/grout_multiple",
     "result": {
-        "item": "create:andesite_alloy",
-        "amount": 2
+        "item": "tconstruct:grout",
+        "amount": 16
     }
 }
