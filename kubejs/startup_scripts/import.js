@@ -19,6 +19,7 @@ const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.p
 const $Integer = Java.loadClass('java.lang.Integer')
 const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance')
 const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
+const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
 
 const $FireBomb = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magma_ball.FireBomb')
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')

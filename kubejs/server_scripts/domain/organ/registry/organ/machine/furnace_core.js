@@ -28,7 +28,7 @@ function FurnaceCoreEntityTickDefer(customData, event, organItem, organIndex, sl
         value = 1
         let oldModifier = attributeInstance.getModifier(FurnaceCoreTempAttackUpUUID)
         if (oldModifier) value = oldModifier.amount + value
-        if (slotType != RevolutionFlame) value = Math.min(value, 300)
+        if (slotType != RevolutionFlame) value = Math.min(value, 200)
 
         let attributeModifier = new $AttributeModifier(FurnaceCoreTempAttackUpUUID, 'FurnaceCoreTempAttackUp', value, $Operation.ADDITION)
 
@@ -223,7 +223,7 @@ function BurningHeartEntityTickDefer(customData, event, organItem, organIndex, s
         if (entity instanceof $ServerPlayer) {
             let organEffect = new OragnEffectModel(replaceItem).setPriority(organIndex).setCustomText((replaceItem.getMaxDamage() - replaceItem.getDamageValue()).toFixed(0))
             SetOrganEffect(chestCavity, organEffect)
-            CommonDingNotice(sourceEntity.level, sourceEntity)
+            CommonDingNotice(entity.level, entity)
         }
     }
 }

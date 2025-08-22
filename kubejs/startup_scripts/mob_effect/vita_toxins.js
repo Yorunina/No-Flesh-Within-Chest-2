@@ -6,7 +6,7 @@ StartupEvents.registry('mob_effect', event => {
             if (entity.age % 40 != 0) return
             if (!(entity.isLiving() && entity instanceof $PathfinderMob)) return
             const level = entity.level
-            /**@type {String} */
+            /**@type {UUID} */
             let vitaToxinsSource = GetVitaToxinsSource(entity)
             if (!vitaToxinsSource) return
             const sourceEntity = $CommonUtil.getEntityByUUID(level, vitaToxinsSource)
