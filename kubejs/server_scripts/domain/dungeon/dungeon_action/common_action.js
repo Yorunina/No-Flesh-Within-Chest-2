@@ -40,7 +40,7 @@ function CommonDungeonFinishAction(level, context, areaManager, isWin) {
         const lootLevel = Math.min(Math.floor(difficulty / 10), 10)
         let lootPlayer = GetLuckestLootPlayer(playerList)
 
-        let lootList = Utils.rollChestLoot(`kubejs:common_dungeon_loot_${lootLevel}`, lootPlayer)
+        let lootList = Utils.rollChestLoot(`kubejs:dungeon_loot/common_${lootLevel}`, lootPlayer)
         ApplyLootModifier(level, context, areaManager, lootList, dungeonAttr)
         SpawnDungeonLoot(level, area, lootList)
 

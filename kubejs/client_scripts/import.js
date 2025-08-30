@@ -25,7 +25,6 @@ const $ScreenshakeInstance = Java.loadClass('team.lodestar.lodestone.systems.scr
 const $ScreenshakeHandler = Java.loadClass('team.lodestar.lodestone.handlers.ScreenshakeHandler')
 const $Easing = Java.loadClass('team.lodestar.lodestone.systems.easing.Easing')
 
-const $SkillWheelOverlay = Java.loadClass('net.tigereye.chestcavity.ui.SkillWheelOverlay')
 const $RenderLevelStageEvent = Java.loadClass("net.minecraftforge.client.event.RenderLevelStageEvent")
 const $RenderLevelStageEventStage = Java.loadClass("net.minecraftforge.client.event.RenderLevelStageEvent$Stage")
 const $RenderSystem = Java.loadClass("com.mojang.blaze3d.systems.RenderSystem")

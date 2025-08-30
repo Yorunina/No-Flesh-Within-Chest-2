@@ -10,6 +10,10 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:nature', ['crittersandcompanions:dragonfly_wing'])
 
+    event.add('kubejs:organ', ['chestcavity:tinker_heart'])
+    event.add('tconstruct:modifiable/durability', ['chestcavity:tinker_heart'])
+    event.add('tconstruct:modifiable/multipart', ['chestcavity:tinker_heart'])
+
     event.add('exposure:flashes', [])
     event.add('exposure:lenses', ['kubejs:exorcism_lens'])
     event.add('exposure:filters', [])
