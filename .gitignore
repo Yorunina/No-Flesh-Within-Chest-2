@@ -56,3 +56,4 @@ config/jade/sort-order.json
 config/jade/plugins.json
 kubejs/probe/
 log/graphene-event-debug.log
+/config/SDMShop/shops
