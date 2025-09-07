@@ -11,8 +11,10 @@ LootJS.modifiers(context => {
             let modifier = mainHandTool.getModifier(SoulHunterModifier)
             if (!modifier) return
             const target = event.getEntity()
-            event.addLoot(LootEntry.of('kubejs:soul_crystal', 1, {
-                'EntityId': target.type
-            }))
+            if (Math.random() < modifier.getLevel() * 0.05) {
+                event.addLoot(LootEntry.of('kubejs:soul_crystal', 1, {
+                    'EntityType': target.type
+                }))
+            }
         })
 })

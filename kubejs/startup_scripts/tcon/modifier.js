@@ -62,11 +62,11 @@ TConJSEvents.modifierRegistry(event => {
     })
 
     // 薄葬
-    event.createNew('shallow_grave', builder => {
-        builder.projectileHitBlock((toolView, data, lvl, projectile, hitResult, entity) => {
-            entity.potionEffects.add('potioncore:revival', 20 * 3 * lvl)
-        })
-    })
+    // event.createNew('shallow_grave', builder => {
+    //     builder.projectileHitBlock((toolView, data, lvl, projectile, hitResult, entity) => {
+    //         entity.potionEffects.add('potioncore:revival', 20 * 3 * lvl)
+    //     })
+    // })
 
 
     // 胸腔活化
@@ -82,5 +82,22 @@ TConJSEvents.modifierRegistry(event => {
     })
 
     // 猎魂：击杀敌人之后获得对应的灵魂
-    event.createNew('soul_hunter', builder => {})
+    event.createNew('soul_hunter', builder => { })
+
+    event.createNew('freezing', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            /**@type {Internal.PathfinderMob} */
+            const target = context.target
+            let forzenTicks = target.getTicksFrozen()
+            target.setTicksFrozen(forzenTicks + 20 * lvl)
+        })
+    })
+    event.createNew('burning', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            /**@type {Internal.PathfinderMob} */
+            const target = context.target
+            let fireTicks = target.getRemainingFireTicks()
+            target.setRemainingFireTicks(fireTicks + 20 * lvl)
+        })
+    })
 })

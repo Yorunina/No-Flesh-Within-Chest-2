@@ -1,8 +1,16 @@
 {
-    "default": [
-        {
-            "level": 1,
-            "name": "kubejs:soul_hunter"
-        }
+  "perStat": {
+    "tconstruct:ranged": [
+      {
+        "name": "kubejs:soul_hunter",
+        "level": 1
+      }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "name": "kubejs:soul_hunter",
+        "level": 1
+      }
     ]
+  }
 }

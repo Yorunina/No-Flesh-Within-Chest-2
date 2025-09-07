@@ -13,6 +13,14 @@ function AddForTextLines(text, textLines, initNum) {
 }
 
 /**
+ * @param {string} mobType 
+ * @returns {Internal.MutableComponent}
+ */
+function GetMobNameByType(mobType) {
+    return Text.translate('entity.' + mobType.replace(':', '.'))
+}
+
+/**
  * 
  * @param {string} separator 
  * @param {Internal.MutableComponent[]} list 
