@@ -73,3 +73,14 @@ function GenLootrChestWithLootTable(level, pos, table) {
     level.setBlock(pos, placementState, 2)
     $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
 }
+
+/**
+ * 生成一个随机的MonoBank并返回实体
+ * @param {Internal.Level} level 
+ * @param {BlockPos} pos 
+ * @returns {Internal.MonobankLock}
+ */
+function GenerateMonoBankWithLock(level, pos) {
+    level.setBlockAndUpdate(pos, Block.getBlock('monobank:monobank').defaultBlockState())
+    return level.getBlockEntity(pos)
+}

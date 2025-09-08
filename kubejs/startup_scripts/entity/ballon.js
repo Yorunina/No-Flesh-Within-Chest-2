@@ -75,5 +75,4 @@ EntityJSEvents.attributes(event => {
             attribute.add('minecraft:generic.attack_damage', 0.0)
         })
     })
-
 })

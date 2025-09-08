@@ -5,7 +5,7 @@ ItemEvents.entityInteracted('minecraft:shears', event => {
     const player = event.player
     
 
-    if (!target.type.indexOf('airdrop') < 0) return
+    if (!target.type.indexOf('airdrop') <= 0) return
     if (event.getHand() != 'main_hand') return
     if (player && player.isCrouching()) return
     target.kill()

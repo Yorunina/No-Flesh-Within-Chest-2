@@ -14,3 +14,7 @@ InfinityEvents.itemInNetherPortal(event => {
         if (isSucc) itemEntity.remove('changed_dimension')
     }
 })
+
+InfinityEvents.infinityDimAdded(event => {
+
+})

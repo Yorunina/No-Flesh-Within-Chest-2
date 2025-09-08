@@ -1,6 +1,8 @@
 // priority: 500
 // todo kubeloader加回来
 
+
+
 // ExposureEvents.modifyFrameData(event => {
 //     const player = event.player
 //     const server = event.server
@@ -43,6 +45,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
+
     // player.sendData('apply_visual_effect')
 
 

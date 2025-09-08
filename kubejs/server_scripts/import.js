@@ -118,3 +118,5 @@ const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect
 
 const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineContainer')
 const $MachineTile = Java.loadClass('fr.frinn.custommachinery.api.machine.MachineTile')
+
+const $MonobankBlockEntity = Java.loadClass('io.github.mortuusars.monobank.content.monobank.MonobankBlockEntity')
