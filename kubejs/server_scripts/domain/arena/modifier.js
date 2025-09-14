@@ -16,6 +16,7 @@ SkyArenaEvents.arenaMobSpawn(event => {
                     }
                 }
             })
-        }S
+        }
     })
 })
+

@@ -31,3 +31,5 @@ const $SummonedZombie = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.
 const $SummonedSkeleton = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton')
 const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')
 const $ExtendedEvokerFang = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.ExtendedEvokerFang')
+
+const $AltarBlockEntity = Java.loadClass('net.jrdemiurge.skyarena.block.entity.AltarBlockEntity')

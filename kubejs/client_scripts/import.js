@@ -39,3 +39,6 @@ const $UVRange = Java.loadClass('com.chen1335.renderjs.utils.UVRange')
 
 const $Float = Java.loadClass('java.lang.Float')
 const $Integer = Java.loadClass('java.lang.Integer')
+
+const $AltarBlock = Java.loadClass('net.jrdemiurge.skyarena.block.custom.AltarBlock')
+const $AltarBlockTop = Java.loadClass('net.jrdemiurge.skyarena.block.custom.AltarBlockTop')

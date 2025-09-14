@@ -3,6 +3,7 @@ const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $ListTag = Java.loadClass('net.minecraft.nbt.ListTag')
 const $UUID = Java.loadClass('java.util.UUID')
 const $StructurePlaceSettings = Java.loadClass('net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings')
+const $BlockStatePredicate = Java.loadClass('dev.latvian.mods.kubejs.block.state.BlockStatePredicate')
 const $ChunkPos = Java.loadClass('net.minecraft.world.level.ChunkPos')
 const $Mirror = Java.loadClass('net.minecraft.world.level.block.Mirror')
 const $Rotation = Java.loadClass('net.minecraft.world.level.block.Rotation')
@@ -115,3 +116,6 @@ const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.
 const $MachineTile = Java.loadClass('fr.frinn.custommachinery.api.machine.MachineTile')
 
 const $MonobankBlockEntity = Java.loadClass('io.github.mortuusars.monobank.content.monobank.MonobankBlockEntity')
+
+const $BlockPatternBuilder = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockPatternBuilder')
+const $BlockInWorld = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockInWorld')

@@ -78,6 +78,9 @@
   "functionalstorage": {
     "armory": true
   },
+  "skyarena": {
+    "altar_block": true
+  },
   "balm": {
     "jade": true
   },
