@@ -6,36 +6,54 @@
 	id: "1C286D75598B7F14"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "53E89D184A95651F"
-		invisible: true
-		tasks: [{
-			id: "6CC3860B042F8AEB"
-			item: {
-				Count: 1
-				id: "itemfilters:and"
-				tag: {
-					items: [
-						{
-							Count: 1b
-							id: "itemfilters:weak_nbt"
-							tag: {
-								value: {
-									aimStructure: "red:birch_deforestation"
-								}
-							}
-						}
-						{
-							Count: 1b
-							id: "exposure:photograph"
-						}
-					]
-				}
-			}
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			can_repeat: true
+			disable_toast: true
+			id: "7BB1EEFDA9053AF4"
+			rewards: [{
+				auto: "enabled"
+				exclude_from_claim_all: true
+				id: "0E0A19E9BFD41E34"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			tasks: [{
+				disable_toast: true
+				elapsedTime: 120L
+				id: "5EE7F645D1F35451"
+				type: "questsadditions:time"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			id: "137DAA9137433E80"
+			rewards: [{
+				id: "637AFCA89B41D61D"
+				type: "custom"
+			}]
+			tasks: [{
+				id: "65B8DBBF84460655"
+				type: "custom"
+			}]
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			id: "0212828A00FBCF57"
+			tasks: [{
+				hasCustomPicture: false
+				id: "3D03AAA8EF7A65B0"
+				ignoreState: false
+				layer: true
+				name: "time_anch_beacon"
+				rightclick: false
+				type: "questsadditions:structure"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+	]
 	title: "原版"
 }

@@ -2117,16 +2117,6 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
-				"laggy": true,
-				"Name": "minecraft:command_block",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:comparator",
