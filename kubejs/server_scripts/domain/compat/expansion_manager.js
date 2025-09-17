@@ -79,7 +79,7 @@
 
 // ServerEvents.commandRegistry(event => {
 //     const { commands: Commands, arguments: Arguments } = event
-//     event.register(
+//     event.Registry(
 //         Commands.literal('nfwc')
 //             .then(Commands.literal('expansion')
 //                 .then(Commands.literal('list')

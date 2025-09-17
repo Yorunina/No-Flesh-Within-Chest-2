@@ -1,5 +1,5 @@
 // priority: 900
-RegisteryOrganTooltip(new MultiStateTooltip('kubejs:ignited_armour')
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:ignited_armour')
     .addDefault(Text.translatable('tooltips.kubejs.ignited_armour.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.ignited_armour.alt.1'))
 )

@@ -25,6 +25,6 @@ EntityEvents.death(event => {
 
 const AirdropDeathStrategy = new StrategyModel()
 
-function RegisterAirDropDeathStrategy(id, func) {
+function RegistryAirDropDeathStrategy(id, func) {
     AirdropDeathStrategy.addStrategy(id, func)
 }

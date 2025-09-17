@@ -105,7 +105,7 @@ MultiStateTooltip.prototype = {
         return this
     },
     registry: function () {
-        RegisteryMultiStateTooltip(this)
+        RegistryMultiStateTooltip(this)
     }
 }
 
@@ -116,6 +116,6 @@ const OrganTooltipRegistryMap = {}
 /**
  * @param {MultiStateTooltip} tooltipModel
  */
-function RegisteryOrganTooltip(tooltipModel) {
+function RegistryOrganTooltip(tooltipModel) {
     OrganTooltipRegistryMap[tooltipModel.itemId] = tooltipModel
 }

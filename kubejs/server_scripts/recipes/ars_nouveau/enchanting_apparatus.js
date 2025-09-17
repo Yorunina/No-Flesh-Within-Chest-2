@@ -22,11 +22,11 @@ ArsEnchantingApparatus.prototype.setKeepNbtOfReagent = function (keepNbtOfReagen
 }
 
 ServerEvents.highPriorityData(event => {
-    function registerCustomRecipe(id, recipeModel) {
+    function RegistryCustomRecipe(id, recipeModel) {
         event.addJson(`kubejs:recipes/ars_enchanting_apparatus/${id}.json`, recipeModel)
     }
 
-    // registerCustomRecipe('dirt', new ArsEnchantingApparatus(
+    // RegistryCustomRecipe('dirt', new ArsEnchantingApparatus(
     //     [
     //         {
     //             "item": "minecraft:stone"

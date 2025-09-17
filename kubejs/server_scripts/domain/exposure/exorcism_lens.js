@@ -1,5 +1,5 @@
 // priority: 500
-RegisterExposureAttachmentStrategy('kubejs:exorcism_lens', ExorcismLensStrategy)
+RegistryExposureAttachmentStrategy('kubejs:exorcism_lens', ExorcismLensStrategy)
 
 /**
  * @param {any} customData 

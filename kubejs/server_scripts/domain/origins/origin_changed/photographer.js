@@ -1,5 +1,5 @@
 // priority: 500
-RegisterOriginChangedStrategy('kubejs:photographer', PhotographerOriginStrategy)
+RegistryOriginChangedStrategy('kubejs:photographer', PhotographerOriginStrategy)
 
 /**
  * @param {any} customData 

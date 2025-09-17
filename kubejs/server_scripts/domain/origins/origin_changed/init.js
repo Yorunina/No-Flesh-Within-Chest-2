@@ -11,6 +11,6 @@ OriginsEvents.originChanged(event => {
 
 const OriginChangedStrategy = new StrategyModel()
 
-function RegisterOriginChangedStrategy(id, func) {
+function RegistryOriginChangedStrategy(id, func) {
     OriginChangedStrategy.addStrategy(id, func)
 }

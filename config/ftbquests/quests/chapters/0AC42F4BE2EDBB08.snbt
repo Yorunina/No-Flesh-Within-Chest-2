@@ -1,0 +1,183 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0AC42F4BE2EDBB08"
+	group: ""
+	icon: "minecraft:oak_log"
+	id: "0AC42F4BE2EDBB08"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"很抱歉在上一个任务采用了特殊的图标来吸引您点击。在数据统计上，具有吸引力的图标和误导性的副标题可以极大的提高您点击的可能性。"
+				""
+				"现在我们应该步入正轨了，&n请寻找一棵树木，并且左键采集它下方的&6原木&r&n，拾取该物品至物品栏中&r。"
+				""
+				"本任务会定期检测您的背包，如果存在该物品，那么任务会被视作完成。"
+			]
+			icon: "minecraft:oak_log"
+			id: "24C2BCAAAF1E55DE"
+			rewards: [{
+				id: "5F3F0778BC6B741C"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			subtitle: "获取类任务"
+			tasks: [{
+				id: "49350BAE6BBF1546"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "任何种类原木"
+				type: "item"
+			}]
+			title: "砍下第一块原木"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24C2BCAAAF1E55DE"]
+			description: [
+				"如引文所说，我的任务是负责所有任务的引导，其中包含了任务系统本身的使用。"
+				""
+				"本任务要求您&n使用原木在合成栏中，将其分解为四个木板，而后将其制成&6工作台&r&r。"
+				""
+				"该任务仅会检测您的合成，因此请务必保证是您亲手完成该系列操作。"
+			]
+			id: "4BEDD898484E1898"
+			rewards: [{
+				id: "320C1FF3DBBE6E8E"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			subtitle: "合成类任务"
+			tasks: [{
+				id: "34F9DD77E5473C23"
+				item: "minecraft:crafting_table"
+				only_from_crafting: true
+				type: "item"
+			}]
+			title: "制作工作台"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4BEDD898484E1898"]
+			description: [
+				"工作台的意义便是解锁更多的配方，在之后的旅途中，绝大多数的配方都需要在工作台中完成。"
+				""
+				"当然，工作台也并不一定需要放置在地面上才能够使用。通过打开自己的背包，对工作台物品按下鼠标右键，可以直接在背包中打开对应的合成界面。"
+				""
+				"现在，您需要合成出一个木镐，并且&n挖掘至少 3 块圆石类方块&r。随后，将您&n&6受损的木镐&r和&n&6圆石&r均提交到本任务&r中。"
+				""
+				"本任务会消耗掉您的木镐和圆石，作为交换，会返还给您性能更为优秀的石镐。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "605D95ACD24F7A46"
+			rewards: [{
+				id: "5785646B03491F69"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 5s
+							}
+						]
+						RepairCost: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "提交类任务"
+			tasks: [
+				{
+					consume_items: true
+					id: "6E1307B08DAD2260"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "0D910E1810D9A4FC"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:cobblestone"
+						}
+					}
+					title: "任意圆石"
+					type: "item"
+				}
+			]
+			title: "制作木镐"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["605D95ACD24F7A46"]
+			description: [
+				"当您学会制作工具之后，第一件事便是不断提高挖掘等级。因此，制作并且使用一个熔炉是一件非常重要的事情。"
+				""
+				"&n通过工作台合成出&6熔炉&r&n，将其放置到地面上，使用鼠标右键打开其界面，便可以完成本任务。&r"
+			]
+			id: "18544E5B62DBC5EF"
+			subtitle: "方块使用类任务"
+			tasks: [{
+				block: "minecraft:furnace"
+				block_type: 0
+				checkItem: false
+				id: "68BEB51F1B755E8D"
+				isItemInteraction: false
+				title: "使用一次熔炉"
+				type: "questsadditions:use"
+				value: 1L
+			}]
+			title: "使用熔炉进行加工"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["18544E5B62DBC5EF"]
+			id: "24908FF341485C05"
+			tasks: [{
+				block: "forge:ores/iron"
+				block_type: 1
+				checkItem: false
+				id: "54746139866A967C"
+				title: "挖掘铁矿石"
+				type: "questsadditions:break"
+				value: 3L
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+	]
+	title: "壹"
+}

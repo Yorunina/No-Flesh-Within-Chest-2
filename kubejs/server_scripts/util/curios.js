@@ -1,12 +1,12 @@
 // priority: 3000
 
 /**
- * 获取 player curios inventory cap
- * @param {Internal.ServerPlayer} player 
+ * 获取 entity curios inventory cap
+ * @param {Internal.Entity} entity 
  * @returns {Internal.ICuriosItemHandler}
  */
-function GetPlayerCuriosInventoryCap(player) {
-    let curiosCap = player.getCapability(CuriosCapabilities.INVENTORY)
+function GetCuriosInventoryCap(entity) {
+    let curiosCap = entity.getCapability(CuriosCapabilities.INVENTORY)
     if (curiosCap.isPresent()) {
         return curiosCap.resolve().get()
     }
@@ -14,12 +14,12 @@ function GetPlayerCuriosInventoryCap(player) {
 }
 
 /**
- * 获取 player curios item cap
- * @param {Internal.ServerPlayer} player 
+ * 获取 entity curios item cap
+ * @param {Internal.Entity} entity 
  * @returns {Internal.ICurio}
  */
-function GetPlayerCuriosItemCap(player) {
-    let curiosCap = player.getCapability(CuriosCapabilities.ITEM)
+function GetCuriosItemCap(entity) {
+    let curiosCap = entity.getCapability(CuriosCapabilities.ITEM)
     if (curiosCap.isPresent()) {
         return curiosCap.resolve().get()
     }

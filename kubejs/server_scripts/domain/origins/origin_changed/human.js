@@ -1,5 +1,5 @@
 // priority: 500
-RegisterOriginChangedStrategy('origins:human', HumanOriginStrategy)
+RegistryOriginChangedStrategy('origins:human', HumanOriginStrategy)
 
 /**
  * 

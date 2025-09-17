@@ -1,4 +1,4 @@
-// 脚本类型：STARTUP
+// priority: 1000
 MantleJSEvents.bookRegistry(event => {
     event.create('time_anch_beacon')
         .addBookRepository('kubejs:book/time_anch_beacon')

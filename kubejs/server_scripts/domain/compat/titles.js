@@ -6,7 +6,7 @@ const TitleJsonList = []
  * 
  * @param {TitleJsonModel} titleJsonModel 
  */
-function RegisterTitleJson(titleJsonModel) {
+function RegistryTitleJson(titleJsonModel) {
     TitleJsonList.push(titleJsonModel)
 }
 
@@ -23,6 +23,6 @@ ServerEvents.highPriorityData(event => {
     })
 })
 
-RegisterTitleJson(new TitleJsonModel('beginner').setRarity('uncommon').setType('advancement'))
-RegisterTitleJson(new TitleJsonModel('chest_opener'))
-RegisterTitleJson(new TitleJsonModel('ender_dancer').setRarity('rare').setType('advancement'))
+RegistryTitleJson(new TitleJsonModel('beginner').setRarity('uncommon').setType('advancement'))
+RegistryTitleJson(new TitleJsonModel('chest_opener'))
+RegistryTitleJson(new TitleJsonModel('ender_dancer').setRarity('rare').setType('advancement'))

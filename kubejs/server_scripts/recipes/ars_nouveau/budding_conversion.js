@@ -15,11 +15,11 @@ function ArsBuddingConversion(id, input, result) {
 }
 
 ServerEvents.highPriorityData(event => {
-    function registerCustomRecipe(id, recipeModel) {
+    function RegistryCustomRecipe(id, recipeModel) {
         event.addJson(`kubejs:recipes/ars_budding_conversion/${id}.json`, recipeModel)
     }
 
-    // registerCustomRecipe('logs', new ArsBuddingConversion(
+    // RegistryCustomRecipe('logs', new ArsBuddingConversion(
     //     'ars_nouveau:logs',
     //     'forge:stone',
     //     'minecraft:logs'

@@ -17,51 +17,51 @@ function WishingFountainDeposit(target, ingredients) {
 }
 
 ServerEvents.highPriorityData(event => {
-    function registerCustomRecipe(id, recipeModel) {
+    function RegistryCustomRecipe(id, recipeModel) {
         event.addJson(`kubejs:recipes/wishing_fountain/${id}.json`, recipeModel)
     }
 
-    registerCustomRecipe('amethyst',new WishingFountainDeposit(
+    RegistryCustomRecipe('amethyst',new WishingFountainDeposit(
         'amethyst',
         ['minecraft:amethyst_shard', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('coal', new WishingFountainDeposit(
+    RegistryCustomRecipe('coal', new WishingFountainDeposit(
         'coal',
         ['minecraft:coal', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('cobalt', new WishingFountainDeposit(
+    RegistryCustomRecipe('cobalt', new WishingFountainDeposit(
         'cobalt',
         ['tconstruct:cobalt_ingot', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('copper', new WishingFountainDeposit(
+    RegistryCustomRecipe('copper', new WishingFountainDeposit(
         'copper',
         ['minecraft:copper_ingot', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('diamond', new WishingFountainDeposit(
+    RegistryCustomRecipe('diamond', new WishingFountainDeposit(
         'diamond',
         ['minecraft:diamond', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('emerald', new WishingFountainDeposit(
+    RegistryCustomRecipe('emerald', new WishingFountainDeposit(
         'emerald',
         ['minecraft:emerald', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('gold', new WishingFountainDeposit(
+    RegistryCustomRecipe('gold', new WishingFountainDeposit(
         'gold',
         ['minecraft:gold_ingot', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('iron', new WishingFountainDeposit(
+    RegistryCustomRecipe('iron', new WishingFountainDeposit(
         'iron',
         ['minecraft:iron_block', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('lapis', new WishingFountainDeposit(
+    RegistryCustomRecipe('lapis', new WishingFountainDeposit(
         'lapis',
         ['minecraft:lapis_lazuli', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('redstone', new WishingFountainDeposit(
+    RegistryCustomRecipe('redstone', new WishingFountainDeposit(
         'redstone',
         ['minecraft:redstone', 'minecraft:iron_ingot']
     ))
-    registerCustomRecipe('zinc', new WishingFountainDeposit(
+    RegistryCustomRecipe('zinc', new WishingFountainDeposit(
         'zinc',
         ['create:zinc_ingot', 'minecraft:iron_ingot']
     ))

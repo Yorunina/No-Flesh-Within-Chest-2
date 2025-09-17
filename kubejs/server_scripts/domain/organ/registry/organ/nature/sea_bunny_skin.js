@@ -13,6 +13,7 @@ RegistryOrgan('kubejs:sea_bunny_skin')
 function SeaBunnyGlandEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     if (event.amount <= 0) return
     const entity = event.entity
+    if (entity.isPlayer()) return
     targetEntity.setTarget(entity)
 }
 

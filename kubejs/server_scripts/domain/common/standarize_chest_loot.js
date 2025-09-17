@@ -2,7 +2,7 @@
 // 可能会导致影响玩家预期，先不使用此部分
 // const ChestLootBaseStructStrategy = new StrategyModel()
 
-// function RegisterChestLootBaseStructStrategy(id, func) {
+// function RegistryChestLootBaseStructStrategy(id, func) {
 //     ChestLootBaseStructStrategy.addStrategy(id, func)
 // }
 // /**

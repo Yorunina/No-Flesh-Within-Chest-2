@@ -1,5 +1,5 @@
 // priority: 500
-RegisterOriginChangedStrategy('kubejs:lich', LichOriginStrategy)
+RegistryOriginChangedStrategy('kubejs:lich', LichOriginStrategy)
 
 /**
  * @param {any} customData 

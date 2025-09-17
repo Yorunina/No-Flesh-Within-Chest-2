@@ -6,3 +6,4 @@ BlockEvents.rightClicked('minecraft:obsidian', event => {
     // const GraveyardArena = new $BlockPatternBuilder()
     // .aisle('  ')
 })
+

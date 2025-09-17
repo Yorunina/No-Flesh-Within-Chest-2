@@ -1,5 +1,5 @@
 // priority: 500
-RegisterExposureAttachmentStrategy('exposure:dream_film', DreamFilmStrategy)
+RegistryExposureAttachmentStrategy('exposure:dream_film', DreamFilmStrategy)
 
 /**
  * @param {any} customData 

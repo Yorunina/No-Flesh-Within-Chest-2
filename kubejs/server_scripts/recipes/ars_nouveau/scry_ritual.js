@@ -15,11 +15,11 @@ function ArsScryRitual(id, augment, highlight) {
 }
 
 ServerEvents.highPriorityData(event => {
-    function registerCustomRecipe(id, recipeModel) {
+    function RegistryCustomRecipe(id, recipeModel) {
         event.addJson(`kubejs:recipes/ars_scry_ritual/${id}.json`, recipeModel)
     }
 
-    // registerCustomRecipe('logs', new ArsScryRitual(
+    // RegistryCustomRecipe('logs', new ArsScryRitual(
     //     'ars_nouveau:logs',
     //     'forge:stone',
     //     'minecraft:logs'

@@ -1,5 +1,5 @@
 // priority: 500
-RegisterOriginChangedStrategy('kubejs:tinker', TinkerOriginStrategy)
+RegistryOriginChangedStrategy('kubejs:tinker', TinkerOriginStrategy)
 
 /**
  * @param {any} customData 

@@ -27,6 +27,6 @@ function VillagerAirdropStrategy(customData, event) {
     customData.lootList = customData.lootList.concat(lootList)
 }
 
-RegisterAirDropDeathStrategy('end_city_treasure', EndCityAirdropStrategy)
-RegisterAirDropDeathStrategy('ancient_city', AncientCityAirdropStrategy)
-RegisterAirDropDeathStrategy('villager', VillagerAirdropStrategy)
+RegistryAirDropDeathStrategy('end_city_treasure', EndCityAirdropStrategy)
+RegistryAirDropDeathStrategy('ancient_city', AncientCityAirdropStrategy)
+RegistryAirDropDeathStrategy('villager', VillagerAirdropStrategy)

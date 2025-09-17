@@ -1,15 +1,15 @@
 // priority: 900
-RegisteryOrganTooltip(new MultiStateTooltip('kubejs:villager_own_you')
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:villager_own_you')
     .addDefault(Text.translatable('tooltips.kubejs.villager_own_you.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.villager_own_you.alt.1'))
 )
-RegisteryOrganTooltip(new MultiStateTooltip('kubejs:god_tinker_heart')
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:god_tinker_heart')
     .addDefault(Text.translatable('tooltips.kubejs.god_tinker_heart.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.god_tinker_heart.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.god_tinker_heart.alt.2', Text.gold('1')))
 )
 
-RegisteryOrganTooltip(new MultiStateTooltip('kubejs:prismarine_crown')
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:prismarine_crown')
     .addDefault(Text.translatable('tooltips.kubejs.prismarine_crown.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.prismarine_crown.alt.1', Text.gold('0'), Text.gold('0')))
     .addAlt(Text.translatable('tooltips.kubejs.prismarine_crown.alt.2', Text.gold('3'), Text.gold('3')))

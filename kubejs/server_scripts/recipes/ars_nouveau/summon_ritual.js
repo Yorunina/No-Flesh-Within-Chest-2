@@ -16,11 +16,11 @@ function ArsSummonRitual(id, augment, count, mobs) {
 }
 
 ServerEvents.highPriorityData(event => {
-    function registerCustomRecipe(id, recipeModel) {
+    function RegistryCustomRecipe(id, recipeModel) {
         event.addJson(`kubejs:recipes/ars_summon_ritual/${id}.json`, recipeModel)
     }
 
-    // registerCustomRecipe('sheep', new ArsSummonRitual(
+    // RegistryCustomRecipe('sheep', new ArsSummonRitual(
     //     'sheep',
     //     { 'item': 'minecraft:stone' },
     //     1,

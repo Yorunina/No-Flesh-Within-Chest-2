@@ -2,7 +2,7 @@
 
 const ExposureAttachmentStrategy = new StrategyModel()
 
-function RegisterExposureAttachmentStrategy(id, func) {
+function RegistryExposureAttachmentStrategy(id, func) {
     ExposureAttachmentStrategy.addStrategy(id, func)
 }
 

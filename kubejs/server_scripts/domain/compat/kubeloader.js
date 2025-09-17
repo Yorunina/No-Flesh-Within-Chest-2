@@ -2,7 +2,7 @@
 const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
 
 if (IsLoadedKubeloader) {
-    ContentPacks.putShared('RegisterTitleJson', RegisterTitleJson)
+    ContentPacks.putShared('RegistryTitleJson', RegistryTitleJson)
     ContentPacks.putShared('TitleJsonModel', TitleJsonModel)
     ContentPacks.putShared('RegistryOrganStrategy', RegistryOrganStrategy)
     ContentPacks.putShared('OrganStrategyModel', OrganStrategyModel)
@@ -15,7 +15,7 @@ if (IsLoadedKubeloader) {
     ContentPacks.putShared('DungeonEventActionModel', DungeonEventActionModel)
     ContentPacks.putShared('NewKillAmountWave', NewKillAmountWave)
     ContentPacks.putShared('NewContinousKillAmountWave', NewContinousKillAmountWave)
-    ContentPacks.putShared('RegisterOriginChangedStrategy', RegisterOriginChangedStrategy)
+    ContentPacks.putShared('RegistryOriginChangedStrategy', RegistryOriginChangedStrategy)
     ContentPacks.putShared('SlotStrategyModel', SlotStrategyModel)
     ContentPacks.putShared('OrganBlockBrokenEvent', OrganBlockBrokenEvent)
     ContentPacks.putShared('OrganChestCavityUpdateStrategy', OrganChestCavityUpdateStrategy)

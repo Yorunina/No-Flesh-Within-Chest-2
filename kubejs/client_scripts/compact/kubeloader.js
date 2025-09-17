@@ -2,7 +2,7 @@
 const IsLoadedKubeloader = Platform.isLoaded('kubeloader')
 
 if (IsLoadedKubeloader) {
-    ContentPacks.putShared('RegisteryOrganTooltip', RegisteryOrganTooltip)
+    ContentPacks.putShared('RegistryOrganTooltip', RegistryOrganTooltip)
     ContentPacks.putShared('MultiStateTooltip', MultiStateTooltip)
 
     ContentPacks.putShared('DefaultSlotType', DefaultSlotType)
