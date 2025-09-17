@@ -1,4 +1,4 @@
-
+// priority: 998
 /**
  * @param {number} scale 
  */
@@ -18,3 +18,5 @@ RegistryArenaMobSpawnModifierStrategy('moreHealth_0.5', ArenaMobSpawnMoreHealthM
 RegistryArenaMobSpawnModifierStrategy('moreHealth_1', ArenaMobSpawnMoreHealthModifierGenerator(1))
 RegistryArenaMobSpawnModifierStrategy('moreHealth_2', ArenaMobSpawnMoreHealthModifierGenerator(2))
 RegistryArenaMobSpawnModifierStrategy('moreHealth_4', ArenaMobSpawnMoreHealthModifierGenerator(4))
+
+
