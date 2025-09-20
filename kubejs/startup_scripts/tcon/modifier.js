@@ -85,7 +85,7 @@ TConJSEvents.modifierRegistry(event => {
     event.createNew('soul_hunter', builder => {
         builder.processLoot((toolView, lvl, lootList, context) => {
             const target = context.getParamOrNull($LootContextParams.THIS_ENTITY)
-            if (target != null && Math.random() < lvl * 0.05){
+            if (target != null && Math.random() < lvl * 0.05) {
                 lootList.push(Item.of('kubejs:soul_crystal', {
                     'EntityType': target.type
                 }))
@@ -101,6 +101,7 @@ TConJSEvents.modifierRegistry(event => {
             target.setTicksFrozen(forzenTicks + 20 * lvl)
         })
     })
+
     event.createNew('burning', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             /**@type {Internal.PathfinderMob} */
@@ -119,6 +120,18 @@ TConJSEvents.modifierRegistry(event => {
             if (forzenTicks > 0) {
                 let attackDamage = source.getAttributeValue('minecraft:generic.attack_damage')
                 amount = amount + forzenTicks / 100 * lvl * attackDamage
+            }
+        })
+    })
+
+    event.createNew('burning_burst', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            /**@type {Internal.PathfinderMob} */
+            const target = context.target
+            if (target.isOnFire()) {
+                let fireTicks = target.getRemainingFireTicks()
+                target.setRemainingFireTicks(0)
+                amount = amount + fireTicks / 10 * lvl
             }
         })
     })
