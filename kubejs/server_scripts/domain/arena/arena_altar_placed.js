@@ -22,6 +22,15 @@ BlockEvents.rightClicked('minecraft:crying_obsidian', event => {
                 placeAltarAndSetArena(level, player, block.getPos(), NetherAdvanceArenaPattern, 'advance_nether')
             break
         }
+        case 'minecraft:emerald_block': {
+            placeAltarAndSetArena(level, player, block.getPos(), PillagerBasicArenaPattern, 'basic_pillager') ||
+                placeAltarAndSetArena(level, player, block.getPos(), PillagerAdvanceArenaPattern, 'advance_pillager')
+            break
+        }
+        case 'create:experience_block': {
+            placeAltarAndSetArena(level, player, block.getPos(), SecretArenaPattern, 'secret')
+            break
+        }
     }
 })
 
