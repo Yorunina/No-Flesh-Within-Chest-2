@@ -1,4 +1,5 @@
 // priority: 500
+
 BlockEvents.rightClicked('minecraft:crying_obsidian', event => {
     const item = event.getItem()
     const block = event.getBlock()
@@ -6,49 +7,65 @@ BlockEvents.rightClicked('minecraft:crying_obsidian', event => {
     const level = event.getLevel()
     const player = event.getPlayer()
 
-    if (event.getHand() == 'OFF_HAND') return
+    if (event.getHand().equals($InteractionHand.OFF_HAND)) return
     if (!item.is('kubejs:amethyst_core')) return
+
     let belowBlock = block.offset(0, -1, 0)
-    let altarBlock = Block.getBlock('skyarena:altar_battle').defaultBlockState()
-    let altarTopBlock = Block.getBlock('skyarena:altar_battle_top').defaultBlockState()
-    altarBlock.setValue(BlockProperties.HORIZONTAL_FACING, player.getHorizontalFacing().getOpposite())
-    altarTopBlock.setValue(BlockProperties.HORIZONTAL_FACING, player.getHorizontalFacing().getOpposite())
     switch (belowBlock.id) {
         case 'graveyard:dark_iron_block': {
-            if (GraveyardBasicArenaPattern.find(level, belowBlock.getPos())) {
-                level.setBlockAndUpdate(block.getPos(), altarBlock)
-                level.setBlockAndUpdate(block.getPos().offset(0, 1, 0), altarTopBlock)
-                /**@type {Internal.AltarBlockEntity} */
-                let altarEntity = level.getBlockEntity(block.getPos())
-                altarEntity.switchToTargetArena('basic_graveyard')
-                altarEntity.setBattleEndTime(level.getTime())
-            } else if (GraveyardAdvanceArenaPattern.find(level, belowBlock.getPos())) {
-                level.setBlockAndUpdate(block.getPos(), altarBlock)
-                level.setBlockAndUpdate(block.getPos().offset(0, 1, 0), altarTopBlock)
-                /**@type {Internal.AltarBlockEntity} */
-                let altarEntity = level.getBlockEntity(block.getPos())
-                altarEntity.switchToTargetArena('advance_graveyard')
-                altarEntity.setBattleEndTime(level.getTime())
-            }
+            placeAltarAndSetArena(level, player, block.getPos(), GraveyardBasicArenaPattern, 'basic_graveyard') ||
+                placeAltarAndSetArena(level, player, block.getPos(), GraveyardAdvanceArenaPattern, 'advance_graveyard')
             break
         }
         case 'minecraft:respawn_anchor': {
-            if (NetherBasicArenaPattern.find(level, belowBlock.getPos())) {
-                level.setBlockAndUpdate(block.getPos(), altarBlock)
-                level.setBlockAndUpdate(block.getPos().offset(0, 1, 0), altarTopBlock)
-                /**@type {Internal.AltarBlockEntity} */
-                let altarEntity = level.getBlockEntity(block.getPos())
-                altarEntity.switchToTargetArena('basic_nether')
-                altarEntity.setBattleEndTime(level.getTime())
-            } else if (NetherAdvanceArenaPattern.find(level, belowBlock.getPos())) {
-                level.setBlockAndUpdate(block.getPos(), altarBlock)
-                level.setBlockAndUpdate(block.getPos().offset(0, 1, 0), altarTopBlock)
-                /**@type {Internal.AltarBlockEntity} */
-                let altarEntity = level.getBlockEntity(block.getPos())
-                altarEntity.switchToTargetArena('advance_nether')
-                altarEntity.setBattleEndTime(level.getTime())
-            }
+            placeAltarAndSetArena(level, player, block.getPos(), NetherBasicArenaPattern, 'basic_nether') ||
+                placeAltarAndSetArena(level, player, block.getPos(), NetherAdvanceArenaPattern, 'advance_nether')
+            break
         }
     }
 })
 
+/**
+ * @param {Internal.ServerLevel} level
+ * @param {Internal.ServerPlayer} player
+ * @param {BlockPos} blockPos
+ * @param {Internal.BlockPattern} pattern
+ * @param {string} arenaType
+ * @returns {boolean} 是否成功放置祭坛
+ */
+function placeAltarAndSetArena(level, player, blockPos, pattern, arenaType) {
+    let altarBlock = Block.getBlock('skyarena:altar_battle').defaultBlockState()
+    let altarTopBlock = Block.getBlock('skyarena:altar_battle_top').defaultBlockState()
+
+    altarBlock = altarBlock.setValue(BlockProperties.HORIZONTAL_FACING, player.getHorizontalFacing().getOpposite())
+    altarTopBlock = altarTopBlock.setValue(BlockProperties.HORIZONTAL_FACING, player.getHorizontalFacing().getOpposite())
+
+    let matchRes = matchPossibleArena(level, blockPos, pattern)
+    if (!matchRes) return false
+    level.setBlockAndUpdate(blockPos, altarBlock)
+    level.setBlockAndUpdate(blockPos.offset(0, 1, 0), altarTopBlock)
+
+    /**@type {Internal.AltarBlockEntity} */
+    let altarEntity = level.getBlockEntity(blockPos)
+    altarEntity.switchToTargetArena(arenaType)
+    altarEntity.setBattleEndTime(level.getTime())
+    return true
+}
+
+
+/**
+ * 
+ * @param {Internal.ServerLevel} level 
+ * @param {BlockPos} blockPos 
+ * @param {Internal.BlockPattern} pattern 
+ * @returns 
+ */
+function matchPossibleArena(level, blockPos, pattern) {
+    let patternPos = blockPos.offset(-pattern.getDepth() / 2, -1, -pattern.getWidth() / 2)
+
+    let matchRes = pattern.matches(level, patternPos, Direction.SOUTH, Direction.DOWN)
+    if (matchRes != null) {
+        return matchRes
+    }
+    return null
+}

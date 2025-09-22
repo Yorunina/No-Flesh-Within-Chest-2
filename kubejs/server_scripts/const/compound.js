@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 10000
 const GET_BYTE_TYPE = 1
 const GET_SHORT_TYPE = 2
 const GET_INT_TYPE = 3
