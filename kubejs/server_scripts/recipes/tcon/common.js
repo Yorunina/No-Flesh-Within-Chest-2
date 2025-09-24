@@ -15,9 +15,6 @@ ServerEvents.recipes(event => {
     tconstruct.material('kubejs:nutrients', 'biomancy:nutrients') 
     tconstruct.material('kubejs:organic_matter', 'biomancy:organic_matter') 
     tconstruct.material('kubejs:regenerative_fluid', 'biomancy:regenerative_fluid') 
-    tconstruct.material('', '') 
-    tconstruct.material('', '') 
-    tconstruct.material('', '') 
     //暗铁
     tconstruct.material('kubejs:dark_iron', 'graveyard:dark_iron_ingot', 1, 1)
     tconstruct.material('kubejs:dark_iron', 'graveyard:dark_iron_block', 9, 1, 'graveyard:dark_iron_ingot')
