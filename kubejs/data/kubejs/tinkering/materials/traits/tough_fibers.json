@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "tconstruct:stringy"
+    }
+  ],
+  "perStat": {
+    "tconstruct:skull": [
+      {
+        "level": 1,
+        "name": "tconstruct:boon_of_sssss"
+      },
+      {
+        "level": 1,
+        "name": "tconstruct:spider_disguise"
+      }
+    ]
+  }
+}
