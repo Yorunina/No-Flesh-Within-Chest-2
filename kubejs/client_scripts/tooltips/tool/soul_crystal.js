@@ -19,8 +19,5 @@ ItemEvents.tooltip(tooltip => {
                 lineNum = AddForTextLines(text, [Text.translate(`tooltips.kubejs.tool.alt.1`)], lineNum)
             }
         }
-
     })
 })
-
-

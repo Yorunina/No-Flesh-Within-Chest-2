@@ -104,9 +104,6 @@ MultiStateTooltip.prototype = {
         this.isBindEntity = isBindEntity
         return this
     },
-    registry: function () {
-        RegistryMultiStateTooltip(this)
-    }
 }
 
 /**
@@ -118,4 +115,47 @@ const OrganTooltipRegistryMap = {}
  */
 function RegistryOrganTooltip(tooltipModel) {
     OrganTooltipRegistryMap[tooltipModel.itemId] = tooltipModel
+}
+
+
+/**
+ * 
+ * @param {MultiStateTooltip} tooltipModel 
+ */
+function ApplyMultiStateTooltip(tooltipModel) {
+    ItemEvents.tooltip(tooltip => {
+        tooltip.addAdvanced(tooltipModel.itemId, (item, advanced, text) => {
+            let lineNum = 1
+            if (tooltipModel.defaultTooltips.length > 0) {
+                lineNum = AddForTextLines(text, tooltipModel.defaultTooltips, lineNum)
+            }
+
+            if (tooltipModel.ctrlTooltips.length > 0) {
+                if (tooltip.isCtrl()) {
+                    lineNum = AddForTextLines(text, [tooltipModel.ctrlHoldingDescription], lineNum)
+                    lineNum = AddForTextLines(text, tooltipModel.ctrlTooltips, lineNum)
+                } else {
+                    lineNum = AddForTextLines(text, [tooltipModel.ctrlDescription], lineNum)
+                }
+            }
+
+            if (tooltipModel.shiftTooltips.length > 0) {
+                if (tooltip.isShift()) {
+                    lineNum = AddForTextLines(text, [tooltipModel.shiftHoldingDescription], lineNum)
+                    lineNum = AddForTextLines(text, tooltipModel.shiftTooltips, lineNum)
+                } else {
+                    lineNum = AddForTextLines(text, [tooltipModel.shiftDescription], lineNum)
+                }
+            }
+
+            if (tooltipModel.altTooltips.length > 0) {
+                if (tooltip.isAlt()) {
+                    lineNum = AddForTextLines(text, [tooltipModel.altHoldingDescription], lineNum)
+                    lineNum = AddForTextLines(text, tooltipModel.altTooltips, lineNum)
+                } else {
+                    lineNum = AddForTextLines(text, [tooltipModel.altDescription], lineNum)
+                }
+            }
+        })
+    })
 }
