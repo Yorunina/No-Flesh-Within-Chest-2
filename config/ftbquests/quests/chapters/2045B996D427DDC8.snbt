@@ -1,0 +1,35 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2045B996D427DDC8"
+	group: "63198C281F0E9667"
+	icon: "tconstruct:materials_and_you"
+	id: "2045B996D427DDC8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["5D90233550E7D188"]
+		description: [
+			"通过物品扫描，我发现其中一大部分物品被额外定义了一系列特殊属性。推测该部分物品在某传闻中被赋予了特殊的功能，因此被标记了这部分属性。"
+			""
+			"基于此，我找到了一个名为&6“模具”&r的物品，其和这部分物品具有极高的数据关联性。我希望您能够配合我，制造部分&6模具&r物品，逐步发掘在其背后的传闻——或者说是认知。"
+		]
+		icon: "tconstruct:materials_and_you"
+		id: "64F4A9E919F0011D"
+		rewards: [{
+			id: "673D12EBC56281C2"
+			item: "minecraft:diamond"
+			type: "item"
+		}]
+		subtitle: "认知:特殊的物品属性"
+		tasks: [{
+			id: "045F88EC53969470"
+			item: "tconstruct:pattern"
+			type: "item"
+		}]
+		title: "匠艺"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "认知：匠艺"
+}

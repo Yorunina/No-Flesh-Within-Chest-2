@@ -1,0 +1,37 @@
+
+["Cryofloric Arts Mod Configuration"]
+	#霜尘值产生群系需要的数值
+	#Range: > 1
+	pollenBiomeConversionThreshold = 10000
+	#感染阻隔阈值
+	#Range: > 1
+	infectionResistanceTriggerThreshold = 100
+	#感染阻隔启用需要的霜尘值
+	#Range: > 1
+	infectionResistanceStartThreshold = 100000
+	#凝魂碎骨强化触发后造成伤害倍率
+	#Range: 0.0 ~ 1.7976931348623157E308
+	soulCrushingDamageMultiplier = 2.0
+	#过度生根效果造成伤害倍率
+	#Range: 0.0 ~ 1.7976931348623157E308
+	overRootingDamageMultiplier = 1.5
+	#是否禁用生命增生效果
+	disableLifeMultiplier = false
+	#疮涌效果受伤产生爆炸造成的伤害倍率
+	#Range: 0.0 ~ 1.7976931348623157E308
+	soreRushExplosionDamageMultiplier = 0.5
+	#生成带有云纹套的生物的概率（百分比）
+	#Range: 0.0 ~ 100.0
+	patternedMobSpawnChance = 1.0
+
+	["Cryofloric Arts Mod Configuration"."增生系统配置文件"]
+		#解锁增生系统所需的花粉值阈值
+		#Range: > 1
+		hyperplasiaUnlockThreshold = 1000
+		#触发特殊效果所需的增生值阈值
+		#Range: > 1
+		hyperplasiaSpecialEffectThreshold = 500
+		#花粉值与增生值的倍数关系（增生值增长1点所需的花粉值倍数）
+		#Range: > 1
+		hyperplasiaPollenMultiplier = 100
+
