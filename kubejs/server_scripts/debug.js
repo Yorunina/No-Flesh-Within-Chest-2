@@ -47,6 +47,7 @@ ItemEvents.rightClicked('stick', event => {
     const server = event.server
     let defaultData = server.persistentData.getInt('default')
     player.tell('defaultData: ' + defaultData)
+
     // player.sendData('apply_visual_effect')
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())
     // blockSummon.setColor(0X00c9b5)

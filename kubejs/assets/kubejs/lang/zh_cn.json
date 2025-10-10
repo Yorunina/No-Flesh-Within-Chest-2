@@ -771,6 +771,8 @@
     "tooltips.kubejs.plastic_stem_cells": "一管用处广泛的细胞基，可用于诸如修改器官外观、修改器官特性等领域",
     "item.kubejs.exorcism_lens": "驱灵镜头",
     "tooltips.kubejs.exorcism_lens": "安装在相机中，在相机拍摄时能够对所有处在屏幕中的生物造成少量伤害",
+    "item.kubejs.frost_lens": "霜镜",
+    "tooltips.kubejs.frost_lens": "安装在相机中，在相机拍摄时能够赋予所有处在屏幕中的生物以一定时间的霜冻",
     "item.kubejs.signal_launch_permit": "信号发射许可",
     "tooltips.kubejs.signal_launch_permit.default.1": "由未知科技生产的纳米粉尘，用以授权改造信号的发射",
     "tooltips.kubejs.signal_launch_permit.shift.1": "    §6★§r 根据纳米粉尘承载的信息量的不同，授权发射的改造信号强度也会产生变化",

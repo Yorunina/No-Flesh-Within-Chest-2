@@ -1,0 +1,11 @@
+{
+  "cooldown": 36000,
+  "leader": {
+    "type": "minecraft:vindicator"
+  },
+  "members": [
+    {
+      "type": "illagerinvasion:inquisitor"
+    }
+  ]
+}

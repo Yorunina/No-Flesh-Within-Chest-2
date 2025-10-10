@@ -1,0 +1,9 @@
+{
+    "item": {
+        "item": "kubejs:frost_lens"
+    },
+    "focal_range": {
+        "min": 10,
+        "max": 30
+    }
+}
