@@ -38,15 +38,35 @@
 //     item.shrink(1)
 // })
 // todo 调试方法
-
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    let defaultData = server.persistentData.getInt('default')
-    player.tell('defaultData: ' + defaultData)
+    /**@type {Internal.PathfinderMob} */
+    let leader = level.createEntity('minecraft:zombie')
+    leader.potionEffects.add('minecraft:glowing', 20 * 60, 0)
+    leader.persistentData.put('patrolTarget',
+        {
+            'patrolling': NBT.intTag(1), 'x': NBT.floatTag(0), 'y': NBT.floatTag(70), 'z': NBT.floatTag(0)
+        }
+    )
+    LongDistancePatrolGoal(leader)
+
+    let entity = level.createEntity('pig')
+    entity.potionEffects.add('minecraft:glowing', 20 * 60, 0)
+    entity.persistentData.put('patrolTarget',
+        {
+            'patrolling': NBT.intTag(1), 'x': NBT.floatTag(0), 'y': NBT.floatTag(70), 'z': NBT.floatTag(0)
+        }
+    )
+    LongDistancePatrolGoal(entity)
+    
+
+    new $CaravanVariation(1000, new $CaravanMember(leader), [new $CaravanMember(entity)]).spawn(level, player.blockPosition())
+    // let defaultData = server.persistentData.getInt('default')
+    // player.tell('defaultData: ' + defaultData)
 
     // player.sendData('apply_visual_effect')
     // let blockSummon = new $AnimBlockSummon(level, Blocks.SAND.defaultBlockState())

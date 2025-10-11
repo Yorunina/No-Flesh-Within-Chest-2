@@ -128,7 +128,12 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:penguin_flipper')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:dog_tail')
     .addDefault(Text.translatable('tooltips.kubejs.dog_tail.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.dog_tail.alt.1', PointAtHover))
+    .addAlt(Text.translatable('tooltips.kubejs.dog_tail.alt.1', Text.gold('16')))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:wolf_fang')
+    .addDefault(Text.translatable('tooltips.kubejs.wolf_fang.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.wolf_fang.alt.1', Text.gold('16')))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:hedgehog_thorn')
@@ -173,4 +178,10 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:leech_mouthpart')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:rat_ear')
     .addDefault(Text.translatable('tooltips.kubejs.rat_ear.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.rat_ear.alt.1', Text.gold('16')))
+)
+
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:wolf_fang')
+    .addDefault(Text.translatable('tooltips.kubejs.wolf_fang.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.wolf_fang.alt.1', Text.gold('16')))
 )

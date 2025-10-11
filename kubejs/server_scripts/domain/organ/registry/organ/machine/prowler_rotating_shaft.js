@@ -11,29 +11,16 @@ RegistryOrgan('kubejs:prowler_rotating_shaft')
  * @param {string} slotType
  */
 function ProwlerRotatingShaftEntityBeHurt(customData, event, organItem, organIndex, slotType) {
-    if (event.amount <= 1) return
     const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    const ccInv = chestCavity.inventory
-    const invTypeData = chestCavity.getInventoryTypeData()
-    const curRelativePosition = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
-    const curRelativePositionX = curRelativePosition.getX()
-    const curRelativePositionY = curRelativePosition.getY()
-    let targetLivingList = []
-    for (let [offsetX, offsetY] of EightDirectionOffset) {
-        let slotDefinition = invTypeData.getRelativeSlotDefinition(curRelativePositionX + offsetX, curRelativePositionY + offsetY)
-        if (!slotDefinition) continue
-        let curItem = ccInv.getStackInSlot(slotDefinition.getId())
-        if (curItem.isEmpty() || curItem.id != 'kubejs:living_controller') continue
-        let targetLiving = GetRemoteControlTarget(entity.level, curItem)
-        if (!targetLiving) return
-        if (!(targetLiving instanceof $PathfinderMob)) continue
-        targetLivingList.push(targetLiving)
-    }
-    if (targetLivingList.length <= 0) return
-    let sharedAmount = event.amount / (targetLivingList.length + 1)
-    for (let targetLiving of targetLivingList) {
-        targetLiving.attack(event.source, sharedAmount)
+    if (!entity.isPlayer()) return
+    if (event.amount <= 1) return
+    const level = entity.level
+    let tamedLivingList = GetTamedEntityWithinRadius(level, entity, 16)
+
+    if (tamedLivingList.length <= 0) return
+    let sharedAmount = event.amount / (tamedLivingList.length + 1)
+    for (let target of tamedLivingList) {
+        target.attack(event.source, sharedAmount)
     }
     event.amount = sharedAmount
 }

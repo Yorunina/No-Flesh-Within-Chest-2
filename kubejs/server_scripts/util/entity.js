@@ -226,6 +226,43 @@ function GetLivingWithinRadius(level, pos, radius, entityTester) {
 }
 
 /**
+* 获取某个半径内的被驯服的实体
+* @param {Internal.Level} level
+* @param {Player} player
+* @param {Number} radius
+* @returns {Array<Internal.LivingEntity>}
+*/
+function GetTamedEntityWithinRadius(level, player, radius) {
+    let pos = player.blockPosition()
+    let area = AABB.of(pos.x - radius, pos.y - radius, pos.z - radius, pos.x + radius, pos.y + radius, pos.z + radius)
+    let entityAABBList = level.getEntitiesWithin(area)
+    let entityList = []
+    entityAABBList.forEach(pEntity => {
+        if (pEntity.position() && pEntity.position().distanceTo(pos) <= radius) {
+            if (pEntity instanceof $TamableAnimal) {
+                if (pEntity.getOwner() && pEntity.getOwner().is(player)) {
+                    entityList.push(pEntity)
+                }
+                return
+            }
+            if (pEntity instanceof $AbstractGolem) {
+                if (pEntity.getOwner() && pEntity.getOwner().is(player)) {
+                    entityList.push(pEntity)
+                }
+                return
+            }
+            if (pEntity instanceof $AbstractSpellCastingPet) {
+                if (pEntity.getOwnerUUID().equals(player.getUuid())) {
+                    entityList.push(pEntity)
+                }
+                return
+            }
+        }
+    })
+    return entityList
+}
+
+/**
  * 生成一个物品实体
  * @param {Internal.Level} level 
  * @param {BlockPos} pos 

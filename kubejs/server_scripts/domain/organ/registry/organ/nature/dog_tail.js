@@ -12,24 +12,14 @@ RegistryOrgan('kubejs:dog_tail')
  */
 function DogTailEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
+    const level = event.level
     if (entity.age % 200 != 0) return
-    const chestCavity = entity.chestCavityInstance
-    const ccInv = chestCavity.inventory
-    const invTypeData = chestCavity.getInventoryTypeData()
-    const curRelativePosition = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
-    const curRelativePositionX = curRelativePosition.getX()
-    const curRelativePositionY = curRelativePosition.getY()
+    let tamedLivingList = GetTamedEntityWithinRadius(level, entity, 16)
 
-    for (let [offsetX, offsetY] of EightDirectionOffset) {
-        let slotDefinition = invTypeData.getRelativeSlotDefinition(curRelativePositionX + offsetX, curRelativePositionY + offsetY)
-        if (!slotDefinition) continue
-        let curItem = ccInv.getStackInSlot(slotDefinition.getId())
-        if (curItem.isEmpty() || curItem.id != 'kubejs:living_controller') continue
-        let targetLiving = GetRemoteControlTarget(event.level, curItem)
-        if (!targetLiving) return
-        if (!(targetLiving instanceof $PathfinderMob)) continue
-        targetLiving.potionEffects.add('minecraft:absorption', 20 * 30, 2)
-    }
+    if (tamedLivingList.length <= 0) return
+    tamedLivingList.forEach(pTarget => {
+        pTarget.potionEffects.add('minecraft:regeneration', 20 * 30, 0, false, false)
+    })
 }
 
 RegistryOrganStrategy(

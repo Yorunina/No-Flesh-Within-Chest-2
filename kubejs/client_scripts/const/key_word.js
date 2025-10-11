@@ -34,11 +34,6 @@ const LuckHover = Text.translatable('tooltips.kubejs.hover.luck.0').green().unde
         Text.translatable('tooltips.kubejs.hover.luck.2'),
         Text.translatable('tooltips.kubejs.hover.luck.3')
     ]))
-const PointAtHover = Text.translatable('tooltips.kubejs.hover.point_at.0').gold().underlined()
-    .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.point_at.0').gold(),
-        Text.translatable('tooltips.kubejs.hover.point_at.1')
-    ]))
 const KeyActiveHover = Text.translatable('tooltips.kubejs.hover.key_active.0').gold().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.key_active.0').gold(),
