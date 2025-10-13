@@ -1,8 +1,8 @@
 {
   "arenas": {
     "default": {
-      "mobSpawnRadius": 20,
-      "spawnDistanceFromPlayer": 10,
+      "mobSpawnRadius": 10,
+      "spawnDistanceFromPlayer": 5,
       "battleLossDistance": 48,
       "mobTeleportDistance": 48,
       "mobGriefingProtectionRadius": 48,
@@ -46,8 +46,8 @@
       }
     },
     "basic_graveyard": {
-      "mobSpawnRadius": 20,
-      "spawnDistanceFromPlayer": 10,
+      "mobSpawnRadius": 10,
+      "spawnDistanceFromPlayer": 5,
       "battleLossDistance": 48,
       "mobTeleportDistance": 48,
       "mobGriefingProtectionRadius": 48,
@@ -72,7 +72,8 @@
           "rewardLootTable": "minecraft:empty",
           "rewardCount": 1,
           "mobGroupsUsed": [
-            "common"
+            "common",
+            "special"
           ]
         }
       ],
@@ -83,16 +84,37 @@
           "additionalStatMultiplier": 0.0,
           "mobSpawnChance": 1,
           "mobValues": {
-            "minecraft:zombie": 10,
-            "minecraft:skeleton": 30,
-            "minecraft:wither_skeleton": 50
+            "graveyard:acolyte": 30,
+            "graveyard:corrupted_vindicator": 60,
+            "graveyard:corrupted_pillager": 90
+          }
+        },
+        "special": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "graveyard:reaper": 100,
+            "graveyard:ghoul": 100,
+            "graveyard:skeleton_creeper": 100
+          }
+        },
+        "boss": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "graveyard:nightmare": 400
           }
         }
       }
+      
     },
     "advance_graveyard": {
-      "mobSpawnRadius": 20,
-      "spawnDistanceFromPlayer": 10,
+      "mobSpawnRadius": 10,
+      "spawnDistanceFromPlayer": 5,
       "battleLossDistance": 48,
       "mobTeleportDistance": 48,
       "mobGriefingProtectionRadius": 48,
@@ -128,16 +150,93 @@
           "additionalStatMultiplier": 0.0,
           "mobSpawnChance": 1,
           "mobValues": {
-            "minecraft:zombie": 10,
-            "minecraft:skeleton": 30,
-            "minecraft:wither_skeleton": 50
+            "graveyard:acolyte": 30,
+            "graveyard:corrupted_vindicator": 60,
+            "graveyard:corrupted_pillager": 90
           }
+        },
+        "special": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "graveyard:reaper": 100,
+            "graveyard:ghoul": 100,
+            "graveyard:skeleton_creeper": 100
+          }
+        },
+        "boss": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "graveyard:nightmare": 400
+          }
+        }
+      },
+      "presetWaves": {
+        "10": {
+          "mobStatMultiplier": 2,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobs": [
+            {
+              "type": "graveyard:lich",
+              "count": 1
+            }
+          ]
+        },
+        "20": {
+          "mobStatMultiplier": 1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobs": [
+            {
+              "type": "graveyard:lich",
+              "count": 1
+            }
+          ]
+        },
+        "30": {
+          "mobStatMultiplier": 1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobs": [
+            {
+              "type": "graveyard:lich",
+              "count": 1
+            }
+          ]
+        },
+        "40": {
+          "mobStatMultiplier": 1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobs": [
+            {
+              "type": "graveyard:lich",
+              "count": 1
+            }
+          ]
+        },
+        "50": {
+          "mobStatMultiplier": 0.5,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobs": [
+            {
+              "type": "graveyard:lich",
+              "count": 1
+            }
+          ]
         }
       }
     },
     "basic_nether": {
-      "mobSpawnRadius": 20,
-      "spawnDistanceFromPlayer": 10,
+      "mobSpawnRadius": 10,
+      "spawnDistanceFromPlayer": 5,
       "battleLossDistance": 48,
       "mobTeleportDistance": 48,
       "mobGriefingProtectionRadius": 48,
@@ -181,8 +280,8 @@
       }
     },
     "advance_nether": {
-      "mobSpawnRadius": 20,
-      "spawnDistanceFromPlayer": 10,
+      "mobSpawnRadius": 10,
+      "spawnDistanceFromPlayer": 5,
       "battleLossDistance": 48,
       "mobTeleportDistance": 48,
       "mobGriefingProtectionRadius": 48,
@@ -224,8 +323,202 @@
           }
         }
       }
-    }
-  },
-  "keys": {},
-  "trophies": {}
+    },
+    "basic_pillager": {
+      "mobSpawnRadius": 10,
+      "spawnDistanceFromPlayer": 5,
+      "battleLossDistance": 48,
+      "mobTeleportDistance": 48,
+      "mobGriefingProtectionRadius": 48,
+      "bossBarHideRadius": 48,
+      "mobCostRatio": 20,
+      "allowDifficultyReset": true,
+      "allowWaterAndAirSpawn": false,
+      "individualPlayerStats": false,
+      "setNight": false,
+      "setRain": false,
+      "disableMobItemDrop": true,
+      "startingPoints": 200,
+      "startingStatMultiplier": 1.0,
+      "difficultyLevelRanges": [
+        {
+          "range": [
+            1,
+            10
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common"
+          ]
+        },
+        {
+          "range": [
+            11,
+            20
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common",
+            "special"
+          ]
+        },
+        {
+          "range": [
+            21,
+            9999
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common",
+            "special",
+            "boss"
+          ]
+        }
+      ],
+      "mobGroups": {
+        "common": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:pillager": 50,
+            "minecraft:vindicator": 100
+          }
+        },
+        "special": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:ravager": 200,
+            "minecraft:witch": 100
+          }
+        },
+        "boss": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:evoker": 500
+          }
+        }
+      }
+    },
+    "advance_pillager": {
+      "mobSpawnRadius": 10,
+      "spawnDistanceFromPlayer": 5,
+      "battleLossDistance": 48,
+      "mobTeleportDistance": 48,
+      "mobGriefingProtectionRadius": 48,
+      "bossBarHideRadius": 48,
+      "mobCostRatio": 20,
+      "allowDifficultyReset": true,
+      "allowWaterAndAirSpawn": false,
+      "individualPlayerStats": false,
+      "setNight": false,
+      "setRain": false,
+      "disableMobItemDrop": true,
+      "startingPoints": 200,
+      "startingStatMultiplier": 1.0,
+      "difficultyLevelRanges": [
+        {
+          "range": [
+            1,
+            10
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common"
+          ]
+        },
+        {
+          "range": [
+            11,
+            20
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common",
+            "special"
+          ]
+        },
+        {
+          "range": [
+            21,
+            9999
+          ],
+          "pointsIncrease": 50,
+          "statMultiplierIncrease": 0.1,
+          "rewardLootTable": "minecraft:empty",
+          "rewardCount": 1,
+          "mobGroupsUsed": [
+            "common",
+            "special",
+            "boss"
+          ]
+        }
+      ],
+      "mobGroups": {
+        "common": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:pillager": 50,
+            "minecraft:vindicator": 100,
+            "illagerinvasion:basher": 150,
+            "illagerinvasion:inquisitor": 150,
+            "illagerinvasion:marauder": 150,
+            "illagerinvasion:alchemist": 150
+          }
+        },
+        "special": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:ravager": 200,
+            "minecraft:witch": 100,
+            "illagerinvasion:provoker": 200,
+            "illagerinvasion:necromancer": 200,
+            "illagerinvasion:sorcerer": 200,
+            "illagerinvasion:archivist": 200,
+            "illagerinvasion:firecaller": 200
+          }
+        },
+        "boss": {
+          "squadSpawnChance": 0.6,
+          "squadSpawnSize": 8,
+          "additionalStatMultiplier": 0.0,
+          "mobSpawnChance": 1,
+          "mobValues": {
+            "minecraft:evoker": 500,
+            "illagerinvasion:invoker": 1000
+          }
+        }
+      }
+    },
+    "keys": {},
+    "trophies": {}
+  }
 }
