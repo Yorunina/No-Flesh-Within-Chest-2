@@ -1,8 +1,41 @@
 {
-    "default": [
-        {
-            "level": 1,
-            "name": "tconstruct:necrotic"
-        }
+  "default": [
+    {
+      "level": 1,
+      "name": "kubejs:blazing_brand"
+    }
+  ],
+  "perStat": {
+    "tconstruct:maille": [
+      {
+        "level": 1,
+        "name": "kubejs:flame_defense"
+      }
+    ],
+    "tconstruct:helmet_plating": [
+      {
+        "level": 1,
+        "name": "kubejs:flame_defense"
+      }
+    ],
+    "tconstruct:chestplate_plating": [
+      {
+        "level": 1,
+        "name": "kubejs:flame_defense"
+      }
+    ],
+    "tconstruct:plating_leggings": [
+      {
+        "level": 1,
+        "name": "kubejs:flame_defense"
+      }
+    ],
+
+    "tconstruct:plating_boots": [
+      {
+        "level": 1,
+        "name": "kubejs:flame_defense"
+      }
     ]
+  }
 }

@@ -2,7 +2,7 @@
     "default": [
         {
             "level": 1,
-            "name": "tconstruct:necrotic"
+            "name": "kubejs:curse_of_desert"
         }
     ]
-}
+}   

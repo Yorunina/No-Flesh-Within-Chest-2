@@ -154,4 +154,76 @@ TConJSEvents.modifierRegistry(event => {
             return true
         })
     })
+
+    event.createNew('breath_of_wthering', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            const target = context.target
+            if (target && target.isAlive()) {
+                target.potionEffects.add('minecraft:wither', 20 * 5 * lvl, lvl, false, false)
+            }
+        })
+    })
+    event.createNew('blazing_brand', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            const target = context.target
+            if (target && target.isAlive()) {
+                target.potionEffects.add('cataclysm:blazing_brand', 20 * 5 * lvl, lvl, false, false)
+            }
+        })
+    })
+    //bone_fragments
+    // event.createNew('bone_spurs', builder => {
+    //     builder.armorTakeAttacked((toolView, lvl, context, slotType, source, amount) => {
+    //         if (!source.actual || !source.actual.isAlive()) return false
+    //         const entity = context.entity
+    //         const level = context.level
+    //         let damageAmount = entity.getArmorValue() * lvl * 0.5
+    //         entity.attack(level.damageSources().magic(), 1)
+    //         source.actual.attack(level.damageSources().mobAttack(entity), damageAmount)
+    //         TinkerDamageHelper.damageAnimated(toolView, amount, entity, slotType)
+    //         return true
+    //     })
+    // })
+    event.createNew('abyssal_burn', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            const target = context.target
+            if (target && target.isAlive()) {
+                target.potionEffects.add('cataclysm:abyssal_burn', 20 * 5 * lvl, lvl, false, false)
+            }
+        })
+    })
+
+    event.createNew('curse_of_desert', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            const target = context.target
+            if (target && target.isAlive()) {
+                target.potionEffects.add('cataclysm:curse_of_desert', 20 * 5 * lvl, lvl, false, false)
+            }
+        })
+    })
+    event.createNew('nausea_cure', builder => {
+        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
+            if (!isSelected) return
+            entity.potionEffects.add('minecraft:regeneration', 20 * lvl, lvl, false, false)
+            if (Math.random() < 0.1) {
+                entity.potionEffects.add('minecraft:nausea', 20 * lvl, lvl, false, false)
+            }
+        })
+    })
+    event.createNew('wetness', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            const target = context.target
+            if (target && target.isAlive()) {
+                target.potionEffects.add('cataclysm:wetness', 20 * 5 * lvl, lvl, false, false)
+            }
+        })
+    })
+        event.createNew('stun', builder => {
+        builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
+            const target = context.target
+            if (target && target.isAlive()) {
+                target.potionEffects.add('cataclysm:stun', 20 * lvl, lvl, false, false)
+            }
+        })
+    })
 })

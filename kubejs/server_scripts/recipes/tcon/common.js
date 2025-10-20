@@ -18,4 +18,5 @@ ServerEvents.recipes(event => {
     tconstruct.material('kubejs:blight_sorrow_planks','cryofloric_arts:blight_sorrow_planks')
     tconstruct.material('kubejs:essence_of_the_storm','cataclysm:essence_of_the_storm')
     tconstruct.material('kubejs:flesh_bits','biomancy:flesh_bits')
+    tconstruct.material('kubejs:lacrima','cataclysm:lacrima')
 })

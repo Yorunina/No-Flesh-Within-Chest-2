@@ -1,6 +1,5 @@
 {
   "stats": {
-    "tconstruct:binding": {},
     "tconstruct:grip": {
       "accuracy": 0.0,
       "durability": 0.3,
@@ -43,10 +42,7 @@
     },
     "tconstruct:plating_shield": {
       "durability": 510
-    },
-    "tconstruct:skull": {
-      "armor": 2,
-      "durability": 320
     }
+
   }
 }

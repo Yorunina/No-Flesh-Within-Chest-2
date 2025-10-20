@@ -2,7 +2,7 @@
     "default": [
         {
             "level": 1,
-            "name": "kubejs:flame_defense"
+            "name": "kubejs:hunger_repair"
         }
     ]
 }
