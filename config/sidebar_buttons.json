@@ -8,6 +8,9 @@
 	"ftbquests": {
 		"quests": true
 	},
+	"leaderboards": {
+		"leaderboards": true
+	},
 	"ftblibrary": {
 		"toggle.gamemode": true,
 		"toggle.rain": true,
