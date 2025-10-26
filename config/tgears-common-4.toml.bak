@@ -1,0 +1,15 @@
+
+["The Blaze Burner Factors(temperature = 800 * factor, rate = 10 * factor)"]
+	#Factor when the burner is extinguished
+	extinguished_factor = 0.5
+	#Factor when the burner is kindled
+	kindled_factor = 1.0
+	#Factor when the burner is seething
+	seething_factor = 2.0
+
+["The Polishing Percentages"]
+	#The damage to item when polishing
+	polishing_damage = 0.1
+	#The shield provided when polishing
+	polishing_shield = 0.1
+

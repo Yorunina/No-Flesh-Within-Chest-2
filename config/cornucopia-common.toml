@@ -1,0 +1,4 @@
+enableClearFoods = false
+#Range: 1 ~ 19
+lifeThresholdValue = 10
+

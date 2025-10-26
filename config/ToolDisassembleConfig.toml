@@ -1,9 +1,0 @@
-
-[Config]
-	#items that will not be returned through Disassembling.
-	itemDisassembleBlacklist = ["minecraft:quartz"]
-	#Tools that can not be Disassembled.
-	toolDisassembleBlacklist = ["tconstruct:plate_shield"]
-	#Blocks that can be used for Disassembling.
-	disassemblingBlockSet = ["minecraft:smooth_stone"]
-

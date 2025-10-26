@@ -49,24 +49,26 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    /**@type {Internal.PathfinderMob} */
-    let leader = level.createEntity('minecraft:zombie')
-    leader.potionEffects.add('minecraft:glowing', 20 * 60, 0)
-    leader.persistentData.put('patrolTarget',
-        {
-            'patrolling': NBT.intTag(1), 'x': NBT.floatTag(0), 'y': NBT.floatTag(70), 'z': NBT.floatTag(0)
-        }
-    )
-    LongDistancePatrolGoal(leader)
+    player.setFoodLevel(0)
+    player.setSaturation(0)
+    // /**@type {Internal.PathfinderMob} */
+    // let leader = level.createEntity('minecraft:zombie')
+    // leader.potionEffects.add('minecraft:glowing', 20 * 60, 0)
+    // leader.persistentData.put('patrolTarget',
+    //     {
+    //         'patrolling': NBT.intTag(1), 'x': NBT.floatTag(0), 'y': NBT.floatTag(70), 'z': NBT.floatTag(0)
+    //     }
+    // )
+    // LongDistancePatrolGoal(leader)
 
-    let entity = level.createEntity('pig')
-    entity.potionEffects.add('minecraft:glowing', 20 * 60, 0)
-    entity.persistentData.put('patrolTarget',
-        {
-            'patrolling': NBT.intTag(1), 'x': NBT.floatTag(0), 'y': NBT.floatTag(70), 'z': NBT.floatTag(0)
-        }
-    )
-    LongDistancePatrolGoal(entity)
+    // let entity = level.createEntity('pig')
+    // entity.potionEffects.add('minecraft:glowing', 20 * 60, 0)
+    // entity.persistentData.put('patrolTarget',
+    //     {
+    //         'patrolling': NBT.intTag(1), 'x': NBT.floatTag(0), 'y': NBT.floatTag(70), 'z': NBT.floatTag(0)
+    //     }
+    // )
+    // LongDistancePatrolGoal(entity)
     
 
     

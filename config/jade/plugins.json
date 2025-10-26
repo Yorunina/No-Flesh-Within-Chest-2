@@ -51,15 +51,16 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "compactmachines": {
+    "machine": true,
+    "tunnel": true
+  },
   "ars_nouveau": {
     "mob_jar": true
   },
   "exposure": {
     "lightroom": true,
     "photograph_frame": true
-  },
-  "create_mechanical_spawner": {
-    "spawner_data": true
   },
   "supplementaries": {
     "hat_stand": true
