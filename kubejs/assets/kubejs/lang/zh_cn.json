@@ -805,6 +805,7 @@
     "tooltips.kubejs.key_to_infinity.default.1": "蕴含通向无尽力量的终极钥匙",
     "tooltips.kubejs.key_to_infinity.shift.1": "    §6★§r 该钥匙可以修改下界传送门的指向，使其引导向无尽维度中",
     "tooltips.kubejs.key_to_infinity.shift.2": "    §6★§r 通过给该钥匙以不同的命名，即可精确导向到某个特定维度",
+    "tooltips.create.schematic.isCreative": "该蓝图可在生存模式下不消耗材料部署",
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
     "gui.kubejs.title.chestcavity": "胸腔",

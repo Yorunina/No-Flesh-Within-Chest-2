@@ -56,5 +56,5 @@ config/jade/sort-order.json
 config/jade/plugins.json
 kubejs/probe/
 *.log
-/config/SDMShop/shops
 /config/CSC/Data
+/config/CSC

@@ -19,18 +19,55 @@
 				""
 				"考虑到这些工具是十分有效且强大的，或许我们需要更多的去了解这样技艺，以解明这条传闻。"
 			]
+			icon: {
+				Count: 1
+				id: "tconstruct:pick_head"
+				tag: {
+					Material: "tconstruct:flint"
+				}
+			}
 			id: "428D9599A58515E7"
 			subtitle: "灵光一现筑传闻"
 			tasks: [{
-				id: "1AD2F8D90FAE0863"
-				item: "minecraft:oak_log"
+				icon: {
+					Count: 1
+					id: "tconstruct:pick_head"
+					tag: {
+						Material: "tconstruct:flint"
+					}
+				}
+				id: "096A49456BFA9835"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tconstruct:modifiable"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:damage"
+								tag: {
+									value: ">10%"
+								}
+							}
+						]
+					}
+				}
+				title: "浅尝匠魂工具"
 				type: "item"
 			}]
-			title: "工匠创世"
+			title: "灵光乍现"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["428D9599A58515E7"]
 			description: [
 				"随着对匠艺的逐渐深入，我发现了一个惊人的事实——这些工匠物品在数据上均携带有一个特殊的无用键值对，这非常奇怪，就好像是为了某个特殊用途而预留的一个字段。"
 				""
@@ -40,11 +77,41 @@
 				""
 				"您可能觉得这或许没什么大不了的，毕竟事物相通的特性太多了。但是令我真正奇怪的是，这个工具所具备的特殊字段，可以被称作“是否能被创造”。"
 			]
+			hide_dependency_lines: true
 			id: "474910B463715048"
 			subtitle: "是神创世还是. . ."
 			tasks: [{
-				id: "75AC8F1B58391C2C"
-				item: "minecraft:stripped_jungle_log"
+				icon: {
+					Count: 1
+					id: "tconstruct:small_axe_head"
+					tag: {
+						Material: "tconstruct:copper"
+					}
+				}
+				id: "451C1A265EF36AED"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:tag"
+								tag: {
+									value: "tconstruct:modifiable"
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:damage"
+								tag: {
+									value: ">30%"
+								}
+							}
+						]
+					}
+				}
+				title: "再试匠魂工具"
 				type: "item"
 			}]
 			title: "创世工匠"

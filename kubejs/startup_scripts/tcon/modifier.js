@@ -218,7 +218,7 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
-        event.createNew('stun', builder => {
+    event.createNew('stun', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             const target = context.target
             if (target && target.isAlive()) {

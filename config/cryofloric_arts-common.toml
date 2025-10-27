@@ -23,6 +23,36 @@
 	#生成带有云纹套的生物的概率（百分比）
 	#Range: 0.0 ~ 100.0
 	patternedMobSpawnChance = 1.0
+	#云纹装备怪物生成黑名单
+	#支持三种格式：
+	#1. "命名空间:实体名称" - 禁用单个实体，如 "minecraft:zombie"
+	#2. "#命名空间:实体标签名称" - 禁用标签中的所有实体，如 "#minecraft:skeletons"
+	#3. "命名空间" - 禁用整个命名空间，如 "minecraft"
+	patternedMobBlacklist = []
+	#免疫疮涌效果的实体黑名单
+	#支持三种格式：
+	#1. "命名空间:实体名称" - 免疫单个实体，如 "minecraft:zombie"
+	#2. "#命名空间:实体标签名称" - 免疫标签中的所有实体，如 "#minecraft:skeletons"
+	#3. "命名空间" - 免疫整个命名空间，如 "minecraft"
+	soreRushImmuneBlacklist = []
+	#禁用霜粉产生过度生根效果的生物黑名单
+	#支持三种格式：
+	#1. "命名空间:实体名称" - 禁用单个实体，如 "minecraft:zombie"
+	#2. "#命名空间:实体标签名称" - 禁用标签中的所有实体，如 "#minecraft:skeletons"
+	#3. "命名空间" - 禁用整个命名空间，如 "minecraft"
+	frostPowderOverRootingBlacklist = []
+	#默认霜尘值配置
+	#格式为："命名空间:维度注册名/霜尘值"
+	#例如："minecraft:overworld/100" 表示主世界默认霜尘值为100
+	#当区块没有存储霜尘值时，如果该维度在配置中有默认值，则将区块内霜尘值视作默认值，否则视作0
+	defaultPollenValues = []
+	#白色荒原生物群系生成白名单
+	#支持三种格式：
+	#1. "命名空间:实体名称" - 允许单个实体，如 "minecraft:zombie"
+	#2. "#命名空间:实体标签名称" - 允许标签中的所有实体，如 "#minecraft:skeletons"
+	#3. "命名空间" - 允许整个命名空间，如 "minecraft"
+	#默认为 ["cryofloric_arts"]
+	whiteBarrensSpawnWhitelist = ["cryofloric_arts"]
 
 	["Cryofloric Arts Mod Configuration"."增生系统配置文件"]
 		#解锁增生系统所需的花粉值阈值

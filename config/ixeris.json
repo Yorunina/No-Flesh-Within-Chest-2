@@ -1,0 +1,10 @@
+{
+  "enabledOnWindows": true,
+  "enabledOnMacOS": true,
+  "enabledOnLinux": true,
+  "fullyBlockingMode": false,
+  "logBlockingCalls": false,
+  "logCacheIssues": false,
+  "greedyEventPolling_v2": true,
+  "eventPollingThreadPriority": 0
+}

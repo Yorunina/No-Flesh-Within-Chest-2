@@ -1,4 +1,3 @@
-
 // priority: 800
 ItemEvents.tooltip(tooltip => {
     tooltip.addAdvanced('kubejs:genesis_tinker_blueprint', (item, advanced, text) => {

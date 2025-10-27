@@ -1,0 +1,49 @@
+  {
+  "coinTypes": [
+    {
+      "name": "iron",
+      "money": 1,
+      "convertGroup": 0,
+      "maxStackSize": 999,
+      "itemName": "minecraft:iron_ingot"
+    },
+    {
+      "name": "gold",
+      "money": 3,
+      "convertGroup": 0,
+      "maxStackSize": 999,
+      "itemName": "minecraft:gold_ingot"
+    },
+    {
+      "name": "diamond",
+      "money": 10,
+      "convertGroup": 0,
+      "maxStackSize": 999,
+      "itemName": "minecraft:diamond"
+    },
+    {
+      "name": "emerald",
+      "money": 1,
+      "convertGroup": 1,
+      "maxStackSize": 999,
+      "itemName": "minecraft:emerald"
+    },
+    {
+      "name": "netherite",
+      "money": 100,
+      "convertGroup": 1,
+      "maxStackSize": 999,
+      "hideDefault": true,
+      "itemName": "minecraft:netherite_ingot"
+    },
+    {
+      "name": "special",
+      "money": 1,
+      "convertGroup": 0,
+      "maxStackSize": 500,
+      "itemName": "minecraft:tipped_arrow",
+      "itemTag": "{Potion:\"minecraft:strength\"}",
+      "defaultArea": "BOTTOM_RIGHT",
+    }
+  ]
+}

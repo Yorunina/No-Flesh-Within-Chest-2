@@ -55,16 +55,6 @@
     "machine": true,
     "tunnel": true
   },
-  "ars_nouveau": {
-    "mob_jar": true
-  },
-  "exposure": {
-    "lightroom": true,
-    "photograph_frame": true
-  },
-  "supplementaries": {
-    "hat_stand": true
-  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,
@@ -72,12 +62,6 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
-  },
-  "waystones": {
-    "waystone": true
-  },
-  "astages": {
-    "block_component_provider": true
   },
   "functionalstorage": {
     "armory": true
@@ -90,5 +74,29 @@
   },
   "custommachinery": {
     "machine_component_provider": true
+  },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
+  "exposure": {
+    "lightroom": true,
+    "photograph_frame": true
+  },
+  "kaleidoscope_cookery": {
+    "chopping_board": true,
+    "shawarma_spit": true,
+    "oil_pot": true,
+    "recipe_block": true,
+    "millstone": true,
+    "enamel_basin": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "waystones": {
+    "waystone": true
+  },
+  "astages": {
+    "block_component_provider": true
   }
 }
