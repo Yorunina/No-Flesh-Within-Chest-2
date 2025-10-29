@@ -1,0 +1,8 @@
+#Whether the Waystones compatibility node should be loaded during the boot sequence
+#Default: true
+waystones=true
+
+#Whether the FTB Chunks claim shop node should be loaded during the boot sequence
+#Default: true
+ftbchunks=true
+
