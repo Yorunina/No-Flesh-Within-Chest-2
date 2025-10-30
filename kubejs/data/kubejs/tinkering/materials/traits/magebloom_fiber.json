@@ -2,7 +2,7 @@
   "default": [
     {
       "level": 1,
-      "name": "tconstruct:stringy"
+      "name": "kubejs:mana_regen"
     }
   ],
   "perStat": {

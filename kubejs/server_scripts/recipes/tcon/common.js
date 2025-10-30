@@ -2,6 +2,7 @@
 ServerEvents.recipes(event => {
     const { tconstruct } = event.recipes
     //无流体物品
+    //tconstruct.material('kubejs:','')
     tconstruct.material('kubejs:living_flesh', 'biomancy:living_flesh')
     tconstruct.material('kubejs:creator_mix', 'biomancy:creator_mix')  
     tconstruct.material('kubejs:koboleton_bone', 'cataclysm:koboleton_bone') 
@@ -19,4 +20,18 @@ ServerEvents.recipes(event => {
     tconstruct.material('kubejs:essence_of_the_storm','cataclysm:essence_of_the_storm')
     tconstruct.material('kubejs:flesh_bits','biomancy:flesh_bits')
     tconstruct.material('kubejs:lacrima','cataclysm:lacrima')
+    tconstruct.material('kubejs:mineral_fragment','biomancy:mineral_fragment')
+    tconstruct.material('kubejs:gem_fragments','biomancy:gem_fragments')
+    tconstruct.material('kubejs:source_gem','ars_nouveau:source_gem')
+    tconstruct.material('kubejs:toxin_extract','biomancy:toxin_extract')
+    tconstruct.material('kubejs:bio_lumens','biomancy:bio_lumens')
+    tconstruct.material('kubejs:exotic_dust','biomancy:exotic_dust')
+    tconstruct.material('kubejs:hormone_secretion','biomancy:hormone_secretion')
+    tconstruct.material('kubejs:withering_ooze','biomancy:withering_ooze')
+    tconstruct.material('kubejs:mob_fang','biomancy:mob_fang')
+    tconstruct.material('kubejs:mob_claw','biomancy:mob_claw')
+    tconstruct.material('kubejs:wilden_horn','ars_nouveau:wilden_horn')
+    tconstruct.material('kubejs:wilden_spike','ars_nouveau:wilden_spike')
+    tconstruct.material('kubejs:wilden_wing','ars_nouveau:wilden_wing')
 })
+    
