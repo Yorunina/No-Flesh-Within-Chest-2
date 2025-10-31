@@ -452,7 +452,7 @@
 			#Blocks that will be added with each 'claim' purchased
 			#Range: 1 -> 64
 			#Default: 256
-			blocksPerChunk=256
+			blocksPerChunk=64
 			
 	#Lightman's Discord Compat Settings.
 	[compat.ldi]

@@ -10,9 +10,7 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:nature', ['crittersandcompanions:dragonfly_wing'])
 
-    event.add('kubejs:organ', ['chestcavity:tinker_heart'])
-    event.add('tconstruct:modifiable/durability', ['chestcavity:tinker_heart'])
-    event.add('tconstruct:modifiable/multipart', ['chestcavity:tinker_heart'])
+    event.add('kubejs:tinker_organ', ['chestcavity:tinker_heart'])
     event.add('kubejs:heart', ['chestcavity:tinker_heart'])
     event.add('kubejs:machine', ['chestcavity:tinker_heart'])
 
