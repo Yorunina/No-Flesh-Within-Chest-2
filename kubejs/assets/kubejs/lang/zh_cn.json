@@ -1025,7 +1025,7 @@
     "modifier.kubejs.pintcharisma.description": "村民提供交易折扣",
     "modifier.kubejs.hormone_secretion": "激素分泌",
     "modifier.kubejs.hormone_secretion.flavor": "激素分泌",
-    "modifier.kubejs.hormone_secretion.description": "提高移动和攻击速度",
+    "modifier.kubejs.hormone_secretion.description": "多穿戴带有本词条的物品以来获得额外的激素分泌,激素分泌会导致你获得额外的增益,但也会使你丧失你的伤害能力",
     "modifier.kubejs.mob_marrow": "怪物骨髓",
     "modifier.kubejs.mob_marrow.flavor": "怪物骨髓",
     "modifier.kubejs.mob_marrow.description": "给玩家了钙质化,穿戴骷髅和凋零骷髅黏液头盔后钙质化会提供额外的效果",
