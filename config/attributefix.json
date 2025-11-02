@@ -209,17 +209,6 @@
         "value": 100
       }
     },
-    "terra_entity:player.whip_range": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 64,
-        "value": 64
-      }
-    },
     "additionalentityattributes:bonus_loot_count_rolls": {
       "enabled": false,
       "min": {
@@ -229,6 +218,17 @@
       "max": {
         "default": 128,
         "value": 128
+      }
+    },
+    "terra_entity:player.whip_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
       }
     },
     "alshanex_familiars:sound_magic_resist": {
@@ -1463,17 +1463,6 @@
         "value": 1000
       }
     },
-    "tconstruct:generic.protection_cap": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 0.949999988079071,
-        "value": 0.949999988079071
-      }
-    },
     "additionalentityattributes:lava_speed": {
       "enabled": false,
       "min": {
@@ -1483,6 +1472,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "tconstruct:generic.protection_cap": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 0.949999988079071,
+        "value": 0.949999988079071
       }
     },
     "additionalentityattributes:bonus_rare_loot_rolls": {
