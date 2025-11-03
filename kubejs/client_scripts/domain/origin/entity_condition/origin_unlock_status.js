@@ -10,9 +10,10 @@ NetworkEvents.dataReceived('sync_origin_unlock_status', (event) => {
     })
 })
 
-global.OriginEntityConditionClientEvent = (event) => {
-    let id = event.getId().toString()
+OriginEvents.OriginEntCondition(event => {
+    let id = String(event.getKey())
     if (!OriginUnlockStatus[id]) {
-        event.cancel()
+        event.setResult(false)
     }
-}
+    event.setResult(true)
+})

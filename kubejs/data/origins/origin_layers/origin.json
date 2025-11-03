@@ -3,8 +3,16 @@
 	"order": 0,
 	"enabled": true,
 	"origins": [
+		{
+			"condition": {
+				"type": "originjs:kjs_entity_condition",
+				"key": "kubejs:lich"
+			},
+			"origins": [
+				"kubejs:lich"
+			]
+		},
 		"kubejs:normal",
-		"kubejs:lich",
 		"kubejs:machinist",
 		"kubejs:photographer",
 		"kubejs:tinker"

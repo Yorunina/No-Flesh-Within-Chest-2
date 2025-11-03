@@ -1,5 +1,5 @@
 // priority: 999
-OriginsEvents.originChanged(event => {
+OriginEvents.OriginChanged(event => {
     const origin = event.getOrigin()
     if (origin.getPath() == 'empty') return
     

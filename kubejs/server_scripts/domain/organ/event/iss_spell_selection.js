@@ -24,3 +24,4 @@ function OrganSpellSelection(event, customData) {
     UpdateClientISSSpellDataEvent(customData, entity)
     ApplyPlayerSpellSelection(event)
 }
+

@@ -2,11 +2,14 @@
 	"ftbteams": {
 		"my_team": true
 	},
+	"leaderboards": {
+		"leaderboards": true
+	},
 	"ftbquests": {
 		"quests": true
 	},
-	"leaderboards": {
-		"leaderboards": true
+	"patchoulibutton": {
+		"patchoulibutton": true
 	},
 	"ftblibrary": {
 		"toggle.gamemode": true,

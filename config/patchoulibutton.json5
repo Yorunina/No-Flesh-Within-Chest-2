@@ -1,0 +1,6 @@
+{
+	// Patchouli book identifier
+	"bookIdentifier": "patchouli:knowledge",
+	// If false, open directly modpack book
+	"openAllBooksScreen": false
+}

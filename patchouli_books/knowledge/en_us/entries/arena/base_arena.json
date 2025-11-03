@@ -1,0 +1,39 @@
+{
+    "name": "常规舞台",
+    "icon": "kubejs:soul_cage",
+    "category": "patchouli:arena",
+    "read_by_default": false,
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:multiblock",
+            "name": "舞台搭建",
+            "multiblock": {
+                "pattern": [
+                    [
+                        "A  ",
+                        " BC",
+                        "C  "
+                    ],
+                    [
+                        "A  ",
+                        "   ",
+                        "   "
+                    ],
+                    [
+                        "   ",
+                        " 0 ",
+                        "C  "
+                    ]
+                ],
+                "mapping": {
+                    "A": "minecraft:oak_log[axis=y]",
+                    "C": "minecraft:birch_log[axis=y]",
+                    "B": "minecraft:white_wool",
+                    "0": "minecraft:white_wool"
+                }
+            },
+            "text": "最基本的舞台配置，能够唤起最低级敌人前来袭击"
+        }
+    ]
+}

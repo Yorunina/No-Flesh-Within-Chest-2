@@ -22,18 +22,20 @@ if (FilesJS.exists(OriginUnlockStatusData)) {
     FilesJS.appendFile(OriginUnlockStatusData, '{}')
 }
 
-global.OriginEntityConditionServerEvent = (event) => {
+OriginEvents.OriginEntCondition(event => {
     /**@type {Internal.ServerPlayer} */
-    let player = event.player
-    let id = event.getId().toString()
+    let player = event.entity
+    if (!player.isPlayer()) return
+    let id = String(event.getKey())
     let uuidString = player.getUuid().toString()
     if (!OriginUnlockStatusUuidMap[uuidString]) {
-        event.cancel()
+        event.setResult(false)
     }
     if (!OriginUnlockStatusUuidMap[uuidString][id]) {
-        event.cancel()
+        event.setResult(false)
     }
-}
+    event.setResult(true)
+})
 
 /**
  * 

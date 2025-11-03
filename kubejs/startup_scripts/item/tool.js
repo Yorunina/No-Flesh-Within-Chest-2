@@ -12,30 +12,6 @@ StartupEvents.registry('item', event => {
         })
     }).tag('supplementaries:cookies').maxStackSize(64)
 
-    event.create('friend_to_the_end').texture('kubejs:item/tools/friend_to_the_end').maxStackSize(1)
-        .tag('curios:ring')
-        .useAnimation('bow')
-        .useDuration(itemStack => 40)
-        .use((level, player, hand) => true)
-        .finishUsing((itemstack, level, entity) => {
-            if (level.isClientSide()) return itemstack
-            if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
-                let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
-                if (friend && friend.isAlive()) {
-                    let targetDim = friend.level.getDimension()
-                    entity.teleportTo(targetDim, friend.x, friend.y, friend.z, 0, 0)
-                    entity.addItemCooldown(itemstack, 20 * 10)
-                } else {
-                    entity.tell($Serializer.fromJsonLenient({ translate: 'kubejs.msg.friend_to_the_end.1' }))
-                }
-            } else {
-                entity.tell($Serializer.fromJsonLenient({ translate: 'kubejs.msg.friend_to_the_end.2' }))
-                itemstack.setNbt({ friendName: entity.getUsername() })
-                return itemstack
-            }
-            return itemstack
-        })
-
     event.create('blood_extractor').texture('kubejs:item/tools/blood_extractor').maxStackSize(1)
 
     event.create('key_to_infinity').texture('kubejs:item/tools/key_to_infinity').maxStackSize(1)
