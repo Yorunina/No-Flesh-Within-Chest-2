@@ -1,0 +1,539 @@
+{
+  "blocks": [
+    {
+      "x": -2,
+      "y": 0,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": -2,
+      "y": 0,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": -1,
+      "y": 0,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "block": "realistic_furnace:furnace_controller",
+      "properties": {
+        "lit": "false",
+        "facing": "north"
+      }
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 1,
+      "block": "minecraft:campfire",
+      "properties": {
+        "waterlogged": "false",
+        "signal_fire": "false",
+        "lit": "false",
+        "facing": "west"
+      }
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "z": 2,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "x": -2,
+      "y": 1,
+      "z": 1,
+      "block": "minecraft:brick_wall",
+      "properties": {
+        "east": "tall",
+        "waterlogged": "false",
+        "south": "none",
+        "north": "none",
+        "west": "none",
+        "up": "true"
+      }
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 0,
+      "block": "minecraft:brick_wall",
+      "properties": {
+        "east": "none",
+        "waterlogged": "false",
+        "south": "tall",
+        "north": "none",
+        "west": "none",
+        "up": "true"
+      }
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": -1,
+      "y": 1,
+      "z": 2,
+      "block": "minecraft:brick_wall",
+      "properties": {
+        "east": "none",
+        "waterlogged": "false",
+        "south": "none",
+        "north": "tall",
+        "west": "none",
+        "up": "true"
+      }
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 0,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "z": 2,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 0,
+      "block": "minecraft:brick_wall",
+      "properties": {
+        "east": "none",
+        "waterlogged": "false",
+        "south": "tall",
+        "north": "none",
+        "west": "none",
+        "up": "true"
+      }
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "z": 2,
+      "block": "minecraft:brick_wall",
+      "properties": {
+        "east": "none",
+        "waterlogged": "false",
+        "south": "none",
+        "north": "tall",
+        "west": "none",
+        "up": "true"
+      }
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "z": 1,
+      "block": "minecraft:brick_wall",
+      "properties": {
+        "east": "none",
+        "waterlogged": "false",
+        "south": "none",
+        "north": "none",
+        "west": "tall",
+        "up": "true"
+      }
+    },
+    {
+      "x": -2,
+      "y": 2,
+      "z": 1,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": -1,
+      "y": 2,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "z": 1,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "x": -2,
+      "y": 3,
+      "z": 1,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    },
+    {
+      "x": -1,
+      "y": 3,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 0,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 1,
+      "block": "minecraft:oak_trapdoor",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "powered": "false",
+        "facing": "south",
+        "open": "false"
+      }
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "z": 2,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "z": 1,
+      "block": "minecraft:bricks",
+      "properties": {}
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "z": 1,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    },
+    {
+      "x": -1,
+      "y": 4,
+      "z": 1,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 0,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "z": 2,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "z": 1,
+      "block": "minecraft:brick_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "x": -1,
+      "y": 5,
+      "z": 1,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 0,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "z": 2,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "z": 1,
+      "block": "minecraft:brick_slab",
+      "properties": {
+        "waterlogged": "false",
+        "type": "bottom"
+      }
+    }
+  ],
+  "valve": {
+    "x": 0,
+    "y": 3,
+    "z": 1
+  }
+}

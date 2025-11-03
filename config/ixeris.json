@@ -2,6 +2,7 @@
   "enabledOnWindows": true,
   "enabledOnMacOS": true,
   "enabledOnLinux": true,
+  "aggressiveCaching": false,
   "fullyBlockingMode": false,
   "logBlockingCalls": false,
   "logCacheIssues": false,

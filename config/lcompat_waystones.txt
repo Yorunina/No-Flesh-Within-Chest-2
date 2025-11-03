@@ -2,74 +2,59 @@
 #This will be done by calculating the price normally and subtracting it from the max warp cost defined below
 #Default: false
 invertWarpCost=false
-
 #The base cost to warp using a Waystone
 #See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 #Default: "null;empty"
 baseWarpCost="null;empty"
-
 #The distance scaled cost to warp using a Waystone
 #See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 #Default: "null;empty"
 distanceScaledCost="null;empty"
-
 #The distance per distance scaled cost in meters
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 100.0
 distancePerScaledCost=100.0
-
 #How much is costs per leashed animal traveling with you
 #See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 #Default: "null;empty"
 warpCostPerLeashed="null;empty"
-
 #The cost to warp from one dimension to another using a Waystone
 #See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 #Default: "null;empty"
 crossDimensionWarpCost="null;empty"
-
 #The warp cost scale when warping to a Global Waystone
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 0.0
 globalWaystoneCostScale=0.0
-
 #The warp cost scale when warping using a Warp Stone item
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 0.0
 warpStoneCostScale=0.0
-
 #The warp cost scale when warping from one waystone to another
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 1.0
 waystoneCostScale=1.0
-
 #The warp cost scale when warping from one sharestone to another
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 0.0
 sharestoneCostScale=0.0
-
 #The warp cost scale when warping from a portstone
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 0.0
 portstoneCostScale=0.0
-
 #The warp cost scale when warping using a Warp Plate
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 0.0
 warpPlateCostScale=0.0
-
 #The warp cost scale when warping via the inventory button
 #Range: 0.0 -> 1.7976931348623157E308
 #Default: 0.0
 inventoryButtonCostScale=0.0
-
-#The minimum warp cost regardless of distance, etc. (may be subceeded by multipliers defined below)
+#The minimum warp cost regardless of distance, etc. (may be subceeded by multipliers defined above)
 #See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 #Default: "null;empty"
 minWarpCost="null;empty"
-
-#The maximum warp cost regardless of distance, etc. (may be exceeded by multipliers defined below)
+#The maximum warp cost regardless of distance, etc. (may be exceeded by multipliers defined above)
 #See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 #Default: "null;empty"
 maxWarpCost="null;empty"
-

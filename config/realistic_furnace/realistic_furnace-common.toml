@@ -1,0 +1,24 @@
+
+[Multiblock]
+
+	#Here you can whitelist or blacklist blocks to ensure the scan of your custom structure works properly. You can only use either the tags + whitelist or the blacklist. Putting anything in the blacklist will disable the whitelist and tags
+	[Multiblock.Whitelist]
+		#List of tags that upon scan are considered part of the multiblock if connected with the controller or each other
+		WhitelistedTags = ["minecraft:trapdoors"]
+		#List of blocks that upon scan are considered part of the multiblock if connected with the controller or each other
+		whitelistedBlocks = ["minecraft:bricks", "minecraft:brick_stairs", "minecraft:brick_slab", "minecraft:brick_wall", "minecraft:campfire"]
+
+	[Multiblock.Blacklist]
+		#List of blocks that upon scan are not considered part of the multiblock
+		#Be careful with this setting. If not operated with caution, unexpected blocks may be scanned
+		#Note: If using the blacklist, you probably don't want to consider 'minecraft:air' blocks
+		blacklistedBlocks = [""]
+
+	[Multiblock.Settings]
+		#Max amount of blocks that are considered when scanning the multiblock. This is to prevent an almost endless scan when the filter above are not set up properly
+		#Range: > 1
+		maxScanBlocks = 250
+		#Default/Fallback multiblock file. Only reconfigure this if you are sure the multiblock you are going to put as fallback is valid
+		#This is required if you want others to use by default a custom multiblock when downloading your modpack
+		TheFallbackFile = "original_furnace.json"
+

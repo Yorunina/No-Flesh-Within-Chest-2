@@ -120,8 +120,4 @@ const $BlockPatternBuilder = Java.loadClass('net.minecraft.world.level.block.sta
 const $BlockInWorld = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockInWorld')
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 const $IncarnationHelper = Java.loadClass("com.example.startres.kubejs.IncarnationKubeJSHelper")
-
-const $CaravanMember = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanMember')
-const $CaravanVariation = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanVariation')
-const $CaravanSpawner = Java.loadClass('dev.obscuria.caravans.world.caravans.CaravanSpawner')
 const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
