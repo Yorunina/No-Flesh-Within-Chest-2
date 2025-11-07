@@ -41,3 +41,5 @@ const $Integer = Java.loadClass('java.lang.Integer')
 
 const $AltarBlock = Java.loadClass('net.jrdemiurge.skyarena.block.custom.AltarBlock')
 const $AltarBlockTop = Java.loadClass('net.jrdemiurge.skyarena.block.custom.AltarBlockTop')
+
+const $CreateRecipeCategory = Java.loadClass('com.simibubi.create.compat.jei.category.CreateRecipeCategory')

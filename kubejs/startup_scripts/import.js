@@ -35,3 +35,5 @@ const $AltarBlockEntity = Java.loadClass('net.jrdemiurge.skyarena.block.entity.A
 const $LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams')
 const $Serializer = Java.loadClass('net.minecraft.network.chat.Component$Serializer')
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
+const $ToolStats = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStats')
+const $ToolStatId = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStatId')

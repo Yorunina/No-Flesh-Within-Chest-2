@@ -86,14 +86,15 @@
 				"我们需要更多的信息才能推测出这件事的原貌。"
 			]
 			hide_dependency_lines: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
 			id: "474910B463715048"
-			invisible: true
 			rewards: [{
 				id: "739C6BE121441369"
 				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
-			subtitle: "是神创世还是. . ."
+			subtitle: "工具逐渐破碎. . ."
 			tasks: [{
 				icon: {
 					Count: 1
@@ -150,8 +151,9 @@
 				"基于此，我提议将这套工序称作&6创世工艺&r。"
 			]
 			hide_dependency_lines: true
+			hide_text_until_complete: true
+			hide_until_deps_complete: true
 			id: "21716C6A06EA01F4"
-			invisible: true
 			rewards: [{
 				id: "4C4C2FE030DB5D74"
 				item: "lightmanscurrency:coin_iron"
@@ -882,13 +884,31 @@
 		}
 		{
 			dependencies: ["77B936419DC79A51"]
+			icon: "minecraft:light_blue_dye"
 			id: "3C6B693016F105DE"
-			tasks: [{
-				id: "1824DB632BCE05A3"
-				item: "minecraft:charcoal"
+			rewards: [{
+				id: "53A7CB5086EF7C48"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			title: "澄澈灵魂"
+			subtitle: "蓝图一定是蓝的"
+			tasks: [
+				{
+					consume_items: true
+					count: 32L
+					id: "1824DB632BCE05A3"
+					item: "minecraft:light_blue_dye"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "6C911B04AE828530"
+					item: { Count: 16, id: "minecraft:black_dye" }
+					type: "item"
+				}
+			]
+			title: "蓝图染料"
 			x: 8.5d
 			y: -6.5d
 		}
@@ -897,13 +917,11 @@
 			description: [
 				"为了制作创世蓝图，我们需要一些透明程度极高的材料。"
 				""
-				"一般来说，通透玻璃就可以满足我们的要求——但创世蓝图对光的透过性要求极高，以至于使用通透玻璃都无法满足部分部件的要求。"
+				"一般来说，通透玻璃就可以满足我们的要求——但创世蓝图的部分部件对光的透过性要求极高，以至于使用通透玻璃都无法满足部分部件的要求。"
 				""
-				"所幸，在创世工匠的记录中找到了一些蛛丝马迹。"
+				"所幸，在创世工匠的记录中找到了一些蛛丝马迹。在创造创世工具时，创世工匠已经发现部分部件需要使用这种透光度极高的材料，因此他赋予了世界上所有的石头/深板岩一种&6独特的晶体成分&r。"
 				""
-				"在创造创世工具时，创世工匠已经发现部分部件需要使用这种透光度极高的材料，因此他赋予了世界上所有的石头/深板岩一种&6独特的晶体成分&r。"
-				""
-				"但这种晶体成分过于稀少，因此需要使用&6特殊的工具效果&r才能够低概率从&6石材&r中开采得到这种晶体。"
+				"但这种晶体成分过于稀少，因此需要使用带有&6溶石&r属性的工具才能够低概率从&6石材&r中开采得到这种晶体。并且随着工具的挖掘速度的降低，获取概率会大幅度提升，因此您最好为此准备一把&6挖掘速度足够慢&r的镐子来完成这样任务。"
 			]
 			icon: "kubejs:clear_crystal"
 			id: "72368FD5AFE0823F"
@@ -913,22 +931,16 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "square"
+			size: 1.2d
 			subtitle: "蕴藏在世界中极度澄澈的晶体"
-			tasks: [
-				{
-					consume_items: true
-					count: 32L
-					id: "063493BF3DA8CA08"
-					item: "kubejs:clear_crystal"
-					type: "item"
-				}
-				{
-					count: 32L
-					id: "7EAC4AAD79A51085"
-					item: { Count: 32, id: "tconstruct:clear_glass" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "063493BF3DA8CA08"
+				item: "kubejs:clear_crystal"
+				type: "item"
+			}]
 			title: "清澈晶体"
 			x: 8.5d
 			y: -5.0d
@@ -936,14 +948,144 @@
 		{
 			dependencies: ["77B936419DC79A51"]
 			id: "7517301B9032ACBA"
-			tasks: [{
-				id: "34C8755AEFCD5481"
-				item: "minecraft:oak_log"
+			rewards: [{
+				id: "2F85410E5BCED19B"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			title: "轻薄纤维"
+			subtitle: "蓝图的基本组成"
+			tasks: [{
+				consume_items: true
+				count: 1024L
+				id: "4245E814B09C1357"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			title: "碳原料"
 			x: 8.5d
 			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7517301B9032ACBA"
+				"72368FD5AFE0823F"
+				"3C6B693016F105DE"
+			]
+			description: [
+				"以碳为肌，染料为血，澄澈晶体精雕为魂，依照过去创世工匠的方法，我学习，我模仿，我创造。"
+				""
+				"道路狭窄难以通行，但付诸努力，此事并非无可完成。"
+			]
+			icon: "supplementaries:hourglass"
+			id: "28C97AF6ABB74B7B"
+			rewards: [{
+				count: 3
+				id: "4D4D2604A51F0BDE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "稍等十分钟"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "63AC83316337B31F"
+				title: "时间演进"
+				type: "questsadditions:time"
+			}]
+			title: "静候佳音"
+			x: 10.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["28C97AF6ABB74B7B"]
+			description: [
+				"不可能！物理层面上，我&6&n完全复制&r&r了创世蓝图的数据！同样的数据在同一个系统中的表现怎么可能. . ."
+				""
+				"难道说世界因为创世工艺的出现，本身就发生了不可预测的变化吗？难道说创世蓝图在这个时代是不可能的吗？"
+			]
+			hide_until_deps_complete: true
+			icon: "kubejs:genesis_tinker_blueprint"
+			id: "0FF2CD1B2A8DCE20"
+			rewards: [{
+				count: 3
+				id: "0B5259720775CCF1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不可理解！"
+			tasks: [{
+				id: "43B1A218B932A4AC"
+				title: "失败的创世蓝图模拟！"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5407EA931130C055"]
+			id: "6EA40DB504D282A9"
+			tasks: [{
+				id: "6ACC06A5F2081A0D"
+				item: "minecraft:stripped_jungle_wood"
+				type: "item"
+			}]
+			title: "工匠研修V"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0FF2CD1B2A8DCE20"]
+			description: [
+				"追寻创世工匠或许本身就是一件极其愚蠢的事，其理由如下："
+				""
+				"1. &6无法保证创世工匠所处时代和当前时代条件相同&r。就算我能够完整复制过去创世蓝图的数据，但由于现在的时代，很多条件早已和当时不同，因此同样的方法也会有不同的结果——甚至这可能代表创世蓝图在当代已经无法复现。"
+				""
+				"2. &6创世工序可能本身就是骗局&r。我没有明确证据能证明创世工序是真实存在的。我只是根据了特殊标签的存在逆向调查到了一个类似于创世蓝图的物品并且尝试复制，但这完全无法说明创世工序本身一定存在且有效。"
+				""
+				"3. &6创世蓝图的成本远超打造工具的成本&r。事实上，到目前为止，我们自己打造工具已然能够满足日常生产的绝大部分要求。追求创世蓝图反而是舍近求远，像是在追寻一个完美的框架来诠释我们至今的努力——但这件事是否值得，在重新思考后，我认为完全无必要。"
+				""
+				"因此，请您在此三思，是否要花费精力继续行进这趟可能根本没有未来的旅途。作为引导者，我从理性上反对您将精力浪费在这种对生存无正反馈的事情上。但考虑到您的自由意志，我决定尊重您的决定。"
+				""
+				"如若您放弃追寻创世工艺，我会以&b一枚钻石币&r作为补偿。"
+			]
+			id: "3C788CBFDB9DBA29"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C0E3EE640F1C699"
+				table_id: 3651736726024610907L
+				type: "choice"
+			}]
+			subtitle: "是否放弃创世蓝图"
+			tasks: [{
+				id: "37147D450AECD2EC"
+				title: "做出抉择"
+				type: "checkmark"
+			}]
+			title: "抉择"
+			x: 14.0d
+			y: -5.0d
+		}
+		{
+			description: ["尊重您的决定，从现在起，我主要负责帮助您整理、收集相关数据，直到发现能够复现创世工艺的方法。"]
+			id: "5407EA931130C055"
+			invisible: true
+			rewards: [{
+				id: "5B35FE4276D9118A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "吾以匠心塑身"
+			tasks: [{
+				icon: "kubejs:genesis_tinker_blueprint"
+				id: "77359DE9B0F637C5"
+				isServer: false
+				stage: "genesis_tinker_1"
+				title: "踏向前路"
+				type: "ftbqaa:astages"
+			}]
+			title: "匠心独具"
+			x: 0.0d
+			y: -0.5d
 		}
 	]
 	title: "传闻：创世工匠"

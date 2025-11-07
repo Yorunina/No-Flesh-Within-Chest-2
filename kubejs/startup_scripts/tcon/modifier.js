@@ -81,18 +81,6 @@ TConJSEvents.modifierRegistry(event => {
         })
     })
 
-    // 猎魂：击杀敌人之后获得对应的灵魂
-    event.createNew('soul_hunter', builder => {
-        builder.processLoot((toolView, lvl, lootList, context) => {
-            const target = context.getParamOrNull($LootContextParams.THIS_ENTITY)
-            if (target != null && Math.random() < lvl * 0.05) {
-                lootList.push(Item.of('kubejs:soul_crystal', {
-                    'EntityType': target.type
-                }))
-            }
-        })
-    })
-
     event.createNew('freezing', builder => {
         builder.onAfterMeleeHit((toolView, lvl, context, amount) => {
             /**@type {Internal.PathfinderMob} */

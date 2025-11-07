@@ -1,0 +1,18 @@
+{
+	icon: "kubejs:genesis_tinker_blueprint"
+	id: "32AD93345FF1E45B"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "kubejs:genesis_tinker_blueprint"
+			ignore_reward_blocking: true
+			stage: "genesis_tinker_1"
+			title: "继续追寻创世工匠"
+			type: "ftbqaa:astages"
+		}
+		{ item: "lightmanscurrency:coin_diamond", title: "放弃追寻创世工匠" }
+	]
+	title: "创世蓝图抉择"
+}

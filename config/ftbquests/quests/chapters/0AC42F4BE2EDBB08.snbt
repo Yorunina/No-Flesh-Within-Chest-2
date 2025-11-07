@@ -277,14 +277,6 @@
 			]
 			icon: "minecraft:book"
 			id: "5D90233550E7D188"
-			rewards: [{
-				exclude_from_claim_all: true
-				icon: "modulargolems:lime_config_card"
-				id: "28B071F661496043"
-				team_reward: true
-				title: "权限等级+1"
-				type: "custom"
-			}]
 			subtitle: "经过确认后的传闻称为认知"
 			tasks: [{
 				id: "7537110BF6E79116"
@@ -300,16 +292,15 @@
 			description: [
 				"由于我无法提供知识之外的物品作为任务的奖励，而按照我的知识库仅给予您原本我所了解的物品作为奖励又太过于无意义。因此我有一个绝妙的好主意——"
 				""
-				"我创造了一种货币，名叫&6巧克力币&r，这是一种可以食用的货币，在危急时刻可以作为食物——虽然这并不被推荐。"
+				"我在扫描维度的时候，发现了一个&6特殊的维度&r，在那个维度里似乎有着前人建造留下的遗址，其中保存大量的用于售卖资源的器械。"
 				""
-				"与此同时，我开放了一个新的任务章节，当我获得新的物品访问权限时，会将一部分对您有帮助的物品置于此处售卖。"
-				"这既避免了我给您发放了过多无意义物资的情况，又能够让我们的旅途显得不那么无聊。"
+				"我可以通过逆向技术来为您打造&6访问那些器械的货币&r，但相对应的，希望您能够认真对待这次生存之旅，我会尽一切所能辅佐您的前进。"
 			]
-			icon: "kubejs:chocolate_coins"
+			icon: "lightmanscurrency:coin_gold"
 			id: "64C564541E487779"
 			rewards: [{
 				id: "724E009CBF96BB5F"
-				item: "kubejs:chocolate_coins"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "一点巧克力味的约定"
@@ -318,7 +309,7 @@
 				title: "约定"
 				type: "checkmark"
 			}]
-			title: "巧克力约定"
+			title: "金钱契约"
 			x: 0.0d
 			y: -7.0d
 		}
