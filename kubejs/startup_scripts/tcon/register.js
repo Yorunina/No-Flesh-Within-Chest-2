@@ -21,4 +21,7 @@ StartupEvents.registry('fluid', event => {
 	event.create('melted_cursium')
 		.thickTexture(0xdaa45a)
 		.bucketColor(0xdaa45a)	
+	event.create('melted_platinum')
+		.thickTexture(0xdaa45a)
+		.bucketColor(0xdaa45a)	
 })
