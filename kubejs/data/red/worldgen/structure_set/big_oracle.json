@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "red:big_oracle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "other_set": "red:herobrine_statue",
+      "chunk_count": 6
+    },
+    "spacing": 64,
+    "separation": 32,
+    "salt": 1962151229
+  }
+}

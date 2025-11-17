@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "create_structures_arise:pillager_boat",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 256,
+    "separation": 96,
+    "salt": 1421414140
+  }
+}

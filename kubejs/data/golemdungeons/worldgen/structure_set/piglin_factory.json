@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1632832137,
+    "separation": 64,
+    "spacing": 128
+  },
+  "structures": [
+    {
+      "structure": "golemdungeons:piglin_factory",
+      "weight": 1
+    }
+  ]
+}

@@ -14,6 +14,7 @@ OriginEvents.OriginEntCondition(event => {
     let id = String(event.getKey())
     if (!OriginUnlockStatus[id]) {
         event.setResult(false)
+        return
     }
     event.setResult(true)
 })

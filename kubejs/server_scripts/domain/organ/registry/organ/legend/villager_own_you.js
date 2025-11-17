@@ -1,6 +1,5 @@
 // priority: 500
 RegistryOrgan('kubejs:villager_own_you')
-    .addScore('kubejs:charming', 2)
     .addScore('chestcavity:luck', 1)
 
 /**

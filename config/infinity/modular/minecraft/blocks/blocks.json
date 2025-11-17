@@ -2450,76 +2450,6 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:cut_copper_stairs",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:cut_red_sandstone",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:cut_red_sandstone_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:cut_sandstone",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:cut_sandstone_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
 				"float": false,
 				"laggy": true,
 				"Name": "minecraft:cyan_banner",
@@ -3590,36 +3520,6 @@
 				"Name": "minecraft:exposed_copper",
 				"top": true,
 				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:exposed_cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:exposed_cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:exposed_cut_copper_stairs",
-				"top": true,
-				"full": false
 			}
 		},
 		{
@@ -6362,36 +6262,6 @@
 				"Name": "minecraft:oxidized_copper",
 				"top": true,
 				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:oxidized_cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:oxidized_cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:oxidized_cut_copper_stairs",
-				"top": true,
-				"full": false
 			}
 		},
 		{
@@ -9620,69 +9490,9 @@
 			"key": {
 				"float": true,
 				"laggy": false,
-				"Name": "minecraft:waxed_cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_cut_copper_stairs",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
 				"Name": "minecraft:waxed_exposed_copper",
 				"top": true,
 				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_exposed_cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_exposed_cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_exposed_cut_copper_stairs",
-				"top": true,
-				"full": false
 			}
 		},
 		{
@@ -9700,36 +9510,6 @@
 			"key": {
 				"float": true,
 				"laggy": false,
-				"Name": "minecraft:waxed_oxidized_cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_oxidized_cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_oxidized_cut_copper_stairs",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
 				"Name": "minecraft:waxed_weathered_copper",
 				"top": true,
 				"full": true
@@ -9740,69 +9520,9 @@
 			"key": {
 				"float": true,
 				"laggy": false,
-				"Name": "minecraft:waxed_weathered_cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_weathered_cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:waxed_weathered_cut_copper_stairs",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
 				"Name": "minecraft:weathered_copper",
 				"top": true,
 				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:weathered_cut_copper",
-				"top": true,
-				"full": true
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:weathered_cut_copper_slab",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "minecraft:weathered_cut_copper_stairs",
-				"top": true,
-				"full": false
 			}
 		},
 		{

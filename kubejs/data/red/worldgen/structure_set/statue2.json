@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "red:statue2",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 256,
+    "separation": 128,
+    "salt": 499969670
+  }
+}

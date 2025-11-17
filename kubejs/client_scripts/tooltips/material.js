@@ -3,5 +3,4 @@
 ItemEvents.tooltip(tooltip => {
     tooltip.add('kubejs:plastic_stem_cells', Text.translatable('tooltips.kubejs.plastic_stem_cells').gray())
     tooltip.add('exposure:dream_film', Text.translatable('tooltips.exposure.dream_film').gray())
-    tooltip.add('kubejs:vow_coin', Text.translatable('tooltips.kubejs.vow_coin').gray())
 })

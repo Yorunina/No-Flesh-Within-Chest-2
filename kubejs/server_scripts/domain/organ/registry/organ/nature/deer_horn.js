@@ -2,4 +2,3 @@
 RegistryOrgan('kubejs:deer_horn')
     .addScore('chestcavity:speed', -0.5)
     .addScore('chestcavity:defense', 3)
-    .addScore('kubejs:charming', 1)

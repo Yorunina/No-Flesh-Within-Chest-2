@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 169476076,
+    "separation": 32,
+    "spacing": 64
+  },
+  "structures": [
+    {
+      "structure": "illagerinvasion:firecaller_hut",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "structures": [
+    {
+      "structure": "red:birch_deforestation",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "other_set": "red:dark_tower",
+      "other_set": "red:abandoned_house",
+      "chunk_count": 6
+    },
+    "spacing": 64,
+    "separation": 36,
+    "salt": 481193084
+  }
+}

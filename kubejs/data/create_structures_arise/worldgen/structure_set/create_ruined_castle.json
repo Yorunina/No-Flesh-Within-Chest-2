@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "create_structures_arise:create_ruined_castle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 256,
+    "separation": 96,
+    "salt": 993876778
+  }
+}

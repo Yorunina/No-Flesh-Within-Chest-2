@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "graveyard:small_desert_graveyard",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 598017285,
+    "spacing": 64,
+    "separation": 32
+  }
+}

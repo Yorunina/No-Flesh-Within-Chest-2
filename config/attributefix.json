@@ -88,17 +88,6 @@
         "value": 100
       }
     },
-    "tetra:ability_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "attributeslib:armor_pierce": {
       "enabled": false,
       "min": {
@@ -119,17 +108,6 @@
       "max": {
         "default": 100,
         "value": 100
-      }
-    },
-    "malum:soul_ward_recovery_rate": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
       }
     },
     "minecraft:generic.luck": {
@@ -176,17 +154,6 @@
         "value": 10
       }
     },
-    "item_cooling_reduction:reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "additionalentityattributes:magic_protection": {
       "enabled": false,
       "min": {
@@ -220,17 +187,6 @@
         "value": 128
       }
     },
-    "terra_entity:player.whip_range": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 64,
-        "value": 64
-      }
-    },
     "alshanex_familiars:sound_magic_resist": {
       "enabled": false,
       "min": {
@@ -251,17 +207,6 @@
       "max": {
         "default": 40000,
         "value": 40000
-      }
-    },
-    "terra_entity:player.sentry_capacity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 128,
-        "value": 128
       }
     },
     "l2damagetracker:fire_damage": {
@@ -341,17 +286,6 @@
         "value": 2048
       }
     },
-    "malum:scythe_proficiency": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "l2damagetracker:explosion_damage": {
       "enabled": false,
       "min": {
@@ -418,17 +352,6 @@
         "value": 2147483647
       }
     },
-    "terra_entity:player.summon_damage": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "forge:block_reach": {
       "enabled": false,
       "min": {
@@ -438,17 +361,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "terra_entity:player.minion_capacity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 128,
-        "value": 128
       }
     },
     "minecraft:generic.attack_speed": {
@@ -581,17 +493,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "constructs_casting:slime_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "potioncore:magic_damage": {
@@ -825,17 +726,6 @@
         "value": 10
       }
     },
-    "malum:soul_ward_capacity": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
-      }
-    },
     "attributeslib:healing_received": {
       "enabled": false,
       "min": {
@@ -845,17 +735,6 @@
       "max": {
         "default": 1000,
         "value": 1000
-      }
-    },
-    "tinkersjewelry:fortune": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
       }
     },
     "forge:entity_gravity": {
@@ -935,28 +814,6 @@
         "value": 1000
       }
     },
-    "malum:malignant_conversion": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "kubejs:candy_spell_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "tconstruct:generic.bad_effect_duration_multiplier": {
       "enabled": false,
       "min": {
@@ -1032,17 +889,6 @@
       "max": {
         "default": 1024,
         "value": 1024
-      }
-    },
-    "tetra:draw_strength": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 2048
       }
     },
     "irons_spellbooks:cooldown_reduction": {
@@ -1133,17 +979,6 @@
         "value": 1024
       }
     },
-    "tinkersjewelry:silk": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "irons_spellbooks:fire_magic_resist": {
       "enabled": false,
       "min": {
@@ -1188,17 +1023,6 @@
         "value": 10000
       }
     },
-    "tinkersjewelry:subspace": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 6,
-        "value": 6
-      }
-    },
     "irons_spellbooks:ender_spell_power": {
       "enabled": false,
       "min": {
@@ -1215,17 +1039,6 @@
       "min": {
         "default": 1,
         "value": 1
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "constructs_casting:slime_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
       },
       "max": {
         "default": 100,
@@ -1408,17 +1221,6 @@
         "value": 1
       }
     },
-    "terra_entity:player.summon_knockback": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 5,
-        "value": 5
-      }
-    },
     "minecraft:generic.movement_speed": {
       "enabled": true,
       "min": {
@@ -1450,17 +1252,6 @@
       "max": {
         "default": 10,
         "value": 10
-      }
-    },
-    "tinkersjewelry:trade": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1000,
-        "value": 1000
       }
     },
     "additionalentityattributes:lava_speed": {

@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "red:snowy_oracle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 3
+    },
+    "spacing": 64,
+    "separation": 32,
+    "salt": 23710246
+  }
+}

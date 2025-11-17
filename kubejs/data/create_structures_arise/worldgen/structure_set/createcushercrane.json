@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "create_structures_arise:createcushercrane",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 128,
+    "separation": 64,
+    "salt": 1157834922
+  }
+}

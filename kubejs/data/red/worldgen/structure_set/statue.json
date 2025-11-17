@@ -1,0 +1,21 @@
+{
+  "structures": [
+    {
+      "structure": "red:statue",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "other_set": "red:abandoned_house",
+      "other_set": "red:dark_tower",
+      "other_set": "red:plains_oracle",
+      "chunk_count": 6
+    },
+    "spacing": 256,
+    "separation": 128,
+    "salt": 1789340382
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "bakery:bakery",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 246813,
+    "spacing": 256,
+    "separation": 128,
+    "type": "minecraft:random_spread"
+  }
+}

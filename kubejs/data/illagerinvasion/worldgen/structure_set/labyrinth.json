@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "exclusion_zone": {
+      "chunk_count": 10,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 169476079,
+    "separation": 32,
+    "spacing": 64
+  },
+  "structures": [
+    {
+      "structure": "illagerinvasion:labyrinth",
+      "weight": 1
+    }
+  ]
+}

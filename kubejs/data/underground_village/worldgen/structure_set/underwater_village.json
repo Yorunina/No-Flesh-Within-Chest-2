@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "underground_village:underwater_village",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 8699777,
+    "spacing": 64,
+    "separation": 32
+  }
+}

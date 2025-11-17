@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "create_structures_arise:create_dungeon_base",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 256,
+    "separation": 96,
+    "salt": 1703006974
+  }
+}

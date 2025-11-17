@@ -30,9 +30,11 @@ OriginEvents.OriginEntCondition(event => {
     let uuidString = player.getUuid().toString()
     if (!OriginUnlockStatusUuidMap[uuidString]) {
         event.setResult(false)
+        return
     }
     if (!OriginUnlockStatusUuidMap[uuidString][id]) {
         event.setResult(false)
+        return
     }
     event.setResult(true)
 })

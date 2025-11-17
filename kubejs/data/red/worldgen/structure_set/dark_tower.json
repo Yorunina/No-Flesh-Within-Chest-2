@@ -1,0 +1,20 @@
+{
+  "structures": [
+    {
+      "structure": "red:dark_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "triangular",
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "other_set": "red:plains_oracle",
+      "chunk_count": 10
+    },
+    "spacing": 64,
+    "separation": 32,
+    "salt": 597050557
+  }
+}

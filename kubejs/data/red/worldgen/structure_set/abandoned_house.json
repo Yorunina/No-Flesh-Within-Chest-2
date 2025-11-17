@@ -1,0 +1,21 @@
+{
+  "structures": [
+    {
+      "structure": "red:abandoned_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spread_type": "triangular",
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "other_set": "red:dark_tower",
+      "other_set": "red:jungle_pyramid",
+      "chunk_count": 6
+    },
+    "spacing": 128,
+    "separation": 64,
+    "salt": 953488643
+  }
+}

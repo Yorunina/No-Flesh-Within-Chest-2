@@ -32,7 +32,7 @@ modid_dimension_blacklist = []
 #list of loot tables which shouldn't be converted (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
 loot_table_blacklist = []
 #if true, all block entities will be checked before being added to the ticker for an eligible loot table. enable this if a huge quantity of containers are clogging the conversion system; note that aggressive mode may prevent certain chests from properly converted even though eligible
-aggressive_mode = false
+aggressive_mode = true
 #list of dimensions where loot chests should automatically refresh (default: blank, e.g., ["minecraft:overworld", "othermod:otherdimension"])
 refresh_dimensions = []
 #list of mod IDs whose loot tables will refresh (default blank, meaning no chests refresh, in the format of ["modid", "othermodid"])

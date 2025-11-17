@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "underground_village:underground_village",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 8699777,
+
+    "spacing": 64,
+    "separation": 32,
+    "type": "underground_village:distance_based_structure_placement"
+  }
+}
