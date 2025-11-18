@@ -49,7 +49,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    player.sendData('test')
+    console.log(player.getChestCavityInstance().getChestCavityType().getDefaultOrganScores())
     // /**@type {Internal.PathfinderMob} */
     // let leader = level.createEntity('minecraft:zombie')
     // leader.potionEffects.add('minecraft:glowing', 20 * 60, 0)
@@ -68,9 +68,9 @@ ItemEvents.rightClicked('stick', event => {
     //     }
     // )
     // LongDistancePatrolGoal(entity)
-    
 
-    
+
+
     // let defaultData = server.persistentData.getInt('default')
     // player.tell('defaultData: ' + defaultData)
 

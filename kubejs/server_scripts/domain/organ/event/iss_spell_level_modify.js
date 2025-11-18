@@ -6,7 +6,7 @@ const OrganISSSpellLevelModifyEvent = new OrganEventModel('iss_spell_level_modif
  */
 NativeEvents.onEvent($ModifySpellLevelEvent, /** @param {Internal.ModifySpellLevelEvent} event */ event => {
     const entity = event.entity
-    if (!entity.isAlive()) return
+    if (!entity.isAlive() || entity.level.isClientSide()) return
     let customData = {}
     OrganModifySpellLevel(event, customData)
 })

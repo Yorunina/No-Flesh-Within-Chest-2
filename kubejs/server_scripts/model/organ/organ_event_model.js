@@ -29,14 +29,18 @@ OrganEventModel.prototype = {
      */
     run: function (entity, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
-
+        let ccEntity = optional.get()
+        let ccInstance = ccEntity.getChestCavityInstance()
+        // 往往是Client事件导致
+        if (!ccInstance) {
+            console.log(this.eventId)
+            return
+        }
         if (!optional.isPresent()) return
         args.unshift(customData)
         this.inits.forEach(init => {
             init.apply(null, args)
         })
-        let ccEntity = optional.get()
-        let ccInstance = ccEntity.getChestCavityInstance()
         let ccInv = ccInstance.inventory
         const onlyMap = new Map()
         let slotMap = ccInstance.getListenerMap(this.eventId)
@@ -72,7 +76,7 @@ OrganEventModel.prototype = {
             }
             ExcretionSlotEvent(customData, ccInstance)
         }
-        
+
 
         this.defers.forEach(defer => {
             defer.apply(null, args)
