@@ -1,0 +1,13 @@
+逆熵物质：entropy_reversal_matter
+编码经验板：encoded_experience_plate
+本源黄铜锭：primitive_brass_ingot
+结构栓：structural_bolt
+随机刻发条：randomtick_spring
+更精密的构件：more_precise_component
+精密透镜：precision_lens
+红石钽电容：redstone_tantalum_capacitor
+眼熟的构件：familiar_component
+匠造齿轮：crafted_gear
+机脑神经元：cyberbrain_neuron
+时序环：timing_ring
+能质转化阀：timing_valve

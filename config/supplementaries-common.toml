@@ -333,7 +333,7 @@
 		#Range: 0.0 ~ 1.0
 		ash_from_fire_chance = 1.0
 		#Burning mobs will drop ash when they die
-		ash_from_burning_mobs = true
+		ash_from_burning_mobs = false
 		#Allows rain to wash away ash layers overtime
 		rain_wash_ash = true
 		#Use a datapack to tweak rarity

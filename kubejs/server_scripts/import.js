@@ -113,3 +113,5 @@ const $IncarnationHelper = Java.loadClass("com.example.startres.kubejs.Incarnati
 const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
 
 const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')
+const $CameraItem = Java.loadClass('io.github.mortuusars.exposure.item.CameraItem')
+const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer')

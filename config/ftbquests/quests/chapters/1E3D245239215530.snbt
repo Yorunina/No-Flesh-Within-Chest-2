@@ -165,6 +165,288 @@
 			x: 5.0d
 			y: 1.5d
 		}
+		{
+			description: [
+				"为了制造后续所需的纸和乙醇，一个甘蔗农场是必须的。"
+				""
+				"您可以使用任何方式来构造这个农场，其不需要有过大的规模。"
+			]
+			id: "4C734EDC56B5A572"
+			rewards: [{
+				id: "231059A8AE49C0F0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了纸和乙醇"
+			tasks: [{
+				count: 64L
+				id: "0802E4C4E11327DC"
+				item: "minecraft:sugar_cane"
+				type: "item"
+			}]
+			title: "甘蔗农场"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			description: [
+				"为了乙醇你需要足够多的骨粉。"
+				""
+				"一个简单的方案是去开采&6古代残骸&r虚拟矿脉，在稳定产出的骨头的基础上进行增产，就能够获得足够多的骨粉用于后续的生产。"
+				""
+				"也可以通过刷怪笼或者刷怪塔的各种方案，来实现一个无限的&6怪物骨头农场&r进而实现骨粉的获取，亦或者是一个&6苔藓农场&r。"
+				""
+				"其实现方式较多，您可以随意发挥，由于实际需求的量并不多，因此您不必追求完全无限的自动化量产。"
+			]
+			id: "46E1C381CEC3C04A"
+			rewards: [{
+				id: "489036D77AFB9F0D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了乙醇"
+			tasks: [{
+				count: 64L
+				id: "29267DAAD549F7AB"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			title: "骨粉农场"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			description: [
+				"树脂团会在激活的&6嘎枝之心&r周围生成，如果你在嘎枝之心周围攻击了&6嘎枝怪&r，那么会在周围的原木上生成树脂团。"
+				""
+				"通过简单的设计，您可以设计出一个用于生产树脂团的农场，这个农场不需要有过大的规模，仅需能够提供长久有效的生产能力即可。"
+			]
+			id: "08AEF21250BE4A0F"
+			rewards: [{
+				id: "72233A5FE6927849"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了电路基板"
+			tasks: [{
+				count: 64L
+				id: "1BC601D86ED89517"
+				item: "vanillabackport:resin_clump"
+				type: "item"
+			}]
+			title: "树脂农场"
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"烈焰粉农场的制作方法也有很多，一个简单的方案是通过&6循环工序&r。"
+				""
+				"烈焰棒可以通过粉碎轮变为&6 3 + 0.5 * 3 烈焰粉&r，也就是预期为 &64.5 的烈焰粉&r。"
+				""
+				"而烈焰粉可以通过加热搅拌，由&6 4 烈焰粉转化为 1 烈焰棒&r，在这套工序中，约为一循环赚&6 0.5 烈焰粉&r。"
+				""
+				"理论上来说，通过循环这套工序便可以获取到足够多的烈焰粉。但由于其收益较小，因此需要足够长的时间和“本金”才能够启动这套工序。"
+			]
+			id: "67287DA5B6767B9B"
+			rewards: [{
+				id: "489A0C77BEA0CF3A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了药水"
+			tasks: [{
+				count: 64L
+				id: "051B27ACBD3443D9"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			title: "烈焰农场"
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			description: [
+				"为了制作电路基板，还需要足够多的灰烬。"
+				""
+				"任何能够燃烧的物质被火焰烧尽后都会留下灰烬，通过一套自动化设备，完全可以实现灰烬的自动化生产。"
+				""
+				"一个优秀的选择是木棍，&6木棍放置在引燃地狱岩的火焰附近&r，很快就会被转化为灰烬。使用木棍的另一好处是您可以使用&6竹子农场&r来供应其消耗，当然，如果有林场的话自然是更好的选择。"
+			]
+			id: "635648F942615025"
+			rewards: [{
+				id: "7C40BEA2260C45A2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了电路基板"
+			tasks: [{
+				count: 64L
+				id: "395F38FCD4712F33"
+				item: "supplementaries:ash"
+				type: "item"
+			}]
+			title: "灰烬农场"
+			x: 1.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"您还需要制作一个紫水晶农场，一个最简单的方法是用&6机械手对紫水晶母岩执行右击操作&r。"
+				""
+				"每次机械手的右击操作，会使紫水晶母岩强制进行一次随机刻判定，进而催生紫水晶的生长。"
+				""
+				"紫水晶农场并不需要过大的规模，仅需能够保证基本使用即可。"
+			]
+			id: "183FD350BF7F5A66"
+			rewards: [{
+				id: "2A4DF64213B01A50"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了共振晶体"
+			tasks: [{
+				count: 64L
+				id: "3F4E563FC8F1A401"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			title: "紫水晶农场"
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			id: "4F4D84DCAADFE359"
+			tasks: [{
+				id: "38C09FA237D93E79"
+				item: "kubejs:stable_substrate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.0d
+		}
+		{
+			id: "3CA1B288B92FE257"
+			tasks: [{
+				id: "7AB7786298B4767A"
+				item: "kubejs:unstable_matter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 6.0d
+		}
+		{
+			id: "3D8418E7483D6A46"
+			tasks: [{
+				id: "09AB9FB5B5C31A87"
+				item: "kubejs:refined_brass_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "0E67DFADB3CDCA82"
+			tasks: [{
+				id: "64FA1F67A85DC0AD"
+				item: "kubejs:redstone_capacitor"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "44C94FE229AA4E1B"
+			tasks: [{
+				id: "7C95BC8E2984C891"
+				item: "kubejs:simulated_unit"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			id: "1FF0FAA4AB49D901"
+			tasks: [{
+				id: "5034140A3E606812"
+				item: "kubejs:oracle_gate"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			id: "7D765D69D05EF9E6"
+			tasks: [{
+				id: "40EC03017B82250F"
+				item: "kubejs:counterweight_gear"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			id: "1B23C2E681511D87"
+			tasks: [{
+				id: "2EF7A904375C0707"
+				item: "kubejs:reverse_causality_chip"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			id: "56E5B7D978622ABB"
+			tasks: [{
+				id: "6A3C763FE625A857"
+				item: "kubejs:timing_valve"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 6.0d
+		}
+		{
+			id: "3E538F7B30265340"
+			tasks: [{
+				id: "1258570B169D6F2A"
+				item: "kubejs:random_tick_spring"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			id: "56C5CC3C18FB5AC0"
+			tasks: [{
+				id: "6072181D1C025B2D"
+				item: "kubejs:structural_bolt"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			id: "2E6A3D62A8D3A9A6"
+			tasks: [{
+				id: "20DDAF1213983109"
+				title: "地心流体开凿"
+				type: "checkmark"
+			}]
+			title: "地心流体"
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			id: "239E0F7A9A0E1B24"
+			tasks: [{
+				id: "21DC5F7D8DCB07C3"
+				title: "地幔矿藏"
+				type: "checkmark"
+			}]
+			title: "地幔矿藏"
+			x: 1.0d
+			y: 10.0d
+		}
 	]
 	title: "传闻：大世界计算机"
 }

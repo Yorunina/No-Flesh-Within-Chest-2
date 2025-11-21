@@ -118,25 +118,10 @@ const TimeStabilityHover = Text.translatable('tooltips.kubejs.hover.time_stabili
         Text.translatable('tooltips.kubejs.hover.time_stability.1'),
     ]))
 
-const ExperimentalWorldEditObeliskHover = Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.0').gold().underlined()
-    .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.0').gold(),
-        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.1'),
-        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.2'),
-        Text.translatable('tooltips.kubejs.hover.experimental_world_edit_obelisk.3'),
-    ]))
 
-const RepairProtocolHover = Text.translatable('tooltips.kubejs.hover.repair_protocol.0').red().underlined()
+const UnstableHover = Text.translatable('tooltips.kubejs.hover.unstable.0').red().underlined()
     .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.repair_protocol.0').red(),
-        Text.translatable('tooltips.kubejs.hover.repair_protocol.1'),
-        Text.translatable('tooltips.kubejs.hover.repair_protocol.2'),
-    ]))
-
-const EntityEditProtocolHover = Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.0').red().underlined()
-    .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.0').red(),
-        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.1'),
-        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.2'),
-        Text.translatable('tooltips.kubejs.hover.entity_edit_protocol.3'),
+        Text.translatable('tooltips.kubejs.hover.unstable.0').red(),
+        Text.translatable('tooltips.kubejs.hover.unstable.1'),
+        Text.translatable('tooltips.kubejs.hover.unstable.2'),
     ]))
