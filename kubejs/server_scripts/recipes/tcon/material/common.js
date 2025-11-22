@@ -37,5 +37,7 @@ ServerEvents.recipes(event => {
     tconstruct.material('kubejs:mob_gland','biomancy:mob_gland')
     tconstruct.material('kubejs:volatile_gland','biomancy:volatile_gland')
     tconstruct.material('kubejs:toxin_gland','biomancy:toxin_gland')
+    tconstruct.material('kubejs:volatile_fluid','biomancy:volatile_fluid')
+    tconstruct.material('kubejs:bile','biomancy:bile')
 })
     

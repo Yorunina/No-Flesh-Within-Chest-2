@@ -43,10 +43,6 @@
     },
     "tconstruct:plating_shield": {
       "durability": 20
-    },
-    "tconstruct:skull": {
-      "armor": 1,
-      "durability": 10
     }
   }
 }

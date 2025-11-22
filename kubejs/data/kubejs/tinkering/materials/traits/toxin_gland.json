@@ -1,3 +1,8 @@
 {
-    "default": []
+    "default": [
+        {
+      "level": 1,
+      "name": "kubejs:toxin_gland"
+    }
+    ]
 }

@@ -22,10 +22,6 @@
       "draw_speed": 0.05,
       "durability": 125,
       "velocity": 0.05
-    },
-    "tconstruct:skull": {
-      "armor": 0,
-      "durability": 125
     }
   }
 }
