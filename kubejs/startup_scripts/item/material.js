@@ -1,14 +1,6 @@
 // priority: 1000
-// 材料 / 中间件
 StartupEvents.registry('item', event => {
     event.create('sawdust').texture('kubejs:item/material/sawdust').maxStackSize(64).burnTime(400)
-
-    event.create('iron_copper_extreme_ore').texture('kubejs:item/material/iron_copper_extreme_ore').maxStackSize(1)
-    event.create('iron_copper_dense_ore').texture('kubejs:item/material/iron_copper_dense_ore').maxStackSize(1)
-    event.create('iron_copper_ore').texture('kubejs:item/material/iron_copper_ore').maxStackSize(1)
-    event.create('iron_copper_waste_ore').texture('kubejs:item/material/iron_copper_waste_ore').maxStackSize(1)
-
-
 })
 
 StartupEvents.registry('fluid', event => {

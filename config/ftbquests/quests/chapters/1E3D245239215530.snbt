@@ -185,18 +185,20 @@
 				type: "item"
 			}]
 			title: "甘蔗农场"
-			x: 1.0d
-			y: 9.0d
+			x: 0.5d
+			y: 3.5d
 		}
 		{
 			description: [
-				"为了乙醇你需要足够多的骨粉。"
+				"为了乙醇您或许需要足够多的骨粉。"
 				""
 				"一个简单的方案是去开采&6古代残骸&r虚拟矿脉，在稳定产出的骨头的基础上进行增产，就能够获得足够多的骨粉用于后续的生产。"
 				""
 				"也可以通过刷怪笼或者刷怪塔的各种方案，来实现一个无限的&6怪物骨头农场&r进而实现骨粉的获取，亦或者是一个&6苔藓农场&r。"
 				""
 				"其实现方式较多，您可以随意发挥，由于实际需求的量并不多，因此您不必追求完全无限的自动化量产。"
+				""
+				"当然，由于在&6药水生产环节&r您可能通过副产物实现了乙醇自由，那时您可以忽略掉本任务。"
 			]
 			id: "46E1C381CEC3C04A"
 			rewards: [{
@@ -212,8 +214,8 @@
 				type: "item"
 			}]
 			title: "骨粉农场"
-			x: 1.0d
-			y: 4.0d
+			x: 8.0d
+			y: 3.0d
 		}
 		{
 			description: [
@@ -227,7 +229,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为了电路基板"
+			subtitle: "为了电路"
 			tasks: [{
 				count: 64L
 				id: "1BC601D86ED89517"
@@ -235,8 +237,8 @@
 				type: "item"
 			}]
 			title: "树脂农场"
-			x: 1.0d
-			y: 5.0d
+			x: 3.0d
+			y: 11.0d
 		}
 		{
 			description: [
@@ -254,7 +256,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为了药水"
+			subtitle: "为了药水和零件"
 			tasks: [{
 				count: 64L
 				id: "051B27ACBD3443D9"
@@ -262,8 +264,8 @@
 				type: "item"
 			}]
 			title: "烈焰农场"
-			x: 1.0d
-			y: 6.0d
+			x: 0.0d
+			y: 10.5d
 		}
 		{
 			description: [
@@ -287,8 +289,8 @@
 				type: "item"
 			}]
 			title: "灰烬农场"
-			x: 1.0d
-			y: 7.0d
+			x: 0.5d
+			y: 9.0d
 		}
 		{
 			description: [
@@ -312,140 +314,284 @@
 				type: "item"
 			}]
 			title: "紫水晶农场"
-			x: 5.5d
-			y: 13.0d
+			x: 7.0d
+			y: 9.0d
 		}
 		{
+			dependencies: [
+				"4F3802758A456C7B"
+				"08AEF21250BE4A0F"
+			]
+			description: [
+				"稳定基板&6必须使用粘液球&r制作，不能使用凝血等其余类粘液球进行制作，否则会影响其稳定性。"
+				""
+				"通过树脂和粘液球的反复叠加，便可以制作成稳定基板。"
+			]
 			id: "4F4D84DCAADFE359"
+			rewards: [{
+				id: "7205646B6C3D026B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "38C09FA237D93E79"
 				item: "kubejs:stable_substrate"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 7.0d
+			title: "稳定基板生产"
+			x: 5.5d
+			y: 12.0d
 		}
 		{
+			dependencies: ["3D8418E7483D6A46"]
 			id: "3CA1B288B92FE257"
+			rewards: [{
+				id: "26BB1F3655935B08"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "7AB7786298B4767A"
 				item: "kubejs:unstable_matter"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 6.0d
+			title: "不稳定物质生产"
+			x: 13.0d
+			y: 5.0d
 		}
 		{
+			dependencies: [
+				"6119004524D541AE"
+				"2117B03C990E1B9B"
+			]
+			description: [
+				"正常制取的黄铜纯度仍旧不够，通过超高温乙醇精制，可以得到精制黄铜，其异常现象更为明显。"
+				""
+				"您可以采用&6烈焰人燃烧室&r配合烈焰蛋糕冶炼，也可以使用&6可控燃烧室&r配合&6汽油&r开启超级加热模式。"
+				""
+				"具体方案取决于您是否能够接受使用超长距离的燃油运输线路。使用烈焰蛋糕需要您实现一个鸡蛋农场，难度也并不高。"
+			]
 			id: "3D8418E7483D6A46"
+			rewards: [{
+				id: "161686CE88F62752"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了计算机元件"
 			tasks: [{
+				count: 64L
 				id: "09AB9FB5B5C31A87"
 				item: "kubejs:refined_brass_ingot"
 				type: "item"
 			}]
-			x: 8.0d
+			title: "精炼黄铜技艺"
+			x: 10.0d
 			y: 4.0d
 		}
 		{
+			dependencies: [
+				"4CB49D9C2DAD4D1B"
+				"08AEF21250BE4A0F"
+				"6050469B9FD75F36"
+			]
+			description: ["通过&6序列组装&r将红石和荧石叠放在树脂上即可制作出红石电容。"]
 			id: "0E67DFADB3CDCA82"
+			rewards: [{
+				id: "5758BFB18AADC8A1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "64FA1F67A85DC0AD"
 				item: "kubejs:redstone_capacitor"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 5.0d
+			title: "红石电容生产"
+			x: 5.0d
+			y: 9.5d
 		}
 		{
+			dependencies: [
+				"56E5B7D978622ABB"
+				"3E538F7B30265340"
+			]
 			id: "44C94FE229AA4E1B"
+			rewards: [{
+				id: "560AED6F58F6220E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "7C95BC8E2984C891"
 				item: "kubejs:simulated_unit"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 6.0d
+			title: "模拟单元生产"
+			x: 11.0d
+			y: 11.5d
 		}
 		{
+			dependencies: [
+				"794800AE680288F1"
+				"56E5B7D978622ABB"
+			]
 			id: "1FF0FAA4AB49D901"
 			tasks: [{
 				id: "5034140A3E606812"
 				item: "kubejs:oracle_gate"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 5.0d
+			x: 11.0d
+			y: 9.5d
 		}
 		{
+			dependencies: [
+				"6C6B5BC7F1510FE9"
+				"5CDC58087ECD81B7"
+				"3D8418E7483D6A46"
+			]
+			description: [
+				"偏重齿轮是一种性质怪异的齿轮。"
+				""
+				"从结构上，它是均匀的（尽管看起来并不是），其重心位于该结构的几何中心。但实际运行时，总会出现异常的巨大振动。"
+				""
+				"这种特异现象不仅出现在其作为动力机构的零件上，就连其放置在地面上也会自发的振动起来。"
+			]
 			id: "7D765D69D05EF9E6"
+			rewards: [{
+				id: "1EC3E63C28A10838"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "40EC03017B82250F"
 				item: "kubejs:counterweight_gear"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.0d
+			title: "偏重齿轮生产"
+			x: 11.5d
+			y: 5.5d
 		}
 		{
+			dependencies: [
+				"3CA1B288B92FE257"
+				"44C94FE229AA4E1B"
+				"1FF0FAA4AB49D901"
+				"56C5CC3C18FB5AC0"
+				"4F4D84DCAADFE359"
+			]
 			id: "1B23C2E681511D87"
+			rewards: [{
+				id: "23ED7AC9D6895AD1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "2EF7A904375C0707"
 				item: "kubejs:reverse_causality_chip"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 6.0d
+			title: "逆因芯片生产"
+			x: 14.0d
+			y: 10.0d
 		}
 		{
+			dependencies: [
+				"183FD350BF7F5A66"
+				"706EE5FE04BE06D8"
+			]
 			id: "56E5B7D978622ABB"
+			rewards: [{
+				id: "3FCE93B5054B9608"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "6A3C763FE625A857"
 				item: "kubejs:timing_valve"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 6.0d
+			title: "时序阀生产"
+			x: 8.5d
+			y: 13.0d
 		}
 		{
+			dependencies: [
+				"183FD350BF7F5A66"
+				"3D8418E7483D6A46"
+				"5CDC58087ECD81B7"
+				"1356DEE38194F814"
+			]
+			description: [
+				"随机刻弹簧因为其特性，有大概率会制作失败，但是也有&6大概率不会消耗精制黄铜&r。"
+				""
+				"因此需要有效的回收精制黄铜，不断重新开始这个流程，以保证原料的有效利用。"
+			]
 			id: "3E538F7B30265340"
+			rewards: [{
+				id: "1161E77839741E19"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "1258570B169D6F2A"
 				item: "kubejs:random_tick_spring"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 5.0d
+			title: "随机刻弹簧生产"
+			x: 9.5d
+			y: 10.0d
 		}
 		{
+			dependencies: ["7D765D69D05EF9E6"]
 			id: "56C5CC3C18FB5AC0"
+			rewards: [{
+				id: "1B6049BDA63013FF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
+				count: 64L
 				id: "6072181D1C025B2D"
 				item: "kubejs:structural_bolt"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 4.0d
-		}
-		{
-			id: "2E6A3D62A8D3A9A6"
-			tasks: [{
-				id: "20DDAF1213983109"
-				title: "地心流体开凿"
-				type: "checkmark"
-			}]
-			title: "地心流体"
-			x: -1.5d
-			y: 13.5d
+			title: "结构栓生产"
+			x: 12.5d
+			y: 8.0d
 		}
 		{
 			id: "239E0F7A9A0E1B24"
+			rewards: [{
+				id: "0F4E71DC75D18A2D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
-				id: "21DC5F7D8DCB07C3"
-				title: "地幔矿藏"
-				type: "checkmark"
+				id: "76BB2957594E7BE6"
+				item: "kubejs:mantle_ore"
+				type: "item"
 			}]
 			title: "地幔矿藏"
-			x: -1.5d
-			y: 12.5d
+			x: 7.0d
+			y: 14.5d
 		}
 		{
 			description: ["由于大世界计算机的构建零件中，很多都&6需要药水参与&r，因此一个地狱疣农场是必要的。"]
@@ -463,8 +609,8 @@
 				type: "item"
 			}]
 			title: "下界疣农场"
-			x: 1.0d
-			y: 11.0d
+			x: 0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["635648F942615025"]
@@ -491,8 +637,8 @@
 				type: "item"
 			}]
 			title: "余烬面粉生产"
-			x: 2.5d
-			y: 7.0d
+			x: 2.0d
+			y: 9.0d
 		}
 		{
 			description: [
@@ -516,8 +662,8 @@
 				type: "item"
 			}]
 			title: "蜘蛛眼农场"
-			x: 1.0d
-			y: 10.0d
+			x: 0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: [
@@ -548,8 +694,8 @@
 				type: "item"
 			}]
 			title: "发酵蛛眼与乙醇"
-			x: 2.5d
-			y: 10.0d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["44C3AEC9E214A35F"]
@@ -590,8 +736,8 @@
 				type: "fluid"
 			}]
 			title: "粗制药水"
-			x: 2.5d
-			y: 11.0d
+			x: 2.0d
+			y: 5.5d
 		}
 		{
 			description: [
@@ -622,8 +768,8 @@
 				}
 			]
 			title: "混合农场"
-			x: 1.0d
-			y: 12.0d
+			x: 0.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -671,8 +817,8 @@
 				type: "fluid"
 			}]
 			title: "治疗药水"
-			x: 4.0d
-			y: 11.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["07B60A5D339D7C7D"]
@@ -703,8 +849,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 12.0d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -749,7 +895,7 @@
 			}]
 			title: "伤害药水"
 			x: 4.0d
-			y: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["59490F6E97372FD0"]
@@ -774,39 +920,15 @@
 				type: "item"
 			}]
 			title: "金锭农场"
-			x: 5.5d
-			y: 10.0d
-		}
-		{
-			dependencies: ["1E86CEBD77A8D0B5"]
-			description: [
-				"实体冶炼苦力怕可以自动化玻璃的产出，当然，您也可以尝试使用沙子进行烧炼。"
-				""
-				"从效率来说，&6实体冶炼虽然不是最优解&r，但是它的结构简单，维护容易，而且对于您来说，如果维护得当，治疗药水应当已经非常富裕了。"
-			]
-			id: "091F8B668D319E3A"
-			rewards: [{
-				id: "77A3C00679FBF500"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "为了紫水晶共振器"
-			tasks: [{
-				count: 64L
-				id: "52933E2D353A8029"
-				item: "tconstruct:clear_glass"
-				type: "item"
-			}]
-			title: "通透玻璃农场"
-			x: 5.5d
-			y: 11.0d
+			x: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
-				"091F8B668D319E3A"
 				"183FD350BF7F5A66"
 				"198C8EC7A0F912CC"
 				"21A2EDBEB76F1F31"
+				"169B9727420A9DFB"
 			]
 			description: [
 				"紫水晶有着一种特殊的性质——它作为一种时钟，在整个世界的各个位置均保持同步。"
@@ -828,8 +950,9 @@
 				item: "kubejs:amethyst_resonator"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 11.0d
+			title: "紫水晶共振器生产"
+			x: 8.5d
+			y: 8.5d
 		}
 		{
 			description: [
@@ -851,8 +974,8 @@
 				type: "item"
 			}]
 			title: "林场"
-			x: 5.5d
-			y: 14.0d
+			x: 7.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["59490F6E97372FD0"]
@@ -875,8 +998,492 @@
 				type: "item"
 			}]
 			title: "铜锭农场"
-			x: 5.5d
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["59490F6E97372FD0"]
+			description: [
+				"为了后续能够大批量生产红石，您需要一个红石&6虚拟矿脉&r或者通过力量药水和余烬面粉注液来自动化生产红石。"
+				""
+				"力量药水可以通过&6实体冶炼&r对应生物获得，如果运气好的话，您可以尝试冶炼熊猫或者北极熊这种相对比较温顺的动物。"
+			]
+			id: "2E93CEFF3FD4CD2F"
+			rewards: [{
+				id: "505315304CCC35BC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了红石自动化"
+			tasks: [{
+				amount: 8000L
+				fluid: "create:potion"
+				icon: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:strength"
+					}
+				}
+				id: "6A60948D7F6C6BD9"
+				nbt: {
+					Bottle: "REGULAR"
+					Potion: "minecraft:strength"
+				}
+				type: "fluid"
+			}]
+			title: "力量药水"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"2A62739EF5699406"
+				"2E93CEFF3FD4CD2F"
+			]
+			description: ["通过&6余烬面粉和力量药水&r，您可以自动化生产红石。当然，一个虚拟矿脉也可以解决这个问题，但问题也是同样的——如果使用虚拟矿脉，您可能需要提前很久挖空矿脉，或者远距离进行运输，这些都是不小的问题。"]
+			id: "4CB49D9C2DAD4D1B"
+			rewards: [{
+				id: "7B379FAE5AF0FE11"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了红石电容"
+			tasks: [{
+				count: 64L
+				id: "5674CC9AB67899EF"
+				item: { Count: 64, id: "minecraft:redstone" }
+				type: "item"
+			}]
+			title: "红石生产"
+			x: 3.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"2A62739EF5699406"
+				"59490F6E97372FD0"
+			]
+			description: [
+				"为了生产锌矿，一个方案是&6洗炼火药&r。"
+				""
+				"当然您也可以选择开采虚拟矿脉，不过我更会推荐能够完全自给自足的系统，也请您谅解。"
+				""
+				"通过余烬面粉和瞬间伤害药水，您便可以生产火药。"
+			]
+			id: "579BCD51E127B8C1"
+			rewards: [{
+				id: "563993497866EBA3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了锌"
+			tasks: [{
+				count: 64L
+				id: "78ACB60794F30026"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			title: "火药生产"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["579BCD51E127B8C1"]
+			description: ["&6火药洗炼&r出的锌粒刚好可以用于制作锌锭来弥补我们的锌锭开销。"]
+			id: "7821B5DB2AF2E673"
+			rewards: [{
+				id: "2A5A3971C9D80ABF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了生产零件"
+			tasks: [{
+				count: 64L
+				id: "5CBB0992AE8DC52A"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			title: "锌锭生产"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"7821B5DB2AF2E673"
+				"21A2EDBEB76F1F31"
+			]
+			description: [
+				"一切源于黄铜，因此我们要追寻黄铜之路，利用并驾驭它。"
+				""
+				"现在，请您&6自动化生产黄铜&r。"
+			]
+			id: "6119004524D541AE"
+			rewards: [{
+				id: "07B62B36D7288949"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "广泛不稳定"
+			tasks: [{
+				count: 64L
+				id: "26C1430E4B8040C3"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "黄铜生产"
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2A62739EF5699406"
+				"5A67CF3EB894A6E2"
+			]
+			description: ["通过夜视药水和余烬面粉，即可生产荧石粉，这对于后面生产各种部件提供了基本原料。"]
+			id: "6050469B9FD75F36"
+			rewards: [{
+				id: "30E9D1F33992178D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了红石电容"
+			tasks: [{
+				count: 64L
+				id: "7B221378E0EDACA6"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			title: "荧石粉生产"
+			x: 3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1E86CEBD77A8D0B5"]
+			description: [
+				"通过实体冶炼&6发光鱿鱼&r或者&6蝙蝠&r，可以获得到夜视药水。"
+				""
+				"当然，您也可以选择使用金胡萝卜酿造，这两者成本基本一致，看您对局势的具体判断。"
+			]
+			id: "5A67CF3EB894A6E2"
+			rewards: [{
+				id: "0B394CA3BAAD3592"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了荧石"
+			tasks: [{
+				amount: 8000L
+				fluid: "create:potion"
+				icon: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:night_vision"
+					}
+				}
+				id: "7CCFAE38DFAB3601"
+				nbt: {
+					Bottle: "REGULAR"
+					Potion: "minecraft:night_vision"
+				}
+				type: "fluid"
+			}]
+			title: "夜视药水"
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"生产粘液球的方式有很多，您既可以选择通过&6实体冶炼&r来生产，也可以通过&6面团加染料&r来实现粘液球的生产。"
+				""
+				"我推荐您使用实体冶炼的方式，因为这对您来说几乎没有额外的流水线工程开销。"
+			]
+			id: "4F3802758A456C7B"
+			rewards: [{
+				id: "5EEBB8AEE05A8453"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了电路基板"
+			tasks: [{
+				count: 64L
+				id: "1F68A73A7185DF6A"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			title: "粘液球农场"
+			x: 3.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["46E1C381CEC3C04A"]
+			description: [
+				"乙醇的来源广泛，不仅可以通过&6发酵&r获得，一些&6流程的副产物&r也会产出乙醇。"
+				""
+				"它不仅可以用于配方，也可以用于可控燃烧室进行燃烧工序，也可以用于产出应力。"
+			]
+			id: "2117B03C990E1B9B"
+			rewards: [{
+				id: "1DF6BE7A3E4E59CF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了精制黄铜"
+			tasks: [{
+				amount: 8000L
+				fluid: "createdieselgenerators:ethanol"
+				id: "073B1808976B268B"
+				type: "fluid"
+			}]
+			title: "乙醇生产"
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["37C0A31212CD0400"]
+			description: [
+				"通过&6洗涤岩浆块&r，即可批量生产黑曜石。"
+				""
+				"这对后面生产龙息也非常有帮助。"
+			]
+			id: "6C6B5BC7F1510FE9"
+			rewards: [{
+				id: "7D363D46DCBAEC3F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了偏重齿轮"
+			tasks: [{
+				count: 64L
+				id: "791D66F2EBDC3085"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			title: "黑曜石生产"
+			x: 10.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1E86CEBD77A8D0B5"]
+			description: [
+				"请您分清，岩浆是&6岩浆膏&r熔炼的产物，而不是熔岩。"
+				""
+				"这需要您&6实体冶炼岩浆怪&r完成自动化。当然，您也可以试着使用粘液球与烈焰粉的配方进行自动化。"
+			]
+			id: "37C0A31212CD0400"
+			rewards: [{
+				id: "71E8C8E70B2966EA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了黑曜石"
+			tasks: [{
+				amount: 8000L
+				fluid: "tconstruct:magma"
+				id: "5EEE57296FCE8143"
+				type: "fluid"
+			}]
+			title: "岩浆生产"
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			description: [
+				"获取方式很多，包括但不限于常规刷铁机，实体冶炼铁傀儡，或者粉碎石头获取铁粒，亦或者是在洗涤火药时的副产物。"
+				""
+				"因此这里只是给您一个建议——利用好&6洗涤火药&r获取的铁粒或许已经足够。"
+			]
+			id: "5CDC58087ECD81B7"
+			rewards: [{
+				id: "2F2EE2F62D084AF6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了生存"
+			tasks: [{
+				count: 64L
+				id: "6491C5A5C401EA17"
+				item: { Count: 64, id: "minecraft:iron_ingot" }
+				type: "item"
+			}]
+			title: "铁锭农场"
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"批量生产沙子，进而制作灵魂沙而后制作石英然后. . ."
+				""
+				"&6您很熟悉？&r但是我却没有什么印象. . ."
+			]
+			id: "5C190E1E0542DFE6"
+			rewards: [{
+				id: "439E5B09CF586ACB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了玫瑰石英"
+			tasks: [{
+				count: 64L
+				id: "4293D0C9DCC45F46"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			title: "沙子农场"
+			x: 0.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["5C190E1E0542DFE6"]
+			description: ["通过沙子缠魂，即可大批量获取灵魂沙。"]
+			id: "69EB80D5AF98EC43"
+			rewards: [{
+				id: "620D38E430A8F21C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了玫瑰石英"
+			tasks: [{
+				count: 64L
+				id: "3760CC6D904F0726"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			title: "灵魂沙生产"
+			x: 2.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["69EB80D5AF98EC43"]
+			description: ["通过洗炼灵魂沙，低概率会获得下界石英。"]
+			id: "0BE49E1A0EDC23E6"
+			rewards: [{
+				id: "7F57748240B2F313"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了玫瑰石英"
+			tasks: [{
+				count: 64L
+				id: "4C6D1C386BF44748"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			title: "下界石英生产"
+			x: 3.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"0BE49E1A0EDC23E6"
+				"4CB49D9C2DAD4D1B"
+			]
+			description: ["玫瑰石英作为一种特殊的材料，很适合用于部分近生物材料的制作。"]
+			id: "7A1DEDE82EED4BE6"
+			rewards: [{
+				id: "5D94B2216DC604EE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了时序阀"
+			tasks: [{
+				count: 64L
+				id: "075B3602A9551E73"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			title: "玫瑰石英生产"
+			x: 5.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["7A1DEDE82EED4BE6"]
+			description: ["通过砂纸磨制玫瑰石英，即可得到磨制玫瑰石英。"]
+			id: "706EE5FE04BE06D8"
+			rewards: [{
+				id: "01A403746CF04714"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了时序阀"
+			tasks: [{
+				count: 64L
+				id: "4A3AAD4C3F9CDC14"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			title: "磨制玫瑰石英生产"
+			x: 7.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["239E0F7A9A0E1B24"]
+			id: "2081C22249A65EFD"
+			rewards: [{
+				id: "4F0BB4E0F8293A1B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了结构栓"
+			tasks: [{
+				count: 64L
+				id: "110BA755E98756E9"
+				item: "minecraft:crying_obsidian"
+				type: "item"
+			}]
+			title: "开采哭泣黑曜石"
+			x: 8.5d
+			y: 14.5d
+		}
+		{
+			description: [
+				"通过开采虚拟油田，我们可以获得足够多的原油。"
+				""
+				"原油通过&6分馏&r之后，汽油可以作为可控燃烧室的有力燃料，柴油可以用于生产应力，都是非常有用的原料。"
+				""
+				"我们需要使用柴油用于&6随机刻弹簧&r制作中的降温，因此不得不开采油田。"
+			]
+			id: "510293AECD56FF12"
+			rewards: [{
+				id: "1D9A61CC91EE2A27"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了柴油"
+			tasks: [{
+				amount: 8000L
+				fluid: "createdieselgenerators:crude_oil"
+				id: "053714E3E3020B35"
+				type: "fluid"
+			}]
+			title: "原油开采"
+			x: 7.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["510293AECD56FF12"]
+			description: [
+				"通过原油分馏即可获得柴油。"
+				""
+				"剩余的汽油也可以拿去产生应力或者用于供应燃烧室。"
+			]
+			id: "1356DEE38194F814"
+			rewards: [{
+				id: "2FF7AD5908A4C39A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了随机刻弹簧"
+			tasks: [{
+				amount: 8000L
+				fluid: "createdieselgenerators:diesel"
+				id: "20DA9375E2C0963F"
+				type: "fluid"
+			}]
+			title: "柴油生产"
+			x: 8.5d
+			y: 15.5d
 		}
 	]
 	title: "传闻：大世界计算机"
