@@ -2,19 +2,7 @@
   "default": [
     {
       "level": 1,
-      "name": "tconstruct:necrotic"
+      "name": "tconstruct:thorns"
     }
-  ],
-  "perStat": {
-    "tconstruct:skull": [
-      {
-        "level": 1,
-        "name": "tconstruct:withered"
-      },
-      {
-        "level": 1,
-        "name": "tconstruct:wither_skeleton_disguise"
-      }
-    ]
-  }
+  ]
 }

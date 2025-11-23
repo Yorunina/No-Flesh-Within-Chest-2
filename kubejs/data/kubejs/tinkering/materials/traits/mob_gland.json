@@ -1,3 +1,6 @@
 {
-    "default": []
+    "default": [{
+      "level": 1,
+      "name": "kubejs:mob_gland"
+    }]
 }

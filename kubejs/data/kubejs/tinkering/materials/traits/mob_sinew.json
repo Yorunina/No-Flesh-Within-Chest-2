@@ -6,14 +6,13 @@
     }
   ],
   "perStat": {
-    "tconstruct:skull": [
+    "tconstruct:bowstring": [
       {
         "level": 1,
-        "name": "tconstruct:boon_of_sssss"
-      },
-      {
+        "name": "kubejs:arrow_damage"
+      },{
         "level": 1,
-        "name": "tconstruct:spider_disguise"
+        "name": "kubejs:arrow_velocity"
       }
     ]
   }

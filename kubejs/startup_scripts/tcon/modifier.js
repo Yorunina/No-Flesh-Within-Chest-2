@@ -334,7 +334,21 @@ TConJSEvents.modifierRegistry(event => {
             toolView.persistentData.putInt('hormone_secretion', count)
         })
     })
-
+// TODO 这里理应需要一个产生爆炸的modifier给volatile_gland，或者不要爆炸？整点通用的给volatile_gland和volatile_fluid
+    event.createNew('mob_gland', builder => {
+        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
+            if (!isSelected) return
+            if (entity.age % 20 != 0) return
+            entity.potionEffects.add('biomancy:Corrosive', 20 * 10, lvl, false, false)
+        })
+    })
+    event.createNew('toxin_gland', builder => {
+        builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
+            if (!isSelected) return
+            if (entity.age % 20 != 0) return
+            entity.potionEffects.add('minecraft:poison', 20 * 10, lvl, false, false)
+        })
+    })
     event.createNew('mob_marrow', builder => {
         builder.onInventoryTick((toolView, lvl, level, entity, index, isSelected, isCorrectSlot, itemStack) => {
             if (!isSelected) return

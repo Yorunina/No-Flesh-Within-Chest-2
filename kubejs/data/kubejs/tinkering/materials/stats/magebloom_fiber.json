@@ -1,10 +1,6 @@
 {
   "stats": {
     "tconstruct:binding": {},
-    "tconstruct:bowstring": {},
-    "tconstruct:skull": {
-      "armor": 0,
-      "durability": 140
-    }
+    "tconstruct:bowstring": {}
   }
 }
