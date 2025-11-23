@@ -849,6 +849,10 @@
     "item.kubejs.amethyst_resonator": "紫水晶共振器",
     "tooltips.kubejs.amethyst_resonator.default.1": "微型时钟单元，因为某种特殊的内禀属性，全世界均保持同步",
     "tooltips.kubejs.amethyst_resonator.shift.1": "    §6★§r 该元件可以用于大世界计算机的构造",
+    "item.kubejs.mantle_ore": "地幔矿石",
+    "tooltips.kubejs.mantle_ore.default.1": "被压力塑成的特殊矿石，具有较高的密度",
+    "tooltips.kubejs.mantle_ore.shift.1": "    §6★§r 可以从中提取出一些较为稀有的矿物",
+    
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
     "gui.kubejs.title.chestcavity": "胸腔",

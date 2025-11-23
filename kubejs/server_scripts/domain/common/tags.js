@@ -15,10 +15,15 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:machine', ['chestcavity:tinker_heart'])
 
     event.add('tconplanner:creative_material', ['kubejs:genesis_tinker_blueprint'])
-    
+
     event.add('tconstruct_js:cannot_mending', ['kubejs:god_tinker_heart', 'kubejs:furnace_core', 'kubejs:burning_heart', 'kubejs:energy_bottle_red', 'kubejs:originiums', 'kubejs:soul_cage', 'kubejs:red_wolf_beard', 'kubejs:raccoon_paw', 'kubejs:boar_nose', 'kubejs:ignited_armour', 'kubejs:pitcher_stomach', 'kubejs:vita_sunflower', 'kubejs:ender_guardian_spine', 'kubejs:embers_liver', 'kubejs:harbinger_lung'])
 
     event.add('kubejs:tinker_anvil', ['tconstruct:tinkers_anvil', 'tconstruct:scorched_anvil'])
+
+    event.add('ftbqaa:immune/lightning', ['kubejs:unstable_matter'])
+    event.add('ftbqaa:immune/explosion', [])
+    event.add('ftbqaa:immune/fire', [])
+    event.add('ftbqaa:immune/cactus', [])
 })
 
 ServerEvents.tags('entity_type', event => {

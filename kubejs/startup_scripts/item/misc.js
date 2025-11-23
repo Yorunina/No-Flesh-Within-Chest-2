@@ -8,7 +8,7 @@ StartupEvents.registry('item', event => {
     event.create('redstone_capacitor').texture('kubejs:item/materials/redstone_capacitor')
     event.create('random_tick_spring').texture('kubejs:item/materials/random_tick_spring').tag('kubejs:unstable')
     event.create('structural_bolt').texture('kubejs:item/materials/structural_bolt')
-    event.create('unstable_matter').texture('kubejs:item/materials/unstable_matter').tag('kubejs:unstable')
+    event.create('unstable_matter').texture('kubejs:item/materials/unstable_matter').fireResistant().tag('kubejs:unstable')
     event.create('refined_brass_ingot').texture('kubejs:item/materials/refined_brass_ingot').tag('kubejs:unstable')
     event.create('reverse_causality_chip').texture('kubejs:item/materials/reverse_causality_chip').tag('kubejs:unstable')
     event.create('timing_valve').texture('kubejs:item/materials/timing_valve').tag('kubejs:unstable')

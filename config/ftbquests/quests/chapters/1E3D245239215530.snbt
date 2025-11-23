@@ -345,7 +345,12 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["3D8418E7483D6A46"]
+			dependencies: ["183FD350BF7F5A66"]
+			description: [
+				"在高能场景下，&6黄铜和紫水晶&r会发生一种未知的反应，形成一种不稳定物质。"
+				""
+				"这种高能场景在目前技术等级下，仅能够通过&6自然的闪电&r来实现。"
+			]
 			id: "3CA1B288B92FE257"
 			rewards: [{
 				id: "26BB1F3655935B08"
@@ -360,8 +365,8 @@
 				type: "item"
 			}]
 			title: "不稳定物质生产"
-			x: 13.0d
-			y: 5.0d
+			x: 8.5d
+			y: 11.0d
 		}
 		{
 			dependencies: [
@@ -444,6 +449,11 @@
 				"56E5B7D978622ABB"
 			]
 			id: "1FF0FAA4AB49D901"
+			rewards: [{
+				id: "0EFC08D1E898A17C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5034140A3E606812"
 				item: "kubejs:oracle_gate"
@@ -484,7 +494,6 @@
 		}
 		{
 			dependencies: [
-				"3CA1B288B92FE257"
 				"44C94FE229AA4E1B"
 				"1FF0FAA4AB49D901"
 				"56C5CC3C18FB5AC0"
@@ -584,12 +593,13 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了哭泣黑曜石"
 			tasks: [{
 				id: "76BB2957594E7BE6"
 				item: "kubejs:mantle_ore"
 				type: "item"
 			}]
-			title: "地幔矿藏"
+			title: "开采地幔矿藏"
 			x: 7.0d
 			y: 14.5d
 		}
@@ -1292,7 +1302,7 @@
 			description: [
 				"获取方式很多，包括但不限于常规刷铁机，实体冶炼铁傀儡，或者粉碎石头获取铁粒，亦或者是在洗涤火药时的副产物。"
 				""
-				"因此这里只是给您一个建议——利用好&6洗涤火药&r获取的铁粒或许已经足够。"
+				"这里给出您一个建议——您可以优先完成&6开采地幔矿藏&r的任务，其会包含大量铁作为副产物。"
 			]
 			id: "5CDC58087ECD81B7"
 			rewards: [{
