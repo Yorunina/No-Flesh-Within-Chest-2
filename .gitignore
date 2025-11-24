@@ -51,7 +51,6 @@ rhino.local.properties
 /exposures/
 exposure_catalog_state.json
 config/pin_tooltips.json
-kubejs/data/kubejs/structures/
 config/jade/sort-order.json
 config/jade/plugins.json
 kubejs/probe/

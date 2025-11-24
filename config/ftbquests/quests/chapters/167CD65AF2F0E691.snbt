@@ -7,32 +7,50 @@
 	id: "167CD65AF2F0E691"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"{\"text\":\"欢迎来到这里，我是负责引导的预先程式，您可以称我为「\",\"extra\":[{\"text\":\"Neo\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://zh.wikipedia.org/wiki/NEO\"}},\"」。\"]}"
-			""
-			"在本次旅程中，我将会通过该任务系统引导您完成所有的游览历程，以尽可能简明、有效的方式来让您了解您所必须要在此完成的事情。"
-			""
-			"请不要轻信游戏中其余部分的引导，那些引导大多充斥着误导，这对您来说是非常有害的。我会根据预先程式设计出的路线，为您提供最安全、可靠的发展方式，来减少这些不良信息对您的危害。"
-			""
-			"&n请使用鼠标，点击「任务」下方的灰色圆圈，即&6勾选按钮&r。&r"
-		]
-		icon: "minecraft:diamond_block"
-		id: "473AA9B909ED8EB0"
-		rewards: [{
-			id: "61A70F01F50A20E9"
-			item: "minecraft:oak_sapling"
-			type: "item"
-		}]
-		subtitle: "领取你的第一分大礼"
-		tasks: [{
-			id: "049617DE4456D9DA"
-			title: "勾选按钮"
-			type: "checkmark"
-		}]
-		title: "你好，世界"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: [
+				"{\"text\":\"欢迎来到这里，我是负责引导的预先程式，您可以称我为「\",\"extra\":[{\"text\":\"Neo\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://zh.wikipedia.org/wiki/NEO\"}},\"」。\"]}"
+				""
+				"在本次旅程中，我将会通过该任务系统引导您完成所有的游览历程，以尽可能简明、有效的方式来让您了解您所必须要在此完成的事情。"
+				""
+				"请不要轻信游戏中其余部分的引导，那些引导大多充斥着误导，这对您来说是非常有害的。我会根据预先程式设计出的路线，为您提供最安全、可靠的发展方式，来减少这些不良信息对您的危害。"
+				""
+				"&n请使用鼠标，点击「任务」下方的灰色圆圈，即&6勾选按钮&r。&r"
+			]
+			icon: "minecraft:diamond_block"
+			id: "473AA9B909ED8EB0"
+			rewards: [{
+				id: "61A70F01F50A20E9"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			subtitle: "领取你的第一分大礼"
+			tasks: [{
+				id: "049617DE4456D9DA"
+				title: "勾选按钮"
+				type: "checkmark"
+			}]
+			title: "你好，世界"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "0F3BD67683716C9C"
+			rewards: [{
+				auto: "invisible"
+				id: "11003AC7E822A602"
+				ignore_reward_blocking: true
+				name: "A"
+				type: "ftbqaa:active_way_stone"
+			}]
+			tasks: [{
+				id: "64A1F766C8A871D0"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -0.5d
+		}
+	]
 	title: "引"
 }

@@ -13,6 +13,8 @@ InfinityEvents.itemInNetherPortal(event => {
         }
         let isSucc = InfinityPortalCreator.modifyOnInitialCollision(nameString, level, pos)
         if (isSucc) itemEntity.remove('changed_dimension')
+    } else if (itemStack.hasTag('lightmanscurrency:coins')) {
+        InfinityPortalCreator.modifyOnInitialCollision('kubejs:oath', level, pos)
     }
 })
 

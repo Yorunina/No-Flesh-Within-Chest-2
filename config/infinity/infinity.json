@@ -29,11 +29,11 @@
       "bed_works": 0.5,
       "respawn_anchor_works": 1.0,
       "has_raids": 0.5,
-      "fixed_time": 0.25,
+      "fixed_time": 0.2,
       "use_mavity": 0.25,
-      "use_shaders": 0.15,
+      "use_shaders": 0.05,
       "pitch_shift": 0.25,
-      "give_effect": 0.1
+      "give_effect": 0.05
     },
     "noise_settings": {
       "randomise_blocks": 0.75,
@@ -90,7 +90,7 @@
       "banded_shapes": 0.5
     },
     "structures": {
-      "text": 0.2,
+      "text": 0.1,
       "spawn_override": 0.0,
       "full_box": 0.5,
       "triangular_spread": 0.1

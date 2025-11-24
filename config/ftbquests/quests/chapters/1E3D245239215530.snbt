@@ -92,80 +92,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2650CE0D76584853"]
-			description: [
-				"为了建造大世界计算机，我们需要难以计数的超量矿石和巨大工厂线。"
-				""
-				"因此，我们必须具有能够从&6虚拟矿脉中提取矿石&r的能力，否则绝对无法完成这样宏伟的工程。"
-				""
-				"您可能需要不止一个矿物钻井，但为了了解具体技术路线，辛苦您先制造一个以完成该任务"
-			]
-			id: "20332EE58C8A8514"
-			subtitle: "为了建设大世界计算机"
-			tasks: [{
-				id: "717A90ECBEF61852"
-				item: "createoreexcavation:drilling_machine"
-				type: "item"
-			}]
-			title: "虚拟矿脉"
-			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2650CE0D76584853"]
-			description: [
-				"为了建造大世界计算机，我们需要难以计数的超量矿石和巨大工厂线。"
-				""
-				"因此，我们必须具有能够从&6虚拟矿脉中提取流体&r的能力，否则绝对无法完成这样宏伟的工程。"
-				""
-				"您可能需要不止一个流体钻井，但为了了解具体技术路线，辛苦您先制造一个以完成该任务。"
-			]
-			id: "35505912A290B591"
-			subtitle: "为了建设大世界计算机"
-			tasks: [{
-				id: "4568F9C091D6343D"
-				item: "createoreexcavation:extractor"
-				type: "item"
-			}]
-			title: "虚拟液泉"
-			x: 5.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["2650CE0D76584853"]
-			description: [
-				"为了建造大世界计算机，我们需要难以计数的超量矿石和巨大工厂线。"
-				""
-				"因此，我们必须具有能够从&6虚拟油田中提取原油&r的能力，否则绝对无法完成这样宏伟的工程。"
-				""
-				"您可能需要不止一个抽油机，但为了了解具体技术路线，辛苦您先制造一个以完成该任务"
-			]
-			icon: "createdieselgenerators:pumpjack_bearing"
-			id: "065F70145D87762D"
-			subtitle: "为了建设大世界计算机"
-			tasks: [
-				{
-					count: 2L
-					id: "737D655E088BF191"
-					item: "createdieselgenerators:pumpjack_bearing"
-					type: "item"
-				}
-				{
-					id: "449EC42BAFF60A2A"
-					item: "createdieselgenerators:pumpjack_crank"
-					type: "item"
-				}
-				{
-					id: "0174AD71E810C8BE"
-					item: "createdieselgenerators:pumpjack_head"
-					type: "item"
-				}
-			]
-			title: "虚拟油田"
-			x: 5.0d
-			y: 1.5d
-		}
-		{
 			description: [
 				"为了制造后续所需的纸和乙醇，一个甘蔗农场是必须的。"
 				""
@@ -233,7 +159,7 @@
 			tasks: [{
 				count: 64L
 				id: "1BC601D86ED89517"
-				item: "vanillabackport:resin_clump"
+				item: "minecraft:resin_clump"
 				type: "item"
 			}]
 			title: "树脂农场"
@@ -264,7 +190,7 @@
 				type: "item"
 			}]
 			title: "烈焰农场"
-			x: 0.0d
+			x: 0.5d
 			y: 10.5d
 		}
 		{

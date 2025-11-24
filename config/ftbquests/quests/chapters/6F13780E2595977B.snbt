@@ -495,7 +495,7 @@
 						}
 						{
 							level: 1
-							name: "tconstruct:necrotic"
+							name: "tconstruct:thorns"
 						}
 						{
 							level: 1
@@ -581,7 +581,7 @@
 							}
 							{
 								level: 1
-								name: "tconstruct:necrotic"
+								name: "tconstruct:thorns"
 							}
 							{
 								level: 1
@@ -750,10 +750,6 @@
 							{
 								level: 1
 								name: "tgears:sharpness"
-							}
-							{
-								level: 2
-								name: "kubejs:mob_marrow"
 							}
 							{
 								level: 1
@@ -2895,7 +2891,11 @@
 					tic_modifiers: [
 						{
 							level: 1
-							name: "tconstruct:stringy"
+							name: "kubejs:draw_speed"
+						}
+						{
+							level: 1
+							name: "kubejs:arrow_velocity"
 						}
 						{
 							level: 2
@@ -3001,7 +3001,11 @@
 							tic_modifiers: [
 								{
 									level: 1
-									name: "tconstruct:stringy"
+									name: "kubejs:draw_speed"
+								}
+								{
+									level: 1
+									name: "kubejs:arrow_velocity"
 								}
 								{
 									level: 2

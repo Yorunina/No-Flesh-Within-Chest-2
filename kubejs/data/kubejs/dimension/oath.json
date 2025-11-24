@@ -1,9 +1,9 @@
 {
-  "type": "kubejs:void",
+  "type": "kubejs:oath",
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "kubejs:vita",
+      "biome": "minecraft:plains",
       "lakes": false,
       "features": false,
       "layers": [],

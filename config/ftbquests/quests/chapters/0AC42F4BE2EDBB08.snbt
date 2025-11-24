@@ -303,7 +303,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "一点巧克力味的约定"
+			subtitle: "约定"
 			tasks: [{
 				id: "671735A4ECD0060F"
 				title: "约定"
