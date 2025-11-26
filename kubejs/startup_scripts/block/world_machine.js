@@ -1,38 +1,23 @@
 // priority: 500
 StartupEvents.registry('block', event => {
-    event.create('kubejs:core_circuit', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/core_circuit')
-    event.create('kubejs:analytical_logic_core', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/analytical_logic_core')
-    event.create('kubejs:destruction_logic_core', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/destruction_logic_core')
     event.create('kubejs:encrypted_gateway', 'basic')
         .stoneSoundType()
         .textureAll('kubejs:block/world_machine/encrypted_gateway')
-    event.create('kubejs:entropy_increase_simulator', 'basic')
+        .property(BlockProperties.HORIZONTAL_FACING)
+        .placementState(state => {
+            state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
+            return state
+        })
+
+    event.create('kubejs:main_circuit_board', 'basic')
         .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/entropy_increase_simulator')
-    event.create('kubejs:inscribed_pipeline', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/inscribed_pipeline')
-    event.create('kubejs:integrator_mk2', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/integrator_mk2')
-    event.create('kubejs:main_pipeline', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/main_pipeline')
-    event.create('kubejs:matter_booster', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/matter_booster')
-    event.create('kubejs:integrator_mk3', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/integrator_mk3')
-    event.create('kubejs:precision_cyberbrain_unit', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/precision_cyberbrain_unit')
+        .textureAll('kubejs:block/world_machine/main_circuit_board')
+        .property(BlockProperties.HORIZONTAL_FACING)
+        .placementState(state => {
+            state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
+            return state
+        })
+
     event.create('kubejs:precision_integrator', 'basic')
         .stoneSoundType()
         .texture('particle', 'kubejs:block/world_machine/precision_integrator_top')
@@ -42,23 +27,34 @@ StartupEvents.registry('block', event => {
         .textureSide('south', 'kubejs:block/world_machine/precision_integrator_south')
         .textureSide('west', 'kubejs:block/world_machine/precision_integrator_west')
         .textureSide('east', 'kubejs:block/world_machine/precision_integrator_east')
+        .property(BlockProperties.HORIZONTAL_FACING)
+        .placementState(state => {
+            state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
+            return state
+        })
+        
     event.create('kubejs:spatial_stabilizer', 'basic')
         .stoneSoundType()
         .textureAll('kubejs:block/world_machine/spatial_stabilizer')
-    event.create('kubejs:reaction_core', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/reaction_core')
+        .property(BlockProperties.HORIZONTAL_FACING)
+        .placementState(state => {
+            state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
+            return state
+        })
+
     event.create('kubejs:replicated_command_block', 'basic')
         .stoneSoundType()
         .textureAll('kubejs:block/world_machine/replicated_command_block')
     event.create('kubejs:secondary_circuit_board', 'basic')
         .stoneSoundType()
         .textureAll('kubejs:block/world_machine/secondary_circuit_board')
+        .property(BlockProperties.HORIZONTAL_FACING)
+        .placementState(state => {
+            state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
+            return state
+        })
 
 
-    event.create('kubejs:base_frame_board', 'basic')
-        .stoneSoundType()
-        .textureAll('kubejs:block/world_machine/base_frame_board')
     event.create('kubejs:arcanum_core', 'basic')
         .stoneSoundType()
         .texture('particle', 'kubejs:block/world_machine/arcanum_core_top')

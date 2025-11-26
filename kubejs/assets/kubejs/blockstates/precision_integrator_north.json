@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "kubejs:block/precision_integrator_north"
+    },
+    "facing=south": {
+      "model": "kubejs:block/precision_integrator_north",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kubejs:block/precision_integrator_north",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "kubejs:block/precision_integrator_north",
+      "y": 90
+    }
+  }
+}

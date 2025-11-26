@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "kubejs:block/spatial_stabilizer"
+    },
+    "facing=south": {
+      "model": "kubejs:block/spatial_stabilizer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kubejs:block/spatial_stabilizer",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "kubejs:block/spatial_stabilizer",
+      "y": 90
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "kubejs:block/main_circuit_board"
+    },
+    "facing=south": {
+      "model": "kubejs:block/main_circuit_board",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kubejs:block/main_circuit_board",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "kubejs:block/main_circuit_board",
+      "y": 90
+    }
+  }
+}

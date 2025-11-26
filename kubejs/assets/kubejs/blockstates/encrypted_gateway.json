@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "kubejs:block/encrypted_gateway"
+    },
+    "facing=south": {
+      "model": "kubejs:block/encrypted_gateway",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "kubejs:block/encrypted_gateway",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "kubejs:block/encrypted_gateway",
+      "y": 90
+    }
+  }
+}

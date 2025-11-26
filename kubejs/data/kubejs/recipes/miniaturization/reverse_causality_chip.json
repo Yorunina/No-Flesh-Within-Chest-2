@@ -1,0 +1,61 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "recipeSize": 9,
+    "layers": [
+    {
+        "type": "compactcrafting:mixed",
+        "pattern": [
+            ["A","A","A","A","A","A","A","A","A"],
+            ["A","B","D","D","E","D","D","B","A"],
+            ["A","D","D","D","E","D","D","D","A"],
+            ["A","D","D","D","F","D","D","D","A"],
+            ["A","E","E","G","H","G","E","E","A"],
+            ["A","D","D","D","F","D","D","D","A"],
+            ["A","D","D","D","E","D","D","D","A"],
+            ["A","B","D","D","E","D","D","B","A"],
+            ["A","A","A","A","A","A","A","A","A"]
+        ]
+    }
+],
+    "catalyst": {
+        "id": "kubejs:unstable_matter",
+        "Count": 1
+    },
+    "components": {
+        "A": {
+            "type": "compactcrafting:block",
+            "block": "create:brass_block"
+        },
+        "B": {
+            "type": "compactcrafting:block",
+            "block": "kubejs:main_circuit_board"
+        },
+        "G": {
+            "type": "compactcrafting:block",
+            "block": "kubejs:spatial_stabilizer"
+        },
+        "E": {
+            "type": "compactcrafting:block",
+            "block": "kubejs:encrypted_gateway"
+        },
+        "D": {
+            "type": "compactcrafting:block",
+            "block": "kubejs:secondary_circuit_board"
+        },
+        "F": {
+            "type": "compactcrafting:block",
+            "block": "kubejs:precision_integrator"
+        },
+        "H": {
+            "type": "compactcrafting:block",
+            "block": "kubejs:replicated_command_block"
+        }
+    },
+    "outputs": [
+        {
+            "id": "kubejs:reverse_causality_chip",
+            "Count": 1
+        }
+    ]
+}
+

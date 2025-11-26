@@ -1,0 +1,13 @@
+{
+  "infinity_version": 2004002,
+  "generator": {
+    "type": "infinity:room",
+    "biome_source": {
+      "type": "fixed",
+      "biome": "minecraft:plains"
+    },
+    "structure_paths": [
+      "kubejs:test"
+    ]
+  }
+}

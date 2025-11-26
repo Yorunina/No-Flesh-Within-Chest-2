@@ -19,7 +19,7 @@ EnableCannonSpeedUp = true
 #如果设置为 20 ，[蓝图炮打印延时]设置为1 那么蓝图炮的打印速度为 20 * 20/1 = 400倍
 #计算公式为 ：    打印速度 = 每tick蓝图炮打印的次数（本配置值） x 游戏刻（默认为20） /  [蓝图炮打印延时]（默认为10）      
 #Range: 1 ~ 400
-SpeedupPerTick = 20
+SpeedupPerTick = 2
 #__________________________________________________________________________________________
 #
 #This is an experimental parameter used to reduce the game ticks of the blueprint cannon.

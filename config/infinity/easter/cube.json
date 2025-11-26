@@ -1,0 +1,71 @@
+{
+  "infinity_version": 2004002,
+  "options": {
+    "portal_color": 16711680
+  },
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": {
+      "sea_level": 16,
+      "disable_mob_generation": false,
+      "ore_veins_enabled": false,
+      "aquifers_enabled": false,
+      "legacy_random_source": false,
+      "default_block": {
+        "Name": "minecraft:stone"
+      },
+      "default_fluid": {
+        "Name": "minecraft:air"
+      },
+      "spawn_target": [],
+      "noise": {
+        "min_y": 0,
+        "height": 256,
+        "size_horizontal": 2,
+        "size_vertical": 2
+      },
+      "noise_router": {
+        "vein_ridged": "infinity:vein_ridged",
+        "fluid_level_spread": 0.0,
+        "vegetation": "infinity:vegetation",
+        "vein_gap": "infinity:vein_gap",
+        "continents": "minecraft:overworld/continents",
+        "initial_density_without_jaggedness": {
+          "to_y": 128,
+          "from_value": 1.0,
+          "to_value": -1.0,
+          "from_y": 0,
+          "type": "minecraft:y_clamped_gradient"
+        },
+        "lava": 0.0,
+        "barrier": 0.0,
+        "depth": {
+          "from_value": 1.5,
+          "to_y": 256,
+          "to_value": -1.5,
+          "type": "minecraft:y_clamped_gradient",
+          "from_y": 0
+        },
+        "ridges": "minecraft:overworld/ridges",
+        "erosion": "minecraft:overworld/erosion",
+        "temperature": "infinity:temperature",
+        "final_density": {
+          "to_y": 256,
+          "from_value": 1.0,
+          "to_value": -1.0,
+          "from_y": 0,
+          "type": "minecraft:y_clamped_gradient"
+        },
+        "vein_toggle": "infinity:vein_toggle",
+        "fluid_level_floodedness": 0.0
+      },
+      "surface_rule": {
+        "type": "infinity:cube"
+      }
+    },
+    "biome_source": {
+      "type": "fixed",
+      "biome": "infinity:cube"
+    }
+  }
+}
