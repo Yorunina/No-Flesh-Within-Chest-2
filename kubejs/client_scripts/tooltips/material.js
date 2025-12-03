@@ -90,3 +90,11 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:mantle_ore')
     .addDefault(Text.translatable('tooltips.kubejs.mantle_ore.default.1').gray())
     .addShift(Text.translatable('tooltips.kubejs.mantle_ore.shift.1'))
 )
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:world_computer')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.world_computer.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.world_computer.shift.1'))
+)
+

@@ -12,7 +12,6 @@ StartupEvents.registry('block', event => {
     event.create('kubejs:buffer_circuit', 'basic')
         .stoneSoundType()
         .textureAll('kubejs:block/world_machine/buffer_circuit')
-        .property(BlockProperties.HORIZONTAL_FACING)
         .placementState(state => {
             state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
             return state
@@ -57,7 +56,7 @@ StartupEvents.registry('block', event => {
     /**
      * 大世界计算机本体构件
      */
-    event.create('kubejs:computer_core', 'basic')
+    event.create('kubejs:computing_core', 'basic')
         .stoneSoundType()
         .texture('particle', 'kubejs:block/world_machine/computing_core_top')
         .textureSide('down', 'kubejs:block/world_machine/computing_core_bottom')

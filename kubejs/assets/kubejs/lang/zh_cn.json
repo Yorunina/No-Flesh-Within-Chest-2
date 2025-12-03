@@ -1201,5 +1201,8 @@
     "block.kubejs.world_renderer": "世界渲染器",
     "block.kubejs.entity_simulator": "实体模拟器",
     "block.kubejs.quantum_dimension_resolver": "量子维度解算器",
-    "block.kubejs.void_diffraction_vault": "虚空衍射室"
+    "block.kubejs.void_diffraction_vault": "虚空衍射室",
+    "block.kubejs.world_computer": "大世界计算机",
+    "tooltips.kubejs.world_computer.default.1": "当你将世界比喻为罐中浮萍时，“健谈”的它陷入了沉默",
+    "tooltips.kubejs.world_computer.shift.1": "    §6★§r 在特殊情况下能够组装特殊任务的特殊机械，具体原理不明"
 }

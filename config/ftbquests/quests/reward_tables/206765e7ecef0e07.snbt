@@ -1,0 +1,18 @@
+{
+	icon: "kubejs:world_computer"
+	id: "206765E7ECEF0E07"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "kubejs:world_computer"
+			ignore_reward_blocking: true
+			stage: "world_computer_1"
+			title: "继续项目"
+			type: "ftbqaa:astages"
+		}
+		{ item: "lightmanscurrency:coin_diamond", title: "中止项目" }
+	]
+	title: "大世界计算机抉择"
+}

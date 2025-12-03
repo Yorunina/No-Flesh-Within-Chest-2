@@ -441,6 +441,7 @@
 				"34FEB80CC16A8163"
 				"54D8F5829B0839BF"
 			]
+			description: ["是的，我们成功了，现在我们来创作&6大世界计算机&r。"]
 			id: "1B23C2E681511D87"
 			rewards: [{
 				id: "23ED7AC9D6895AD1"
@@ -449,7 +450,6 @@
 			}]
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "2EF7A904375C0707"
 				item: "kubejs:reverse_causality_chip"
 				type: "item"
@@ -1507,6 +1507,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
 				id: "6909EA1B856143F8"
 				item: "kubejs:data_bus"
@@ -1523,6 +1524,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
 				id: "0124611DE3B38654"
 				item: "kubejs:buffer_circuit"
@@ -1539,6 +1541,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
 				id: "6B3789350D1103CF"
 				item: "kubejs:timing_module"
@@ -1555,6 +1558,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
 				id: "12A5DEEF5F6CBA44"
 				item: "kubejs:spatial_stabilizer"
@@ -1571,6 +1575,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了大世界计算机"
 			tasks: [{
 				id: "6C5CB83AF0EA8380"
 				item: "kubejs:oracle_module"
@@ -1590,7 +1595,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为了大世界计算机！"
+			subtitle: "为了大世界计算机"
 			tasks: [{
 				id: "410270C8E35CBD00"
 				item: "kubejs:circuit_board"
@@ -1689,6 +1694,7 @@
 		}
 		{
 			dependencies: ["1E86CEBD77A8D0B5"]
+			description: ["同样，您也可以通过&6实体冶炼&r的方式方便的获得足够多的抗火药水。"]
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -1702,6 +1708,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "为了谕示门"
 			tasks: [{
 				amount: 8000L
 				fluid: "create:potion"
@@ -1725,9 +1732,258 @@
 		}
 		{
 			dependencies: ["1B23C2E681511D87"]
+			description: [
+				"通过逆因芯片，我们可以&6轻易制作出大世界计算机&r. . ."
+				""
+				"但等等. . .似乎有点问题。"
+			]
 			id: "56D4ED795F1CFC15"
-			x: 23.5d
+			rewards: [{
+				id: "4F942A133BAC4A5F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我们发现、我们创造"
+			tasks: [{
+				id: "31FD6E8596151559"
+				item: "kubejs:world_computer"
+				type: "item"
+			}]
+			title: "铸造世界计算机"
+			x: 22.0d
 			y: 11.0d
+		}
+		{
+			dependencies: ["56D4ED795F1CFC15"]
+			description: [
+				"我发现了一些问题。"
+				""
+				"大世界计算机目前无法使用——这是在预期之内的，因为我们还差重要的模块需要安装，但在安装之前，我发现了一些严重的问题。"
+				""
+				"&6大世界计算机本身似乎有所图&r。"
+				""
+				"这是一个&c极其危险&r的情况，如果一个本应被我们所利用和控制的工具产生了自我的意识并且意图创造某些东西，会严重影响这个世界的稳定。"
+				""
+				"如果我们继续推进这个项目，很有可能会造成一些难以预测的情况，但具体会怎么样，没有任何人知道。"
+				""
+				"因此，在这里我希望您能够进行抉择，是否要继续完成大世界计算机的项目。"
+				""
+				"如若您放弃大世界计算机的构建，我会以&b一枚钻石币&r作为补偿。"
+			]
+			icon: "minecraft:chiseled_bookshelf"
+			id: "658FDC0B806315A3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E536AF69C0F505F"
+				table_id: 2334946978601831943L
+				type: "choice"
+			}]
+			subtitle: "是否放弃追寻大世界计算机"
+			tasks: [{
+				id: "6C3F1D924C70D957"
+				title: "做出抉择"
+				type: "checkmark"
+			}]
+			title: "抉择"
+			x: 23.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["658FDC0B806315A3"]
+			description: [
+				"如果因为技术危险就放弃，确实不符合基本的探索理念。"
+				""
+				"我理解您的抉择，历来人们探索前路都是在风险下进行的。如果因为可能的危险就停滞，对探索者来说这无异于因噎废食。"
+			]
+			id: "7F2EB186A1EAC2AC"
+			invisible: true
+			rewards: [{
+				id: "2BD0514964B5D40F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我已决心奉行于此"
+			tasks: [{
+				icon: "kubejs:world_computer"
+				id: "174026B5CABD1263"
+				isServer: false
+				stage: "world_computer_1"
+				title: "踏向前路"
+				type: "ftbqaa:astages"
+			}]
+			title: "谕示非天启"
+			x: 23.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["7F2EB186A1EAC2AC"]
+			description: [
+				"大世界计算机的配方比较奇特，需要填充&d异彩化合物&r作为其燃料。在燃料不满足某个条件的时候，配方便会失败。"
+				""
+				"不同的配方会有着不同的燃料槽需求，因此仅仅依靠疯狂填充燃料有些时候是不理智的。"
+				""
+				"为了制造世界渲染器，我们需要使用&6逆因芯片&r和&6电路基板&r，配合&6异彩化合物&r，在异彩燃料&6尽可能填满燃料槽&r的情况下，完成这个配方。"
+				""
+				"在&6配方加工的过程&r中，您仍可以添加新的异彩化合物作为燃料。"
+				""
+				"如果该配方在完成时没有输出，说明其燃料量不足。配方结束时燃料的数量越多，其成功概率也会有显著提高。"
+			]
+			id: "2B0834ECB22778B8"
+			rewards: [{
+				id: "1413AEB42326662D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机！"
+			tasks: [{
+				count: 8L
+				id: "72CA149B148FF406"
+				item: { Count: 8, id: "kubejs:world_renderer" }
+				type: "item"
+			}]
+			title: "世界渲染器"
+			x: 24.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["2B0834ECB22778B8"]
+			description: [
+				"制作&6数据压缩器&r的方法是类似的。但是请注意，数据压缩器配方的&6燃料槽会不断损失&r，其损失量预估为当前存储值的&62%&r。"
+				""
+				"因此，在早些时候对燃料槽进行填充是不理智的。尽可能在靠后阶段填充燃料，以节约&d异彩化合物&r的开销！"
+			]
+			id: "44DD8F6571C6044D"
+			rewards: [{
+				id: "332D467C588EFC06"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机！！"
+			tasks: [{
+				count: 9L
+				id: "2DA76B50BB0D6FCA"
+				item: "kubejs:data_compressor"
+				type: "item"
+			}]
+			title: "数据压缩器"
+			x: 25.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["44DD8F6571C6044D"]
+			description: [
+				"制作&6脑处理器&r的方法略有不同。"
+				""
+				"在前文的方式中，尽管燃料槽为空，配方也不会失败。但脑处理器的制作为了维持生物活性，需要不断消耗燃料，&o&6如果燃料为空，那么脑处理器的制作也会失败&r&r。"
+				""
+				"所幸，脑处理器消耗的燃料数量并非当前数量的百分比消耗，因此只要输入速度够快，处理器的制作就不会出现问题。"
+			]
+			id: "1F977AC924FB10DE"
+			rewards: [{
+				id: "7CDE093E50A85E57"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机！！！"
+			tasks: [{
+				count: 3L
+				id: "653DF626499EBAFC"
+				item: "kubejs:cerebral_brain_processor"
+				type: "item"
+			}]
+			title: "脑处理器"
+			x: 26.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1F977AC924FB10DE"]
+			description: [
+				"制作&6虚空衍射器&r最佳是在燃料槽为&650%充满&r的情况下。"
+				""
+				"在该加工配方下，每秒其会损失当前&61%&r的燃料。同时，大世界计算机会根据自身燃料槽的比例，对应输出红石信号。在燃料槽全满的情况下其会输出15的红石信号，如果为空则输出0。"
+				""
+				"因此，您可以通过红石监听红石信号实现负反馈调节，以保证能够稳定产出虚空衍射器。"
+			]
+			id: "070460BDB2BF8F41"
+			rewards: [{
+				id: "5723092568AB45F6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机！！！！"
+			tasks: [{
+				count: 3L
+				id: "08E740E0177B3FB5"
+				item: { Count: 3, id: "kubejs:void_diffraction_vault" }
+				type: "item"
+			}]
+			title: "虚空衍射室"
+			x: 26.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["070460BDB2BF8F41"]
+			description: [
+				"制作&6运算核心&r与制作&6虚空衍射器&r是类似的，但区别在于其输出红石信号的规则和最佳比例。"
+				""
+				"在该加工配方下，每秒其会损失当前&61%&r的燃料。其最佳的燃料槽比例是&6完全随机&r的。如果当前燃料数量和目标燃料有差异，其会输出不同强度的红石信号。如果差异很小，则红石信号会归零。"
+				""
+				"但您无法通过红石信号来区分出当前燃料是缺少还是过饱和。"
+				""
+				"因此，您可以通过红石监听红石信号实现负反馈调节，以保证能够稳定产出运算核心。"
+			]
+			id: "6D71985A5F5B631F"
+			rewards: [{
+				id: "7C456B90E9086611"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机！！！！！"
+			tasks: [{
+				count: 2L
+				id: "069E1C77D78C0FF1"
+				item: { Count: 2, id: "kubejs:computing_core" }
+				type: "item"
+			}]
+			title: "运算核心"
+			x: 25.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["6D71985A5F5B631F"]
+			description: [
+				"制作&6实体模拟器&r又与制作&6运算核心&r是类似的，区别在于——"
+				""
+				"在该加工配方下，&6每三十秒配方会小范围波动更新一次最佳燃料槽的比例&r，您需要通过信号的上升和下降沿来判断具体的最佳比例位置。"
+				""
+				"您可以在此配方工作时采用手动方案进行人工校准，也可以通过信号检测，判断随着时间升高/下降来得到当前与最佳比例的位置关系，进而决定是否要输入。"
+			]
+			id: "565EC6D37A612B03"
+			rewards: [{
+				id: "0F70C3EB05956FFE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了大世界计算机！！！！！！"
+			tasks: [{
+				id: "59C9C139D84C3BB6"
+				item: "kubejs:entity_simulator"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["565EC6D37A612B03"]
+			id: "38D0994640B7E463"
+			subtitle: "为了大世界计算机！！！！！！！"
+			tasks: [{
+				id: "2AAC7C5EB2C21B17"
+				item: "kubejs:quantum_dimension_resolver"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 13.5d
 		}
 	]
 	title: "传闻：大世界计算机"

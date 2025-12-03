@@ -13,16 +13,29 @@
     {
       "type": "custommachinery:item",
       "id": "input_1",
+      "filter": [
+        "kubejs:reverse_causality_chip",
+        "create:chromatic_compound"
+      ],
+      "whitelist": false,
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
       "id": "input_2",
+      "filter": [
+        "create:chromatic_compound"
+      ],
+      "whitelist": true,
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
       "id": "input_3",
+      "filter": [
+        "kubejs:reverse_causality_chip"
+      ],
+      "whitelist": true,
       "mode": "input"
     },
     {
@@ -104,11 +117,12 @@
       "type": "custommachinery:bar",
       "x": 10,
       "y": 70,
-      "id": "resouce_bar",
+      "id": "resource_bar",
       "max": 1000000,
       "texture_empty": "kubejs:textures/gui/world_computer/resource_bar_empty.png",
       "texture_filled": "kubejs:textures/gui/world_computer/resource_bar_full.png",
-      "orientation": "top"
+      "orientation": "right",
+      "highlight": false
     }
   ],
   "jei": [
