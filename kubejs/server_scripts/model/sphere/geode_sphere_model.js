@@ -26,7 +26,6 @@ GeodeSphereModel.prototype.constructor = GeodeSphereModel
  * @param {'cloud'|'dense'|'random'|'flake'} type 
  */
 function VeinProperty(veinBlock, veinSize, type) {
-    // todo 支持片状（flake）矿脉实现
     /**@type {Internal.BlockState} */
     this.block = veinBlock
     /**@type {number} */

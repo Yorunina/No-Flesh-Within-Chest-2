@@ -4,7 +4,6 @@
  * @type {function(Internal.Level, SphereModel, BlockPos)}
  */
 const GenChorusFruit = (level, sphere, offset) => {
-    // todo 需要测试
     $ChorusFlowerBlock.generatePlant(level, sphere.center.offset(offset).above())
 }
 

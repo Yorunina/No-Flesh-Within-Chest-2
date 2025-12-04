@@ -1,0 +1,26 @@
+{
+	icon: "kubejs:world_computer"
+	id: "46927F8154FA5498"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "create:creative_motor"
+			ignore_reward_blocking: true
+			stage: "world_computer_3"
+			title: "私有创造马达配方"
+			type: "ftbqaa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "create:creative_motor"
+			ignore_reward_blocking: true
+			isServer: true
+			stage: "world_computer_2"
+			title: "公开创造马达配方"
+			type: "ftbqaa:astages"
+		}
+	]
+	title: "创造马达配方"
+}

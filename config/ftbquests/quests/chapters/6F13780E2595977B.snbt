@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"您似乎也察觉到了——这些工具本身具有一些极其特殊的地方。"
 				""

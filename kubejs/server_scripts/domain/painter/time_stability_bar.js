@@ -6,7 +6,6 @@ PlayerEvents.loggedIn(event => {
     UpdatePlaysTimeStabilityBar(server, level, player)
 })
 
-
 /**
  * 
  * @param {Internal.MinecraftServer} server 
@@ -17,9 +16,9 @@ function UpdatePlaysTimeStabilityBar(server, level, player) {
     let doDayCycle = server.gameRules.getBoolean($GameRules.RULE_DAYLIGHT)
     var ratio
     if (doDayCycle) {
-        let dayDuration = GetDayDuration(server)
-        let nightDuration = GetNightDuration(server)
-        ratio = dayDuration / (dayDuration + nightDuration)
+        let daySpeed = GetDaySpeed(server)
+        let nightSpeed = GetNightSpeed(server)
+        ratio = nightSpeed / (daySpeed + nightSpeed)
     } else {
         if (level.isDay()) {
             ratio = 1

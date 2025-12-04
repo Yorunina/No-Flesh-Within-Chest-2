@@ -85,8 +85,6 @@ const $ProcessingInventory = Java.loadClass('com.simibubi.create.content.process
 
 const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelper')
 
-const $OpticManager = Java.loadClass('team.creative.opticmanager.OpticManager')
-
 const $AnimHeadSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimHeadSummon')
 const $AnimBlockSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimBlockSummon')
 
@@ -117,3 +115,4 @@ const $CameraItem = Java.loadClass('io.github.mortuusars.exposure.item.CameraIte
 const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer')
 
 const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
+const $HourglassConfig = Java.loadClass('net.lavabucket.hourglass.config.HourglassConfig')

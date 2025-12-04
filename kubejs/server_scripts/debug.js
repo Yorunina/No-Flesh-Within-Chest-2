@@ -49,6 +49,10 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
+    let res = level.gameRules.kjs$getBoolean('doInsomnia')
+    level.gameRules.set('doInsomnia', res ? 'false' : 'true')
+    // SetDaySpeed(0.1)
+    // UpdatePlaysTimeStabilityBar(server, level, player)
     // /**@type {Internal.PathfinderMob} */
     // let leader = level.createEntity('minecraft:zombie')
     // leader.potionEffects.add('minecraft:glowing', 20 * 60, 0)

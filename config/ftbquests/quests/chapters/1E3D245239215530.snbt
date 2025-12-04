@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"奇怪，黄铜似乎具有一些极其奇特的属性。"
 				""
@@ -1886,7 +1887,7 @@
 			}]
 			subtitle: "为了大世界计算机！！！"
 			tasks: [{
-				count: 3L
+				count: 2L
 				id: "653DF626499EBAFC"
 				item: "kubejs:cerebral_brain_processor"
 				type: "item"
@@ -1975,7 +1976,21 @@
 		}
 		{
 			dependencies: ["565EC6D37A612B03"]
+			description: [
+				"这是最后一个部件了，&6量子维度解算器&r。"
+				""
+				"在该加工配方下，&6每三十秒配方会小范围波动更新一次最佳燃料槽的比例&r，如果在当前30秒周期内，您与最佳比例的偏移量超过&6燃料槽总量的15%&r，那么整个配方就会失败。"
+				""
+				"根据其输出红石信号的规律，只要您保证红石信号输出的&6强度低于2&r，即可正常推进配方。"
+				""
+				"您可以在此配方工作时采用手动方案进行人工校准，也可以通过信号检测，判断随着时间升高/下降来得到当前与最佳比例的位置关系，进而决定是否要输入。"
+			]
 			id: "38D0994640B7E463"
+			rewards: [{
+				id: "3841131D4C2FBEAA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "为了大世界计算机！！！！！！！"
 			tasks: [{
 				id: "2AAC7C5EB2C21B17"
@@ -1984,6 +1999,69 @@
 			}]
 			x: 23.0d
 			y: 13.5d
+		}
+		{
+			dependencies: ["38D0994640B7E463"]
+			description: [
+				"通过&6书与笔&r与&6逆因芯片&r在构造好多方块结构下的配方的配方，我们就能完成了大世界计算机对于当前世界的逻辑注入。"
+				""
+				"因此，这个配方又被称之为“&6世界运算&r”。"
+				""
+				"至此，恭喜您完成了大世界计算机的构建，而我们也已经获得了我们需要的能力——&6一定程度操控世界的能力&r。"
+			]
+			id: "133A28D884F01479"
+			rewards: [{
+				id: "317E5F07D06A2233"
+				item: "lightmanscurrency:coin_netherite"
+				type: "item"
+			}]
+			subtitle: "如果星是按照星轨行进的，那星轨是依照什么产生的"
+			tasks: [{
+				icon: "kubejs:world_computer"
+				id: "03478360DF22DDBE"
+				stage: "world_computer_2"
+				title: "执行世界计算"
+				type: "gamestage"
+			}]
+			title: "大世界计算机"
+			x: 22.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["133A28D884F01479"]
+			description: [
+				"大世界计算机已经预测到了&d创造马达&r的出现。"
+				""
+				"之所以目前还无人能够制作创造马达，原因为其需要一些特殊的条件——"
+				""
+				"如若您在世界上已经通过工作台手动合成了&6超过100件&r物品，并且&6合成数量位列整个世界的首位&r，那么，您便会产生关于创造马达的新的感悟。"
+				""
+				"{@pagebreak}"
+				"公开配方会使所有人都可以制作创造马达。"
+				""
+				"私有配方会使您成为唯一能够制作创造马达的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+			]
+			icon: "create:creative_motor"
+			id: "72265CC11B4E1D53"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4EE8532251438037"
+				table_id: 5085267122707911832L
+				type: "choice"
+			}]
+			subtitle: "大师的领悟"
+			tasks: [{
+				icon: "minecraft:crafting_table"
+				id: "7A07B21582545EE3"
+				leaderboard: "leaderboards:total_items_crafted"
+				min: 100
+				rank: 1
+				title: "总手动合成物品数最多"
+				type: "leaderboards:rank_task"
+			}]
+			title: "大世界计算机之后"
+			x: 22.0d
+			y: 14.5d
 		}
 	]
 	title: "传闻：大世界计算机"

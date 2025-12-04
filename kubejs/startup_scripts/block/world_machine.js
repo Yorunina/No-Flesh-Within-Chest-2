@@ -78,7 +78,7 @@ StartupEvents.registry('block', event => {
 
     event.create('kubejs:data_compressor', 'basic')
         .stoneSoundType()
-        .texture('particle', 'kubejs:block/data_compressor_top')
+        .texture('particle', 'kubejs:block/world_machine/data_compressor_top')
         .textureSide('down', 'kubejs:block/world_machine/data_compressor_bottom')
         .textureSide('up', 'kubejs:block/world_machine/data_compressor_top')
         .textureSide('north', 'kubejs:block/world_machine/data_compressor')
