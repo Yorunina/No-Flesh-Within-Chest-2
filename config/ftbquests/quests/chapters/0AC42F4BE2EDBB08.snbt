@@ -326,6 +326,7 @@
 			id: "64C8D52C20B8C0E4"
 			rewards: [{
 				auto: "invisible"
+				icon: "waystones:waystone"
 				id: "2412A5F324233335"
 				ignore_reward_blocking: true
 				name: "Shop"

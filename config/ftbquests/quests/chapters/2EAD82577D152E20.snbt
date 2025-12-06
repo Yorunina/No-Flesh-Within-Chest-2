@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"在制作传送石时，我突然意识到了一件事情。"
 				""
@@ -37,27 +38,90 @@
 				title: "制作传送石"
 				type: "item"
 			}]
-			title: "通往无尽之钥"
+			title: "奇异点的反思"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7DFD8F39E1AC3083"]
-			id: "4F7C14078B55690B"
+			description: [
+				"为了寻找到创造维度的方法，我们需要了解当前世界中出现的异常结构是如何产生的。"
+				""
+				"在当前世界中，存在有大量和当初我所知世界不同的结构存在。请您制造&6相机&r，并且使用相机记录下这一切，进而我会对这些数据进行分析处理。"
+			]
+			id: "3F88ADBD557E73A8"
 			rewards: [{
-				id: "018D76DA5FBDAB15"
+				id: "66D57577472D7A69"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "用相机来记录一切"
 			tasks: [{
-				id: "094F4053916162FB"
-				stat: "infinity:dimensions_opened_stat"
-				type: "stat"
-				value: 1
+				id: "56781900DF9741E1"
+				item: "exposure:camera"
+				type: "item"
 			}]
-			title: "一次尝试"
+			title: "寻找黄金乡"
 			x: 1.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["3F88ADBD557E73A8"]
+			description: [
+				"光制作出相机是无法直接使用的，您至少还需要一个光敏载体——比如说古老的胶卷。"
+				""
+				"胶卷包含&6黑白胶卷&r和&6彩色胶卷&r两种，您可以根据喜好来选择对应的胶卷。"
+				""
+				"两者相比较来说，黑白胶卷的冲洗更为简单直接，因此目标为完成任务的情况下，我更建议您使用黑白胶卷而非彩色胶卷。"
+			]
+			icon: "exposure:black_and_white_film"
+			id: "509FC63C6A0CF06A"
+			rewards: [{
+				id: "4DFAB56842CC722D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "记录载体"
+			tasks: [{
+				id: "2BDD9D9E57382052"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exposure:film_rolls"
+					}
+				}
+				title: "胶卷"
+				type: "item"
+			}]
+			title: "制作胶卷"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3F88ADBD557E73A8"]
+			description: [
+				"假若您拍摄完成，您需要将照片冲洗出来。"
+				""
+				"为了冲洗出照片，您需要使用&6暗房&r作为冲洗工具。将胶卷通过水或者药水&6初步冲洗&r后，在暗房里放入不同的染料即可缓慢完成照片的冲洗。"
+				""
+				"请您熟悉这个工具，我们后面为了记录各种各样的东西，会反复使用它。"
+			]
+			id: "4449195A34FB718E"
+			rewards: [{
+				id: "21297002FB1A05DC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "冲洗工具"
+			tasks: [{
+				id: "32967090AB62EAF4"
+				item: "exposure:lightroom"
+				type: "item"
+			}]
+			title: "制作暗房"
+			x: 3.0d
+			y: 1.0d
 		}
 	]
 	title: "传闻：重返黄金乡"

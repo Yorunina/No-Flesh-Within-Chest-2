@@ -18,7 +18,6 @@
   },
   "disabledDimensions": ["ant", "bash", "checkerboard",
     "missing", "notes", "perfection", "terminal"],
-  "portalKey": "",
   "salt": "nfwc",
   "rootChances": {
     "dimension_type": {
@@ -46,10 +45,10 @@
       "has_precipitation": 0.5,
       "use_random_biome": 0.8,
       "use_sparse_vegetation": 0.5,
-      "use_particles": 0.5,
+      "use_particles": 0.05,
       "ambient_sound": 0.0625,
-      "mood_sound": 0.125,
-      "additions_sound": 0.125,
+      "mood_sound": 0.03,
+      "additions_sound": 0.02,
       "music": 1.0,
       "temperature_modifier_frozen": 0.25,
       "use_random_cave": 0.2,
@@ -90,7 +89,7 @@
       "banded_shapes": 0.5
     },
     "structures": {
-      "text": 0.1,
+      "text": 0.05,
       "spawn_override": 0.0,
       "full_box": 0.5,
       "triangular_spread": 0.1

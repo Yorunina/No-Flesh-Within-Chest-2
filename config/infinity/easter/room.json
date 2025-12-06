@@ -7,7 +7,6 @@
       "biome": "minecraft:plains"
     },
     "structure_paths": [
-      "kubejs:test"
     ]
   }
 }
