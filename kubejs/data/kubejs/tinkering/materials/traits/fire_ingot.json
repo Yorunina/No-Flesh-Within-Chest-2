@@ -1,0 +1,22 @@
+{
+   "default": [
+       {
+            "level": 1,
+            "name": "tconstruct:flame_barrier"
+        }
+    ],
+  "perStat": {
+    "tconstruct:ranged": [
+      {
+        "name": "kubejs:hot",
+        "level": 1
+      }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "name": "kubejs:hot",
+        "level": 1
+      }
+    ]
+  }
+}

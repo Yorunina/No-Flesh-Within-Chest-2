@@ -39,5 +39,8 @@ ServerEvents.recipes(event => {
     tconstruct.material('kubejs:toxin_gland','biomancy:toxin_gland')
     tconstruct.material('kubejs:volatile_fluid','biomancy:volatile_fluid')
     tconstruct.material('kubejs:bile','biomancy:bile')
+    tconstruct.material('kubejs:experience_block','create:experience_block')
+    tconstruct.material('kubejs:glintstone','kubejs:glintstone')
+    tconstruct.material('kubejs:magma','minecraft:magma_block')
 })
     

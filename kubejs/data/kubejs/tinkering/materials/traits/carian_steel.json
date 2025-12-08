@@ -1,0 +1,22 @@
+{
+   "default": [
+        {
+            "level": 1,
+            "name": "kubejs:magic_back"
+        }
+    ],
+  "perStat": {
+    "tconstruct:ranged": [
+      {
+        "name": "kubejs:magic_damage",
+        "level": 1
+      }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "name": "kubejs:magic_damage",
+        "level": 1
+      }
+    ]
+  }
+}
