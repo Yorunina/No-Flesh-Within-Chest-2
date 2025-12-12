@@ -3,7 +3,16 @@ const InfinityDimItem2DimId = {
     'minecraft:obsidian': 'infinity:cube',
     'minecraft:slime_ball': 'infinity:slime',
     'minecraft:grass_block': 'infinity:hills',
-    'minecraft:dragon_breath': 'infinity:missingno'
+    'minecraft:dragon_breath': 'infinity:missingno',
+    'minecraft:cherry_leaves': 'infinity:spiral',
+    'minecraft:sponge': 'infinity:sponge',
+    'minecraft:stick': 'infinity:content',
+    'minecraft:stone': 'infinity:classic',
+    'minecraft:bricks': 'infinity:isolation',
+    'minecraft:black_concrete': 'infinity:chess',
+    'minecraft:book': 'infinity:library',
+    'minecraft:glowstone': 'infinity:nexus',
+    'minecraft:redstone': 'infinity:perfection'
 }
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.getEntity()
@@ -32,9 +41,11 @@ InfinityEvents.itemInPortal(event => {
             let phtographerId = nbt.getUUID('PhotographerId')
             let targetPlayer = level.getPlayerByUUID(phtographerId)
             if (!DimensionsNet.getNetFromPlayer(targetPlayer)) {
-                DimensionsNet.createNewNetForPlayer(targetPlayer, 256, 27)
+                DimensionsNet.createNewNetForPlayer(targetPlayer, 64, 27)
             }
         }
+    } else if (itemStack.is('minecraft:diamond_block')) {
+        itemEntity.setItem(Item.of('beyonddimensions:net_pathway'))
     } else {
         let dimId = InfinityDimItem2DimId[itemStack.getId().toString()]
         if (!dimId) return

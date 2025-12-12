@@ -19,7 +19,7 @@ ui_page_num = 5
 #存储UI搜索框内容 (除非你知道你在做什么，否则不要手动修改)
 ui_search = ""
 #是否自动生成破碎的时空结晶？
-generate_time_crystallization = true
+generate_time_crystallization = false
 #是否允许网络接口将资源送入网络
 interface_can_receive_resource = true
 #是否允许网络接口从网络提取标记的资源
