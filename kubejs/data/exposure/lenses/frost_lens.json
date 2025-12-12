@@ -3,7 +3,7 @@
         "item": "kubejs:frost_lens"
     },
     "focal_range": {
-        "min": 10,
+        "min": 12,
         "max": 30
     }
 }

@@ -1,0 +1,9 @@
+{
+    "item": {
+        "item": "kubejs:wide_angle_lens"
+    },
+    "focal_range": {
+        "min": 4,
+        "max": 10
+    }
+}

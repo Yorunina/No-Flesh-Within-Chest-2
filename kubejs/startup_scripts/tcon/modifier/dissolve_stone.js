@@ -17,16 +17,4 @@ TConJSEvents.modifierRegistry(event => {
             }
         })
     })
-
-    // const $ExperienceOrb = Java.loadClass('net.minecraft.world.entity.ExperienceOrb')
-    // event.createNew('exp_trans', builder => {
-    //     builder.processLoot((toolView, lvl, lootList, context) => {
-    //         const level = context.getLevel()
-    //         let expAmount = lootList.length
-    //         const thisEntity = context.getParamOrNull($LootContextParams.THIS_ENTITY)
-    //         if (thisEntity) return
-    //         lootList.clear()
-    //         $ExperienceOrb.award(level, thisEntity.blockPosition(), expAmount)
-    //     })
-    // })
 })

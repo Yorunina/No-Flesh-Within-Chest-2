@@ -15,7 +15,6 @@ TConJSEvents.modifierRegistry(event => {
                     }
                 }
             }
-
         })
     })
 })

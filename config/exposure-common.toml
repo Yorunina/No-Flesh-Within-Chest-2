@@ -1,7 +1,7 @@
 
 [Camera]
 	#Default focal range of the camera (without a lens attached).
-	#Allowed range: 10-300
+	#Allowed range: 0-1000
 	#Default: 18-55
 	DefaultFocalRange = "18-55"
 	#Can attack while looking through Viewfinder.

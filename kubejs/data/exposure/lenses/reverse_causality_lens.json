@@ -1,9 +1,9 @@
 {
     "item": {
-        "item": "kubejs:frost_lens"
+        "item": "kubejs:reverse_causality_lens"
     },
     "focal_range": {
-        "min": 3,
-        "max": 9
+        "min": 8,
+        "max": 18
     }
 }

@@ -116,3 +116,4 @@ const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics
 
 const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 const $HourglassConfig = Java.loadClass('net.lavabucket.hourglass.config.HourglassConfig')
+const $EternalWinterUtil = Java.loadClass('net.yorunina.eternalwinter.util.EternalWinterUtil')

@@ -6,5 +6,5 @@ PlayerEvents.loggedIn(event => {
     SyncPlayerOriginUnlockStatus(player) // 同步起源解锁信息：服务端记录的起源信息同步到客户端
 
     InitClientISSSpellData(player) // 同步客户端ISSSpellData：同步客户端的ISSSpellData，用于客户端的ISSSpellData初始化
-
 })
+

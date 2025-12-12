@@ -24,3 +24,8 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:reverse_causality_lens')
     .addDefault(Text.translatable('tooltips.kubejs.reverse_causality_lens.default.1').gray())
     .addShift(Text.translatable('tooltips.kubejs.reverse_causality_lens.shift.1', UnstableHover))
 )
+
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:wide_angle_lens')
+    .addDefault(Text.translatable('tooltips.kubejs.wide_angle_lens.default.1').gray())
+)

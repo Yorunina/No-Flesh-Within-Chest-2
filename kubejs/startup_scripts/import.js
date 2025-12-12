@@ -36,4 +36,3 @@ const $Serializer = Java.loadClass('net.minecraft.network.chat.Component$Seriali
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
 const $ToolStats = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStats')
 const $ToolStatId = Java.loadClass('slimeknights.tconstruct.library.tools.stat.ToolStatId')
-

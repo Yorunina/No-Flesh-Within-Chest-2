@@ -38,10 +38,12 @@
 //     item.shrink(1)
 // })
 
-ItemEvents.entityInteracted('stick', event => {
-    const entity = event.target
-    BloodLustGoal(entity)
-})
+// ItemEvents.entityInteracted('stick', event => {
+//     const entity = event.target
+//     BloodLustGoal(entity)
+// })
+
+
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
@@ -49,8 +51,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    let res = level.gameRules.kjs$getBoolean('doInsomnia')
-    level.gameRules.set('doInsomnia', res ? 'false' : 'true')
+    // AddSkinToSlot(player, 'chest', 'burning_heart_arms')
     // SetDaySpeed(0.1)
     // UpdatePlaysTimeStabilityBar(server, level, player)
     // /**@type {Internal.PathfinderMob} */

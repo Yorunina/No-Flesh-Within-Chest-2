@@ -273,7 +273,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6爬行者&r在&6黑暗&r中慢慢靠近您的世纪性照片。"]
+			hide_dependency_lines: true
 			id: "14E235C60FC2ECC7"
 			rewards: [{
 				id: "2481023461890763"
@@ -360,7 +362,9 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6监守者&r在&6远古都市&r，因为不安的噪音破土而出的珍稀画面。"]
+			hide_dependency_lines: true
 			id: "318B5462AAC0EA2C"
 			rewards: [{
 				id: "1D277718484F2B64"
@@ -401,7 +405,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["多只&6烈焰人&r环绕四周，紧张刺激的战斗令人肾上腺素飙升。"]
+			hide_dependency_lines: true
 			id: "61C07953977FBE7D"
 			rewards: [{
 				id: "3DB7CD077CB33313"
@@ -427,7 +433,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6牛&r、&6羊&r、&6鸡&r同时出现在画面上，它们正享受着自己的平凡生活，殊不知这番平凡是被您赐予的。"]
+			hide_dependency_lines: true
 			id: "5A99F20FF077C796"
 			rewards: [{
 				id: "08102B39D761B89E"
@@ -475,7 +483,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["一群&6小猪&r环绕在身边的温馨场景，虽然它们后面遭遇的大概率是残忍的屠刀. . ."]
+			hide_dependency_lines: true
 			id: "7D8F39C702BAB785"
 			rewards: [{
 				id: "3134962BF5CF043B"
@@ -501,7 +511,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["画面记录下了&6恶魂&r发射&6火焰弹&r的宝贵瞬间，希望您在捕捉这画面时没有受伤。"]
+			hide_dependency_lines: true
 			id: "7D6B8F4427BDF3D4"
 			rewards: [{
 				id: "3E187C1580CF05B5"
@@ -542,7 +554,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6掠夺者&r在他们的&6蒸汽飞空艇&r上巡视新的征服目标——但是他们忘记了自己并不会使用&6大炮&r。"]
+			hide_dependency_lines: true
 			id: "38FAE1A100E355A0"
 			rewards: [{
 				id: "7629FB0C19CA912B"
@@ -629,7 +643,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["在&6丛林&r中，偶尔一些&6村民&r会选择在树上&6筑家&r. . .就是这些家看起来并不怎么牢固。"]
+			hide_dependency_lines: true
 			id: "60F183947BCAB462"
 			rewards: [{
 				id: "3CC31F1FA7B84239"
@@ -655,7 +671,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["&6铁傀儡&r会和&6村民&r一起出现，村民会和&6猫&r一起出现，因此，他们三者同时都出现也不是没有可能。"]
+			hide_dependency_lines: true
 			id: "124D19952BE48419"
 			rewards: [{
 				id: "6DBCB490CD68EDBC"
@@ -740,7 +758,9 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["偶尔会在世界中发现一些承载着大量&6机械物资&r的&6热气球&r，站在上面来一张&6自拍&r或许不错。"]
+			hide_dependency_lines: true
 			id: "32F948AC9FFEB8B9"
 			rewards: [{
 				id: "2AC3FB316402C970"
@@ -785,7 +805,9 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["画面描述了在&6恶地&r生态群系下，一只&6犰狳&r蜷缩着身体，静静地等待着你的离开。"]
+			hide_dependency_lines: true
 			id: "569948788E7E213F"
 			rewards: [{
 				id: "476553248FF2A82D"
@@ -826,7 +848,9 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["偶尔您会在世界上发现一些&6位于地下的村庄&r——严格意义上，它们并不算村庄，这仅仅只能算作一个庇护所！"]
+			hide_dependency_lines: true
 			id: "6171DB7303057149"
 			rewards: [{
 				id: "3AE36D7DE82B4F16"
@@ -852,8 +876,11 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["如果您能发现&6蘑菇岛&r，请您一定要留下&6您&r和&6哞菇&r的自拍，这并不是为了分析数据，单纯是因为我很喜欢哞菇这种生物。"]
+			hide_dependency_lines: true
 			id: "4418CA94AA22BB26"
+			ignore_reward_blocking: true
 			rewards: [{
 				count: 3
 				id: "51AE4AAB6928F220"
@@ -901,7 +928,9 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["您会在海底神殿遇到它的守护者——&6远古守护者&r。请您一定要拍摄一张它的照片！"]
+			hide_dependency_lines: true
 			id: "4CAA51BAD4982EA2"
 			rewards: [{
 				id: "0AC45FA0044D0659"
@@ -927,7 +956,9 @@
 			y: 4.5d
 		}
 		{
+			dependencies: ["6B524BB21FC95A01"]
 			description: ["拍摄一张&6舵背鲸&r和它的&6船只&r的照片！尽量拍全一些！因为它真的很大！"]
+			hide_dependency_lines: true
 			id: "35796740FDCA3F1A"
 			rewards: [{
 				id: "6DD87FABEAC3A5F1"
@@ -966,6 +997,387 @@
 			title: "舵背鲸之号"
 			x: 6.0d
 			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["在&6幽暗&r的&6丛林神庙&r中，危险的陷阱似乎想要将您置于死地. . .请您小心。"]
+			hide_dependency_lines: true
+			id: "7CD76D088A4E820F"
+			rewards: [{
+				id: "18E708BF4A623F64"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这里有点黑"
+			tasks: [{
+				icon: "minecraft:vine"
+				id: "1153B49DF5650D5A"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_structure"
+								tag: {
+									value: "minecraft:trail_ruins"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_light_level"
+								tag: {
+									value: " <= 7"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "幽暗丛林神庙"
+			x: 7.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["&6狼&r会误以为&6骷髅&r身上的骨头是可以食用的. . .虽然好像确实都是可食用的！"]
+			hide_dependency_lines: true
+			id: "5A38CC02FFCFB4DE"
+			rewards: [{
+				id: "4276A2ED97BA9BEA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "身上全都是骨头呀"
+			tasks: [{
+				icon: "minecraft:bone"
+				id: "7650318646627D51"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						SelectedItem: -1
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:wolf >= 1"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:skeleton >= 1"
+								}
+							}
+						]
+					}
+				}
+				title: "获取特定照片"
+				type: "item"
+			}]
+			title: "自由驱逐者"
+			x: 9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["画面记录了4、5. . .至少&68只史莱姆&r在跳跃的场景。虽然史莱姆看起来可爱，但对玩家是极度富有敌意的。"]
+			hide_dependency_lines: true
+			id: "00FA2D477EE7E146"
+			rewards: [{
+				id: "51EE6A05633E3778"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "源源不断"
+			tasks: [{
+				icon: "simplehats:slime_cube_dnd"
+				id: "520F2C2C22FEE5CC"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_entity"
+					tag: {
+						value: "minecraft:slime >= 8"
+					}
+				}
+				title: "获得特定相片"
+				type: "item"
+			}]
+			title: "由史莱姆染成的绿"
+			x: 10.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["画面记录了&6企鹅&r在&6冰刺之地&r，在冰面上缓慢行走的场景。"]
+			hide_dependency_lines: true
+			id: "359B8EFE5765385A"
+			rewards: [
+				{
+					id: "508D7B395D3DFC61"
+					item: "simplehats:penguinhat"
+					type: "item"
+				}
+				{
+					id: "6A13A5C7558F1865"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+			]
+			subtitle: "企鹅在这里"
+			tasks: [{
+				icon: "wildernature:penguin_spawn_egg"
+				id: "7E52D3A949AAFE5A"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						SelectedItem: -1
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_biome"
+								tag: {
+									SelectedItem: -1
+									value: "minecraft:ice_spikes"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "wildernature:penguin >= 1"
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "凛冬若企鹅毛大雪"
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"569948788E7E213F"
+				"14E235C60FC2ECC7"
+				"318B5462AAC0EA2C"
+				"124D19952BE48419"
+				"7D6B8F4427BDF3D4"
+				"4418CA94AA22BB26"
+				"35796740FDCA3F1A"
+				"4CAA51BAD4982EA2"
+				"5A38CC02FFCFB4DE"
+				"28F29F5D3B3453B7"
+				"60F183947BCAB462"
+				"6171DB7303057149"
+				"61C07953977FBE7D"
+				"32F948AC9FFEB8B9"
+				"5A99F20FF077C796"
+				"7D8F39C702BAB785"
+				"38FAE1A100E355A0"
+				"359B8EFE5765385A"
+				"00FA2D477EE7E146"
+				"7CD76D088A4E820F"
+			]
+			description: ["这个任务没有什么取景地的要求，您只要按照您的想法拍摄出&6最好的照片&r并且&6提交&r即可。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "42611C6251FAB454"
+			min_required_dependencies: 5
+			rewards: [{
+				id: "04CEEBE8B4953C12"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "拍摄一张惊世之作"
+			tasks: [{
+				consume_items: true
+				id: "1DEE2F3F915C7FFF"
+				item: "exposure:photograph"
+				title: "任意照片"
+				type: "item"
+			}]
+			title: "收官之作"
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6B524BB21FC95A01"]
+			description: ["拍摄一张&6您的朋友们&r的照片——当然，您也可以用&6很多村民&r来替代。"]
+			hide_dependency_lines: true
+			id: "28F29F5D3B3453B7"
+			rewards: [{
+				id: "3987BB848091B552"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "只有有人在的世界才是"
+			tasks: [{
+				icon: "minecraft:cake"
+				id: "294FC21CA6A20882"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:villager >= 5"
+								}
+							}
+							{
+								Count: 1b
+								id: "ftbqaa:exposure_photo_entity"
+								tag: {
+									value: "minecraft:player >= 2"
+								}
+							}
+						]
+					}
+				}
+				title: "获取指定照片"
+				type: "item"
+			}]
+			title: "我们的好时光"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["42611C6251FAB454"]
+			description: [
+				"感谢您这段时间来的配合，我确实找到了几个&6特殊的维度&r。这些维度显然和&6商店维度&r有些关系。"
+				""
+				"现在请您搭建一个下界传送门，并且将&6黑曜石&r丢到下界门中——它绝对不会穿越到另一个维度的，它将会为您打开一扇通向未知的桥梁。"
+			]
+			id: "05B30D636925E1C1"
+			rewards: [{
+				id: "3AC9D9C888908716"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "踪迹之一"
+			tasks: [{
+				dimension: "infinity:cube"
+				icon: "minecraft:obsidian"
+				id: "77C8EE5D8A23AD00"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探访被发现的世界"
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2E7B76E8277B6B60"]
+			description: [
+				"上一个维度不知道您觉得怎么样？在我看来，它可能有些单调。"
+				""
+				"现在请您将&6黏液球&r投掷到传送门中，它将会重新开启一道通向更加混乱世界的通道。"
+			]
+			id: "4329E9383BBF0B7E"
+			rewards: [{
+				id: "1F632E3C299FC7F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "踪迹之二"
+			tasks: [{
+				dimension: "infinity:slime"
+				icon: "minecraft:slime_ball"
+				id: "57A25EE636520C8B"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探访被发现的史莱姆世界"
+			x: 9.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["05B30D636925E1C1"]
+			description: [
+				"一个无限延伸的，按照16 * 16 * 16构建而成的&6黑曜石维度&r——这绝对是有意而为之的，"
+				""
+				"它非常像一个监牢，用于将各种&6生物囚禁&r在其中的监牢。我不明白为什么会有这样的地方，更不理解它的意义是什么。"
+				""
+				"我们必须前往下一个踪迹所在的位置，了解到真实的意图。"
+			]
+			id: "2E7B76E8277B6B60"
+			rewards: [{
+				id: "1452FB1939C23526"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "分析结果：监牢"
+			tasks: [{
+				icon: "exposure:photograph"
+				id: "3ADEE502CA6CF28F"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_dimension"
+					tag: {
+						value: "infinity:cube"
+					}
+				}
+				title: "一张证明"
+				type: "item"
+			}]
+			title: "暗无天日的黑曜石监牢"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4329E9383BBF0B7E"]
+			description: [
+				"这是一片由史莱姆统治的原野，在数据层面，其维度名称正被称作为&6Slime&r。"
+				""
+				"唯一的奇怪点就是这些史莱姆的体内似乎都携带着一个&6随机的方块&r。这个方块的种类横跨之广，以至于我现在都愿意相信所有的方块都可以通过其获得. . ."
+				""
+				"但由于其奇怪的碰撞箱，击杀它可能需要一些时间和技巧。"
+			]
+			id: "7862A6B384A0E8B4"
+			rewards: [{
+				id: "61F89A0C26053E72"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "混乱初现"
+			tasks: [{
+				icon: "exposure:photograph"
+				id: "498D4EEEA0FE41C4"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_dimension"
+					tag: {
+						value: "infinity:slime"
+					}
+				}
+				title: "一张证明"
+				type: "item"
+			}]
+			title: "史莱姆构成的原野"
+			x: 11.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7862A6B384A0E8B4"]
+			id: "1633AB544EB13336"
+			tasks: [{
+				id: "039AA64DCC4F3B86"
+				item: "minecraft:stripped_oak_wood"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
 		}
 	]
 	title: "传闻：重返黄金乡"

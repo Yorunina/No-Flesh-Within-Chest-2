@@ -121,17 +121,6 @@
         "value": 1024
       }
     },
-    "cryofloric_arts:max_damage_rate": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
     "forge:entity_reach": {
       "enabled": false,
       "min": {

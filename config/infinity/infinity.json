@@ -4,7 +4,7 @@
     "runtimeGenerationEnabled": true,
     "longArithmeticEnabled": false,
     "forceSolidSurface": true,
-    "chaosMobsEnabled": false,
+    "chaosMobsEnabled": true,
     "consumePortalKey": true,
     "randomizeAllNetherPortals": false,
     "pawnsCanDropIllegalItems": false,

@@ -110,13 +110,13 @@ debugLevel=0
 	#Whether the Chocolate Event Coins will be added to the coin data.
 	#Note: Disabling will not remove any Chocolate Coin items that already exist, this simply makes them no longer function as money
 	#Default: true
-	chocolate=true
+	chocolate=false
 	#Whether custom events defined in the 'SeasonalEvent.json' config can give players a one-time reward for logging in during the event.
 	#Default: true
-	startingRewards=true
+	startingRewards=false
 	#Whether custom events can replace a portion (or all) of the default loot with custom event loot.
 	#Default: true
-	lootReplacements=true
+	lootReplacements=false
 #Villager Related Settings
 #Note: Any changes to villagers requires a full reboot to be applied due to how Minecraft/Forge registers trades.
 [villagers]
