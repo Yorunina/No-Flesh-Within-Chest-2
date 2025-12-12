@@ -3,11 +3,14 @@ const InfinityDimItem2DimId = {
     'minecraft:obsidian': 'infinity:cube',
     'minecraft:slime_ball': 'infinity:slime',
     'minecraft:grass_block': 'infinity:hills',
+    'minecraft:dragon_breath': 'infinity:missingno'
 }
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.getEntity()
+    if (itemEntity.isOnPortalCooldown()) return
     /** @type {Internal.ItemStack} */
     const itemStack = itemEntity.getItem()
+    itemEntity.setPortalCooldown(200)
     const level = event.getLevel()
     const pos = event.getPos()
     if (itemStack.is('kubejs:key_to_infinity')) {
@@ -23,6 +26,15 @@ InfinityEvents.itemInPortal(event => {
     } else if (itemStack.hasTag('lightmanscurrency:coins')) {
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById('kubejs:oath', level, pos)
+    } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT()) {
+        let nbt = itemStack.getNbt()
+        if (nbt.contains('PhotographerId')) {
+            let phtographerId = nbt.getUUID('PhotographerId')
+            let targetPlayer = level.getPlayerByUUID(phtographerId)
+            if (!DimensionsNet.getNetFromPlayer(targetPlayer)) {
+                DimensionsNet.createNewNetForPlayer(targetPlayer, 256, 27)
+            }
+        }
     } else {
         let dimId = InfinityDimItem2DimId[itemStack.getId().toString()]
         if (!dimId) return

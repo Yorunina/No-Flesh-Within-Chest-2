@@ -1273,7 +1273,7 @@
 				title: "访问维度"
 				type: "dimension"
 			}]
-			title: "探访被发现的世界"
+			title: "探访被发现的牢笼"
 			x: 6.5d
 			y: 8.0d
 		}
@@ -1298,7 +1298,7 @@
 				title: "访问维度"
 				type: "dimension"
 			}]
-			title: "探访被发现的史莱姆世界"
+			title: "探访被发现的原液"
 			x: 9.5d
 			y: 8.0d
 		}
@@ -1311,6 +1311,7 @@
 				""
 				"我们必须前往下一个踪迹所在的位置，了解到真实的意图。"
 			]
+			icon: "supplementaries:cage"
 			id: "2E7B76E8277B6B60"
 			rewards: [{
 				id: "1452FB1939C23526"
@@ -1344,6 +1345,7 @@
 				""
 				"但由于其奇怪的碰撞箱，击杀它可能需要一些时间和技巧。"
 			]
+			icon: "simplehats:slime_head"
 			id: "7862A6B384A0E8B4"
 			rewards: [{
 				id: "61F89A0C26053E72"
@@ -1370,13 +1372,75 @@
 		}
 		{
 			dependencies: ["7862A6B384A0E8B4"]
+			description: [
+				"这是一个还&6未被我完全扫描&r的维度，其需要您使用&6龙息&r作为引信，修改下界传送门的方向。"
+				""
+				"在那之后，辛苦您进入新的维度并且带回它的照片。"
+			]
 			id: "1633AB544EB13336"
-			tasks: [{
-				id: "039AA64DCC4F3B86"
-				item: "minecraft:stripped_oak_wood"
+			rewards: [{
+				id: "0E27EDA4B432287C"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "踪迹其三"
+			tasks: [{
+				dimension: "infinity:missingno"
+				icon: "minecraft:dragon_breath"
+				id: "17B05FB7564336A2"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索不确定的世界"
 			x: 12.5d
+			y: 8.0d
+		}
+		{
+			id: "1242839DAB198513"
+			tasks: [{
+				id: "1DE85E26AA13670B"
+				slotCapacity: 1L
+				slotMaxSize: 1
+				title: "建立维度联系"
+				type: "ftbqaa:dim_net"
+			}]
+			x: 16.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1633AB544EB13336"]
+			description: [
+				"不好！请您尽快离开这个维度！"
+				""
+				"这个维度由&6复杂的迷宫&r组成，稍微探索，便会让人迷失其中. . .更不要谈其无边无尽. . ."
+				""
+				"此维度似乎是&6致敬某些作品&r而筑成，在代码逻辑中，其作为众多踪迹维度的边界存在——如果您未来再次来到这个维度，大概率是我们的穿越方案出了些什么问题。"
+				""
+				"所以，请您完全忘记龙息的方案吧，它显然有些危险。"
+			]
+			icon: "amendments:dragon_charge"
+			id: "20A8A171833B2F50"
+			rewards: [{
+				id: "6BB2439FF1EB701C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这并非我本意！"
+			tasks: [{
+				icon: "exposure:photograph"
+				id: "6A03D98DA1610964"
+				item: {
+					Count: 1
+					id: "ftbqaa:exposure_photo_dimension"
+					tag: {
+						value: "infinity:missingno"
+					}
+				}
+				title: "一张证明"
+				type: "item"
+			}]
+			title: "错误的导向！"
+			x: 14.0d
 			y: 8.0d
 		}
 	]
