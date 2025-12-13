@@ -16,4 +16,8 @@ failChance = 0.3
 #The default starting rarity, only applies to new players
 #Allowed Values: NONE, COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 startingRarity = "RARE"
+#The spells listed in the defaultLearntSpells, will instead be the only spells that are not learnt by default
+invertDefaultSpells = false
+#The spells listed in the excludeRandomLearntSpells, will instead be the only spells that can be learnt from the Unfinished Manuscript
+invertUnfinishedManuscript = false
 

@@ -1,3 +1,6 @@
 #Shows hullback building and damage progress. Turning this off solve incompatibility issues with shaders but will sacrifice some visual flair
 hullbackArmorProgress = false
+#Determines how far hullback sounds travel.
+#Range: 0.0 ~ 5.0
+hullbackSoundDistance = 3.0
 

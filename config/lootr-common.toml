@@ -39,6 +39,8 @@ refresh_dimensions = []
 refresh_modids = []
 #determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
 randomise_seed = true
+#allows players to open Lootr containers within spawn protection areas
+bypass_spawn_protection = true
 #when true, custom inventories will act like trapped chests when opened
 trapped_custom = false
 #how long (in ticks) a decaying loot containers should take to decay (default 5 minutes = 5 * 60 * 20)
