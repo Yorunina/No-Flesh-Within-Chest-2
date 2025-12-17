@@ -1,0 +1,30 @@
+{
+   "default": [
+        {
+            "level": 1,
+            "name": "kubejs:freezing_defense"
+        }
+    ],
+  "perStat": {
+    "tconstruct:ranged": [
+      {
+        "name": "kubejs:frostbite",
+        "level": 1
+      },
+      {
+        "name": "kubejs:deposition",
+        "level": 1
+      }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "name": "kubejs:frostbite",
+        "level": 1
+      },
+      {
+        "name": "kubejs:deposition",
+        "level": 1
+      }
+    ]
+  }
+}

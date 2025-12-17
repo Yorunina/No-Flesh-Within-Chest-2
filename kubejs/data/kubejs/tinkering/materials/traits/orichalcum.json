@@ -1,0 +1,34 @@
+{
+   "default": [
+        {
+            "level": 1,
+            "name": "tconstruct:depth_protection"
+        },
+        {
+            "level": 1,
+            "name": "kubejs:fire_protection"
+        }
+    ],
+  "perStat": {
+    "tconstruct:ranged": [
+      {
+        "name": "tconstruct:dwarven",
+        "level": 1
+      },
+      {
+            "level": 1,
+            "name": "kubejs:quenching"
+        }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "name": "tconstruct:dwarven",
+        "level": 1
+      },
+      {
+            "level": 1,
+            "name": "kubejs:quenching"
+        }
+    ]
+  }
+}
