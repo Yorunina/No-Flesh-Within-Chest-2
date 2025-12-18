@@ -117,3 +117,10 @@ const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics
 const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 const $HourglassConfig = Java.loadClass('net.lavabucket.hourglass.config.HourglassConfig')
 const $EternalWinterUtil = Java.loadClass('net.yorunina.eternalwinter.util.EternalWinterUtil')
+const $GateEventOpened = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$Opened')
+const $GateEventCompleted = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$Completed')
+const $GateEventWaveStarted = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$WaveStarted')
+const $GateEventWaveEnd = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$WaveEnd')
+const $GateEventFailed = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$Failed')
+const $GateEventWaveEntitySpawned = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$WaveEntitySpawned')
+

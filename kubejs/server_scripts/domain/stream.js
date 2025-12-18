@@ -23,7 +23,6 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
 NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent} event */ event => {
     const entity = event.entity
     if (!entity) return
-    const amount = event.amount
     let customData = {
         thornsDamage: 0
     }
