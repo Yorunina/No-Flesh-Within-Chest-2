@@ -41,5 +41,6 @@ ServerEvents.recipes(event => {
     tconstruct.material('kubejs:bile','biomancy:bile')
     tconstruct.material('kubejs:glintstone','kubejs:glintstone')
     tconstruct.material('kubejs:magma','minecraft:magma_block')
+    tconstruct.material('kubejs:blue_ice','minecraft:blue_ice')
 })
     
