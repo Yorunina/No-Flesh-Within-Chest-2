@@ -3,6 +3,10 @@
     {
       "level": 1,
       "name": "kubejs:blazing_brand"
+    },
+    {
+      "name": "kubejs:burning_burst",
+      "level": 1
     }
   ],
   "perStat": {

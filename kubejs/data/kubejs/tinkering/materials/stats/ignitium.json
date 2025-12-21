@@ -6,14 +6,14 @@
       "melee_damage": 3.5
     },
     "tconstruct:handle": {
-      "durability": 0.1,
-      "melee_damage": 0.2,
-      "melee_speed": -0.05,
-      "mining_speed": -0.1
+      "durability": 0.25,
+      "melee_damage": 0.3,
+      "melee_speed": -0.3,
+      "mining_speed": -0.2
     },
     "tconstruct:head": {
       "durability": 1250,
-      "melee_attack": 3.5,
+      "melee_attack": 4,
       "mining_speed": 6.5,
       "mining_tier": "minecraft:netherite"
     },

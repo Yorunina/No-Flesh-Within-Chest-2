@@ -1,15 +1,15 @@
 {
   "stats": {
     "tconstruct:handle": {
-      "durability": -0.1,
-      "melee_damage": -0.2,
-      "melee_speed": -0.05,
-      "mining_speed": -0.1
+      "durability": -0.2,
+      "melee_damage": -0.1,
+      "melee_speed": 0.2,
+      "mining_speed": -0.2
     },
     "tconstruct:head": {
-      "durability": 50,
-      "melee_attack": 3.5,
-      "mining_speed": 6.5,
+      "durability": 75,
+      "melee_attack": 3,
+      "mining_speed": 5,
       "mining_tier": "minecraft:wood"
     }
   }

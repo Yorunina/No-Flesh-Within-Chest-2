@@ -1,8 +1,30 @@
 {
-    "default": [
+   "default": [
         {
             "level": 1,
             "name": "kubejs:breath_of_wthering"
         }
+    ],
+  "perStat": {
+    "tconstruct:ranged": [
+      {
+        "name": "kubejs:breath_of_wthering",
+        "level": 1
+      },
+      {
+        "name": "kubejs:freezing",
+        "level": 1
+      }
+    ],
+    "tconstruct:melee_harvest": [
+      {
+        "name": "kubejs:breath_of_wthering",
+        "level": 1
+      },
+      {
+        "name": "kubejs:freezing",
+        "level": 1
+      }
     ]
+  }
 }
