@@ -129,3 +129,7 @@ const $DespoilLootModifier = Java.loadClass('com.github.elenterius.biomancy.loot
 const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable')
 
 const $PedestalBlockTile = Java.loadClass('net.mehvahdjukaar.supplementaries.common.block.tiles.PedestalBlockTile')
+const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')
+const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.LightTile')
+
+const $ArmorStand = Java.loadClass('net.minecraft.world.entity.decoration.ArmorStand')

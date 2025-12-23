@@ -84,3 +84,26 @@ function GenerateMonoBankWithLock(level, pos) {
     level.setBlockAndUpdate(pos, Block.getBlock('monobank:monobank').defaultBlockState())
     return level.getBlockEntity(pos)
 }
+
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {BlockPos} pos 
+ */
+function PlaceLightBlock(level, pos) {
+    level.setBlockAndUpdate(pos, Block.getBlock('ars_nouveau:light_block').defaultBlockState())
+}
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {BlockPos} pos 
+ * @param {Internal.ParticleColor} color
+ */
+function ChangeLightBlockColor(level, pos, color) {
+    let lightTile = level.getBlockEntity(pos)
+    if (lightTile instanceof $LightTile) {
+        lightTile.setColor(color)
+    }
+}

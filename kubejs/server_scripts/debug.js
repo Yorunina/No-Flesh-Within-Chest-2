@@ -49,7 +49,7 @@ ItemEvents.rightClicked('stick', event => {
     const level = event.level
     const server = event.server
 
-    player.tell(level.isThundering())
+
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')
     // SetDaySpeed(0.1)
     // UpdatePlaysTimeStabilityBar(server, level, player)

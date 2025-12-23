@@ -14,13 +14,14 @@ function CarnivalStage1(ctx) {
         data.putString('dyeItemId', dyeItemId)
         let dyeItemName = Item.of(dyeItemId).getHoverName()
         CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.1.try_find_color', dyeItemName))
-        data.putInt('subStage', 1)
+        CarnivalNextSubStage(data)
+        CarnivalSetTimer(data, 200)
         return true
     } else if (subStage == 1) {
         let dyeItemId = data.getString('dyeItemId')
         for (let x = -12; x <= 12; x++) {
             for (let z = -12; z <= 12; z++) {
-                for (let y = -1; y <= 2; y++) {
+                for (let y = -1; y <= 3; y++) {
                     let pPos = pos.offset(x, y, z)
                     let pBlockState = level.getBlockState(pPos)
                     if (!pBlockState || pBlockState.isAir()) continue
@@ -35,8 +36,8 @@ function CarnivalStage1(ctx) {
                                 }
                                 level.playSound(null, pPos.getX(), pPos.getY(), pPos.getZ(), 'minecraft:entity.player.burp', $SoundSource.BLOCKS, 1, 1)
                                 CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.1.find_color'))
-                                data.putInt('subStage', 0)
-                                data.putInt('stage', 2)
+                                CarnivalNextStage(data)
+                                CarnivalSetTimer(data, 200)
                                 return true
                             }
                         }
@@ -48,6 +49,7 @@ function CarnivalStage1(ctx) {
         if (canTry > 0) {
             data.putInt('canTry', canTry - 1)
             CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.try_again'))
+            CarnivalSetTimer(data, 200)
             return true
         }
         return false

@@ -1,22 +1,34 @@
 // priority: 500
-BlockEvents.rightClicked('biomancy:flesh', event => {
-    const item = event.item
-    if (!item.hasTag('vinery:red_wine')) return
-    const block = event.block
-    const pos = block.pos
-    const level = event.level
-    const pPos = pos.offset(x, 0, z)
-    const pBlockState = level.getBlockState(pPos)
-    if (pBlockState.is(KaleidoscopeCookeryTableTag)) {
-        let aboveBlock = level.getBlockState(pos.above())
-        if (aboveBlock) {
-            blockOnTableList.push(aboveBlock)
-        }
-    }
-    if (pBlockState.is(FoodBagTag)) {
-        foodBagBlockList.push(pBlockState)
-    }
-})
+const CarnivalStageActionList = [
+    CarnivalStage0,
+    CarnivalStage1,
+    CarnivalStage2,
+    CarnivalStage3,
+    CarnivalStage4,
+    CarnivalStage5,
+    CarnivalStage6,
+    CarnivalStage7,
+]
+
+const CarnivalLightsPositions = [
+    [[-4, 9, -4], [-4, 9, 4], [4, 9, -4], [4, 9, 4]],
+    [[-8, 9, -8], [-8, 9, 8], [8, 9, -8], [8, 9, 8]],
+    [[-8, 7, -4], [-8, 7, 4], [8, 7, -4], [8, 7, 4]],
+    [[-4, 7, -8], [-4, 7, 8], [4, 7, -8], [4, 7, 8]]
+]
+
+function CarnivalNextSubStage(data) {
+    const subStage = data.getInt('subStage')
+    data.putInt('subStage', subStage + 1)
+}
+function CarnivalNextStage(data) {
+    const stage = data.getInt('stage')
+    data.putInt('stage', stage + 1)
+    data.putInt('subStage', 0)
+}
+function CarnivalSetTimer(data, timer) {
+    data.putInt('timer', timer)
+}
 
 /**
  * @param {Internal.BlockEntityJS} ctx 
@@ -40,35 +52,13 @@ global.CarnivalServerTick = function (ctx) {
     }
 
     const stage = data.getInt('stage')
-    switch (stage) {
-        case 0:
-            if (!CarnivalStage0(ctx)) {
-                failCarnival(ctx, 'msg.kubejs.carnibal_stage.0.fail')
-                return
-            }
-            data.putInt('timer', 60)
-            return
-        case 1:
-            if (!CarnivalStage1(ctx)) {
-                failCarnival(ctx, 'msg.kubejs.carnibal_stage.1.fail')
-                return
-            }
-            data.putInt('timer', 200)
-            return
-        // case 2:
-        //     if (!CarnivalStage2(ctx)) {
-        //         failCarnival(ctx, 'msg.kubejs.carnibal_stage.2.fail')
-        //         return
-        //     }
-        //     break;
-        // case 3:
-        //     if (!CarnivalStage3(ctx)) {
-        //         failCarnival(ctx, 'msg.kubejs.carnibal_stage.3.fail')
-        //         return
-        //     }
-        //     break;
-        default:
-            break;
+    if (stage >= CarnivalStageActionList.length) {
+        failCarnival(ctx, 'msg.kubejs.carnival.fail.stage')
+        return
+    }
+    if (!CarnivalStageActionList[stage](ctx)) {
+        failCarnival(ctx, `msg.kubejs.carnibal_stage.${stage}.fail`)
+        return
     }
     data.putInt('timer', 200)
 }
