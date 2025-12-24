@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -15,7 +15,7 @@ function CarnivalStage10(ctx) {
         CarnivalSetTimer(data, 200)
         return true
     } else if (subStage == 1) {
-        let armorStandEntities = GetLivingWithinRadius(level, player.blockPosition(), 12, (pLevel, pEntity) => {
+        let armorStandEntities = GetEntityWithinRadius(level, pos, 16, (pLevel, pEntity) => {
             if (pEntity instanceof $ArmorStand) {
                 pEntity.getArmorSlots().forEach(pSlot => {
                     if (!pSlot || pSlot.isEmpty()) {

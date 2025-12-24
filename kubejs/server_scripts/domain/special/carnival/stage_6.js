@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -15,7 +15,7 @@ function CarnivalStage6(ctx) {
         CarnivalSetTimer(data, 200)
         return true
     } else if (subStage == 1) {
-        const canTry = data.getInt('canTry')
+        let canTry = data.getInt('canTry')
         let cakeTypeList = []
         for (let x = -12; x <= 12; x++) {
             for (let z = -12; z <= 12; z++) {
@@ -23,11 +23,11 @@ function CarnivalStage6(ctx) {
                     let pPos = pos.offset(x, y, z)
                     let pBlockState = level.getBlockState(pPos)
                     if (!pBlockState || pBlockState.isAir()) continue
-                    if (pBlockState.is(CarnivalCakeTag)) {
+                    if (pBlockState.getTags().anyMatch(tag => tag == CarnivalCakeTag)) {
                         if (cakeTypeList.indexOf(pBlockState.getBlock().getId()) == -1) {
                             cakeTypeList.push(pBlockState.getBlock().getId())
                         }
-                        level.removeBlock(pPos)
+                        level.removeBlock(pPos, true)
                         if (cakeTypeList.length >= 6) break
                     }
                 }

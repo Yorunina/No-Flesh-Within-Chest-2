@@ -563,11 +563,9 @@
 			description: [
 				"准备好一切后，将准备好的、陈酿已久的&c红酒&r右键倾洒在肉块之上。"
 				""
-				"届时，■■便会降临，&c逐个检验您的准备成果&r。"
+				"在夜晚降临时，■■便会降临，&c逐个检验您的准备成果&r。"
 				""
-				"您所准备的盛宴将被其逐个消耗，直到最后一步完成前，您&c不能让天空下雨、不能让世界恢复白昼、开宴前需保证昏暗&r。"
-				""
-				"如若盛宴因意外中断，我会庇佑您免遭■■的谴责，因此请无需担心。"
+				"如若盛宴因意外中断，我会庇佑您免遭■■的谴责，因此无需担心。"
 			]
 			icon: {
 				Count: 1
@@ -605,6 +603,11 @@
 				tag: { }
 			}
 			id: "526AD9B016755B61"
+			rewards: [{
+				id: "7AF31282543A363A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "化酒为血"
 			tasks: [{
@@ -646,34 +649,6 @@
 			}]
 			title: "&6庆贺吧，此乃暴食之王！&r"
 			x: 8.5d
-			y: -7.5d
-		}
-		{
-			dependencies: ["3DD337FB1ECA314B"]
-			description: [
-				"<--  测试信息 -->"
-				""
-				"网络通信恢复了。"
-				""
-				"请不必担心，在这个领域，我要比这个世界中的任何存在都权威。"
-				"{@pagebreak}"
-				"时间在"
-				"{@pagebreak}"
-				"加速、回退】未知行为"
-			]
-			id: "439C137948525EE2"
-			rewards: [{
-				id: "54D9C4E4219BC703"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "数据测试"
-			tasks: [{
-				id: "1864483B37F98A7B"
-				type: "checkmark"
-			}]
-			title: "雨、血、雷暴"
-			x: 10.5d
 			y: -7.5d
 		}
 	]

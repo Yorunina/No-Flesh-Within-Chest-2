@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -23,12 +23,12 @@ function CarnivalStage7(ctx) {
                     let pPos = pos.offset(x, y, z)
                     let pBlockState = level.getBlockState(pPos)
                     if (!pBlockState || pBlockState.isAir()) continue
-                    if (pBlockState.is(CarnivalFeastsTag)) {
+                    if (pBlockState.getTags().anyMatch(tag => tag == CarnivalFeastsTag)) {
                         if (feastsTypeList.indexOf(pBlockState.getBlock().getId()) == -1) {
                             feastsTypeList.push(pBlockState.getBlock().getId())
                         }
                         feastsCount++
-                        level.removeBlock(pPos)
+                        level.removeBlock(pPos, true)
                         if (feastsTypeList.length >= 6 && feastsCount >= 16) break
                     }
                 }

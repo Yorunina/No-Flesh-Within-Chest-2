@@ -1,4 +1,5 @@
 // priority: 500
+// 优先级需要低于函数优先级避免加载问题
 const CarnivalStageActionList = [
     CarnivalStage0,
     CarnivalStage1,
@@ -8,14 +9,35 @@ const CarnivalStageActionList = [
     CarnivalStage5,
     CarnivalStage6,
     CarnivalStage7,
+    CarnivalStage8,
+    CarnivalStage9,
+    CarnivalStage10,
+    CarnivalStage11,
+    CarnivalStage12,
+    CarnivalStage13,
 ]
 
 const CarnivalLightsPositions = [
-    [[-4, 9, -4], [-4, 9, 4], [4, 9, -4], [4, 9, 4]],
     [[-8, 9, -8], [-8, 9, 8], [8, 9, -8], [8, 9, 8]],
-    [[-8, 7, -4], [-8, 7, 4], [8, 7, -4], [8, 7, 4]],
-    [[-4, 7, -8], [-4, 7, 8], [4, 7, -8], [4, 7, 8]]
+    [[-12, 9, -12], [-12, 9, 12], [12, 9, -12], [12, 9, 12]],
+    [[-12, 12, -8], [-12, 12, 8], [12, 12, -8], [12, 12, 8]],
+    [[-8, 12, -12], [-8, 12, 12], [8, 12, -12], [8, 12, 12]]
 ]
+
+BlockEvents.rightClicked('biomancy:flesh', event => {
+    const item = event.item
+    const level = event.level
+    const block = event.block
+    if (item.hasTag('vinery:red_wine')) {
+        let age = $WineYears.getWineAge(item, level)
+        level.setBlockAndUpdate(block.pos, Block.getBlock('kubejs:carnival').defaultBlockState())
+        let blockEntity = level.getBlockEntity(block.pos)
+        if (blockEntity) {
+            blockEntity.data.putInt('canTry', age)
+        }
+        item.shrink(1)
+    }
+})
 
 function CarnivalNextSubStage(data) {
     const subStage = data.getInt('subStage')
@@ -36,31 +58,25 @@ function CarnivalSetTimer(data, timer) {
 global.CarnivalServerTick = function (ctx) {
     const data = ctx.data
     const level = ctx.level
-    if (level.isDay()) {
-        failCarnival(ctx, 'msg.kubejs.carnival.fail.isDay')
-        return
-    }
-    if (level.isThundering() || level.isRaining()) {
-        failCarnival(ctx, 'msg.kubejs.carnival.fail.isThunderingOrRaining')
-        return
-    }
     let timer = data.getInt('timer')
     if (timer != 0) {
         timer--
         data.putInt('timer', timer)
         return
     }
-
+    if (level.isDay()) {
+        ctx.level.setBlockAndUpdate(ctx.blockPos, Block.getBlock('biomancy:flesh').defaultBlockState())
+        return
+    }
     const stage = data.getInt('stage')
     if (stage >= CarnivalStageActionList.length) {
-        failCarnival(ctx, 'msg.kubejs.carnival.fail.stage')
+        ctx.level.setBlockAndUpdate(ctx.blockPos, Block.getBlock('biomancy:flesh').defaultBlockState())
         return
     }
     if (!CarnivalStageActionList[stage](ctx)) {
-        failCarnival(ctx, `msg.kubejs.carnibal_stage.${stage}.fail`)
+        failCarnival(ctx, Text.translatable(`msg.kubejs.carnibal_stage.${stage}.fail`))
         return
     }
-    data.putInt('timer', 200)
 }
 
 /**
@@ -83,5 +99,5 @@ function failCarnival(ctx, reason) {
  */
 function CarnivalAnnounceToPlayers(ctx, info) {
     const players = ctx.block.getPlayersInRadius(16)
-    players.forEach(pPlayer => pPlayer.tell(info))
+    players.forEach(pPlayer => pPlayer.setStatusMessage(info))
 }

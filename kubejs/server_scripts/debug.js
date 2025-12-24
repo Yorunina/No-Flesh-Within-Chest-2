@@ -19,22 +19,6 @@
 // })
 // exposure:flashes
 
-// ItemEvents.rightClicked('exposure:photograph', event => {
-//     const level = event.level
-//     const item = event.item
-//     const player = event.player
-//     let itemNbt = item.getNbt()
-//     if (itemNbt.contains('type')) {
-//         let targetNbt = itemNbt.get('entityNbt')
-//         let targetId = itemNbt.getString('type')
-//         let entity = level.createEntity(targetId)
-//         entity.setNbt(targetNbt)
-//         entity.setPos(player.getX(), player.getY(), player.getZ())
-//         entity.spawn()
-//     }
-//     item.shrink(1)
-// })
-
 // ItemEvents.entityInteracted('stick', event => {
 //     const entity = event.target
 //     BloodLustGoal(entity)

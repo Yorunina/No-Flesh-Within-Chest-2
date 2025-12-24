@@ -133,3 +133,6 @@ const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.parti
 const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.LightTile')
 
 const $ArmorStand = Java.loadClass('net.minecraft.world.entity.decoration.ArmorStand')
+const $InstrumentItem = Java.loadClass('immersive_melodies.item.InstrumentItem')
+const $ServerMelodyManager = Java.loadClass('immersive_melodies.resources.ServerMelodyManager')
+const $PacketSplitter = Java.loadClass('immersive_melodies.network.PacketSplitter')

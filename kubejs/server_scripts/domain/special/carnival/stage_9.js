@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -25,7 +25,7 @@ function CarnivalStage9(ctx) {
         CarnivalSetTimer(data, 200)
         return true
     } else if (subStage == 2) {
-        const canTry = data.getInt('canTry')
+        let canTry = data.getInt('canTry')
         let foodBagCount = 0
         for (let x = -12; x <= 12; x++) {
             for (let z = -12; z <= 12; z++) {
@@ -33,7 +33,7 @@ function CarnivalStage9(ctx) {
                     let pPos = pos.offset(x, y, z)
                     let pBlockState = level.getBlockState(pPos)
                     if (!pBlockState || pBlockState.isAir()) continue
-                    if (pBlockState.is(CarnivalFoodBagTag)) {
+                    if (pBlockState.getTags().anyMatch(tag => tag == CarnivalFoodBagTag)) {
                         foodBagCount++
                         if (foodBagCount >= 32) break
                     }
@@ -42,7 +42,7 @@ function CarnivalStage9(ctx) {
         }
         if ((foodBagCount < 32 && foodBagCount >= 32 - canTry) || foodBagCount >= 32) {
             CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.9.find_food_bag'))
-            CarnivalNextSubStage(data)
+            CarnivalNextStage(data)
             CarnivalSetTimer(data, 200)
             return true
         }

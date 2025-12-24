@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -50,6 +50,7 @@ function CarnivalStage1(ctx) {
             data.putInt('canTry', canTry - 1)
             CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.try_again'))
             CarnivalSetTimer(data, 200)
+            data.putInt('subStage', 0)
             return true
         }
         return false

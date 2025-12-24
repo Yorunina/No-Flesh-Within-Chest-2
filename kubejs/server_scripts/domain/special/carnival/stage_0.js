@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -8,7 +8,13 @@ function CarnivalStage0(ctx) {
     const pos = ctx.blockPos
     const level = ctx.level
     const data = ctx.data
-    const subStage = Math.min(data.getInt('subStage'), 3)
+    const subStage = data.getInt('subStage')
+    if (subStage >= CarnivalLightsPositions.length) {
+        CarnivalNextStage(data)
+        CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.0.success'))
+        CarnivalSetTimer(data, 200)
+        return true
+    }
     CarnivalLightsPositions[subStage].forEach(lightPos => {
         let pPos = pos.offset(lightPos[0], lightPos[1], lightPos[2])
         let blockState = level.getBlockState(pPos)
@@ -18,12 +24,7 @@ function CarnivalStage0(ctx) {
         }
     })
     level.playSound(null, pos.getX(), pos.getY(), pos.getZ(), 'minecraft:block.bell.use', $SoundSource.BLOCKS, 1, 1)
-    if (subStage >= CarnivalLightsPositions.length) {
-        CarnivalNextStage(data)
-        CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.0.success'))
-        CarnivalSetTimer(data, 200)
-        return true
-    }
+
     CarnivalNextSubStage(data)
     CarnivalSetTimer(data, 60)
     return true

@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -22,16 +22,16 @@ function CarnivalStage8(ctx) {
                     let pPos = pos.offset(x, y, z)
                     let pBlockState = level.getBlockState(pPos)
                     if (!pBlockState || pBlockState.isAir()) continue
-                    if (pBlockState.is(CarnivalBeerTag)) {
+                    if (pBlockState.getTags().anyMatch(tag => tag == CarnivalBeerTag)) {
                         beerCount++
-                        level.removeBlock(pPos)
+                        level.removeBlock(pPos, true)
                         if (beerCount >= 32) break
                     }
                 }
             }
         }
         level.playSound(null, pos.getX(), pos.getY(), pos.getZ(), 'minecraft:entity.player.burp', $SoundSource.BLOCKS, 1, 1)
-        const canTry = data.getInt('canTry')
+        let canTry = data.getInt('canTry')
         data.putInt('canTry', canTry + Math.min(beerCount / 4, 8))
         CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.8.find_beer'))
         CarnivalNextStage(data)

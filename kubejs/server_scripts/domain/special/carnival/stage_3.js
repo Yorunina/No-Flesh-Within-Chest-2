@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -10,7 +10,7 @@ function CarnivalStage3(ctx) {
     const data = ctx.data
     const subStage = data.getInt('subStage')
     if (subStage == 0) {
-        let gemItemId = RandomGet(Ingredient.of('#kubejs:the_carnival/flower').getItemIds())
+        let gemItemId = RandomGet(Ingredient.of('#forge:gems').getItemIds())
         data.putString('gemItemId', gemItemId)
         let gemItemName = Item.of(gemItemId).getHoverName()
         CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.3.try_find_gem', gemItemName))
@@ -50,6 +50,7 @@ function CarnivalStage3(ctx) {
             data.putInt('canTry', canTry - 1)
             CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.try_again'))
             CarnivalSetTimer(data, 200)
+            data.putInt('subStage', 0)
             return true
         }
         return false

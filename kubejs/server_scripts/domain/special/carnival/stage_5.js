@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 501
 /**
  * 
  * @param {Internal.BlockEntityJS} ctx 
@@ -25,7 +25,7 @@ function CarnivalStage5(ctx) {
         CarnivalSetTimer(data, 200)
         return true
     } else if (subStage == 2) {
-        const canTry = data.getInt('canTry')
+        let canTry = data.getInt('canTry')
         let breadCount = 0
         for (let x = -12; x <= 12; x++) {
             for (let z = -12; z <= 12; z++) {
@@ -33,25 +33,26 @@ function CarnivalStage5(ctx) {
                     let pPos = pos.offset(x, y, z)
                     let pBlockState = level.getBlockState(pPos)
                     if (!pBlockState || pBlockState.isAir()) continue
-                    if (pBlockState.is(CarnivalBreadTag)) {
+                    if (pBlockState.getTags().anyMatch(tag => tag == CarnivalBreadTag)) {
                         breadCount++
-                        level.removeBlock(pPos)
+                        level.removeBlock(pPos, true)
                         if (breadCount >= 16) break
                     }
                 }
             }
         }
-        level.playSound(null, pos.getX(), pos.getY(), pos.getZ(), 'minecraft:entity.player.burp', $SoundSource.BLOCKS, 1, 1)
         if (breadCount < 16 && breadCount >= 16 - canTry) {
             CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.5.need_more_bread'))
             data.putInt('canTry', canTry - (16 - breadCount))
-            CarnivalNextSubStage(data)
+            CarnivalNextStage(data)
             CarnivalSetTimer(data, 200)
+            level.playSound(null, pos.getX(), pos.getY(), pos.getZ(), 'minecraft:entity.player.burp', $SoundSource.BLOCKS, 1, 1)
             return true
         } else if (breadCount >= 16) {
             CarnivalAnnounceToPlayers(ctx, Text.translatable('msg.kubejs.carnibal_stage.5.find_bread'))
             CarnivalNextStage(data)
             CarnivalSetTimer(data, 200)
+            level.playSound(null, pos.getX(), pos.getY(), pos.getZ(), 'minecraft:entity.player.burp', $SoundSource.BLOCKS, 1, 1)
             return true
         }
         return false
