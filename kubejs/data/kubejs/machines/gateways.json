@@ -15,168 +15,109 @@
   "components": [
     {
       "type": "custommachinery:item",
-      "id": "input_1",
+      "id": "input_auxiliary",
       "filter": [
-        "kubejs:reverse_causality_chip",
-        "create:chromatic_compound"
-      ],
-      "whitelist": false,
-      "mode": "input"
-    },
-    {
-      "type": "custommachinery:item",
-      "id": "input_2",
-      "filter": [
-        "create:chromatic_compound"
+        "#kubejs:gateways_auxiliary_material"
       ],
       "whitelist": true,
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
-      "id": "input_3",
+      "id": "input_awake",
       "filter": [
-        "kubejs:reverse_causality_chip"
+        "#kubejs:gateways_awake_stone"
       ],
       "whitelist": true,
       "mode": "input"
     },
     {
       "type": "custommachinery:item",
-      "id": "output_1",
-      "mode": "output"
-    },
-    {
-      "type": "custommachinery:contraption",
-      "config": {
-        "default": "none",
-        "bottom": "both"
-      },
-      "stress_impact": 32
+      "id": "input_defense",
+      "filter": [
+        "#kubejs:gateways_defense_material"
+      ],
+      "whitelist": true,
+      "mode": "input"
     }
   ],
   "gui": [
     {
-      "type": "custommachinery:status",
-      "texture_running": "kubejs:textures/gui/world_computer/runing_icon.png",
-      "texture_idle": "kubejs:textures/gui/world_computer/idle_icon.png",
-      "texture_errored": "kubejs:textures/gui/world_computer/error_icon.png",
-      "width": 5,
-      "height": 5,
-      "x": 2,
-      "y": 2
-    },
-    {
       "type": "custommachinery:player_inventory",
-      "x": 7,
-      "y": 83,
+      "x": 10,
+      "y": 130,
       "width": 162,
       "height": 76,
-      "texture": "kubejs:textures/gui/world_computer/player_inventory.png"
+      "texture": "kubejs:textures/gui/gateways/player_inventory.png"
     },
     {
       "type": "custommachinery:background",
-      "texture": "kubejs:textures/gui/world_computer/background.png",
-      "width": 176,
-      "height": 166
+      "texture": "kubejs:textures/gui/gateways/background.png",
+      "width": 182,
+      "height": 211
     },
     {
       "type": "custommachinery:progress",
-      "x": 33,
-      "y": 14,
-      "texture_empty": "kubejs:textures/gui/world_computer/processor_empty.png",
-      "texture_filled": "kubejs:textures/gui/world_computer/processor_full.png",
+      "x": 64,
+      "y": 0,
+      "texture_empty": "kubejs:textures/gui/gateways/processor_empty.png",
+      "texture_filled": "kubejs:textures/gui/gateways/processor_full.png",
+      "direction": "top",
       "hide_jei": true
     },
     {
       "type": "custommachinery:slot",
-      "id": "output_1",
-      "x": 131,
-      "y": 30,
+      "id": "input_auxiliary",
+      "x": 43,
+      "y": 19,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:slot",
-      "id": "input_1",
-      "x": 30,
-      "y": 18,
+      "id": "input_awake",
+      "x": 83,
+      "y": 58,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:slot",
-      "id": "input_2",
-      "x": 58,
-      "y": 31,
-      "texture": "kubejs:textures/gui/solt_transparent.png"
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "input_3",
-      "x": 30,
-      "y": 44,
+      "id": "input_defense",
+      "x": 123,
+      "y": 19,
       "texture": "kubejs:textures/gui/solt_transparent.png"
     },
     {
       "type": "custommachinery:bar",
-      "x": 10,
-      "y": 70,
-      "id": "resource_bar",
-      "max": 1000000,
-      "texture_empty": "kubejs:textures/gui/world_computer/resource_bar_empty.png",
-      "texture_filled": "kubejs:textures/gui/world_computer/resource_bar_full.png",
+      "x": 0,
+      "y": 12,
+      "id": "type_indicator",
+      "max": 60,
+      "texture_empty": "kubejs:textures/gui/gateways/type_indicator_empty.png",
+      "texture_filled": "kubejs:textures/gui/gateways/type_indicator_full.png",
+      "orientation": "top",
+      "highlight": false
+    },
+    {
+      "type": "custommachinery:bar",
+      "x": 160,
+      "y": 12,
+      "id": "level_indicator",
+      "max": 100,
+      "texture_empty": "kubejs:textures/gui/gateways/level_indicator_empty.png",
+      "texture_filled": "kubejs:textures/gui/gateways/level_indicator_full.png",
+      "orientation": "top",
+      "highlight": false
+    },
+    {
+      "type": "custommachinery:bar",
+      "x": 35,
+      "y": 97,
+      "id": "chaos_indicator",
+      "max": 100,
+      "texture_empty": "kubejs:textures/gui/gateways/chaos_indicator_empty.png",
+      "texture_filled": "kubejs:textures/gui/gateways/chaos_indicator_full.png",
       "orientation": "right",
       "highlight": false
-    }
-  ],
-  "jei": [
-    {
-      "type": "custommachinery:background",
-      "texture": "kubejs:textures/gui/world_computer/background.png",
-      "width": 176,
-      "height": 166
-    },
-    {
-      "type": "custommachinery:progress",
-      "x": 33,
-      "y": 14,
-      "texture_empty": "kubejs:textures/gui/world_computer/processor_empty.png",
-      "texture_filled": "kubejs:textures/gui/world_computer/processor_full.png",
-      "hide_jei": true
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "output_1",
-      "x": 131,
-      "y": 30,
-      "texture": "kubejs:textures/gui/solt_transparent.png"
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "input_1",
-      "x": 30,
-      "y": 18,
-      "texture": "kubejs:textures/gui/solt_transparent.png"
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "input_2",
-      "x": 58,
-      "y": 31,
-      "texture": "kubejs:textures/gui/solt_transparent.png"
-    },
-    {
-      "type": "custommachinery:slot",
-      "id": "input_3",
-      "x": 30,
-      "y": 44,
-      "texture": "kubejs:textures/gui/solt_transparent.png"
-    },
-    {
-      "type": "custommachinery:texture",
-      "x": 0,
-      "y": 0,
-      "jei": true,
-      "texture": "kubejs:textures/gui/world_computer/jei_background.png"
     }
   ]
 }

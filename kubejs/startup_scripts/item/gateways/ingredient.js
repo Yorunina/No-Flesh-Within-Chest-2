@@ -1,0 +1,22 @@
+// priority: 1000
+StartupEvents.registry('item', event => {
+    event.create('gateways_auxiliary_material_1').texture('kubejs:item/materials/gateways_auxiliary_material_1').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_2').texture('kubejs:item/materials/gateways_auxiliary_material_2').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_3').texture('kubejs:item/materials/gateways_auxiliary_material_3').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_4').texture('kubejs:item/materials/gateways_auxiliary_material_4').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_5').texture('kubejs:item/materials/gateways_auxiliary_material_5').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_6').texture('kubejs:item/materials/gateways_auxiliary_material_6').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_7').texture('kubejs:item/materials/gateways_auxiliary_material_7').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_8').texture('kubejs:item/materials/gateways_auxiliary_material_8').tag('kubejs:gateways_auxiliary_material')
+    event.create('gateways_auxiliary_material_9').texture('kubejs:item/materials/gateways_auxiliary_material_9').tag('kubejs:gateways_auxiliary_material')
+
+    event.create('gateways_awake_stone_1').texture('kubejs:item/materials/gateways_awake_stone_1').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_2').texture('kubejs:item/materials/gateways_awake_stone_2').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_3').texture('kubejs:item/materials/gateways_awake_stone_3').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_4').texture('kubejs:item/materials/gateways_awake_stone_4').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_5').texture('kubejs:item/materials/gateways_awake_stone_5').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_6').texture('kubejs:item/materials/gateways_awake_stone_6').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_7').texture('kubejs:item/materials/gateways_awake_stone_7').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_8').texture('kubejs:item/materials/gateways_awake_stone_8').tag('kubejs:gateways_awake_stone')
+    event.create('gateways_awake_stone_9').texture('kubejs:item/materials/gateways_awake_stone_9').tag('kubejs:gateways_awake_stone')
+})
