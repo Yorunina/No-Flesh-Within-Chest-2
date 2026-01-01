@@ -21,7 +21,6 @@
 
 // ItemEvents.entityInteracted('stick', event => {
 //     const entity = event.target
-//     CarnivalCheckGoal(entity)
 // })
 
 

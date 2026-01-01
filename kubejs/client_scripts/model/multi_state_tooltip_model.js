@@ -9,7 +9,6 @@ function MultiStateTooltip(itemId) {
     this.ctrlTooltips = []
     this.shiftTooltips = []
     this.altTooltips = []
-    this.isBindEntity = false
     this.shiftDescription = Text.translatable('tooltips.kubejs.multi_state.shift.1')
     this.shiftHoldingDescription = Text.translatable('tooltips.kubejs.multi_state.shift_holding.1')
     this.ctrlDescription = Text.translatable('tooltips.kubejs.multi_state.ctrl.1')
@@ -19,28 +18,28 @@ function MultiStateTooltip(itemId) {
 }
 MultiStateTooltip.prototype = {
     /**
-     * @param {Internal.MutableComponent} textComponent
+     * @param {Internal.MutableComponent | function(Internal.List<any>, Internal.ItemStack): Internal.MutableComponent[]} textComponent
      */
     addDefault: function (textComponent) {
         this.defaultTooltips.push(textComponent)
         return this
     },
     /**
-     * @param {Internal.MutableComponent} textComponent
+     * @param {Internal.MutableComponent | function(Internal.List<any>, Internal.ItemStack): Internal.MutableComponent[]} textComponent
      */
     addCtrl: function (textComponent) {
         this.ctrlTooltips.push(textComponent)
         return this
     },
     /**
-     * @param {Internal.MutableComponent} textComponent
+     * @param {Internal.MutableComponent | function(Internal.List<any>, Internal.ItemStack): Internal.MutableComponent[]} textComponent
      */
     addShift: function (textComponent) {
         this.shiftTooltips.push(textComponent)
         return this
     },
     /**
-     * @param {Internal.MutableComponent} textComponent
+     * @param {Internal.MutableComponent | function(Internal.List<any>, Internal.ItemStack): Internal.MutableComponent[]} textComponent
      */
     addAlt: function (textComponent) {
         this.altTooltips.push(textComponent)
@@ -88,13 +87,7 @@ MultiStateTooltip.prototype = {
         this.altHoldingDescription = textComponent
         return this
     },
-    /**
-     * @param {boolean} isBindEntity
-     */
-    setIsBindEntity: function (isBindEntity) {
-        this.isBindEntity = isBindEntity
-        return this
-    },
+
 }
 
 /**
@@ -118,33 +111,33 @@ function ApplyMultiStateTooltip(tooltipModel) {
         tooltip.addAdvanced(tooltipModel.itemId, (item, advanced, text) => {
             let lineNum = 1
             if (tooltipModel.defaultTooltips.length > 0) {
-                lineNum = AddForTextLines(text, tooltipModel.defaultTooltips, lineNum)
+                lineNum = AddTextFuncLines(text, tooltipModel.defaultTooltips, item, lineNum)
             }
 
             if (tooltipModel.ctrlTooltips.length > 0) {
                 if (tooltip.isCtrl()) {
-                    lineNum = AddForTextLines(text, [tooltipModel.ctrlHoldingDescription], lineNum)
-                    lineNum = AddForTextLines(text, tooltipModel.ctrlTooltips, lineNum)
+                    lineNum = AddTextLines(text, [tooltipModel.ctrlHoldingDescription], lineNum)
+                    lineNum = AddTextFuncLines(text, tooltipModel.ctrlTooltips, item, lineNum)
                 } else {
-                    lineNum = AddForTextLines(text, [tooltipModel.ctrlDescription], lineNum)
+                    lineNum = AddTextLines(text, [tooltipModel.ctrlDescription], lineNum)
                 }
             }
 
             if (tooltipModel.shiftTooltips.length > 0) {
                 if (tooltip.isShift()) {
-                    lineNum = AddForTextLines(text, [tooltipModel.shiftHoldingDescription], lineNum)
-                    lineNum = AddForTextLines(text, tooltipModel.shiftTooltips, lineNum)
+                    lineNum = AddTextLines(text, [tooltipModel.shiftHoldingDescription], lineNum)
+                    lineNum = AddTextFuncLines(text, tooltipModel.shiftTooltips, item, lineNum)
                 } else {
-                    lineNum = AddForTextLines(text, [tooltipModel.shiftDescription], lineNum)
+                    lineNum = AddTextLines(text, [tooltipModel.shiftDescription], lineNum)
                 }
             }
 
             if (tooltipModel.altTooltips.length > 0) {
                 if (tooltip.isAlt()) {
-                    lineNum = AddForTextLines(text, [tooltipModel.altHoldingDescription], lineNum)
-                    lineNum = AddForTextLines(text, tooltipModel.altTooltips, lineNum)
+                    lineNum = AddTextLines(text, [tooltipModel.altHoldingDescription], lineNum)
+                    lineNum = AddTextFuncLines(text, tooltipModel.altTooltips, item, lineNum)
                 } else {
-                    lineNum = AddForTextLines(text, [tooltipModel.altDescription], lineNum)
+                    lineNum = AddTextLines(text, [tooltipModel.altDescription], lineNum)
                 }
             }
         })

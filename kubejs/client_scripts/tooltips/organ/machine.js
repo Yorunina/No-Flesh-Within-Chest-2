@@ -89,7 +89,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:telescopic_attack_arm')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:lava_life_cycle_system')
     .addDefault(Text.translatable('tooltips.kubejs.lava_life_cycle_system.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.lava_life_cycle_system.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.lava_life_cycle_system.alt.1', DirectlyNearbyOrganHover))
     .addAlt(Text.translatable('tooltips.kubejs.lava_life_cycle_system.alt.2'))
     .addAlt(Text.translatable('tooltips.kubejs.lava_life_cycle_system.alt.3', Text.gold('10')))
     .addCtrl(MachinaryLubricantSlotType)

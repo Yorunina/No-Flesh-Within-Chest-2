@@ -15,4 +15,9 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:parasitism_stomach').maxStackSize(1).texture('kubejs:item/organs/food/parasitism_stomach').tag('kubejs:food')
 
     event.create('kubejs:greedy_throat').maxStackSize(1).texture('kubejs:item/organs/food/greedy_throat').tag('kubejs:food')
+
+    event.create('kubejs:jar_of_mystery').maxStackSize(1).maxDamage(10).texture('kubejs:item/organs/food/jar_of_mystery').tag('kubejs:food')
+    event.create('kubejs:parasite_larva').maxStackSize(1).maxDamage(100).texture('kubejs:item/organs/food/parasite_larva').tag('kubejs:food')
+
+    event.create('kubejs:jar_of_vacuum').maxStackSize(1).texture('kubejs:item/organs/food/jar_of_vacuum').tag('kubejs:food')
 })

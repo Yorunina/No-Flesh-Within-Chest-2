@@ -20,13 +20,8 @@ function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex,
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()
-    const curRelativePosition = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
-    const curRelativePositionX = curRelativePosition.getX()
-    const curRelativePositionY = curRelativePosition.getY()
-
-    for (let [offsetX, offsetY] of FourDirectionOffset) {
-        let slotDefinition = invTypeData.getRelativeSlotDefinition(curRelativePositionX + offsetX, curRelativePositionY + offsetY)
-        if (!slotDefinition) continue
+    let aroundRelativeSlots = GetFourDirectionRelativeSlot(invTypeData, organIndex)
+    for (let slotDefinition of aroundRelativeSlots) {
         let curItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (curItem.isEmpty()) continue
         if (curItem.hasTag('tconstruct:tanks') && curItem.hasNBT()) {
@@ -53,7 +48,6 @@ function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex,
 
     entity.setAbsorptionAmount(curAbsorptionAmount)
 }
-
 
 
 RegistryOrganStrategy(

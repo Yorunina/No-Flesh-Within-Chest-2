@@ -117,7 +117,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:bison_horn')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:turkey_gizzard')
     .addDefault(Text.translatable('tooltips.kubejs.turkey_gizzard.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.1', LuckHover))
+    .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.1', AlwaysEatHover, Text.gold('40%'), LuckHover, NearbyOrganHover))
     .addAlt(Text.translatable('tooltips.kubejs.turkey_gizzard.alt.2'))
 )
 

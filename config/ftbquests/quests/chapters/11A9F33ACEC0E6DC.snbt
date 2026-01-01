@@ -4,7 +4,13 @@
 	filename: "11A9F33ACEC0E6DC"
 	group: "78F99AC9360F0137"
 	hide_quest_until_deps_complete: true
-	icon: "kaleidoscope_cookery:egg_fried_rice"
+	icon: {
+		Count: 1
+		id: "kubejs:jar_of_mystery"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "11A9F33ACEC0E6DC"
 	order_index: 0
 	quest_links: [ ]
@@ -12,12 +18,13 @@
 		{
 			dependencies: ["588B97AAEC0E2385"]
 			description: [
-				"一场仪式，一场&6盛大的仪式&r。"
+				"等下，我好像在这个罐子中&6发现了什么东西&r. . ."
 				""
-				"一桌盛宴，一桌&6筹备已久的盛宴&r。"
+				"事实上，我一直在观察类似罐子的玻璃容器。在历史信息中，曾经在这种罐子中发现了一种特殊的&d寄生虫&r。"
 				""
-				"仅此而已，没有更多的信息，或许我们也应该从食物出发，寻找这场盛宴的答案。"
+				"如果我们使用一些有效的&6药水&r，或许可以将其从中显现。"
 			]
+			icon: "bakery:jar"
 			id: "2404C834CBCBB197"
 			invisible: true
 			rewards: [{
@@ -25,632 +32,43 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "何为谢肉祭"
+			subtitle: "神秘起源"
 			tasks: [{
-				id: "23F0F183B25674C4"
-				item: "biomancy:flesh_bits"
+				id: "3E463CECA1A92FCF"
+				item: "bakery:jar"
 				type: "item"
 			}]
-			title: "谢肉祭秘闻"
+			title: "迷之罐"
 			x: 1.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2404C834CBCBB197"]
-			description: [
-				"为了举办谢肉祭，我们需要早早的准备好的场地——"
-				""
-				"而这个场地的核心便是&c血肉块&r。"
-				""
-				"将其放在一个足够大的场地中央，我们现在来准备&c谢肉祭&r所需的一切。"
-			]
-			id: "71238C773767E1E8"
+			description: ["制作&6火炉&r和&6烹饪锅&r，并且将烹饪锅放置在火炉上，即可组成用于烹饪的烹饪锅结构。"]
+			icon: "farm_and_charm:cooking_pot"
+			id: "1E01A8A10DC713E3"
 			rewards: [{
-				id: "02FE3E7F496FD29F"
+				id: "0FAEC2F24A11C86D"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "谢肉祭之起始"
-			tasks: [{
-				block: "biomancy:flesh"
-				block_type: 0
-				icon: "biomancy:flesh"
-				id: "4B85E4ECB5A5C660"
-				replace: false
-				replaced: "minecraft:air"
-				title: "放置血肉块"
-				type: "questsadditions:place"
-				value: 1L
-			}]
-			title: "&c血肉祭坛&r"
-			x: 8.5d
+			subtitle: "低温加热空白罐"
+			tasks: [
+				{
+					id: "70F9538357C137EA"
+					item: "farm_and_charm:stove"
+					type: "item"
+				}
+				{
+					id: "6D0D7D1984694BB6"
+					item: "farm_and_charm:cooking_pot"
+					type: "item"
+				}
+			]
+			title: "古老的烹饪技术"
+			x: 3.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["526AD9B016755B61"]
-			description: [
-				"在祭坛半径12格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6唱片&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "minecraft:music_disc_11"
-			id: "35BDA508CAF6F5C6"
-			rewards: [{
-				id: "5C0FEECBF4F67100"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "pentagon"
-			subtitle: "谢肉祭的准备之一"
-			tasks: [
-				{
-					id: "06A7D9C2283D6B6E"
-					item: "supplementaries:pedestal"
-					type: "item"
-				}
-				{
-					id: "72B7559678C9AC0F"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:music_discs"
-						}
-					}
-					title: "任意唱片"
-					type: "item"
-				}
-			]
-			title: "&6极尽狂放之乐曲&r"
-			x: 7.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["526AD9B016755B61"]
-			description: [
-				"在祭坛半径12格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6宝石&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "minecraft:amethyst_shard"
-			id: "7FFF4ECDCD8F7463"
-			rewards: [{
-				id: "39E0741528662396"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "pentagon"
-			subtitle: "谢肉祭的准备之一"
-			tasks: [
-				{
-					id: "33C620658D3BA9A8"
-					item: "supplementaries:pedestal"
-					type: "item"
-				}
-				{
-					id: "349D704A6B16B240"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:gems"
-						}
-					}
-					title: "任意宝石"
-					type: "item"
-				}
-			]
-			title: "&6极尽闪耀之宝石&r"
-			x: 10.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["526AD9B016755B61"]
-			description: [
-				"在祭坛半径12格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6花朵&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "minecraft:poppy"
-			id: "24967E6220EED145"
-			rewards: [{
-				id: "540207528E646C0C"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "pentagon"
-			subtitle: "谢肉祭的准备之一"
-			tasks: [
-				{
-					id: "40A067727D1AF43E"
-					item: "supplementaries:pedestal"
-					type: "item"
-				}
-				{
-					id: "780311971CB18491"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:the_carnival/flower"
-						}
-					}
-					title: "任意花朵"
-					type: "item"
-				}
-			]
-			title: "&6极尽绚丽之花朵&r"
-			x: 10.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["526AD9B016755B61"]
-			description: [
-				"在祭坛半径12格之内，需要摆放些许展示台，其上需摆放有您所知的各种&6色彩&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "minecraft:magenta_dye"
-			id: "482EAB63ECE73A67"
-			rewards: [{
-				id: "1B39F0DB84B15FD5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "pentagon"
-			subtitle: "谢肉祭的准备之一"
-			tasks: [
-				{
-					id: "5BAC1C45789B1A96"
-					item: "supplementaries:pedestal"
-					type: "item"
-				}
-				{
-					id: "7E155C6E0B1E19C7"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:dyes"
-						}
-					}
-					title: "任意染料"
-					type: "item"
-				}
-			]
-			title: "&6极尽鲜明之色彩&r"
-			x: 7.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"35BDA508CAF6F5C6"
-				"7FFF4ECDCD8F7463"
-				"24967E6220EED145"
-				"482EAB63ECE73A67"
-			]
-			description: [
-				"在祭坛半径12格之内，需要摆放大量不同种的&6盛宴&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "kaleidoscope_cookery:golden_salad"
-			id: "71A0EF612534778D"
-			rewards: [{
-				id: "3D4F1E1B451C540A"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "谢肉祭的准备之二"
-			tasks: [
-				{
-					id: "48DD3F5130C58E08"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:the_carnival/table"
-						}
-					}
-					title: "任意餐桌"
-					type: "item"
-				}
-				{
-					id: "6F84D9F914ADA865"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "kaleidoscope_cookery:feasts"
-						}
-					}
-					title: "任意盛宴"
-					type: "item"
-				}
-			]
-			title: "&6极尽丰盛之晚宴&r"
-			x: 8.5d
-			y: -2.5d
-		}
-		{
-			dependencies: [
-				"7FFF4ECDCD8F7463"
-				"24967E6220EED145"
-				"482EAB63ECE73A67"
-				"35BDA508CAF6F5C6"
-			]
-			description: [
-				"在祭坛半径12格之内，需要摆放不同种&6蛋糕&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "bakery:chocolate_gateau"
-			id: "390FD38E0152AFE2"
-			rewards: [{
-				id: "5DE434C91E7822FF"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "谢肉祭的准备之二"
-			tasks: [{
-				id: "064F71FAD2941133"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:the_carnival/cake"
-					}
-				}
-				title: "任意可放置蛋糕"
-				type: "item"
-			}]
-			title: "&6极尽甜腻之甜点&r"
-			x: 11.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"35BDA508CAF6F5C6"
-				"7FFF4ECDCD8F7463"
-				"24967E6220EED145"
-				"482EAB63ECE73A67"
-			]
-			description: [
-				"在祭坛半径12格之内，需要摆放大量&6啤酒&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "brewery:beer_haley"
-			id: "6DD4610166AFCED6"
-			rewards: [{
-				id: "639A519E81502F62"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "谢肉祭的准备之二"
-			tasks: [
-				{
-					id: "280CE3775DE76187"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:the_carnival/table"
-						}
-					}
-					title: "任意餐桌"
-					type: "item"
-				}
-				{
-					id: "438FC914A671908B"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "kubejs:beer"
-						}
-					}
-					title: "任意啤酒"
-					type: "item"
-				}
-			]
-			title: "&6极尽狂放之酒席&r"
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"482EAB63ECE73A67"
-				"24967E6220EED145"
-				"7FFF4ECDCD8F7463"
-				"35BDA508CAF6F5C6"
-			]
-			description: [
-				"在祭坛半径12格之内，需要摆放大量任意种的&6面包&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "bakery:toast"
-			id: "6EAAD2F005D89653"
-			rewards: [{
-				id: "355D3EDC16196193"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "谢肉祭的准备之二"
-			tasks: [{
-				id: "7CAB55F500BC28CE"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:the_carnival/bread"
-					}
-				}
-				title: "任意可放置面食"
-				type: "item"
-			}]
-			title: "&6极尽饱腹之肉欲&r"
-			x: 8.5d
-			y: 2.5d
-		}
-		{
-			dependencies: [
-				"6DD4610166AFCED6"
-				"71A0EF612534778D"
-				"6EAAD2F005D89653"
-				"390FD38E0152AFE2"
-			]
-			description: [
-				"在祭坛半径12格之内，需要多多堆放&6袋装作物&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "vinery:white_grape_bag"
-			id: "17F27DC748DD5D9A"
-			rewards: [{
-				id: "7A0CC8A0E955FB53"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "谢肉祭准备之三"
-			tasks: [{
-				id: "2220CBF47AA9278B"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:the_carnival/food_bag"
-					}
-				}
-				title: "任意作物袋"
-				type: "item"
-			}]
-			title: "&6极尽丰饶之土地&r"
-			x: 5.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"71A0EF612534778D"
-				"390FD38E0152AFE2"
-				"6EAAD2F005D89653"
-				"6DD4610166AFCED6"
-			]
-			description: [
-				"在祭坛半径12格之内，需要放置&6穿着华丽的盔甲架&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "minecraft:armor_stand"
-			id: "6D7A3D48FA0BF6E8"
-			rewards: [{
-				id: "65F09C6E33A15B1A"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "谢肉祭准备之三"
-			tasks: [
-				{
-					id: "1A71E6C527B3132E"
-					item: "minecraft:armor_stand"
-					type: "item"
-				}
-				{
-					id: "36720EEE0B0D13C3"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "minecraft:trimmable_armor"
-						}
-					}
-					title: "任意可雕纹盔甲"
-					type: "item"
-				}
-			]
-			title: "&6极尽华丽之盔甲&r"
-			x: 11.5d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"390FD38E0152AFE2"
-				"71A0EF612534778D"
-				"6DD4610166AFCED6"
-				"6EAAD2F005D89653"
-			]
-			description: [
-				"在祭坛半径12格之内，需要有&6非玩家的多名奏乐者合奏&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: {
-				Count: 1
-				id: "immersive_melodies:piano"
-				tag: { }
-			}
-			id: "1E5348737E9A63BB"
-			rewards: [{
-				id: "73C48EC8F8215FD2"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "谢肉祭准备之三"
-			tasks: [{
-				id: "64DD7BE5D99C5DE5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "immersive_melodies:instruments"
-					}
-				}
-				title: "任意乐器"
-				type: "item"
-			}]
-			title: "&6极尽恢弘之乐曲&r"
-			x: 11.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"6DD4610166AFCED6"
-				"6EAAD2F005D89653"
-				"390FD38E0152AFE2"
-				"71A0EF612534778D"
-			]
-			description: [
-				"在祭坛半径12格之内，需要有&6足够多价值的金币&r。"
-				""
-				"&c谢肉祭&r并不要求尽善尽美，但需要您&6尽力尽责&r。"
-			]
-			icon: "lightmanscurrency:coinblock_gold"
-			id: "3E0A4DB2908A268C"
-			rewards: [{
-				id: "753873A19BCDE014"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "谢肉祭准备之三"
-			tasks: [{
-				id: "5120ECC6DB6932C9"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "kubejs:the_carnival/treasure"
-					}
-				}
-				title: "任意币堆币块"
-				type: "item"
-			}]
-			title: "&6极尽奢华之财宝&r"
-			x: 5.5d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"6D7A3D48FA0BF6E8"
-				"1E5348737E9A63BB"
-				"3E0A4DB2908A268C"
-				"17F27DC748DD5D9A"
-			]
-			description: [
-				"准备好一切后，将准备好的、陈酿已久的&c红酒&r右键倾洒在肉块之上。"
-				""
-				"在夜晚降临时，■■便会降临，&c逐个检验您的准备成果&r。"
-				""
-				"如若盛宴因意外中断，我会庇佑您免遭■■的谴责，因此无需担心。"
-			]
-			icon: {
-				Count: 1
-				id: "kubejs:parasitism_stomach"
-				tag: { }
-			}
-			id: "03BE1455D4994AB1"
-			rewards: [{
-				id: "4CFF84DD73AFE916"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 1.0d
-			subtitle: "&c谢肉祭开宴&r"
-			tasks: [{
-				id: "32D921F8F7F41D19"
-				title: "&c开宴&r"
-				type: "checkmark"
-			}]
-			title: "&c此乃谢肉祭开宴时！&r"
-			x: 8.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["71238C773767E1E8"]
-			description: [
-				"请您预先准备一些红酒，并且将其好好保管。"
-				""
-				"这非常重要，请不要弄丢这些红酒，它们&6越多、越老、越好&r。"
-			]
-			icon: {
-				Count: 1
-				id: "vinery:red_wine"
-				tag: { }
-			}
-			id: "526AD9B016755B61"
-			rewards: [{
-				id: "7AF31282543A363A"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "化酒为血"
-			tasks: [{
-				id: "3B5CD90ED5A07316"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "vinery:red_wine"
-					}
-				}
-				title: "任意红酒"
-				type: "item"
-			}]
-			title: "陈酿一杯红酒"
-			x: 8.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["03BE1455D4994AB1"]
-			description: [
-				"胸腔&c「暴食」&r。"
-				""
-				"数据角度上，祂其实并&6不是不可解析&r的。"
-				""
-				"但很奇怪. . .为什么"
-			]
-			id: "3DD337FB1ECA314B"
-			rewards: [{
-				id: "79957CD11990404E"
-				item: "lightmanscurrency:coin_netherite"
-				type: "item"
-			}]
-			subtitle: "祂不认可我们，但满足于我们的盛宴"
-			tasks: [{
-				id: "04068B8131673B84"
-				item: "kubejs:gula_injection"
-				type: "item"
-			}]
-			title: "&6庆贺吧，此乃暴食之王！&r"
-			x: 8.5d
-			y: -7.5d
 		}
 	]
-	title: "秘闻：谢肉祭"
+	title: "秘闻：罐装神秘"
 }

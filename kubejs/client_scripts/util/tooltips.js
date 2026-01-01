@@ -1,15 +1,34 @@
 // priority: 3000
 
 /**
- * @param {$List$Type<any>} text 
- * @param {String[]} textLines 
+ * @param {Internal.List<any>} text 
+ * @param {any[]} textLines 
  * @param {Number} initNum 
  * @returns 
  */
-function AddForTextLines(text, textLines, initNum) {
-    for (let i = 0; i < textLines.length; i++) {
-        text.add(initNum++, textLines[i])
-    }
+function AddTextLines(text, textLines, initNum) {
+    textLines.forEach(line => {
+        text.add(initNum++, line)
+    })
+    return initNum
+}
+
+/**
+ * @param {Internal.List<any>} text 
+ * @param {any[]} textLines 
+ * @param {Number} initNum 
+ * @returns 
+ */
+function AddTextFuncLines(text, textLines, item, initNum) {
+    textLines.forEach(line => {
+        if (typeof line == 'function') {
+            let lineTexts = line(text, item)
+            text.addAll(initNum, lineTexts)
+            initNum += lineTexts.length
+        } else {
+            text.add(initNum++, line)
+        }
+    })
     return initNum
 }
 

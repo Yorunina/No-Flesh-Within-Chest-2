@@ -142,3 +142,37 @@ function OrganItemCoolDown(player, item) {
     }
     return false
 }
+
+/**
+ * 
+ * @param {Internal.InventoryTypeData} invTypeData 
+ * @param {number} organIndex 
+ * @returns {Internal.ChestCavitySlotDefinition[]}
+ */
+function GetFourDirectionRelativeSlot(invTypeData, organIndex) {
+    let curRelativePosition = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
+    let fourDirectionRelativeSlot = []
+    for (let [offsetX, offsetY] of FourDirectionOffset) {
+        let slotDefinition = invTypeData.getRelativeSlotDefinition(curRelativePosition.getX() + offsetX, curRelativePosition.getY() + offsetY)
+        if (!slotDefinition) continue
+        fourDirectionRelativeSlot.push(slotDefinition)
+    }
+    return fourDirectionRelativeSlot
+}
+
+/**
+ * 
+ * @param {Internal.InventoryTypeData} invTypeData 
+ * @param {number} organIndex 
+ * @returns {Internal.ChestCavitySlotDefinition[]}
+ */
+function GetEightDirectionRelativeSlot(invTypeData, organIndex) {
+    let curRelativePosition = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
+    let eightDirectionRelativeSlot = []
+    for (let [offsetX, offsetY] of EightDirectionOffset) {
+        let slotDefinition = invTypeData.getRelativeSlotDefinition(curRelativePosition.getX() + offsetX, curRelativePosition.getY() + offsetY)
+        if (!slotDefinition) continue
+        eightDirectionRelativeSlot.push(slotDefinition)
+    }
+    return eightDirectionRelativeSlot
+}

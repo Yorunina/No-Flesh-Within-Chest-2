@@ -35,6 +35,22 @@ const LuckHover = Text.translatable('tooltips.kubejs.hover.luck.0').green().unde
         Text.translatable('tooltips.kubejs.hover.luck.2'),
         Text.translatable('tooltips.kubejs.hover.luck.3')
     ]))
+
+const AlwaysEatHover = Text.translatable('tooltips.kubejs.hover.always_eat.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.always_eat.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.always_eat.1'),
+    ]))
+const DirectlyNearbyOrganHover = Text.translatable('tooltips.kubejs.hover.directly_nearby_organ.0').green().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.directly_nearby_organ.0').green(),
+        Text.translatable('tooltips.kubejs.hover.directly_nearby_organ.1')
+    ]))
+const NearbyOrganHover = Text.translatable('tooltips.kubejs.hover.nearby_organ.0').green().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.nearby_organ.0').green(),
+        Text.translatable('tooltips.kubejs.hover.nearby_organ.1')
+    ]))
 const KeyActiveHover = Text.translatable('tooltips.kubejs.hover.key_active.0').gold().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.key_active.0').gold(),

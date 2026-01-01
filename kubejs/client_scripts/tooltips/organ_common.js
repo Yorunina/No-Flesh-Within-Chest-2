@@ -11,7 +11,7 @@ ItemEvents.tooltip(tooltip => {
             organTagTooltipsList.push(OrganTagMap[tagLocation])
         })
         if (organTagTooltipsList.length > 0) {
-            lineNum = AddForTextLines(text, [Text.of('🔎  ').append(JoinWithSeparator('   ', organTagTooltipsList))], lineNum)
+            lineNum = AddTextLines(text, [Text.of('🔎  ').append(JoinWithSeparator('   ', organTagTooltipsList))], lineNum)
         }
 
         let scoreTooltipsList = []
@@ -29,58 +29,44 @@ ItemEvents.tooltip(tooltip => {
         let customToolTips = OrganTooltipRegistryMap[item.id] ? OrganTooltipRegistryMap[item.id] : new MultiStateTooltip(item.id)
 
         if (customToolTips.defaultTooltips.length > 0) {
-            text.addAll(lineNum, customToolTips.defaultTooltips)
-            lineNum += customToolTips.defaultTooltips.length
+            lineNum = AddTextFuncLines(text, customToolTips.defaultTooltips, item, lineNum)
         }
 
         switch (true) {
             case tooltip.isShift():
                 if (customToolTips.shiftTooltips.length + scoreTooltipsList.length > 0) {
-                    text.add(lineNum++, customToolTips.shiftHoldingDescription)
-                    text.addAll(lineNum, scoreTooltipsList)
-                    lineNum += scoreTooltipsList.length
-                    text.addAll(lineNum, customToolTips.shiftTooltips)
-                    lineNum += customToolTips.shiftTooltips.length
+                    lineNum = AddTextLines(text, [customToolTips.shiftHoldingDescription], lineNum)
+                    lineNum = AddTextLines(text, scoreTooltipsList, lineNum)
+                    lineNum = AddTextFuncLines(text, customToolTips.shiftTooltips, item, lineNum)
                     return
                 }
                 break
             case tooltip.isCtrl():
                 if (customToolTips.ctrlTooltips.length > 0) {
-                    text.add(lineNum++, customToolTips.ctrlHoldingDescription)
-                    text.addAll(lineNum, customToolTips.ctrlTooltips)
-                    lineNum += customToolTips.ctrlTooltips.length
+                    lineNum = AddTextLines(text, [customToolTips.ctrlHoldingDescription], lineNum)
+                    lineNum = AddTextFuncLines(text, customToolTips.ctrlTooltips, item, lineNum)
                     return
                 }
                 break
             case tooltip.isAlt():
                 if (customToolTips.altTooltips.length > 0) {
-                    text.add(lineNum++, customToolTips.altHoldingDescription)
-                    text.addAll(lineNum, customToolTips.altTooltips)
-                    lineNum += customToolTips.altTooltips.length
+                    lineNum = AddTextLines(text, [customToolTips.altHoldingDescription], lineNum)
+                    lineNum = AddTextFuncLines(text, customToolTips.altTooltips, item, lineNum)
                     return
                 }
                 break
         }
 
         if (customToolTips.shiftTooltips.length + scoreTooltipsList.length > 0) {
-            text.add(lineNum++, customToolTips.shiftDescription)
+            lineNum = AddTextLines(text, [customToolTips.shiftDescription], lineNum)
         }
 
         if (customToolTips.ctrlTooltips.length > 0) {
-            text.add(lineNum++, customToolTips.ctrlDescription)
+            lineNum = AddTextLines(text, [customToolTips.ctrlDescription], lineNum)
         }
 
         if (customToolTips.altTooltips.length > 0) {
-            text.add(lineNum++, customToolTips.altDescription)
-        }
-
-        if (customToolTips.isBindEntity) {
-            if (item.hasNBT() && item.getNbt().contains('bindEntity')) {
-                let itemNbt = item.getNbt()
-                let bindEntityNbt = itemNbt.getCompound('bindEntity')
-                let bindEntityName = bindEntityNbt.getString('name')
-                text.add(lineNum++, Text.translatable('tooltips.kubejs.bind_entity.1', bindEntityName).darkGray())
-            }
+            lineNum = AddTextLines(text, [customToolTips.altDescription], lineNum)
         }
     })
 

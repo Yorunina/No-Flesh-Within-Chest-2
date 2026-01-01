@@ -52,3 +52,25 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:greedy_throat')
     .addAlt(Text.translatable('tooltips.kubejs.greedy_throat.alt.2'))
     .addAlt(Text.translatable('tooltips.kubejs.greedy_throat.alt.3'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:jar_of_mystery')
+    .addDefault(Text.translatable('tooltips.kubejs.jar_of_mystery.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.jar_of_mystery.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.jar_of_mystery.alt.2'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:parasite_larva')
+    .addDefault(Text.translatable('tooltips.kubejs.parasite_larva.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.parasite_larva.alt.1'))
+    .addAlt((text, item) => {
+        let nbt = item.getOrCreateTag()
+        let saturation = nbt.getFloat('saturation')
+        let avgSaturation = saturation / (item.getMaxDamage() - item.getDamageValue())
+        return [Text.translatable('tooltips.kubejs.parasite_larva.alt.2', avgSaturation > 1 ? Text.gold(avgSaturation) : Text.green(avgSaturation))]
+    })
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:jar_of_vacuum')
+    .addDefault(Text.translatable('tooltips.kubejs.jar_of_vacuum.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.jar_of_vacuum.alt.1', NearbyOrganHover, Text.gold('1')))
+)
