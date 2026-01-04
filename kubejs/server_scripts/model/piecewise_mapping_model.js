@@ -63,6 +63,20 @@ PiecewiseMappingModel.prototype = {
         }
         return nearestItem.getValue()
     },
+    /**
+     * 获取一个值对应的所有分段映射的值
+     * @param {number} value 要获取的值
+     * @returns {any[]} 分段映射的值
+     */
+    getAllValues: function (value) {
+        let items = this.findItems(value)
+        if (items.length == 0) return null
+        let values = []
+        for (let item of items) {
+            values.push(item.getValue())
+        }
+        return values
+    },
 }
 
 
