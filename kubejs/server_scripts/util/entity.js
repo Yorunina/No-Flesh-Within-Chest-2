@@ -390,5 +390,5 @@ function SummonIncarnationEntity(player, entity, lifeTime) {
  * @returns {Internal.ServerPlayer}
  */
 function GetNearestPlayer(level, pos, radius) {
-    return level["getNearestPlayer(double,double,double,double,boolean)"](pos.getX(), pos.getY(), pos.getZ(), radius, false)
+    return level.getNearestPlayer(pos.getX(), pos.getY(), pos.getZ(), radius, false)
 }

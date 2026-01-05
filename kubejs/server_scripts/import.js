@@ -131,3 +131,5 @@ const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTa
 const $PedestalBlockTile = Java.loadClass('net.mehvahdjukaar.supplementaries.common.block.tiles.PedestalBlockTile')
 const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')
 const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.LightTile')
+
+const $GolemDungeons = Java.loadClass('dev.xkmc.golemdungeons.init.GolemDungeons')

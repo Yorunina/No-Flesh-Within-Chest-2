@@ -31,7 +31,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-
+    level.createEntity('')
 
 
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')

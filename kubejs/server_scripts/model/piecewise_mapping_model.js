@@ -70,7 +70,7 @@ PiecewiseMappingModel.prototype = {
      */
     getAllValues: function (value) {
         let items = this.findItems(value)
-        if (items.length == 0) return null
+        if (items.length == 0) return []
         let values = []
         for (let item of items) {
             values.push(item.getValue())

@@ -1,4 +1,4 @@
-// priority: 3000
+// priority: 2000
 /**
  * 权重随机对象
  * @param {any} obj 
@@ -37,10 +37,16 @@ WeightRandomModel.prototype = {
     getWeightRandomObjs: function (count) {
         let objs = []
         let tempWeightRandomList = this.weightRandomList.slice()
+        let totalWeight = this.weightRandomList.reduce(function (pre, cur, index) {
+            cur.startWeight = pre
+            return cur.endWeight = pre + cur.weight
+        }, 0)
         for (let i = 0; i < count; i++) {
+            let random = Math.ceil(Math.random() * totalWeight)
             for (let j = 0; j < tempWeightRandomList.length; j++) {
                 if (tempWeightRandomList[j].startWeight < random && tempWeightRandomList[j].endWeight >= random) {
                     objs.push(tempWeightRandomList[j].obj)
+                    totalWeight = totalWeight - tempWeightRandomList[j].weight
                     tempWeightRandomList.splice(j, 1)
                     break
                 }
