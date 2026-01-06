@@ -33,7 +33,6 @@ OrganEventModel.prototype = {
         let ccInstance = ccEntity.getChestCavityInstance()
         // 往往是Client事件导致
         if (!ccInstance) {
-            console.log(this.eventId)
             return
         }
         if (!optional.isPresent()) return

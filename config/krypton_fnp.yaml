@@ -1,3 +1,6 @@
+mixin:
+  # Enable new encryption optimizations on the client side
+  clientEncrypt: true
 compress:
   # The compression level for packets, between 1-9.
   compressionLevel: 4

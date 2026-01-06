@@ -20,7 +20,6 @@ function HadSetAnyWardrobeSkin(entity, type) {
  */
 function AddSkinToSlot(entity, type, skin) {
     let wardrobe = entity.getWardrobe()
-    console.log(wardrobe.getFreeSize(type))
     for (let i = 0; i < wardrobe.getUnlockedSize(type); i++) {
         let curItem = wardrobe.getItem(type, i)
         if (!curItem || curItem.isEmpty()) {

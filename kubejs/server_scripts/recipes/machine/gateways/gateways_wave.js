@@ -2,7 +2,7 @@
 const GatewayDefaultBossEventSettings = new GatewayBossEventSettings(GatewayBossEventSettingsMode.BOSS_BAR, true)
 const GatewayDefaultRule = new GatewayRules(8, 32, true, true, false, true, false, 0, 32, 0)
 const GatewayAwakeStoneLevelMap = {
-    'kubejs:gateways_awake_stone': 0,
+    'kubejs:gateways_awake_stone_1': 0,
     'kubejs:gateways_awake_stone_2': 1,
     'kubejs:gateways_awake_stone_3': 3,
     'kubejs:gateways_awake_stone_4': 5,

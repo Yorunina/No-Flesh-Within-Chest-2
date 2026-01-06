@@ -21,5 +21,4 @@ EntityEvents.spawned('minecraft:lightning_bolt', event => {
    
    let resultCount = Math.min(brassIngotCount, amethystShardCount)
    SpawnLootAtLocation(level, pos, [Item.of('kubejs:unstable_matter', resultCount)])
-   console.log(`Lightning bolt spawned at ${pos} with ${resultCount} unstable matter`)
 })
