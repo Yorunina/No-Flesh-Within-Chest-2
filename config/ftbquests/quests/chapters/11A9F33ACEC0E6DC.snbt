@@ -158,16 +158,18 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["3786F4EF9AB65A30"]
 			description: [
 				"罕见的情况！"
 				""
-				"本来应当成长为成体美味虫的幼体竟然和&6胃器官&r发生了&6共生融合&r！"
+				"本来应当成长为成体美味虫的幼体和&6心脏&r发生了&6共生融合&r！美味虫直接接管了器官的功能并且加以修正。"
 				""
-				"不仅这个现象具有极其高的价值，而且其产生的结果——&d大胃王&r——也具有极高的利用价值。"
+				"这个现象具有极其高的价值，而且其产生的结果——&d大胃王&r——也具有极高的利用价值。"
 				""
 				"如果我们能够有效利用其力量，或许能颠覆之前对器官体系的基本认知！"
 			]
 			id: "19FA069801FA43D1"
+			invisible: true
 			rewards: [{
 				id: "7BD20351064EE1F0"
 				item: "lightmanscurrency:coin_gold"
@@ -183,8 +185,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: 3.5d
+			x: 5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -346,44 +348,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["7F29416AEF85DA75"]
-			description: [
-				"将面粉混以美味粉，即可得到&6美味面团&r。"
-				""
-				"尽管生面团本身难以下咽，但是经过美味粉混合处理后，生面团都散发出一股&6极其诱人&r的味道。"
-			]
-			id: "441A21772F94D7C5"
-			rewards: [{
-				id: "0F8E883C776938DC"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "真正的美味！"
-			tasks: [{
-				id: "260F3FFC91D92734"
-				item: "kubejs:tasty_dough"
-				type: "item"
-			}]
-			x: 14.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["55329907B527DCE5"]
-			id: "5B939C142E1D6BCA"
-			rewards: [{
-				id: "2F254C0F93C9BADA"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			tasks: [{
-				id: "326566B73E179BC0"
-				item: "kubejs:tasty_worm_meat_bun"
-				type: "item"
-			}]
-			x: 12.5d
-			y: -0.5d
-		}
-		{
 			dependencies: ["4BFD35B09AF6436E"]
 			id: "42DD41219B0D20CC"
 			rewards: [{
@@ -400,7 +364,12 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["441A21772F94D7C5"]
+			dependencies: ["7F29416AEF85DA75"]
+			description: [
+				"经过简单烘焙，面团在高温下蓬松，就可以制成美味虫独特风味的&6美味面包&r。"
+				""
+				"尽管美味面包本身可能没有过多的调味和配料，但其令人&6回味无穷&r. . .至少日志是这么描述的。"
+			]
 			id: "7466C43484204792"
 			rewards: [{
 				id: "4BFADC9D5224FF5E"
@@ -413,11 +382,24 @@
 				item: "kubejs:tasty_bread"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 14.5d
 			y: 1.5d
 		}
 		{
-			dependencies: ["7466C43484204792"]
+			dependencies: ["41FEB64150AA4A62"]
+			description: [
+				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				""
+				"&6——回放中&r"
+				""
+				"&7**心. . .请让我们品尝你的心脏. . .**&r"
+			]
+			hide_text_until_complete: true
+			icon: {
+				Count: 1
+				id: "chestcavity:heart"
+				tag: { }
+			}
 			id: "2DFCF1B70C69B560"
 			rewards: [{
 				id: "706F765050DA4E20"
@@ -427,13 +409,13 @@
 			subtitle: "新感悟"
 			tasks: [{
 				count: 1L
-				id: "4B110A8C33A0CF7B"
-				item: "kubejs:tasty_bread"
-				title: "品尝美味面包"
+				icon: "kubejs:tasty_hamburg"
+				id: "7DF0B9092828B067"
+				title: "品尝美味汉堡"
 				type: "ftbqaa:eat_item"
 			}]
-			x: 18.5d
-			y: 1.5d
+			x: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["42DD41219B0D20CC"]
@@ -444,9 +426,10 @@
 				"&r"
 				"&7**胃. . .请让我们品尝你的胃. . .**&r"
 			]
+			hide_text_until_complete: true
 			icon: {
 				Count: 1
-				id: "kubejs:parasitism_stomach"
+				id: "chestcavity:stomach"
 				tag: { }
 			}
 			id: "3CF6A52040DC32FD"
@@ -460,11 +443,262 @@
 				count: 1L
 				icon: "kubejs:tasty_worm_soup"
 				id: "411253B210587BF5"
+				item: "kubejs:tasty_worm_soup"
+				title: "品尝美味虫汤"
 				type: "ftbqaa:eat_item"
 			}]
 			title: "品尝美味虫汤"
+			x: 9.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1EF30986B9E4ACBA"]
+			description: [
+				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				""
+				"&6——回放中"
+				"&r"
+				"&7**骨. . .请让我们品尝你的骨骼. . .**&r"
+			]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "chestcavity:rib"
+				tag: { }
+			}
+			id: "16CA184F429B7CE2"
+			rewards: [{
+				id: "251AD9A8DD7638EA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "新感悟"
+			tasks: [{
+				count: 1L
+				id: "21A76D694906846D"
+				item: "kubejs:fried_taste_worm"
+				title: "品尝煎炸美味虫"
+				type: "ftbqaa:eat_item"
+			}]
+			title: "品尝煎炸美味虫"
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CD591898F55BC60"]
+			description: [
+				"美味精酿是通过简易烹饪的美味虫&6发酵&r而成的特殊饮品。"
+				""
+				"其仍旧是会随着美味虫本身的差异，有着&6千奇百怪&r的味道. . .更奇怪的是，似乎饮用再多也不会因此而醉酒。"
+			]
+			id: "0F4D1F2DD2B005CE"
+			rewards: [{
+				id: "60C444DDEF5F2C7E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一种风味奇特的啤酒"
+			tasks: [{
+				id: "76C3BC46D05E4584"
+				item: "kubejs:tasty_beer"
+				type: "item"
+			}]
 			x: 12.5d
-			y: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0F4D1F2DD2B005CE"]
+			description: [
+				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				""
+				"&6——回放中"
+				"&r"
+				"&7**肝 . .请让我们品尝你的肝脏. . .**&r"
+			]
+			hide_text_until_complete: true
+			icon: {
+				Count: 1
+				id: "chestcavity:liver"
+				tag: { }
+			}
+			id: "0DF26FFC05523C2B"
+			rewards: [{
+				id: "5B1C81ED08E76E1B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "新感悟"
+			tasks: [{
+				count: 1L
+				id: "10970EDA87FE51F8"
+				item: "kubejs:tasty_beer"
+				title: "品尝美味精酿"
+				type: "ftbqaa:eat_item"
+			}]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7466C43484204792"]
+			description: [
+				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				""
+				"&6——回放中&r"
+				""
+				"&7**肾. . .请让我们品尝你的肾脏. . .**&r"
+			]
+			hide_text_until_complete: true
+			icon: {
+				Count: 1
+				id: "chestcavity:kidney"
+				tag: { }
+			}
+			id: "67DAAFD99C02F670"
+			rewards: [{
+				id: "7CE25C9C06332BEB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "新感悟"
+			tasks: [{
+				count: 1L
+				id: "38E9BE5621ACA16A"
+				item: "kubejs:tasty_bread"
+				title: "品尝美味面包"
+				type: "ftbqaa:eat_item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"307D2E9D0640B128"
+				"7466C43484204792"
+			]
+			id: "41FEB64150AA4A62"
+			tasks: [{
+				id: "43D8A28B2134BF08"
+				item: "kubejs:tasty_hamburg"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3786F4EF9AB65A30"]
+			description: [
+				"罕见的情况！"
+				""
+				"本来应当成长为成体美味虫的幼体和&6肝脏&r发生了&6共生融合&r。"
+				""
+				"融合产生的&6啤酒腺&r能够在胸腔有大胃王的环境下发挥巨大的作用。"
+			]
+			id: "7F73D4C9635221D9"
+			invisible: true
+			rewards: [{
+				id: "3EE7D9D3005E7A56"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "培育得当"
+			tasks: [{
+				id: "00FC5CD7585F2D79"
+				item: {
+					Count: 1
+					id: "kubejs:beer_gland"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3786F4EF9AB65A30"]
+			description: [
+				"罕见的情况！"
+				""
+				"本来应当成长为成体美味虫的幼体和&6肾脏&r发生了&6共生融合&r。"
+				""
+				"融合产生的&6甜品腺&r能够在胸腔有大胃王的环境下发挥巨大的作用。"
+			]
+			id: "3D71247FDEF412F0"
+			invisible: true
+			rewards: [{
+				id: "64EF78407527D094"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "培育得当"
+			tasks: [{
+				id: "5210D5D8240242A0"
+				item: {
+					Count: 1
+					id: "kubejs:sweets_gland"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3786F4EF9AB65A30"]
+			description: [
+				"罕见的情况！"
+				""
+				"本来应当成长为成体美味虫的幼体和&6胃&r发生了&6共生融合&r。"
+				""
+				"融合产生的&6寄生胃&r能够在您食用完食物后提供大量的伤害加成，这对生存有着巨大的帮助。"
+			]
+			id: "7B97DAEAF7EC0C6B"
+			invisible: true
+			rewards: [{
+				id: "03FD9F7B1C2A584F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "培育得当"
+			tasks: [{
+				id: "2ED6881DD3B97F45"
+				item: {
+					Count: 1
+					id: "kubejs:parasitism_stomach"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3786F4EF9AB65A30"]
+			description: [
+				"罕见的情况！"
+				""
+				"本来应当成长为成体美味虫的幼体和&6骨骼&r发生了&6共生融合&r。"
+				""
+				"融合产生的&6贪婪喉管&r能够反复消化食物以提高食物的利用效率。"
+			]
+			id: "681B099458A589BD"
+			invisible: true
+			rewards: [{
+				id: "1EF88EEEF30D6A4E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "培育得当"
+			tasks: [{
+				id: "7CC4EE5D7DA2D293"
+				item: {
+					Count: 1
+					id: "kubejs:greedy_throat"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
 		}
 	]
 	title: "秘闻：罐装美味"

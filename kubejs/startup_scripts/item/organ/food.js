@@ -24,4 +24,9 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:worm_of_taste').maxStackSize(1).food(food => food.hunger(1).saturation(1).effect('minecraft:nausea', 200, 0, 1)).texture('kubejs:item/organs/food/worm_of_taste').tag('kubejs:food').tag('kubejs:infected')
 
+    event.create('kubejs:worm_of_gula').maxStackSize(1).food(food => food.hunger(8).saturation(1.5)).texture('kubejs:item/organs/food/worm_of_gula').tag('kubejs:food').tag('kubejs:infected')
+
+    event.create('kubejs:gula_worm_nest').maxStackSize(1).food(food => food.hunger(4).saturation(0.5)).texture('kubejs:item/organs/food/gula_worm_nest').tag('kubejs:food').tag('kubejs:infected')
+    event.create('kubejs:deserted_gula_worm_nest').maxStackSize(1).food(food => food.hunger(1).saturation(0.5)).texture('kubejs:item/organs/food/deserted_gula_worm_nest').tag('kubejs:food').tag('kubejs:infected')
 })
+

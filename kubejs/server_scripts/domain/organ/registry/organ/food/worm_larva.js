@@ -28,7 +28,6 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
     if (curDamage <= 0) {
         let ratio = curSaturation / (organItem.getMaxDamage() - curDamage)
         if (ratio >= 1) {
-            // 大胃王路线
             let chestCavity = player.getChestCavityInstance()
             if (!chestCavity) return
             let invTypeData = chestCavity.getInventoryTypeData()
@@ -36,8 +35,20 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
             let aroundRelativeSlots = GetEightDirectionRelativeSlot(invTypeData, organIndex)
             for (let slotDefinition of aroundRelativeSlots) {
                 let pItem = ccInv.getStackInSlot(slotDefinition.getId())
-                if (pItem.isEmpty() || !pItem.hasTag('kubejs:stomach')) continue
-                let replaceItem = Item.of('kubejs:king_of_stomach')
+                if (pItem.isEmpty()) continue
+                let replaceItem
+                if (pItem.hasTag('kubejs:heart')) {
+                    replaceItem = Item.of('kubejs:king_of_stomach')
+                } else if (pItem.hasTag('kubejs:bone')) {
+                    replaceItem = Item.of('kubejs:greedy_throat')
+                } else if (pItem.hasTag('kubejs:liver')) {
+                    replaceItem = Item.of('kubejs:beer_gland')
+                } else if (pItem.hasTag('kubejs:kidney')) {
+                    replaceItem = Item.of('kubejs:sweets_gland')
+                } else if (pItem.hasTag('kubejs:stomach')) {
+                    replaceItem = Item.of('kubejs:parasitism_stomach')
+                }
+                if (!replaceItem) continue
                 RemoveChestCavityOrgan(customData, player.chestCavityInstance, organIndex, slotType, true)
                 SetChestCavityOrgan(customData, player.chestCavityInstance, replaceItem, slotDefinition.getId(), slotDefinition.getType(), true)
                 return

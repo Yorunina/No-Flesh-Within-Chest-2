@@ -1,0 +1,15 @@
+// priority: 500
+RegistryOrgan('kubejs:gula_worm_nest')
+    .addScore('chestcavity:health', 0.1)
+    .addScore('chestcavity:filtration', 0.1)
+    .addScore('chestcavity:nerves', 0.1)
+    .addScore('chestcavity:digestion', 0.1)
+    .addScore('chestcavity:nutrition', 0.1)
+    .addScore('chestcavity:endurance', -0.5)
+
+RegistryOrgan('kubejs:deserted_gula_worm_nest')
+    .addScore('chestcavity:health', 0.1)
+    .addScore('chestcavity:filtration', 0.1)
+    .addScore('chestcavity:nerves', 0.1)
+    .addScore('chestcavity:digestion', 0.1)
+    .addScore('chestcavity:nutrition', 0.1)

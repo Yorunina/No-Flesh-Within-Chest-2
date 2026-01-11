@@ -33,12 +33,12 @@ function RegistryChestCavityInjection(event, typeName, typeLocation) {
 
 
 StartupEvents.registry('item', event => {
-    RegistryChestCavityInjection(event, 'revolution_machine', 'kubejs:cc_inventory_types/revolution_machine.json')
-    RegistryChestCavityInjection(event, 'functional_entity', 'kubejs:cc_inventory_types/functional_entity.json')
-    RegistryChestCavityInjection(event, 'gula', 'kubejs:cc_inventory_types/gula.json')
-    RegistryChestCavityInjection(event, 'rose', 'kubejs:cc_inventory_types/rose.json')
-    RegistryChestCavityInjection(event, 'player_13', 'kubejs:cc_inventory_types/player_13.json')
-    RegistryChestCavityInjection(event, 'player_21', 'kubejs:cc_inventory_types/player_21.json')
-    RegistryChestCavityInjection(event, 'player_25', 'kubejs:cc_inventory_types/player_25.json')
-    RegistryChestCavityInjection(event, 'player_27', 'kubejs:cc_inventory_types/player_27.json')
+    RegistryChestCavityInjection(event, 'revolution_machine', 'kubejs:cc_inventory_types/revolution_machine')
+    RegistryChestCavityInjection(event, 'functional_entity', 'kubejs:cc_inventory_types/functional_entity')
+    RegistryChestCavityInjection(event, 'gula', 'kubejs:cc_inventory_types/gula')
+    RegistryChestCavityInjection(event, 'rose', 'kubejs:cc_inventory_types/rose')
+    RegistryChestCavityInjection(event, 'player_13', 'kubejs:cc_inventory_types/player_13')
+    RegistryChestCavityInjection(event, 'player_21', 'kubejs:cc_inventory_types/player_21')
+    RegistryChestCavityInjection(event, 'player_25', 'kubejs:cc_inventory_types/player_25')
+    RegistryChestCavityInjection(event, 'player_27', 'kubejs:cc_inventory_types/player_27')
 })

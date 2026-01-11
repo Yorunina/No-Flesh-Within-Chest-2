@@ -7,5 +7,5 @@ RegistryOriginChangedStrategy('origins:human', HumanOriginStrategy)
  * @param {Internal.OriginChangedJS} event 
  */
 function HumanOriginStrategy(customData, event) {
-    event.player.chestCavityInstance.setInventoryType(new ResourceLocation('kubejs:cc_inventory_types/default.json'))
+    event.player.chestCavityInstance.setInventoryType(new ResourceLocation('kubejs:cc_inventory_types/default'))
 }

@@ -25,7 +25,7 @@ ServerEvents.tags('item', event => {
     event.add('ftbqaa:immune/explosion', [])
     event.add('ftbqaa:immune/fire', [])
     event.add('ftbqaa:immune/cactus', [])
-    event.add('chestcavity:cannot_remove', ['kubejs:worm_larva'])
+    event.add('chestcavity:cannot_remove', ['kubejs:worm_larva', 'kubejs:worm_of_gula', 'kubejs:gula_worm_nest'])
 
 })
 
