@@ -11,8 +11,14 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:nature', ['crittersandcompanions:dragonfly_wing'])
 
     event.add('kubejs:tinker_organ', ['chestcavity:tinker_heart'])
-    event.add('kubejs:heart', ['chestcavity:tinker_heart', 'chestcavity:dragon_heart', 'chestcavity:fireproof_heart', 'chestcavity:small_animal_heart', 'chestcavity:rabbit_heart', 'chestcavity:insect_heart', 'chestcavity:ender_heart', 'chestcavity:saltwater_heart', 'chestcavity:rotten_heart', 'chestcavity:animal_heart'])
+    event.add('kubejs:heart', ['chestcavity:heart', 'chestcavity:tinker_heart', 'chestcavity:dragon_heart', 'chestcavity:fireproof_heart', 'chestcavity:small_animal_heart', 'chestcavity:rabbit_heart', 'chestcavity:insect_heart', 'chestcavity:ender_heart', 'chestcavity:saltwater_heart', 'chestcavity:rotten_heart', 'chestcavity:animal_heart'])
+    event.add('kubejs:muscle', ['chestcavity:muscle', 'chestcavity:rotten_muscle', 'chestcavity:animal_muscle', 'chestcavity:aquatic_muscle', 'chestcavity:fish_muscle', 'chestcavity:brutish_muscle', 'chestcavity:swift_muscle', 'chestcavity:springy_muscle', 'chestcavity:fireproof_muscle', 'chestcavity:small_animal_muscle', 'chestcavity:insect_muscle', 'chestcavity:ender_muscle', 'chestcavity:dragon_muscle', 'chestcavity:piston_muscle', 'chestcavity:small_aquatic_muscle', 'chestcavity:small_fish_muscle', 'chestcavity:small_springy_muscle', 'chestcavity:saltwater_muscle'])
+    event.add('kubejs:stomach', ['chestcavity:fireproof_stomach', 'chestcavity:insect_stomach', 'chestcavity:ender_stomach', 'chestcavity:animal_stomach', 'chestcavity:herbivore_rumen', 'chestcavity:stomach', 'chestcavity:rotten_stomach', 'chestcavity:small_carnivore_stomach', 'chestcavity:herbivore_stomach', 'chestcavity:volatile_stomach', 'chestcavity:carnivore_stomach', 'chestcavity:small_herbivore_stomach', 'chestcavity:small_animal_stomach'])
     event.add('kubejs:bone', ['chestcavity:withered_rib', 'chestcavity:fireproof_rib', 'chestcavity:small_animal_rib', 'chestcavity:rotten_rib', 'chestcavity:animal_rib', 'chestcavity:dragon_rib', 'chestcavity:rib', 'chestcavity:ender_rib'])
+    event.add('kubejs:spine', ['chestcavity:spine', 'chestcavity:rotten_spine', 'chestcavity:animal_spine', 'chestcavity:small_animal_spine', 'chestcavity:dragon_spine', 'chestcavity:withered_spine', 'chestcavity:ender_spine', 'kubejs:revolution_cable', 'chestcavity:fireproof_spine'])
+    event.add('kubejs:liver', ['chestcavity:liver', 'chestcavity:rotten_liver', 'chestcavity:animal_liver', 'chestcavity:fireproof_liver', 'chestcavity:small_animal_liver', 'chestcavity:ender_liver', 'chestcavity:dragon_liver'])
+    event.add('kubejs:kidney', ['chestcavity:fireproof_kidney', 'chestcavity:ender_kidney', 'chestcavity:kidney', 'chestcavity:rotten_kidney', 'chestcavity:animal_kidney', 'chestcavity:small_animal_kidney', 'chestcavity:dragon_kidney'])
+
     event.add('kubejs:machine', ['chestcavity:tinker_heart'])
 
     event.add('tconplanner:creative_material', ['kubejs:genesis_tinker_blueprint'])

@@ -1,5 +1,6 @@
 // priority: 1000
 ServerEvents.recipes(event => {
-    // event.recipes.biomancy.bio_forging(['minecraft:melon_slice'], 'kubejs:candy_melon_liver', 'organ')
-    // event.recipes.biomancy.bio_forging(['minecraft:apple'], 'kubejs:candy_apple_heart', 'organ')
+    event.recipes.biomancy.bio_forging([Ingredient.of('#farm_and_charm:dough', 4), Ingredient.of('#kubejs:muscle'), Item.of('biomancy:healing_additive')], Item.of('kubejs:gluten_muscle'), 'biomancy:organ')
+    event.recipes.biomancy.bio_forging([Item.of('bakery:baguette'), Ingredient.of('#kubejs:bone'), Item.of('biomancy:healing_additive')], Item.of('kubejs:baguette_bone'), 'biomancy:organ')
+    event.recipes.biomancy.bio_forging([Item.of('minecraft:sugar', 8), Ingredient.of('#kubejs:heart'), Item.of('biomancy:healing_additive')], Item.of('kubejs:sweet_heart'), 'biomancy:organ')
 })

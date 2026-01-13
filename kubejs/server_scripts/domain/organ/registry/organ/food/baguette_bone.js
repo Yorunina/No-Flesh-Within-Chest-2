@@ -1,6 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:baguette_bone')
-    .addScore('chestcavity:defense', 1.5)
+    .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:digestion', 1)
 
 /**
