@@ -1,0 +1,32 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "79D02A9A3478432C"
+	group: "78F99AC9360F0137"
+	id: "79D02A9A3478432C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["588B97AAEC0E2385"]
+		id: "1E56E0456EA6D888"
+		rewards: [{
+			id: "66EBC46E8D722DB1"
+			item: "lightmanscurrency:coin_gold"
+			type: "item"
+		}]
+		tasks: [{
+			id: "61FACAA5CFB44E46"
+			item: {
+				Count: 1
+				id: "kubejs:furnace_core"
+				tag: {
+					Damage: 0
+				}
+			}
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "秘闻：无尽火炉"
+}

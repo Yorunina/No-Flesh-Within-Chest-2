@@ -27,6 +27,13 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:worm_of_gula').maxStackSize(1).food(food => food.hunger(8).saturation(1.5)).texture('kubejs:item/organs/food/worm_of_gula').tag('kubejs:food').tag('kubejs:infected')
 
     event.create('kubejs:gula_worm_nest').maxStackSize(1).food(food => food.hunger(4).saturation(0.5)).texture('kubejs:item/organs/food/gula_worm_nest').tag('kubejs:food').tag('kubejs:infected')
+
     event.create('kubejs:deserted_gula_worm_nest').maxStackSize(1).food(food => food.hunger(1).saturation(0.5)).texture('kubejs:item/organs/food/deserted_gula_worm_nest').tag('kubejs:food').tag('kubejs:infected')
+
+    event.create('kubejs:sweet_heart').maxStackSize(1).food(food => food.hunger(2).saturation(4)).texture('kubejs:item/organs/food/sweet_heart').tag('kubejs:food').tag('kubejs:heart')
+
+    event.create('kubejs:baguette_bone').maxStackSize(1).food(food => food.hunger(4).saturation(1)).texture('kubejs:item/organs/food/baguette_bone').tag('kubejs:food').tag('kubejs:bone')
+
+    event.create('kubejs:gluten_muscle').maxStackSize(1).food(food => food.hunger(10).saturation(0.1)).texture('kubejs:item/organs/food/gluten_muscle').tag('kubejs:food').tag('kubejs:muscle')
 })
 

@@ -22,7 +22,7 @@ function TurkeyGizzardFoodEaten(customData, event, organItem, organIndex, slotTy
     const chestCavity = player.chestCavityInstance
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()
-    let eightDirectionRelativeSlot = GetEightDirectionRelativeSlot(invTypeData, organIndex)
+    let eightDirectionRelativeSlot = GetDirectionRelativeSlotByParam(invTypeData, organIndex, EightDirectionOffset)
     for (let slotDefinition of eightDirectionRelativeSlot) {
         let curItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (curItem.isEmpty()) continue

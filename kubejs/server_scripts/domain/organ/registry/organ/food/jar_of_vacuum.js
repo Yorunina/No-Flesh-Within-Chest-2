@@ -2,7 +2,6 @@
 RegistryOrgan('kubejs:jar_of_vacuum')
     .addScore('chestcavity:health', -0.5)
 
-const JarOfVacuumTempAttackUpUUID = UUID.fromString('7B6425E2-D063-426D-9FBA-FD84EE2000F3')
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
@@ -15,7 +14,7 @@ function JarOfVacuumChestCavityUpdate(customData, event, organItem, organIndex, 
     const ccInv = chestCavity.inventory
     
     const invTypeData = chestCavity.getInventoryTypeData()
-    let aroundRelativeSlots = GetEightDirectionRelativeSlot(invTypeData, organIndex)
+    let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, EightDirectionOffset)
     let value = 0
     for (let slotDefinition of aroundRelativeSlots) {
         let curItem = ccInv.getStackInSlot(slotDefinition.getId())

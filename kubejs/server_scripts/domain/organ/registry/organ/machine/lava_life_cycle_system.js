@@ -20,7 +20,7 @@ function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex,
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()
-    let aroundRelativeSlots = GetFourDirectionRelativeSlot(invTypeData, organIndex)
+    let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, FourDirectionOffset)
     for (let slotDefinition of aroundRelativeSlots) {
         let curItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (curItem.isEmpty()) continue

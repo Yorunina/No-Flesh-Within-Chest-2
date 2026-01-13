@@ -1993,6 +1993,37 @@
 			x: 3.0d
 			y: 10.5d
 		}
+		{
+			dependencies: ["530B934745125A72"]
+			description: [
+				"在相机配置中，您除了胶卷外，还可以具体配置相机的滤镜、镜头。"
+				""
+				"您可以制作一个&6广角镜头&r来满足一些场景摄影的需求。"
+				""
+				"除此之外，您也可以制作一&6个玻璃板&r作为滤镜，使照片的清晰度提升。"
+			]
+			id: "55EE9E2181578BCC"
+			rewards: [{
+				id: "06EAAC616D3B39DF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "短焦场景"
+			tasks: [
+				{
+					id: "4E5BC206392770AB"
+					item: "kubejs:wide_angle_lens"
+					type: "item"
+				}
+				{
+					id: "2AA16E5F35326995"
+					item: "minecraft:glass_pane"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -1.5d
+		}
 	]
 	title: "传闻：重现黄金乡"
 }

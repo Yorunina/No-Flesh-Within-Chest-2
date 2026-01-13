@@ -1,7 +1,7 @@
 // priority: 500
-RegistryOrgan('kubejs:worm_of_taste')
-    .addScore('chestcavity:filtration', 2)
-    .addScore('chestcavity:endurance', 1)
+RegistryOrgan('kubejs:gluten_muscle')
+    .addScore('chestcavity:defense', 1.5)
+    .addScore('chestcavity:digestion', 1)
 
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -10,25 +10,26 @@ RegistryOrgan('kubejs:worm_of_taste')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function WormOfTasteChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-    const player = event.getPlayer()
+function GlutenMuscleChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
+    
     const invTypeData = chestCavity.getInventoryTypeData()
-
-    let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, EightDirectionOffset)
+    let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, FourDiagonalDirectionOffset)
     let value = 0
     for (let slotDefinition of aroundRelativeSlots) {
         let pItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (pItem.isEmpty() || !pItem.isEdible()) continue
         let foodProperties = pItem.getFoodProperties(player)
         let foodHunger = foodProperties.getNutrition()
-        value += foodHunger
+        let foodSaturation = foodHunger * foodProperties.getSaturationModifier()
+        value += foodSaturation
     }
-    customData.attackDamage.addAttributeModifier(value / 4, 'addition', 'base')
+    customData.attackDamage.addAttributeModifier(value / 2, 'addition', 'base')
 }
 
+
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:worm_of_taste')
-        .addOnlyStrategy('food_eaten', WormOfTasteChestCavityUpdate)
+    new OrganStrategyModel('kubejs:gluten_muscle')
+        .addStrategy('chest_cavity_update', GlutenMuscleChestCavityUpdate)
 )

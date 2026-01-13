@@ -32,7 +32,7 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
             if (!chestCavity) return
             let invTypeData = chestCavity.getInventoryTypeData()
             let ccInv = chestCavity.inventory
-            let aroundRelativeSlots = GetEightDirectionRelativeSlot(invTypeData, organIndex)
+            let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, EightDirectionOffset)
             for (let slotDefinition of aroundRelativeSlots) {
                 let pItem = ccInv.getStackInSlot(slotDefinition.getId())
                 if (pItem.isEmpty()) continue

@@ -143,36 +143,21 @@ function OrganItemCoolDown(player, item) {
     return false
 }
 
-/**
- * 
- * @param {Internal.InventoryTypeData} invTypeData 
- * @param {number} organIndex 
- * @returns {Internal.ChestCavitySlotDefinition[]}
- */
-function GetFourDirectionRelativeSlot(invTypeData, organIndex) {
-    let curRelativePosition = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
-    let fourDirectionRelativeSlot = []
-    for (let [offsetX, offsetY] of FourDirectionOffset) {
-        let slotDefinition = invTypeData.getRelativeSlotDefinition(curRelativePosition.getX() + offsetX, curRelativePosition.getY() + offsetY)
-        if (!slotDefinition) continue
-        fourDirectionRelativeSlot.push(slotDefinition)
-    }
-    return fourDirectionRelativeSlot
-}
 
 /**
  * 
  * @param {Internal.InventoryTypeData} invTypeData 
  * @param {number} organIndex 
+ * @param {number[][]} directionSet `
  * @returns {Internal.ChestCavitySlotDefinition[]}
  */
-function GetEightDirectionRelativeSlot(invTypeData, organIndex) {
+function GetDirectionRelativeSlotByParam(invTypeData, organIndex, directionSet) {
     let curRelativePosition = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
-    let eightDirectionRelativeSlot = []
-    for (let [offsetX, offsetY] of EightDirectionOffset) {
+    let relativeSlots = []
+    for (let [offsetX, offsetY] of directionSet) {
         let slotDefinition = invTypeData.getRelativeSlotDefinition(curRelativePosition.getX() + offsetX, curRelativePosition.getY() + offsetY)
         if (!slotDefinition) continue
-        eightDirectionRelativeSlot.push(slotDefinition)
+        relativeSlots.push(slotDefinition)
     }
-    return eightDirectionRelativeSlot
+    return relativeSlots
 }

@@ -51,6 +51,11 @@ const NearbyOrganHover = Text.translatable('tooltips.kubejs.hover.nearby_organ.0
         Text.translatable('tooltips.kubejs.hover.nearby_organ.0').green(),
         Text.translatable('tooltips.kubejs.hover.nearby_organ.1')
     ]))
+const DiagonalOrganHover = Text.translatable('tooltips.kubejs.hover.diagonal_organ.0').green().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.diagonal_organ.0').green(),
+        Text.translatable('tooltips.kubejs.hover.diagonal_organ.1')
+    ]))
 const KeyActiveHover = Text.translatable('tooltips.kubejs.hover.key_active.0').gold().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.key_active.0').gold(),
