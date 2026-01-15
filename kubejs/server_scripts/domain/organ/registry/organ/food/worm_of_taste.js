@@ -11,7 +11,7 @@ RegistryOrgan('kubejs:worm_of_taste')
  * @param {string} slotType
  */
 function WormOfTasteChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-    const player = event.getPlayer()
+    const entity = event.entity
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()
@@ -21,7 +21,7 @@ function WormOfTasteChestCavityUpdate(customData, event, organItem, organIndex, 
     for (let slotDefinition of aroundRelativeSlots) {
         let pItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (pItem.isEmpty() || !pItem.isEdible()) continue
-        let foodProperties = pItem.getFoodProperties(player)
+        let foodProperties = pItem.getFoodProperties(entity)
         let foodHunger = foodProperties.getNutrition()
         value += foodHunger
     }

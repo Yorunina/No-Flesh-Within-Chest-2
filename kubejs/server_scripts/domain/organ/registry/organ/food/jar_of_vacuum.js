@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:jar_of_vacuum')
 function JarOfVacuumChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
-    
+
     const invTypeData = chestCavity.getInventoryTypeData()
     let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, EightDirectionOffset)
     let value = 0
@@ -23,7 +23,9 @@ function JarOfVacuumChestCavityUpdate(customData, event, organItem, organIndex, 
             value += 1
         }
     }
-    customData.attackDamage.addAttributeModifier(value, 'addition', 'base')
+    if (value != 0) {
+        customData.attackDamage.addAttributeModifier(value, 'addition', 'base')
+    }
 }
 
 

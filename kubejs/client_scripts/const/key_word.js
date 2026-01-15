@@ -163,11 +163,19 @@ const TimeStabilityHover = Text.translatable('tooltips.kubejs.hover.time_stabili
         Text.translatable('tooltips.kubejs.hover.time_stability.0').gray(),
         Text.translatable('tooltips.kubejs.hover.time_stability.1'),
     ]))
-
-
 const UnstableHover = Text.translatable('tooltips.kubejs.hover.unstable.0').red().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.unstable.0').red(),
         Text.translatable('tooltips.kubejs.hover.unstable.1'),
         Text.translatable('tooltips.kubejs.hover.unstable.2'),
+    ]))
+const ExtremeStrengthHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple(),
+        Text.translatable('tooltips.kubejs.score_tag.hover.kubejs:extreme_strength'),
+    ]))
+const ExtremeFitnessHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_fitness').lightPurple().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_fitness').lightPurple(),
+        Text.translatable('tooltips.kubejs.score_tag.hover.kubejs:extreme_fitness'),
     ]))

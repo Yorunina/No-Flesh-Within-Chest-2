@@ -13,6 +13,7 @@ RegistryOrgan('kubejs:gluten_muscle')
 function GlutenMuscleChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
+    const entity = event.entity
     
     const invTypeData = chestCavity.getInventoryTypeData()
     let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, FourDiagonalDirectionOffset)
@@ -20,12 +21,14 @@ function GlutenMuscleChestCavityUpdate(customData, event, organItem, organIndex,
     for (let slotDefinition of aroundRelativeSlots) {
         let pItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (pItem.isEmpty() || !pItem.isEdible()) continue
-        let foodProperties = pItem.getFoodProperties(player)
+        let foodProperties = pItem.getFoodProperties(entity)
         let foodHunger = foodProperties.getNutrition()
         let foodSaturation = foodHunger * foodProperties.getSaturationModifier()
         value += foodSaturation
     }
-    customData.attackDamage.addAttributeModifier(value / 2, 'addition', 'base')
+    if (value != 0) {
+        customData.attackDamage.addAttributeModifier(value / 2, 'addition', 'base')
+    }
 }
 
 

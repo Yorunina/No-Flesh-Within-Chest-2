@@ -35,5 +35,9 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:baguette_bone').maxStackSize(1).food(food => food.hunger(4).saturation(1)).texture('kubejs:item/organs/food/baguette_bone').tag('kubejs:food').tag('kubejs:bone')
 
     event.create('kubejs:gluten_muscle').maxStackSize(1).food(food => food.hunger(10).saturation(0.1)).texture('kubejs:item/organs/food/gluten_muscle').tag('kubejs:food').tag('kubejs:muscle')
+
+    event.create('kubejs:living_beef_wellington').maxStackSize(1).food(food => food.hunger(8).saturation(0.5)).texture('kubejs:item/organs/food/living_beef_wellington').tag('kubejs:food').tag('kubejs:muscle')
+
+    event.create('kubejs:mashed_potato_pancreas').maxStackSize(1).food(food => food.hunger(4).saturation(1)).texture('kubejs:item/organs/food/mashed_potato_pancreas').tag('kubejs:food').tag('kubejs:pancreas')
 })
 

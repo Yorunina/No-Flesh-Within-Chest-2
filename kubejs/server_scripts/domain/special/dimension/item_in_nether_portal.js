@@ -19,7 +19,7 @@ const InfinityDimItem2DimId = {
     'minecraft:gold_block': 'infinity:golden',
 }
 InfinityEvents.itemInPortal(event => {
-    const itemEntity = event.getEntity()
+    const itemEntity = event.entity
     if (itemEntity.isOnPortalCooldown()) return
     /** @type {Internal.ItemStack} */
     const itemStack = itemEntity.getItem()

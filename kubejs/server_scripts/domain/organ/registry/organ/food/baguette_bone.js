@@ -13,6 +13,7 @@ RegistryOrgan('kubejs:baguette_bone')
 function BaguetteBoneChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
+    const entity = event.entity
     
     const invTypeData = chestCavity.getInventoryTypeData()
     let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, EightDirectionOffset)
@@ -20,12 +21,14 @@ function BaguetteBoneChestCavityUpdate(customData, event, organItem, organIndex,
     for (let slotDefinition of aroundRelativeSlots) {
         let pItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (pItem.isEmpty() || !pItem.isEdible()) continue
-        let foodProperties = pItem.getFoodProperties(player)
+        let foodProperties = pItem.getFoodProperties(entity)
         let foodHunger = foodProperties.getNutrition()
         let foodSaturation = foodHunger * foodProperties.getSaturationModifier()
         value += foodSaturation
     }
-    customData.armor.addAttributeModifier(value / 8, 'addition', 'base')
+    if (value != 0) {
+        customData.armor.addAttributeModifier(value / 8, 'addition', 'base')
+    }
 }
 
 

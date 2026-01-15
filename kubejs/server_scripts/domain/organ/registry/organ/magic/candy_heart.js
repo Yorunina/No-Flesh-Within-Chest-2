@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:candy_heart')
 */
 function CandyHeartEntitySpellCast(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
-    const entity = event.getEntity()
+    const entity = event.entity
     const spell = event.getSpell()
     const manaCost = spell.getManaCost()
     let effectDuration = manaCost * 2

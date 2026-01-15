@@ -111,3 +111,13 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:deserted_gula_worm_nest')
     .addDefault(Text.translatable('tooltips.kubejs.deserted_gula_worm_nest.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.deserted_gula_worm_nest.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:mashed_potato_pancreas')
+    .addDefault(Text.translatable('tooltips.kubejs.mashed_potato_pancreas.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.mashed_potato_pancreas.alt.1', Text.gold('1'), ExtremeFitnessHover))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:living_beef_wellington')
+    .addDefault(Text.translatable('tooltips.kubejs.living_beef_wellington.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.living_beef_wellington.alt.1', Text.gold('1'), ExtremeStrengthHover))
+)

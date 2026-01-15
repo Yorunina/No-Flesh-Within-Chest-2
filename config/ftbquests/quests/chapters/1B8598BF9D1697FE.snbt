@@ -5,7 +5,7 @@
 	group: "78F99AC9360F0137"
 	icon: "kubejs:eternal_altar"
 	id: "1B8598BF9D1697FE"
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [{
 		dependencies: ["588B97AAEC0E2385"]

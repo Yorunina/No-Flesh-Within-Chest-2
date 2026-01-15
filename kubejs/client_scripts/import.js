@@ -7,8 +7,6 @@ const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $OverlayTexture = Java.loadClass('net.minecraft.client.renderer.texture.OverlayTexture')
 const $ModelData = Java.loadClass('net.minecraftforge.client.model.data.ModelData')
 const $RenderType = Java.loadClass('net.minecraft.client.renderer.RenderType')
-const $BufferUtils = Java.loadClass('org.lwjgl.BufferUtils')
-
 
 const $MapDimension = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.MapDimension')
 const $WaypointImpl = Java.loadClass('dev.ftb.mods.ftbchunks.client.map.WaypointImpl')

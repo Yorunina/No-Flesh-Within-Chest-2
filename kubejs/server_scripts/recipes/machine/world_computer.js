@@ -496,13 +496,6 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('minecraft:writable_book'), 'input_1')
         .resetOnError()
 
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('create:blaze_cake', 16), 'input_1')
-        .produceItem(Item.of('create:creative_blaze_cake'), 'output_1')
-        .resetOnError()
 
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)

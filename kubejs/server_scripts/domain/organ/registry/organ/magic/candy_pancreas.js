@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:candy_pancreas')
 */
 function CandyPancreasEntitySpellCast(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
-    const entity = event.getEntity()
+    const entity = event.entity
     if (!entity.isPlayer()) return
     if (OrganItemCoolDown(entity, organItem)) return
     const chestCavity = entity.getChestCavityInstance()
