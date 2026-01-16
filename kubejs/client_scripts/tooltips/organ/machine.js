@@ -96,6 +96,12 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:lava_life_cycle_system')
     .addCtrl(Text.translatable('tooltips.kubejs.lava_life_cycle_system.ctrl.1', Text.gold('40')))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:source_reactor_furnace')
+    .addDefault(Text.translatable('tooltips.kubejs.source_reactor_furnace.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.source_reactor_furnace.alt.1', DirectlyNearbyOrganHover, Text.gold('10')))
+    .addCtrl(MachinaryLubricantSlotType)
+    .addCtrl(Text.translatable('tooltips.kubejs.source_reactor_furnace.ctrl.1', Text.gold('40')))
+)
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:prowler_rotating_shaft')
     .addDefault(Text.translatable('tooltips.kubejs.prowler_rotating_shaft.default.1').gray())

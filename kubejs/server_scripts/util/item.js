@@ -69,3 +69,19 @@ function DamageItem(item) {
         item.setDamageValue(damageValue + 1)
     }
 }
+
+/**
+ * 
+ * @param {Internal.ItemStack} sourceJarItem 
+ * @param {number} count 
+ * @returns 
+ */
+function SourceJarItemAddSource(sourceJarItem, count) {
+    if (!sourceJarItem.hasNBT()) sourceJarItem.setNbt(NBT.fromTag({BlockEntityTag: {source: 0}}))
+    let nbt = sourceJarItem.getNbt()
+    if (!nbt.contains('BlockEntityTag')) nbt.put('BlockEntityTag', new $CompoundTag())
+    let blockEntityNbt = nbt.getCompound('BlockEntityTag')
+    let sourceCount = blockEntityNbt.contains('source') ? blockEntityNbt.getInt('source') : 0
+    blockEntityNbt.putInt('source', Math.min(sourceCount + count, SourceJarMax))
+    sourceJarItem.setNbt(nbt)
+}

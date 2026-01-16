@@ -3792,9 +3792,12 @@
 						}
 					}
 				}
-				id: "35D1BD68E99CDC3E"
+				id: "59CBEB55DEE0CE3E"
+				leaderboard: "leaderboards:total_blocks_mined"
+				min: 100
+				rank: 1
 				title: "挖掘数量称霸"
-				type: "custom"
+				type: "leaderboards:rank_task"
 			}]
 			title: "改良创世工艺"
 			x: 19.0d

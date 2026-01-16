@@ -18,22 +18,8 @@ function SourceReactorFurnaceEntityTick(customData, event, organItem, organIndex
     for (let slotDefinition of aroundRelativeSlots) {
         let curItem = ccInv.getStackInSlot(slotDefinition.getId())
         if (curItem.isEmpty()) continue
-        if (curItem.hasTag('tconstruct:tanks') && curItem.hasNBT()) {
-            let nbt = curItem.getNbt()
-            if (!nbt.contains('tank')) continue
-            let tankNbt = nbt.getCompound('tank')
-            let fluidName = tankNbt.getString('FluidName')
-            let fluidAmount = tankNbt.getInt('Amount')
-            if (fluidAmount <= 0) continue
-            switch (fluidName) {
-                case 'minecraft:lava':
-
-                    break
-                case 'tconstruct:blazing_blood':
-
-                    break
-            }
-        }
+        if (!curItem.is('ars_nouveau:source_jar')) continue
+        SourceJarItemAddSource(curItem, 10)
     }
 }
 
@@ -43,3 +29,6 @@ RegistryOrganStrategy(
         .addOnlyStrategy('entity_tick', SourceReactorFurnaceEntityTick)
 )
 
+FTBTeamsEvents.playerJoinedParty(event => {
+    
+})

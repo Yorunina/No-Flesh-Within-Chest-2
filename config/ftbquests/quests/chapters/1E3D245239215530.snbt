@@ -2072,9 +2072,12 @@
 			subtitle: "大师的领悟"
 			tasks: [{
 				icon: "minecraft:crafting_table"
-				id: "02513DC206781A20"
-				title: "总手动合成物品数最多"
-				type: "custom"
+				id: "5B7A5E8C6FF8829A"
+				leaderboard: "leaderboards:crafting_table_interactions"
+				min: 100
+				rank: 1
+				title: "工作台制作数量称霸"
+				type: "leaderboards:rank_task"
 			}]
 			title: "大世界计算机之后"
 			x: 22.0d

@@ -1985,9 +1985,12 @@
 						}
 					}
 				}
-				id: "6870FCF50ECAD1D8"
+				id: "0B37AF5C30D97CFD"
+				leaderboard: "leaderboards:distance_sprinted"
+				min: 0
+				rank: 1
 				title: "疾跑距离称霸"
-				type: "custom"
+				type: "leaderboards:rank_task"
 			}]
 			title: "无限中转站"
 			x: 3.0d

@@ -7,34 +7,58 @@
 	id: "79D02A9A3478432C"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["588B97AAEC0E2385"]
-		description: [
-			"在扫描物品时，我发现了一个常规的&6创造类物品&r，理论上来说这种物品是无法在正常的流程中获得的。"
-			""
-			"但奇怪的是，在这个物品背后，我发现了一套非常奇怪的制作路径。这套路径似乎是被精心调整过，既成本低廉，但存在有大量的&6无法直接查阅的转换关系&r. . ."
-			""
-			"或许我们可以尝试这套流程，以期还原这&6无尽燃料&r。"
-			""
-			"不过首先，我们先要制作出它的正常版本。"
-		]
-		icon: "create:creative_blaze_cake"
-		id: "1E56E0456EA6D888"
-		rewards: [{
-			id: "66EBC46E8D722DB1"
-			item: "lightmanscurrency:coin_gold"
-			type: "item"
-		}]
-		subtitle: "意外发现"
-		tasks: [{
-			icon: "create:blaze_cake"
-			id: "61FACAA5CFB44E46"
-			item: "create:blaze_cake"
-			type: "item"
-		}]
-		title: "神秘配方"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["588B97AAEC0E2385"]
+			description: [
+				"在扫描物品时，我发现了一个常规的&6创造类物品&r，理论上来说这种物品是无法在正常的流程中获得的。"
+				""
+				"但奇怪的是，在这个物品背后，我发现了一套非常奇怪的制作路径。这套路径似乎是被精心调整过，既成本低廉，但存在有大量的&6无法直接查阅的转换关系&r. . ."
+				""
+				"或许我们可以尝试这套流程，以期还原这&6无尽燃料&r。"
+				""
+				"不过首先，我们先要制作出它的正常版本。"
+			]
+			icon: "create:creative_blaze_cake"
+			id: "1E56E0456EA6D888"
+			rewards: [{
+				id: "66EBC46E8D722DB1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "意外发现"
+			tasks: [{
+				icon: "create:blaze_cake"
+				id: "61FACAA5CFB44E46"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			title: "神秘配方"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E56E0456EA6D888"]
+			description: ["调查数据显示，无尽燃料的技术"]
+			id: "417A6717EF660F88"
+			rewards: [{
+				id: "2E7FB2502D307806"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "魔源理论"
+			tasks: [{
+				id: "3BDF151157116687"
+				item: {
+					Count: 1
+					id: "kubejs:source_reactor_furnace"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
 	title: "秘闻：无尽燃料"
 }
