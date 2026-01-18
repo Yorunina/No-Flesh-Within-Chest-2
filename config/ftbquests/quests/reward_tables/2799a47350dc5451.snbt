@@ -10,7 +10,7 @@
 			isServer: true
 			stage: "can_enter_nexus"
 			title: "共享中转站维度"
-			type: "ftbqaa:astages"
+			type: "maa:astages"
 		}
 		{
 			auto: "invisible"
@@ -18,7 +18,7 @@
 			ignore_reward_blocking: true
 			stage: "can_enter_nexus"
 			title: "私有中转站维度"
-			type: "ftbqaa:astages"
+			type: "maa:astages"
 		}
 	]
 	title: "中转站维度抉择"

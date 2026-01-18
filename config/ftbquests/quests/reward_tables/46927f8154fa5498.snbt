@@ -10,7 +10,7 @@
 			ignore_reward_blocking: true
 			stage: "world_computer_3"
 			title: "私有创造马达配方"
-			type: "ftbqaa:astages"
+			type: "maa:astages"
 		}
 		{
 			auto: "invisible"
@@ -19,7 +19,7 @@
 			isServer: true
 			stage: "world_computer_2"
 			title: "公开创造马达配方"
-			type: "ftbqaa:astages"
+			type: "maa:astages"
 		}
 	]
 	title: "创造马达配方"

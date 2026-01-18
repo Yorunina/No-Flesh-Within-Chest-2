@@ -346,7 +346,7 @@
 				ignore_reward_blocking: true
 				name: "Shop"
 				title: "解锁商店传送石碑"
-				type: "ftbqaa:active_way_stone"
+				type: "maa:active_way_stone"
 			}]
 			subtitle: "制造传送石碑"
 			tasks: [{

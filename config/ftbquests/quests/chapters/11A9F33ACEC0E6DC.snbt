@@ -412,7 +412,7 @@
 				icon: "kubejs:tasty_hamburg"
 				id: "7DF0B9092828B067"
 				title: "品尝美味汉堡"
-				type: "ftbqaa:eat_item"
+				type: "maa:eat_item"
 			}]
 			x: 5.5d
 			y: -1.5d
@@ -445,7 +445,7 @@
 				id: "411253B210587BF5"
 				item: "kubejs:tasty_worm_soup"
 				title: "品尝美味虫汤"
-				type: "ftbqaa:eat_item"
+				type: "maa:eat_item"
 			}]
 			title: "品尝美味虫汤"
 			x: 9.5d
@@ -478,7 +478,7 @@
 				id: "21A76D694906846D"
 				item: "kubejs:fried_taste_worm"
 				title: "品尝煎炸美味虫"
-				type: "ftbqaa:eat_item"
+				type: "maa:eat_item"
 			}]
 			title: "品尝煎炸美味虫"
 			x: 8.5d
@@ -533,7 +533,7 @@
 				id: "10970EDA87FE51F8"
 				item: "kubejs:tasty_beer"
 				title: "品尝美味精酿"
-				type: "ftbqaa:eat_item"
+				type: "maa:eat_item"
 			}]
 			x: 6.5d
 			y: -1.5d
@@ -565,7 +565,7 @@
 				id: "38E9BE5621ACA16A"
 				item: "kubejs:tasty_bread"
 				title: "品尝美味面包"
-				type: "ftbqaa:eat_item"
+				type: "maa:eat_item"
 			}]
 			x: 7.5d
 			y: -1.5d

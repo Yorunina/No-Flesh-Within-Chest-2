@@ -177,7 +177,7 @@
 				id: "05FFFCBECFCB595C"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_entity"
+					id: "maa:exposure_photo_entity"
 					tag: {
 						value: "minecraft:chicken >= 1"
 					}
@@ -211,7 +211,7 @@
 				id: "663487963991C29E"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_structure"
+					id: "maa:exposure_photo_structure"
 					tag: {
 						value: "ctov:small;ctov:medium;ctov:large"
 					}
@@ -252,14 +252,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:villager >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_light_level"
+								id: "maa:exposure_photo_light_level"
 								tag: {
 									value: " >= 7"
 								}
@@ -295,14 +295,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:creeper >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_light_level"
+								id: "maa:exposure_photo_light_level"
 								tag: {
 									value: " <= 7"
 								}
@@ -384,14 +384,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:warden >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_structure"
+								id: "maa:exposure_photo_structure"
 								tag: {
 									value: "minecraft:ancient_city"
 								}
@@ -422,7 +422,7 @@
 				id: "59C5755FAC8BD9CC"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_entity"
+					id: "maa:exposure_photo_entity"
 					tag: {
 						value: "minecraft:blaze >= 3"
 					}
@@ -455,21 +455,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:sheep >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:chicken >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:cow >= 1"
 								}
@@ -500,7 +500,7 @@
 				id: "51DEA59AA8846F34"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_entity"
+					id: "maa:exposure_photo_entity"
 					tag: {
 						value: "minecraft:pig >= 5"
 					}
@@ -533,14 +533,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:ghast >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:fireball >= 1"
 								}
@@ -622,14 +622,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_structure"
+								id: "maa:exposure_photo_structure"
 								tag: {
 									value: "create_structures_arise:pillagersteampunkairship"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:pillager >= 1"
 								}
@@ -660,7 +660,7 @@
 				id: "067A9638012CBA32"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_structure"
+					id: "maa:exposure_photo_structure"
 					tag: {
 						value: "ctov:small/village_jungle_tree;ctov:medium/village_jungle_tree;ctov:large/village_jungle_tree"
 					}
@@ -699,21 +699,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:cat >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:iron_golem >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:villager >= 1"
 								}
@@ -747,7 +747,7 @@
 				id: "0B0ABC1EC7DCC75D"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_entity"
+					id: "maa:exposure_photo_entity"
 					tag: {
 						value: "minecraft:player >= 1"
 					}
@@ -784,14 +784,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:player >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_structure"
+								id: "maa:exposure_photo_structure"
 								tag: {
 									value: "create_structures_arise:createairdrop"
 								}
@@ -827,14 +827,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_biome"
+								id: "maa:exposure_photo_biome"
 								tag: {
 									value: "minecraft:badlands"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:armadillo >= 1"
 								}
@@ -865,7 +865,7 @@
 				id: "03182472ED2BE504"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_structure"
+					id: "maa:exposure_photo_structure"
 					tag: {
 						value: "underground_village:"
 					}
@@ -900,21 +900,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_biome"
+								id: "maa:exposure_photo_biome"
 								tag: {
 									value: "minecraft:mushroom_fields"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:mooshroom >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:player >= 1"
 								}
@@ -945,7 +945,7 @@
 				id: "46F4FBE2EBD6EF2D"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_entity"
+					id: "maa:exposure_photo_entity"
 					tag: {
 						value: "minecraft:elder_guardian >= 1"
 					}
@@ -978,14 +978,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "whaleborne:hullback >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "whaleborne:helm >= 1"
 								}
@@ -1021,14 +1021,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_structure"
+								id: "maa:exposure_photo_structure"
 								tag: {
 									value: "minecraft:trail_ruins"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_light_level"
+								id: "maa:exposure_photo_light_level"
 								tag: {
 									value: " <= 7"
 								}
@@ -1065,14 +1065,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:wolf >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:skeleton >= 1"
 								}
@@ -1103,7 +1103,7 @@
 				id: "520F2C2C22FEE5CC"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_entity"
+					id: "maa:exposure_photo_entity"
 					tag: {
 						value: "minecraft:slime >= 8"
 					}
@@ -1144,7 +1144,7 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_biome"
+								id: "maa:exposure_photo_biome"
 								tag: {
 									SelectedItem: -1
 									value: "minecraft:ice_spikes"
@@ -1152,7 +1152,7 @@
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "wildernature:penguin >= 1"
 								}
@@ -1232,14 +1232,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:villager >= 5"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:exposure_photo_entity"
+								id: "maa:exposure_photo_entity"
 								tag: {
 									value: "minecraft:player >= 2"
 								}
@@ -1326,7 +1326,7 @@
 				id: "3ADEE502CA6CF28F"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_dimension"
+					id: "maa:exposure_photo_dimension"
 					tag: {
 						value: "infinity:cube"
 					}
@@ -1360,7 +1360,7 @@
 				id: "498D4EEEA0FE41C4"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_dimension"
+					id: "maa:exposure_photo_dimension"
 					tag: {
 						value: "infinity:slime"
 					}
@@ -1425,7 +1425,7 @@
 				slotCapacity: 1L
 				slotMaxSize: 1
 				title: "建立维度联系"
-				type: "ftbqaa:dim_net"
+				type: "maa:dim_net"
 			}]
 			title: "维度网络"
 			x: 12.0d
@@ -1455,7 +1455,7 @@
 				id: "6A03D98DA1610964"
 				item: {
 					Count: 1
-					id: "ftbqaa:exposure_photo_dimension"
+					id: "maa:exposure_photo_dimension"
 					tag: {
 						value: "infinity:missingno"
 					}

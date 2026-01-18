@@ -27,10 +27,10 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:tinker_anvil', ['tconstruct:tinkers_anvil', 'tconstruct:scorched_anvil'])
 
-    event.add('ftbqaa:immune/lightning', ['kubejs:unstable_matter'])
-    event.add('ftbqaa:immune/explosion', [])
-    event.add('ftbqaa:immune/fire', [])
-    event.add('ftbqaa:immune/cactus', [])
+    event.add('maa:immune/lightning', ['kubejs:unstable_matter'])
+    event.add('maa:immune/explosion', [])
+    event.add('maa:immune/fire', [])
+    event.add('maa:immune/cactus', [])
     event.add('chestcavity:cannot_remove', ['kubejs:worm_larva', 'kubejs:worm_of_gula', 'kubejs:gula_worm_nest'])
 
 })

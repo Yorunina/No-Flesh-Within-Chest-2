@@ -10,7 +10,7 @@
 			ignore_reward_blocking: true
 			stage: "genesis_tinker_1"
 			title: "继续追寻创世工匠"
-			type: "ftbqaa:astages"
+			type: "maa:astages"
 		}
 		{ item: "lightmanscurrency:coin_diamond", title: "放弃追寻创世工匠" }
 	]

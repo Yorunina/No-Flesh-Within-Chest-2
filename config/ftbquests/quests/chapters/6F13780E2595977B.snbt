@@ -265,21 +265,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:mining_speed >= 6.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 800.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:dwarven >= 1"
 								}
@@ -396,21 +396,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:mining_speed >= 3.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:attack_damage >= 9.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:crumbling >= 1"
 								}
@@ -642,14 +642,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:expanded >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 1000.0"
 								}
@@ -823,21 +823,21 @@
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:attack_damage >= 6.5"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tgears:sharpness >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:attack_speed >= 1.8"
 								}
@@ -1109,14 +1109,14 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:mining_speed >= 5.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:diamond < 1"
 								}
@@ -1162,7 +1162,7 @@
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 1500.0"
 								}
@@ -1228,7 +1228,7 @@
 				isServer: false
 				stage: "genesis_tinker_1"
 				title: "踏向前路"
-				type: "ftbqaa:astages"
+				type: "maa:astages"
 			}]
 			title: "匠心独具"
 			x: 0.0d
@@ -1361,21 +1361,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:overslime >= 140.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:overgrowth >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:mining_speed >= 5.0"
 								}
@@ -1594,21 +1594,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:sharpness <= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "kubejs:soul_hunter >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:attack_damage >= 15.0"
 								}
@@ -1766,21 +1766,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 4000.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:expanded >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:reinforced >= 2"
 								}
@@ -1941,21 +1941,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 4000.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:haste >= 3"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:silky >= 1"
 								}
@@ -2135,21 +2135,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_material"
+								id: "maa:tcon_tool_material"
 								tag: {
 									value: "tgears:cardboard;1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:reinforced >= 5"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:autosmelt >= 1"
 								}
@@ -2322,21 +2322,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:netherite >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:luck >= 3"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_material"
+								id: "maa:tcon_tool_material"
 								tag: {
 									value: "tgears:cardboard;1"
 								}
@@ -2476,21 +2476,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tgears:sharpness >= 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:attack_damage >= 4.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:attack_speed >= 2.2"
 								}
@@ -2983,7 +2983,7 @@
 					id: "041335773046D4A8"
 					item: {
 						Count: 1
-						id: "ftbqaa:tcon_tool_stats"
+						id: "maa:tcon_tool_stats"
 						tag: {
 							value: "tconstruct:durability <= 5.0"
 						}
@@ -3040,7 +3040,7 @@
 					id: "62EDBF0C1BB8E50E"
 					item: {
 						Count: 1
-						id: "ftbqaa:tcon_tool_stats"
+						id: "maa:tcon_tool_stats"
 						tag: {
 							value: "tconstruct:attack_speed <= 0.4"
 						}
@@ -3105,7 +3105,7 @@
 					id: "75E4CC60945D2512"
 					item: {
 						Count: 1
-						id: "ftbqaa:tcon_tool_stats"
+						id: "maa:tcon_tool_stats"
 						tag: {
 							value: "tconstruct:attack_damage <= 0.5"
 						}
@@ -3235,21 +3235,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:unbreakable < 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 20000.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:reinforced < 1"
 								}
@@ -3380,28 +3380,28 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:unbreakable < 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 20000.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:reinforced < 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "kubejs:study >= 1"
 								}
@@ -3528,21 +3528,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:unbreakable < 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 20000.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "kubejs:study >= 3"
 								}
@@ -3665,21 +3665,21 @@
 						items: [
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "tconstruct:unbreakable < 1"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_stats"
+								id: "maa:tcon_tool_stats"
 								tag: {
 									value: "tconstruct:durability >= 20000.0"
 								}
 							}
 							{
 								Count: 1b
-								id: "ftbqaa:tcon_tool_modifier"
+								id: "maa:tcon_tool_modifier"
 								tag: {
 									value: "kubejs:study >= 5"
 								}

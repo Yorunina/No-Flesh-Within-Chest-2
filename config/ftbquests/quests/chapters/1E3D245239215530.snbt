@@ -1810,7 +1810,7 @@
 				isServer: false
 				stage: "world_computer_1"
 				title: "踏向前路"
-				type: "ftbqaa:astages"
+				type: "maa:astages"
 			}]
 			title: "谕示非天启"
 			x: 23.0d

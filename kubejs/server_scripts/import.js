@@ -133,3 +133,5 @@ const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.parti
 const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.LightTile')
 
 const $GolemDungeons = Java.loadClass('dev.xkmc.golemdungeons.init.GolemDungeons')
+
+const $JigsawPlacement = Java.loadClass('net.minecraft.world.level.levelgen.structure.pools.JigsawPlacement')

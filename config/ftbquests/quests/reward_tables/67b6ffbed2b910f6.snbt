@@ -11,7 +11,7 @@
 			isServer: true
 			stage: "genesis_tinker_2"
 			title: "公开创世蓝图改良配方"
-			type: "ftbqaa:astages"
+			type: "maa:astages"
 		}
 		{
 			auto: "invisible"
@@ -19,7 +19,7 @@
 			ignore_reward_blocking: true
 			stage: "genesis_tinker_2"
 			title: "私有创世蓝图改良配方"
-			type: "ftbqaa:astages"
+			type: "maa:astages"
 		}
 	]
 	title: "创世蓝图改良配方"
