@@ -1,14 +1,6 @@
 // priority: 500
 ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:eternal_altar', 180)
-        .requireFunctionToStart(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
-            const inputAwake = machine.getItemStored('input_awake')
-            const awakeStoneLevel = GatewayAwakeStoneLevelMap[inputAwake.getId()]
-            data.putFloat('levelModifier', awakeStoneLevel ? awakeStoneLevel : 0)
-            return ctx.success()
-        })
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
@@ -21,6 +13,7 @@ ServerEvents.recipes(event => {
             const levelIndicator = Math.round(data.getFloat('level_indicator'))
             const chaosIndicator = Math.round(data.getFloat('chaos_indicator'))
             const typeIndicator = Math.round(data.getFloat('type_indicator'))
+            const extractantItem = machine.getItemStored('input_extractant')
 
             let gatewayColor = GatewayColorMapping.getFirstValue(typeIndicator)
             let gatewaySize = GatewaySizeMapping.getFirstValue(levelIndicator)
@@ -64,10 +57,7 @@ ServerEvents.recipes(event => {
                 gatewaySize ? gatewaySize : GatewaySize.SMALL,
                 gatewayColor ? gatewayColor : Color.RED,
                 waves,
-                [
-                    EternalAltarGatewayReward(machine),
-                    new GatewayStackReward('minecraft:oak_button')
-                ],
+                EternalAltarGatewayReward(machine),
                 [
                     EternalAltarGatewayFailure(machine)
                 ],
@@ -80,23 +70,19 @@ ServerEvents.recipes(event => {
             gatewayEntity.spawn()
             return ctx.success()
         })
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            const data = machine.getData()
+            const inputAwake = machine.getItemStored('input_awake')
+            const awakeStoneLevel = GatewayAwakeStoneLevelMap[inputAwake.getId()]
+            data.putFloat('levelModifier', awakeStoneLevel ? awakeStoneLevel : 0)
+            return ctx.success()
+        })
         .requireItemTag('#kubejs:gateways_awake_stone', 1, 'input_awake')
         .resetOnError()
 })
 
-/**
- * 
- * @param {CustomMachine} machine 
- */
-function EternalAltarGatewayReward(machine) {
-    let data = machine.getData()
-    let levelModifier = data.getFloat('levelModifier')
-    let levelIndicator = Math.max(data.getFloat('level_indicator') + levelModifier, 0)
-    data.remove('levelModifier')
-    return new GatewayFunctionReward((ctx) => {
-        if (data) data.putFloat('level_indicator', levelIndicator)
-    })
-}
+
 
 /**
  * 

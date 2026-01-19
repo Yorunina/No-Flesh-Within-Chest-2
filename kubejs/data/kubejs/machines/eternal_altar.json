@@ -35,7 +35,7 @@
       "type": "custommachinery:item",
       "id": "input_extractant",
       "filter": [
-        "#kubejs:gateways_defense_material"
+        "#kubejs:gateways_extractant_material"
       ],
       "whitelist": true,
       "mode": "input"

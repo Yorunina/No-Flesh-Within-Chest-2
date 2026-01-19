@@ -369,20 +369,6 @@ function PopItemFromAirdrop(level, entity, itemList) {
 
 
 /**
- * 
- * @param {Internal.ServerPlayer} player 
- * @param {Internal.Entity} entity
- * @param {Number} lifeTime
- */
-function SummonIncarnationEntity(player, entity, lifeTime) {
-    entity.addTag('incarnation')
-    entity.addTag('incarnation_owner_' + player.uuid.toString())
-    entity.potionEffects.add('startres:incarnation_life', lifeTime, 0, false, false)
-    return $IncarnationHelper.setupIncarnation(entity)
-}
-
-
-/**
  * 获取最近的玩家
  * @param {Internal.Level} level 
  * @param {BlockPos} pos 

@@ -108,7 +108,6 @@ const $MonobankBlockEntity = Java.loadClass('io.github.mortuusars.monobank.conte
 const $BlockPatternBuilder = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockPatternBuilder')
 const $BlockInWorld = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockInWorld')
 const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
-const $IncarnationHelper = Java.loadClass("com.example.startres.kubejs.IncarnationKubeJSHelper")
 const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
 
 const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')

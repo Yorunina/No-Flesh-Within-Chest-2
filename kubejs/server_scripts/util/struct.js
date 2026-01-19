@@ -1,5 +1,7 @@
 // priority: 3000
 
+import { chunk } from "underscore"
+
 /**
  * 在某区块设定生态群系
  * @param {Internal.ServerLevel} level 

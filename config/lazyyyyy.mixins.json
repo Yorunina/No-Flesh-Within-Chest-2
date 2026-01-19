@@ -3,7 +3,7 @@
     "async_model_baking": false,
     "axiom.async_check_commercial": true,
     "entity_sound_features.async_sound_events": true,
-    "lazy_entity_renderers": true,
+    "lazy_entity_renderers": false,
     "moremcmeta.avoid_duplicate_sprites": true,
     "toomanyplayers.async_networking": true,
     "yacl.lazy_animated_image": true,
