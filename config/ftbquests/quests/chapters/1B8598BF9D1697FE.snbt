@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "1B8598BF9D1697FE"
 	group: "78F99AC9360F0137"
+	hide_quest_until_deps_complete: true
 	icon: "kubejs:eternal_altar"
 	id: "1B8598BF9D1697FE"
 	order_index: 2

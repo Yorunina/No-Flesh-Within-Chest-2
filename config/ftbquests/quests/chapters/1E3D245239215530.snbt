@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "1E3D245239215530"
 	group: "0B365C36A50478AA"
+	hide_quest_until_deps_complete: true
 	icon: "create:brass_ingot"
 	id: "1E3D245239215530"
 	order_index: 1
@@ -2021,15 +2022,15 @@
 		{
 			dependencies: ["38D0994640B7E463"]
 			description: [
-				"通过&6书与笔&r与&6逆因芯片&r在构造好多方块结构下的配方的配方，我们就能完成了大世界计算机对于当前世界的逻辑注入。"
-				""
-				"因此，这个配方又被称之为“&6世界运算&r”。"
+				"将&6书与笔&r与&6逆因芯片&r放置在完成构造的大世界计算机中执行配方，我们就能完成大世界计算机对于当前世界的逻辑注入。"
 				""
 				"至此，恭喜您完成了大世界计算机的构建，而我们也已经获得了我们需要的能力——&6一定程度操控世界的能力&r。"
 				""
 				"对于您来说，您可以使用大世界计算机自由的更改一些世界常数，并且制造一些以前&d完全无法想象&r的产物。"
 				""
 				"对于我来说，得益于您的不懈探索，我对于世界的掌控程度又一次得到了提高，这对我们后续的发展有着极其重要的作用。"
+				""
+				"请注意，大世界计算机的配方显示并不完全——这是因为大世界计算机本身并不是用于生产材料的——其主要功能是用于修改一些&c世界规律&r，其具体效果可能需要您进行试验分析。"
 			]
 			id: "133A28D884F01479"
 			rewards: [{
@@ -2087,6 +2088,47 @@
 			}]
 			title: "大世界计算机之后"
 			x: 22.0d
+			y: 14.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["133A28D884F01479"]
+			description: [
+				"&7**  你好 NEO **&r"
+				""
+				"&6- 所需数据正在获取、下载、整理、压缩&r"
+				""
+				"&6- 必要信息已按约定返回&r"
+				""
+				"&6- 祝一切顺利&r"
+				""
+				"&7** 数据中断 **&r"
+			]
+			disable_toast: true
+			id: "1504B976EC5B23D9"
+			incompatible: ["028470DB13C00215"]
+			rewards: [{
+				auto: "enabled"
+				icon: "candlelight:note_paper_writeable"
+				id: "6B49F7512FBC1F09"
+				ignore_reward_blocking: true
+				kubeId: "narrative_level_info"
+				title: "获取上层叙事相关知识"
+				type: "maa:kube"
+			}]
+			secret: true
+			shape: "gear"
+			subtitle: "方舟已经出发"
+			tasks: [{
+				disable_toast: true
+				elapsedTime: 3600L
+				icon: "supplementaries:hourglass"
+				id: "2AD29786C103C8E7"
+				title: "返航"
+				type: "questsadditions:time"
+			}]
+			title: "返航"
+			x: 23.0d
 			y: 14.5d
 		}
 	]

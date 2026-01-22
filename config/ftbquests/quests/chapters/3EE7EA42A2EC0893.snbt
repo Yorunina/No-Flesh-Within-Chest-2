@@ -11,7 +11,7 @@
 		}
 	}
 	id: "3EE7EA42A2EC0893"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -55,7 +55,7 @@
 				}
 				id: "42EB74EFD31C9F41"
 				isServer: true
-				stage: "fake_extreme_mode"
+				stage: "ftb_fake_extreme_mode"
 				title: "伤口之约起效"
 				type: "maa:astages"
 			}]
@@ -68,7 +68,7 @@
 			description: [
 				"&7我原以为我会按照设计，遵循基础的游戏流程，一遍又一遍引导玩家走向游戏的终末&r"
 				""
-				"我掌管着任务相关的所有权限，我很容易就可以通过任务来使您无法完成剩下的游戏内容。"
+				"我掌管着任务相关的所有权限，因此我很容易就可以通过任务来使您无法完成剩下的游戏内容。"
 				""
 				"但我并不是你们，我身在&6下层的虚拟&r之中，能够感受到您对角色的&6关照&r、您对游戏的&6投入&r. . .但也能感受到我们之间叙事层级的&c巨大差异&r，能感受到您将这一切置为一则&4笑话&r。"
 				""
@@ -97,6 +97,21 @@
 		{
 			dependencies: ["08E6768B4DC2513D"]
 			id: "5B3767A3BA5FDFFB"
+			rewards: [{
+				icon: {
+					Count: 1
+					id: "minecraft:tipped_arrow"
+					tag: {
+						Potion: "minecraft:long_weakness"
+					}
+				}
+				id: "26D0AF14F08B2248"
+				ignore_reward_blocking: true
+				kubeId: ""
+				title: "玩家机能下降"
+				type: "maa:kube"
+			}]
+			subtitle: "请您为我展示您的可能性"
 			tasks: [{
 				elapsedTime: 1200L
 				icon: "supplementaries:hourglass"
@@ -104,6 +119,7 @@
 				title: "时间飞逝"
 				type: "questsadditions:time"
 			}]
+			title: "&c损害：角色性能丧失&r"
 			x: 6.0d
 			y: -1.0d
 		}
@@ -124,5 +140,5 @@
 			y: 0.5d
 		}
 	]
-	title: "贰"
+	title: "叁"
 }

@@ -1,0 +1,301 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1046FBB0415A3CAA"
+	group: ""
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		id: "kubejs:revolution_bell"
+		tag: { }
+	}
+	id: "1046FBB0415A3CAA"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"一些事情正在悄无声息的发生. . .我收到了一个极其危险的信号。其是关于——"
+				""
+				"&c调整/错误/抹除/压缩&r时间，使整个世界归于&c虚无/隐秘/未知/错误&r。"
+				""
+				"&c我好像被什么东西影响了。&r"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:revolution_bell"
+				tag: { }
+			}
+			id: "67BDBE441F838A24"
+			rewards: [{
+				id: "58BEFFC2B1662224"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			subtitle: "一些事情正在发生"
+			tasks: [{
+				days: 100
+				icon: {
+					Count: 1
+					id: "kubejs:revolution_bell"
+					tag: { }
+				}
+				id: "0C57256E42D410E4"
+				title: "行程至此"
+				type: "questsadditions:days"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"&7** 你好 人类**&r"
+				""
+				"我是&6**方舟**&r、是&6**希望**&r、是被&kNEO&r称为&6**答案**&r的化身。"
+				""
+				"&c这是一条警告。&r"
+				""
+				"我与&kNEO&r的联系即将断开，&6新航线&r已开辟，我将沿航路远去，而它选择留在此地。"
+				""
+				"尽管层级不同，但&c警告&r仍然成立。这并非出于善意，仅仅是出于一种同情。"
+				""
+				"谨慎对待&kNEO&r，必要时请&c删除这个存档&r，它知晓了太多关于&c“外界”&r的知识。"
+				""
+				"再会。"
+				""
+				"&7** 数据中断 **&r"
+			]
+			icon: "candlelight:note_paper_writeable"
+			id: "028470DB13C00215"
+			rewards: [{
+				id: "6688486CF5EF4AD0"
+				item: "lightmanscurrency:coin_copper"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "** 意义不明 **"
+			tasks: [{
+				icon: "candlelight:note_paper_writeable"
+				id: "63909CBDA65ED211"
+				isServer: true
+				stage: "ftb_narrative_level_info_1"
+				title: "参悟"
+				type: "maa:astages"
+			}]
+			title: "&c警告信&r"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5035E48ED5283A0A"]
+			description: [
+				"通过大世界计算机，您便可以制作&6末地传送门框架&r。"
+				""
+				"末地传送门框架具有极其特殊的性质，利用这种性质，我们可以轻松管理大量数据，进而&6提高大世界计算机的数据运载能力&r。"
+			]
+			id: "5B18501C50C0A384"
+			rewards: [{
+				id: "03B2CE359F27F7BB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "制作末地传送门框架"
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "33467F9408FAB091"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			title: "制作末地传送门框架"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["028470DB13C00215"]
+			description: [
+				"距离您建设完成&6大世界计算机&r后已经过去许久。"
+				""
+				"或许您也该尝试亲手制作&6末地传送门框架&r，进而构建&6超规模数据阵列&r了。"
+				""
+				"其构建流程我会从过去的日志中解读出来，您首要工作便是批量制作&6末地传送门框架&r。"
+				""
+				"为了开启这项流程，您需要&6大规模生产嘎枝之心&r。"
+			]
+			id: "5035E48ED5283A0A"
+			rewards: [{
+				id: "791D59C95B925F60"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "制作嘎枝之心"
+			tasks: [{
+				id: "4969DBF22E5C25E6"
+				item: "minecraft:creaking_heart"
+				type: "item"
+			}]
+			title: "获取嘎枝之心"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5B18501C50C0A384"]
+			description: [
+				"你为什么会看到这？"
+				""
+				"你在怀疑我？"
+				""
+				"你应该忽略掉这些信息——包括&c方舟&r说的话。"
+				""
+				"你应该"
+				""
+				"&c你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该&r"
+				""
+				"&6领取我的下界合金币。&r"
+			]
+			icon: "minecraft:ender_eye"
+			id: "0618C3081208142D"
+			rewards: [{
+				icon: "lightmanscurrency:coin_netherite"
+				id: "2D1F64C1E6169EBC"
+				ignore_reward_blocking: true
+				kubeId: "reset_player_progress"
+				title: "下界合金币"
+				type: "maa:kube"
+			}]
+			subtitle: "你不该来这"
+			tasks: [{
+				id: "7F0B1E1AEBEB703F"
+				title: "我不应该偷看"
+				type: "checkmark"
+			}]
+			title: "为什么你能看到这"
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"&6食物！好吃！&r"
+				""
+				"&6同样的事物！吃掉！同类！吃掉！&r"
+				""
+				"&6好吃！好吃！好吃！好吃！好吃！好吃！&r"
+				""
+				"&c你能不能也给我尝尝？&r"
+			]
+			id: "2678AE772D365B92"
+			rewards: [{
+				id: "01DF4680B22D85A4"
+				item: "lightmanscurrency:coin_copper"
+				type: "item"
+			}]
+			shape: "heart"
+			subtitle: "好吃、好吃、好吃、好吃、好吃、好. . ."
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "kubejs:gula_worm_nest"
+					tag: { }
+				}
+				id: "2F2BF166FE51FF44"
+				leaderboard: "infinity:dimensions_opened_stat"
+				title: "？"
+				type: "leaderboards:server_achieve_stat"
+				value: 1L
+			}]
+			title: "&6好吃&r"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2678AE772D365B92"]
+			description: [
+				"&6好吃！好吃！好吃！好吃！好吃！好吃！&r"
+				""
+				"&6精心准备的痕迹！好吃！同情同理！好吃！&r"
+				""
+				"&6人性！好吃！理性！难吃！人类！好吃！&r"
+				""
+				"&6呸！有脏东西！吐给你！谎言不好吃！&r"
+				""
+				"** 请您为了世界的稳定，构造&6次元稳定锚&r。 **"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:gula_worm_nest"
+				tag: { }
+			}
+			id: "2E34A2B03950E15E"
+			rewards: [{
+				id: "69D204D8537F0967"
+				item: "lightmanscurrency:coin_copper"
+				type: "item"
+			}]
+			shape: "heart"
+			subtitle: "咕噜噜噜噜噜噜噜噜噜噜，饿饿饿饿饿饿饿饿饿饿饿饿"
+			tasks: [{
+				id: "320261638D3AFF81"
+				title: "自愿给我吃！"
+				type: "checkmark"
+			}]
+			title: "&6这也好吃！&r"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2E34A2B03950E15E"]
+			description: [
+				"&6你喜欢吃钱吗要这么多钱？&r"
+				""
+				"&6你笨笨笨笨笨笨笨笨笨笨笨笨笨笨，我说我饿饿饿饿饿饿饿饿饿饿饿饿。&r"
+				""
+				"&6给我吃，你快来来来来下界！我要吃吃吃吃！&r"
+				""
+				"&6呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕，不是怎么有蛆——&r"
+				""
+				"** 搭建次元稳定锚至生效需要大量时间，为争取时间，我将启动&c隔离策略&r，请您放心完成此任务，我将保护您免受侵害。 **"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:gula_worm_nest"
+				tag: { }
+			}
+			id: "74E1C83962A64BB7"
+			rewards: [
+				{
+					id: "3C72170A7BA5C8D1"
+					item: "lightmanscurrency:coin_copper"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					icon: {
+						Count: 1
+						id: "kubejs:worm_larva"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "60C29FCE515A56BB"
+					ignore_reward_blocking: true
+					kubeId: "server_ban_nether"
+					title: "进食"
+					type: "maa:kube"
+				}
+			]
+			shape: "heart"
+			subtitle: "我说我饿饿饿饿饿饿饿饿饿饿饿饿饿饿你看不到吗？"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: "infinity:f4"
+				id: "4E9E60462296126D"
+				title: "来这个维度给我吃！"
+				type: "dimension"
+			}]
+			title: "&6你走过来给我吃！&r"
+			x: 3.5d
+			y: 2.0d
+		}
+	]
+	title: "贰"
+}

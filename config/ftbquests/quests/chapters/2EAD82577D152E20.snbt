@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "2EAD82577D152E20"
 	group: "0B365C36A50478AA"
+	hide_quest_until_deps_complete: true
 	icon: "kubejs:key_to_infinity"
 	id: "2EAD82577D152E20"
 	order_index: 2
@@ -2005,6 +2006,7 @@
 				""
 				"除此之外，您也可以制作一&6个玻璃板&r作为滤镜，使照片的清晰度提升。"
 			]
+			icon: "kubejs:wide_angle_lens"
 			id: "55EE9E2181578BCC"
 			rewards: [{
 				id: "06EAAC616D3B39DF"

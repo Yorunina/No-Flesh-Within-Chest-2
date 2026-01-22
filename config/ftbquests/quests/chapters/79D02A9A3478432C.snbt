@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "79D02A9A3478432C"
 	group: "78F99AC9360F0137"
+	hide_quest_until_deps_complete: true
 	icon: "create:creative_blaze_cake"
 	id: "79D02A9A3478432C"
 	order_index: 1
