@@ -7,4 +7,12 @@ ServerEvents.recipes(event => {
         6666,
         false
     )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        ['minecraft:gold_block', 'ars_nouveau:source_gem_block', 'ars_nouveau:timer_spell_turret', 'ars_nouveau:shapers_focus', 'ars_nouveau:relay_warp', 'ars_nouveau:burst', 'ars_nouveau:glyph_aoe', 'ars_nouveau:glyph_dampen'],
+        'ars_nouveau:arcane_platform',
+        'kubejs:mantle_energy_extractor',
+        2000,
+        false
+    )
 })

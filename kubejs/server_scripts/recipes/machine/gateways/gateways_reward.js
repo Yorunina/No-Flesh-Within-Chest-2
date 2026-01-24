@@ -38,9 +38,7 @@ function EternalAltarGatewayReward(machine, levelIndicator, chaosIndicator, type
     customData.typeIndicator = typeIndicator
     GatewayExtractantStrategy.run([extractantItem.getId()], [machine, extractantItem, auxiliaryItem], customData)
     DamageItem(extractantItem)
-
-    rewardList.push(customData.rewardList)
-    return rewardList
+    return rewardList.concat(customData.rewardList)
 }
 
 

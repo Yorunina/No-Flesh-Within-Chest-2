@@ -2,6 +2,14 @@
 RegistryOrgan('kubejs:koi_fish_scale')
     .addScore('chestcavity:knockback_resistant', -0.5)
 
+/**
+ * @param {AirdropDeathEventCustomData} customData 
+ * @param {Internal.LivingEntityDeathEventJS} event 
+ */
+function KoiFishAirdropStrategy(customData, event) {
+    customData.lootList = customData.lootList.concat(ConvertMoneyIntoCoinItemList(CoinList, Math.floor(Math.random() * 1500)))
+}
+RegistryAirDropDeathStrategy('koi_fish', KoiFishAirdropStrategy)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -16,20 +24,21 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
 
     let weightRandomModel = new WeightRandomModel()
     /**@type {Map<string, WeightRandomItem[]>} */
-    let koiFishPool = GetCustomDataMap(player.chestCavityInstance, 'koiFishPool', new Map())
-    weightRandomModel.addWeightRandom('ancient_city', 2)
+    const koiFishPool = GetCustomDataMap(player.chestCavityInstance, 'koiFishPool', new Map())
+    const koiFishPoolCount = GetCustomDataMap(player.chestCavityInstance, 'koiFishPoolCount', 1)
+    weightRandomModel.addWeightRandom('koi_fish', 1)
     koiFishPool.forEach((value, _) => {
         weightRandomModel.weightRandomList = weightRandomModel.weightRandomList.concat(value)
     })
-
+    let typeList = weightRandomModel.getWeightRandomObjs(koiFishPoolCount)
     let airdropPos = getKoiAirDropSpawnLocation(level, player)
-    let airdropEntity = getAirdropEntity(level, airdropPos, 'kubejs:airdrop_balloon_red', weightRandomModel.getWeightRandomObj())
+    let airdropEntity = getAirdropEntity(level, airdropPos, 'kubejs:airdrop_balloon_red', typeList)
     airdropEntity.spawn()
 
     let mapItem = $MapItem.create(level, airdropPos.x, airdropPos.z, 1, true, true)
     $MapItem.renderBiomePreviewMap(level, mapItem)
     $MapItemSavedData.addTargetDecoration(mapItem, airdropPos, "+", $MapDecorationType.RED_X)
-    player.give(mapItem.withName(Text.translatable('map.kubejs.lost_treasure')))
+    player.give(mapItem.withName(Text.translatable('map.kubejs.airdrop')))
     level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.book.page_turn', player.getSoundSource(), 0.5, 1)
     // 增强功能
     // CreateWaypoint(player, airdropPos, new Date().toLocaleString(), 0xFC4C00)
@@ -38,7 +47,7 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:koi_fish_scale')
-        .addOnlyStrategy('key_active', KoiFishScaleKeyActive)
+        .addOnlyStrategy('key_active', KoiFishScaleKeyActive, 1)
 )
 
 /**
@@ -69,12 +78,14 @@ function getKoiAirDropSpawnLocation(level, player) {
 /**
  * @param {Internal.Level} level 
  * @param {BlockPos} pos
- * @param {} config
+ * @param {Internal.EntityType_<any>} entityType
+ * @param {string[]} types
  * @return {Internal.LivingEntity}
  */
-function getAirdropEntity(level, pos, entityType, type) {
+function getAirdropEntity(level, pos, entityType, types) {
+    /**@type {Internal.LivingEntity} */
     let airdropEntity = level.createEntity(entityType)
-    airdropEntity.persistentData.putString('type', type)
+    airdropEntity.persistentData.put('types', NBT.toTagList(types))
     airdropEntity.setPosition(pos.x, pos.y, pos.z)
     return airdropEntity
 }

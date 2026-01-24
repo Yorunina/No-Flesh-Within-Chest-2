@@ -133,3 +133,4 @@ const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.til
 const $GolemDungeons = Java.loadClass('dev.xkmc.golemdungeons.init.GolemDungeons')
 
 const $UserBanListEntry = Java.loadClass('net.minecraft.server.players.UserBanListEntry')
+const $CoinValue = Java.loadClass('io.github.lightman314.lightmanscurrency.api.money.value.builtin.CoinValue')

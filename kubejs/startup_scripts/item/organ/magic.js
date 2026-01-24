@@ -36,4 +36,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:blazing_eyeball').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/blazing_eyeball')
     event.create('kubejs:sacred_heart').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/sacred_heart')
     event.create('kubejs:organic_mana_condense').maxStackSize(1).tag('kubejs:magic').tag('kubejs:lung').texture('kubejs:item/organs/magic/organic_mana_condense')
+    event.create('kubejs:source_resonator').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/source_resonator')
 })

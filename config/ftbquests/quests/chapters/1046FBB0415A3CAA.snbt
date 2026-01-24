@@ -191,14 +191,9 @@
 				item: "lightmanscurrency:coin_copper"
 				type: "item"
 			}]
-			shape: "heart"
 			subtitle: "好吃、好吃、好吃、好吃、好吃、好. . ."
 			tasks: [{
-				icon: {
-					Count: 1
-					id: "kubejs:gula_worm_nest"
-					tag: { }
-				}
+				icon: "kubejs:free_entropy"
 				id: "2F2BF166FE51FF44"
 				leaderboard: "infinity:dimensions_opened_stat"
 				title: "？"
@@ -222,18 +217,13 @@
 				""
 				"** 请您为了世界的稳定，构造&6次元稳定锚&r。 **"
 			]
-			icon: {
-				Count: 1
-				id: "kubejs:gula_worm_nest"
-				tag: { }
-			}
+			icon: "kubejs:free_entropy"
 			id: "2E34A2B03950E15E"
 			rewards: [{
 				id: "69D204D8537F0967"
 				item: "lightmanscurrency:coin_copper"
 				type: "item"
 			}]
-			shape: "heart"
 			subtitle: "咕噜噜噜噜噜噜噜噜噜噜，饿饿饿饿饿饿饿饿饿饿饿饿"
 			tasks: [{
 				id: "320261638D3AFF81"
@@ -257,11 +247,7 @@
 				""
 				"** 搭建次元稳定锚至生效需要大量时间，为争取时间，我将启动&c隔离策略&r，请您放心完成此任务，我将保护您免受侵害。 **"
 			]
-			icon: {
-				Count: 1
-				id: "kubejs:gula_worm_nest"
-				tag: { }
-			}
+			icon: "kubejs:free_entropy"
 			id: "74E1C83962A64BB7"
 			rewards: [
 				{
@@ -285,7 +271,6 @@
 					type: "maa:kube"
 				}
 			]
-			shape: "heart"
 			subtitle: "我说我饿饿饿饿饿饿饿饿饿饿饿饿饿饿你看不到吗？"
 			tasks: [{
 				dimension: "minecraft:the_nether"

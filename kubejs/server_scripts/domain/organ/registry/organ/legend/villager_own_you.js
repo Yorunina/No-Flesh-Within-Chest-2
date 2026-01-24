@@ -3,6 +3,17 @@ RegistryOrgan('kubejs:villager_own_you')
     .addScore('chestcavity:luck', 1)
 
 /**
+ * @param {AirdropDeathEventCustomData} customData 
+ * @param {Internal.LivingEntityDeathEventJS} event 
+ */
+function VillagerAirdropStrategy(customData, event) {
+    let lootList = Utils.rollChestLoot('minecraft:chests/village/village_weaponsmith')
+    // todo
+    customData.lootList = customData.lootList.concat(lootList)
+}
+RegistryAirDropDeathStrategy('villager', VillagerAirdropStrategy)
+
+/**
 * @param {OrganEventCustomData} customData
 * @param {Internal.LivingHurtEvent} event
 * @param {Internal.ItemStack} organItem

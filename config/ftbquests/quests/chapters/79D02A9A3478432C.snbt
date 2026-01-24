@@ -36,13 +36,28 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["6DC1C32BB829D65B"]
+			description: [
+				"目前来看，我们仍未得知在之前世界中的人是通过什么方法来进行地幔能提取的。"
+				""
+				"但我发现了一个似乎可行的技术方案——即通过&6魔源技术来有效的刺穿地幔&r，其魔力特质能够在地下塑成由魔源组成的强力钻头，理论上只要能量足够，就可以抵抗任何程度的高压高温。"
+				""
+				"因此，请您做好准备，我们要进行大批量&b魔法材料&r的制作了。"
+			]
 			id: "50202CD4D6EAE6F4"
-			tasks: [{
-				id: "2E48763248D64EB9"
-				item: "kubejs:source_focus_crystal"
+			rewards: [{
+				id: "3CB13CD94A3D6D63"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			x: 4.0d
+			subtitle: "奇异的道路"
+			tasks: [{
+				id: "65D06AF75009A6C8"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "魔科学"
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -50,7 +65,7 @@
 			description: [
 				"在日志中并没有记载使用何种方法提取地幔能，因此我需要您帮忙提供一些分析样本，便于我完成对该技术的逆向。"
 				""
-				"目前日志显示，此技术大概率涉及&6深层机械开采&r技术。我需要您提供100桶熔岩来作为样本，以分析使用机械开采应采用何种材料。"
+				"目前日志显示，此技术大概率涉及&6深层机械开采&r技术。我需要您提供&6100桶熔岩&r来作为样本，以分析使用机械开采应采用何种材料。"
 			]
 			icon: "minecraft:lava_bucket"
 			id: "6B9D9D4249A7839E"
@@ -66,8 +81,221 @@
 				id: "05B70CD6573290F0"
 				type: "fluid"
 			}]
-			title: "熔岩逆向"
+			title: "逆向分析熔岩"
 			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6B9D9D4249A7839E"]
+			description: [
+				"倘若只是熔岩的话，开采并没有特别大的难度——但地幔的组成成分复杂，其中除了融化的岩石，还包含有大量铁。"
+				""
+				"我需要您帮忙提取一些&6熔融铁&r用于进一步逆向分析。"
+			]
+			icon: "tconstruct:molten_iron_bucket"
+			id: "29453698A69EE84E"
+			rewards: [{
+				id: "3885C35D5CB260A7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我需要逆向分析原料"
+			tasks: [{
+				amount: 100000L
+				fluid: "tconstruct:molten_iron"
+				id: "7399E8D2E46377D1"
+				type: "fluid"
+			}]
+			title: "逆向分析熔融铁"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["29453698A69EE84E"]
+			description: [
+				"在地幔中存在有大量由复杂物质构成的熔融矿石。"
+				""
+				"若是想通过常规方式从&6临界点开采矿石&r倒是容易，但为了提取地幔能，我们需要一种能够穿过这种&6庞大熔融流体洪流&r的强大材料，其不仅能够刺穿地幔的高密流体，还能够抵抗高温。"
+				""
+				"请&6稍等我一段时间&r，我将重新从日志中搜索相关信息以确认技术方向。"
+			]
+			icon: "kubejs:mantle_ore"
+			id: "790FB90699555383"
+			rewards: [{
+				id: "16F2A5373F2D10D7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "似乎并不简单"
+			tasks: [{
+				elapsedTime: 600L
+				icon: "supplementaries:hourglass"
+				id: "02AB74D2B5F16C1C"
+				title: "静候佳音"
+				type: "questsadditions:time"
+			}]
+			title: "遇到阻碍"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["790FB90699555383"]
+			description: [
+				"最后我还需要您帮忙确认一件事。"
+				""
+				"请您击杀&6下界合金巨兽&r，从其身上获取&6熔岩动力电池&r，我需要确认新技术方向的动力源是否能够使用此种原料。"
+				""
+				"下界合金巨兽可以在下界生成的&6灵魂锻造厂&r中找到，您可以在下界使用&6巨兽之眼&r来定位这个结构。"
+			]
+			id: "6DC1C32BB829D65B"
+			rewards: [{
+				id: "121718387E56BED7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我需要逆向分析原料"
+			tasks: [{
+				id: "1AE8C74542AA23E6"
+				item: "cataclysm:lava_power_cell"
+				type: "item"
+			}]
+			title: "最后确认"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50202CD4D6EAE6F4"]
+			description: ["为了将魔源在钻探区域集中，我们需要&6远距离凝聚魔源&r的仪器。"]
+			id: "16FFBFBA5BD5E545"
+			rewards: [{
+				id: "14FE567C79980A5B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远距离精确魔源控制"
+			tasks: [{
+				id: "267D23CBEB922F92"
+				item: "ars_nouveau:relay_warp"
+				type: "item"
+			}]
+			title: "折跃魔源"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["50202CD4D6EAE6F4"]
+			description: ["为了创造安全的地幔能利用场景，我们需要在钻探区域附近&6维持一个安全的空腔&r。"]
+			id: "2470D63A410B9BED"
+			rewards: [{
+				id: "0FCC843913151089"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "方块行为操作"
+			tasks: [{
+				id: "226BF759FA1830DF"
+				item: "ars_nouveau:shapers_focus"
+				type: "item"
+			}]
+			title: "塑形空腔"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50202CD4D6EAE6F4"]
+			description: ["在地幔能提取时，我们需要&6定期执行某些法术程序&r，以确保地幔能提取稳定有效的进行。"]
+			id: "434D5EAD547C0C85"
+			rewards: [{
+				id: "36CD1660A81B1943"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "自动法术执行器"
+			tasks: [{
+				id: "6FB6E2045DE3D526"
+				item: "ars_nouveau:timer_spell_turret"
+				type: "item"
+			}]
+			title: "自动法术"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"16FFBFBA5BD5E545"
+				"2470D63A410B9BED"
+				"434D5EAD547C0C85"
+			]
+			description: [
+				"成功了！不过，似乎还缺少一些东西。"
+				""
+				"我们还需要一种能够有效驱动地幔能提取器的&6能源透镜&r，仅凭常规的魔源汇聚技术，无法驱动地幔能提取机，我们需要一种能够在瞬间输出极大功率的魔源供给器。"
+			]
+			id: "12E7C53A56C43097"
+			rewards: [{
+				id: "10C0F6B25D03447E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "魔科学的最佳应用"
+			tasks: [{
+				id: "7A9E166AA017CCB5"
+				item: "kubejs:mantle_energy_extractor"
+				type: "item"
+			}]
+			title: "筑成地幔能提取器"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"我们需要找到&d魔源汇聚晶体&r。"
+				""
+				"这是一种仅会出现在箱子战利品表中的&6特殊战利品&r。为了获取魔源汇聚晶体，您既可以选择在世界的各个角落搜索，也可以使用锦鲤鳞片定向获取。"
+				""
+				"考虑到您可能目前还未寻找到魔源汇聚晶体，您可以跟随分支任务，寻找&6锦鲤鳞片&r来定向获取该战利品。"
+			]
+			id: "6EEE9F6B86438970"
+			rewards: [{
+				id: "2B6DB930A1E93A15"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "唯一魔源汇聚手段"
+			tasks: [{
+				id: "0492F0FB78097163"
+				item: "kubejs:source_focus_crystal"
+				type: "item"
+			}]
+			title: "魔源汇聚晶体"
+			x: 17.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12E7C53A56C43097"]
+			description: [
+				"为了获取魔源汇聚水晶，您可以通过锦鲤鳞片来定向搜索某个特定战利品表。"
+				""
+				"默认情况下，锦鲤鳞片会"
+			]
+			id: "312C7EC9561496C4"
+			rewards: [{
+				id: "2F99D2DC56F07FC5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "定向搜索战利品"
+			tasks: [{
+				id: "57908F1BDEFDB6DD"
+				item: {
+					Count: 1
+					id: "kubejs:koi_fish_scale"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "锦鲤鳞片与特殊战利品"
+			x: 15.5d
 			y: 0.0d
 		}
 	]

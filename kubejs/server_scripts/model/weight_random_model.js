@@ -37,6 +37,9 @@ WeightRandomModel.prototype = {
     getWeightRandomObjs: function (count) {
         let objs = []
         let tempWeightRandomList = this.weightRandomList.slice()
+        if (count > tempWeightRandomList.length) {
+            count = tempWeightRandomList.length
+        }
         let totalWeight = this.weightRandomList.reduce(function (pre, cur, index) {
             cur.startWeight = pre
             return cur.endWeight = pre + cur.weight

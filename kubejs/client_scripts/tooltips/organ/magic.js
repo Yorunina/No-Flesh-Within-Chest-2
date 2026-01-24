@@ -128,3 +128,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:organic_mana_condense')
     .addDefault(Text.translatable('tooltips.kubejs.organic_mana_condense.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.source_reactor_furnace.alt.1', DiagonalOrganHover, Text.gold('30')))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:source_resonator')
+    .addDefault(Text.translatable('tooltips.kubejs.source_resonator.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.source_resonator.alt.1'))
+)

@@ -17,16 +17,5 @@ function EndCityAirdropStrategy(customData, event) {
     customData.lootList = customData.lootList.concat(lootList)
 }
 
-/**
- * @param {AirdropDeathEventCustomData} customData 
- * @param {Internal.LivingEntityDeathEventJS} event 
- */
-function VillagerAirdropStrategy(customData, event) {
-    let lootList = Utils.rollChestLoot('minecraft:chests/village/village_weaponsmith')
-    // todo
-    customData.lootList = customData.lootList.concat(lootList)
-}
-
 RegistryAirDropDeathStrategy('end_city_treasure', EndCityAirdropStrategy)
 RegistryAirDropDeathStrategy('ancient_city', AncientCityAirdropStrategy)
-RegistryAirDropDeathStrategy('villager', VillagerAirdropStrategy)
