@@ -1,21 +1,61 @@
 // priority: 501
 ServerEvents.recipes(event => {
-    event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 180)
-        .requireItem('kubejs:source_focus_crystal', 'input_crystal')
+    event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 600)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
             const block = ctx.getBlock()
+            /**@type {Internal.ServerLevel} */
+            const level = block.getLevel()
+            const pos = block.getPos()
+            const depthBar = Math.round(data.getFloat('depth_bar'))
+            data.putFloat('depth_bar', depthBar + 0.05)
+
+            return ctx.success()
+        })
+
+        .produceItem('kubejs:flame_fragment', 'output_flame')
+        .requireSourcePerTick(16)
+        .requireSource(500)
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            const data = machine.getData()
+            const depthBar = Math.round(data.getFloat('depth_bar'))
+            if (depthBar > 20) return ctx.error('')
+            let crystal = machine.getItemStored('input_crystal')
+            if (!crystal || crystal.isEmpty()) {
+                return ctx.success()
+            }
+            return ctx.error('')
+        })
+        .resetOnError()
+
+    event.recipes.custommachinery.custom_machine('kubejs:mantle_energy_extractor', 600)
+        .produceItem('kubejs:flame_crystal', 'output_flame')
+        .requireSourcePerTick(128)
+        .requireSource(1000)
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let crystal = machine.getItemStored('input_crystal')
+            if (crystal && !crystal.isEmpty()) {
+                return ctx.success()
+            }
+            return ctx.error('')
+        })
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            const data = machine.getData()
+            const block = ctx.getBlock()
+            /**@type {Internal.ServerLevel} */
             const level = block.getLevel()
             const pos = block.getPos()
             const depthBar = Math.round(data.getFloat('depth_bar'))
             const biomeTemp = level.getBiome(pos).get().getBaseTemperature()
             if (biomeTemp <= -0.5) return ctx.error('')
-            
+
 
             return ctx.success()
         })
-        
         .resetOnError()
 })
 
@@ -25,7 +65,7 @@ ServerEvents.recipes(event => {
  * @param {number} baseTemp 
  * @returns {String}
  */
-function ChangeBiome2LowerTemperature(baseTemp, downFall) {
+function changeBiome2LowerTemperature(baseTemp, downFall) {
     if (baseTemp >= 2) {
         return 'minecraft:stony_peaks' // 1.0, 0.3
     }

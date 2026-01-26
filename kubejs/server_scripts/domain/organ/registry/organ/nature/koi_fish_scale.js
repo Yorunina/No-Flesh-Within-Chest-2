@@ -57,7 +57,7 @@ RegistryOrganStrategy(
  */
 function getKoiAirDropSpawnLocation(level, player) {
     const luck = Math.max(player.getLuck(), 0)
-    const distance = Math.max(2000 - luck * 50, 100) + Math.random() * 100
+    const distance = Math.max(1500 - luck * 50, 100) + Math.random() * 100
     let deltaDim = Math.floor(Math.random() * 4) + 1
     let deltaX = Math.pow(-1, Math.floor(deltaDim / 2)) * Math.random() * distance
     let deltaZ = Math.pow(-1, Math.floor((deltaDim + 1) / 2)) * Math.sqrt(Math.pow(distance, 2) - Math.pow(deltaX, 2))

@@ -560,7 +560,7 @@
     "tooltips.crittersandcompanions.dragonfly_wing.default.1": "划过池塘之上",
     "item.kubejs.koi_fish_scale": "锦鲤鳞片",
     "tooltips.kubejs.koi_fish_scale.default.1": "它从远方为你带来好运",
-    "tooltips.kubejs.koi_fish_scale.alt.1": "    §6★§r  %s该器官时，会在§6一定距离外§r生成带有战利品的空投气球，越高的§a幸运§r，生成的热气球距离越近",
+    "tooltips.kubejs.koi_fish_scale.alt.1": "    §6★§r  %s该器官时，会定位§6一定距离外§r带有战利品的空投气球，越高的§a幸运§r，定位的热气球距离越近",
     "tooltips.kubejs.koi_fish_scale.alt.2": "    §6★§r  空投气球会从§6可能的战利品表§r中随机选择一种，携带其包含物品生成",
     "tooltips.kubejs.koi_fish_scale.alt.3": "    §6★§r  其可选择的战利品表数量以及可能的战利品表种类均受其他器官效果影响",
     "tooltips.kubejs.koi_fish_scale.alt.4": "    §6★§r  气球可以通过剪刀右键直接破坏",
