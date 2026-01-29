@@ -78,7 +78,6 @@ dungeons_arise:illager_fort
 illagerinvasion:illager_fort
 dungeons_arise:illager_galley
 dungeons_arise:illager_windmill
-createmechanicalcompanion:illager_workshop
 illagerinvasion:illusioner_tower
 irons_spellbooks:impaled_icebreaker
 infinity:indevhouse

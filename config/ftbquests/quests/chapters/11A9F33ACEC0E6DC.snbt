@@ -831,6 +831,151 @@
 			x: 7.5d
 			y: -7.5d
 		}
+		{
+			dependencies: ["43DD1C0BA90A1ACB"]
+			description: [
+				"&6很奇怪。&r"
+				""
+				"这些虫子平常看不见，摸不着——却又能在某些条件下，转换成常规物质的存在。"
+				""
+				"如果我们能够掌握它们的空间利用方式，或许能够开发出一些能够极大优化生存体验的工具。"
+				""
+				"&6请您稍等，我需要进行信息的分析。&r"
+			]
+			id: "4DB48FF831D57F33"
+			rewards: [{
+				id: "1BF7167215059C9E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这些虫子是怎么居住在里面的？"
+			tasks: [{
+				elapsedTime: 60L
+				icon: "supplementaries:hourglass"
+				id: "44C6F5D93973EBDE"
+				title: "静候佳音"
+				type: "questsadditions:time"
+			}]
+			title: "奇怪的空间利用"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DB48FF831D57F33"]
+			description: [
+				"我有一个计划，但是这个计划听起来&6很荒唐&r. . ."
+				""
+				"您需要大量食用牛角面包。偶尔您吃到恰到好处的时候，其面包的外皮会整洁的从面包上脱落. . ."
+				""
+				"听起来似乎很荒唐. . .对. . .确实很荒唐. . ."
+				""
+				"&6总之您需要做一大堆的牛角面包，然后逐个吃掉它们。&r"
+			]
+			icon: "bakery:croissant"
+			id: "54BBCB6C78712B0D"
+			rewards: [{
+				id: "7787A1AD0466EAC0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "吃剩一半就行"
+			tasks: [{
+				count: 1L
+				icon: "bakery:croissant"
+				id: "3F050129CA27C0BA"
+				title: "食用牛角面包"
+				type: "maa:eat_item"
+			}]
+			title: "牛角的一半"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["54BBCB6C78712B0D"]
+			description: [
+				"&7很难解释这个东西是怎么产生的，但其原理有点类似于美味虫会隐藏在异次元一样. . .&r"
+				""
+				"丰饶之角的内部可以类似收纳袋一样，容纳大量的食物。"
+				""
+				"鼠标持食物对着袋子右键，即可将食物置于丰饶之角内。"
+				""
+				"在饥饿时，您可以直接手持丰饶之角右键，食用丰饶之角。&6其会自动选择性价比最高的食物进行食用&r，进而有效节约食物，避免浪费。"
+				""
+				"&7这真的不是什么节约粮食主题的儿童玩具吗. . .&r"
+			]
+			id: "1B46B8D5CAE53C58"
+			rewards: [{
+				id: "5F763B116034121D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "对. . .就是这个"
+			tasks: [{
+				id: "4D849405340E3580"
+				item: {
+					Count: 1
+					id: "cornucopia:cornucopia"
+					tag: {
+						RepairCost: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "荒唐的号角"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["54BBCB6C78712B0D"]
+			description: [
+				"&7或许丰饶之角啥的有些太耐人寻味了，使用午餐篮其实也差不太多。&r"
+				""
+				"您可以通过将食物像存放在收纳袋一样，存放在午餐篮中。在您需要食用时，长按午餐篮可以切换食物，左键打开野餐篮即可通过野餐篮直接食用选中的食物。"
+				""
+				"当然，或许它没有那个耐人寻味的角更智能，但它至少&6不那么离奇&r。"
+			]
+			id: "0D30AE8C07B44E8A"
+			rewards: [{
+				id: "19E8BDB3589B9AE6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "“科学”指的是不那么荒唐"
+			tasks: [{
+				id: "79820986A11DCDF9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Open: 0b
+							SelectedSlot: 0b
+							Size: 6
+						}
+					}
+					id: "supplementaries:lunch_basket"
+				}
+				type: "item"
+			}]
+			title: "更科学的食物管理"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4DB48FF831D57F33"
+				"1C316C6505326313"
+			]
+			id: "54B50CDDC84E543B"
+			subtitle: "todo，还没做完"
+			tasks: [{
+				id: "546C550669204CD7"
+				title: "异次元扩展术"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
 	]
 	title: "秘闻：罐装美味"
 }

@@ -10,4 +10,6 @@ ItemEvents.tooltip(tooltip => {
     }
     MarkNoUseItem('beyonddimensions:net_creater')
     MarkNoUseItem('kaleidoscope_cookery:transmutation_lunch_bag')
+    MarkNoUseItem('sophisticatedbackpacks:inception_upgrade')
+    MarkNoUseItem('sophisticatedbackpacks:stack_upgrade_omega_tier')
 })

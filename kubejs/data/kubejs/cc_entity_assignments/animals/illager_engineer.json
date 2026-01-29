@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:cc_types/animals/illager_engineer.json",
-  "entities": [
-    "createmechanicalcompanion:illager_engineer"
-  ]
-}

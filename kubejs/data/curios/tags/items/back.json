@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create:copper_backtank",
+    "create:netherite_backtank",
+    "create_jetpack:jetpack",
+    "create_jetpack:netherite_jetpack"
+  ]
+}

@@ -420,6 +420,7 @@
 				""
 				"正因如此，一部分无法利用的地幔能，会按照游戏逻辑，溢出并转变为一种称作为&6烈焰裂片&r的物品，其可以提供大量热值，能够用于各种各样的特异加工中。"
 			]
+			hide_dependency_lines: true
 			id: "2F229123DEDB0987"
 			rewards: [{
 				id: "6C89772B5AE94DE5"
@@ -987,7 +988,7 @@
 				""
 				"革命器官可以对&c熔火类器官&r进行定向强化，并且本身与机械类器官相性极佳，是不可多得的上等物件。"
 				""
-				"您可以通过制作我定制的&6革命增援&r，定向的让&6锦鲤鳞片&r定位包含革命器官战利品池的空投。"
+				"您可以通过制作&6革命增援&r，定向的让&6锦鲤鳞片&r定位包含革命器官战利品池的空投。"
 			]
 			id: "45C0687630120F65"
 			rewards: [{
@@ -1199,6 +1200,7 @@
 				"我们至少要完成这样的平衡工作100次，才有可能能解除掉目前所面临的&b永恒寒冬&r问题。"
 			]
 			id: "4A6163EABA119B99"
+			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
 				icon: "kubejs:flame_fragment"
 				id: "53444D56D0829A49"
@@ -1210,7 +1212,8 @@
 			shape: "gear"
 			subtitle: "平衡地幔能之法"
 			tasks: [{
-				count: 64L
+				consume_items: true
+				count: 256L
 				id: "58755CD452227639"
 				item: "minecraft:coal_block"
 				type: "item"
@@ -1229,6 +1232,7 @@
 			]
 			icon: "minecraft:lava_bucket"
 			id: "470BBE519FAFAC9B"
+			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
 				icon: "kubejs:flame_fragment"
 				id: "1404A25D3EEDDACA"
@@ -1258,6 +1262,7 @@
 				"我们拯救这个世界还有意义吗？或者说，保持这样的冬日不也可以吗？"
 			]
 			id: "0030F907B76DF60A"
+			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
 				icon: "kubejs:flame_fragment"
 				id: "37CA58E636244BE9"
@@ -1269,9 +1274,10 @@
 			shape: "gear"
 			subtitle: "平衡地幔能之法"
 			tasks: [{
+				consume_items: true
 				count: 256L
 				id: "1BA844D34F285354"
-				item: { Count: 256, id: "create:blaze_cake" }
+				item: "create:blaze_cake"
 				type: "item"
 			}]
 			title: "&6地幔能平衡：烈焰蛋糕&r"
@@ -1289,6 +1295,7 @@
 				"&6我为什么会抱有那样的想法. . .向您道歉. . .我们应当全力以赴，来维护我们所珍惜的这个世界！&r"
 			]
 			id: "422C30F050C2356E"
+			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
 				icon: "kubejs:flame_fragment"
 				id: "50B2493AD545A91F"
@@ -1300,6 +1307,7 @@
 			shape: "gear"
 			subtitle: "平衡地幔能之法"
 			tasks: [{
+				consume_items: true
 				count: 8L
 				id: "751344437AF6A829"
 				item: "cataclysm:lava_power_cell"
@@ -1343,6 +1351,17 @@
 		}
 		{
 			dependencies: ["6EAC98701F6297E7"]
+			description: [
+				"&6温暖. . .&r"
+				""
+				"阳光再一次回到了这片土地之上——不久之后，永久凛冬的痕迹会逐渐消散吧。"
+				""
+				"我考虑了一下，&b决定永久封存地幔能提取计划&r。其主要原因为，我们无法保证后来者能够遵守我们的约定。"
+				""
+				"为了世界能够以更美好的姿态进行下去，希望您能够谅解。"
+				""
+				"&6后来者会记住您的丰功伟业。&r"
+			]
 			id: "636CDD764ADFA00D"
 			invisible: true
 			rewards: [{
@@ -1350,6 +1369,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "[通讯恢复]"
 			tasks: [{
 				icon: "tgears:bar_of_blazing_chocolate"
 				id: "32A772C5B1E93BB2"
@@ -1358,7 +1378,7 @@
 				title: "地幔能暂时稳定"
 				type: "maa:astages"
 			}]
-			title: "照耀温暖的大地"
+			title: "&6当阳光洒向大地&r"
 			x: 4.0d
 			y: -4.0d
 		}
@@ -1448,6 +1468,33 @@
 			}]
 			x: 6.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["00EC549EA51DF850"]
+			id: "76630369238A7D72"
+			subtitle: "todo 没做完"
+			tasks: [{
+				id: "2F4D92DD98511C0F"
+				title: "寻找最热的极点"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"3C0B5BB105DAC17C"
+				"133A28D884F01479"
+			]
+			id: "5BFA9E175D1944CF"
+			subtitle: "todo 没做完"
+			tasks: [{
+				id: "700A3083AAAF8B82"
+				title: "局部复制计划"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: 3.5d
 		}
 	]
 	title: "秘闻：地幔燃料"

@@ -20,7 +20,6 @@ function SetEternalWinterState(server, state) {
     }
 }
 
-
 /**
  * 
  * @param {Internal.MinecraftServer} server 
@@ -28,17 +27,29 @@ function SetEternalWinterState(server, state) {
 function HadUnderEternalWinter(server) {
     return server.persistentData.getInt('isEternalWinter') > 0
 }
-    
+
 /**
  * @param {Internal.MinecraftServer} server 
  * @param {number} num 
  */
 function IncreaseEternalWinterCounter(server, num) {
     const persistentData = server.persistentData
-    if (HadUnderEternalWinter(server)) return
     let counter = persistentData.getInt('eternal_winter_counter') + num
     persistentData.putInt('eternal_winter_counter', counter)
-    if (counter >= 100) {
+    if (counter >= 100 && server.persistentData.getInt('isEternalWinter') == 0) {
         SetEternalWinterState(server, 1)
+    }
+}
+
+/**
+ * @param {Internal.MinecraftServer} server 
+ * @param {number} num 
+ */
+function DecreaseEternalWinterCounter(server, num) {
+    const persistentData = server.persistentData
+    let counter = persistentData.getInt('eternal_winter_counter') - num
+    persistentData.putInt('eternal_winter_counter', counter)
+    if (counter <= 0) {
+        SetEternalWinterState(server, 2)
     }
 }

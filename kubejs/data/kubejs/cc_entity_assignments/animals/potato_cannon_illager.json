@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:cc_types/animals/potato_cannon_illager.json",
-  "entities": [
-    "createmechanicalcompanion:potato_cannon_illager"
-  ]
-}

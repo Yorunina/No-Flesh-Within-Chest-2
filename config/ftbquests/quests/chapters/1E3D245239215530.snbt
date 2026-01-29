@@ -2039,7 +2039,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "如果星是按照星轨行进的，那星轨是依照什么产生的"
+			subtitle: "倘若星不再依照星轨行进，那我又该将航线驶向何方"
 			tasks: [{
 				icon: "kubejs:world_computer"
 				id: "03478360DF22DDBE"

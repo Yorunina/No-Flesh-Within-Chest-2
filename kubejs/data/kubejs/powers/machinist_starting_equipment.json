@@ -5,16 +5,6 @@
             "item": "create:wrench",
             "amount": 1,
             "slot": 1
-        },
-        {
-            "item": "createmechanicalcompanion:mechanical_wolf_link",
-            "amount": 1,
-            "slot": 2
-        },
-        {
-            "item": "createmechanicalcompanion:mechanical_resonance",
-            "amount": 1,
-            "slot": 3
         }
     ]
 }
