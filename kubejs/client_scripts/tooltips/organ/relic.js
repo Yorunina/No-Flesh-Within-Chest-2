@@ -13,7 +13,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:frenzy_blast_furance')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:immortal_volcanic_rock')
     .addDefault(Text.translatable('tooltips.kubejs.immortal_volcanic_rock.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.immortal_volcanic_rock.alt.1', Text.gold('1')))
+    .addAlt(Text.translatable('tooltips.kubejs.immortal_volcanic_rock.alt.1', Text.gold('100'), Text.gold('1')))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:ender_guardian_spine')

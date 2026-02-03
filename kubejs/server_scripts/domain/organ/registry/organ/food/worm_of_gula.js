@@ -29,6 +29,7 @@ function WormOfGulaEntityTick(customData, event, organItem, organIndex, slotType
 
     if (!inventory.hasAnyMatching((ctx) => !ctx.is('kubejs:gula_worm_nest') && !ctx.is('kubejs:worm_of_gula'))) {
         chestCavity.setInventoryType('kubejs:cc_inventory_types/gula')
+        level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
         inventory = chestCavity.inventory
         inventory.clear()
         for (let i = 0; i < inventory.getContainerSize(); i++) {

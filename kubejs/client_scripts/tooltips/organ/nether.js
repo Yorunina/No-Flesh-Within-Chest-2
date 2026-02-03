@@ -18,3 +18,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:blaze_spine')
     .addCtrl(RevolutionFlameType)
     .addCtrl(Text.translatable('tooltips.kubejs.blaze_spine.ctrl.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:explosion_cavity')
+    .addDefault(Text.translatable('tooltips.kubejs.explosion_cavity.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.explosion_cavity.alt.1', Text.gold('10')))
+)

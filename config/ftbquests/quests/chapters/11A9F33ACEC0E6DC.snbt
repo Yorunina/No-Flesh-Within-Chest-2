@@ -402,7 +402,6 @@
 				""
 				"&7**心. . .请让我们品尝你的心脏. . .**&r"
 			]
-			hide_text_until_complete: true
 			icon: {
 				Count: 1
 				id: "chestcavity:heart"
@@ -434,7 +433,6 @@
 				"&r"
 				"&7**胃. . .请让我们品尝你的胃. . .**&r"
 			]
-			hide_text_until_complete: true
 			icon: {
 				Count: 1
 				id: "chestcavity:stomach"
@@ -468,7 +466,6 @@
 				"&r"
 				"&7**骨. . .请让我们品尝你的骨骼. . .**&r"
 			]
-			hide_until_deps_visible: true
 			icon: {
 				Count: 1
 				id: "chestcavity:rib"
@@ -523,7 +520,6 @@
 				""
 				"&7**肝 . .请让我们品尝你的肝脏. . .**&r"
 			]
-			hide_text_until_complete: true
 			icon: {
 				Count: 1
 				id: "chestcavity:liver"
@@ -555,7 +551,6 @@
 				""
 				"&7**肾. . .请让我们品尝你的肾脏. . .**&r"
 			]
-			hide_text_until_complete: true
 			icon: {
 				Count: 1
 				id: "chestcavity:kidney"
@@ -736,9 +731,9 @@
 				"{@pagebreak}"
 				"我和您的通讯似乎被&5劫持&r了，不过无需担心，只需要新开一个分页，就不会对我们产生任何影响。"
 				""
-				"经分析，这应该是与之前的数据来源相同。其暗示了一个&c特殊的器官&r。如若能够完成其要求，或许能够得到意料之外的收获。"
+				"经分析，这应该是与之前的数据来源相同。其暗示了一个&c特殊的器官&r，并且指示您装备该器官且使其&6完全寄生&r您。"
 				""
-				"但我并不知晓这会引领向什么，也不知道对方&6为恶为善&r，日志中也没有相关信息的记载，但我会尽可能帮助您以避免类似进度锁定之类的事情发生。"
+				"我并不知晓这会引领向什么，也不知道对方&6为恶为善&r，日志中也没有相关信息的记载，但我会尽可能帮助您以避免类似进度锁定之类的事情发生。"
 				""
 				"&6请您多加小心。&r"
 			]

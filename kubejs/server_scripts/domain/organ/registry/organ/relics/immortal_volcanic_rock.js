@@ -12,10 +12,13 @@ RegistryOrgan('kubejs:immortal_volcanic_rock')
 */
 function ImmortalVolcanicRockEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    entity.setRemainingFireTicks(entity.getRemainingFireTicks() + 20)
+    let fireTick = entity.getRemainingFireTicks()
+    if (fireTick < 2000) {
+        entity.setRemainingFireTicks(fireTick + 20)
+    }
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:immortal_volcanic_rock')
-       .addOnlyStrategy('entity_tick', ImmortalVolcanicRockEntityTick)
+        .addOnlyStrategy('entity_tick', ImmortalVolcanicRockEntityTick)
 )

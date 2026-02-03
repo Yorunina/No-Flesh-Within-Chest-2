@@ -12,11 +12,8 @@ RegistryOrgan('kubejs:lava_life_cycle_system')
  */
 function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    let curAbsorptionAmount = entity.getAbsorptionAmount()
-    let maxAbsorptionAmount = (slotType == MachinaryLubricant) ? 40 : 10
-    if (curAbsorptionAmount >= maxAbsorptionAmount) {
-        return
-    }
+    let fireTick = entity.getRemainingFireTicks()
+    let mult = (slotType == MachinaryLubricant) ? 4 : 1
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()
@@ -33,19 +30,24 @@ function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex,
             if (fluidAmount <= 0) continue
             switch (fluidName) {
                 case 'minecraft:lava':
-                    if (curAbsorptionAmount + 1 > maxAbsorptionAmount) break
+                    if (fireTick + 40 * mult > 1200 * mult) break
                     tankNbt.putInt('Amount', fluidAmount - 1)
-                    curAbsorptionAmount = curAbsorptionAmount + 1
+                    fireTick = fireTick + 40 * mult
                     break
                 case 'tconstruct:blazing_blood':
-                    if (curAbsorptionAmount + 2 > maxAbsorptionAmount) break
+                    if (fireTick + 100 * mult > 3600 * mult) break
                     tankNbt.putInt('Amount', fluidAmount - 1)
-                    curAbsorptionAmount = curAbsorptionAmount + 2
+                    fireTick = fireTick + 100 * mult
+                    break
+                case 'createdieselgenerators:gasoline':
+                    if (fireTick + 20 * mult > 12000 * mult) break
+                    tankNbt.putInt('Amount', fluidAmount - 1)
+                    fireTick = fireTick + 20 * mult
                     break
             }
         }
     }
-    entity.setAbsorptionAmount(curAbsorptionAmount)
+    entity.setRemainingFireTicks(fireTick)
 }
 
 
