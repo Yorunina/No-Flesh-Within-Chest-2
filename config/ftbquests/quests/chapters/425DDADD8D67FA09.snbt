@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "425DDADD8D67FA09"
 	group: "63198C281F0E9667"
+	hide_quest_until_deps_complete: true
 	icon: "create:andesite_alloy"
 	id: "425DDADD8D67FA09"
 	order_index: 2
@@ -166,8 +167,9 @@
 				""
 				"&6因此，在本认知中，我会以一个最为常见的“要做什么”的目标，作为我们的线索。&r"
 				""
-				"但在此之前，&6请您先制作动力冲压机&r，来提高您基本的机械认知水平。"
+				"但在此之前，&6请您先制作动力冲压机&r，其所需的安山机壳，只需&6手持安山合金，右键单击去皮的任意木材&r，即可制成。"
 			]
+			icon: "create:mechanical_press"
 			id: "4559E83BDFE139FF"
 			rewards: [{
 				id: "6C741AB4A8DD3576"
@@ -175,11 +177,18 @@
 				type: "item"
 			}]
 			subtitle: "将物质压片"
-			tasks: [{
-				id: "475E8C19255B3E50"
-				item: "create:mechanical_press"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "10F8846805018192"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					id: "6DAE0CABBB873708"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+			]
 			title: "到第一个动力机械"
 			x: 3.0d
 			y: -1.5d
@@ -235,6 +244,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "一个最简单的目标"
 			tasks: [{
 				id: "3E9087B42BB66A9A"
@@ -244,6 +254,192 @@
 			title: "目标，成为林业专家"
 			x: 4.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["6B7A5AE2D8EFD037"]
+			description: [
+				"在林场的建造中，&6收割树木是极为重要的一环。"
+				"&r"
+				"在动力机械中，存在名为&6动力锯&r的方块，在提供动力时，可以收割其面对方向的树木。"
+				""
+				"在具体使用时，动力锯需要对准树木的最底层方块，进而可以&6连锁破坏整棵树木&r。您可以使用思索来查看具体使用该动力机械的案例。"
+			]
+			hide_until_deps_complete: false
+			id: "35D80EB805BF79B0"
+			rewards: [{
+				id: "4FC51C40E4D1E944"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用动力锯收割树木"
+			tasks: [{
+				id: "56747DCC4F7124CA"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			title: "事项 1：如何收割木材"
+			x: 4.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"1EE5D53FCD3BCA32"
+				"7AD07D5DBC62292C"
+			]
+			description: [
+				"在完成树木的收割后，&6您需要考虑如何让林场中空出的部分重新种植上树木。&r"
+				""
+				"&6机械手&r可以模仿玩家的右键或者左键，使其&6手持树苗右键&r即可满足补种的基本要求。"
+				""
+				"在整个林场建设中，我们可能需要将砍伐出来的树苗用于下一次的种植，因此我们需要&6做一些过滤&r，以避免机械手将其他我们不希望的方块放置出来。"
+			]
+			hide_until_deps_complete: false
+			id: "3F5BB167BF4FF06B"
+			rewards: [{
+				id: "0DE170F631B5AF44"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用机械手模拟"
+			tasks: [{
+				id: "4BFF9BE72A74F4BC"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "事项 2：如何补种树木"
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["788A9985BFF98038"]
+			description: [
+				"在讨论完如何收割、种植后，&6我们需要考虑如何为这些机械提供动力。&r"
+				""
+				"动力机械有着一个极其特殊的性质——一些可以在动态结构中发挥作用的动力机械，&6只要其所属的动态结构因动力而运动，动力机械自身便可以“借用”这部分动力运作&r。"
+				""
+				"因此，我们的目标从如何选择一个动力源，变成了&6应该采用什么样的方式来让我们的动力机械能够位于一个动态结构上并且发挥作用&r。"
+				""
+				"这里的解有很多，一个最常见省力的方式是，将所有的动力机械安装在&6动力轴承&r上，组装成一个旋转的水平柱。这意味着柱子扫过的圆形区域就是林场的种植区域。"
+				""
+				"同理，您也可以选择动力矿车、动力活塞等各种各样的方式来驱动您的动态结构，这里选择旋转机构主要还是从最简最通用的方案出发，以统一后续的口径。"
+			]
+			hide_until_deps_complete: false
+			id: "39DDD2962FC52646"
+			rewards: [{
+				id: "3EDC55E11A4F4267"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "动态结构动力提供"
+			tasks: [{
+				id: "725E335B8F0D4FF1"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}]
+			title: "事项 3：如何提供动力"
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6B7A5AE2D8EFD037"]
+			hide_until_deps_complete: false
+			id: "788A9985BFF98038"
+			tasks: [{
+				id: "42301B4D9066A3A5"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["560A05CD905A3EBA"]
+			hide_until_deps_complete: false
+			id: "7AD07D5DBC62292C"
+			tasks: [{
+				id: "074D1B995591F509"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["69EF81C377807656"]
+			hide_until_deps_complete: false
+			icon: "create:mechanical_mixer"
+			id: "560A05CD905A3EBA"
+			rewards: [{
+				id: "097C94C10F8565B0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "361E4EE09EED0669"
+					item: "create:basin"
+					type: "item"
+				}
+				{
+					id: "14D9ABA180A1BB08"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6B7A5AE2D8EFD037"]
+			hide_until_deps_complete: false
+			icon: "create:blaze_burner"
+			id: "69EF81C377807656"
+			tasks: [
+				{
+					id: "749AFA72D122217D"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					id: "38B3A647912E2A0C"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6B7A5AE2D8EFD037"]
+			hide_until_deps_complete: false
+			icon: "create:polished_rose_quartz"
+			id: "1EE5D53FCD3BCA32"
+			tasks: [
+				{
+					id: "233D525D2B69486A"
+					item: "create:rose_quartz"
+					type: "item"
+				}
+				{
+					id: "0B3D8F3A247A3715"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:sandpaper"
+						}
+					}
+					title: "任意砂纸"
+					type: "item"
+				}
+				{
+					id: "140C16821976C1C1"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -9.5d
 		}
 	]
 	title: "认知：机械"
