@@ -8,6 +8,7 @@ StartupEvents.registry('block', event => {
             state.setValue(BlockProperties.HORIZONTAL_FACING, state.horizontalDirection)
             return state
         })
+        .resistance
 
     event.create('kubejs:buffer_circuit', 'basic')
         .stoneSoundType()

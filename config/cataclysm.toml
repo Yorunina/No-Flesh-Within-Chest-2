@@ -163,7 +163,7 @@
 	#Range: 0.0 ~ 1000000.0
 	EnderGuardianNatureHealing = 10.0
 	#Ender guardian's block breaking ignore the MobGriefing
-	EnderguardianBlockBreaking = true
+	EnderguardianBlockBreaking = false
 	#Guardian's Immune to Long distance attack range.
 	#Range: 1.0 ~ 1000000.0
 	"Guardian's prevent attacks from far away Range" = 12.0
@@ -229,7 +229,7 @@
 	#Range: 1.0 ~ 1000000.0
 	"Monstrosity's prevent attacks from far away Range" = 18.0
 	#Monstrosity's block breaking ignore the MobGriefing
-	monstrosityBlockBreaking = true
+	monstrosityBlockBreaking = false
 	#Lava Bomb of Monstrosity's Duration
 	#Range: 1 ~ 10000
 	LavaBombDuration = 350
@@ -273,7 +273,7 @@
 	#Range: 0 ~ 100
 	IgnisDamageTime = 15
 	#Ignis's cracked block breaking ignore the MobGriefing
-	IgnisBlockBreaking = true
+	IgnisBlockBreaking = false
 
 [revenant]
 	#Revenant's Health Multiplier
@@ -357,7 +357,7 @@
 	#Range: 0 ~ 100
 	"Leviathan DamageTime" = 15
 	#Leviathan's block breaking ignore the MobGriefing
-	LeviathanBlockBreaking = true
+	LeviathanBlockBreaking = false
 	#Leviathan Immune Out of Water
 	LeviathanImmuneOutofWater = true
 
@@ -413,7 +413,7 @@
 	#Range: 0 ~ 100
 	"Ancient Remnant DamageTime" = 12
 	#Ancient Remnant's block breaking ignore the MobGriefing
-	AncientRemnantBlockBreaking = true
+	AncientRemnantBlockBreaking = false
 	#Remnant's Charge Hp Damage
 	#Range: 0.0 ~ 1.0
 	"Remnant's Charge Hp Damage" = 0.1
@@ -502,7 +502,7 @@
 	#Range: 0.0 ~ 1000000.0
 	"Maledictus's Phantom Arrow Damage" = 5.0
 	#Maledictus's cracked block breaking ignore the MobGriefing
-	MaledictusBlockBreaking = true
+	MaledictusBlockBreaking = false
 
 [spawning]
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn

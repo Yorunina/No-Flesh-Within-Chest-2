@@ -9,7 +9,7 @@ function RemoveBundleOneStack(stack) {
     let nbt = stack.getNbt()
     if (nbt == null || !nbt.contains('Items')) return Optional.empty()
 
-    let items = nbt.getList('Items', $Tag.TAG_COMPOUND)
+    let items = nbt.getList('Items', TAG_COMPOUND)
     if (items.isEmpty()) return Optional.empty()
 
     let pStack = $ItemStack.of(items.getCompound(0))
@@ -30,7 +30,7 @@ function RemoveBundleOneItem(stack, index) {
     let nbt = stack.getNbt()
     if (nbt == null || !nbt.contains('Items')) return
 
-    let items = nbt.getList('Items', $Tag.TAG_COMPOUND)
+    let items = nbt.getList('Items', TAG_COMPOUND)
     if (index < 0 || index >= items.size()) return
 
     let pStack = $ItemStack.of(items.getCompound(index))
@@ -71,7 +71,7 @@ function PlayerBundleInsertSound(entity) {
 function GetBundleContents(stack) {
     let nbt = stack.getNbt()
     if (nbt == null) return []
-    let listTag = nbt.getList('Items', $Tag.TAG_COMPOUND)
+    let listTag = nbt.getList('Items', TAG_COMPOUND)
     return listTag.stream().map(
         (pTag) => $ItemStack.of(pTag)
     ).toList()
@@ -127,7 +127,7 @@ function AddItemIntoBundle(bundleStack, insertedStack, maxWeight, weightFunc) {
 
     if (insertCount == 0) return 0
 
-    let items = nbt.getList('Items', $Tag.TAG_COMPOUND)
+    let items = nbt.getList('Items', TAG_COMPOUND)
     let remainder = insertedStack.copyWithCount(insertCount)
     let matchTagOpt = items.stream()
         .filter(tag => $ItemStack.isSameItemSameTags($ItemStack.of(tag), remainder))

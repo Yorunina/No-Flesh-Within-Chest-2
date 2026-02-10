@@ -19,7 +19,6 @@ function EternalAltarGatewayReward(machine, levelIndicator, chaosIndicator, type
     rewardList.push(new GatewayFunctionReward((ctx) => {
         let targetLevel = Clamp(levelIndicator + levelModifier, 0, 60)
         data.putFloat('level_indicator', targetLevel)
-        eternalAltarSubmitLevelQuest(ctx.summoner(), targetLevel)
     }))
     // 应用auxiliaryItem
     if (auxiliaryItem && !auxiliaryItem.isEmpty()) {
@@ -31,11 +30,11 @@ function EternalAltarGatewayReward(machine, levelIndicator, chaosIndicator, type
 
             let targetType = Clamp(typeIndicator + typeModifier, 0, 60)
             data.put('type_indicator', targetType)
-            eternalAltarSubmitTypeQuest(ctx.summoner(), targetType)
         }))
     } else {
         data.put('chaos_indicator', Clamp(chaosIndicator - levelModifier - 1, 0, 60))
     }
+    eternalAltarSubmitQuest(ctx.summoner(), levelIndicator, chaosIndicator, typeIndicator)
 
     // 应用extractantItem策略
     if (!extractantItem || extractantItem.isEmpty()) return rewardList
@@ -49,35 +48,34 @@ function EternalAltarGatewayReward(machine, levelIndicator, chaosIndicator, type
     return rewardList.concat(customData.rewardList)
 }
 
+
+
 /**
  * 
  * @param {Internal.ServerPlayer} summoner 
  * @param {number} levelIndicator 
+ * @param {number} chaosIndicator 
+ * @param {number} typeIndicator 
  */
-function eternalAltarSubmitLevelQuest(summoner, levelIndicator) {
+function eternalAltarSubmitTypeQuest(summoner, levelIndicator, chaosIndicator, typeIndicator) {
     let taskIdList = ['eternal_altar_level_1']
     if (levelIndicator >= 5) taskIdList.push('eternal_altar_level_2')
     if (levelIndicator >= 10) taskIdList.push('eternal_altar_level_3')
     if (levelIndicator >= 30) taskIdList.push('eternal_altar_level_4')
     if (levelIndicator >= 50) taskIdList.push('eternal_altar_level_5')
-    MAAUtils.onKubeTasksFinish(taskIdList, summoner, (task, pPlayer, pTeamData) => {
-        pTeamData.addProgress(task, 1)
-    })
-}
 
-/**
- * 
- * @param {Internal.ServerPlayer} summoner 
- * @param {number} typeIndicator 
- */
-function eternalAltarSubmitTypeQuest(summoner, typeIndicator) {
-    let taskIdList = []
     if (typeIndicator >= 0 && typeIndicator < 10) taskIdList.push('eternal_altar_type_1')
     else if (typeIndicator >= 10 && typeIndicator < 20) taskIdList.push('eternal_altar_type_2')
     else if (typeIndicator >= 20 && typeIndicator < 30) taskIdList.push('eternal_altar_type_3')
     else if (typeIndicator >= 30 && typeIndicator < 40) taskIdList.push('eternal_altar_type_4')
     else if (typeIndicator >= 40 && typeIndicator < 50) taskIdList.push('eternal_altar_type_5')
     else if (typeIndicator >= 50 && typeIndicator < 60) taskIdList.push('eternal_altar_type_6')
+
+    if (typeIndicator == 8) taskIdList.push('eternal_altar_type_warden')
+    else if (typeIndicator == 24) taskIdList.push('eternal_altar_type_ignis')
+    else if (typeIndicator == 42) taskIdList.push('eternal_altar_type_harbinger')
+    else if (typeIndicator == 51) taskIdList.push('eternal_altar_type_maledictus')
+
     MAAUtils.onKubeTasksFinish(taskIdList, summoner, (task, pPlayer, pTeamData) => {
         pTeamData.addProgress(task, 1)
     })
@@ -109,5 +107,11 @@ RegistryGatewayExtractantStrategy('kubejs:gateways_extractant_material_9', Extra
  * @param {Internal.ItemStack} auxiliaryItem 
  */
 function ExtractantMaterialStrategy(customData, machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem) {
-    customData.rewardList.push(new GatewayStackListReward([]))
+    let rewardList = []
+    // todo 随机方法
+    // ['minecraft:iron_ore', 'minecraft:deepslate_iron_ore', 'minecraft:copper_ore', 'minecraft:deepslate_copper_ore', 'minecraft:gold_ore', 'minecraft:deepslate_gold_ore', , 'create:zinc_ore', 'create:deepslate_zinc_ore']
+    if (levelIndicator > 20) rewardList.push(Item.of('minecraft:ancient_debris'))
+    customData.rewardList.push(new GatewayStackListReward([
+
+    ]))
 }

@@ -19,7 +19,7 @@ function GetMachineMenuItems(machine) {
     let menu = machine.getItemStored('menu_input')
     if (menu.id != 'kubejs:menu') return []
     if (!menu.hasNBT() || !menu.nbt.contains('inventory')) return []
-    let menuItemNbtList = menu.nbt.getList('inventory', $Tag.TAG_COMPOUND)
+    let menuItemNbtList = menu.nbt.getList('inventory', TAG_COMPOUND)
     if (!menuItemNbtList) return []
     let outputList = []
     menuItemNbtList.forEach(itemNbt => {

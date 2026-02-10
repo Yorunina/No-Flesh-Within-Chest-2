@@ -871,12 +871,14 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["29EFFFB96DA486C5"]
 			id: "20AA08D1E1347535"
 			rewards: [{
 				id: "1D94BAFAE0390A9E"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "假若奇迹真的存在"
 			tasks: [{
 				id: "0FA41FCC8ADF01F2"
 				item: {
@@ -888,16 +890,16 @@
 			}]
 			title: "永无变化的奇迹"
 			x: 10.0d
-			y: -9.5d
+			y: -11.0d
 		}
 		{
 			dependencies: ["042A150DEC7C9AC3"]
 			description: [
 				"我的猜测如下："
 				""
-				"1. 对方位于一个&6极其封闭或者灾难性的环境中&r，需要向外界传递消息才能谋求到稳定的生存环境。"
+				"1. 对方位于一个&6极其封闭或者灾难性的环境中&r，需要向外界传递消息才能谋求到稳定的生存环境。而他们向外界传递消息的方法被称之为&6“上浮”&r。"
 				""
-				"2. 其对话的目标很可能是我，或者说您。"
+				"2. 其对话的目标很可能是我，或者说您，对话媒介即是通过门扉。如果后续进行进一步调查，很有可能需要您通过门扉来进行。"
 				""
 				"3. 其立场可能与我们基本一致，但无法分辨其意图为何，更无法得知他们与门扉另一侧世界的关系是什么。 "
 				""
@@ -921,6 +923,150 @@
 			title: "真相的冰山一角"
 			x: 10.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["2E3153B90986E456"]
+			description: [
+				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				""
+				"该位置位于异类深暗之园中，其中潜伏有&c“监守者”&r，对应的门扉类型为&6 8 &r。"
+				""
+				"您&6需要将门扉的类型调整为 8 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+			]
+			id: "04CAB5AD8E4CAB30"
+			rewards: [{
+				id: "61EFC0EBB70E5B82"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界最阴暗的角落"
+			tasks: [{
+				count: 1L
+				icon: "minecraft:sculk"
+				id: "1D669C113D0C3599"
+				kubeId: "eternal_altar_type_warden"
+				title: "唤醒并压制类型为8的门扉"
+				type: "maa:kube"
+			}]
+			title: "前往异类深暗之园进行调查"
+			x: 9.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2E3153B90986E456"]
+			description: [
+				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				""
+				"该位置位于异类烈焰竞技场中，其中存在着名为&c“焰魔”&r的高威胁单位，对应的门扉类型为&6 24 &r。"
+				""
+				"您&6需要将门扉的类型调整为 24 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+			]
+			id: "32D9C50846A54A6A"
+			rewards: [{
+				id: "3EB56AE90ABE7AA3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界最灼热的角落"
+			tasks: [{
+				count: 1L
+				icon: "cataclysm:altar_of_fire"
+				id: "192BF28F3561233C"
+				kubeId: "eternal_altar_type_ignis"
+				title: "唤醒并压制类型为24的门扉"
+				type: "maa:kube"
+			}]
+			title: "前往异类烈焰竞技场进行调查"
+			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2E3153B90986E456"]
+			description: [
+				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				""
+				"该位置位于异类苦寒监牢中，其中存在着名为&c“咒翼灵骸”&r的高威胁单位，对应的门扉类型为&6 51 &r。"
+				""
+				"您&6需要将门扉的类型调整为 51 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+			]
+			id: "17FEB9F189E880E9"
+			rewards: [{
+				id: "5B320223D6FE8012"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界最孤冷的角落"
+			tasks: [{
+				count: 1L
+				icon: "cataclysm:cursed_tombstone"
+				id: "18CA2A84E6163EFE"
+				kubeId: "eternal_altar_type_maledictus"
+				title: "唤醒并压制类型为51的门扉"
+				type: "maa:kube"
+			}]
+			title: "前往异类苦寒监牢进行调查"
+			x: 12.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"04CAB5AD8E4CAB30"
+				"32D9C50846A54A6A"
+				"17FEB9F189E880E9"
+				"5043BB6A976258B5"
+			]
+			description: [
+				"根据您收集到的信息显示。这些“数据体”寻找的其实是一种他们称为&a“奇迹”&r的物品。"
+				""
+				"这种&a“奇迹”&r只能够在我们所在的世界中进行构建，因此他们希望借由门扉的存在，跨越世界前来此处，向我们&6“借用奇迹”&r。"
+				""
+				"现在，我已经了解该如何制成奇迹了，希望您能按照步骤，帮我复现他们所称的奇迹。"
+			]
+			icon: "minecraft:nether_star"
+			id: "29EFFFB96DA486C5"
+			min_required_dependencies: 2
+			rewards: [{
+				id: "61584E12E4EF3BA5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "从另一个世界来的旅者"
+			tasks: [{
+				id: "308B39B523F6FA9E"
+				title: "我会尝试的"
+				type: "checkmark"
+			}]
+			title: "寻找奇迹的努力"
+			x: 10.0d
+			y: -9.5d
+		}
+		{
+			dependencies: ["2E3153B90986E456"]
+			description: [
+				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				""
+				"该位置位于异类深暗之园中，其中沉睡着&c“先驱者”&r，对应的门扉类型为&6 42 &r。"
+				""
+				"您&6需要将门扉的类型调整为 42 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+			]
+			id: "5043BB6A976258B5"
+			rewards: [{
+				id: "14D9E6CD26E9C62F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界最古老的角落"
+			tasks: [{
+				count: 1L
+				icon: "minecraft:netherite_scrap"
+				id: "59FEA52350ADCAC9"
+				kubeId: "eternal_altar_type_harbinger"
+				title: "唤醒并压制类型为42的门扉"
+				type: "maa:kube"
+			}]
+			title: "前往异类远古工厂进行调查"
+			x: 11.0d
+			y: -8.0d
 		}
 	]
 	title: "秘闻：永恒门扉"

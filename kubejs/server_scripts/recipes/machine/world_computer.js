@@ -418,7 +418,7 @@ ServerEvents.recipes(event => {
             let bookItem = machine.getItemStored('input_1')
             if (bookItem.hasNBT()) {
                 let nbt = bookItem.getNbt()
-                let pages = nbt.getList('pages', $Tag.TAG_STRING)
+                let pages = nbt.getList('pages', TAG_STRING)
                 for (let page of pages) {
                     console.warn(page.getAsString())
                 }

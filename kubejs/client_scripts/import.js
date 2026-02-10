@@ -27,5 +27,3 @@ const $Float = Java.loadClass('java.lang.Float')
 const $Integer = Java.loadClass('java.lang.Integer')
 
 const $CreateRecipeCategory = Java.loadClass('com.simibubi.create.compat.jei.category.CreateRecipeCategory')
-const $SpaceDataManager = Java.loadClass('com.nettakrim.spyglass_astronomy.SpaceDataManager')
-const $Tag = Java.loadClass('net.minecraft.nbt.Tag')

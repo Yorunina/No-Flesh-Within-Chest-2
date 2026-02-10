@@ -22,7 +22,7 @@ function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slo
     let foodTypeMap = nbt.getCompound('foodTypeMap')
     let eatCount = foodTypeMap.getInt(foodItemId) + 1
     foodTypeMap.putInt(foodItemId, eatCount)
-    let comboList = nbt.getList('comboList', $Tag.TAG_STRING)
+    let comboList = nbt.getList('comboList', TAG_STRING)
     if (comboList.contains(NBT.stringTag(foodItemId))) {
         comboList.clear()
     }

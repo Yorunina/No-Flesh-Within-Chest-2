@@ -1,5 +1,4 @@
 // priority: 4000
-
 const OrganTagMap = {
     'kubejs:appendix': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:appendix')),
     'kubejs:heart': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:heart')),

@@ -56,9 +56,12 @@ PiecewiseMappingModel.prototype = {
         let items = this.findItems(value)
         if (items.length == 0) return null
         let nearestItem = items[0]
+        let nearestPercent = Math.abs(nearestItem.getPercent(value) - 0.5)
         for (let item of items) {
-            if (Math.abs(item.getPercent(value) - 0.5) < Math.abs(nearestItem.getPercent(value) - 0.5)) {
+            let curPercent = Math.abs(item.getPercent(value) - 0.5)
+            if (curPercent < nearestPercent) {
                 nearestItem = item
+                nearestPercent = curPercent
             }
         }
         return nearestItem.getValue()
@@ -128,7 +131,7 @@ PiecewiseItemModel.prototype = {
      * @returns {number} 分段映射的百分比位置
      */
     getPercent: function (value) {
-        return (value - this.start) / (this.end - this.start)
+        return (this.end - this.start == 0) ? (value == this.start ? 1 : 0) : ((value - this.start) / (this.end - this.start))
     },
     /**
      * 获取这个分段映射的起始值

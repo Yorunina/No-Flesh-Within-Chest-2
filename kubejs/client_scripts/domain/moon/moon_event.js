@@ -21,7 +21,7 @@ NetworkEvents.dataReceived('modify_moon', event => {
         MOON_INSTANCE.setMoonSize(data.getInt('moonSize'))
     }
     if (data.contains('moonShaderColor')) {
-        let moonShaderColor = data.getList('moonShaderColor', $Tag.TAG_FLOAT)
+        let moonShaderColor = data.getList('moonShaderColor', TAG_FLOAT)
         MOON_INSTANCE.setMoonShaderColor(
             moonShaderColor.getFloat(0),
             moonShaderColor.getFloat(1),
