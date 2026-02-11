@@ -2,3 +2,7 @@
 JEIEvents.removeCategories(event => {
     event.remove(['kubejs:eternal_altar', 'kubejs:mantle_energy_extractor'])
 })
+
+// JEIEvents.removeRecipes(event => {
+//     event.remove
+// })

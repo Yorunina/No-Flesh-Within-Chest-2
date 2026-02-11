@@ -17,10 +17,10 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:rose_quartz_heart')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:rose_quartz_rib')
     .addDefault(Text.translatable('tooltips.kubejs.rose_quartz_rib.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.rose_quartz_rib.alt.1', Text.gold('1'), Text.gold('0.1')))
+    .addAlt(Text.translatable('tooltips.kubejs.rose_quartz_rib.alt.1', Text.gold('1'), Text.gold('0.5')))
     .addCtrl(RosyExplosionSlotType)
     .addCtrl(Text.translatable('tooltips.kubejs.rose_quartz_rib.ctrl.1'))
-    .addCtrl(Text.translatable('tooltips.kubejs.rose_quartz_rib.ctrl.2', Text.gold('1'), Text.gold('0.1')))
+    .addCtrl(Text.translatable('tooltips.kubejs.rose_quartz_rib.ctrl.2', Text.gold('1'), Text.gold('0.5')))
 )
 
 

@@ -26,7 +26,8 @@
       "type": "custommachinery:item",
       "id": "input_awake",
       "filter": [
-        "#kubejs:gateways_awake_stone"
+        "#kubejs:gateways_awake_stone",
+        "#kubejs:gateways_awake_ticket"
       ],
       "whitelist": true,
       "mode": "input"

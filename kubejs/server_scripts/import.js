@@ -129,9 +129,8 @@ const $PedestalBlockTile = Java.loadClass('net.mehvahdjukaar.supplementaries.com
 const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')
 const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.LightTile')
 
-const $GolemDungeons = Java.loadClass('dev.xkmc.golemdungeons.init.GolemDungeons')
-
 const $UserBanListEntry = Java.loadClass('net.minecraft.server.players.UserBanListEntry')
 const $CoinValue = Java.loadClass('io.github.lightman314.lightmanscurrency.api.money.value.builtin.CoinValue')
 const $MachineJS = Java.loadClass('fr.frinn.custommachinery.common.integration.kubejs.function.MachineJS')
 const $CustomMachineTile = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineTile')
+const $GatewayEntity = Java.loadClass('dev.shadowsoffire.gateways.entity.GatewayEntity')

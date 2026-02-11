@@ -37,6 +37,7 @@ OrganTakeOffStrategyModel.prototype = {
         this.inits.forEach(init => {
             init.apply(null, args)
         })
+        const invTypeData = ccInstance.getInventoryTypeData()
         const oldInvTypeData = ccInstance.getOldInventoryTypeData()
         const onlyMap = new Map()
         let oldContainerSize = oldccInv.getContainerSize()
@@ -50,7 +51,7 @@ OrganTakeOffStrategyModel.prototype = {
             if (!oldItem || oldItem.isEmpty()) continue
             if (i <= newContainerSize) {
                 let newItem = ccInv.getStackInSlot(i)
-                if (oldItem.equals(newItem, true)) continue
+                if (oldItem.equals(newItem, true) && !IsContainerSlot(invTypeData.getSlotType(i))) continue
             }
 
             let itemId = oldItem.id

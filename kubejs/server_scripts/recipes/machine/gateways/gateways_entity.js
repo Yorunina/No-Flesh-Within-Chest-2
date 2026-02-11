@@ -13,12 +13,12 @@ const GatewayNBTHarbingerActive = { Is_Act: 1 }
 /**
  * typeIndicator -> levelIndicator -> StandardWaveEntityItemModel
  * green -> yellow -> red -> pink -> purple -> aqua
- * green -> 原版常见 + 沼泽
- * yellow -> 原版掠夺者 + 沙漠
- * red -> 下界
- * pink -> 掠夺 + 变种
- * purple -> 不死生物
- * aqua -> 寒冷变种
+ * green -> 原版常见 + 沼泽 0
+ * yellow -> 原版掠夺者 + 沙漠 10
+ * red -> 下界 20
+ * pink -> 掠夺 + 变种 30
+ * purple -> 不死生物 40
+ * aqua -> 寒冷变种 50
  */
 const GatewayWaveEntityMapping = new PiecewiseMappingModel()
     .addPiece(0, 60, new PiecewiseMappingModel()

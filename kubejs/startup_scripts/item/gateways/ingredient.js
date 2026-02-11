@@ -29,4 +29,7 @@ StartupEvents.registry('item', event => {
     event.create('gateways_extractant_material_7').maxStackSize(1).maxDamage(10).texture('kubejs:item/materials/gateways_extractant_material_7').tag('kubejs:gateways_extractant_material')
     event.create('gateways_extractant_material_8').maxStackSize(1).maxDamage(10).texture('kubejs:item/materials/gateways_extractant_material_8').tag('kubejs:gateways_extractant_material')
     event.create('gateways_extractant_material_9').maxStackSize(1).maxDamage(10).texture('kubejs:item/materials/gateways_extractant_material_9').tag('kubejs:gateways_extractant_material')
+
+    event.create('eternal_miracle_ticket').texture('kubejs:item/materials/eternal_miracle_ticket').tag('kubejs:gateways_awake_ticket')
+    event.create('artificial_miracle_ticket').texture('kubejs:item/materials/artificial_miracle_ticket').tag('kubejs:gateways_awake_ticket')
 })

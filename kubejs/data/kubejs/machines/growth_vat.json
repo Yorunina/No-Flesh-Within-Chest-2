@@ -4,7 +4,16 @@
   },
   "appearance": {
     "item": "kubejs:machine/growth_vat_item",
-    "shape": [[0, 0, 0, 1, 0.8125, 1]],
+    "shape": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0.8125,
+        1
+      ]
+    ],
     "running": {
       "custommachinery:block": "kubejs:machine/growth_vat",
       "light": 15
@@ -12,30 +21,181 @@
     "custommachinery:block": "kubejs:machine/growth_vat_idle"
   },
   "components": [
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 10000,
+      "id": "nutrient_solution",
+      "maxInput": 1000,
+      "maxOutput": 1000
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "plugin_1",
+      "mode": "input",
+      "variant": "custommachinery:upgrade"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "plugin_2",
+      "mode": "input",
+      "variant": "custommachinery:upgrade"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "plugin_3",
+      "mode": "input",
+      "variant": "custommachinery:upgrade"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input_slot",
+      "mode": "input"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "slot_1",
+      "mode": "both"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "slot_2",
+      "mode": "both"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "slot_3",
+      "mode": "both"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "slot_4",
+      "mode": "both"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "slot_5",
+      "mode": "both"
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "slot_6",
+      "mode": "both"
+    }
   ],
   "gui": [
     {
       "type": "custommachinery:player_inventory",
-      "x": 10,
-      "y": 130,
+      "x": 9,
+      "y": 85,
       "width": 162,
       "height": 76,
-      "texture": "kubejs:textures/gui/eternal_altar/player_inventory.png"
+      "texture": "kubejs:textures/gui/growth_vat/player_inventory.png"
     },
     {
       "type": "custommachinery:background",
-      "texture": "kubejs:textures/gui/eternal_altar/background.png",
-      "width": 182,
-      "height": 211
+      "texture": "kubejs:textures/gui/growth_vat/background.png",
+      "width": 181,
+      "height": 168
     },
     {
       "type": "custommachinery:progress",
-      "x": 64,
-      "y": 0,
-      "texture_empty": "kubejs:textures/gui/eternal_altar/processor_empty.png",
-      "texture_filled": "kubejs:textures/gui/eternal_altar/processor_full.png",
+      "x": 11,
+      "y": 20,
+      "texture_empty": "kubejs:textures/gui/growth_vat/processor_empty.png",
+      "texture_filled": "kubejs:textures/gui/growth_vat/processor_full.png",
       "direction": "bottom",
       "hide_jei": true
+    },
+    {
+      "type": "custommachinery:status",
+      "texture_running": "kubejs:textures/gui/growth_vat/runing_icon.png",
+      "texture_idle": "kubejs:textures/gui/growth_vat/idle_icon.png",
+      "texture_errored": "kubejs:textures/gui/growth_vat/idle_icon.png",
+      "width": 147,
+      "height": 48,
+      "x": 31,
+      "y": 10,
+      "priority": -1
+    },
+    {
+      "type": "custommachinery:fluid",
+      "id": "nutrient_solution",
+      "x": 134,
+      "y": 19,
+      "width": 18,
+      "height": 52,
+      "texture": "kubejs:textures/gui/growth_vat/fluid_bar.png",
+      "highlight": false
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "plugin_1",
+      "x": 27,
+      "y": 22,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "plugin_2",
+      "x": 37,
+      "y": 38,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "plugin_3",
+      "x": 27,
+      "y": 54,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "input_slot",
+      "x": 83,
+      "y": 38,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "slot_1",
+      "x": 71,
+      "y": 18,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "slot_2",
+      "x": 95,
+      "y": 18,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "slot_3",
+      "x": 59,
+      "y": 38,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "slot_4",
+      "x": 107,
+      "y": 38,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "slot_5",
+      "x": 71,
+      "y": 58,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
+    },
+    {
+      "type": "custommachinery:slot",
+      "id": "slot_6",
+      "x": 95,
+      "y": 58,
+      "texture": "kubejs:textures/gui/solt_transparent.png"
     }
   ]
 }

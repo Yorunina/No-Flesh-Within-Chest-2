@@ -62,7 +62,7 @@ OrganKeyActiveEventModel.prototype = {
                     })
                 }
             })
-            
+
             if (strategyFuncList.length > 0) {
                 strategyFuncList.sort((a, b) => {
                     return b.getPriority() - a.getPriority()
@@ -73,7 +73,7 @@ OrganKeyActiveEventModel.prototype = {
             }
             ExcretionSlotEvent(customData, ccInstance)
         }
-        
+
         this.defers.forEach(defer => {
             defer.apply(null, args)
         })

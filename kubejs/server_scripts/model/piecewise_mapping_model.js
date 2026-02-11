@@ -84,7 +84,7 @@ PiecewiseMappingModel.prototype = {
 
 
 /**
- * 用于作为一个分段映射的项
+ * 用于作为一个分段映射的项，闭区间映射，存在交界[start, end]
  * @param {number} start 分段映射的起始值
  * @param {number} end 分段映射的结束值
  * @param {any} value 分段映射的值

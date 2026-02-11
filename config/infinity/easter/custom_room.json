@@ -6,7 +6,8 @@
       "type": "fixed",
       "biome": "minecraft:plains"
     },
-    "structure_paths": [
-    ]
+    "structure_paths": {
+      
+    }
   }
 }

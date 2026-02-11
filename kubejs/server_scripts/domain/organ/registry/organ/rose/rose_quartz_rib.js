@@ -15,11 +15,11 @@ function RoseQuartzRibChestCavityUpdate(customData, event, organItem, organIndex
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
         case 'rosy_explosion': {
-            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:defense') * chestCavity.inventory.countNonEmpty()
+            rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:defense') * chestCavity.inventory.countNonEmpty() * 0.5
             break
         }
     }
-    customData.armor.addAttributeModifier(rosyValue * 0.125, 'addition', 'base')
+    customData.armor.addAttributeModifier(rosyValue * 0.5, 'addition', 'base')
 }
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rose_quartz_rib')

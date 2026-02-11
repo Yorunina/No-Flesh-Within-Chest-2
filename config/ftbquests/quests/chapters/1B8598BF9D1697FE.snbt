@@ -154,7 +154,7 @@
 				""
 				"不同的&6门扉萃取材料&r会使门扉指向不同的物资，萃取资源会以额外的战利品附加在基础门扉位置的战利品资源上。"
 				""
-				"萃取材料并非唤醒门扉所必须之物，&6但萃取材料在门扉唤醒时并不会消耗&r，因此，若您拥有了门扉萃取材料后不妨多多尝试。"
+				"萃取材料并非唤醒门扉所必须之物，且&6萃取材料在门扉开启后会损耗耐久度&r，因此您需要多多规划使用场景，尽可能让萃取材料在较后的阶级使用，以保证获得最多的资源。"
 			]
 			icon: {
 				Count: 1
@@ -871,7 +871,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["29EFFFB96DA486C5"]
+			dependencies: ["1B5D81F9E61DEC67"]
 			id: "20AA08D1E1347535"
 			rewards: [{
 				id: "1D94BAFAE0390A9E"
@@ -890,7 +890,7 @@
 			}]
 			title: "永无变化的奇迹"
 			x: 10.0d
-			y: -11.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["042A150DEC7C9AC3"]
@@ -1067,6 +1067,54 @@
 			title: "前往异类远古工厂进行调查"
 			x: 11.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["29EFFFB96DA486C5"]
+			description: [
+				"为了创造奇迹，我们需要使用&6人造的拙劣奇迹通行证&r来开启门扉，&6诱导特殊的数据&r，以覆写掉我们拙劣的奇迹模仿。"
+				""
+				"通过将奇迹通行证放置在永恒祭坛的唤醒槽，即可唤醒特殊的门扉，该门扉在成功压制时会根据其当前状态，掉落对应的奇迹通行证。"
+				""
+				"现在，我们需要压制一个&6由奇迹通行证唤醒的，阶级至少为20，且类型为异类沼泽&r的门扉，以获得最容易获得的一张奇迹通行证——&6永恒奇迹通行证&r。"
+			]
+			id: "1EC51A4FAEF6158D"
+			rewards: [{
+				id: "00A095C318C9D80F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "人造的奇迹"
+			tasks: [{
+				id: "23F3D326104033E0"
+				item: "kubejs:artificial_miracle_ticket"
+				type: "item"
+			}]
+			title: "拜访奇迹的船票"
+			x: 10.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["1EC51A4FAEF6158D"]
+			description: [
+				"将&6奇迹通行证：永恒&r置于永恒祭坛的唤醒槽中，即可唤醒特殊的门扉，该门扉不会受永恒祭坛的阶级、类型、混乱度影响，具有固定的敌人和难度。"
+				""
+				"如果您能够成功压制该门扉，其会掉落特殊的掉落物——其中便包含它们所追寻的，名为&6“奇迹”&r的物品。"
+			]
+			id: "1B5D81F9E61DEC67"
+			rewards: [{
+				id: "28D7F1E31F0484B9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "永恒为何"
+			tasks: [{
+				id: "77CD7990CA59BBFF"
+				item: "kubejs:eternal_miracle_ticket"
+				type: "item"
+			}]
+			title: "前往永恒奇迹所在之处"
+			x: 10.0d
+			y: -12.5d
 		}
 	]
 	title: "秘闻：永恒门扉"
