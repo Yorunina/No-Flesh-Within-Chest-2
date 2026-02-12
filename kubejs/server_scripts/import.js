@@ -134,3 +134,4 @@ const $CoinValue = Java.loadClass('io.github.lightman314.lightmanscurrency.api.m
 const $MachineJS = Java.loadClass('fr.frinn.custommachinery.common.integration.kubejs.function.MachineJS')
 const $CustomMachineTile = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineTile')
 const $GatewayEntity = Java.loadClass('dev.shadowsoffire.gateways.entity.GatewayEntity')
+const $AbstractDeepling = Java.loadClass('com.github.L_Ender.cataclysm.entity.Deepling.AbstractDeepling')

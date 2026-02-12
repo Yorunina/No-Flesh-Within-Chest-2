@@ -19,7 +19,7 @@ function RandomGet(list) {
  * @returns {number}
  */
 function RoundFix(value, n) {
-    return Math.round(value * Math.pow(10, n)) / Math.pow(10, n);
+    return Math.round(value * Math.pow(10, n)) / Math.pow(10, n)
 }
 
 
@@ -30,7 +30,7 @@ function RoundFix(value, n) {
  * @returns {number}
  */
 function FloorFix(value, n) {
-    return Math.floor(value * Math.pow(10, n)) / Math.pow(10, n);
+    return Math.floor(value * Math.pow(10, n)) / Math.pow(10, n)
 }
 
 /**

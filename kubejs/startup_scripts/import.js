@@ -8,6 +8,8 @@ const $EyeofEnder = Java.loadClass('net.minecraft.world.entity.projectile.EyeOfE
 const $ClipContext = Java.loadClass('net.minecraft.world.level.ClipContext')
 const $ClipContextBlock = Java.loadClass('net.minecraft.world.level.ClipContext$Block')
 const $ClipContextFluid = Java.loadClass('net.minecraft.world.level.ClipContext$Fluid')
+const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
+const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
 
 const $RangedAttribute = Java.loadClass('net.minecraft.world.entity.ai.attributes.RangedAttribute')
 const $EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')

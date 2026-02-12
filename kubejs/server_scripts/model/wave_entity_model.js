@@ -50,7 +50,7 @@ StandardWaveEntityItemModel.prototype = {
             '',
             this.compoundTag,
             this.modifier(levelIndicator, chaosIndicator),
-            false,
+            true,
             count
         )
     }

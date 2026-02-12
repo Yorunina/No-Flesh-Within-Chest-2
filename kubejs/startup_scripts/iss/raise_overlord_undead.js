@@ -63,7 +63,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             let effectAmplifier = spellLevel - 1
             if (entity.hasEffect('irons_spellbooks:raise_dead_timer'))
                 effectAmplifier += entity.getEffect('irons_spellbooks:raise_dead_timer').getAmplifier() + 1
-            entity.addEffect(new $MobEffectInstance('irons_spellbooks:raise_dead_timer', summonTime, effectAmplifier, false, false, true));
+            entity.addEffect(new $MobEffectInstance('irons_spellbooks:raise_dead_timer', summonTime, effectAmplifier, false, false, true))
         })
 })
 

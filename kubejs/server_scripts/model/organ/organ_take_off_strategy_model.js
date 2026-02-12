@@ -53,7 +53,6 @@ OrganTakeOffStrategyModel.prototype = {
                 let newItem = ccInv.getStackInSlot(i)
                 if (oldItem.equals(newItem, true) && !IsContainerSlot(invTypeData.getSlotType(i))) continue
             }
-
             let itemId = oldItem.id
             let strategyModel = OrganStrategyMap[itemId]
             if (entity.isPlayer() && oldItem.hasTag('kubejs:key_active')) {

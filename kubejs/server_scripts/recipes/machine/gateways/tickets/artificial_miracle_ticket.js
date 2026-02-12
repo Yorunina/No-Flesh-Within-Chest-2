@@ -58,8 +58,8 @@ ServerEvents.recipes(event => {
                 gatewaySize ? gatewaySize : GatewaySize.SMALL,
                 gatewayColor ? gatewayColor : Color.RED,
                 waves,
-                EternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
-                EternalAltarGatewayFailure(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
+                EternalAltarGatewayArtificialTicketReward(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
+                EternalAltarGatewayArtificialTicketFailure(machine, player, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem),
                 GatewaySpawnAlgorithm.OPEN_FIELD,
                 GatewayDefaultRule,
                 GatewayDefaultBossEventSettings)
@@ -71,18 +71,13 @@ ServerEvents.recipes(event => {
             return ctx.success()
         })
         .requireFunctionToStart(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
             const block = ctx.getBlock()
             const level = block.getLevel()
             const gatewayPos = block.getPos().above()
-            const inputAwake = machine.getItemStored('input_awake')
-            const awakeStoneLevel = GatewayAwakeStoneLevelMap[inputAwake.getId()]
             let entityList = GetEntityWithinRadius(level, gatewayPos, 1, (pLevel, pEntity) => pEntity instanceof $GatewayEntity)
             if (entityList.length > 0) return ctx.error('')
-            data.putFloat('levelModifier', awakeStoneLevel ? awakeStoneLevel : 0)
             return ctx.success()
         })
-        .requireItemTag('#kubejs:gateways_awake_stone', 1, 'input_awake')
+        .requireItem(Item.of('kubejs:artificial_miracle_ticket'), 'input_awake')
         .resetOnError()
 })

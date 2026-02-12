@@ -169,3 +169,9 @@ const ExtremeFitnessHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:
         Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_fitness').lightPurple(),
         Text.translatable('tooltips.kubejs.score_tag.hover.kubejs:extreme_fitness'),
     ]))
+const FrostShieldHover = Text.translatable('tooltips.kubejs.hover.frost_shield.0').darkAqua().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.frost_shield.0').darkAqua(),
+        Text.translatable('tooltips.kubejs.hover.frost_shield.1'),
+        Text.translatable('tooltips.kubejs.hover.frost_shield.2')
+    ]))

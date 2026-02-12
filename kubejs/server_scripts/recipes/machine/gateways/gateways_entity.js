@@ -49,13 +49,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(6, 10, new StandardWaveEntityItemModel(100, 'minecraft:creeper')
-            .setModifier((levelIndicator, chaosIndicator) => {
-                return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.movement_speed', 'multiply_total', 1 + levelIndicator * 0.10)
-                ]
-            })
-        )
         .addPiece(1, 9, new StandardWaveEntityItemModel(50, 'minecraft:slime')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
@@ -91,14 +84,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(4, 6, new StandardWaveEntityItemModel(200, 'minecraft:witch')
-            .setModifier((levelIndicator, chaosIndicator) => {
-                return [
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
-                    GatewayUtils.buildEffectModifier(1, 'minecraft:invisibility', 0, true, true)
-                ]
-            })
-        )
         .addPiece(0, 10, new StandardWaveEntityItemModel(80, 'minecraft:skeleton')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
@@ -107,7 +92,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                     GatewayUtils.buildAttributeModifier('attributeslib:arrow_damage', 'addition', levelIndicator * 0.5)
                 ]
             })
-            .setCompoundTag(GatewayNBTEntityWithBowInHand)
         )
         .addPiece(10, 20, new StandardWaveEntityItemModel(50, 'minecraft:husk')
             .setModifier((levelIndicator, chaosIndicator) => {
@@ -210,7 +194,6 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                     GatewayUtils.buildAttributeModifier('attributeslib:arrow_damage', 'addition', levelIndicator * 0.5)
                 ]
             })
-            .setCompoundTag(GatewayNBTEntityWithBowInHand)
         )
         .addPiece(20, 30, new StandardWaveEntityItemModel(20, 'minecraft:magma_cube')
             .setModifier((levelIndicator, chaosIndicator) => {
@@ -434,7 +417,8 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', 1 + levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 10 * levelIndicator),
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5)
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5),
+                    new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ]
             })
         )
@@ -443,7 +427,18 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', 1 + levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5)
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.25),
+                    new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
+                ]
+            })
+        )
+        .addPiece(52, 58, new StandardWaveEntityItemModel(100, 'cataclysm:deepling_warlock')
+            .setModifier((levelIndicator, chaosIndicator) => {
+                return [
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', 1 + levelIndicator * 0.1),
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5),
+                    new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ]
             })
         )
@@ -451,7 +446,8 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', 1 + levelIndicator * 0.5),
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 20 * levelIndicator)
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 20 * levelIndicator),
+                    new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ]
             })
         )
@@ -460,7 +456,8 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', 1 + levelIndicator * 0.1),
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 5 * levelIndicator),
-                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5)
+                    GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5),
+                    new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ]
             })
         )
