@@ -11,6 +11,11 @@
 	quests: [{
 		dependencies: ["588B97AAEC0E2385"]
 		id: "2FBC5269D17457E9"
+		rewards: [{
+			id: "45000E1BBA4FDE8B"
+			item: "lightmanscurrency:coin_gold"
+			type: "item"
+		}]
 		tasks: [{
 			id: "62B6BA6957772466"
 			item: "kubejs:growth_vat"

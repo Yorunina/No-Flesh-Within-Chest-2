@@ -121,9 +121,9 @@
       "type": "custommachinery:fluid",
       "id": "nutrient_solution",
       "x": 134,
-      "y": 19,
-      "width": 18,
-      "height": 52,
+      "y": 24,
+      "width": 19,
+      "height": 44,
       "texture": "kubejs:textures/gui/growth_vat/fluid_bar.png",
       "highlight": false
     },

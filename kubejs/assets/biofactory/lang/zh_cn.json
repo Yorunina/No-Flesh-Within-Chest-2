@@ -1,0 +1,7 @@
+{
+    "ability.biomancy.engineers_sight": "工程师的远见",
+    "ability.biomancy.engineers_sight.desc": "显示关于Create组件的杂项信息",
+    "fluid_type.biofactory.nutrients_fluid": "营养液",
+    "item.biofactory.nutrients_fluid_bottle": "流体营养液瓶",
+    "tab.biofactory.main": "生物工厂"
+}
