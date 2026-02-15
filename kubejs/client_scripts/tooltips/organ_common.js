@@ -5,6 +5,8 @@ ItemEvents.tooltip(tooltip => {
 
         let lineNum = 1
         let organTagTooltipsList = []
+        let nbt = item.getOrCreateTag()
+        let itemMaxStackSizeStr = item.getMaxStackSize().toFixed(0)
         item.getTags().toArray().forEach(/**@param {Internal.TagKey} tag*/tag => {
             let tagLocation = String(tag.location())
             if (!OrganTagMap[tagLocation]) return
@@ -18,12 +20,26 @@ ItemEvents.tooltip(tooltip => {
         let organData = ChestCavityUtils.lookupOrgan(item, null)
         if (organData) {
             organData.organScores.forEach((score, value) => {
-                let roundValue = RoundFix(value, 2)
-                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).hover([Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).gold(), NewLine, Text.translate(`tooltips.kubejs.score_tag.hover.${score.toString()}`)]).yellow().underlined()
+                let roundValue = FloorFix(value, 2)
+                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`)
+                    .hover([
+                        Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).gold(),
+                        NewLine,
+                        Text.translate(`tooltips.kubejs.score_tag.hover.${score.toString()}`)
+                    ])
+                    .yellow().underlined()
 
-                let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), scoreString)
+                let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(itemMaxStackSizeStr), Text.yellow(roundValue), scoreString)
                 scoreTooltipsList.push(scoreTooltips)
             })
+        }
+
+        if (nbt.contains('potentialOrganData')) {
+            let potentialOrganData = nbt.getCompound('potentialOrganData')
+            let potentialAttributeNum = potentialOrganData.size()
+            for (let i = 0; i < potentialAttributeNum; i++) {
+                scoreTooltipsList.push(Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(itemMaxStackSizeStr), Text.yellow('0').obfuscated(), Text.translatable('tooltips.kubejs.score_tag.potential_score').yellow().obfuscated()))
+            }
         }
 
         let customToolTips = OrganTooltipRegistryMap[item.id] ? OrganTooltipRegistryMap[item.id] : new MultiStateTooltip(item.id)

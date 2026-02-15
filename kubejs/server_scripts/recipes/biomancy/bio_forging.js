@@ -9,4 +9,7 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Item.of('biomancy:acid_extract', 4), Item.of('biomancy:mineral_fragment', 4), Item.of('biomancy:bone_fragments', 4), Item.of('bakery:jar', 1)], Item.of('kubejs:small_acid_tank'), 'biomancy:organ', 30)
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:elastic_fibers', 1), Item.of('biomancy:mineral_fragment', 1), Item.of('minecraft:diamond', 1)], Item.of('kubejs:empty_injection'), 'biomancy:organ', 8)
+
+    event.remove({ output: 'modulargolems:metal_golem_template' })
+    event.recipes.biomancy.bio_forging([Item.of('minecraft:clay_ball', 4), Item.of('biomancy:flesh_bits', 1), Ingredient.of('#forge:ingots/copper', 1)], Item.of('modulargolems:metal_golem_template'), 'biomancy:components', 2)
 })

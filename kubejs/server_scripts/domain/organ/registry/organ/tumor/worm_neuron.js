@@ -1,30 +1,44 @@
 // priority: 500
 RegistryOrgan('kubejs:worm_neuron')
     .addScore('chestcavity:nerves', 1.5)
+    .addScore('chestcavity:metabolism', 1)
     .addScore('chestcavity:endurance', -1)
 
 
+const UnformedTumorAttributeWeigthModel = new WeightRandomModel()
+    .addWeightRandom({ name: 'chestcavity:defense', max: 5 }, 30)
+    .addWeightRandom({ name: 'chestcavity:strength', max: 5 }, 30)
+    .addWeightRandom({ name: 'chestcavity:health', max: 2 }, 10)
+    .addWeightRandom({ name: 'chestcavity:nerves', max: 2 }, 10)
+    .addWeightRandom({ name: 'chestcavity:endurance', max: 3 }, 10)
+    .addWeightRandom({ name: 'chestcavity:breath_recovery', max: 2 }, 8)
+    .addWeightRandom({ name: 'chestcavity:breath_capacity', max: 2 }, 8)
+    .addWeightRandom({ name: 'chestcavity:detoxification', max: 2 }, 8)
+    .addWeightRandom({ name: 'chestcavity:filtration', max: 2 }, 5)
+    .addWeightRandom({ name: 'chestcavity:nutrition', max: 3 }, 5)
+    .addWeightRandom({ name: 'chestcavity:digestion', max: 3 }, 5)
+    .addWeightRandom({ name: 'chestcavity:metabolism', max: 2 }, 5)
+    .addWeightRandom({ name: 'chestcavity:fire_resistant', max: 2 }, 3)
+    .addWeightRandom({ name: 'chestcavity:knockback_resistant', max: 2 }, 3)
+
+const TumorAttributeWeigthModel = new WeightRandomModel()
+    .addWeightRandom({ name: 'kubejs:extreme_fitness', max: 3 }, 30)
+    .addWeightRandom({ name: 'kubejs:extreme_strength', max: 3 }, 30)
+    .addWeightRandom({ name: 'kubejs:dragon_blood', max: 2 }, 5)
+    .addWeightRandom({ name: 'kubejs:crit_damage', max: 2 }, 10)
+    .addWeightRandom({ name: 'kubejs:crit_chance', max: 2 }, 10)
+
+
 /**
- * @type {Array<{name: string, max: number}>}
+ * 
+ * @param {number} maxValue 
+ * @returns {number}
  */
-const TumorAttriBute = [
-    { name: 'chestcavity:filtration', max: 2.5 },
-    { name: 'chestcavity:breath_recovery', max: 2.5 },
-    { name: 'chestcavity:nutrition', max: 2.5 },
-    { name: 'chestcavity:nerves', max: 2.5 },
-    { name: 'chestcavity:strength', max: 2.5 },
-    { name: 'chestcavity:breath_capacity', max: 2.5 },
-    { name: 'chestcavity:detoxification', max: 2.5 },
-    { name: 'chestcavity:speed', max: 2.5 },
-    { name: 'chestcavity:endurance', max: 2.5 },
-    { name: 'chestcavity:defense', max: 2.5 },
-    { name: 'chestcavity:digestion', max: 2.5 },
-    { name: 'chestcavity:metabolism', max: 2.5 },
-    { name: 'chestcavity:fire_resistant', max: 2.5 },
-    { name: 'chestcavity:knockback_resistant', max: 2.5 },
-    { name: 'chestcavity:water_breath', max: 2.5 },
-    { name: 'chestcavity:health', max: 2.5 },
-]
+function RandomTumorAttirbute(maxValue) {
+    let randomRatio = FloorFix(Math.random(), 2) * FloorFix(Math.random(), 2)
+    let value = Math.max(FloorFix(maxValue * randomRatio, 1), 0.1)
+    return Math.random() < 0.3 ? -value : value
+}
 
 /**
  * @param {OrganEventCustomData} customData
@@ -36,39 +50,39 @@ const TumorAttriBute = [
 function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    const interval = 80
-    if (entity.age % interval != 0) return
+    if (entity.age % 1200 != 0) return
 
-    let tumor = Item.of('kubejs:tumor')
-    let nbt = tumor.getOrCreateTag()
+    // 随机两条属性
     let organData = new $CompoundTag()
-    let amount = Math.floor(Math.random() * 2.5 + 1)
-    let attributeList = RandomGetN(TumorAttriBute, amount)
+    let attributeList = UnformedTumorAttributeWeigthModel.getWeightRandomObjs(2)
     attributeList.forEach((attri) => {
-        let randomRatio = RoundFix(RoundFix(Math.random(), 1) * RoundFix(Math.random(), 1), 1)
-        if (Math.random() < 0.3) {
-            randomRatio = -randomRatio 
-        }
-        organData.put(attri.name, attri.max * randomRatio)
+        organData.putDouble(attri.name, RandomTumorAttirbute(attri.max))
     })
+
+    // 随机一条潜在属性
+    let potentialOrganData = new $CompoundTag()
+    let potentialAttribute = TumorAttributeWeigthModel.getWeightRandomObj()
+    potentialOrganData.putDouble(potentialAttribute.name, RandomTumorAttirbute(potentialAttribute.max))
+
+    let nbt = new $CompoundTag()
+    // 故意预先存储，后续处理可以不依据该潜藏属性
+    nbt.put('potentialOrganData', potentialOrganData)
     nbt.put('organData', organData)
     let canSetSlotList = []
     for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) {
         if (chestCavity.inventory.getItem(i).isEmpty()) {
-            canSetSlotList.push(i) 
+            canSetSlotList.push(i)
         }
     }
-    let targetIndex = -1
+
     if (canSetSlotList.length == 0) {
-        targetIndex = Math.floor(Math.random() * chestCavity.inventory.getContainerSize())
-    } else {
-        targetIndex = RandomGet(canSetSlotList)
+        SetChestCavityOrgan(customData, chestCavity, Item.of('kubejs:malignant_neuron_tumor'), organIndex, slotType, true)
+        return
     }
+    let targetIndex = RandomGet(canSetSlotList)
+
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
-    SetChestCavityOrgan(customData, chestCavity, tumor, targetIndex, targetSlotType, true)
-    if (entity instanceof $ServerPlayer) {
-        entity.addItemCooldown(organItem, interval)
-    }
+    SetChestCavityOrgan(customData, chestCavity, Item.of('kubejs:unformed_tumor', nbt), targetIndex, targetSlotType, true)
 }
 
 
@@ -76,5 +90,5 @@ function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:worm_neuron')
-        .addStrategy('entity_tick', WormNeuronEntityTick)
+        .addOnlyStrategy('entity_tick', WormNeuronEntityTick)
 )

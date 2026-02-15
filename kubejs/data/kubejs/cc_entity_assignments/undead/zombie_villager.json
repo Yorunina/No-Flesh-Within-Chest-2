@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:cc_types/undead/zombie_villager.json",
-  "entities": [
-    "minecraft:zombie_villager"
-  ]
-}

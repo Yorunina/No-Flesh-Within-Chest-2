@@ -16,4 +16,18 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag('kubejs:organ')
         .tag('kubejs:infected')
+
+    event.create('kubejs:malignant_neuron_tumor')
+        .texture('kubejs:item/organs/infected/malignant_neuron_tumor')
+        .maxDamage(600)
+        .maxStackSize(1)
+        .tag('kubejs:organ')
+        .tag('kubejs:infected')
+
+    event.create('kubejs:inactivated_neuron_tumor')
+        .texture('kubejs:item/organs/infected/inactivated_neuron_tumor')
+        .maxDamage(60)
+        .maxStackSize(1)
+        .tag('kubejs:organ')
+        .tag('kubejs:infected')
 })

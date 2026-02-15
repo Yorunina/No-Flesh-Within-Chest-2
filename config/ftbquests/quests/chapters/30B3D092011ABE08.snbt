@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "30B3D092011ABE08"
-	group: "78F99AC9360F0137"
+	group: "0B365C36A50478AA"
 	icon: "kubejs:player_27_injection"
 	id: "30B3D092011ABE08"
-	order_index: 4
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -145,6 +145,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "square"
 			subtitle: "忍受慢性痛苦"
 			tasks: [{
 				id: "77747E78D5B1CE49"
@@ -213,6 +214,290 @@
 			x: 3.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["2B8F82F33E55703A"]
+			description: ["由于未来的环境多变且复杂，无法确定是否需要旧的胸腔来执行某些仪式，因此建议您使用&6空注射器&r保存当前阶段的血样，以备不时之需。"]
+			id: "25E39232CC1DA79B"
+			rewards: [{
+				id: "34CBE601FE9971C5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "保留血样"
+			tasks: [{
+				id: "73796D47E076E82E"
+				item: "kubejs:player_21_injection"
+				type: "item"
+			}]
+			title: "保存血液样本"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["24BF83CE3C6ABE54"]
+			description: ["尽管最初的胸腔大小有限，但我们&6尚不清楚是否后续会有某些需求需要我们使用这种最为基本的胸腔&r，因此您最好保存一份原初血样以备不时之需。"]
+			id: "63E5CA4D2ADA9596"
+			rewards: [{
+				id: "33BF624141E107A4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "保留血样"
+			tasks: [{
+				id: "3AED304715CA691C"
+				item: "kubejs:player_17_injection"
+				type: "item"
+			}]
+			title: "最原初的血液样本"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6E53B21FF92E150C"]
+			description: [
+				"在培育肉团和其他血肉生物的时候或许您会注意到，这些生物的胸腔中会携带名为&6蠕虫神经元&r的特殊器官。"
+				""
+				"该器官在胸腔有空位的情况下，会不断在周围扭曲血肉，生成新的未成形肿瘤。"
+				""
+				"但除此之外，如果在胸腔没有空位的情况下，其会扭曲自己的形态，转化为&c“恶性神经元肿瘤”&r。这种肿瘤便是我们进行第二次胸腔扩容的关键。"
+				""
+				"因此，我们首要的工作便是从&6肉团等血肉生物的胸腔中取出蠕虫神经元&r。"
+			]
+			id: "5270808137CAF2D7"
+			rewards: [{
+				id: "171CE2AA5A7D302B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "生物肿瘤培养"
+			tasks: [{
+				id: "76F35F79CF40FB67"
+				item: {
+					Count: 1
+					id: "kubejs:worm_neuron"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "前往第二阶的准备"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2B8F82F33E55703A"]
+			description: [
+				"根据日志显示，在历史上有人&6最多进行了三次胸腔扩容&r。"
+				""
+				"如果我们能够完全按照日志中的描述&6复现扩容流程&r，那我们至少也可以完成三次胸腔扩容，进而达到曾经我们无法触及的领域。"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:tumor"
+				tag: { }
+			}
+			id: "6E53B21FF92E150C"
+			rewards: [{
+				id: "1917A916CCDC1F02"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "进一步扩容的可能性"
+			tasks: [{
+				id: "0ABD352E6E74EC29"
+				type: "checkmark"
+			}]
+			title: "前往第二阶的准备"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5270808137CAF2D7"]
+			description: [
+				"在胸腔填满的情况下，蠕虫神经元会自发的变化成恶性神经元肿瘤。"
+				""
+				"恶性神经元肿瘤会降低大量的消化效率和营养效率，使得&6饥饿值的补充变得极其困难&r。"
+				""
+				"您需要在佩戴该器官的情况下，&6受到累计600点伤害&r，使该肿瘤失活，进而获得到我们所需的&c“失活神经元肿瘤”&r。"
+				""
+				"由于该器官还会在每秒恢复其耐久度，因此&6在您自己的胸腔内佩戴该器官进行转化可能会极其困难&r. . ."
+			]
+			id: "1D5F295370D27514"
+			rewards: [{
+				id: "6C3A27BA4589339D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "异常神经元表达"
+			tasks: [{
+				id: "4823369472C3D313"
+				item: {
+					Count: 1
+					id: "kubejs:malignant_neuron_tumor"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D5F295370D27514"]
+			description: [
+				"由于您作为玩家，没有如此多的生命值，且恢复生命手段较为有限。因此，一个比较好的方案是&6使用一个傀儡作为临时宿主&r。"
+				""
+				"您将该恶性肿瘤临时植入它的身体，随后您对它进行攻击，等到器官发生转变后，再将器官取出即可。"
+				""
+				"为了制作傀儡，您需要一些&6傀儡胚料&r以组装一个能够承担这个职责的傀儡。"
+			]
+			id: "65337ADF4CCA14EC"
+			rewards: [{
+				id: "652A6F22DFF4AC98"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "组装傀儡作为临时宿主"
+			tasks: [{
+				id: "20EFCA405EB2C274"
+				item: "modulargolems:metal_golem_template"
+				type: "item"
+			}]
+			title: "临时宿主"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["65337ADF4CCA14EC"]
+			description: [
+				"制作出来的傀儡目标是能够承受足够多的伤害，因此，&6生命值上限和生命恢复速度&r都是重要的考量标准。"
+				""
+				"通过&6鲜活血肉制作的傀儡其拥有不俗的生命恢复速度&r，是制作这种承受大量伤害傀儡的不二材料之选。"
+				""
+				"鲜活血肉可以通过&6击杀肉团&r来获得，因此您需要培育一定数量的肉团，或者使用&6巨化药水&r来增大肉团的体积，以获得更多的鲜活血肉。"
+			]
+			id: "3019A17B512FFAA2"
+			rewards: [{
+				id: "262F25BFE87CF44D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "尽可能多的承受伤害"
+			tasks: [{
+				id: "5D69D00083442E33"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			title: "合适的傀儡材料"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3019A17B512FFAA2"]
+			description: [
+				"傀儡有三种构型可以选择，分别为大型傀儡、人形傀儡和犬型傀儡。"
+				""
+				"为了能够有足够多的血量以承担伤害，最优的选择便是&6构造一个大型傀儡&r。"
+				""
+				"通过将&6傀儡胚料放置在切石机上&r，切割获得大型傀儡对应的傀儡部件，而后将&6鲜活血肉和傀儡部件在铁砧结合&r即可得到能够实际使用的傀儡部件。"
+			]
+			icon: {
+				Count: 1
+				id: "modulargolems:metal_golem_body"
+				tag: {
+					golem_material: "biomancy:living_flesh"
+				}
+			}
+			id: "5D6FCABAF80E5527"
+			rewards: [{
+				id: "6D3D96C65637E597"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "选择合适的构型"
+			tasks: [{
+				id: "68DB4B20037C369A"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "itemfilters:or"
+								tag: {
+									items: [
+										{
+											Count: 1b
+											id: "modulargolems:metal_golem_legs"
+											tag: {
+												golem_material: "biomancy:living_flesh"
+											}
+										}
+										{
+											Count: 1b
+											id: "modulargolems:metal_golem_arm"
+											tag: {
+												golem_material: "biomancy:living_flesh"
+											}
+										}
+										{
+											Count: 1b
+											id: "modulargolems:metal_golem_body"
+											tag: {
+												golem_material: "biomancy:living_flesh"
+											}
+										}
+									]
+								}
+							}
+							{
+								Count: 1b
+								id: "itemfilters:strong_nbt"
+								tag: {
+									value: {
+										golem_material: "biomancy:living_flesh"
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "铸造大型金属傀儡部件"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D6FCABAF80E5527"]
+			description: [
+				"通过将器官放置在傀儡胸腔内，而后对其造成伤害，&6使恶性神经元肿瘤的耐久度迅速降低&r。"
+				""
+				"当耐久度降低至零时，即可完成&6失活转化&r，将得到的失活神经元取出，我们便得到了前往第二次胸腔扩容的重要钥匙。"
+			]
+			id: "172FA7DB23FEF315"
+			rewards: [{
+				id: "0A14938D304C32BA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "血肉的代价"
+			tasks: [{
+				id: "2A5C64026601F696"
+				item: {
+					Count: 1
+					id: "kubejs:inactivated_neuron_tumor"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "失活神经元肿瘤"
+			x: 0.0d
+			y: 1.5d
+		}
 	]
-	title: "秘闻：苦痛登阶"
+	title: "传闻：胸腔扩容"
 }

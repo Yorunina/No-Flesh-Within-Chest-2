@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/golem/humanoid_golem.json",
+  "entities": [
+    "modulargolems:humanoid_golem"
+  ]
+}
