@@ -5,7 +5,15 @@ BlockEvents.rightClicked('biomancy:malignant_flesh_veins', event => {
     const level = event.level
     block.blockState.randomTick(level, block.pos, level.random)
 })
-
+// MAAEvents.textInputTaskSubmit('test', (event) => {
+//     const player = event.player
+//     const inputText = event.inputText
+//     if (inputText == '我要钱') {
+//         player.give(Item.of('lightmanscurrency:coin_gold'))
+//     } else if (inputText == '够了不要了') {
+//         event.teamData.addProgress(event.task, 1)
+//     }
+// })
 
 // todo 调试方法
 ItemEvents.rightClicked('stick', event => {

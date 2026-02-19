@@ -74,26 +74,3 @@ function GenLootrChestWithLootTable(level, pos, table) {
     $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
 }
 
-
-
-/**
- * 
- * @param {Internal.Level} level 
- * @param {BlockPos} pos 
- */
-function PlaceLightBlock(level, pos) {
-    level.setBlockAndUpdate(pos, Block.getBlock('ars_nouveau:light_block').defaultBlockState())
-}
-
-/**
- * 
- * @param {Internal.Level} level 
- * @param {BlockPos} pos 
- * @param {Internal.ParticleColor} color
- */
-function ChangeLightBlockColor(level, pos, color) {
-    let lightTile = level.getBlockEntity(pos)
-    if (lightTile instanceof $LightTile) {
-        lightTile.setColor(color)
-    }
-}

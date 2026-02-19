@@ -20,7 +20,6 @@ const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 const $Float = Java.loadClass('java.lang.Float')
 const $Integer = Java.loadClass('java.lang.Integer')
-const $Boolean = Java.loadClass('java.lang.Boolean')
 const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
 const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
 const $AbstractGolem = Java.loadClass('dev.xkmc.modulargolems.content.entity.common.AbstractGolemEntity')
@@ -44,9 +43,6 @@ const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.m
 
 const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
 
-
-const $CustomBossEvent = Java.loadClass('net.minecraft.server.bossevents.CustomBossEvent')
-const $BossBarColor = Java.loadClass('net.minecraft.world.BossEvent$BossBarColor')
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
 
 const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
@@ -63,8 +59,6 @@ const $MapDecorationType = Java.loadClass('net.minecraft.world.level.saveddata.m
 const $ModBlocks = Java.loadClass('noobanidus.mods.lootr.init.ModBlocks')
 const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity')
 
-
-const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')
 const $BoneMealItem = Java.loadClass('net.minecraft.world.item.BoneMealItem')
 
 const $EntityHitResult = Java.loadClass('net.minecraft.world.phys.EntityHitResult')
@@ -84,7 +78,6 @@ const $ItemHelper = Java.loadClass('com.simibubi.create.foundation.item.ItemHelp
 const $AnimHeadSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimHeadSummon')
 const $AnimBlockSummon = Java.loadClass('com.hollingsworth.arsnouveau.common.entity.AnimBlockSummon')
 
-// native event
 const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent')
 const $ModifySpellLevelEvent = Java.loadClass('io.redspace.ironsspellbooks.api.events.ModifySpellLevelEvent')
 const $LivingHurtEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingHurtEvent')
@@ -95,13 +88,11 @@ const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.
 const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living.ShieldBlockEvent')
 const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')
 
-
 const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineContainer')
 const $MachineTile = Java.loadClass('fr.frinn.custommachinery.api.machine.MachineTile')
 
 const $BlockPatternBuilder = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockPatternBuilder')
 const $BlockInWorld = Java.loadClass('net.minecraft.world.level.block.state.pattern.BlockInWorld')
-const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
 
 const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')
@@ -120,10 +111,6 @@ const $GateEventWaveEntitySpawned = Java.loadClass('dev.shadowsoffire.gateways.e
 
 const $DespoilLootModifier = Java.loadClass('com.github.elenterius.biomancy.loot.DespoilLootModifier')
 const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable')
-
-const $PedestalBlockTile = Java.loadClass('net.mehvahdjukaar.supplementaries.common.block.tiles.PedestalBlockTile')
-const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')
-const $LightTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.LightTile')
 
 const $UserBanListEntry = Java.loadClass('net.minecraft.server.players.UserBanListEntry')
 const $CoinValue = Java.loadClass('io.github.lightman314.lightmanscurrency.api.money.value.builtin.CoinValue')

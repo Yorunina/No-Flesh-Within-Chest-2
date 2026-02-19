@@ -25,8 +25,6 @@ const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob'
 const $FireBomb = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magma_ball.FireBomb')
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')
 
-const $InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
-
 const $SummonedZombie = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedZombie')
 const $SummonedSkeleton = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton')
 const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')
