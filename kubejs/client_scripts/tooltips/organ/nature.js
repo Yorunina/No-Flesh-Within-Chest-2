@@ -46,7 +46,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:koi_fish_scale')
     .addDefault(Text.translatable('tooltips.kubejs.koi_fish_scale.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.koi_fish_scale.alt.1', KeyActiveHover))
     .addAlt(Text.translatable('tooltips.kubejs.koi_fish_scale.alt.2'))
-    .addAlt(Text.translatable('tooltips.kubejs.koi_fish_scale.alt.3', Text.green(10), Text.gold(1)))
+    .addAlt(Text.translatable('tooltips.kubejs.koi_fish_scale.alt.3', Text.green('10'), Text.gold('1')))
     .addAlt(Text.translatable('tooltips.kubejs.koi_fish_scale.alt.4'))
 )
 

@@ -36,4 +36,5 @@ TitlesEvent.onTitleRegistry(event => {
     regsitryTitleSimple('gate_ruler', 'epic')
     regsitryTitleSimple('mechanics_scholar', 'epic')
     regsitryTitleSimple('frost_melter', 'epic')
+    regsitryTitleSimple('sponsor', 'epic')
 })

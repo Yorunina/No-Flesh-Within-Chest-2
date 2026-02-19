@@ -5,19 +5,23 @@
 	order_index: 7
 	rewards: [
 		{
-			icon: "create:wrench"
-			title: "我完全明白，我能独立完成"
-			type: "xp"
-			xp: 50
-		}
-		{
 			auto: "invisible"
 			icon: "minecraft:slime_ball"
 			ignore_reward_blocking: true
 			isServer: false
 			remove: false
-			stage: "mechanical_tutorial_1"
+			stage: "ftb_mechanical_tutorial_1"
 			title: "感觉没听懂，独立完成有点难"
+			type: "maa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "create:wrench"
+			ignore_reward_blocking: true
+			isServer: false
+			remove: false
+			stage: "ftb_mechanical_tutorial_2"
+			title: "我完全明白，我能独立完成"
 			type: "maa:astages"
 		}
 	]

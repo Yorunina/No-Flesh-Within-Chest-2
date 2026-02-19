@@ -65,19 +65,222 @@
 		}
 		{
 			dependencies: ["05800BE06814E4E8"]
+			description: [
+				"调查完成，经过技术确认，我发现了一种被称作“&6培养仓&r”的机械。您可以通过这种机械来培养肿瘤。"
+				""
+				"其最基本的用途便是将未成型肿瘤培养成成型肿瘤以&6揭露其隐藏的属性&r。"
+				""
+				"因此，为了能够进一步调查体外器官培养相关的信息，&6请您先制作出培养仓&r，我会实时跟进，为您提供更多的信息以方便您的实际调查。我相信这种技术会为我们后续的生存提供偌大的帮助。"
+			]
 			id: "2A309A1975C86D4A"
 			rewards: [{
 				id: "6608444B9CCAF6AF"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "制作培养仓"
 			tasks: [{
 				id: "1D55D02A399C15F2"
 				item: "kubejs:growth_vat"
 				type: "item"
 			}]
+			title: "体外器官培养技术"
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["2A309A1975C86D4A"]
+			description: [
+				"为了运行培养仓，我们需要&6营养液&r作为体外培养的基本营养供给手段。"
+				""
+				"营养素有几种生产方案，其中最为简单的方案应当是&6使用机械动力的搅拌配方&r，将营养膏搅拌加工成为营养素。"
+				""
+				"除此之外，您还可以采用较为简单的方案，即&6使用匠魂镕铸炉或冶炼炉将营养膏进行加热融化&r，得到少量的营养素。"
+				""
+				"请您根据您的实际情况，选择最优配方。"
+			]
+			icon: "kubejs:nutrients_fluid_bucket"
+			id: "547F9BE4C2F703C4"
+			rewards: [{
+				id: "515344EA5685E155"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "体外组织必备的培养环境"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:nutrients_fluid"
+				id: "60F8F2EDAFE12304"
+				type: "fluid"
+			}]
+			title: "营养素生产"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["547F9BE4C2F703C4"]
+			description: [
+				"除了营养液之外，为了将未成型肿瘤培育成型，我们还需要提供一个让肿瘤得以依附的基质——目前阶段，&6简易培养基&r就能够满足我们的需求。"
+				""
+				"制作完成简易培养基之后，我们就可以进行&6未成型肿瘤的体外培育&r了。"
+			]
+			id: "7CAB1BCE485BF25A"
+			rewards: [{
+				id: "36EA334600B8E202"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将肿瘤培育成型"
+			tasks: [{
+				id: "5DB82FCD37457560"
+				item: "kubejs:simple_culture_medium"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CAB1BCE485BF25A"]
+			description: [
+				"将在培育仓的正中心&6绿色区域置入培养基&r，&6周围摆放好您需要培养的未成型肿瘤&r，在&6营养液充足&r的情况下，培养配方完成时便可以将周围的未成型肿瘤培育成常规肿瘤，并且揭示其隐藏的肿瘤属性。"
+				""
+				"除此之外，我发现了另外的一些培养基，这些&6培养基具有着不同的培育效果&r，接下来我会为您举例几种培养基，您可以根据您的需求进行自由的器官培养。"
+			]
+			id: "19A39C178E01F423"
+			rewards: [{
+				id: "7C0241EA20C3FD78"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将肿瘤培育成型"
+			tasks: [{
+				id: "1D0F1B3E8E01364E"
+				item: {
+					Count: 1
+					id: "kubejs:tumor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "培育肿瘤"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19A39C178E01F423"]
+			description: [
+				"通过胸腔来培育未成型肿瘤可能有些费劲且不安全——"
+				""
+				"您可以使用&6常规培养基来进行未成型肿瘤的&r培养，其相较于常规培养有很多优势，不仅&6效率高于体内培养&r，其也可以&6通过各种不同的营养液来培育不同的未成型肿瘤&r。"
+				""
+				"某些特殊的未成型肿瘤甚至可以不光提供器官属性，还可以提供一些&6额外的物质资源&r。"
+			]
+			id: "423AEF7EC222CA7F"
+			rewards: [{
+				id: "6E1C2EBFE0BFDE18"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "通用培养手段"
+			tasks: [{
+				id: "39724550E1191C14"
+				item: "kubejs:culture_medium"
+				type: "item"
+			}]
+			title: "常规培养基"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19A39C178E01F423"]
+			description: [
+				"混合培养基并不是常规的培养基种类，其并不能将未成型肿瘤培育成型。"
+				""
+				"其主要功能为，将培养仓中所有肿瘤的&6属性种类混合并且随机分配&r。这个过程不会影响原有肿瘤的属性数值和属性条数，但是会将其属性种类重新进行分配。"
+			]
+			id: "3F751C531606F6D3"
+			rewards: [{
+				id: "392B481C246E4705"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将肿瘤混合"
+			tasks: [{
+				id: "3EA8B6D5B42260B9"
+				item: "kubejs:mixed_culture_medium"
+				type: "item"
+			}]
+			title: "混合培养基"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["19A39C178E01F423"]
+			description: [
+				"突变培养基并非是一种常见的培养基，其主要用途也并不是培养未成型肿瘤。"
+				""
+				"通过突变培养基，您可以将培养仓内放置的肿瘤的属性值按照培养液的种类进行&6重新培育&r。"
+				""
+				"但是其效率较为底下，每轮每个肿瘤只会&6根据其放置在培养仓的位置&r，选择位置对应的&6一条属性进行重新随机&r。"
+				""
+				"因此您可以进行一些实验，确定培养仓的每个位置分别对应哪条属性，进而进行精确培养。"
+			]
+			id: "17A8EB09B890834E"
+			rewards: [{
+				id: "01D11C48DAC1F676"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "定向培育肿瘤"
+			tasks: [{
+				id: "10BCD77245B8B32A"
+				item: "kubejs:mutation_culture_medium"
+				type: "item"
+			}]
+			title: "突变培养基"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["423AEF7EC222CA7F"]
+			id: "3C112008E390B113"
+			tasks: [{
+				id: "49BA38CFE9834A72"
+				item: "kubejs:proliferation_culture_medium"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["423AEF7EC222CA7F"]
+			id: "06774B10A942D09D"
+			tasks: [{
+				id: "2340CE193E593DCC"
+				item: "kubejs:purified_culture_medium"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -3.5d
+		}
+		{
+			icon: "kubejs:rose_nutrients_fluid_bucket"
+			id: "30DFADD41A73DC07"
+			rewards: [{
+				id: "5B7110404D2485DC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "用于培养玫瑰相关肿瘤"
+			tasks: [{
+				amount: 1000L
+				fluid: "kubejs:rose_nutrients_fluid"
+				id: "789E7FDD5D5C663D"
+				type: "fluid"
+			}]
+			title: "玫瑰营养素"
+			x: 14.5d
+			y: 1.0d
 		}
 	]
 	title: "秘闻：体外培养"

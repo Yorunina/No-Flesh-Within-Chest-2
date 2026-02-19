@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "167CD65AF2F0E691"
 	group: ""
@@ -7,33 +7,80 @@
 	id: "167CD65AF2F0E691"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"{\"text\":\"欢迎来到这里，我是负责引导的预先程式，您可以称我为「\",\"extra\":[{\"text\":\"Neo\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://zh.wikipedia.org/wiki/NEO\"}},\"」。\"]}"
-			""
-			"在本次旅程中，我将会通过该任务系统引导您完成所有的游览历程，以尽可能简明、有效的方式来让您了解您所必须要在此完成的事情。"
-			""
-			"请不要轻信游戏中其余部分的引导，那些引导大多充斥着误导，这对您来说是非常有害的。我会根据预先程式设计出的路线，为您提供最安全、可靠的发展方式，来减少这些不良信息对您的危害。"
-			""
-			"&n请使用鼠标，点击「任务」下方的灰色圆圈，即&6勾选按钮&r。&r"
-		]
-		icon: "minecraft:diamond_block"
-		id: "473AA9B909ED8EB0"
-		rewards: [{
-			icon: "minecraft:diamond_block"
-			id: "61A70F01F50A20E9"
-			item: "minecraft:oak_sapling"
-			type: "item"
-		}]
-		subtitle: "领取你的第一分大礼"
-		tasks: [{
-			id: "049617DE4456D9DA"
-			title: "勾选按钮"
-			type: "checkmark"
-		}]
-		title: "你好，世界"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: [
+				"欢迎来到这里，我是负责引导的预先程式，您可以称我为&6「Neo」&r。"
+				""
+				"在本次旅程中，我将会控制该任务系统引导您完成所有的游玩历程，以尽可能简明、有效的方式来让您了解您所必须要在此完成的事情。&6请您在游戏流程中尽可能多的留意任务描述文本&r，以避免各种不必要的麻烦。"
+				""
+				"现在，请您使用鼠标，点击&6「任务」下方&r的类似&6聊天气泡&r的按钮，即&6文本输入按钮&r。在点击打开后&6输入任意文本&r，以完成本任务。"
+				"{@pagebreak}"
+				"&6感谢您阅读到了这里&r！看来您完全明白我前面所说的“&6留意&r”是什么意思了！"
+				""
+				"作为奖励，您可以通过输入“&6Hello World&r”到文本输入框中完成任务来领取一份额外的奖励！请您一定要保持这种良好状态！"
+			]
+			icon: "minecraft:oak_sapling"
+			id: "473AA9B909ED8EB0"
+			rewards: [{
+				icon: "minecraft:diamond"
+				id: "07414EC3DE13EE69"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			subtitle: "领取你的第一分大礼"
+			tasks: [{
+				count: 1L
+				id: "51CEB1C39B78A78B"
+				kubeId: "first_task"
+				title: "点击此并输入任意字符"
+				type: "maa:kube_text_input"
+			}]
+			title: "你好，世界"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["473AA9B909ED8EB0"]
+			description: [
+				"感谢您能够阅读到这里！由于我&6只能通过这些文本描述来与您沟通&r，因此请您时刻都要保持阅读任务描述的习惯以避免错过某些重要信息！"
+				""
+				"&6这对我来说很重要！&r"
+			]
+			id: "1B0CF3C5B2AEE9EA"
+			invisible: true
+			rewards: [
+				{
+					count: 3
+					id: "52B1A9A1BE48A1C5"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "686861B05BFEE43F"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "45E0AA43FF3887CE"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+			]
+			subtitle: "给留心者的一份奖励"
+			tasks: [{
+				count: 1L
+				icon: "kubejs:full_mark"
+				id: "1AEE3790A3FD55F0"
+				kubeId: "hello_world_task"
+				title: "Hello！"
+				type: "maa:kube"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
 	title: "引"
 }

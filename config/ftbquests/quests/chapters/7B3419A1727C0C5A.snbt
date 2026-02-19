@@ -1,0 +1,41 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7B3419A1727C0C5A"
+	group: "78F99AC9360F0137"
+	icon: "kubejs:badge"
+	id: "7B3419A1727C0C5A"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["4E805DA2B8D171E4"]
+		description: [
+			"感谢您的关键词，我成功的搜索到了相关的日志信息。"
+			""
+			"在历史日志中，有一类玩家被称为“&6赞助者&r”，其在之前的世界中具有着极其特殊的地位，在各种位置上都被给予优待。"
+			""
+			"此外，这些玩家还反复提及了一句话，请允许我将该信息重放给您。"
+		]
+		hide_dependency_lines: true
+		id: "1B4DAFA046EB8F20"
+		invisible: true
+		rewards: [{
+			id: "040D8E63C7FAF03D"
+			item: "lightmanscurrency:coin_gold"
+			type: "item"
+		}]
+		subtitle: "身份特殊的玩家"
+		tasks: [{
+			count: 1L
+			icon: "kubejs:badge"
+			id: "3875F001D6C0D542"
+			kubeId: "sponsor_task"
+			title: "赞助者的记录"
+			type: "maa:kube"
+		}]
+		title: "&6被称为赞助者的玩家&r"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "秘闻：被尊重者"
+}

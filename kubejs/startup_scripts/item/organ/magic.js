@@ -1,9 +1,7 @@
 // priority: 500
 StartupEvents.registry('item', event => {
-    event.create('kubejs:originiums').maxDamage(10).maxStackSize(1).texture('kubejs:item/organs/magic/originiums').tag('kubejs:magic')
     event.create('kubejs:animted_soul').maxStackSize(1).texture('kubejs:item/organs/magic/animted_soul').tag('kubejs:magic')
-
-
+    
     // 糖果
     event.create('kubejs:candy_heart').maxStackSize(1).texture('kubejs:item/organs/magic/candy_heart').tag('kubejs:magic').tag('kubejs:heart')
     event.create('kubejs:candy_pancreas').maxStackSize(1).texture('kubejs:item/organs/magic/candy_pancreas').tag('kubejs:magic')

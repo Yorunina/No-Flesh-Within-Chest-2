@@ -528,7 +528,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["213A5C217F398F0D"]
+			dependencies: ["1B7AA06C30AD228E"]
 			description: [
 				"在决定好了该如何摆放这些机械后，为了让几个这些机械形成一个整体，您需要使用&6强力胶右键框选您提前建造摆放好的机械&r，将其粘合成一个整体。"
 				""
@@ -607,7 +607,7 @@
 			y: -9.0d
 		}
 		{
-			dependencies: ["213A5C217F398F0D"]
+			dependencies: ["298A74965996E72C"]
 			description: [
 				"不结合实例的去完成前文所述的操作确实有些强人所难。"
 				""
@@ -769,6 +769,31 @@
 			title: "自行借鉴他人之利"
 			x: 10.5d
 			y: -12.5d
+		}
+		{
+			dependencies: ["213A5C217F398F0D"]
+			id: "298A74965996E72C"
+			subtitle: "// todo"
+			tasks: [{
+				id: "49910F373DA25A01"
+				isServer: false
+				stage: "ftb_mechanical_tutorial_1"
+				type: "maa:astages"
+			}]
+			x: 7.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["213A5C217F398F0D"]
+			id: "1B7AA06C30AD228E"
+			tasks: [{
+				id: "060CFBD834C6CB6C"
+				isServer: false
+				stage: "ftb_mechanical_tutorial_2"
+				type: "maa:astages"
+			}]
+			x: 7.5d
+			y: -7.5d
 		}
 	]
 	title: "认知：机械"
