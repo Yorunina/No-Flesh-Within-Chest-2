@@ -30,5 +30,7 @@ function SyncClientMoonEvent(player) {
     if (player.server.persistentData.contains('moonData')) {
         let moonNbt = player.server.persistentData.getCompound('moonData')
         player.sendData('modify_moon', moonNbt)
+    } else {
+        player.sendData('modify_moon')
     }
 }

@@ -17,5 +17,9 @@ MoonDataModel.prototype = {
     },
     getMoonSize() {
         return this.moonSize
+    },
+    reset() {
+        this.moonSize = 20
+        this.moonShaderColor = new RGB(1, 1, 1)
     }
 }

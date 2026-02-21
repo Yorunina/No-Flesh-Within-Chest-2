@@ -12,4 +12,3 @@ MAAEvents.textInputTaskSubmit('keep_contact', (event) => {
     }
     teamData.addProgress(task, 1)
 })
-

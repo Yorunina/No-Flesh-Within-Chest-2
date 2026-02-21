@@ -77,7 +77,7 @@ function DamageItem(item) {
  * @returns 
  */
 function SourceJarItemAddSource(sourceJarItem, count) {
-    if (!sourceJarItem.hasNBT()) sourceJarItem.setNbt(NBT.fromTag({BlockEntityTag: {source: 0}}))
+    if (!sourceJarItem.hasNBT()) sourceJarItem.setNbt(NBT.fromTag({ BlockEntityTag: { source: 0 } }))
     let nbt = sourceJarItem.getNbt()
     if (!nbt.contains('BlockEntityTag')) nbt.put('BlockEntityTag', new $CompoundTag())
     let blockEntityNbt = nbt.getCompound('BlockEntityTag')
@@ -103,4 +103,30 @@ function SourceJarItemConsumeSource(sourceJarItem, count) {
     blockEntityNbt.putInt('source', sourceCount - count)
     sourceJarItem.setNbt(nbt)
     return true
+}
+
+/**
+ * 
+ * @param {Internal.ItemStack[]} itemList 
+ * @param {Internal.ItemStack} item 
+ */
+function AddItemStackToItemStackList(itemList, item) {
+    if (item.isEmpty()) return
+    for (let i = 0; i < itemList.length; i++) {
+        let pItemStack = itemList[i]
+        if (item.isEmpty()) return
+
+        if ($ItemStack.isSameItemSameTags(pItemStack, item)) {
+            if (pItemStack.getCount() + item.getCount() > pItemStack.getMaxStackSize()) {
+                let overflowCount = pItemStack.getMaxStackSize() - pItemStack.getCount()
+                pItemStack.setCount(pItemStack.getMaxStackSize())
+                item.setCount(item.getCount() - overflowCount)
+            } else {
+                pItemStack.setCount(pItemStack.getCount() + item.getCount())
+            }
+        }
+    }
+    if (!item.isEmpty()) {
+        itemList.push(item)
+    }
 }

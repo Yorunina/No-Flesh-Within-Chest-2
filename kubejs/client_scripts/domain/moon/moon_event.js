@@ -17,6 +17,10 @@ RenderJSEvents.changeMoonColor(event => {
 
 NetworkEvents.dataReceived('modify_moon', event => {
     const data = event.data
+    if (!data) {
+        MOON_INSTANCE.reset()
+        return
+    }
     if (data.contains('moonSize')) {
         MOON_INSTANCE.setMoonSize(data.getInt('moonSize'))
     }

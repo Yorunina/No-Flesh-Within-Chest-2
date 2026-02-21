@@ -172,8 +172,6 @@
 				"通过胸腔来培育未成型肿瘤可能有些费劲且不安全——"
 				""
 				"您可以使用&6常规培养基来进行未成型肿瘤的&r培养，其相较于常规培养有很多优势，不仅&6效率高于体内培养&r，其也可以&6通过各种不同的营养液来培育不同的未成型肿瘤&r。"
-				""
-				"某些特殊的未成型肿瘤甚至可以不光提供器官属性，还可以提供一些&6额外的物质资源&r。"
 			]
 			id: "423AEF7EC222CA7F"
 			rewards: [{
@@ -196,7 +194,9 @@
 			description: [
 				"混合培养基并不是常规的培养基种类，其并不能将未成型肿瘤培育成型。"
 				""
-				"其主要功能为，将培养仓中所有肿瘤的&6属性种类混合并且随机分配&r。这个过程不会影响原有肿瘤的属性数值和属性条数，但是会将其属性种类重新进行分配。"
+				"其主要功能为，将培养仓中所有&6未成型肿瘤&r的&6属性种类混合并且随机分配&r，其混合的属性包含所有的&6潜在属性&r和&6常规属性&r。"
+				""
+				"这个过程不会影响原有所有未成型肿瘤的属性数值和属性条数，但是会将其属性种类重新进行分配。"
 			]
 			id: "3F751C531606F6D3"
 			rewards: [{
@@ -212,18 +212,14 @@
 			}]
 			title: "混合培养基"
 			x: 12.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["19A39C178E01F423"]
 			description: [
 				"突变培养基并非是一种常见的培养基，其主要用途也并不是培养未成型肿瘤。"
 				""
-				"通过突变培养基，您可以将培养仓内放置的肿瘤的属性值按照培养液的种类进行&6重新培育&r。"
-				""
-				"但是其效率较为底下，每轮每个肿瘤只会&6根据其放置在培养仓的位置&r，选择位置对应的&6一条属性进行重新随机&r。"
-				""
-				"因此您可以进行一些实验，确定培养仓的每个位置分别对应哪条属性，进而进行精确培养。"
+				"通过突变培养基，您可以将培养仓内放置的&6肿瘤&r的属性按照培养液的种类进行&6重新培育&r。"
 			]
 			id: "17A8EB09B890834E"
 			rewards: [{
@@ -239,10 +235,17 @@
 			}]
 			title: "突变培养基"
 			x: 12.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["07B051220DE15756"]
+			dependencies: ["19A39C178E01F423"]
+			description: [
+				"当获得了属性优良的肿瘤时，您可以使用增殖培养基进行肿瘤的增殖。"
+				""
+				"在培养仓中心绿色区域使用增殖培养基，即可在当前周期启动对周围肿瘤的&6增殖工序&r。"
+				""
+				"如果增殖成功，则会在周围的空白槽位中生成肿瘤的复制体。但是增殖出的肿瘤其基因会&c概率劣化&r，使属性发生不可控的增减。"
+			]
 			id: "3C112008E390B113"
 			rewards: [{
 				id: "49FAE0A12B25D9DF"
@@ -255,32 +258,8 @@
 				item: "kubejs:proliferation_culture_medium"
 				type: "item"
 			}]
-			x: 16.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["07B051220DE15756"]
-			description: [
-				"为了能够利用&6铁基提纯效率&r进行资源的提取，您需要使用&6纯化培养基&r激活这些属性。"
-				""
-				"在培养仓中心的绿色区域使用&6纯化培养基&r，即可在当前培养周期中启动周围肿瘤的&6铁基提纯效率&r，这使得这些肿瘤可以从铁基营养素中提取大量的铁锭并生成在空白的槽位中。"
-				""
-				"但是，肿瘤进行提纯流程的时候会概率使自身的基因发生&c劣化&r，劣化时肿瘤的属性会随机的进行增减。为了降低这种情况出生的可能性，将&6基因稳定性&r较高的肿瘤用于提纯是非常优良的决定。"
-			]
-			id: "06774B10A942D09D"
-			rewards: [{
-				id: "73DFFA2AB2EEAE09"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "将资源肿瘤加以利用"
-			tasks: [{
-				id: "0DF8293C4C46A02B"
-				item: "kubejs:refined_culture_medium"
-				type: "item"
-			}]
-			x: 16.5d
-			y: -4.5d
+			x: 12.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
@@ -300,38 +279,180 @@
 			}]
 			title: "特殊培养素：玫瑰"
 			x: 14.0d
-			y: -0.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["423AEF7EC222CA7F"]
-			description: [
-				"使用不同的营养液可以让肿瘤发生可控的定向变异。"
-				""
-				"以&6铁基营养素&r为例，铁基营养素是一种可以用于培育&6特殊资源肿瘤&r的营养素。"
-				""
-				"其在培育未成型肿瘤时，会生成&63个显性属性&r和&61个隐性属性&r，且其中存在有3个特殊属性，分别为&6增殖效率&r、&6基因稳定性&r和&6铁基提纯效率&r。"
-				""
-				"增殖效率会影响到肿瘤自我进行复制时的效率，基因稳定性会影响肿瘤在进行提纯和自我复制时的属性劣化概率，而后面的铁基提纯效率则是能够&6允许该肿瘤在特殊的培养基上进行资源的生产&r。"
-				""
-				"后续的具体信息我还在解读，请您先制作铁基营养素，并且尝试用铁基营养素培养出一批未成型肿瘤。"
-			]
-			icon: "kubejs:iron_nutrients_fluid_bucket"
-			id: "07B051220DE15756"
+			dependencies: ["30DFADD41A73DC07"]
+			id: "4E86FD2718C02061"
 			rewards: [{
-				id: "223D8D765E66434B"
+				id: "0950D267C3470BFA"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "铁质化肿瘤"
 			tasks: [{
-				amount: 1000L
-				fluid: "kubejs:iron_nutrients_fluid"
-				id: "3A18F07D9D4EE63F"
-				type: "fluid"
+				icon: {
+					Count: 1
+					id: "kubejs:tumor"
+					tag: { }
+				}
+				id: "45467E1917241EF3"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:tumor"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "maa:chest_cavity_organ_score"
+								tag: {
+									value: "kubejs:rosy>0.0"
+								}
+							}
+						]
+					}
+				}
+				title: "玫瑰化大于0的肿瘤"
+				type: "item"
 			}]
-			title: "特殊培养素：铁基"
-			x: 14.0d
-			y: -3.0d
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["30DFADD41A73DC07"]
+			id: "7AAB7156D3BC87D5"
+			tasks: [{
+				id: "4DE01F7CD999632E"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:tumor"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "maa:chest_cavity_organ_score"
+								tag: {
+									value: "chestcavity:strength>0.0"
+								}
+							}
+						]
+					}
+				}
+				title: "力量大于0的肿瘤"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"4E86FD2718C02061"
+				"7AAB7156D3BC87D5"
+			]
+			id: "7B17BE1E914B20B8"
+			tasks: [{
+				id: "51269334ED0402FA"
+				item: {
+					Count: 1
+					id: "kubejs:rose_quartz_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4E86FD2718C02061"]
+			id: "17CDACFF66B94C57"
+			tasks: [{
+				id: "05E22392BE95F906"
+				item: {
+					Count: 1
+					id: "kubejs:rose_quartz_dialyzer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4E86FD2718C02061"]
+			id: "099F508626A998A8"
+			tasks: [{
+				id: "541C5961F38DC5C4"
+				item: {
+					Count: 1
+					id: "kubejs:rose_quartz_liver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4E86FD2718C02061"]
+			id: "6A23271F6A2023D0"
+			tasks: [{
+				id: "13A3C03E304A2681"
+				item: {
+					Count: 1
+					id: "kubejs:rose_quartz_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4E86FD2718C02061"]
+			id: "663B39864DB186A8"
+			tasks: [{
+				id: "39F9ED0485E7DD8F"
+				item: {
+					Count: 1
+					id: "kubejs:rose_quartz_dialyzer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5A2C4544B9011D4F"]
+			id: "59B331E95DB82528"
+			shape: "diamond"
+			tasks: [{
+				id: "519A3984A36F4B8B"
+				item: "kubejs:rose_injection"
+				type: "item"
+			}]
+			x: 24.0d
+			y: -2.0d
+		}
+		{
+			id: "5A2C4544B9011D4F"
+			shape: "square"
+			tasks: [{
+				id: "6B3298E098494800"
+				item: "kubejs:rose_injection"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -2.0d
 		}
 	]
 	title: "秘闻：体外培养"

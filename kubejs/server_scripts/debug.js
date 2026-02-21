@@ -23,7 +23,6 @@ ItemEvents.rightClicked('stick', event => {
     const level = event.level
     const server = event.server
 
-    player.tell(UnformedTumorFluidConfigMap.get('kubejs:iron_nutrients_fluid').genOrganData())
     // level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')
     // SetDaySpeed(0.1)

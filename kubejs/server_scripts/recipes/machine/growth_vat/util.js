@@ -29,7 +29,6 @@ function UnformedTumorGrowth(machine, item, slotId) {
 function SpawnUnformedTumor(machine, fluid, slotId) {
     let fluidId = String(fluid.id)
     if (!UnformedTumorFluidConfigMap.has(fluidId)) return
-
     let organDataConfig = UnformedTumorFluidConfigMap.get(fluidId)
     let organData = organDataConfig.genOrganData()
     let potentialOrganData = organDataConfig.genPotentialOrganData()

@@ -17,10 +17,11 @@ ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 60)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
             GrowthVatOutputSlotsList.forEach(pSlotId => {
                 let item = machine.getItemStored(pSlotId)
-                let fluid = machine.getFluidStored('nutrient_solution')
                 if (!item || item.isEmpty()) {
+                    if (Math.random() < 0.5) return
                     SpawnUnformedTumor(machine, fluid, pSlotId)
                 } else {
                     UnformedTumorGrowth(machine, item, pSlotId)
