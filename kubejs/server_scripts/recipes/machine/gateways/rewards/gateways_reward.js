@@ -81,6 +81,7 @@ function EternalAltarGatewayArtificialTicketReward(machine, player, levelIndicat
     }
     eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
     // Ticket特殊掉落物
+    // todo 后续有需要改造成策略
     if (levelIndicator >= 20 && typeIndicator >= 50) {
         rewardList.push(new GatewayStackReward(Item.of('kubejs:eternal_miracle_ticket')))
     }

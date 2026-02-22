@@ -33,7 +33,6 @@ BlockEvents.rightClicked('tconstruct:magma_cake', event => {
     // 校验材料是否满足
     for (let i in recipeItems) {
         if (recipeItems[i] > 0) {
-            console.log('缺少材料' + i + 'x' + recipeItems[i])
             return
         }
     }

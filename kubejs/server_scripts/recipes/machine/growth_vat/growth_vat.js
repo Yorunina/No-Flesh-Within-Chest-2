@@ -21,7 +21,6 @@ ServerEvents.recipes(event => {
             GrowthVatOutputSlotsList.forEach(pSlotId => {
                 let item = machine.getItemStored(pSlotId)
                 if (!item || item.isEmpty()) {
-                    if (Math.random() < 0.5) return
                     SpawnUnformedTumor(machine, fluid, pSlotId)
                 } else {
                     UnformedTumorGrowth(machine, item, pSlotId)
@@ -30,5 +29,64 @@ ServerEvents.recipes(event => {
             return ctx.success()
         })
         .requireItem('kubejs:culture_medium', 'input_slot')
+        .requireFluidTag('kubejs:nutrients_fluid', 1000, 'nutrient_solution')
+
+
+    event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 60)
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            GrowthVatOutputSlotsList.forEach(pSlotId => {
+                let item = machine.getItemStored(pSlotId)
+                if (item && !item.isEmpty()) {
+                    UnformedTumorMutationGrowth(machine, fluid, item, pSlotId)
+                }
+            })
+            return ctx.success()
+        })
+        .requireItem('kubejs:mutation_culture_medium', 'input_slot')
+        .requireFluidTag('kubejs:nutrients_fluid', 1000, 'nutrient_solution')
+
+    event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 60)
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            let outputItems = []
+            let emptySlots = []
+            GrowthVatOutputSlotsList.forEach(pSlotId => {
+                let item = machine.getItemStored(pSlotId)
+                if (!item || item.isEmpty()) {
+                    emptySlots.push(pSlotId)
+                } else {
+                    outputItems = outputItems.concat(ProliferateTumor(machine, fluid, item, pSlotId))
+                }
+            })
+            if (outputItems.length > emptySlots.length) {
+                outputItems = outputItems.slice(0, emptySlots.length)
+            }
+            emptySlots.forEach((pSlotId, index) => {
+                machine.setItemStored(pSlotId, outputItems[index])
+            })
+            return ctx.success()
+        })
+        .requireItem('kubejs:proliferation_culture_medium', 'input_slot')
+        .requireFluidTag('kubejs:nutrients_fluid', 1000, 'nutrient_solution')
+
+
+    event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 60)
+        .requireFunctionOnEnd(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            let unformedTumorList = []
+            GrowthVatOutputSlotsList.forEach(pSlotId => {
+                let item = machine.getItemStored(pSlotId)
+                if (!item || item.isEmpty()) return
+                if (!item.is('kubejs:unformed_tumor')) return
+                unformedTumorList.push({ item: item, slotId: pSlotId })
+            })
+            MixUnformedTumorAttri(machine, fluid, unformedTumorList)
+            return ctx.success()
+        })
+        .requireItem('kubejs:mixed_culture_medium', 'input_slot')
         .requireFluidTag('kubejs:nutrients_fluid', 1000, 'nutrient_solution')
 })

@@ -26,3 +26,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:parasitic_tumor')
     .addAlt(Text.translatable('tooltips.kubejs.parasitic_tumor.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.parasitic_tumor.alt.2'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:rosy_tumor')
+    .addDefault(Text.translatable('tooltips.kubejs.rosy_tumor.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.rosy_tumor.alt.1'))
+)

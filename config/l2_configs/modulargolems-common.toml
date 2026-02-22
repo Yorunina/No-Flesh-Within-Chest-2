@@ -238,6 +238,15 @@ wandBypassConfig = false
 	#Sandstorm Upgrade damage bonus per level
 	#Range: 0.0 ~ 10.0
 	sandCurseBonus = 0.1
+	#Heal rate as percentage of damage dealt per level of blazing brand
+	#Range: 0.0 ~ 10.0
+	ignitiumHealRate = 0.1
+	#Ignis Helmet Bonus: Fireball damage boost
+	#Range: 0.0 ~ 10.0
+	fireballArmorBonus = 0.5
+	#Ignis Shinguard Bonus: Flame Strike damage boost
+	#Range: 0.0 ~ 10.0
+	flameStrikeArmorBonus = 0.5
 
 ["composite material compat"]
 	#Dungeon Absorption: lifesteal ratio for melee damage.

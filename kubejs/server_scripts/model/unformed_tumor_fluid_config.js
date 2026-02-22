@@ -82,14 +82,14 @@ UnformedTumorFluidConfigModel.prototype = {
     genOrganData: function () {
         let organData = new $CompoundTag()
         this.getOrganDataAttri().forEach((attri) => {
-            organData.putDouble(attri.name, FloorFix(NormalRandom(attri.mean, attri.sigma), 2))
+            organData.putFloat(attri.name, FloorFix(NormalRandom(attri.mean, attri.sigma), 2))
         })
         return organData
     },
     genPotentialOrganData: function () {
         let organData = new $CompoundTag()
         this.getPotentialOrganDataAttri().forEach((attri) => {
-            organData.putDouble(attri.name, FloorFix(NormalRandom(attri.mean, attri.sigma), 2))
+            organData.putFloat(attri.name, FloorFix(NormalRandom(attri.mean, attri.sigma), 2))
         })
         return organData
     }

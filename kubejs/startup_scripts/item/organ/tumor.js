@@ -10,12 +10,22 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag('kubejs:organ')
         .tag('kubejs:infected')
+        .tag('kubejs:tumor')
 
     event.create('kubejs:unformed_tumor')
         .texture('kubejs:item/organs/infected/unformed_tumor')
         .maxStackSize(1)
         .tag('kubejs:organ')
         .tag('kubejs:infected')
+        .tag('kubejs:tumor')
+
+    event.create('kubejs:rosy_tumor')
+        .texture('kubejs:item/organs/infected/rosy_tumor')
+        .maxStackSize(1)
+        .tag('kubejs:organ')
+        .tag('kubejs:rose')
+        .tag('kubejs:infected')
+        .tag('kubejs:tumor')
 
     event.create('kubejs:malignant_neuron_tumor')
         .texture('kubejs:item/organs/infected/malignant_neuron_tumor')
@@ -31,11 +41,9 @@ StartupEvents.registry('item', event => {
             if (!nbt.contains('organData')) return false
             let oStack = slot.getItem()
             if (oStack.isEmpty()) return false
-            if (!oStack.hasTag('kubejs:organ')) return false
+            if (!oStack.hasTag('kubejs:organ') || oStack.hasTag('kubejs:tumor')) return false
             let organDataNbt = nbt.getCompound('organData')
-            if (!oStack.hasNBT()) {
-                oStack.setNbt(new $CompoundTag())
-            }
+            if (!oStack.hasNBT()) oStack.setNbt(new $CompoundTag())
             let oNbt = oStack.getNbt()
             oNbt.put('organData', organDataNbt)
             oNbt.putBoolean('Infected', true)
@@ -46,5 +54,5 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag('kubejs:organ')
         .tag('kubejs:infected')
-
+        .tag('kubejs:tumor')
 })
