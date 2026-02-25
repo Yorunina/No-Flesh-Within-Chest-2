@@ -17,6 +17,7 @@ const InfinityDimItem2DimId = {
     'minecraft:white_concrete': 'infinity:ant',
     'minecraft:dragon_egg': 'infinity:skygrid',
     'minecraft:gold_block': 'infinity:golden',
+    'minecraft:gold_ingot': 'kubejs:oath',
 }
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.entity

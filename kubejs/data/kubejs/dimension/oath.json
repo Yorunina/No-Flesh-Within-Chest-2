@@ -1,13 +1,54 @@
 {
   "type": "kubejs:oath",
   "generator": {
-    "type": "minecraft:flat",
+    "type": "minecraft:noise",
     "settings": {
-      "biome": "kubejs:oath_biome",
-      "lakes": false,
-      "features": true,
-      "layers": [],
-      "structure_overrides": []
+      "name": "kubejs:oath",
+      "default_block": {
+        "Name": "minecraft:air"
+      },
+      "default_fluid": {
+        "Name": "minecraft:air"
+      },
+      "sea_level": 0,
+      "disable_mob_generation": true,
+      "aquifers_enabled": false,
+      "ore_veins_enabled": false,
+      "legacy_random_source": false,
+      "noise": {
+        "min_y": 0,
+        "height": 384,
+        "size_horizontal": 1,
+        "size_vertical": 1
+      },
+      "noise_router": {
+        "vein_ridged": "minecraft:zero",
+        "fluid_level_spread": 0,
+        "vegetation": "minecraft:zero",
+        "vein_gap": "minecraft:zero",
+        "continents": "minecraft:zero",
+        "initial_density_without_jaggedness": "minecraft:zero",
+        "lava": 0,
+        "barrier": 0,
+        "depth": "minecraft:zero",
+        "ridges": "minecraft:zero",
+        "erosion": "minecraft:zero",
+        "temperature": "minecraft:zero",
+        "final_density": "minecraft:zero",
+        "vein_toggle": "minecraft:zero",
+        "fluid_level_floodedness": 0
+      },
+      "surface_rule": {
+        "type": "minecraft:block",
+        "result_state": {
+          "Name": "minecraft:air"
+        }
+      },
+      "spawn_target": []
+    },
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "kubejs:biome_oath"
     }
   }
 }

@@ -9,5 +9,4 @@ EntityEvents.spawned('cataclysm:lionfish', event => {
 
 EntityEvents.spawned(event => {
     const level = event.level
-    if (level.dimension.toString() == 'kubejs:oath') return event.cancel()
 })

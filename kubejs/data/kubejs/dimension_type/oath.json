@@ -1,4 +1,5 @@
 {
+  "name": "kubejs:oath",
   "ultrawarm": false,
   "natural": false,
   "piglin_safe": true,
@@ -9,11 +10,17 @@
   "has_ceiling": false,
   "coordinate_scale": 1,
   "ambient_light": 0,
-  "logical_height": 320,
+  "logical_height": 384,
   "effects": "minecraft:overworld",
   "infiniburn": "#minecraft:infiniburn_overworld",
-  "min_y": -64,
-  "height": 320,
-  "monster_spawn_light_level": 0,
+  "min_y": 0,
+  "height": 384,
+  "monster_spawn_light_level": {
+    "type": "minecraft:uniform",
+    "value": {
+      "max_inclusive": 0,
+      "min_inclusive": 0
+    }
+  },
   "monster_spawn_block_light_limit": 0
 }

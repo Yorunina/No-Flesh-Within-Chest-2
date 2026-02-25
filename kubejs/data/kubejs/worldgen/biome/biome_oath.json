@@ -1,5 +1,6 @@
 {
     "has_precipitation": true,
+    "temperature_modifier": "none",
     "temperature": 0.8,
     "downfall": 0.4,
     "spawn_costs": {},
@@ -9,17 +10,20 @@
         "sky_color": 7907327,
         "water_color": 4159204,
         "water_fog_color": 329011,
-        "fog_color": 12638463,
-        "mood_sound": {
-            "sound": "minecraft:ambient.cave",
-            "tick_delay": 6000,
-            "block_search_extent": 8,
-            "offset": 2.0
-        }
+        "fog_color": 12638463
     },
+    "creature_spawn_probability": 0,
     "features": [
-        [
-            "kubejs:random_cube_feature"
-        ]
+        ["kubejs:place_cube"],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
     ]
 }
