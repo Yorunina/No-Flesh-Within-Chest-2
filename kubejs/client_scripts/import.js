@@ -27,3 +27,6 @@ const $Float = Java.loadClass('java.lang.Float')
 const $Integer = Java.loadClass('java.lang.Integer')
 
 const $CreateRecipeCategory = Java.loadClass('com.simibubi.create.compat.jei.category.CreateRecipeCategory')
+const $ParticleUtil = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleUtil')
+const $GlowParticleData = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.GlowParticleData')
+const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')

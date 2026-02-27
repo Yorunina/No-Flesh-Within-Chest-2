@@ -11,7 +11,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    SetEternalWinterState(server, 0)
+    RenderBlockOutlineInTime(player, [new OutlineRenderModel(player.blockPosition(), '#ffaaaa')], 20 * 60)
     // level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')
     // SetDaySpeed(0.1)
@@ -48,7 +48,7 @@ ItemEvents.rightClicked('stick', event => {
 
 
 // .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
-//     if (stack.getCount() != 1 || action != $ClickAction.SECONDARY || !slot.allowModification(player)) return false
+//     if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
 //     if (oStack.isEmpty()) {
 //         RemoveBundleOneStack(stack).ifPresent(pStack => {
 //             PlayBundleRemoveSound(player)
@@ -64,7 +64,7 @@ ItemEvents.rightClicked('stick', event => {
 //     return true
 // })
 // .overrideStackedOnOther((stack, slot, action, player) => {
-//     if (stack.getCount() != 1 || action != $ClickAction.SECONDARY) return false
+//     if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
 //     let oStack = slot.getItem()
 //     if (oStack.isEmpty()) {
 //         PlayBundleRemoveSound(player)

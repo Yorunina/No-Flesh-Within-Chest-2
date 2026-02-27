@@ -23,7 +23,9 @@ TitlesEvent.onTitleRegistry(event => {
     regsitryTitleSimple('world_machine_builder', 'epic')
     regsitryTitleSimple('multiworld_future', 'epic')
     regsitryTitleSimple('my_genesis', 'epic')
-    regsitryTitleSimple('new_tinker', 'uncommon') // todo 匠魂教程初始的几个任务里
+    regsitryTitleSimple('new_tinker', 'uncommon')
+    regsitryTitleSimple('molder', 'uncommon') // 
+    
     regsitryTitleSimple('tinker_study', 'rare')
     regsitryTitleSimple('gearsmith', 'uncommon')
     regsitryTitleSimple('eternal_winter', 'epic')

@@ -86,7 +86,7 @@ function GetBundleContents(stack) {
 function GetBundleCountentWeight(stack, weightFunc) {
     let stackList = GetBundleContents(stack)
     let weight = 0
-    stackList.forEach(stack => weight += weightFunc(stack) * stack.getCount())
+    stackList.forEach(stack => weight += weightFunc(stack))
     return weight
 }
 

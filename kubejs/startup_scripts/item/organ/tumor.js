@@ -36,7 +36,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:parasitic_tumor')
         .overrideStackedOnOther((stack, slot, action, player) => {
-            if (stack.getCount() != 1 || action != $ClickAction.SECONDARY) return false
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
             let nbt = stack.getOrCreateTag()
             if (!nbt.contains('organData')) return false
             let oStack = slot.getItem()

@@ -20,11 +20,19 @@
 			]
 			icon: "tconstruct:materials_and_you"
 			id: "64F4A9E919F0011D"
-			rewards: [{
-				id: "673D12EBC56281C2"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "673D12EBC56281C2"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "3819A98F4D464EC2"
+					titleId: "kubejs:new_tinker"
+					type: "titles:title"
+				}
+			]
 			subtitle: "认知:特殊的物品属性"
 			tasks: [{
 				id: "045F88EC53969470"
