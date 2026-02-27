@@ -1,6 +1,6 @@
 // priority: 500
 ServerEvents.recipes(event => {
-    event.recipes.custommachinery.custom_machine('kubejs:eternal_altar', 180)
+    event.recipes.custommachinery.custom_machine('kubejs:eternal_altar', 200)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()

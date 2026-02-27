@@ -6,7 +6,7 @@
 function AttributeManagerModel(attr) {
     this.attr = attr
     this.baseAddModifier = 0
-    this.baseMultiModifier = 1
+    this.baseMultiModifier = 0
     this.allAddModifier = 0
     this.allMultiModifier = 0
     this.isModified = false
@@ -80,7 +80,7 @@ AttributeManagerModel.prototype = {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.baseAdd, identifier + 'BaseAddition', this.baseAddModifier, $Operation.ADDITION)
             attributeInstance.addPermanentModifier(attributeModifier)
         }
-        if (this.baseMultiModifier != 1) {
+        if (this.baseMultiModifier != 0) {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.baseMulti, identifier + 'BaseMulti', this.baseMultiModifier, $Operation.MULTIPLY_BASE)
             attributeInstance.addPermanentModifier(attributeModifier)
         }

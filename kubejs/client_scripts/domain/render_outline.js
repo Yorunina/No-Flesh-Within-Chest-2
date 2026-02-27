@@ -5,7 +5,6 @@
 let NeedHighLightPosList = []
 
 NetworkEvents.dataReceived('highlight_pos', event => {
-    console.log(event.data)
     let data = event.data
     let mode = data.getInt('mode')
     /** @type {OutlineRenderModel[]} */

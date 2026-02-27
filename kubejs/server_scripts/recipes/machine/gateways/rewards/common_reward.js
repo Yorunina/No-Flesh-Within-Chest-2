@@ -1,5 +1,5 @@
 // priority: 502
-const GatewawySpecialAwakeStoneWeightModel = new WeightRandomModel()
+const GatewaySpecialAwakeStoneWeightModel = new WeightRandomModel()
     .addWeightRandom(Item.of('kubejs:gateways_awake_stone_9', 1))
     .addWeightRandom(Item.of('kubejs:gateways_awake_stone_8', 2))
     .addWeightRandom(Item.of('kubejs:gateways_awake_stone_7', 3))
@@ -8,7 +8,7 @@ const GatewawySpecialAwakeStoneWeightModel = new WeightRandomModel()
     .addWeightRandom(Item.of('kubejs:gateways_awake_stone_4', 15))
     .addWeightRandom(Item.of('kubejs:gateways_awake_stone_3', 20))
     .addWeightRandom(Item.of('kubejs:gateways_awake_stone_2', 25))
-const GatewawyAuxiliaryMaterialWeightModel = new WeightRandomModel()
+const GatewayAuxiliaryMaterialWeightModel = new WeightRandomModel()
     .addWeightRandom(Item.of('kubejs:gateways_auxiliary_material_9', 1))
     .addWeightRandom(Item.of('kubejs:gateways_auxiliary_material_8', 2))
     .addWeightRandom(Item.of('kubejs:gateways_auxiliary_material_7', 5))
@@ -16,13 +16,13 @@ const GatewawyAuxiliaryMaterialWeightModel = new WeightRandomModel()
     .addWeightRandom(Item.of('kubejs:gateways_auxiliary_material_4', 3))
     .addWeightRandom(Item.of('kubejs:gateways_auxiliary_material_3', 6))
     .addWeightRandom(Item.of('kubejs:gateways_auxiliary_material_2', 12))
-const GatewawyExtractantMaterialWeightModel = new WeightRandomModel()
+const GatewayExtractantMaterialWeightModel = new WeightRandomModel()
     .addWeightRandom(Item.of('kubejs:gateways_extractant_material_5', 30))
     .addWeightRandom(Item.of('kubejs:gateways_extractant_material_4', 20))
     .addWeightRandom(Item.of('kubejs:gateways_extractant_material_3', 15))
     .addWeightRandom(Item.of('kubejs:gateways_extractant_material_2', 30))
     .addWeightRandom(Item.of('kubejs:gateways_extractant_material_1', 50))
-const GatewawyTypeStackRewardMappingModel = new PiecewiseMappingModel()
+const GatewayTypeStackRewardMappingModel = new PiecewiseMappingModel()
     .addPiece(0, 10, (levelIndicator, chaosIndicator, typeIndicator) => {
         let stackList = []
         RandomGetN(['minecraft:slime_ball', 'minecraft:lily_pad', 'minecraft:rabbit_foot', 'minecraft:pufferfish', 'minecraft:fermented_spider_eye', 'minecraft:sugar', 'minecraft:golden_carrot', 'minecraft:glistering_melon_slice'], 3).forEach(pItem => {
@@ -85,13 +85,13 @@ function eternalAltarGatewayTypeStackReward(levelIndicator, chaosIndicator, type
     let stackList = []
     // 必定掉落基础唤醒材料 1 ~ 2 + 随机几种特殊唤醒材料
     stackList.push(Item.of('kubejs:gateways_awake_stone_1', Math.floor(1.2 + Math.random())))
-    stackList.push(GatewawySpecialAwakeStoneWeightModel.getWeightRandomObjs(Math.floor(1 + Math.random() * (levelIndicator / 20 + 1))))
+    stackList.push(GatewaySpecialAwakeStoneWeightModel.getWeightRandomObjs(Math.floor(1 + Math.random() * (levelIndicator / 20 + 1))))
     // 低概率掉落辅助材料，概率受层数影响
-    if (Math.random() < 0.1 + 0.01 * levelIndicator) stackList.push(GatewawyAuxiliaryMaterialWeightModel.getWeightRandomObj())
+    if (Math.random() < 0.1 + 0.01 * levelIndicator) stackList.push(GatewayAuxiliaryMaterialWeightModel.getWeightRandomObj())
     // 低概率掉落提取物，概率受层数影响
-    if (Math.random() < 0.2 + 0.01 * levelIndicator) stackList.push(GatewawyExtractantMaterialWeightModel.getWeightRandomObj())
+    if (Math.random() < 0.2 + 0.01 * levelIndicator) stackList.push(GatewayExtractantMaterialWeightModel.getWeightRandomObj())
     
-    let typeStackRewardFunc = GatewawyTypeStackRewardMappingModel.getFirstValue(typeIndicator)
+    let typeStackRewardFunc = GatewayTypeStackRewardMappingModel.getFirstValue(typeIndicator)
     if (typeStackRewardFunc) stackList.push(typeStackRewardFunc(levelIndicator, chaosIndicator, typeIndicator))
 
     return new GatewayStackListReward(stackList)

@@ -83,4 +83,18 @@ StartupEvents.registry('minecraft:item', event => {
             })
         )
         .tag('curios:miracle')
+
+    event.create('kubejs:incandescent_miracle', 'basic')
+        .texture('kubejs:item/curios/incandescent_miracle')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('minecraft:generic.attack_damage', 'IncandescentMiracleAttackDamageAddition', nbt.getInt('value') * 0.01, 'addition')
+            })
+        )
+        .tag('curios:miracle')
 })

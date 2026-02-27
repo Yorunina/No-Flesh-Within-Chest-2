@@ -114,6 +114,12 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:sacred_heart')
     .addAlt(Text.translatable('tooltips.kubejs.sacred_heart.alt.1'))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:scry_stomach_pouch')
+    .addDefault(Text.translatable('tooltips.kubejs.scry_stomach_pouch.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.scry_stomach_pouch.alt.1', Text.gold('16 * 32 * 16')))
+    .addAlt(Text.translatable('tooltips.kubejs.scry_stomach_pouch.alt.2', Text.gold('4')))
+)
+
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:organic_mana_condense')
     .addDefault(Text.translatable('tooltips.kubejs.organic_mana_condense.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.source_reactor_furnace.alt.1', DiagonalOrganHover, Text.gold('30')))

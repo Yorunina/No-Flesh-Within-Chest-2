@@ -4,7 +4,7 @@ RegistryArtificalTicketConvertConfig(new ArtificalTicketConvertConfigModel()
     .setResult((machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) => rewardList.push(new GatewayStackReward(Item.of('kubejs:eternal_miracle_ticket'))))
 )
 ServerEvents.recipes(event => {
-    event.recipes.custommachinery.custom_machine('kubejs:eternal_altar', 180)
+    event.recipes.custommachinery.custom_machine('kubejs:eternal_altar', 200)
         .requireFunctionOnEnd(ctx => {
             const block = ctx.getBlock()
             const level = block.getLevel()
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
                     new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ], true, 10)
             ], [
-                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 0, true, true),
+                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 0, true, false),
             ], [], 3600, 200)
 
             let wave2 = new GatewayWave([
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
                     new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ], true, 3)
             ], [
-                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 2, true, true)
+                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 2, true, false)
             ], [], 3600, 200)
 
             let wave3 = new GatewayWave([
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
                     new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ], true, 5),
             ], [
-                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 4, true, true)
+                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 4, true, false)
             ], [], 3600, 200)
 
             let wave4 = new GatewayWave([
@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
                     new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ], true, 3),
             ], [
-                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 4, true, true)
+                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 4, true, false)
             ], [], 3600, 200)
 
             let wave5 = new GatewayWave([
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
                     new GatewayFunctionModifier((pEntity) => pEntity.setMoistness(6000))
                 ], true, 3),
             ], [
-                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 4, true, true)
+                GatewayUtils.buildEffectModifier(1, 'kubejs:frost_shield', 4, true, false)
             ], [], 3600, 200)
 
             let gatewayNormal = new GatewayNormal(

@@ -216,7 +216,7 @@ function GetLivingWithinRadius(level, pos, radius, entityTester) {
     let entityAABBList = level.getEntitiesWithin(area)
     let entityList = []
     entityAABBList.forEach(entity => {
-        if (entity.position() && entity.position().distanceTo(pos) <= radius && entity.isLiving()) {
+        if (entity.position() && entity.position().distanceTo(pos) <= radius && entity.isLiving() && entity.isAlive()) {
             if (entityTester(level, entity)) {
                 entityList.push(entity)
             }

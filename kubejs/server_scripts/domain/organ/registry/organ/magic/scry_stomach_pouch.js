@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:scry_stomach_pouch')
     .addScore('chestcavity:nutrition', 1)
+    .addScore('kubejs:magic_capacity', 2)
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.NetworkEventJS} event 
@@ -19,7 +20,8 @@ function ScryStomachPouchKeyActiveOnly(customData, event, organItem, organIndex,
         if (pItem.isEmpty() || !pItem.isBlock()) continue
         revealBlockItemList.push(pItem)
     }
-    for (let pBlockPos of BlockPos.withinManhattan(player.blockPosition(), 16, 64, 16)) {
+    if (revealBlockItemList.length <= 0) return
+    for (let pBlockPos of BlockPos.withinManhattan(player.blockPosition(), 16, 32, 16)) {
         if (level.isOutsideBuildHeight(pBlockPos)) continue
         let blockState = level.getBlockState(pBlockPos)
         if (blockState.isAir()) continue

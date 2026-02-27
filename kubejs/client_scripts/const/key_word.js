@@ -175,6 +175,12 @@ const FrostShieldHover = Text.translatable('tooltips.kubejs.hover.frost_shield.0
         Text.translatable('tooltips.kubejs.hover.frost_shield.1'),
         Text.translatable('tooltips.kubejs.hover.frost_shield.2')
     ]))
+const SpectralFireHover = Text.translatable('tooltips.kubejs.hover.spectral_fire.0').darkRed().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.spectral_fire.0').darkRed(),
+        Text.translatable('tooltips.kubejs.hover.spectral_fire.1'),
+        Text.translatable('tooltips.kubejs.hover.spectral_fire.2')
+    ]))
 
 
 const BasicTumorScoreHover = Text.translatable('tooltips.kubejs.hover.basic_tumor_score.0').green().underlined()

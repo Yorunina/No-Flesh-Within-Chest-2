@@ -20,19 +20,11 @@
 			]
 			icon: "tconstruct:materials_and_you"
 			id: "64F4A9E919F0011D"
-			rewards: [
-				{
-					id: "673D12EBC56281C2"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					icon: "titles:title_scroll_common"
-					id: "3819A98F4D464EC2"
-					titleId: "kubejs:new_tinker"
-					type: "titles:title"
-				}
-			]
+			rewards: [{
+				id: "673D12EBC56281C2"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
 			subtitle: "认知:特殊的物品属性"
 			tasks: [{
 				id: "045F88EC53969470"
@@ -165,11 +157,19 @@
 				"当您放置完成所有工具部件后，您便可以在最后侧获得您所需要的目标工具。"
 			]
 			id: "225A30AD80FB1BE9"
-			rewards: [{
-				id: "51CD9B23E2FD2386"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "51CD9B23E2FD2386"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "59889FEFDCA2D3DC"
+					titleId: "kubejs:new_tinker"
+					type: "titles:title"
+				}
+			]
 			subtitle: "铸成工匠工具"
 			tasks: [{
 				icon: {
@@ -508,11 +508,19 @@
 				"为了完成本任务，您需要完成对应的进度“&6全能冶炼&r”，只需要&6打开建设好的冶炼炉界面&r即可完成。"
 			]
 			id: "79B2204E2C22BE59"
-			rewards: [{
-				id: "634A07B74E3966C2"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "634A07B74E3966C2"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_common"
+					id: "59F17E7708AAC749"
+					titleId: "kubejs:molder"
+					type: "titles:title"
+				}
+			]
 			subtitle: "我们的冶炼之路"
 			tasks: [{
 				advancement: "tconstruct:smeltery/structure"
