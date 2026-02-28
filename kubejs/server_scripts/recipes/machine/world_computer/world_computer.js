@@ -431,15 +431,6 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('minecraft:writable_book'), 'input_1')
         .resetOnError()
 
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 1), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('bosses_of_mass_destruction:blazing_eye', 1), 'input_1')
-        .produceItem(Item.of('bosses_of_mass_destruction:levitation_block'), 'output_1')
-        .resetOnError()
-
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnEnd(ctx => {
             ctx.block.level.setRainLevel(2)

@@ -1,0 +1,39 @@
+#true if the biome info should be shown, false otherwise
+enabled = true
+#true if the biome info should fade out shortly after a different biome has been entered. If this is set to false, the biome info will stay visible
+fadeOut = true
+#true if the biome info should fade in when a different biome has been entered
+fadeIn = true
+#How long in ticks (20 ticks = 1 second) to display the biome info, if fadeOut = true. If fadeIn = true, the time will be counted from the moment the biome info has finished fading in.
+#Range: > 0
+displayTime = 30
+#The X position to display the biome info at
+#Range: > -2147483648
+posX = 3
+#The Y position to display the biome info at
+#Range: > -2147483648
+posY = 3
+#The size of the biome info (multiplier)
+#Range: 0.0 ~ 1.7976931348623157E308
+scale = 1.0
+#true if the biome info should be rendered with a shadow, false otherwise
+textShadow = true
+#The color to display the biome info in (Format: 0xRRGGBB)
+#Range: 0 ~ 16777215
+color = 16777215
+#If true, hides the mod's info text when the debug screen (F3) is open.
+hideOnDebugScreen = true
+#If true, hides the mod's info text when the game's UI is also hidden (F1).
+hideWithUI = true
+#If true, will automatically fromat biome names that do not have a proper translation into an English name.
+fallbackOnUntranslatableName = true
+#If true, will append the mod name the biome is from to the biome name.
+appendModName = false
+#The text alignment of the biome info.
+#Allowed Values: LEFT, MIDDLE, RIGHT
+textAlignment = "LEFT"
+#This lets BiomeInfo automatically determine the correct position of the text without needing to change the posX, posY, or textAlignment configuration settings manually.
+#If this is set to NONE, then BiomeInfo will use those configuration settings. If this is set to anything other than NONE, they will be ignored.
+#Allowed Values: NONE, TOP_LEFT, TOP_MIDDLE, TOP_RIGHT, MIDDLE_LEFT, MIDDLE, MIDDLE_RIGHT, BOTTOM_LEFT, BOTTOM_MIDDLE, BOTTOM_RIGHT, ABOVE_MIDDLE, ABOVE_HOTBAR, LEFT_OF_CROSSHAIR, RIGHT_OF_CROSSHAIR, ABOVE_CROSSHAIR, UNDER_CROSSHAIR_WITH_ATTACK_INDICATOR, UNDER_CROSSHAIR
+positionPreset = "TOP_LEFT"
+

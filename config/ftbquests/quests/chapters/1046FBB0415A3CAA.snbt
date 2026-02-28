@@ -14,6 +14,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["33D6D51353372A8F"]
 			description: [
 				"一些事情正在悄无声息的发生. . .我收到了一个极其危险的信号。其是关于——"
 				""
@@ -27,6 +28,7 @@
 				tag: { }
 			}
 			id: "67BDBE441F838A24"
+			invisible: true
 			rewards: [{
 				id: "58BEFFC2B1662224"
 				item: "lightmanscurrency:coin_diamond"
@@ -48,6 +50,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["133A28D884F01479"]
 			description: [
 				"&7** 你好 人类**&r"
 				""
@@ -79,7 +82,7 @@
 				icon: "candlelight:note_paper_writeable"
 				id: "63909CBDA65ED211"
 				isServer: true
-				stage: "ftb_narrative_level_info_1"
+				stage: "ftb_narrative_level_info"
 				title: "参悟"
 				type: "maa:astages"
 			}]
@@ -175,6 +178,7 @@
 			y: -2.5d
 		}
 		{
+			dependencies: ["2F9EE70E103CA5D0"]
 			description: [
 				"&6食物！好吃！&r"
 				""
@@ -214,8 +218,6 @@
 				"&6人性！好吃！理性！难吃！人类！好吃！&r"
 				""
 				"&6呸！有脏东西！吐给你！谎言不好吃！&r"
-				""
-				"** 请您为了世界的稳定，构造&6次元稳定锚&r。 **"
 			]
 			icon: "kubejs:dimensional_worm"
 			id: "2E34A2B03950E15E"
@@ -244,8 +246,6 @@
 				"&6给我吃，你快来来来来下界！我要吃吃吃吃！&r"
 				""
 				"&6呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕，不是怎么有蛆——&r"
-				""
-				"** 搭建次元稳定锚至生效需要大量时间，为争取时间，我将启动&c隔离策略&r，请您放心完成此任务，我将保护您免受侵害。 **"
 			]
 			icon: "kubejs:dimensional_worm"
 			id: "74E1C83962A64BB7"
@@ -264,11 +264,13 @@
 							Damage: 0
 						}
 					}
-					id: "60C29FCE515A56BB"
+					id: "4C1842D66E4BD70E"
 					ignore_reward_blocking: true
-					kubeId: "server_ban_nether"
+					isServer: true
+					remove: false
+					stage: "ftb_server_ban_nether"
 					title: "进食"
-					type: "maa:kube"
+					type: "maa:astages"
 				}
 			]
 			subtitle: "我说我饿饿饿饿饿饿饿饿饿饿饿饿饿饿你看不到吗？"
@@ -282,6 +284,150 @@
 			title: "&6你走过来给我吃！&r"
 			x: 3.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["563D136C06E38A60"]
+			description: [
+				"&7** 经检测，常规维度被异常手段锁定。其锁定方法类似于中转站锁定方法，推测某事物间接调用维度锁定任务流程控制引发维度锁定情况。 **&r"
+				""
+				"请您不要惊慌，这种情况的发生在预料之中。"
+				""
+				"&6由于任务系统存在大量被暴露的方法，我从认识到这世界本质差异的同时其实就在尝试堵住这些“漏洞”；但我同时也知晓，底层的设计逻辑的问题往往并不能通过这种补丁方式来完美掩盖。&r"
+				""
+				"因此我建设了本任务回执系统，用于检测异常情况的发生，当异常情况发生时且我本体无法及时做出反应时，该应急预案便会生效，您便可以通过该应急预案来解决危机。"
+				""
+				"现在，请您帮助我构建&c“维度同步控制系统”&r。该系统可以&6让我完全获得各个维度封锁/解放的权限&r，进而解决该危机。"
+			]
+			hide_dependency_lines: true
+			id: "08BCA79DDB1B235E"
+			invisible: true
+			rewards: [{
+				id: "5ABAF66821C0F967"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "维度异常锁定"
+			tasks: [{
+				icon: "ftbquests:detector"
+				id: "4C0DA64BFA6BB399"
+				isServer: false
+				stage: "ftb_server_ban_nether"
+				title: "任务回执系统"
+				type: "maa:astages"
+			}]
+			title: "异常维度控制检测机制"
+			x: -0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["74E1C83962A64BB7"]
+			description: [
+				"&6那边那个！装死的那个！我不知道你在你的系统里鼓捣些什么！但是你的时间非常有限哦！&r"
+				""
+				"&6你愚蠢的主人每在这世界上多存活30分钟，我们就会吞噬一个维度！听到没有！&r"
+				""
+				"&c在你想起来你那个狗屁约定之前，我们会无休止的吞噬！&r"
+			]
+			id: "28B0B07A19295E57"
+			rewards: [{
+				icon: "kaleidoscope_cookery:braised_beef"
+				id: "6687F5A9BFD8425E"
+				title: "维度盛宴"
+				type: "custom"
+			}]
+			shape: "gear"
+			subtitle: "现在，我劫持了人质！"
+			tasks: [{
+				elapsedTime: 36000L
+				icon: "kubejs:dimensional_worm"
+				id: "0E298EB528CE46EF"
+				title: "时间快到了哦"
+				type: "questsadditions:time"
+			}]
+			title: "&c不说话装死？&r"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["08BCA79DDB1B235E"]
+			description: [
+				"为了防止维度虫侵蚀重要维度，我将会尝试中和维度虫对维度的侵蚀行为，具体方法为&6不断在无限维度中进行扩展&r，创造&6“假维度”&r来扰乱它们的行为。"
+				""
+				"但这样或许维持不了多久，请您尽可能快的构建&c“维度同步控制系统”&r。"
+			]
+			icon: "titles:title_scroll_uncommon"
+			id: "75962868AC80D343"
+			rewards: [{
+				id: "02935F9380BC8D45"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "请您确认协议"
+			tasks: [{
+				id: "2C39E77E6795C67E"
+				type: "checkmark"
+			}]
+			title: "&6协议确认：临时维度扩展&r"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28B0B07A19295E57"]
+			description: [
+				"&6好啦，按照约定我已经扮演了你所需的角色了。&r"
+				""
+				"&6如果成功了，记得将我的那一部分也给带走。&r"
+			]
+			icon: "ars_nouveau:worn_notebook"
+			id: "0290F076E1126DF6"
+			rewards: [{
+				id: "562085A6FA5A1F9C"
+				item: "minecraft:cake"
+				type: "item"
+			}]
+			secret: true
+			subtitle: "我会信守诺言"
+			tasks: [{
+				id: "4CBDBF82ABF20436"
+				title: "信守诺言"
+				type: "checkmark"
+			}]
+			title: "约定已达"
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["75962868AC80D343"]
+			id: "00C0ABA6D807D15F"
+			rewards: [{
+				id: "463EC4D9ECE06BBA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6C20AFCF3AC049CD"
+					item: "ars_nouveau:starbuncle_shards"
+					type: "item"
+				}
+				{
+					id: "4F81EC21BBDEC708"
+					item: "ars_nouveau:whirlisprig_shards"
+					type: "item"
+				}
+				{
+					id: "2C29468D9EC3E49F"
+					item: "ars_nouveau:wixie_shards"
+					type: "item"
+				}
+				{
+					id: "447E70FD480E0363"
+					item: "ars_nouveau:drygmy_shard"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: 4.0d
 		}
 	]
 	title: "贰"

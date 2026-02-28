@@ -2124,7 +2124,6 @@
 			]
 			disable_toast: true
 			id: "1504B976EC5B23D9"
-			incompatible: ["028470DB13C00215"]
 			rewards: [{
 				auto: "enabled"
 				icon: "candlelight:note_paper_writeable"
@@ -2139,7 +2138,7 @@
 			subtitle: "方舟已经出发"
 			tasks: [{
 				disable_toast: true
-				elapsedTime: 3600L
+				elapsedTime: 20L
 				icon: "supplementaries:hourglass"
 				id: "2AD29786C103C8E7"
 				title: "返航"

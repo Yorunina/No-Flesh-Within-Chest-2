@@ -38,6 +38,7 @@
 			]
 			icon_scale: 1.2d
 			id: "7D643E0510172B9A"
+			invisible: true
 			rewards: [{
 				id: "6AD03988562312C5"
 				item: "lightmanscurrency:coin_netherite"

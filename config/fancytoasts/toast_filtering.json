@@ -1,0 +1,15 @@
+{
+  "fancyAdvancementToastsEnabled": false,
+  "fancyQuestToastsEnabled": true,
+  "advancementToastsEnabled": false,
+  "recipeToastsEnabled": false,
+  "systemToastsEnabled": false,
+  "tutorialToastsEnabled": false,
+  "typesToIgnore": {
+    "TASK": false,
+    "GOAL": false,
+    "CHALLENGE": false
+  },
+  "toastsToIgnore": [],
+  "version": 1
+}

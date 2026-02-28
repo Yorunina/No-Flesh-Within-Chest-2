@@ -7,3 +7,4 @@ MAAEvents.ftbPlayerJoinParty(event => {
 MAAEvents.ftbCreateParty(event => {
     event.cancel()
 })
+

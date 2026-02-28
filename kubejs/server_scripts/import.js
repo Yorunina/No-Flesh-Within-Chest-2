@@ -121,3 +121,4 @@ const $MachineJS = Java.loadClass('fr.frinn.custommachinery.common.integration.k
 const $CustomMachineTile = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineTile')
 const $GatewayEntity = Java.loadClass('dev.shadowsoffire.gateways.entity.GatewayEntity')
 const $AbstractDeepling = Java.loadClass('com.github.L_Ender.cataclysm.entity.Deepling.AbstractDeepling')
+const $Date = Java.loadClass('java.util.Date')

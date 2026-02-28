@@ -24,4 +24,3 @@
 //     })
 // }
 
-// RegistryEntityInducerSerumFromFleshBlob('appledog:appledog', 'appledog', 20 * 30)

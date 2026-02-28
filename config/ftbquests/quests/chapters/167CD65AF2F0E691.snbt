@@ -72,7 +72,7 @@
 			subtitle: "给留心者的一份奖励"
 			tasks: [{
 				count: 1L
-				icon: "kubejs:full_mark"
+				icon: "minecraft:apple"
 				id: "1AEE3790A3FD55F0"
 				kubeId: "hello_world_task"
 				title: "Hello！"
