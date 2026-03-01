@@ -1,7 +1,6 @@
 // priority: 1000
 ServerEvents.recipes(event => {
     const { tconstruct } = event.recipes
-    //暗铁（墓园）
     tconstruct.material('kubejs:dark_iron', 'graveyard:dark_iron_ingot', 1, 1)
     tconstruct.material('kubejs:dark_iron', 'graveyard:dark_iron_block', 9, 1, 'graveyard:dark_iron_ingot')
     tconstruct.material_fluid('kubejs:dark_iron', Fluid.of('kubejs:melted_dark_iron', 90), 800)

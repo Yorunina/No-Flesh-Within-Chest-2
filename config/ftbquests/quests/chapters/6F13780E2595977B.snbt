@@ -175,7 +175,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:armor_shred"
 							}
 							{
 								level: 1
@@ -192,7 +192,7 @@
 						tic_stats: {
 							"tconstruct:attack_damage": 2.75f
 							"tconstruct:attack_speed": 1.2f
-							"tconstruct:durability": 1007.49994f
+							"tconstruct:durability": 930.00006f
 							"tconstruct:harvest_tier": "minecraft:diamond"
 							"tconstruct:mining_speed": 8.0f
 						}
@@ -442,11 +442,7 @@
 						}
 						{
 							level: 1
-							name: "tconstruct:thorns"
-						}
-						{
-							level: 1
-							name: "kubejs:soul_hunter"
+							name: "kubejs:armor_shred"
 						}
 						{
 							level: 1
@@ -473,11 +469,11 @@
 						upgrades: -1
 					}
 					tic_stats: {
-						"tconstruct:attack_damage": 2.0f
+						"tconstruct:attack_damage": 1.25f
 						"tconstruct:attack_speed": 1.6f
-						"tconstruct:durability": 1404.0f
+						"tconstruct:durability": 601.2f
 						"tconstruct:harvest_tier": "minecraft:diamond"
-						"tconstruct:mining_speed": 8.0f
+						"tconstruct:mining_speed": 3.0f
 					}
 					tic_upgrades: [
 						{
@@ -526,11 +522,7 @@
 							}
 							{
 								level: 1
-								name: "tconstruct:thorns"
-							}
-							{
-								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:armor_shred"
 							}
 							{
 								level: 1
@@ -557,11 +549,11 @@
 							upgrades: -1
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 2.0f
+							"tconstruct:attack_damage": 1.25f
 							"tconstruct:attack_speed": 1.6f
-							"tconstruct:durability": 1404.0f
+							"tconstruct:durability": 601.2f
 							"tconstruct:harvest_tier": "minecraft:diamond"
-							"tconstruct:mining_speed": 8.0f
+							"tconstruct:mining_speed": 3.0f
 						}
 						tic_upgrades: [
 							{
@@ -1006,7 +998,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:stun"
 							}
 							{
 								level: 1
@@ -1026,11 +1018,11 @@
 							upgrades: -1
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 2.73125f
+							"tconstruct:attack_damage": 3.004375f
 							"tconstruct:attack_speed": 1.404f
-							"tconstruct:durability": 1926.5999f
+							"tconstruct:durability": 1556.0999f
 							"tconstruct:harvest_tier": "minecraft:diamond"
-							"tconstruct:mining_speed": 5.4675f
+							"tconstruct:mining_speed": 5.7408752f
 						}
 						tic_upgrades: [{
 							level: 1
@@ -1421,7 +1413,7 @@
 						}
 						{
 							level: 1
-							name: "kubejs:soul_hunter"
+							name: "kubejs:stun"
 						}
 						{
 							level: 2
@@ -1441,12 +1433,12 @@
 						upgrades: -2
 					}
 					tic_stats: {
-						"tconstruct:attack_damage": 14.953125f
+						"tconstruct:attack_damage": 15.1875f
 						"tconstruct:attack_speed": 0.9f
 						"tconstruct:block_amount": 10.0f
-						"tconstruct:durability": 484.3125f
-						"tconstruct:harvest_tier": "minecraft:iron"
-						"tconstruct:mining_speed": 1.28125f
+						"tconstruct:durability": 1256.0625f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:mining_speed": 1.21875f
 					}
 					tic_upgrades: [{
 						level: 2
@@ -1499,7 +1491,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:stun"
 							}
 							{
 								level: 2
@@ -1519,12 +1511,12 @@
 							upgrades: -2
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 14.953125f
+							"tconstruct:attack_damage": 15.1875f
 							"tconstruct:attack_speed": 0.9f
 							"tconstruct:block_amount": 10.0f
-							"tconstruct:durability": 484.3125f
-							"tconstruct:harvest_tier": "minecraft:iron"
-							"tconstruct:mining_speed": 1.28125f
+							"tconstruct:durability": 1256.0625f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:mining_speed": 1.21875f
 						}
 						tic_upgrades: [{
 							level: 2
@@ -1832,7 +1824,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:stun"
 							}
 							{
 								level: 1
@@ -1857,11 +1849,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 7.59375f
+							"tconstruct:attack_damage": 8.353126f
 							"tconstruct:attack_speed": 0.75f
-							"tconstruct:durability": 4953.0f
+							"tconstruct:durability": 4000.4998f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:mining_speed": 6.9500003f
+							"tconstruct:mining_speed": 7.2975f
 						}
 						tic_upgrades: [
 							{
@@ -2987,7 +2979,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:stun"
 							}
 							{
 								level: 2
@@ -3007,11 +2999,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_damage": 12.474002f
 							"tconstruct:attack_speed": 0.75f
-							"tconstruct:durability": 16380.001f
+							"tconstruct:durability": 13230.0f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:mining_speed": 4.25f
+							"tconstruct:mining_speed": 4.4624996f
 						}
 						tic_upgrades: [
 							{
@@ -3126,7 +3118,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:stun"
 							}
 							{
 								level: 2
@@ -3146,11 +3138,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_damage": 12.474002f
 							"tconstruct:attack_speed": 0.75f
-							"tconstruct:durability": 16380.001f
+							"tconstruct:durability": 13230.0f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:mining_speed": 4.25f
+							"tconstruct:mining_speed": 4.4624996f
 						}
 						tic_upgrades: [
 							{
@@ -3268,7 +3260,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:stun"
 							}
 							{
 								level: 2
@@ -3288,11 +3280,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_damage": 12.474002f
 							"tconstruct:attack_speed": 0.75f
-							"tconstruct:durability": 16380.001f
+							"tconstruct:durability": 13230.0f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:mining_speed": 4.25f
+							"tconstruct:mining_speed": 4.4624996f
 						}
 						tic_upgrades: [
 							{
@@ -3399,7 +3391,7 @@
 							}
 							{
 								level: 1
-								name: "kubejs:soul_hunter"
+								name: "kubejs:stun"
 							}
 							{
 								level: 2
@@ -3419,11 +3411,11 @@
 							upgrades: -3
 						}
 						tic_stats: {
-							"tconstruct:attack_damage": 11.340001f
+							"tconstruct:attack_damage": 12.474002f
 							"tconstruct:attack_speed": 0.75f
-							"tconstruct:durability": 16380.001f
+							"tconstruct:durability": 13230.0f
 							"tconstruct:harvest_tier": "minecraft:netherite"
-							"tconstruct:mining_speed": 4.25f
+							"tconstruct:mining_speed": 4.4624996f
 						}
 						tic_upgrades: [
 							{

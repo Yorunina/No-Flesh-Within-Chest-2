@@ -1,5 +1,5 @@
 {
-    "color": "ffdf585f",
+    "color": "FFA1A7B1",
     "generator": {
         "supported_stats": [
             "tconstruct:head",
@@ -16,6 +16,42 @@
             "tconstruct:armor_maille",
             "tconstruct:limb",
             "tconstruct:grip"
-        ]
+        ],
+        "transformer": {
+            "type": "tconstruct:recolor_sprite",
+            "color_mapping": {
+                "type": "tconstruct:grey_to_color",
+                "palette": [
+                    {
+                        "color": "00000000",
+                        "grey": 0
+                    },
+                    {
+                        "color": "FF580C0E",
+                        "grey": 63
+                    },
+                    {
+                        "color": "FFA12F2D",
+                        "grey": 102
+                    },
+                    {
+                        "color": "FF7B131F",
+                        "grey": 140
+                    },
+                    {
+                        "color": "FFE9B9BF",
+                        "grey": 178
+                    },
+                    {
+                        "color": "FFA02F2E",
+                        "grey": 216
+                    },
+                    {
+                        "color": "FFE15760",
+                        "grey": 255
+                    }
+                ]
+            }
+        }
     }
 }

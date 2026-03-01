@@ -1,7 +1,6 @@
 // priority: 1000
 ServerEvents.recipes(event => {
     const { tconstruct } = event.recipes
-    //黑钢（灾变）
     tconstruct.material('kubejs:black_steel', 'cataclysm:black_steel_ingot', 1, 1)
     tconstruct.material('kubejs:black_steel', 'cataclysm:black_steel_block', 9, 1, 'cataclysm:black_steel_ingot')
     tconstruct.material_fluid('kubejs:black_steel', Fluid.of('kubejs:melted_black_steel', 90), 800)

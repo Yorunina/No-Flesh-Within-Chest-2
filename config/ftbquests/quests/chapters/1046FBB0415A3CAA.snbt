@@ -403,7 +403,7 @@
 				""
 				"维度碎片通常漂泊在各个维度之间的裂缝之中，一般来说极难获取。但部分&6以魔源为生的生物&r能够将部分维度碎片的能量提取出来，也正式因此您可以从这些生物身上&6间接获取到维度碎片&r。"
 				""
-				"我需要&6至少一组维度碎片&r，以供后续的&6维度破坏性实验&r。"
+				"我需要您&6具备稳定提供维度碎片的能力&r，以便后续我进行&c维度破坏性实验&r。"
 			]
 			id: "00C0ABA6D807D15F"
 			rewards: [{
@@ -413,15 +413,279 @@
 			}]
 			subtitle: "将维度加以保护"
 			tasks: [{
-				consume_items: true
-				count: 64L
 				id: "3E8B0C6A1D90F1FD"
 				item: "kubejs:dimension_shards"
 				type: "item"
 			}]
-			title: "将维度打上属于我们的补丁"
+			title: "将维度打上属于我的补丁"
 			x: 3.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["00C0ABA6D807D15F"]
+			description: [
+				"每当您提供这些任务物品时，我便会进行一次维度探针的刺穿尝试。"
+				""
+				"通过在部分维度&6部署维度探针&r，能够增强我对于部分维度的感知和控制能力，为了覆盖全部维度，&6您可能需要多次完成本任务&r。"
+				""
+				"每次完成维度探针的任务提交，我都需要大概现实时间&6两分钟左右&r进行刺穿尝试，而后您才能再次提交该任务。"
+			]
+			id: "1A033D35372B167E"
+			rewards: [{
+				id: "47323073F7E00B15"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "植入维度探针"
+			tasks: [
+				{
+					consume_items: true
+					id: "5E235A8895735800"
+					item: "kubejs:dimension_shards"
+					type: "item"
+				}
+				{
+					consume_items: true
+					icon: {
+						Count: 1
+						id: "tconstruct:javelin"
+						tag: {
+							Damage: 0
+							tic_broken: 0b
+							tic_materials: [
+								"tconstruct:nahuatl"
+								"tconstruct:nahuatl"
+								"tconstruct:bone"
+								"tconstruct:bone"
+							]
+							tic_modifiers: [
+								{
+									level: 1
+									name: "tconstruct:throwing"
+								}
+								{
+									level: 2
+									name: "tconstruct:lacerating"
+								}
+								{
+									level: 2
+									name: "tconstruct:pierce"
+								}
+							]
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:accuracy": 0.85f
+								"tconstruct:attack_damage": 10.3125f
+								"tconstruct:attack_speed": 0.99f
+								"tconstruct:block_amount": 10.0f
+								"tconstruct:draw_speed": 1.05f
+								"tconstruct:durability": 292.5f
+								"tconstruct:harvest_tier": "minecraft:diamond"
+								"tconstruct:mining_speed": 4.5f
+								"tconstruct:velocity": 0.95f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+					id: "64D3687F66DBE270"
+					item: {
+						Count: 1
+						id: "itemfilters:and"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "maa:tcon_tool_stats"
+									tag: {
+										value: "tconstruct:durability>=2000.0"
+									}
+								}
+								{
+									Count: 1b
+									id: "maa:tcon_tool_stats"
+									tag: {
+										value: "tconstruct:attack_damage>=20.0"
+									}
+								}
+								{
+									Count: 1b
+									id: "maa:tcon_tool_modifier"
+									tag: {
+										value: "tconstruct:pierce>=2"
+									}
+								}
+								{
+									Count: 1b
+									id: "maa:tcon_tool_modifier"
+									tag: {
+										value: "tconstruct:lacerating>=2"
+									}
+								}
+							]
+						}
+					}
+					title: "维度探针实体"
+					type: "item"
+				}
+			]
+			title: "&c破坏性实验：部署探针&r"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["75962868AC80D343"]
+			description: [
+				"在这个世界中，维度通过维度泡分隔开来，无限维度之间有着无数的维度泡保护着各个维度的独立性。"
+				""
+				"维度虫具有穿过维度泡的能力，因此其能够在各个维度之间穿梭并且无尽的利用各个维度的资源。"
+				""
+				"为了能够构造&c“维度同步控制系统”&r，我需要在部分维度中部署维度探针，但探针为了到达不同的维度，其本身也需要类似维度虫一样的能够&6无损穿过维度泡&r的能力。"
+				""
+				"最适合的便是&6足够尖锐的矛&r，请您做好能够稳定生产&6至少具有割裂Ⅱ、穿甲Ⅱ、20攻击力及2000耐久度的矛&r，只有通过这样的矛才能够刺穿维度泡的限制。"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:javelin"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"tconstruct:nahuatl"
+						"tconstruct:nahuatl"
+						"tconstruct:bone"
+						"tconstruct:bone"
+					]
+					tic_modifiers: [
+						{
+							level: 1
+							name: "tconstruct:throwing"
+						}
+						{
+							level: 2
+							name: "tconstruct:lacerating"
+						}
+						{
+							level: 2
+							name: "tconstruct:pierce"
+						}
+					]
+					tic_persistent: { }
+					tic_stats: {
+						"tconstruct:accuracy": 0.85f
+						"tconstruct:attack_damage": 10.3125f
+						"tconstruct:attack_speed": 0.99f
+						"tconstruct:block_amount": 10.0f
+						"tconstruct:draw_speed": 1.05f
+						"tconstruct:durability": 292.5f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:mining_speed": 4.5f
+						"tconstruct:velocity": 0.95f
+					}
+					tic_volatile_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			id: "3F59D410E064D734"
+			rewards: [{
+				id: "27F9712E033598DB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "制成维度探针实体"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tconstruct:javelin"
+					tag: {
+						Damage: 0
+						tic_broken: 0b
+						tic_materials: [
+							"tconstruct:nahuatl"
+							"tconstruct:nahuatl"
+							"tconstruct:bone"
+							"tconstruct:bone"
+						]
+						tic_modifiers: [
+							{
+								level: 1
+								name: "tconstruct:throwing"
+							}
+							{
+								level: 2
+								name: "tconstruct:lacerating"
+							}
+							{
+								level: 2
+								name: "tconstruct:pierce"
+							}
+						]
+						tic_persistent: { }
+						tic_stats: {
+							"tconstruct:accuracy": 0.85f
+							"tconstruct:attack_damage": 10.3125f
+							"tconstruct:attack_speed": 0.99f
+							"tconstruct:block_amount": 10.0f
+							"tconstruct:draw_speed": 1.05f
+							"tconstruct:durability": 292.5f
+							"tconstruct:harvest_tier": "minecraft:diamond"
+							"tconstruct:mining_speed": 4.5f
+							"tconstruct:velocity": 0.95f
+						}
+						tic_volatile_data: {
+							abilities: 1
+							upgrades: 2
+						}
+					}
+				}
+				id: "5E742F77BC28D896"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "maa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:durability>=2000.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "maa:tcon_tool_stats"
+								tag: {
+									value: "tconstruct:attack_damage>=20.0"
+								}
+							}
+							{
+								Count: 1b
+								id: "maa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:pierce>=2"
+								}
+							}
+							{
+								Count: 1b
+								id: "maa:tcon_tool_modifier"
+								tag: {
+									value: "tconstruct:lacerating>=2"
+								}
+							}
+						]
+					}
+				}
+				title: "维度探针实体"
+				type: "item"
+			}]
+			title: "最为坚硬的探针"
+			x: 3.5d
+			y: 5.5d
 		}
 	]
 	title: "贰"
