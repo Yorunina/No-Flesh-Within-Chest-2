@@ -29,11 +29,11 @@ OrganEventModel.prototype = {
      */
     run: function (entity, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
+        if (!optional.isPresent()) return
         let ccEntity = optional.get()
         let ccInstance = ccEntity.getChestCavityInstance()
         // 往往是Client事件导致
         if (!ccInstance) return
-        if (!optional.isPresent()) return
         args.unshift(customData)
         this.inits.forEach(init => {
             init.apply(null, args)
@@ -73,7 +73,6 @@ OrganEventModel.prototype = {
             }
             ExcretionSlotEvent(customData, ccInstance)
         }
-
 
         this.defers.forEach(defer => {
             defer.apply(null, args)

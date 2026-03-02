@@ -30,3 +30,5 @@ const $CreateRecipeCategory = Java.loadClass('com.simibubi.create.compat.jei.cat
 const $ParticleUtil = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleUtil')
 const $GlowParticleData = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.GlowParticleData')
 const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')
+const $RenderHelper = Java.loadClass('jeresources.util.RenderHelper')
+const $AllGuiTextures = Java.loadClass('com.simibubi.create.foundation.gui.AllGuiTextures')

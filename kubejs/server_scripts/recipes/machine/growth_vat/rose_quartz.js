@@ -14,5 +14,5 @@ ServerEvents.recipes(event => {
         [Item.of('create:rose_quartz_lamp')], 20 * 10).heated()
     event.recipes.create.filling(
         [Item.of('create:rose_quartz')],
-        [Fluid.of('kubejs:melted_rose_quartz', 100), Item.of('minecraft:quartz')], 20 * 3).heated()
+        [Fluid.of('kubejs:melted_rose_quartz', 100), Item.of('minecraft:quartz')], 20 * 3)
 })

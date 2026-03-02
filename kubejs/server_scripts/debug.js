@@ -5,12 +5,17 @@ BlockEvents.rightClicked('biomancy:malignant_flesh_veins', event => {
     block.blockState.randomTick(level, block.pos, level.random)
 })
 // todo 调试方法
-ItemEvents.rightClicked('stick', event => {
+ItemEvents.rightClicked(event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
+    const item = event.item
+    item.getAttributeModifiers('mainhand').forEach((attri, modifier) => {
+        console.log(attri.descriptionId, modifier.getName())
+    })
+
     // level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')
     // SetDaySpeed(0.1)

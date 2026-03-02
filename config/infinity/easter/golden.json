@@ -23,7 +23,7 @@
                 "Name": "minecraft:raw_gold_block"
             },
             "default_fluid": {
-                "Name": "tconstruct:molten_gold"
+                "Name": "kubejs:molten_gold_fluid"
             },
             "spawn_target": [],
             "noise": {

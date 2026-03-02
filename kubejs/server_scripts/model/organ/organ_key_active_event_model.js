@@ -30,7 +30,6 @@ OrganKeyActiveEventModel.prototype = {
      */
     run: function (entity, itemId, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
-
         if (!optional.isPresent()) return
         args.unshift(customData)
         this.inits.forEach(init => {

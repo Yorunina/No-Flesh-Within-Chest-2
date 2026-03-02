@@ -18,8 +18,9 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('kubejs:fluid/rose_nutrients_fluid')
         .tag('kubejs:nutrients_fluid')
 
-	event.create('melted_rose_quartz')
-		.thickTexture(0xFF3F7F)
-		.bucketColor(0xFF3F7F)
-
+    // todo 熔融材质
+    event.create('melted_rose_quartz')
+        .bucketColor(0xFF3F7F)
+        .stillTexture('kubejs:fluid/melted_rose_quartz')
+        .flowingTexture('kubejs:fluid/melted_rose_quartz')
 })
