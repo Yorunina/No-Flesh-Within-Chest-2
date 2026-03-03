@@ -1,0 +1,27 @@
+{
+    "key": "socket_source_gem",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 48,
+    "integrityCost": -2,
+    "integrityGain": 0,
+    "magicCapacity": -25,
+    "toolLevel": 0,
+    "effects": {},
+    "tints": {
+        "glyph": "bd9cf6",
+        "texture": "bd9cf6"
+    },
+    "textures": [
+        "default"
+    ],
+    "experienceCost": 2,
+    "material": {
+        "items": [
+            "ars_nouveau:source_gem"
+        ]
+    }
+}

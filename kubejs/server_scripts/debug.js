@@ -12,7 +12,6 @@ ItemEvents.rightClicked(event => {
     const level = event.level
     const server = event.server
     const itemStack = event.item
-    if (!itemStack) return
 
     /**@type {Internal.ModularItem} */
     const item = itemStack.getItem()

@@ -31,3 +31,6 @@ const $ParticleUtil = Java.loadClass('com.hollingsworth.arsnouveau.client.partic
 const $GlowParticleData = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.GlowParticleData')
 const $ParticleColor = Java.loadClass('com.hollingsworth.arsnouveau.client.particle.ParticleColor')
 const $AllGuiTextures = Java.loadClass('com.simibubi.create.foundation.gui.AllGuiTextures')
+
+const $GuiStatIndicator = Java.loadClass('se.mickelus.tetra.gui.stats.bar.GuiStatIndicator')
+const $TooltipGetterInteger = Java.loadClass('se.mickelus.tetra.gui.stats.getter.TooltipGetterInteger')

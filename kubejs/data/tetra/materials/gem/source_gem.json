@@ -1,0 +1,30 @@
+{
+    "key": "source_gem",
+    "category": "gem",
+    "primary": 5,
+    "secondary": 2.7,
+    "tertiary": 0,
+    "durability": 850,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 150,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 7,
+    "tints": {
+        "glyph": "dc65fc",
+        "texture": "f273fc"
+    },
+    "textures": [
+        "shiny",
+        "crude"
+    ],
+    "material": {
+        "items": [
+            "ars_nouveau:source_gem"
+        ]
+    },
+    "effects": {},
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

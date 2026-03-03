@@ -1318,5 +1318,16 @@
     "_comment.golem_material": "傀儡材料",
     "golem_material.biomancy.living_flesh": "鲜活肉块",
     "_comment.jei": "JEI兼容",
-    "jei.category.kubejs.mammary_gland.name": "乳腺取奶"
+    "jei.category.kubejs.mammary_gland.name": "乳腺取奶",
+    "_comment.tetra_material": "Tetra材料",
+    "tetra.material.dark_cherry_wood": "深色樱桃木",
+    "tetra.material.dark_cherry_wood.prefix": "深色樱桃木",
+    "tetra.material.magebloom_fiber": "法师花纤维",
+    "tetra.material.magebloom_fiber.prefix": "法师花纤维",
+    "tetra.material.archwood": "至高木",
+    "tetra.material.archwood.prefix": "至高木",
+    "tetra.material.source_gem": "魔源宝石",
+    "tetra.material.source_gem.prefix": "魔源宝石",
+    "_comment.tetra_variant": "Tetra变种",
+    "_comment.tetra_stats": "Tetra统计数据"
 }

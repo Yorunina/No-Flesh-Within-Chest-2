@@ -1,0 +1,29 @@
+{
+  "key": "dark_cherry_wood",
+  "category": "wood",
+  "primary": 4.5,
+  "secondary": 2,
+  "tertiary": 7.5,
+  "durability": 70,
+  "integrityCost": 2,
+  "integrityGain": 6,
+  "magicCapacity": 72,
+  "toolLevel": "minecraft:gold",
+  "toolEfficiency": 4,
+  "tints": {
+    "glyph": "562313",
+    "texture": "562313"
+  },
+  "textures": [
+    "crude",
+    "wooden"
+  ],
+  "material": {
+    "items": [
+      "vinery:dark_cherry_planks"
+    ]
+  },
+  "requiredTools": {
+    "axe_dig": "minecraft:wood"
+  }
+}

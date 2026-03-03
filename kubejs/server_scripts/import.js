@@ -86,6 +86,9 @@ const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.livin
 const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Post')
 const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
 const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living.ShieldBlockEvent')
+const $AttackEntityEvent = Java.loadClass('net.minecraftforge.event.entity.player.AttackEntityEvent')
+
+
 const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')
 const $Containers = Java.loadClass('net.minecraft.world.Containers')
 const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineContainer')
