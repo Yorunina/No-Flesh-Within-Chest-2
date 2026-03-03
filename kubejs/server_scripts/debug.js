@@ -11,10 +11,29 @@ ItemEvents.rightClicked(event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    const item = event.item
-    item.getAttributeModifiers('mainhand').forEach((attri, modifier) => {
-        console.log(attri.descriptionId, modifier.getName())
+    const itemStack = event.item
+    if (!itemStack) return
+
+    /**@type {Internal.ModularItem} */
+    const item = itemStack.getItem()
+    if (!itemStack.getId().startsWith('tetra:modular_')) return
+    let effectData = item.getEffectData(itemStack)
+    effectData.levelMap.forEach((pEffect, num) => {
+        console.log(pEffect.key, num)
     })
+    effectData.efficiencyMap.forEach((pEffect, num) => {
+        console.log(pEffect.key, num)
+    })
+    item.getImprovements(itemStack).forEach(pImprove => {
+        console.log(pImprove.key, pImprove.level)
+    })
+    item.getAllModules(itemStack).forEach(itemModule => {
+        console.log(itemModule.key, itemModule.slot)
+    })
+
+    // item.getAttributeModifiers('mainhand').forEach((attri, modifier) => {
+    //     console.log(attri.descriptionId, modifier.getName())
+    // })
 
     // level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')

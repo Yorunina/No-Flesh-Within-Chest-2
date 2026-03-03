@@ -790,7 +790,7 @@
 				""
 				"请您务必小心，尽管情报表明的结果非常确认此番行动的可靠性，但为保万一，您一定要保留有脱身手段。"
 			]
-			icon: "kubejs:melted_rose_quartz_bucket"
+			icon: "kubejs:molten_rose_quartz_bucket"
 			id: "4EEBDB6CCA1410B8"
 			rewards: [{
 				id: "70DE8F91A78A00E1"
@@ -800,7 +800,7 @@
 			subtitle: "见证汝心"
 			tasks: [{
 				count: 1L
-				icon: "kubejs:melted_rose_quartz_bucket"
+				icon: "kubejs:molten_rose_quartz_bucket"
 				id: "026AFB7C1947E7C6"
 				kubeId: "rose_cc_convert"
 				title: "在熔融玫瑰石英中窒息至临界"

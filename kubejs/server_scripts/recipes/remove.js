@@ -5,4 +5,5 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'sophisticatedbackpacks:stack_upgrade_omega_tier' })
 
     event.remove({ mod: 'infinity' })
+    event.remove({ mod: 'gateways' })
 })
