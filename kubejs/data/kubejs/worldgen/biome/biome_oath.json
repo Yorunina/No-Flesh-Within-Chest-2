@@ -13,19 +13,5 @@
         "fog_color": 13750737
     },
     "creature_spawn_probability": 0,
-    "features": [
-        [
-            "kubejs:place_cube"
-        ],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        [],
-        []
-    ]
+    "features": []
 }

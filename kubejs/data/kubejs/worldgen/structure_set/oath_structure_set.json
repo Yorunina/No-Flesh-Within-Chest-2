@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "kubejs:oath_hall",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 8,
+    "separation": 2,
+    "spread_type": "linear",
+    "salt": 0,
+    "frequency_reduction_method": "default",
+    "frequency": 0.5
+  }
+}
