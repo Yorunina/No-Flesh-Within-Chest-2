@@ -17,13 +17,13 @@ ItemEvents.rightClicked(event => {
     //     console.log(attri.descriptionId, modifier.name, modifier.getAmount())
     // })
     let effectData = item.getEffectData(itemStack)
-    let toolData = item.getToolData(itemStack)
-    toolData.levelMap.forEach((pEffect, num) => {
-        console.log(pEffect.name(), num)
-    })
-    // effectData.levelMap.forEach((pEffect, num) => {
-    //     console.log(pEffect.key, num)
+    // let toolData = item.getToolData(itemStack)
+    // toolData.levelMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.name(), num)
     // })
+    effectData.levelMap.forEach((pEffect, num) => {
+        console.log(pEffect.key, num)
+    })
     // effectData.efficiencyMap.forEach((pEffect, num) => {
     //     console.log(pEffect.key, num)
     // })

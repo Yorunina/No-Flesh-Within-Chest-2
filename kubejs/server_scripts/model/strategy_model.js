@@ -64,4 +64,22 @@ StrategyModel.prototype = {
         })
         return
     },
+    /**
+     * @param {string[]} ids
+     * @param {any[]} args 
+     */
+    runOnly: function (ids, args, customData) {
+        args.unshift(customData)
+        this.inits.forEach(init => {
+            init.apply(null, args)
+        })
+        for (let id of ids) {
+            if (!this.strategyMap[id]) return
+            if (!this.strategyMap[id].apply(null, args)) return
+        }
+        this.defers.forEach(defer => {
+            defer.apply(null, args)
+        })
+        return
+    },
 }

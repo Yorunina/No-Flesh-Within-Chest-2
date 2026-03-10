@@ -1,0 +1,27 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+		"textureX": 32
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "blade/flame_strike",
+        "level": 2
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "blade/flame_strike": 3
+            }
+        }
+    ]
+}

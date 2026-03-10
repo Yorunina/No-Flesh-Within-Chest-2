@@ -188,7 +188,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "其名为创世工序"
+			subtitle: "铸造传古工具"
 			tasks: [{
 				id: "5027FA81042BCFAD"
 				title: "奉身创世之道"
@@ -200,7 +200,22 @@
 		}
 		{
 			dependencies: ["585F5FEF231F0B44"]
+			description: [
+				"日志中记载，创世工匠为打造足够奇特、锐利的武器，其从最为遥远的世界中取得最为炽热的火焰用于自己的工坊，进而锻造出了焰形剑。"
+				""
+				"焰形剑使一种形制如波浪的双手剑，在有限的记载中，创世工匠对焰形剑进行了多次改良，最终锻成&6传古焰形剑&r，进而得到了对创世工艺的启发。"
+				""
+				"根据这些记载，我猜测此处指出的&6“遥远的世界”&r、及&6“最为炽热的火焰”&r指向烈焰竞技场的烈焰祭坛。"
+				""
+				"请您前往下界，使用&6烈焰之眼&r，定位烈焰竞技场，并且找到&6烈焰祭坛&r。"
+			]
 			id: "602B926C44DEAF04"
+			rewards: [{
+				id: "25F6883835309E18"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "打造传古焰形剑"
 			tasks: [{
 				icon: "cataclysm:altar_of_fire"
 				id: "6D5002B0E08C2F66"
@@ -209,7 +224,110 @@
 				to_observe: "cataclysm:altar_of_fire"
 				type: "observation"
 			}]
+			title: "精研与启发：传古焰形剑"
 			x: 4.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["602B926C44DEAF04"]
+			description: [
+				"相比于使用祭坛的火焰进行锻造，创世工匠的做法更为简单——记录中，他&6仅是将工具探入火中借取火焰&r。"
+				""
+				"&7**  仅仅是稍微的接触，工具便损毁殆尽 **&r"
+				""
+				"请您手持&6任意模块化剑类武器&r，将工具探入火中，模拟过去所发生的一切。"
+			]
+			id: "7CC9540811456CDF"
+			rewards: [{
+				id: "2272B72C7CAFA732"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "以最炽热的火焰"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						honing_progress: 239
+						id: "a095f9a9-5210-4f9e-ba74-89a596720efe"
+						preForgeType: "flamberge"
+						repairCount: 1
+						"sword/basic_blade_material": "basic_blade/diamond"
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/basic_blade"
+						"sword/blade:arrested": 0
+						"sword/decorative_pommel_material": "decorative_pommel/diamond"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/pommel": "sword/decorative_pommel"
+					}
+				}
+				id: "44E979F58436B1F4"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "is_tetra_preforged:[flamberge]"
+					}
+				}
+				title: "炽焰锻造后的模块化工具"
+				type: "item"
+			}]
+			title: "预锻造模块化工具"
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7CC9540811456CDF"]
+			description: [
+				"在经过预锻造后，您的武器已经支零破碎，请您&6优先修复您的工具&r，而后将其剑刃在工匠台上打造为&6焰形剑剑刃&r。"
+				""
+				"焰形剑作为一种特种剑刃，其能够在打击敌人的同时，在敌人的表皮上引发易燃的火焰。"
+				""
+				"相比于常规火焰附加不同的是，&6焰形剑引发的火焰会不断累计&r——理论上，您可以通过使用焰形剑打击某个生物，使其长期处于燃烧状态。"
+			]
+			id: "3F7877E62FE000C3"
+			rewards: [{
+				id: "6BCB0C46F59070CC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "步向传古工艺之路"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						honing_progress: 239
+						id: "44c6fdca-3765-49a5-b7e2-a1bb682db74f"
+						preForgeType: "flamberge"
+						repairCount: 1
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/flamberge_blade"
+						"sword/blade:arrested": 0
+						"sword/decorative_pommel_material": "decorative_pommel/diamond"
+						"sword/flamberge_blade_material": "flamberge_blade/diamond"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/pommel": "sword/decorative_pommel"
+					}
+				}
+				id: "17F17583951DA432"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[sword/blade]:[sword/flamberge_blade]"
+					}
+				}
+				title: "任意包含焰形剑剑刃的模块化工具"
+				type: "item"
+			}]
+			title: "锻造焰形剑"
+			x: 8.0d
 			y: -7.0d
 		}
 	]

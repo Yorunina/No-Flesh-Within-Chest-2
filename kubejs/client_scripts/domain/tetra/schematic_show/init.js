@@ -20,7 +20,7 @@ TetraJSEvents.workbenchTileUpdateSchematicList(event => {
     schematicList.forEach(schematic => {
         let key = schematic.key
         if (!SchematicShowStrategy.contains(key)) return customData.resList.push(schematic)
-        SchematicShowStrategy.run([key], [event, targetItemStack, schematic], customData)
+        SchematicShowStrategy.strategyMap[key].apply(null, [customData, event, targetItemStack, schematic])
     })
     event.schematicList = customData.resList
 })

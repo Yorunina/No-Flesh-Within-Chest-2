@@ -1,0 +1,34 @@
+[
+    {
+        "key": "blade/flame_strike",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:flame_strike": [ 0, 2 ]
+        }
+    },
+    {
+        "key": "blade/flame_strike",
+        "level": 2,
+        "integrity": -1,
+        "effects": {
+            "kubejs:flame_strike": [ 0, 4 ]
+        }
+    },
+    {
+        "key": "blade/flame_strike",
+        "level": 3,
+        "integrity": -1,
+        "effects": {
+            "kubejs:flame_strike": [ 0, 7 ]
+        }
+    },
+    {
+        "key": "blade/flame_strike",
+        "level": 4,
+        "integrity": -1,
+        "effects": {
+            "kubejs:flame_strike": [ 0, 10 ]
+        }
+    }
+]

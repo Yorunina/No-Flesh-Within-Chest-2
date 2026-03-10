@@ -1,0 +1,26 @@
+{
+    "replace": true,
+    "slots": [
+        "sword/hilt"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureX": 16
+    },
+    "translation": {
+        "secondaryAttributes": {
+            "generic.attack_speed": -2
+        },
+        "durability": 4,
+        "integrity": 3,
+        "magicCapacity": 1
+    },
+    "outcomes": [
+        {
+            "materials": ["tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rod/"],
+            "moduleKey": "sword/tough_hilt",
+            "moduleVariant": "tough_hilt/"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
 	"slots": [ "sword/blade" ],
 	"type": "tetra:basic_major_module",
 	"improvements": [
-		"tetra:sword/flamberge_blade/",
+		"tetra:sword/ancient_flamberge_blade/",
 		"tetra:sword/shared_blade/",
 		"tetra:sword/shared/",
 		"tetra:shared/"
@@ -11,13 +11,13 @@
 	"variants": [
 		{
 			"materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
-			"key": "flamberge_blade/",
+			"key": "ancient_flamberge_blade/",
 			"attributes": {
 				"generic.attack_speed": -1.7,
 				"generic.attack_damage": 0.75
 			},
 			"effects": {
-				"kubejs:burns": [1, 5],
+				"kubejs:flame_strike": [1, 0],
 				"sweeping": 1
 			},
 			"tools": {
@@ -36,16 +36,16 @@
 					"generic.attack_damage": 1
 				},
 				"primaryEffects": {
-					"kubejs:burns": [0, 3]
+					"kubejs:flame_strike": [2, -2]
 				},
 				"secondaryEffects": {
-					"kubejs:burns": [0.5, -2]
+					"kubejs:flame_strike": [-1, 5]
 				},
 				"tertiaryEffects": {
 					"sweeping": 1
 				},
-				"durability": 0.9,
-				"integrity": -1,
+				"durability": 0.5,
+				"integrity": -2,
 				"magicCapacity": 1,
 				"glyph": {
 					"textureLocation": "tetra:textures/gui/custom_glyph.png",
@@ -53,7 +53,7 @@
 				},
 				"availableTextures": [ "metal", "shiny", "grainy", "crude" ],
 				"models": [{
-					"location": "tetra:item/module/sword/blade/flamberge_blade/"
+					"location": "tetra:item/module/sword/blade/ancient_flamberge_blade/"
 				}]
 			}
 		}
