@@ -33,12 +33,17 @@
                 "tetra:wood/",
                 "tetra:stone/",
                 "tetra:metal/",
-                "tetra:gem/",
                 "tetra:bone/"
             ],
             "countFactor": 2,
             "moduleKey": "single/cane_head",
             "moduleVariant": "cane_head/"
+        },
+        {
+            "materials": [ "tetra:gem/" ],
+            "countFactor": 2,
+            "moduleKey": "single/cane_head",
+            "moduleVariant": "cane_head/gem"
         }
     ]
 }

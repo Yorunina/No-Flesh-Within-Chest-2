@@ -27,7 +27,7 @@
                     "generic.attack_damage": 0.2
                 },
                 "secondaryAttributes": {
-                    "generic.attack_speed": -0.2
+                    "generic.attack_speed": -0.15
                 },
                 "tertiaryEffects": {
 					"generic.attack_speed": 0.1

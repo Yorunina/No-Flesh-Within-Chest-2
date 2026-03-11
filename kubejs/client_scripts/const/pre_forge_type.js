@@ -1,5 +1,6 @@
 // priority: 4000
 const PreForgeTypeFlamberge = 'flamberge'
+const PreForgeTypePrimordialCradle = 'primordial_cradle'
 
 /**
  * 

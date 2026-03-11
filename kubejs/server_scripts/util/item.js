@@ -130,3 +130,15 @@ function AddItemStackToItemStackList(itemList, item) {
         itemList.push(item)
     }
 }
+
+/**
+ * 
+ * @param {Internal.ItemStack} stack 
+ * @returns {Internal.FluidHandlerItemStack}
+ */
+function GetItemFluidHandler(stack) {
+    let item = stack.getItem()
+    if (item instanceof $FueledToolItem) {
+        return item.getFluidHandler(stack)
+    }
+}

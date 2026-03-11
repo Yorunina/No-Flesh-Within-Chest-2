@@ -12,11 +12,14 @@
 		"primaryAttributes": {
 			"generic.attack_damage": 3
 		},
+		"tertiaryAttributes": {
+			"generic.attack_speed": 0.3
+		},
 		"primaryEffects": {
-			"kubejs:burns": [0, 3]
+			"kubejs:burns": [0, 4]
 		},
 		"secondaryEffects": {
-			"kubejs:burns": [0.5, -2]
+			"kubejs:burns": [0.5, -1]
 		},
 		"tertiaryEffects": {
 			"sweeping": 1
@@ -28,7 +31,7 @@
 	"outcomes": [
 		{
 			"materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
-			"countFactor": 2,
+			"countFactor": 3,
 			"moduleKey": "sword/flamberge_blade",
 			"moduleVariant": "flamberge_blade/"
 		}

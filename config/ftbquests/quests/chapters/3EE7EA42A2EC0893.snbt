@@ -124,22 +124,6 @@
 			x: 6.0d
 			y: -1.0d
 		}
-		{
-			id: "1CDE3304527E39D7"
-			rewards: [{
-				auto: "enabled"
-				id: "7D61631670A54696"
-				ignore_reward_blocking: true
-				kubeId: "test"
-				type: "maa:kube"
-			}]
-			tasks: [{
-				id: "58A5EAC2C3D750A0"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: 0.5d
-		}
 	]
 	title: "叁"
 }

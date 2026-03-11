@@ -11,10 +11,18 @@
     "requirement": {
         "type": "tetra:and",
         "requirements": [
-            {
-            "type": "tetra:module",
-            "module": "sword/flamberge_blade"
-            }
+			{
+                "type": "tetra:or",
+                "requirements": [
+				{
+					"type": "tetra:module",
+					"module": "sword/ancient_flamberge_blade"
+				},
+				{
+				"type": "tetra:module",
+				"module": "sword/flamberge_blade"
+				}
+			]}
         ]
     },
 	"translation": {
@@ -22,10 +30,10 @@
 			"generic.attack_damage": 3
 		},
 		"primaryEffects": {
-			"kubejs:flame_strike": [2, -2]
+			"kubejs:flame_strike": [2, -1]
 		},
 		"secondaryEffects": {
-			"kubejs:flame_strike": [-1, 5]
+			"kubejs:flame_strike": [-0.5, 4]
 		},
 		"tertiaryEffects": {
 			"sweeping": 1
@@ -37,7 +45,7 @@
 	"outcomes": [
 		{
 			"materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
-			"countFactor": 2,
+			"countFactor": 3,
 			"moduleKey": "sword/ancient_flamberge_blade",
 			"moduleVariant": "ancient_flamberge_blade/"
 		}

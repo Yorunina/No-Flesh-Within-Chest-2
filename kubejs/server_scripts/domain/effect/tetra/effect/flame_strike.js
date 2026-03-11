@@ -15,7 +15,9 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:flame_strike')
     if (effectEfficiency <= 0 || effectLevel <= 0) return
     let fireTicks = targetEntity.getRemainingFireTicks()
-    if (fireTicks <= effectLevel * 20 * 30) return
-    let damage =  fireTicks / 20 * effectEfficiency * 0.2
+    let needTicks = effectLevel * 20 * 10
+    if (fireTicks <= needTicks) return
+    let damage =  fireTicks / 20 * effectEfficiency * 0.5
     targetEntity.attack(targetEntity.damageSources().onFire(), damage)
+    targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() - needTicks)
 })

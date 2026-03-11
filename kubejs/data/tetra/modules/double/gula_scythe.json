@@ -1,0 +1,82 @@
+{
+    "replace": true,
+    "type": "tetra:multi_major_module",
+    "slots": [
+        "double/head_left",
+        "double/head_right"
+    ],
+    "slotSuffixes": [
+        "_left",
+        "_right"
+    ],
+    "improvements": [
+        "tetra:double/gula_scythe/",
+        "tetra:double/shared_head/",
+        "tetra:double/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": ["tetra:gem/", "tetra:wood/", "tetra:stone/" , "tetra:metal/"],
+            "key": "gula_scythe/",
+            "integrity": -1,
+            "attributes": {
+                "generic.attack_damage": 11,
+                "generic.attack_speed": -1.3
+            },
+            "aspects": {
+                "edged_weapon": 2,
+                "block_breaker": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "armorPenetration": 4,
+                "sweepingStrike": 1,
+                "sweeping": 1,
+                "truesweep": 1
+            },
+            "durability": 45,
+            "magicCapacity": 400,
+            "glyph": {
+                "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                "textureX": 48
+            },
+            "models": [
+                {
+                    "location": "tetra:item/module/double/head/gula_scythe_scythe/gula"
+                }
+            ]
+        },
+        {
+            "materials": ["tetra:bone/"],
+            "key": "gula_scythe/bone",
+            "integrity": -1,
+            "attributes": {
+                "generic.attack_damage": 11,
+                "generic.attack_speed": -1.3
+            },
+            "aspects": {
+                "edged_weapon": 2,
+                "block_breaker": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "armorPenetration": 4,
+                "sweepingStrike": 1,
+                "sweeping": 1,
+                "truesweep": 1
+            },
+            "durability": 45,
+            "magicCapacity": 400,
+            "glyph": {
+                "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                "textureX": 48
+            },
+            "models": [
+                {
+                    "location": "tetra:item/module/double/head/gula_scythe_scythe/gula"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "replace": true,
+    "slots": [
+        "double/head_left",
+        "double/head_right"
+    ],
+    "keySuffixes": [
+        "_left",
+        "_right"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 48
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:or",
+                "requirements": [
+                    {
+                        "type": "tetra:module",
+                        "module": "double/gula_scythe_right"
+                    },
+                    {
+                        "type": "tetra:module",
+                        "module": "double/gula_scythe_left"
+                    }
+                ]
+            },
+            {
+                "type": "tetra:improvement",
+                "improvement": "soul_fire_hone/soul_fire",
+                "level": 2
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "gula_hone/devour_blood": 3
+            }
+        }
+    ]
+}

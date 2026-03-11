@@ -4,7 +4,7 @@ RegistryOrgan('kubejs:lava_life_cycle_system')
     .addScore('chestcavity:digestion', 0.5)
 
 /**
- * todo 需要回归测试
+ * 
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
  * @param {Internal.ItemStack} organItem
@@ -21,37 +21,26 @@ function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex,
     let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, FourDirectionOffset)
     for (let slotDefinition of aroundRelativeSlots) {
         let curItem = ccInv.getStackInSlot(slotDefinition.getId())
-        if (curItem.isEmpty()) continue
-        if (curItem.hasTag('createdieselgenerators:canister') && curItem.hasNBT()) {
-            let nbt = curItem.getNbt()
-            if (!nbt.contains('BlockEntityTag')) return
-            let blockEntityTag = nbt.getCompound('BlockEntityTag')
-            if (!blockEntityTag.contains('Tanks')) continue
-            let tanksNbt = blockEntityTag.getList('Tanks')
-            if (tanksNbt.size() <= 0) return
-            let tankNbt = tanksNbt.get(0)
-            if (tankNbt.contains('TankContent')) return
-            let tankContent = tankNbt.getCompound('TankContent')
-            let fluidName = tankContent.getString('FluidName')
-            let fluidAmount = tankContent.getInt('Amount')
-            if (fluidAmount <= 0) continue
-            switch (fluidName) {
-                case 'minecraft:lava':
-                    if (fireTick + 40 * mult > 1200 * mult) break
-                    tankNbt.putInt('Amount', fluidAmount - 1)
-                    fireTick = fireTick + 40 * mult
-                    break
-                case 'createdieselgenerators:gasoline':
-                    if (fireTick + 20 * mult > 12000 * mult) break
-                    tankNbt.putInt('Amount', fluidAmount - 1)
-                    fireTick = fireTick + 20 * mult
-                    break
-            }
+        if (!curItem || curItem.isEmpty()) continue
+        let handler = GetItemFluidHandler(curItem)
+        if (!handler) continue
+        let fluid = handler.getFluid()
+        if (fluid.getAmount() <= 0) continue
+        if (fluid.containsFluid('minecraft:lava')) {
+            if (fireTick + 40 * mult > 1200 * mult) continue
+            handler.drain(Fluid.of('minecraft:lava', 1), 'execute')
+            fireTick = fireTick + 40 * mult
+            break
+        }
+        if (fluid.containsFluid('createdieselgenerators:gasoline')) {
+            if (fireTick + 20 * mult > 12000 * mult) continue
+            handler.drain(Fluid.of('createdieselgenerators:gasoline', 1), 'execute')
+            fireTick = fireTick + 20 * mult
+            break
         }
     }
     entity.setRemainingFireTicks(fireTick)
 }
-
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:lava_life_cycle_system')

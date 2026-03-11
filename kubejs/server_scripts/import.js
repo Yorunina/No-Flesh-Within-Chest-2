@@ -126,3 +126,5 @@ const $AbstractDeepling = Java.loadClass('com.github.L_Ender.cataclysm.entity.De
 const $Date = Java.loadClass('java.util.Date')
 
 const $IModularItem = Java.loadClass('se.mickelus.tetra.items.modular.IModularItem')
+
+const $FueledToolItem = Java.loadClass('com.jesz.createdieselgenerators.content.tools.FueledToolItem')

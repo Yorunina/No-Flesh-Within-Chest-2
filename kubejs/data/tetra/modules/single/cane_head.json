@@ -61,7 +61,7 @@
         },
         {
             "materials": [ "tetra:gem/" ],
-            "key": "cane_head/",
+            "key": "cane_head/gem",
             "attributes": {
                 "generic.attack_speed": -1,
                 "generic.movement_speed": 0.12,
