@@ -1,0 +1,48 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "rarity": "temporary",
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 64
+    },
+    "translation": {
+        "primaryAttributes": {
+            "tetra:draw_speed": -3,
+            "tetra:draw_strength": 4
+        },
+        "tertiaryAttributes": {
+            "tetra:draw_speed": 1,
+            "tetra:draw_strength": 2
+        },
+        "primaryEffects": {
+            "kubejs:seeking_arrow": [0, 2]
+        },
+        "tertiaryEffects": {
+            "kubejs:seeking_arrow": [1, 1]
+        },
+        "durability": 4,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:wood/" ],
+            "countFactor": 2,
+            "toolOffset": 1,
+            "moduleKey": "bow/mechanical_stave",
+            "moduleVariant": "mechanical_stave/"
+        },
+        {
+            "materials": [ "tetra:metal/" ],
+            "countFactor": 3,
+            "toolOffset": 3,
+            "moduleKey": "bow/mechanical_stave",
+            "moduleVariant": "mechanical_stave/"
+        }
+    ]
+}

@@ -52,7 +52,7 @@
                 },
                 "availableTextures": [ "metal"],
                 "models": [{
-                    "location": "tetra:item/module/double/head/gula_scythe_scythe/"
+                    "location": "tetra:item/module/double/head/gula_scythe/"
                 }]
             }
         },
@@ -93,7 +93,7 @@
                 },
                 "availableTextures": [ "crude"],
                 "models": [{
-                    "location": "tetra:item/module/double/head/gula_scythe_scythe/"
+                    "location": "tetra:item/module/double/head/gula_scythe/"
                 }]
             }
         }

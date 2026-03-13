@@ -21,3 +21,4 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
         targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() + effectEfficiency * 20)
     }
 })
+

@@ -88,7 +88,6 @@ const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.
 const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living.ShieldBlockEvent')
 const $AttackEntityEvent = Java.loadClass('net.minecraftforge.event.entity.player.AttackEntityEvent')
 
-
 const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')
 const $Containers = Java.loadClass('net.minecraft.world.Containers')
 const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineContainer')
@@ -107,12 +106,7 @@ const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics
 
 const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 const $HourglassConfig = Java.loadClass('net.lavabucket.hourglass.config.HourglassConfig')
-const $GateEventOpened = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$Opened')
-const $GateEventCompleted = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$Completed')
-const $GateEventWaveStarted = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$WaveStarted')
-const $GateEventWaveEnd = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$WaveEnd')
-const $GateEventFailed = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$Failed')
-const $GateEventWaveEntitySpawned = Java.loadClass('dev.shadowsoffire.gateways.event.GateEvent$WaveEntitySpawned')
+
 
 const $DespoilLootModifier = Java.loadClass('com.github.elenterius.biomancy.loot.DespoilLootModifier')
 const $LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable')

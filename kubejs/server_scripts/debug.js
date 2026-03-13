@@ -1,6 +1,6 @@
 // priority: 500
 // todo 调试方法
-ItemEvents.rightClicked(event => {
+ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
@@ -36,10 +36,10 @@ ItemEvents.rightClicked(event => {
     //         console.log(pEffect.key, num)
     //     })
     // })
-    console.log(item.getAttributeValue(itemStack, 'generic.attack_speed'))
-    item.getAttributeModifiers(itemStack).forEach((attri, modifier) => {
-        console.log(attri.descriptionId, modifier.getAmount())
-    })
+    // console.log(item.getAttributeValue(itemStack, 'generic.attack_speed'))
+    // item.getAttributeModifiers(itemStack).forEach((attri, modifier) => {
+    //     console.log(attri.descriptionId, modifier.getAmount())
+    // })
 
     // level.playSound(null, player.getX(), player.getY(), player.getZ(), 'ui.toast.challenge_complete', player.getSoundSource(), 0.5, 1)
     // AddSkinToSlot(player, 'chest', 'burning_heart_arms')

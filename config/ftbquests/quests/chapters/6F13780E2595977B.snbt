@@ -732,6 +732,46 @@
 			x: 12.0d
 			y: -5.0d
 		}
+		{
+			dependencies: ["585F5FEF231F0B44"]
+			id: "1D33AD00D5E33F5A"
+			tasks: [{
+				id: "46C5DF736E9E5F66"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1D33AD00D5E33F5A"]
+			id: "6E6F8033B88378B2"
+			tasks: [{
+				id: "18936990E168695C"
+				item: {
+					Count: 1
+					id: "tetra:modular_bow"
+					tag: {
+						Damage: 0
+						EnchantmentMapping: { }
+						Enchantments: [ ]
+						HideFlags: 1
+						"bow/basic_string_material": "basic_string/string"
+						"bow/mechanical_stave_material": "mechanical_stave/jungle"
+						"bow/stave": "bow/mechanical_stave"
+						"bow/string": "bow/basic_string"
+						"bow/string/settle_progress": 124
+						honing_available: 1b
+						honing_progress: 0
+						id: "a1742fed-5b35-4a0d-8c5e-f754ebf5b21a"
+						repairCount: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
 	]
 	title: "传闻：创世工匠"
 }

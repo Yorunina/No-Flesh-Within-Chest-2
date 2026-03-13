@@ -1,0 +1,29 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 64
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "stave/seeking_arrow",
+        "level": 2
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "axe_dig": "minecraft:stone"
+            },
+            "improvements": {
+                "stave/seeking_arrow": 3
+            }
+        }
+    ]
+}

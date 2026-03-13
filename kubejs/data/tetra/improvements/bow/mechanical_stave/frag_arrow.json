@@ -1,0 +1,45 @@
+[
+    {
+        "key": "stave/frag_arrow",
+        "level": 1,
+        "aspects": {
+            "honed": 1
+        },
+        "attributes": {
+            "kubejs:frag_arrow": [0, 1]
+        }
+    },
+    {
+        "key": "stave/frag_arrow",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 2
+        },
+        "attributes": {
+            "kubejs:frag_arrow": [1, 2]
+        }
+    },
+    {
+        "key": "stave/frag_arrow",
+        "level": 3,
+        "integrity": -1,
+        "aspects": {
+            "honed": 3
+        },
+        "attributes": {
+            "kubejs:frag_arrow": [1, 3]
+        }
+    },
+    {
+        "key": "stave/frag_arrow",
+        "level": 4,
+        "integrity": -2,
+        "aspects": {
+            "honed": 4
+        },
+        "attributes": {
+            "kubejs:frag_arrow": [2, 5]
+        }
+    }
+]

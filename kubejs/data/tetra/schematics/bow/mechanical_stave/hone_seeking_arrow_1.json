@@ -1,0 +1,40 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 64
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:module",
+                "module": "bow/mechanical_stave"
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "stave/seeking_arrow"
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "axe_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "stave/seeking_arrow": 1
+            }
+        }
+    ]
+}
