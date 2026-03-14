@@ -1337,7 +1337,7 @@
 						value: "infinity:cube"
 					}
 				}
-				title: "一张证明"
+				title: "一张到达过黑曜石维度的证明"
 				type: "item"
 			}]
 			title: "暗无天日的黑曜石监牢"
@@ -1924,7 +1924,7 @@
 			}]
 			title: "&6庆贺吧！此乃通往无尽之钥！&r"
 			x: 1.5d
-			y: 11.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]

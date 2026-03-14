@@ -10,4 +10,5 @@ function SchematicShowGulaScythe(customData, event, stack, schematic) {
     if (stages.contains('ftb_genesis_process_done')) return customData.resList.push(schematic)
     if (IsPreForge(stack, PreForgeTypePrimordialCradle)) return customData.resList.push(schematic)
 }
-RegistrySchematicShowStrategy('double/gula_scythe/gula_scythe', SchematicShowGulaScythe)
+RegistrySchematicShowStrategy('double/gula_scythe/gula_scythe_right', SchematicShowGulaScythe)
+RegistrySchematicShowStrategy('double/gula_scythe/gula_scythe_left', SchematicShowGulaScythe)

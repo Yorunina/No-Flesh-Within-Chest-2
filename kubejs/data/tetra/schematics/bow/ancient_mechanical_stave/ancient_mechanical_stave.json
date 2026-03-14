@@ -8,26 +8,7 @@
     "displayType": "major",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 64
-    },
-    "translation": {
-        "primaryAttributes": {
-            "tetra:draw_speed": -3,
-            "tetra:draw_strength": 4
-        },
-        "tertiaryAttributes": {
-            "tetra:draw_speed": 1,
-            "tetra:draw_strength": 2
-        },
-        "primaryEffects": {
-            "kubejs:frag_arrow": [-0.25, 2]
-        },
-        "tertiaryEffects": {
-            "kubejs:frag_arrow": [0, 1]
-        },
-        "durability": 4,
-        "integrity": -3,
-        "magicCapacity": 3
+        "textureX": 112
     },
     "outcomes": [
         {

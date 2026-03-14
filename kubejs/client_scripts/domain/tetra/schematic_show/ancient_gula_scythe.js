@@ -15,6 +15,7 @@ function SchematicShowAncientGulaScythe(customData, event, stack, schematic) {
     if (devourBloodEfficiency < 10) return
     let attackSpeedAttributeValue = modularItem.getAttributeValue(stack, 'generic.attack_speed')
     if (attackSpeedAttributeValue < -3) return
-    event.setResult(true)
+    customData.resList.push(schematic)
 }
-RegistrySchematicShowStrategy('double/ancient_gula_scythe/ancient_gula_scythe', SchematicShowAncientGulaScythe)
+RegistrySchematicShowStrategy('double/ancient_gula_scythe/ancient_gula_scythe_right', SchematicShowAncientGulaScythe)
+RegistrySchematicShowStrategy('double/ancient_gula_scythe/ancient_gula_scythe_left', SchematicShowAncientGulaScythe)

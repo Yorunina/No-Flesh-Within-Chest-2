@@ -1,0 +1,35 @@
+{
+    "replace": true,
+    "type": "tetra:basic_module",
+    "slots": [ "double/binding" ],
+    "renderLayer": "higher",
+    "tweakKey": "tetra:double/ancient_binding",
+    "variants": [
+        {
+            "materials": [ "tetra:fibre/", "tetra:skin/" ],
+            "key": "ancient_binding/",
+            "attributes": {
+                "attributeslib:mining_speed": -0.5
+            },
+            "extract": {
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.3
+                },
+                "secondaryEffects": {
+                    "kubejs:vein_mining": [2, 0]
+                },
+                "tertiaryEffects": {
+                    "kubejs:vein_mining": [0, 2]
+                },
+                "durability": 0.5,
+                "integrity": 0.5,
+                "glyph": {
+                    "textureX": 88,
+                    "textureY": 112
+                },
+                "availableTextures": [ "default" ],
+                "models": [ { "location": "tetra:item/module/double/binding/binding/" } ]
+            }
+        }
+    ]
+}

@@ -15,7 +15,7 @@
             "materials": [ "tetra:wood/", "tetra:rod/stick", "tetra:metal/" ],
             "key": "ancient_mechanical_stave/",
             "attributes": {
-                "tetra:draw_speed": 1.6,
+                "tetra:draw_speed": 1.5,
                 "tetra:draw_strength": 1.5
             },
             "aspects": {
@@ -48,7 +48,7 @@
                 "magicCapacity": 1,
                 "glyph": {
                     "textureLocation": "tetra:textures/gui/custom_glyph.png",
-                    "textureX": 64
+                    "textureX": 112
                 },
                 "availableTextures": [ "crude" ],
                 "models": [

@@ -881,6 +881,8 @@
     "status_msg.kubejs.void_stomach_pouch.cap_info": " +%s种类容量",
     "status_msg.kubejs.void_stomach_pouch.no_dimnet": "你还没有维度网络！没法住！",
     "status_msg.kubejs.void_stomach_pouch.summary": "本次胃袋挑战中总共提升了 %s 存储种类和 %s 种类容量，请下次再接再厉嗝！",
+    "status_msg.kubejs.vein_mining_status.disabled": "连锁采掘：已禁用",
+    "status_msg.kubejs.vein_mining_status.enabled": "连锁采掘：已启用",
     "_comment.jade": "高亮",
     "_comment.machine": "机器",
     "machine.kubejs.dungeon_obelisk.error.addition_loot": "§b转化物品",

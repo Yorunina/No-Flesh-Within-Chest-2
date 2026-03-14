@@ -14,7 +14,7 @@
     "displayType": "major",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 48
+        "textureX": 64
     },
     "outcomes": [
         {

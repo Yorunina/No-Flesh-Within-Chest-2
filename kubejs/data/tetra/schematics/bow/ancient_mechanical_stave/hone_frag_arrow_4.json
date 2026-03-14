@@ -9,7 +9,7 @@
     "displayType": "major",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 64
+        "textureX": 112
     },
     "requirement": {
         "type": "tetra:improvement",

@@ -84,8 +84,8 @@
 				type: "checkmark"
 			}]
 			title: "&6庆贺吧！此乃创世工匠蓝图！&r"
-			x: 11.0d
-			y: -1.0d
+			x: 20.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -111,8 +111,8 @@
 				type: "checkmark"
 			}]
 			title: "改良创世工艺"
-			x: 9.5d
-			y: -1.0d
+			x: 18.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -136,8 +136,8 @@
 				title: "疑虑"
 				type: "checkmark"
 			}]
-			x: 13.0d
-			y: -1.0d
+			x: 22.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
@@ -182,6 +182,7 @@
 				""
 				"不知道您是否对此事感兴趣，愿意与我一同探索创世工匠所遗留的宝藏？"
 			]
+			icon: "tetra:forged_workbench"
 			id: "585F5FEF231F0B44"
 			rewards: [{
 				id: "00242F63ECEAB2B4"
@@ -391,7 +392,7 @@
 		{
 			dependencies: ["3F7877E62FE000C3"]
 			description: [
-				"创世工匠的日志中记录其焰形剑使用旧日材料轻易达到了&6概率烧伤延长20秒&r及&612点面板攻击力&r，而后，创世工匠便创造了其创世工艺启发之旅的第一把武器——我们 现在可以称其为&9传古焰形剑&r。"
+				"创世工匠的日志中记录其焰形剑使用旧日材料轻易达到了&6概率烧伤延长20秒&r及&612点面板攻击力&r，而后，创世工匠便创造了其创世工艺启发之旅的第一把武器——我们现在可以称其为&9传古焰形剑&r。"
 				""
 				"请您也模仿创世工匠制作此般武器，虽然我们没有过去世界中所使用的各种材料，但只要您愿意花费时间进行打磨钻研，便定能解决。"
 			]
@@ -615,7 +616,7 @@
 		{
 			dependencies: ["29742AF38AA792FE"]
 			description: [
-				"创世工匠的日志中记录其饕餮镰使用旧日材料轻易达到了&6单次饱食恢复大于1&r及&61以上的攻击速度&r，而后，创世工匠便创造了其创世工艺启发之旅的第二把武器——我们 现在可以称其为&9传古饕餮镰&r。"
+				"创世工匠的日志中记录其饕餮镰使用旧日材料轻易达到了&6单次饱食恢复大于1&r及&61以上的攻击速度&r，而后，创世工匠便创造了其创世工艺启发之旅的第二把武器——我们现在可以称其为&9传古饕餮镰&r。"
 				""
 				"请您也模仿创世工匠制作此般武器，虽然我们没有过去世界中所使用的各种材料，但双头工具的定义比较广泛，就算只有一头是饕餮镰刃，也可以被称作饕餮镰——因此可以通过选择另一头的工具类型来满足属性要求。"
 			]
@@ -734,43 +735,391 @@
 		}
 		{
 			dependencies: ["585F5FEF231F0B44"]
+			description: [
+				"日志中记载，创世工匠为打造足够精妙的弓，从自己的友人处借来了数以千计的机械原件，最后使用其中部分打造而成了&6机巧弓&r。"
+				""
+				"机巧弓由技艺本身引导，能够将其发射的箭矢转换为具有特殊效能的&6特种箭矢&r，以完成一些复杂的工作或者单纯进行有效杀伤。"
+				""
+				"尽管当初的制作技艺细节已然不可考，但从星星点点的记录来看，极有可能是通过&6动力锯&r完成预锻造的过程。"
+			]
+			icon: "create:mechanical_saw"
 			id: "1D33AD00D5E33F5A"
-			tasks: [{
-				id: "46C5DF736E9E5F66"
-				item: "create:mechanical_saw"
+			rewards: [{
+				id: "7D12C56E2556ED14"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "打造机巧弓"
+			tasks: [{
+				icon: "create:mechanical_saw"
+				id: "5FA172893F17948A"
+				observe_type: 0
+				timer: 0L
+				title: "观察动力锯"
+				to_observe: "create:mechanical_saw"
+				type: "observation"
+			}]
+			title: "复刻机巧弓"
 			x: 4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["1D33AD00D5E33F5A"]
+			description: [
+				"相比于我们想象中创世工匠使用动力锯进行精妙加工，从现有工具所遗留的数据来看，他当时可能只是粗略的将模块化弓使用动力锯进行了&6简单的处理&r。"
+				""
+				"&7**  仅仅是稍微的接触，工具便损毁殆尽 **&r"
+				""
+				"请您手持&6任意模块化弓&r，将工具右键放置在动力锯上，模拟过去所发生的一切。"
+			]
 			id: "6E6F8033B88378B2"
+			rewards: [{
+				id: "49533108DE208F40"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "以最为精巧的切割"
 			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:bow"
+					tag: {
+						Damage: 0
+					}
+				}
 				id: "18936990E168695C"
 				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "is_tetra_preforged:[mechanical_saw]"
+					}
+				}
+				title: "切割锻造后的模块化工具"
+				type: "item"
+			}]
+			title: "预锻造模块化工具"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6E6F8033B88378B2"]
+			description: [
+				"在经过预锻造后，您的武器已经支零破碎，请您&6优先修复您的工具&r，而后将模块化弓的弓臂打造成为&6机巧弓臂&r。"
+				""
+				"&6机巧弓&r作为一种特殊弓种，其能够在&6满蓄力&r时，将射出的弓箭转换为特殊的&6追踪箭矢&r。追踪箭矢能够在射出后不断搜寻周围的目标以进行追踪。当目标搜寻到后，会立刻进入到&6特殊机动加速状态&r，在这种状态下，机巧弓的追踪箭矢会有更高、更稳定的箭矢终速。"
+				""
+				"通过不同材料打造的机巧弓具有不同的&6追踪范围&r和&6机动终速&r，因此需要进行精心调整以达到最适合您的武器状态。"
+			]
+			id: "4484E4E4683B59B7"
+			rewards: [{
+				id: "05758BFC6E35E6E6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "步向传古工艺之路"
+			tasks: [{
+				icon: {
 					Count: 1
 					id: "tetra:modular_bow"
 					tag: {
 						Damage: 0
-						EnchantmentMapping: { }
-						Enchantments: [ ]
 						HideFlags: 1
 						"bow/basic_string_material": "basic_string/string"
-						"bow/mechanical_stave_material": "mechanical_stave/jungle"
+						"bow/mechanical_stave_material": "mechanical_stave/oak"
 						"bow/stave": "bow/mechanical_stave"
 						"bow/string": "bow/basic_string"
-						"bow/string/settle_progress": 124
-						honing_available: 1b
-						honing_progress: 0
-						id: "a1742fed-5b35-4a0d-8c5e-f754ebf5b21a"
+						"bow/string/settle_progress": 329
+						honing_progress: 54
+						id: "738397d5-90c4-4379-a26a-c7710e105d45"
+					}
+				}
+				id: "19BC9F56C74845E9"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[bow/stave]:[bow/mechanical_stave]"
+					}
+				}
+				title: "任意包含机巧弓臂的模块化工具"
+				type: "item"
+			}]
+			title: "锻造机巧弓"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4484E4E4683B59B7"]
+			description: [
+				"创世工匠的日志中记录其饕餮镰使用旧日材料轻易达到了&6机动速度最大4.5格/秒&r及&61.6以下的拉弓时间&r，而后，创世工匠便创造了其创世工艺启发之旅的第三把武器——我们现在可以称其为&9传古机巧弓&r。"
+				""
+				"请您也模仿创世工匠制作此般武器，虽然我们没有过去世界中所使用的各种材料，但倘若我们能够&6穷尽打磨之技&r，终究能够到达往日之高度。"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_bow"
+				tag: {
+					Damage: 0
+					HideFlags: 1
+					"bow/basic_string_material": "basic_string/string"
+					"bow/mechanical_stave_material": "mechanical_stave/warped"
+					"bow/stave": "bow/mechanical_stave"
+					"bow/stave/settle_progress": 385
+					"bow/string": "bow/basic_string"
+					"bow/string/settle_progress": 342
+					honing_available: 1b
+					honing_progress: 0
+					id: "246c7be6-2c3a-4099-af7f-b8db616cc668"
+				}
+			}
+			id: "5F9D59B4922E8B4C"
+			rewards: [{
+				id: "42DF01F4C4620058"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加深对于机巧弓的理解"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_bow"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"bow/basic_string_material": "basic_string/dragon_sinew"
+						"bow/mechanical_stave_material": "mechanical_stave/warped"
+						"bow/stave": "bow/mechanical_stave"
+						"bow/stave/settle_progress": 370
+						"bow/stave:stave/seeking_arrow": 2
+						"bow/string": "bow/basic_string"
+						honing_count: 2
+						honing_progress: 109
+						id: "0f7ae055-470f-45c4-ac29-74a77ca76c6e"
+					}
+				}
+				id: "3DCCA675686DD7F3"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "fit_ancient_mechanical_stave:[]"
+					}
+				}
+				title: "机动速度>4.5格且拉弓时间<1.6的机巧弓"
+				type: "item"
+			}]
+			title: "自创世工匠而传"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F9D59B4922E8B4C"]
+			description: [
+				"&6恭喜！看来创世工匠留下的技艺仍旧有效！&r"
+				""
+				"所谓传古工具，不过是创世工匠当时的随意之作——其隐藏在大量日志之中，一度让我认为是某种传说。但这一把把&b传古工具&r的铸成无一不是对创世工序存在的证明。"
+				""
+				"传古机巧弓相比于机巧弓，属性上没有太大差异"
+				""
+				"但一旦使用者无法供养传古饕餮镰的消耗，其不再将对敌人造成伤害，而是开始侵蚀使用者自身。"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_bow"
+				tag: {
+					Damage: 0
+					HideFlags: 1
+					"bow/ancient_mechanical_stave_material": "ancient_mechanical_stave/warped"
+					"bow/basic_string_material": "basic_string/string"
+					"bow/stave": "bow/ancient_mechanical_stave"
+					"bow/string": "bow/basic_string"
+					"bow/string/settle_progress": 354
+					honing_count: 3
+					honing_progress: 112
+					id: "f82a9e79-6b79-4996-ab47-d6aa94bb2967"
+					preForgeType: "mechanical_saw"
+					repairCount: 1
+				}
+			}
+			id: "733541A5359D4654"
+			rewards: [{
+				id: "4323CCB3DB272D1E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "匠艺再现"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_bow"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"bow/ancient_mechanical_stave_material": "ancient_mechanical_stave/warped"
+						"bow/basic_string_material": "basic_string/string"
+						"bow/stave": "bow/ancient_mechanical_stave"
+						"bow/string": "bow/basic_string"
+						"bow/string/settle_progress": 354
+						honing_count: 3
+						honing_progress: 112
+						id: "f82a9e79-6b79-4996-ab47-d6aa94bb2967"
+						preForgeType: "mechanical_saw"
 						repairCount: 1
 					}
 				}
+				id: "726B393433493711"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[bow/stave]:[bow/ancient_mechanical_stave]"
+					}
+				}
+				title: "任意传古机巧弓"
 				type: "item"
 			}]
-			x: 6.0d
+			title: "铸成传古机巧弓"
+			x: 12.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"193FE4515D3E23A1"
+				"49CEF56DE1747911"
+				"733541A5359D4654"
+			]
+			description: [
+				"&6感谢您对创世工序所做出的贡献&r——我们目前收集到有关创世工匠的信息已经足够让我们进入下一步的探索了。"
+				""
+				"正如之前所言，&6每件创世工具的完成无不是对创世工序真实存在的证明&r——目前，我已经找到了相关的日志信息，并且完成了相关的分析。"
+				""
+				"现在，我们&6还需要打造三把传古工具&r，这同样也是为了启发——但启发的目的并非是证明创世工序存在，而是完成对创世工序的重新构建。"
+				""
+				"&6只有在完全完成这三把传古工具，我才能真正意义上的重现创世工序。&r"
+			]
+			icon: "tetra:hammer_base"
+			id: "75096F8EF539CB29"
+			min_required_dependencies: 2
+			rewards: [{
+				id: "200258A8FE5462ED"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "传古武器锻造之后"
+			tasks: [{
+				id: "588B5873ECAC65FD"
+				title: "我将奉行"
+				type: "checkmark"
+			}]
+			title: "传古史实"
+			x: 14.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["75096F8EF539CB29"]
+			id: "4AC681B7C67BEEDB"
+			tasks: [{
+				id: "150EB1F84FC41B9C"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["75096F8EF539CB29"]
+			id: "7C8A23D446317A08"
+			tasks: [{
+				id: "7E17B29A99CB137B"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["75096F8EF539CB29"]
+			id: "573B18502C8359B2"
+			tasks: [{
+				id: "33A396DA9BB68C3A"
+				type: "checkmark"
+			}]
+			x: 16.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4AC681B7C67BEEDB"]
+			id: "4CBF5CCBCC22041F"
+			tasks: [{
+				id: "63A750F851BDE28F"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7C8A23D446317A08"]
+			id: "7F90D10E3909F105"
+			tasks: [{
+				id: "3E5FFF2E09B46B0B"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["573B18502C8359B2"]
+			id: "45FD19BF9DBC0B90"
+			tasks: [{
+				id: "1FD7324183722CFA"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4CBF5CCBCC22041F"]
+			id: "0D288D15FBA046CF"
+			tasks: [{
+				id: "2878C7015DB6F0E3"
+				type: "checkmark"
+			}]
+			x: 20.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["7F90D10E3909F105"]
+			id: "084C51CDAE64FED4"
+			tasks: [{
+				id: "003CAE87E048CA8A"
+				type: "checkmark"
+			}]
+			x: 20.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["45FD19BF9DBC0B90"]
+			id: "5A86A72AFC55DF20"
+			tasks: [{
+				id: "39AEB8B2B16F1EFC"
+				type: "checkmark"
+			}]
+			x: 20.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"084C51CDAE64FED4"
+				"0D288D15FBA046CF"
+				"5A86A72AFC55DF20"
+			]
+			id: "3C91C563740898D5"
+			tasks: [{
+				id: "684E15C94CB48981"
+				title: "模拟创世工序"
+				type: "checkmark"
+			}]
+			x: 22.5d
+			y: -5.0d
 		}
 	]
 	title: "传闻：创世工匠"

@@ -49,7 +49,7 @@
 				"magicCapacity": 1,
 				"glyph": {
 					"textureLocation": "tetra:textures/gui/custom_glyph.png",
-					"textureX": 32
+					"textureX": 48
 				},
 				"availableTextures": [ "metal", "shiny", "grainy", "crude" ],
 				"models": [{

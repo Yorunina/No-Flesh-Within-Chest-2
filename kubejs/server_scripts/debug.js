@@ -1,6 +1,6 @@
 // priority: 500
 // todo 调试方法
-ItemEvents.rightClicked('stick', event => {
+ItemEvents.rightClicked(event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
@@ -16,17 +16,19 @@ ItemEvents.rightClicked('stick', event => {
     // item.getModuleAttributes(itemStack).forEach((attri, modifier) => {
     //     console.log(attri.descriptionId, modifier.name, modifier.getAmount())
     // })
-    let effectData = item.getEffectData(itemStack)
+
     // let toolData = item.getToolData(itemStack)
     // toolData.levelMap.forEach((pEffect, num) => {
     //     console.log(pEffect.name(), num)
     // })
-    // effectData.levelMap.forEach((pEffect, num) => {
-    //     console.log(pEffect.key, num)
-    // })
-    // effectData.efficiencyMap.forEach((pEffect, num) => {
-    //     console.log(pEffect.key, num)
-    // })
+
+    let effectData = item.getEffectData(itemStack)
+    effectData.levelMap.forEach((pEffect, num) => {
+        console.log(pEffect.key, num)
+    })
+    effectData.efficiencyMap.forEach((pEffect, num) => {
+        console.log(pEffect.key, num)
+    })
     // item.getImprovements(itemStack).forEach(pImprove => {
     //     console.log(pImprove.key, pImprove.level)
     // })
