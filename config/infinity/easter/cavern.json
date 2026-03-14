@@ -1,0 +1,10 @@
+{
+  "infinity_version": 2004002,
+  "generator": {
+    "type": "infinity:cavern",
+    "biome_source": {
+      "type": "infinity:cavern_biome_source",
+      "biomes": "#minecraft:is_overworld"
+    }
+  }
+}
