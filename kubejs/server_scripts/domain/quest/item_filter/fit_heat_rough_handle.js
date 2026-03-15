@@ -1,11 +1,11 @@
 // priority: 500
-MAAEvents.ftbCustomItemFilter('fit_ancient_flamberge_blade', event => {
+MAAEvents.ftbCustomItemFilter('fit_heat_rough_handle', event => {
     const stack = event.testItem
     const modularItem = stack.getItem()
     if (!TetraJSUtils.isModularItem(modularItem)) return
-    let burnsEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:burns')
-    if (burnsEfficiency < 20) return
+    let maxDamage = modularItem.getMaxDamage(stack)
+    if (maxDamage < 1000) return
     let attackDamageAttributeValue = modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1)
-    if (attackDamageAttributeValue < 12) return
+    if (attackDamageAttributeValue > 1) return
     event.setResult(true)
 })

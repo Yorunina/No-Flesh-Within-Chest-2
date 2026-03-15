@@ -1,0 +1,49 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "double/handle"
+    ],
+    "renderLayer": "lower",
+    "improvements": [
+        "tetra:double/heat_handle/",
+        "tetra:double/shared_handle/",
+        "tetra:double/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rod/" ],
+            "key": "heat_handle/",
+            "attributes": {
+                "generic.attack_speed": -0.5
+            },
+            "effects": {
+                "kubejs:auto_smelt": 1
+            },
+            "aspects": {
+                "block_breaker": 1,
+                "breakable": 2
+            },
+            "durability": -2,
+            "integrity": 1,
+            "extract": {
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.2
+                },
+                "durability": 0.2,
+                "integrity": 1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 16
+                },
+                "availableTextures": [ "default", "metal", "bone", "bright" ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/double/handle/basic/"
+                    }
+                ]
+            }
+        }
+    ]
+}

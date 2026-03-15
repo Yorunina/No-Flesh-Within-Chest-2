@@ -994,9 +994,7 @@
 				""
 				"正如之前所言，&6每件创世工具的完成无不是对创世工序真实存在的证明&r——目前，我已经找到了相关的日志信息，并且完成了相关的分析。"
 				""
-				"现在，我们&6还需要打造三把传古工具&r，这同样也是为了启发——但启发的目的并非是证明创世工序存在，而是完成对创世工序的重新构建。"
-				""
-				"&6只有在完全完成这三把传古工具，我才能真正意义上的重现创世工序。&r"
+				"不过，为了能够真正复现创世工序，现在，&6轮到我们来启发我们自己了&r。"
 			]
 			icon: "tetra:hammer_base"
 			id: "75096F8EF539CB29"
@@ -1008,9 +1006,11 @@
 			}]
 			subtitle: "传古武器锻造之后"
 			tasks: [{
-				id: "588B5873ECAC65FD"
-				title: "我将奉行"
-				type: "checkmark"
+				elapsedTime: 180L
+				icon: "supplementaries:hourglass"
+				id: "61C0FC84D31A5DC0"
+				title: "稍等片刻"
+				type: "questsadditions:time"
 			}]
 			title: "传古史实"
 			x: 14.5d
@@ -1018,21 +1018,55 @@
 		}
 		{
 			dependencies: ["75096F8EF539CB29"]
+			description: [
+				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
+				""
+				"我经过发想后，得到的第一个可行工具改良方案为&6耦合器&r。"
+				""
+				"耦合器是一种将绑定结进行现代强化的部件。您需要&6优先为双头工具制作绑定&r，才能够在绑定的基础上进行耦合器的制作。"
+				""
+				"为了解锁绑定的制作原理图，您需要制作&6织布机&r并将其放在加工台的周围。"
+			]
 			id: "4AC681B7C67BEEDB"
-			tasks: [{
-				id: "150EB1F84FC41B9C"
-				type: "checkmark"
+			rewards: [{
+				id: "25F93F7527700802"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "从能制作绑定结开始"
+			tasks: [{
+				id: "3F7FBCA0B78EBC2A"
+				item: "minecraft:loom"
+				type: "item"
+			}]
+			title: "绑定启发"
 			x: 16.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["75096F8EF539CB29"]
+			description: [
+				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
+				""
+				"我经过发想后，得到的第二个可行工具改良方案为&6热能手柄&r和&6粗糙手柄&r。"
+				""
+				"这两种手柄是一种将手柄进行现代强化的部件。您需要&6优先为双头工具制作手柄，并且为其进行裹柄&r，才能够在手柄的基础上进行现代化改良。"
+				""
+				"为了解锁裹柄的制作原理图，您需要制作&6高炉&r并将其放在加工台的周围。"
+			]
 			id: "7C8A23D446317A08"
-			tasks: [{
-				id: "7E17B29A99CB137B"
-				type: "checkmark"
+			rewards: [{
+				id: "6F87F641E4E94D77"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "从裹柄工艺开始"
+			tasks: [{
+				id: "2C327D891D4C1805"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			title: "裹柄启发"
 			x: 16.5d
 			y: -5.0d
 		}
@@ -1048,21 +1082,128 @@
 		}
 		{
 			dependencies: ["4AC681B7C67BEEDB"]
+			description: [
+				"当您放置了织布机后，在加工台中应已经可见了双头工具特有的&6绑定&r部件。"
+				""
+				"请将任意双头工具安装绑定部件，接下来我会告诉您具体如何制作&6耦合器&r。"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					HideFlags: 1
+					canVeinMining: 1b
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/basic_pickaxe_left_material": "basic_pickaxe/diamond"
+					"double/basic_pickaxe_right_material": "basic_pickaxe/diamond"
+					"double/binding": "double/binding"
+					"double/binding_material": "double_binding/string"
+					"double/handle": "double/basic_handle"
+					"double/handle/settle_progress": 221
+					"double/head_left": "double/basic_pickaxe_left"
+					"double/head_left:arrested": 0
+					"double/head_right": "double/basic_pickaxe_right"
+					"double/head_right:arrested": 0
+					honing_available: 1b
+					honing_progress: -18
+					id: "e9e2dc06-8f6f-4c5e-a40f-d2e71378eb62"
+					repairCount: 2
+				}
+			}
 			id: "4CBF5CCBCC22041F"
-			tasks: [{
-				id: "63A750F851BDE28F"
-				type: "checkmark"
+			rewards: [{
+				id: "416110CC635EB6D0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "为工具安装绑定"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						canVeinMining: 1b
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_pickaxe_left_material": "basic_pickaxe/diamond"
+						"double/basic_pickaxe_right_material": "basic_pickaxe/diamond"
+						"double/binding": "double/binding"
+						"double/binding_material": "double_binding/string"
+						"double/handle": "double/basic_handle"
+						"double/handle/settle_progress": 221
+						"double/head_left": "double/basic_pickaxe_left"
+						"double/head_left:arrested": 0
+						"double/head_right": "double/basic_pickaxe_right"
+						"double/head_right:arrested": 0
+						honing_available: 1b
+						honing_progress: -18
+						id: "0db0842a-8977-438f-a8f4-ffad4e8dd4f9"
+						repairCount: 2
+					}
+				}
+				id: "1C537E3168F840C4"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[double/binding]:[double/binding]"
+					}
+				}
+				title: "任意包含绑定的双头工具"
+				type: "item"
+			}]
+			title: "精研绑定制作技艺"
 			x: 18.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["7C8A23D446317A08"]
+			description: [
+				"当您放置了高炉后，在加工台中应已经可见了双头工具手柄特有的&6裹柄&r改进。"
+				""
+				"请将任意双头工具进行裹柄改良，接下来我会告诉您具体如何制作&6热能手柄&r和&6粗糙手柄&r。"
+			]
 			id: "7F90D10E3909F105"
-			tasks: [{
-				id: "3E5FFF2E09B46B0B"
-				type: "checkmark"
+			rewards: [{
+				id: "45682ED2DD4C0E21"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "为工具进行裹柄"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"double/basic_axe_left_material": "basic_axe/diamond"
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/butt_right_material": "butt/diamond"
+						"double/handle": "double/basic_handle"
+						"double/handle:basic_handle/wrap/dragon_sinew": 0
+						"double/head_left": "double/basic_axe_left"
+						"double/head_left:arrested": 0
+						"double/head_right": "double/butt_right"
+						"double/head_right:arrested": 0
+						honing_progress: 440
+						id: "7d21faee-59cb-4294-9bbb-d1fc27979f15"
+					}
+				}
+				id: "4929388BDA667399"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "is_tetra_wrap_handle:[]"
+					}
+				}
+				title: "任意完成裹柄的双头工具"
+				type: "item"
+			}]
+			title: "精研裹柄制作技艺"
 			x: 18.5d
 			y: -5.0d
 		}
@@ -1078,46 +1219,268 @@
 		}
 		{
 			dependencies: ["4CBF5CCBCC22041F"]
+			description: [
+				"为了能够让被改造的双头工具承受住耦合器的结合力，需要&6工具至少具有2000点耐久度&r，且&6挖掘速度不得低于9&r。"
+				""
+				"这意味着，您可能需要多次对工具进行打磨，同时尽可能多的使用能够增加耐久度的材料。"
+			]
 			id: "0D288D15FBA046CF"
-			tasks: [{
-				id: "2878C7015DB6F0E3"
-				type: "checkmark"
+			rewards: [{
+				id: "505313EFD3D91E99"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "现代工匠之启迪"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_pickaxe_left_material": "basic_pickaxe/netherite"
+						"double/basic_pickaxe_right_material": "basic_pickaxe/netherite"
+						"double/binding": "double/binding"
+						"double/binding_material": "double_binding/string"
+						"double/handle": "double/basic_handle"
+						"double/handle:basic_handle/wrap/string": 0
+						"double/head_left": "double/basic_pickaxe_left"
+						"double/head_left:head_hone/speed": 1
+						"double/head_right": "double/basic_pickaxe_right"
+						honing_count: 1
+						honing_progress: 515
+						id: "ce2863de-7093-4187-9916-a5367c8ab19e"
+						repairCount: 1
+					}
+				}
+				id: "3B0377BD5690E199"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "fit_coupler:[]"
+					}
+				}
+				title: "耐久度≥2000且挖掘速度≥9的双头工具"
+				type: "item"
+			}]
+			title: "匠艺我所执"
 			x: 20.5d
 			y: -7.0d
 		}
 		{
 			dependencies: ["7F90D10E3909F105"]
+			description: [
+				"为了能够让被改造的双头工具承受住手柄的特殊能效，需要&6工具至少具有1000点耐久度&r，但&6工具的攻击力不得高于1&r。"
+				""
+				"这意味着，您可能需要精挑细选材料，并且合理规划工具类型，以保证耐久度何攻击力能够满足要求。"
+			]
 			id: "084C51CDAE64FED4"
-			tasks: [{
-				id: "003CAE87E048CA8A"
-				type: "checkmark"
+			rewards: [{
+				id: "6E777F446CD303E2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "现代工匠之启迪"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"double/basic_handle_material": "basic_handle/netherite"
+						"double/butt_right_material": "butt/netherite"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/hoe_left"
+						"double/head_right": "double/butt_right"
+						"double/hoe_left_material": "hoe/oak"
+						honing_progress: 290
+						id: "dcc2c241-ea84-4c26-8dc3-411c788c49bd"
+					}
+				}
+				id: "668E39379B3DC226"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "fit_heat_rough_handle:[]"
+					}
+				}
+				title: "耐久度≥1000且攻击力≤1的双头工具"
+				type: "item"
+			}]
+			title: "匠艺我所执"
 			x: 20.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["45FD19BF9DBC0B90"]
 			id: "5A86A72AFC55DF20"
+			subtitle: "现代工匠之启迪"
 			tasks: [{
 				id: "39AEB8B2B16F1EFC"
 				type: "checkmark"
 			}]
+			title: "匠艺我所执"
 			x: 20.5d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"084C51CDAE64FED4"
-				"0D288D15FBA046CF"
-				"5A86A72AFC55DF20"
+			dependencies: ["0D288D15FBA046CF"]
+			description: [
+				"在达成了之前的条件后，您便可以进行&6耦合器&r的制造。"
+				""
+				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
+				""
+				"只要&6再完成剩余两种发想部件&r，我们便具备了进行创世工序复原的全部资质！"
 			]
-			id: "3C91C563740898D5"
-			tasks: [{
-				id: "684E15C94CB48981"
-				title: "模拟创世工序"
-				type: "checkmark"
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					HideFlags: 1
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/basic_pickaxe_left_material": "basic_pickaxe/netherite"
+					"double/basic_pickaxe_right_material": "basic_pickaxe/netherite"
+					"double/binding": "double/coupler"
+					"double/coupler_material": "coupler/string"
+					"double/handle": "double/basic_handle"
+					"double/handle:basic_handle/wrap/string": 0
+					"double/head_left": "double/basic_pickaxe_left"
+					"double/head_left:head_hone/speed": 1
+					"double/head_right": "double/basic_pickaxe_right"
+					honing_count: 1
+					honing_progress: 515
+					id: "78e64268-4141-4025-8bce-2e2c910fe7b4"
+					repairCount: 1
+				}
+			}
+			id: "31C551BCFF060F3B"
+			rewards: [{
+				id: "5E5E2F6DF4136B2D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
+			subtitle: "继创世工匠后"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_pickaxe_left_material": "basic_pickaxe/netherite"
+						"double/basic_pickaxe_right_material": "basic_pickaxe/netherite"
+						"double/binding": "double/coupler"
+						"double/coupler_material": "coupler/string"
+						"double/handle": "double/basic_handle"
+						"double/handle:basic_handle/wrap/string": 0
+						"double/head_left": "double/basic_pickaxe_left"
+						"double/head_left:head_hone/speed": 1
+						"double/head_right": "double/basic_pickaxe_right"
+						honing_count: 1
+						honing_progress: 515
+						id: "78e64268-4141-4025-8bce-2e2c910fe7b4"
+						repairCount: 1
+					}
+				}
+				id: "27EF09DE9F620FFA"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[double/binding]:[double/coupler]"
+					}
+				}
+				title: "装有耦合器的双头工具"
+				type: "item"
+			}]
+			title: "安装耦合器"
+			x: 22.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["084C51CDAE64FED4"]
+			description: [
+				"在达成了之前的条件后，您便可以进行&6热能手柄&r和&6粗糙手柄&r的制造。"
+				""
+				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
+				""
+				"只要&6再完成剩余两种发想部件&r，我们便具备了进行创世工序复原的全部资质！"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					HideFlags: 1
+					"double/basic_axe_left_material": "basic_axe/diamond"
+					"double/butt_right_material": "butt/netherite"
+					"double/handle": "double/heat_handle"
+					"double/head_left": "double/basic_axe_left"
+					"double/head_left:arrested": 0
+					"double/head_right": "double/butt_right"
+					"double/heat_handle_material": "heat_handle/oak"
+					honing_progress: 365
+					id: "3faaa4d7-1b4a-46fc-bbff-97e58e7eb1a6"
+				}
+			}
+			id: "729D887900900CCF"
+			rewards: [{
+				id: "13CF4ADD73387CBB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "继创世工匠后"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"double/basic_axe_left_material": "basic_axe/diamond"
+						"double/butt_right_material": "butt/netherite"
+						"double/handle": "double/heat_handle"
+						"double/head_left": "double/basic_axe_left"
+						"double/head_left:arrested": 0
+						"double/head_right": "double/butt_right"
+						"double/heat_handle_material": "heat_handle/oak"
+						honing_progress: 365
+						id: "3faaa4d7-1b4a-46fc-bbff-97e58e7eb1a6"
+					}
+				}
+				id: "6F3F14F305DC1099"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "maa:tetra_module"
+								tag: {
+									value: "[double/handle]:[double/rough_handle]"
+								}
+							}
+							{
+								Count: 1b
+								id: "maa:tetra_module"
+								tag: {
+									value: "[double/handle]:[double/heat_handle]"
+								}
+							}
+						]
+					}
+				}
+				title: "装有热能手柄/粗糙手柄的双头工具"
+				type: "item"
+			}]
+			title: "安装热能手柄/粗糙手柄"
 			x: 22.5d
 			y: -5.0d
 		}

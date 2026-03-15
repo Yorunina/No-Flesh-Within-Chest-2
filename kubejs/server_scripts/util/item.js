@@ -142,3 +142,30 @@ function GetItemFluidHandler(stack) {
         return item.getFluidHandler(stack)
     }
 }
+
+/**
+ * 
+ * @param {Internal.ItemStack} stack 
+ * @returns {number}
+ */
+function GetModularItemMineSpeed(stack) {
+    return Math.round(
+        TetraJS$ItemModularHandheld.getAttackSpeedHarvestModifier(
+            stack.getItem().getAttributeValue(stack, 'minecraft:generic.attack_speed', 4.0)) *
+        stack.getItem().getToolData(stack).getEfficiency($ToolAction.get('pickaxe_dig'))
+    )
+}
+
+/**
+ * @param {Internal.LivingEntity} entity 
+ * @returns {ItemStack}
+ */
+function GetEntityHeadItem(entity) {
+    if (entity.isPlayer) {
+        entity.getGameProfile()
+        return Item.of('minecraft:player_head', $NbtUtils.writeGameProfile(new $CompoundTag(), entity.getGameProfile()))
+    } else if (Entity2EntityHeadItem[entity.getType()]) {
+        return Entity2EntityHeadItem[entity.getType()]
+    }
+    return null
+}

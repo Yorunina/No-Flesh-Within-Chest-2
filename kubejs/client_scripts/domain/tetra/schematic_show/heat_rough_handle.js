@@ -5,16 +5,19 @@
  * @param {Internal.ItemStack} stack 
  * @param {Internal.Schematic} schematic 
  */
-function SchematicShowAncientFlambergeBlade(customData, event, stack, schematic) {
+function SchematicShowHeatRoughHandle(customData, event, stack, schematic) {
     const stages = AStagesClient.getServerAndPlayerClientStages()
     if (stages.contains('ftb_genesis_process_done')) return customData.resList.push(schematic)
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
-    // 非传古武器烧伤技能效率需要大于等于20，对应打磨4的改良属性
-    let burnsEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:burns')
-    if (burnsEfficiency < 20) return
+    
+    let maxDamage = modularItem.getMaxDamage(stack)
+    if (maxDamage < 1000) return
     let attackDamageAttributeValue = modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1)
-    if (attackDamageAttributeValue < 12) return
+    if (attackDamageAttributeValue > 1) return
     customData.resList.push(schematic)
 }
-RegistrySchematicShowStrategy('sword/ancient_flamberge/ancient_flamberge_blade', SchematicShowAncientFlambergeBlade)
+RegistrySchematicShowStrategy('double/heat_handle/heat_handle', SchematicShowHeatRoughHandle)
+RegistrySchematicShowStrategy('double/rough_handle/rough_handle', SchematicShowHeatRoughHandle)
+RegistrySchematicShowStrategy('single/heat_handle/heat_handle', SchematicShowHeatRoughHandle)
+RegistrySchematicShowStrategy('single/rough_handle/rough_handle', SchematicShowHeatRoughHandle)

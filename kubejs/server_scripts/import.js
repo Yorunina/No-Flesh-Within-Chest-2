@@ -118,3 +118,5 @@ const $FueledToolItem = Java.loadClass('com.jesz.createdieselgenerators.content.
 const $AreaEffectCloud = Java.loadClass('net.minecraft.world.entity.AreaEffectCloud')
 const $SimpleContainer = Java.loadClass('net.minecraft.world.SimpleContainer')
 const $ExperienceOrb = Java.loadClass('net.minecraft.world.entity.ExperienceOrb')
+const $ToolAction = Java.loadClass('net.minecraftforge.common.ToolAction')
+const $NbtUtils = Java.loadClass('net.minecraft.nbt.NbtUtils')

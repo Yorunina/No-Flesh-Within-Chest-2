@@ -13,9 +13,7 @@ LootJS.modifiers(event => {
             let modularItem = heldItem.getItem()
             if (!TetraJSUtils.isModularItem(modularItem)) return
             let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:auto_smelt')
-            let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:auto_smelt')
-            if (effectEfficiency <= 0 || effectLevel <= 0) return
-
+            if (effectLevel <= 0) return
             const recipeManager = level.getRecipeManager()
             const registryAccess = level.registryAccess()
             let experience = 0

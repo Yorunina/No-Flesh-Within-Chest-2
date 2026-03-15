@@ -1,0 +1,27 @@
+{
+    "replace": true,
+    "slots": [
+        "single/handle"
+    ],
+    "rarity": "inspired",
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureX": 16
+    },
+    "translation": {
+        "secondaryAttributes": {
+            "generic.attack_speed": -1.5
+        },
+        "durability": -2,
+        "integrity": 3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": ["tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:rod/"],
+            "moduleKey": "single/rough_handle",
+            "moduleVariant": "rough_handle/"
+        }
+    ]
+}

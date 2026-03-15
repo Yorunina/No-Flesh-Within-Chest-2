@@ -1,13 +1,13 @@
 {
     "replace": true,
     "type": "tetra:basic_module",
-    "slots": [ "double/binding" ],
+    "slots": [ "single/binding" ],
     "renderLayer": "higher",
-    "tweakKey": "tetra:double/ancient_binding",
+    "tweakKey": "tetra:single/coupler",
     "variants": [
         {
             "materials": [ "tetra:fibre/", "tetra:skin/" ],
-            "key": "ancient_binding/",
+            "key": "coupler/",
             "attributes": {
                 "attributeslib:mining_speed": -0.5
             },
@@ -28,7 +28,7 @@
                     "textureY": 112
                 },
                 "availableTextures": [ "default" ],
-                "models": [ { "location": "tetra:item/module/double/binding/binding/" } ]
+                "models": [ { "location": "tetra:item/module/single/binding/coupler/" } ]
             }
         }
     ]

@@ -7,24 +7,7 @@
 	"glyph": {
 		"textureLocation": "tetra:textures/gui/custom_glyph.png",
 		"textureX": 48
-	},    
-    "requirement": {
-        "type": "tetra:and",
-        "requirements": [
-			{
-                "type": "tetra:or",
-                "requirements": [
-				{
-					"type": "tetra:module",
-					"module": "sword/ancient_flamberge_blade"
-				},
-				{
-				"type": "tetra:module",
-				"module": "sword/flamberge_blade"
-				}
-			]}
-        ]
-    },
+	},
 	"translation": {
 		"primaryAttributes": {
 			"generic.attack_damage": 3

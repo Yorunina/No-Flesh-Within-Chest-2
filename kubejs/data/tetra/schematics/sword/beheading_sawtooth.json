@@ -1,0 +1,20 @@
+{
+    "replace": true,
+    "slots": [
+        "sword/fuller"
+    ],
+    "rarity": "inspired",
+    "materialSlotCount": 1,
+    "displayType": "minor",
+    "glyph": {
+        "textureX": 72,
+        "textureY": 112
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/", "tetra:misc/forged_beam" ],
+            "moduleKey": "sword/beheading_sawtooth",
+            "moduleVariant": "beheading_sawtooth/"
+        }
+    ]
+}

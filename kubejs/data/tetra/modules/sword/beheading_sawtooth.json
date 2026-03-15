@@ -1,0 +1,35 @@
+{
+    "replace": true,
+    "slots": [ "sword/fuller" ],
+    "type": "tetra:basic_module",
+    "variants": [
+        {
+            "materials": [ "tetra:metal/", "tetra:wood/", "tetra:bone/", "tetra:misc/forged_beam" ],
+            "key": "beheading_sawtooth/",
+            "attributes": {
+                "generic.attack_speed": -0.1
+            },
+            "durability": 50,
+            "durabilityMultiplier": 1,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:beheading": 1
+                },
+                "primaryAttributes": {
+                    "generic.attack_damage": 0.2
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.2
+                },
+                "durability": 0.2,
+                "integrity": 0.6,
+                "glyph": {
+                    "textureX": 72,
+                    "textureY": 112
+                },
+                "availableTextures": [ "default" ],
+                "models": [ { "location": "tetra:item/module/sword/fuller/beheading_sawtooth/" } ]
+            }
+        }
+    ]
+}

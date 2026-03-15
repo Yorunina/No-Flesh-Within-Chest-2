@@ -15,8 +15,8 @@
             "materials": [ "tetra:wood/", "tetra:rod/stick", "tetra:metal/" ],
             "key": "ancient_mechanical_stave/",
             "attributes": {
-                "tetra:draw_speed": 1.5,
-                "tetra:draw_strength": 1.5
+                "tetra:draw_speed": 1.8,
+                "tetra:draw_strength": 1.8
             },
             "aspects": {
                 "bow": 2,
@@ -38,10 +38,10 @@
                     "tetra:draw_strength": 0.75
                 },
                 "primaryEffects": {
-                    "kubejs:frag_arrow": [-0.25, 2]
+                    "kubejs:frag_arrow": [0, 2]
                 },
                 "tertiaryEffects": {
-                    "kubejs:frag_arrow": [0, 1]
+                    "kubejs:frag_arrow": [0.5, 1]
                 },
                 "durability": 1.05,
                 "integrity": -1,

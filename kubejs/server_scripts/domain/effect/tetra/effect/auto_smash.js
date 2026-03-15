@@ -7,14 +7,12 @@ LootJS.modifiers(event => {
             const level = ctx.level
             const block = ctx.destroyedBlock
             if (!block) return
-            const pos = block.pos
-            // let heldItem = entity.mainHandItem
-            // /**@type {Internal.ModularItem} */
-            // let modularItem = heldItem.getItem()
-            // if (!TetraJSUtils.isModularItem(modularItem)) return
-            // let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:auto_smelt')
-            // let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:auto_smelt')
-            // if (effectEfficiency <= 0 || effectLevel <= 0) return
+            let heldItem = entity.mainHandItem
+            /**@type {Internal.ModularItem} */
+            let modularItem = heldItem.getItem()
+            if (!TetraJSUtils.isModularItem(modularItem)) return
+            let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:auto_smash')
+            if (effectLevel <= 0) return
             let newLoot = []
             ctx.loot.forEach(pItem => {
                 let processingInv = new $ProcessingInventory(pCtx => { })

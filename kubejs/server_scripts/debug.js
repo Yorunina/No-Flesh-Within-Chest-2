@@ -7,31 +7,35 @@ ItemEvents.rightClicked(event => {
     const level = event.level
     const server = event.server
     const itemStack = event.item
-    
+
 
     /**@type {Internal.ModularItem} */
     const item = itemStack.getItem()
-    
+
     if (!TetraJSUtils.isModularItem(item)) return
     // item.getModuleAttributes(itemStack).forEach((attri, modifier) => {
     //     console.log(attri.descriptionId, modifier.name, modifier.getAmount())
     // })
-
     // let toolData = item.getToolData(itemStack)
     // toolData.levelMap.forEach((pEffect, num) => {
     //     console.log(pEffect.name(), num)
     // })
-
-    let effectData = item.getEffectData(itemStack)
-    effectData.levelMap.forEach((pEffect, num) => {
-        console.log(pEffect.key, num)
-    })
-    effectData.efficiencyMap.forEach((pEffect, num) => {
-        console.log(pEffect.key, num)
-    })
-    // item.getImprovements(itemStack).forEach(pImprove => {
-    //     console.log(pImprove.key, pImprove.level)
+    // toolData.efficiencyMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.name(), num)
     // })
+
+
+    // let effectData = item.getEffectData(itemStack)
+    // effectData.levelMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.key, num)
+    // })
+    // effectData.efficiencyMap.forEach((pEffect, num) => {
+    //     console.log(pEffect.key, num)
+    // })
+    item.getImprovements(itemStack).forEach(pImprove => {
+        
+        console.log(pImprove.group, pImprove.efficiency)
+    })
     // item.getAllModules(itemStack).forEach(itemModule => {
     //     let aspectData = itemModule.getAspects(itemStack)
     //     aspectData.levelMap.forEach((pEffect, num) => {
@@ -117,3 +121,6 @@ ItemEvents.rightClicked(event => {
 //     return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
 // })
 // .canFitInsideContainerItems(false)
+
+
+
