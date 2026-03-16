@@ -17,7 +17,6 @@ function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType
     if (entity.age % 1200 != 0) return
 
     // 视作用默认培养液培养
-    // todo 后续可强化为多种营养液体内切换
     let tumorConfigModel = UnformedTumorFluidConfigMap.get('kubejs:nutrients_fluid')
     let organData = tumorConfigModel.genOrganData()
     let potentialOrganData = tumorConfigModel.genPotentialOrganData()

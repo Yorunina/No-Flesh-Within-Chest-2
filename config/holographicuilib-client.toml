@@ -1,55 +1,58 @@
 
 [theme]
-	#当前使用的主题ID
-	#可用主题: default, cyberpunk, matrix, lava, frost
+	#config.theme.id.comment
 	id = "default"
 
 	[theme.colors]
-		#主色调覆盖 (格式: #AARRGGBB, 留空使用主题默认)
+		#config.theme.colors.primary.comment
 		primary = ""
-		#次色调覆盖 (格式: #AARRGGBB, 留空使用主题默认)
+		#config.theme.colors.secondary.comment
 		secondary = ""
-		#背景色覆盖 (格式: #AARRGGBB, 留空使用主题默认)
+		#config.theme.colors.background.comment
 		background = ""
-		#边框色覆盖 (格式: #AARRGGBB, 留空使用主题默认)
+		#config.theme.colors.border.comment
 		border = ""
-		#文字色覆盖 (格式: #AARRGGBB, 留空使用主题默认)
+		#config.theme.colors.text.comment
 		text = ""
 
 [animation]
-	#全息扫描线速度
+	#config.animation.scanline_speed.comment
 	#Range: 0.0 ~ 5.0
 	scanline_speed = 1.0
-	#全息闪烁强度
+	#config.animation.flicker_intensity.comment
 	#Range: 0.0 ~ 1.0
 	flicker_intensity = 0.15
-	#边框发光强度
+	#config.animation.glow_intensity.comment
 	#Range: 0.0 ~ 2.0
 	glow_intensity = 0.5
 
 [tooltip]
-	#工具提示显示延迟 (毫秒)
+	#config.tooltip.delay.comment
 	#Range: 0 ~ 5000
 	delay = 500
-	#工具提示淡出时间 (毫秒)
+	#config.tooltip.fade_out.comment
 	#Range: 0 ~ 2000
 	fade_out = 200
-	#是否启用工具提示动画
+	#config.tooltip.animated.comment
 	animated = true
 
 [effects]
-	#是否启用全息特效
+	#config.effects.holographic.comment
 	holographic = true
-	#是否启用扫描线效果
+	#config.effects.scanlines.comment
 	scanlines = true
-	#是否启用发光效果
+	#config.effects.glow.comment
 	glow = true
 
 [keybindings]
-	#打开示例UI的按键码 (GLFW键码)
+	#config.keybindings.open_example_ui.comment
 	#Range: 0 ~ 512
 	open_example_ui = 85
-	#打开UI编辑器的按键码 (GLFW键码)
+	#config.keybindings.open_editor.comment
 	#Range: 0 ~ 512
 	open_editor = 69
+
+[features]
+	#config.features.enable_pga.comment
+	enable_pga = false
 

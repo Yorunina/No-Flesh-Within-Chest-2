@@ -3,12 +3,12 @@
   "biomes": "kubejs:biome_oath",
   "step": "raw_generation",
   "spawn_overrides": {},
-  "start_pool": "kubejs:oath_hall_pool",
+  "start_pool": "kubejs:oath_hall_start_pool",
   "size": 20,
   "start_height": {
-    "above_bottom": 0
+    "above_bottom": 33
   },
-  "start_jigsaw_name": "kubejs:hall_corner",
+  "start_jigsaw_name": "kubejs:hall_start_corner",
   "max_distance_from_center": 512,
   "use_expansion_hack": false
 }

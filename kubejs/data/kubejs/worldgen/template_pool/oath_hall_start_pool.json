@@ -1,0 +1,15 @@
+{
+  "name": "kubejs:oath_hall_start_pool",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 50,
+      "element": {
+        "location": "kubejs:oath_hall/start_room",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

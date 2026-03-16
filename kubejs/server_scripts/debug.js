@@ -1,6 +1,6 @@
 // priority: 500
 // todo 调试方法
-ItemEvents.rightClicked(event => {
+ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
@@ -8,11 +8,10 @@ ItemEvents.rightClicked(event => {
     const server = event.server
     const itemStack = event.item
 
+    // /**@type {Internal.ModularItem} */
+    // const item = itemStack.getItem()
 
-    /**@type {Internal.ModularItem} */
-    const item = itemStack.getItem()
-
-    if (!TetraJSUtils.isModularItem(item)) return
+    // if (!TetraJSUtils.isModularItem(item)) return
     // item.getModuleAttributes(itemStack).forEach((attri, modifier) => {
     //     console.log(attri.descriptionId, modifier.name, modifier.getAmount())
     // })
@@ -32,10 +31,10 @@ ItemEvents.rightClicked(event => {
     // effectData.efficiencyMap.forEach((pEffect, num) => {
     //     console.log(pEffect.key, num)
     // })
-    item.getImprovements(itemStack).forEach(pImprove => {
+    // item.getImprovements(itemStack).forEach(pImprove => {
         
-        console.log(pImprove.group, pImprove.efficiency)
-    })
+    //     console.log(pImprove.group, pImprove.efficiency)
+    // })
     // item.getAllModules(itemStack).forEach(itemModule => {
     //     let aspectData = itemModule.getAspects(itemStack)
     //     aspectData.levelMap.forEach((pEffect, num) => {

@@ -32,7 +32,6 @@ function MalignantNeuronTumorEntityBeHurt(customData, event, organItem, organInd
     } else {
         organItem.setDamageValue(newDamageValue)
     }
-    // todo 复制任务线
 }
 
 

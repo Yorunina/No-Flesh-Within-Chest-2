@@ -132,7 +132,6 @@ function eternalAltarGatewayArtificialTicketReward(machine, player, levelIndicat
     }
     eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
     // Ticket特殊掉落物
-    // todo 后续有需要改造成策略
     artificalTicketConvert(machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList)
 
     // 应用extractantItem策略
