@@ -5,7 +5,7 @@
 const OrganSkillWheelMap = new Map()
 
 SkillWheelEvents.itemSelected(event => {
-    const item = event.getOrganItem()
+    const item = event.getActiveItem()
     let nbt = new $CompoundTag()
     nbt.putString('itemId', item.id)
     event.player.sendData('key_active', nbt)
@@ -25,17 +25,17 @@ NetworkEvents.dataReceived('update_organ_skill_wheel_item', event => {
             OrganSkillWheelMap.forEach((pSlot, pItemId) => {
                 curSkillItems.push(Item.of(pItemId))
             })
-            SkillWheelOverlay.instance.setSkillItems(curSkillItems)
+            SkillWheelOverlay.setSkillItems(curSkillItems)
             break
         case 'delete':
             OrganSkillWheelMap.delete(itemId)
             OrganSkillWheelMap.forEach((pSlot, pItemId) => {
                 curSkillItems.push(Item.of(pItemId))
             })
-            SkillWheelOverlay.instance.setSkillItems(curSkillItems)
+            SkillWheelOverlay.setSkillItems(curSkillItems)
             break
         case 'refresh':
             OrganSkillWheelMap.clear()
-            SkillWheelOverlay.instance.setSkillItems(curSkillItems)
+            SkillWheelOverlay.setSkillItems(curSkillItems)
     }
 })

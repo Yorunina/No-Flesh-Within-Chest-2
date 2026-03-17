@@ -79,9 +79,6 @@ wandBypassConfig = false
 	armorBypassChance = 0.2
 
 ["twilight forest compat"]
-	#Percentage damage addition per level of fiery
-	#Range: 0.0 ~ 100.0
-	fiery = 0.5
 	#Percentage healing bonus per level of twilight healing
 	#Range: 0.0 ~ 100.0
 	compatTFHealing = 0.5
@@ -91,6 +88,9 @@ wandBypassConfig = false
 	#Time for the golem to be invincible (in ticks) per level of carminite
 	#Range: 1 ~ 100000
 	carminiteTime = 20
+	#Percentage damage addition per level of fiery
+	#Range: 0.0 ~ 100.0
+	fieryDamageFactor = 0.25
 
 ["botania compat"]
 	#Mana mending cost per HP
@@ -247,6 +247,9 @@ wandBypassConfig = false
 	#Ignis Shinguard Bonus: Flame Strike damage boost
 	#Range: 0.0 ~ 10.0
 	flameStrikeArmorBonus = 0.5
+	#Ignitium golem skill damage factor
+	#Range: 0.0 ~ 1.0
+	ignisSkillDamageFactor = 0.5
 
 ["composite material compat"]
 	#Dungeon Absorption: lifesteal ratio for melee damage.

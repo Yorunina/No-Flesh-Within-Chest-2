@@ -1,0 +1,5 @@
+#JavaScript引擎选择: "Rhino" 或 "GraalJS"
+engine = "Rhino"
+#是否启用现代JavaScript语法转换
+useModernJS = true
+

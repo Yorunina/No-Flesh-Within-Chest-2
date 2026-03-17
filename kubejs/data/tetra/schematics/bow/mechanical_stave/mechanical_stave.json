@@ -3,6 +3,10 @@
     "slots": [
         "bow/stave"
     ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"mechanical_stave"
+    },
     "rarity": "temporary",
     "materialSlotCount": 1,
     "displayType": "major",

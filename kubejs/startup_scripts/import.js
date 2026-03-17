@@ -38,3 +38,4 @@ const $FleshBlob = Java.loadClass('com.github.elenterius.biomancy.entity.mob.fle
 const $BundleTooltip = Java.loadClass('net.minecraft.world.inventory.tooltip.BundleTooltip')
 const $NonNullList = Java.loadClass('net.minecraft.core.NonNullList')
 const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+const $CustomRequirement = Java.loadClass('net.yiran.morerequirement.requirements.CustomRequirement')

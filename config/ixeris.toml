@@ -18,10 +18,15 @@ eventPollingThreadPriority = 0
 logBlockingCalls = false
 #Enables logging of cache issues. Debug Only.
 logCacheIssues = false
-#Enable to use buffered raw input when supported, which can greatly improve event polling performance.
-bufferedRawInput = false
-#Specifies the initial raw input buffer size.
-minRawInputBufferSize = 32
-#Specifies the maximum raw input buffer size.
-maxRawInputBufferSize = 1024
+
+[bufferedRawInput]
+	#Enable to use buffered raw input for the mouse when supported, which can greatly improve event polling performance and reduce CPU usage.
+	mouse = true
+	#Enable to use buffered raw input for the keyboard when supported, which can offer a small performance boost to event polling performance.
+	#Currently requires buffered raw input for the mouse to be enabled.
+	keyboard = false
+	#Specifies the initial raw input buffer size.
+	minRawInputBufferSize = 32
+	#Specifies the maximum raw input buffer size.
+	maxRawInputBufferSize = 1024
 

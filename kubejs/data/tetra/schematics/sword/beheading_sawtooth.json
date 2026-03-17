@@ -3,12 +3,16 @@
     "slots": [
         "sword/fuller"
     ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"beheading_sawtooth"
+    },
     "rarity": "inspired",
     "materialSlotCount": 1,
     "displayType": "minor",
     "glyph": {
-        "textureX": 72,
-        "textureY": 112
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 144
     },
     "outcomes": [
         {

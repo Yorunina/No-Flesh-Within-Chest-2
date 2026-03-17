@@ -8,6 +8,10 @@
         "_left",
         "_right"
     ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"gula_scythe"
+    },
     "materialSlotCount": 1,
     "materialRevealSlot": 0,
     "rarity": "temporary",

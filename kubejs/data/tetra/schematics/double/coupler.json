@@ -3,12 +3,16 @@
     "slots": [
         "double/binding"
     ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"coupler"
+    },
     "rarity": "inspired",
     "materialSlotCount": 1,
     "displayType": "minor",
     "glyph": {
-        "textureX": 88,
-        "textureY": 112
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 128
     },
     "outcomes": [
         {

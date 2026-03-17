@@ -4,6 +4,10 @@
 	"materialSlotCount": 1,
 	"rarity": "temporary",
 	"displayType": "major",
+	"requirement":{
+        "type":"mr:custom",
+        "key":"flamberge_blade"
+    },
 	"glyph": {
 		"textureLocation": "tetra:textures/gui/custom_glyph.png",
 		"textureX": 32

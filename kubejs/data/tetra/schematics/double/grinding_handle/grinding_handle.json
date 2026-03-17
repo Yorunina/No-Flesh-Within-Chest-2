@@ -3,6 +3,10 @@
     "slots": [
         "double/handle"
     ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"heat_or_grinding_handle"
+    },
     "rarity": "inspired",
     "materialSlotCount": 1,
     "displayType": "major",

@@ -1,3 +1,5 @@
 #Enable debug mode
 debug = false
+#Enable spread operator (...) to ES5 transformation
+spreadOperator = true
 

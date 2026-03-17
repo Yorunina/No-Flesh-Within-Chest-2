@@ -120,3 +120,5 @@ const $SimpleContainer = Java.loadClass('net.minecraft.world.SimpleContainer')
 const $ExperienceOrb = Java.loadClass('net.minecraft.world.entity.ExperienceOrb')
 const $ToolAction = Java.loadClass('net.minecraftforge.common.ToolAction')
 const $NbtUtils = Java.loadClass('net.minecraft.nbt.NbtUtils')
+
+const $OrganManager = Java.loadClass('net.tigereye.chestcavity.chestcavities.json.organs.OrganManager')

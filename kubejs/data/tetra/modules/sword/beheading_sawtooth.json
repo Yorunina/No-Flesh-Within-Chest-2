@@ -24,8 +24,8 @@
                 "durability": 0.2,
                 "integrity": 0.6,
                 "glyph": {
-                    "textureX": 72,
-                    "textureY": 112
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 144
                 },
                 "availableTextures": [ "default" ],
                 "models": [ { "location": "tetra:item/module/sword/fuller/beheading_sawtooth/" } ]

@@ -8,6 +8,10 @@
 		"textureLocation": "tetra:textures/gui/custom_glyph.png",
 		"textureX": 48
 	},
+	"requirement":{
+		"type":"mr:custom",
+		"key":"ancient_flamberge_blade"
+	},
 	"translation": {
 		"primaryAttributes": {
 			"generic.attack_damage": 3

@@ -24,8 +24,8 @@
                 "durability": 0.5,
                 "integrity": 0.5,
                 "glyph": {
-                    "textureX": 88,
-                    "textureY": 112
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 128
                 },
                 "availableTextures": [ "default" ],
                 "models": [ { "location": "tetra:item/module/double/binding/coupler/" } ]

@@ -4,6 +4,10 @@
     "slots": [
         "single/head"
     ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"dimension_probe"
+    },
     "materialSlotCount": 1,
     "displayType": "major",
     "glyph": {
