@@ -1,0 +1,10 @@
+[
+    {
+        "key": "genesis_draw_strength_add_process",
+        "infinite": true,
+        "integrity": 0,
+        "attributes": {
+          "tetra:draw_strength": 0.1
+        }
+    }
+]

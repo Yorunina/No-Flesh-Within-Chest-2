@@ -1,6 +1,6 @@
 // priority: 500
 // todo 调试方法
-ItemEvents.rightClicked('stick', event => {
+ItemEvents.rightClicked(event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
@@ -8,9 +8,18 @@ ItemEvents.rightClicked('stick', event => {
     const server = event.server
     const itemStack = event.item
     
-    // /**@type {Internal.ModularItem} */
-    // const item = itemStack.getItem()
+    /**@type {Internal.ModularItem} */
+    const item = itemStack.getItem()
+    // TetraDataManager.improvementData.data.forEach((resourceLocation, improvementList) => {
+    //     console.log("group" + resourceLocation)
+    //     improvementList.forEach(improvement => {
+    //         console.log(improvement.key, improvement.infinite)
+    //     })
+    // })
+    // item.getModuleFromSlot(itemStack, 'sword/blade').addImprovement(itemStack, 'blade/test', 1)
 
+    // itemStack.getOrCreateTag().putInt('sword/blade' + ":" + 'blade/test', 1)
+        // $ItemModuleMajor.addImprovement(itemStack, 'sword/blade', 'blade/test', 1)
     // if (!TetraJSUtils.isModularItem(item)) return
     // item.getModuleAttributes(itemStack).forEach((attri, modifier) => {
     //     console.log(attri.descriptionId, modifier.name, modifier.getAmount())
@@ -34,12 +43,10 @@ ItemEvents.rightClicked('stick', event => {
     // item.getImprovements(itemStack).forEach(pImprove => {
         
     //     console.log(pImprove.group, pImprove.efficiency)
+    //     console.log(pImprove.key, pImprove.infinite)
     // })
     // item.getAllModules(itemStack).forEach(itemModule => {
-    //     let aspectData = itemModule.getAspects(itemStack)
-    //     aspectData.levelMap.forEach((pEffect, num) => {
-    //         console.log(pEffect.key, num)
-    //     })
+    //     itemModule.setTweakStep(itemStack, 1)
     // })
     // console.log(item.getAttributeValue(itemStack, 'generic.attack_speed'))
     // item.getAttributeModifiers(itemStack).forEach((attri, modifier) => {

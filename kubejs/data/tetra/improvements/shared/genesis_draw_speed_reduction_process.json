@@ -1,0 +1,10 @@
+[
+    {
+        "key": "genesis_draw_speed_reduction_process",
+        "infinite": true,
+        "integrity": -1,
+        "attributes": {
+          "tetra:draw_speed": -0.1
+        }
+    }
+]

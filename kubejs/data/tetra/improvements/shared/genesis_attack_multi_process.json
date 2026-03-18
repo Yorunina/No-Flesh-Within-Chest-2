@@ -1,0 +1,10 @@
+[
+    {
+        "key": "genesis_attack_multi_process",
+        "infinite": true,
+        "integrity": -1,
+        "attributes": {
+          "**generic.attack_damage": 0.2
+        }
+    }
+]

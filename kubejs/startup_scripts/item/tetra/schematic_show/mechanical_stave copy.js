@@ -1,14 +1,13 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('gula_scythe', ctx => {
+$CustomRequirement.registerCustomFunction('genesis_process_done', ctx => {
     const player = ctx.player
     const level = ctx.world
-    const stack = ctx.targetStack
     
     if (!level || level.isClientSide()) {
         if (AStagesClient.getServerAndPlayerClientStages().contains('ftb_genesis_process_done')) return true
     } else {
         if (AStages.serverAndPlayerHasStage(player, 'ftb_genesis_process_done')) return true
     }
-    if (!IsPreForge(stack, PreForgeTypePrimordialCradle)) return false
-    return true
+    return false
 })
+

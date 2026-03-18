@@ -1,0 +1,10 @@
+[
+    {
+        "key": "genesis_speed_add_process",
+        "infinite": true,
+        "integrity": -1,
+        "attributes": {
+          "generic.attack_speed": 0.1
+        }
+    }
+]

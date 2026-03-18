@@ -1,0 +1,10 @@
+[
+    {
+        "key": "genesis_attack_add_process",
+        "infinite": true,
+        "integrity": 0,
+        "attributes": {
+          "generic.attack_damage": 0.1
+        }
+    }
+]

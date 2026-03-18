@@ -1,0 +1,29 @@
+{
+    "replace": true,
+    "slots": [ 
+        "bow/stave",
+        "crossbow/stave"
+    ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"genesis_process_done"
+    },
+    "rarity": "infinite",
+    "materialSlotCount": 0,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+		"textureX": 32
+    },
+    "outcomes": [
+        {
+            "experienceCost": 30,
+            "requiredTools": {
+                "axe_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "genesis_draw_strength_multi_process": 1
+            }
+        }
+    ]
+}

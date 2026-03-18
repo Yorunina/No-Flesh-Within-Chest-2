@@ -60,15 +60,21 @@
 				""
 				"从今天起，您便是创世工匠的又一现世，您的精研之努力将创世工艺化为己用！"
 				""
-				"&6我向您致敬，向人类精神致敬，向创世工匠和现在的创世工匠——也就是您，再次致敬。&r"
+				"&6我向您致敬，向人类精神致敬，向创世工匠和新世界工匠——也就是您，再次致敬。&r"
 			]
 			id: "33D6D51353372A8F"
 			invisible: true
 			rewards: [
 				{
-					id: "678D6F68454EE504"
-					item: "lightmanscurrency:coin_netherite"
-					type: "item"
+					auto: "invisible"
+					icon: "create:empty_schematic"
+					id: "124AFA000DB0753B"
+					ignore_reward_blocking: true
+					isServer: false
+					remove: false
+					stage: "ftb_genesis_process_done"
+					title: "&6知晓创世工艺&r"
+					type: "maa:astages"
 				}
 				{
 					icon: "titles:title_scroll_common"
@@ -80,39 +86,13 @@
 			shape: "square"
 			subtitle: "匠工创世创工匠"
 			tasks: [{
-				id: "1A6C4A9D0BC0C366"
-				type: "checkmark"
+				id: "1DC3F450BA179042"
+				item: "minecraft:spruce_wood"
+				type: "item"
 			}]
-			title: "&6庆贺吧！此乃创世工匠蓝图！&r"
-			x: 30.0d
+			title: "&6庆贺吧！此乃创世工艺！&r"
+			x: 30.5d
 			y: -5.0d
-		}
-		{
-			dependencies: ["33D6D51353372A8F"]
-			description: [
-				"不过每次都要使用那么多次工具只为了一个创世蓝图难免有些. . .愚蠢。"
-				""
-				"如果您能够处在这番天地中巅峰的位置，或许会有一些新的感悟，能够便利的使用创世蓝图。"
-				""
-				"成为世界中&6挖掘数量最多&r的人吧，然后成为唯一的创世工匠！"
-				""
-				"{@pagebreak}"
-				"公开配方会使所有人都可以使用创世工匠蓝图改良配方。"
-				""
-				"私有配方会使您成为唯一能够使用创世工匠蓝图改良配方的工匠，如果其他玩家取而代之，并不会影响您创世工匠改良配方的使用。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "63C66800297E4CA5"
-			shape: "diamond"
-			subtitle: "精研之路漫漫长"
-			tasks: [{
-				id: "5D053E389CD787CB"
-				type: "checkmark"
-			}]
-			title: "改良创世工艺"
-			x: 32.0d
-			y: -6.5d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -136,8 +116,8 @@
 				title: "疑虑"
 				type: "checkmark"
 			}]
-			x: 32.0d
-			y: -5.0d
+			x: 31.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
@@ -920,9 +900,7 @@
 				""
 				"所谓传古工具，不过是创世工匠当时的随意之作——其隐藏在大量日志之中，一度让我认为是某种传说。但这一把把&b传古工具&r的铸成无一不是对创世工序存在的证明。"
 				""
-				"传古机巧弓相比于机巧弓，属性上没有太大差异"
-				""
-				"但一旦使用者无法供养传古饕餮镰的消耗，其不再将对敌人造成伤害，而是开始侵蚀使用者自身。"
+				"传古机巧弓相比于机巧弓，属性上没有太大差异，但其拥有&6破片箭矢&r，在&6击中方块时会发生爆炸&r，对周围一定范围的敌人&6造成等同于使用者近战攻击伤害与特性效率相关的伤害&r，并且&6继承近战攻击特效&r。"
 			]
 			icon: {
 				Count: 1
@@ -1671,6 +1649,26 @@
 			}]
 			title: "重现创世工序：准备"
 			x: 25.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["03C7BEEA8B969DD3"]
+			id: "6361C451E76A6805"
+			rewards: [{
+				id: "332654A47F14DA5A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "74D8147D9C5A627F"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 27.0d
 			y: -5.0d
 		}
 	]
