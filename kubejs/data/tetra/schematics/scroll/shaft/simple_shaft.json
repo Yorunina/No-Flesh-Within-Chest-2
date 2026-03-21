@@ -8,7 +8,7 @@
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
         "textureX": 0,
-        "textureY": 0
+        "textureY": 16
     },
     "translation": {
         "primaryAttributes": {
@@ -26,31 +26,31 @@
             "materials": ["tetra:wood/"],
             "countFactor": 2,
             "moduleKey": "scroll/simple_shaft",
-            "moduleVariant": "simple_shaft/wood/"
+            "moduleVariant": "simple_shaft/"
         },
         {
             "materials": ["tetra:bone/"],
             "countFactor": 2,
             "moduleKey": "scroll/simple_shaft",
-            "moduleVariant": "simple_shaft/bone/"
+            "moduleVariant": "simple_shaft/"
         },
         {
             "materials": ["tetra:metal/"],
             "countFactor": 2,
             "moduleKey": "scroll/simple_shaft",
-            "moduleVariant": "simple_shaft/metal/"
+            "moduleVariant": "simple_shaft/"
         },
         {
             "materials": ["tetra:stone/"],
             "countFactor": 2,
             "moduleKey": "scroll/simple_shaft",
-            "moduleVariant": "simple_shaft/stone/"
+            "moduleVariant": "simple_shaft/"
         },
         {
             "materials": ["tetra:gem/"],
             "countFactor": 2,
             "moduleKey": "scroll/simple_shaft",
-            "moduleVariant": "simple_shaft/gem/"
+            "moduleVariant": "simple_shaft/"
         }
     ]
 }

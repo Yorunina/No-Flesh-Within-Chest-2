@@ -1,18 +1,18 @@
 {
-    "key": "paper",
+    "key": "flax",
     "category": "fibre",
-    "primary": 1.5,
-    "secondary": 0.2,
-    "tertiary": 2.5,
-    "durability": 120,
+    "primary": 0.8,
+    "secondary": 1.2,
+    "tertiary": 3.5,
+    "durability": 200,
     "integrityCost": 1,
-    "integrityGain": 5,
-    "magicCapacity": 160,
+    "integrityGain": 4,
+    "magicCapacity": 40,
     "toolLevel": 0,
     "toolEfficiency": 0,
     "tints": {
-        "glyph": "f5fffb",
-        "texture": "f5fffb"
+        "glyph": "7a922a",
+        "texture": "7a922a"
     },
     "textures": [
         "crude",
@@ -20,7 +20,7 @@
     ],
     "material": {
         "items": [
-            "minecraft:paper"
+            "supplementaries:flax"
         ]
     },
     "requiredTools": {

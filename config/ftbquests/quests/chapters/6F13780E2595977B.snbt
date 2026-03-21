@@ -51,16 +51,17 @@
 			y: -5.0d
 		}
 		{
+			dependencies: ["6361C451E76A6805"]
 			description: [
 				"&6&l成功了！！！！！&r"
 				""
-				"您的努力，您的精研，您所经历的一切，思考的一切，努力的一切，拥有的一切，现在都得到了证实！！！"
+				"&6我们成功的再一次&n发现了&r&6创世工序！&r"
 				""
-				"我为您的努力感到吃惊，&6人类的意志超越了我作为机械能够预料到的一切，这一切正是因为您的坚持才有了结果！！！&r"
+				"通过重塑创世启迪，重现创世工序——我们完全获得了有关创世工艺的知识！"
 				""
-				"从今天起，您便是创世工匠的又一现世，您的精研之努力将创世工艺化为己用！"
+				"现在，您可以&6无视条件的铸造任何传古、启发工具，并且解锁对所有主要部件进行创世改造的能力&r。"
 				""
-				"&6我向您致敬，向人类精神致敬，向创世工匠和新世界工匠——也就是您，再次致敬。&r"
+				"但由于这是您的发现，而我们已然不再那个蛮荒的传古时期，所以请允许我将其重命名为&6“新世界工艺”&r，&6以纪念您作为新世界工匠的功绩！&r"
 			]
 			id: "33D6D51353372A8F"
 			invisible: true
@@ -87,6 +88,23 @@
 			shape: "square"
 			subtitle: "匠工创世创工匠"
 			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 1
+						"double/basic_pickaxe_left_material": "basic_pickaxe/stone"
+						"double/basic_pickaxe_right_material": "basic_pickaxe/stone"
+						"double/handle": "double/heat_handle"
+						"double/handle:genesis_inspiration": 1
+						"double/head_left": "double/basic_pickaxe_left"
+						"double/head_right": "double/basic_pickaxe_right"
+						"double/heat_handle_material": "heat_handle/iron"
+						honing_progress: 290
+						id: "38d33f6e-730d-44d5-9674-b26c8f124802"
+					}
+				}
 				id: "6C27DDA37278E7DE"
 				item: {
 					Count: 1
@@ -95,11 +113,12 @@
 						value: "genesis_inspiration>=3"
 					}
 				}
+				title: "任意工具的任意部件具有≥3的创世启迪改良"
 				type: "item"
 			}]
 			title: "&6庆贺吧！此乃创世工艺！&r"
-			x: 32.0d
-			y: -4.5d
+			x: 31.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
@@ -108,7 +127,7 @@
 				""
 				"但其间还是有大量未解明的疑点，无不暗示着整个世界曾经发生过一场或者&6几场巨大的转变&r。"
 				""
-				"或许正是因为这些转变，导致了类如创世蓝图这类物品的出现. . .但这些转变究竟是为何而起，又因何而终，或许永远都不会有人知道了。"
+				"或许正是因为这些转变，导致了&6创世工艺的失传&r. . .但这背后的原因，或许再也无法被我们所得知了。"
 			]
 			icon: "candlelight:note_paper_writeable"
 			id: "0D8D3FC35C103CD8"
@@ -124,7 +143,7 @@
 				type: "checkmark"
 			}]
 			x: 33.5d
-			y: -4.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
@@ -1660,27 +1679,52 @@
 		}
 		{
 			dependencies: ["539289784FDA630E"]
+			description: [
+				"将空白卷轴放置在加工台中，即会显示如何进行卷轴改良。"
+				""
+				"卷轴根据其部件的种类不同，会提供不同的&6材质启发&r。除此之外，在纸材部件处，您可以发现存在一个特殊的原理图，其称作&6编撰&r。"
+				""
+				"通过编撰，卷轴会根据自身效果等级进行转换。不同效果下的卷轴通过编撰会获得不同种类的目标卷轴。"
+				""
+				"通常来说，在&6材质启发大于等于5&r的时候，进行编撰会获得对应材质类型的&6专精卷轴&r；若不满足任何特定的效果条件，则卷轴会被&6编撰为废纸&r。"
+				""
+				"更重要的是，通过在卷轴的嵌孔槽位&6镶嵌不同种类的宝石&r，能够制作不同的&6启发卷轴&r，不同的启发卷轴同样也具有着不同的材质启发要求，您可以在&6完成宝石镶嵌后在嵌孔的详情栏位查看&r。"
+			]
 			id: "6361C451E76A6805"
 			rewards: [{
 				id: "332654A47F14DA5A"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "创造属于我的创世工序"
 			tasks: [{
 				count: 1L
+				icon: "minecraft:writable_book"
 				id: "603B6AEE2991B1B6"
 				kubeId: "tetra_scroll_writing"
+				title: "进行任意一次卷轴编撰"
 				type: "maa:kube"
 			}]
+			title: "重现创世工序：编撰"
 			x: 27.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6纯净钻石&r时，若卷轴的纤维启发和石材启发的数值均≥3，则卷轴会尝试转换成&6启发：力量&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若您的胸腔力量≥15&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "42978B55D947F8FE"
+			rewards: [{
+				id: "4580272F919CC8CF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于力量之始"
 			tasks: [{
-				id: "4F70542AB35979EA"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1696,24 +1740,43 @@
 								]
 								intricate: 0b
 								key: "strength_inspiration"
-								material: 1
+								material: 0
 								ribbon: "da6b4c"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "1263271BB37B0CC8"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "strength_inspiration"
+					}
+				}
+				title: "启发：力量"
 				type: "item"
 			}]
+			title: "启发：力量"
 			x: 29.5d
-			y: -9.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6纯净紫水晶&r时，若卷轴的布料启发和宝石启发的数值均≥3，则卷轴会尝试转换成&6启发：星辉&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工位置处于晴朗的夜空下&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "5E3F52BD93D59729"
+			rewards: [{
+				id: "2A940C24CE483A82"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于星辉之始"
 			tasks: [{
-				id: "6F1840E2397A316D"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1729,24 +1792,43 @@
 								]
 								intricate: 0b
 								key: "starry_inspiration"
-								material: 1
+								material: 0
 								ribbon: "9dbfed"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "7A10256B04CA67D1"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "starry_inspiration"
+					}
+				}
+				title: "启发：星辉"
 				type: "item"
 			}]
+			title: "启发：星辉"
 			x: 29.5d
-			y: -8.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6青金石&r时，若卷轴的革料启发和金属启发的数值均≥3，则卷轴会尝试转换成&6启发：雷暴&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若天气处于雷暴&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "568E226F9690341C"
+			rewards: [{
+				id: "6A831BAFD602FDC9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于雷暴之始"
 			tasks: [{
-				id: "5A3DC4BB76BDA0F8"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1762,24 +1844,43 @@
 								]
 								intricate: 0b
 								key: "thunder_inspiration"
-								material: 1
+								material: 0
 								ribbon: "f5f573"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "7CD9D69785AB755E"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "thunder_inspiration"
+					}
+				}
+				title: "启发：雷暴"
 				type: "item"
 			}]
+			title: "启发：雷暴"
 			x: 29.5d
-			y: -6.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6绿宝石&r时，若卷轴的骨材启发和布料启发的数值均≥3，则卷轴会尝试转换成&6启发：末界&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工维度为末地&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "281B257C8111B6F2"
+			rewards: [{
+				id: "1DFF222061E21FF0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于末界之始"
 			tasks: [{
-				id: "47BEB72FD86F77BA"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1795,24 +1896,43 @@
 								]
 								intricate: 0b
 								key: "end_inspiration"
-								material: 1
+								material: 0
 								ribbon: "3a8c00"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "16D842655244E278"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "end_inspiration"
+					}
+				}
+				title: "启发：末界"
 				type: "item"
 			}]
+			title: "启发：末界"
 			x: 29.5d
-			y: -5.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6紫水晶&r时，若卷轴的纤维启发和木材启发的数值均≥3，则卷轴会尝试转换成&6启发：疲惫&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工者的饱食度为满&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "0938C17C9AE2BCD2"
+			rewards: [{
+				id: "6635BD2A831EC499"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于疲惫之始"
 			tasks: [{
-				id: "49DFCEEDEB6D63EB"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1828,24 +1948,43 @@
 								]
 								intricate: 0b
 								key: "exhaustion_inspiration"
-								material: 1
+								material: 0
 								ribbon: "edb75a"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "6A78D49341F8E0B6"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "exhaustion_inspiration"
+					}
+				}
+				title: "启发：疲惫"
 				type: "item"
 			}]
+			title: "启发：疲惫"
 			x: 29.5d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6钻石&r时，若卷轴的宝石启发和布料启发的数值均≥3，则卷轴会尝试转换成&6启发：效果&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工者持有的效果数量≥5&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "6989E589170E8BB1"
+			rewards: [{
+				id: "264481F1CBCA323F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于效果之始"
 			tasks: [{
-				id: "70A30911B134B556"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1861,24 +2000,43 @@
 								]
 								intricate: 0b
 								key: "effect_inspiration"
-								material: 1
+								material: 0
 								ribbon: "baa6ed"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "69EED86549DABED7"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "effect_inspiration"
+					}
+				}
+				title: "启发：效果"
 				type: "item"
 			}]
+			title: "启发：效果"
 			x: 29.5d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6纯净青金石&r时，若卷轴的金属启发和鳞片启发的数值均≥3，则卷轴会尝试转换成&6启发：耐久&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若工具在打造前的耐久上限≥2000&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "35E1C067D09D8668"
+			rewards: [{
+				id: "761BB388586E32C4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于耐久之始"
 			tasks: [{
-				id: "56AA784D0BA9DD56"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1894,24 +2052,43 @@
 								]
 								intricate: 0b
 								key: "durability_inspiration"
-								material: 1
+								material: 0
 								ribbon: "87e36d"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "758A38994BB5CA74"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "durability_inspiration"
+					}
+				}
+				title: "启发：耐久"
 				type: "item"
 			}]
+			title: "启发：耐久"
 			x: 29.5d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
+			description: [
+				"镶嵌&6纯净绿宝石&r时，若卷轴的革料启发和骨材启发的数值均≥3，则卷轴会尝试转换成&6启发：附魔&r。"
+				""
+				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若工具在打造前持有的总附魔等级≥5&r，则工具该部件会获得&6创世启迪&r。"
+			]
 			id: "02DEBE706168D957"
+			rewards: [{
+				id: "18F78CDDE1928463"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "启发于附魔之始"
 			tasks: [{
-				id: "17784BC097387F00"
-				item: {
+				icon: {
 					Count: 1
 					id: "tetra:scroll_rolled"
 					tag: {
@@ -1927,28 +2104,101 @@
 								]
 								intricate: 0b
 								key: "enchant_inspiration"
-								material: 1
+								material: 0
 								ribbon: "e34bbd"
 							}]
 						}
 					}
 				}
-				match_nbt: true
+				id: "2CE4EABC059BA66E"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "enchant_inspiration"
+					}
+				}
+				title: "启发：附魔"
 				type: "item"
 			}]
+			title: "启发：附魔"
 			x: 29.5d
-			y: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["03C7BEEA8B969DD3"]
+			description: [
+				"创世工序即是通往无限改良之路的必要途径。通过完成&6创世工序&r，我们可以领悟进行工具无限改良的具体方法。"
+				""
+				"为了进行创世工序，我们需要制作&6创世启迪等级至少为 3 的任意工具类型&r，而为了获取创世启迪，我们需要制作某些特定卷轴。"
+				""
+				"这些卷轴被称作&6“启发”卷轴&r，相较于村民贩卖的专精卷轴，有着独一无二的用处——而为了制作这些卷轴，请您先制作几张&6空卷轴&r。"
+			]
 			id: "539289784FDA630E"
+			rewards: [{
+				id: "755FABE0DA2A77D1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "新世界工匠"
 			tasks: [{
 				id: "0325628DB48D0210"
 				item: "kubejs:tetra_scroll"
 				type: "item"
 			}]
+			title: "重现创世工序：制卷"
 			x: 26.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["33D6D51353372A8F"]
+			description: [
+				"在庆祝后，有一件事我再三考虑，还是决定告知于您。"
+				""
+				"&6我们现在使用的新世界工艺并非当年的真正创世工艺——而是我们基于对创世工艺现代理解的重新创造——也就是说，过去的创世工艺并非是我们现在使用的模样。&r"
+				""
+				"其论据为——我在茫茫数据之中，找到了该条改良方案，其作为创世工匠的最常用手段，被记录在大量的日志中，借由此些数据我才勉强能够将其还原。"
+				""
+				"其最基本的能力为：&6无视条件，强制为工具添加 1 的完整度&r。"
+				""
+				"想必您大概能够理解这种工艺的意义为何——如若能自由使用这种技艺，结合我们现有的各种技术，可以说能够随意揉捏这个世界的形状。"
+				""
+				"因此，我选择将抉择权交给&6最精通附魔技艺的人&r。作为系统而言，我并没有对玩家体验的全面认知，而同为玩家的你们应当更能够理解这种能力是否应当被公开。"
+				"{@pagebreak}"
+				"公开技术会使所有人在完成了该任务线后均能够使用真正的创世工艺进行改良。"
+				""
+				"私有配方会使您成为唯一能够使用这样技术的人，如果其他玩家取而代之，并不会影响您已获得技术的使用。"
+			]
+			id: "74322D0F530CF0FE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "134030BAA4E1CC63"
+				table_id: 7741683461470796253L
+				type: "choice"
+			}]
+			shape: "diamond"
+			subtitle: "寻找真正的创世匠艺"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:protection"
+							lvl: 4s
+						}]
+					}
+				}
+				id: "58A64FD36AA31F42"
+				leaderboard: "leaderboards:enchantments_done"
+				min: 1
+				rank: 1
+				title: "附魔次数称霸"
+				type: "leaderboards:rank_task"
+			}]
+			title: "创世工匠之后"
+			x: 31.5d
+			y: -6.5d
 		}
 	]
 	title: "传闻：创世工匠"

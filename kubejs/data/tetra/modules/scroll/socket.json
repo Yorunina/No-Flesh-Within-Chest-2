@@ -10,7 +10,6 @@
             "key": "socket/",
             "extract": {
                 "primaryEffects": {
-                    
                 },
                 "secondaryEffects": {
                 },
@@ -19,9 +18,8 @@
                 "durability": 0,
                 "integrity": -2,
                 "glyph": {
-                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
-                    "textureX": 0,
-                    "textureY": 48
+                    "textureX": 80,
+                    "textureY": 112
                 },
                 "availableTextures": [ "default" ],
                 "models": [ { "location": "tetra:item/module/scroll/socket/" } ]

@@ -1,4 +1,12 @@
 // priority: 500
+ServerEvents.recipes(event => {
+    event.shaped('kubejs:tetra_scroll', [
+        ['', 'minecraft:paper', 'minecraft:stick'],
+        ['minecraft:paper', 'minecraft:iron_nugget', 'minecraft:paper'],
+        ['minecraft:stick', 'minecraft:paper', '']
+    ])
+})
+
 RegisterScrollWritingStrategy(
     (event) => {
         const targetStack = event.targetStack

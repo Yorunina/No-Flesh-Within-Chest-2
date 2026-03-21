@@ -8,7 +8,8 @@
     "displayType": "major",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 80
+        "textureX": 32,
+        "textureY": 16
     },
     "outcomes": [
         {

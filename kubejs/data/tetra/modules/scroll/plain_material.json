@@ -14,7 +14,7 @@
             "materials": [
                 "tetra:fabric/"
             ],
-            "key": "plain_material/fabric/",
+            "key": "plain_material/",
             "attributes": {},
             "aspects": {},
             "effects": {},
@@ -36,8 +36,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 16,
+                    "textureY": 16
                 },
                 "availableTextures": [
                     "default"
@@ -53,7 +54,7 @@
             "materials": [
                 "tetra:fibre/"
             ],
-            "key": "plain_material/fibre/",
+            "key": "plain_material/",
             "attributes": {},
             "aspects": {},
             "effects": {},
@@ -74,8 +75,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 16,
+                    "textureY": 16
                 },
                 "availableTextures": [
                     "default"
@@ -91,7 +93,7 @@
             "materials": [
                 "tetra:skin/"
             ],
-            "key": "plain_material/skin/",
+            "key": "plain_material/",
             "attributes": {},
             "aspects": {},
             "effects": {},
@@ -112,8 +114,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 16,
+                    "textureY": 16
                 },
                 "availableTextures": [
                     "default"
@@ -129,7 +132,7 @@
             "materials": [
                 "tetra:scale/"
             ],
-            "key": "plain_material/scale/",
+            "key": "plain_material/",
             "attributes": {},
             "aspects": {},
             "effects": {},
@@ -150,8 +153,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 16,
+                    "textureY": 16
                 },
                 "availableTextures": [
                     "default"

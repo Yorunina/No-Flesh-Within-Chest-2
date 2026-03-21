@@ -7,44 +7,49 @@
     "displayType": "major",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 0,
-        "textureY": 0
+        "textureX": 16,
+        "textureY": 16
     },
     "translation": {
-        "primaryAttributes": {
-        },
-        "secondaryAttributes": {
-        },
-        "primaryEffects": {
-        },
+        "primaryAttributes": {},
+        "secondaryAttributes": {},
+        "primaryEffects": {},
         "durability": 3,
         "integrity": -3,
         "magicCapacity": 2
     },
     "outcomes": [
         {
-            "materials": [ "tetra:fabric/" ],
+            "materials": [
+                "tetra:fabric/"
+            ],
             "countFactor": 2,
             "moduleKey": "scroll/plain_material",
-            "moduleVariant": "plain_material/fabric/"
+            "moduleVariant": "plain_material/"
         },
         {
-            "materials": [ "tetra:fibre/" ],
+            "materials": [
+                "tetra:fibre/"
+            ],
             "countFactor": 2,
             "moduleKey": "scroll/plain_material",
-            "moduleVariant": "plain_material/fibre/"
+            "moduleVariant": "plain_material/"
         },
         {
-            "materials": [ "tetra:skin/" ],
+            "materials": [
+                "tetra:skin/"
+            ],
             "countFactor": 2,
             "moduleKey": "scroll/plain_material",
-            "moduleVariant": "plain_material/skin/"
+            "moduleVariant": "plain_material/"
         },
         {
-            "materials": [ "tetra:scale/" ],
+            "materials": [
+                "tetra:scale/"
+            ],
             "countFactor": 2,
             "moduleKey": "scroll/plain_material",
-            "moduleVariant": "plain_material/scale/"
+            "moduleVariant": "plain_material/"
         }
     ]
 }

@@ -32,7 +32,7 @@
                     "generic.attack_speed": -0.2
                 },
                 "durability": 0.2,
-                "integrity": 1,
+                "integrity": 0.8,
                 "magicCapacity": 1,
                 "glyph": {
                     "textureLocation": "tetra:textures/gui/custom_glyph.png",

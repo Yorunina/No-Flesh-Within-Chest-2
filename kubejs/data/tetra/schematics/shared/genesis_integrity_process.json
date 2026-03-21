@@ -1,0 +1,32 @@
+{
+    "replace": true,
+    "slots": [ 
+        "sword/blade",
+        "double/head_left",
+        "double/head_right",
+        "single/head"
+    ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"genesis_integrity_process"
+    },
+    "rarity": "infinite",
+    "materialSlotCount": 0,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+		"textureX": 80,
+		"textureY": 32
+    },
+    "outcomes": [
+        {
+            "experienceCost": 66,
+            "requiredTools": {
+                "hammer_dig": "minecraft:diamond"
+            },
+            "improvements": {
+                "genesis_integrity_process": 1
+            }
+        }
+    ]
+}

@@ -6,13 +6,14 @@
     "materialSlotCount": 1,
     "displayType": "minor",
     "glyph": {
-        "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 0,
-        "textureY": 48
+        "textureX": 80,
+        "textureY": 112
     },
     "outcomes": [
         {
-            "materials": [ "tetra:socket/" ],
+            "materials": [
+                "tetra:socket/"
+            ],
             "moduleKey": "scroll/socket",
             "moduleVariant": "socket/"
         }

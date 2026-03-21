@@ -1,0 +1,29 @@
+{
+	icon: "titles:title_scroll_uncommon"
+	id: "6B6FFC174C7BB9DD"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "titles:title_scroll_common"
+			ignore_reward_blocking: true
+			isServer: false
+			remove: false
+			stage: "ftb_genesis_integrity_process"
+			title: "私有真正的创世工艺"
+			type: "maa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "titles:title_scroll_rare"
+			ignore_reward_blocking: true
+			isServer: true
+			remove: false
+			stage: "ftb_genesis_integrity_process"
+			title: "公开真正的创世工艺"
+			type: "maa:astages"
+		}
+	]
+	title: "真正的创世工艺"
+}

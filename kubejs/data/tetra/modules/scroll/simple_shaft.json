@@ -12,7 +12,7 @@
     "variants": [
         {
             "materials": [ "tetra:wood/" ],
-            "key": "simple_shaft/wood/",
+            "key": "simple_shaft/",
             "attributes": {
             },
             "aspects": {},
@@ -34,8 +34,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 0,
+                    "textureY": 16
                 },
                 "availableTextures": [ "default" ],
                 "models": [
@@ -47,7 +48,7 @@
         },
         {
             "materials": [ "tetra:bone/" ],
-            "key": "simple_shaft/bone/",
+            "key": "simple_shaft/",
             "attributes": {
             },
             "aspects": {},
@@ -69,8 +70,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 0,
+                    "textureY": 16
                 },
                 "availableTextures": [ "default" ],
                 "models": [
@@ -82,7 +84,7 @@
         },
         {
             "materials": [ "tetra:metal/" ],
-            "key": "simple_shaft/metal/",
+            "key": "simple_shaft/",
             "attributes": {
             },
             "aspects": {},
@@ -104,8 +106,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 0,
+                    "textureY": 16
                 },
                 "availableTextures": [ "default" ],
                 "models": [
@@ -117,7 +120,7 @@
         },
         {
             "materials": [ "tetra:stone/" ],
-            "key": "simple_shaft/stone/",
+            "key": "simple_shaft/",
             "attributes": {
             },
             "aspects": {},
@@ -139,8 +142,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,    
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 0,
+                    "textureY": 16
                 },
                 "availableTextures": [ "default" ],
                 "models": [
@@ -152,7 +156,7 @@
         },
         {
             "materials": [ "tetra:gem/" ],
-            "key": "simple_shaft/gem/",
+            "key": "simple_shaft/",
             "attributes": {
             },
             "aspects": {},
@@ -174,8 +178,9 @@
                 "integrity": -1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 128,
-                    "textureY": 32
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 0,
+                    "textureY": 16
                 },
                 "availableTextures": [ "default" ],
                 "models": [

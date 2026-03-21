@@ -10,11 +10,11 @@
         "modules": {
             "scroll/material": [
                 "scroll/plain_material",
-                "plain_material/fibre/paper"
+                "plain_material/paper"
             ],
             "scroll/shaft": [
                 "scroll/simple_shaft",
-                "simple_shaft/wood/oak"
+                "simple_shaft/oak"
             ]
         }
     }

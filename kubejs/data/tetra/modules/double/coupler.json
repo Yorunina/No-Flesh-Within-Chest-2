@@ -22,7 +22,7 @@
                     "kubejs:vein_mining": [0, 2]
                 },
                 "durability": 0.5,
-                "integrity": 0.5,
+                "integrity": 0.2,
                 "glyph": {
                     "textureLocation": "tetra:textures/gui/custom_glyph.png",
                     "textureX": 0,
