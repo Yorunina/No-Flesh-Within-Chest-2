@@ -1,0 +1,29 @@
+{
+    "id": "modular_scroll",
+    "honeable": true,
+    "honeBase": 10,
+    "honeIntegrityMultiplier": 0,
+    "slots": [
+        {
+            "key": "scroll/material",
+            "major": true,
+            "required": true,
+            "x": 1,
+            "y": 21
+        },
+        {
+            "key": "scroll/shaft",
+            "major": true,
+            "required": true,
+            "x": -11,
+            "y": -3
+        },
+        {
+            "key": "scroll/socket",
+            "major": false,
+            "required": false,
+            "x": -14,
+            "y": 23
+        }
+    ]
+}

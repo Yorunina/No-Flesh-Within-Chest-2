@@ -1,9 +1,8 @@
 {
     "replace": true,
     "slots": [
-        "single/binding"
+        "scroll/socket"
     ],
-    "rarity": "inspired",
     "materialSlotCount": 1,
     "displayType": "minor",
     "glyph": {
@@ -13,9 +12,9 @@
     },
     "outcomes": [
         {
-            "materials": [ "tetra:fibre/", "tetra:skin/" ],
-            "moduleKey": "single/coupler",
-            "moduleVariant": "coupler/"
+            "materials": [ "tetra:socket/" ],
+            "moduleKey": "scroll/socket",
+            "moduleVariant": "socket/"
         }
     ]
 }

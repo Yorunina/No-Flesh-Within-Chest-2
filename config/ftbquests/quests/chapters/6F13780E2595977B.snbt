@@ -64,6 +64,7 @@
 			]
 			id: "33D6D51353372A8F"
 			invisible: true
+			min_required_dependencies: 3
 			rewards: [
 				{
 					auto: "invisible"
@@ -97,7 +98,7 @@
 				type: "item"
 			}]
 			title: "&6庆贺吧！此乃创世工艺！&r"
-			x: 31.0d
+			x: 32.0d
 			y: -4.5d
 		}
 		{
@@ -122,8 +123,8 @@
 				title: "疑虑"
 				type: "checkmark"
 			}]
-			x: 32.0d
-			y: -3.0d
+			x: 33.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
@@ -1654,11 +1655,11 @@
 				type: "questsadditions:time"
 			}]
 			title: "重现创世工序：准备"
-			x: 25.0d
+			x: 24.5d
 			y: -5.0d
 		}
 		{
-			dependencies: ["03C7BEEA8B969DD3"]
+			dependencies: ["539289784FDA630E"]
 			id: "6361C451E76A6805"
 			rewards: [{
 				id: "332654A47F14DA5A"
@@ -1666,15 +1667,287 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "74D8147D9C5A627F"
+				count: 1L
+				id: "603B6AEE2991B1B6"
+				kubeId: "tetra_scroll_writing"
+				type: "maa:kube"
+			}]
+			x: 27.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "42978B55D947F8FE"
+			tasks: [{
+				id: "4F70542AB35979EA"
 				item: {
 					Count: 1
 					id: "tetra:scroll_rolled"
-					tag: { }
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "strength_inspiration"
+								effects: ["tetra:strength_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "strength_inspiration"
+								material: 1
+								ribbon: "da6b4c"
+							}]
+						}
+					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
-			x: 27.0d
+			x: 29.5d
+			y: -9.5d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "5E3F52BD93D59729"
+			tasks: [{
+				id: "6F1840E2397A316D"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "starry_inspiration"
+								effects: ["tetra:starry_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "starry_inspiration"
+								material: 1
+								ribbon: "9dbfed"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 29.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "568E226F9690341C"
+			tasks: [{
+				id: "5A3DC4BB76BDA0F8"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "thunder_inspiration"
+								effects: ["tetra:thunder_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "thunder_inspiration"
+								material: 1
+								ribbon: "f5f573"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 29.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "281B257C8111B6F2"
+			tasks: [{
+				id: "47BEB72FD86F77BA"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "end_inspiration"
+								effects: ["tetra:end_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "end_inspiration"
+								material: 1
+								ribbon: "3a8c00"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 29.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "0938C17C9AE2BCD2"
+			tasks: [{
+				id: "49DFCEEDEB6D63EB"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "exhaustion_inspiration"
+								effects: ["tetra:exhaustion_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "exhaustion_inspiration"
+								material: 1
+								ribbon: "edb75a"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 29.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "6989E589170E8BB1"
+			tasks: [{
+				id: "70A30911B134B556"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "effect_inspiration"
+								effects: ["tetra:effect_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "effect_inspiration"
+								material: 1
+								ribbon: "baa6ed"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 29.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "35E1C067D09D8668"
+			tasks: [{
+				id: "56AA784D0BA9DD56"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "durability_inspiration"
+								effects: ["tetra:durability_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "durability_inspiration"
+								material: 1
+								ribbon: "87e36d"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 29.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6361C451E76A6805"]
+			id: "02DEBE706168D957"
+			tasks: [{
+				id: "17784BC097387F00"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								details: "enchant_inspiration"
+								effects: ["tetra:enchant_inspiration"]
+								glyphs: [I;
+									15
+									14
+									15
+									15
+								]
+								intricate: 0b
+								key: "enchant_inspiration"
+								material: 1
+								ribbon: "e34bbd"
+							}]
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 29.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03C7BEEA8B969DD3"]
+			id: "539289784FDA630E"
+			tasks: [{
+				id: "0325628DB48D0210"
+				item: "kubejs:tetra_scroll"
+				type: "item"
+			}]
+			x: 26.0d
 			y: -5.0d
 		}
 	]

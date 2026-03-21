@@ -39,3 +39,4 @@ const $BundleTooltip = Java.loadClass('net.minecraft.world.inventory.tooltip.Bun
 const $NonNullList = Java.loadClass('net.minecraft.core.NonNullList')
 const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 const $CustomRequirement = Java.loadClass('net.yiran.morerequirement.requirements.CustomRequirement')
+const $CustomCraftingEffectOutcome = Java.loadClass('net.yiran.morerequirement.craftefffect.CustomCraftingEffectOutcome')

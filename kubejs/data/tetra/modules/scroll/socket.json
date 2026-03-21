@@ -1,0 +1,31 @@
+{
+    "replace": true,
+    "type": "tetra:basic_module",
+    "slots": [ "scroll/socket" ],
+    "renderLayer": "higher",
+    "tweakKey": "tetra:scroll/socket",
+    "variants": [
+        {
+            "materials": [ "tetra:socket/" ],
+            "key": "socket/",
+            "extract": {
+                "primaryEffects": {
+                    
+                },
+                "secondaryEffects": {
+                },
+                "tertiaryEffects": {
+                },
+                "durability": 0,
+                "integrity": -2,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 0,
+                    "textureY": 48
+                },
+                "availableTextures": [ "default" ],
+                "models": [ { "location": "tetra:item/module/scroll/socket/" } ]
+            }
+        }
+    ]
+}

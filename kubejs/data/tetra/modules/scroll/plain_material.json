@@ -1,0 +1,167 @@
+{
+    "replace": true,
+    "slots": [
+        "scroll/material"
+    ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:scroll/material/plain_material",
+        "tetra:scroll/material/shared",
+        "tetra:scroll/shared/"
+    ],
+    "variants": [
+        {
+            "materials": [
+                "tetra:fabric/"
+            ],
+            "key": "plain_material/fabric/",
+            "attributes": {},
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:fabric_inspiration": -0.5,
+                    "kubejs:bone_inspiration": 0.5
+                },
+                "secondaryEffects": {
+                    "kubejs:fabric_inspiration": 0.5,
+                    "kubejs:gem_inspiration": 0.5
+                },
+                "tertiaryEffects": {
+                    "kubejs:fabric_inspiration": 1
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [
+                    "default"
+                ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/plain_material/"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [
+                "tetra:fibre/"
+            ],
+            "key": "plain_material/fibre/",
+            "attributes": {},
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:fibre_inspiration": -0.5,
+                    "kubejs:wood_inspiration": 0.5
+                },
+                "secondaryEffects": {
+                    "kubejs:fibre_inspiration": 0.5
+                },
+                "tertiaryEffects": {
+                    "kubejs:fibre_inspiration": 1
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [
+                    "default"
+                ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/plain_material/"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [
+                "tetra:skin/"
+            ],
+            "key": "plain_material/skin/",
+            "attributes": {},
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:skin_inspiration": -0.5,
+                    "kubejs:metal_inspiration": 0.5
+                },
+                "secondaryEffects": {
+                    "kubejs:skin_inspiration": 0.5
+                },
+                "tertiaryEffects": {
+                    "kubejs:skin_inspiration": 1
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [
+                    "default"
+                ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/plain_material/"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [
+                "tetra:scale/"
+            ],
+            "key": "plain_material/scale/",
+            "attributes": {},
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:scale_inspiration": 1
+                },
+                "secondaryEffects": {
+                    "kubejs:scale_inspiration": 0.5
+                },
+                "tertiaryEffects": {
+                    "kubejs:scale_inspiration": -0.5,
+                    "kubejs:stone_inspiration": 0.5
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [
+                    "default"
+                ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/plain_material/"
+                    }
+                ]
+            }
+        }
+    ]
+}

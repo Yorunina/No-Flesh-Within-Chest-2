@@ -11,7 +11,9 @@
     "materialSlotCount": 1,
     "displayType": "major",
     "glyph": {
-        "textureX": 16
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 128,
+        "textureY": 0
     },
     "translation": {
         "secondaryAttributes": {

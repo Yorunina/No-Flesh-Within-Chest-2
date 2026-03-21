@@ -1,5 +1,12 @@
 // priority: 500
-// todo 调试方法
+// TetraJSEvents.workbenchTileCraft(event => {
+//     const schematic = event.currentSchematic
+//     const level = event.level
+//     event.upgradedStack
+//     console.log(schematic.key)
+//     event.setUpgradedStack(Item.of('minecraft:stick'))
+// })
+
 ItemEvents.rightClicked(event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
@@ -14,7 +21,6 @@ ItemEvents.rightClicked(event => {
     
     item.getImprovements(itemStack).forEach(pImprove => {
         console.log(pImprove.key, pImprove.level)
-        
     })
     // TetraJSUtils.addImprovement(itemStack, 'sword/blade', 'genesis_inspiration', 1)
     // $IModularItem.updateIdentifier(itemStack)

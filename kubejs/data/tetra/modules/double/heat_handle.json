@@ -35,12 +35,14 @@
                 "integrity": 1,
                 "magicCapacity": 1,
                 "glyph": {
-                    "textureX": 16
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 128,
+                    "textureY": 0
                 },
-                "availableTextures": [ "default", "metal", "bone", "bright" ],
+                "availableTextures": [ "default" ],
                 "models": [
                     {
-                        "location": "tetra:item/module/double/handle/basic/"
+                        "location": "tetra:item/module/double/handle/heat/"
                     }
                 ]
             }

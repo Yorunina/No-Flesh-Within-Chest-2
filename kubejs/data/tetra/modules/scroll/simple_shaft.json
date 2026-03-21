@@ -1,0 +1,189 @@
+{
+    "replace": true,
+    "slots": [
+        "scroll/shaft"
+    ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:scroll/shaft/simple_shaft",
+        "tetra:scroll/shaft/shared",
+        "tetra:scroll/shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/" ],
+            "key": "simple_shaft/wood/",
+            "attributes": {
+            },
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:wood_inspiration": -0.5,
+                    "kubejs:fabric_inspiration": 0.5
+                },
+                "secondaryEffects": {
+                    "kubejs:wood_inspiration": 0.5
+                },
+                "tertiaryEffects": {
+                    "kubejs:wood_inspiration": 1
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/simple_shaft/"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [ "tetra:bone/" ],
+            "key": "simple_shaft/bone/",
+            "attributes": {
+            },
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:bone_inspiration": 1
+                },
+                "secondaryEffects": {
+                    "kubejs:bone_inspiration": 0.5
+                },
+                "tertiaryEffects": {
+                    "kubejs:bone_inspiration": -0.5,
+                    "kubejs:skin_inspiration": 0.5
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/simple_shaft/"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [ "tetra:metal/" ],
+            "key": "simple_shaft/metal/",
+            "attributes": {
+            },
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:metal_inspiration": 1
+                },
+                "secondaryEffects": {
+                    "kubejs:metal_inspiration": 1
+                },
+                "tertiaryEffects": {
+                    "kubejs:metal_inspiration": -1,
+                    "kubejs:scale_inspiration": 1
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/simple_shaft/"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [ "tetra:stone/" ],
+            "key": "simple_shaft/stone/",
+            "attributes": {
+            },
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:stone_inspiration": 0.5
+                },
+                "secondaryEffects": {
+                    "kubejs:stone_inspiration": 1
+                },
+                "tertiaryEffects": {
+                    "kubejs:stone_inspiration": -0.5,
+                    "kubejs:fibre_inspiration": 0.5
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,    
+                    "textureY": 32
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/simple_shaft/"
+                    }
+                ]
+            }
+        },
+        {
+            "materials": [ "tetra:gem/" ],
+            "key": "simple_shaft/gem/",
+            "attributes": {
+            },
+            "aspects": {},
+            "effects": {},
+            "durability": 10,
+            "integrity": 5,
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:gem_inspiration": 1
+                },
+                "secondaryEffects": {
+                    "kubejs:gem_inspiration": 1
+                },
+                "tertiaryEffects": {
+                    "kubejs:gem_inspiration": -1,
+                    "kubejs:fabric_inspiration": 1
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 128,
+                    "textureY": 32
+                },
+                "availableTextures": [ "default" ],
+                "models": [
+                    {
+                        "location": "tetra:item/module/scroll/simple_shaft/"
+                    }
+                ]
+            }
+        }
+    ]
+}

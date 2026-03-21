@@ -1,0 +1,56 @@
+{
+    "replace": true,
+    "slots": [
+        "scroll/shaft"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 0,
+        "textureY": 0
+    },
+    "translation": {
+        "primaryAttributes": {
+        },
+        "secondaryAttributes": {
+        },
+        "primaryEffects": {
+        },
+        "durability": 3,
+        "integrity": -3,
+        "magicCapacity": 2
+    },
+    "outcomes": [
+        {
+            "materials": ["tetra:wood/"],
+            "countFactor": 2,
+            "moduleKey": "scroll/simple_shaft",
+            "moduleVariant": "simple_shaft/wood/"
+        },
+        {
+            "materials": ["tetra:bone/"],
+            "countFactor": 2,
+            "moduleKey": "scroll/simple_shaft",
+            "moduleVariant": "simple_shaft/bone/"
+        },
+        {
+            "materials": ["tetra:metal/"],
+            "countFactor": 2,
+            "moduleKey": "scroll/simple_shaft",
+            "moduleVariant": "simple_shaft/metal/"
+        },
+        {
+            "materials": ["tetra:stone/"],
+            "countFactor": 2,
+            "moduleKey": "scroll/simple_shaft",
+            "moduleVariant": "simple_shaft/stone/"
+        },
+        {
+            "materials": ["tetra:gem/"],
+            "countFactor": 2,
+            "moduleKey": "scroll/simple_shaft",
+            "moduleVariant": "simple_shaft/gem/"
+        }
+    ]
+}

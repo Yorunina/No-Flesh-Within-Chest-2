@@ -1,0 +1,21 @@
+[
+    {
+        "predicate": {
+            "items": [
+                "kubejs:tetra_scroll"
+            ]
+        },
+        "item": "tetra:dynamic_handheld",
+        "archetype": "modular_scroll",
+        "modules": {
+            "scroll/material": [
+                "scroll/plain_material",
+                "plain_material/fibre/paper"
+            ],
+            "scroll/shaft": [
+                "scroll/simple_shaft",
+                "simple_shaft/wood/oak"
+            ]
+        }
+    }
+]
