@@ -90,19 +90,9 @@
 			tasks: [{
 				icon: {
 					Count: 1
-					id: "tetra:modular_double"
+					id: "minecraft:diamond_pickaxe"
 					tag: {
 						Damage: 0
-						HideFlags: 1
-						"double/basic_pickaxe_left_material": "basic_pickaxe/stone"
-						"double/basic_pickaxe_right_material": "basic_pickaxe/stone"
-						"double/handle": "double/heat_handle"
-						"double/handle:genesis_inspiration": 1
-						"double/head_left": "double/basic_pickaxe_left"
-						"double/head_right": "double/basic_pickaxe_right"
-						"double/heat_handle_material": "heat_handle/iron"
-						honing_progress: 290
-						id: "38d33f6e-730d-44d5-9674-b26c8f124802"
 					}
 				}
 				id: "6C27DDA37278E7DE"

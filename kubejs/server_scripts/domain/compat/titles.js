@@ -24,7 +24,6 @@ TitlesEvent.onTitleRegistry(event => {
     regsitryTitleSimple('multiworld_future', 'epic')
     regsitryTitleSimple('my_genesis', 'epic')
     regsitryTitleSimple('new_tinker', 'uncommon')
-    regsitryTitleSimple('molder', 'uncommon') // 
     
     regsitryTitleSimple('tinker_study', 'rare')
     regsitryTitleSimple('gearsmith', 'uncommon')

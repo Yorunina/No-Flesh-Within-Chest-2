@@ -438,100 +438,12 @@
 			}]
 			shape: "gear"
 			subtitle: "植入维度探针"
-			tasks: [
-				{
-					consume_items: true
-					id: "5E235A8895735800"
-					item: "kubejs:dimension_shards"
-					type: "item"
-				}
-				{
-					consume_items: true
-					icon: {
-						Count: 1
-						id: "tconstruct:javelin"
-						tag: {
-							Damage: 0
-							tic_broken: 0b
-							tic_materials: [
-								"tconstruct:nahuatl"
-								"tconstruct:nahuatl"
-								"tconstruct:bone"
-								"tconstruct:bone"
-							]
-							tic_modifiers: [
-								{
-									level: 1
-									name: "tconstruct:throwing"
-								}
-								{
-									level: 2
-									name: "tconstruct:lacerating"
-								}
-								{
-									level: 2
-									name: "tconstruct:pierce"
-								}
-							]
-							tic_persistent: { }
-							tic_stats: {
-								"tconstruct:accuracy": 0.85f
-								"tconstruct:attack_damage": 10.3125f
-								"tconstruct:attack_speed": 0.99f
-								"tconstruct:block_amount": 10.0f
-								"tconstruct:draw_speed": 1.05f
-								"tconstruct:durability": 292.5f
-								"tconstruct:harvest_tier": "minecraft:diamond"
-								"tconstruct:mining_speed": 4.5f
-								"tconstruct:velocity": 0.95f
-							}
-							tic_volatile_data: {
-								abilities: 1
-								upgrades: 2
-							}
-						}
-					}
-					id: "64D3687F66DBE270"
-					item: {
-						Count: 1
-						id: "itemfilters:and"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "maa:tcon_tool_stats"
-									tag: {
-										value: "tconstruct:durability>=2000.0"
-									}
-								}
-								{
-									Count: 1b
-									id: "maa:tcon_tool_stats"
-									tag: {
-										value: "tconstruct:attack_damage>=20.0"
-									}
-								}
-								{
-									Count: 1b
-									id: "maa:tcon_tool_modifier"
-									tag: {
-										value: "tconstruct:pierce>=2"
-									}
-								}
-								{
-									Count: 1b
-									id: "maa:tcon_tool_modifier"
-									tag: {
-										value: "tconstruct:lacerating>=2"
-									}
-								}
-							]
-						}
-					}
-					title: "维度探针实体"
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				id: "5E235A8895735800"
+				item: "kubejs:dimension_shards"
+				type: "item"
+			}]
 			title: "&c破坏性实验：部署探针&r"
 			x: 5.5d
 			y: 4.0d
@@ -545,50 +457,20 @@
 				""
 				"为了能够构造&c“维度同步控制系统”&r，我需要在部分维度中部署维度探针，但探针为了到达不同的维度，其本身也需要类似维度虫一样的能够&6无损穿过维度泡&r的能力。"
 				""
-				"最适合的便是&6足够尖锐的矛&r，请您做好能够稳定生产&6至少具有割裂Ⅱ、穿甲Ⅱ、20攻击力及2000耐久度的矛&r，只有通过这样的矛才能够刺穿维度泡的限制。"
+				"现在我会将维度探针的设计原理图发送给您，请您制造&6耐久度至少为5000的维度探针&r。"
 			]
 			icon: {
 				Count: 1
-				id: "tconstruct:javelin"
+				id: "tetra:modular_single"
 				tag: {
 					Damage: 0
-					tic_broken: 0b
-					tic_materials: [
-						"tconstruct:nahuatl"
-						"tconstruct:nahuatl"
-						"tconstruct:bone"
-						"tconstruct:bone"
-					]
-					tic_modifiers: [
-						{
-							level: 1
-							name: "tconstruct:throwing"
-						}
-						{
-							level: 2
-							name: "tconstruct:lacerating"
-						}
-						{
-							level: 2
-							name: "tconstruct:pierce"
-						}
-					]
-					tic_persistent: { }
-					tic_stats: {
-						"tconstruct:accuracy": 0.85f
-						"tconstruct:attack_damage": 10.3125f
-						"tconstruct:attack_speed": 0.99f
-						"tconstruct:block_amount": 10.0f
-						"tconstruct:draw_speed": 1.05f
-						"tconstruct:durability": 292.5f
-						"tconstruct:harvest_tier": "minecraft:diamond"
-						"tconstruct:mining_speed": 4.5f
-						"tconstruct:velocity": 0.95f
-					}
-					tic_volatile_data: {
-						abilities: 1
-						upgrades: 2
-					}
+					HideFlags: 1
+					honing_progress: 120
+					id: "115a44e5-7d82-46f6-8fb0-2e5fbaa2effc"
+					"single/basic_handle_material": "basic_handle/netherite"
+					"single/dimension_probe_material": "dimension_probe/netherite"
+					"single/handle": "single/basic_handle"
+					"single/head": "single/dimension_probe"
 				}
 			}
 			id: "3F59D410E064D734"
@@ -600,19 +482,49 @@
 				}
 				{
 					auto: "invisible"
+					icon: {
+						Count: 1
+						id: "tetra:modular_single"
+						tag: {
+							Damage: 0
+							HideFlags: 1
+							honing_progress: 120
+							id: "4e8e3c20-0125-4118-9009-c1bfd845267d"
+							"single/basic_handle_material": "basic_handle/netherite"
+							"single/dimension_probe_material": "dimension_probe/netherite"
+							"single/handle": "single/basic_handle"
+							"single/head": "single/dimension_probe"
+						}
+					}
 					id: "1838B232810A832E"
 					ignore_reward_blocking: true
 					isServer: false
 					remove: false
 					stage: "ftb_dimension_probe_craft_allow"
-					title: "维度探针原理图使用许可"
+					title: "&6维度探针原理图&r"
 					type: "maa:astages"
 				}
 			]
 			subtitle: "制成维度探针实体"
+			tasks: [{
+				id: "28952D538E02B91B"
+				title: "我将修复"
+				type: "checkmark"
+			}]
 			title: "最为坚硬的探针"
 			x: 3.5d
 			y: 5.5d
+		}
+		{
+			id: "0A30963862F5CFBF"
+			tasks: [{
+				id: "70F918781D673DEC"
+				item: "minecraft:oak_button"
+				type: "item"
+			}]
+			title: "开启终局"
+			x: 15.5d
+			y: 2.0d
 		}
 	]
 	title: "贰"

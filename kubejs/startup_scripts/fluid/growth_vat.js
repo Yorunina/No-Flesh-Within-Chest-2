@@ -7,7 +7,9 @@ StartupEvents.registry('fluid', event => {
         .tag('kubejs:nutrients_fluid')
 
     event.create('rotten_nutrients_fluid')
-        .bucketColor(0xAB7500)
+        .bucketColor(0x69411B)
+        .density(6000)
+        .viscosity(6000)
         .stillTexture('kubejs:block/fluid/rotten_nutrients_fluid')
         .flowingTexture('kubejs:block/fluid/rotten_nutrients_fluid')
         .tag('kubejs:nutrients_fluid')
@@ -18,9 +20,9 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('kubejs:block/fluid/rose_nutrients_fluid')
         .tag('kubejs:nutrients_fluid')
 
-    // todo 熔融材质
     event.create('molten_rose_quartz')
         .bucketColor(0xFF3F7F)
+        .temperature(2000)
         .stillTexture('kubejs:block/fluid/molten_rose_quartz')
         .flowingTexture('kubejs:block/fluid/molten_rose_quartz')
 })

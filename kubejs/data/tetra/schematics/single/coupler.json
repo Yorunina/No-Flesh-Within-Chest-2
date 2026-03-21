@@ -3,6 +3,10 @@
     "slots": [
         "single/binding"
     ],
+    "requirement":{
+        "type":"mr:custom",
+        "key":"coupler"
+    },
     "rarity": "inspired",
     "materialSlotCount": 1,
     "displayType": "minor",
