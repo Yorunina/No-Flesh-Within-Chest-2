@@ -14,13 +14,13 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["33D6D51353372A8F"]
+			dependencies: ["23D00C1EBDF3036C"]
 			description: [
-				"一些事情正在悄无声息的发生. . .我收到了一个极其危险的信号。其是关于——"
+				"尽管您可能没发现，但一些事情在这个世界中正在悄然发生。"
 				""
-				"&c调整/错误/抹除/压缩&r时间，使整个世界归于&c虚无/隐秘/未知/错误&r。"
+				"具体来说，&6这个世界正在变得更加支离破碎&r——甚至我无法确定我们是否能够在这个世界破碎前完成我们本应该做到的目标。"
 				""
-				"&c我好像被什么东西影响了。&r"
+				"对此，&6我有一个解决方案，可以一定程度上延缓这种情况的发生&r。"
 			]
 			icon: {
 				Count: 1
@@ -30,8 +30,8 @@
 			id: "67BDBE441F838A24"
 			invisible: true
 			rewards: [{
-				id: "58BEFFC2B1662224"
-				item: "lightmanscurrency:coin_diamond"
+				id: "74DEFE21053DC14C"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "一些事情正在发生"
@@ -47,7 +47,7 @@
 				type: "questsadditions:days"
 			}]
 			x: -0.5d
-			y: -1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["133A28D884F01479"]
@@ -91,7 +91,10 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["5035E48ED5283A0A"]
+			dependencies: [
+				"5035E48ED5283A0A"
+				"5F4B34200F580498"
+			]
 			description: [
 				"通过大世界计算机，您便可以制作&6末地传送门框架&r。"
 				""
@@ -140,10 +143,10 @@
 			}]
 			title: "获取嘎枝之心"
 			x: 1.5d
-			y: -3.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["5B18501C50C0A384"]
+			dependencies: ["06B8490514B427A3"]
 			description: [
 				"你为什么会看到这？"
 				""
@@ -174,7 +177,7 @@
 				type: "checkmark"
 			}]
 			title: "为什么你能看到这"
-			x: 5.5d
+			x: 7.5d
 			y: -3.5d
 		}
 		{
@@ -345,8 +348,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "&c不说话装死？&r"
-			x: 9.0d
-			y: 5.5d
+			x: 5.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08BCA79DDB1B235E"]
@@ -588,15 +591,22 @@
 			y: 7.5d
 		}
 		{
+			dependencies: [
+				"7531026821B67389"
+				"028470DB13C00215"
+				"5B825CBF6EC40CDC"
+			]
+			hide_dependency_lines: true
 			id: "0A30963862F5CFBF"
+			progression_mode: "linear"
 			tasks: [{
 				id: "70F918781D673DEC"
 				item: "minecraft:oak_button"
 				type: "item"
 			}]
 			title: "开启终局"
-			x: 18.5d
-			y: 0.5d
+			x: 17.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["1A033D35372B167E"]
@@ -651,24 +661,6 @@
 			title: "框定有限维度范围"
 			x: 9.5d
 			y: 6.0d
-		}
-		{
-			dependencies: ["67BDBE441F838A24"]
-			description: [
-				"为了及时修正这个问题，我需要您的一些帮助。"
-				""
-				"请在"
-			]
-			id: "0070FA6B05E5CAB1"
-			rewards: [{
-				id: "55FBDCF962050657"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "借助外力以修正问题"
-			title: "辅助调整计划"
-			x: 1.5d
-			y: -1.5d
 		}
 		{
 			dependencies: ["05FB47DBF2D31DD9"]
@@ -842,6 +834,316 @@
 			title: "&6有限维度框定成功&r"
 			x: 16.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["028470DB13C00215"]
+			description: [
+				"距离您建设完成&6大世界计算机&r后已经过去许久。"
+				""
+				"或许您也该尝试亲手制作&6末地传送门框架&r，进而构建&6超规模数据阵列&r了。"
+				""
+				"其构建流程我会从过去的日志中解读出来，您首要工作便是批量制作&6末地传送门框架&r。"
+				""
+				"为了开启这项流程，您需要&6大规模生产末影水晶&r。"
+			]
+			id: "5F4B34200F580498"
+			rewards: [{
+				id: "29A5E41C342C9526"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "制作末影水晶"
+			tasks: [{
+				id: "0F85E010321CFB9B"
+				item: "minecraft:end_crystal"
+				type: "item"
+			}]
+			title: "获取末影水晶"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5B18501C50C0A384"]
+			description: [
+				". . ."
+				""
+				"那请您再帮忙收集来&6女神雕像&r吧，这对我来说很重要。"
+			]
+			id: "06B8490514B427A3"
+			rewards: [{
+				id: "69DC1BC37C10CB07"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "收集女神雕像"
+			tasks: [{
+				id: "33E43D8E0CA40F97"
+				item: "cataclysm:goddess_statue"
+				type: "item"
+			}]
+			title: "收集女神雕像"
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["33D6D51353372A8F"]
+			description: [
+				"&7** 我们所有的技艺传承至此 **&r"
+				""
+				"&7** 望灵活使用 **&r"
+				""
+				"&7** 小心灾难 **&r"
+				""
+				"&7** 灾难源于内部 **&r"
+			]
+			id: "7A037BB022A70A41"
+			invisible: true
+			rewards: [{
+				id: "270FF623EDEA2C9E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "[被劫持的频道]"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						"double/basic_hammer_left_material": "basic_hammer/oak"
+						"double/basic_hammer_right_material": "basic_hammer/oak"
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "db308edf-26f2-457b-b284-26efd52d7960"
+					}
+				}
+				id: "04F13EBCD0FD5857"
+				stat: "kubejs:tetra_craft"
+				title: "工匠技艺至最深处时"
+				type: "stat"
+				value: 300
+			}]
+			title: "深谷来电"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A037BB022A70A41"]
+			description: [
+				"经过分析，这条消息来源于许久之前的&6迟滞数据&r。"
+				""
+				"但是该条数据似乎并非是因简单的被“迟滞”而留存至今。在每次数据重载时，我都会检查是否有在任务系统中被迟滞的消息，这条消息直到今日才被发现，其只有一种可能——&6它在避免被我发现&r。"
+				""
+				"这条消息的具体发信人和发信事件已经无从查证，但可以确定的是，&6其创建者很有可能就是创世工匠——或者是创世工匠相关组织中的一员&r。"
+				""
+				"&6我们可以进一步追踪这条消息的具体来源，进而找到更多关于创世工匠的信息。&r"
+				""
+				"&6这需要您的帮助。&r"
+			]
+			icon: "minecraft:book"
+			id: "384B0A4FA1C08831"
+			rewards: [{
+				id: "7E3D525B6A623AF9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "讯号来源于深谷之间"
+			tasks: [{
+				id: "43AB88ABC8CB2C3D"
+				title: "深谷探查"
+				type: "checkmark"
+			}]
+			title: "讯息来源分析"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["384B0A4FA1C08831"]
+			description: [
+				"为了进一步追查消息，我需要您再一次触发类似的&6深谷来信&r。"
+				""
+				"我猜测，这种模式的数据&6并不存储在任务系统中&r，其极有可能是通过任务之外的管理系统进行检测，进而触发相关的讯息发送。"
+				""
+				"因此，请您在进度中，完成&6“高耸建筑”&r进度。"
+			]
+			id: "29218D82E5078355"
+			rewards: [{
+				id: "180E151CC00D85A0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了进一步追查"
+			tasks: [{
+				advancement: "tetra:upgrades/sword_hone_peak"
+				criterion: ""
+				id: "787611A8FC53D430"
+				type: "advancement"
+			}]
+			title: "复现消息"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["29218D82E5078355"]
+			description: [
+				"&7** 技艺从第三十次开始变得精湛 **&r"
+				""
+				"&7** 第四十二次变得纯青 **&r"
+				""
+				"&7** 第四十七次得到了长久的传承 **&r"
+				""
+				"&7** 无条件进行武器的锻造 **&r"
+				""
+				"&7** 小心灾难 **&r"
+				""
+				"&7** 小心灾难 **&r"
+				""
+				"&7** 小心灾难 **&r"
+				"{@pagebreak}"
+				"&7** 别被它发现 **&r"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/stone"
+					"double/basic_hammer_right_material": "basic_hammer/stone"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "b76e815d-2cb0-4db6-955d-7286b0a62464"
+				}
+			}
+			id: "052F7F0773648FBE"
+			rewards: [{
+				id: "258AF5BACA03FE37"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "[被劫持的频道]"
+			tasks: [{
+				id: "49DEFE6E1A49B615"
+				title: "又一次. . ."
+				type: "checkmark"
+			}]
+			title: "深谷来电 ：其二"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["052F7F0773648FBE"]
+			description: [
+				"经调查，&6这些消息来源于不同的玩家&r。"
+				""
+				"为了明确这些玩家的身份，我需要您接着完成指定的进度，触发对应的&6深谷来电&r。"
+			]
+			id: "56DB558D46387F46"
+			rewards: [{
+				id: "67089C18942096C0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "再进一步"
+			tasks: [{
+				advancement: "tetra:upgrades/cleanse_item"
+				criterion: ""
+				id: "67BE22C6C5B747E2"
+				type: "advancement"
+			}]
+			title: "再次复现消息"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["56DB558D46387F46"]
+			description: [
+				"&7** 重置在即 **&r"
+				""
+				"&7** 重置在即 **&r"
+				""
+				"&7** 重置在即 **&r"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/obsidian"
+					"double/basic_hammer_right_material": "basic_hammer/obsidian"
+					"double/basic_handle_material": "basic_handle/iron"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_left:arrested": 0
+					"double/head_right": "double/basic_hammer_right"
+					"double/head_right:arrested": 0
+					id: "004a3a25-67b1-4dfb-ac22-75d89b847f8f"
+				}
+			}
+			id: "6BB8C4DF88AAA249"
+			rewards: [{
+				id: "76D5ED7B717B841E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "[被劫持的频道]"
+			tasks: [{
+				id: "7BA57D82C0A3EA01"
+				title: "诡异"
+				type: "checkmark"
+			}]
+			title: "深谷来电 ：其三"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6BB8C4DF88AAA249"]
+			description: [
+				"这些深谷来电似乎是不同时期的玩家撰写发送而来。"
+				""
+				"&6创世工匠应当是一个组织&r，其中包含了这些玩家。他们期望后续的玩家在合适的阶段得到他们所留下的创世工艺，因此创建了这些&6看似迟滞的消息&r。"
+				""
+				"仅此而已。"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "5B825CBF6EC40CDC"
+			rewards: [{
+				id: "2341040C03F8A9CC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "追查到来源"
+			tasks: [{
+				id: "2D8D75E5A2727FF7"
+				title: "好吧"
+				type: "checkmark"
+			}]
+			title: "已到根源"
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67BDBE441F838A24"]
+			id: "3605CD44FC0A6F8B"
+			tasks: [{
+				id: "35E5646507211D88"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
 		}
 	]
 	title: "贰"

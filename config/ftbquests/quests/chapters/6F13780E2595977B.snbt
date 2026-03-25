@@ -65,7 +65,6 @@
 			]
 			id: "33D6D51353372A8F"
 			invisible: true
-			min_required_dependencies: 3
 			rewards: [
 				{
 					auto: "invisible"
@@ -2153,7 +2152,7 @@
 				""
 				"想必您大概能够理解这种工艺的意义为何——如若能自由使用这种技艺，结合我们现有的各种技术，可以说能够随意揉捏这个世界的形状。"
 				""
-				"因此，我选择将抉择权交给&6最精通附魔技艺的人&r。作为系统而言，我并没有对玩家体验的全面认知，而同为玩家的你们应当更能够理解这种能力是否应当被公开。"
+				"因此，我选择将抉择权交给&6最精通创世/新世界技艺的人&r。作为系统而言，我并没有对玩家体验的全面认知，而同为玩家的你们应当更能够理解这种能力是否应当被公开。"
 				"{@pagebreak}"
 				"公开技术会使所有人在完成了该任务线后均能够使用真正的创世工艺进行改良。"
 				""
@@ -2171,19 +2170,16 @@
 			tasks: [{
 				icon: {
 					Count: 1
-					id: "minecraft:enchanted_book"
+					id: "minecraft:golden_pickaxe"
 					tag: {
-						StoredEnchantments: [{
-							id: "minecraft:protection"
-							lvl: 4s
-						}]
+						Damage: 0
 					}
 				}
-				id: "58A64FD36AA31F42"
-				leaderboard: "leaderboards:enchantments_done"
+				id: "784551EC568A2C16"
+				leaderboard: "kubejs:tetra_craft_genesis"
 				min: 1
 				rank: 1
-				title: "附魔次数称霸"
+				title: "创世工艺加工次数称霸"
 				type: "leaderboards:rank_task"
 			}]
 			title: "创世工匠之后"

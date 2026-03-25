@@ -1,9 +1,10 @@
 // priority: 500
 AStages.addRestrictionForDimension('main/dimensional_worm_nether', 'ftb_server_ban_nether', 'minecraft:nether')
 
+// 维度盛宴循环
 MAAEvents.ftbQuestCheckRepeatable('28B0B07A19295E57', event => {
     const teamData = event.teamData
-    if (!teamData.isCompletedById('028470DB13C00215')) return
+    if (!teamData.isCompletedById('7531026821B67389')) return
     event.cancel()
 })
 
@@ -13,6 +14,7 @@ FTBQuestsEvents.customReward('try_dimension_pierce', event => {
     }
 })
 
+// 维度穿刺循环
 MAAEvents.ftbQuestCheckRepeatable('1A033D35372B167E', event => {
     const teamData = event.teamData
     if (!teamData.isCompletedById('6EF16BD7804710C9')) return

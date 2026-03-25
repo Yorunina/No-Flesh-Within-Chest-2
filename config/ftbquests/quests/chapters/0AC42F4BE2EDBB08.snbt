@@ -423,17 +423,20 @@
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
+			description: ["通过黑曜石搭建出下界门框架，您便可以轻松的访问&6下界维度&r。"]
 			id: "4A1C6C6150E32CEE"
 			rewards: [{
 				id: "35FE1E0C7ADC68BD"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "维度检测类任务"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "7337839B31A591B5"
 				type: "dimension"
 			}]
+			title: "前往下界"
 			x: 2.5d
 			y: -6.0d
 		}
@@ -642,6 +645,18 @@
 			}]
 			x: 1.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["07EF7BB4192A11D0"]
+			id: "50BA5AF34D9AA99F"
+			tasks: [{
+				entity: "minecraft:blaze"
+				id: "64049A20FB6EFCA6"
+				type: "kill"
+				value: 100L
+			}]
+			x: 5.5d
+			y: -6.0d
 		}
 	]
 	title: "壹"

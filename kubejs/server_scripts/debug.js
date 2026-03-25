@@ -1,24 +1,14 @@
 // priority: 500
-// TetraJSEvents.workbenchTileCraft(event => {
-//     const schematic = event.currentSchematic
-//     const level = event.level
-//     event.upgradedStack
-//     console.log(schematic.key)
-//     event.setUpgradedStack(Item.of('minecraft:stick'))
-// })
-
-ItemEvents.rightClicked(event => {
+ItemEvents.rightClicked('stick',event => {
+    /**@type {Internal.ServerPlayer} */
     const player = event.player
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
+    player.tell(player.seenCredits)
 
-    switch (level.getDimension()) {
-        case 'minecraft:overworld':
-            player.tell(1)
-            break
-    }
-
+    // player.wonGame = false
+    // player.seenCre
     // player.tell(player.getFoodData().getSaturationLevel())
 
     
