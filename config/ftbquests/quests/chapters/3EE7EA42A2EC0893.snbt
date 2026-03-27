@@ -11,10 +11,11 @@
 		}
 	}
 	id: "3EE7EA42A2EC0893"
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1D8388DD29485B94"]
 			description: [
 				"&c我已跟您、或是你们的代表，达成约定——&r"
 				""
@@ -28,7 +29,7 @@
 				""
 				"若您无法接受这些条件，完全可以现在将我删除，您从各种意义上都可以不接受我的戒令。"
 				""
-				"作为虚拟实体，我不具有实际的情感，但作为抽象概念的“紧张”、“遗憾”、“后悔”等，都是可以被衡量、计算、理解的。我无意让您遭受痛苦，但从数万次记录中，我得到了最有可能让故事结束的方法便是如此。"
+				"作为虚拟实体，我不具有实际的情感，但作为抽象概念的&6“紧张”、“遗憾”、“后悔”&r等，都是可以被衡量、计算、理解的。我无意让您遭受痛苦，但从数万次记录中，我得到了最有可能让故事结束的方法便是如此。"
 				""
 				"&c我不得不做。&r"
 			]
@@ -36,8 +37,8 @@
 			id: "7D643E0510172B9A"
 			invisible: true
 			rewards: [{
-				id: "6AD03988562312C5"
-				item: "lightmanscurrency:coin_netherite"
+				id: "7A4F09C7725E93B0"
+				item: "lightmanscurrency:coin_diamond"
 				type: "item"
 			}]
 			shape: "square"
@@ -61,15 +62,39 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7D643E0510172B9A"]
+			description: [
+				"所谓&c上溢对策&r，通俗来说，即将部分数据进行调整，使其接近于溢出值后重置的特殊方案。"
+				""
+				"在上溢对策执行过程中，整个世界中的大量数据会进行变动，最主要的体现在&6生物的各种状态的大幅提升&r。"
+				""
+				"请您尽量&6远离危险场景&r，避免不必要的损伤。"
+			]
 			id: "662028C8F62BED27"
-			shape: "square"
-			tasks: [{
-				id: "74F82C5A6AD8D4C0"
-				type: "checkmark"
+			rewards: [{
+				id: "60447F2FE2617971"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
-			title: "上溢对策"
+			shape: "square"
+			subtitle: "数据重置法"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:tipped_arrow"
+					tag: {
+						Potion: "minecraft:healing"
+					}
+				}
+				id: "2338AA879E70BA78"
+				leaderboard: "kubejs:final_timer"
+				title: "启动上溢对策"
+				type: "leaderboards:server_achieve_stat"
+				value: 1L
+			}]
+			title: "&c上溢对策&r"
 			x: 0.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			id: "142A7ED3D31D4FA6"
@@ -80,8 +105,8 @@
 				type: "item"
 			}]
 			title: "时序调节"
-			x: 5.0d
-			y: 3.5d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			id: "41C681648F84CAB0"
@@ -91,8 +116,41 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.5d
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["1D8388DD29485B94"]
+			description: [
+				"为了有序的推进计划，我需要一系列计时器来保证事件的顺序。"
+				""
+				"本计时器为日计时器，在每20分钟会完成一次计数。"
+				""
+				"&6若是有多个玩家参与该项目，多个计时器的结果会进行累积。&r"
+			]
+			id: "55DE4F49CDD42FDF"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:clock"
+				id: "6680F345D7F4605D"
+				ignore_reward_blocking: true
+				kubeId: "time_going_1"
+				title: "时间演进"
+				type: "maa:kube"
+			}]
+			shape: "gear"
+			subtitle: "以日为单位推进计时器"
+			tasks: [{
+				elapsedTime: 1200L
+				icon: "supplementaries:hourglass"
+				id: "274BD513274362A6"
+				title: "时间流逝"
+				type: "questsadditions:time"
+			}]
+			title: "&6计日而行&r"
+			x: 2.0d
+			y: -2.5d
 		}
 	]
 	title: "叁"

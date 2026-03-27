@@ -1,4 +1,5 @@
 {
+	autofocus_id: "1A033D35372B167E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1046FBB0415A3CAA"
@@ -10,7 +11,7 @@
 		tag: { }
 	}
 	id: "1046FBB0415A3CAA"
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -453,18 +454,15 @@
 				}
 			}
 			id: "1A033D35372B167E"
-			repeat_cooldown: 120
 			rewards: [{
 				icon: {
 					Count: 1
 					id: "minecraft:crying_obsidian"
 					tag: { }
 				}
-				id: "38398F1AEC1C00EB"
-				ignore_reward_blocking: true
-				kubeId: "try_dimension_pierce"
+				id: "782E80E17A636A8A"
 				title: "尝试进行维度刺穿"
-				type: "maa:kube"
+				type: "custom"
 			}]
 			shape: "gear"
 			subtitle: "植入维度探针"
@@ -621,12 +619,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1A033D35372B167E"]
+			dependencies: ["08BCA79DDB1B235E"]
 			description: [
 				"现在，&6我们成功刺穿了维度泡&r，创造了一个能够控制另一维度且不受维度虫干扰的窗口。"
 				""
 				"下一步，我们需要在需要控制的维度中部署&c维度同步控制系统&r。"
 			]
+			hide_dependency_lines: true
 			id: "6EF16BD7804710C9"
 			invisible: true
 			rewards: [{
@@ -636,12 +635,10 @@
 			}]
 			subtitle: "成功刺穿维度"
 			tasks: [{
-				count: 1L
 				icon: "tetra:metal_scrap"
-				id: "35E962D66282623E"
-				kubeId: "dimension_pierce_success"
+				id: "3A1023B5092EC993"
 				title: "&6维度刺穿成功&r"
-				type: "maa:kube"
+				type: "custom"
 			}]
 			title: "探针刺穿成功"
 			x: 7.5d

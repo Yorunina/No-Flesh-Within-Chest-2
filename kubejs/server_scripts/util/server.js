@@ -53,3 +53,22 @@ function DecreaseEternalWinterCounter(server, num) {
         SetEternalWinterState(server, 2)
     }
 }
+
+/**
+ * @param {ResourceLocation} id
+ * @param {Internal.Minecraft} server 
+ * @returns 
+ */
+function GetLeaderBoardTotal(id, server) {
+    let leaderboard = GetLeaderBoardById(id)
+    if (leaderboard == null) return 0
+    ServerAchieveStatTask.getOrCalculateServerTotal(server, leaderboard)
+}
+
+/**
+ * @param {ResourceLocation} id
+ * @returns 
+ */
+function GetLeaderBoardById(id) {
+    return LeaderboardRegistry.LEADERBOARDS.containsKey(id) ? LeaderboardRegistry.LEADERBOARDS.get(id) : VanillaStatsRegistry.VANILLA_STATS.get(id)
+}

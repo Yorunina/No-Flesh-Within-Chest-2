@@ -2141,7 +2141,7 @@
 			subtitle: "方舟已经出发"
 			tasks: [{
 				disable_toast: true
-				elapsedTime: 20L
+				elapsedTime: 3600L
 				icon: "supplementaries:hourglass"
 				id: "2AD29786C103C8E7"
 				title: "返航"

@@ -1,6 +1,9 @@
 #存储UI搜索按钮值 (除非你知道你在做什么，否则不要手动修改)
 #Allowed Values: ENABLED, DISABLED, SORT_DEFAULT, SORT_CREATIVE_TAB, SORT_MAX_STACK, SORT_QUANTITY, SORT_NAME, SORT_MODID, SORT_INSERTED_TIME, SORT_MODIFIED_TIME
 ui_sort_button = "SORT_NAME"
+#存储UI搜索按钮值 (除非你知道你在做什么，否则不要手动修改)
+#Allowed Values: ENABLED, DISABLED, SORT_DEFAULT, SORT_CREATIVE_TAB, SORT_MAX_STACK, SORT_QUANTITY, SORT_NAME, SORT_MODID, SORT_INSERTED_TIME, SORT_MODIFIED_TIME
+ui_second_sort_button = "SORT_INSERTED_TIME"
 #存储UI倒序按钮值 (除非你知道你在做什么，否则不要手动修改)
 #Allowed Values: ENABLED, DISABLED, SORT_DEFAULT, SORT_CREATIVE_TAB, SORT_MAX_STACK, SORT_QUANTITY, SORT_NAME, SORT_MODID, SORT_INSERTED_TIME, SORT_MODIFIED_TIME
 ui_reverse_button = "DISABLED"
@@ -18,6 +21,10 @@ ui_craft_return_button = "DISABLED"
 ui_page_num = 5
 #存储UI搜索框内容 (除非你知道你在做什么，否则不要手动修改)
 ui_search = ""
+#是否与JEI或EMI同步搜索
+search_text_with_jei_emi = true
+#是否允许EMI获取维度网络内全部物品信息
+emi_allow_network_storage_info = false
 #是否允许网络接口将资源送入网络
 interface_can_receive_resource = true
 #是否允许网络接口从网络提取标记的资源
@@ -28,11 +35,4 @@ interface_can_pop_resource = true
 #注意：仅在确定需要时使用，后续版本更新会将其移除并添加其他替代方案，会保证存档兼容。
 #Range: 1 ~ 27
 interface_usable_capacity = 27
-#是否与JEI或EMI同步搜索
-search_text_with_jei_emi = true
-#存储UI搜索按钮值 (除非你知道你在做什么，否则不要手动修改)
-#Allowed Values: ENABLED, DISABLED, SORT_DEFAULT, SORT_CREATIVE_TAB, SORT_MAX_STACK, SORT_QUANTITY, SORT_NAME, SORT_MODID, SORT_INSERTED_TIME, SORT_MODIFIED_TIME
-ui_second_sort_button = "SORT_INSERTED_TIME"
-#是否允许EMI获取维度网络内全部物品信息
-emi_allow_network_storage_info = false
 

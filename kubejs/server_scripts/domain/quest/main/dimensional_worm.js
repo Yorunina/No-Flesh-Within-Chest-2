@@ -8,15 +8,15 @@ MAAEvents.ftbQuestCheckRepeatable('28B0B07A19295E57', event => {
     event.cancel()
 })
 
-FTBQuestsEvents.customReward('try_dimension_pierce', event => {
-    if (Math.random() < 0.1) {
-        MAAUtils.onKubeTaskFinish('dimension_pierce_success', event.player, (task, pPlayer, teamData) => teamData.addProgress(task, 1))
-    }
-})
-
 // 维度穿刺循环
 MAAEvents.ftbQuestCheckRepeatable('1A033D35372B167E', event => {
     const teamData = event.teamData
+    if (Math.random() < 0.2) {
+        let targetTask = MAAUtils.getTaskByTeamData(teamData, '3A1023B5092EC993')
+        if (!targetTask) return
+        teamData.addProgress(targetTask, 1)
+        event.cancel()
+    }
     if (!teamData.isCompletedById('6EF16BD7804710C9')) return
     event.cancel()
 })
