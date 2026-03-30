@@ -41,7 +41,7 @@ InfinityEvents.itemInPortal(event => {
     } else if (itemStack.hasTag('lightmanscurrency:coins')) {
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById('kubejs:oath', level, pos)
-    } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT()) {
+    } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT() && !AStages.serverHasStage('ftb_final_timer_start', event.server)) {
         let nbt = itemStack.getNbt()
         if (!nbt.contains('photograph_frame')) return
         let frameNbt = nbt.getCompound('photograph_frame')

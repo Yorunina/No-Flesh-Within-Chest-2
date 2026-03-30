@@ -62,7 +62,7 @@ function DecreaseEternalWinterCounter(server, num) {
 function GetLeaderBoardTotal(id, server) {
     let leaderboard = GetLeaderBoardById(id)
     if (leaderboard == null) return 0
-    ServerAchieveStatTask.getOrCalculateServerTotal(server, leaderboard)
+    ServerAchieveStatTask.getServerTotalFromCache(server, leaderboard)
 }
 
 /**
@@ -71,4 +71,15 @@ function GetLeaderBoardTotal(id, server) {
  */
 function GetLeaderBoardById(id) {
     return LeaderboardRegistry.LEADERBOARDS.containsKey(id) ? LeaderboardRegistry.LEADERBOARDS.get(id) : VanillaStatsRegistry.VANILLA_STATS.get(id)
+}
+
+/**
+ * @param {ResourceLocation} id
+ * @param {Internal.Minecraft} server 
+ * @returns 
+ */
+function RefreshServerTotalCache(id, server) {
+    let leaderboard = GetLeaderBoardById(id)
+    if (leaderboard == null) return 0
+    ServerAchieveStatTask.refreshServerTotalCache(server, leaderboard)
 }

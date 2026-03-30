@@ -37,4 +37,21 @@ StartupEvents.registry('item', event => {
             itemstack.setNbt(nbt)
             return itemstack
         })
+
+    // todo
+    event.create('infinity_dimension_interference')
+        .texture('kubejs:item/tools/infinity_dimension_interference')
+        .maxStackSize(1)
+        .useDuration(itemStack => 20)
+        .useAnimation('bow')
+        .use((level, player, hand) => true)
+        .releaseUsing((itemstack, level, entity) => {
+            return itemstack
+        })
+        .finishUsing((itemstack, level, entity) => {
+            if (!entity.isPlayer() || !AStages.serverHasStage('ftb_final_dim_restrict_1', level.server)) return Item.empty
+            let restriction = AStages.getRestrictionById(ARestrictionTypes.DIMENSION, 'main/final_dim_restrict_1')
+            if (entity instanceof $ServerPlayer) ADimensionRestriction.removeDimensionAccess(entity, restriction)
+            return Item.empty
+        })
 })

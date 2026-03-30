@@ -1,5 +1,4 @@
 // priority: 500
-AStages.addRestrictionForItem('final/test', 'ftb_test', ['minecraft:stick']).setReverse(true)
 ItemEvents.rightClicked('stick',event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player

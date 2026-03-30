@@ -11,6 +11,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
         thornsDamage: 0
     }
     OrganEntityDoDamage(event, customData)
+    FinalEntityDoDamage(event, customData)
     if (customData.thornsDamage > 0 && event.entity) {
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)

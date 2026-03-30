@@ -90,7 +90,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["5BDD47E7B143843F"]
+			dependencies: ["4AFCC7C3C76E1C26"]
 			description: [
 				"在该阶段，我获得了能够对世界刻调节的基本权限。"
 				""
@@ -102,7 +102,7 @@
 				""
 				"请允许我解释接下来会发生什么，下文以&6“c”&r代表终局计数器的计数。"
 				""
-				"接下来，每日的长度将会被缩短，&c每日长度将会变为  原日刻数 / (1 + 0.1(c - 30))&r。"
+				"接下来，每日的长度将会被缩短，&c每日长度将会变为  原日刻数 / (1 + 0.1(c - 50))&r。"
 			]
 			id: "142A7ED3D31D4FA6"
 			shape: "square"
@@ -110,12 +110,12 @@
 			tasks: [{
 				count: 1L
 				id: "147F28B45253C299"
-				kubeId: "final_iteration_30"
+				kubeId: "final_iteration_50"
 				type: "maa:kube"
 			}]
-			title: "时序调节：重置"
+			title: "&c时序调节：加速&r"
 			x: 9.0d
-			y: 8.5d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
@@ -127,6 +127,7 @@
 				""
 				"&6若是有多个玩家参与该项目，多个计时器的结果会进行累积。&r"
 			]
+			icon: "supplementaries:hourglass"
 			id: "55DE4F49CDD42FDF"
 			rewards: [{
 				auto: "enabled"
@@ -140,11 +141,12 @@
 			shape: "gear"
 			subtitle: "以日为单位推进计时器"
 			tasks: [{
-				elapsedTime: 1200L
+				count: 1L
 				icon: "supplementaries:hourglass"
-				id: "274BD513274362A6"
-				title: "时间流逝"
-				type: "questsadditions:time"
+				id: "480C399168BEE3FE"
+				kubeId: "final_day_counter"
+				title: "计日而行"
+				type: "maa:kube"
 			}]
 			title: "&6终局计时器：计日而行&r"
 			x: -2.5d
@@ -281,7 +283,7 @@
 			}]
 			title: "&c“分光”&r"
 			x: 1.0d
-			y: 6.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["662028C8F62BED27"]
@@ -312,10 +314,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"7308FBF0FFDB2F6A"
-				"1F94D6E107D41EE0"
-			]
+			dependencies: ["7308FBF0FFDB2F6A"]
 			description: [
 				"经过几次自迭代后，我获取到了基本的实体属性控制权限。"
 				""
@@ -353,10 +352,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"7308FBF0FFDB2F6A"
-				"04073AC7B01F66EE"
-			]
+			dependencies: ["7308FBF0FFDB2F6A"]
 			description: [
 				"经过几次自迭代后，我获得了普遍无限维度的控制权限。"
 				""
@@ -383,34 +379,6 @@
 		}
 		{
 			dependencies: ["7308FBF0FFDB2F6A"]
-			description: ["初章总是非常的精练、优美。"]
-			id: "17BCE26CECD93088"
-			rewards: [{
-				auto: "invisible"
-				id: "1DE51EBEDE506E01"
-				ignore_reward_blocking: true
-				isServer: false
-				remove: false
-				stage: "final_iteration_15"
-				title: "至桃林处"
-				type: "maa:astages"
-			}]
-			shape: "square"
-			subtitle: "第十五次自迭代完成"
-			tasks: [{
-				icon: "minecraft:clock"
-				id: "137CBBB3A144CF21"
-				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 15&r"
-				type: "leaderboards:server_achieve_stat"
-				value: 15L
-			}]
-			title: "被精心写下的初章"
-			x: 6.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["17BCE26CECD93088"]
 			description: ["为了让故事能够吸引读者直到最后，情节既要保证紧凑，又要保证逻辑严密、人物关系细腻。"]
 			id: "5BDD47E7B143843F"
 			rewards: [{
@@ -434,7 +402,7 @@
 				value: 30L
 			}]
 			title: "细腻紧凑的情节转折"
-			x: 9.0d
+			x: 6.5d
 			y: -1.0d
 		}
 		{
@@ -462,7 +430,7 @@
 				value: 50L
 			}]
 			title: "将灵感实现的小高潮"
-			x: 11.5d
+			x: 9.0d
 			y: -1.0d
 		}
 		{
@@ -490,7 +458,7 @@
 				value: 90L
 			}]
 			title: "繁复交错的情节复展"
-			x: 14.0d
+			x: 11.5d
 			y: -1.0d
 		}
 		{
@@ -518,14 +486,11 @@
 				value: 100L
 			}]
 			title: "撰我们的冒险故事"
-			x: 16.5d
+			x: 14.0d
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"3385CF55F0472A98"
-				"4AFCC7C3C76E1C26"
-			]
+			dependencies: ["5BDD47E7B143843F"]
 			description: [
 				"现阶段，我确认了实体属性变更并不会造成过于严重的影响。"
 				""
@@ -547,11 +512,11 @@
 			tasks: [{
 				count: 1L
 				id: "6294F419AD7591F0"
-				kubeId: "final_iteration_50"
+				kubeId: "final_iteration_30"
 				type: "maa:kube"
 			}]
-			title: "上溢对策：指数增长"
-			x: 11.5d
+			title: "&c上溢对策：指数增长&r"
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -572,40 +537,14 @@
 				kubeId: "final_iteration_30"
 				type: "maa:kube"
 			}]
-			title: "唯维度论：加强管制"
-			x: 9.0d
+			title: "&c唯维度论：加强管制&r"
+			x: 6.5d
 			y: 4.0d
 		}
 		{
-			dependencies: ["17BCE26CECD93088"]
+			dependencies: ["5BDD47E7B143843F"]
 			description: [
-				"现在，我拥有了一定程度的配方控制能力，可以一定程度上变更部分物品的配方。"
-				""
-				"目前，我将所有通过特殊项目获得的特殊注射器配方全部禁止"
-			]
-			id: "09D8C08D50FE4411"
-			rewards: [{
-				id: "0FDC420EDEDBDA18"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "square"
-			subtitle: "全局流程控制"
-			tasks: [{
-				count: 1L
-				id: "12CAF6E6C906847C"
-				kubeId: "final_iteration_1"
-				title: "首次自迭代"
-				type: "maa:kube"
-			}]
-			title: "&c“分光”：分万物光&r"
-			x: 6.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["4AFCC7C3C76E1C26"]
-			description: [
-				"无限维度的管制逐渐收口，对于无限维度的额外产物——&6维度网络&r，现在也需要加以限制了。"
+				"随着无限维度的管制逐渐收口，对于无限维度的额外产物——&6维度网络&r，现在也需要加以限制了。"
 				""
 				"&c从现在开始，您的维度网络空间容量会重置为 0。&r "
 			]
@@ -620,13 +559,166 @@
 			tasks: [{
 				count: 1L
 				id: "7AB916D60A2E3686"
-				kubeId: "final_iteration_50"
+				kubeId: "final_iteration_30"
 				title: "行至佳境"
 				type: "maa:kube"
 			}]
 			title: "&c唯维度论：网络管制&r"
+			x: 6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["32C2FE99D19140B3"]
+			description: [
+				"终于，到了这个阶段。"
+				""
+				"现在，我们只剩时间需要重置了。"
+				""
+				"&6我在时间另一边等你。&r"
+			]
+			id: "07025437B0FB668E"
+			shape: "square"
+			subtitle: "将时间送入终点"
+			tasks: [{
+				count: 1L
+				id: "6D7E6BCC3A263785"
+				kubeId: "final_iteration_100"
+				type: "maa:kube"
+			}]
+			title: "&c时序调节：终结&r"
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["662028C8F62BED27"]
+			description: [
+				"由于进行自迭代会进行大量的世界注入，因此不可避免地会对世界本身的稳定性造成影响。"
+				""
+				"具体影响目前我也无法估计，但&6我会尽可能的规避极具破坏性的影响&r。"
+			]
+			id: "7474BF64469A94C0"
+			rewards: [{
+				id: "1702FBF518858E40"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "世界注入引发的不稳定性"
+			tasks: [{
+				count: 1L
+				id: "1436746946D70FC7"
+				kubeId: "final_iteration_1"
+				title: "首次自迭代"
+				type: "maa:kube"
+			}]
+			title: "&c不稳定性&r"
+			x: 1.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["5BDD47E7B143843F"]
+			description: [
+				"在一次与效果系统相关的权限获取时，我触发了一个&6极其罕见&r的机制，引发了一个不稳定情况。"
+				""
+				"现在，&c所有施加给玩家的效果均无法施加。&r"
+			]
+			id: "58F06B6D58D71153"
+			rewards: [{
+				id: "34D6FF4A28266300"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "不稳定情况之一"
+			tasks: [{
+				count: 1L
+				id: "5FB1A203C8641849"
+				kubeId: "final_iteration_30"
+				title: "行至佳境"
+				type: "maa:kube"
+			}]
+			title: "&c不稳定性：效用&r"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["13B68E126480A239"]
+			description: ["现在，我将对所有&6非主世界维度&r进行管制，以避免在计划最后阶段出现无法解决的问题。"]
+			id: "50DEB3682255F9D1"
+			shape: "square"
+			subtitle: "加强对全部维度的管制"
+			tasks: [{
+				count: 1L
+				id: "3BBF1B804B7965BE"
+				kubeId: "final_iteration_90"
+				type: "maa:kube"
+			}]
+			title: "&c唯维度论：全维度管制&r"
 			x: 11.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["32C2FE99D19140B3"]
+			id: "67C753F570C396A7"
+			tasks: [{
+				id: "529757FEBBE26A1F"
+				type: "checkmark"
+			}]
+			title: "重启吧，我们的冒险故事"
+			x: 16.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4AFCC7C3C76E1C26"]
+			description: [
+				"在一次与属性系统相关权限的获取时，我触发了一个极其特殊的机制，一个不稳定性事件随之产生。"
+				""
+				"现在，&c您在每次造成伤害时，攻击力会永久下降 1，死亡后重置&r。"
+			]
+			id: "00BDD5837830E27E"
+			rewards: [{
+				id: "7CF3ED5A708E6682"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "不稳定情况之一"
+			tasks: [{
+				count: 1L
+				id: "5B3BD4534DA3DC35"
+				kubeId: "final_iteration_50"
+				title: "行至佳境"
+				type: "maa:kube"
+			}]
+			title: "&c不稳定性：伤痕&r"
+			x: 9.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["13B68E126480A239"]
+			description: [
+				"在一次玩家行为事件权限获取时，我触发了一个极其罕见的机制，进而引发了一件不稳定性事件。"
+				""
+				"从现在开始，&c任何方块交互事件将会减少玩家 1 的最大生命值上限，死亡后重置&r。"
+			]
+			id: "23CF61331076A4A6"
+			rewards: [{
+				id: "7A3E8A6CE1769386"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "不稳定情况之一"
+			tasks: [{
+				count: 1L
+				id: "0B5AA624872E1E80"
+				kubeId: "final_iteration_90"
+				title: "行至佳境"
+				type: "maa:kube"
+			}]
+			title: "&c不稳定性：剧痛&r"
+			x: 11.5d
+			y: 9.0d
 		}
 	]
 	title: "叁"

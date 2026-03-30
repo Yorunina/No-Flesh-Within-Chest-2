@@ -78,7 +78,10 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["574C74EEF58FDD85"]
+			dependencies: [
+				"574C74EEF58FDD85"
+				"3385CF55F0472A98"
+			]
 			description: [
 				"上溢对策就是放屁，我说数值溢出只会变成 -1 不会变成 0 。"
 				""
@@ -164,6 +167,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["1189CC2229F322FB"]
 			id: "7972DA3E5FB490C8"
 			tasks: [{
 				id: "6D2A77E3E2AD651D"

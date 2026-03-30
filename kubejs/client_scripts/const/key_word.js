@@ -148,11 +148,6 @@ const Player27TypeHover = Text.translatable('tooltips.kubejs.hover.player_27_typ
         Text.translatable('tooltips.kubejs.hover.player_27_type.1'),
     ]))
 
-const TimeStabilityHover = Text.translatable('tooltips.kubejs.hover.time_stability.0').gold().underlined()
-    .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.time_stability.0').gray(),
-        Text.translatable('tooltips.kubejs.hover.time_stability.1'),
-    ]))
 const UnstableHover = Text.translatable('tooltips.kubejs.hover.unstable.0').red().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.unstable.0').red(),
