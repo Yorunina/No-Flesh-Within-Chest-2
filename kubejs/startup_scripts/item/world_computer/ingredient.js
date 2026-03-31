@@ -13,4 +13,6 @@ StartupEvents.registry('item', event => {
     event.create('stable_substrate').texture('kubejs:item/materials/stable_substrate')
     event.create('amethyst_resonator').texture('kubejs:item/materials/amethyst_resonator')
     event.create('mantle_ore').texture('kubejs:item/materials/mantle_ore').maxStackSize(1)
+    event.create('colorful_dye').texture('kubejs:item/materials/colorful_dye')
+    event.create('colorful_slime_ball').texture('kubejs:item/materials/colorful_slime_ball')
 })

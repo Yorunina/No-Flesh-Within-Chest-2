@@ -51,4 +51,7 @@ ServerEvents.recipes(event => {
         ['create:chromatic_compound'],
         ['#forge:ingots/iron', '#forge:ingots/copper', '#forge:ingots/gold', '#forge:ingots/zinc', '#forge:gems/emerald', 'minecraft:coal', '#forge:gems/diamond', '#forge:dusts/redstone', '#forge:gems/lapis'], 20 * 20).superheated()
 
+    event.recipes.create.mixing(
+        ['kubejs:colorful_dye'],
+        ['kubejs:colorful_slime_ball', 'minecraft:red_dye', 'minecraft:green_dye', 'minecraft:blue_dye'], 20 * 20).superheated()
 })

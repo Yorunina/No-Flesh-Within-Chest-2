@@ -660,6 +660,15 @@
 		{
 			dependencies: ["32C2FE99D19140B3"]
 			id: "67C753F570C396A7"
+			rewards: [{
+				auto: "invisible"
+				id: "0C3B561B530CF573"
+				ignore_reward_blocking: true
+				isServer: false
+				remove: false
+				stage: "ftb_final_end"
+				type: "maa:astages"
+			}]
 			tasks: [{
 				id: "529757FEBBE26A1F"
 				type: "checkmark"

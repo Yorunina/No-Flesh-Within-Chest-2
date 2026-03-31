@@ -32,6 +32,7 @@
 			}]
 			subtitle: "获取类任务"
 			tasks: [{
+				icon: "minecraft:oak_log"
 				id: "49350BAE6BBF1546"
 				item: {
 					Count: 1

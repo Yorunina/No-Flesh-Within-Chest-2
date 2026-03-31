@@ -372,3 +372,17 @@ function PopItemFromAirdrop(level, entity, itemList) {
 function GetNearestPlayer(level, pos, radius) {
     return level.getNearestPlayer(pos.getX(), pos.getY(), pos.getZ(), radius, false)
 }
+
+/**
+ * 
+ * @param {Internal.GoalSelector} goalSelector 
+ * @param {String} goalName 
+ */
+function RemoveCustomGoalByName(goalSelector, goalName) {
+    goalSelector.getAvailableGoals().forEach(wrappedGoal => {
+        let pGoal = wrappedGoal.goal
+        if (!(pGoal instanceof $CustomGoal)) return
+        if (pGoal.name != goalName) return
+        goalSelector.removeGoal(pGoal)
+    })
+}

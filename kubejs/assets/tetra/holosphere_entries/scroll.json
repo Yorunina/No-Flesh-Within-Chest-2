@@ -1,0 +1,10 @@
+{
+    "item": "tetra:dynamic_handheld",
+    "archetype": "modular_scroll",
+    "icon": {
+        "textureLocation": "tetra:textures/gui/holo.png",
+        "textureX": 190,
+        "textureY": 218
+    },
+    "position": 8
+}

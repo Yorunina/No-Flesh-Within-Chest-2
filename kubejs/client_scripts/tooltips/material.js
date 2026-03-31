@@ -133,3 +133,19 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:tetra_scroll')
     .addDefault(Text.translatable('tooltips.kubejs.tetra_scroll.default.1').gray())
     .addShift(Text.translatable('tooltips.kubejs.tetra_scroll.shift.1'))
 )
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:infinity_dimension_interference')
+    .addDefault(Text.translatable('tooltips.kubejs.infinity_dimension_interference.default.1').gray())
+)
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:colorful_dye')
+    .addDefault((text, item) => {
+        return [GradientText(Text.translatable('tooltips.kubejs.colorful_dye.default.1'), '#de68c3', '#68deda')]
+    })
+)
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:colorful_slime_ball')
+    .addDefault((text, item) => {
+        return [GradientText(Text.translatable('tooltips.kubejs.colorful_slime_ball.default.1'), '#de68c3', '#68deda')]
+    })
+)

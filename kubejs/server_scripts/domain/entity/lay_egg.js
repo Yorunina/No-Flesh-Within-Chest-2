@@ -1,19 +1,15 @@
 // priority: 999
-/**
- * 
- * @param {Internal.PathfinderMob} entity 
- */
-function BloodLustGoal(entity) {
-    entity.goalSelector.addGoal(0, new $CustomGoal(
-        'ore_extraction',
+function NewLayEggGoal(entity) {
+    return new $CustomGoal(
+        'lay_egg',
         entity,
         /** @param {Internal.PathfinderMob} mob **/ mob => {
             // 何时能够使用
-            return true
+            return mob.persistentData.getInt('layEggTimer') <= mob.age
         },
         /** @param {Internal.PathfinderMob} mob **/ mob => {
             // 能否继续使用 
-            return true
+            return mob.persistentData.getInt('layEggTimer') <= mob.age
         },
         true, // 是否允许中断
         /** @param {Internal.PathfinderMob} mob **/ mob => {
@@ -25,20 +21,21 @@ function BloodLustGoal(entity) {
         false, // 是否每个tick都需要更新
         /** @param {Internal.PathfinderMob} mob **/ mob => {
             // tick
-            let selectBlock = FindNearestBlock(mob, 5, 1, 0, (curBlock) => {
-                if (curBlock.blockState.is('minecraft:stone')) {
+            let selectBlock = FindNearestBlock(mob, 6, 2, 0, (curBlock) => {
+                if (curBlock.blockState.is('minecraft:hopper')) {
                     return true
                 }
             })
             if (!selectBlock) return
             let curPos = mob.blockPosition()
-            let targetPos = selectBlock.getPos()
+            let targetPos = selectBlock.getPos().above()
             let dist = curPos.distSqr(targetPos)
-            if (dist <= 1.5) {
-                mob.level.setBlockAndUpdate(targetPos, Block.getBlock('minecraft:coal_ore').defaultBlockState())
+            if (dist <= 1) {
+                SpawnLootAtLocation(mob.level, targetPos, Utils.rollChestLoot(mob.getLootTable()).toArray())
+                mob.persistentData.putInt('layEggTimer', mob.age + 20 * 10)
             } else {
                 mob.navigation.moveTo(targetPos.x, targetPos.y, targetPos.z, 1)
             }
         },
-    ))
+    )
 }

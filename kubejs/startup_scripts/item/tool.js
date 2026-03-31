@@ -38,7 +38,6 @@ StartupEvents.registry('item', event => {
             return itemstack
         })
 
-    // todo
     event.create('infinity_dimension_interference')
         .texture('kubejs:item/tools/infinity_dimension_interference')
         .maxStackSize(1)

@@ -8,6 +8,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["473AA9B909ED8EB0"]
 			description: [
 				"很抱歉在上一个任务采用了特殊的奖励图标来吸引您点击。在数据统计上，具有吸引力的图标可以极大的提高您点击的可能性。"
 				""
@@ -21,6 +22,7 @@
 			]
 			icon: "minecraft:oak_log"
 			id: "38306E83FF2C4FA3"
+			invisible: true
 			rewards: [{
 				id: "3CD9E3C7F9AF1341"
 				item: "minecraft:apple"
@@ -28,16 +30,12 @@
 			}]
 			subtitle: "获取类任务"
 			tasks: [{
-				id: "25A92489BAA1582A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
-					}
-				}
+				count: 1L
+				icon: "minecraft:oak_log"
+				id: "72DE55E275C662B0"
+				kubeId: "ftb_final_end_2"
 				title: "任何种类原木"
-				type: "item"
+				type: "maa:kube"
 			}]
 			title: "砍下第一块原木"
 			x: 0.0d

@@ -1,0 +1,25 @@
+
+#WeatherRefind Client Settings
+[general]
+	#Enable custom weather particles
+	customParticlesEnabled = true
+	#Range around the player to spawn particles
+	#Range: 4 ~ 64
+	particleRange = 24
+	#Number of particles to spawn per cycle
+	#Range: 1 ~ 128
+	particleCount = 16
+	#Delay in ticks between particle spawn cycles
+	#Range: 0 ~ 20
+	particleTickDelay = 1
+	#Rain visual density multiplier (0.0 to 1.0)
+	#Range: 0.0 ~ 1.0
+	rainDensity = 0.3
+	#Snow visual density multiplier (0.0 to 1.0)
+	#Range: 0.0 ~ 1.0
+	snowDensity = 0.5
+	#Reduce vanilla rain rendering
+	reduceVanillaRain = true
+	#Reduce vanilla snow rendering
+	reduceVanillaSnow = true
+

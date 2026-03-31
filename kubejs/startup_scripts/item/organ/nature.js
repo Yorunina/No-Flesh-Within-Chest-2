@@ -38,4 +38,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:wolf_fang').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/wolf_fang')
 
     event.create('kubejs:rib_blade').maxStackSize(1).tag('kubejs:nature').tag('kubejs:bone').texture('kubejs:item/organs/nature/rib_blade')
+
+
+    event.create('kubejs:color_finder').maxStackSize(1).tag('kubejs:nature').tag('kubejs:bone').texture('kubejs:item/organs/nature/color_finder')
 })
