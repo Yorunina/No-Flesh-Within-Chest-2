@@ -55,4 +55,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:organ')
         .tag('kubejs:infected')
         .tag('kubejs:tumor')
+
+    event.create('kubejs:primal_heart')
+        .texture('kubejs:item/organs/infected/primal_heart')
+        .maxStackSize(1)
+        .tag('kubejs:infected')
+        .tag('kubejs:heart')
 })

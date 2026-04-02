@@ -310,6 +310,16 @@
 			x: -4.0d
 			y: -6.5d
 		}
+		{
+			id: "6A201868182AD3B9"
+			tasks: [{
+				id: "519C951C2AF08D1F"
+				item: "minecraft:oak_stairs"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
 	]
 	title: "零"
 }

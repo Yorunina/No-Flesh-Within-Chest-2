@@ -31,3 +31,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:rosy_tumor')
     .addDefault(Text.translatable('tooltips.kubejs.rosy_tumor.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.rosy_tumor.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:primal_heart')
+    .addDefault(Text.translatable('tooltips.kubejs.primal_heart.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.primal_heart.alt.1'))
+)

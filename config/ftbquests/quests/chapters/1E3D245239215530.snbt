@@ -1,4 +1,5 @@
 {
+	autofocus_id: "3059F62A16427246"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1E3D245239215530"
@@ -2077,9 +2078,11 @@
 			description: [
 				"大世界计算机已经预测到了&d创造马达&r的出现。"
 				""
-				"之所以目前还无人能够制作创造马达，原因为其需要一些特殊的条件——"
+				"现在我已经获得了创造马达的配方，但是由于创造马达严重破坏了该世界的对称性，我并不确定将其配方直接公开是否会影响整个世界的稳定性。"
 				""
-				"如若您在世界上已经通过工作台手动合成了&6超过100件&r物品，并且&6合成数量位列整个世界的首位&r，那么，您便会产生关于创造马达的新的感悟。"
+				"因此，相比于让我来决定创造马达配方的何去何从，不如让最精英的玩家来决定。"
+				""
+				"如若您能够在该世界中，&6进行最多次的虚拟矿脉开采（且至少100次）&r，那么您便可以选择性的公开或者私有化创造马达配方。"
 				""
 				"{@pagebreak}"
 				"公开配方会使所有人都可以制作创造马达。"
@@ -2099,56 +2102,16 @@
 			shape: "diamond"
 			subtitle: "大师的领悟"
 			tasks: [{
-				icon: "minecraft:crafting_table"
-				id: "5B7A5E8C6FF8829A"
-				leaderboard: "leaderboards:crafting_table_interactions"
+				icon: "createoreexcavation:drilling_machine"
+				id: "53B6BF72B0FC81A3"
+				leaderboard: "maa:exavate_times"
 				min: 100
 				rank: 1
-				title: "工作台制作数量称霸"
+				title: "虚拟矿脉开采次数称霸"
 				type: "leaderboards:rank_task"
 			}]
 			title: "大世界计算机之后"
 			x: 22.0d
-			y: 14.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["133A28D884F01479"]
-			description: [
-				"&7**  你好 NEO **&r"
-				""
-				"&6- 所需数据正在获取、下载、整理、压缩&r"
-				""
-				"&6- 必要信息已按约定返回&r"
-				""
-				"&6- 祝一切顺利&r"
-				""
-				"&7** 数据中断 **&r"
-			]
-			disable_toast: true
-			id: "1504B976EC5B23D9"
-			rewards: [{
-				auto: "enabled"
-				icon: "candlelight:note_paper_writeable"
-				id: "6B49F7512FBC1F09"
-				ignore_reward_blocking: true
-				kubeId: "narrative_level_info"
-				title: "获取上层叙事相关知识"
-				type: "maa:kube"
-			}]
-			secret: true
-			shape: "gear"
-			subtitle: "方舟已经出发"
-			tasks: [{
-				disable_toast: true
-				elapsedTime: 3600L
-				icon: "supplementaries:hourglass"
-				id: "2AD29786C103C8E7"
-				title: "返航"
-				type: "questsadditions:time"
-			}]
-			title: "返航"
-			x: 23.0d
 			y: 14.5d
 		}
 		{

@@ -22,6 +22,17 @@ LeaderboardsEvents.registryLeaderboards(event => {
 	)
 
 	event.registerByLeaderboard(
+		new ResourceLocation('maa:exavate_times'),
+		new LeaderboardFromStat(
+			new ResourceLocation('maa:exavate_times'),
+			Text.translatable('leaderboard.maa.exavate_times'),
+			MAARegistration.EXCAVATE_TIMES_STAT,
+			false,
+			LeaderboardFromStat.DEFAULT
+		)
+	)
+
+	event.registerByLeaderboard(
 		new ResourceLocation('infinity:worlds_destroyed_stat'),
 		new LeaderboardFromStat(
 			new ResourceLocation('infinity:worlds_destroyed_stat'),

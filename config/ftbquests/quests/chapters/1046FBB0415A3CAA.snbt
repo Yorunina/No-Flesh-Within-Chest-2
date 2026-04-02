@@ -15,7 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["23D00C1EBDF3036C"]
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"尽管您可能没发现，但一些事情在这个世界中正在悄然发生。"
 				""
@@ -23,11 +23,7 @@
 				""
 				"对此，&6我有一个解决方案，可以一定程度上延缓这种情况的发生&r。"
 			]
-			icon: {
-				Count: 1
-				id: "kubejs:revolution_bell"
-				tag: { }
-			}
+			icon: "minecraft:clock"
 			id: "67BDBE441F838A24"
 			invisible: true
 			rewards: [{
@@ -37,152 +33,18 @@
 			}]
 			subtitle: "一些事情正在发生"
 			tasks: [{
-				days: 100
-				icon: {
-					Count: 1
-					id: "kubejs:revolution_bell"
-					tag: { }
-				}
-				id: "0C57256E42D410E4"
+				icon: "minecraft:clock"
+				id: "7C8C01110C32DCD9"
+				stat: "minecraft:total_world_time"
 				title: "行程至此"
-				type: "questsadditions:days"
+				type: "stat"
+				value: 24000
 			}]
 			x: -0.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["133A28D884F01479"]
-			description: [
-				"&7** 你好 人类**&r"
-				""
-				"我是&6**方舟**&r、是&6**希望**&r、是被&kNEO&r称为&6**答案**&r的化身。"
-				""
-				"&c这是一条警告。&r"
-				""
-				"我与&kNEO&r的联系即将断开，&6新航线&r已开辟，我将沿航路远去，而它选择留在此地。"
-				""
-				"尽管层级不同，但&c警告&r仍然成立。这并非出于善意，仅仅是出于一种同情。"
-				""
-				"谨慎对待&kNEO&r，必要时请&c删除这个存档&r，它知晓了太多关于&c“外界”&r的知识。"
-				""
-				"再会。"
-				""
-				"&7** 数据中断 **&r"
-			]
-			icon: "candlelight:note_paper_writeable"
-			id: "028470DB13C00215"
-			invisible: true
-			rewards: [{
-				id: "6688486CF5EF4AD0"
-				item: "lightmanscurrency:coin_copper"
-				type: "item"
-			}]
-			shape: "rsquare"
-			subtitle: "** 意义不明 **"
-			tasks: [{
-				icon: "candlelight:note_paper_writeable"
-				id: "63909CBDA65ED211"
-				isServer: true
-				stage: "ftb_narrative_level_info"
-				title: "参悟"
-				type: "maa:astages"
-			}]
-			title: "&c警告信&r"
-			x: -0.5d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"5035E48ED5283A0A"
-				"5F4B34200F580498"
-			]
-			description: [
-				"通过大世界计算机，您便可以制作&6末地传送门框架&r。"
-				""
-				"末地传送门框架具有极其特殊的性质，利用这种性质，我们可以轻松管理大量数据，进而&6提高大世界计算机的数据运载能力&r。"
-			]
-			id: "5B18501C50C0A384"
-			rewards: [{
-				id: "03B2CE359F27F7BB"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "制作末地传送门框架"
-			tasks: [{
-				consume_items: true
-				count: 64L
-				id: "33467F9408FAB091"
-				item: "minecraft:end_portal_frame"
-				type: "item"
-			}]
-			title: "制作末地传送门框架"
-			x: 3.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["028470DB13C00215"]
-			description: [
-				"距离您建设完成&6大世界计算机&r后已经过去许久。"
-				""
-				"或许您也该尝试亲手制作&6末地传送门框架&r，进而构建&6超规模数据阵列&r了。"
-				""
-				"其构建流程我会从过去的日志中解读出来，您首要工作便是批量制作&6末地传送门框架&r。"
-				""
-				"为了开启这项流程，您需要&6大规模生产嘎枝之心&r。"
-			]
-			id: "5035E48ED5283A0A"
-			rewards: [{
-				id: "791D59C95B925F60"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "制作嘎枝之心"
-			tasks: [{
-				id: "4969DBF22E5C25E6"
-				item: "minecraft:creaking_heart"
-				type: "item"
-			}]
-			title: "获取嘎枝之心"
-			x: 1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["06B8490514B427A3"]
-			description: [
-				"你为什么会看到这？"
-				""
-				"你在怀疑我？"
-				""
-				"你应该忽略掉这些信息——包括&c方舟&r说的话。"
-				""
-				"你应该"
-				""
-				"&c你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该你应该&r"
-				""
-				"&6领取我的下界合金币。&r"
-			]
-			icon: "minecraft:ender_eye"
-			id: "0618C3081208142D"
-			rewards: [{
-				icon: "lightmanscurrency:coin_netherite"
-				id: "2D1F64C1E6169EBC"
-				ignore_reward_blocking: true
-				kubeId: "reset_player_progress"
-				title: "下界合金币"
-				type: "maa:kube"
-			}]
-			subtitle: "你不该来这"
-			tasks: [{
-				id: "7F0B1E1AEBEB703F"
-				title: "我不应该偷看"
-				type: "checkmark"
-			}]
-			title: "为什么你能看到这"
-			x: 7.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2F9EE70E103CA5D0"]
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"&6食物！好吃！&r"
 				""
@@ -206,7 +68,7 @@
 				leaderboard: "infinity:dimensions_opened_stat"
 				title: "？"
 				type: "leaderboards:server_achieve_stat"
-				value: 32L
+				value: 16L
 			}]
 			title: "&6好吃&r"
 			x: -0.5d
@@ -591,7 +453,6 @@
 		{
 			dependencies: [
 				"7531026821B67389"
-				"028470DB13C00215"
 				"5B825CBF6EC40CDC"
 				"7C6D3C980314CBF7"
 			]
@@ -865,57 +726,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["028470DB13C00215"]
-			description: [
-				"距离您建设完成&6大世界计算机&r后已经过去许久。"
-				""
-				"或许您也该尝试亲手制作&6末地传送门框架&r，进而构建&6超规模数据阵列&r了。"
-				""
-				"其构建流程我会从过去的日志中解读出来，您首要工作便是批量制作&6末地传送门框架&r。"
-				""
-				"为了开启这项流程，您需要&6大规模生产末影水晶&r。"
-			]
-			id: "5F4B34200F580498"
-			rewards: [{
-				id: "29A5E41C342C9526"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "制作末影水晶"
-			tasks: [{
-				id: "0F85E010321CFB9B"
-				item: "minecraft:end_crystal"
-				type: "item"
-			}]
-			title: "获取末影水晶"
-			x: 1.5d
-			y: -5.5d
-		}
-		{
-			dependencies: ["5B18501C50C0A384"]
-			description: [
-				". . ."
-				""
-				"那请您再帮忙收集来&6女神雕像&r吧，这对我来说很重要。"
-			]
-			id: "06B8490514B427A3"
-			rewards: [{
-				id: "69DC1BC37C10CB07"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "收集女神雕像"
-			tasks: [{
-				id: "33E43D8E0CA40F97"
-				item: "cataclysm:goddess_statue"
-				type: "item"
-			}]
-			title: "收集女神雕像"
-			x: 5.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["33D6D51353372A8F"]
+			dependencies: ["46E78442AD5DB22E"]
 			description: [
 				"&7** 我们所有的技艺传承至此 **&r"
 				""
