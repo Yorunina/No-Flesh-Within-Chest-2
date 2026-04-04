@@ -34,8 +34,8 @@ function HadUnderEternalWinter(server) {
  */
 function IncreaseEternalWinterCounter(server, num) {
     const persistentData = server.persistentData
-    let counter = persistentData.getInt('eternal_winter_counter') + num
-    persistentData.putInt('eternal_winter_counter', counter)
+    let counter = persistentData.getInt('eternalWinteCounter') + num
+    persistentData.putInt('eternalWinteCounter', counter)
     if (counter >= 100 && server.persistentData.getInt('isEternalWinter') == 0) {
         SetEternalWinterState(server, 1)
     }
@@ -47,8 +47,8 @@ function IncreaseEternalWinterCounter(server, num) {
  */
 function DecreaseEternalWinterCounter(server, num) {
     const persistentData = server.persistentData
-    let counter = persistentData.getInt('eternal_winter_counter') - num
-    persistentData.putInt('eternal_winter_counter', counter)
+    let counter = persistentData.getInt('eternalWinteCounter') - num
+    persistentData.putInt('eternalWinteCounter', counter)
     if (counter <= 0) {
         SetEternalWinterState(server, 2)
     }

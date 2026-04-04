@@ -386,3 +386,39 @@ function RemoveCustomGoalByName(goalSelector, goalName) {
         goalSelector.removeGoal(pGoal)
     })
 }
+
+/**
+ * 校验椅子是否被坐
+ * @param {Internal.BlockContainerJS} chairBlock 
+ * @param {Internal.Level} level 
+ * @returns {boolean}
+ */
+function IsAnyOnChair(chairBlock) {
+    const chairPos = chairBlock.pos
+    let seats = chairBlock.level.getEntitiesOfClass($Seat, new AABB.of(chairPos.getX(), chairPos.getY(), chairPos.getZ(), chairPos.getX() + 1.0, chairPos.getY() + 1.0, chairPos.getZ() + 1.0))
+    return !seats.isEmpty()
+}
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.PathfinderMob} mob 
+ * @param {BlockPos} pos 
+ * @param {number} seatHeight
+ * @param {Internal.Direction} direction
+ * @param {boolean} lock
+ * @returns {boolean}
+ */
+function SitOnChair(mob, pos, seatHeight, direction, lock) {
+    let level = mob.level
+    if (level.getEntitiesOfClass($Seat, new AABB.of(pos.getX(), pos.getY(), pos.getZ(), pos.getX() + 1.0, pos.getY() + 1.0, pos.getZ() + 1.0)).isEmpty()) {
+        // let seatYaw = direction.getYaw()
+        let seat = new $Seat(level)
+        seat.setPos(Vec3d.atBottomCenterOf(pos).add(0, seatHeight, 0))
+        // seat.setRotation(seatYaw, 0)
+        // $Seat.LOCK_YAW.setValue(seat, lock)
+        level.addFreshEntity(seat)
+        return mob.startRiding(seat)
+    }
+    return false
+}

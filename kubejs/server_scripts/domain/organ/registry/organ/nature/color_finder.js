@@ -1,7 +1,7 @@
 // priority: 500
 // todo
-// RegistryOrgan('kubejs:color_finder')
-//     .addScore('chestcavity:defense', 1.5)
+RegistryOrgan('kubejs:color_finder')
+    .addScore('chestcavity:defense', 1.5)
 
 /**
 * @param {OrganEventCustomData} customData
@@ -13,8 +13,8 @@
 function ColorFinderChestCavityTakeOn(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     if (!(entity instanceof $PathfinderMob)) return
-    RemoveCustomGoalByName(entity.goalSelector, 'lay_egg')
-    entity.goalSelector.addGoal(0, NewLayEggGoal(entity))
+    RemoveCustomGoalByName(entity.goalSelector, 'gula_challenge')
+    entity.goalSelector.addGoal(0, NewGulaChallengeGoal(entity))
 }
 
 /**
@@ -27,11 +27,11 @@ function ColorFinderChestCavityTakeOn(customData, event, organItem, organIndex, 
 function ColorFinderChestCavityTakeOff(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     if (!(entity instanceof $PathfinderMob)) return
-    RemoveCustomGoalByName(entity.goalSelector, 'lay_egg')
+    RemoveCustomGoalByName(entity.goalSelector, 'gula_challenge')
 }
 
-// RegistryOrganStrategy(
-//     new OrganStrategyModel('kubejs:color_finder')
-//         .addOnlyStrategy('organ_take_on', ColorFinderChestCavityTakeOn)
-//         .addOnlyStrategy('organ_take_off', ColorFinderChestCavityTakeOff)
-// )
+RegistryOrganStrategy(
+    new OrganStrategyModel('kubejs:color_finder')
+        .addOnlyStrategy('organ_take_on', ColorFinderChestCavityTakeOn)
+        .addOnlyStrategy('organ_take_off', ColorFinderChestCavityTakeOff)
+)

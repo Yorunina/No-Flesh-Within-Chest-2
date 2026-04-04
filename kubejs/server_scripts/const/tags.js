@@ -36,7 +36,22 @@ ServerEvents.tags('entity_type', event => {
 
 
 ServerEvents.tags('block', event => {
-
+    event.add('kubejs:chair_block', [
+        'refurbished_furniture:oak_chair',
+        'refurbished_furniture:spruce_chair',
+        'refurbished_furniture:birch_chair',
+        'refurbished_furniture:jungle_chair',
+        'refurbished_furniture:acacia_chair',
+        'refurbished_furniture:dark_oak_chair',
+        'refurbished_furniture:mangrove_chair',
+        'refurbished_furniture:cherry_chair',
+        'refurbished_furniture:crimson_chair',
+        'refurbished_furniture:warped_chair',
+        '#kaleidoscope_cookery:chair',
+    ])
+    event.add('kubejs:table_block', [
+        '#refurbished_furniture:tuckable',
+    ])
 })
 
 ServerEvents.tags('fluid', event => {
