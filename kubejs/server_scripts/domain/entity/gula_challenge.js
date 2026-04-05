@@ -1,4 +1,4 @@
-// priority: 999
+// priority: 501
 function NewGulaChallengeGoal(entity) {
     return new $CustomGoal(
         'gula_challenge',
@@ -11,7 +11,8 @@ function NewGulaChallengeGoal(entity) {
                 mob.persistentData.put('gulaChallenge', new $CompoundTag())
             }
             const persistentData = mob.persistentData.getCompound('gulaChallenge')
-            FindNearestBlockAround(level, pos, 6, 2, (curBlock) => {
+            let targetBlock = FindNearestBlockAround(level, pos, 6, 2, (curBlock) => {
+                if (curBlock.blockState.isAir()) return false
                 if (!curBlock.hasTag('kubejs:table_block')) return false
                 let pPos = curBlock.pos
                 for (let posOffset of [[1, 0, 0], [-1, 0, 0], [0, 0, 1], [0, 0, -1]]) {
@@ -26,6 +27,7 @@ function NewGulaChallengeGoal(entity) {
                 }
                 return false
             })
+            if (!targetBlock) return false
             return true
         },
         /** @param {Internal.PathfinderMob} mob **/ mob => {
@@ -37,8 +39,11 @@ function NewGulaChallengeGoal(entity) {
         /** @param {Internal.PathfinderMob} mob **/ mob => {
         },
         /** @param {Internal.PathfinderMob} mob **/ mob => {
+            const level = mob.level
             mob.unRide()
             RemoveCustomGoalByName(mob.goalSelector, 'gula_challenge')
+            mob.discard()
+            level.spawnParticles($ParticleTypes.SMOKE, false, mob.x, mob.y + 0.25, mob.z, 0, 0.2, 0, 30, 0.1)
         },
         false, // 是否每个tick都需要更新
         /** @param {Internal.PathfinderMob} mob **/ mob => {
@@ -48,7 +53,6 @@ function NewGulaChallengeGoal(entity) {
             const level = mob.level
             const persistentData = mob.persistentData.getCompound('gulaChallenge')
             if (persistentData.contains('waitingTimer') && persistentData.getInt('waitingTimer') > level.time) return
-
 
             if (persistentData.contains('targetPos')) {
                 let targetPos = ConvertNbt2Pos(persistentData.getCompound('targetPos'))
@@ -72,14 +76,22 @@ function NewGulaChallengeGoal(entity) {
             if (!persistentData.contains('targetDish')) {
                 if (!onTableBlock || onTableBlock.blockState.isAir()) {
                     let round = persistentData.getInt('round')
-                    if (round >= 7) return mob.persistentData.remove('gulaChallenge')
-                    let targetDish = GetGulaChallengeTargetDish(round)
-                    let plonkBlock = $PlonkRegistryItems.placed_items
-                    let plonkBlockState = plonkBlock.getBlock().defaultBlockState()
-                    plonkBlockState = plonkBlockState.setValue(BlockProperties.WATERLOGGED, $Boolean.FALSE)
-                    level.setBlockAndUpdate(onTablePos, plonkBlockState)
+                    level.setBlockAndUpdate(onTablePos, GetPlonkDefaultBlockState())
                     /**@type {Internal.TilePlacedItems} */
                     let plonkBlockEntity = level.getBlockEntity(onTablePos)
+
+                    if (round >= 7) {
+                        plonkBlockEntity.insertStack(Item.of('candlelight:note_paper_written',
+                            `{author:"§kGula§r",text:["
+                            ${Text.translatable(`tooltips.gula_challenge.text.7`).getString()}"],
+                            title:"${Text.translatable(`tooltips.gula_challenge.title.7`).getString()}"}`), 0)
+                        plonkBlockEntity.setChanged()
+                        plonkBlockEntity.clean()
+                        let nearestPlayer = level["getNearestPlayer(net.minecraft.world.entity.Entity,double)"](mob, 16.0)
+                        MAAUtils.onKubeTaskFinish('gula_challenge_success', nearestPlayer, (task, pPlayer, teamData) => teamData.addProgress(task, 1))
+                        return mob.persistentData.remove('gulaChallenge')
+                    }
+                    let targetDish = Item.of(GetGulaChallengeTargetDish(round))
                     plonkBlockEntity.insertStack(Item.of('candlelight:note_paper_written',
                         `{author:"§kGula§r",text:["${Text.translatable(`tooltips.gula_challenge.text.${round}`, targetDish.getHoverName().getString()).getString()}"],title:"${Text.translatable(`tooltips.gula_challenge.title.${round}`).getString()}"}`), 0)
                     plonkBlockEntity.setChanged()
@@ -95,23 +107,38 @@ function NewGulaChallengeGoal(entity) {
                     persistentData.putInt('waitingTimer', level.time + 20)
                 } else {
                     level.playSound(null, tablePos.getX(), tablePos.getY(), tablePos.getZ(), 'minecraft:entity.player.burp', mob.getSoundSource(), 1, 1)
+                    level.spawnParticles($ParticleTypes.HEART, true, tablePos.getX(), tablePos.getY(), tablePos.getZ(), 0.5, 0.5, 0.5, 20, 0.1)
                     persistentData.remove('isEating')
                     persistentData.remove('targetDish')
+                    mob.setMainHandItem(Item.empty)
+                    persistentData.putInt('waitingTimer', level.time + 20 * 2)
                 }
             } else if (persistentData.contains('targetDish')) {
                 let targetDish = Item.of(persistentData.getString('targetDish'))
                 if (onTableBlock.id == targetDish.id || (onTableBlock.item && onTableBlock.item.id == targetDish.id)) {
-                    level.removeBlock(targetPos, false)
-                    persistentData.putInt('isEating', level.time + 20 * 10)
-                    mob.setMainHandItem(targetDish)
+                    if (persistentData.getBoolean('findDish')) {
+                        persistentData.remove('findDish')
+                        level.removeBlock(onTablePos, false)
+                        persistentData.putInt('isEating', level.time + 20 * 10)
+                        mob.setMainHandItem(targetDish)
+                    } else {
+                        persistentData.putBoolean('findDish', true)
+                        persistentData.putInt('waitingTimer', level.time + 20 * 5)
+                    }
                 } else if (onTableBlock.entity && onTableBlock.entity instanceof $TilePlacedItems) {
                     let plonkItemTile = onTableBlock.entity
                     for (let i = 0; i < plonkItemTile.allItems.size(); i++) {
                         let curItem = plonkItemTile.getItem(i)
                         if (curItem.item.id == targetDish.id) {
-                            plonkItemTile.removeItem(i, 1)
-                            persistentData.putInt('isEating', level.time + 20 * 10)
-                            mob.setMainHandItem(targetDish)
+                            if (persistentData.getBoolean('findDish')) {
+                                persistentData.remove('findDish')
+                                plonkItemTile.removeItem(i, 1)
+                                persistentData.putInt('isEating', level.time + 20 * 10)
+                                mob.setMainHandItem(targetDish)
+                            } else {
+                                persistentData.putBoolean('findDish', true)
+                                persistentData.putInt('waitingTimer', level.time + 20 * 5)
+                            }
                             break
                         }
                     }
@@ -121,7 +148,6 @@ function NewGulaChallengeGoal(entity) {
     )
 }
 
-// todo 文本
 function GetGulaChallengeTargetDish(round) {
     switch (round) {
         case 0:

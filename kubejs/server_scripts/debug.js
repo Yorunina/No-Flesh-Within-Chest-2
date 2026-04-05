@@ -1,4 +1,9 @@
 // priority: 500
+ItemEvents.entityInteracted('stick', event => {
+    /**@type {Internal.PathfinderMob} */
+    const target = event.target
+    console.log(target.goalSelector.availableGoals)
+})
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player

@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
             waveCount = waveCount ? waveCount : 3
             let gatewayModifiers = []
             GatewayChaosModifierMapping.getAllValues(chaosIndicator).forEach(modifierBuilder => {
-                gatewayModifiers.push(modifierBuilder(levelIndicator, chaosIndicator))
+                gatewayModifiers = gatewayModifiers.concat(modifierBuilder(levelIndicator, chaosIndicator))
             })
 
             const entityTypeCount = Math.floor(levelIndicator / 20 + 2)

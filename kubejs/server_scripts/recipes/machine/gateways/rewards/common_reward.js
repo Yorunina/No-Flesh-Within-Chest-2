@@ -85,7 +85,7 @@ function eternalAltarGatewayTypeStackReward(levelIndicator, chaosIndicator, type
     let stackList = []
     // 必定掉落基础唤醒材料 1 ~ 2 + 随机几种特殊唤醒材料
     stackList.push(Item.of('kubejs:gateways_awake_stone_1', Math.floor(1.2 + Math.random())))
-    stackList.push(GatewaySpecialAwakeStoneWeightModel.getWeightRandomObjs(Math.floor(1 + Math.random() * (levelIndicator / 20 + 1))))
+    stackList = stackList.concat(GatewaySpecialAwakeStoneWeightModel.getWeightRandomObjs(Math.floor(1 + Math.random() * (levelIndicator / 20 + 1))))
     // 低概率掉落辅助材料，概率受层数影响
     if (Math.random() < 0.1 + 0.01 * levelIndicator) stackList.push(GatewayAuxiliaryMaterialWeightModel.getWeightRandomObj())
     // 低概率掉落提取物，概率受层数影响

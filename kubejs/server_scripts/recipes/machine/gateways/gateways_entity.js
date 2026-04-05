@@ -1,5 +1,4 @@
 // priority: 501
-
 function EntitySizeNbt(size) {
     let nbt = new $CompoundTag()
     nbt.putInt('', size)

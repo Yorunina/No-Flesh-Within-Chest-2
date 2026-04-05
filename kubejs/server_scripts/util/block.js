@@ -102,3 +102,12 @@ function FindNearestBlockAround(level, blockPos, searchRange, verticalSearchRang
     }
     return null
 }
+
+/**
+ * 
+ * @returns {Internal.BlockState}
+ */
+function GetPlonkDefaultBlockState() {
+    let plonkBlockState = $PlonkRegistryItems.placed_items.getBlock().defaultBlockState()
+    return plonkBlockState.setValue(BlockProperties.WATERLOGGED, $Boolean.FALSE)
+}

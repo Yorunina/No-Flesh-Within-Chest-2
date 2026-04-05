@@ -37,20 +37,10 @@ ServerEvents.tags('entity_type', event => {
 
 ServerEvents.tags('block', event => {
     event.add('kubejs:chair_block', [
-        'refurbished_furniture:oak_chair',
-        'refurbished_furniture:spruce_chair',
-        'refurbished_furniture:birch_chair',
-        'refurbished_furniture:jungle_chair',
-        'refurbished_furniture:acacia_chair',
-        'refurbished_furniture:dark_oak_chair',
-        'refurbished_furniture:mangrove_chair',
-        'refurbished_furniture:cherry_chair',
-        'refurbished_furniture:crimson_chair',
-        'refurbished_furniture:warped_chair',
-        '#kaleidoscope_cookery:chair',
+        'refurbished_furniture:oak_chair','refurbished_furniture:spruce_chair','refurbished_furniture:birch_chair','refurbished_furniture:jungle_chair','refurbished_furniture:acacia_chair','refurbished_furniture:dark_oak_chair','refurbished_furniture:mangrove_chair','refurbished_furniture:cherry_chair','refurbished_furniture:crimson_chair','refurbished_furniture:warped_chair','#kaleidoscope_cookery:chair','candlelight:crimson_chair', 'candlelight:cherry_chair', 'candlelight:chair', 'candlelight:oak_chair', 'candlelight:dark_oak_chair', 'candlelight:acacia_chair', 'candlelight:jungle_chair', 'candlelight:birch_chair', 'candlelight:spruce_chair', 'candlelight:warped_chair', 'candlelight:mangrove_chair', 'candlelight:bamboo_chair', 'bakery:iron_chair'
     ])
     event.add('kubejs:table_block', [
-        '#refurbished_furniture:tuckable',
+        '#refurbished_furniture:tuckable','#kaleidoscope_cookery:table','candlelight:dark_oak_big_table', 'candlelight:crimson_table', 'candlelight:crimson_big_table', 'candlelight:cherry_table', 'candlelight:cherry_big_table', 'candlelight:bamboo_table', 'candlelight:bamboo_big_table', 'bakery:iron_table', 'brewery:table', 'candlelight:dark_oak_table', 'candlelight:table', 'candlelight:side_table', 'candlelight:oak_table', 'candlelight:oak_big_table', 'candlelight:birch_table', 'candlelight:birch_big_table', 'candlelight:spruce_table', 'candlelight:spruce_big_table', 'candlelight:warped_big_table', 'candlelight:warped_table', 'candlelight:mangrove_big_table', 'candlelight:mangrove_table', 'candlelight:jungle_big_table', 'candlelight:jungle_table', 'candlelight:acacia_big_table', 'candlelight:acacia_table'
     ])
 })
 

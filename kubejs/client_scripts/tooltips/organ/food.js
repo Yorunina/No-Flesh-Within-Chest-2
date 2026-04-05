@@ -129,3 +129,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:void_stomach_pouch')
     .addAlt(Text.translatable('tooltips.kubejs.void_stomach_pouch.alt.2'))
     .addAlt(Text.translatable('tooltips.kubejs.void_stomach_pouch.alt.3'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:gula_beacon')
+    .addDefault(Text.translatable('tooltips.kubejs.gula_beacon.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.gula_beacon.alt.1'))
+)
