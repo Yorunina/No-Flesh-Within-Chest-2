@@ -5,7 +5,7 @@ const VenomOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:health', mean: -1, sigma: 0.5 }, 15)
 
 const VenomPotentialOrganDataWeightModel = new WeightRandomModel()
-    .addWeightRandom({ name: 'chestcavity:defense', mean: 0, sigma: 1 }, 10)
+    .addWeightRandom({ name: 'chestcavity:defense', mean: 1, sigma: 1.5 }, 30)
     .addWeightRandom({ name: 'chestcavity:strength', mean: 0, sigma: 1 }, 10)
     .addWeightRandom({ name: 'chestcavity:nerves', mean: 0, sigma: 0.5 }, 10)
     .addWeightRandom({ name: 'chestcavity:endurance', mean: 0, sigma: 0.5 }, 10)

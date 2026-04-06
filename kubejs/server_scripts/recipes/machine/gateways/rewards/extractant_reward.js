@@ -61,7 +61,7 @@ function ExtractantMaterial2Strategy(customData, machine, levelIndicator, chaosI
     ingots.forEach(pIngot => {
         stackList.push(Item.of(pIngot, Math.floor(levelIndicator * Math.random() / 2) + 1))
     })
-    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:desperate_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() + 2) * 0.1, 2))))
+    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:desperate_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() * 5 + 1) * 0.1, 2))))
     customData.rewardList.push(new GatewayStackListReward(stackList))
 }
 
@@ -80,7 +80,7 @@ function ExtractantMaterial3Strategy(customData, machine, levelIndicator, chaosI
     let randomCount = 1
     if (levelIndicator >= 30) randomCount++
     stackList.push(RandomGetN(TconModifierCrystalList, randomCount))
-    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:fear_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() + 2) * 0.01, 2))))
+    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:fear_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() * 3 + 2) * 0.01, 2))))
     customData.rewardList.push(new GatewayStackListReward(stackList))
 }
 
@@ -97,7 +97,7 @@ function ExtractantMaterial4Strategy(customData, machine, levelIndicator, chaosI
     let stackList = []
     let moneyCount = levelIndicator * 50
     stackList.push(ConvertMoneyIntoCoinItemList(CoinList, moneyCount))
-    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:reunion_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() + 2) * 0.01, 2))))
+    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:reunion_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() * 3 + 1) * 0.01, 2))))
     customData.rewardList.push(new GatewayStackListReward(stackList))
 }
 

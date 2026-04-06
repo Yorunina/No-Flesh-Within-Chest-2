@@ -6,5 +6,4 @@ StartupEvents.registry('item', event => {
     event.create('mixed_culture_medium').texture('kubejs:item/materials/mixed_culture_medium')
     // event.create('contaminated_culture_medium').texture('kubejs:item/materials/contaminated_culture_medium')
     event.create('proliferation_culture_medium').texture('kubejs:item/materials/proliferation_culture_medium')
-    // todo 新增特种培养液服务于秘密7
 })

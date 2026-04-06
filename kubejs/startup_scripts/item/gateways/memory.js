@@ -14,7 +14,6 @@ StartupEvents.registry('minecraft:item', event => {
         )
         .tag('curios:memory')
 
-    // todo
     event.create('kubejs:reunion_memory', 'basic')
         .texture('kubejs:item/curios/reunion_memory')
         .maxStackSize(1)
@@ -24,7 +23,7 @@ StartupEvents.registry('minecraft:item', event => {
             .dynamicAttribute(ctx => {
                 const item = ctx.getStack()
                 const nbt = item.getOrCreateTag()
-                ctx.modify('additionalentityattributes:dropped_experience', 'ReunionMemoryExperienceMultiplier', FloorFix(nbt.getFloat('attriValue'), 2), 'addition')
+                ctx.modify('attributeslib:experience_gained', 'ReunionMemoryExperienceMultiplier', FloorFix(nbt.getFloat('attriValue'), 2), 'addition')
             })
         )
         .tag('curios:memory')
@@ -96,6 +95,17 @@ StartupEvents.registry('minecraft:item', event => {
                 const nbt = item.getOrCreateTag()
                 ctx.modify('minecraft:generic.attack_damage', 'IncandescentMiracleAttackDamageAddition', nbt.getInt('value') * 0.01, 'addition')
             })
+        )
+        .tag('curios:miracle')
+
+
+    event.create('kubejs:primal_miracle', 'basic')
+        .texture('kubejs:item/curios/primal_miracle')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .modifyAttribute('minecraft:generic.max_health', 'PrimalMiracleHealthAddition', nbt.getInt('value') * 0.01, 'addition')
         )
         .tag('curios:miracle')
 })

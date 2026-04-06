@@ -22,7 +22,7 @@ EntityEvents.death(event => {
     const killer = event.source.actual
     if (!killer || !killer.isPlayer()) return
     const entity = event.entity
-    if (!entity.fireImmune()) return
+    if (entity.getRemainingFireTicks() < 600) return
     let curiosItemHandler = GetCuriosInventoryCap(killer)
     let miracleStackOpt = curiosItemHandler.getStacksHandler('miracle')
     if (!miracleStackOpt.isPresent()) return

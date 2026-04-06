@@ -220,3 +220,12 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:artificial_miracle_ticket')
     .addShift(Text.translatable('tooltips.kubejs.artificial_miracle_ticket.shift.1'))
     .addShift(Text.translatable('tooltips.kubejs.artificial_miracle_ticket.shift.2'))
 )
+
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:primal_miracle_ticket')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.primal_miracle_ticket.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.primal_miracle_ticket.shift.1'))
+    .addShift(Text.translatable('tooltips.kubejs.primal_miracle_ticket.shift.2'))
+)

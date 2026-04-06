@@ -18,28 +18,28 @@ EntityEvents.spawned(event => {
     if (AStages.serverHasStage('ftb_final_iteration_30', server)) {
         let maxHealthAttr = entity.getAttribute('minecraft:generic.max_health')
         if (maxHealthAttr) {
-            maxHealthAttr.addPermanentModifier(new $AttributeModifier(FinalMaxHealthModifierUUID, 'FinalMaxHealthModifier', spawnProp.getFloat('healthMult'), $Operation.MULTIPLY_TOTAL))
+            maxHealthAttr.addPermanentModifier(new $AttributeModifier(FinalMaxHealthModifierUUID, 'FinalMaxHealthModifier', spawnProp.getFloat('healthMult'), 'multiply_total'))
         }
         let attackDamageAttr = entity.getAttribute('minecraft:generic.attack_damage')
         if (attackDamageAttr) {
-            attackDamageAttr.addPermanentModifier(new $AttributeModifier(FinalAttackDamageModifierUUID, 'FinalAttackDamageModifier', spawnProp.getFloat('attackAdd'), $Operation.ADDITION))
+            attackDamageAttr.addPermanentModifier(new $AttributeModifier(FinalAttackDamageModifierUUID, 'FinalAttackDamageModifier', spawnProp.getFloat('attackAdd'), 'addition'))
         }
         let arrowDamageAttr = entity.getAttribute('attributeslib:arrow_damage')
         if (arrowDamageAttr) {
-            arrowDamageAttr.addPermanentModifier(new $AttributeModifier(FinalArrowDamageModifierUUID, 'FinalArrowDamageModifier', spawnProp.getFloat('attackAdd'), $Operation.ADDITION))
+            arrowDamageAttr.addPermanentModifier(new $AttributeModifier(FinalArrowDamageModifierUUID, 'FinalArrowDamageModifier', spawnProp.getFloat('attackAdd'), 'addition'))
         }
     } else if (AStages.serverHasStage('ftb_final_iteration_5', server)) {
         let maxHealthAttr = entity.getAttribute('minecraft:generic.max_health')
         if (maxHealthAttr) {
-            maxHealthAttr.addPermanentModifier(new $AttributeModifier(FinalMaxHealthModifierUUID, 'FinalMaxHealthModifier', spawnProp.getFloat('healthMult'), $Operation.MULTIPLY_TOTAL))
+            maxHealthAttr.addPermanentModifier(new $AttributeModifier(FinalMaxHealthModifierUUID, 'FinalMaxHealthModifier', spawnProp.getFloat('healthMult'), 'multiply_total'))
         }
         let attackDamageAttr = entity.getAttribute('minecraft:generic.attack_damage')
         if (attackDamageAttr) {
-            attackDamageAttr.addPermanentModifier(new $AttributeModifier(FinalAttackDamageModifierUUID, 'FinalAttackDamageModifier', spawnProp.getFloat('attackAdd'), $Operation.ADDITION))
+            attackDamageAttr.addPermanentModifier(new $AttributeModifier(FinalAttackDamageModifierUUID, 'FinalAttackDamageModifier', spawnProp.getFloat('attackAdd'), 'addition'))
         }
         let arrowDamageAttr = entity.getAttribute('attributeslib:arrow_damage')
         if (arrowDamageAttr) {
-            arrowDamageAttr.addPermanentModifier(new $AttributeModifier(FinalArrowDamageModifierUUID, 'FinalArrowDamageModifier', spawnProp.getFloat('attackAdd'), $Operation.ADDITION))
+            arrowDamageAttr.addPermanentModifier(new $AttributeModifier(FinalArrowDamageModifierUUID, 'FinalArrowDamageModifier', spawnProp.getFloat('attackAdd'), 'addition'))
         }
     }
 

@@ -33,5 +33,5 @@ StartupEvents.registry('item', event => {
     event.create('eternal_miracle_ticket').texture('kubejs:item/materials/eternal_miracle_ticket').tag('kubejs:gateways_awake_ticket')
     event.create('incandescent_miracle_ticket').texture('kubejs:item/materials/incandescent_miracle_ticket').tag('kubejs:gateways_awake_ticket')
     event.create('artificial_miracle_ticket').texture('kubejs:item/materials/artificial_miracle_ticket').tag('kubejs:gateways_awake_ticket')
-    // todo 新增通行证和闪亮饰品服务于秘密8
+    event.create('primal_miracle_ticket').texture('kubejs:item/materials/primal_miracle_ticket').tag('kubejs:gateways_awake_ticket')
 })

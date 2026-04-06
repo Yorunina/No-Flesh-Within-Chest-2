@@ -12,7 +12,7 @@ StartupEvents.registry('mob_effect', event => {
                     SpectralFireArmorDownUUID,
                     SpectralFireArmorDownIdentifier,
                     -1,
-                    $Operation.MULTIPLY_TOTAL)
+                    'multiply_total')
             )
         })
         .removeEffect((entity, attributeMap, lvl) => {
