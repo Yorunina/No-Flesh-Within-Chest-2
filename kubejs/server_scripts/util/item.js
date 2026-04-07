@@ -169,3 +169,24 @@ function GetEntityHeadItem(entity) {
     }
     return null
 }
+
+/**
+ * 
+ * @param {Player} player
+ * @param {string} curiosId 
+ * @returns 
+ */
+function IncrMiracleCuriosCounter(player, curiosId) {
+    let curiosItemHandler = GetCuriosInventoryCap(player)
+    let miracleStackOpt = curiosItemHandler.getStacksHandler('miracle')
+    if (!miracleStackOpt.isPresent()) return
+    let miracleStackHandler = miracleStackOpt.get()
+    let miraclelStacks = miracleStackHandler.getStacks()
+    if (miraclelStacks.getSlots() <= 0) return
+    miraclelStacks.allItems.forEach(pItem => {
+        if (!pItem.is(curiosId)) return
+        let nbt = pItem.getOrCreateTag()
+        nbt.putInt('value', nbt.getInt('value') + 1)
+        pItem.setNbt(nbt)
+    })
+}

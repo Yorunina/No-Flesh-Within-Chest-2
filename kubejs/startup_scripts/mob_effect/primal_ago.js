@@ -11,38 +11,60 @@ StartupEvents.registry('mob_effect', event => {
         .color(Color.DARK_PURPLE)
         .addEffect((entity, attributeMap, lvl) => {
             let maxHealthAttribute = attributeMap.getInstance('minecraft:generic.max_health')
-            if (maxHealthAttribute) maxHealthAttribute.addPermanentModifier(new $AttributeModifier(PrimalAgoHealthUpUUID, PrimalAgoHealthUpIdentifier, 0.5 * lvl, 'multiply_total'))
+            if (maxHealthAttribute) {
+                maxHealthAttribute.addPermanentModifier(new $AttributeModifier(PrimalAgoHealthUpUUID, PrimalAgoHealthUpIdentifier, Math.pow(1.5, lvl), 'multiply_total'))
+            }
 
             let attackDamageAttribute = attributeMap.getInstance('minecraft:generic.attack_damage')
-            if (!attackDamageAttribute) attackDamageAttribute.addPermanentModifier(new $AttributeModifier(PrimalAgoAttackDamageUpUUID, PrimalAgoAttackDamageUpIdentifier, 0.5 * lvl, 'multiply_total'))
+            if (attackDamageAttribute) {
+                attackDamageAttribute.addPermanentModifier(new $AttributeModifier(PrimalAgoAttackDamageUpUUID, PrimalAgoAttackDamageUpIdentifier, Math.pow(1.5, lvl), 'multiply_total'))
+            }
 
             let arrowDamageAttribute = attributeMap.getInstance('attributeslib:arrow_damage')
-            if (!arrowDamageAttribute) arrowDamageAttribute.addPermanentModifier(new $AttributeModifier(PrimalAgoArrowDamageUpUUID, PrimalAgoArrowDamageUpIdentifier, 0.5 * lvl, 'multiply_total'))
+            if (arrowDamageAttribute) {
+                arrowDamageAttribute.addPermanentModifier(new $AttributeModifier(PrimalAgoArrowDamageUpUUID, PrimalAgoArrowDamageUpIdentifier, Math.pow(1.5, lvl), 'multiply_total'))
+            }
 
             entity.heal(entity.getMaxHealth())
         })
         .removeEffect((entity, attributeMap, lvl) => {
-            let maxHealthAttribute = attributeMap.getInstance('minecraft:generic.max_health')
-            if (maxHealthAttribute) maxHealthAttribute.removePermanentModifier(PrimalAgoHealthUpUUID)
-            let attackDamageAttribute = attributeMap.getInstance('minecraft:generic.attack_damage')
-            if (attackDamageAttribute) attackDamageAttribute.removePermanentModifier(PrimalAgoAttackDamageUpUUID)
-            let arrowDamageAttribute = attributeMap.getInstance('attributeslib:arrow_damage')
-            if (arrowDamageAttribute) arrowDamageAttribute.removePermanentModifier(PrimalAgoArrowDamageUpUUID)
             const level = entity.level
-            if (level.isClientSide()) return
-            let nearbyMobs = GetEntityWithinRadius(level, entity.getPos(), 16, (pLevel, pMob) => {
-                if (pMob.isMonster() && pMob.hasEffect('kubejs:primal_ago') && !pMob.is(entity)) return true
+            RemovePrimalAgoAttribute(attributeMap)
+            let nearbyMobs = GetLivingWithinRadius(level, entity.blockPosition(), 16, (pLevel, pMob) => {
+                if (pMob.hasEffect('kubejs:primal_ago') && !pMob.is(entity)) return true
                 return false
             })
+
             if (nearbyMobs.length == 1) {
+                let pMob = nearbyMobs[0]
                 let oriEffect = pMob.getEffect('kubejs:primal_ago')
-                nearbyMobs[0].potionEffects.add('kubejs:primal_ago', -1, oriEffect.getAmplifier() + 1, false, false)
+                let oriAmplifier = oriEffect.getAmplifier()
+                pMob.removeEffectNoUpdate('kubejs:primal_ago')
+                RemovePrimalAgoAttribute(pMob.attributes)
+                pMob.potionEffects.add('kubejs:primal_ago', -1, oriAmplifier + 1, false, false)
                 return
             } else {
                 nearbyMobs.forEach(pMob => {
                     let oriEffect = pMob.getEffect('kubejs:primal_ago')
-                    pMob.potionEffects.add('kubejs:primal_ago', oriEffect.getDuration() + 200, oriEffect.getAmplifier() + 1, false, false)
+                    let oriAmplifier = oriEffect.getAmplifier()
+                    let oriDuration = oriEffect.getDuration()
+                    pMob.removeEffectNoUpdate('kubejs:primal_ago')
+                    RemovePrimalAgoAttribute(pMob.attributes)
+                    pMob.potionEffects.add('kubejs:primal_ago', oriDuration + 200, oriAmplifier + 1, false, false)
                 })
             }
         })
 })
+
+/**
+ * 
+ * @param {Internal.AttributeMap} attributeMap 
+ */
+function RemovePrimalAgoAttribute(attributeMap) {
+    let maxHealthAttribute = attributeMap.getInstance('minecraft:generic.max_health')
+    if (maxHealthAttribute) maxHealthAttribute.removePermanentModifier(PrimalAgoHealthUpUUID)
+    let attackDamageAttribute = attributeMap.getInstance('minecraft:generic.attack_damage')
+    if (attackDamageAttribute) attackDamageAttribute.removePermanentModifier(PrimalAgoAttackDamageUpUUID)
+    let arrowDamageAttribute = attributeMap.getInstance('attributeslib:arrow_damage')
+    if (arrowDamageAttribute) arrowDamageAttribute.removePermanentModifier(PrimalAgoArrowDamageUpUUID)
+}

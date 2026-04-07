@@ -4,7 +4,7 @@
  */
 function FinalDayEvent(event) {
     const server = event.server
-    if (AStages.serverHasStage('ftb_final_timer_start', server)) return
+    if (!AStages.serverHasStage('ftb_final_timer_start', server)) return
     server.playerList.getPlayers().forEach(player => {
         MAAUtils.onKubeTaskFinish('final_day_counter', player, (pTask, pPlayer, pTeamData) => {
             pTeamData.addProgress(pTask, 1)

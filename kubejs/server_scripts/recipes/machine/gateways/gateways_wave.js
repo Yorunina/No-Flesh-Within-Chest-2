@@ -42,4 +42,4 @@ const GatewayColorMapping = new PiecewiseMappingModel().addPiece(0, 10, Color.GR
 
 const GatewaySizeMapping = new PiecewiseMappingModel().addPiece(0, 20, GatewaySize.SMALL).addPiece(20, 50, GatewaySize.MEDIUM).addPiece(50, 100, GatewaySize.LARGE)
 
-const GatewayWaveCountMapping = new PiecewiseMappingModel().addPiece(0, 20, 3).addPiece(20, 40, 5).addPiece(40, 60, 10)
+const GatewayWaveCountMapping = new PiecewiseMappingModel().addPiece(0, 20, 3).addPiece(20, 40, 5).addPiece(40, 60, 7)

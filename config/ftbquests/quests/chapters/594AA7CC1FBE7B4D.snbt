@@ -30,7 +30,7 @@
 				""
 				"同时原有的异彩化合物产线需要扩大，两者规模需要匹配。"
 				""
-				"后续任务会用到。"
+				"利用这两者，你便可以做出&6缤纷之源&r。"
 			]
 			id: "574C74EEF58FDD85"
 			tasks: [{
@@ -81,15 +81,33 @@
 			y: -2.5d
 		}
 		{
+			dependencies: [
+				"783B0077E83DE572"
+				"5121A86698661215"
+				"14D2D38B5ACB1BC5"
+				"383B69FA2554F232"
+				"528DAC93DA6578E7"
+				"724FC0FEF605490A"
+				"19B781F578FC1D11"
+				"7E6C9359DD54DC4E"
+			]
+			description: [""]
 			id: "021D54858D50E409"
 			incompatible: ["32C2FE99D19140B3"]
-			tasks: [{
-				id: "0B137733A1969982"
-				item: "minecraft:stripped_oak_wood"
-				type: "item"
+			rewards: [{
+				id: "1E43211D6AE9C61B"
+				ignore_reward_blocking: true
+				kubeId: "ftb_final_end_2"
+				title: "见证我们的故事"
+				type: "maa:kube"
 			}]
-			title: "亲手撰写未来"
-			x: 3.5d
+			tasks: [{
+				id: "6AE151C38EA6ABEE"
+				title: "亲手重启这一切"
+				type: "checkmark"
+			}]
+			title: "让时间重启吧"
+			x: 4.0d
 			y: 0.5d
 		}
 		{
@@ -267,7 +285,17 @@
 				"20AA08D1E1347535"
 				"2D33BCD423DAC69A"
 			]
-			description: ["你得"]
+			description: [
+				"测试了很多次后，有一个隐藏通行证在&650阶级、0混乱、0类型&r的位置。"
+				""
+				"你需要在该位置获取对应的名为&6原初奇迹通行证&r，并且击败对应通行证的敌人，而后获取到&6源头之源的奇迹&r。"
+				""
+				"&6源头之源的奇迹&r在完成&6阶级大于50的门扉&r时会获得 1 的奇迹，你需要完成至少 10 次，以获得包&6含至少 10 奇迹数的该饰品&r。"
+				""
+				"将其放置在背包中，你便可以解锁隐藏任务。"
+				""
+				"祝好运。"
+			]
 			id: "65E545E172F28292"
 			rewards: [{
 				id: "0383077AEB90EFC5"
@@ -322,10 +350,8 @@
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
-			description: [""]
 			id: "14D2D38B5ACB1BC5"
 			invisible: true
-			subtitle: "回到最初吧"
 			tasks: [{
 				id: "0459EAF53A0A337D"
 				item: {
@@ -335,13 +361,12 @@
 				}
 				type: "item"
 			}]
-			title: "更深更远的地方"
+			title: "原初之心"
 			x: 0.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
-			description: [""]
 			id: "724FC0FEF605490A"
 			invisible: true
 			tasks: [{
@@ -386,7 +411,6 @@
 				"486E9213485BB076"
 				"2D33BCD423DAC69A"
 			]
-			description: [""]
 			id: "5121A86698661215"
 			invisible: true
 			tasks: [{
@@ -409,7 +433,6 @@
 				"02DEBE706168D957"
 				"2D33BCD423DAC69A"
 			]
-			description: [""]
 			id: "19B781F578FC1D11"
 			invisible: true
 			tasks: [{
@@ -450,6 +473,7 @@
 						]
 					}
 				}
+				title: "锚定原初之矛"
 				type: "item"
 			}]
 			x: 0.0d
@@ -457,15 +481,30 @@
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
-			description: [""]
 			id: "7E6C9359DD54DC4E"
 			invisible: true
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "kubejs:primal_miracle"
+					tag: { }
+				}
+				id: "1D1EE88C72F8CCBE"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "final_primal_miracle:[]"
+					}
+				}
+				title: "源头之源的奇迹 且 奇迹数≥10"
+				type: "item"
+			}]
 			x: 0.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
-			description: [""]
 			id: "528DAC93DA6578E7"
 			invisible: true
 			tasks: [{
@@ -494,7 +533,6 @@
 		}
 		{
 			dependencies: ["2D33BCD423DAC69A"]
-			description: ["特殊肿瘤"]
 			id: "383B69FA2554F232"
 			invisible: true
 			tasks: [{

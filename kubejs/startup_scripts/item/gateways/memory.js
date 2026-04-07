@@ -105,7 +105,11 @@ StartupEvents.registry('minecraft:item', event => {
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
             .canUnequip(() => true)
-            .modifyAttribute('minecraft:generic.max_health', 'PrimalMiracleHealthAddition', nbt.getInt('value') * 0.01, 'addition')
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('attributeslib:experience_gained', 'PrimalMiracleExperienceMultiplier', nbt.getInt('value') * 0.01, 'addition')
+            })
         )
         .tag('curios:miracle')
 })

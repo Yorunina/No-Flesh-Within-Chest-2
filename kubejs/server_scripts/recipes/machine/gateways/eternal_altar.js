@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
                 gatewayModifiers = gatewayModifiers.concat(modifierBuilder(levelIndicator, chaosIndicator))
             })
 
-            const entityTypeCount = Math.floor(levelIndicator / 20 + 2)
+            const entityTypeCount = Math.floor(levelIndicator / 20 + 1 + Math.floor(Math.random() * 2))
 
             /** @type {PiecewiseMappingModel} */
             let levelPiecewiseMapping = GatewayWaveEntityMapping.getNearestValue(levelIndicator)
@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
             let waves = []
             for (let i = 0; i < waveCount; i++) {
                 let maxWaveTime = 200
-                let points = Math.floor(100 * i + 250 + levelIndicator * 20 * (1 + i * 0.2)) / entityTypeCount
+                let points = Math.floor(20 * i + 200 + levelIndicator * 20 * (0.9 + i * 0.1)) / entityTypeCount
                 /** @type {StandardWaveEntityItemModel[]} */
                 let selectedEntityItems = waveEntityRandom.getWeightRandomObjs(entityTypeCount)
                 if (selectedEntityItems.length == 0) continue
@@ -103,12 +103,15 @@ function eternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicat
     const data = machine.getData()
     if (!data) return rewardList
     // 应用LevelModifier
-    let levelModifier = data.getFloat('levelModifier')
-    data.remove('levelModifier')
-    rewardList.push(new GatewayFunctionReward((ctx) => {
-        let targetLevel = Clamp(levelIndicator + levelModifier, 0, 60)
-        data.putFloat('level_indicator', targetLevel)
-    }))
+    if (data.contains('levelModifier')) {
+        let levelModifier = data.getFloat('levelModifier')
+        data.remove('levelModifier')
+        rewardList.push(new GatewayFunctionReward((ctx) => {
+            let targetLevel = Clamp(levelIndicator + levelModifier, 0, 60)
+            data.putFloat('level_indicator', targetLevel)
+        }))
+    }
+
     // 应用auxiliaryItem
     if (auxiliaryItem && !auxiliaryItem.isEmpty()) {
         let typeModifier = GatewayAuxiliaryMaterialTypeMap[auxiliaryItem.getId()]
@@ -123,10 +126,13 @@ function eternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicat
     } else {
         data.put('chaos_indicator', Clamp(chaosIndicator - levelModifier - 1, 0, 60))
     }
-    eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
 
-    // 应用extractantItem策略
+    if (levelIndicator >= 50) rewardList.push(new GatewayFunctionReward((ctx) => IncrMiracleCuriosCounter(ctx.summoner(), 'kubejs:primal_miracle')))
+
+    eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
+    // 门扉常规奖励
     rewardList.push(eternalAltarGatewayTypeStackReward(levelIndicator, chaosIndicator, typeIndicator))
+    // 应用extractantItem策略
     if (!extractantItem || extractantItem.isEmpty()) return rewardList
     const customData = {}
     customData.rewardList = []
