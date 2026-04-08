@@ -83,11 +83,19 @@
 				"加工台即是进行匠艺加工的核心方块。您可以将任何工具放置到加工台中间的空白处，即会显示该工具可供改造的部件。"
 			]
 			id: "5A1D7D83A92CCA53"
-			rewards: [{
-				id: "34DC7CDE840867B3"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "34DC7CDE840867B3"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "4FDF777E61EB30BF"
+					titleId: "kubejs:new_tinker"
+					type: "titles:title"
+				}
+			]
 			subtitle: "以锤锻态"
 			tasks: [{
 				block: "tetra:basic_workbench"
@@ -491,11 +499,19 @@
 				"倘若锻锤&6因故障而卡住无法正常收回&r，您仅需手持加工等级为4及其以上的锤子的&6对无法收回的部分右键&r即可。"
 			]
 			id: "75A6BEDA4695AFC6"
-			rewards: [{
-				id: "55E7314B4B818D7D"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "55E7314B4B818D7D"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "396EA469D30ABFDA"
+					titleId: "kubejs:forge_hammer"
+					type: "titles:title"
+				}
+			]
 			subtitle: "制作锻锤"
 			tasks: [{
 				id: "402C4AEE9BC0BE68"

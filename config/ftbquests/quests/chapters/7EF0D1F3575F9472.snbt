@@ -391,11 +391,19 @@
 				}
 			}
 			id: "5695B074C95D2D17"
-			rewards: [{
-				id: "5F111A5D9D7CF1A3"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5F111A5D9D7CF1A3"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "61D50915DB90A89B"
+					titleId: "kubejs:my_future"
+					type: "titles:title"
+				}
+			]
 			subtitle: "冒险故事圆满结束！"
 			tasks: [{
 				dimension: "minecraft:overworld"

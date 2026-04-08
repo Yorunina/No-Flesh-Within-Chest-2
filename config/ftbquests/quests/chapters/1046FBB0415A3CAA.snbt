@@ -712,6 +712,12 @@
 					title: "开放下界"
 					type: "maa:astages"
 				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "36135EB1EC993698"
+					titleId: "kubejs:dim_worm"
+					type: "titles:title"
+				}
 			]
 			subtitle: "维度已被稳定"
 			tasks: [{
@@ -959,11 +965,19 @@
 				}
 			}
 			id: "5B825CBF6EC40CDC"
-			rewards: [{
-				id: "2341040C03F8A9CC"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2341040C03F8A9CC"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "7ABE0B0BEC7B78AC"
+					titleId: "kubejs:valley_echo"
+					type: "titles:title"
+				}
+			]
 			subtitle: "追查到来源"
 			tasks: [{
 				id: "2D8D75E5A2727FF7"
@@ -1123,11 +1137,19 @@
 			description: ["&7** 已完成世界注入 **&r"]
 			icon: "create_connected:linked_transmitter"
 			id: "7C6D3C980314CBF7"
-			rewards: [{
-				id: "1A92A7BEF8F47617"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1A92A7BEF8F47617"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "6E6BBC777F707ACF"
+					titleId: "kubejs:world_wound"
+					type: "titles:title"
+				}
+			]
 			subtitle: "[特定频道的讯号]"
 			tasks: [{
 				id: "40818D4A6109E65B"
@@ -1223,17 +1245,25 @@
 				tag: { }
 			}
 			id: "1D8388DD29485B94"
-			rewards: [{
-				auto: "invisible"
-				icon: "minecraft:clock"
-				id: "010972700A058BC7"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "ftb_final_timer_start"
-				title: "&c启动终局计时器&r"
-				type: "maa:astages"
-			}]
+			rewards: [
+				{
+					auto: "invisible"
+					icon: "minecraft:clock"
+					id: "010972700A058BC7"
+					ignore_reward_blocking: true
+					isServer: true
+					remove: false
+					stage: "ftb_final_timer_start"
+					title: "&c启动终局计时器&r"
+					type: "maa:astages"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "1D39560EF684560B"
+					titleId: "kubejs:adventure_story"
+					type: "titles:title"
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			subtitle: "有始无终不成章"

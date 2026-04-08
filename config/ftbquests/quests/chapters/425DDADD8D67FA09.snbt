@@ -96,7 +96,7 @@
 					type: "item"
 				}
 				{
-					icon: "create:cogwheel"
+					icon: "titles:title_scroll_rare"
 					id: "12403FEE5FCA5124"
 					titleId: "kubejs:gearsmith"
 					type: "titles:title"
@@ -503,7 +503,7 @@
 					type: "item"
 				}
 				{
-					icon: "create:large_cogwheel"
+					icon: "titles:title_scroll_uncommon"
 					id: "288D903B8EFE4DA1"
 					titleId: "kubejs:mechanics_scholar"
 					type: "titles:title"

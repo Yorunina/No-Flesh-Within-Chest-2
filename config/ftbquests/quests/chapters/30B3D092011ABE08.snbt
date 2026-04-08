@@ -219,11 +219,19 @@
 			dependencies: ["2B8F82F33E55703A"]
 			description: ["由于未来的环境多变且复杂，无法确定是否需要旧的胸腔来执行某些仪式，因此建议您使用&6空注射器&r保存当前阶段的血样，以备不时之需。"]
 			id: "25E39232CC1DA79B"
-			rewards: [{
-				id: "34CBE601FE9971C5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "34CBE601FE9971C5"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "46564C8DA185467F"
+					titleId: "kubejs:sour_pickles"
+					type: "titles:title"
+				}
+			]
 			subtitle: "保留血样"
 			tasks: [{
 				id: "73796D47E076E82E"
@@ -510,11 +518,19 @@
 				"同样的，您在获得了贰阶胸腔后，请尽量保留几份注射器血样，因为我们很快就要踏上&6第三次扩容&r的道路了。"
 			]
 			id: "2D04772D78C4E72F"
-			rewards: [{
-				id: "534C2793C3F76211"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "534C2793C3F76211"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "67D207BDCFB0799C"
+					titleId: "kubejs:scapegoat"
+					type: "titles:title"
+				}
+			]
 			subtitle: "失活神经元肿瘤血样提取"
 			tasks: [{
 				id: "39C34260411CFDD2"
@@ -686,11 +702,19 @@
 				"在采摘后的血肉结构中，由于亮度会重新低于阈值，很快便会有新的蕾光体生成。"
 			]
 			id: "234F6E06965E6BEA"
-			rewards: [{
-				id: "7DBAEF88F22181DE"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7DBAEF88F22181DE"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "579020153CE7891B"
+					titleId: "kubejs:bring_up_me"
+					type: "titles:title"
+				}
+			]
 			subtitle: "获取蕾莓的快捷道路"
 			tasks: [{
 				id: "4987E24C5FFE701B"
@@ -738,11 +762,19 @@
 				"但不管怎么样，恭喜您完成了这一系列荒诞的任务。"
 			]
 			id: "23D00C1EBDF3036C"
-			rewards: [{
-				id: "69D5B9365393BEBC"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "69D5B9365393BEBC"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "451796D122D94BA5"
+					titleId: "kubejs:primal_chestcavity"
+					type: "titles:title"
+				}
+			]
 			shape: "square"
 			subtitle: "重归于此"
 			tasks: [{

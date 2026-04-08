@@ -767,11 +767,19 @@
 				}
 			}
 			id: "4C247D4E88F1A179"
-			rewards: [{
-				id: "03B99874E708FF9D"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "03B99874E708FF9D"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "4618F9DF74819AD0"
+					titleId: "kubejs:ender_dancer"
+					type: "titles:title"
+				}
+			]
 			subtitle: "冒险故事圆满结束！"
 			tasks: [{
 				dimension: "minecraft:overworld"

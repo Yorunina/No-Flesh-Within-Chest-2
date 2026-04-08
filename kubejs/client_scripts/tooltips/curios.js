@@ -25,7 +25,6 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:incandescent_miracle')
     })
 )
 
-// todo
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:primal_miracle')
     .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))

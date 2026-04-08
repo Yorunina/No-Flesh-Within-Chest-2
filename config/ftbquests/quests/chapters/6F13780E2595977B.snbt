@@ -79,7 +79,7 @@
 					type: "maa:astages"
 				}
 				{
-					icon: "titles:title_scroll_common"
+					icon: "titles:title_scroll_uncommon"
 					id: "0440DEA59DCDAB5F"
 					titleId: "kubejs:my_genesis"
 					type: "titles:title"
@@ -993,11 +993,19 @@
 			icon: "tetra:hammer_base"
 			id: "75096F8EF539CB29"
 			min_required_dependencies: 2
-			rewards: [{
-				id: "200258A8FE5462ED"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "200258A8FE5462ED"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "204C847EE288BC0F"
+					titleId: "kubejs:tinker_study"
+					type: "titles:title"
+				}
+			]
 			subtitle: "传古武器锻造之后"
 			tasks: [{
 				elapsedTime: 180L

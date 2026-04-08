@@ -247,11 +247,19 @@
 				"请使用&6切石机&r打磨您的肋骨，制成&6肋骨牙刃&r。"
 			]
 			id: "04BD8BC9319A7E1C"
-			rewards: [{
-				id: "177FCB0820108AA5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "177FCB0820108AA5"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "445CECC1351FFBE5"
+					titleId: "kubejs:rib_blade"
+					type: "titles:title"
+				}
+			]
 			subtitle: "到最初的路径"
 			tasks: [{
 				id: "17401A697353AE87"
@@ -347,7 +355,7 @@
 			}]
 			subtitle: "一种古老的生物抗排异方法"
 			tasks: [{
-				id: "1417449A79E0EDFE"
+				id: "51C6769251C449E4"
 				type: "checkmark"
 			}]
 			title: "逃离排异反应"
@@ -428,11 +436,19 @@
 				"因此，您不需要太过于关注肉块的生理状态——它终归是要归于此的。"
 			]
 			id: "5CF36FC89AB073E8"
-			rewards: [{
-				id: "2B21F7AD843FF0F8"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2B21F7AD843FF0F8"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_uncommon"
+					id: "2246016AAAAE2EA5"
+					titleId: "kubejs:flesh_blob"
+					type: "titles:title"
+				}
+			]
 			subtitle: "肉块的遗物"
 			tasks: [{
 				id: "6CB450636A1B360F"
