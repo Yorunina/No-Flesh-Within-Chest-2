@@ -2,8 +2,11 @@
 ItemEvents.entityInteracted('stick', event => {
     /**@type {Internal.PathfinderMob} */
     const target = event.target
-    console.log(target.goalSelector.availableGoals)
+    target.goalSelector.availableGoals.forEach(goal => {
+        console.log(goal.goal)
+    })
 })
+
 ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerPlayer} */
     const player = event.player
@@ -11,8 +14,6 @@ ItemEvents.rightClicked('stick', event => {
     const level = event.level
     const server = event.server
 
-    
-    player.give(Item.of('kubejs:experience_injection', {value: NBT.i(Math.pow(1, 2) + 1 * 8 + 159)}))
     // SetDaySpeed(1)
     // SetNightSpeed(1)
     // UpdatePlaysTimeStabilityBar(server, level, player)
@@ -98,47 +99,3 @@ ItemEvents.rightClicked('stick', event => {
 })
 
 // CreateWaypoint(player, pos, new Date().toLocaleString(), 0xFAED34)
-
-
-// .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
-//     if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
-//     if (oStack.isEmpty()) {
-//         RemoveBundleOneStack(stack).ifPresent(pStack => {
-//             PlayBundleRemoveSound(player)
-//             access.set(pStack)
-//         })
-//     } else if (oStack.is('ars_nouveau:source_jar')) {
-//         let added = AddItemIntoBundle(stack, oStack, 4, (pStack) => 1)
-//         if (added > 0) {
-//             PlayerBundleInsertSound(player)
-//             oStack.shrink(added)
-//         }
-//     }
-//     return true
-// })
-// .overrideStackedOnOther((stack, slot, action, player) => {
-//     if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
-//     let oStack = slot.getItem()
-//     if (oStack.isEmpty()) {
-//         PlayBundleRemoveSound(player)
-//         RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
-//     } else if (oStack.is('ars_nouveau:source_jar')) {
-//         let added = AddItemIntoBundle(stack, slot.safeTake(oStack.getCount(), 65535, player), 4, (pStack) => 1)
-//         if (added > 0) PlayerBundleInsertSound(player)
-//     }
-//     return true
-// })
-// .barWidth((stack) => {
-//     let stackList = GetBundleContents(stack)
-//     return Math.min(1 + 12 * stackList.length / 4, 13)
-// })
-// .barColor(() => Color.DARK_BLUE)
-// .tooltipImage((stack) => {
-//     let itemList = $NonNullList.create()
-//     GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
-//     return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
-// })
-// .canFitInsideContainerItems(false)
-
-
-

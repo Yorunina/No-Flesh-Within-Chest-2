@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/boss/netherite_ministrosity.json",
+  "entities": [
+    "cataclysm:netherite_ministrosity"
+  ]
+}

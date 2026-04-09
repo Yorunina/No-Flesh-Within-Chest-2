@@ -1,19 +1,12 @@
 {
   "defaultChestCavity": [
     {"item": "chestcavity:rotten_rib","position": 0},
-    {"item": "","position": 1},
     {"item": "chestcavity:rotten_spine","position": 2},
-    {"item": "","position": 3},
     {"item": "chestcavity:rotten_rib","position": 4},
-    {"item": "","position": 5},
     {"item": "chestcavity:rotten_rib","position": 6},
-    {"item": "","position": 7},
     {"item": "kubejs:draugr_skull","position": 8},
-    {"item": "","position": 9},
     {"item": "chestcavity:rotten_rib","position": 10},
-    {"item": "","position": 11},
     {"item": "chestcavity:rotten_rib","position": 12},
-    {"item": "","position": 13},
     {"item": "chestcavity:rotten_rib","position": 14}
   ],
   "baseOrganScores": [],

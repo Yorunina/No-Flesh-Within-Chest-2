@@ -1,0 +1,7 @@
+{
+  "chestcavity": "kubejs:cc_types/nether/ignited_servant.json",
+  "entities": [
+    "cataclysm:ignited_revenant",
+    "cataclysm:ignited_berserker"
+  ]
+}

@@ -171,13 +171,6 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"Name": "cataclysm:lionfish",
-				"Category": "monster"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
 				"Name": "cataclysm:maledictus",
 				"Category": "monster"
 			}

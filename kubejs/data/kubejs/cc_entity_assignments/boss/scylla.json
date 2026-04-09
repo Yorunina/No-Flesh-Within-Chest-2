@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/boss/scylla.json",
+  "entities": [
+    "cataclysm:scylla"
+  ]
+}

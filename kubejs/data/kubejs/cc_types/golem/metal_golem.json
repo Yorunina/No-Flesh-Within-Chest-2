@@ -2,8 +2,6 @@
     "defaultChestCavity": [],
     "baseOrganScores": [
       {"id": "chestcavity:health","value": "1"},
-      {"id": "chestcavity:detoxification","value": "1"},
-      {"id": "chestcavity:filtration","value": "1"},
       {"id": "chestcavity:nerves","value": "1"},
       {"id": "chestcavity:ease_of_access","value": "1"}
     ],

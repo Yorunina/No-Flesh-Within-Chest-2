@@ -154,6 +154,13 @@ const UnstableHover = Text.translatable('tooltips.kubejs.hover.unstable.0').red(
         Text.translatable('tooltips.kubejs.hover.unstable.1'),
         Text.translatable('tooltips.kubejs.hover.unstable.2'),
     ]))
+
+const SatenanceEffectHover = Text.translatable('tooltips.kubejs.hover.sustenance_effect.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.sustenance_effect.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.sustenance_effect.1'),
+    ]))
+    
 const ExtremeStrengthHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple(),

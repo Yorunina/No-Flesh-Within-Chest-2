@@ -1,6 +1,8 @@
 {
   "chestcavity": "kubejs:cc_types/undead/koboleton.json",
   "entities": [
-    "cataclysm:koboleton"
+    "cataclysm:koboleton",
+    "cataclysm:kobolediator",
+    "cataclysm:wadjet"
   ]
 }

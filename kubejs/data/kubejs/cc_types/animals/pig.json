@@ -11,13 +11,14 @@
     {"item": "chestcavity:animal_spleen","position": 8},
     {"item": "chestcavity:animal_liver","position": 9},
     {"item": "chestcavity:animal_stomach","position": 10},
+    {"item": "kubejs:pig_stomach","position": 11},
     {"item": "chestcavity:animal_intestine","position": 12},
     {"item": "chestcavity:animal_intestine","position": 13},
     {"item": "chestcavity:animal_appendix","position": 14},
-     {"item": "chestcavity:animal_rib","position": 15},
-     {"item": "chestcavity:animal_kidney","position": 16},
-     {"item": "chestcavity:animal_spine","position": 17},
-     {"item": "chestcavity:animal_kidney","position": 18}
+    {"item": "chestcavity:animal_rib","position": 15},
+    {"item": "chestcavity:animal_kidney","position": 16},
+    {"item": "chestcavity:animal_spine","position": 17},
+    {"item": "chestcavity:animal_kidney","position": 18}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/medium_terra"

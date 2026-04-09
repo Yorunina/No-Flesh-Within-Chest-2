@@ -1,15 +1,11 @@
 {
   "defaultChestCavity": [
-    {"item":"chestcavity:piston_muscle","position": 0},
-    {"item":"chestcavity:golem_core","position": 1},
-    {"item":"chestcavity:piston_muscle","position": 2},
-    {"item":"chestcavity:inner_furnace","position": 3},
-    {"item":"kubejs:coral_armor","position": 4},
-    {"item":"chestcavity:inner_furnace","position": 5},
-    {"item":"chestcavity:golem_plating","position": 6},
-    {"item":"chestcavity:golem_cable","position": 7},
-    {"item":"chestcavity:golem_plating","position": 8}
+    {"item":"kubejs:coral_armor","position": 4}
   ],
-  "baseOrganScores": [],
+  "baseOrganScores": [
+      {"id": "chestcavity:health","value": "1"},
+      {"id": "chestcavity:nerves","value": "1"},
+      {"id": "chestcavity:ease_of_access","value": "1"}
+  ],
   "inventoryType": "kubejs:cc_inventory_types/medium_golem"
 }

@@ -1,6 +1,8 @@
 {
   "chestcavity": "kubejs:cc_types/undead/draugr.json",
   "entities": [
-    "cataclysm:draugr"
+    "cataclysm:draugr",
+    "cataclysm:royal_draugr",
+    "cataclysm:elite_draugr"
   ]
 }

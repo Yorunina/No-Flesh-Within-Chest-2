@@ -1,22 +1,14 @@
 {
   "defaultChestCavity": [
     {"item": "kubejs:koboleton_rib","position": 0},
-    {"item": "","position": 1},
-    {"item": "","position": 2},
-    {"item": "","position": 3},
-    {"item": "kubejs:koboleton_rib","position": 4},
-    {"item": "","position": 5},
-    {"item": "","position": 6},
-    {"item": "","position": 7},
-    {"item": "kubejs:koboleton_spine","position": 8},
-    {"item": "","position": 9},
-    {"item": "","position": 10},
-    {"item": "","position": 11},
-    {"item": "","position": 12},
-    {"item": "kubejs:koboleton_coccyx","position": 13},
-    {"item": "","position": 14}
-
+    {"item": "kubejs:koboleton_rib","position": 6},
+    {"item": "kubejs:koboleton_rib","position": 7},
+    {"item": "kubejs:koboleton_spine","position": 10},
+    {"item": "kubejs:koboleton_rib","position": 13},
+    {"item": "kubejs:koboleton_rib","position": 14},
+    {"item": "kubejs:koboleton_coccyx","position": 16},
+    {"item": "kubejs:koboleton_rib","position": 18}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_undead"
+  "inventoryType": "kubejs:cc_inventory_types/medium_undead"
 }

@@ -177,7 +177,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:rat_ear')
     .addAlt(Text.translatable('tooltips.kubejs.rat_ear.alt.1', Text.gold('16')))
 )
 
-
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:wolf_fang')
     .addDefault(Text.translatable('tooltips.kubejs.wolf_fang.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.wolf_fang.alt.1', Text.gold('16')))
@@ -186,4 +185,14 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:wolf_fang')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:rib_blade')
     .addDefault(Text.translatable('tooltips.kubejs.rib_blade.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.rib_blade.alt.1', Text.gold('50%'), LuckHover))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:pig_stomach')
+    .addDefault(Text.translatable('tooltips.kubejs.pig_stomach.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.pig_stomach.alt.1', SatenanceEffectHover))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:allay_wing')
+    .addDefault(Text.translatable('tooltips.kubejs.allay_wing.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.allay_wing.alt.1'))
 )

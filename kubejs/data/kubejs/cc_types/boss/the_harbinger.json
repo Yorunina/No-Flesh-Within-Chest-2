@@ -1,6 +1,7 @@
 {
     "defaultChestCavity": [   
-        {"item": "kubejs:immortal_volcanic_rock","position": 1}
+        {"item": "kubejs:harbinger_lung","position": 0},
+        {"item": "kubejs:harbinger_lung","position": 2}
     ],
     "baseOrganScores": [],
     "inventoryType": "kubejs:cc_inventory_types/relic"

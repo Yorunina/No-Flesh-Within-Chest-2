@@ -1,6 +1,10 @@
 {
   "chestcavity": "kubejs:cc_types/animals/deepling.json",
   "entities": [
-    "cataclysm:deepling"
+    "cataclysm:deepling",
+    "cataclysm:deepling_angler",
+    "cataclysm:deepling_brute",
+    "cataclysm:deepling_priest",
+    "cataclysm:deepling_warlock"
   ]
 }

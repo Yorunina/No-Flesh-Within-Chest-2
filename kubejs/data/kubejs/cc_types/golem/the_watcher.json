@@ -1,11 +1,10 @@
 {
   "defaultChestCavity": [
-    {"item":"chestcavity:piston_muscle","position": 0},
-    {"item":"chestcavity:inner_furnace","position": 1},
-    {"item":"kubejs:watcher_probe","position": 2},
-    {"item":"chestcavity:golem_cable","position": 3},
-    {"item":"chestcavity:golem_core","position": 4}
+    {"item":"kubejs:watcher_probe","position": 2}
   ],
-  "baseOrganScores": [],
+  "baseOrganScores": [
+      {"id": "chestcavity:health","value": "1"},
+      {"id": "chestcavity:nerves","value": "1"}
+  ],
   "inventoryType": "kubejs:cc_inventory_types/small_golem"
 }

@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/boss/the_harbinger.json",
+  "entities": [
+    "cataclysm:the_harbinger"
+  ]
+}

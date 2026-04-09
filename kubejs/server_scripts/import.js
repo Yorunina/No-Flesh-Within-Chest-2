@@ -46,6 +46,8 @@ const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
 const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
 const $TitleManager = Java.loadClass('aurilux.titles.common.core.TitleManager')
 const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal')
+const $OwnableEntity = Java.loadClass('net.minecraft.world.entity.OwnableEntity')
+
 const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
 
 const $EvaluateChestCavityJS = Java.loadClass('net.tigereye.chestcavity.compat.kubejs.events.EvaluateChestCavityJS')
@@ -132,3 +134,4 @@ const $PlonkRegistryItems = Java.loadClass('com.breakinblocks.plonk.common.regis
 const $UseOnContext = Java.loadClass('net.minecraft.world.item.context.UseOnContext')
 const $ItemBlockPlacedItems = Java.loadClass('com.breakinblocks.plonk.common.item.ItemBlockPlacedItems')
 const $Boolean = Java.loadClass('java.lang.Boolean')
+const $ItemStackKey = Java.loadClass('com.wintercogs.beyonddimensions.api.storage.key.impl.ItemStackKey')

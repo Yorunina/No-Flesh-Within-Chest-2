@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/boss/ancient_remnant.json",
+  "entities": [
+    "cataclysm:ancient_remnant"
+  ]
+}

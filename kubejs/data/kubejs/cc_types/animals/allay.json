@@ -8,6 +8,7 @@
     {"item": "chestcavity:small_animal_muscle","position": 5},
     {"item": "chestcavity:small_animal_kidney","position": 6},
     {"item": "chestcavity:small_animal_stomach","position": 7},
+    {"item": "kubejs:allay_wing","position": 8},
     {"item": "chestcavity:small_animal_liver","position": 9},
     {"item": "chestcavity:small_animal_kidney","position": 10},
     {"item": "chestcavity:small_animal_appendix","position": 11},

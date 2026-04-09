@@ -204,6 +204,26 @@ function NavigateWithDegrade(mob, pos, speed) {
 }
 
 /**
+ * 
+ * @param {Internal.PathfinderMob} mob 
+ * @param {Vec3d} pos 
+ * @param {Number} speed 
+ * @returns 
+ */
+function NavigateWithDegradeVec3d(mob, pos, speed) {
+    if (!pos) return false
+    let navigation = mob.getNavigation()
+    if (navigation.isInProgress() && mob.isInFluidType()) {
+        mob.jumpControl.jump()
+    }
+    if (!navigation.isInProgress() || !navigation.targetPos.equals(pos)) {
+        navigation.moveTo(pos.x(), pos.y(), pos.z(), speed)
+        return true
+    }
+    return true
+}
+
+/**
 * 获取某个半径内的实体
 * @param {Internal.Level} level
 * @param {BlockPos} pos
@@ -261,8 +281,8 @@ function GetTamedEntityWithinRadius(level, player, radius) {
     let entityList = []
     entityAABBList.forEach(pEntity => {
         if (pEntity.position() && pEntity.position().distanceTo(pos) <= radius) {
-            if (pEntity instanceof $TamableAnimal) {
-                if (pEntity.getOwner() && pEntity.getOwner().is(player)) {
+            if (pEntity instanceof $OwnableEntity) {
+                if (pEntity.owner && pEntity.owner.is(player)) {
                     entityList.push(pEntity)
                 }
                 return
@@ -325,6 +345,32 @@ function GetItemEntityWithinRadius(level, pos, radius, entityTester) {
  */
 function GetNearestEntity(level, pos, radius, entityTester) {
     let area = AABB.of(pos.x - radius, pos.y - radius, pos.z - radius, pos.x + radius, pos.y + radius, pos.z + radius)
+    let entityAABBList = level.getEntitiesWithin(area)
+    if (entityAABBList.size() <= 0) return null
+    let result = null
+    let minDist = Number.MAX_VALUE
+    entityAABBList.forEach(entity => {
+        if (!entity.position()) return
+        if (!entityTester(level, entity)) return
+        let dist = entity.position().distanceTo(pos)
+        if (dist <= radius && dist < minDist) {
+            result = entity
+            minDist = dist
+        }
+    })
+    return result
+}
+
+/**
+ * 获取最近的实体
+ * @param {Internal.Level} level 
+ * @param {Vec3d} pos 
+ * @param {Number} radius 
+ * @param {function(Internal.Level, Internal.Entity):boolean} entityTester 
+ * @returns {Internal.Entity}
+ */
+function GetNearestEntityVec3d(level, pos, radius, entityTester) {
+    let area = AABB.of(pos.x() - radius, pos.y() - radius, pos.z() - radius, pos.x() + radius, pos.y() + radius, pos.z() + radius)
     let entityAABBList = level.getEntitiesWithin(area)
     if (entityAABBList.size() <= 0) return null
     let result = null
