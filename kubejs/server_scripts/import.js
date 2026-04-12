@@ -137,3 +137,4 @@ const $Boolean = Java.loadClass('java.lang.Boolean')
 const $ItemStackKey = Java.loadClass('com.wintercogs.beyonddimensions.api.storage.key.impl.ItemStackKey')
 
 const $ClientboundSetPassengersPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetPassengersPacket')
+const $EffectSmelt = Java.loadClass('com.hollingsworth.arsnouveau.common.spell.effect.EffectSmelt')

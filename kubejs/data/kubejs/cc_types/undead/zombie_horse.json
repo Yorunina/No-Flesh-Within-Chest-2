@@ -14,10 +14,10 @@
     {"item": "kubejs:rotten_intestine","position": 12},
     {"item": "kubejs:rotten_rib","position": 13},
     {"item": "kubejs:rotten_intestine","position": 14},
-     {"item": "kubejs:rotten_kidney","position": 15},
-     {"item": "kubejs:rotten_spine","position": 16},
-     {"item": "kubejs:rotten_kidney","position": 17},
-     {"item": "kubejs:rotten_intestine","position": 18}
+    {"item": "kubejs:rotten_kidney","position": 15},
+    {"item": "kubejs:rotten_spine","position": 16},
+    {"item": "kubejs:rotten_kidney","position": 17},
+    {"item": "kubejs:rotten_intestine","position": 18}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/medium_undead"

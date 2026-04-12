@@ -14,6 +14,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:deepling_star_gem').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/deepling_star_gem').tag('kubejs:gem')
     event.create('kubejs:drygmy_star_gem').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/drygmy_star_gem').tag('kubejs:gem')
     event.create('kubejs:starbuncle_star_gem').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/starbuncle_star_gem').tag('kubejs:gem')
+    event.create('kubejs:bookwyrm_star_gem').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/bookwyrm_star_gem').tag('kubejs:gem')
 
     event.create('kubejs:soul_cage').maxStackSize(1).maxDamage(50).texture('kubejs:item/organs/magic/soul_cage').tag('kubejs:magic')
     event.create('kubejs:soul_wing').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/soul_wing')

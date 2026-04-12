@@ -8,7 +8,7 @@
     {"item": "kubejs:insect_muscle","position": 5},
     {"item": "kubejs:insect_muscle","position": 6},
     {"item": "kubejs:insect_stomach","position": 7},
-    {"item": "crittersandcompanions:dragonfly_wing","position": 8,"count":1},
+    {"item": "kubejs:dragonfly_wing","position": 8},
     {"item": "kubejs:insect_muscle","position": 9},
     {"item": "kubejs:insect_muscle","position": 10},
     {"item": "kubejs:insect_muscle","position": 11},

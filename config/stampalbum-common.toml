@@ -109,4 +109,11 @@ autoUnlockOnEntityHurtBy = true
 enableEditMode = true
 #Show the category management button in the album header. Allows hiding/showing categories.
 enableCategoryManagement = true
+#Persist collection progress to a global config file and merge it across different saves/worlds
+enableCrossSaveProgress = true
+#Cross-save progress scope: 0=Global shared, 1=Per world/server
+#Range: 0 ~ 1
+crossSaveScope = 0
+#Use fallback icon preview for known-problem entities to avoid UI render corruption in the entity detail page
+entityPreviewSafeMode = false
 

@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/dracolotl.json",
+  "entities": [
+    "dracolotl:dracolotl"
+  ]
+}
