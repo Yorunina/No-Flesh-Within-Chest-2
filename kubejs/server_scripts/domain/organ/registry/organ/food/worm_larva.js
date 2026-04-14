@@ -24,11 +24,11 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
     let foodProperties = item.getFoodProperties(player)
     let foodHunger = foodProperties.getNutrition()
     let foodSaturation = foodProperties.getSaturationModifier() * foodHunger
-    let curSaturation = saturation + foodSaturation
-    nbt.putFloat('saturation', curSaturation)
-    let curDamage = organItem.getDamageValue() - foodHunger
-    if (curDamage <= 0) {
-        let ratio = curSaturation / (organItem.getMaxDamage() - curDamage)
+    let totalSaturation = saturation + foodSaturation
+    nbt.putFloat('saturation', totalSaturation)
+    let totalFoodHunger = (organItem.getMaxDamage() - organItem.getDamageValue()) - foodHunger
+    if (totalFoodHunger <= 0) {
+        let ratio = totalSaturation / (organItem.getMaxDamage() - totalFoodHunger)
         if (ratio >= 0.5) {
             let chestCavity = player.getChestCavityInstance()
             if (!chestCavity) return
@@ -71,7 +71,7 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
         let replaceItem = Item.of('kubejs:worm_of_taste')
         SetChestCavityOrgan(customData, player.chestCavityInstance, replaceItem, organIndex, slotType, true)
     } else {
-        organItem.setDamageValue(curDamage)
+        organItem.setDamageValue(organItem.getMaxDamage() - totalFoodHunger)
     }
 }
 
