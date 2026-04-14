@@ -24,7 +24,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('entity_type', event => {
-    event.add('ars_nouveau:drygmy_blacklist', BossEntityTypeList)
+    event.add('ars_nouveau:drygmy_blacklist', [])
 })
 
 

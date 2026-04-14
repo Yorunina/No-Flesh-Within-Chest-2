@@ -1,0 +1,42 @@
+{
+    "slotDefinitions": [
+        {"x": 24, "y": 49},
+        {"x": 42, "y": 49},
+        {"x": 78, "y": 49},
+        {"x": 96, "y": 49},
+        {"x": 114, "y": 49},
+        {"x": 150, "y": 49},
+        {"x": 168, "y": 49},
+        {"x": 24, "y": 67},
+        {"x": 60, "y": 67},
+        {"x": 78, "y": 67},
+        {"x": 96, "y": 67},
+        {"x": 114, "y": 67},
+        {"x": 132, "y": 67},
+        {"x": 168, "y": 67},
+        {"x": 42, "y": 85},
+        {"x": 78, "y": 85},
+        {"x": 96, "y": 85},
+        {"x": 114, "y": 85},
+        {"x": 150, "y": 85}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/medium_ender.png",
+    "playerInventoryPosition": {
+        "x": 16,
+        "y": 41
+    },
+    "titlePosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    },
+    "backgroundSize": {
+        "x": 209,
+        "y": 219
+    },
+    "inventoryLabelPosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    }
+}

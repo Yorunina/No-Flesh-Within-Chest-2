@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/bookwyrm.json",
+  "entities": [
+    "ars_nouveau:bookwyrm"
+  ]
+}

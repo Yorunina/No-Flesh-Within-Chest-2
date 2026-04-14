@@ -1,0 +1,14 @@
+{
+    "chestcavity": "kubejs:cc_types/golem/ars_golem.json",
+    "entities": [
+        "ars_nouveau:wixie",
+        "ars_nouveau:dummy",
+        "ars_nouveau:familiar_starbuncle",
+        "ars_nouveau:familiar_wixie",
+        "ars_nouveau:familiar_bookwyrm",
+        "ars_nouveau:familiar_drygmy",
+        "ars_nouveau:familiar_whirlisprig",
+        "ars_nouveau:familiar_amethyst_golem",
+        "ars_nouveau:amethyst_golem"
+    ]
+}

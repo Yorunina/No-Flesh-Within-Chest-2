@@ -14,10 +14,10 @@
     {"item": "kubejs:fireproof_intestine","position": 12},
     {"item": "kubejs:fireproof_intestine","position": 13},
     {"item": "kubejs:fireproof_appendix","position": 14},
-     {"item": "kubejs:fireproof_rib","position": 15},
-     {"item": "kubejs:fireproof_kidney","position": 16},
-     {"item": "kubejs:fireproof_spine","position": 17},
-     {"item": "kubejs:fireproof_kidney","position": 18}
+    {"item": "kubejs:fireproof_rib","position": 15},
+    {"item": "kubejs:fireproof_kidney","position": 16},
+    {"item": "kubejs:fireproof_spine","position": 17},
+    {"item": "kubejs:fireproof_kidney","position": 18}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/medium_nether"

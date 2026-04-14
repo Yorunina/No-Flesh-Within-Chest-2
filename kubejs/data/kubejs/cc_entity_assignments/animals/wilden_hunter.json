@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/animals/wilden_hunter.json",
   "entities": [
-    "ars_nouveau:wilden_hunter"
+    "ars_nouveau:wilden_hunter",
+    "ars_nouveau:wilden_stalker"
   ]
 }

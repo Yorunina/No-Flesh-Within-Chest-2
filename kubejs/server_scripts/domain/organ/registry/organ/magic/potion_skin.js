@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:potion_skin')
     .addScore('chestcavity:defense', 3)
-    .addScore('kubejs:magic_overload', -1)
 
 /**
  * @param {OrganEventCustomData} customData
@@ -14,8 +13,7 @@ function CalamityBoneSpurChestCavityUpdate(customData, event, organItem, organIn
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
-    let magicOverloadLevel = FloorAboveZero(chestCavity.getOrganScore('kubejs:magic_overload') / 5)
-    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:oakskin', 1 + magicOverloadLevel)
+    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:oakskin', 1)
 }
 
 /**

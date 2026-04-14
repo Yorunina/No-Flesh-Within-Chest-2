@@ -1,28 +1,38 @@
 // priority: 500
 RegistryOrgan('kubejs:dragon_blood_heart')
     .addScore('chestcavity:health', 2)
-    .addScore('kubejs:extreme_strength', 1)
-
+    .addScore('kubejs:dragon_blood', 1)
 
 /**
-* @param {OrganChestCavityUpdateStrategyCustomData} customData
-* @param {Internal.NetworkEventJS} event
-* @param {Internal.ItemStack} organItem
-* @param {number} organIndex
-* @param {string} slotType
-*/
-function DragonBloodHeartKeyActive(customData, event, organItem, organIndex, slotType) {
-    const player = event.player
-    let nervesScore = player.chestCavityInstance.getOrganScore('chestcavity:nerves')
-    let duration = 20 * (10 + nervesScore * 2)
-    player.potionEffects.add('kubejs:dragon_power', duration, 0, false, false)
-    player.addItemCooldown(organItem, 20 * 60)
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function DragonBloodHeartChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (!entity.isPlayer()) return
+    const chestCavity = event.chestCavity
+    AddSpellSelection(customData, chestCavity, 'kubejs:advance_dragon_breath', 1)
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function DragonBloodHeartTakeOff(customData, event, organItem, organIndex, slotType) {
+    const { entity, chestCavity } = event
+    if (!entity.isPlayer()) return
+    RemoveSpellSelectionBySpellId(customData, chestCavity, 'kubejs:advance_dragon_breath')
+}
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:dragon_blood_heart')
-        .addOnlyStrategy('key_active', DragonBloodHeartKeyActive)
+        .addOnlyStrategy('chest_cavity_update', DragonBloodHeartChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', DragonBloodHeartTakeOff)
 )
-
 

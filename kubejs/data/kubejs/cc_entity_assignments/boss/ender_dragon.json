@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:cc_types/boss/ender_dragon.json",
+    "entities": [
+        "minecraft:ender_dragon"
+    ]
+}

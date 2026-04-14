@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:dying_heart')
     .addScore('chestcavity:health', 0.5)
-    .addScore('kubejs:magic_overload', 2)
 
 /**
  * @param {OrganEventCustomData} customData
@@ -14,8 +13,7 @@ function DyingHeartChestCavityUpdate(customData, event, organItem, organIndex, s
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
-    let magicOverloadLevel = FloorAboveZero(chestCavity.getOrganScore('kubejs:magic_overload'))
-    AddSpellSelection(customData, chestCavity, 'kubejs:raise_overlord_undead', 1 + magicOverloadLevel)
+    AddSpellSelection(customData, chestCavity, 'kubejs:raise_overlord_undead', 1)
 }
 
 /**

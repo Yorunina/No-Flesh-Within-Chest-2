@@ -1,0 +1,25 @@
+{
+    "defaultChestCavity": [   
+        {"item": "kubejs:dragon_blood_muscle","position": 0},
+        {"item": "kubejs:dragon_blood_muscle","position": 1},
+        {"item": "kubejs:dragon_blood_rib","position": 2},
+        {"item": "kubejs:dragon_blood_heart","position": 3},
+        {"item": "kubejs:dragon_blood_rib","position": 4},
+        {"item": "kubejs:dragon_blood_muscle","position": 5},
+        {"item": "kubejs:dragon_blood_muscle","position": 6},
+        {"item": "kubejs:dragon_blood_muscle","position": 7},
+        {"item": "kubejs:dragon_blood_rib","position": 8},
+        {"item": "kubejs:dragon_blood_lung","position": 9},
+        {"item": "kubejs:dragon_blood_spine","position": 10},
+        {"item": "kubejs:dragon_blood_lung","position": 11},
+        {"item": "kubejs:dragon_blood_rib","position": 12},
+        {"item": "kubejs:dragon_blood_muscle","position": 13},
+        {"item": "kubejs:dragon_blood_kidney","position": 14},
+        {"item": "kubejs:dragon_blood_intestine","position": 15},
+        {"item": "kubejs:dragon_blood_stomach","position": 16},
+        {"item": "kubejs:dragon_blood_intestine","position": 17},
+        {"item": "kubejs:dragon_blood_kidney","position": 18}
+    ],
+    "baseOrganScores": [],
+    "inventoryType": "kubejs:cc_inventory_types/medium_ender"
+}

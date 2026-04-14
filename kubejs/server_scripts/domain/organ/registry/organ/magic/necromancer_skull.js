@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:necromancer_skull')
     .addScore('chestcavity:nerves', 1)
-    .addScore('kubejs:magic_overload', 1)
 
 /**
  * @param {OrganEventCustomData} customData
@@ -14,8 +13,7 @@ function NecromancerSkullChestCavityUpdate(customData, event, organItem, organIn
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
-    let magicOverloadLevel = FloorAboveZero(chestCavity.getOrganScore('kubejs:magic_overload'))
-    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:raise_dead', 6 + magicOverloadLevel)
+    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:raise_dead', 6)
 }
 
 /**

@@ -45,10 +45,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 let undeadLegsArmor = playerLegsArmor.isEmpty() ?
                     Item.of('minecraft:diamond_leggings') : playerLegsArmor
 
-
-                let spellPower = entity.getAttributeValue('irons_spellbooks:spell_power')
-                let schoolSpellPower = entity.getAttributeValue('irons_spellbooks:blood_spell_power')
-                let amplifier = spellPower * schoolSpellPower
+                let amplifier = spell.getSpellPower(ctx.spellLevel, entity)
 
                 for (let i = 0; i < 4; i++) {
                     let undead = new $SummonedZombie(level, entity, true)
@@ -63,7 +60,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                     undead.setDropChance('head', 0.0)
                     undead.setDropChance('legs', 0.0)
                     let targetPos = entity.getEyePosition().add(raiseOverlordUndeadSpawnPos[i])
-                    let spawnPos = $ISSUtils.moveToRelativeGroundLevel(level, targetPos, 10, 10)
+                    let spawnPos = ISSUtils.moveToRelativeGroundLevel(level, targetPos, 10, 10)
                     undead.setPos(spawnPos.x(), spawnPos.y(), spawnPos.z())
                     undead.setYHeadRot(entity.getYHeadRot())
                     undead.setOldPosAndRot()

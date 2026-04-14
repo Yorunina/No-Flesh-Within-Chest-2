@@ -1,6 +1,17 @@
 {
   "chestcavity": "kubejs:cc_types/animals/pillager.json",
   "entities": [
-    "minecraft:pillager"
+    "minecraft:pillager",
+    "illagerinvasion:provoker",
+    "illagerinvasion:invoker",
+    "illagerinvasion:necromancer",
+    "illagerinvasion:basher",
+    "illagerinvasion:sorcerer",
+    "illagerinvasion:archivist",
+    "illagerinvasion:inquisitor",
+    "illagerinvasion:marauder",
+    "illagerinvasion:alchemist",
+    "illagerinvasion:firecaller",
+    "illagerinvasion:surrendered"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "defaultChestCavity": [
-     {"item": "kubejs:fish_muscle","position": 0},
+    {"item": "kubejs:fish_muscle","position": 0},
     {"item": "kubejs:gills","position": 1},
     {"item": "kubejs:animal_heart","position": 2},
     {"item": "kubejs:gills","position": 3},

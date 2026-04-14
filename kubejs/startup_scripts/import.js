@@ -27,7 +27,6 @@ const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.Ab
 
 const $SummonedZombie = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedZombie')
 const $SummonedSkeleton = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton')
-const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')
 const $ExtendedEvokerFang = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.ExtendedEvokerFang')
 
 const $LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams')
@@ -43,3 +42,10 @@ const $CustomCraftingEffectOutcome = Java.loadClass('net.yiran.morerequirement.c
 const $ToolAction = Java.loadClass('net.minecraftforge.common.ToolAction')
 const $InfinityStats = Java.loadClass('net.lerariemann.infinity.registry.var.ModStats')
 const $PotionBuilder = Java.loadClass('dev.latvian.mods.kubejs.misc.PotionBuilder')
+const $EntityCastData = Java.loadClass('io.redspace.ironsspellbooks.spells.EntityCastData')
+const $AbstractConeProjectile = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.AbstractConeProjectile')
+const $ISSDamageSources = Java.loadClass('io.redspace.ironsspellbooks.damage.DamageSources')
+const $ISSDamageTypes = Java.loadClass('io.redspace.ironsspellbooks.damage.ISSDamageTypes')
+const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
+const $SpellDamageSource = Java.loadClass('io.redspace.ironsspellbooks.damage.SpellDamageSource')
+const $Player = Java.loadClass('net.minecraft.world.entity.player.Player')

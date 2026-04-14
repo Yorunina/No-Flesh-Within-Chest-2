@@ -14,8 +14,7 @@ function FrostEyeballChestCavityUpdate(customData, event, organItem, organIndex,
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
-    let magicOverloadLevel = FloorAboveZero(chestCavity.getOrganScore('kubejs:magic_overload'))
-    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:icicle', 10 + magicOverloadLevel * 2)
+    AddSpellSelection(customData, chestCavity, 'irons_spellbooks:icicle', 10)
 }
 
 /**

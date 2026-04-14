@@ -3,6 +3,7 @@
   "entities": [
     "minecraft:villager",
     "minecraft:wandering_trader",
-    "vinery:wandering_winemaker"
+    "vinery:wandering_winemaker",
+    "supplementaries:red_merchant"
   ]
 }

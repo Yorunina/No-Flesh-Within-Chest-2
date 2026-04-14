@@ -1,0 +1,10 @@
+{
+  "defaultChestCavity": [
+  ],
+  "baseOrganScores": [
+      {"id": "chestcavity:health","value": "1"},
+      {"id": "chestcavity:nerves","value": "1"},
+      {"id": "chestcavity:ease_of_access","value": "1"}
+  ],
+  "inventoryType": "kubejs:cc_inventory_types/small_terra"
+}

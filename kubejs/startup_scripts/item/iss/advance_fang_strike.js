@@ -17,10 +17,8 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const entity = ctx.entity
             let forward = entity.getForward().multiply(1, 0, 1).normalize()
             let start = entity.getEyePosition().add(forward.scale(1.5))
-
-            let spellPower = entity.getAttributeValue('irons_spellbooks:spell_power')
-            let schoolSpellPower = entity.getAttributeValue('irons_spellbooks:evocation_spell_power')
-            let damage = entity.getMaxHealth() * ctx.getSpellLevel() * spellPower * schoolSpellPower
+            
+            let damage = entity.getMaxHealth() * ctx.spell.getSpellPower(ctx.spellLevel, entity)
 
             for (let i = 0; i < 16; i++) {
                 let spawn = start.add(forward.scale(i))

@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/animals/starbuncle.json",
   "entities": [
-    "ars_nouveau:starbuncle"
+    "ars_nouveau:starbuncle",
+    "ars_nouveau:gift_starby"
   ]
 }

@@ -7,7 +7,6 @@
 // StampAlbumEvents.registerEntries(event => {
 //     event.addItemsToCategoryByTag('organ', 'kubejs:organ')
 //     event.registerAcquisitionSource('chest_open', 'chestcavity:chest_opener', '$mymod.source.fishing')
-    
 //     // event.addLore('kubejs:sea_bunny_skin', '测试文本')
 //     // event.addItemToCategory('organ', 'kubejs:mammary_gland')
 //     // event.addItemToCategory('organ', 'kubejs:moew_nose')

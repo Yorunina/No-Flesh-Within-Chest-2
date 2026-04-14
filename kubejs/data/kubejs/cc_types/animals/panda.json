@@ -1,7 +1,7 @@
 {
   "defaultChestCavity": [
     {"item": "kubejs:animal_rib","position": 0},
-    {"item": "kubejs:brutish_muscle","position": 1},
+    {"item": "kubejs:animal_muscle","position": 1},
     {"item": "kubejs:animal_lung","position": 2},
     {"item": "kubejs:animal_heart","position": 3},
     {"item": "kubejs:animal_lung","position": 4},

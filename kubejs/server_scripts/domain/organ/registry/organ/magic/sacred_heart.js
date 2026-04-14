@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:sacred_heart')
     .addScore('chestcavity:health', 1.5)
-    .addScore('kubejs:magic_overload', 1)
 
 /**
  * @param {OrganEventCustomData} customData

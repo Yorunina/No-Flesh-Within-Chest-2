@@ -1,6 +1,6 @@
 // priority: 2000
 const $ScoreType = 'chestcavity:filtration' ||'chestcavity:breath_recovery' ||'chestcavity:nutrition' ||'chestcavity:nerves' ||'chestcavity:strength' ||'chestcavity:health' ||'chestcavity:breath_capacity' ||'chestcavity:detoxification' ||'chestcavity:speed' ||'chestcavity:endurance' ||'chestcavity:luck' ||'chestcavity:defense' ||'chestcavity:digestion' ||'chestcavity:metabolism' ||'chestcavity:fire_resistant' ||'chestcavity:buoyant' ||'chestcavity:glowing' ||'chestcavity:knockback_resistant' ||'chestcavity:water_breath' ||'chestcavity:swim_speed'||'chestcavity:impact_resistant'||'chestcavity:ease_of_access' ||'kubejs:rosy' ||
-'kubejs:attack_dodge' || 'kubejs:creative_flight' || 'kubejs:extreme_fitness' || 'kubejs:extreme_strength' || 'kubejs:flying_speed' || 'kubejs:magic_capacity' || 'kubejs:dragon_blood' || 'kubejs:knockback' || 'kubejs:crit_chance' || 'kubejs:crit_damage' || 'kubejs:magic_overload' || 'kubejs:ice_spell_power' || 'kubejs:fire_spell_power' || 'kubejs:immunosuppression' || 'kubejs:primitivization'
+'kubejs:attack_dodge' || 'kubejs:creative_flight' || 'kubejs:extreme_fitness' || 'kubejs:extreme_strength' || 'kubejs:flying_speed' || 'kubejs:magic_capacity' || 'kubejs:dragon_blood' || 'kubejs:knockback' || 'kubejs:crit_chance' || 'kubejs:crit_damage' || 'kubejs:ice_spell_power' || 'kubejs:fire_spell_power' || 'kubejs:immunosuppression' || 'kubejs:primitivization' || 'kubejs:glowing'
 
 const OrganList = []
 const PseudoOrganList = []

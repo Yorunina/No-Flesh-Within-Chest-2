@@ -14,10 +14,10 @@
     {"item": "kubejs:intestine","position": 12},
     {"item": "kubejs:appendix","position": 13},
     {"item": "kubejs:muscle","position": 14},
-     {"item": "kubejs:rib","position": 15},
-     {"item": "kubejs:kidney","position": 16},
-     {"item": "kubejs:spine","position": 17},
-     {"item": "kubejs:kidney","position": 18}
+    {"item": "kubejs:rib","position": 15},
+    {"item": "kubejs:kidney","position": 16},
+    {"item": "kubejs:spine","position": 17},
+    {"item": "kubejs:kidney","position": 18}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/medium_terra"

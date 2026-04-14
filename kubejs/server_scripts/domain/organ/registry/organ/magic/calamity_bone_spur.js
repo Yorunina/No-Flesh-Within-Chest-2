@@ -14,8 +14,7 @@ function CalamityBoneSpurChestCavityUpdate(customData, event, organItem, organIn
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
-    let magicOverloadLevel = FloorAboveZero(chestCavity.getOrganScore('kubejs:magic_overload'))
-    AddSpellSelection(customData, chestCavity, 'kubejs:advance_fang_strike', 1 + magicOverloadLevel)
+    AddSpellSelection(customData, chestCavity, 'kubejs:advance_fang_strike', 1)
 }
 
 /**

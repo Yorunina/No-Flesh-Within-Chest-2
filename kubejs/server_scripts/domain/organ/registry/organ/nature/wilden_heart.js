@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:wilden_heart')
     .addScore('chestcavity:health', 1)
-    .addScore('kubejs:extreme_fitness', 2)
 
 /**
  * @param {OrganEventCustomData} customData
@@ -16,7 +15,7 @@ function WildenHeartEntityBeHurt(customData, event, organItem, organIndex, slotT
     if (event.amount <= entity.getHealth() + entity.getAbsorptionAmount()) return
     entity.setAbsorptionAmount(entity.getAbsorptionAmount() + event.amount)
     event.amount = 0
-    let replaceItem = Item.of('chestcavity:rotten_heart')
+    let replaceItem = Item.of('kubejs:rotten_heart')
     SetChestCavityOrgan(customData, chestCavity, replaceItem, organIndex, slotType, true)
 }
 
