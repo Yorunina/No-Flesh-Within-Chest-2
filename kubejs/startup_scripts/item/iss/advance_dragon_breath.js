@@ -5,7 +5,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setCooldownSeconds(10)
         .setBaseManaCost(5)
         .setManaCostPerLevel(1)
-        .setBaseSpellPower(0)
+        .setBaseSpellPower(1)
         .setSpellPowerPerLevel(1)
         .setCastType('continuous')
         .setSchool('irons_spellbooks:ender')
@@ -29,7 +29,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 let dragonBreathProjectile = level.createEntity('kubejs:advance_dragon_breath')
                 dragonBreathProjectile.setOwner(entity)
                 dragonBreathProjectile.setPos(entity.position().add(0, entity.getEyeHeight() * 0.7, 0))
-                dragonBreathProjectile.setDamage(Math.max(entity.chestCavityInstance.getOrganScore('kubejs:dragon_blood'), 1) * (1 + spell.getSpellPower(ctx.spellLevel, entity)))
+                dragonBreathProjectile.setDamage(Math.max(entity.chestCavityInstance.getOrganScore('kubejs:dragon_blood'), 1) * spell.getSpellPower(ctx.spellLevel, entity))
                 level.addFreshEntity(dragonBreathProjectile)
                 magicData.setAdditionalCastData(new $EntityCastData(dragonBreathProjectile))
             }

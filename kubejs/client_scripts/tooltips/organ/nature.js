@@ -202,3 +202,18 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:symbiocto_arm')
     .addAlt(Text.translatable('tooltips.kubejs.symbiocto_arm.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.symbiocto_arm.alt.2'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:bee_honey_stomach')
+    .addDefault(Text.translatable('tooltips.kubejs.bee_honey_stomach.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.bee_honey_stomach.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:explosion_bag')
+    .addDefault(Text.translatable('tooltips.kubejs.explosion_bag.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.explosion_bag.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.explosion_bag.alt.2'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:dragonfly_wing')
+    .addDefault(Text.translatable('tooltips.kubejs.dragonfly_wing.default.1').gray())
+)

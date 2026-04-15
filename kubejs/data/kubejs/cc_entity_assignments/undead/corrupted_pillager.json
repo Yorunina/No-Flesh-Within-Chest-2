@@ -1,0 +1,8 @@
+{
+  "chestcavity": "kubejs:cc_types/undead/corrupted_pillager.json",
+  "entities": [
+    "graveyard:corrupted_pillager",
+    "graveyard:corrupted_vindicator",
+    "graveyard:acolyte"
+  ]
+}

@@ -26,7 +26,7 @@ function RemoveBundleOneStack(stack) {
  * @param {number} index 
  * @returns 
  */
-function RemoveBundleOneItem(stack, index) {
+function RemoveBundleItem(stack, index, count) {
     let nbt = stack.getNbt()
     if (nbt == null || !nbt.contains('Items')) return
 
@@ -34,7 +34,7 @@ function RemoveBundleOneItem(stack, index) {
     if (index < 0 || index >= items.size()) return
 
     let pStack = $ItemStack.of(items.getCompound(index))
-    pStack.shrink(1)
+    pStack.shrink(count)
 
     if (pStack.isEmpty() || pStack.getCount() == 0) {
         items.remove(index)

@@ -1,11 +1,11 @@
 {
   "defaultChestCavity": [
     {"item": "kubejs:rib","position": 0},
-    {"item": "kubejs:saltwater_lung","position": 1},
-    {"item": "kubejs:saltwater_heart","position": 2},
-    {"item": "kubejs:saltwater_lung","position": 3},
+    {"item": "kubejs:gills","position": 1},
+    {"item": "kubejs:deepling_star_gem","position": 2},
+    {"item": "kubejs:gills","position": 3},
     {"item": "kubejs:rib","position": 4},
-    {"item": "kubejs:saltwater_muscle","position": 5},
+    {"item": "kubejs:muscle","position": 5},
     {"item": "kubejs:kidney","position": 6},
     {"item": "kubejs:spleen","position": 7},
     {"item": "kubejs:liver","position": 8},
@@ -13,9 +13,9 @@
     {"item": "kubejs:stomach","position": 10},
     {"item": "kubejs:intestine","position": 11},
     {"item": "kubejs:kidney","position": 12},
-    {"item": "kubejs:saltwater_muscle","position": 13},
+    {"item": "kubejs:muscle","position": 13},
     {"item": "kubejs:rib","position": 14},
-    {"item": "kubejs:saltwater_muscle","position": 15},
+    {"item": "kubejs:muscle","position": 15},
     {"item": "kubejs:spine","position": 16},
     {"item": "kubejs:appendix","position": 17},
     {"item": "kubejs:rib","position": 18}

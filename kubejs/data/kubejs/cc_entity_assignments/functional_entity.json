@@ -60,6 +60,8 @@
     "infinity:ant",
     "infinity:bishop",
     "graveyard:nameless_hanged",
-    "dummmmmmy:target_dummy"
+    "dummmmmmy:target_dummy",
+    "graveyard:ghouling",
+    "graveyard:falling_corpse"
   ]
 }

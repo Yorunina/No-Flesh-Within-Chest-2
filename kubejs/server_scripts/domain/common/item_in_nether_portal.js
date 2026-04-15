@@ -27,7 +27,6 @@ InfinityEvents.itemInPortal(event => {
     const itemStack = itemEntity.getItem()
     const level = event.getLevel()
     if (level.isClientSide()) return
-    console.log('1')
     // itemEntity.setPortalCooldown(200)
     
     const pos = event.getPos()

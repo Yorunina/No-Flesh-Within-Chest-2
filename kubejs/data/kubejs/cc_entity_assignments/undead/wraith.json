@@ -1,6 +1,8 @@
 {
   "chestcavity": "kubejs:cc_types/undead/wraith.json",
   "entities": [
-    "graveyard:wraith"
+    "graveyard:wraith",
+    "graveyard:reaper",
+    "graveyard:revenant"
   ]
 }

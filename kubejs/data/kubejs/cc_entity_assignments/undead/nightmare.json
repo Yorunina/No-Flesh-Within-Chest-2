@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/undead/nightmare.json",
+  "entities": [
+    "graveyard:nightmare"
+  ]
+}

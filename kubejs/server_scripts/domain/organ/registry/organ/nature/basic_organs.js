@@ -30,3 +30,5 @@ RegistryOrgan('kubejs:insect_intestine').addScore('chestcavity:nutrition', 1.5)
 RegistryOrgan('kubejs:insect_heart').addScore('chestcavity:health', 1)
 RegistryOrgan('kubejs:insect_caeca').addScore('chestcavity:metabolism', 1)
 RegistryOrgan('kubejs:insect_stomach').addScore('chestcavity:digestion', 1)
+
+RegistryOrgan('kubejs:gills').addScore('chestcavity:breath_recovery', -1).addScore('chestcavity:breath_capacity', 1).addScore('chestcavity:water_breath', 1)

@@ -4,4 +4,5 @@ ServerEvents.recipes(event => {
     event.shapeless('4x minecraft:glass', ['kubejs:clear_crystal', '#minecraft:sand'])
     event.remove({ id: 'torchmaster:frozen_pearl' })
     event.shapeless('torchmaster:frozen_pearl', ['minecraft:ender_pearl', 'minecraft:light_blue_dye'])
+    event.shapeless('crittersandcompanions:dragonfly_wing', ['kubejs:dragonfly_wing'])
 })

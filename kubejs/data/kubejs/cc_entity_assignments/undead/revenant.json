@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:cc_types/undead/revenant.json",
-  "entities": [
-    "graveyard:revenant"
-  ]
-}

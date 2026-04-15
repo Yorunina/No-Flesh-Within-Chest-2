@@ -2,6 +2,7 @@
   "chestcavity": "kubejs:cc_types/undead/zombie.json",
   "entities": [
     "minecraft:zombie",
-    "minecraft:zombie_villager"
+    "minecraft:zombie_villager",
+    "minecraft:giant"
   ]
 }

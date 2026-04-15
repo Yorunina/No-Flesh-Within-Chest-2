@@ -49,3 +49,4 @@ const $ISSDamageTypes = Java.loadClass('io.redspace.ironsspellbooks.damage.ISSDa
 const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
 const $SpellDamageSource = Java.loadClass('io.redspace.ironsspellbooks.damage.SpellDamageSource')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player')
+const $DevourJaw = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.devour_jaw.DevourJaw')
