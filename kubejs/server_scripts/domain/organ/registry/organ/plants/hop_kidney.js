@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:hop_kidney')
     .addScore('chestcavity:detoxification', 0.5)
     .addScore('chestcavity:filtration', 1.5)
     .addScore('chestcavity:photosynthesis', 0.5)
+    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

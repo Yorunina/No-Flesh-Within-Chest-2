@@ -2,7 +2,7 @@
 // priority: 500
 RegistryOrgan('kubejs:allay_wing')
     .addScore('chestcavity:speed', 1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.EvaluateChestCavityJS} event

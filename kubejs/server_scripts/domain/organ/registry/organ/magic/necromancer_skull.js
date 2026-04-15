@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:necromancer_skull')
     .addScore('chestcavity:nerves', 1)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event

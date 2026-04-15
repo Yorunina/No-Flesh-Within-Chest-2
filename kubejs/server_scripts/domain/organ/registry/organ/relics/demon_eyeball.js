@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:demon_eyeball')
     .addScore('kubejs:extreme_strength', 1)
     .addScore('chestcavity:defense', -2)
 
+
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.LivingHurtEvent} event 

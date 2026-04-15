@@ -640,7 +640,7 @@
     "tooltips.kubejs.wilden_heart.alt.1": "    §6★§r  当生物受到§6致命伤害§r时，该器官会衰变为§2腐烂的心脏§r，同时本次所受伤害将会全数转换成受伤者的伤害吸收",
     "item.kubejs.chimera_heart": "奇美拉心脏",
     "tooltips.kubejs.chimera_heart.default.1": "形状古怪类如心脏的造物",
-    "tooltips.kubejs.chimera_heart.alt.1": "    §6★§r  当玩家受到§6致命伤害§r时，该器官会陷入 3 分钟冷却，同时本次所受伤害将会全数转换成受伤者的伤害吸收",
+    "tooltips.kubejs.chimera_heart.alt.1": "    §6★§r  当玩家受到§6致命伤害§r时，该器官会陷入 §63§r 分钟冷却，同时本次所受伤害将会全数转换成受伤者的伤害吸收",
     "item.kubejs.shima_enaga_feather": "长尾山雀绒球",
     "tooltips.kubejs.shima_enaga_feather.default.1": "它根本这么大！",
     "item.kubejs.deer_horn": "鹿角",

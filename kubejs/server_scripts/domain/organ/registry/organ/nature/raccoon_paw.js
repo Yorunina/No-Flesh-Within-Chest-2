@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:raccoon_paw')
     .addScore('chestcavity:strength', 1)
     .addScore('kubejs:knockback', 3)
-
+    .setCanSpawn(true)
 
 
 /**

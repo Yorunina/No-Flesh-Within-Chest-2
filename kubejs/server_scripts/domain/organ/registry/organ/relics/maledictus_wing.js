@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:maledictus_wing')
     .addScore('chestcavity:speed', 2)
     .addScore('chestcavity:strength', 1)
     .addScore('kubejs:crit_chance', 1)
+    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

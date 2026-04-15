@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:bookwyrm_star_gem')
     .addScore('kubejs:magic_capacity', 1)
     .addScore('chestcavity:nerves', 1)
-
+    .setCanSpawn(true)
 /**
  * 
  * @param {any} customData 

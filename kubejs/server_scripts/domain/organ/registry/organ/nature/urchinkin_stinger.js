@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:urchinkin_stinger')
     .addScore('chestcavity:defense', 1.5)
     .addScore('chestcavity:endurance', 1)
-
+    .setCanSpawn(true)
 
 /**
 * @param {OrganEventCustomData} customData

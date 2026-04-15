@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:immortal_volcanic_rock')
     .addScore('chestcavity:strength', -1)
     .addScore('chestcavity:fire_resistant', -1)
 
+
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.EvaluateChestCavityJS} event

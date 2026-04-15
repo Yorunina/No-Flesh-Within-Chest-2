@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:hedgehog_thorn')
     .addScore('chestcavity:defense', 1)
     .addScore('kubejs:extreme_fitness', 1)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.LivingDamageEvent} event 

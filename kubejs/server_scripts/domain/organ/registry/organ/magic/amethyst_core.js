@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:amethyst_core')
     .addScore('kubejs:magic_capacity', 1)
     .addScore('chestcavity:health', 1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.LivingHurtEvent} event 

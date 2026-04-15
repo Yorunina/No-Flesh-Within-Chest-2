@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:wilden_heart')
     .addScore('chestcavity:health', 1)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

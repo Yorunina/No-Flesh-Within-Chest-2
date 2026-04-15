@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:prowler_rotating_shaft')
     .addScore('chestcavity:nerves', 0.5)
     .addScore('chestcavity:defense', -1)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.LivingDamageEvent} event 

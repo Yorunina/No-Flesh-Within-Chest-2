@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:ignited_armour')
     .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:fire_resistant', 1)
-
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

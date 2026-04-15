@@ -163,7 +163,12 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:cindaria_umbrella')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:wilden_heart')
     .addDefault(Text.translatable('tooltips.kubejs.wilden_heart.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.wilden_heart.alt.1', Text.gold('10')))
+    .addAlt(Text.translatable('tooltips.kubejs.wilden_heart.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:chimera_heart')
+    .addDefault(Text.translatable('tooltips.kubejs.chimera_heart.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.chimera_heart.alt.1'))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:leech_mouthpart')

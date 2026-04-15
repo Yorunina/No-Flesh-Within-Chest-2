@@ -2,7 +2,8 @@
 RegistryOrgan('kubejs:pig_stomach')
     .addScore('chestcavity:digestion', 1.5)
     .addScore('chestcavity:endurance', 1)
-
+    .setCanSpawn(true)
+    
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 

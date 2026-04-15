@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:dog_tail')
     .addScore('kubejs:extreme_fitness', 1)
     .addScore('chestcavity:strength', -1)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 

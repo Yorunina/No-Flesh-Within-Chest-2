@@ -2,7 +2,8 @@
 RegistryOrgan('kubejs:mammary_gland')
     .addScore('chestcavity:breath_capacity', 1)
     .addScore('chestcavity:knockback_resistant', -1)
-
+    .setCanSpawn(true)
+    
 const MammaryGlandRecipeMap = new Map()
 /**
  * 

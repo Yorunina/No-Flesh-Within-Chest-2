@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:cindaria_umbrella')
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:defense', -1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.OrganAddStatusEffectJS} event 

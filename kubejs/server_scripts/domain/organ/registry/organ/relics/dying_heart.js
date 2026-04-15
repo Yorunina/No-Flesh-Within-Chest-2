@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:dying_heart')
     .addScore('chestcavity:health', 0.5)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 

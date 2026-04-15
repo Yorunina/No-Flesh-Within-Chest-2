@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:fiery_core')
     .addScore('chestcavity:health', 0.5)
     .addScore('chestcavity:defense', -1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.EvaluateChestCavityJS} event
