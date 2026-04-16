@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:scylla_star_gem')
     .addScore('kubejs:magic_capacity', 3)
-
+    .setCanSpawn(true)
 
 /**
 * @param {OrganEventCustomData} customData

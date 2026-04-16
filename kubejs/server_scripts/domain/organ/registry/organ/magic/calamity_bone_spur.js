@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:calamity_bone_spur')
     .addScore('chestcavity:defense', 2)
     .addScore('kubejs:magic_capacity', 1)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 

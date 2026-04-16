@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:drygmy_star_gem')
     .addScore('chestcavity:nerves', 1)
     .addScore('kubejs:magic_capacity', 1)
-
+    .setCanSpawn(true)
 /**
  * 
  * @param {any} customData 

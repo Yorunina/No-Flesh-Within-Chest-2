@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:koi_fish_scale')
     .addScore('chestcavity:knockback_resistant', -0.5)
-
+    .setCanSpawn(true)
 /**
  * @param {AirdropDeathEventCustomData} customData 
  * @param {Internal.LivingEntityDeathEventJS} event 

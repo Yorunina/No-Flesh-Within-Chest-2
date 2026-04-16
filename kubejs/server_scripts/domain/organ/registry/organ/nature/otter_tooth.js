@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:otter_tooth')
     .addScore('chestcavity:strength', 1)
     .addScore('chestcavity:swim_speed', 1)
-
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

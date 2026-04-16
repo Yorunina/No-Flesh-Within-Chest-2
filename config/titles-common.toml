@@ -3,5 +3,5 @@ fragmentLoot = false
 #Set to false to disable players from setting nicknames.
 nickname = true
 #Set to false to prevent holiday starter titles being available
-holidayTitles = true
+holidayTitles = false
 

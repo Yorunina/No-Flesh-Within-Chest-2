@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:starbuncle_star_gem')
     .addScore('kubejs:magic_capacity', 2)
-
+    .setCanSpawn(true)
 /**
  * 
  * @param {any} customData 

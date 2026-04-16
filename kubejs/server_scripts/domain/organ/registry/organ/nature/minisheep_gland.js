@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:minisheep_gland')
     .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:buff_purging', 2)
-
+    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

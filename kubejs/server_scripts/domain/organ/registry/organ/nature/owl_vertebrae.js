@@ -3,7 +3,8 @@ RegistryOrgan('kubejs:owl_vertebrae')
     .addScore('chestcavity:nerves', 1)
     .addScore('chestcavity:defense', 0.5)
     .addScore('chestcavity:endurance', -1)
-
+    .setCanSpawn(true)
+    
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.OpenedEntityTickJS} event 

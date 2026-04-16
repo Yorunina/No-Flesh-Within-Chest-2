@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:boar_nose')
     .addScore('chestcavity:endurance', 2)
+    .setCanSpawn(true)
 
 
 /**

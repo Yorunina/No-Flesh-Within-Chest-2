@@ -13,10 +13,10 @@ gridColumns = 9
 roundedSlots = true
 #Tooltip detail level: 0=minimal, 1=normal, 2=verbose
 #Range: 0 ~ 2
-tooltipDetail = 1
+tooltipDetail = 0
 #Overall Stamp Album UI scale percent
 #Range: 75 ~ 160
-uiScalePercent = 100
+uiScalePercent = 120
 #Use a more compact two-page layout
 compactLayout = false
 #Number of columns used by the detail-page slot grid
@@ -27,7 +27,7 @@ detailSlotColumns = 4
 layoutMode = 1
 #Sort mode: 0=Name, 1=Status (unlocked first)
 #Range: 0 ~ 1
-sortMode = 1
+sortMode = 0
 #Enable the favorites system (star items)
 enableFavorites = true
 #Show visual progress bar in the album header
@@ -37,10 +37,7 @@ showUnlockTime = true
 #Filter mode: 0=All, 1=Unlocked, 2=Locked, 3=Favorites, 4=Recently Unlocked
 #Range: 0 ~ 4
 filterMode = 0
-#Group mode: 0=By Mod, 1=By Letter, 2=By Status
-#Range: 0 ~ 2
-groupMode = 0
-#Locked item display style: 0=Silhouette (grey tint + overlay), 1=Lock icon in corner, 2=Question mark only
+#Locked item display style: 0=Silhouette (grey tint + overlay), 1=Lock icon in corner (full color), 2=Question mark only
 #Range: 0 ~ 2
 lockedDisplayStyle = 0
 #Show recipe information in the detail view
@@ -50,7 +47,7 @@ showProperties = true
 #Show acquisition section in the detail view
 showAcquisition = true
 #Show a toast notification popup when items are unlocked during gameplay
-showUnlockToast = true
+showUnlockToast = false
 #Automatically unlock items when the player uses (right-clicks) them
 autoUnlockOnUse = true
 #Automatically unlock items when the player equips them (armor/offhand)
@@ -70,23 +67,23 @@ autoUnlockOnInventoryScan = false
 inventoryScanIntervalTicks = 100
 #Unlock notification style: 0=Toast only, 1=Chat only, 2=Both, 3=None
 #Range: 0 ~ 3
-unlockNotificationStyle = 0
+unlockNotificationStyle = 3
 #Show the unlock source (pickup, craft, etc.) in the toast notification
-showUnlockSourceInToast = true
+showUnlockSourceInToast = false
 #Play a sound effect when items are unlocked
-playUnlockSound = true
+playUnlockSound = false
 #Duration (in milliseconds) to display unlock toasts. 0 uses default (3500ms)
 #Range: 0 ~ 10000
 unlockToastDuration = 0
 #Show a separate toast notification when entities are unlocked
-showEntityUnlockToast = true
+showEntityUnlockToast = false
 #Number of unlocks within a short time before showing a batch toast instead of individual ones
 #Range: 1 ~ 20
 toastCoalesceThreshold = 3
 #Show vanilla item tooltip info (enchantments, attributes, durability etc.) in album tooltips
-showVanillaTooltipInAlbum = true
+showVanillaTooltipInAlbum = false
 #Enable the entity album feature. When enabled, entities can be tracked and unlocked similar to items.
-enableEntityAlbum = true
+enableEntityAlbum = false
 #Automatically unlock entities when the player kills them
 autoUnlockOnEntityKill = true
 #Automatically unlock entities when the player interacts with them (right-click)
@@ -110,10 +107,15 @@ enableEditMode = true
 #Show the category management button in the album header. Allows hiding/showing categories.
 enableCategoryManagement = true
 #Persist collection progress to a global config file and merge it across different saves/worlds
-enableCrossSaveProgress = true
+enableCrossSaveProgress = false
 #Cross-save progress scope: 0=Global shared, 1=Per world/server
 #Range: 0 ~ 1
-crossSaveScope = 0
-#Use fallback icon preview for known-problem entities to avoid UI render corruption in the entity detail page
-entityPreviewSafeMode = false
+crossSaveScope = 1
+#Enable the structure album feature. When enabled, structures can be tracked and unlocked by exploring.
+enableStructureAlbum = false
+#Automatically unlock structures when the player enters their bounding box
+autoUnlockOnStructureEnter = true
+#How often (in ticks) to scan for structure proximity. Only used when structure album is enabled.
+#Range: 20 ~ 6000
+structureScanIntervalTicks = 100
 

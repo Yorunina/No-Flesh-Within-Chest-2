@@ -1,6 +1,8 @@
 // priority: 500
 RegistryOrgan('kubejs:moew_nose')
     .addScore('chestcavity:luck', 1.5)
+    .setCanSpawn(true)
+
 const MoewLanguageCharCodeMap = [
     Text.translatable('msg.kubejs.moew_nose.char_code.1').getString(),
     Text.translatable('msg.kubejs.moew_nose.char_code.2').getString(),

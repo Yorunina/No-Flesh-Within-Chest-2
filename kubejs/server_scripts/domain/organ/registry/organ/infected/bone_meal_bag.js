@@ -3,6 +3,7 @@
 RegistryOrgan('kubejs:bone_meal_bag')
     .addScore('chestcavity:digestion', 2)
     .addScore('chestcavity:detoxification', -0.5)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:giant_claw')
     .addScore('kubejs:extreme_strength', 1)
     .addScore('chestcavity:luck', 1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.LivingHurtEvent} event 

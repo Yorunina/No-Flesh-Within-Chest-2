@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:red_wolf_beard')
     .addScore('chestcavity:strength', 1)
+    .setCanSpawn(true)
 
 const RedWolfBeardTempSpeedUpUUID = UUID.fromString('C8A46567-E000-48B8-8846-BD2946D4D51F')
 

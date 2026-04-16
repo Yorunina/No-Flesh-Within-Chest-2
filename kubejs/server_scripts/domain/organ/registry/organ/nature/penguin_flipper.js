@@ -1,7 +1,8 @@
 // priority: 500
 RegistryOrgan('kubejs:penguin_flipper')
     .addScore('chestcavity:swim_speed', 1)
-
+    .setCanSpawn(true)
+    
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 

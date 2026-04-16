@@ -2,6 +2,7 @@
 RegistryOrgan('kubejs:dragon_blood_heart')
     .addScore('chestcavity:health', 2)
     .addScore('kubejs:dragon_blood', 1)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

@@ -2,7 +2,8 @@
 RegistryOrgan('kubejs:rat_ear')
     .addScore('kubejs:attack_dodge', 1)
     .addScore('chestcavity:speed', 1)
-
+    .setCanSpawn(true)
+    
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 

@@ -2,6 +2,7 @@
 RegistryOrgan('kubejs:blaze_spine')
     .addScore('chestcavity:nerves', 1)
     .addScore('kubejs:crit_chance', 1)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

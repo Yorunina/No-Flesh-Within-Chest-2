@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:ferret_tail')
     .addScore('chestcavity:nerves', 0.25)
     .addScore('chestcavity:speed', 1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.EvaluateChestCavityJS} event

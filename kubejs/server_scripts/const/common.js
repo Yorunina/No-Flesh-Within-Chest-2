@@ -1,5 +1,6 @@
 // priority: 4000
 const InfinityNegative = -Infinity
+const DeviationNum = 0.000001
 
 const FourDirectionOffset = [[0, 1], [0, -1], [1, 0], [-1, 0]]
 const EightDirectionOffset = [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [1, -1], [-1, 1], [-1, -1]]

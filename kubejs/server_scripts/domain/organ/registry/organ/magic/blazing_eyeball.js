@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:blazing_eyeball')
     .addScore('kubejs:crit_chance', 1)
-    .addScore('kubejs:fire_spell_power', 1)
 
 /**
  * @param {OrganEventCustomData} customData

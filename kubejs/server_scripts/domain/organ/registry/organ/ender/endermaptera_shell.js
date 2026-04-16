@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:endermaptera_shell')
     .addScore('chestcavity:defense', 1)
+    .setCanSpawn(true)
 
 
 /**

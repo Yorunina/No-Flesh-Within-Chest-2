@@ -3,7 +3,7 @@ RegistryOrgan('kubejs:worm_neuron')
     .addScore('chestcavity:nerves', 1.5)
     .addScore('chestcavity:metabolism', 1)
     .addScore('chestcavity:endurance', -1)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
