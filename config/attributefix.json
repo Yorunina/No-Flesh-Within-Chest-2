@@ -979,6 +979,17 @@
         "value": 100
       }
     },
+    "chestcavity:climb_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "attributeslib:crit_damage": {
       "enabled": false,
       "min": {

@@ -3,6 +3,7 @@
 RegistryOrgan('kubejs:remnant_heart')
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:fire_resistant', 1)
+    .setCanSpawn(true)
 
 
 /**

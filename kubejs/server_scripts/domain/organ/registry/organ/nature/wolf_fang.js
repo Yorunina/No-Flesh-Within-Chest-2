@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:wolf_fang')
     .addScore('chestcavity:strength', 2)
-
+    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

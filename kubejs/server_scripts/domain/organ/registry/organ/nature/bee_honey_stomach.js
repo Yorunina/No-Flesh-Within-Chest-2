@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:bee_honey_stomach')
     .addScore('chestcavity:digestion', 1)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

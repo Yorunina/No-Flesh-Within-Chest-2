@@ -2,6 +2,7 @@
 RegistryOrgan('kubejs:chimera_heart')
     .addScore('chestcavity:health', 1)
     .addScore('kubejs:extreme_fitness', 2)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

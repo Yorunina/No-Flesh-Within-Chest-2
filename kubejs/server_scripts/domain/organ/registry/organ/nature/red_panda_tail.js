@@ -2,7 +2,8 @@
 RegistryOrgan('kubejs:red_panda_tail')
     .addScore('chestcavity:speed', 1)
     .addScore('chestcavity:endurance', 0.5)
-
+    .setCanSpawn(true)
+    
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 

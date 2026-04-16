@@ -14,7 +14,9 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:ferret_tail').maxStackSize(1).texture('kubejs:item/organs/nature/ferret_tail').tag('kubejs:nature')
 
-    event.create('kubejs:jumping_spider_leg').maxStackSize(1).texture('kubejs:item/organs/nature/jumping_spider_leg').tag('kubejs:nature')
+    event.create('kubejs:jumping_spider_leg').maxStackSize(1).texture('kubejs:item/organs/nature/jumping_spider_leg').tag('kubejs:nature').tag('kubejs:muscle')
+
+    event.create('kubejs:spider_leg').maxStackSize(1).texture('kubejs:item/organs/nature/spider_leg').tag('kubejs:nature').tag('kubejs:muscle')
 
     event.create('kubejs:koi_fish_scale').maxStackSize(1).texture('kubejs:item/organs/nature/koi_fish_scale').tag('kubejs:nature')
 
@@ -63,7 +65,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:wilden_heart').maxStackSize(1).tag('kubejs:heart').tag('kubejs:nature').texture('kubejs:item/organs/nature/wilden_heart')
 
     event.create('kubejs:chimera_heart').maxStackSize(1).tag('kubejs:heart').tag('kubejs:nature').texture('kubejs:item/organs/nature/chimera_heart')
-    
+
     event.create('kubejs:dragonfly_wing').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/dragonfly_wing')
 
     event.create('kubejs:leech_mouthpart').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/leech_mouthpart')
@@ -81,6 +83,12 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:allay_wing').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/allay_wing')
 
     event.create('kubejs:symbiocto_arm').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/symbiocto_arm').tag('kubejs:nature').tag('kubejs:muscle')
+
+    event.create('kubejs:axolotl_gill').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/axolotl_gill').tag('kubejs:lung')
+
+    event.create('kubejs:bat_throat').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/bat_throat')
+
+    event.create('kubejs:camel_hump').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/camel_hump')
 
     event.create('kubejs:appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')
     event.create('kubejs:intestine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/intestine').tag('kubejs:intestine')

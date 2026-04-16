@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:dumbo_octopus_hat')
     .addScore('chestcavity:defense', -0.5)
     .addScore('chestcavity:swim_speed', 1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.NetworkEventJS} event

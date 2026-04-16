@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:aptrgangr_soul')
     .addScore('chestcavity:health', 1)
     .addScore('chestcavity:defense', 1.5)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.LivingHurtEvent} event 

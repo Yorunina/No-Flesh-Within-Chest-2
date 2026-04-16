@@ -3,7 +3,7 @@ RegistryOrgan('kubejs:ender_guardian_spine')
     .addScore('chestcavity:defense', 3)
     .addScore('chestcavity:nerves', 1)
     .addScore('chestcavity:health', -1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.LivingDamageEvent} event 

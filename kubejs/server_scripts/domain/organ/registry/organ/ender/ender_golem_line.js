@@ -2,6 +2,7 @@
 RegistryOrgan('kubejs:ender_golem_line')
     .addScore('kubejs:extreme_fitness', 1)
     .addScore('chestcavity:nerves', 0.5)
+    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

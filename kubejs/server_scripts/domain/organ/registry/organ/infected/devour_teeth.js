@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:devour_teeth')
     .addScore('chestcavity:strength', 1)
     .addScore('chestcavity:defense', 1)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 

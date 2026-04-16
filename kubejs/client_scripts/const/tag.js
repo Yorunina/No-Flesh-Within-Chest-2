@@ -72,6 +72,8 @@ const OrganTagMap = {
     'kubejs:organ_add_status_effect': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect')),
     'kubejs:exposure_frame_added_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added_only')),
     'kubejs:exposure_frame_added': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added')),
+    'kubejs:entity_fall_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_fall_only')),
+    'kubejs:entity_fall': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_fall')),
     'kubejs:shield_block_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block_only')),
     'kubejs:shield_block': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block')),
 }

@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:embers_liver')
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:fire_resistant', 1)
 
+
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.LivingDamageEvent} event 

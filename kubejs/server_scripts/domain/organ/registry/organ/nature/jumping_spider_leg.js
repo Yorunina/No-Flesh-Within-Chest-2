@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:jumping_spider_leg')
     .addScore('chestcavity:knockback_resistant', -0.5)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.OpenedEntityTickJS} event 

@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:leaf_insect_exoskeleton')
     .addScore('chestcavity:defense', 1)
-
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

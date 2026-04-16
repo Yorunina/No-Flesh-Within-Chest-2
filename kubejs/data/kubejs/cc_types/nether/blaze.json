@@ -1,8 +1,8 @@
 {
   "defaultChestCavity": [
-    {"item": "kubejs:active_blaze_rod","position": 7,"count":1},
-    {"item": "kubejs:active_blaze_rod","position": 9,"count":1},
-    {"item": "kubejs:active_blaze_rod","position": 13,"count":1}
+    {"item": "minecraft:blaze_rod","position": 7,"count":1},
+    {"item": "kubejs:blaze_spine","position": 9,"count":1},
+    {"item": "minecraft:blaze_rod","position": 13,"count":1}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_nether"

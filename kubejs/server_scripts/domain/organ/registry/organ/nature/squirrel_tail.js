@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:squirrel_tail')
     .addScore('kubejs:extreme_strength', -1)
     .addScore('chestcavity:digestion', 2)
-
+    .setCanSpawn(true)
 
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData

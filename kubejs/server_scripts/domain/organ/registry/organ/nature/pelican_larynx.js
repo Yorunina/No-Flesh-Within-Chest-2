@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:pelican_larynx')
     .addScore('chestcavity:endurance', -1.5)
     .addScore('chestcavity:digestion', 1)
-
+    .setCanSpawn(true)
 
 
 /**

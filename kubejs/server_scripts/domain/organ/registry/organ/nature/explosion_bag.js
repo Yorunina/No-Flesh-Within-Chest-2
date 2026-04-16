@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:explosion_bag')
     .addScore('chestcavity:digestion', 1)
     .addScore('chestcavity:detoxification', 0.5)
-
+    .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 

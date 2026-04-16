@@ -13,7 +13,7 @@
 	#Range: 0.01 ~ 100.0
 	acceleration = 0.6
 	#Range: -100.0 ~ 0.0
-	hover_descend = -0.03
+	hover_descend = 0.0
 	#Range: 0.0 ~ 100.0
 	swim_modifier = 1.8
 

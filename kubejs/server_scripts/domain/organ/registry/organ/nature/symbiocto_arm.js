@@ -2,6 +2,7 @@
 // todo 多人场景下玩家骑乘玩家
 RegistryOrgan('kubejs:symbiocto_arm')
     .addScore('chestcavity:strength', 1)
+    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

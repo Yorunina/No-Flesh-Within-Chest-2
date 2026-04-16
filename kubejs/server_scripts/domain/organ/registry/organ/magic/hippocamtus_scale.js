@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:hippocamtus_scale')
     .addScore('kubejs:magic_capacity', 1)
     .addScore('chestcavity:defense', 1)
-
+    .setCanSpawn(true)
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.ShieldBlockEvent} event 

@@ -3,6 +3,7 @@
   "entities": [
     "minecraft:horse",
     "vinery:mule",
-    "minecraft:donkey"
+    "minecraft:donkey",
+    "minecraft:mule"
   ]
 }

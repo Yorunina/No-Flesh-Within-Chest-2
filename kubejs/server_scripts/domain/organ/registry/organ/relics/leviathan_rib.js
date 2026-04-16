@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:leviathan_rib')
     .addScore('chestcavity:defense', 2.5)
     .addScore('chestcavity:swim_speed', 1)
     .addScore('chestcavity:endurance', -0.5)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData
