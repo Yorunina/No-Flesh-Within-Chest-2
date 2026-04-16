@@ -16,7 +16,7 @@ const MeatSoupPotentialOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:filtration', mean: -1, sigma: 1 }, 5)
 
 RegistryUnformedTumorFluidConfig(
-    new UnformedTumorFluidConfigModel('minecraft:honey')
+    new UnformedTumorFluidConfigModel('create:honey')
         .setOrganDataModel(MeatSoupOrganDataWeightModel)
         .setPotentialOrganDataModel(MeatSoupPotentialOrganDataWeightModel)
         .setOrganDataCount(2)

@@ -37,5 +37,5 @@ ServerEvents.tags('block', event => {
 })
 
 ServerEvents.tags('fluid', event => {
-    event.add('kubejs:nutrients_fluid', ['minecraft:honey', 'minecraft:milk'])
+    event.add('kubejs:nutrients_fluid', ['create:honey', 'minecraft:milk', 'biomancy:acid'])
 })
