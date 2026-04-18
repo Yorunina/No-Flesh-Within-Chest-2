@@ -10,6 +10,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:ghast_sac').maxStackSize(1).texture('kubejs:item/organs/nether/ghast_sac').tag('kubejs:nether').tag('kubejs:lung')
 
+    event.create('kubejs:hoglin_rumen').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nether/hoglin_rumen').tag('kubejs:stomach')
+
     event.create('kubejs:fireproof_appendix').maxStackSize(1).tag('kubejs:nether').tag('kubejs:basic').texture('kubejs:item/organs/nether/fireproof_appendix').tag('kubejs:appendix')
     event.create('kubejs:fireproof_intestine').maxStackSize(1).tag('kubejs:nether').tag('kubejs:basic').texture('kubejs:item/organs/nether/fireproof_intestine').tag('kubejs:intestine')
     event.create('kubejs:fireproof_heart').maxStackSize(1).tag('kubejs:nether').tag('kubejs:basic').texture('kubejs:item/organs/nether/fireproof_heart').tag('kubejs:heart')

@@ -276,3 +276,30 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:frog_tongue')
     .addAlt(Text.translatable('tooltips.kubejs.frog_tongue.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.frog_tongue.alt.2'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:glow_gland')
+    .addDefault(Text.translatable('tooltips.kubejs.glow_gland.default.1').gray())
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('cornucopia:cornucopia')
+    .addDefault(Text.translatable('tooltips.cornucopia.cornucopia.default.1').gray())
+    .addAlt(Text.translatable('tooltips.cornucopia.cornucopia.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:horse_tendon')
+    .addDefault(Text.translatable('tooltips.kubejs.horse_tendon.default.1').gray())
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:llama_gland')
+    .addDefault(Text.translatable('tooltips.kubejs.llama_gland.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.llama_gland.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:panda_paw')
+    .addDefault(Text.translatable('tooltips.kubejs.panda_paw.default.1').gray())
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:parrot_beak')
+    .addDefault(Text.translatable('tooltips.kubejs.parrot_beak.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.parrot_beak.alt.1'))
+)

@@ -1,6 +1,10 @@
 {
   "defaultChestCavity": [
-    {"item":"minecraft:magma_cream","position": 2,"count":1}
+    {"item":"minecraft:magma_cream","position": 1, "count": 1},
+    {"item":"minecraft:magma_cream","position": 3, "count": 1},
+    {"item":"kubejs:explosion_cavity","position": 8},
+    {"item":"minecraft:magma_cream","position": 12, "count": 1},
+    {"item":"minecraft:magma_cream","position": 14, "count": 1}
   ],
   "baseOrganScores": [],
   "inventoryType": "kubejs:cc_inventory_types/small_nether"

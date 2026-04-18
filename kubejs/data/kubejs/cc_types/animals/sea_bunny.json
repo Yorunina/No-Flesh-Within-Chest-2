@@ -6,7 +6,7 @@
     {"item": "kubejs:animal_liver","position": 3},
     {"item": "kubejs:animal_muscle","position": 4},
     {"item": "kubejs:animal_muscle","position": 5},
-    {"item": "kubejs:herbivore_intestine","position": 6},
+    {"item": "kubejs:animal_intestine","position": 6},
     {"item": "kubejs:sea_bunny_skin","position": 7},
     {"item": "kubejs:animal_stomach","position": 8},
     {"item": "kubejs:animal_muscle","position": 9},

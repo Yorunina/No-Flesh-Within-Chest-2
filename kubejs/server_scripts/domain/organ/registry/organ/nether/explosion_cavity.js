@@ -2,6 +2,7 @@
 RegistryOrgan('kubejs:explosion_cavity')
     .addScore('chestcavity:breath_capacity', 3)
     .addScore('chestcavity:breath_recovery', 0.5)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganEventCustomData} customData

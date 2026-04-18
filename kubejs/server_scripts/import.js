@@ -140,3 +140,5 @@ const $ItemStackKey = Java.loadClass('com.wintercogs.beyonddimensions.api.storag
 const $ClientboundSetPassengersPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetPassengersPacket')
 const $EffectSmelt = Java.loadClass('com.hollingsworth.arsnouveau.common.spell.effect.EffectSmelt')
 const $LargeFireball = Java.loadClass('net.minecraft.world.entity.projectile.LargeFireball')
+const $EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
+const $LlamaSpit = Java.loadClass('net.minecraft.world.entity.projectile.LlamaSpit')

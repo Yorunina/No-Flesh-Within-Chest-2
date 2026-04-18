@@ -2,6 +2,7 @@
   "chestcavity": "kubejs:cc_types/animals/pillager.json",
   "entities": [
     "minecraft:pillager",
+    "minecraft:illusioner",
     "illagerinvasion:provoker",
     "illagerinvasion:invoker",
     "illagerinvasion:necromancer",

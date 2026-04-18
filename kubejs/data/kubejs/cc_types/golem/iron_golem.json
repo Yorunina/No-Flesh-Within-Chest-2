@@ -4,6 +4,7 @@
     {"item":"kubejs:golem_cable","position": 1},
     {"item":"kubejs:piston_muscle","position": 2},
     {"item":"kubejs:inner_furnace","position": 3},
+    {"item":"kubejs:iron_repair_device","position": 4},
     {"item":"kubejs:inner_furnace","position": 5},
     {"item":"kubejs:golem_plating","position": 6},
     {"item":"kubejs:golem_cable","position": 7},

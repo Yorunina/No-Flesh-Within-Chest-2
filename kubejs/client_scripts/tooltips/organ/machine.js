@@ -134,3 +134,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:small_acid_tank')
     .addAlt(Text.translatable('tooltips.kubejs.small_acid_tank.alt.1', Text.gold('1')))
     .addAlt(Text.translatable('tooltips.kubejs.small_acid_tank.alt.2', Text.gold('1'), Player17TypeHover, Player21TypeHover))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:iron_repair_device')
+    .addDefault(Text.translatable('tooltips.kubejs.iron_repair_device.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.iron_repair_device.alt.1'))
+)

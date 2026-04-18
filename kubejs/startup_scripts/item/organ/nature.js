@@ -104,6 +104,14 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:frog_tongue').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/frog_tongue')
 
+    event.create('kubejs:glow_gland').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/glow_gland')
+
+    event.create('kubejs:horse_tendon').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/horse_tendon').tag('kubejs:muscle')
+
+    event.create('kubejs:llama_gland').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/llama_gland')
+
+    event.create('kubejs:panda_paw').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/panda_paw')
+
     event.create('kubejs:appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')
     event.create('kubejs:intestine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/intestine').tag('kubejs:intestine')
     event.create('kubejs:heart').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/heart').tag('kubejs:heart')
@@ -127,6 +135,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:animal_spine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_spine').tag('kubejs:spine')
     event.create('kubejs:animal_spleen').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_spleen').tag('kubejs:spleen')
     event.create('kubejs:animal_stomach').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/animal_stomach').tag('kubejs:stomach')
+
+    event.create('kubejs:rumen').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/rumen').tag('kubejs:stomach')
 
     event.create('kubejs:insect_stomach').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_stomach').tag('kubejs:stomach')
     event.create('kubejs:insect_caeca').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_caeca')
@@ -169,4 +179,48 @@ StartupEvents.registry('item', event => {
         })
         .canFitInsideContainerItems(false)
         .texture('kubejs:item/organs/nature/explosion_bag').tag('kubejs:nature').tag('kubejs:stomach')
+
+
+    event.create('kubejs:parrot_beak').maxStackSize(1)
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
+            if (oStack.isEmpty()) {
+                RemoveBundleOneStack(stack).ifPresent(pStack => {
+                    PlayBundleRemoveSound(player)
+                    access.set(pStack)
+                })
+            } else if (oStack.isBlock()) {
+                let added = AddItemIntoBundle(stack, oStack, 1, (pStack) => 1)
+                if (added > 0) {
+                    PlayerBundleInsertSound(player)
+                    oStack.shrink(added)
+                }
+            }
+            return true
+        })
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
+            let oStack = slot.getItem()
+            if (oStack.isEmpty()) {
+                PlayBundleRemoveSound(player)
+                RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
+            } else if (oStack.isBlock()) {
+                let added = AddItemIntoBundle(stack, slot.safeTake(oStack.getCount(), 65535, player), 1, (pStack) => 1)
+                if (added > 0) PlayerBundleInsertSound(player)
+            }
+            return true
+        })
+        .barWidth((stack) => {
+            let stackList = GetBundleContents(stack)
+            return Math.min(1 + 12 * stackList.length, 13)
+        })
+        .barColor(() => Color.DARK_BLUE)
+        .tooltipImage((stack) => {
+            let itemList = $NonNullList.create()
+            GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
+            return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
+        })
+        .canFitInsideContainerItems(false)
+        .texture('kubejs:item/organs/magic/scry_stomach_pouch')
+        .tag('kubejs:magic')
 })

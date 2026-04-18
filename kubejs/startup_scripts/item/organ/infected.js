@@ -12,7 +12,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:rotten_spleen').maxStackSize(1).tag('kubejs:infected').tag('kubejs:basic').texture('kubejs:item/organs/infected/rotten_spleen').tag('kubejs:spleen')
     event.create('kubejs:rotten_stomach').maxStackSize(1).tag('kubejs:infected').tag('kubejs:basic').texture('kubejs:item/organs/infected/rotten_stomach').tag('kubejs:stomach')
 
-    event.create('kubejs:drowned_intestine').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/drowned_intestine').tag('kubejs:intestine')
+    event.create('kubejs:mutation_intestine').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/mutation_intestine').tag('kubejs:intestine')
 
     event.create('kubejs:worm_neuron').maxStackSize(1).texture('kubejs:item/organs/infected/worm_neuron').tag('kubejs:infected')
 

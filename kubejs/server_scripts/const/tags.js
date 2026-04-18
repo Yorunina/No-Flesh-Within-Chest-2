@@ -20,6 +20,8 @@ ServerEvents.tags('item', event => {
     event.add('maa:immune/fire', ['tetra:thermal_cell'])
     event.add('maa:immune/cactus', [])
     event.add('chestcavity:cannot_remove', [])
+
+    event.add('kubejs:nature', ['cornucopia:cornucopia'])
 })
 
 ServerEvents.tags('entity_type', event => {

@@ -861,30 +861,27 @@
 		{
 			dependencies: ["4DB48FF831D57F33"]
 			description: [
-				"我有一个计划，但是这个计划听起来&6很荒唐&r. . ."
+				"经过确认，这种空间扩展能力不光存在在这种虫子身上，其在一些自然生成的生物中也有体现。"
 				""
-				"您需要大量食用牛角面包。偶尔您吃到恰到好处的时候，其面包的外皮会整洁的从面包上脱落. . ."
-				""
-				"听起来似乎很荒唐. . .对. . .确实很荒唐. . ."
-				""
-				"&6总之您需要做一大堆的牛角面包，然后逐个吃掉它们。&r"
+				"请您寻找到&6山羊&r，并且&6打开它的胸腔&r，你可以从中找到一个极其独特的器官战利品。"
 			]
-			icon: "bakery:croissant"
+			icon: "minecraft:goat_spawn_egg"
 			id: "54BBCB6C78712B0D"
 			rewards: [{
 				id: "7787A1AD0466EAC0"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "吃剩一半就行"
+			subtitle: "吃剩一半的状态"
 			tasks: [{
-				count: 1L
-				icon: "bakery:croissant"
-				id: "3F050129CA27C0BA"
-				title: "食用牛角面包"
-				type: "maa:eat_item"
+				entity: "minecraft:goat"
+				icon: "minecraft:goat_spawn_egg"
+				id: "1F5BC8BBDD293A3B"
+				inventoryType: "minecraft:empty"
+				type: "chestcavity:open_chest_cavity_task"
+				value: 1L
 			}]
-			title: "牛角的一半"
+			title: "山羊的秘密"
 			x: 4.0d
 			y: 3.0d
 		}
@@ -928,9 +925,9 @@
 			description: [
 				"&7或许丰饶之角啥的有些太耐人寻味了，使用午餐篮其实也差不太多。&r"
 				""
-				"您可以通过将食物像存放在收纳袋一样，存放在午餐篮中。在您需要食用时，长按午餐篮可以切换食物，左键打开野餐篮即可通过野餐篮直接食用选中的食物。"
+				"您可以通过将食物像存放在收纳袋一样，存放在&6午餐篮&r中。在您需要食用时，长按午餐篮可以切换食物，左键打开野餐篮即可通过野餐篮直接食用选中的食物。"
 				""
-				"当然，或许它没有那个耐人寻味的角更智能，但它至少&6不那么离奇&r。"
+				"但它绝对没有丰饶之角那样智能。"
 			]
 			id: "0D30AE8C07B44E8A"
 			rewards: [{

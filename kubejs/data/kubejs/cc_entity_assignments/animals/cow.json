@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/animals/cow.json",
   "entities": [
-    "minecraft:cow"
+    "minecraft:cow",
+    "minecraft:mooshroom"
   ]
 }

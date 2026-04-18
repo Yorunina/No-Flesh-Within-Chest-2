@@ -28,3 +28,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:ghast_sac')
     .addDefault(Text.translatable('tooltips.kubejs.ghast_sac.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.ghast_sac.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:hoglin_rumen')
+    .addDefault(Text.translatable('tooltips.kubejs.hoglin_rumen.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.hoglin_rumen.alt.1'))
+)

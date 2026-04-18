@@ -25,4 +25,3 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ignited_armour')
         .addOnlyStrategy('entity_be_hurt', IgnitedArmourEntityBeHurt)
 )
-
