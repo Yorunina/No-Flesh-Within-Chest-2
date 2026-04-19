@@ -18,6 +18,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:endermite_gland').maxStackSize(1).texture('kubejs:item/organs/ender/endermite_gland').tag('kubejs:ender')
 
+    event.create('kubejs:phantom_wing').maxStackSize(1).texture('kubejs:item/organs/ender/phantom_wing').tag('kubejs:ender')
+
     event.create('kubejs:ender_breath').maxStackSize(1).texture('kubejs:item/organs/ender/ender_breath').tag('kubejs:ender').tag('kubejs:basic')
     event.create('kubejs:ender_ectoplasm').maxStackSize(1).texture('kubejs:item/organs/ender/ender_ectoplasm').tag('kubejs:ender').tag('kubejs:basic')
 })

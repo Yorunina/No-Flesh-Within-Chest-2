@@ -33,3 +33,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:hoglin_rumen')
     .addDefault(Text.translatable('tooltips.kubejs.hoglin_rumen.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.hoglin_rumen.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:golden_stone')
+    .addDefault(Text.translatable('tooltips.kubejs.golden_stone.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.golden_stone.alt.1'))
+)

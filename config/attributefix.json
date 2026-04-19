@@ -858,17 +858,6 @@
         "value": 1
       }
     },
-    "chestcavity:step_height": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "attributeslib:fire_damage": {
       "enabled": false,
       "min": {

@@ -11,6 +11,7 @@
     {"item": "kubejs:spleen","position": 8},
     {"item": "kubejs:liver","position": 9},
     {"item": "kubejs:stomach","position": 10},
+    {"item": "kubejs:pillager_gland","position": 11},
     {"item": "kubejs:intestine","position": 12},
     {"item": "kubejs:appendix","position": 13},
     {"item": "kubejs:muscle","position": 14},

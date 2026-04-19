@@ -19,6 +19,9 @@
 	#Skin used by the dummy
 	#Allowed Values: DEFAULT, ORIGINAL, ALTERNATIVE, DUNGEONS
 	texture = "DEFAULT"
+	#Ticks after being hit that the dummy stays in combat and will keep reporting incoming damage.This ideally should be kept at 300 to match the game CombatTracker
+	#Range: 20 ~ 100000
+	combat_duration = 300
 
 	#Add here custom colors (in hex format) to associate with your damage types. This is a map from damage source ID to a color where you can add new entries for each
 	[visuals.damage_type_colors]

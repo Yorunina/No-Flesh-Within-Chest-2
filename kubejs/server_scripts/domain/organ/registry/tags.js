@@ -18,6 +18,7 @@ const EventId2TagId = {
     'organ_add_status_effect': 'kubejs:organ_add_status_effect',
     'exposure_frame_added': 'kubejs:exposure_frame_added',
     'entity_fall': 'kubejs:entity_fall',
+    'villager_update_special_prices': 'kubejs:villager_update_special_prices',
     'shield_block': 'kubejs:shield_block',
     'entity_death': 'kubejs:entity_death',
 }

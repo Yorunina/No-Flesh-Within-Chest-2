@@ -1,6 +1,7 @@
 {
   "chestcavity": "kubejs:cc_types/nether/piglin.json",
   "entities": [
-    "minecraft:piglin"
+    "minecraft:piglin",
+    "minecraft:piglin_brute"
   ]
 }

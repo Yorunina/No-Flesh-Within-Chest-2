@@ -62,6 +62,8 @@
     "graveyard:nameless_hanged",
     "dummmmmmy:target_dummy",
     "graveyard:ghouling",
-    "graveyard:falling_corpse"
+    "graveyard:falling_corpse",
+    "minecraft:vex",
+    "minecraft:creaking"
   ]
 }

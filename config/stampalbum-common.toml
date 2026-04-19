@@ -37,7 +37,7 @@ showUnlockTime = true
 #Filter mode: 0=All, 1=Unlocked, 2=Locked, 3=Favorites, 4=Recently Unlocked
 #Range: 0 ~ 4
 filterMode = 0
-#Locked item display style: 0=Silhouette (grey tint + overlay), 1=Lock icon in corner (full color), 2=Question mark only
+#Locked item display style: 0=Silhouette (grey tint + overlay), 1=Lock icon in corner, 2=Question mark only
 #Range: 0 ~ 2
 lockedDisplayStyle = 0
 #Show recipe information in the detail view

@@ -58,3 +58,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:endermite_gland')
     .addDefault(Text.translatable('tooltips.kubejs.endermite_gland.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.endermite_gland.alt.1'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:phantom_wing')
+    .addDefault(Text.translatable('tooltips.kubejs.phantom_wing.default.1').gray())
+)

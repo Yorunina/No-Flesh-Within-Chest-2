@@ -1,7 +1,8 @@
 // priority: 500
 RegistryOrgan('kubejs:warden_core')
-    .addScore('chestcavity:health', 1.5)
-    .addScore('chestcavity:endurance', -0.25)
+    .addScore('chestcavity:health', 2)
+    .addScore('chestcavity:endurance', -0.5)
+    .setCanSpawn(true)
 
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -22,7 +23,7 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
     let counter = 0
     let xpLevel = player.getXpLevel()
     if (ray.entity && ray.entity.isLiving()) {
-        ray.entity.attack(damageSource, 30 + Math.min(xpLevel, 100))
+        ray.entity.attack(damageSource, 30 + xpLevel)
         ray.entity.invulnerableTime = 0
         counter++
     }

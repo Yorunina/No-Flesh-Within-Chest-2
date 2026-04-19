@@ -63,3 +63,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:dying_heart')
     .addAlt(Text.translatable('tooltips.kubejs.dying_heart.alt.3', Text.gold('1'), MagicOverloadHover, Text.gold('1')))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:warden_core')
+    .addDefault(Text.translatable('tooltips.kubejs.warden_core.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.warden_core.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.warden_core.alt.2'))
+)
