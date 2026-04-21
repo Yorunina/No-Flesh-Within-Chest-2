@@ -16,7 +16,7 @@ function FinalDayEvent(event) {
     let finalTimer = Clamp(GetLeaderBoardTotal(global.STAT_FINAL_TIMER, server), 0, 100)
 
     if (AStages.serverHasStage('ftb_final_iteration_50', server)) {
-        let speedProp = Clamp(1 + 0.1 * (finalTimer - 50), 1, 400)
+        let speedProp = Clamp(1 + 0.05 * (finalTimer - 50), 1, 400)
         SetDaySpeed(speedProp)
         SetNightSpeed(speedProp)
     }

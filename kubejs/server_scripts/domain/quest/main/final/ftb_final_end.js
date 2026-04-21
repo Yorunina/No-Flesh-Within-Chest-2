@@ -1,5 +1,5 @@
 // priority: 500
-FTBQuestsEvents.customReward('ftb_final_end_1', event => {
+FTBQuestsEvents.customReward('final_end_1', event => {
     // 清空所有Astage
     const server = event.server
     MAAUtils.resetServerTaskProgress(server)
@@ -12,7 +12,7 @@ FTBQuestsEvents.customReward('ftb_final_end_1', event => {
     })
 })
 
-FTBQuestsEvents.customReward('ftb_final_end_2', event => {
+FTBQuestsEvents.customReward('final_end_2', event => {
     const server = event.server
 
     AStages.getStagesFromServer().forEach(stage => {

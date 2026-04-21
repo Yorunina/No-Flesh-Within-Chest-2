@@ -690,8 +690,11 @@
 				}
 			]
 			tasks: [{
-				id: "529757FEBBE26A1F"
-				type: "checkmark"
+				count: 1L
+				id: "22EAD7D11AB6B8B9"
+				kubeId: "final_end_1"
+				title: "终局：回归"
+				type: "maa:kube"
 			}]
 			title: "重启吧，我们的冒险故事"
 			x: 16.5d

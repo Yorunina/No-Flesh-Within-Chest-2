@@ -97,7 +97,7 @@
 			rewards: [{
 				id: "1E43211D6AE9C61B"
 				ignore_reward_blocking: true
-				kubeId: "ftb_final_end_2"
+				kubeId: "final_end_2"
 				title: "见证我们的故事"
 				type: "maa:kube"
 			}]

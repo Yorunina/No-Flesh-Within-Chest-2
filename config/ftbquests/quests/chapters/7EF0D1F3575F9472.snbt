@@ -34,7 +34,7 @@
 				count: 1L
 				icon: "minecraft:oak_log"
 				id: "72DE55E275C662B0"
-				kubeId: "ftb_final_end_2"
+				kubeId: "final_end_2"
 				title: "任何种类原木"
 				type: "maa:kube"
 			}]

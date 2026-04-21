@@ -68,9 +68,13 @@ FTBQuestsEvents.customReward('final_iteration_100', event => {
  * 终局时间加速展示
  */
 FTBQuestsEvents.customReward('final_time_speed', event => {
-    // MAAUtils.onKubeTaskFinish('final_iteration_100', event.player, (pTask, pPlayer, pTeamData) => {
-    //     pTeamData.addProgress(pTask, 1)
-    // })
-    // if (AStages.serverHasStage('ftb_final_iteration_100', event.server)) return
-    // AStages.addStageToServer('ftb_final_iteration_100', event.server)
+    let ms = 20 / GetDaySpeed()
+    if (ms <= 0.1) {
+        MAAUtils.onKubeTaskFinish('final_end_1', event.player, (pTask, pPlayer, pTeamData) => {
+            pTeamData.addProgress(pTask, 1)
+        })
+    }
+    let speed = 20 / (ms - 0.1)
+    SetDaySpeed(speed)
+    SetNightSpeed(speed)
 })
