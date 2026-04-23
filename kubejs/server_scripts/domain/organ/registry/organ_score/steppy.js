@@ -1,5 +1,5 @@
 // priority: 500
-const StepplyStepHeightUpUUID = '9A7E65B6-B43F-46A5-B08D-ECEA4561F717'
+const StepplyStepHeightUpUUID = UUID.fromString('9A7E65B6-B43F-46A5-B08D-ECEA4561F717')
 const StepplyStepHeightUpIdentifier = 'StepplyStepHeightUp'
 /**
  * 

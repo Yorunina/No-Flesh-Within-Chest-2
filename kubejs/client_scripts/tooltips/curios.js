@@ -17,7 +17,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:incandescent_miracle')
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
     .addDefault(Text.translatable('tooltips.kubejs.incandescent_miracle.default.1').gray())
     .addShift(Text.translatable('tooltips.kubejs.incandescent_miracle.shift.1'))
-    .addShift(Text.translatable('tooltips.kubejs.incandescent_miracle.shift.2', FrozenHover))
+    .addShift(Text.translatable('tooltips.kubejs.incandescent_miracle.shift.2'))
     .addShift((text, item) => {
         let nbt = item.getOrCreateTag()
         let value = nbt.getInt('value')

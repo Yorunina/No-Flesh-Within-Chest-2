@@ -90,6 +90,7 @@ const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living
 const $AttackEntityEvent = Java.loadClass('net.minecraftforge.event.entity.player.AttackEntityEvent')
 const $MobEffectApplicableEvent = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable')
 const $LivingFallEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingFallEvent')
+const $PlayerSpawnPhantomsEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerSpawnPhantomsEvent')
 
 const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')
 const $Containers = Java.loadClass('net.minecraft.world.Containers')

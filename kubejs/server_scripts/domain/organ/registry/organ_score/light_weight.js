@@ -1,5 +1,5 @@
 // priority: 500
-const LightWeightEntityGravityDownUUID = '618EC64C-73F0-40A7-9EB5-3ADC51735A53'
+const LightWeightEntityGravityDownUUID = UUID.fromString('618EC64C-73F0-40A7-9EB5-3ADC51735A53')
 const LightWeightEntityGravityDownIdentifier = 'LightWeightEntityGravityDown'
 /**
  * 

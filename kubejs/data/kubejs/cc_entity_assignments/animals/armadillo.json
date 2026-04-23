@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/armadillo.json",
+  "entities": [
+    "minecraft:armadillo"
+  ]
+}

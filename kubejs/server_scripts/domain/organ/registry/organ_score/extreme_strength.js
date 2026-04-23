@@ -1,5 +1,5 @@
 // priority: 500
-const ExtremeStrengthAttackUpUUID = '1318AAC8-AF51-4087-870F-D5C8CB42AA45'
+const ExtremeStrengthAttackUpUUID = UUID.fromString('1318AAC8-AF51-4087-870F-D5C8CB42AA45')
 const ExtremeStrengthAttackUpIdentifier = 'ExtremeStrengthAttackUp'
 /**
  * 

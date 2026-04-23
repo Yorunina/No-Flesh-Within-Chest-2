@@ -1,5 +1,5 @@
 // priority: 500
-const CritChanceCritChanceUpUUID = 'CE42673E-CDDC-4D8E-82CE-AFEBEBD37E8D'
+const CritChanceCritChanceUpUUID = UUID.fromString('CE42673E-CDDC-4D8E-82CE-AFEBEBD37E8D')
 const CritChanceCritChanceUpIdentifier = 'CritChanceCritChanceUp'
 /**
  * 

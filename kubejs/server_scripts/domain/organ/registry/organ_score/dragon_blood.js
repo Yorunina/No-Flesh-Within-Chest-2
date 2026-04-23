@@ -1,7 +1,7 @@
 // priority: 500
-const DragonBloodArmorShredUpUUID = '5B066428-C671-4BE1-B5BA-B651C732AF8A'
+const DragonBloodArmorShredUpUUID = UUID.fromString('5B066428-C671-4BE1-B5BA-B651C732AF8A')
 const DragonBloodArmorShredUpIdentifier = 'DragonBloodArmorShredUp'
-const DragonBloodAttackUpUUID = 'CAC1772C-7A0D-4F3B-91A0-0C4EE728EECE'
+const DragonBloodAttackUpUUID = UUID.fromString('CAC1772C-7A0D-4F3B-91A0-0C4EE728EECE')
 const DragonBloodAttackUpIdentifier = 'DragonBloodAttackUpIdentifier'
 /**
  * 

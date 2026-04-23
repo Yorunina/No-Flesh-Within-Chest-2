@@ -1,5 +1,5 @@
 // priority: 500
-const CritDamageCritDamageUpUUID = '7DA00F94-96BD-417D-9AE0-3D6F37D74522'
+const CritDamageCritDamageUpUUID = UUID.fromString('7DA00F94-96BD-417D-9AE0-3D6F37D74522')
 const CritDamageCritDamageUpIdentifier = 'CritDamageCritDamageUp'
 /**
  * 

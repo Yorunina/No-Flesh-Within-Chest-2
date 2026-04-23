@@ -118,6 +118,11 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:owl_vertebrae')
     .addAlt(Text.translatable('tooltips.kubejs.owl_vertebrae.alt.1'))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:armadillo_shell')
+    .addDefault(Text.translatable('tooltips.kubejs.armadillo_shell.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.armadillo_shell.alt.1'))
+)
+
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:bison_horn')
     .addDefault(Text.translatable('tooltips.kubejs.bison_horn.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.bison_horn.alt.1'))

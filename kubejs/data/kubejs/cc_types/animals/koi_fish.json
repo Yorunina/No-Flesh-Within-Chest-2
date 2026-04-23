@@ -13,7 +13,7 @@
     {"item": "kubejs:animal_kidney", "position": 10},
     {"item": "kubejs:animal_intestine", "position": 11},
     {"item": "kubejs:animal_spine", "position": 12},
-    { "item": "chestcavity:small_animal_spleen", "position": 13},
+    { "item": "kubejs:animal_spleen", "position": 13},
     {"item": "kubejs:animal_kidney", "position": 14}
   ],
   "baseOrganScores": [],

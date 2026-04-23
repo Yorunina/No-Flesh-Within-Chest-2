@@ -1,5 +1,5 @@
 // priority: 500
-const FlyingSpeedFlyingSpeedUpUUID = '1D5FD74D-0EC6-4EA8-BA7F-65CC3B76C388'
+const FlyingSpeedFlyingSpeedUpUUID = UUID.fromString('1D5FD74D-0EC6-4EA8-BA7F-65CC3B76C388')
 const FlyingSpeedFlyingSpeedUpIdentifier = 'FlyingSpeedFlyingSpeedUp'
 /**
  * 

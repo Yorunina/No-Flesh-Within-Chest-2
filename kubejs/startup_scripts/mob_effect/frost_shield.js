@@ -1,5 +1,5 @@
 // priority: 1000
-const FrostShieldArmorUpUUID = '3017C996-85DE-46E8-9758-ECFD799F391B'
+const FrostShieldArmorUpUUID = UUID.fromString('3017C996-85DE-46E8-9758-ECFD799F391B')
 const FrostShieldArmorUpIdentifier = 'FrostShieldArmorUp'
 StartupEvents.registry('mob_effect', event => {
     event.create('frost_shield')

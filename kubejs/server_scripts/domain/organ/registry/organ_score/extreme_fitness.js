@@ -1,5 +1,5 @@
 // priority: 500
-const ExtremeFitnessHealthUpUUID = 'C6AC0C7D-7139-4144-B097-86B3C11770F2'
+const ExtremeFitnessHealthUpUUID = UUID.fromString('C6AC0C7D-7139-4144-B097-86B3C11770F2')
 const ExtremeFitnessHealthUpIdentifier = 'ExtremeFitnessHealthUp'
 /**
  * 

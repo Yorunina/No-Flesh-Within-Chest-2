@@ -5,7 +5,7 @@
   ],
   "title": {
     "zh_cn": "地幔能提取器",
-    "en_us": "New Scene - mantle_energy_extractor"
+    "en_us": "Mantle Energy Extractor"
   },
   "structures": [
     "ponderer:basic"
@@ -15,7 +15,8 @@
     {
       "id": "s_48d07",
       "title": {
-        "zh_cn": "如何提取地幔能"
+        "zh_cn": "如何提取地幔能",
+        "en_us": "How to extract mantle energy"
       },
       "steps": [
         {

@@ -1,9 +1,9 @@
 // priority: 1000
-const PrimalAgoHealthUpUUID = '70D25D19-028D-4DC7-9BDE-D7AEE4A57804'
+const PrimalAgoHealthUpUUID = UUID.fromString('70D25D19-028D-4DC7-9BDE-D7AEE4A57804')
 const PrimalAgoHealthUpIdentifier = 'PrimalAgoHealthUp'
-const PrimalAgoAttackDamageUpUUID = 'E7F730B3-05D8-4A45-91E8-5B6BA82C9566'
+const PrimalAgoAttackDamageUpUUID = UUID.fromString('E7F730B3-05D8-4A45-91E8-5B6BA82C9566')
 const PrimalAgoAttackDamageUpIdentifier = 'PrimalAgoAttackDamageUp'
-const PrimalAgoArrowDamageUpUUID = '9CB85684-7A4E-4B14-9BF3-67BD50CEBE59'
+const PrimalAgoArrowDamageUpUUID = UUID.fromString('9CB85684-7A4E-4B14-9BF3-67BD50CEBE59')
 const PrimalAgoArrowDamageUpIdentifier = 'PrimalAgoArrowDamageUp'
 StartupEvents.registry('mob_effect', event => {
     event.create('primal_ago')

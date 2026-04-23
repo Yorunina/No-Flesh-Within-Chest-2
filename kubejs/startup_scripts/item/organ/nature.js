@@ -130,7 +130,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:refill_agreement').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/refill_agreement')
 
-    // event.create('kubejs:armadillo').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pufferfish_liver')
+    event.create('kubejs:armadillo_shell').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/armadillo_shell')
 
     event.create('kubejs:appendix').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')
     event.create('kubejs:intestine').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/intestine').tag('kubejs:intestine')

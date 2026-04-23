@@ -1,5 +1,5 @@
 // priority: 500
-const CreativeFlightCreativeFlightUpUUID = 'BA9F089C-ABC5-4326-935B-DE6509999CA1'
+const CreativeFlightCreativeFlightUpUUID = UUID.fromString('BA9F089C-ABC5-4326-935B-DE6509999CA1')
 const CreativeFlightCreativeFlightUpIdentifier = 'CreativeFlightCreativeFlightUp'
 /**
  * 

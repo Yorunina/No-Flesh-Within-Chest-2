@@ -59,8 +59,17 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:mutation_intestine')
     .addAlt(Text.translatable('tooltips.kubejs.mutation_intestine.alt.1'))
 )
 
-
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:wither_bone_cage')
     .addDefault(Text.translatable('tooltips.kubejs.wither_bone_cage.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.wither_bone_cage.alt.1', Text.gold('20%'), LuckHover, Text.gold('5')))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:nightmare_core')
+    .addDefault(Text.translatable('tooltips.kubejs.nightmare_core.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.nightmare_core.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:soul_core')
+    .addDefault(Text.translatable('tooltips.kubejs.soul_core.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.soul_core.alt.1', FrozenHover))
 )

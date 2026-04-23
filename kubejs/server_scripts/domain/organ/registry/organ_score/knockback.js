@@ -1,5 +1,5 @@
 // priority: 500
-const KnockbackAttckKnockbackUUID = 'C8324C7F-1FC9-4480-B74A-F511CB18B246'
+const KnockbackAttckKnockbackUUID = UUID.fromString('C8324C7F-1FC9-4480-B74A-F511CB18B246')
 const KnockbackAttckKnockbackIdentifier = 'KnockbackAttckKnockback'
 
 /**

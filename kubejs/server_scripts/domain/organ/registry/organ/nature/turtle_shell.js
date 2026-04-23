@@ -5,6 +5,7 @@ RegistryOrgan('kubejs:turtle_shell')
     .setCanSpawn(true)
 
 const TurtleShellTempDefenseUpUUID = UUID.fromString('77C62F52-9FC7-4791-9417-65C0107F7719')
+const TurtleShellTempDefenseIdentifier = 'TurtleShellTempDefenseUp'
 
 /**
 * @param {OrganEventCustomData} customData
@@ -22,7 +23,7 @@ function TurtleShellEntityBeHurt(customData, event, organItem, organIndex, slotT
     let value = 1
     let oldModifier = attributeInstance.getModifier(TurtleShellTempDefenseUpUUID)
     if (oldModifier) value = oldModifier.amount + value
-    let attributeModifier = new $AttributeModifier(TurtleShellTempDefenseUpUUID, 'TurtleShellTempDefenseUp', value, $Operation.ADDITION)
+    let attributeModifier = new $AttributeModifier(TurtleShellTempDefenseUpUUID, TurtleShellTempDefenseIdentifier, value, $Operation.ADDITION)
     attributeInstance.removeModifier(TurtleShellTempDefenseUpUUID)
     attributeInstance.addPermanentModifier(attributeModifier)
 }

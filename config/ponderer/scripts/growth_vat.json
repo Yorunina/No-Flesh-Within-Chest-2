@@ -1,0 +1,614 @@
+{
+  "id": "ponderer:growth_vat",
+  "items": [
+    "kubejs:growth_vat"
+  ],
+  "title": {
+    "en_us": "Growth Vat",
+    "zh_cn": "培养仓"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "scenes": [
+    {
+      "id": "s_dc4c2",
+      "title": {
+        "zh_cn": "如何使用培养仓",
+        "en_us": "How to use growth vat"
+      },
+      "steps": [
+        {
+          "type": "show_interface",
+          "point": [
+            0.4116360852074479,
+            0.8125,
+            0.6061892055500522
+          ],
+          "direction": "up",
+          "block": "kubejs:growth_vat",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;-224672219,1723023954,-2042640788,-662891648]}},componentManager:{active:0b,data_component:{},fluids:[{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},id:\"nutrient_solution\"}],fuel:0,items:[{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"plugin_1\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"plugin_2\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"plugin_3\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_slot\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_1\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_2\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_3\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_4\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_5\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_6\"}],maxFuel:0,radius:1},craftingManager:{phase:\"STARTING\",recipeProgressTime:0.0d,type:\"custommachinery:machine\"},machineID:\"kubejs:growth_vat\",message:'{\"text\":\"\"}',ownerID:\"f29bc625-66b3-4252-863f-c66cd87d1380\",ownerName:'{\"text\":\"YoruNina\"}',status:\"idle\",x:0,y:0,z:0}",
+          "whileSneaking": false,
+          "enableNbt": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 80,
+          "text": {
+            "zh_cn": "该槽位表示内含的营养液"
+          },
+          "point": [
+            0.642,
+            0.642,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "该槽位用于放置不同类型的培养皿"
+          },
+          "point": [
+            0.0,
+            0.467,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "该槽位用于输入和输出肿瘤"
+          },
+          "point": [
+            -0.142,
+            0.178,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "change_interface_slot",
+          "attachKeyFrame": true,
+          "interfaceSlots": [
+            {
+              "slotIndex": 40,
+              "slotX": 71,
+              "slotY": 18,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 41,
+              "slotX": 95,
+              "slotY": 18,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 42,
+              "slotX": 59,
+              "slotY": 38,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 43,
+              "slotX": 107,
+              "slotY": 38,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 44,
+              "slotX": 71,
+              "slotY": 58,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 45,
+              "slotX": 95,
+              "slotY": 58,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "以将肿瘤从未成型培育成型为例"
+          },
+          "point": [
+            0.176,
+            0.148,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "你可以在周围的输入输出槽位中填满未成型肿瘤"
+          },
+          "point": [
+            0.176,
+            0.148,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:simple_culture_medium",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 40,
+              "slotX": 71,
+              "slotY": 18,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 41,
+              "slotX": 95,
+              "slotY": 18,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 42,
+              "slotX": 59,
+              "slotY": 38,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 43,
+              "slotX": 107,
+              "slotY": 38,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 44,
+              "slotX": 71,
+              "slotY": 58,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 45,
+              "slotX": 95,
+              "slotY": 58,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "而后再在中心位置放入简易培养基或培养基，以启动工序"
+          },
+          "point": [
+            0.051,
+            0.419,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "等待加工条结束后"
+          },
+          "point": [
+            -0.898,
+            0.365,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 40,
+              "slotX": 71,
+              "slotY": 18,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 41,
+              "slotX": 95,
+              "slotY": 18,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 42,
+              "slotX": 59,
+              "slotY": 38,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 43,
+              "slotX": 107,
+              "slotY": 38,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 44,
+              "slotX": 71,
+              "slotY": 58,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 45,
+              "slotX": 95,
+              "slotY": 58,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "培养基会被消耗，而未成型肿瘤会成长为肿瘤"
+          },
+          "point": [
+            0.011,
+            0.473,
+            0.0
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    },
+    {
+      "id": "s_92222",
+      "title": {
+        "zh_cn": "不同培养基与培养液"
+      },
+      "steps": [
+        {
+          "type": "show_interface",
+          "point": [
+            0.41190247652263423,
+            0.8125,
+            0.6028863772305968
+          ],
+          "direction": "up",
+          "block": "kubejs:growth_vat",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;-224672219,1723023954,-2042640788,-662891648]}},componentManager:{active:0b,data_component:{},fluids:[{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},id:\"nutrient_solution\"}],fuel:0,items:[{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"plugin_1\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"plugin_2\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"plugin_3\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_slot\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_1\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_2\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_3\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_4\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_5\"},{config:{BACK:2b,BOTTOM:2b,FRONT:2b,LEFT:2b,RIGHT:2b,TOP:2b,input:0b,output:0b},slotID:\"slot_6\"}],maxFuel:0,radius:1},craftingManager:{phase:\"STARTING\",recipeProgressTime:0.0d,type:\"custommachinery:machine\"},machineID:\"kubejs:growth_vat\",message:'{\"text\":\"\"}',ownerID:\"f29bc625-66b3-4252-863f-c66cd87d1380\",ownerName:'{\"text\":\"YoruNina\"}',status:\"idle\",x:0,y:0,z:0}",
+          "whileSneaking": false,
+          "enableNbt": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "不同的培养基有着不同的培养效果"
+          },
+          "point": [
+            0.023,
+            0.467,
+            0.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:culture_medium",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:mutation_culture_medium",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:mixed_culture_medium",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:proliferation_culture_medium",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "idle",
+          "duration": 30
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:culture_medium",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "例如，常规培养基不需要输入额外肿瘤"
+          },
+          "point": [
+            -0.006,
+            0.437,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 40,
+              "slotX": 71,
+              "slotY": 18,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 41,
+              "slotX": 95,
+              "slotY": 18,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 42,
+              "slotX": 59,
+              "slotY": 38,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 43,
+              "slotX": 107,
+              "slotY": 38,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 44,
+              "slotX": 71,
+              "slotY": 58,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 45,
+              "slotX": 95,
+              "slotY": 58,
+              "ingredientId": "kubejs:unformed_tumor",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "便可在工序完成后，在周围生成未成型肿瘤"
+          },
+          "point": [
+            0.159,
+            0.25,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "同时，营养液的不同也会影响肿瘤的输出"
+          },
+          "point": [
+            0.625,
+            0.491,
+            0.0
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:mutation_culture_medium",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 40,
+              "slotX": 71,
+              "slotY": 18,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 41,
+              "slotX": 95,
+              "slotY": 18,
+              "ingredientId": "kubejs:rosy_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 42,
+              "slotX": 59,
+              "slotY": 38,
+              "ingredientId": "kubejs:rosy_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 43,
+              "slotX": 107,
+              "slotY": 38,
+              "ingredientId": "kubejs:rosy_tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 44,
+              "slotX": 71,
+              "slotY": 58,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 45,
+              "slotX": 95,
+              "slotY": 58,
+              "ingredientId": "kubejs:tumor",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "部分情况下，可以通过营养液和培养基的配合，产生新类型的肿瘤"
+          },
+          "point": [
+            0.023,
+            0.461,
+            0.0
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

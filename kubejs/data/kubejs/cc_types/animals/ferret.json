@@ -5,7 +5,7 @@
     {"item": "kubejs:animal_heart", "position": 2},
     {"item": "kubejs:animal_lung", "position": 3},
     {"item": "kubejs:animal_rib", "position": 4},
-    {"item": "kubejs:swift_muscle", "position": 5},
+    {"item": "kubejs:animal_muscle", "position": 5},
     {"item": "kubejs:animal_kidney", "position": 6},
     {"item": "kubejs:animal_stomach", "position": 7},
     {"item": "kubejs:ferret_tail", "position": 8},

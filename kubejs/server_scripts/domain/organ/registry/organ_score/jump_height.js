@@ -1,5 +1,5 @@
 // priority: 500
-const JumpHeightJumpHeightUpUUID = '825EFFDC-149D-4049-8D74-05F34DE18A05'
+const JumpHeightJumpHeightUpUUID = UUID.fromString('825EFFDC-149D-4049-8D74-05F34DE18A05')
 const JumpHeightJumpHeightUpIdentifier = 'JumpHeightJumpHeightUp'
 
 /**

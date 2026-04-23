@@ -64,6 +64,10 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:devour_teeth').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/devour_teeth')
 
+    event.create('kubejs:nightmare_core').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/nightmare_core').tag('kubejs:organ').tag('kubejs:heart')
+
+    event.create('kubejs:soul_core').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/soul_core').tag('kubejs:organ').tag('kubejs:heart')
+
     event.create('kubejs:bone_meal_bag').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
             if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false

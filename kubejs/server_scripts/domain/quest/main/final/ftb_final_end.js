@@ -7,6 +7,7 @@ FTBQuestsEvents.customReward('final_end_1', event => {
     AStages.removeAllStagesFromServer(server)
     SetDaySpeed(1)
     SetNightSpeed(1)
+    ScoreUtil.resetAllPlayerStats(server, '')
     MAAUtils.getAllDimNet(server).forEach(dimnet => {
         dimnet.setLocked(false)
     })
@@ -20,6 +21,7 @@ FTBQuestsEvents.customReward('final_end_2', event => {
     })
     SetDaySpeed(1)
     SetNightSpeed(1)
+    ScoreUtil.resetAllPlayerStats(server, '')
     AStages.addStageToServer('ftb_final_timer_stop', server)
     MAAUtils.getAllDimNet(server).forEach(dimnet => {
         dimnet.setLocked(false)

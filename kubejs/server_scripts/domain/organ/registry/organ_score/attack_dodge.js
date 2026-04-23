@@ -1,5 +1,5 @@
 // priority: 500
-const AttackDodgeDodgeChanceUpUUID = 'E51758A0-56F0-435E-897F-BFC56EDA06A8'
+const AttackDodgeDodgeChanceUpUUID = UUID.fromString('E51758A0-56F0-435E-897F-BFC56EDA06A8')
 const AttackDodgeDodgeChanceUpIdentifier = 'AttackDodgeDodgeChanceUp'
 /**
  * 

@@ -1,5 +1,5 @@
 // priority: 500
-const MagicCapacityMaxManaUpUUID = 'AA675869-C356-4E0E-AC8B-D745422B7F98'
+const MagicCapacityMaxManaUpUUID = UUID.fromString('AA675869-C356-4E0E-AC8B-D745422B7F98')
 const MagicCapacityMaxManaUpIdentifier = 'MagicCapacityMaxManaUp'
 /**
  * 

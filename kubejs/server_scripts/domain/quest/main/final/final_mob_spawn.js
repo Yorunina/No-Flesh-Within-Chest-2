@@ -1,7 +1,7 @@
 // priority: 499
-const FinalMaxHealthModifierUUID = 'D5095DD1-5A39-46D1-A4B9-3AAA81A2AC23'
-const FinalAttackDamageModifierUUID = 'DBE0F5BA-8BC8-4167-871C-208AC94810A0'
-const FinalArrowDamageModifierUUID = 'A1587239-B965-4301-B6C5-C73388389166'
+const FinalMaxHealthModifierUUID = UUID.fromString('D5095DD1-5A39-46D1-A4B9-3AAA81A2AC23')
+const FinalAttackDamageModifierUUID = UUID.fromString('DBE0F5BA-8BC8-4167-871C-208AC94810A0')
+const FinalArrowDamageModifierUUID = UUID.fromString('A1587239-B965-4301-B6C5-C73388389166')
 
 EntityEvents.spawned(event => {
     /**@type {Internal.LivingEntity} */

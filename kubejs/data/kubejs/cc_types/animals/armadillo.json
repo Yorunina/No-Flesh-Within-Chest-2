@@ -1,0 +1,21 @@
+{
+  "defaultChestCavity": [
+    {"item": "kubejs:insect_muscle", "position": 0},
+    {"item": "kubejs:insect_lung", "position": 1},
+    {"item": "kubejs:insect_heart", "position": 2},
+    {"item": "kubejs:insect_lung", "position": 3},
+    {"item": "kubejs:insect_muscle", "position": 4},
+    {"item": "kubejs:insect_muscle", "position": 5},
+    {"item": "kubejs:insect_muscle", "position": 6},
+    {"item": "kubejs:insect_stomach", "position": 7},
+    {"item": "kubejs:armadillo_shell", "position": 8},
+    {"item": "kubejs:insect_muscle", "position": 9},
+    {"item": "kubejs:insect_muscle", "position": 10},
+    {"item": "kubejs:insect_muscle", "position": 11},
+    {"item": "kubejs:insect_intestine", "position": 12},
+    {"item": "kubejs:insect_caeca", "position": 13},
+    {"item": "kubejs:insect_intestine", "position": 14}
+  ],
+  "baseOrganScores": [],
+  "inventoryType": "kubejs:cc_inventory_types/small_terra"
+}

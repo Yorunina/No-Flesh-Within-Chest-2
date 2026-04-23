@@ -1,0 +1,241 @@
+{
+  "id": "ponderer:eternal_altar",
+  "items": [
+    "kubejs:eternal_altar"
+  ],
+  "title": {
+    "en_us": "Eternal Altar",
+    "zh_cn": "永恒祭坛"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "scenes": [
+    {
+      "id": "s_4a567",
+      "title": {
+        "zh_cn": "如何使用永恒祭坛",
+        "en_us": "How to use eternal altar"
+      },
+      "steps": [
+        {
+          "type": "show_interface",
+          "point": [
+            0.20531650015827907,
+            0.8125,
+            0.44102365566946133
+          ],
+          "direction": "up",
+          "block": "kubejs:eternal_altar",
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;-224672219,1723023954,-2042640788,-662891648]}},componentManager:{active:0b,data_component:{},fuel:0,items:[{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_auxiliary\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_awake\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_extractant\"}],maxFuel:0,radius:1},craftingManager:{phase:\"STARTING\",recipeProgressTime:0.0d,type:\"custommachinery:machine\"},machineID:\"kubejs:eternal_altar\",message:'{\"text\":\"\"}',ownerID:\"f29bc625-66b3-4252-863f-c66cd87d1380\",ownerName:'{\"text\":\"YoruNina\"}',status:\"idle\",x:0,y:0,z:0}",
+          "whileSneaking": false,
+          "enableNbt": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "change_interface_slot",
+          "attachKeyFrame": true,
+          "interfaceSlots": [
+            {
+              "slotIndex": 37,
+              "slotX": 83,
+              "slotY": 58,
+              "ingredientId": "kubejs:gateways_awake_stone_1",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "为了唤醒永恒门扉，你需要在此处提供唤醒材料"
+          },
+          "point": [
+            -0.017,
+            0.461,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "不同的唤醒材料会有不同的类型及混乱度修正"
+          },
+          "point": [
+            -0.017,
+            0.461,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "这里就是混乱度展示槽"
+          },
+          "point": [
+            -0.045,
+            0.009,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "这里就是类型展示槽"
+          },
+          "point": [
+            -0.943,
+            0.443,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "change_interface_slot",
+          "interfaceSlots": [
+            {
+              "slotIndex": 36,
+              "slotX": 43,
+              "slotY": 19,
+              "ingredientId": "kubejs:gateways_auxiliary_material_1",
+              "ingredientKind": "item"
+            },
+            {
+              "slotIndex": 38,
+              "slotX": 123,
+              "slotY": 19,
+              "ingredientId": "kubejs:gateways_extractant_material_1",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "在进度条结束前，你可以往其他两个槽位中补充萃取和辅助材料"
+          },
+          "point": [
+            0.017,
+            1.233,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "辅助材料不会被消耗，可以用于修正祭坛阶级，进而提高或降低敌人难度"
+          },
+          "point": [
+            -0.437,
+            0.937,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "这里就是阶级展示槽"
+          },
+          "point": [
+            0.903,
+            0.335,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "萃取材料会消耗耐久度，增加门扉被压制后的战利品"
+          },
+          "point": [
+            0.432,
+            0.913,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "在门扉启动后，祭坛上方将会出现一道传送门"
+          },
+          "point": [
+            -0.006,
+            1.16,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "只有成功压制传送门时，才会正常获得战利品并且提高阶级"
+          },
+          "point": [
+            -0.006,
+            1.16,
+            0.0
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}
