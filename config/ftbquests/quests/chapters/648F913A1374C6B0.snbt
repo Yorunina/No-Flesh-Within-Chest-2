@@ -20,6 +20,7 @@
 				"结合它们&6“未成型”&r的名称来看，很有可能有某种方法可以让这些肿瘤成长为&6“成型”&r的状态，进而揭示这些隐藏属性。"
 			]
 			id: "2FBC5269D17457E9"
+			invisible: true
 			rewards: [{
 				id: "45000E1BBA4FDE8B"
 				item: "lightmanscurrency:coin_gold"

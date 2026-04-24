@@ -1,7 +1,7 @@
 {
     "type": "biomancy:decomposing",
     "ingredient": {
-        "item": "biomancy:bloomberry"
+        "item": "biomancy:bloomlight"
     },
     "nutrientsCost": 1,
     "processingTime": 254,

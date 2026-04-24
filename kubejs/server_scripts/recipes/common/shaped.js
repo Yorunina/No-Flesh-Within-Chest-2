@@ -39,5 +39,23 @@ ServerEvents.recipes(event => {
         ['#forge:glass', 'minecraft:orange_dye', '#forge:glass'],
         ['', 'minecraft:gold_ingot', '']
     ])
+    event.remove({ id: 'biomancy:crafting/primordial_core' })
+    event.shaped(Item.of('biomancy:primordial_core'), [
+        ['', '#forge:raw_meats', ''],
+        ['#forge:raw_meats', '#kubejs:heart', '#forge:raw_meats'],
+        ['', '#forge:raw_meats', '']
+    ])
+    event.remove({ id: 'ropebridge:ladder_builder' })
+    event.remove({ id: 'ropebridge:bridge_builder' })
+    event.remove({ id: 'ropebridge:rope' })
+    event.shaped(Item.of('ropebridge:ladder_builder'), [
+        ['#forge:ingots/iron', '#forge:ropes', 'minecraft:ladder'],
+        ['#forge:ingots/iron', '#minecraft:logs', '#minecraft:logs'],
+        ['#forge:ingots/iron', 'minecraft:lever', '']
+    ])
+    event.shaped(Item.of('ropebridge:bridge_builder'), [
+        ['#forge:ingots/iron', '#forge:ropes', '#minecraft:slabs'],
+        ['#forge:ingots/iron', '#minecraft:logs', '#minecraft:logs'],
+        ['#forge:ingots/iron', 'minecraft:lever', '']
+    ])
 })
-

@@ -81,7 +81,7 @@
 				""
 				"当然，工作台也并不一定需要放置在地面上才能够使用。通过打开自己的背包，对工作台物品按下鼠标右键，可以直接在背包中打开对应的合成界面。"
 				""
-				"现在，您需要合成出一个木镐，并且&n挖掘至少 3 块圆石类方块&r。随后，将您&n&6受损的木镐&r和&n&6圆石&r均提交到本任务&r中。"
+				"现在，您需要合成出一个木镐，并且挖掘至少 3 块圆石类方块。随后，将您&6受损的木镐&r和&6圆石&r均&6提交&r到本任务&r中。"
 				""
 				"本任务会消耗掉您的木镐和圆石，作为交换，会返还给您性能更为优秀的石镐。"
 			]
@@ -344,62 +344,9 @@
 		{
 			dependencies: ["64C564541E487779"]
 			description: [
-				"为了让您能够安全的抵达目标维度，您需要使用一个名为“&6传送石碑&r”的特殊道具。"
+				"为了让您能够安全的抵达目标维度，您需要将金币投入下界传送门中，以打开一个前往指定维度的特殊传送门。"
 				""
-				"它不仅在世界中频繁的自然生成，也具有价格稳定的配方。通过制作传送石碑，您可以在各处设置传送点，方便后续进行传送。"
-				""
-				"这同时也是之前说法的证明——其中被引入的大量未知内容都对您的生存具有极大的帮助，因此探索它们并非是冲动之举。"
-			]
-			icon: "waystones:waystone"
-			id: "64C8D52C20B8C0E4"
-			rewards: [{
-				auto: "invisible"
-				icon: "waystones:waystone"
-				id: "2412A5F324233335"
-				ignore_reward_blocking: true
-				name: "Shop"
-				remove: false
-				title: "解锁商店传送石碑"
-				type: "maa:active_way_stone"
-			}]
-			subtitle: "制造传送石碑"
-			tasks: [{
-				id: "0FE986C3B14B4033"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "waystones:warp_stone"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "itemfilters:tag"
-								tag: {
-									value: "waystones:waystones"
-								}
-							}
-						]
-					}
-				}
-				title: "传送石碑或传送石"
-				type: "item"
-			}]
-			title: "抵达彼方"
-			x: 0.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["64C8D52C20B8C0E4"]
-			description: [
-				"前往商店所在的&6特殊维度&r。"
-				""
-				"不知道这里是被谁创造的，也不知道目的为何，但毫无疑问，这里的所有东西都可以对您的生存带来极大的帮助。"
+				"暂不知道这里是被谁创造的，也不知道目的为何，但毫无疑问，这里的所有东西都可以对您的生存带来极大的帮助。"
 				""
 				"您可以选择把这里的物资&6全部搬空&r，也可以选择将这里&6保护起来&r. . ."
 			]
@@ -420,7 +367,7 @@
 			}]
 			title: "彼方留下的痕迹"
 			x: 0.0d
-			y: -9.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
@@ -498,7 +445,7 @@
 		{
 			dependencies: ["4A1C6C6150E32CEE"]
 			description: [
-				"某些时候，我可能需要您&6提交流体&r来完成任务，作为一类相对麻烦的任务类型，您需要按照以下步骤来完成流体的提交。"
+				"某些时候，我可能需要您&6提交流体&r来完成任务，作为一类相对麻烦的任务类型，您可以按照以下步骤来完成流体的提交，同时这可能是成本最低的提交方式。"
 				""
 				"&71. &r 制造&6任务屏幕&r，将任务屏幕放置在任意位置，右键任务屏幕打开界面，选择当前您需要提交的流体任务。"
 				""
@@ -519,6 +466,7 @@
 					amount: 1000L
 					fluid: "minecraft:lava"
 					id: "783EED89DD910463"
+					title: "一桶岩浆"
 					type: "fluid"
 				}
 				{
@@ -850,6 +798,51 @@
 			}]
 			x: 2.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["2E911706C477B127"]
+			description: ["如若遇到了需要大规模限制刷怪的场景，您可以使用&6超级火把&r来禁用一定范围内的敌对怪物刷新。"]
+			id: "0EB8CF4DF0C86C9B"
+			rewards: [{
+				id: "5CCB22AE84B67465"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "应允"
+			tasks: [{
+				id: "291DBF48B0E40E04"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["09ED755A64A62187"]
+			description: [
+				"在该特殊维度中，存在有大量的柱形结构。为了方便的在这些结构之间穿行，您可能需要一个能快速构造出路径的设备。"
+				""
+				"&6绳桥枪&r便是最佳的方案。"
+				""
+				"手持绳桥枪右键瞄准，在您的面前有方块的情况下，&6松开右键便可以生成一条绳桥&r；&6绳桥无法斜向生成&r，因此目标位置必须要在您的正东/正南/正西/正北方向。"
+				""
+				"绳桥的材质可以通过背包中持有的半砖类型而变化。"
+			]
+			id: "563087C8FE4275E8"
+			rewards: [{
+				id: "4F9096733B9D4C3C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用绳桥"
+			tasks: [{
+				id: "6D5A97FF5A9CDD06"
+				item: "ropebridge:bridge_builder"
+				type: "item"
+			}]
+			title: "在高空中旅行"
+			x: 0.0d
+			y: -9.0d
 		}
 	]
 	title: "壹"

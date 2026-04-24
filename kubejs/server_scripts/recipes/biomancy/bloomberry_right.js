@@ -16,4 +16,6 @@ BlockEvents.rightClicked('biomancy:malignant_flesh', event => {
         targetBlockState = targetBlockState.setValue(BlockProperties.WATERLOGGED, $Boolean.TRUE)
     }
     level.setBlockAndUpdate(targetPos, targetBlockState)
+    level.playSound(null, targetPos.getX(), targetPos.getY(), targetPos.getZ(), 'biomancy:flesh_block.place', player.getSoundSource(), 1, 1)
+    item.shrink(1)
 })

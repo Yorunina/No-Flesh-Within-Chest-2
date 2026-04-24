@@ -17,13 +17,13 @@
 	ignoreSlopeWarnings = true
 	#Slabs consumed for each bridge block built.
 	#Range: 0 ~ 10
-	slabsPerBridge = 1
+	slabsPerBridge = 0
 	#String consumed for each bridge block built.
 	#Range: 0 ~ 20
 	ropePerBridge = 0
 	#Wood consumed for each ladder block built.
 	#Range: 0 ~ 10
-	woodPerLadder = 1
+	woodPerLadder = 0
 	#Rope consumed for each ladder block built.
 	#Range: 0 ~ 20
 	ropePerLadder = 0

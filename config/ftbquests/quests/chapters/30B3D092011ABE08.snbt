@@ -1,11 +1,67 @@
 {
 	autofocus_id: "518A9614F706B9F3"
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "30B3D092011ABE08"
 	group: "0B365C36A50478AA"
 	icon: "kubejs:player_27_injection"
 	id: "30B3D092011ABE08"
+	images: [
+		{
+			height: 12.0d
+			hideDependency: "2B8F82F33E55703A"
+			image: "kubejs:textures/gui/tasks/chestcavity_expansion/chestcavity_workbench_1.png"
+			rotation: 0.0d
+			width: 13.53d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependency: "2D04772D78C4E72F"
+			height: 12.0d
+			image: "kubejs:textures/gui/tasks/chestcavity_expansion/chestcavity_workbench_3.png"
+			rotation: 0.0d
+			width: 13.53d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependency: "2B8F82F33E55703A"
+			height: 12.0d
+			hideDependency: "2D04772D78C4E72F"
+			image: "kubejs:textures/gui/tasks/chestcavity_expansion/chestcavity_workbench_2.png"
+			rotation: 0.0d
+			width: 13.53d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/chestcavity_expansion/knowledge_1.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 11.8d
+			y: -3.1d
+		}
+		{
+			dependency: "25E39232CC1DA79B"
+			height: 5.0d
+			image: "kubejs:textures/gui/tasks/chestcavity_expansion/knowledge_2.png"
+			rotation: 0.0d
+			width: 6.7d
+			x: -0.7d
+			y: -10.1d
+		}
+		{
+			dependency: "2D04772D78C4E72F"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/chestcavity_expansion/knowledge_3.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -11.5d
+			y: -3.4d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -30,8 +86,8 @@
 				type: "item"
 			}]
 			title: "探寻生物技术的极限"
-			x: 0.0d
-			y: 0.0d
+			x: 7.0d
+			y: -2.2d
 		}
 		{
 			dependencies: ["5915C77B5C546047"]
@@ -55,8 +111,8 @@
 				type: "item"
 			}]
 			title: "生物技术的精进"
-			x: 3.0d
-			y: 0.0d
+			x: 7.0d
+			y: -5.2d
 		}
 		{
 			dependencies: ["348CF124F966D213"]
@@ -80,13 +136,13 @@
 				type: "item"
 			}]
 			title: "生物技术对生物的影响"
-			x: 4.5d
-			y: 0.0d
+			x: 8.5d
+			y: -0.7000000000000002d
 		}
 		{
 			dependencies: ["599ED9E67C252EC4"]
 			description: [
-				"通过向鸡注射育种兴奋剂，其在交配时，有低概率会产生具有严重基因缺陷的后代，其名为&c“血肉鸡”&r。"
+				"通过向鸡注射配种兴奋剂，其在交配时，有低概率会产生具有严重基因缺陷的后代，其名为&c“血肉鸡”&r。"
 				""
 				"血肉鸡并不会正常产出鸡蛋，而是会产出&6“酸化鸡蛋”&r。其特性能够在分解器中被分解为胃液，进而有助于我们制成&6小型酸液罐&r。"
 			]
@@ -103,8 +159,8 @@
 				type: "item"
 			}]
 			title: "诱导基因缺陷"
-			x: 6.0d
-			y: 0.0d
+			x: 8.5d
+			y: -2.2d
 		}
 		{
 			dependencies: ["247428B28C49C651"]
@@ -126,8 +182,8 @@
 				type: "item"
 			}]
 			title: "生物之酸"
-			x: 7.5d
-			y: 0.0d
+			x: 8.5d
+			y: -3.7d
 		}
 		{
 			dependencies: ["66338DC20A34B58D"]
@@ -146,7 +202,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "rsquare"
 			subtitle: "忍受慢性痛苦"
 			tasks: [{
 				id: "77747E78D5B1CE49"
@@ -160,8 +216,8 @@
 				type: "item"
 			}]
 			title: "第一次胸腔扩容"
-			x: 9.0d
-			y: 0.0d
+			x: 8.5d
+			y: -5.2d
 		}
 		{
 			dependencies: ["518A9614F706B9F3"]
@@ -187,8 +243,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "探寻胸腔与生物技术的关联"
-			x: 1.5d
-			y: 0.0d
+			x: 7.0d
+			y: -3.7d
 		}
 		{
 			dependencies: ["5915C77B5C546047"]
@@ -199,6 +255,7 @@
 				""
 				"如果后续需要变化胸腔类型到之前的版本，则&6通过注射预留好的注射器即可&r。"
 			]
+			hide_until_deps_complete: true
 			id: "24BF83CE3C6ABE54"
 			rewards: [{
 				id: "5FF35EF184965BA2"
@@ -212,8 +269,8 @@
 				type: "item"
 			}]
 			title: "保存现有的胸腔"
-			x: 3.0d
-			y: -1.5d
+			x: 5.5d
+			y: -3.7d
 		}
 		{
 			dependencies: ["2B8F82F33E55703A"]
@@ -232,6 +289,7 @@
 					type: "titles:title"
 				}
 			]
+			shape: "square"
 			subtitle: "保留血样"
 			tasks: [{
 				id: "73796D47E076E82E"
@@ -239,8 +297,8 @@
 				type: "item"
 			}]
 			title: "保存血液样本"
-			x: 10.5d
-			y: 0.5d
+			x: 10.7d
+			y: -4.2d
 		}
 		{
 			dependencies: ["24BF83CE3C6ABE54"]
@@ -258,8 +316,8 @@
 				type: "item"
 			}]
 			title: "最原初的血液样本"
-			x: 5.0d
-			y: -1.5d
+			x: 5.5d
+			y: -5.2d
 		}
 		{
 			dependencies: ["6E53B21FF92E150C"]
@@ -289,8 +347,8 @@
 				type: "item"
 			}]
 			title: "前往第二阶的准备"
-			x: 7.5d
-			y: 1.5d
+			x: 0.2d
+			y: -5.2d
 		}
 		{
 			dependencies: ["25E39232CC1DA79B"]
@@ -299,6 +357,7 @@
 				""
 				"如果我们能够完全按照日志中的描述&6复现扩容流程&r，那我们至少也可以完成三次胸腔扩容，进而达到曾经我们无法触及的领域。"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:tumor"
@@ -316,8 +375,8 @@
 				type: "checkmark"
 			}]
 			title: "前往第二阶的准备"
-			x: 9.0d
-			y: 1.5d
+			x: 1.7d
+			y: -5.2d
 		}
 		{
 			dependencies: ["5270808137CAF2D7"]
@@ -348,8 +407,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 1.5d
+			x: -1.3d
+			y: -5.2d
 		}
 		{
 			dependencies: ["1D5F295370D27514"]
@@ -373,8 +432,8 @@
 				type: "item"
 			}]
 			title: "临时宿主"
-			x: 4.5d
-			y: 1.5d
+			x: 1.7d
+			y: -6.7d
 		}
 		{
 			dependencies: ["65337ADF4CCA14EC"]
@@ -398,8 +457,8 @@
 				type: "item"
 			}]
 			title: "合适的傀儡材料"
-			x: 3.0d
-			y: 1.5d
+			x: 0.2d
+			y: -6.7d
 		}
 		{
 			dependencies: ["3019A17B512FFAA2"]
@@ -476,8 +535,8 @@
 				type: "item"
 			}]
 			title: "铸造大型金属傀儡部件"
-			x: 1.5d
-			y: 1.5d
+			x: -1.3d
+			y: -6.7d
 		}
 		{
 			dependencies: ["5D6FCABAF80E5527"]
@@ -505,8 +564,8 @@
 				type: "item"
 			}]
 			title: "失活神经元肿瘤"
-			x: 0.0d
-			y: 1.5d
+			x: -2.8d
+			y: -6.7d
 		}
 		{
 			dependencies: ["172FA7DB23FEF315"]
@@ -531,15 +590,16 @@
 					type: "titles:title"
 				}
 			]
+			shape: "square"
 			subtitle: "失活神经元肿瘤血样提取"
 			tasks: [{
 				id: "39C34260411CFDD2"
 				item: "kubejs:player_25_injection"
 				type: "item"
 			}]
-			title: "制成贰型注射器"
-			x: 0.0d
-			y: 3.0d
+			title: "第二次胸腔扩容"
+			x: 1.7d
+			y: -8.2d
 		}
 		{
 			dependencies: ["2D04772D78C4E72F"]
@@ -550,6 +610,7 @@
 				""
 				"您需要在一个足够安全的地方&6部署原初摇篮&r，并且喂养它直到其在周围生成&6恶性脉络&r以便开展下一步我们的培养计划。"
 			]
+			hide_until_deps_complete: true
 			id: "7A2FF567EFD19C5E"
 			rewards: [{
 				id: "0896FAB8983139E6"
@@ -562,8 +623,8 @@
 				item: "biomancy:malignant_flesh_veins"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: -7.3d
+			y: -3.7d
 		}
 		{
 			dependencies: ["234F6E06965E6BEA"]
@@ -585,8 +646,8 @@
 				type: "item"
 			}]
 			title: "恶性血肉精华"
-			x: 7.5d
-			y: 3.0d
+			x: -7.3d
+			y: -0.7d
 		}
 		{
 			dependencies: ["0EBECB93FABABCD6"]
@@ -597,6 +658,7 @@
 				""
 				"该方法效率高且没有被肉团误食器官的风险，但需要大量的蕾莓来酿造药水，成本相对较高。"
 			]
+			hide_until_deps_complete: true
 			id: "4BDC3EB3E3B69CE9"
 			rewards: [{
 				id: "6238345A90DCDD0A"
@@ -617,8 +679,8 @@
 				type: "item"
 			}]
 			title: "高效器官净化法"
-			x: 7.5d
-			y: 4.5d
+			x: -7.3d
+			y: 0.8d
 		}
 		{
 			dependencies: ["7A2FF567EFD19C5E"]
@@ -652,8 +714,8 @@
 				type: "item"
 			}]
 			title: "喂养恶性脉络"
-			x: 3.0d
-			y: 3.0d
+			x: -8.8d
+			y: -3.7d
 		}
 		{
 			dependencies: ["57B7B0D11A6D00D6"]
@@ -681,8 +743,8 @@
 				type: "item"
 			}]
 			title: "异质的吸引"
-			x: 4.5d
-			y: 3.0d
+			x: -8.8d
+			y: -2.2d
 		}
 		{
 			dependencies: ["62A4D12B41CFF4B5"]
@@ -722,8 +784,8 @@
 				type: "item"
 			}]
 			title: "定向培养蕾光体"
-			x: 6.0d
-			y: 3.0d
+			x: -7.3d
+			y: -2.2d
 		}
 		{
 			dependencies: ["0EBECB93FABABCD6"]
@@ -745,8 +807,8 @@
 				type: "item"
 			}]
 			title: "血清兼容药剂"
-			x: 9.0d
-			y: 3.0d
+			x: -8.8d
+			y: -0.7d
 		}
 		{
 			dependencies: ["5A5D9E78BE6A9095"]
@@ -783,8 +845,8 @@
 				type: "item"
 			}]
 			title: "&6庆贺吧！此乃胸腔原本之模样！&r"
-			x: 10.5d
-			y: 3.0d
+			x: -10.3d
+			y: -2.2d
 		}
 		{
 			dependencies: ["23D00C1EBDF3036C"]
@@ -801,6 +863,7 @@
 				""
 				"私有配方会使您成为唯一能够使用这样技术的人，如果其他玩家取而代之，并不会影响您已获得技术的使用。"
 			]
+			hide_until_deps_complete: true
 			id: "5C16EB8056E262E1"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -820,15 +883,15 @@
 				type: "leaderboards:rank_task"
 			}]
 			title: "蕾莓快速扩产技术"
-			x: 10.5d
-			y: 4.5d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["4BDC3EB3E3B69CE9"]
 			description: [
 				"在原初药水的基础上，你可以酿造器官滑脱药水。"
 				""
-				"被器官滑脱药水影响的生物，在死亡时会将器官// todo"
+				"被器官滑脱药水影响的生物，&6在死亡时自身的器官会因为滑脱效果而全部掉落&r。"
 			]
 			id: "70C13C3DDAA845F8"
 			rewards: [{
@@ -838,19 +901,19 @@
 			}]
 			subtitle: "器官顺滑至极"
 			tasks: [{
-				id: "1FD7C2EF6BE74E27"
+				id: "312A047600146AC7"
 				item: {
 					Count: 1
 					id: "minecraft:potion"
 					tag: {
-						Potion: "kubejs:organ_slip"
+						Potion: "chestcavity:organ_slip"
 					}
 				}
 				type: "item"
 			}]
 			title: "高效器官摘取法"
-			x: 6.0d
-			y: 4.5d
+			x: -8.8d
+			y: 0.8d
 		}
 	]
 	title: "传闻：胸腔扩容"

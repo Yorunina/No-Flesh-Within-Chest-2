@@ -15,7 +15,6 @@ RegistryOrgan('kubejs:soul_core')
 function SoulCoreEntityDoDamage(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const level = entity.level
-    console.log(entity.isFullyFrozen())
     if (entity.isFullyFrozen()) {
         entity.invulnerableTime = 0
         entity.attack(level.damageSources().freeze(), event.amount / 2)

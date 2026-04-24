@@ -17,7 +17,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:worm_neuron')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:malignant_neuron_tumor')
     .addDefault(Text.translatable('tooltips.kubejs.malignant_neuron_tumor.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.malignant_neuron_tumor.alt.1', 1))
+    .addAlt(Text.translatable('tooltips.kubejs.malignant_neuron_tumor.alt.1', Text.gold('1')))
     .addAlt(Text.translatable('tooltips.kubejs.malignant_neuron_tumor.alt.2'))
 )
 

@@ -23,7 +23,7 @@ function MalignantNeuronTumorEntityTick(customData, event, organItem, organIndex
 function MalignantNeuronTumorEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     const entity = event.entity
-    const chestCavity = entity.chestCavity
+    const chestCavity = entity.chestCavityInstance
     let maxDamage = organItem.getMaxDamage()
     let newDamageValue = organItem.getDamageValue() + event.getAmount()
     if (newDamageValue >= maxDamage) {

@@ -14,7 +14,6 @@ function HatchingChamberChestCavityTakeOn(customData, event, organItem, organInd
     if (!(entity instanceof $PathfinderMob)) return
     RemoveCustomGoalByName(entity.goalSelector, 'lay_loot')
     entity.goalSelector.addGoal(0, NewLayLootGoal(entity))
-    console.log('HatchingChamberChestCavityTakeOn')
 }
 
 /**

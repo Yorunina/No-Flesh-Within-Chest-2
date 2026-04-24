@@ -569,7 +569,6 @@
 			y: 5.5d
 		}
 		{
-			can_repeat: true
 			dependencies: ["32C2FE99D19140B3"]
 			description: [
 				"终于，到了这个阶段。"
@@ -587,15 +586,8 @@
 				title: "将时间加速到终结"
 				type: "maa:kube"
 			}]
-			shape: "gear"
+			shape: "rsquare"
 			subtitle: "将时间送入终点"
-			tasks: [{
-				elapsedTime: 3L
-				icon: "supplementaries:hourglass"
-				id: "0200D4517FD834D6"
-				title: "计秒而行"
-				type: "questsadditions:time"
-			}]
 			title: "&c时序调节：终结&r"
 			x: 14.0d
 			y: 1.5d
