@@ -958,7 +958,7 @@
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["拍摄一张&6舵背鲸&r和它的&6船只&r的照片！尽量拍全一些！因为它真的很大！"]
+			description: ["拍摄一张&6舵背鲸&r和它身上&6舵盘&r的照片！尽量拍全一些！因为它真的很大！"]
 			hide_dependency_lines: true
 			id: "35796740FDCA3F1A"
 			rewards: [{
@@ -1001,7 +1001,7 @@
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["在&6幽暗&r的&6丛林神庙&r中，危险的陷阱似乎想要将您置于死地. . .请您小心。"]
+			description: ["在&6幽暗&r的&6墓穴地下室&r中，危险的&6幽魂&r总是想要夺取你的魂魄。"]
 			hide_dependency_lines: true
 			id: "7CD76D088A4E820F"
 			rewards: [{
@@ -1011,8 +1011,12 @@
 			}]
 			subtitle: "这里有点黑"
 			tasks: [{
-				icon: "minecraft:vine"
-				id: "1153B49DF5650D5A"
+				icon: {
+					Count: 1
+					id: "kubejs:aptrgangr_soul"
+					tag: { }
+				}
+				id: "1105141AC9A91416"
 				item: {
 					Count: 1
 					id: "itemfilters:and"
@@ -1020,16 +1024,16 @@
 						items: [
 							{
 								Count: 1b
-								id: "maa:exposure_photo_structure"
+								id: "maa:exposure_photo_light_level"
 								tag: {
-									value: "minecraft:trail_ruins"
+									value: " <= 7"
 								}
 							}
 							{
 								Count: 1b
-								id: "maa:exposure_photo_light_level"
+								id: "maa:exposure_photo_structure"
 								tag: {
-									value: " <= 7"
+									value: "graveyard:crypt"
 								}
 							}
 						]
@@ -1038,7 +1042,7 @@
 				title: "获取特定照片"
 				type: "item"
 			}]
-			title: "幽暗丛林神庙"
+			title: "幽暗古迹废墟"
 			x: 7.5d
 			y: 4.5d
 		}
@@ -1088,7 +1092,7 @@
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["画面记录了4、5. . .至少&68只史莱姆&r在跳跃的场景。虽然史莱姆看起来可爱，但对玩家是极度富有敌意的。"]
+			description: ["画面记录了4、5. . .至少&66只史莱姆&r在跳跃的场景。虽然史莱姆看起来可爱，但对玩家是极度富有敌意的。"]
 			hide_dependency_lines: true
 			id: "00FA2D477EE7E146"
 			rewards: [{
@@ -1104,7 +1108,7 @@
 					Count: 1
 					id: "maa:exposure_photo_entity"
 					tag: {
-						value: "minecraft:slime >= 8"
+						value: "minecraft:slime >= 6"
 					}
 				}
 				title: "获得特定相片"
@@ -1159,6 +1163,7 @@
 						]
 					}
 				}
+				title: "获得特定相片"
 				type: "item"
 			}]
 			title: "凛冬若企鹅毛大雪"
@@ -1233,7 +1238,7 @@
 								Count: 1b
 								id: "maa:exposure_photo_entity"
 								tag: {
-									value: "minecraft:villager >= 5"
+									value: "minecraft:villager >= 2"
 								}
 							}
 							{

@@ -18,7 +18,9 @@ const InfinityDimItem2DimId = {
     'minecraft:gold_block': 'infinity:golden',
     'kubejs:elder_guardian_core': 'infinity:void',
     "minecraft:sandstone": "infinity:redstone_flat",
+    "minecraft:dragon_breath": "infinity:missingno",
 }
+
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.entity
     if (itemEntity.isOnPortalCooldown()) return
@@ -26,8 +28,7 @@ InfinityEvents.itemInPortal(event => {
     const itemStack = itemEntity.getItem()
     const level = event.getLevel()
     if (level.isClientSide()) return
-    // itemEntity.setPortalCooldown(200)
-    
+
     const pos = event.getPos()
     if (itemStack.is('kubejs:key_to_infinity')) {
         let nameString = 'infinity:random'
@@ -56,6 +57,7 @@ InfinityEvents.itemInPortal(event => {
             level.playSound(null, targetPlayer.getX(), targetPlayer.getY(), targetPlayer.getZ(), 'ui.toast.challenge_complete', targetPlayer.getSoundSource(), 0.25, 1)
         }
     } else if (itemStack.is('minecraft:diamond_block')) {
+        itemEntity.setPortalCooldown(200)
         itemEntity.setItem(Item.of('beyonddimensions:net_pathway', itemStack.getCount()))
     } else {
         let dimId = InfinityDimItem2DimId[itemStack.getId().toString()]

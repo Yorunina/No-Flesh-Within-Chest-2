@@ -4,7 +4,9 @@
         "sword/blade",
         "double/head_left",
         "double/head_right",
-        "single/head"
+        "single/head",
+        "bow/stave",
+        "crossbow/stave"
     ],
     "requirement":{
         "type":"mr:custom",

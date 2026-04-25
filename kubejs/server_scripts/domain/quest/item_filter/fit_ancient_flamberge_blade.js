@@ -5,7 +5,7 @@ MAAEvents.ftbCustomItemFilter('fit_ancient_flamberge_blade', event => {
     if (!TetraJSUtils.isModularItem(modularItem)) return
     let burnsEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:burns')
     if (burnsEfficiency < 20) return
-    let attackDamageAttributeValue = modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1)
+    let attackDamageAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1), 2)
     if (attackDamageAttributeValue < 12) return
     event.setResult(true)
 })

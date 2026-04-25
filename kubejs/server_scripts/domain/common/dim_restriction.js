@@ -1,4 +1,5 @@
 // priority: 500
+// todo 修复Trick逻辑引发的锁定失效
 AStages.addRestrictionForDimension('infinity/nexus', 'ftb_can_enter_nexus', 'infinity:nexus')
 AStages.addRestrictionForDimension('main/dimensional_worm_nether', 'ftb_server_ban_nether', 'minecraft:nether')
     .setReverse(true)

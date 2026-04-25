@@ -13,7 +13,7 @@ $CustomRequirement.registerCustomFunction('ancient_mechanical_stave', ctx => {
     const modularItem = stack.getItem()
     let seekingArrowEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:seeking_arrow')
     if (seekingArrowEfficiency < 14) return false
-    let drawSpeedAttributeValue = modularItem.getAttributeValue(stack, 'tetra:draw_speed')
+    let drawSpeedAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'tetra:draw_speed'), 2)
     if (drawSpeedAttributeValue > 1.6) return false
     return true
 })

@@ -13,7 +13,7 @@ $CustomRequirement.registerCustomFunction('heat_or_grinding_handle', ctx => {
     const modularItem = stack.getItem()
     let maxDamage = modularItem.getMaxDamage(stack)
     if (maxDamage < 1000) return false
-    let attackDamageAttributeValue = modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1)
+    let attackDamageAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1), 2)
     if (attackDamageAttributeValue > 1) return false
     return true
 })

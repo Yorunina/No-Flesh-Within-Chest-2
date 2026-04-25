@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:minisheep_gland')
     .addScore('chestcavity:defense', 1)
-    .addScore('chestcavity:buff_purging', 2)
+    .addScore('chestcavity:detoxification', 1)
     .setCanSpawn(true)
 
 /**

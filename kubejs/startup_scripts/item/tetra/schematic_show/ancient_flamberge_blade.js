@@ -13,7 +13,7 @@ $CustomRequirement.registerCustomFunction('ancient_flamberge_blade', ctx => {
     const modularItem = stack.getItem()
     let burnsEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:burns')
     if (burnsEfficiency < 20) return false
-    let attackDamageAttributeValue = modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1)
+    let attackDamageAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1), 2)
     if (attackDamageAttributeValue < 12) return false
     return true
 })

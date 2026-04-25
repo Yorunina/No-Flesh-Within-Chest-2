@@ -64,6 +64,7 @@
     "graveyard:ghouling",
     "graveyard:falling_corpse",
     "minecraft:vex",
-    "minecraft:creaking"
+    "minecraft:creaking",
+    "whaleborne:hullback"
   ]
 }

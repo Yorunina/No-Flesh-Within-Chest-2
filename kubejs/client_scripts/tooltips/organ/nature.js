@@ -268,6 +268,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:guardian_core')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:elder_guardian_core')
     .addDefault(Text.translatable('tooltips.kubejs.elder_guardian_core.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.elder_guardian_core.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.elder_guardian_core.alt.2'))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:fox_tail')

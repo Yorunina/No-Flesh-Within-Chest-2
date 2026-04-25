@@ -23,10 +23,12 @@ LootJS.modifiers(event => {
                     curshingRecipe = $CreateRecipesType.MILLING.find(warpper, level)
                 }
                 if (!curshingRecipe.isPresent()) return newLoot.push(pItem)
-                /**@type {Internal.ItemStack[]} */
-                let outputItemList = curshingRecipe.get().rollResults()
-                if (outputItemList.length <= 0) return
-                newLoot = newLoot.concat(outputItemList)
+                for (let i = 0; i < pItem.getCount(); i++) {
+                    /**@type {Internal.ItemStack[]} */
+                    let pResult = curshingRecipe.get().rollResults()
+                    if (pResult.length <= 0) return
+                    newLoot = newLoot.concat(pResult)
+                }
             })
             if (newLoot.length > 0) {
                 ctx.loot.clear()
