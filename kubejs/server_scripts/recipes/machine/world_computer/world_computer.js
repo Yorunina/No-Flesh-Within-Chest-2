@@ -412,6 +412,7 @@ ServerEvents.recipes(event => {
             if (!AStages.serverHasStage('ftb_world_computer_2', server)) {
                 AStages.addStageToServer('ftb_world_computer_2', server)
             }
+            return ctx.success()
         })
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()

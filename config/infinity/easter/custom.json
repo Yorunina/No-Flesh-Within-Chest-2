@@ -1,5 +1,8 @@
 {
   "infinity_version": 2004003,
+  "options": {
+    "portal_color": 12152658
+  },
   "generator": {
     "type": "minecraft:noise",
     "settings": {

@@ -1,9 +1,8 @@
 // priority: 500
-const FakeExtremeModeStage = 'ftb_fake_extreme_mode'
 const FakeExtreHealthDownUUID = UUID.fromString('7A205372-8B49-44B6-9188-5A97A9C003C2')
 PlayerEvents.respawned(event => {
     const server = event.server
-    if (!AStages.serverHasStage(FakeExtremeModeStage, server)) return
+    if (!AStages.serverHasStage('ftb_final_timer_start', server)) return
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     if (!player.gameMode.isSurvival()) return
@@ -38,7 +37,7 @@ EntityEvents.death('minecraft:player', event => {
     if (!player.isPlayer()) return
     // 阶段控制
     const server = event.server
-    if (!AStages.serverHasStage(FakeExtremeModeStage, server)) return
+    if (!AStages.serverHasStage('ftb_final_timer_start', server)) return
     if (!player.gameMode.isSurvival()) return
     if (player.isFake()) return
     // 伤口递进

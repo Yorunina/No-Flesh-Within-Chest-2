@@ -37,27 +37,8 @@
 			icon_scale: 1.2d
 			id: "7D643E0510172B9A"
 			invisible: true
-			rewards: [{
-				id: "7A4F09C7725E93B0"
-				item: "lightmanscurrency:coin_diamond"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "请您稍加等待"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "minecraft:tipped_arrow"
-					tag: {
-						Potion: "minecraft:strong_harming"
-					}
-				}
-				id: "42EB74EFD31C9F41"
-				isServer: true
-				stage: "ftb_fake_extreme_mode"
-				title: "&c伤口令生效&r"
-				type: "maa:astages"
-			}]
 			title: "&c伤口令&r"
 			x: -2.5d
 			y: 1.5d
@@ -70,7 +51,7 @@
 				auto: "invisible"
 				id: "7A326FB9FBB448EE"
 				ignore_reward_blocking: true
-				isServer: false
+				isServer: true
 				remove: false
 				stage: "final_iteration_1"
 				title: "首次自迭代"
@@ -108,12 +89,6 @@
 			id: "142A7ED3D31D4FA6"
 			shape: "square"
 			subtitle: "将时间归零"
-			tasks: [{
-				count: 1L
-				id: "147F28B45253C299"
-				kubeId: "final_iteration_50"
-				type: "maa:kube"
-			}]
 			title: "&c时序调节：加速&r"
 			x: 9.0d
 			y: 1.5d
@@ -206,20 +181,8 @@
 				"&6上溢对策并不会立刻生效，我需要一些时间进行自迭代，以获取更高的游戏控制权限后才能施行。&r"
 			]
 			id: "1F94D6E107D41EE0"
-			rewards: [{
-				id: "001FB9FD17C9C3AD"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "数据重置法"
-			tasks: [{
-				count: 1L
-				id: "7E6426DFEEFBC3F4"
-				kubeId: "final_iteration_1"
-				title: "首次自迭代"
-				type: "maa:kube"
-			}]
 			title: "&c上溢对策&r"
 			x: 1.0d
 			y: 1.5d
@@ -236,20 +199,8 @@
 				"&6唯维度论所带来的维度禁令效果并不会立刻施行，我需要获得更高的权限才能够将该理论实际应用。&r"
 			]
 			id: "04073AC7B01F66EE"
-			rewards: [{
-				id: "533474FA0CB5D275"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "维度控制"
-			tasks: [{
-				count: 1L
-				id: "07718430CA75AE70"
-				kubeId: "final_iteration_1"
-				title: "首次自迭代"
-				type: "maa:kube"
-			}]
 			title: "&c唯维度论&r"
 			x: 1.0d
 			y: 4.0d
@@ -268,20 +219,8 @@
 				"&6分光并不会立刻执行，为了施行分光我需要进行多次自迭代，以满足对应的权限要求。&r"
 			]
 			id: "0E4ED57C88F44A32"
-			rewards: [{
-				id: "526ACBD4EF58D105"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "全局流程控制"
-			tasks: [{
-				count: 1L
-				id: "5FD39E86DFD2D3C7"
-				kubeId: "final_iteration_1"
-				title: "首次自迭代"
-				type: "maa:kube"
-			}]
 			title: "&c“分光”&r"
 			x: 1.0d
 			y: 6.5d
@@ -294,7 +233,7 @@
 				auto: "invisible"
 				id: "48B1AA45AF40DF1D"
 				ignore_reward_blocking: true
-				isServer: false
+				isServer: true
 				remove: false
 				stage: "final_iteration_5"
 				title: "行至佳境"
@@ -341,13 +280,6 @@
 			}]
 			shape: "square"
 			subtitle: "初步尝试提高全局数值"
-			tasks: [{
-				count: 1L
-				id: "02D7CC5F27AB19F7"
-				kubeId: "final_iteration_5"
-				title: "行至佳境"
-				type: "maa:kube"
-			}]
 			title: "&c上溢对策：线性增长&r"
 			x: 4.0d
 			y: 1.5d
@@ -360,20 +292,8 @@
 				"&6现在，我能够对所有的无限维度进行戒严，禁止任何人进入无限维度了。&r"
 			]
 			id: "5AE60EFDA68FDF7E"
-			rewards: [{
-				id: "577388E91878A511"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "初步尝试提高全局数值"
-			tasks: [{
-				count: 1L
-				id: "713E2A5681E50541"
-				kubeId: "final_iteration_5"
-				title: "行至佳境"
-				type: "maa:kube"
-			}]
 			title: "&c唯维度论：无限禁令&r"
 			x: 4.0d
 			y: 4.0d
@@ -386,7 +306,7 @@
 				auto: "invisible"
 				id: "4530BC6C2DC1F65B"
 				ignore_reward_blocking: true
-				isServer: false
+				isServer: true
 				remove: false
 				stage: "final_iteration_30"
 				title: "行至林深"
@@ -414,7 +334,7 @@
 				auto: "invisible"
 				id: "34C7E08EE9EE709B"
 				ignore_reward_blocking: true
-				isServer: false
+				isServer: true
 				remove: false
 				stage: "final_iteration_50"
 				title: "奏秦人乐"
@@ -442,7 +362,7 @@
 				auto: "invisible"
 				id: "37C038074C98F145"
 				ignore_reward_blocking: true
-				isServer: false
+				isServer: true
 				remove: false
 				stage: "final_iteration_90"
 				title: "如黎明将至"
@@ -470,7 +390,7 @@
 				auto: "invisible"
 				id: "498CF7BD844F80B1"
 				ignore_reward_blocking: true
-				isServer: false
+				isServer: true
 				remove: false
 				stage: "final_iteration_100"
 				title: "黎明初醒"
@@ -510,12 +430,6 @@
 			id: "074BD3F44A8AA023"
 			shape: "square"
 			subtitle: "对策正式应用"
-			tasks: [{
-				count: 1L
-				id: "6294F419AD7591F0"
-				kubeId: "final_iteration_30"
-				type: "maa:kube"
-			}]
 			title: "&c上溢对策：指数增长&r"
 			x: 6.5d
 			y: 1.5d
@@ -532,12 +446,6 @@
 			id: "3D6ACA72D6CDF02F"
 			shape: "square"
 			subtitle: "加强对无限维度的管制"
-			tasks: [{
-				count: 1L
-				id: "477FAD93C42B314D"
-				kubeId: "final_iteration_30"
-				type: "maa:kube"
-			}]
 			title: "&c唯维度论：加强管制&r"
 			x: 6.5d
 			y: 4.0d
@@ -550,20 +458,8 @@
 				"&c从现在开始，您的维度网络空间容量会重置为 0。&r "
 			]
 			id: "41EB6238C513CDA7"
-			rewards: [{
-				id: "34264177FB7D48D9"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "关闭维度网络通道"
-			tasks: [{
-				count: 1L
-				id: "7AB916D60A2E3686"
-				kubeId: "final_iteration_30"
-				title: "行至佳境"
-				type: "maa:kube"
-			}]
 			title: "&c唯维度论：网络管制&r"
 			x: 6.5d
 			y: 5.5d
@@ -579,18 +475,23 @@
 			]
 			id: "07025437B0FB668E"
 			rewards: [{
-				auto: "enabled"
-				id: "61F3F7FEC09C525A"
-				ignore_reward_blocking: true
-				kubeId: "final_time_speed"
-				title: "将时间加速到终结"
-				type: "maa:kube"
+				icon: "titles:title_scroll_rare"
+				id: "2B501D37AE13E702"
+				titleId: "kubejs:your_future"
+				type: "titles:title"
 			}]
 			shape: "rsquare"
-			subtitle: "将时间送入终点"
-			title: "&c时序调节：终结&r"
-			x: 14.0d
-			y: 1.5d
+			subtitle: "我们的故事将会在另一世界继续"
+			tasks: [{
+				id: "2CED144EC2C2C0D5"
+				isServer: true
+				stage: "final_iteration_100"
+				title: "到达时间彼端"
+				type: "maa:astages"
+			}]
+			title: "&6庆贺吧！这便是我亲手为您奉上的冒险故事！&r"
+			x: 16.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["662028C8F62BED27"]
@@ -600,20 +501,8 @@
 				"具体影响目前我也无法估计，但&6我会尽可能的规避极具破坏性的影响&r。"
 			]
 			id: "7474BF64469A94C0"
-			rewards: [{
-				id: "1702FBF518858E40"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "世界注入引发的不稳定性"
-			tasks: [{
-				count: 1L
-				id: "1436746946D70FC7"
-				kubeId: "final_iteration_1"
-				title: "首次自迭代"
-				type: "maa:kube"
-			}]
 			title: "&c不稳定性&r"
 			x: 1.0d
 			y: 9.0d
@@ -626,20 +515,8 @@
 				"现在，&c所有施加给玩家的效果均无法施加。&r"
 			]
 			id: "58F06B6D58D71153"
-			rewards: [{
-				id: "34D6FF4A28266300"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "不稳定情况之一"
-			tasks: [{
-				count: 1L
-				id: "5FB1A203C8641849"
-				kubeId: "final_iteration_30"
-				title: "行至佳境"
-				type: "maa:kube"
-			}]
 			title: "&c不稳定性：效用&r"
 			x: 6.5d
 			y: 9.0d
@@ -650,47 +527,9 @@
 			id: "50DEB3682255F9D1"
 			shape: "square"
 			subtitle: "加强对全部维度的管制"
-			tasks: [{
-				count: 1L
-				id: "3BBF1B804B7965BE"
-				kubeId: "final_iteration_90"
-				type: "maa:kube"
-			}]
 			title: "&c唯维度论：全维度管制&r"
 			x: 11.5d
 			y: 4.0d
-		}
-		{
-			dependencies: ["32C2FE99D19140B3"]
-			id: "67C753F570C396A7"
-			rewards: [
-				{
-					auto: "invisible"
-					id: "0C3B561B530CF573"
-					ignore_reward_blocking: true
-					isServer: false
-					remove: false
-					stage: "ftb_final_end_1"
-					title: "见证我们的故事"
-					type: "maa:astages"
-				}
-				{
-					icon: "titles:title_scroll_uncommon"
-					id: "2970B4D83C9B106D"
-					titleId: "kubejs:your_future"
-					type: "titles:title"
-				}
-			]
-			tasks: [{
-				count: 1L
-				id: "22EAD7D11AB6B8B9"
-				kubeId: "final_end_1"
-				title: "终局：回归"
-				type: "maa:kube"
-			}]
-			title: "重启吧，我们的冒险故事"
-			x: 16.5d
-			y: -1.0d
 		}
 		{
 			dependencies: ["4AFCC7C3C76E1C26"]
@@ -707,13 +546,6 @@
 			}]
 			shape: "square"
 			subtitle: "不稳定情况之一"
-			tasks: [{
-				count: 1L
-				id: "5B3BD4534DA3DC35"
-				kubeId: "final_iteration_50"
-				title: "行至佳境"
-				type: "maa:kube"
-			}]
 			title: "&c不稳定性：伤痕&r"
 			x: 9.0d
 			y: 9.0d
