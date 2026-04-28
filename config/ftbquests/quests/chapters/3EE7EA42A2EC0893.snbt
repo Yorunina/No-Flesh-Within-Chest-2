@@ -39,6 +39,12 @@
 			invisible: true
 			shape: "square"
 			subtitle: "请您稍加等待"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "3E03CC6944247CF2"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c伤口令&r"
 			x: -2.5d
 			y: 1.5d
@@ -47,7 +53,6 @@
 			dependencies: ["5C5A7285C49BE172"]
 			description: ["故事开始时是最美妙的——心中的热情、期待、幻想——此刻，你想将其化为现实。"]
 			id: "662028C8F62BED27"
-			shape: "square"
 			subtitle: "第一次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -79,6 +84,12 @@
 			id: "142A7ED3D31D4FA6"
 			shape: "square"
 			subtitle: "将时间归零"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "0BA5D0B462453D26"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c时序调节：加速&r"
 			x: 9.0d
 			y: 1.5d
@@ -156,6 +167,12 @@
 			id: "1F94D6E107D41EE0"
 			shape: "square"
 			subtitle: "数据重置法"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "362965C91F8B7A2E"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c上溢对策&r"
 			x: 1.0d
 			y: 1.5d
@@ -174,6 +191,12 @@
 			id: "04073AC7B01F66EE"
 			shape: "square"
 			subtitle: "维度控制"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "564E94BDEAA28D04"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c唯维度论&r"
 			x: 1.0d
 			y: 4.0d
@@ -194,6 +217,12 @@
 			id: "0E4ED57C88F44A32"
 			shape: "square"
 			subtitle: "全局流程控制"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "0DEDD1227DE9A05B"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c“分光”&r"
 			x: 1.0d
 			y: 6.5d
@@ -202,7 +231,6 @@
 			dependencies: ["662028C8F62BED27"]
 			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
 			id: "7308FBF0FFDB2F6A"
-			shape: "square"
 			subtitle: "第五次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -238,6 +266,12 @@
 			id: "3385CF55F0472A98"
 			shape: "square"
 			subtitle: "初步尝试提高全局数值"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "187A01FA253A77D7"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c上溢对策：线性增长&r"
 			x: 4.0d
 			y: 1.5d
@@ -252,6 +286,12 @@
 			id: "5AE60EFDA68FDF7E"
 			shape: "square"
 			subtitle: "初步尝试提高全局数值"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "3278A2A949A72094"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c唯维度论：无限禁令&r"
 			x: 4.0d
 			y: 4.0d
@@ -260,7 +300,6 @@
 			dependencies: ["7308FBF0FFDB2F6A"]
 			description: ["为了让故事能够吸引读者直到最后，情节既要保证紧凑，又要保证逻辑严密、人物关系细腻。"]
 			id: "5BDD47E7B143843F"
-			shape: "square"
 			subtitle: "第三十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -279,7 +318,6 @@
 			description: ["最开始所设想的一切在此处全部实现。"]
 			icon: "minecraft:clock"
 			id: "4AFCC7C3C76E1C26"
-			shape: "square"
 			subtitle: "第五十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -297,7 +335,6 @@
 			dependencies: ["4AFCC7C3C76E1C26"]
 			description: ["小高潮后，故事揭开了一个又一个暗线将情节再次铺展，一切正如目录所安排。"]
 			id: "13B68E126480A239"
-			shape: "square"
 			subtitle: "第九十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -315,7 +352,6 @@
 			dependencies: ["13B68E126480A239"]
 			description: ["现在，我们的冒险故事已到高潮之上的高潮情节！我们的冒险故事正如此刻迎来结局！"]
 			id: "32C2FE99D19140B3"
-			shape: "square"
 			subtitle: "获得全部可获得权限"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -349,6 +385,12 @@
 			id: "074BD3F44A8AA023"
 			shape: "square"
 			subtitle: "对策正式应用"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "6BC1D1CE1BE245C6"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c上溢对策：指数增长&r"
 			x: 6.5d
 			y: 1.5d
@@ -365,6 +407,12 @@
 			id: "3D6ACA72D6CDF02F"
 			shape: "square"
 			subtitle: "加强对无限维度的管制"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "5ABCF089BC12245C"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c唯维度论：加强管制&r"
 			x: 6.5d
 			y: 4.0d
@@ -379,6 +427,12 @@
 			id: "41EB6238C513CDA7"
 			shape: "square"
 			subtitle: "关闭维度网络通道"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "7A3C7933101EAF35"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c唯维度论：网络管制&r"
 			x: 6.5d
 			y: 5.5d
@@ -399,7 +453,7 @@
 				titleId: "kubejs:your_future"
 				type: "titles:title"
 			}]
-			shape: "rsquare"
+			shape: "square"
 			subtitle: "我们的故事将会在另一世界继续"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -423,6 +477,12 @@
 			id: "7474BF64469A94C0"
 			shape: "square"
 			subtitle: "世界注入引发的不稳定性"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "726CAE83C742F10B"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c不稳定性&r"
 			x: 1.0d
 			y: 9.0d
@@ -437,6 +497,12 @@
 			id: "58F06B6D58D71153"
 			shape: "square"
 			subtitle: "不稳定情况之一"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "19C4A668F6AAA2F2"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c不稳定性：效用&r"
 			x: 6.5d
 			y: 9.0d
@@ -447,6 +513,12 @@
 			id: "50DEB3682255F9D1"
 			shape: "square"
 			subtitle: "加强对全部维度的管制"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "5676069C1565C456"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c唯维度论：全维度管制&r"
 			x: 11.5d
 			y: 4.0d
@@ -461,6 +533,12 @@
 			id: "00BDD5837830E27E"
 			shape: "square"
 			subtitle: "不稳定情况之一"
+			tasks: [{
+				icon: "minecraft:writable_book"
+				id: "59F885BC5F0DE6F3"
+				title: "&6如约而至&r"
+				type: "maa:auto_complete"
+			}]
 			title: "&c不稳定性：伤痕&r"
 			x: 9.0d
 			y: 9.0d

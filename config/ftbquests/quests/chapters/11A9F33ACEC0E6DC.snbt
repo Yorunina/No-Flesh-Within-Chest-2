@@ -27,6 +27,7 @@
 			dependency: "4BFD35B09AF6436E"
 			height: 1.5d
 			image: "kubejs:textures/gui/tasks/taste_in_jar/valley_oncall_icon.png"
+			order: -1
 			rotation: 0.0d
 			width: 7.0d
 			x: 16.65d
@@ -1222,12 +1223,21 @@
 				"虽然说对方似乎非常不满意您的一些行为，但是至少说明对方是一个有智慧的物种（或者说是群体？），那我们其实可以尝试和它们谈谈，达成一些合作关系。"
 			]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/taste_in_jar/oncall_icon.png"
+				}
+			}
 			id: "47B92A0A1393BE4F"
 			rewards: [{
 				id: "4AC4BBEE84C0169B"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 1.2d
 			subtitle: "看起来不怎么好吃"
 			tasks: [{
 				count: 1L
@@ -1237,8 +1247,8 @@
 				type: "maa:eat_item"
 			}]
 			title: "深谷来电"
-			x: 8.5d
-			y: 12.0d
+			x: 17.1d
+			y: 9.3d
 		}
 		{
 			dependencies: ["47B92A0A1393BE4F"]
@@ -1277,7 +1287,7 @@
 				type: "item"
 			}]
 			title: "友好沟通"
-			x: 16.8d
+			x: 17.1d
 			y: 12.0d
 		}
 	]

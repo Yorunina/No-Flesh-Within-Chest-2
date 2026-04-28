@@ -21,14 +21,6 @@
 	id: "6F13780E2595977B"
 	images: [
 		{
-			height: 18.0d
-			image: "kubejs:textures/gui/tasks/gensis_tinker/background.png"
-			rotation: 0.0d
-			width: 44.69d
-			x: 17.0d
-			y: 0.0d
-		}
-		{
 			height: 16.1d
 			image: "kubejs:textures/gui/tasks/gensis_tinker/background_decoration.png"
 			rotation: 0.0d
