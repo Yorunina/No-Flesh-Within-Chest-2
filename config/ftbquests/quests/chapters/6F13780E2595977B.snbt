@@ -1,6 +1,6 @@
 {
 	autofocus_id: "428D9599A58515E7"
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "6F13780E2595977B"
 	group: "0B365C36A50478AA"
@@ -207,6 +207,8 @@
 				""
 				"但由于这是您的发现，而我们已然不再那个蛮荒的传古时期，所以请允许我将其重命名为&6“新世界工艺”&r，&6以纪念您作为新世界工匠的功绩！&r"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			hide_text_until_complete: true
 			hide_until_deps_complete: true
 			id: "33D6D51353372A8F"
@@ -1815,6 +1817,7 @@
 				""
 				"更重要的是，通过在卷轴的嵌孔槽位&6镶嵌不同种类的宝石&r，能够制作不同的&6启发卷轴&r，不同的启发卷轴同样也具有着不同的材质启发要求，您可以在&6完成宝石镶嵌后在嵌孔的详情栏位查看&r。"
 			]
+			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "6361C451E76A6805"
 			rewards: [{

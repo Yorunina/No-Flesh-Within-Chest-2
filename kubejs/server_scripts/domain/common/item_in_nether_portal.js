@@ -1,5 +1,14 @@
 // priority: 500
 const InfinityDimItem2DimId = {
+    'minecraft:light_blue_dye': 'beyonddimensions:net_member_inviter',
+    'beyonddimensions:net_member_inviter': 'beyonddimensions:net_destroyer',
+    'beyonddimensions:net_destroyer': 'beyonddimensions:net_gifter',
+    'beyonddimensions:net_gifter': 'beyonddimensions:net_manager_inviter',
+    'beyonddimensions:net_manager_inviter': 'beyonddimensions:net_member_inviter',
+    'minecraft:diamond_block': 'beyonddimensions:net_pathway',
+}
+
+const InfinityItem2Item = {
     'minecraft:obsidian': 'infinity:cube',
     'minecraft:slime_ball': 'infinity:slime',
     'minecraft:grass_block': 'infinity:hills',
@@ -44,7 +53,7 @@ InfinityEvents.itemInPortal(event => {
     } else if (itemStack.hasTag('lightmanscurrency:coins')) {
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById('kubejs:oath', level, pos)
-    } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT() && !AStages.serverHasStage('ftb_final_timer_start', event.server)) {
+    } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT() && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
         let nbt = itemStack.getNbt()
         if (!nbt.contains('photograph_frame')) return
         let frameNbt = nbt.getCompound('photograph_frame')
@@ -57,9 +66,9 @@ InfinityEvents.itemInPortal(event => {
             DimensionsNet.createNewNetForPlayer(targetPlayer, 1024, 27)
             level.playSound(null, targetPlayer.getX(), targetPlayer.getY(), targetPlayer.getZ(), 'ui.toast.challenge_complete', targetPlayer.getSoundSource(), 0.25, 1)
         }
-    } else if (itemStack.is('minecraft:diamond_block')) {
+    } else if (InfinityDimItem2DimId[itemStack.getId().toString()]) {
         itemEntity.setPortalCooldown(200)
-        itemEntity.setItem(Item.of('beyonddimensions:net_pathway', itemStack.getCount()))
+        itemEntity.setItem(Item.of(InfinityDimItem2DimId[itemStack.getId().toString()], itemStack.getCount()))
     } else {
         let dimId = InfinityDimItem2DimId[itemStack.getId().toString()]
         if (!dimId) return

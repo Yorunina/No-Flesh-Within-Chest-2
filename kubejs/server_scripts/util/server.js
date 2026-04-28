@@ -62,7 +62,7 @@ function DecreaseEternalWinterCounter(server, num) {
 function GetLeaderBoardTotal(id, server) {
     let leaderboard = GetLeaderBoardById(id)
     if (leaderboard == null) return 0
-    ServerAchieveStatTask.getServerTotalFromCache(server, leaderboard)
+    return ServerAchieveStatTask.getServerTotalFromCache(server, leaderboard)
 }
 
 /**

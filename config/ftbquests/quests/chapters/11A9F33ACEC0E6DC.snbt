@@ -4,7 +4,6 @@
 	default_quest_shape: ""
 	filename: "11A9F33ACEC0E6DC"
 	group: "78F99AC9360F0137"
-	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		id: "kubejs:jar_of_mystery"
@@ -13,6 +12,128 @@
 		}
 	}
 	id: "11A9F33ACEC0E6DC"
+	images: [
+		{
+			dependency: "4BFD35B09AF6436E"
+			height: 14.12d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/taste_board.png"
+			order: -1
+			rotation: 0.0d
+			width: 12.0d
+			x: 15.2d
+			y: 5.2d
+		}
+		{
+			dependency: "4BFD35B09AF6436E"
+			height: 1.5d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/valley_oncall_icon.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 16.65d
+			y: 9.55d
+		}
+		{
+			dependency: "1E01A8A10DC713E3"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/observe_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.7d
+			y: 0.0d
+		}
+		{
+			dependency: "43DD1C0BA90A1ACB"
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/delicious_evolution_1.png"
+			order: 1
+			rotation: 0.0d
+			width: 2.39d
+			x: 6.7d
+			y: -0.05d
+		}
+		{
+			dependency: "4BFD35B09AF6436E"
+			height: 1.2d
+			hideDependency: "279EB57E529F3640"
+			image: "kubejs:textures/gui/tasks/taste_in_jar/delicious_worm.png"
+			rotation: 0.0d
+			width: 4.38d
+			x: 15.2d
+			y: 0.0d
+		}
+		{
+			dependency: "279EB57E529F3640"
+			height: 1.2d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/dimension_worm.png"
+			rotation: 0.0d
+			width: 5.02d
+			x: 15.15d
+			y: 0.0d
+		}
+		{
+			dependency: "43DD1C0BA90A1ACB"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/observe_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.7d
+			y: 4.0d
+		}
+		{
+			dependency: "1FA97EE58C47666D"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/observe_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.7d
+			y: 8.0d
+		}
+		{
+			dependency: "3786F4EF9AB65A30"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/observe_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 6.7d
+			y: 12.0d
+		}
+		{
+			dependency: "1FA97EE58C47666D"
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/delicious_evolution_2.png"
+			rotation: 0.0d
+			width: 2.39d
+			x: 6.7d
+			y: 4.0d
+		}
+		{
+			dependency: "3786F4EF9AB65A30"
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/delicious_evolution_3.png"
+			rotation: 0.0d
+			width: 2.39d
+			x: 6.7d
+			y: 7.9d
+		}
+		{
+			dependency: "4BFD35B09AF6436E"
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/delicious_evolution_4.png"
+			rotation: 0.0d
+			width: 2.38d
+			x: 6.7d
+			y: 11.95d
+		}
+		{
+			dependency: "2227580EB38F9126"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/taste_in_jar/gula_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 15.0d
+			y: -3.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -40,7 +161,7 @@
 				type: "item"
 			}]
 			title: "迷之罐"
-			x: 1.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -77,6 +198,7 @@
 				""
 				"现在，罐子里&6几乎&r什么都没有. . .正常来说是这样的。"
 			]
+			hide_until_deps_complete: true
 			id: "43DD1C0BA90A1ACB"
 			rewards: [{
 				id: "5E748FC6EE7E3E7B"
@@ -94,7 +216,7 @@
 				type: "item"
 			}]
 			title: "一小罐“真空”"
-			x: 4.0d
+			x: 5.0d
 			y: 0.0d
 		}
 		{
@@ -104,6 +226,7 @@
 				""
 				"现在，它还只是一个&6幼体&r。您可以为它提供一个环境使其成长，虽然有些令人厌恶，但这个环境的最优选择便是&c您的胸腔&r。"
 			]
+			hide_until_deps_complete: true
 			id: "1FA97EE58C47666D"
 			rewards: [{
 				id: "36B887E75EC8A9AE"
@@ -122,8 +245,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.0d
+			x: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1FA97EE58C47666D"]
@@ -136,6 +259,7 @@
 				""
 				"美味虫的幼体无法从您的胸腔直接取出，待您食用足够多的食物之后，其会自然而然进化为成虫，脱离寄生主体。"
 			]
+			hide_until_deps_complete: true
 			id: "3786F4EF9AB65A30"
 			rewards: [{
 				id: "4CE48D2F169A099E"
@@ -155,8 +279,8 @@
 				type: "item"
 			}]
 			title: "蠕虫幼体"
-			x: 7.0d
-			y: 0.0d
+			x: 5.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -169,6 +293,8 @@
 				""
 				"如果我们能够有效利用其力量，或许能颠覆之前对器官体系的基本认知！"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "19FA069801FA43D1"
 			invisible: true
 			rewards: [{
@@ -186,8 +312,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.5d
-			y: -2.5d
+			x: 24.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -198,6 +324,7 @@
 				""
 				"除此之外，我对您的身体扫描后，发现在&6胸腔内的幼体美味虫似乎总是想要吃掉它周围的器官&r. . .虽然最后它似乎是放弃了，但感觉其并非善意。"
 			]
+			hide_until_deps_complete: true
 			id: "4BFD35B09AF6436E"
 			rewards: [{
 				id: "442A46D7431FBD8E"
@@ -215,8 +342,8 @@
 				type: "item"
 			}]
 			title: "美味虫"
-			x: 8.5d
-			y: 1.0d
+			x: 5.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
@@ -225,12 +352,17 @@
 				""
 				"日志记载，这种烹饪的美味虫味道一般，勉强比生食好过些许，无法满足饱腹之欲。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "7CD591898F55BC60"
 			rewards: [{
 				id: "4834EDFBFA88901C"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "只需加大火苗"
 			tasks: [{
 				id: "5920412A8288D785"
@@ -238,8 +370,8 @@
 				type: "item"
 			}]
 			title: "简单处理的美味虫"
-			x: 10.5d
-			y: 4.0d
+			x: 11.79d
+			y: 7.32d
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
@@ -248,12 +380,16 @@
 				""
 				"美味虫干易于磨碎成粉，进而用于各种调味制品的制作中。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "22116E44C81CA5C8"
 			rewards: [{
 				id: "54FE130460D5D3D5"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "风干技术"
 			tasks: [{
 				id: "3113001C7EE1D53A"
@@ -261,8 +397,8 @@
 				type: "item"
 			}]
 			title: "美味干"
-			x: 10.5d
-			y: 1.5d
+			x: 11.75d
+			y: 5.05d
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
@@ -271,38 +407,46 @@
 				""
 				"日志记载中，煎炸是处理美味虫的最简单的方式，不仅保留了其作为&6虫子美食&r的特点，而且还能尽可能发挥美味虫本身保留的美味。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "1EF30986B9E4ACBA"
 			rewards: [{
 				id: "58368D3DBB7790F2"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "一种怪异的虫子美食"
 			tasks: [{
 				id: "04FEC43AB1D32DC5"
 				item: "kubejs:fried_taste_worm"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 2.5d
+			x: 11.8d
+			y: 9.65d
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
 			description: ["将美味虫&6打成肉馅&r也是一种常见的处理方式，虽然不知道为什么，这种虫子会有着如此饱满的肉质. . .但其处理中和处理后的模样实在是令人厌恶。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "55329907B527DCE5"
 			rewards: [{
 				id: "1A2F1AA807506FFF"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "呃. . .有点恶心"
 			tasks: [{
 				id: "0405F356EF8E2A48"
 				item: "kubejs:taste_worm_meat_filling"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.5d
+			x: 11.75d
+			y: 2.62d
 		}
 		{
 			dependencies: ["55329907B527DCE5"]
@@ -313,20 +457,24 @@
 				""
 				"当然，在这个过程中尽量保证不要混用多条美味虫，因为&n不同美味虫所蕴含的美味不同&r，如果你不想体验混合味道的话，还是不要将多条美味虫的肉馅混在一起。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "307D2E9D0640B128"
 			rewards: [{
 				id: "49E75E68EAF1B0D8"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "好像正常了些"
 			tasks: [{
 				id: "6759C17333EAAADA"
 				item: "kubejs:taste_worm_meat_patty"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.5d
+			x: 14.15d
+			y: 2.61d
 		}
 		{
 			dependencies: ["22116E44C81CA5C8"]
@@ -335,20 +483,24 @@
 				""
 				"将美味干细细研磨后，即可得到可以长期使用的美味粉。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "7F29416AEF85DA75"
 			rewards: [{
 				id: "1FD44AE8947591DA"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "研磨美味干"
 			tasks: [{
 				id: "4BD731BC3A8B6268"
 				item: "kubejs:taste_worm_powder"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 1.5d
+			x: 14.1d
+			y: 5.03d
 		}
 		{
 			dependencies: ["7F29416AEF85DA75"]
@@ -357,20 +509,24 @@
 				""
 				"虽然日志中大量描述美味虫汤的&6诱人香味&r. . .但它的原料似乎完全关联不上. . ."
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "42DD41219B0D20CC"
 			rewards: [{
 				id: "76A3EF94F25D7B29"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "好像有点. . ."
 			tasks: [{
 				id: "4915FD9148741566"
 				item: "kubejs:tasty_worm_soup"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 3.0d
+			x: 16.46d
+			y: 7.34d
 		}
 		{
 			dependencies: ["7F29416AEF85DA75"]
@@ -379,20 +535,24 @@
 				""
 				"尽管美味面包本身可能没有过多的调味和配料，但其令人&6回味无穷&r. . .至少日志是这么描述的。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "7466C43484204792"
 			rewards: [{
 				id: "4BFADC9D5224FF5E"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "真正美味的面包！"
 			tasks: [{
 				id: "308960930EC42B4F"
 				item: "kubejs:tasty_bread"
 				type: "item"
 			}]
-			x: 14.5d
-			y: 1.5d
+			x: 18.8d
+			y: 7.3d
 		}
 		{
 			dependencies: ["41FEB64150AA4A62"]
@@ -403,6 +563,8 @@
 				""
 				"&7**心. . .请让我们品尝你的心脏. . .**&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:heart"
@@ -422,8 +584,8 @@
 				title: "品尝美味汉堡"
 				type: "maa:eat_item"
 			}]
-			x: 5.5d
-			y: -1.5d
+			x: 22.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["42DD41219B0D20CC"]
@@ -434,6 +596,8 @@
 				"&r"
 				"&7**胃. . .请让我们品尝你的胃. . .**&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:stomach"
@@ -455,8 +619,8 @@
 				type: "maa:eat_item"
 			}]
 			title: "品尝美味虫汤"
-			x: 9.5d
-			y: -1.5d
+			x: 22.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1EF30986B9E4ACBA"]
@@ -467,6 +631,8 @@
 				"&r"
 				"&7**骨. . .请让我们品尝你的骨骼. . .**&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:rib"
@@ -487,8 +653,8 @@
 				type: "maa:eat_item"
 			}]
 			title: "品尝煎炸美味虫"
-			x: 8.5d
-			y: -1.5d
+			x: 22.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["7F29416AEF85DA75"]
@@ -497,20 +663,24 @@
 				""
 				"其仍旧是会随着美味虫本身的差异，有着&6千奇百怪&r的味道. . .更奇怪的是，似乎饮用再多也不会因此而醉酒。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "0F4D1F2DD2B005CE"
 			rewards: [{
 				id: "60C444DDEF5F2C7E"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "一种风味奇特的啤酒"
 			tasks: [{
 				id: "76C3BC46D05E4584"
 				item: "kubejs:tasty_beer"
 				type: "item"
 			}]
-			x: 15.5d
-			y: -0.5d
+			x: 14.1d
+			y: 7.32d
 		}
 		{
 			dependencies: ["0F4D1F2DD2B005CE"]
@@ -521,6 +691,8 @@
 				""
 				"&7**肝 . .请让我们品尝你的肝脏. . .**&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:liver"
@@ -540,8 +712,8 @@
 				title: "品尝美味精酿"
 				type: "maa:eat_item"
 			}]
-			x: 6.5d
-			y: -1.5d
+			x: 22.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7466C43484204792"]
@@ -552,6 +724,8 @@
 				""
 				"&7**肾. . .请让我们品尝你的肾脏. . .**&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:kidney"
@@ -571,8 +745,8 @@
 				title: "品尝美味面包"
 				type: "maa:eat_item"
 			}]
-			x: 7.5d
-			y: -1.5d
+			x: 22.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -584,20 +758,24 @@
 				""
 				"日志中的描述非常模糊，似乎鲜有人吃过由&6美味面包&r和&6美味肉饼&r制作而成的汉堡。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "41FEB64150AA4A62"
 			rewards: [{
 				id: "44C93F1A8001B3AF"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 5.6d
 			subtitle: "两面包夹肉饼"
 			tasks: [{
 				id: "43D8A28B2134BF08"
 				item: "kubejs:tasty_hamburg"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 0.5d
+			x: 17.7d
+			y: 3.6399999999999997d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -608,6 +786,8 @@
 				""
 				"融合产生的&6啤酒腺&r能够在胸腔有大胃王的环境下发挥巨大的作用。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "7F73D4C9635221D9"
 			invisible: true
 			rewards: [{
@@ -625,8 +805,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: -2.5d
+			x: 24.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -637,6 +817,8 @@
 				""
 				"融合产生的&6甜品腺&r能够在胸腔有大胃王的环境下发挥巨大的作用。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "3D71247FDEF412F0"
 			invisible: true
 			rewards: [{
@@ -654,8 +836,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.5d
+			x: 24.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -666,6 +848,7 @@
 				""
 				"融合产生的&6寄生胃&r能够在您食用完食物后提供大量的伤害加成，这对生存有着巨大的帮助。"
 			]
+			hide_dependency_lines: true
 			id: "7B97DAEAF7EC0C6B"
 			invisible: true
 			rewards: [{
@@ -683,8 +866,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: -2.5d
+			x: 24.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
@@ -695,6 +878,8 @@
 				""
 				"融合产生的&6贪婪喉管&r能够反复消化食物以提高食物的利用效率。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "681B099458A589BD"
 			invisible: true
 			rewards: [{
@@ -712,8 +897,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.5d
+			x: 24.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -738,6 +923,7 @@
 				""
 				"&6请您多加小心。&r"
 			]
+			hide_until_deps_complete: true
 			id: "7F02067DAA546C55"
 			min_required_dependencies: 3
 			rewards: [{
@@ -756,8 +942,8 @@
 				type: "item"
 			}]
 			title: "暴食蠕虫"
-			x: 7.5d
-			y: -4.5d
+			x: 24.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7F02067DAA546C55"]
@@ -768,6 +954,7 @@
 				""
 				"&7**那么就此别过，期待下一次美餐。**&r"
 			]
+			hide_until_deps_complete: true
 			id: "2227580EB38F9126"
 			invisible: true
 			rewards: [{
@@ -775,7 +962,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "none"
 			subtitle: "这是我们的谢礼"
 			tasks: [{
 				entity: "minecraft:empty"
@@ -787,8 +974,8 @@
 				value: 1L
 			}]
 			title: "&6庆贺吧！此乃暴食胸腔！&r"
-			x: 7.5d
-			y: -6.0d
+			x: 15.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2227580EB38F9126"]
@@ -807,6 +994,7 @@
 				""
 				"私有配方会使您成为唯一能够制作暴食注射器的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
 			]
+			hide_until_deps_complete: true
 			id: "37AD78091519F72E"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -814,7 +1002,6 @@
 				table_id: 7788571112521187502L
 				type: "choice"
 			}]
-			shape: "diamond"
 			subtitle: "多吃几口吧"
 			tasks: [{
 				icon: "minecraft:cake"
@@ -826,8 +1013,8 @@
 				type: "leaderboards:rank_task"
 			}]
 			title: "暴食注射器配方"
-			x: 7.5d
-			y: -7.5d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["43DD1C0BA90A1ACB"]
@@ -840,6 +1027,8 @@
 				""
 				"&6请您稍加等待，我需要进行信息的分析。&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "4DB48FF831D57F33"
 			rewards: [{
 				id: "1BF7167215059C9E"
@@ -855,8 +1044,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "奇怪的空间利用"
-			x: 4.0d
-			y: 1.5d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4DB48FF831D57F33"]
@@ -882,8 +1071,8 @@
 				value: 1L
 			}]
 			title: "山羊的秘密"
-			x: 4.0d
-			y: 3.0d
+			x: 8.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["54BBCB6C78712B0D"]
@@ -917,8 +1106,8 @@
 				type: "item"
 			}]
 			title: "荒唐的号角"
-			x: 4.0d
-			y: 4.5d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["54BBCB6C78712B0D"]
@@ -953,8 +1142,8 @@
 				type: "item"
 			}]
 			title: "更科学的食物管理"
-			x: 5.5d
-			y: 3.0d
+			x: 8.5d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -967,6 +1156,8 @@
 				""
 				"但是方案目前还没有找到，毕竟美味虫是一种比较&6难以捉摸&r的物种。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "beyonddimensions:net_creater"
 			id: "54B50CDDC84E543B"
 			rewards: [{
@@ -974,7 +1165,6 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
 			subtitle: "美味虫利用理论"
 			tasks: [{
 				id: "546C550669204CD7"
@@ -982,8 +1172,8 @@
 				type: "checkmark"
 			}]
 			title: "&6领域交差：异次元扩容术&r"
-			x: 8.0d
-			y: 3.0d
+			x: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4DB48FF831D57F33"]
@@ -1012,8 +1202,8 @@
 				type: "dimension"
 			}]
 			title: "美味虫的远房亲戚"
-			x: 5.5d
-			y: 1.5d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -1031,6 +1221,7 @@
 				""
 				"虽然说对方似乎非常不满意您的一些行为，但是至少说明对方是一个有智慧的物种（或者说是群体？），那我们其实可以尝试和它们谈谈，达成一些合作关系。"
 			]
+			hide_until_deps_complete: true
 			id: "47B92A0A1393BE4F"
 			rewards: [{
 				id: "4AC4BBEE84C0169B"
@@ -1040,15 +1231,14 @@
 			subtitle: "看起来不怎么好吃"
 			tasks: [{
 				count: 1L
-				icon: "kubejs:simple_cooked_taste_worm"
 				id: "0672A362E6189C7C"
 				item: "kubejs:simple_cooked_taste_worm"
 				title: "品尝简单处理的美味虫"
 				type: "maa:eat_item"
 			}]
 			title: "深谷来电"
-			x: 8.0d
-			y: 4.5d
+			x: 8.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["47B92A0A1393BE4F"]
@@ -1067,13 +1257,13 @@
 				""
 				"抱歉，我暂时允许了它们的直接数据通信，不过确实如它们所说，只要您稍微尝试，就能明白该如何使用。"
 			]
+			hide_until_deps_complete: true
 			id: "4F1FFCBD1BF6A6E4"
 			rewards: [{
 				id: "29AA82E28180EBB5"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
 			subtitle: "一次友好的沟通"
 			tasks: [{
 				id: "6415C74DA344C336"
@@ -1087,8 +1277,8 @@
 				type: "item"
 			}]
 			title: "友好沟通"
-			x: 8.0d
-			y: 6.0d
+			x: 16.8d
+			y: 12.0d
 		}
 	]
 	title: "秘闻：罐装美味"

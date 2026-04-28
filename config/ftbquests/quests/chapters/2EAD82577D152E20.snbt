@@ -1,6 +1,6 @@
 {
 	autofocus_id: "7DFD8F39E1AC3083"
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2EAD82577D152E20"
 	group: "0B365C36A50478AA"
@@ -12,7 +12,7 @@
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/title_start.png"
 			rotation: 0.0d
 			width: 8.642d
-			x: -0.5d
+			x: 0.0d
 			y: -6.0d
 		}
 		{
@@ -56,7 +56,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 4.5d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			height: 3.0d
@@ -64,7 +64,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 4.5d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			height: 3.0d
@@ -80,17 +80,18 @@
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/title_journey.png"
 			rotation: 0.0d
 			width: 11.75d
-			x: 21.0d
-			y: 8.5d
+			x: 20.0d
+			y: 10.5d
 		}
 		{
 			dependency: "6B524BB21FC95A01"
 			height: 12.0d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/photo_frame.png"
+			order: -1
 			rotation: 0.0d
 			width: 35.52d
 			x: 10.5d
-			y: 15.0d
+			y: 17.5d
 		}
 		{
 			dependency: "6B524BB21FC95A01"
@@ -100,7 +101,7 @@
 			rotation: 0.0d
 			width: 6.0d
 			x: -2.75d
-			y: 12.0d
+			y: 14.0d
 		}
 		{
 			dependency: "6B524BB21FC95A01"
@@ -110,7 +111,7 @@
 			rotation: 3.0d
 			width: 3.0d
 			x: -3.0d
-			y: 11.5d
+			y: 14.0d
 		}
 		{
 			dependency: "6B524BB21FC95A01"
@@ -120,7 +121,7 @@
 			rotation: -10.0d
 			width: 3.0d
 			x: -1.5d
-			y: 10.0d
+			y: 12.5d
 		}
 		{
 			dependency: "6B524BB21FC95A01"
@@ -130,7 +131,7 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 25.5d
-			y: 20.0d
+			y: 22.5d
 		}
 		{
 			dependency: "6B524BB21FC95A01"
@@ -139,7 +140,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 25.5d
-			y: 22.5d
+			y: 25.0d
 		}
 		{
 			dependency: "42611C6251FAB454"
@@ -520,6 +521,34 @@
 			x: 21.5d
 			y: 31.0d
 		}
+		{
+			dependency: "2F9EE70E103CA5D0"
+			height: 3.0d
+			hideDependency: "0E25E431098EC128"
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_infinity_key_generating.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 48.5d
+		}
+		{
+			dependency: "0E25E431098EC128"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_infinity_key_ready.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 48.5d
+		}
+		{
+			height: 18.0d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/start_frame.png"
+			order: -1
+			rotation: 0.0d
+			width: 35.0d
+			x: 10.25d
+			y: -0.5d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]
@@ -589,6 +618,8 @@
 				""
 				"两者相比较来说，黑白胶卷的冲洗更为简单直接，因此目标为完成任务的情况下，我更建议您使用黑白胶卷而非彩色胶卷。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: "exposure:black_and_white_film"
 			id: "509FC63C6A0CF06A"
 			rewards: [{
@@ -623,6 +654,7 @@
 				""
 				"请您熟悉这个工具，我们后面为了记录各种各样的东西，会反复使用它。"
 			]
+			hide_dependency_lines: true
 			id: "4449195A34FB718E"
 			rewards: [{
 				id: "21297002FB1A05DC"
@@ -641,10 +673,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"509FC63C6A0CF06A"
-				"4449195A34FB718E"
-			]
+			dependencies: ["3F88ADBD557E73A8"]
 			description: [
 				"看来您已经能够学会如何冲洗照片了。"
 				""
@@ -830,8 +859,8 @@
 				type: "item"
 			}]
 			title: "苦力怕在阴暗中"
-			x: 0.0d
-			y: 13.0d
+			x: -0.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["5F95F25DAC9FBAAA"]
@@ -920,8 +949,8 @@
 				type: "item"
 			}]
 			title: "惊扰远古的守卫者"
-			x: 2.5d
-			y: 13.0d
+			x: 2.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -949,8 +978,8 @@
 				type: "item"
 			}]
 			title: "身陷烈焰漩涡之中"
-			x: 5.0d
-			y: 13.0d
+			x: 4.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1000,8 +1029,8 @@
 				type: "item"
 			}]
 			title: "鸡牛羊与风之舞"
-			x: 7.5d
-			y: 13.0d
+			x: 7.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1029,8 +1058,8 @@
 				type: "item"
 			}]
 			title: "小猪军团的再进发"
-			x: 10.0d
-			y: 13.0d
+			x: 9.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1073,8 +1102,8 @@
 				type: "item"
 			}]
 			title: "灰烬与火焰之舞"
-			x: 12.5d
-			y: 13.0d
+			x: 12.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1163,8 +1192,8 @@
 				type: "item"
 			}]
 			title: "飞空艇与掠夺艺术"
-			x: 15.0d
-			y: 13.0d
+			x: 14.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1192,8 +1221,8 @@
 				type: "item"
 			}]
 			title: "浮空岛与浮空村"
-			x: 17.5d
-			y: 13.0d
+			x: 17.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1249,8 +1278,8 @@
 				type: "item"
 			}]
 			title: "村庄生态的平衡"
-			x: 20.0d
-			y: 13.0d
+			x: 19.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["5F95F25DAC9FBAAA"]
@@ -1328,8 +1357,8 @@
 				type: "item"
 			}]
 			title: "我、机械与热气球"
-			x: 22.5d
-			y: 13.0d
+			x: 22.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1372,8 +1401,8 @@
 				type: "item"
 			}]
 			title: "越危险越小心！"
-			x: 0.0d
-			y: 17.0d
+			x: -0.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1401,8 +1430,8 @@
 				type: "item"
 			}]
 			title: "地下居民们的业余生活"
-			x: 2.5d
-			y: 17.0d
+			x: 2.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1454,8 +1483,8 @@
 				type: "item"
 			}]
 			title: "蘑菇遍布的岛屿"
-			x: 5.0d
-			y: 17.0d
+			x: 4.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1483,8 +1512,8 @@
 				type: "item"
 			}]
 			title: "咕咕从水下涌上的气泡"
-			x: 7.5d
-			y: 17.0d
+			x: 7.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1527,8 +1556,8 @@
 				type: "item"
 			}]
 			title: "舵背鲸之号"
-			x: 10.0d
-			y: 17.0d
+			x: 9.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1575,8 +1604,8 @@
 				type: "item"
 			}]
 			title: "幽暗古迹废墟"
-			x: 12.5d
-			y: 17.0d
+			x: 12.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1620,8 +1649,8 @@
 				type: "item"
 			}]
 			title: "自由驱逐者"
-			x: 15.0d
-			y: 17.0d
+			x: 14.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1649,8 +1678,8 @@
 				type: "item"
 			}]
 			title: "由史莱姆染成的绿"
-			x: 17.5d
-			y: 17.0d
+			x: 17.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1702,8 +1731,8 @@
 				type: "item"
 			}]
 			title: "凛冬若企鹅毛大雪"
-			x: 20.0d
-			y: 17.0d
+			x: 19.5d
+			y: 19.5d
 		}
 		{
 			dependencies: [
@@ -1747,7 +1776,7 @@
 			}]
 			title: "收官之作"
 			x: 25.5d
-			y: 20.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
@@ -1790,8 +1819,8 @@
 				type: "item"
 			}]
 			title: "我们的好时光"
-			x: 22.5d
-			y: 17.0d
+			x: 22.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["42611C6251FAB454"]
@@ -1800,6 +1829,7 @@
 				""
 				"现在请您搭建一个下界传送门，并且将&6黑曜石&r丢到下界门中——它绝对不会穿越到另一个维度的，它将会为您打开一扇通向未知的桥梁。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "05B30D636925E1C1"
 			rewards: [
@@ -1834,6 +1864,7 @@
 				""
 				"现在请您将&6黏液球&r投掷到传送门中，它将会重新开启一道通向更加混乱世界的通道。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4329E9383BBF0B7E"
 			rewards: [{
@@ -1862,6 +1893,7 @@
 				""
 				"我们必须前往下一个踪迹所在的位置，了解到真实的意图。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "supplementaries:cage"
 			id: "2E7B76E8277B6B60"
@@ -1898,6 +1930,7 @@
 				""
 				"但由于其奇怪的碰撞箱，击杀它可能需要一些时间和技巧。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "simplehats:slime_head"
 			id: "7862A6B384A0E8B4"
@@ -1932,6 +1965,7 @@
 				""
 				"在那之后，辛苦您进入新的维度并且带回它的照片。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "1633AB544EB13336"
 			rewards: [{
@@ -1966,6 +2000,7 @@
 				""
 				"目前，这个维度空间可能比较有限，您只能存储&6相当有限&r的物品（27种不同的物品，每种最多1024个）在维度网络中。后续我相信一定有方法可以进一步拓展存储能力，但这需要时间。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "1242839DAB198513"
 			rewards: [{
@@ -1997,6 +2032,7 @@
 				""
 				"所以，请您完全忘记龙息的方案吧，它显然有些危险。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "amendments:dragon_charge"
 			id: "20A8A171833B2F50"
@@ -2031,6 +2067,7 @@
 				""
 				"因此我决定&6优先进行扫描&r，而后再让您进行探索。请您稍等一段时间。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "1C316C6505326313"
 			rewards: [{
@@ -2060,6 +2097,7 @@
 				""
 				"通过维度网络通道，可以制作出各种各样用于和维度网络交互的设备，在后面我会举一个例子作为介绍，向您解释它的基本功能。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "49BCABE5A8123636"
 			rewards: [{
@@ -2090,6 +2128,7 @@
 				""
 				"- 使用其他的模块也是同理，再次请允许我不再赘述。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "1E560E6025CC2C22"
 			rewards: [{
@@ -2138,6 +2177,7 @@
 				""
 				"其实我大概已经有一些结论了，但只有在您拜访过这些维度之后，您才大概能够理解这个结论。"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:writable_book"
 			id: "7ACE1C4CE1A9D896"
@@ -2450,6 +2490,7 @@
 				""
 				"而这些维度也是如此——它们并不是遵循了什么规则生成，它们只是在混乱的组合所有的可能性，&6最后为我们、为您呈现上不同的奇迹！！&r"
 			]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "2F9EE70E103CA5D0"
 			rewards: [
@@ -2497,7 +2538,7 @@
 				item: "kubejs:key_to_infinity"
 				type: "item"
 			}]
-			shape: "gear"
+			shape: "none"
 			subtitle: "请见证我们的冒险故事"
 			tasks: [{
 				elapsedTime: 1800L
@@ -2507,8 +2548,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "&6庆贺吧！此乃通往无尽之钥！&r"
-			x: 11.0d
-			y: 48.5d
+			x: 9.52d
+			y: 48.45d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]
@@ -2610,7 +2651,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4449195A34FB718E"]
+			dependencies: ["3F88ADBD557E73A8"]
 			description: [
 				"使用暗房打印照片在某些时候还是太慢了，您可以选择使用&6拍立得&r来快速获得相片以查看是否满足对应的拍摄条件。"
 				""
@@ -2631,11 +2672,12 @@
 			}]
 			title: "所见即所得"
 			x: 4.5d
-			y: 4.0d
+			y: 3.8d
 		}
 		{
 			dependencies: ["7ACE1C4CE1A9D896"]
 			description: ["用菌光体作为引子，您便可以来到一个埋藏在地底深处的世界。"]
+			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "354161CC18BA01F3"
 			rewards: [{
@@ -2655,6 +2697,31 @@
 			title: "探索螺旋洞穴"
 			x: 5.5d
 			y: 44.5d
+		}
+		{
+			dependencies: ["49BCABE5A8123636"]
+			description: [
+				"将&6淡蓝色染料&r投入到传送门中，即可获得能够用于共享维度网络的&6成员连接符&r。"
+				""
+				"您可以通过手持该物品右键将自己的网络标记到该连接符上，之后便可以将该连接符送给其他玩家，进而让其他玩家加入到您的网络中。"
+				""
+				"除此之外，您还可以将成员连接符再次投入到传送门中以获得网络销毁符、网络赠送符、管理员连接符。其分别对应销毁、合并、添加管理的功能。"
+			]
+			hide_dependency_lines: true
+			id: "45BB469CB7E0F613"
+			rewards: [{
+				id: "4791F47D1CC81E73"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "将网络共享"
+			tasks: [{
+				id: "6F7AAF775603C98E"
+				item: "beyonddimensions:net_member_inviter"
+				type: "item"
+			}]
+			x: 21.5d
+			y: 28.0d
 		}
 	]
 	title: "传闻：重现黄金乡"

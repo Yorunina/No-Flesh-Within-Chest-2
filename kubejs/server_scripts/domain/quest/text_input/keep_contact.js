@@ -8,7 +8,7 @@ MAAEvents.textInputTaskSubmit('keep_contact', (event) => {
     const inputText = event.inputText.trim().toLowerCase()
     const teamData = event.teamData
     const task = event.task
-    if (AStages.serverHasStage('ftb_final_timer_start', null)) return
+    if (AStages.serverHasStage(FTBFinalTimerStart, null)) return
     for (let strategy of KeepContactStrategyList) {
         if (strategy.test([player, inputText, teamData, task])) {
             strategy.run([player, inputText, teamData, task])

@@ -12,7 +12,6 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-
     // SetDaySpeed(1)
     // SetNightSpeed(1)
     // UpdatePlaysTimeStabilityBar(server, level, player)

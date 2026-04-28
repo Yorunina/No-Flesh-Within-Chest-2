@@ -9,7 +9,7 @@ const FinalDoDamageAttackDownUUID = UUID.fromString('A44F02C1-0E7B-490B-AD95-7DA
 function FinalEntityDoDamage(event, customData) {
     if (!event.source.player) return
     const player = event.source.player
-    if (!AStages.serverHasStage('ftb_final_iteration_50', player.server)) return
+    if (!AStages.serverHasStage(FTBFinalIteration15, player.server)) return
     let value = -1
     const attributeInstance = player.getAttribute('minecraft:generic.attack_damage')
     let oldModifier = attributeInstance.getModifier(FinalDoDamageAttackDownUUID)

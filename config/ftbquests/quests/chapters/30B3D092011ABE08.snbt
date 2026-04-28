@@ -1,6 +1,6 @@
 {
 	autofocus_id: "518A9614F706B9F3"
-	default_hide_dependency_lines: true
+	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "30B3D092011ABE08"
 	group: "0B365C36A50478AA"
@@ -123,6 +123,7 @@
 				""
 				"但是，我们并不是为了搞畜牧业而来制作配种兴奋剂的——我们需要它造成的副产物，即那些&6具有基因缺陷的生物后代&r。"
 			]
+			hide_dependency_lines: true
 			id: "599ED9E67C252EC4"
 			rewards: [{
 				id: "73EE5B4331AFBC81"
@@ -274,6 +275,8 @@
 		{
 			dependencies: ["2B8F82F33E55703A"]
 			description: ["由于未来的环境多变且复杂，无法确定是否需要旧的胸腔来执行某些仪式，因此建议您使用&6空注射器&r保存当前阶段的血样，以备不时之需。"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "25E39232CC1DA79B"
 			rewards: [
 				{
@@ -418,6 +421,7 @@
 				""
 				"为了制作傀儡，您需要一些&6傀儡胚料&r以组装一个能够承担这个职责的傀儡。"
 			]
+			hide_dependency_lines: true
 			id: "65337ADF4CCA14EC"
 			rewards: [{
 				id: "652A6F22DFF4AC98"
@@ -575,6 +579,8 @@
 				""
 				"同样的，您在获得了贰阶胸腔后，请尽量保留几份注射器血样，因为我们很快就要踏上&6第三次扩容&r的道路了。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "2D04772D78C4E72F"
 			rewards: [
 				{
@@ -821,6 +827,8 @@
 				""
 				"但不管怎么样，恭喜您完成了这一系列荒诞的任务。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "23D00C1EBDF3036C"
 			rewards: [

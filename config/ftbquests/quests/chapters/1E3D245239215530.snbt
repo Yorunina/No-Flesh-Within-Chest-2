@@ -78,8 +78,8 @@
 				type: "item"
 			}]
 			title: "异常金属"
-			x: -3.5d
-			y: -9.5d
+			x: 8.5d
+			y: -10.0d
 		}
 		{
 			dependencies: ["3059F62A16427246"]
@@ -105,8 +105,8 @@
 				title: "稍等片刻"
 				type: "questsadditions:time"
 			}]
-			x: -0.5d
-			y: -9.5d
+			x: 8.5d
+			y: -8.0d
 		}
 		{
 			dependencies: ["42F53C902EE260E2"]
@@ -146,8 +146,8 @@
 				type: "checkmark"
 			}]
 			title: "大世界计算机"
-			x: 2.5d
-			y: -9.5d
+			x: 8.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
@@ -315,7 +315,7 @@
 				type: "item"
 			}]
 			title: "紫水晶农场"
-			x: 16.0d
+			x: 16.5d
 			y: 18.5d
 		}
 		{
@@ -822,7 +822,7 @@
 				}
 			]
 			title: "混合农场"
-			x: 12.0d
+			x: 11.5d
 			y: -5.0d
 		}
 		{
@@ -1041,7 +1041,7 @@
 				type: "item"
 			}]
 			title: "林场"
-			x: 6.5d
+			x: 5.5d
 			y: -5.0d
 		}
 		{
@@ -1560,7 +1560,7 @@
 				type: "fluid"
 			}]
 			title: "原油开采"
-			x: 6.5d
+			x: 6.0d
 			y: 18.5d
 		}
 		{
@@ -1776,7 +1776,7 @@
 				type: "item"
 			}]
 			title: "青金石采掘"
-			x: 20.5d
+			x: 21.0d
 			y: 18.5d
 		}
 		{

@@ -47,25 +47,15 @@
 			dependencies: ["5C5A7285C49BE172"]
 			description: ["故事开始时是最美妙的——心中的热情、期待、幻想——此刻，你想将其化为现实。"]
 			id: "662028C8F62BED27"
-			rewards: [{
-				auto: "invisible"
-				id: "7A326FB9FBB448EE"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "final_iteration_1"
-				title: "首次自迭代"
-				type: "maa:astages"
-			}]
 			shape: "square"
 			subtitle: "第一次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
-				id: "2338AA879E70BA78"
-				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 1&r"
-				type: "leaderboards:server_achieve_stat"
-				value: 1L
+				id: "00920C3CE46945B1"
+				isServer: true
+				stage: "ftb_final_iteration_1"
+				title: "&c完成第一阶段迭代&r"
+				type: "maa:astages"
 			}]
 			title: "当故事开始书写时"
 			x: 1.0d
@@ -139,23 +129,6 @@
 			]
 			id: "5C5A7285C49BE172"
 			invisible: true
-			rewards: [{
-				auto: "invisible"
-				icon: {
-					Count: 1
-					id: "minecraft:tipped_arrow"
-					tag: {
-						Potion: "minecraft:harming"
-					}
-				}
-				id: "5B18CB2EA5410B9A"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "ftb_fake_extreme_mode"
-				title: "&c伤口令生效&r"
-				type: "maa:astages"
-			}]
 			subtitle: "有始无终不成章"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -229,25 +202,15 @@
 			dependencies: ["662028C8F62BED27"]
 			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
 			id: "7308FBF0FFDB2F6A"
-			rewards: [{
-				auto: "invisible"
-				id: "48B1AA45AF40DF1D"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "final_iteration_5"
-				title: "行至佳境"
-				type: "maa:astages"
-			}]
 			shape: "square"
 			subtitle: "第五次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
-				id: "7DF93BDACA721B5E"
-				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 5&r"
-				type: "leaderboards:server_achieve_stat"
-				value: 5L
+				id: "387592A6F2D42CAC"
+				isServer: true
+				stage: "ftb_final_iteration_5"
+				title: "&c完成第二阶段迭代&r"
+				type: "maa:astages"
 			}]
 			title: "预先排好故事的目录"
 			x: 4.0d
@@ -273,11 +236,6 @@
 				"&6该效果作用持续到该计划结束或被另一优先级更高计划取代&r。"
 			]
 			id: "3385CF55F0472A98"
-			rewards: [{
-				id: "307EA02332273AF9"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "初步尝试提高全局数值"
 			title: "&c上溢对策：线性增长&r"
@@ -302,25 +260,15 @@
 			dependencies: ["7308FBF0FFDB2F6A"]
 			description: ["为了让故事能够吸引读者直到最后，情节既要保证紧凑，又要保证逻辑严密、人物关系细腻。"]
 			id: "5BDD47E7B143843F"
-			rewards: [{
-				auto: "invisible"
-				id: "4530BC6C2DC1F65B"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "final_iteration_30"
-				title: "行至林深"
-				type: "maa:astages"
-			}]
 			shape: "square"
 			subtitle: "第三十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
-				id: "043C1D5D1C56067A"
-				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 30&r"
-				type: "leaderboards:server_achieve_stat"
-				value: 30L
+				id: "12535E8295A11A5B"
+				isServer: true
+				stage: "ftb_final_iteration_10"
+				title: "&c完成第三阶段迭代&r"
+				type: "maa:astages"
 			}]
 			title: "细腻紧凑的情节转折"
 			x: 6.5d
@@ -329,26 +277,17 @@
 		{
 			dependencies: ["5BDD47E7B143843F"]
 			description: ["最开始所设想的一切在此处全部实现。"]
+			icon: "minecraft:clock"
 			id: "4AFCC7C3C76E1C26"
-			rewards: [{
-				auto: "invisible"
-				id: "34C7E08EE9EE709B"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "final_iteration_50"
-				title: "奏秦人乐"
-				type: "maa:astages"
-			}]
 			shape: "square"
 			subtitle: "第五十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
-				id: "33CCE601282CC746"
-				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 50&r"
-				type: "leaderboards:server_achieve_stat"
-				value: 50L
+				id: "1FFFC689C9CB2945"
+				isServer: true
+				stage: "ftb_final_iteration_15"
+				title: "&c完成第四阶段迭代&r"
+				type: "maa:astages"
 			}]
 			title: "将灵感实现的小高潮"
 			x: 9.0d
@@ -358,25 +297,15 @@
 			dependencies: ["4AFCC7C3C76E1C26"]
 			description: ["小高潮后，故事揭开了一个又一个暗线将情节再次铺展，一切正如目录所安排。"]
 			id: "13B68E126480A239"
-			rewards: [{
-				auto: "invisible"
-				id: "37C038074C98F145"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "final_iteration_90"
-				title: "如黎明将至"
-				type: "maa:astages"
-			}]
 			shape: "square"
 			subtitle: "第九十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
-				id: "267930E6C74B8E5E"
-				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 90&r"
-				type: "leaderboards:server_achieve_stat"
-				value: 90L
+				id: "0F3FEFB36691DF84"
+				isServer: true
+				stage: "ftb_final_iteration_25"
+				title: "&c完成第五阶段迭代&r"
+				type: "maa:astages"
 			}]
 			title: "繁复交错的情节复展"
 			x: 11.5d
@@ -386,25 +315,15 @@
 			dependencies: ["13B68E126480A239"]
 			description: ["现在，我们的冒险故事已到高潮之上的高潮情节！我们的冒险故事正如此刻迎来结局！"]
 			id: "32C2FE99D19140B3"
-			rewards: [{
-				auto: "invisible"
-				id: "498CF7BD844F80B1"
-				ignore_reward_blocking: true
-				isServer: true
-				remove: false
-				stage: "final_iteration_100"
-				title: "黎明初醒"
-				type: "maa:astages"
-			}]
 			shape: "square"
 			subtitle: "获得全部可获得权限"
 			tasks: [{
 				icon: "minecraft:clock"
-				id: "41039FF7F58D9B04"
-				leaderboard: "kubejs:final_timer"
-				title: "&c终局计时器达 100&r"
-				type: "leaderboards:server_achieve_stat"
-				value: 100L
+				id: "16473D61D371204F"
+				isServer: true
+				stage: "ftb_final_iteration_30"
+				title: "&c完成最终迭代&r"
+				type: "maa:astages"
 			}]
 			title: "撰我们的冒险故事"
 			x: 14.0d
@@ -483,14 +402,15 @@
 			shape: "rsquare"
 			subtitle: "我们的故事将会在另一世界继续"
 			tasks: [{
+				icon: "minecraft:clock"
 				id: "2CED144EC2C2C0D5"
 				isServer: true
 				stage: "final_iteration_100"
-				title: "到达时间彼端"
+				title: "&6驶向时间彼端&r"
 				type: "maa:astages"
 			}]
 			title: "&6庆贺吧！这便是我亲手为您奉上的冒险故事！&r"
-			x: 16.0d
+			x: 16.5d
 			y: -1.0d
 		}
 		{
@@ -539,11 +459,6 @@
 				"现在，&c您在每次造成伤害时，攻击力会永久下降 1，死亡后重置&r。"
 			]
 			id: "00BDD5837830E27E"
-			rewards: [{
-				id: "7CF3ED5A708E6682"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
 			shape: "square"
 			subtitle: "不稳定情况之一"
 			title: "&c不稳定性：伤痕&r"

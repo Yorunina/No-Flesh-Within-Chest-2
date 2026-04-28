@@ -14,7 +14,7 @@ function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slo
     const player = event.player
     const foodItem = event.item
     const level = event.level
-    if (AStages.serverHasStage('ftb_final_timer_start', event.server)) return
+    if (AStages.serverHasStage(FTBFinalTimerStart, event.server)) return
     if (!foodItem) return
     let foodItemId = String(foodItem.id)
     if (!organItem.hasNBT()) organItem.setNbt(new $CompoundTag())
@@ -66,7 +66,7 @@ function VoidStomachPouchEntityTick(customData, event, organItem, organIndex, sl
     if (!nbt.getBoolean('start')) return
     let curDamage = organItem.getDamageValue() + 1
     if (curDamage >= organItem.getMaxDamage()) {
-        if (AStages.serverHasStage('ftb_final_timer_start', event.server)) return
+        if (AStages.serverHasStage(FTBFinalTimerStart, event.server)) return
         let dimNet = DimensionsNet.getNetFromPlayer(player)
         if (!dimNet) {
             player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.no_dimnet'))
