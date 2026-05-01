@@ -51,7 +51,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:devour_teeth')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:bone_meal_bag')
     .addDefault(Text.translatable('tooltips.kubejs.bone_meal_bag.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.bone_meal_bag.alt.1'))
-    .addAlt(Text.translatable('tooltips.kubejs.bone_meal_bag.alt.2'))
+    .addAlt(Text.translatable('tooltips.kubejs.bone_meal_bag.alt.2', KeyActiveHover))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:mutation_intestine')

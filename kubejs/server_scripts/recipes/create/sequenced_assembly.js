@@ -102,7 +102,7 @@ ServerEvents.recipes(event => {
             event.recipes.create.pressing(CommonTransitionalItem, CommonTransitionalItem),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'kubejs:flame_crystal']),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/brass']),
-            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:lava', 1000)]),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:lava', 250)]),
         ]
     )
         .transitionalItem(CommonTransitionalItem)
@@ -118,10 +118,25 @@ ServerEvents.recipes(event => {
             event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:dusts/redstone']),
             event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/gold']),
-            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:lava', 1000)]),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:lava', 250)]),
         ]
     )
         .transitionalItem(CommonTransitionalItem)
         .loops(3)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:cyborgization_device')
+        ],
+        'kubejs:programmable_automatic_core',
+        [
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create:iron_sheet']),
+            event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, '#forge:ingots/iron']),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:lava', 250)]),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(5)
 })
 

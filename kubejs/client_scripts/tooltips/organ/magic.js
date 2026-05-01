@@ -23,7 +23,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:deepling_star_gem')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:animted_soul')
     .addDefault(Text.translatable('tooltips.kubejs.animted_soul.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.animted_soul.alt.1', Text.gold('10'), Text.gold('1/2')))
+    .addAlt(Text.translatable('tooltips.kubejs.animted_soul.alt.1', KeyActiveHover, Text.gold('10'), Text.gold('1/2')))
     .addAlt(Text.translatable('tooltips.kubejs.animted_soul.alt.2', Text.gold('60')))
 )
 
@@ -91,7 +91,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:soul_cage')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:scry_stomach_pouch')
     .addDefault(Text.translatable('tooltips.kubejs.scry_stomach_pouch.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.scry_stomach_pouch.alt.1', Text.gold('16 * 32 * 16')))
+    .addAlt(Text.translatable('tooltips.kubejs.scry_stomach_pouch.alt.1', KeyActiveHover, Text.gold('16 * 32 * 16')))
     .addAlt(Text.translatable('tooltips.kubejs.scry_stomach_pouch.alt.2', Text.gold('4')))
 )
 

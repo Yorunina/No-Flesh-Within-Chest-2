@@ -30,42 +30,42 @@
 		}
 		{
 			dependency: "585F5FEF231F0B44"
-			height: 2.5d
+			height: 4.0d
 			hideDependency: "75096F8EF539CB29"
 			image: "kubejs:textures/gui/tasks/genesis_tinker/scroll_1.png"
 			rotation: 0.0d
-			width: 1.8965d
-			x: 17.5d
-			y: -10.0d
+			width: 3.02d
+			x: 27.0d
+			y: -8.5d
 		}
 		{
 			dependency: "75096F8EF539CB29"
-			height: 2.5d
+			height: 4.0d
 			hideDependency: "03C7BEEA8B969DD3"
 			image: "kubejs:textures/gui/tasks/genesis_tinker/scroll_2.png"
 			rotation: 0.0d
-			width: 3.62d
-			x: 17.5d
-			y: -10.0d
+			width: 5.79d
+			x: 27.0d
+			y: -8.5d
 		}
 		{
 			dependency: "03C7BEEA8B969DD3"
-			height: 2.5d
+			height: 4.0d
 			hideDependency: "33D6D51353372A8F"
 			image: "kubejs:textures/gui/tasks/genesis_tinker/scroll_3.png"
 			rotation: 0.0d
-			width: 5.345d
-			x: 17.5d
-			y: -10.0d
+			width: 8.544d
+			x: 27.0d
+			y: -8.5d
 		}
 		{
 			dependency: "33D6D51353372A8F"
-			height: 2.5d
+			height: 4.0d
 			image: "kubejs:textures/gui/tasks/genesis_tinker/scroll_4.png"
 			rotation: 0.0d
-			width: 7.155d
-			x: 17.5d
-			y: -10.0d
+			width: 11.44d
+			x: 27.0d
+			y: -8.5d
 		}
 		{
 			dependency: "585F5FEF231F0B44"
@@ -153,6 +153,14 @@
 			width: 12.0d
 			x: 37.0d
 			y: 13.0d
+		}
+		{
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/genesis_tinker/title_genesis_tinker.png"
+			rotation: 0.0d
+			width: 21.056d
+			x: 9.5d
+			y: -8.5d
 		}
 	]
 	order_index: 3
@@ -245,8 +253,8 @@
 				type: "item"
 			}]
 			title: "&6庆贺吧！此乃创世工艺！&r"
-			x: 17.5d
-			y: -10.0d
+			x: 27.0d
+			y: -8.5d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]

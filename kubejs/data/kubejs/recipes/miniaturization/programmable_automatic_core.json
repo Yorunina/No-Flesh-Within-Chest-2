@@ -1,0 +1,311 @@
+{
+    "type": "compactcrafting:miniaturization",
+    "recipeSize": 5,
+    "catalyst": {
+        "id": "kubejs:unstable_matter",
+        "Count": 1
+    },
+    "layers": [
+        {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "BGC",
+                    "BGC",
+                    "RB",
+                    "BGC",
+                    "BGC"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ]
+            ]
+        },
+        {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                [
+                    "RB",
+                    "RB",
+                    "MA",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "",
+                    "",
+                    "",
+                    "RB"
+                ],
+                [
+                    "MA",
+                    "",
+                    "RQL",
+                    "",
+                    "MA"
+                ],
+                [
+                    "RB",
+                    "",
+                    "",
+                    "",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "MA",
+                    "RB",
+                    "RB"
+                ]
+            ]
+        },
+        {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                [
+                    "BGC",
+                    "BGC",
+                    "GX",
+                    "BGC",
+                    "BGC"
+                ],
+                [
+                    "BGC",
+                    "",
+                    "SZ",
+                    "",
+                    "BGC"
+                ],
+                [
+                    "GZ",
+                    "SX",
+                    "CC",
+                    "SX",
+                    "GZ"
+                ],
+                [
+                    "BGC",
+                    "",
+                    "SZ",
+                    "",
+                    "BGC"
+                ],
+                [
+                    "BGC",
+                    "BGC",
+                    "GX",
+                    "BGC",
+                    "BGC"
+                ]
+            ]
+        },
+        {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                [
+                    "RB",
+                    "RB",
+                    "F",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "",
+                    "",
+                    "",
+                    "RB"
+                ],
+                [
+                    "F",
+                    "",
+                    "SY",
+                    "",
+                    "F"
+                ],
+                [
+                    "RB",
+                    "",
+                    "",
+                    "",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "F",
+                    "RB",
+                    "RB"
+                ]
+            ]
+        },
+        {
+            "type": "compactcrafting:mixed",
+            "pattern": [
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "BGC",
+                    "BGC",
+                    "KB",
+                    "BGC",
+                    "BGC"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ],
+                [
+                    "RB",
+                    "RB",
+                    "BGC",
+                    "RB",
+                    "RB"
+                ]
+            ]
+        }
+    ],
+    "components": {
+        "RB": {
+            "type": "compactcrafting:block",
+            "block": "minecraft:redstone_block"
+        },
+        "RQL": {
+            "type": "compactcrafting:block",
+            "block": "create:rose_quartz_lamp"
+        },
+        "BGC": {
+            "type": "compactcrafting:block",
+            "block": "createprism:brass_glass_casing"
+        },
+        "CC": {
+            "type": "compactcrafting:block",
+            "block": "create_connected:cross_connector",
+            "properties": {
+                "axis": [
+                    "y"
+                ]
+            }
+        },
+        "KB": {
+            "type": "compactcrafting:block",
+            "block": "create_connected:kinetic_battery",
+            "properties": {
+                "facing": [
+                    "down"
+                ]
+            }
+        },
+        "F": {
+            "type": "compactcrafting:block",
+            "block": "create:flywheel",
+            "properties": {
+                "axis": [
+                    "y"
+                ]
+            }
+        },
+        "SY": {
+            "type": "compactcrafting:block",
+            "block": "create:shaft",
+            "properties": {
+                "axis": [
+                    "y"
+                ]
+            }
+        },
+        "SX": {
+            "type": "compactcrafting:block",
+            "block": "create:shaft",
+            "properties": {
+                "axis": [
+                    "x"
+                ]
+            }
+        },
+        "SZ": {
+            "type": "compactcrafting:block",
+            "block": "create:shaft",
+            "properties": {
+                "axis": [
+                    "z"
+                ]
+            }
+        },
+        "GZ": {
+            "type": "compactcrafting:block",
+            "block": "create:gearbox",
+            "properties": {
+                "axis": [
+                    "z"
+                ]
+            }
+        },
+        "GX": {
+            "type": "compactcrafting:block",
+            "block": "create:gearbox",
+            "properties": {
+                "axis": [
+                    "x"
+                ]
+            }
+        },
+        "MA": {
+            "type": "compactcrafting:block",
+            "block": "create:mechanical_arm",
+            "properties": {
+                "ceiling": [
+                    "false"
+                ]
+            }
+        }
+    },
+    "outputs": [
+        {
+            "id": "kubejs:programmable_automatic_core",
+            "Count": 1
+        }
+    ]
+}

@@ -4,9 +4,64 @@
 	default_quest_shape: ""
 	filename: "3141E7EEF2FD1ABE"
 	group: "63198C281F0E9667"
-	hide_quest_until_deps_complete: true
 	icon: "ars_nouveau:source_gem"
 	id: "3141E7EEF2FD1ABE"
+	images: [
+		{
+			height: 2.559d
+			image: "kubejs:textures/gui/tasks/tutorial_magic/title.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 5.0d
+			y: -11.5d
+		}
+		{
+			height: 14.9d
+			image: "kubejs:textures/gui/tasks/tutorial_magic/frame.png"
+			order: -1
+			rotation: 0.0d
+			width: 30.0d
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependency: "2D0D6B1C80A70E8E"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/tutorial_magic/magic_machine.png"
+			rotation: 0.0d
+			width: 3.84d
+			x: 7.5d
+			y: -7.0d
+		}
+		{
+			dependency: "1EC226A4AC012845"
+			height: 3.0d
+			hideDependency: "77ABA489404AFF7A"
+			image: "kubejs:textures/gui/tasks/tutorial_magic/art_of_magic_1.png"
+			rotation: 0.0d
+			width: 5.44d
+			x: 5.0d
+			y: 1.25d
+		}
+		{
+			dependency: "77ABA489404AFF7A"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/tutorial_magic/art_of_magic_2.png"
+			rotation: 0.0d
+			width: 5.44d
+			x: 5.0d
+			y: 1.25d
+		}
+		{
+			dependency: "3D36E9A8EB053A8D"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_magic/complete_icon.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 16.0d
+			y: -11.5d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -23,6 +78,7 @@
 				""
 				"在选择完成后，点击右下角&6「制作」&r即可完成一个法术。"
 			]
+			hide_until_deps_complete: true
 			id: "0F77217F484D0D20"
 			rewards: [{
 				id: "75C80DBED621BC7F"
@@ -37,7 +93,7 @@
 			}]
 			title: "万法合一"
 			x: 0.0d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5764F8AEDDF6EC9E"]
@@ -62,7 +118,7 @@
 			}]
 			title: "符文抄写"
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5D90233550E7D188"]
@@ -121,8 +177,8 @@
 				type: "item"
 			}]
 			title: "魔源灌注"
-			x: 1.5d
-			y: 0.0d
+			x: 5.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["488ABDE769499C05"]
@@ -131,6 +187,7 @@
 				""
 				"您可以通过将&6青金石&r或者&6紫水晶&r右键放置在灌注室内转换获得。"
 			]
+			hide_until_deps_complete: true
 			id: "174BAA671BBAFF57"
 			rewards: [
 				{
@@ -151,8 +208,8 @@
 				type: "item"
 			}]
 			title: "魔源宝石"
-			x: 1.5d
-			y: -1.5d
+			x: 5.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
@@ -165,6 +222,7 @@
 				""
 				"您可以将任意可以燃烧的物品丢在火山魔源通道的附近，其会吸收燃料，并且产生魔源。"
 			]
+			hide_until_deps_complete: true
 			icon: "ars_nouveau:volcanic_sourcelink"
 			id: "50ED9E24E038B01B"
 			rewards: [{
@@ -186,8 +244,8 @@
 				}
 			]
 			title: "能量收集"
-			x: 1.5d
-			y: -3.0d
+			x: 2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
@@ -196,6 +254,7 @@
 				""
 				"大部分的灌注配方都涉及到不止一个物品，因此对于非核心的物品，您需要将这些物品放置在&6灌注室附近的奥术基座&r上，配方才能够正常进行。"
 			]
+			hide_until_deps_complete: true
 			id: "2D0D6B1C80A70E8E"
 			rewards: [{
 				id: "6789ABCDEF123456"
@@ -209,8 +268,8 @@
 				type: "item"
 			}]
 			title: "奥术基座"
-			x: 3.0d
-			y: -3.0d
+			x: 5.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
@@ -219,6 +278,7 @@
 				""
 				"根据板子类型的不同，仪式火盆的效果也会有所差异，"
 			]
+			hide_until_deps_complete: true
 			id: "10BC7DE5F1D8101D"
 			rewards: [{
 				id: "789ABCDEF1234567"
@@ -232,8 +292,8 @@
 				type: "item"
 			}]
 			title: "仪式火盆"
-			x: 5.0d
-			y: -1.5d
+			x: 10.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2F0C4C44BB2E8770"]
@@ -251,8 +311,8 @@
 				type: "item"
 			}]
 			title: "法师花苗"
-			x: 6.0d
-			y: -3.0d
+			x: 10.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0B38CFA5F97E85EA"]
@@ -274,8 +334,8 @@
 				type: "item"
 			}]
 			title: "法师之花"
-			x: 7.5d
-			y: -3.0d
+			x: 12.5d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -302,8 +362,8 @@
 				type: "item"
 			}]
 			title: "生长仪式"
-			x: 7.5d
-			y: -1.5d
+			x: 12.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0F77217F484D0D20"]
@@ -326,7 +386,7 @@
 			}]
 			title: "法术升级"
 			x: 0.0d
-			y: -3.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
@@ -337,6 +397,7 @@
 				""
 				"其广泛被用于一些自动化场景，为了简化应用，其还有着其他多种多样的版本如定时法术炮塔和附魔法术炮塔。"
 			]
+			hide_until_deps_complete: true
 			id: "597EB691DECA86EF"
 			rewards: [{
 				id: "6667B92F6ABCD9B0"
@@ -350,7 +411,7 @@
 				type: "item"
 			}]
 			title: "法术炮塔"
-			x: 3.0d
+			x: 10.0d
 			y: -0.5d
 		}
 		{
@@ -377,8 +438,8 @@
 				type: "item"
 			}]
 			title: "学习如何学习"
-			x: -1.5d
-			y: -1.5d
+			x: -2.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
@@ -387,6 +448,7 @@
 				""
 				"较为常用的包括&6节魔戒指&r以及本任务中提到的&6魔力提升项链&r。"
 			]
+			hide_until_deps_complete: true
 			id: "524476026122733C"
 			rewards: [{
 				id: "544AFE3ECA232D65"
@@ -400,8 +462,8 @@
 				type: "item"
 			}]
 			title: "魔力护符"
-			x: 2.5d
-			y: 0.5d
+			x: 10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["77ABA489404AFF7A"]
@@ -419,8 +481,8 @@
 				type: "item"
 			}]
 			title: "制成抑制魔符"
-			x: -1.5d
-			y: -3.0d
+			x: -2.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["50ED9E24E038B01B"]
@@ -454,8 +516,8 @@
 				}
 			]
 			title: "魔源导出"
-			x: 1.5d
-			y: -4.5d
+			x: 5.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["2D0D6B1C80A70E8E"]
@@ -487,8 +549,8 @@
 				}
 			]
 			title: "魔源赋予装置"
-			x: 4.5d
-			y: -3.0d
+			x: 7.5d
+			y: -5.0d
 		}
 	]
 	title: "认知：魔源"

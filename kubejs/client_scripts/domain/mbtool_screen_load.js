@@ -19,3 +19,4 @@ function RegistryStructureStage(id, stageNeed) {
 }
 
 RegistryStructureStage('mbtool:mbtool_structures/world_computer.nbt', 'ftb_world_computer_1')
+RegistryStructureStage('mbtool:mbtool_structures/programmable_automatic_core.nbt', 'ftb_programmable_automatic_core_1')

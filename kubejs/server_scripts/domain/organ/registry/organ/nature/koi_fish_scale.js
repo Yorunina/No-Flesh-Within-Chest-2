@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:koi_fish_scale')
     .addScore('chestcavity:knockback_resistant', -0.5)
     .setCanSpawn(true)
 
+// todo
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.NetworkEventJS} event
@@ -15,7 +16,9 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
     const player = event.player
 
     if (level.getDimension() != 'minecraft:overworld') return
-    const moonPhase = level.moonPhase
+    let lootTableId = 'kubejs:koi_fish_loot/weather_clear'
+    if (level.isThundering()) lootTableId = 'kubejs:koi_fish_loot/weather_thunder'
+    else if (level.isRaining()) lootTableId = 'kubejs:koi_fish_loot/weather_rain'
     let chestPos = getKoiChestSpawnLocation(level, player)
 
     let mapItem = $MapItem.create(level, chestPos.x, chestPos.z, 1, true, true)
@@ -24,10 +27,10 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
     player.give(mapItem.withName(Text.translatable('map.kubejs.airdrop')))
     level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.book.page_turn', player.getSoundSource(), 0.5, 1)
 
-    GenLootrChestWithLootTable(level, chestPos, 'minecraft:chests/ancient_city')
+    GenLootrChestWithLootTable(level, chestPos, lootTableId)
     // 增强功能
-    CreateWaypoint(player, chestPos, new Date().toLocaleString(), 0xFC4C00)
-    // player.addItemCooldown('kubejs:koi_fish_scale', 20 * 180)
+    // CreateWaypoint(player, chestPos, new Date().toLocaleString(), 0xFC4C00)
+    player.addItemCooldown('kubejs:koi_fish_scale', 20 * 180)
 }
 
 RegistryOrganStrategy(

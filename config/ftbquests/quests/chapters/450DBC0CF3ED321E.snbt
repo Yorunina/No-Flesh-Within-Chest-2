@@ -4,7 +4,6 @@
 	default_quest_shape: ""
 	filename: "450DBC0CF3ED321E"
 	group: "63198C281F0E9667"
-	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		id: "tetra:modular_double"
@@ -20,6 +19,123 @@
 		}
 	}
 	id: "450DBC0CF3ED321E"
+	images: [
+		{
+			height: 14.9d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/frame.png"
+			order: -1
+			rotation: 0.0d
+			width: 30.0d
+			x: 11.0d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.8d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/workbench_frame.png"
+			rotation: 0.0d
+			width: 17.1d
+			x: 15.0d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/anvil.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 17.7d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/blast_furnace.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 15.9d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/enchanting_table.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 19.5d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/fletching_table.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 14.1d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/grindstone.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 21.3d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/loom.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 12.3d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/sculk_catalyst.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 10.5d
+			y: 2.5d
+		}
+		{
+			dependency: "14CF7124A3183190"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/smithing_table.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.7d
+			y: 2.5d
+		}
+		{
+			height: 2.59d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/title.png"
+			rotation: 0.0d
+			width: 30.0d
+			x: 11.0d
+			y: -6.0d
+		}
+		{
+			dependency: "4BDC2BE32FB3E497"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/tutorial_tinker/complete_icon.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 22.5d
+			y: -6.0d
+		}
+	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
@@ -109,8 +225,8 @@
 				value: 1L
 			}]
 			title: "匠艺工作台"
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5A1D7D83A92CCA53"]
@@ -183,8 +299,8 @@
 				type: "item"
 			}]
 			title: "研习如何更换部件材料"
-			x: 4.0d
-			y: 0.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["60157CC9CB77916C"]
@@ -259,8 +375,8 @@
 				type: "item"
 			}]
 			title: "研习如何更换槽位部件"
-			x: 6.0d
-			y: 0.0d
+			x: 3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4352DE73166C1622"]
@@ -314,8 +430,8 @@
 				type: "item"
 			}]
 			title: "研习如何快速打磨"
-			x: 6.0d
-			y: 1.5d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4352DE73166C1622"]
@@ -367,8 +483,8 @@
 				type: "item"
 			}]
 			title: "研习加工等级"
-			x: 8.0d
-			y: 0.0d
+			x: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["14CF7124A3183190"]
@@ -435,8 +551,8 @@
 				type: "item"
 			}]
 			title: "研习工具属性"
-			x: 8.0d
-			y: -1.5d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["14CF7124A3183190"]
@@ -487,8 +603,8 @@
 				type: "item"
 			}]
 			title: "研习原理图"
-			x: 10.0d
-			y: 0.0d
+			x: 6.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1571ABBF59F33928"]
@@ -522,8 +638,8 @@
 				type: "item"
 			}]
 			title: "研习锻造工坊"
-			x: 14.0d
-			y: 0.0d
+			x: 6.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["47FECDBBB74D22BA"]
@@ -532,6 +648,7 @@
 				""
 				"为了&6达到高于5的加工等级&r，您需要准备一套&6锻锤设备&r，而其制作所需的材料正是由&6烟熏铁混合物&r烧制而成的&6金属碎片&r。"
 			]
+			hide_until_deps_complete: true
 			icon: "tetravsikt:iron_coal_mix"
 			id: "1571ABBF59F33928"
 			rewards: [{
@@ -553,7 +670,7 @@
 				}
 			]
 			title: "研习更高的加工等级"
-			x: 12.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -589,8 +706,8 @@
 				type: "item"
 			}]
 			title: "研习锻锤充电技艺"
-			x: 16.0d
-			y: 0.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4BDC2BE32FB3E497"]
@@ -612,8 +729,8 @@
 				type: "item"
 			}]
 			title: "研习加力锻造之法"
-			x: 18.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["4BDC2BE32FB3E497"]
@@ -637,8 +754,8 @@
 				type: "item"
 			}]
 			title: "研习稳定锻造之法"
-			x: 16.0d
-			y: 1.5d
+			x: 3.0d
+			y: 0.0d
 		}
 	]
 	title: "认知：匠艺"

@@ -967,37 +967,6 @@
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
 			description: [
-				"借由对自由地幔能数据模式的分析，我定位到了一系列由过去玩家打造的一系列机械器官。"
-				""
-				"这系列器官被称作&6革命器官&r。"
-				""
-				"革命器官可以对&c熔火类器官&r进行定向强化，并且本身与机械类器官相性极佳，是不可多得的上等物件。"
-				""
-				"您可以通过制作&6革命增援&r，定向的让&6锦鲤鳞片&r定位包含革命器官战利品池的空投。"
-			]
-			id: "45C0687630120F65"
-			rewards: [{
-				id: "408DA41693085FB7"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "已定位到新的力量"
-			tasks: [{
-				id: "36CDA3A812F87769"
-				item: {
-					Count: 1
-					id: "kubejs:revolution_reinforcement"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "革命之力"
-			x: 11.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["3C0B5BB105DAC17C"]
-			description: [
 				"通过烈焰水晶，我们还可以还原一些遗失的技艺——&c烈焰加压器&r便是其中之一。"
 				""
 				"烈焰加压器可以&6有效提高您在心火状态下的输出能力&r，亦或者是&6加快下一次进入心火状态的速度&r。"
@@ -1050,7 +1019,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["45C0687630120F65"]
+			dependencies: ["00EC549EA51DF850"]
 			description: ["革命继电器可以&6有效提高熔火积累耐久度的速度&r，进而更快的使您进入到心火阶段。"]
 			id: "47E4236EF5E0A69A"
 			rewards: [{
@@ -1069,10 +1038,10 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 6.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["45C0687630120F65"]
+			dependencies: ["00EC549EA51DF850"]
 			description: ["革命线缆可以有效的为机械器官提供&6少量最大生命值&r，保证机械器官使用者的基本生存能力。"]
 			id: "5A523568EA436E1E"
 			rewards: [{
@@ -1091,10 +1060,10 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 6.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["45C0687630120F65"]
+			dependencies: ["00EC549EA51DF850"]
 			description: ["革命断路器可以&6有效延长心火状态的持续时间&r，使每次心火状态发挥更加强大的作用。"]
 			id: "3572DAA906773CCD"
 			rewards: [{
@@ -1113,10 +1082,10 @@
 				type: "item"
 			}]
 			x: 13.5d
-			y: 6.5d
+			y: 8.0d
 		}
 		{
-			dependencies: ["45C0687630120F65"]
+			dependencies: ["00EC549EA51DF850"]
 			description: [
 				"革命之钟可以在切换到心火状态时，&6自动启动烈焰加压器&r。"
 				""
@@ -1139,7 +1108,7 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 6.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1E56E0456EA6D888"]
@@ -1532,7 +1501,7 @@
 			}]
 			title: "永恒燃烧之物"
 			x: 8.0d
-			y: 8.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["1E9E00D7BCF6405B"]
@@ -1573,11 +1542,11 @@
 				}
 			]
 			title: "寻找更加炽热的东西"
-			x: 12.5d
-			y: 8.0d
+			x: 4.0d
+			y: 10.5d
 		}
 		{
-			dependencies: ["0C90052BA156B5F4"]
+			dependencies: ["7480BAD551F85642"]
 			description: [
 				"为了驾驭足够强大的烈焰，我们需要一些防护烈焰的方法。"
 				""
@@ -1617,8 +1586,8 @@
 				}
 			]
 			title: "烈焰防护"
-			x: 9.5d
-			y: 8.0d
+			x: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6B24B7537EE0151A"]
@@ -1644,8 +1613,8 @@
 				type: "item"
 			}]
 			title: "烈焰中的自我"
-			x: 11.0d
-			y: 8.0d
+			x: 2.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6AA1CAF275057D26"]
@@ -1688,8 +1657,8 @@
 				}
 			]
 			title: "将炽热赠予所有人"
-			x: 14.0d
-			y: 8.0d
+			x: 6.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0C90052BA156B5F4"]
@@ -1719,12 +1688,12 @@
 				type: "item"
 			}]
 			title: "热量循环模式"
-			x: 8.0d
-			y: 9.5d
+			x: 6.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["6F796E363ED07C81"]
-			description: ["&7** 为了前往更远的地方，请继承我们的一切，继承我们的准则，继承我们的魂，勇往直前吧 **&r"]
+			dependencies: ["49C7349296812E64"]
+			description: ["//todo"]
 			id: "56CAE9C01AF71671"
 			rewards: [{
 				id: "466C973A1A5AF58E"
@@ -1744,98 +1713,15 @@
 			}]
 			title: "&6庆贺吧！此乃革命机械胸腔！&r"
 			x: 8.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["7480BAD551F85642"]
-			description: [
-				"为了完成力量的赋予，您还需要为改造筹集一些材料。"
-				""
-				"当您筹集完这些材料后，您需要&6将这些材料尽数放置在您的胸腔中&r。届时，我便会在控制芯片上编入改造指令，这样一来，您只需要一个触发信号，便可以开始整个改造流程。"
-			]
-			icon: "create_connected:control_chip"
-			id: "0384E110704AD648"
-			rewards: [{
-				id: "6ABF5E4C9641BECB"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "充足的材料"
-			tasks: [
-				{
-					count: 16L
-					id: "48474637BF9A7363"
-					item: { Count: 16, id: "minecraft:iron_block" }
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "093F80A7DC4E458A"
-					item: { Count: 16, id: "minecraft:gold_block" }
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "0FEA8144EA9DB9FB"
-					item: { Count: 16, id: "create:brass_block" }
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "39F0E45C5B852D79"
-					item: { Count: 16, id: "minecraft:redstone_block" }
-					type: "item"
-				}
-				{
-					count: 16L
-					id: "0824A57540D5DCC6"
-					item: { Count: 16, id: "create_connected:control_chip" }
-					type: "item"
-				}
-			]
-			title: "奉行革命烈焰之躯"
-			x: 8.0d
-			y: 11.0d
-		}
-		{
-			dependencies: ["0384E110704AD648"]
-			description: [
-				"当您在&6燃烧时间超过十分钟&r，且&6胸腔准备有充足的改造材料&r时，通过&6手持烈焰蛋糕右键&r，革命烈焰的力量便会主导您的胸腔。"
-				""
-				"您的胸腔类型在改造中会转变成为&c“革命机械”&r类型，进而完全解放各种器官的潜能。"
-			]
-			icon: "create:blaze_cake"
-			id: "6F796E363ED07C81"
-			rewards: [{
-				id: "42F00EA5B14AB290"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "准备充分！改造开始！"
-			tasks: [{
-				icon: "create:blaze_cake"
-				id: "4CA838E24EFD33BB"
-				item: "create:blaze_cake"
-				type: "item"
-			}]
-			title: "打响信号"
-			x: 8.0d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["56CAE9C01AF71671"]
 			description: [
 				"&6恭喜，程序按照预期完成了改造工作。&r"
 				""
-				"首先我需要向您道歉，其实我一开始便&6了解达成炽热的具体条件&r，其并非是十分钟的燃烧时间，或者一些其他的什么材料。"
 				""
-				"该程序其实一开始便指出，所谓炽热即是拥有一颗&c炽热的心&r。我虽然并不理解这个概念，但是我可以通过严格的历史程序，来尽可能复原过去场景中玩家获取此胸腔的流程——这也是我一开始隐瞒您的主要原因，即尽量保持初始条件相同。"
 				""
-				"这同时也证明了，&6人的心其实是可以在各种诱导下重新复现某个特定的状态&r。"
-				""
-				"基于此，我通过数据篡改的方式，&6复制了这种内心模式&r，使得能够稳定的通过注射器来创造一个伪造的数据来骗过此种判据。"
-				""
-				"但滥用胸腔注射器可能会导致这种作弊式的数据失效，因此，我决定将此种注射器的配方交予给这个世界中&6敲钟次数最多的人&r，以确保他的决心。"
 				"{@pagebreak}"
 				"公开配方会使所有人都可以制作革命机械注射器。"
 				""
@@ -1861,7 +1747,119 @@
 			}]
 			title: "革命机械注射器配方"
 			x: 8.0d
-			y: 15.5d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"7B8FD2D02BA5BCA3"
+				"3572DAA906773CCD"
+				"5A523568EA436E1E"
+				"47E4236EF5E0A69A"
+			]
+			description: [
+				"在您制造了少许革命器官后，我在陈旧的信息中找到了一个名为“&6可编程自主核心&r”的特殊设备。"
+				""
+				"虽然不明白其具体的用途为何，但在历史的记录中曾在某个阶段中频繁的提到了它的名字。"
+				""
+				"或许这对于我们理解革命机械有些许帮助，请允许我将该配方的蓝图发送到您的&6手持打印机&r中。"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:programmable_automatic_core"
+				tag: { }
+			}
+			id: "06CEFBF4EC3F421E"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					auto: "enabled"
+					icon: {
+						Count: 1
+						id: "kubejs:programmable_automatic_core"
+						tag: { }
+					}
+					id: "7C9F55A6F24BE57B"
+					ignore_reward_blocking: true
+					isServer: false
+					remove: false
+					stage: "ftb_programmable_automatic_core_1"
+					title: "可编程自主核心图纸"
+					type: "maa:astages"
+				}
+				{
+					id: "2B9A23B662E4D85E"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+			]
+			subtitle: "由革命机械而来的启发"
+			tasks: [{
+				id: "53AE15F233DC4258"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "自发而行"
+			x: 12.5d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"06CEFBF4EC3F421E"
+				"471AE5AA85D6A899"
+			]
+			description: [
+				"请您等下！或许我们找到了可编程自主核心的真正用途！"
+				""
+				"在过去，有玩家利用&6可编程核心&r进行了大量的实验，希望于能够进一步发挥机械和生物融合后的力量。"
+				""
+				"但生物体本身的低耗能与机械的极高功率消耗形成了一种对立——直到他们发现可以&6通过巨大的生物热量驱动机械&r为止。"
+				""
+				"请您制造&6义体改造装置&r，我将向您解释如何完成这种改造！"
+			]
+			id: "30D1D2606F1D61DE"
+			rewards: [{
+				id: "5697BF627BF2F6B5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "机械为具、烈焰为魂"
+			tasks: [{
+				id: "34FE4F031C07C16E"
+				item: {
+					Count: 1
+					id: "kubejs:cyborgization_device"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "以炎热驱动"
+			x: 8.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["30D1D2606F1D61DE"]
+			description: [
+				"为了驱动过去人们设计的义体改造装置，您需要极其灼热的“内在”。"
+				""
+				"在您的燃烧时间大于十分钟时，义体改造装置便会因为巨大的内能而自发的驱动改造进行，进而&6使您的胸腔转变成为完全崭新的形态&r。"
+				""
+				"为了能够达到如此长的燃烧时间，您需要使用&6汽油&r作为燃料进行升温。"
+			]
+			id: "49C7349296812E64"
+			rewards: [{
+				id: "09C014DCFED05B5C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "执行改造"
+			tasks: [{
+				id: "51934ACB19A6EB3D"
+				item: "createdieselgenerators:gasoline_bucket"
+				type: "item"
+			}]
+			title: "急剧升温的准则"
+			x: 8.0d
+			y: 13.0d
 		}
 	]
 	title: "秘闻：地幔燃料"

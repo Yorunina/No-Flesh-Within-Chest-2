@@ -2557,8 +2557,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "&6庆贺吧！此乃通往无尽之钥！&r"
-			x: 9.52d
-			y: 48.45d
+			x: 9.53d
+			y: 48.44d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]

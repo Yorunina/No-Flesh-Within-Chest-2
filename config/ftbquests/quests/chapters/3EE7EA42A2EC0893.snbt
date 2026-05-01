@@ -300,7 +300,7 @@
 			dependencies: ["7308FBF0FFDB2F6A"]
 			description: ["为了让故事能够吸引读者直到最后，情节既要保证紧凑，又要保证逻辑严密、人物关系细腻。"]
 			id: "5BDD47E7B143843F"
-			subtitle: "第三十次自迭代完成"
+			subtitle: "第十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "12535E8295A11A5B"

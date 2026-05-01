@@ -231,6 +231,7 @@
 			subtitle: "请您确认协议"
 			tasks: [{
 				id: "2C39E77E6795C67E"
+				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "&6协议确认：临时维度扩展&r"

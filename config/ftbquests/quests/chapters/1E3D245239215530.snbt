@@ -51,6 +51,25 @@
 			x: 8.5d
 			y: 7.0d
 		}
+		{
+			dependency: "2650CE0D76584853"
+			height: 25.0d
+			image: "kubejs:textures/gui/tasks/world_computer/huge_frame.png"
+			order: -1
+			rotation: 0.0d
+			width: 25.0d
+			x: 8.45d
+			y: 7.05d
+		}
+		{
+			dependency: "2650CE0D76584853"
+			height: 2.5d
+			image: "kubejs:textures/gui/tasks/world_computer/title_worldcomputer.png"
+			rotation: 0.0d
+			width: 23.81d
+			x: 8.5d
+			y: 21.2d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
