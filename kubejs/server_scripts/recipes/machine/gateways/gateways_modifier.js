@@ -28,7 +28,7 @@ const GatewayChaosModifierMapping = new PiecewiseMappingModel()
         modifierList.push(GatewayUtils.buildEffectModifier(chaosIndicator / 60, 'farm_and_charm:farmers_blessing', 0, false, false))
         return modifierList
     })
-    .addPiece(50, 60, (levelIndicator, chaosIndicator) => {
+    .addPiece(50, 61, (levelIndicator, chaosIndicator) => {
         let modifierList = []
         modifierList.push(GatewayUtils.buildStepEffectModifier(chaosIndicator / 60, 'irons_spellbooks:oakskin', 0, 9, 1, false, false))
         modifierList.push(GatewayUtils.buildStepEffectModifier(chaosIndicator / 60, 'irons_spellbooks:evasion', 0, 4, 1, false, false))

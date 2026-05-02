@@ -1,10 +1,11 @@
 // priority: 500
 ItemEvents.entityInteracted('stick', event => {
+
     const target = event.target
 
     /**@type {Internal.ServerPlayer} */
     const player = event.player
-    player.tell(target.airSupply)
+    player.tell(target.totalDamageTakenInCombat)
 })
 
 ItemEvents.rightClicked('stick', event => {
@@ -12,6 +13,7 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
+
     // SetDaySpeed(1)
     // SetNightSpeed(1)
     // UpdatePlaysTimeStabilityBar(server, level, player)

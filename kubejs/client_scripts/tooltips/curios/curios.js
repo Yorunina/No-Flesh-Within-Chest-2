@@ -37,3 +37,4 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:primal_miracle')
         return [Text.translatable('tooltips.kubejs.primal_miracle.shift.3', Text.yellow(value.toFixed(0)))]
     })
 )
+

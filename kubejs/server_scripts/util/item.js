@@ -48,7 +48,7 @@ function SpawnLootAtLocation(level, blockPos, lootList) {
     itemChunks.forEach(itemChunk => {
         level.server.scheduleInTicks(tickCounter, callback => {
             itemChunk.forEach(item => {
-                $Containers.dropItemStack(level, blockPos.x, blockPos.y, blockPos.z, item)
+                $Containers.dropItemStack(level, blockPos.x, blockPos.y, blockPos.z, item.copy())
             })
         })
         tickCounter = tickCounter + 10

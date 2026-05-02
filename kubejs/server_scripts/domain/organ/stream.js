@@ -23,11 +23,11 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
  */
 NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent} event */ event => {
     const entity = event.entity
-    entity.invulnerable
     if (!entity) return
     let customData = {
         thornsDamage: 0
     }
+    WitnessCuriosEntityBeHurt(event, customData)
     OrganEntityBeHurt(event, customData)
     if (customData.thornsDamage > 0 && event.source.actual) {
         let level = event.entity.level

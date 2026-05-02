@@ -1,0 +1,45 @@
+// priority: 1000
+StartupEvents.registry('minecraft:item', event => {
+    event.create('kubejs:eternal_miracle', 'basic')
+        .texture('kubejs:item/curios/eternal_miracle')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('minecraft:generic.armor', 'EternalMiracleArmorAddition', nbt.getInt('value') * 0.01, 'addition')
+            })
+        )
+        .tag('curios:miracle')
+
+    event.create('kubejs:incandescent_miracle', 'basic')
+        .texture('kubejs:item/curios/incandescent_miracle')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('minecraft:generic.attack_damage', 'IncandescentMiracleAttackDamageAddition', nbt.getInt('value') * 0.01, 'addition')
+            })
+        )
+        .tag('curios:miracle')
+
+
+    event.create('kubejs:primal_miracle', 'basic')
+        .texture('kubejs:item/curios/primal_miracle')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+            .dynamicAttribute(ctx => {
+                const item = ctx.getStack()
+                const nbt = item.getOrCreateTag()
+                ctx.modify('attributeslib:experience_gained', 'PrimalMiracleExperienceMultiplier', nbt.getInt('value') * 0.01, 'addition')
+            })
+        )
+        .tag('curios:miracle')
+})

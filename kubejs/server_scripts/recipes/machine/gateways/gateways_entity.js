@@ -16,7 +16,7 @@ function EntitySizeNbt(size) {
  * aqua -> 寒冷变种 50
  */
 const GatewayWaveEntityMapping = new PiecewiseMappingModel()
-    .addPiece(0, 60, new PiecewiseMappingModel()
+    .addPiece(0, 61, new PiecewiseMappingModel()
         .addPiece(0, 10, new StandardWaveEntityItemModel(50, 'minecraft:zombie')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
@@ -390,7 +390,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(50, 60, new StandardWaveEntityItemModel(30, 'minecraft:drowned')
+        .addPiece(50, 61, new StandardWaveEntityItemModel(30, 'minecraft:drowned')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
@@ -399,7 +399,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(50, 60, new StandardWaveEntityItemModel(150, 'cataclysm:coral_golem')
+        .addPiece(50, 61, new StandardWaveEntityItemModel(150, 'cataclysm:coral_golem')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.2),
@@ -407,7 +407,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(50, 60, new StandardWaveEntityItemModel(50, 'cataclysm:deepling')
+        .addPiece(50, 61, new StandardWaveEntityItemModel(50, 'cataclysm:deepling')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),
@@ -417,7 +417,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(50, 60, new StandardWaveEntityItemModel(80, 'cataclysm:deepling_priest')
+        .addPiece(50, 61, new StandardWaveEntityItemModel(80, 'cataclysm:deepling_priest')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'multiply_total', levelIndicator * 0.1),

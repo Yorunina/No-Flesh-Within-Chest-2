@@ -38,8 +38,8 @@ const GatewayAuxiliaryMaterialChaosMap = {
     'kubejs:gateways_auxiliary_material_9': -100,
 }
 
-const GatewayColorMapping = new PiecewiseMappingModel().addPiece(0, 10, Color.GREEN).addPiece(10, 20, Color.YELLOW).addPiece(20, 30, Color.RED).addPiece(30, 40, Color.LIGHT_PURPLE).addPiece(40, 50, Color.DARK_PURPLE).addPiece(50, 60, Color.AQUA)
+const GatewayColorMapping = new PiecewiseMappingModel().addPiece(0, 10, Color.GREEN).addPiece(10, 20, Color.YELLOW).addPiece(20, 30, Color.RED).addPiece(30, 40, Color.LIGHT_PURPLE).addPiece(40, 50, Color.DARK_PURPLE).addPiece(50, 61, Color.AQUA)
 
-const GatewaySizeMapping = new PiecewiseMappingModel().addPiece(0, 20, GatewaySize.SMALL).addPiece(20, 50, GatewaySize.MEDIUM).addPiece(50, 100, GatewaySize.LARGE)
+const GatewaySizeMapping = new PiecewiseMappingModel().addPiece(0, 20, GatewaySize.SMALL).addPiece(20, 40, GatewaySize.MEDIUM).addPiece(40, 61, GatewaySize.LARGE)
 
-const GatewayWaveCountMapping = new PiecewiseMappingModel().addPiece(0, 20, 3).addPiece(20, 40, 5).addPiece(40, 60, 7)
+const GatewayWaveCountMapping = new PiecewiseMappingModel().addPiece(0, 20, 3).addPiece(20, 40, 5).addPiece(40, 61, 7)

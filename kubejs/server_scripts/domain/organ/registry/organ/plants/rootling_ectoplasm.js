@@ -40,7 +40,7 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
                 .withParameter(LootContextParams.THIS_ENTITY, entity)
                 .withParameter(LootContextParams.TOOL, entity.getMainHandItem())
             targetBlockState.getDrops(lootContext).forEach(itemStack => {
-                $Containers.dropItemStack(level, targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ(), itemStack)
+                $Containers.dropItemStack(level, targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ(), itemStack.copy())
             })
             level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
             level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)

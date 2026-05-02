@@ -150,3 +150,5 @@ const $Snowball = Java.loadClass('net.minecraft.world.entity.projectile.Snowball
 const $Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 const $PotionUtils = Java.loadClass('net.minecraft.world.item.alchemy.PotionUtils')
 const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem')
+
+const $TargetDummyEntity = Java.loadClass('net.mehvahdjukaar.dummmmmmy.common.TargetDummyEntity')

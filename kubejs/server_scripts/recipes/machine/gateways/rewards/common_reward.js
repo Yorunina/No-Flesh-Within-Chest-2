@@ -66,7 +66,7 @@ const GatewayTypeStackRewardMappingModel = new PiecewiseMappingModel()
         if (levelIndicator >= 30) stackList.push(Item.of('minecraft:wither_skeleton_skull', 1))
         return stackList
     })
-    .addPiece(50, 60, (levelIndicator, chaosIndicator, typeIndicator) => {
+    .addPiece(50, 61, (levelIndicator, chaosIndicator, typeIndicator) => {
         let stackList = []
         RandomGetN(['minecraft:blue_ice', 'minecraft:prismarine_crystals', 'minecraft:prismarine_shard', 'minecraft:lapis_lazuli', 'minecraft:wet_sponge', 'minecraft:snow_block', 'minecraft:sea_pickle'], 2).forEach(pItem => {
             stackList.push(Item.of(pItem, 8 + Math.floor(levelIndicator / 2 * Math.random())))
