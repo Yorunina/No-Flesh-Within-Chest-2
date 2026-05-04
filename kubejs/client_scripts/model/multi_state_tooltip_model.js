@@ -113,32 +113,37 @@ function ApplyMultiStateTooltip(tooltipModel) {
             if (tooltipModel.defaultTooltips.length > 0) {
                 lineNum = AddTextFuncLines(text, tooltipModel.defaultTooltips, item, lineNum)
             }
+            
+            switch (true) {
+                case tooltip.isCtrl():
+                    if (tooltipModel.ctrlTooltips.length > 0) {
+                        lineNum = AddTextLines(text, [tooltipModel.ctrlHoldingDescription], lineNum)
+                        lineNum = AddTextFuncLines(text, tooltipModel.ctrlTooltips, item, lineNum)
+                        return
+                    }
+                    break
+                case tooltip.isShift():
+                    if (tooltipModel.shiftTooltips.length > 0) {
+                        lineNum = AddTextLines(text, [tooltipModel.shiftHoldingDescription], lineNum)
+                        lineNum = AddTextFuncLines(text, tooltipModel.shiftTooltips, item, lineNum)
+                        return
+                    }
+                case tooltip.isAlt():
+                    if (tooltipModel.altTooltips.length > 0) {
+                        lineNum = AddTextLines(text, [tooltipModel.altHoldingDescription], lineNum)
+                        lineNum = AddTextFuncLines(text, tooltipModel.altTooltips, item, lineNum)
+                        return
+                    }
+            }
 
             if (tooltipModel.ctrlTooltips.length > 0) {
-                if (tooltip.isCtrl()) {
-                    lineNum = AddTextLines(text, [tooltipModel.ctrlHoldingDescription], lineNum)
-                    lineNum = AddTextFuncLines(text, tooltipModel.ctrlTooltips, item, lineNum)
-                } else {
-                    lineNum = AddTextLines(text, [tooltipModel.ctrlDescription], lineNum)
-                }
+                lineNum = AddTextLines(text, [tooltipModel.ctrlDescription], lineNum)
             }
-
             if (tooltipModel.shiftTooltips.length > 0) {
-                if (tooltip.isShift()) {
-                    lineNum = AddTextLines(text, [tooltipModel.shiftHoldingDescription], lineNum)
-                    lineNum = AddTextFuncLines(text, tooltipModel.shiftTooltips, item, lineNum)
-                } else {
-                    lineNum = AddTextLines(text, [tooltipModel.shiftDescription], lineNum)
-                }
+                lineNum = AddTextLines(text, [tooltipModel.shiftDescription], lineNum)
             }
-
             if (tooltipModel.altTooltips.length > 0) {
-                if (tooltip.isAlt()) {
-                    lineNum = AddTextLines(text, [tooltipModel.altHoldingDescription], lineNum)
-                    lineNum = AddTextFuncLines(text, tooltipModel.altTooltips, item, lineNum)
-                } else {
-                    lineNum = AddTextLines(text, [tooltipModel.altDescription], lineNum)
-                }
+                lineNum = AddTextLines(text, [tooltipModel.altDescription], lineNum)
             }
         })
     })

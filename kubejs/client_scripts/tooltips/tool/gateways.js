@@ -150,13 +150,6 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:source_focus_crystal')
     .addShift(Text.translatable('tooltips.kubejs.source_focus_crystal.shift.1'))
 )
 
-ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:exhausted_source_focus_crystal')
-    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
-    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
-    .addDefault(Text.translatable('tooltips.kubejs.exhausted_source_focus_crystal.default.1').gray())
-    .addShift(Text.translatable('tooltips.kubejs.exhausted_source_focus_crystal.shift.1'))
-)
-
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:gateways_extractant_material_1')
     .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))

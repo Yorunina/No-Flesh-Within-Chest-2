@@ -73,3 +73,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:soul_core')
     .addDefault(Text.translatable('tooltips.kubejs.soul_core.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.soul_core.alt.1', FrozenHover))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:witch_fibroma')
+    .addDefault(Text.translatable('tooltips.kubejs.witch_fibroma.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.witch_fibroma.alt.1', KeyActiveHover))
+)

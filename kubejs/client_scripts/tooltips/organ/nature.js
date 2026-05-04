@@ -348,8 +348,3 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:refill_agreement')
     .addDefault(Text.translatable('tooltips.kubejs.refill_agreement.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.refill_agreement.alt.1'))
 )
-
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:witch_stomach')
-    .addDefault(Text.translatable('tooltips.kubejs.witch_stomach.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.witch_stomach.alt.1', KeyActiveHover))
-)

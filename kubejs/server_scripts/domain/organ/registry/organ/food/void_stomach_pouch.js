@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:void_stomach_pouch')
     .addScore('chestcavity:digestion', 2)
     .addScore('chestcavity:nutrition', -0.5)
     .addScore('chestcavity:endurance', -3)
+// todo 回归测试
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.FoodEatenEventJS} event
@@ -32,13 +33,6 @@ function VoidStomachPouchFoodEaten(customData, event, organItem, organIndex, slo
     let statusMsg = Text.translatable('status_msg.kubejs.void_stomach_pouch.item_info', Text.translatable(foodItem.getDescriptionId())).gold()
     let comboCount = comboList.size()
     statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.combo_info', comboCount.toFixed(0)).gold())
-
-    let foodProp = foodItem.getFoodProperties(player)
-    let capIncr = Math.floor(foodProp.getSaturationModifier() * foodProp.getNutrition())
-    if (capIncr > 0) {
-        nbt.putInt('capIncr', nbt.getInt('capIncr') + capIncr)
-        statusMsg.append(Text.translatable('status_msg.kubejs.void_stomach_pouch.cap_info', capIncr.toFixed(0)).yellow())
-    }
 
     let sizeIncr = Math.floor(comboCount / 2)
     if (sizeIncr > 0) {
@@ -75,13 +69,12 @@ function VoidStomachPouchEntityTick(customData, event, organItem, organIndex, sl
         }
         let unifiedStorage = dimNet.getUnifiedStorage()
         let sizeIncr = nbt.getInt('sizeIncr')
-        let capIncr = nbt.getInt('capIncr')
         unifiedStorage.setSlotMaxSize(unifiedStorage.slotMaxSize + sizeIncr)
-        unifiedStorage.setSlotCapacity(unifiedStorage.slotCapacity + capIncr)
-        player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.summary', sizeIncr.toFixed(0), capIncr.toFixed(0)).gold())
+        player.setStatusMessage(Text.translatable('status_msg.kubejs.void_stomach_pouch.summary', sizeIncr.toFixed(0)).gold())
         RemoveChestCavityOrgan(customData, event.chestCavity, organIndex, slotType, true)
         // todo 要是有粒子效果会更好，优先级靠后
         level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.burp', player.getSoundSource(), 1, 1)
+        player.addItemCooldown(organItem, 20 * 300)
     } else {
         organItem.setDamageValue(curDamage)
     }

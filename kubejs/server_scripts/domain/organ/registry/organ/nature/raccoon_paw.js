@@ -20,7 +20,6 @@ function RacconPawEntityInteract(customData, event, organItem, organIndex, slotT
     if (OrganItemCoolDown(player, organItem)) return
     switch (target.type) {
         case 'minecraft:villager':
-            SpawnLootAtLocation(event.level, player.blockPosition(), [Item.of('kubejs:villager_own_you')])
             break
         default:
             let allSlotsList = []

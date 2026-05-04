@@ -23,4 +23,12 @@ ServerEvents.recipes(event => {
         1000,
         false
     )
+
+    event.recipes.ars_nouveau.enchanting_apparatus(
+        ['create:golden_sheet', 'create:golden_sheet', 'cataclysm:ancient_metal_nugget', 'ars_nouveau:abjuration_essence'],
+        'minecraft:amethyst_shard',
+        'kubejs:exhausted_source_focus_crystal',
+        100,
+        false
+    )
 })

@@ -68,7 +68,7 @@ InfinityEvents.itemInPortal(event => {
         let targetPlayer = level.getPlayerByUUID(phtographerId)
         if (!targetPlayer) return
         if (!DimensionsNet.getPrimaryNetFromPlayer(targetPlayer)) {
-            DimensionsNet.createNewNetForPlayer(targetPlayer, 1024, 27)
+            MAAUtils.createBDNetForPlayer(targetPlayer, null, 27)
             level.playSound(null, targetPlayer.getX(), targetPlayer.getY(), targetPlayer.getZ(), 'ui.toast.challenge_complete', targetPlayer.getSoundSource(), 0.25, 1)
         }
     } else if (InfinityPortalItem2Item.has(itemId)) {

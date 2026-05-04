@@ -28,10 +28,10 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:story_witness')
     .addShift(Text.translatable('tooltips.kubejs.story_witness.shift.2'))
     .addShift(Text.translatable('tooltips.kubejs.story_witness.shift.3'))
     .addAlt((text, item) => {
-        let nbt = item.getOrCreateTag()
+        const nbt = item.getOrCreateTag()
         let damageAmount = nbt.getLong('damageAmount')
         let stage = nbt.getInt('stage')
-        let textList = []
+        const textList = []
 
         for (let i = 0; i < StoryWitnessLootList.length; i++) {
             let lootObj = StoryWitnessLootList[i]

@@ -235,7 +235,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3B54F5D4E7AE9822"]
+			dependencies: ["3377828AA207E85A"]
 			description: [
 				"魔源汇聚晶体是一种&6极易损坏&r的物品。"
 				""
@@ -316,8 +316,16 @@
 				"3. 当前深度下，&6能够复制的物品意义并不大&r，真正有价值的，理论存在的&6超自由地幔能&r可能存在在远比2000要深的地幔最深处。"
 				""
 				"因此，我在您挖掘的过程中，进行了一项特殊的研究。只需要您能够搞到&d那样物品&r，我们就可以暴力开采地幔能，极大的提高我们的效率！"
+				""
+				"为此，我们需要制作一个&6耗竭的魔源汇聚晶体&r，并将其放置在胸腔中以补充其魔源。"
 			]
-			icon: "kubejs:exhausted_source_focus_crystal"
+			icon: {
+				Count: 1
+				id: "kubejs:exhausted_source_focus_crystal"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "3377828AA207E85A"
 			rewards: [{
 				id: "4E798C60C19C3E35"
@@ -326,24 +334,30 @@
 			}]
 			subtitle: "到达深度限制"
 			tasks: [{
-				id: "112A3F150C00C907"
-				title: "执行暴力开采"
-				type: "checkmark"
+				id: "63107BC16188E15A"
+				item: {
+					Count: 1
+					id: "kubejs:exhausted_source_focus_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
 			}]
 			title: "临界状态"
-			x: 16.0d
+			x: 17.5d
 			y: 0.0d
 		}
 		{
 			dependencies: [
 				"12E7C53A56C43097"
-				"2201B118100DDBB7"
+				"67967AFA0EECD984"
 			]
 			dependency_requirement: "one_completed"
 			description: [
 				"地幔能被称作为一种&6数据&r——这只是对于我和您意义上来说的。"
 				""
-				"在游戏中了，其表现形式仍然为一种&6复杂的能量&r，只是我们所使用的地幔能提取器并非是一种常规的游戏机器，更像是介于游戏本身和数据层面之间的一种设备。"
+				"在游戏中，其表现形式仍然为一种&6复杂的能量&r，只是我们所使用的地幔能提取器并非是一种常规的游戏机器，更像是介于游戏本身和数据层面之间的一种设备。"
 				""
 				"正因如此，一部分无法利用的地幔能，会按照游戏逻辑，溢出并转变为一种称作为&6烈焰裂片&r的物品，其可以提供大量热值，能够用于各种各样的特异加工中。"
 			]
@@ -1260,7 +1274,7 @@
 				type: "maa:astages"
 			}]
 			title: "凛冬之后的新故事"
-			x: 0.0d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -1331,7 +1345,7 @@
 				type: "checkmark"
 			}]
 			title: "地幔能的故事"
-			x: 2.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -1760,26 +1774,6 @@
 			title: "急剧升温的准则"
 			x: 8.0d
 			y: 13.0d
-		}
-		{
-			dependencies: ["3377828AA207E85A"]
-			id: "3B54F5D4E7AE9822"
-			tasks: [{
-				id: "0D5818925C70644A"
-				type: "checkmark"
-			}]
-			x: 18.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["67967AFA0EECD984"]
-			id: "2201B118100DDBB7"
-			tasks: [{
-				id: "56BD33F5DF9D5FA1"
-				type: "checkmark"
-			}]
-			x: 5.5d
-			y: 2.0d
 		}
 	]
 	title: "秘闻：地幔燃料"

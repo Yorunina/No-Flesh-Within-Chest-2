@@ -54,4 +54,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(
         ['kubejs:colorful_dye'],
         ['kubejs:colorful_slime_ball', 'minecraft:red_dye', 'minecraft:green_dye', 'minecraft:blue_dye'], 20 * 20).superheated()
+
+    event.recipes.create.mixing(
+        ['kubejs:flame_fragment'],
+        [Fluid.of('minecraft:lava', 1000), 'minecraft:obsidian'], 20 * 10).superheated()
 })

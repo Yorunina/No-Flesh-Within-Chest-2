@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:witch_stomach')
+RegistryOrgan('kubejs:witch_fibroma')
     .addScore('chestcavity:digestion', 1)
     .setCanSpawn(true)
 
@@ -26,6 +26,6 @@ function WitchStomachKeyActive(customData, event, organItem, organIndex, slotTyp
 
 
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:witch_stomach')
+    new OrganStrategyModel('kubejs:witch_fibroma')
         .addOnlyStrategy('key_active', WitchStomachKeyActive)
 )

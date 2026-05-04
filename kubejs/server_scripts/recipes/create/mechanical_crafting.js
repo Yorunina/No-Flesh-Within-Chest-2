@@ -134,11 +134,9 @@ ServerEvents.recipes(event => {
         G: 'minecraft:glowstone_dust',
     })
 
-    // todo 配方没改完
-
     event.recipes.create.mechanical_crafting('kubejs:revolution_relay', [
-        'IIIII',
-        'RGAGR',
+        '  A  ',
+        'RGRGR',
         'IIIII',
     ], {
         I: 'create:iron_sheet',
@@ -148,26 +146,31 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.create.mechanical_crafting('kubejs:revolution_delay', [
-        'IIIII',
-        'RGAGR',
-        'IIIII',
-    ], {
-        I: 'create:iron_sheet',
-        R: 'minecraft:redstone',
-        A: 'minecraft:amethyst_shard',
-        G: 'minecraft:glowstone_dust',
-    })
-
-    event.recipes.create.mechanical_crafting('kubejs:revolution_bell', [
-        'IIIII',
-        'RGAGR',
+        '  A  ',
+        'RGRGR',
         'IIIII',
     ], {
         I: 'create:iron_sheet',
         R: 'minecraft:redstone',
-        A: 'minecraft:amethyst_shard',
+        A: 'minecraft:lapis_lazuli',
         G: 'minecraft:glowstone_dust',
     })
 
+	event.recipes.create.mechanical_crafting('kubejs:revolution_bell', [
+		' AAA ',
+		'ACBCA',
+		'ABEBA',
+		'ACDCA',
+		' ADA ',
+		'  D  ',
+		'  F  ',
+	], {
+		A: '#forge:plates/brass',
+		B: 'minecraft:glowstone_dust',
+		C: 'minecraft:redstone',
+		D: 'create:minecart_coupling',
+		E: 'create:clockwork_bearing',
+		F: '#minecraft:anvil'
+	})
 })
 

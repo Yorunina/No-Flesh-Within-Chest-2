@@ -100,6 +100,51 @@ StartupEvents.registry('item', event => {
         })
         .canFitInsideContainerItems(false)
         .texture('kubejs:item/organs/infected/bone_meal_bag').tag('kubejs:infected').tag('kubejs:stomach')
+
+    event.create('kubejs:witch_fibroma')
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
+            if (oStack.isEmpty()) {
+                RemoveBundleOneStack(stack).ifPresent(pStack => {
+                    PlayBundleRemoveSound(player)
+                    access.set(pStack)
+                })
+            } else if (!$PotionUtils.getPotion(oStack).effects.isEmpty()) {
+                let added = AddItemIntoBundle(stack, oStack, 1, (pStack) => 1)
+                if (added > 0) {
+                    PlayerBundleInsertSound(player)
+                    oStack.shrink(added)
+                }
+            }
+            return true
+        })
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
+            let oStack = slot.getItem()
+            if (oStack.isEmpty()) {
+                PlayBundleRemoveSound(player)
+                RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
+            } else if (!$PotionUtils.getPotion(oStack).effects.isEmpty()) {
+                let added = AddItemIntoBundle(stack, slot.safeTake(oStack.getCount(), 65535, player), 1, (pStack) => 1)
+                if (added > 0) PlayerBundleInsertSound(player)
+            }
+            return true
+        })
+        .barWidth((stack) => {
+            let stackList = GetBundleContents(stack)
+            return Math.min(1 + 12 * stackList.length, 13)
+        })
+        .barColor(() => Color.DARK_BLUE)
+        .tooltipImage((stack) => {
+            let itemList = $NonNullList.create()
+            GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
+            return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
+        })
+        .canFitInsideContainerItems(false)
+        .texture('kubejs:item/organs/infected/witch_fibroma')
+        .maxStackSize(1)
+        .tag('kubejs:infected')
+        .tag('kubejs:stomach')
 })
 
 

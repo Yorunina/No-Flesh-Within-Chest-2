@@ -158,5 +158,5 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:colorful_slime_ball')
 )
 
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:colorful_singularity')
-    .addDefault(Component.translatable('tooltips.kubejs.colorful_singularity.default.1').black())
+    .addDefault(Text.translatable('tooltips.kubejs.colorful_singularity.default.1').gray())
 )
