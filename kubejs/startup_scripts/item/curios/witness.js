@@ -8,7 +8,7 @@ StartupEvents.registry('minecraft:item', event => {
             .canUnequip(() => true)
         )
         .tag('curios:witness')
-    event.create('kubejs:story_proof', 'basic').texture('kubejs:item/curios/story_proof').maxStackSize(1)
+    event.create('kubejs:story_proof', 'basic').texture('kubejs:item/material/story_proof').maxStackSize(1)
 
     event.create('kubejs:perseverance_witness', 'basic')
         .texture('kubejs:item/curios/perseverance_witness')

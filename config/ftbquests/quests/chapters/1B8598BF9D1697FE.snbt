@@ -334,11 +334,26 @@
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "5FCBCB78FDA46E87"
-			rewards: [{
-				id: "05AA46D35300E645"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "05AA46D35300E645"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 1
+					icon: {
+						Count: 1
+						id: "kubejs:fear_memory"
+						tag: { }
+					}
+					id: "55D888449A898BD4"
+					ignore_reward_blocking: true
+					isPermanent: true
+					slot: "memory"
+					type: "maa:curios_slot"
+				}
+			]
 			subtitle: "通道"
 			tasks: [{
 				id: "71903DD46F1CBE6B"
@@ -994,11 +1009,11 @@
 					id: "kubejs:desperate_memory"
 					tag: { }
 				}
-				title: "任意属性绝望至极的记忆"
+				title: "任意属性绝望至极的回忆"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c绝望至极的记忆&r"
+			title: "&c绝望至极的回忆&r"
 			x: -3.5d
 			y: -6.5d
 		}
@@ -1027,11 +1042,11 @@
 					id: "kubejs:cheat_death_memory"
 					tag: { }
 				}
-				title: "任意属性死里逃生的记忆"
+				title: "任意属性死里逃生的回忆"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c死里逃生的记忆&r"
+			title: "&c死里逃生的回忆&r"
 			x: 7.0d
 			y: -6.5d
 		}
@@ -1054,11 +1069,11 @@
 					id: "kubejs:fear_memory"
 					tag: { }
 				}
-				title: "任意属性恐惧密布的记忆"
+				title: "任意属性恐惧密布的回忆"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c恐惧密布的记忆&r"
+			title: "&c恐惧密布的回忆&r"
 			x: 0.0d
 			y: -6.5d
 		}
@@ -1089,11 +1104,11 @@
 					id: "kubejs:reunion_memory"
 					tag: { }
 				}
-				title: "任意属性久别重逢的记忆"
+				title: "任意属性久别重逢的回忆"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c久别重逢的记忆&r"
+			title: "&c久别重逢的回忆&r"
 			x: 3.5d
 			y: -6.5d
 		}
@@ -1116,11 +1131,11 @@
 					id: "kubejs:dark_witness_memory"
 					tag: { }
 				}
-				title: "任意属性直视黑暗的记忆"
+				title: "任意属性直视黑暗的回忆"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c直视黑暗的记忆&r"
+			title: "&c直视黑暗的回忆&r"
 			x: -7.0d
 			y: -6.5d
 		}
@@ -1140,12 +1155,27 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "042A150DEC7C9AC3"
-			min_required_dependencies: 3
-			rewards: [{
-				id: "232C756D82D40049"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "232C756D82D40049"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 1
+					icon: {
+						Count: 1
+						id: "kubejs:fear_memory"
+						tag: { }
+					}
+					id: "683C4DFC8D83E032"
+					ignore_reward_blocking: true
+					isPermanent: true
+					slot: "memory"
+					type: "maa:curios_slot"
+				}
+			]
 			subtitle: "从何而来的消息"
 			tasks: [{
 				elapsedTime: 600L
@@ -1172,11 +1202,26 @@
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
 			id: "20AA08D1E1347535"
-			rewards: [{
-				id: "1D94BAFAE0390A9E"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1D94BAFAE0390A9E"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 1
+					icon: {
+						Count: 1
+						id: "kubejs:fear_memory"
+						tag: { }
+					}
+					id: "238A304A1FC906C2"
+					ignore_reward_blocking: true
+					isPermanent: true
+					slot: "memory"
+					type: "maa:curios_slot"
+				}
+			]
 			subtitle: "假若奇迹真的存在"
 			tasks: [{
 				id: "0FA41FCC8ADF01F2"
@@ -1326,11 +1371,26 @@
 			icon: "minecraft:nether_star"
 			id: "29EFFFB96DA486C5"
 			min_required_dependencies: 2
-			rewards: [{
-				id: "61584E12E4EF3BA5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "61584E12E4EF3BA5"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 1
+					icon: {
+						Count: 1
+						id: "kubejs:primal_miracle"
+						tag: { }
+					}
+					id: "1A0A7BDFE4B06B9E"
+					ignore_reward_blocking: true
+					isPermanent: true
+					slot: "miracle"
+					type: "maa:curios_slot"
+				}
+			]
 			subtitle: "从另一个世界来的旅者"
 			tasks: [{
 				id: "308B39B523F6FA9E"

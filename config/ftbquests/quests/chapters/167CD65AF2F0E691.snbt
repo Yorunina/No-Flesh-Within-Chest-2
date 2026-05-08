@@ -75,6 +75,7 @@
 				count: 1L
 				id: "51CEB1C39B78A78B"
 				kubeId: "first_task"
+				textBoxRawTitle: ""
 				title: "点击此并输入任意字符"
 				type: "maa:kube_text_input"
 			}]

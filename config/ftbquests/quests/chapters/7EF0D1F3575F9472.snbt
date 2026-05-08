@@ -450,6 +450,7 @@
 				count: 1L
 				id: "4806560976EB0238"
 				kubeId: "end_game_report"
+				textBoxRawTitle: ""
 				title: "填写游戏反馈"
 				type: "maa:kube_text_input"
 			}]

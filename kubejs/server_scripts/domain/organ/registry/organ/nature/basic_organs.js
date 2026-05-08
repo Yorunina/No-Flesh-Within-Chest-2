@@ -22,7 +22,7 @@ RegistryOrgan('kubejs:animal_rib').addScore('chestcavity:defense', 1).setCanSpaw
 RegistryOrgan('kubejs:animal_spine').addScore('chestcavity:nerves', 1).addScore('chestcavity:defense', 0.5).setCanSpawn(true)
 RegistryOrgan('kubejs:animal_spleen').addScore('chestcavity:metabolism', 1).setCanSpawn(true)
 RegistryOrgan('kubejs:animal_stomach').addScore('chestcavity:digestion', 1.5).setCanSpawn(true)
-
+RegistryOrgan('kubejs:rumen').addScore('chestcavity:digestion', 1).addScore('chestcavity:nutrition', 1).setCanSpawn(true)
 
 RegistryOrgan('kubejs:insect_lung').addScore('chestcavity:breath_recovery', 1).addScore('chestcavity:breath_capacity', 1).addScore('chestcavity:endurance', 1).setCanSpawn(true)
 RegistryOrgan('kubejs:insect_muscle').addScore('chestcavity:strength', 1.5).setCanSpawn(true)

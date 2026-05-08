@@ -55,6 +55,7 @@
 				count: 3L
 				id: "2562A3686DE5E765"
 				kubeId: "sponsor_gift_code"
+				textBoxRawTitle: ""
 				title: "密文为何"
 				type: "maa:kube_text_input"
 			}]

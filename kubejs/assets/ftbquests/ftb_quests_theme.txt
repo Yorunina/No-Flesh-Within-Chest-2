@@ -1,6 +1,6 @@
 [*]
 background:  ftblibrary:textures/gui/background_squares.png; color=rgb(0, 0, 0); tile_size=64
-extra_quest_shapes:  diamond, pentagon, hexagon, octagon, heart, gear
+extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear
 
 # 认知：胸腔
 [2218D095B234A44A]

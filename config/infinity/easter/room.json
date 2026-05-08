@@ -4,13 +4,21 @@
     "type": "infinity:room",
     "biome_source": {
       "type": "fixed",
-      "biome": "minecraft:the_void"
+      "biome": "infinity:content"
     },
     "structure_paths": [
       "kubejs:room/shop_0",
-      "kubejs:room/shop_1"
+      "kubejs:room/shop_1",
+      "kubejs:room/shop_2",
+      "kubejs:room/shop_3",
+      "kubejs:room/shop_4",
+      "kubejs:room/shop_5"
     ],
     "weights": [
+      1,
+      1,
+      1,
+      1,
       1,
       1
     ]

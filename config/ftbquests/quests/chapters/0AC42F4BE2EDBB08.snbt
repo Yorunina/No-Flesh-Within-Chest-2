@@ -532,6 +532,7 @@
 				count: 1L
 				id: "4B07C324EB2D7BD7"
 				kubeId: "keep_contact"
+				textBoxRawTitle: ""
 				title: "点击此处以提供关键词"
 				type: "maa:kube_text_input"
 			}]
@@ -854,11 +855,22 @@
 				"见证饰品&6佩带在玩家身上&r时，通过积累玩家造成的伤害，便能够结算对应的阶段奖励，这将对您的生存将会有极大的帮助。"
 			]
 			id: "28C86788D85A6138"
-			rewards: [{
-				id: "588FC7BAB1420E33"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "588FC7BAB1420E33"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 1
+					icon: "kubejs:story_witness"
+					id: "771561DE10AE80F5"
+					ignore_reward_blocking: true
+					isPermanent: true
+					slot: "witness"
+					type: "maa:curios_slot"
+				}
+			]
 			subtitle: "概念具象化"
 			tasks: [{
 				id: "0E4B31D24385E193"

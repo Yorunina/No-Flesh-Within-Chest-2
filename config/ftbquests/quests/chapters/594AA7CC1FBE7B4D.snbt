@@ -618,6 +618,7 @@
 				count: 1L
 				id: "6563CA1DADBB6FC5"
 				kubeId: "final_end_1"
+				textBoxRawTitle: ""
 				title: "原初的话语"
 				type: "maa:kube_text_input"
 			}]

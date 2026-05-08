@@ -1,23 +1,4 @@
 // priority: 900
-const StoryWitnessLootList = [
-    { damage: 100, lootList: [Item.of('minecraft:iron_ingot', 8)] },
-    { damage: 500, lootList: [Item.of('torchmaster:megatorch')] },
-    { damage: 1000, lootList: [Item.of('minecraft:diamond', 3)] },
-    { damage: 3000, lootList: [Item.of('kubejs:koi_fish_scale')] },
-    { damage: 5000, lootList: [Item.of('tetra:geode', 8)] },
-    { damage: 10000, lootList: [Item.of('minecraft:netherite_ingot', 3)] },
-    { damage: 50000, lootList: [Item.of('cataclysm:witherite_ingot', 3)] },
-    { damage: 100000, lootList: [Item.of('minecraft:enchanted_book').enchant('minecraft:protection', 5)] },
-    { damage: 1000000, lootList: [Item.of('cataclysm:altar_of_fire')] },
-    { damage: 10000000, lootList: [Item.of('minecraft:warden_spawn_egg')] },
-    { damage: 100000000, lootList: [Item.of('minecraft:potion', '{Potion:"potioncore:flight"}')] },
-    { damage: 1000000000, lootList: [Item.of('create:creative_blaze_cake')] },
-    { damage: 10000000000, lootList: [Item.of('kaleidoscope_cookery:sakura_fubuki')] },
-    { damage: 100000000000, lootList: [Item.of('chisel:futura/controller')] },
-    { damage: 1000000000000, lootList: [Item.of('kaleidoscope_cookery:transmutation_lunch_bag')] }
-]
-
-
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:story_witness')
     .setShiftDescription(Text.translatable('tooltips.kubejs.witness.shift.1'))
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.witness.shift_holding.1'))
@@ -32,6 +13,23 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:story_witness')
         let damageAmount = nbt.getLong('damageAmount')
         let stage = nbt.getInt('stage')
         const textList = []
+        const StoryWitnessLootList = [
+            { damage: 100, lootList: [Item.of('minecraft:iron_ingot', 8)] },
+            { damage: 500, lootList: [Item.of('torchmaster:megatorch')] },
+            { damage: 1000, lootList: [Item.of('minecraft:diamond', 3)] },
+            { damage: 3000, lootList: [Item.of('kubejs:koi_fish_scale')] },
+            { damage: 5000, lootList: [Item.of('tetra:geode', 8)] },
+            { damage: 10000, lootList: [Item.of('minecraft:netherite_ingot', 3)] },
+            { damage: 50000, lootList: [Item.of('cataclysm:witherite_ingot', 3)] },
+            { damage: 100000, lootList: [Item.of('minecraft:enchanted_book').enchant('minecraft:protection', 5)] },
+            { damage: 1000000, lootList: [Item.of('cataclysm:altar_of_fire')] },
+            { damage: 10000000, lootList: [Item.of('minecraft:warden_spawn_egg')] },
+            { damage: 100000000, lootList: [Item.of('minecraft:potion', '{Potion:"potioncore:flight"}')] },
+            { damage: 1000000000, lootList: [Item.of('create:creative_blaze_cake')] },
+            { damage: 10000000000, lootList: [Item.of('kaleidoscope_cookery:sakura_fubuki')] },
+            { damage: 100000000000, lootList: [Item.of('chisel:futura/controller')] },
+            { damage: 1000000000000, lootList: [Item.of('kaleidoscope_cookery:transmutation_lunch_bag')] }
+        ]
 
         for (let i = 0; i < StoryWitnessLootList.length; i++) {
             let lootObj = StoryWitnessLootList[i]
