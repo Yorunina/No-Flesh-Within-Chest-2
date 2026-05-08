@@ -189,6 +189,7 @@
     "ftbquests.quest.shape.octagon": "八边形",
     "ftbquests.quest.shape.heart": "心形",
     "ftbquests.quest.shape.gear": "齿轮形",
+    "ftbquests.quest.shape.light_rsquare": "明亮圆角",
     "ftbquests.quest.misc.can_repeat": "可重复任务",
     "ftbquests.quest.tasks_ignore_dependencies": "任务忽略依赖项",
     "ftbquests.quest.tasks_ignore_dependencies.tooltip": "允许在不完成依赖项的情况下开始任务",

@@ -18,7 +18,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:blood_extractor')
                     NewLine,
                     Text.translate(`tooltips.kubejs.score_tag.hover.${score.toString()}`)
                 ])
-                .yellow().underlined()
+                .yellow()
             let scoreTooltips = Text.translatable('tooltips.kubejs.blood_extractor.shift.1', scoreString, Text.yellow(roundValue))
             tooltipsList.push(scoreTooltips)
         })

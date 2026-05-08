@@ -1,9 +1,0 @@
-{
-    "type": "origins:attribute",
-    "modifier": {
-        "name": "Machinist Fragile Armor",
-        "attribute": "minecraft:generic.armor",
-        "value": -4,
-        "operation": "addition"
-    }
-}

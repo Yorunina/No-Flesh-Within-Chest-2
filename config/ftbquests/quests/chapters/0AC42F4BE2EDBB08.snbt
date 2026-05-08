@@ -4,9 +4,74 @@
 	default_quest_shape: ""
 	filename: "0AC42F4BE2EDBB08"
 	group: ""
-	hide_quest_until_deps_complete: true
 	icon: "minecraft:oak_log"
 	id: "0AC42F4BE2EDBB08"
+	images: [
+		{
+			dependency: "4E805DA2B8D171E4"
+			height: 7.2d
+			image: "kubejs:textures/gui/tasks/chapter_1/line_1.png"
+			rotation: 0.0d
+			width: 2.78d
+			x: -1.55d
+			y: 8.95d
+		}
+		{
+			dependency: "4E805DA2B8D171E4"
+			height: 5.4d
+			image: "kubejs:textures/gui/tasks/chapter_1/line_2.png"
+			rotation: 0.0d
+			width: 2.66d
+			x: 1.55d
+			y: 8.28d
+		}
+		{
+			dependency: "4C247D4E88F1A179"
+			height: 24.0d
+			image: "kubejs:textures/gui/tasks/chapter_1/error_text.png"
+			order: -1
+			rotation: 0.0d
+			width: 24.38d
+			x: -0.5d
+			y: 28.5d
+		}
+		{
+			dependency: "5D90233550E7D188"
+			height: 0.6d
+			image: "kubejs:textures/gui/tasks/chapter_1/cognition.png"
+			rotation: 0.0d
+			width: 4.28d
+			x: 5.5d
+			y: 6.0d
+		}
+		{
+			dependency: "46E78442AD5DB22E"
+			height: 0.6d
+			image: "kubejs:textures/gui/tasks/chapter_1/rumor.png"
+			rotation: 0.0d
+			width: 3.06d
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependency: "588B97AAEC0E2385"
+			height: 0.6d
+			image: "kubejs:textures/gui/tasks/chapter_1/secrets.png"
+			rotation: 0.0d
+			width: 4.28d
+			x: 5.5d
+			y: 9.0d
+		}
+		{
+			dependency: "4C247D4E88F1A179"
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/chapter_1/error_task_frame.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -0.07d
+			y: 24.05d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -46,7 +111,7 @@
 			}]
 			title: "砍下第一块原木"
 			x: 0.0d
-			y: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["24C2BCAAAF1E55DE"]
@@ -72,7 +137,7 @@
 			}]
 			title: "制作工作台"
 			x: 0.0d
-			y: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4BEDD898484E1898"]
@@ -146,7 +211,7 @@
 			]
 			title: "制作木镐"
 			x: 0.0d
-			y: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["605D95ACD24F7A46"]
@@ -174,7 +239,7 @@
 			}]
 			title: "使用熔炉进行加工"
 			x: 0.0d
-			y: -4.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["18544E5B62DBC5EF"]
@@ -201,7 +266,7 @@
 				value: 3L
 			}]
 			x: 0.0d
-			y: -5.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["24908FF341485C05"]
@@ -214,6 +279,7 @@
 				""
 				"但我的所管辖权仅能覆盖任务引导区域，全面的对世界的扫描是&6被禁止&r/&6严格限制&r/&6无法做到&r。但我会尽力以我的方式理解这个世界运行的最新规则，以辅佐您完成应当完成的事。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:cookie"
 			id: "4E805DA2B8D171E4"
 			rewards: [{
@@ -230,7 +296,7 @@
 			}]
 			title: "计划有变"
 			x: 0.0d
-			y: -6.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -252,8 +318,8 @@
 				type: "item"
 			}]
 			title: "更高效的采掘方案"
-			x: 1.0d
-			y: -6.0d
+			x: 0.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -264,6 +330,8 @@
 				""
 				"除此之外，我还在物品中检测到了一部分特殊的物品，其具有一个特殊的属性，名为&6“是否关联传闻”&r。这个属性的具体意义暂无进一步的解释，但是毫无疑问，传闻是您和我探索世界的重要途径之一，因此后续的任务我会一定程度上按照您所收集的传闻来开展。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "infinity:book_box"
 			id: "46E78442AD5DB22E"
 			rewards: [{
@@ -278,8 +346,8 @@
 				type: "checkmark"
 			}]
 			title: "传闻"
-			x: -2.0d
-			y: -7.0d
+			x: 3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -290,6 +358,8 @@
 				""
 				"在此过程中，我会尽可能用我的权限给您下发生存物资，以保证认知的探索能够正常、有序的进行。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:bookshelf"
 			id: "5D90233550E7D188"
 			rewards: [{
@@ -304,8 +374,8 @@
 				type: "checkmark"
 			}]
 			title: "认知"
-			x: -2.0d
-			y: -6.0d
+			x: 3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -316,6 +386,8 @@
 				""
 				"我可以通过逆向技术来为您打造&6访问那些器械的货币&r，但相对应的，希望您能够认真对待这次生存之旅，我会尽一切所能辅佐您的前进。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "lightmanscurrency:coin_gold"
 			id: "64C564541E487779"
 			rewards: [
@@ -338,8 +410,8 @@
 				type: "checkmark"
 			}]
 			title: "金钱契约"
-			x: 0.0d
-			y: -7.0d
+			x: -3.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["64C564541E487779"]
@@ -366,8 +438,8 @@
 				type: "dimension"
 			}]
 			title: "彼方留下的痕迹"
-			x: 0.0d
-			y: -8.0d
+			x: -4.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
@@ -387,8 +459,8 @@
 				type: "dimension"
 			}]
 			title: "前往下界"
-			x: 2.0d
-			y: -6.0d
+			x: 0.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -399,6 +471,8 @@
 				""
 				"此类信息真真假假难以辨别，或许一个错误我们就会&c走向万劫不复的深渊&r. . .我把这些事物称之为&6秘闻&r，其背后必然隐藏着什么巨大的阴谋. . ."
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:chiseled_bookshelf"
 			id: "588B97AAEC0E2385"
 			rewards: [{
@@ -413,8 +487,8 @@
 				type: "checkmark"
 			}]
 			title: "秘闻"
-			x: -2.0d
-			y: -8.0d
+			x: 3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -427,6 +501,8 @@
 				""
 				"同时，如果您自己使用绑定者为自己的戒指，则会&6回到您的出生点&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "6DF4D3AE711778B7"
 			rewards: [{
 				id: "5F54AC86F09A503A"
@@ -439,8 +515,8 @@
 				item: "ring_of_friendship:ring_of_friendship"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -7.0d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4A1C6C6150E32CEE"]
@@ -502,11 +578,10 @@
 				}
 			]
 			title: "将岩浆带回家"
-			x: 4.0d
-			y: -6.0d
+			x: 0.0d
+			y: 15.0d
 		}
 		{
-			can_repeat: true
 			dependencies: ["4E805DA2B8D171E4"]
 			description: [
 				"在扫描后，确认了这个世界中有大量的日志信息残留，其信息量之大以至于通过我有限的性能无法完整读取其内容。"
@@ -517,16 +592,10 @@
 				""
 				"当关键词符合预期时，我会为您提供&6崭新的视野&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "supplementaries:candle_holder"
 			id: "227116C21A39F449"
-			repeat_cooldown: 3
-			rewards: [{
-				auto: "no_toast"
-				icon: "minecraft:paper"
-				id: "4347A33C07D2FBE9"
-				title: "开始检索"
-				type: "custom"
-			}]
 			subtitle: "直接交流的窗口"
 			tasks: [{
 				count: 1L
@@ -537,11 +606,11 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "保持联络"
-			x: -2.0d
-			y: -5.0d
+			x: 3.0d
+			y: 10.5d
 		}
 		{
-			dependencies: ["563D136C06E38A60"]
+			dependencies: ["4E805DA2B8D171E4"]
 			description: [
 				"在某些时候，您可能会需要建造一些&6指定类型的复杂结构&r——由于我只能通过极其有限的文字交流方式与您沟通，因此我并不能有效的向您表达如何构造这些结构。"
 				""
@@ -551,6 +620,8 @@
 				""
 				"当您选择完成后，即可手持该打印机，在世界中预览到该结构最终的放置效果。在&6打印机内部资源充足&r的情况下，您可以直接&6通过右键放置复杂结构&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "183701E5F614F6AD"
 			rewards: [{
 				id: "089245EBF2888F1C"
@@ -576,8 +647,8 @@
 				type: "item"
 			}]
 			title: "知识打印器"
-			x: 1.0d
-			y: -5.0d
+			x: -3.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -590,6 +661,8 @@
 				""
 				"因此，&6最为稳定的传送方法便是您和另一位玩家约定好，对方手持魔镜时，您再进行传送&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "24D645FF144CBC13"
 			rewards: [{
 				id: "424EE80C8E49AD56"
@@ -602,8 +675,8 @@
 				item: "mirror_mirror_forge:mirror"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -8.0d
+			x: -3.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["288B079239EA5947"]
@@ -632,8 +705,8 @@
 				value: 1L
 			}]
 			title: "获取烈焰棒"
-			x: 7.0d
-			y: -6.0d
+			x: 0.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["07EF7BB4192A11D0"]
@@ -656,8 +729,8 @@
 				title: "寻得下界要塞"
 				type: "structure"
 			}]
-			x: 5.5d
-			y: -6.0d
+			x: 0.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["50BA5AF34D9AA99F"]
@@ -677,8 +750,8 @@
 				title: "使用末影之眼定位要塞"
 				type: "maa:kube"
 			}]
-			x: 7.0d
-			y: -4.5d
+			x: 0.0d
+			y: 19.5d
 		}
 		{
 			dependencies: ["287364726E87F8F4"]
@@ -701,8 +774,8 @@
 				type: "advancement"
 			}]
 			title: "击杀末影龙"
-			x: 7.0d
-			y: -3.0d
+			x: 0.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["62CEA192AD10DD8A"]
@@ -713,6 +786,7 @@
 				""
 				"而&6我的引导任务也会在您看完终末之诗后结束&r，希望在下个世界能再次和您相遇！"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:firework_rocket"
@@ -745,8 +819,8 @@
 				type: "dimension"
 			}]
 			title: "&6我们的故事结束了&r"
-			x: 7.0d
-			y: -1.5d
+			x: 0.0d
+			y: 22.5d
 		}
 		{
 			dependencies: ["4C247D4E88F1A179"]
@@ -766,6 +840,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "程序未正常终止"
 			tasks: [{
 				id: "083BE38633236C85"
@@ -773,8 +848,8 @@
 				type: "checkmark"
 			}]
 			title: "等下. . .出现了些问题"
-			x: 7.0d
-			y: 0.0d
+			x: 0.0d
+			y: 24.0d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -785,6 +860,8 @@
 				""
 				"在拆除该灯笼时如果遇到了光源无法正常销毁的问题，则可以使用&6霜冻珍珠&r消除。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "2E911706C477B127"
 			rewards: [{
 				id: "55952A37D054CCAF"
@@ -797,8 +874,8 @@
 				item: "torchmaster:feral_flare_lantern"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -7.0d
+			x: -3.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["2E911706C477B127"]
@@ -815,8 +892,8 @@
 				item: "torchmaster:megatorch"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -8.0d
+			x: -4.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["09ED755A64A62187"]
@@ -842,8 +919,8 @@
 				type: "item"
 			}]
 			title: "在高空中旅行"
-			x: 0.0d
-			y: -9.0d
+			x: -6.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
@@ -854,6 +931,7 @@
 				""
 				"见证饰品&6佩带在玩家身上&r时，通过积累玩家造成的伤害，便能够结算对应的阶段奖励，这将对您的生存将会有极大的帮助。"
 			]
+			hide_until_deps_complete: true
 			id: "28C86788D85A6138"
 			rewards: [
 				{
@@ -878,8 +956,8 @@
 				type: "item"
 			}]
 			title: "名为见证的挂饰"
-			x: 2.0d
-			y: -5.0d
+			x: 3.0d
+			y: 12.0d
 		}
 	]
 	title: "壹"

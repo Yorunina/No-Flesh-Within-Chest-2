@@ -15,7 +15,6 @@ ContentPacks.putShared('WeightRandomModel', WeightRandomModel)
 ContentPacks.putShared('RegistryAttributeIdentifier', RegistryAttributeIdentifier)
 ContentPacks.putShared('RegistryOrgan', RegistryOrgan)
 ContentPacks.putShared('RegistryPseudoOrgan', RegistryPseudoOrgan)
-ContentPacks.putShared('RegistryOriginChangedStrategy', RegistryOriginChangedStrategy)
 ContentPacks.putShared('RegistryOrganScoreAttribute', RegistryOrganScoreAttribute)
 
 ContentPacks.putShared('TumorMutationConfigModel', TumorMutationConfigModel)

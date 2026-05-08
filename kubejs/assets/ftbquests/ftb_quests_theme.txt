@@ -1,6 +1,13 @@
 [*]
 background:  ftblibrary:textures/gui/background_squares.png; color=rgb(0, 0, 0); tile_size=64
-extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear
+extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, light_rsquare
+
+# 壹
+[0AC42F4BE2EDBB08]
+background: ftblibrary:textures/gui/chapter_1_background.png; color=rgb(0, 0, 0); tile_size=64
+quest_completed_color: #dba213
+dependency_line_texture: ftblibrary:textures/gui/dependency_1.png
+dependency_line_completed_color: #ffffff
 
 # 认知：胸腔
 [2218D095B234A44A]
