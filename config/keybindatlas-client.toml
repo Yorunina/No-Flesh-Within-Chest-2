@@ -10,13 +10,15 @@
 	#When enabled, bindings listed in hiddenBindingLabels stay hidden to reduce clutter.
 	hiddenBindingsEnabled = true
 	#Key labels whose bindings should stay hidden in the atlas.
-	#Use the labels printed on the keyboard layout, for example W, A, S, D, 1, 2, 3, 4.
+	#Entries for main keyboard keys match physical slots using US QWERTY labels.
+	#That keeps defaults like W, A, S, D and 1-9 hidden on AZERTY and QWERTZ layouts too.
+	#Keys outside the main keyboard map, such as numpad and function keys, still match their visible labels.
 	#To target numpad keys, prefix the label with NUM-, for example "NUM-1" hides the numpad 1 while "1" hides the top-row 1 (case-insensitive).
-	#Examples: ["SHIFT", "SPACE", "CTRL"] or ["-", "="] for minus and plus on the US layout.
+	#Examples: ["SHIFT", "SPACE", "CTRL"] or ["-", "="] for the physical minus and equals slots.
 	#If the same label appears on multiple keys, all matching keys are affected.
 	hiddenBindingLabels = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 	#When enabled, F1-F12 keys are shown on the keyboard layout.
-	fKeysEnabled = false
+	fKeysEnabled = true
 	#When enabled, auxiliary keys (insert, delete, arrows, numpad) feature is available.
 	allKeysEnabled = true
 	#When enabled, a dark overlay is drawn behind the atlas for better readability.
@@ -36,6 +38,9 @@
 	disabledMods = []
 	#Individual bindings disabled in the mod filter list. Format: 'ModName::BindingLabel'.
 	disabledBindings = []
+	#Keyboard layout shown by Keybind Atlas. Valid values: US_QWERTY, UK_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO. Legacy values AZERTY and QWERTZ are still accepted.
+	#Allowed Values: US_QWERTY, UK_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO, AZERTY, QWERTZ
+	keyboardLayout = "US_QWERTY"
 
 #Color values use RGBA hex format, for example #0161CCFF.
 [colors]

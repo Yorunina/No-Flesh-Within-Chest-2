@@ -615,6 +615,31 @@
 			x: 0.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["4FBC882804C1F6A9"]
+			description: [
+				"在某些情况下，您会发现直接编辑胸腔器官不仅危险，且相当麻烦。如果要一次性更换大量器官的话，可能还需要进行多次开胸才能逐步替换完成，在这个过程中，您会损失大量的生命值。"
+				""
+				"因此，您可以使用手术盒，&6通过潜行右键在体外编辑手术盒的胸腔&r，当您确定无误时&6长按右键手术盒替换自己的胸腔&r。"
+				""
+				"这同样也适合用于您有多个器官搭配时，快速替换搭配的场景。"
+			]
+			id: "757A562B91CCD260"
+			rewards: [{
+				id: "40AECD246B150DC2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用手术盒"
+			tasks: [{
+				id: "7B7AC363C5FF9B57"
+				item: "chestcavity:surgical_box"
+				type: "item"
+			}]
+			title: "体外编辑器官"
+			x: 2.5d
+			y: 10.0d
+		}
 	]
 	title: "认知：胸腔"
 }

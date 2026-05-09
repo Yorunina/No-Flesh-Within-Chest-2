@@ -34,7 +34,7 @@ RegisterPortalItem2DimId('kubejs:elder_guardian_core', 'infinity:void')
 RegisterPortalItem2DimId('minecraft:sandstone', 'infinity:redstone_flat')
 RegisterPortalItem2DimId('minecraft:dragon_breath', 'infinity:missingno')
 RegisterPortalItem2DimId('minecraft:shroomlight', 'infinity:cavern')
-
+RegisterPortalItem2DimId('lightmanscurrency:coin_gold', 'infinity:room')
 
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.entity
@@ -55,9 +55,6 @@ InfinityEvents.itemInPortal(event => {
         }
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById(nameString, level, pos)
-    } else if (itemStack.hasTag('lightmanscurrency:coins')) {
-        itemEntity.remove('changed_dimension')
-        InfinityPortalCreator.tryCreatePortalById('kubejs:oath', level, pos)
     } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT() && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
         let nbt = itemStack.getNbt()
         if (!nbt.contains('photograph_frame')) return

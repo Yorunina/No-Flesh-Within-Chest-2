@@ -58,4 +58,25 @@ ServerEvents.recipes(event => {
         ['#forge:ingots/iron', '#minecraft:logs', '#minecraft:logs'],
         ['#forge:ingots/iron', 'minecraft:lever', '']
     ])
+
+    event.shaped('minecraft:enchanted_golden_apple', [
+        ['minecraft:gold_block', 'minecraft:gold_block', 'minecraft:gold_block'],
+        ['minecraft:gold_block', 'minecraft:golden_apple', 'minecraft:gold_block'],
+        ['minecraft:gold_block', 'minecraft:gold_block', 'minecraft:gold_block']
+    ])
+    event.shaped('kubejs:wide_angle_lens', [
+        ['#forge:ingots/nether_brick', '#forge:ingots/copper', '#forge:ingots/nether_brick'],
+        ['#forge:ingots/copper', '#forge:glass', '#forge:ingots/copper'],
+        ['#forge:ingots/nether_brick', '#forge:ingots/copper', '#forge:ingots/nether_brick']
+    ])
+    event.shaped('kubejs:reverse_causality_lens', [
+        ['kubejs:refined_brass_ingot', '#forge:ingots/gold', 'kubejs:refined_brass_ingot'],
+        ['#forge:ingots/gold', '#forge:glass', '#forge:ingots/gold'],
+        ['kubejs:refined_brass_ingot', '#forge:ingots/gold', 'kubejs:refined_brass_ingot']
+    ])
+    event.shaped('kubejs:exorcism_lens', [
+        ['graveyard:dark_iron_ingot', '#forge:ingots/iron', 'graveyard:dark_iron_ingot'],
+        ['#forge:ingots/iron', 'minecraft:blue_ice', '#forge:ingots/iron'],
+        ['graveyard:dark_iron_ingot', '#forge:ingots/iron', 'graveyard:dark_iron_ingot']
+    ])
 })

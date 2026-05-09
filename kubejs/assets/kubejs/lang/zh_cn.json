@@ -243,7 +243,7 @@
     "tooltips.kubejs.hover.diagonal_organ.0": "对角位置",
     "tooltips.kubejs.hover.diagonal_organ.1": "• 通常指在该器官的左上、右上、左下、右下的四个位置",
     "tooltips.kubejs.hover.key_active.0": "主动使用",
-    "tooltips.kubejs.hover.key_active.1": "• 通过轮盘绑定的按键触发器官或者使用器官技能按键触发",
+    "tooltips.kubejs.hover.key_active.1": "• 主要指玩家通过器官能力轮盘触发器官，少部分器官可以自发触发主动效果",
     "tooltips.kubejs.hover.frozen.0": "冻结",
     "tooltips.kubejs.hover.frozen.1": "• 生物处在细雪中会被赋予的冻结状态，若处于细雪中大于15秒，则会受到冰冻伤害",
     "tooltips.kubejs.hover.frozen.2": "• 自然状态解除冰冻的速度是细雪中获取冰冻速度的两倍，例：在细雪中花费15s获取的冻结状态，仅需7.5秒即可解除",

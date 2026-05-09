@@ -1,30 +1,12 @@
 {
 	autofocus_id: "24C2BCAAAF1E55DE"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "light_rsquare"
 	filename: "0AC42F4BE2EDBB08"
 	group: ""
 	icon: "minecraft:oak_log"
 	id: "0AC42F4BE2EDBB08"
 	images: [
-		{
-			dependency: "4E805DA2B8D171E4"
-			height: 7.2d
-			image: "kubejs:textures/gui/tasks/chapter_1/line_1.png"
-			rotation: 0.0d
-			width: 2.78d
-			x: -1.55d
-			y: 8.95d
-		}
-		{
-			dependency: "4E805DA2B8D171E4"
-			height: 5.4d
-			image: "kubejs:textures/gui/tasks/chapter_1/line_2.png"
-			rotation: 0.0d
-			width: 2.66d
-			x: 1.55d
-			y: 8.28d
-		}
 		{
 			dependency: "4C247D4E88F1A179"
 			height: 24.0d
@@ -70,6 +52,24 @@
 			width: 2.0d
 			x: -0.07d
 			y: 24.05d
+		}
+		{
+			dependency: "4E805DA2B8D171E4"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/chapter_1/window_left.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -3.12d
+			y: 8.75d
+		}
+		{
+			dependency: "4E805DA2B8D171E4"
+			height: 12.0d
+			image: "kubejs:textures/gui/tasks/chapter_1/window_right.png"
+			rotation: 0.0d
+			width: 12.0d
+			x: 6.5d
+			y: 9.62d
 		}
 	]
 	order_index: 2
@@ -403,7 +403,7 @@
 					type: "titles:title"
 				}
 			]
-			subtitle: "约定"
+			subtitle: "契约"
 			tasks: [{
 				id: "671735A4ECD0060F"
 				title: "约定"
@@ -411,7 +411,7 @@
 			}]
 			title: "金钱契约"
 			x: -3.0d
-			y: 10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["64C564541E487779"]
@@ -429,9 +429,9 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "不知何人留此物"
+			subtitle: "履行"
 			tasks: [{
-				dimension: "kubejs:oath"
+				dimension: "infinity:room"
 				icon: "lightmanscurrency:display_case"
 				id: "7DA2F0FFB403EC18"
 				title: "抵达商店维度"
@@ -439,7 +439,7 @@
 			}]
 			title: "彼方留下的痕迹"
 			x: -4.5d
-			y: 10.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
@@ -491,17 +491,18 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["4E805DA2B8D171E4"]
+			dependencies: ["24D645FF144CBC13"]
 			description: [
-				"考虑到这个世界存在太多的未知数，您最好制作一个&6友谊之戒&r。"
+				"但使用魔镜互相交流难免还是太过需要配合，为了能够在紧急关头迅速找到您的朋友，&6友谊之戒&r或许是一个不错的选择。"
 				""
 				"这是在扫描中发现的一个使用频率很高的物品，其造价并不算贵，但效果显著。"
 				""
-				"通过长时间右键，可以使此戒指绑定于您自己；而后，任意玩家使用该戒指长时间右键，均可传送到您所在的位置。"
+				"通过长时间右键，可以&6使此戒指绑定于您自己&r；而后，任意玩家使用该戒指长时间右键，均可&6传送到您所在的位置&r。"
 				""
 				"同时，如果您自己使用绑定者为自己的戒指，则会&6回到您的出生点&r。"
+				""
+				"因此，您可以跟其他的玩家通过交换绑定自身的友谊戒指，进而做到互相传送成本的降低。"
 			]
-			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "6DF4D3AE711778B7"
 			rewards: [{
@@ -515,8 +516,8 @@
 				item: "ring_of_friendship:ring_of_friendship"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 6.0d
+			x: -4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["4A1C6C6150E32CEE"]
@@ -896,33 +897,6 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["09ED755A64A62187"]
-			description: [
-				"在该特殊维度中，存在有大量的柱形结构。为了方便的在这些结构之间穿行，您可能需要一个能快速构造出路径的设备。"
-				""
-				"&6绳桥枪&r便是最佳的方案。"
-				""
-				"手持绳桥枪右键瞄准，在您的面前有方块的情况下，&6松开右键便可以生成一条绳桥&r；&6绳桥无法斜向生成&r，因此目标位置必须要在您的正东/正南/正西/正北方向。"
-				""
-				"绳桥的材质可以通过背包中持有的半砖类型而变化。"
-			]
-			id: "563087C8FE4275E8"
-			rewards: [{
-				id: "4F9096733B9D4C3C"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "使用绳桥"
-			tasks: [{
-				id: "6D5A97FF5A9CDD06"
-				item: "ropebridge:bridge_builder"
-				type: "item"
-			}]
-			title: "在高空中旅行"
-			x: -6.0d
-			y: 10.5d
-		}
-		{
 			dependencies: ["563D136C06E38A60"]
 			description: [
 				"在这个世界中，似乎有大量的&6概念&r被具象化为了另一种形式——比如说一种&6饰品&r。"
@@ -957,6 +931,122 @@
 			}]
 			title: "名为见证的挂饰"
 			x: 3.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["4E805DA2B8D171E4"]
+			description: [
+				"在扫描物品时，我偶然发现了名为背包的特殊存储方式，其相较于收纳袋不仅便捷，且可以配置在特殊的名为饰品的栏位中。"
+				""
+				"同时，&6制作背包的成本并不高&r，因此我强烈建议您制作并且将其时刻带在身旁。"
+				""
+				"在背包容量不足时，您可以使用铁、铜等金属将其升级为铁制背包、铜制背包等，以扩大它的存储空间。"
+			]
+			hide_dependency_lines: true
+			id: "67786E2C6F7CD355"
+			rewards: [{
+				id: "25277D7A12766F93"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "保存珍贵之物"
+			tasks: [{
+				id: "5F3EC4DC62E6ADED"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["67786E2C6F7CD355"]
+			description: [
+				"在背包页面的左侧，具有一个可以放置升级的插槽。"
+				""
+				"此处可以放置包含合成升级、磁铁升级、喂食升级等一系列背包升级配件，扩展背包的能力。"
+				""
+				"其中，&6喂食升级&r是一个在历史上使用频率相当之高的升级，其可以&6自动选择背包中的食物在您需要的时候食用&r。但其食用有着较长的内部冷却时间，无法一次性对处于较低饥饿度的玩家补充完全。"
+			]
+			id: "4947F9EC3EC347AE"
+			rewards: [{
+				id: "361B078B45A1988E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "提升背包能力"
+			tasks: [{
+				id: "37B29BD7F5646D8E"
+				item: "sophisticatedbackpacks:feeding_upgrade"
+				type: "item"
+			}]
+			title: "背包升级"
+			x: -4.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["4947F9EC3EC347AE"]
+			description: [
+				"但是，仅依靠背包想必您是无法通过羸弱的常规存储方式应对当前局面。"
+				""
+				"您可以试着尝试使用名为&6抽屉&r的特殊存储设施，其非常&6擅长于存储同种类物品&r。"
+				""
+				"在抽屉使用达到一定规模后，您还可以使用名为&6存储控制器&r的特殊方块将所有的抽屉链接，简化每次您收集物资后的分类操作。"
+			]
+			icon: "functionalstorage:oak_1"
+			id: "02F541A35C373603"
+			rewards: [{
+				id: "16881F6B5FCCDCDB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "大量存储同类物品"
+			tasks: [{
+				id: "149D991ECB099DCA"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "任意抽屉"
+				type: "item"
+			}]
+			title: "抽屉存储"
+			x: -6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["183701E5F614F6AD"]
+			description: [
+				"在某些时候，您的基地可能需要进行上下联通，相比于使用楼梯，我更推荐您使用我发现的这个特殊方块——电梯方块。"
+				""
+				"通过在其正上方或者正下方一定距离放置另一个电梯方块，您便可以在该电梯方块上&6通过跳跃/潜行来进行垂直方向的传送&r。"
+				""
+				"除此之外，该方块也具有着&6伪装&r功能。您可以通过手持另一方块右键它来使其伪装为目标方块。"
+			]
+			icon: "elevatorid:elevator_white"
+			id: "39CD045117837363"
+			rewards: [{
+				id: "79A0D6FCFF1BE1BC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "如果不用楼梯"
+			tasks: [{
+				id: "7EDC1809F61083B7"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "elevatorid:elevators"
+					}
+				}
+				title: "任意电梯方块"
+				type: "item"
+			}]
+			title: "快捷输送"
+			x: -4.5d
 			y: 12.0d
 		}
 	]

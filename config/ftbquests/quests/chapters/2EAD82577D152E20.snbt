@@ -2732,6 +2732,33 @@
 			x: 21.5d
 			y: 28.0d
 		}
+		{
+			dependencies: ["5F95F25DAC9FBAAA"]
+			description: [
+				"为了方便后续的长途旅行，您可能需要一个能快速构造出路径的设备。"
+				""
+				"&6绳桥枪&r便是最佳的方案。"
+				""
+				"手持绳桥枪右键瞄准，在您的面前有方块的情况下，&6松开右键便可以生成一条绳桥&r；&6绳桥无法斜向生成&r，因此目标位置必须要在您的正东/正南/正西/正北方向。"
+				""
+				"绳桥的材质可以通过背包中持有的半砖类型而变化。"
+			]
+			id: "563087C8FE4275E8"
+			rewards: [{
+				id: "4F9096733B9D4C3C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用绳桥"
+			tasks: [{
+				id: "6D5A97FF5A9CDD06"
+				item: "ropebridge:bridge_builder"
+				type: "item"
+			}]
+			title: "在高空中旅行"
+			x: 18.0d
+			y: 4.0d
+		}
 	]
 	title: "传闻：重现黄金乡"
 }
