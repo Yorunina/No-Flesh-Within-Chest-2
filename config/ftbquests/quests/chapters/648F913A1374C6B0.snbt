@@ -26,7 +26,6 @@
 			y: 4.7d
 		}
 		{
-			click: "command:/ponder kubejs:growth_vat"
 			dependency: "2A309A1975C86D4A"
 			height: 8.0d
 			image: "kubejs:textures/gui/tasks/growth_vat/instruction.png"
@@ -78,8 +77,19 @@
 			x: 19.0d
 			y: -13.7d
 		}
+		{
+			click: "command:/ponder kubejs:growth_vat"
+			dependency: "2A309A1975C86D4A"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.0d
+			x: 8.5d
+			y: -3.5d
+		}
 	]
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -130,7 +140,7 @@
 			}]
 			subtitle: "调查肿瘤相关信息"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "23F232F04DBA3F74"
 				title: "稍等片刻"
@@ -584,7 +594,7 @@
 				""
 				"但由于玫瑰胸腔的力量较为强大，且其中还蕴含着包含肿瘤突变相关的&6未知议题&r，贸然将这种技术公开可能导致一些不可预料的结果。"
 				""
-				"这种心境，或许经历了&6芬芳考验&r的您能够理解。因此，我决定将制作玫瑰注射器的方案以及其分发的权力赋予在当前世界中最能理解“芬芳”含义的玩家，即在&6花盆中种植过最多植物的玩家&r。"
+				"这种心境，或许经历了&6芬芳考验&r的您能够理解。因此，我决定将制作玫瑰注射器的方案以及其分发的权力赋予给&6肿瘤培育次数最多&r的玩家。"
 				"{@pagebreak}"
 				"公开配方会使所有人都可以制作玫瑰注射器。"
 				""
@@ -871,7 +881,7 @@
 			}]
 			subtitle: "予汝玫瑰"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "26B0D2E6227019A0"
 				title: "稍等片刻"

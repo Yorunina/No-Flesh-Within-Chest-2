@@ -2087,7 +2087,7 @@
 			shape: "none"
 			subtitle: "追寻踪迹至此"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "48FBCB006618B007"
 				title: "静候扫描"

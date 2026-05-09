@@ -22,5 +22,6 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Item.of('biomancy:malignant_flesh', 1), Item.of('biomancy:acid_extract', 4)], Item.of('biomancy:primal_orifice'), 'biomancy:misc', 10)
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:healing_additive', 1), Item.of('biomancy:living_flesh', 16), Item.of('chestcavity:chest_opener', 1), Item.of('minecraft:iron_ingot', 16)], Item.of('chestcavity:surgical_box', '{Inventory:[],InventoryType:"kubejs:cc_inventory_types/player_17",Size:17}'), 'biomancy:organ', 10)
+    
     event.recipes.biomancy.bio_forging([Item.of('biomancy:healing_additive', 1), Item.of('kubejs:worm_of_taste', 1), Item.of('biomancy:toxin_gland', 1)], Item.of('kubejs:tasty_gland'), 'biomancy:organ', 10)
 })

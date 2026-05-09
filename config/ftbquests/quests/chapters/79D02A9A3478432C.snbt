@@ -4,9 +4,208 @@
 	default_quest_shape: ""
 	filename: "79D02A9A3478432C"
 	group: "78F99AC9360F0137"
-	hide_quest_until_deps_complete: true
 	icon: "create:creative_blaze_cake"
 	id: "79D02A9A3478432C"
+	images: [
+		{
+			dependency: "50202CD4D6EAE6F4"
+			height: 5.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/magic_cogwheel.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependency: "12E7C53A56C43097"
+			height: 8.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/instrcution.png"
+			rotation: 0.0d
+			width: 11.48d
+			x: 21.5d
+			y: 0.0d
+		}
+		{
+			dependency: "12E7C53A56C43097"
+			height: 47.74d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/resource_bar.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 35.0d
+			y: 19.5d
+		}
+		{
+			click: "command:/ponder kubejs:mantle_energy_extractor"
+			dependency: "12E7C53A56C43097"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 26.5d
+			y: 3.5d
+		}
+		{
+			height: 4.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/title.png"
+			rotation: 0.0d
+			width: 28.82d
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			height: 1.25d
+			image: "ars_nouveau:block/fire_1"
+			order: -1
+			rotation: 0.0d
+			width: 1.25d
+			x: 0.23d
+			y: 5.35d
+		}
+		{
+			height: 1.25d
+			image: "ars_nouveau:block/fire_1"
+			order: -1
+			rotation: 0.0d
+			width: 1.25d
+			x: 10.54d
+			y: 5.35d
+		}
+		{
+			height: 1.25d
+			image: "ars_nouveau:block/fire_1"
+			order: -1
+			rotation: 0.0d
+			width: 1.25d
+			x: 22.66d
+			y: 5.35d
+		}
+		{
+			dependency: "3C0B5BB105DAC17C"
+			height: 8.0d
+			hideDependency: "00EC549EA51DF850"
+			image: "kubejs:textures/gui/tasks/mantle_fuel/awake_1.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 21.5d
+			y: 17.0d
+		}
+		{
+			dependency: "00EC549EA51DF850"
+			height: 8.0d
+			hideDependency: "30D1D2606F1D61DE"
+			image: "kubejs:textures/gui/tasks/mantle_fuel/awake_2.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 21.5d
+			y: 17.0d
+		}
+		{
+			dependency: "30D1D2606F1D61DE"
+			height: 8.0d
+			hideDependency: "56CAE9C01AF71671"
+			image: "kubejs:textures/gui/tasks/mantle_fuel/awake_3.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 21.5d
+			y: 17.0d
+		}
+		{
+			dependency: "56CAE9C01AF71671"
+			height: 8.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/awake_4.png"
+			rotation: 0.0d
+			width: 8.0d
+			x: 21.5d
+			y: 17.0d
+		}
+		{
+			dependency: "00EC549EA51DF850"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/l_b.png"
+			order: 1
+			rotation: 0.0d
+			width: 10.0d
+			x: 21.9d
+			y: 16.4d
+		}
+		{
+			dependency: "00EC549EA51DF850"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/r_b.png"
+			order: 1
+			rotation: 0.0d
+			width: 10.0d
+			x: 21.5d
+			y: 16.7d
+		}
+		{
+			dependency: "00EC549EA51DF850"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/l_t.png"
+			order: 1
+			rotation: 0.0d
+			width: 10.0d
+			x: 22.0d
+			y: 16.8d
+		}
+		{
+			dependency: "00EC549EA51DF850"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/r_t.png"
+			order: 1
+			rotation: 0.0d
+			width: 10.0d
+			x: 21.2d
+			y: 17.2d
+		}
+		{
+			dependency: "6EAC98701F6297E7"
+			height: 8.0d
+			hideDependency: "470BBE519FAFAC9B"
+			image: "kubejs:textures/gui/tasks/mantle_fuel/tree_3.png"
+			rotation: 0.0d
+			width: 6.857d
+			x: 21.5d
+			y: 28.0d
+		}
+		{
+			dependency: "470BBE519FAFAC9B"
+			height: 8.0d
+			hideDependency: "636CDD764ADFA00D"
+			image: "kubejs:textures/gui/tasks/mantle_fuel/tree_2.png"
+			rotation: 0.0d
+			width: 6.85d
+			x: 21.5d
+			y: 28.0d
+		}
+		{
+			dependency: "636CDD764ADFA00D"
+			height: 8.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/tree_1.png"
+			rotation: 0.0d
+			width: 6.85d
+			x: 21.5d
+			y: 28.0d
+		}
+		{
+			dependency: "49C7349296812E64"
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/machine_frame.png"
+			rotation: 0.0d
+			width: 2.67d
+			x: 7.0d
+			y: 27.0d
+		}
+		{
+			dependency: "5BFA9E175D1944CF"
+			height: 2.75d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/world_machine_frame.png"
+			rotation: 0.0d
+			width: 2.75d
+			x: 9.5d
+			y: 11.45d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -34,7 +233,7 @@
 				type: "item"
 			}]
 			title: "地幔能开采企划"
-			x: 0.0d
+			x: 0.5d
 			y: 0.0d
 		}
 		{
@@ -46,6 +245,7 @@
 				""
 				"因此，请您做好准备，我们要进行大批量&b魔法材料&r的制作了。"
 			]
+			hide_until_deps_complete: true
 			id: "50202CD4D6EAE6F4"
 			rewards: [{
 				id: "3CB13CD94A3D6D63"
@@ -59,7 +259,7 @@
 				type: "item"
 			}]
 			title: "魔科学"
-			x: 10.0d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
@@ -96,6 +296,7 @@
 				""
 				"请&6稍等我一段时间&r，我将重新从日志中搜索相关信息以确认技术方向。"
 			]
+			hide_until_deps_complete: true
 			icon: "kubejs:mantle_ore"
 			id: "790FB90699555383"
 			rewards: [{
@@ -112,7 +313,7 @@
 				type: "questsadditions:time"
 			}]
 			title: "遇到阻碍"
-			x: 6.0d
+			x: 5.5d
 			y: 0.0d
 		}
 		{
@@ -124,6 +325,7 @@
 				""
 				"下界合金巨兽可以在下界生成的&6灵魂锻造厂&r中找到，您可以在下界使用&6巨兽之眼&r来定位这个结构。"
 			]
+			hide_until_deps_complete: true
 			id: "6DC1C32BB829D65B"
 			rewards: [{
 				id: "121718387E56BED7"
@@ -143,6 +345,8 @@
 		{
 			dependencies: ["50202CD4D6EAE6F4"]
 			description: ["为了将魔源在钻探区域集中，我们需要&6远距离凝聚魔源&r的仪器。"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "16FFBFBA5BD5E545"
 			rewards: [{
 				id: "14FE567C79980A5B"
@@ -156,7 +360,7 @@
 				type: "item"
 			}]
 			title: "折跃魔源"
-			x: 12.0d
+			x: 15.0d
 			y: -2.0d
 		}
 		{
@@ -175,12 +379,14 @@
 				type: "item"
 			}]
 			title: "塑形空腔"
-			x: 12.0d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["50202CD4D6EAE6F4"]
 			description: ["在地幔能提取时，我们需要&6定期执行某些法术程序&r，以确保地幔能提取稳定有效的进行。"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			id: "434D5EAD547C0C85"
 			rewards: [{
 				id: "36CD1660A81B1943"
@@ -194,7 +400,7 @@
 				type: "item"
 			}]
 			title: "自动法术"
-			x: 12.0d
+			x: 15.0d
 			y: 2.0d
 		}
 		{
@@ -210,6 +416,8 @@
 				""
 				"每次开采后，机器的&6提取深度会加深&r，其体现在机器中间的深度槽中。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "12E7C53A56C43097"
 			rewards: [
 				{
@@ -231,7 +439,7 @@
 				type: "item"
 			}]
 			title: "筑成地幔能提取器"
-			x: 14.0d
+			x: 28.5d
 			y: 0.0d
 		}
 		{
@@ -251,6 +459,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "唯一魔源汇聚手段"
 			tasks: [{
 				id: "0492F0FB78097163"
@@ -258,8 +467,8 @@
 				type: "item"
 			}]
 			title: "魔源汇聚晶体"
-			x: 21.0d
-			y: 0.0d
+			x: 34.15d
+			y: 13.52d
 		}
 		{
 			dependencies: ["12E7C53A56C43097"]
@@ -270,6 +479,8 @@
 				""
 				"随着深度的增加，您能够复制的物品种类会逐渐增多，最终或许能够复制任何物品！"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:raw_iron"
 			id: "6A448983C7C3821F"
 			rewards: [{
@@ -301,8 +512,8 @@
 				}
 			]
 			title: "一阶地幔能应用"
-			x: 14.0d
-			y: -2.0d
+			x: 32.45d
+			y: 1.1d
 		}
 		{
 			dependencies: ["12E7C53A56C43097"]
@@ -319,6 +530,7 @@
 				""
 				"为此，我们需要制作一个&6耗竭的魔源汇聚晶体&r，并将其放置在胸腔中以补充其魔源。"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:exhausted_source_focus_crystal"
@@ -345,8 +557,8 @@
 				type: "item"
 			}]
 			title: "临界状态"
-			x: 17.5d
-			y: 0.0d
+			x: 28.5d
+			y: 13.52d
 		}
 		{
 			dependencies: [
@@ -362,6 +574,7 @@
 				"正因如此，一部分无法利用的地幔能，会按照游戏逻辑，溢出并转变为一种称作为&6烈焰裂片&r的物品，其可以提供大量热值，能够用于各种各样的特异加工中。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "2F229123DEDB0987"
 			rewards: [{
 				id: "6C89772B5AE94DE5"
@@ -375,12 +588,13 @@
 				type: "item"
 			}]
 			title: "地幔能量泄露"
-			x: 8.0d
-			y: 3.5d
+			x: 7.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6A448983C7C3821F"]
 			description: ["在挖掘深度超过200之后，您可以在标靶位置放置&6宝石类&r物品，以转换地幔能成为各种宝石。"]
+			hide_dependency_lines: true
 			icon: "minecraft:diamond"
 			id: "5698C2BCBD15755E"
 			rewards: [{
@@ -412,12 +626,13 @@
 				}
 			]
 			title: "二阶地幔能应用"
-			x: 14.0d
-			y: -3.5d
+			x: 32.45d
+			y: 3.8d
 		}
 		{
 			dependencies: ["5698C2BCBD15755E"]
 			description: ["在挖掘深度超过500之后，您可以在标靶位置放置&6花类&r物品，以转换地幔能成为各种花。"]
+			hide_dependency_lines: true
 			icon: "minecraft:blue_orchid"
 			id: "6C072BC0C779A842"
 			rewards: [{
@@ -449,8 +664,8 @@
 				}
 			]
 			title: "三阶地幔能应用"
-			x: 14.0d
-			y: -5.0d
+			x: 32.45d
+			y: 6.8d
 		}
 		{
 			dependencies: ["6EEE9F6B86438970"]
@@ -459,6 +674,8 @@
 				""
 				"这允许您复制任意等级任意种类的&6附魔书&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:enchanted_book"
@@ -499,12 +716,13 @@
 				}
 			]
 			title: "五阶地幔能应用"
-			x: 21.0d
-			y: -1.5d
+			x: 32.45d
+			y: 17.65d
 		}
 		{
 			dependencies: ["6C072BC0C779A842"]
 			description: ["在挖掘深度超过1000之后，您可以在标靶位置放置&6任意可食用类物品&r，以转换地幔能成为各种食物。"]
+			hide_dependency_lines: true
 			icon: "minecraft:enchanted_golden_apple"
 			id: "35B97602E1EF9998"
 			rewards: [{
@@ -529,8 +747,8 @@
 				}
 			]
 			title: "四阶地幔能应用"
-			x: 14.0d
-			y: -6.5d
+			x: 32.45d
+			y: 10.65d
 		}
 		{
 			dependencies: ["09984D1A3CED172D"]
@@ -539,6 +757,7 @@
 				""
 				"这允许您复制任意等级任意种类和复杂度的&6药水&r。"
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -577,8 +796,8 @@
 				}
 			]
 			title: "六阶地幔能应用"
-			x: 21.0d
-			y: -3.0d
+			x: 32.45d
+			y: 24.3d
 		}
 		{
 			dependencies: ["1102A6F1A9DDBE96"]
@@ -587,6 +806,7 @@
 				""
 				"这允许您复制任意等级任意种类和复杂度的&6工匠工具&r，并且携带其强化属性。"
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "tetra:modular_sword"
@@ -653,8 +873,8 @@
 				}
 			]
 			title: "八阶地幔能应用"
-			x: 21.0d
-			y: -6.0d
+			x: 32.5d
+			y: 39.5d
 		}
 		{
 			dependencies: ["2D3B9F0DC2C2E9A6"]
@@ -663,6 +883,7 @@
 				""
 				"这允许您复制任意等级任意种类和复杂度的&6原版物品&r，甚至包括高级附魔盔甲。"
 			]
+			hide_dependency_lines: true
 			icon: "minecraft:dragon_egg"
 			id: "1102A6F1A9DDBE96"
 			rewards: [{
@@ -728,11 +949,11 @@
 				}
 			]
 			title: "七阶地幔能应用"
-			x: 21.0d
-			y: -4.5d
+			x: 32.45d
+			y: 31.3d
 		}
 		{
-			dependencies: ["6EEE9F6B86438970"]
+			dependencies: ["3377828AA207E85A"]
 			description: [
 				"&c似乎有点不对劲. . .&r"
 				""
@@ -758,8 +979,8 @@
 				type: "biome"
 			}]
 			title: "&c热能提取的代价&r"
-			x: 21.0d
-			y: 1.5d
+			x: 28.5d
+			y: 15.98d
 		}
 		{
 			dependencies: ["2F229123DEDB0987"]
@@ -768,6 +989,7 @@
 				""
 				"这种晶体具有一些极其特殊的性质，其可以有效辅助&6部分小型机械的运行&r。"
 			]
+			hide_until_deps_complete: true
 			id: "3C0B5BB105DAC17C"
 			rewards: [{
 				id: "51C3691535F6F750"
@@ -781,8 +1003,8 @@
 				type: "item"
 			}]
 			title: "人工制烈焰水晶"
-			x: 8.0d
-			y: 5.0d
+			x: 7.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
@@ -813,12 +1035,13 @@
 				}
 				type: "item"
 			}]
-			x: 8.0d
-			y: 6.5d
+			x: 7.0d
+			y: 16.5d
 		}
 		{
-			dependencies: ["6EEE9F6B86438970"]
+			dependencies: ["2432BC777BE5C4CC"]
 			description: ["地幔能富集在&6沙漠&r等温度较高的生态群系，在温度低的生态群系，&6地幔能提取器甚至无法正常运作&r，因此您需要适当的调整地幔能提取器的工作位置。"]
+			hide_until_deps_complete: true
 			id: "3B9B37AD2559F7DE"
 			rewards: [{
 				id: "0E2AA5C2F81D87C3"
@@ -834,8 +1057,8 @@
 				type: "biome"
 			}]
 			title: "最佳地幔能提取地点"
-			x: 23.5d
-			y: 1.0d
+			x: 40.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["6EEE9F6B86438970"]
@@ -848,6 +1071,7 @@
 				""
 				"因此，可以使用此配方迅速启动机器，短时间内到达极深的深度，但代价就是会有大量的自由&6地幔能流失&r。"
 			]
+			hide_until_deps_complete: true
 			id: "2432BC777BE5C4CC"
 			rewards: [{
 				id: "42429D273171924D"
@@ -861,8 +1085,8 @@
 				type: "item"
 			}]
 			title: "最大功率挖掘方案"
-			x: 23.5d
-			y: -1.0d
+			x: 37.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["152583E592C60A6D"]
@@ -875,6 +1099,7 @@
 				""
 				"在此期间请您&c不要再使用任何形式的地幔能&r，以避免事件走向不可逆转的方向！"
 			]
+			hide_until_deps_complete: true
 			id: "314B2A11D139BA06"
 			rewards: [{
 				id: "2DDA2512F2622A55"
@@ -883,20 +1108,20 @@
 			}]
 			subtitle: "我们的未来"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "70E0F201C2EAA909"
 				title: "稍等片刻"
 				type: "questsadditions:time"
 			}]
 			title: "地幔能提取危害分析"
-			x: 21.0d
-			y: 3.0d
+			x: 28.5d
+			y: 18.48d
 		}
 		{
 			dependencies: ["314B2A11D139BA06"]
 			description: [
-				"经过计算，若对世界执行&650次深层开采&r后，世界会因为自由地幔能的局部流失，&c引发全局性的地幔能全局平衡&r。"
+				"经过计算，若对世界执行&650次深层开采&r后，世界会因为自由地幔能的局部流失，引发全局性的地幔能全局平衡。"
 				""
 				"&c作为地幔能内部平衡的代价，所有生态群系、所有维度、所有世界的温度将会被降低至0℃以下，并且将会迎来永久的降雪天气。&r"
 				""
@@ -904,6 +1129,7 @@
 				""
 				"&6请您答应我，为了这次旅程，请您和您的同伴，不要再使用上述的两种采集模式。&r"
 			]
+			hide_until_deps_complete: true
 			icon: "candlelight:note_paper"
 			id: "3E82624D0543D113"
 			rewards: [{
@@ -918,8 +1144,8 @@
 				type: "checkmark"
 			}]
 			title: "思考后的结论"
-			x: 21.0d
-			y: 4.5d
+			x: 28.5d
+			y: 20.98d
 		}
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
@@ -944,8 +1170,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.5d
+			x: 4.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
@@ -972,12 +1198,13 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 6.5d
+			x: 9.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
 			description: ["革命继电器可以&6有效提高熔火积累耐久度的速度&r，进而更快的使您进入到心火阶段。"]
+			hide_dependency_lines: true
 			id: "47E4236EF5E0A69A"
 			rewards: [{
 				id: "67B2163E9201AA53"
@@ -994,12 +1221,13 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 8.0d
+			x: 18.5d
+			y: 19.55d
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
 			description: ["革命线缆可以有效的为机械器官提供&6少量最大生命值&r，保证机械器官使用者的基本生存能力。"]
+			hide_dependency_lines: true
 			id: "5A523568EA436E1E"
 			rewards: [{
 				id: "545D60114CF03923"
@@ -1016,12 +1244,13 @@
 				}
 				type: "item"
 			}]
-			x: 12.0d
-			y: 8.0d
+			x: 24.35d
+			y: 19.75d
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
 			description: ["革命断路器可以&6有效延长心火状态的持续时间&r，使每次心火状态发挥更加强大的作用。"]
+			hide_dependency_lines: true
 			id: "3572DAA906773CCD"
 			rewards: [{
 				id: "10589921DEAE491E"
@@ -1038,8 +1267,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 8.0d
+			x: 19.05d
+			y: 14.45d
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
@@ -1048,6 +1277,7 @@
 				""
 				"其不仅降低了您的操作需求，更重要的是，它的加入允许&6非玩家类生物&r享受烈焰加压器的效果。"
 			]
+			hide_dependency_lines: true
 			id: "7B8FD2D02BA5BCA3"
 			rewards: [{
 				id: "62B12947F986420A"
@@ -1064,8 +1294,8 @@
 				}
 				type: "item"
 			}]
-			x: 15.0d
-			y: 8.0d
+			x: 24.55d
+			y: 15.15d
 		}
 		{
 			dependencies: ["1E56E0456EA6D888"]
@@ -1078,6 +1308,7 @@
 				""
 				"从数据信息来看，这应当是过度开采地幔能导致的. . .事到如今，再去后悔已经来不及了，我们需要迅速找出&6补救方案&r！"
 			]
+			hide_dependency_lines: true
 			icon: "minecraft:powder_snow_bucket"
 			id: "6EAC98701F6297E7"
 			invisible: true
@@ -1094,7 +1325,6 @@
 					type: "titles:title"
 				}
 			]
-			shape: "square"
 			subtitle: "[通讯中断]"
 			tasks: [{
 				icon: "minecraft:powder_snow_bucket"
@@ -1105,8 +1335,8 @@
 				type: "maa:astages"
 			}]
 			title: "&b凛冬已至&r"
-			x: 0.0d
-			y: -4.0d
+			x: 21.5d
+			y: 32.5d
 		}
 		{
 			dependencies: ["6EAC98701F6297E7"]
@@ -1115,6 +1345,8 @@
 				""
 				"为了平衡地幔能，我们需要巨大量的常规燃料，以平衡之前所使用的那部分地幔能。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "4A6163EABA119B99"
 			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
@@ -1136,8 +1368,8 @@
 				type: "item"
 			}]
 			title: "&6地幔能平衡：煤炭块&r"
-			x: 2.0d
-			y: -4.0d
+			x: 18.5d
+			y: 31.0d
 		}
 		{
 			dependencies: ["4A6163EABA119B99"]
@@ -1146,6 +1378,8 @@
 				""
 				"但这一切真的值得吗？或者说&b现在的寒冬真的会影响到什么吗？&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:lava_bucket"
 			id: "470BBE519FAFAC9B"
 			incompatible: ["636CDD764ADFA00D"]
@@ -1167,8 +1401,8 @@
 				type: "fluid"
 			}]
 			title: "&6地幔能平衡：熔岩&r"
-			x: 3.5d
-			y: -4.0d
+			x: 24.5d
+			y: 31.0d
 		}
 		{
 			dependencies: ["470BBE519FAFAC9B"]
@@ -1177,6 +1411,8 @@
 				""
 				"我们拯救这个世界还有意义吗？或者说，保持这样的冬日不也可以吗？"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "0030F907B76DF60A"
 			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
@@ -1198,8 +1434,8 @@
 				type: "item"
 			}]
 			title: "&6地幔能平衡：烈焰蛋糕&r"
-			x: 5.0d
-			y: -4.0d
+			x: 18.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["0030F907B76DF60A"]
@@ -1210,6 +1446,8 @@
 				""
 				"&6我为什么会抱有那样的想法. . .向您道歉. . .我们应当全力以赴，来维护我们所珍惜的这个世界！&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "422C30F050C2356E"
 			incompatible: ["636CDD764ADFA00D"]
 			rewards: [{
@@ -1233,8 +1471,8 @@
 				type: "item"
 			}]
 			title: "&6地幔能平衡：熔岩动力电池&r"
-			x: 6.5d
-			y: -4.0d
+			x: 24.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["588B97AAEC0E2385"]
@@ -1274,8 +1512,8 @@
 				type: "maa:astages"
 			}]
 			title: "凛冬之后的新故事"
-			x: 2.0d
-			y: 2.0d
+			x: 0.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6EAC98701F6297E7"]
@@ -1290,6 +1528,7 @@
 				""
 				"&6后来者会记住您的丰功伟业。&r"
 			]
+			hide_dependency_lines: true
 			id: "636CDD764ADFA00D"
 			invisible: true
 			rewards: [
@@ -1315,8 +1554,8 @@
 				type: "maa:astages"
 			}]
 			title: "&6当阳光洒向大地&r"
-			x: 2.0d
-			y: -2.5d
+			x: 21.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["238304E64039192F"]
@@ -1345,8 +1584,8 @@
 				type: "checkmark"
 			}]
 			title: "地幔能的故事"
-			x: 4.0d
-			y: 2.0d
+			x: 3.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -1360,6 +1599,8 @@
 				""
 				"通过在构建完成的大世界计算机中，在材料槽中输入异彩化合物和魔源汇聚水晶，即可通过&6魔源汇聚水晶&r的能量来进行一次复制工作。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "kubejs:world_computer"
 			id: "5BFA9E175D1944CF"
 			rewards: [{
@@ -1367,7 +1608,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "none"
 			subtitle: "大世界计算机对地幔能的模拟"
 			tasks: [{
 				id: "700A3083AAAF8B82"
@@ -1375,8 +1616,8 @@
 				type: "checkmark"
 			}]
 			title: "&6领域交差：大世界地幔能&r"
-			x: 10.5d
-			y: 3.5d
+			x: 9.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
@@ -1406,8 +1647,8 @@
 				type: "item"
 			}]
 			title: "永恒燃烧之物"
-			x: 8.0d
-			y: 9.0d
+			x: 7.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["1E9E00D7BCF6405B"]
@@ -1416,6 +1657,7 @@
 				""
 				"我们的第一个尝试可以从岩浆胶体开始。其能够在您受到攻击时，为您提供额外的&6燃烧持续时间&r。"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:magam_colloid"
@@ -1448,8 +1690,8 @@
 				}
 			]
 			title: "寻找更加炽热的东西"
-			x: 4.0d
-			y: 10.5d
+			x: 2.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["7480BAD551F85642"]
@@ -1460,6 +1702,7 @@
 				""
 				"但是这并不代表您可以免疫火焰或者岩浆的直接伤害，其仅仅会让您不会被持续的火焰伤害烦扰。"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:fiery_core"
@@ -1492,8 +1735,8 @@
 				}
 			]
 			title: "烈焰防护"
-			x: 4.0d
-			y: 9.0d
+			x: 2.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["6B24B7537EE0151A"]
@@ -1502,6 +1745,7 @@
 				""
 				"温度计会在物品栏右侧的器官效果栏中显示您当前的火焰效果持续时间，方便用于您评估当前的情形。"
 			]
+			hide_until_deps_complete: true
 			id: "1E9E00D7BCF6405B"
 			rewards: [{
 				id: "7921115DD62B6959"
@@ -1519,8 +1763,8 @@
 				type: "item"
 			}]
 			title: "烈焰中的自我"
-			x: 2.5d
-			y: 10.5d
+			x: 0.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["6AA1CAF275057D26"]
@@ -1531,6 +1775,7 @@
 				""
 				"除此之外，烈焰脊柱也是一个&6有效提高您输出&r的方式。其可以让对面持有&6相当长时间的异常状态&r，可以配合某些依赖于异常状态的攻击方式发挥出极强的效果。"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:blaze_spine"
@@ -1563,8 +1808,8 @@
 				}
 			]
 			title: "将炽热赠予所有人"
-			x: 6.0d
-			y: 10.5d
+			x: 4.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["0C90052BA156B5F4"]
@@ -1577,6 +1822,7 @@
 				""
 				"当使用汽油作为燃料，将您的燃烧持续时间延长到十分钟以上时，您的肉体便做好了&6接受极致烈焰的准备&r。"
 			]
+			hide_until_deps_complete: true
 			id: "7480BAD551F85642"
 			rewards: [{
 				id: "4A20BB8CEAAC73BD"
@@ -1594,8 +1840,8 @@
 				type: "item"
 			}]
 			title: "热量循环模式"
-			x: 6.0d
-			y: 9.0d
+			x: 4.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["49C7349296812E64"]
@@ -1606,13 +1852,14 @@
 				""
 				"曾经的世界中，或许永恒的寒冬也曾经到来过，但正是因为存在如此炽热的心，也能够使过去的玩家在没有我帮助的情况下重新构建起新的世界。"
 			]
+			hide_until_deps_complete: true
 			id: "56CAE9C01AF71671"
 			rewards: [{
 				id: "466C973A1A5AF58E"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			shape: "square"
+			shape: "none"
 			subtitle: "我奉行我之准则"
 			tasks: [{
 				entity: "minecraft:empty"
@@ -1624,21 +1871,25 @@
 				value: 1L
 			}]
 			title: "&6庆贺吧！此乃革命机械胸腔！&r"
-			x: 8.0d
-			y: 14.5d
+			x: 7.0d
+			y: 27.0d
 		}
 		{
 			dependencies: ["56CAE9C01AF71671"]
 			description: [
 				"&6恭喜，程序按照预期完成了改造工作。&r"
 				""
+				"而我现在已能够将&6革命烈焰胸腔&r的模式装填入注射器中，以供后续快速切换胸腔类型使用。"
 				""
+				"但由于革命胸腔的力量较为强大，其中更蕴含有可以通往&6真正无限的钥匙&r，贸然将这种技术公开可能导致一些不可预料的结果。"
 				""
+				"因此我决定，将该技术是否公开的权利交给在这个世界上真正了解革命本意的玩家，即&6成功击退村庄袭击次数最多&r的玩家。"
 				"{@pagebreak}"
 				"公开配方会使所有人都可以制作革命机械注射器。"
 				""
 				"私有配方会使您成为唯一能够制作革命机械注射器的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
 			]
+			hide_until_deps_complete: true
 			id: "4030B53E5FB37381"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -1647,19 +1898,19 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			subtitle: "心灵复制术"
+			subtitle: "革命复制术"
 			tasks: [{
-				icon: "minecraft:bell"
-				id: "4325CE1A7A5F73C0"
-				leaderboard: "leaderboards:bells_rung"
+				icon: "minecraft:totem_of_undying"
+				id: "245B3DB2341DC7DC"
+				leaderboard: "leaderboards:raids_won"
 				min: 1
 				rank: 1
-				title: "敲钟次数称霸"
+				title: "击退袭击称霸"
 				type: "leaderboards:rank_task"
 			}]
 			title: "革命机械注射器配方"
-			x: 8.0d
-			y: 16.0d
+			x: 7.0d
+			y: 29.5d
 		}
 		{
 			dependencies: [
@@ -1675,6 +1926,8 @@
 				""
 				"或许这对于我们理解革命机械有些许帮助，请允许我将该配方的蓝图发送到您的&6手持打印机&r中。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "kubejs:programmable_automatic_core"
@@ -1711,8 +1964,8 @@
 				type: "checkmark"
 			}]
 			title: "自发而行"
-			x: 12.5d
-			y: 10.0d
+			x: 21.5d
+			y: 22.0d
 		}
 		{
 			dependencies: [
@@ -1728,6 +1981,7 @@
 				""
 				"请您制造&6机械融合装置&r，我将向您解释如何完成这种改造！"
 			]
+			hide_until_deps_complete: true
 			id: "30D1D2606F1D61DE"
 			rewards: [{
 				id: "5697BF627BF2F6B5"
@@ -1747,8 +2001,8 @@
 				type: "item"
 			}]
 			title: "以炎热驱动"
-			x: 8.0d
-			y: 10.5d
+			x: 7.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["30D1D2606F1D61DE"]
@@ -1772,8 +2026,8 @@
 				type: "item"
 			}]
 			title: "急剧升温的准则"
-			x: 8.0d
-			y: 13.0d
+			x: 7.0d
+			y: 24.5d
 		}
 	]
 	title: "秘闻：地幔燃料"

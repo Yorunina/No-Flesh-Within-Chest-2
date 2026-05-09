@@ -18,12 +18,6 @@ ServerEvents.recipes(event => {
         ['tetra:metal_scrap', 'minecraft:copper_ingot', 'tetra:metal_scrap'],
         ['tetra:metal_scrap', 'tetra:metal_scrap', '']
     ])
-    event.remove({ id: 'mirror_mirror_forge:mirror_recipe' })
-    event.shaped(Item.of('mirror_mirror_forge:mirror'), [
-        ['', 'minecraft:iron_ingot', ''],
-        ['minecraft:iron_ingot', 'minecraft:light_blue_stained_glass', 'minecraft:iron_ingot'],
-        ['', 'minecraft:iron_ingot', '']
-    ])
     event.shaped(Item.of('torchmaster:feral_flare_lantern'), [
         ['', 'minecraft:gold_ingot', ''],
         ['#forge:glass', 'minecraft:glow_berries', '#forge:glass'],
@@ -76,7 +70,12 @@ ServerEvents.recipes(event => {
     ])
     event.shaped('kubejs:exorcism_lens', [
         ['graveyard:dark_iron_ingot', '#forge:ingots/iron', 'graveyard:dark_iron_ingot'],
-        ['#forge:ingots/iron', 'minecraft:blue_ice', '#forge:ingots/iron'],
+        ['#forge:ingots/iron', '#forge:glass', '#forge:ingots/iron'],
         ['graveyard:dark_iron_ingot', '#forge:ingots/iron', 'graveyard:dark_iron_ingot']
+    ])
+    event.shaped('kubejs:frost_lens', [
+        ['', '#forge:ingots/iron', ''],
+        ['#forge:ingots/iron', 'minecraft:blue_ice', '#forge:ingots/iron'],
+        ['', '#forge:ingots/iron', '']
     ])
 })

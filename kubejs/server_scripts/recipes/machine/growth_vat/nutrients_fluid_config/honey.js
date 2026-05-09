@@ -16,7 +16,7 @@ const HoneyPotentialOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:filtration', mean: -1, sigma: 1 }, 5)
 
 RegistryUnformedTumorFluidConfig(
-    new UnformedTumorFluidConfigModel('minecraft:honey')
+    new UnformedTumorFluidConfigModel('create:honey')
         .setOrganDataModel(HoneyOrganDataWeightModel)
         .setPotentialOrganDataModel(HoneyPotentialOrganDataWeightModel)
         .setOrganDataCount(2)

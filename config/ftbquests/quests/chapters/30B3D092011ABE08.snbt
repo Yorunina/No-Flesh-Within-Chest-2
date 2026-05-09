@@ -236,7 +236,7 @@
 			}]
 			subtitle: "胸腔技术改进"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "5CEB1A494AE05826"
 				title: "稍等片刻"

@@ -277,7 +277,7 @@
 			}]
 			subtitle: "我需要收集更多的信息"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "5FD51CB999EA8CCC"
 				title: "稍等片刻"

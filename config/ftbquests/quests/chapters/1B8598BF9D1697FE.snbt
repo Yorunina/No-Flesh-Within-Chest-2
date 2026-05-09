@@ -259,7 +259,6 @@
 			y: -24.5d
 		}
 		{
-			click: "command:/ponder kubejs:eternal_altar"
 			dependency: "5FCBCB78FDA46E87"
 			height: 7.0d
 			image: "kubejs:textures/gui/tasks/eternal_gateway/instrcution.png"
@@ -268,8 +267,18 @@
 			x: 5.0d
 			y: 2.5d
 		}
+		{
+			click: "command:/ponder kubejs:eternal_altar"
+			dependency: "5FCBCB78FDA46E87"
+			height: 1.0d
+			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 9.0d
+			y: 5.5d
+		}
 	]
-	order_index: 2
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -1178,7 +1187,7 @@
 			]
 			subtitle: "从何而来的消息"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "0AA8EC9B7361AA3A"
 				title: "稍等片刻"

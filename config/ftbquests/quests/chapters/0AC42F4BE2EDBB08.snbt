@@ -88,6 +88,7 @@
 				""
 				"如果一样物品在反复切换显示——这意味着这些物品都被允许作为任务完成的材料。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:oak_log"
 			id: "24C2BCAAAF1E55DE"
 			rewards: [{
@@ -305,6 +306,7 @@
 				""
 				"因此，请您在获得铁锭后制作铁镐，随后在世界上获取到&6钻石&r。获取钻石的流程可能并非来源于采掘，更有可能来自于世界上的自然生成，因此在这里并不对您的获取方式做任何限制。"
 			]
+			hide_until_deps_complete: true
 			id: "563D136C06E38A60"
 			rewards: [{
 				id: "6B1C2ECDCA3E1E1A"
@@ -503,7 +505,6 @@
 				""
 				"因此，您可以跟其他的玩家通过交换绑定自身的友谊戒指，进而做到互相传送成本的降低。"
 			]
-			hide_until_deps_complete: true
 			id: "6DF4D3AE711778B7"
 			rewards: [{
 				id: "5F54AC86F09A503A"
@@ -672,8 +673,8 @@
 			}]
 			subtitle: "约定"
 			tasks: [{
-				id: "4733A24A4735AE8B"
-				item: "mirror_mirror_forge:mirror"
+				id: "52920939DBCF6231"
+				item: "ring_of_friendship:magic_mirror"
 				type: "item"
 			}]
 			x: -3.0d
@@ -943,6 +944,7 @@
 				"在背包容量不足时，您可以使用铁、铜等金属将其升级为铁制背包、铜制背包等，以扩大它的存储空间。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "67786E2C6F7CD355"
 			rewards: [{
 				id: "25277D7A12766F93"
@@ -1047,6 +1049,26 @@
 			}]
 			title: "快捷输送"
 			x: -4.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["28C86788D85A6138"]
+			description: ["由于见证系列饰品的触发方式均为造成&6伤害触发&r，因此您可以制作一个&6试验假人&r——其不具有攻击性，但是能够作为极佳的输出木桩使用，进而不断触发伤害累计的效果。"]
+			hide_until_deps_complete: true
+			id: "3EAB05477DC10CE1"
+			rewards: [{
+				id: "00776DF61EA78079"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一切由谁来见证"
+			tasks: [{
+				id: "121A95EE0EF752D4"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			title: "见证者"
+			x: 6.0d
 			y: 12.0d
 		}
 	]

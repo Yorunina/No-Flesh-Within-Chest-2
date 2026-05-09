@@ -7,4 +7,7 @@ MAAEvents.ftbPlayerJoinParty(event => {
 MAAEvents.ftbCreateParty(event => {
     event.cancel()
 })
-
+// 现在不允许创建ServerTeam了
+MAAEvents.ftbCreateServerTeam(event => {
+    event.cancel()
+})

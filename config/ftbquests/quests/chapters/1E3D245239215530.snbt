@@ -121,7 +121,7 @@
 			shape: "circle"
 			subtitle: "我来替您设计"
 			tasks: [{
-				elapsedTime: 600L
+				elapsedTime: 300L
 				icon: "supplementaries:hourglass"
 				id: "5A7DA0C8AF0563B2"
 				title: "稍等片刻"

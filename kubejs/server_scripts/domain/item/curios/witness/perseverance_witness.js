@@ -1,5 +1,4 @@
 //priority: 500
-// todo 添加获取方法
 RegistryWitnessStrategy('kubejs:perseverance_witness', PerseveranceWitnessCuriosStrategy)
 const PerseveranceWitnessEachSlotSizeDamage = 10000
 /** 
@@ -14,10 +13,8 @@ function PerseveranceWitnessCuriosStrategy(customData, event, stackHandler, curi
     const nbt = curiosItem.getNbt()
     let curDamage = nbt.getLong('damageAmount') + event.amount
     let slotMaxSize = 0
-    while (curDamage > PerseveranceWitnessEachSlotSizeDamage) {
-        slotMaxSize++
-        curDamage = curDamage - PerseveranceWitnessEachSlotSizeDamage
-    }
+    slotMaxSize = Math.floor(curDamage / PerseveranceWitnessEachSlotSizeDamage)
+    curDamage = curDamage % PerseveranceWitnessEachSlotSizeDamage
     if (slotMaxSize != 0 && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
         let dimNet = DimensionsNet.getPrimaryNetFromPlayer(event.source.actual)
         if (dimNet) {
