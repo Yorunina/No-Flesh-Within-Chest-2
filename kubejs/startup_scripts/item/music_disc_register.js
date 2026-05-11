@@ -1,4 +1,8 @@
 // priority: 1000
+StartupEvents.registry('sound_event', event => {
+    event.create('kubejs:faded_song')
+})
+
 StartupEvents.registry('item', event => {
     event.create('kubejs:faded_disc', 'music_disc')
         .song('kubejs:faded_song', 99)

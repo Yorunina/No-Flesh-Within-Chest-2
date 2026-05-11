@@ -12,13 +12,14 @@
 		{
 			dependencies: ["4E805DA2B8D171E4"]
 			description: [
-				"感谢您的关键词，我成功的搜索到了相关的日志信息。"
+				"感谢您的关键词，我成功的搜索到了相关的日志信息，借由此，我定位了一个预先被设计好的特殊章节。"
 				""
-				"在历史日志中，有一类玩家被称为“&6赞助者&r”，其在之前的世界中具有着极其特殊的地位，在各种位置上都被给予优待。"
+				"该章节的设计非常奇怪，我无法正常对该章节进行任务的重点标注和重排序——就连加入这个任务，都已经在我的能力的极限范围。"
 				""
-				"此外，这些玩家还反复提及了一句话，请允许我将该信息重放给您。"
+				"接下来的东西，可能要由您自己来探索了，如果有新的信息，辛苦您继续通过保持联络进行提交。"
 			]
 			hide_dependency_lines: true
+			icon: "minecraft:player_head"
 			id: "1B4DAFA046EB8F20"
 			invisible: true
 			rewards: [{
@@ -52,7 +53,7 @@
 			}]
 			subtitle: "以前人之问流传于世"
 			tasks: [{
-				count: 3L
+				count: 1L
 				id: "2562A3686DE5E765"
 				kubeId: "sponsor_gift_code"
 				textBoxRawTitle: ""
@@ -60,12 +61,12 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "前人所埋藏宝藏之一"
-			x: 2.5d
-			y: -3.5d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1B4DAFA046EB8F20"]
-			description: ["&7** 好想玩脆2 **&r"]
+			description: ["&7** 好想玩脆二 **&r"]
 			icon: "candlelight:letter_open"
 			id: "440318F5E2A002F4"
 			rewards: [{
@@ -82,6 +83,145 @@
 			title: "重放"
 			x: 2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: ["&7一张布满划痕的唱片，其上贴有一个标签，注明：“听了会很饿”&r"]
+			icon: "kubejs:faded_disc"
+			id: "241E469417A467F1"
+			rewards: [{
+				id: "38F8A2824948A2BF"
+				item: "kubejs:faded_disc"
+				type: "item"
+			}]
+			subtitle: "被灰尘覆盖的唱片"
+			tasks: [{
+				id: "7B092B25FEB68E22"
+				title: "轻轻拾起"
+				type: "checkmark"
+			}]
+			title: "一张破旧的音乐唱片"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: ["&7结有大块海渍的怪异道具，虽然你不了解它是用作什么的，但一股冲动使得你想要不顾一切地将其纳为己有。&r"]
+			icon: {
+				Count: 1
+				id: "kubejs:prismarine_crown"
+				tag: { }
+			}
+			id: "12273F8B7FDCB9B2"
+			rewards: [{
+				id: "2140306078BBE16F"
+				item: {
+					Count: 1
+					id: "kubejs:prismarine_crown"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "曾经为王、王为曾经"
+			tasks: [{
+				id: "12F8BDBFC12FA9D4"
+				title: "从角落拽出"
+				type: "checkmark"
+			}]
+			title: "曾经为王的证明"
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
+			id: "626233DC1095036E"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:copper_chest"
+				id: "3AC4D4179A012328"
+				title: "宝物已尽"
+				type: "custom"
+			}]
+			subtitle: "以前人之问流传于世"
+			tasks: [{
+				count: 1L
+				id: "7FFA77F53A9E9991"
+				kubeId: "sponsor_gift_code"
+				textBoxRawTitle: ""
+				title: "密文为何"
+				type: "maa:kube_text_input"
+			}]
+			title: "前人所埋藏宝藏之一"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
+			id: "343D2F562292CF6C"
+			rewards: [{
+				auto: "enabled"
+				icon: "minecraft:copper_chest"
+				id: "470E4EEAD05F208C"
+				title: "宝物已尽"
+				type: "custom"
+			}]
+			subtitle: "以前人之问流传于世"
+			tasks: [{
+				count: 1L
+				id: "796EAE8D513865D8"
+				kubeId: "sponsor_gift_code"
+				textBoxRawTitle: ""
+				title: "密文为何"
+				type: "maa:kube_text_input"
+			}]
+			title: "前人所埋藏宝藏之一"
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: ["&7这些徽章似乎有着一种奇异的魔力，但你又说不清——你只感觉到它们有些太陈旧了。&r"]
+			icon: "kubejs:badge"
+			id: "54E04F95D9FB9CFC"
+			rewards: [{
+				icon: "kubejs:badge"
+				id: "042439E16C9CE49A"
+				ignore_reward_blocking: true
+				kubeId: "gen_player_badge"
+				title: "奖章"
+				type: "maa:kube"
+			}]
+			subtitle: "徽章上写着行行小字"
+			tasks: [{
+				id: "0D70B4DA7B22D491"
+				title: "捡起其中一枚徽章"
+				type: "checkmark"
+			}]
+			title: "荣誉的象征"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: ["&7这或许只是一团木屑&r"]
+			icon: "kubejs:sawdust"
+			id: "5389F88C96D13BA3"
+			rewards: [{
+				id: "7DBD138C2ADC8CA0"
+				item: "kubejs:sawdust"
+				type: "item"
+			}]
+			subtitle: "沉寂在最底部"
+			tasks: [{
+				id: "7FC34EAFCE0681B0"
+				title: "捧起来仔细查看"
+				type: "checkmark"
+			}]
+			title: "在最为华贵的角落"
+			x: 7.5d
+			y: 3.5d
 		}
 	]
 	title: "外传：被尊重者"

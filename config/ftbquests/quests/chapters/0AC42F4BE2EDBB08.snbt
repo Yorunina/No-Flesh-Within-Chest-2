@@ -71,6 +71,15 @@
 			x: 6.5d
 			y: 9.62d
 		}
+		{
+			dependency: "24908FF341485C05"
+			height: 1.5d
+			image: "kubejs:textures/gui/tasks/chapter_1/primary_error.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 0.0d
+			y: 7.5d
+		}
 	]
 	order_index: 2
 	quest_links: [ ]
@@ -287,6 +296,7 @@
 				item: "minecraft:cookie"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "检测到异常"
 			tasks: [{
 				id: "0DC7518EA5C12788"

@@ -12,10 +12,14 @@ RegistryOrgan('kubejs:sea_bunny_skin')
  * @param {string} slotType
  */
 function SeaBunnyGlandEntityBeHurt(customData, event, organItem, organIndex, slotType) {
-    if (event.amount <= 0) return
     const entity = event.entity
-    if (entity.isPlayer()) return
-    targetEntity.setTarget(entity)
+    if (entity instanceof $ServerPlayer) {
+        let magicData = entity.getMagicData()
+        let curMana = magicData.getMana()
+        if (curMana <= 30) return
+        magicData.setMana(curMana - 30)
+    }
+    entity.potionEffects.add('irons_spellbooks:true_invisibility', 20 * 3, 0, false, false)
 }
 
 

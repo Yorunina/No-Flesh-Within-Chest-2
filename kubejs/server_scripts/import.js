@@ -159,3 +159,5 @@ const $CapabilityInterfaceBlockEntity = Java.loadClass('io.github.lightman314.li
 const $ClipContext = Java.loadClass('net.minecraft.world.level.ClipContext')
 const $ClipContextBlock = Java.loadClass('net.minecraft.world.level.ClipContext$Block')
 const $ClipContextFluid = Java.loadClass('net.minecraft.world.level.ClipContext$Fluid')
+
+const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.void_tentacle.VoidTentacle')

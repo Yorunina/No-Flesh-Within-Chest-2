@@ -14,6 +14,10 @@ dependency_line_completed_color: #ffffff
 [1046FBB0415A3CAA]
 background: ftblibrary:textures/gui/chapter_2_background.png; color=rgb(0, 0, 0); tile_size=64
 
+# 叁
+[3EE7EA42A2EC0893]
+background: ftblibrary:textures/gui/chapter_3_background.png; color=rgb(0, 0, 0); tile_size=64
+
 # 认知：胸腔
 [2218D095B234A44A]
 background: ftblibrary:textures/gui/chestcavity_background.png; color=rgb(0, 0, 0); tile_size=64

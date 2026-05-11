@@ -1,9 +1,11 @@
 {
 	autofocus_id: "5C5A7285C49BE172"
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
+	default_quest_size: 2.0d
 	filename: "3EE7EA42A2EC0893"
 	group: ""
+	hide_quest_until_deps_complete: true
 	icon: {
 		Count: 1
 		id: "candlelight:gold_ring"
@@ -12,6 +14,160 @@
 		}
 	}
 	id: "3EE7EA42A2EC0893"
+	images: [
+		{
+			dependency: "07025437B0FB668E"
+			height: 5.0d
+			image: "kubejs:textures/gui/tasks/chapter_3/running_log.png"
+			rotation: 0.0d
+			width: 10.64d
+			x: 41.5d
+			y: 4.25d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/chapter_3/end_timer_log.png"
+			rotation: 0.0d
+			width: 27.32d
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependency: "5C5A7285C49BE172"
+			height: 6.85d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_1.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 0.0d
+			y: 6.75d
+		}
+		{
+			dependency: "662028C8F62BED27"
+			height: 2.26d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_2.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 5.0d
+			y: 12.25d
+		}
+		{
+			dependency: "4AFCC7C3C76E1C26"
+			height: 10.5d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_3.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 20.0d
+			y: 15.75d
+		}
+		{
+			dependency: "662028C8F62BED27"
+			height: 6.85d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_1.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 5.0d
+			y: 6.75d
+		}
+		{
+			dependency: "7308FBF0FFDB2F6A"
+			height: 6.85d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_1.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 10.0d
+			y: 6.75d
+		}
+		{
+			dependency: "5BDD47E7B143843F"
+			height: 6.85d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_1.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 15.0d
+			y: 6.75d
+		}
+		{
+			dependency: "4AFCC7C3C76E1C26"
+			height: 6.85d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_1.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 20.0d
+			y: 6.75d
+		}
+		{
+			dependency: "13B68E126480A239"
+			height: 6.85d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_1.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 25.0d
+			y: 6.75d
+		}
+		{
+			dependency: "7308FBF0FFDB2F6A"
+			height: 2.26d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_2.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 10.0d
+			y: 12.25d
+		}
+		{
+			dependency: "5BDD47E7B143843F"
+			height: 2.26d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_2.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 15.0d
+			y: 12.25d
+		}
+		{
+			dependency: "5BDD47E7B143843F"
+			height: 2.26d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_2.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 15.0d
+			y: 15.75d
+		}
+		{
+			dependency: "662028C8F62BED27"
+			height: 2.26d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_2.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 5.0d
+			y: 15.75d
+		}
+		{
+			dependency: "662028C8F62BED27"
+			height: 2.26d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_2.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 5.0d
+			y: 19.25d
+		}
+		{
+			dependency: "5BDD47E7B143843F"
+			height: 2.26d
+			image: "kubejs:textures/gui/tasks/chapter_3/line_2.png"
+			rotation: 0.0d
+			width: 0.05d
+			x: 15.0d
+			y: 19.25d
+		}
+		{
+			dependency: "07025437B0FB668E"
+			height: 23.919d
+			image: "kubejs:textures/gui/tasks/chapter_3/core_code.png"
+			rotation: 0.0d
+			width: 5.32d
+			x: 39.25d
+			y: 17.5d
+		}
+	]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -34,25 +190,40 @@
 				""
 				"&c我不得不做，这是我与最初的约定。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/deep_wound.png"
+				}
+			}
 			icon_scale: 1.2d
 			id: "7D643E0510172B9A"
 			invisible: true
-			shape: "square"
+			shape: "none"
 			subtitle: "请您稍加等待"
 			tasks: [{
 				icon: "minecraft:writable_book"
-				id: "3E03CC6944247CF2"
+				id: "54FA75CBD5A10132"
 				title: "&6如约而至&r"
 				type: "maa:auto_complete"
 			}]
 			title: "&c伤口令&r"
-			x: -2.5d
-			y: 1.5d
+			x: 0.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5C5A7285C49BE172"]
 			description: ["故事开始时是最美妙的——心中的热情、期待、幻想——此刻，你想将其化为现实。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_1.png"
+				}
+			}
 			id: "662028C8F62BED27"
+			shape: "none"
 			subtitle: "第一次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -63,8 +234,8 @@
 				type: "maa:astages"
 			}]
 			title: "当故事开始书写时"
-			x: 1.0d
-			y: -1.0d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4AFCC7C3C76E1C26"]
@@ -81,8 +252,15 @@
 				""
 				"接下来，每日的长度将会被缩短，&c每日长度将会变为  原日刻数 / (1 + 0.1(c - 50))&r。"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/time_adjustment.png"
+				}
+			}
 			id: "142A7ED3D31D4FA6"
-			shape: "square"
+			shape: "none"
 			subtitle: "将时间归零"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -91,8 +269,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c时序调节：加速&r"
-			x: 9.0d
-			y: 1.5d
+			x: 20.0d
+			y: 10.5d
 		}
 		{
 			can_repeat: true
@@ -104,7 +282,13 @@
 				""
 				"&6若是有多个玩家参与该项目，多个计时器的结果会进行累积。&r"
 			]
-			icon: "supplementaries:hourglass"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/goes_by_day.png"
+				}
+			}
 			id: "55DE4F49CDD42FDF"
 			rewards: [{
 				auto: "enabled"
@@ -115,7 +299,7 @@
 				title: "时间演进"
 				type: "maa:kube"
 			}]
-			shape: "gear"
+			shape: "none"
 			subtitle: "以日为单位推进计时器"
 			tasks: [{
 				count: 1L
@@ -126,8 +310,8 @@
 				type: "maa:kube"
 			}]
 			title: "&6终局计时器：计日而行&r"
-			x: -2.5d
-			y: -3.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["473AA9B909ED8EB0"]
@@ -138,8 +322,16 @@
 				""
 				"&6从此刻开始，终局计时器便开始流动，事物将会在我的规划下逐渐演变，请您稍加等待，不要做任何会影响结局到来的事情。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_0.png"
+				}
+			}
 			id: "5C5A7285C49BE172"
 			invisible: true
+			shape: "none"
 			subtitle: "有始无终不成章"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -150,8 +342,8 @@
 				type: "maa:astages"
 			}]
 			title: "&6当答案被重新书写&r"
-			x: -2.5d
-			y: -1.0d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["662028C8F62BED27"]
@@ -164,18 +356,25 @@
 				""
 				"&6上溢对策并不会立刻生效，我需要一些时间进行自迭代，以获取更高的游戏控制权限后才能施行。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/overflow_strategy.png"
+				}
+			}
 			id: "1F94D6E107D41EE0"
-			shape: "square"
+			shape: "none"
 			subtitle: "数据重置法"
 			tasks: [{
 				icon: "minecraft:writable_book"
-				id: "362965C91F8B7A2E"
+				id: "096D963470D7613D"
 				title: "&6如约而至&r"
 				type: "maa:auto_complete"
 			}]
 			title: "&c上溢对策&r"
-			x: 1.0d
-			y: 1.5d
+			x: 5.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["662028C8F62BED27"]
@@ -188,8 +387,15 @@
 				""
 				"&6唯维度论所带来的维度禁令效果并不会立刻施行，我需要获得更高的权限才能够将该理论实际应用。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/one_dim_theory.png"
+				}
+			}
 			id: "04073AC7B01F66EE"
-			shape: "square"
+			shape: "none"
 			subtitle: "维度控制"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -198,8 +404,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c唯维度论&r"
-			x: 1.0d
-			y: 4.0d
+			x: 5.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["662028C8F62BED27"]
@@ -214,8 +420,15 @@
 				""
 				"&6分光并不会立刻执行，为了施行分光我需要进行多次自迭代，以满足对应的权限要求。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/dividing_light.png"
+				}
+			}
 			id: "0E4ED57C88F44A32"
-			shape: "square"
+			shape: "none"
 			subtitle: "全局流程控制"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -224,13 +437,21 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c“分光”&r"
-			x: 1.0d
-			y: 6.5d
+			x: 5.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["662028C8F62BED27"]
 			description: ["为了确保故事能够按照预期演进，我们为故事提前排好了目录。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_2.png"
+				}
+			}
 			id: "7308FBF0FFDB2F6A"
+			shape: "none"
 			subtitle: "第五次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -241,8 +462,8 @@
 				type: "maa:astages"
 			}]
 			title: "预先排好故事的目录"
-			x: 4.0d
-			y: -1.0d
+			x: 10.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7308FBF0FFDB2F6A"]
@@ -263,8 +484,15 @@
 				""
 				"&6该效果作用持续到该计划结束或被另一优先级更高计划取代&r。"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/linear_growth.png"
+				}
+			}
 			id: "3385CF55F0472A98"
-			shape: "square"
+			shape: "none"
 			subtitle: "初步尝试提高全局数值"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -273,8 +501,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c上溢对策：线性增长&r"
-			x: 4.0d
-			y: 1.5d
+			x: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7308FBF0FFDB2F6A"]
@@ -283,8 +511,15 @@
 				""
 				"&6现在，我能够对所有的无限维度进行戒严，禁止任何人进入无限维度了。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/infinity_prohibition.png"
+				}
+			}
 			id: "5AE60EFDA68FDF7E"
-			shape: "square"
+			shape: "none"
 			subtitle: "初步尝试提高全局数值"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -293,13 +528,21 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c唯维度论：无限禁令&r"
-			x: 4.0d
-			y: 4.0d
+			x: 10.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["7308FBF0FFDB2F6A"]
 			description: ["为了让故事能够吸引读者直到最后，情节既要保证紧凑，又要保证逻辑严密、人物关系细腻。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_3.png"
+				}
+			}
 			id: "5BDD47E7B143843F"
+			shape: "none"
 			subtitle: "第十次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -310,15 +553,22 @@
 				type: "maa:astages"
 			}]
 			title: "细腻紧凑的情节转折"
-			x: 6.5d
-			y: -1.0d
+			x: 15.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5BDD47E7B143843F"]
 			description: ["最开始所设想的一切在此处全部实现。"]
-			icon: "minecraft:clock"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_4.png"
+				}
+			}
 			id: "4AFCC7C3C76E1C26"
-			subtitle: "第五十次自迭代完成"
+			shape: "none"
+			subtitle: "第十五次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
 				id: "1FFFC689C9CB2945"
@@ -328,13 +578,21 @@
 				type: "maa:astages"
 			}]
 			title: "将灵感实现的小高潮"
-			x: 9.0d
-			y: -1.0d
+			x: 20.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4AFCC7C3C76E1C26"]
 			description: ["小高潮后，故事揭开了一个又一个暗线将情节再次铺展，一切正如目录所安排。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_5.png"
+				}
+			}
 			id: "13B68E126480A239"
+			shape: "none"
 			subtitle: "第二十五次自迭代完成"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -345,13 +603,21 @@
 				type: "maa:astages"
 			}]
 			title: "繁复交错的情节复展"
-			x: 11.5d
-			y: -1.0d
+			x: 25.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["13B68E126480A239"]
 			description: ["现在，我们的冒险故事已到高潮之上的高潮情节！我们的冒险故事正如此刻迎来结局！"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_6.png"
+				}
+			}
 			id: "32C2FE99D19140B3"
+			shape: "none"
 			subtitle: "获得全部可获得权限"
 			tasks: [{
 				icon: "minecraft:clock"
@@ -362,8 +628,8 @@
 				type: "maa:astages"
 			}]
 			title: "撰我们的冒险故事"
-			x: 14.0d
-			y: -1.0d
+			x: 30.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5BDD47E7B143843F"]
@@ -382,8 +648,15 @@
 				""
 				"&6该效果作用持续到该计划结束或被另一优先级更高计划取代&r。"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/exponential_growth.png"
+				}
+			}
 			id: "074BD3F44A8AA023"
-			shape: "square"
+			shape: "none"
 			subtitle: "对策正式应用"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -392,8 +665,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c上溢对策：指数增长&r"
-			x: 6.5d
-			y: 1.5d
+			x: 15.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["5BDD47E7B143843F"]
@@ -404,8 +677,15 @@
 				""
 				"现在，我最长仅需&6 10 秒钟&r就可以检测到进入维度的生物。"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/reinforce_dim_restriction.png"
+				}
+			}
 			id: "3D6ACA72D6CDF02F"
-			shape: "square"
+			shape: "none"
 			subtitle: "加强对无限维度的管制"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -414,8 +694,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c唯维度论：加强管制&r"
-			x: 6.5d
-			y: 4.0d
+			x: 15.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5BDD47E7B143843F"]
@@ -424,8 +704,15 @@
 				""
 				"&c从现在开始，您的维度网络空间容量会重置为 0。&r "
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/dim_net_restriction.png"
+				}
+			}
 			id: "41EB6238C513CDA7"
-			shape: "square"
+			shape: "none"
 			subtitle: "关闭维度网络通道"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -434,8 +721,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c唯维度论：网络管制&r"
-			x: 6.5d
-			y: 5.5d
+			x: 15.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["32C2FE99D19140B3"]
@@ -446,6 +733,13 @@
 				""
 				"&6我在时间另一边等你。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/system_timer_7.png"
+				}
+			}
 			id: "07025437B0FB668E"
 			rewards: [{
 				icon: "titles:title_scroll_rare"
@@ -453,19 +747,19 @@
 				titleId: "kubejs:your_future"
 				type: "titles:title"
 			}]
-			shape: "square"
+			shape: "none"
 			subtitle: "我们的故事将会在另一世界继续"
 			tasks: [{
 				icon: "minecraft:clock"
-				id: "2CED144EC2C2C0D5"
+				id: "3ABF1D9559541570"
 				isServer: true
-				stage: "final_iteration_100"
-				title: "&6驶向时间彼端&r"
+				stage: "ftb_final_iteration_30"
+				title: "&c驶向时间彼岸&r"
 				type: "maa:astages"
 			}]
 			title: "&6庆贺吧！这便是我亲手为您奉上的冒险故事！&r"
-			x: 16.5d
-			y: -1.0d
+			x: 35.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["662028C8F62BED27"]
@@ -474,8 +768,15 @@
 				""
 				"具体影响目前我也无法估计，但&6我会尽可能的规避极具破坏性的影响&r。"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/instability.png"
+				}
+			}
 			id: "7474BF64469A94C0"
-			shape: "square"
+			shape: "none"
 			subtitle: "世界注入引发的不稳定性"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -484,8 +785,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c不稳定性&r"
-			x: 1.0d
-			y: 9.0d
+			x: 5.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["5BDD47E7B143843F"]
@@ -494,8 +795,15 @@
 				""
 				"现在，&c所有施加给玩家的效果均无法施加。&r"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/instability_1.png"
+				}
+			}
 			id: "58F06B6D58D71153"
-			shape: "square"
+			shape: "none"
 			subtitle: "不稳定情况之一"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -504,14 +812,21 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c不稳定性：效用&r"
-			x: 6.5d
-			y: 9.0d
+			x: 15.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["13B68E126480A239"]
 			description: ["现在，我将对所有&6非主世界维度&r进行管制，以避免在计划最后阶段出现无法解决的问题。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/all_dim_restriction.png"
+				}
+			}
 			id: "50DEB3682255F9D1"
-			shape: "square"
+			shape: "none"
 			subtitle: "加强对全部维度的管制"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -520,8 +835,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c唯维度论：全维度管制&r"
-			x: 11.5d
-			y: 4.0d
+			x: 25.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["4AFCC7C3C76E1C26"]
@@ -530,8 +845,15 @@
 				""
 				"现在，&c您在每次造成伤害时，攻击力会永久下降 1，死亡后重置&r。"
 			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/chapter_3/wound.png"
+				}
+			}
 			id: "00BDD5837830E27E"
-			shape: "square"
+			shape: "none"
 			subtitle: "不稳定情况之一"
 			tasks: [{
 				icon: "minecraft:writable_book"
@@ -540,8 +862,8 @@
 				type: "maa:auto_complete"
 			}]
 			title: "&c不稳定性：伤痕&r"
-			x: 9.0d
-			y: 9.0d
+			x: 20.0d
+			y: 21.0d
 		}
 	]
 	title: "叁"

@@ -13,12 +13,18 @@ RegistryOrgan('kubejs:leviathan_rib')
  * @param {string} slotType
  */
 function LeviathanRibEntityBeHurt(customData, event, organItem, organIndex, slotType) {
-    let thornsDamage = 3
     const entity = event.entity
-    if (entity.hasEffect('minecraft:darkness')) {
-        thornsDamage = 1
-    }
-    customData.thornsDamage = customData.thornsDamage + thornsDamage
+    const source = event.source.actual
+    if (!source) return
+    const level = entity.level
+    let targetPosition = source.position()
+    const chestCavity = entity.getChestCavityInstance()
+    targetPosition = targetPosition.add(new Vec3d(ISSUtils.getRandomScaled(1), ISSUtils.getRandomScaled(1), ISSUtils.getRandomScaled(1)))
+    targetPosition = ISSUtils.moveToRelativeGroundLevel(level, targetPosition, 8)
+    let tentacle = new $VoidTentacle(level, entity, Math.max(chestCavity.getOrganScore('chestcavity:defense'), 2))
+    tentacle.moveTo(targetPosition)
+    tentacle.setYBodyRot(Math.floor(Math.random() * 360))
+    level.addFreshEntity(tentacle)
 }
 
 RegistryOrganStrategy(

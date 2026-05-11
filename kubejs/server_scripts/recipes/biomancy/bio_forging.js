@@ -27,5 +27,5 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:elastic_fibers', 1), Item.of('biomancy:mineral_fragment', 1), Item.of('minecraft:ender_eye', 1)], Item.of('kubejs:blood_extractor'), 'biomancy:organ', 8)
 
-    event.recipes.biomancy.bio_forging([Ingredient.of('#minecraft:music_discs'), Item.of('biomancy:living_flesh')], Item.of('kubejs:faded_disc'), 'biomancy:misc', 10)
+    event.recipes.biomancy.bio_forging([Item.of('biomancy:exotic_dust', 1), Item.of('minecraft:chorus_fruit', 1), Item.of('kubejs:rumen', 1)], Item.of('kubejs:void_stomach_pouch'), 'biomancy:organ', 20)
 })
