@@ -10,4 +10,5 @@ ChestCavityEvents.openedEntityTick(event => {
     if (!entity || entity.age % 20 != 0) return
     let customData = {}
     OrganEntityTickEvent.run(entity, customData, [event])
+    PhotosynthesisEntityTick(event)
 })

@@ -16,7 +16,8 @@ ItemEvents.rightClicked('stick', event => {
     const level = event.level
     const server = event.server
 
-    player.give(Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[18,22,20],Deployed:0b,File:"苹果乐.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE"}'))
+
+    // player.give(Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[18,22,20],Deployed:0b,File:"苹果乐.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE"}'))
     // SetDaySpeed(1)
     // SetNightSpeed(1)
     // UpdatePlaysTimeStabilityBar(server, level, player)

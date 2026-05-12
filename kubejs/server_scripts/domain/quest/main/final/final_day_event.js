@@ -60,7 +60,7 @@ function FinalDayEvent(event) {
 
     if (AStages.serverHasStage(FTBFinalIteration15, server)) {
         let speedProp = Clamp(1 + 0.2 * (finalTimer - 15), 1, 400)
-        console.log(speedProp)
+
         SetDaySpeed(speedProp)
         SetNightSpeed(speedProp)
     }
@@ -74,7 +74,6 @@ function FinalDayEvent(event) {
         mobModifier.putFloat('healthMult', mobModifier.getFloat('healthMult') * 1.2)
         mobModifier.putFloat('attackAdd', mobModifier.getFloat('attackAdd') * 1.1)
         server.persistentData.put('finalMobSpawnProp', mobModifier)
-        console.log(mobModifier)
     } else if (AStages.serverHasStage(FTBFinalIteration5, server)) {
         let mobModifier = server.persistentData.get('finalMobSpawnProp')
         mobModifier.putFloat('healthMult', mobModifier.getFloat('healthMult') + 0.1)

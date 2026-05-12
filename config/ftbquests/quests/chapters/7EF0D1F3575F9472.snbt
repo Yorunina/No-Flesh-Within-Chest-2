@@ -498,6 +498,7 @@
 				item: "kubejs:story_proof"
 				type: "item"
 			}]
+			subtitle: "永无终止的故事"
 			tasks: [{
 				icon: "supplementaries:hourglass"
 				id: "2019C8E3D745D682"

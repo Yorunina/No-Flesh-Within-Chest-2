@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:rootling_ectoplasm')
     .addScore('kubejs:extreme_fitness', 2)
-    .addScore('chestcavity:buff_purging', 1)
+    .addScore('kubejs:photosynthesis', 1)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

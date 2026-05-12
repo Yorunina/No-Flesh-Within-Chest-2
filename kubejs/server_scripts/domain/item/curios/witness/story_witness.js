@@ -9,7 +9,7 @@ const StoryWitnessLootList = [
     { damage: 5000, lootList: [Item.of('tetra:geode', 8)] },
     { damage: 10000, lootList: [Item.of('kubejs:bravery_witness')] },
     { damage: 50000, lootList: [Item.of('kubejs:perseverance_witness')] },
-    { damage: 100000, lootList: [Item.of('cataclysm:witherite_ingot', 3)] },
+    { damage: 100000, lootList: [Item.of('kubejs:knowledge_witness')] },
     { damage: 1000000, lootList: [Item.of('cataclysm:altar_of_fire')] },
     { damage: 10000000, lootList: [Item.of('minecraft:warden_spawn_egg')] },
     { damage: 100000000, lootList: [Item.of('minecraft:potion', '{Potion:"potioncore:flight"}')] },

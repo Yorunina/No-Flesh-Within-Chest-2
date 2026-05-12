@@ -21,6 +21,12 @@ ServerEvents.tags('item', event => {
     event.add('maa:immune/cactus', [])
     event.add('chestcavity:cannot_remove', [])
 
+    event.add('kubejs:human_meat', ['kubejs:appendix', 'kubejs:intestine', 'kubejs:heart', 'kubejs:kidney', 'kubejs:liver', 'kubejs:lung', 'kubejs:muscle', 'kubejs:spleen', 'kubejs:stomach'])
+    event.add('kubejs:animal_meat', ['kubejs:animal_appendix', 'kubejs:animal_intestine', 'kubejs:animal_heart', 'kubejs:animal_kidney', 'kubejs:animal_liver', 'kubejs:animal_lung', 'kubejs:animal_muscle', 'kubejs:animal_spleen', 'kubejs:animal_stomach', 'kubejs:rumen', 'kubejs:pig_stomach', 'kubejs:rat_ear', 'kubejs:wilden_heart', 'kubejs:chimera_heart', 'kubejs:cassowary_muscle'])
+    event.add('kubejs:dragon_meat', ['kubejs:dragon_blood_heart', 'kubejs:dragon_blood_liver', 'kubejs:dragon_blood_lung', 'kubejs:dragon_blood_muscle', 'kubejs:dragon_blood_intestine', 'kubejs:dragon_blood_stomach'])
+    event.add('kubejs:insect_meat', ['kubejs:insect_stomach', 'kubejs:insect_heart', 'kubejs:insect_caeca', 'kubejs:insect_lung', 'kubejs:insect_intestine', 'kubejs:insect_muscle'])
+    event.add('kubejs:nether_meat', ['kubejs:fireproof_appendix', 'kubejs:fireproof_intestine', 'kubejs:fireproof_heart', 'kubejs:fireproof_kidney', 'kubejs:fireproof_liver', 'kubejs:fireproof_lung', 'kubejs:fireproof_muscle', 'kubejs:fireproof_spleen', 'kubejs:fireproof_stomach', 'kubejs:hoglin_rumen'])
+
     event.add('kubejs:nature', ['cornucopia:cornucopia'])
     event.add('minecraft:music_discs', ['kubejs:faded_disc'])
 })

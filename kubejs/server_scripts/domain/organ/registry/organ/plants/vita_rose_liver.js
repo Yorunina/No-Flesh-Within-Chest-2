@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:vita_rose_liver')
     .addScore('chestcavity:detoxification', 1.5)
     .addScore('chestcavity:filtration', 0.5)
-    .addScore('chestcavity:photosynthesis', 0.5)
+    .addScore('kubejs:photosynthesis', 0.5)
 
 /**
  * @param {OrganEventCustomData} customData

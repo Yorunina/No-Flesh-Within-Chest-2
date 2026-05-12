@@ -27,6 +27,13 @@ function SetPlayerNoFireDamage(player) {
     player.sendData('fire_render', data)
 }
 
+/**
+ * 是否为完全充能的攻击
+ * @param {Internal.ServerPlayer} player 
+ */
+function IsFullChargeAttck(player) {
+    return player.getAttackStrengthScale(0) < 0.9
+}
 
 /**
  * 

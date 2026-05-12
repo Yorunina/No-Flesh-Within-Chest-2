@@ -572,3 +572,13 @@ function CanMobSeeBlock(mob, targetPos) {
     let hitResult = level.clip(clipContext)
     return hitResult instanceof $BlockHitResult && hitResult.getBlockPos().equals(targetPos)
 }
+
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Internal.Entity} entity 
+ * @returns 
+ */
+function IsSunBurn(level, entity) {
+    return level.isDay() && entity.getLightLevelDependentMagicValue() && !entity.isInWaterOrBubble() && !entity.isInPowderSnow && !entity.wasInPowderSnow && level.canSeeSky(entity.blockPosition())
+}

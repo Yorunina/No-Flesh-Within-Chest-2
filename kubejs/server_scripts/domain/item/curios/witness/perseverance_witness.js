@@ -12,15 +12,16 @@ function PerseveranceWitnessCuriosStrategy(customData, event, stackHandler, curi
     if (!curiosItem.hasNBT()) curiosItem.setNbt(new $CompoundTag())
     const nbt = curiosItem.getNbt()
     let curDamage = nbt.getLong('damageAmount') + event.amount
-    let slotMaxSize = 0
-    slotMaxSize = Math.floor(curDamage / PerseveranceWitnessEachSlotSizeDamage)
-    curDamage = curDamage % PerseveranceWitnessEachSlotSizeDamage
-    if (slotMaxSize != 0 && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
-        let dimNet = DimensionsNet.getPrimaryNetFromPlayer(event.source.actual)
-        if (dimNet) {
-            let unifiedStorage = dimNet.getUnifiedStorage()
-            unifiedStorage.setSlotMaxSize(unifiedStorage.slotMaxSize + slotMaxSize)
-            nbt.putInt('slotMaxSize', nbt.getInt('slotMaxSize') + slotMaxSize)
+    if (curDamage > 0) {
+        let slotMaxSize = Math.floor(curDamage / PerseveranceWitnessEachSlotSizeDamage)
+        curDamage = curDamage % PerseveranceWitnessEachSlotSizeDamage
+        if (slotMaxSize != 0 && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
+            let dimNet = DimensionsNet.getPrimaryNetFromPlayer(event.source.actual)
+            if (dimNet) {
+                let unifiedStorage = dimNet.getUnifiedStorage()
+                unifiedStorage.setSlotMaxSize(unifiedStorage.slotMaxSize + slotMaxSize)
+                nbt.putInt('slotMaxSize', nbt.getInt('slotMaxSize') + slotMaxSize)
+            }
         }
     }
     nbt.putLong('damageAmount', curDamage)

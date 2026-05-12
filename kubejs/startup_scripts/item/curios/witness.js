@@ -27,4 +27,13 @@ StartupEvents.registry('minecraft:item', event => {
             .canUnequip(() => true)
         )
         .tag('curios:witness')
+
+    event.create('kubejs:knowledge_witness', 'basic')
+        .texture('kubejs:item/curios/knowledge_witness')
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+        )
+        .tag('curios:witness')
 })

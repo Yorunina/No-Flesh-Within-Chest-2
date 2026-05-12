@@ -19,8 +19,8 @@ patchouli_data.json
 /resourcepacks/
 rhino.local.properties
 /saves/
-/schematics/*.nbt
-/schematics/uploaded
+/schematics/uploaded/*
+!/schematics/uploaded/prefab
 !/schematics/schematic.*.nbt
 /screenshots/
 /servers*

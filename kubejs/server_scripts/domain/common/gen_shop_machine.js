@@ -14,7 +14,7 @@ BlockEvents.rightClicked(event => {
     const state = block.blockState
     if (!(state.block instanceof $TraderBlockBase)) return
     // 逻辑仅在商店维度生效
-    // if (level.dimension != 'infinity:room') return
+    if (level.dimension != 'infinity:room') return
 
     /**@type {Internal.TraderBlockEntity} */
     let coreBlockEntity = block.entity

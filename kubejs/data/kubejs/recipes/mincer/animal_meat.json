@@ -1,0 +1,11 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "tag": "kubejs:animal_meat"
+  },
+  "recipe_type": "MEAT",
+  "result": {
+    "item": "kubejs:animal_meat_filling",
+    "count": 1
+  }
+}

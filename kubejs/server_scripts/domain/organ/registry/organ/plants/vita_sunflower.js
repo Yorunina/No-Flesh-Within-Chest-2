@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:vita_sunflower')
     .addScore('chestcavity:health', 1.5)
-    .addScore('chestcavity:photosynthesis', 1)
+    .addScore('kubejs:photosynthesis', 1)
 
 
 /**

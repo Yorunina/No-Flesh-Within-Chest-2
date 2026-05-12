@@ -1,0 +1,25 @@
+{
+  "type": "farm_and_charm:roaster",
+  "ingredients": [
+    {
+      "item": "kubejs:human_meat_filling"
+    },
+    {
+      "item": "kubejs:human_meat_filling"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "tag": "farm_and_charm:flour"
+    }
+  ],
+  "container": {
+    "item": "kubejs:sausage_casing"
+  },
+  "result": {
+    "item": "kubejs:human_meat_sausage",
+    "count": 1
+  },
+  "requiresLearning": false
+}

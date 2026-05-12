@@ -14,10 +14,11 @@ function BraveryWitnessCuriosStrategy(customData, event, stackHandler, curiosIte
     const player = event.source.actual
     const nbt = curiosItem.getNbt()
     let curDamage = nbt.getLong('damageAmount') + event.amount
-    let itemCounts = 0
-    itemCounts = Math.floor(curDamage / BraveryWitnessEachItemDamage)
-    curDamage = curDamage % BraveryWitnessEachItemDamage
-    player.give(Item.of('minecraft:netherite_scrap', itemCounts))
-    nbt.putInt('itemCounts', nbt.getInt('itemCounts') + itemCounts)
+    if (curDamage > 0) {
+        let itemCounts = Math.floor(curDamage / BraveryWitnessEachItemDamage)
+        curDamage = curDamage % BraveryWitnessEachItemDamage
+        player.give(Item.of('minecraft:netherite_scrap', itemCounts))
+        nbt.putInt('itemCounts', nbt.getInt('itemCounts') + itemCounts)
+    }
     nbt.putLong('damageAmount', curDamage)
 }

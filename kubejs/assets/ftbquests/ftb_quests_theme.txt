@@ -1,7 +1,9 @@
 [*]
-background:  ftblibrary:textures/gui/background_squares.png; color=rgb(0, 0, 0); tile_size=64
+background: ftblibrary:textures/gui/background_squares.png; color=rgb(0, 0, 0); tile_size=64
 extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, light_rsquare
-check_icon:  ftbquests:textures/gui/complete.png
+check_icon: ftbquests:textures/gui/complete.png
+checkmark_task_active: ftbquests:textures/gui/checkmark_task_active.png
+checkmark_task_inactive: ftbquests:textures/gui/checkmark_task_inactive.png
 
 # 壹
 [0AC42F4BE2EDBB08]

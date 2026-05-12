@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:pitcher_stomach')
     .addScore('chestcavity:nutrition', 0.5)
     .addScore('chestcavity:digestion', 1.5)
-    .addScore('chestcavity:photosynthesis', 0.5)
+    .addScore('kubejs:photosynthesis', 0.5)
 
 /**
  * @param {OrganEventCustomData} customData
@@ -22,7 +22,6 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
         return
     }
     const curDamage = organItem.getDamageValue()
-
     if (curDamage == 1) CommonDingNotice(sourceEntity.level, sourceEntity)
     if (curDamage > 0) {
         organItem.setDamageValue(curDamage - 1)

@@ -60,7 +60,7 @@ function ExtractantMaterial1Strategy(customData, machine, levelIndicator, chaosI
     stackList.push(Item.of('minecraft:gold_ore', Math.max(Math.floor(levelIndicator * (1 + Math.random())), 1)))
     stackList.push(Item.of('minecraft:zinc_ore', Math.max(Math.floor(levelIndicator * (1 + Math.random())), 1)))
     if (levelIndicator >= 30) stackList.push(Item.of('minecraft:ancient_debris', Math.floor((levelIndicator - 30) * 0.5 + 1)))
-    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:dark_witness_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() + 2) * 0.1, 2))))
+    if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:dark_witness_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() * 2 + 1) * 0.1, 2))))
     customData.rewardList.push(new GatewayStackListReward(stackList))
 }
 

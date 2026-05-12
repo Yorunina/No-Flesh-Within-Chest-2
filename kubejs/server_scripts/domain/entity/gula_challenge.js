@@ -177,8 +177,7 @@ function GetGulaChallengeTargetDish(round) {
         case 5:
             return RandomGet(['candlelight:chicken_alfredo', 'candlelight:lasagne', 'bakery:sandwich', 'bakery:vegetable_sandwich', 'bakery:grilled_bacon_sandwich', 'bakery:grilled_salmon_sandwich', 'kaleidoscope_cookery:delicious_egg_fried_rice', 'kaleidoscope_cookery:egg_fried_rice', 'kaleidoscope_cookery:dumpling', 'kaleidoscope_cookery:baozi', 'candlelight:pasta_with_bolognese', 'candlelight:khinkali', 'kaleidoscope_cookery:shengjian_mantou', 'kaleidoscope_cookery:fried_spring_roll', 'kaleidoscope_cookery:samsa', 'kaleidoscope_cookery:stir_fried_beef_offal_rice_bowl', 'candlelight:pasta_with_lettuce', 'kaleidoscope_cookery:scramble_egg_with_tomatoes_rice_bowl', 'kaleidoscope_cookery:cooked_rice', 'kaleidoscope_cookery:sweet_and_sour_pork_rice_bowl', 'kaleidoscope_cookery:braised_beef_rice_bowl', 'kaleidoscope_cookery:braised_fish_rice_bowl', 'candlelight:omelet', 'kaleidoscope_cookery:suspicious_stir_fry_rice_bowl', 'kaleidoscope_cookery:spicy_chicken_rice_bowl', 'kaleidoscope_cookery:stir_fried_pork_with_peppers_rice_bowl', 'kaleidoscope_cookery:meat_pie', 'kaleidoscope_cookery:donkey_burger', 'kaleidoscope_cookery:fish_flavored_shredded_pork_rice_bowl'])
         case 6:
-            // todo 器官菜
-            return RandomGet(['chestcavity:rich_human_sausage', 'chestcavity:human_sausage', 'chestcavity:cooked_man_meat', 'chestcavity:cooked_human_organ_meat'])
+            return RandomGet(['kubejs:human_meat_sausage'])
         default:
             return Item.of('minecraft:cooked_beef')
     }
