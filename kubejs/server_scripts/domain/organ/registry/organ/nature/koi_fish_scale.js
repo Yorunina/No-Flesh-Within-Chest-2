@@ -56,7 +56,7 @@ function getKoiChestSpawnLocation(level, player) {
     let blockX = ranPosBlock.x % 16
     let blockZ = ranPosBlock.z % 16
 
-    let targetChunk = level.getChunk(chunkX, chunkZ, $ChunkStatus.SURFACE, true)
+    let targetChunk = level.getChunk(chunkX, chunkZ, 'surface', true)
     let y = Math.min(targetChunk.getHeight('motion_blocking', blockX, blockZ), 255)
     return new BlockPos(ranPosBlock.x, y - 4, ranPosBlock.z)
 }

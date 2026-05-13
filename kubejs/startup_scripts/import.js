@@ -19,7 +19,6 @@ const $CommonUtil = Java.loadClass('net.tigereye.chestcavity.util.CommonUtil')
 const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.IntegerProperty')
 const $Integer = Java.loadClass('java.lang.Integer')
 const $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance')
-const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
 const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
 
 const $FireBomb = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magma_ball.FireBomb')

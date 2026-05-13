@@ -1,7 +1,7 @@
 // priority: 3000
 /**
  * @param {number} num 
- * @returns 
+ * @returns
  */
 function SetDaySpeed(num) {
     $HourglassConfig.SERVER_CONFIG.daySpeed.set(num)
@@ -63,7 +63,7 @@ function GetChunkFromMap(level, chunkMap, pos) {
     let chunkKey = chunkX + ',' + chunkZ
     let chunkAccess = chunkMap[chunkKey]
     if (!chunkAccess) {
-        chunkAccess = level.getChunk(chunkX, chunkZ, $ChunkStatus.FULL, true)
+        chunkAccess = level.getChunk(chunkX, chunkZ, 'full', true)
         chunkMap[chunkKey] = chunkAccess
     }
     return chunkAccess

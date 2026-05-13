@@ -36,6 +36,7 @@ RegisterPortalItem2DimId('minecraft:dragon_breath', 'infinity:missingno')
 RegisterPortalItem2DimId('minecraft:shroomlight', 'infinity:cavern')
 RegisterPortalItem2DimId('lightmanscurrency:coin_gold', 'infinity:room')
 RegisterPortalItem2DimId('lightmanscurrency:coin_diamond', 'kubejs:oath')
+RegisterPortalItem2DimId('lightmanscurrency:coin_iron', 'infinity:darkest_flat')
 
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.entity

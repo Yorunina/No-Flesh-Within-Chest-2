@@ -122,7 +122,9 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:silverfish_gland').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/silverfish_gland')
 
-    event.create('kubejs:slime_colloid').food(food => food.hunger(2).saturation(2)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/slime_colloid')
+    event.create('kubejs:slime_colloid').food(food => food.hunger(2).saturation(1)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/slime_colloid')
+
+    event.create('kubejs:sulfur_cube_colloid').food(food => food.hunger(2).saturation(1)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/sulfur_cube_colloid')
 
     event.create('kubejs:pumpkin_shooter').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pumpkin_shooter')
 

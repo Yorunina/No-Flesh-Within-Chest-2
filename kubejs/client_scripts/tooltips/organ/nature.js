@@ -333,6 +333,11 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:silverfish_gland')
     .addAlt(Text.translatable('tooltips.kubejs.silverfish_gland.alt.1'))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:sulfur_cube_colloid')
+    .addDefault(Text.translatable('tooltips.kubejs.sulfur_cube_colloid.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.sulfur_cube_colloid.alt.1'))
+)
+
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:slime_colloid')
     .addDefault(Text.translatable('tooltips.kubejs.slime_colloid.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.slime_colloid.alt.1'))

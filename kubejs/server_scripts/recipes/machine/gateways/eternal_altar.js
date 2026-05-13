@@ -103,8 +103,9 @@ function eternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicat
     const data = machine.getData()
     if (!data) return rewardList
     // 应用LevelModifier
+    let levelModifier = 0
     if (data.contains('levelModifier')) {
-        let levelModifier = data.getFloat('levelModifier')
+        levelModifier = data.getFloat('levelModifier')
         data.remove('levelModifier')
         rewardList.push(new GatewayFunctionReward((ctx) => {
             let targetLevel = Clamp(levelIndicator + levelModifier, 0, 60)

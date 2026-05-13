@@ -7,7 +7,6 @@ const $BlockStatePredicate = Java.loadClass('dev.latvian.mods.kubejs.block.state
 const $ChunkPos = Java.loadClass('net.minecraft.world.level.ChunkPos')
 const $Mirror = Java.loadClass('net.minecraft.world.level.block.Mirror')
 const $Rotation = Java.loadClass('net.minecraft.world.level.block.Rotation')
-const $ChunkStatus = Java.loadClass('net.minecraft.world.level.chunk.ChunkStatus')
 const $PalettedContainer = Java.loadClass('net.minecraft.world.level.chunk.PalettedContainer')
 const $StructureMode = Java.loadClass('net.minecraft.world.level.block.state.properties.StructureMode')
 const $MobEffects = Java.loadClass('net.minecraft.world.effect.MobEffects')
@@ -39,9 +38,8 @@ const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.C
 
 const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
 
-const $MobSpawnType = Java.loadClass('net.minecraft.world.entity.MobSpawnType')
-
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
+const $InfestedBlock = Java.loadClass('net.minecraft.world.level.block.InfestedBlock')
 
 const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
 const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal')

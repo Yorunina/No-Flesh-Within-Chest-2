@@ -50,7 +50,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 for (let i = 0; i < 4; i++) {
                     let undead = new $SummonedZombie(level, entity, true)
 
-                    undead.finalizeSpawn(level, level.getCurrentDifficultyAt(undead.getOnPos()), $MobSpawnType.MOB_SUMMONED, null, null)
+                    undead.finalizeSpawn(level, level.getCurrentDifficultyAt(undead.getOnPos()), 'mob_summoned', null, null)
                     undead.setItemSlot('chest', undeadChestArmor.enchant('minecraft:binding_curse', 1))
                     undead.setItemSlot('feet', undeadFeetArmor.enchant('minecraft:binding_curse', 1))
                     undead.setItemSlot('head', undeadHeadArmor.enchant('minecraft:binding_curse', 1))

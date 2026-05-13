@@ -36,7 +36,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:mashed_potato_pancreas').maxStackSize(1).food(food => food.hunger(4).saturation(1)).texture('kubejs:item/organs/food/mashed_potato_pancreas').tag('kubejs:food').tag('kubejs:pancreas')
 
-    event.create('kubejs:tasty_gland').maxStackSize(1).food(food => food.hunger(3).saturation(1)).texture('kubejs:item/food/tasty_gland').tag('kubejs:food')
+    event.create('kubejs:tasty_gland').maxStackSize(1).food(food => food.hunger(3).saturation(1)).texture('kubejs:item/organs/food/tasty_gland').tag('kubejs:food')
 
     event.create('kubejs:void_stomach_pouch').maxStackSize(1).texture('kubejs:item/organs/food/void_stomach_pouch').maxDamage(60).tag('kubejs:food').tag('kubejs:stomach').tag('chestcavity:cannot_remove')
 })

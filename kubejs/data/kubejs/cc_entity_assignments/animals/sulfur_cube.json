@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/sulfur_cube.json",
+  "entities": [
+    "minecraft:sulfur_cube"
+  ]
+}

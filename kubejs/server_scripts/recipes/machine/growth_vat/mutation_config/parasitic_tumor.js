@@ -5,7 +5,6 @@ const ParasiticTumorMutationConfigModel = new TumorMutationConfigModel()
     })
     .setResult((machine, fluid, item, slotId, organData) => {
         let tumorNbt = new $CompoundTag()
-        organData.putFloat('chestcavity:health', Math.abs(organData.getFloat('chestcavity:health')))
         let targetOrganData = new $CompoundTag()
         let keys = RandomGetN(organData.allKeys.toArray(), 1)
         keys.forEach(key => {

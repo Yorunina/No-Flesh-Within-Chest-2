@@ -1,0 +1,12 @@
+{
+  "type": "kaleidoscope_cookery:chopping_board",
+  "cut_count": 4,
+  "ingredient": {
+    "item": "kubejs:rotten_intestine"
+  },
+  "model_id": "kubejs:rotten_intestine",
+  "result": {
+    "count": 4,
+    "item": "kubejs:sausage_casing"
+  }
+}
