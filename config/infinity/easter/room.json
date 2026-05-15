@@ -7,19 +7,17 @@
       "biome": "infinity:content"
     },
     "structure_paths": [
-      "kubejs:room/shop_0",
       "kubejs:room/shop_1",
       "kubejs:room/shop_2",
       "kubejs:room/shop_3",
       "kubejs:room/shop_4",
-      "kubejs:room/shop_5",
       "kubejs:room/shop_6",
       "kubejs:room/shop_7",
       "kubejs:room/shop_8",
-      "kubejs:room/shop_9"
+      "kubejs:room/shop_9",
+      "kubejs:room/shop_10"
     ],
     "weights": [
-      1,
       1,
       1,
       1,

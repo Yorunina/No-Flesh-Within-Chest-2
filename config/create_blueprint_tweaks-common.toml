@@ -1,0 +1,14 @@
+#When enabled, allow to use item's nbt as settings. Nbt settings will override global settings.
+#You can give item following nbts:
+#canSurvivalPrint: true/false
+#survivalPrintConsume: true/false
+#For example, if you want blueprints created by players through the blueprint table to not be printed directly,
+#and only the blueprints you give them through special means (such as FTB quests) to be printable,
+#you can set nbtMode = true, canSurvivalPrint = false, and survivalPrintConsume = true in this configuration file.
+#With these settings, blueprints will not be printable by default unless you set canSurvivalPrint: true in the blueprint’s NBT.
+nbtMode = true
+#Whether blueprints can be printed directly in survival mode
+canSurvivalPrint = false
+#Whether blueprints will be consumed when printed in survival mode
+survivalPrintConsume = true
+

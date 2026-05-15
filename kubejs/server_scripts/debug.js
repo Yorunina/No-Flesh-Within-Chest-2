@@ -1,14 +1,11 @@
 // priority: 500
-// BlockEvents.rightClicked(event => {
-//     const player = event.player
-//     const block = event.block
-//     const state = block.getBlockState()
-//     let nbt = new $CompoundTag()
-//     let customTrade = new LightmansCustomTraderModel()
-//     customTrade.addTrade(new LightmansTradeModel().addItem(Item.of('minecraft:oak_sapling')))
-//     nbt.put('CustomTrader', customTrade.write())
-//     block.mergeEntityData(nbt)
-// })
+BlockEvents.rightClicked(event => {
+    const player = event.player
+    if (!player.getMainHandItem().is('stick')) return
+    const block = event.block
+    const state = block.getBlockState()
+    block.entity.persistentData.putString('genType', 'ore_common')
+})
 
 ItemEvents.rightClicked('stick', event => {
     const player = event.player
@@ -17,7 +14,6 @@ ItemEvents.rightClicked('stick', event => {
     const server = event.server
     player.tell(server.persistentData.getInt('isEternalWinter'))
     player.tell(MAAUtils.shouldSnowContinuously())
-    player.sendData('modify_moon', {})
     // player.give(Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[18,22,20],Deployed:0b,File:"苹果乐.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE"}'))
     // SetDaySpeed(1)
     // SetNightSpeed(1)

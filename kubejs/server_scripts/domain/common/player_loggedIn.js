@@ -5,7 +5,7 @@ PlayerEvents.loggedIn(event => {
     InitClientOrganSkill(player) // 同步客户端SkillWheel：刷新器官轮盘展示，避免切换存档客户端数据错误
     SyncQueuedData(player) // 队列消息同步：用于将服务端的data延后发送给client
     InitClientISSSpellData(player) // 同步客户端ISSSpellData：同步客户端的ISSSpellData，用于客户端的ISSSpellData初始化
-    SyncClientMoonEvent(player) // 同步客户端月亮显示：用于客户端的MoonEvent显示同步
+    // SyncClientMoonEvent(player) // 同步客户端月亮显示：用于客户端的MoonEvent显示同步
 })
 
 /**
