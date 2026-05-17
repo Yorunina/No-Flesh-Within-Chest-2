@@ -261,7 +261,7 @@
 		{
 			dependency: "5FCBCB78FDA46E87"
 			height: 7.0d
-			image: "kubejs:textures/gui/tasks/eternal_gateway/instrcution.png"
+			image: "kubejs:textures/gui/tasks/eternal_gateway/instruction.png"
 			rotation: 0.0d
 			width: 9.19d
 			x: 5.0d

@@ -457,3 +457,52 @@ RegisterSponsorGiftCode('2816174', (event) => {
     player.give(Item.of('minecraft:crossbow', "{Unbreakable:1b,display:{Name:'{\"text\":\"R99\"}'}}").enchant('minecraft:quick_charge', 5))
     player.give(GetPlayerHeadItem('LC_hc'))
 })
+RegisterSponsorGiftCode('114514', (event) => {
+    const player = event.player
+    player.give(Item.of('brewery:whiskey_lilitusinglemalt', `{display:{Name:'{\"text\":\"迎宾酒\"}',Lore:['{"text":"事一顿美味大餐啊（喜），其实事赤石鹤袅罢（悲）。吃完了有奖励，吃不完有惩罚","color":"gray"}']}}`))
+    player.give(Item.of('candlelight:pasta_with_bolognese', `{display:{Name:'{\"text\":\"新鲜意面\"}',Lore:['{"text":"事一顿美味大餐啊（喜），其实事赤石鹤袅罢（悲）。吃完了有奖励，吃不完有惩罚","color":"gray"}']}}`))
+    player.give(Item.of('bakery:pudding', `{display:{Name:'{\"text\":\"脱出噗叮\"}',Lore:['{"text":"事一顿美味大餐啊（喜），其实事赤石鹤袅罢（悲）。吃完了有奖励，吃不完有惩罚","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('NeroFes'))
+})
+RegisterSponsorGiftCode('灾厄殁王', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:totem_of_undying', "{display:{Name:'{\"text\":\"灵魂图腾\"}'}}"))
+    player.give(GetPlayerHeadItem('SatoYEMING'))
+})
+RegisterSponsorGiftCode('维什戴尔', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:baked_potato', 64))
+    player.give(Item.of('create:potato_cannon', `{Unbreakable:1b,display:{Name:'{\"text\":\"祖宗发射器\"}',Lore:['{"text":"爆裂黎明","color":"gray"}']}}`).enchant('minecraft:power', 15))
+    player.tell('宇～宙～大～扫～除～，开始喽～')
+    player.give(GetPlayerHeadItem('Night_zxy'))
+})
+RegisterSponsorGiftCode('帅，太刀，帅', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:wooden_sword', `{Unbreakable:1b,display:{Name:'{\"text\":\"§c§o黑龙歼灭刀\"}',Lore:['{"text":"尊贵的黑龙歼灭刀大人已解放至至尊红刃","color":"red"}']}}`))
+    player.give(GetPlayerHeadItem('chouzi666'))
+})
+RegisterSponsorGiftCode('link start', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:netherite_sword', "{Damage:0,display:{Name:'{\"text\":\"阐释者\"}'}}").enchant('minecraft:vanishing_curse', 1).enchant('minecraft:unbreaking', 3))
+    player.give(Item.of('minecraft:diamond_sword', "{Damage:0,display:{Name:'{\"text\":\"逐暗者\"}'}}").enchant('minecraft:vanishing_curse', 1)).enchant('minecraft:sharpness', 5)
+    player.give(GetPlayerHeadItem('xioaye1145'))
+})
+RegisterSponsorGiftCode('这真的是个激活码，不骗你', (event) => {
+    const player = event.player
+    player.give(Item.of('biomancy:thorn_shield', `{display:{Name:'{\"text\":\"§c§o般若\"}',Lore:['{"text":"缪尔赛思：哎呀，现在反悔已经来不及了，呼呼~","color":"gray"}']},AttributeModifiers:[{Amount:5,AttributeName:"generic.max_health",Name:"1779044450516",Slot:"mainhand",UUID:[I;-126418,56042,2579,-112084]},{Amount:8,AttributeName:"generic.armor",Name:"1779044450516",Slot:"mainhand",UUID:[I;-126418,56342,2579,-112684]},{Amount:-0.35d,AttributeName:"generic.movement_speed",Name:"1779044450516",Operation:1,Slot:"mainhand",UUID:[I;-126418,56642,2579,-113284]},{Amount:5,AttributeName:"generic.max_health",Name:"1779044450516",Slot:"offhand",UUID:[I;-126418,56942,2579,-113884]},{Amount:8,AttributeName:"generic.armor",Name:"1779044450516",Slot:"offhand",UUID:[I;-126418,57242,2579,-114484]},{Amount:-0.35d,AttributeName:"generic.movement_speed",Name:"1779044450516",Slot:"offhand",Operation:1,UUID:[I;-126418,57542,2579,-115084]}],GeckoLibID:1L,"biomancy:nutrients":250}`).enchant('thorns', 9))
+    player.give(GetPlayerHeadItem('W_Dynamite'))
+})
+RegisterSponsorGiftCode('我在这里记录一位亲爱之人', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:diamond', "{display:{Name:'{\"text\":\"阿谢姆水晶\"}'}}"))
+    player.server.getPlayerList().players.forEach(pPlayer => {
+        if (pPlayer.equals(player)) return
+        pPlayer.teleportTo(player.level.dimension, player.x, 64, player.z, player.yaw, player.pitch)
+    })
+    player.give(GetPlayerHeadItem('KyaruNya'))
+})
+RegisterSponsorGiftCode('全村最好的开胸器', (event) => {
+    const player = event.player
+    player.give(Item.of('chestcavity:chest_opener', "{display:{Name:'{\"text\":\"全村最好的开胸器\"}'}}").enchant('chestcavity:safe_surgery', 1).enchant('chestcavity:painless_surgery', 1).enchant('chestcavity:advance_surgery', 5))
+    player.give(GetPlayerHeadItem('Darling000000'))
+})

@@ -34,3 +34,5 @@ const $AllGuiTextures = Java.loadClass('com.simibubi.create.foundation.gui.AllGu
 
 const $GuiStatIndicator = Java.loadClass('se.mickelus.tetra.gui.stats.bar.GuiStatIndicator')
 const $TooltipGetterInteger = Java.loadClass('se.mickelus.tetra.gui.stats.getter.TooltipGetterInteger')
+
+const $SpriteResourceLoader = Java.loadClass('net.minecraft.client.renderer.texture.atlas.SpriteResourceLoader')

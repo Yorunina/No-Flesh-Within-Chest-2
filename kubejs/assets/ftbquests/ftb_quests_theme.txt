@@ -1,5 +1,5 @@
 [*]
-background: ftblibrary:textures/gui/background_squares.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/background_squares.png; color=rgb(0, 0, 0); tile_size=64
 extra_quest_shapes: diamond, pentagon, hexagon, octagon, heart, gear, light_rsquare
 check_icon: ftbquests:textures/gui/complete.png
 checkmark_task_active: ftbquests:textures/gui/checkmark_task_active.png
@@ -7,39 +7,46 @@ checkmark_task_inactive: ftbquests:textures/gui/checkmark_task_inactive.png
 
 # 壹
 [0AC42F4BE2EDBB08]
-background: ftblibrary:textures/gui/chapter_1_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/chapter_1_background.png; color=rgb(0, 0, 0); tile_size=64
 quest_completed_color: #dba213
-dependency_line_texture: ftblibrary:textures/gui/dependency_1.png
+dependency_line_texture: kubejs:textures/gui/tasks/background/dependency_1.png
 dependency_line_completed_color: #ffffff
 
 # 贰
 [1046FBB0415A3CAA]
-background: ftblibrary:textures/gui/chapter_2_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/chapter_2_background.png; color=rgb(0, 0, 0); tile_size=64
 
 # 叁
 [3EE7EA42A2EC0893]
-background: ftblibrary:textures/gui/chapter_3_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/chapter_3_background.png; color=rgb(0, 0, 0); tile_size=64
 
 # 认知：胸腔
 [2218D095B234A44A]
-background: ftblibrary:textures/gui/chestcavity_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/chestcavity_background.png; color=rgb(0, 0, 0); tile_size=64
 
 # 认知：机械
 [425DDADD8D67FA09]
-background: ftblibrary:textures/gui/machine_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/machine_background.png; color=rgb(0, 0, 0); tile_size=64
 
 # 认知：魔源
 [3141E7EEF2FD1ABE]
-background: ftblibrary:textures/gui/magic_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/magic_background.png; color=rgb(0, 0, 0); tile_size=64
 
 # 认知：匠艺
 [450DBC0CF3ED321E]
-background: ftblibrary:textures/gui/tetra_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/tetra_background.png; color=rgb(0, 0, 0); tile_size=64
 
 # 引
 [167CD65AF2F0E691]
-background: ftblibrary:textures/gui/prologue_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/prologue_background.png; color=rgb(0, 0, 0); tile_size=64
 
 # 赞助
 [7B3419A1727C0C5A]
-background: ftblibrary:textures/gui/sponsor_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/background/sponsor_background.png; color=rgb(0, 0, 0); tile_size=64
+
+# ???
+[7EF0D1F3575F9472]
+background: {"id":"animation","icons":["kubejs:textures/gui/tasks/background/true_end_1/bg_0.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_1.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_2.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_3.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_4.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_5.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_6.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_7.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_8.png; color=rgb(0, 0, 0); tile_size=256","kubejs:textures/gui/tasks/background/true_end_1/bg_9.png; color=rgb(0, 0, 0); tile_size=256"],"frame_length":200}
+quest_completed_color: #dba213
+dependency_line_texture: kubejs:textures/gui/tasks/background/dependency_1.png
+dependency_line_completed_color: #ffffff

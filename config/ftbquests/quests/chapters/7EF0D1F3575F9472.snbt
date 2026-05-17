@@ -1,12 +1,88 @@
 {
 	autofocus_id: "38306E83FF2C4FA3"
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
+	default_quest_shape: "light_rsquare"
 	filename: "7EF0D1F3575F9472"
 	group: ""
 	hide_quest_until_deps_complete: true
 	icon: "supplementaries:candle_holder"
 	id: "7EF0D1F3575F9472"
+	images: [
+		{
+			dependency: "06D86C160EFEE66B"
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/prologue/mc.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: -29.0d
+		}
+		{
+			dependency: "06D86C160EFEE66B"
+			height: 17.08d
+			image: "kubejs:textures/gui/tasks/true_end_1/light.png"
+			order: -1
+			rotation: 0.0d
+			width: 1.8d
+			x: 0.0d
+			y: -36.8d
+		}
+		{
+			dependency: "06D86C160EFEE66B"
+			height: 2.8d
+			image: "kubejs:textures/gui/tasks/true_end_1/block_aura.png"
+			order: -1
+			rotation: 0.0d
+			width: 2.8d
+			x: 0.0d
+			y: -29.0d
+		}
+		{
+			dependency: "1B332C3841A7CC3C"
+			height: 2.4d
+			image: "kubejs:textures/gui/tasks/true_end_1/frame_aura.png"
+			rotation: 0.0d
+			width: 2.4d
+			x: 0.0d
+			y: -26.0d
+		}
+		{
+			dependency: "1B332C3841A7CC3C"
+			height: 4.0d
+			image: "kubejs:textures/gui/tasks/true_end_1/ponits.png"
+			rotation: 0.0d
+			width: 2.09d
+			x: 0.0d
+			y: -23.7d
+		}
+		{
+			dependency: "5695B074C95D2D17"
+			height: 2.4d
+			image: "kubejs:textures/gui/tasks/true_end_1/frame_aura.png"
+			rotation: 0.0d
+			width: 2.4d
+			x: 0.0d
+			y: -21.5d
+		}
+		{
+			dependency: "06D86C160EFEE66B"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/true_end_1/constellation_1.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -11.0d
+			y: -37.0d
+		}
+		{
+			dependency: "06D86C160EFEE66B"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/true_end_1/constellation_2.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 10.0d
+			y: -39.5d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
@@ -45,7 +121,7 @@
 		{
 			dependencies: ["38306E83FF2C4FA3"]
 			description: [
-				"如引文所说，我的任务是负责所有任务的引导，其中包含了任务系统本身的使用。"
+				"如引言所说，我的任务是负责所有任务的引导，其中包含了任务系统本身的使用。"
 				""
 				"本任务要求您&6使用原木在合成栏中&r，将其分解为四个木板，而后将其制成&6工作台&r。"
 				""
@@ -203,7 +279,7 @@
 		}
 		{
 			dependencies: ["2B5EE534394F9950"]
-			description: ["到这一步，您可以使用您自己的镐子或者我送给您的镐子，在世界上获取到&6钻石&r。获取钻石的流程也可能并非来源于采掘，在自然探索时也有很大的可能能够得到钻石。"]
+			description: ["到这一步，您可以使用您自己的镐子或者我送给您的镐子，在世界上获取到&6钻石&r。获取钻石的流程也可能并非来源于采掘，在自然探索时也有很大可能得到钻石。"]
 			id: "540807B4153D8E77"
 			rewards: [{
 				id: "257841ABCA65BC1A"
@@ -429,6 +505,15 @@
 				""
 				"非常感谢！"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/true_end_1/i_say.png"
+				}
+			}
 			id: "1B332C3841A7CC3C"
 			rewards: [
 				{
@@ -444,6 +529,8 @@
 					type: "titles:title"
 				}
 			]
+			shape: "none"
+			size: 2.0d
 			subtitle: "还请您留下宝贵意见"
 			tasks: [{
 				count: 1L
@@ -455,7 +542,7 @@
 			}]
 			title: "还有一件事！"
 			x: 0.0d
-			y: -19.5d
+			y: -21.5d
 		}
 		{
 			dependencies: ["1B332C3841A7CC3C"]
@@ -472,12 +559,23 @@
 				""
 				"&6请您为我庆贺吧！我们的冒险故事，永远都不会迎来结局！&r"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/true_end_1/i_say.png"
+				}
+			}
 			id: "06D86C160EFEE66B"
 			rewards: [{
 				id: "2088D6938EC967C3"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "愚钝如我，方才浅知故事之含义"
 			tasks: [{
 				count: 1L
@@ -489,16 +587,27 @@
 			}]
 			title: "&6等下！故事还在继续！&r"
 			x: 0.0d
-			y: -21.0d
+			y: -26.0d
 		}
 		{
 			dependencies: ["06D86C160EFEE66B"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					IconJson: "{\"id\":\"animation\",\"icons\":[\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_0.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_1.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_2.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_3.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_4.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_5.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_6.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_7.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_8.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_9.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_10.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_11.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_12.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_13.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_14.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_15.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_16.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_17.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_18.png\",\"kubejs:textures/gui/tasks/true_end_1/loading_icon/icon_19.png\"],\"frame_length\":500}"
+				}
+			}
 			id: "37D3DEA4E9074D5E"
 			rewards: [{
 				id: "06381B1A521282DF"
 				item: "kubejs:story_proof"
 				type: "item"
 			}]
+			shape: "none"
+			size: 2.0d
 			subtitle: "永无终止的故事"
 			tasks: [{
 				icon: "supplementaries:hourglass"
@@ -508,7 +617,7 @@
 			}]
 			title: "这一次，由我来续写新的故事"
 			x: 0.0d
-			y: -22.5d
+			y: -33.0d
 		}
 	]
 	title: "？？？"
