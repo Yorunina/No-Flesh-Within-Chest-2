@@ -10,7 +10,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:dragon_blood_intestine').maxStackSize(1).food(food => food.hunger(2).saturation(1).effect('minecraft:regeneration', 600, 0, 1)).texture('kubejs:item/organs/ender/dragon_blood_intestine').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:intestine')
     event.create('kubejs:dragon_blood_stomach').maxStackSize(1).food(food => food.hunger(2).saturation(1).effect('minecraft:regeneration', 600, 0, 1)).texture('kubejs:item/organs/ender/dragon_blood_stomach').tag('kubejs:dragon').tag('kubejs:ender').tag('kubejs:stomach')
 
-    event.create('kubejs:ender_golem_line').maxDamage(10).maxStackSize(1).texture('kubejs:item/organs/ender/ender_golem_line').tag('kubejs:ender')
+    event.create('kubejs:ender_golem_line').maxStackSize(1).texture('kubejs:item/organs/ender/ender_golem_line').tag('kubejs:ender')
 
     event.create('kubejs:endermaptera_shell').maxStackSize(1).texture('kubejs:item/organs/ender/endermaptera_shell').tag('kubejs:ender')
 

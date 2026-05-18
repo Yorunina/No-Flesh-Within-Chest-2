@@ -271,6 +271,7 @@
 			click: "command:/ponder kubejs:eternal_altar"
 			dependency: "5FCBCB78FDA46E87"
 			height: 1.0d
+			hover: ["点击以思索"]
 			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -382,6 +383,8 @@
 				"随着祭坛阶级的升高，从门扉另一侧而来的&6生物属性&r和&6数量&r会显著增加，但相应的，门扉的&6物资携带能力也会有显著提升&r。"
 				""
 				"因此，请您合理规划祭坛的阶级水平，以保证您的战斗能力能够稳定处理从门扉另一侧而来的生物。"
+				""
+				"同时，我在旧的扫描记录中也发现了一个专门用于永恒门扉战斗的场地，其被称作&5永恒战斗场&r，也许您可以从&6商店维度中获取&r它。"
 			]
 			hide_until_deps_complete: true
 			id: "78BB4CF7005B2CD0"

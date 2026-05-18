@@ -14,7 +14,7 @@ BlockEvents.rightClicked(event => {
     const state = block.blockState
     if (!(state.block instanceof $TraderBlockBase)) return
     // 逻辑仅在商店维度生效
-    if (level.dimension != 'infinity:room') return
+    // if (level.dimension != 'infinity:room') return
 
     /**@type {Internal.TraderBlockEntity} */
     let coreBlockEntity = block.entity
@@ -313,6 +313,7 @@ RegistryShopItemTraderType('blueprint',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[45,36,45],Deployed:0b,File:"schematic.chocolate_cake_shop.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1000).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[57,4,57],Deployed:0b,File:"schematic.basic_platform.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1000).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[11,11,11],Deployed:0b,File:"schematic.small_grave.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[63,11,63],Deployed:0b,File:"schematic.eternal_battle_field.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
 )
 
 RegistryShopItemTraderType('graveyard',
@@ -337,4 +338,61 @@ RegistryShopItemTraderType('tetra',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:lubricant_dispenser')], 300), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:combustion_chamber')], 300), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('tetra:forged_workbench')], 300), 100)
+)
+
+RegistryShopItemTraderType('biomancy',
+    new WeightRandomModel()
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:acidic_egg')], 200), 200)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:mob_fang')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:mob_sinew')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:volatile_gland')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:toxin_gland')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:mob_gland')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:withered_mob_marrow')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:mob_marrow')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:mob_claw')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:nutrients')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:gem_fragments')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:mineral_fragment')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:elastic_fibers')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:bone_fragments')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:tough_fibers')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:flesh_bits')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:stone_powder')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:volatile_fluid')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:toxin_extract')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:withering_ooze')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:hormone_secretion')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:exotic_dust')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:living_flesh')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:regenerative_fluid')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:acid_extract')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:bile')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:bio_lumens')], 100), 30)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('biomancy:organic_matter')], 100), 30)
+)
+
+
+RegistryShopItemTraderType('organ',
+    new WeightRandomModel()
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:tasty_gland')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:endermite_gland')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:symbiocto_arm')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:leaf_insect_exoskeleton')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:dumbo_octopus_hat')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:ferret_tail')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:nightmare_core')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:jumping_spider_leg')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:ender_golem_line')], 200), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:heart')], 50), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:intestine')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:kidney')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:liver')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:appendix')], 10), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:lung')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:muscle')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:rib')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:spleen')], 20), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:stomach')], 50), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('kubejs:spine')], 50), 100)
 )
