@@ -22,7 +22,7 @@
                 "pointy_weapon": 1,
                 "breakable": 2
             },
-            "durability": 50,
+            "durability": 200,
             "extract": {
                 "primaryAttributes": {
                     "generic.attack_damage": 0.5
@@ -31,7 +31,7 @@
                     "generic.attack_speed": -0.5,
                     "generic.attack_damage": 1
                 },
-                "durability": 1,
+                "durability": 1.5,
                 "integrity": 0,
                 "magicCapacity": 1.5,
                 "glyph": {

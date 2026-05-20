@@ -8,5 +8,10 @@ BlockEvents.rightClicked('infinity:nether_portal', event => {
     let entity = level.getBlockEntity(pos)
     /**@type {ResourceLocation} */
     let dimStr = entity.getDimension()
-    item.setHoverName(dimStr.getPath())
+    if (dimStr.getPath().startsWith('generated_')) {
+        item.setHoverName(dimStr.getPath().replace('generated_', ''))
+        return
+    } else {
+        item.setHoverName(dimStr.getPath())
+    }
 })

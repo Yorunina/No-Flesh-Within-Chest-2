@@ -3,6 +3,7 @@ ServerEvents.tick(event => {
     const server = event.server
     if (server.tickCount % 20 != 0) return
     if (!AStages.serverHasStage(FTBFinalTimerStart, server)) return
+    if (AStages.serverHasStage(FTBFinalTimerPause, server)) return
     if (AStages.serverHasStage(FTBFinalIteration30, server)) return
     const level = server.getOverworld()
     const dayTime = level.getDayTime()
@@ -23,6 +24,7 @@ function FinalDayEvent(event) {
     const server = event.server
     // 阻止正常状态的影响和终局展示效果的影响
     server.playerList.getPlayers().forEach(player => {
+        player.getStats().add(global.STAT_FINAL_TIMER, 1)
         MAAUtils.onKubeTaskFinish('final_day_counter', player, (pTask, pPlayer, pTeamData) => {
             pTeamData.addProgress(pTask, 1)
         })
@@ -60,7 +62,6 @@ function FinalDayEvent(event) {
 
     if (AStages.serverHasStage(FTBFinalIteration15, server)) {
         let speedProp = Clamp(1 + 0.2 * (finalTimer - 15), 1, 400)
-
         SetDaySpeed(speedProp)
         SetNightSpeed(speedProp)
     }
@@ -82,8 +83,3 @@ function FinalDayEvent(event) {
     }
     
 }
-
-FTBQuestsEvents.customReward('time_going_1', event => {
-    const player = event.player
-    player.getStats().add(global.STAT_FINAL_TIMER, 1)
-})

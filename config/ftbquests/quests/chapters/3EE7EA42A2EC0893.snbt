@@ -292,13 +292,10 @@
 			}
 			id: "55DE4F49CDD42FDF"
 			rewards: [{
-				auto: "enabled"
 				icon: "minecraft:clock"
-				id: "6680F345D7F4605D"
-				ignore_reward_blocking: true
-				kubeId: "time_going_1"
+				id: "49EB885120B0534D"
 				title: "时间演进"
-				type: "maa:kube"
+				type: "custom"
 			}]
 			shape: "none"
 			subtitle: "以日为单位推进计时器"

@@ -3,8 +3,8 @@
 MAAEvents.ftbQuestCheckRepeatable('28B0B07A19295E57', event => {
     const teamData = event.teamData
     if (!teamData.isCompletedById('7531026821B67389')) return
-    teamData.clearCachedProgress()
-    teamData.markDirty()
+    MAAUtils.sendClientRepeatTaskCompleted(teamData, '28B0B07A19295E57')
+    MAAUtils.sendClientRepeatTaskClaimed(teamData, event.playerUUID, '6687F5A9BFD8425E')
     event.cancel()
 })
 
@@ -15,13 +15,13 @@ MAAEvents.ftbQuestCheckRepeatable('1A033D35372B167E', event => {
         let targetTask = MAAUtils.getTaskByTeamData(teamData, '3A1023B5092EC993')
         if (!targetTask) return
         teamData.addProgress(targetTask, 1)
-        teamData.clearCachedProgress()
-        teamData.markDirty()
+        MAAUtils.sendClientRepeatTaskCompleted(teamData, '1A033D35372B167E')
+        MAAUtils.sendClientRepeatTaskClaimed(teamData, event.playerUUID, '782E80E17A636A8A')
         event.cancel()
     }
     if (!teamData.isCompletedById('6EF16BD7804710C9')) return
-    teamData.clearCachedProgress()
-    teamData.markDirty()
+    MAAUtils.sendClientRepeatTaskCompleted(teamData, '1A033D35372B167E')
+    MAAUtils.sendClientRepeatTaskClaimed(teamData, event.playerUUID, '782E80E17A636A8A')
     event.cancel()
 })
 
@@ -29,13 +29,13 @@ InfinityEvents.timeBombResetDim(event => {
     const level = event.level
     const server = event.server
     switch (level.getDimension()) {
-        case 'infinity:89671254':
+        case 'infinity:generated_89671254':
             AStages.addStageToServer('ftb_reset_dim_89671254', server)
             break
-        case 'infinity:35466218':
+        case 'infinity:generated_35466218':
             AStages.addStageToServer('ftb_reset_dim_35466218', server)
             break
-        case 'infinity:19972456':
+        case 'infinity:generated_19972456':
             AStages.addStageToServer('ftb_reset_dim_19972456', server)
             break
     }

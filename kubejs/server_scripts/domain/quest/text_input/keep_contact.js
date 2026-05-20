@@ -29,7 +29,7 @@ function RegisterKeepContactStrategy(testFunc, applyFunc, priority) {
 RegisterKeepContactStrategy(
     () => true,
     (player, inputText, teamData, task) => {
-        if (inputText.includes('im') && inputText.includes('sponsor')) {
+        if (inputText.includes('i') && inputText.includes('sponsor')) {
             MAAUtils.onKubeTaskFinish('sponsor_task', player, (pTask, pPlayer, pTeamData) => {
                 pTeamData.addProgress(pTask, 1)
             })

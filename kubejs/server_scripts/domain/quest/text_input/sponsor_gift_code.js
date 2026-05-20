@@ -418,11 +418,6 @@ RegisterSponsorGiftCode('Join the helldiver', (event) => {
     player.give(Item.of('minecraft:tnt', 64, "{display:{Name:'{\"text\":\"飞鹰500kg炸药\"}'}}"))
     player.give(GetPlayerHeadItem('GodPathfinder'))
 })
-RegisterSponsorGiftCode('SAIKAI', (event) => {
-    const player = event.player
-    player.give(Item.of('minecraft:netherite_shovel', `{display:{Name:'{\"text\":\"神谕终端[双蛇杖]\"}',Lore:['{"text":"女儿啊...看来你忘记给我解冻了","color":"gray"}']}}`))
-    player.give(GetPlayerHeadItem('Tsuki_Kira'))
-})
 RegisterSponsorGiftCode('来点龙', (event) => {
     const player = event.player
     player.give(Item.of('kubejs:dragon_blood_heart'))
@@ -588,8 +583,9 @@ RegisterSponsorGiftCode('大机器在哪里？大机器又离我们而去。', (
 })
 RegisterSponsorGiftCode('AMa-10', (event) => {
     const player = event.player
-    player.give(Item.of('create:goggles', `{display:{Name:'{\"text\":\"灰质销钉\"}',Lore:['{"text":"我又该如何原谅你的背叛？ ——普瑞赛斯","color":"gray"}']}}`).enchant('minecraft:binding_curse', 1))
-    player.tell('我有多么失望。\n我又该如何原谅你的背叛？')
+    player.give(Item.of('create:goggles', `{hideEnchant:1b,display:{Name:'{\"text\":\"§c灰质销钉\"}',Lore:['{"text":"我又该如何原谅你的背叛？ ——普瑞赛斯","color":"gray"}']}}`).enchant('minecraft:binding_curse', 1))
+    player.tell(Text.of('我有多么失望。'))
+    player.tell(Text.red('我又该如何原谅你的背叛？'))
     player.give(GetPlayerHeadItem('BenzenPenxil'))
 })
 RegisterSponsorGiftCode('胖宝宝哈基米', (event) => {
@@ -597,7 +593,8 @@ RegisterSponsorGiftCode('胖宝宝哈基米', (event) => {
     const level = player.level
     /**@type {Internal.Cat} */
     let cat = level.createEntity('minecraft:cat')
-    cat.mergeNbt(`{variant:red,CustomName:'["小白手套"]',CustomNameVisible:1b,Health:114514,Attributes:[{Base:114514f},{Name:"generic.max_health",Base:114514f}],HandItems:[{id:crossbow,tag:{Charged:0b,Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:multishot",lvl:1s},{id:"minecraft:piercing",lvl:5s}],Unbreakable:1b,display:{Name:'{"text":"略猫区我和你们拼了"}'}},Count:1},{}],HandDropChances:[1f,0f]}`)
+    cat.setVariant('minecraft:red')
+    cat.mergeNbt(`{CustomName:'["小白手套"]',CustomNameVisible:1b,Health:114514,Attributes:[{Base:114514f},{Name:"generic.max_health",Base:114514f}],HandItems:[{id:crossbow,tag:{Charged:0b,Damage:0,Enchantments:[{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:multishot",lvl:1s},{id:"minecraft:piercing",lvl:5s}],Unbreakable:1b,display:{Name:'{"text":"略猫区我和你们拼了"}'}},Count:1},{}],HandDropChances:[1f,0f]}`)
     cat.setPos(player.position())
     cat.finalizeSpawn(level, level.getCurrentDifficultyAt(cat.getOnPos()), 'mob_summoned', null, null)
     level.addFreshEntity(cat)
@@ -626,4 +623,5 @@ RegisterSponsorGiftCode('可是萝莉鸟妈真的很棒哎', (event) => {
     level.addFreshEntity(lightningBolt)
     level.server.tell(Text.of(player.getName()).append('是个炼铜批！！！！！！！！！！'))
     player.give(GetPlayerHeadItem('37arknight'))
+    player.give(Item.of('minecraft:carved_pumpkin', '{AttributeModifiers:[{Amount:3,AttributeName:"generic.attack_damage",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54558,4318,-109116]},{Amount:-3,AttributeName:"generic.armor",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54858,4318,-109716]},{Amount:0.15d,AttributeName:"generic.attack_damage",Name:"1779221247370",Operation:1,Slot:"head",UUID:[I;-126420,55158,4318,-110316]}],Unbreakable:1,display:{Lore:[\'[{"text":"- 攻击等级+3，防御等级-3","italic":false,"color":"white"}]\',\'[{"text":"- 受到的单方面攻击伤害-25%","italic":false,"color":"white"}]\',\'[{"text":"- 基础攻击造成的伤害+15%","italic":false,"color":"white"}]\',\'[{"text":"...如果就这样放你离开，你大概永远也不会再回家吧。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"就算拦下你，让你留在这里，我也已经一无所剩了。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"不过......总比被空虚的悔意绞痛心脏要好，不是吗?","italic":false,"color":"dark_gray","strikethrough":true}]\'],Name:\'[{"text":"灼烧着的伤口","italic":false,"color":"red"}]\'}}').enchant('protection', 6))
 })

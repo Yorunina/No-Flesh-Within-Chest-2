@@ -41,6 +41,7 @@ RegisterPortalItem2DimId('lightmanscurrency:coin_diamond', 'kubejs:oath')
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.entity
     if (itemEntity.isOnPortalCooldown()) return
+    itemEntity.setPortalCooldown(20)
     /** @type {Internal.ItemStack} */
     const itemStack = itemEntity.getItem()
     const level = event.getLevel()
@@ -48,9 +49,12 @@ InfinityEvents.itemInPortal(event => {
     const itemId = String(itemStack.getId())
     const pos = event.getPos()
     if (itemStack.is('kubejs:key_to_infinity')) {
-        let nameString = 'infinity:random'
+        let nameString = 'random'
         if (itemStack.hasCustomHoverName()) {
             nameString = itemStack.getHoverName().getString()
+        }
+        if (!InfinityEasterizer.isEaster(nameString) && !nameString.startsWith('generated_')) {
+            nameString = 'generated_' + nameString
         }
         if (!nameString.startsWith('infinity:')) {
             nameString = 'infinity:'.concat(nameString.trim())

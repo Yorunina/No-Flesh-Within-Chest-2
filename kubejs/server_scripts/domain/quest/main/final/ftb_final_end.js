@@ -28,8 +28,9 @@ ServerEvents.tick(event => {
 
 MAAEvents.ftbQuestCheckRepeatable('55DE4F49CDD42FDF', event => {
     if (!AStages.serverHasStage(FTBFinalTimerPause, null)) return
-    teamData.clearCachedProgress()
-    teamData.markDirty()
+    const teamData = event.teamData
+    MAAUtils.sendClientRepeatTaskCompleted(teamData, '55DE4F49CDD42FDF')
+    MAAUtils.sendClientRepeatTaskClaimed(teamData, event.playerUUID, '49EB885120B0534D')
     event.cancel()
 })
 

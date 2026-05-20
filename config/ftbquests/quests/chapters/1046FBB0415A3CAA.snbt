@@ -102,7 +102,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["46E78442AD5DB22E"]
+			dependencies: ["051ABDFF508A5451"]
 			description: [
 				"尽管您可能没发现，但一些事情在这个世界中正在悄然发生。"
 				""
@@ -131,7 +131,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["46E78442AD5DB22E"]
+			dependencies: ["051ABDFF508A5451"]
 			description: [
 				"&6食物！好吃！&r"
 				""
@@ -231,7 +231,7 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["563D136C06E38A60"]
+			dependencies: ["4E805DA2B8D171E4"]
 			description: [
 				"&7** 经检测，常规维度被异常手段锁定。其锁定方法类似于中转站锁定方法，推测某事物间接调用维度锁定任务流程控制引发维度锁定情况。 **&r"
 				""
@@ -642,7 +642,7 @@
 			}]
 			subtitle: "进行维度重置"
 			tasks: [{
-				dimension: "infinity:19972456"
+				dimension: "infinity:generated_19972456"
 				icon: "infinity:f4"
 				id: "4086C65CF5DDCC9C"
 				title: "前往19972456维度"
@@ -663,7 +663,7 @@
 			}]
 			subtitle: "进行维度重置"
 			tasks: [{
-				dimension: "infinity:89671254"
+				dimension: "infinity:generated_89671254"
 				icon: "infinity:f4"
 				id: "699372F217301C4B"
 				title: "前往89671254维度"
@@ -684,7 +684,7 @@
 			}]
 			subtitle: "进行维度重置"
 			tasks: [{
-				dimension: "infinity:35466218"
+				dimension: "infinity:generated_35466218"
 				icon: "infinity:f4"
 				id: "71EB6F420C81956A"
 				title: "前往35466218维度"
@@ -1141,7 +1141,7 @@
 		{
 			dependencies: ["3605CD44FC0A6F8B"]
 			description: [
-				"请您在&6（30000,64,0）&r这个坐标周围16格范围内，随便朝某个方向拍照，并且将照片洗出。"
+				"请您在&6（5000,64,0）&r这个坐标周围16格范围内，随便朝某个方向拍照，并且将照片洗出。"
 				""
 				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的 数据模式。"
 			]
@@ -1159,10 +1159,10 @@
 					Count: 1
 					id: "maa:exposure_photo_pos"
 					tag: {
-						value: "30000,64,0,16"
+						value: "5000,64,0,16"
 					}
 				}
-				title: "一张(30000,64,0)位置附近的照片"
+				title: "一张(5000,64,0)位置附近的照片"
 				type: "item"
 			}]
 			title: "世界裂口张开之处"

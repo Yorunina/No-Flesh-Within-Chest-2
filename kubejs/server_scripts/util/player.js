@@ -57,3 +57,14 @@ function RecoverPlayerHungerAndSaturation(player, amount) {
     foodData.setSaturation(20)
     return amount - needSaturation
 }
+
+/**
+ * 
+ * @param {Internal.ServerPlayer} player 
+ * @param {Internal.ItemStack[]} itemList 
+ */
+function GivePlayerItemList(player, itemList) {
+    for (let item of itemList) {
+        player.give(item)
+    }
+}

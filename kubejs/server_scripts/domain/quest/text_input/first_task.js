@@ -13,4 +13,3 @@ MAAEvents.textInputTaskSubmit('first_task', (event) => {
         })
     }
 })
-
