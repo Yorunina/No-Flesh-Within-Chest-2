@@ -1,0 +1,31 @@
+{
+    "key": "resin_clump",
+    "category": "misc",
+    "primary": 3.2,
+    "secondary": 2,
+    "tertiary": 6.8,
+    "durability": 200,
+    "integrityCost": 3,
+    "integrityGain": 5,
+    "magicCapacity": 60,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "f7b126",
+        "texture": "fcd8af"
+    },
+    "textures": [
+        "mesh",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:resin_clump" ]
+    },
+    "improvements": {
+        "arrested": 0
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

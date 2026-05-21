@@ -162,3 +162,4 @@ const $ClipContextBlock = Java.loadClass('net.minecraft.world.level.ClipContext$
 const $ClipContextFluid = Java.loadClass('net.minecraft.world.level.ClipContext$Fluid')
 
 const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.void_tentacle.VoidTentacle')
+const $AsyncLocator = Java.loadClass('brightspark.asynclocator.AsyncLocator')

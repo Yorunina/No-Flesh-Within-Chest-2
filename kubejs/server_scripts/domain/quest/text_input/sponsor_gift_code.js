@@ -103,7 +103,7 @@ RegisterSponsorGiftCode('在启动了', (event) => {
 })
 RegisterSponsorGiftCode('早上好！骑士', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:slime_ball', "{display:{Name:'{\"text\":\"屏障梦胶囊\"}'}}").enchant('minecraft:protection', 5))
+    player.give(Item.of('minecraft:slime_ball', '{AttributeModifiers:[{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47228,233218,-94456]},{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,47528,233218,-95056]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47828,233218,-95656]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,48128,233218,-96256]}],HideFlags:2,display:{Lore:[\'[{"text":"Good morning! Rider!","italic":false,"color":"#4bb77c"}]\'],Name:\'[{"text":"Barrier","italic":false,"color":"#4bb77c"}]\'}}'))
     player.give(GetPlayerHeadItem('sjsxh125'))
 })
 RegisterSponsorGiftCode('偷盗者', (event) => {
@@ -184,6 +184,7 @@ RegisterSponsorGiftCode('这是什么机霸', (event) => {
 RegisterSponsorGiftCode('万物寂灭', (event) => {
     const player = event.player
     player.give(Item.of('minecraft:warden_spawn_egg'))
+    player.give(Item.of('kubejs:warden_core'))
     player.give(GetPlayerHeadItem('JiuYuXuan'))
 })
 RegisterSponsorGiftCode('爱上雷神', (event) => {
@@ -283,7 +284,7 @@ RegisterSponsorGiftCode('我去，不早说！', (event) => {
 })
 RegisterSponsorGiftCode('脆骨症启动', (event) => {
     const player = event.player
-    player.give(Item.of('create:creative_blaze_cake', 3))
+    player.give(Item.of('create:creative_blaze_cake', 9))
     player.give(GetPlayerHeadItem('wang9358'))
 })
 RegisterSponsorGiftCode('325799', (event) => {
@@ -525,7 +526,7 @@ RegisterSponsorGiftCode('1024', (event) => {
 })
 RegisterSponsorGiftCode('我不是带师', (event) => {
     const player = event.player
-    player.give(Item.of('create:wrench', '{AttributeModifiers:[{Amount:7.26f,AttributeName:"generic.luck",Name:"1779127623066",Slot:"mainhand",UUID:[I;-126419,101992,13849,-203984]}],Unbreakable:1,display:{Lore:[\'[{"text":"左旋，破坏齿轮排列逐渐崩坏的老旧律法。","italic":false,"color":"red"}]\',\'[{"text":"右旋，将崩坏的齿轮重新钉入秩序的轴心。","italic":false,"color":"aqua"}]\'],Name:\'[{"text":"带","italic":false,"color":"#ff808a"},{"text":"师","italic":false,"color":"#f28a96"},{"text":"的","italic":false,"color":"#e693a1"},{"text":"超","italic":false,"color":"#d99dad"},{"text":"极","italic":false,"color":"#cca6b9"},{"text":"无","italic":false,"color":"#c0b0c5"},{"text":"敌","italic":false,"color":"#b3b9d0"},{"text":"炫","italic":false,"color":"#a6c3dc"},{"text":"酷","italic":false,"color":"#99cce8"},{"text":"扳","italic":false,"color":"#8dd6f3"},{"text":"手","italic":false,"color":"#80dfff"}]\'}}'))
+    player.give(Item.of('create:wrench', '{AttributeModifiers:[{Amount:0.726f,AttributeName:"generic.luck",Name:"1779127623066",Slot:"mainhand",UUID:[I;-126419,101992,13849,-203984]}],Unbreakable:1,display:{Lore:[\'[{"text":"左旋，破坏齿轮排列逐渐崩坏的老旧律法。","italic":false,"color":"red"}]\',\'[{"text":"右旋，将崩坏的齿轮重新钉入秩序的轴心。","italic":false,"color":"aqua"}]\'],Name:\'[{"text":"带","italic":false,"color":"#ff808a"},{"text":"师","italic":false,"color":"#f28a96"},{"text":"的","italic":false,"color":"#e693a1"},{"text":"超","italic":false,"color":"#d99dad"},{"text":"极","italic":false,"color":"#cca6b9"},{"text":"无","italic":false,"color":"#c0b0c5"},{"text":"敌","italic":false,"color":"#b3b9d0"},{"text":"炫","italic":false,"color":"#a6c3dc"},{"text":"酷","italic":false,"color":"#99cce8"},{"text":"扳","italic":false,"color":"#8dd6f3"},{"text":"手","italic":false,"color":"#80dfff"}]\'}}'))
     player.give(GetPlayerHeadItem('MiKu22333'))
 })
 RegisterSponsorGiftCode('咕咕嘎嘎', (event) => {
@@ -632,7 +633,7 @@ RegisterSponsorGiftCode('冲击大王', (event) => {
 RegisterSponsorGiftCode('SAIKAI', (event) => {
     const player = event.player
     player.give(Item.of('minecraft:netherite_shovel', "{Damage:0,Unbreakable:1,display:{Lore:['[{\"text\":\"应该用叉勺···在下水道吃拼好饭时···\",\"italic\":false,\"color\":\"#B4684D\",\"underlined\":true}]','[{\"text\":\"女儿啊......看来你忘记帮我解冻了\",\"italic\":false,\"color\":\"dark_gray\",\"italic\":true}]'],Name:'[{\"text\":\"神谕终端[双蛇杖]\",\"italic\":false,\"color\":\"gold\"}]'}}").enchant('sharpness', 9))
-    player.give(Item.of('minecraft:paper', '{AttributeModifiers:[{Amount:7.99d,AttributeName:"generic.luck",Name:"1779224367042",Slot:"offhand",UUID:[I;-126420,15153,45311,-30306]}],display:{Lore:[\'[{"text":"致 Player，打开哔哩哔哩 YoruNina 的主页点击关注","italic":false,"color":"white"}]\',\'[{"text":"并在最近三个视频中三连并留下一句赞美","italic":false,"color":"white"}]\',\'[{"text":"后单曲循环 SAIKAI 325次。","italic":false,"color":"white"}]\'],Name:\'[{"text":"✿指令[纸条]","italic":false,"color":"blue"}]\'}}'))
+    player.give(Item.of('minecraft:paper', '{AttributeModifiers:[{Amount:2d,AttributeName:"generic.luck",Name:"1779224367042",Slot:"offhand",UUID:[I;-126420,15153,45311,-30306]}],display:{Lore:[\'[{"text":"致 Player，打开哔哩哔哩 YoruNina 的主页点击关注","italic":false,"color":"white"}]\',\'[{"text":"并在最近三个视频中三连并留下一句赞美","italic":false,"color":"white"}]\',\'[{"text":"后单曲循环 SAIKAI 325次。","italic":false,"color":"white"}]\'],Name:\'[{"text":"✿指令[纸条]","italic":false,"color":"blue"}]\'}}'))
     player.give(Item.of('minecraft:carved_pumpkin', '{AttributeModifiers:[{Amount:3,AttributeName:"generic.attack_damage",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54558,4318,-109116]},{Amount:-3,AttributeName:"generic.armor",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54858,4318,-109716]},{Amount:0.15d,AttributeName:"generic.attack_damage",Name:"1779221247370",Operation:1,Slot:"head",UUID:[I;-126420,55158,4318,-110316]}],Unbreakable:1,display:{Lore:[\'[{"text":"- 攻击等级+3，防御等级-3","italic":false,"color":"white"}]\',\'[{"text":"- 受到的单方面攻击伤害-25%","italic":false,"color":"white"}]\',\'[{"text":"- 基础攻击造成的伤害+15%","italic":false,"color":"white"}]\',\'[{"text":"...如果就这样放你离开，你大概永远也不会再回家吧。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"就算拦下你，让你留在这里，我也已经一无所剩了。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"不过......总比被空虚的悔意绞痛心脏要好，不是吗?","italic":false,"color":"dark_gray","strikethrough":true}]\'],Name:\'[{"text":"灼烧着的伤口","italic":false,"color":"red"}]\'}}').enchant('protection', 6))
     player.give(GetPlayerHeadItem('Tsuki_Kira'))
 })
@@ -645,4 +646,170 @@ RegisterSponsorGiftCode('一个人要坚强', (event) => {
     player.give(Item.of('minecraft:cake', `{display:{Lore:['{"text":"在重要的人走后，要学会自己去面对生活","color":"gray"}']}}`))
     player.tell(Text.of('少吃点奶油对身体不健康 - 最后的嘱托'))
     player.give(GetPlayerHeadItem('SilverWolfGG'))
+})
+RegisterSponsorGiftCode('谢谢品尝喵', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:golden_apple', 64))
+    player.give(Item.of('biomancy:primordial_cradle'))
+    player.tell(Text.of('感谢游玩喵'))
+    player.give(GetPlayerHeadItem('Xi_lan_Hua_'))
+})
+RegisterSponsorGiftCode('给你一只酱板鸭希望你能熬过这个冬天', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:iron_axe'))
+    player.give(Item.of('minecraft:oak_log'))
+    player.give(Item.of('minecraft:fox_spawn_egg'))
+    player.give(GetPlayerHeadItem('feastiful'))
+})
+RegisterSponsorGiftCode('中指永不遗忘', (event) => {
+    const player = event.player
+    player.give(Item.of('ars_nouveau:archmage_spell_book', `{display:{Name:'{\"text\":\"§c复仇账簿\"}',Lore:['{"text":"中指时刻铭记，永不遗忘。","color":"gray"}']}}`))
+    player.give(Item.of('minecraft:iron_sword', `{display:{Name:'{\"text\":\"§c莱万汀\"}',Lore:['{"text":"心不心的都用不上。只要咬紧牙关把至今刻下的所有纹身的力量都激发出来，就算没有心那样的技巧我也足够强大。","color":"gray"}']}}`).enchant('minecraft:fire_aspect', 10))
+    player.give(Item.of('minecraft:paper', `{display:{Name:'{\"text\":\"发廊的发型设计优惠券(五小时)\"}',Lore:['{"text":"我的理发啊啊啊券！！！","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('Elaina_XuXs'))
+})
+RegisterSponsorGiftCode('边缘世界特产', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('NowMoyu33'), 'kubejs:dragon_blood_heart', 'kubejs:dragon_blood_kidney', 'kubejs:dragon_blood_liver', 'kubejs:dragon_blood_lung'])
+})
+RegisterSponsorGiftCode('如果你是龙，也好', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('Wax5508'), 'minecraft:dragon_egg'])
+})
+RegisterSponsorGiftCode('情况真是急转直下啊', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('cai_yi_'), 'minecraft:totem_of_undying', 'minecraft:gold_block', Item.of('minecraft:bread', 13), Item.of('minecraft:stone_sword', '{Damage:0}').enchant('minecraft:smite', 5)])
+})
+RegisterSponsorGiftCode('这种事情也是会发生的', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:totem_of_undying', `{display:{Name:'{\"text\":\"我能硬抗空间斩！\"}',Lore:['{"text":"如果有这个的话...","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('Roze_CrossX'))
+})
+RegisterSponsorGiftCode('咱们再去砍棵树吧！', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:golden_axe', `{Unbreakable:1b,display:{Name:'{\"text\":\"露西斧\"}',Lore:['{"text":"嘿！砍些树吧！","color":"gray"}']}}`).enchant('minecraft:efficiency', 5))
+    player.give(GetPlayerHeadItem('RedBird0920'))
+})
+RegisterSponsorGiftCode('ciallo', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:enchanted_golden_apple', `{Unbreakable:1b,display:{Name:'{\"text\":\"柚子\"}'}}`))
+    player.give(Item.of('refurbished_furniture:television_remote', `{Unbreakable:1b,display:{Name:'{\"text\":\"宁宁起爆器\"}'}}`).enchant('minecraft:blast_protection', 4))
+    player.give(Item.of('supplementaries:faucet', `{Unbreakable:1b,display:{Name:'{\"text\":\"色情死神女的花洒\"}'}}`))
+    player.give(Item.of('minecraft:iron_sword', `{Unbreakable:1b,display:{Name:'{\"text\":\"丛雨丸\"}'}}`).enchant('minecraft:binding_curse', 1))
+    player.tell(Text.of('Ciallo~ (∠・ω< )⌒☆'))
+    player.give(GetPlayerHeadItem('yange258'))
+})
+RegisterSponsorGiftCode('Rezero', (event) => {
+    const player = event.player
+    player.runCommandSilent('title @a title [{"text":"死","color":"#87CEEB"},{"text":"亡","color":"#00BFFF"},{"text":"并","color":"#1E90FF"},{"text":"非","color":"#6495ED"},{"text":"结","color":"#4169E1"},{"text":"束","color":"#0000CD"}]')
+    player.give(Item.of('minecraft:totem_of_undying', "{HideFlags:1,display:{Lore:['[{\"text\":\"「\",\"color\":\"red\"},{\"text\":\" \",\"color\":\"gold\"},{\"text\":\"こ\",\"color\":\"yellow\"},{\"text\":\"こ\",\"color\":\"green\"},{\"text\":\"か\",\"color\":\"aqua\"},{\"text\":\"ら\",\"color\":\"blue\"},{\"text\":\"始\",\"color\":\"light_purple\"},{\"text\":\"め\",\"color\":\"red\"},{\"text\":\"よ\",\"color\":\"gold\"},{\"text\":\"う\",\"color\":\"yellow\"},{\"text\":\"…\",\"color\":\"green\"},{\"text\":\"…\",\"color\":\"aqua\"},{\"text\":\"い\",\"color\":\"blue\"},{\"text\":\"や\",\"color\":\"light_purple\"},{\"text\":\" \",\"color\":\"red\"},{\"text\":\"ゼ\",\"color\":\"gold\"},{\"text\":\"ロ\",\"color\":\"yellow\"},{\"text\":\"か\",\"color\":\"green\"},{\"text\":\"ら\",\"color\":\"aqua\"},{\"text\":\" \",\"color\":\"blue\"},{\"text\":\"」\",\"color\":\"light_purple\"}]'],Name:'[{\"text\":\"至\",\"color\":\"#FFD700\"},{\"text\":\"此\",\"color\":\"#FFC125\"},{\"text\":\"迎\",\"color\":\"#FFB347\"},{\"text\":\"临\",\"color\":\"#FFA500\"},{\"text\":\"新\",\"color\":\"#FF8C00\"},{\"text\":\"生\",\"color\":\"#FF6A00\"}]'}}").enchant('minecraft:mending', 1).enchant('minecraft:vanishing_curse', 1))
+    player.give(GetPlayerHeadItem('clks2719'))
+})
+RegisterSponsorGiftCode('下午茶时间', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [Item.of('create:bar_of_chocolate', 64), Item.of('create:sweet_roll', 64), Item.of('create:honeyed_apple', 64), 'create:builders_tea'])
+    player.tell(Text.of('下午茶时间到！甜到发齁！'))
+})
+RegisterSponsorGiftCode('哼唧哼唧', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:pig_spawn_egg', 17))
+    player.give(GetPlayerHeadItem('maoyukedama'))
+})
+RegisterSponsorGiftCode('钟鸣三次，赞美欧姆弥赛亚', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('Jeanne1314'), Item.of('create:potato_cannon', '{Damage:0}'), Item.of('create:copper_backtank', '{Air:900}'), Item.of('minecraft:sweet_berries', 16)])
+})
+RegisterSponsorGiftCode('一年里总有那么几天想玩MC', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:bread', 64))
+    player.give(Item.of('minecraft:golden_apple', 64))
+    player.give(GetPlayerHeadItem('lzxlzxlzx'))
+})
+RegisterSponsorGiftCode('镰刀真是太棒啦', (event) => {
+    const player = event.player
+    player.give(Item.of('biomancy:despoil_sickle', `{display:{Name:'{\"text\":\"应该用镰刀…像某人一般沿着空间斩裂\"}',Lore:['{"text":"镰刀……虽然难以理解，但见过苍蓝残响战斗的身姿之后，我就有感觉了。","color":"gray"}']}}`).enchant('minecraft:binding_curse', 1).enchant('minecraft:sharpness', 9).enchant('minecraft:unbreaking', 9))
+    player.give(Item.of('minecraft:potion', '{Potion:"minecraft:swiftness",display:{Name:\'{"text":"水蓝色黎明"}\'}}'))
+    player.give(GetPlayerHeadItem('konoXiluoda'))
+})
+RegisterSponsorGiftCode('fumofumo', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:name_tag', "{display:{Name:'{\"text\":\"fumo\"}'}}"))
+    player.give(Item.of('minecraft:anvil'))
+    player.tell(Text.of('你是什么fumo呢'))
+    player.give(GetPlayerHeadItem('fldlfumo'))
+})
+RegisterSponsorGiftCode('元素之力都由我掌控', (event) => {
+    const player = event.player
+    player.tell(Text.of('开始自我编织'))
+    GivePlayerItemList(player, [GetPlayerHeadItem('Youhane__ritsu'), Item.of('ars_nouveau:fire_essence'), Item.of('ars_nouveau:water_essence', 2), Item.of('ars_nouveau:air_essence', 3), Item.of('ars_nouveau:earth_essence', 4)])
+})
+RegisterSponsorGiftCode('超级地球是投注', (event) => {
+    const player = event.player
+    player.give(Item.of('kaleidoscope_cookery:cold_cut_ham_slices', "{display:{Name:'{\"text\":\"超级地球\"}'}}"))
+    player.tell(Text.of('我解放你大业的!!!'))
+    player.give(GetPlayerHeadItem('MinGuanTAOM'))
+})
+RegisterSponsorGiftCode('Space', (event) => {
+    const player = event.player
+    player.give(Item.of('kaleidoscope_cookery:slime_ball_meal', 64))
+    player.give(Item.of('create:encased_fan', 32))
+    player.teleportRelative(0, 3000, 0)
+    player.give(GetPlayerHeadItem('Mu_Hhang'))
+})
+RegisterSponsorGiftCode('原神启动', (event) => {
+    const player = event.player
+    player.give('minecraft:cobblestone')
+    player.give(GetPlayerHeadItem('suiyoubi54'))
+})
+RegisterSponsorGiftCode('我得重新集结部队', (event) => {
+    const player = event.player
+    player.give(Item.of('tetra:modular_double', `{Damage:0,EnchantmentMapping:{"minecraft:sharpness":"double/head_left"},HideFlags:3,RepairCost:0,Unbreakable:1b,display:{Name:\'{"text":"太阳能战斧"}\',Lore:['{"text":"拥抱战斗的荣耀","color":"gray"}']},"double/basic_axe_left_material":"basic_axe/diamond","double/basic_axe_right_material":"basic_axe/diamond","double/basic_handle_material":"basic_handle/oak","double/handle":"double/basic_handle","double/head_left":"double/basic_axe_left","double/head_left:arrested":0,"double/head_right":"double/basic_axe_right","double/head_right:arrested":0,honing_progress:440,id:"aa2e1cdf-0e6b-4fa5-bcf8-4e47fcba4595"}`).enchant('minecraft:sharpness', 5))
+    player.tell(Text.of('乳主份子！拿起太阳能战斧，去引导太阳轰炸！'))
+    player.give(GetPlayerHeadItem('F2AorGG'))
+})
+RegisterSponsorGiftCode('是这个乱世害了你', (event) => {
+    const player = event.player
+    player.give(Item.of('kaleidoscope_cookery:netherite_kitchen_knife', '{Unbreakable:1b,Damage:0,display:{Name:\'{"text":"仁之刀"}\'}}').enchant('minecraft:mending', 1).enchant('minecraft:looting', 3).enchant('minecraft:fortune', 3).enchant('minecraft:fire_aspect', 2))
+    player.give(Item.of('kaleidoscope_cookery:gold_kitchen_knife', '{Unbreakable:1b,Damage:0,display:{Name:\'{"text":"义之刀"}\'}}').enchant('minecraft:mending', 1).enchant('minecraft:looting', 3).enchant('minecraft:fortune', 3).enchant('minecraft:fire_aspect', 2))
+    player.tell(Text.of('孩儿不孝啊！呱！'))
+    player.give(GetPlayerHeadItem('Adrian_NHT'))
+})
+RegisterSponsorGiftCode('史尔特尔', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:totem_of_undying', '{Damage:0,display:{Name:\'{"text":"余烬"}\'}}'))
+    player.give(Item.of('minecraft:netherite_sword', '{Unbreakable:1b,Damage:0,display:{Name:\'{"text":"烈焰魔剑 莱万汀"}\'}}').enchant('minecraft:sharpness', 10))
+    player.give(GetPlayerHeadItem('An_bao'))
+})
+RegisterSponsorGiftCode('成为宝可梦大师', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('LiA0A'), 'ars_nouveau:ritual_brazier', 'ars_nouveau:ritual_containment', 'ars_nouveau:mob_jar'])
+})
+RegisterSponsorGiftCode('机械动力轻而易举呀', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('MuYang_24'), Item.of('create:large_water_wheel', 64), Item.of('create:cogwheel', 64), Item.of('create:large_cogwheel', 64)])
+    player.tell(Text.of('这玩意怎么不动？那玩意又是怎么动起来的？！'))
+})
+RegisterSponsorGiftCode('如同飞鸟', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:feather'))
+    player.give(Item.of('minecraft:diamond', 20, '{display:{Name:\'{"text":"填海的小石子"}\'}}'))
+    player.give(GetPlayerHeadItem('jing0wei1'))
+})
+RegisterSponsorGiftCode('剑心犹在', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:wooden_sword', '{Unbreakable:1b,display:{Name:\'{"text":"剑心犹在"}\'},AttributeModifiers:[{Amount:0.5d,AttributeName:"generic.movement_speed",Name:"1779386548393",Operation:1,Slot:"mainhand",UUID:[I;-126422,36482,225,-72964]},{Amount:0.5d,AttributeName:"generic.movement_speed",Name:"1779386548393",Operation:1,Slot:"offhand",UUID:[I;-126422,36782,225,-73564]}],Damage:0}'))
+    player.give(GetPlayerHeadItem('Huaji_XG'))
+})
+RegisterSponsorGiftCode('光头恶霸', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:golden_helmet', '{display:{Name:\'{"text":"-99%恶魔概率"}\'},Unbreakable:1b,AttributeModifiers:[{Amount:20,AttributeName:"generic.max_health",Name:"1779387676814",Slot:"head",UUID:[I;-126422,80582,225,-161164]},{Amount:-0.15d,AttributeName:"generic.movement_speed",Name:"1779387676814",Operation:1,Slot:"head",UUID:[I;-126422,80882,225,-161764]},{Amount:-5,AttributeName:"generic.knockback_resistance",Name:"1779387676814",Operation:1,Slot:"head",UUID:[I;-126422,81182,225,-162364]},{Amount:-5,AttributeName:"generic.armor",Name:"1779387676814",Slot:"head",UUID:[I;-126422,81482,225,-162964]},{Amount:-5,AttributeName:"generic.armor_toughness",Name:"1779387676814",Slot:"head",UUID:[I;-126422,81782,225,-163564]},{Amount:-1,AttributeName:"forge:entity_reach",Name:"1779387676814",Slot:"head",UUID:[I;-126422,82082,225,-164164]}],Damage:0,RepairCost:1,hideEnchant:1b}').enchant('minecraft:binding_curse', 1))
+    player.give(GetPlayerHeadItem('AcidArtifact833'))
+})
+RegisterSponsorGiftCode('回忆中的世界', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:command_block', 1))
+    player.give(Item.of('minecraft:wither_skeleton_skull', 2))
+    player.give(Item.of('minecraft:soul_sand', 3))
+    player.tell(Text.of('冥冥中自有感应——你终将归返记忆深处的故界，去弑那命定之祂。'))
+    player.give(GetPlayerHeadItem('medalert'))
 })

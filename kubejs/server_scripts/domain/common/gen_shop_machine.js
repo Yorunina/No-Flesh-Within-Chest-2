@@ -319,6 +319,7 @@ RegistryShopItemTraderType('blueprint',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[7,4,8],Deployed:0b,File:"schematic.basic_create_craft_storage.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 300).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[4,3,8],Deployed:0b,File:"schematic.basic_create_storage.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[14,7,11],Deployed:0b,File:"schematic.ars_garden.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}'), Item.of('minecraft:written_book', '{author:"Side Alley C24",pages:[\'{"text":"使用方法：\\\\n1.用薇克精护符右键炼药并提供魔源\\\\n\\\\n2.五种药水分别右键五个炼药锅绑定配方。然后放入左侧五个药水罐，支配之杖shift右键锁定\\\\n\\\\n3.使用支配之杖将仓库与炼药锅连接\\\\n\\\\n4.使用支配之杖右键药水罐连接混合锅并输出到右边的药水罐，将药水两两混合，最后合成四种效果的药水，通过炼金魔源通道获得魔源"}\'],resolved:1b,title:"使用手册"}')], 300).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[7,13,23],Deployed:0b,File:"schematic.arcane_organ.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 500).setTradeLimitRule(1), 100)
 )
 
 RegistryShopItemTraderType('graveyard',

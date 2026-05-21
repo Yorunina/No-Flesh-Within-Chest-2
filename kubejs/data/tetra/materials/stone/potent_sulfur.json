@@ -1,0 +1,28 @@
+{
+    "key": "potent_sulfur",
+    "category": "stone",
+    "primary": 2,
+    "secondary": 6.5,
+    "tertiary": 0,
+    "durability": 131,
+    "integrityCost": 1,
+    "integrityGain": 6,
+    "magicCapacity": 140,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "cfcf63",
+        "texture": "e7e760"
+    },
+    "textures": [
+        "grainy",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:potent_sulfur" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

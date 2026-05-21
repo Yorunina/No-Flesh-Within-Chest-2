@@ -1,0 +1,27 @@
+{
+    "key": "bison_horn",
+    "category": "bone",
+    "primary": 5.3,
+    "secondary": 1.6,
+    "tertiary": 4.8,
+    "durability": 108,
+    "integrityCost": 2,
+    "integrityGain": 3,
+    "magicCapacity": 80,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 4,
+    "tints": {
+        "glyph": "b1a08b",
+        "texture": "c8bea7"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "wildernature:bison_horn" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

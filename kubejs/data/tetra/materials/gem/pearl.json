@@ -1,0 +1,30 @@
+{
+    "key": "pearl",
+    "category": "gem",
+    "primary": 2.5,
+    "secondary": 6,
+    "tertiary": 0,
+    "durability": 580,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 120,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "81b0c4",
+        "texture": "90c5db"
+    },
+    "textures": [
+        "shiny",
+        "crude"
+    ],
+    "material": {
+        "items": [
+            "crittersandcompanions:pearl"
+        ]
+    },
+    "effects": {},
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

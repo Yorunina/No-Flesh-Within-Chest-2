@@ -1,11 +1,11 @@
 {
     "key": "witherite",
     "category": "metal",
-    "primary": 4.1,
+    "primary": 3.6,
     "secondary": 2.1,
     "tertiary": 3.2,
     "durability": 3120,
-    "integrityCost": 4,
+    "integrityCost": 6,
     "integrityGain": 4,
     "magicCapacity": 80,
     "toolLevel": "minecraft:netherite",

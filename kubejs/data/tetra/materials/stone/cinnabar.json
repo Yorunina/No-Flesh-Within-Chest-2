@@ -1,0 +1,28 @@
+{
+    "key": "cinnabar",
+    "category": "stone",
+    "primary": 4,
+    "secondary": 1.6,
+    "tertiary": 0,
+    "durability": 415,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 90,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 3,
+    "tints": {
+        "glyph": "905c58",
+        "texture": "b86e6a"
+    },
+    "textures": [
+        "grainy",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:cinnabar" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

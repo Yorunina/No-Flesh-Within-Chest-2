@@ -1,0 +1,28 @@
+{
+    "key": "cloud",
+    "category": "stone",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 6.1,
+    "durability": 30,
+    "integrityCost": 1,
+    "integrityGain": 6,
+    "magicCapacity": 130,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "d9d9d9",
+        "texture": "fafafa"
+    },
+    "textures": [
+        "grainy",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "chisel:cloud/cloud" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

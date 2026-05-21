@@ -15,6 +15,7 @@ function FirstLoginInit(player) {
     if (!player.persistentData.contains('inited') || !player.persistentData.get('inited')) {
         player.seenCredits = true
         player.persistentData.put('inited', true)
+        player.give('ftbquests:book')
     }
 }
 

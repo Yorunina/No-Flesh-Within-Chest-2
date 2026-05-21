@@ -1,0 +1,28 @@
+{
+    "key": "sulfur",
+    "category": "stone",
+    "primary": 2.6,
+    "secondary": 5.6,
+    "tertiary": 0,
+    "durability": 110,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 120,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "c0b16a",
+        "texture": "ddd374"
+    },
+    "textures": [
+        "grainy",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:sulfur" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

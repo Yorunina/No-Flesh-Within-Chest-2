@@ -1,0 +1,30 @@
+{
+    "key": "hallowed_gem",
+    "category": "gem",
+    "primary": 8.1,
+    "secondary": 1.1,
+    "tertiary": 0,
+    "durability": 380,
+    "integrityCost": 3,
+    "integrityGain": 2,
+    "magicCapacity": 160,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 7,
+    "tints": {
+        "glyph": "fc75a9",
+        "texture": "fcb5d2"
+    },
+    "textures": [
+        "shiny",
+        "crude"
+    ],
+    "material": {
+        "items": [
+            "illagerinvasion:hallowed_gem"
+        ]
+    },
+    "effects": {},
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}
