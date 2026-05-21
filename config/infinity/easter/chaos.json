@@ -6,9 +6,6 @@
     "portal_color": {
       "type": "random"
     },
-    "iridescent_map": {
-      "type": "random"
-    },
     "star_brightness_day": 0.5
   },
   "type": "chaos",

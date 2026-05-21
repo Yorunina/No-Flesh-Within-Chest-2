@@ -49,16 +49,7 @@ InfinityEvents.itemInPortal(event => {
     const itemId = String(itemStack.getId())
     const pos = event.getPos()
     if (itemStack.is('kubejs:key_to_infinity')) {
-        let nameString = 'random'
-        if (itemStack.hasCustomHoverName()) {
-            nameString = itemStack.getHoverName().getString()
-        }
-        if (!InfinityEasterizer.isEaster(nameString) && !nameString.startsWith('generated_')) {
-            nameString = 'generated_' + nameString
-        }
-        if (!nameString.startsWith('infinity:')) {
-            nameString = 'infinity:'.concat(nameString.trim())
-        }
+        let nameString = GetInfinityKeyDim(itemStack)
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById(nameString, level, pos)
     } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT() && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
@@ -82,3 +73,31 @@ InfinityEvents.itemInPortal(event => {
         InfinityPortalCreator.tryCreatePortalById(InfinityPortalItem2DimId.get(itemId), level, pos)
     }
 })
+
+/**
+ * 获取无限门的维度ID
+ * @param {Internal.ItemStack} itemStack
+ * @returns {string}
+ */
+function GetInfinityKeyDim(itemStack) {
+    if (itemStack.hasCustomHoverName()) {
+        let nameString = itemStack.getHoverName().getString()
+
+        if (nameString.startsWith('infinity:')) {
+            nameString = nameString.replace('infinity:', '')
+        }
+
+        if (nameString == 'random') {
+            return 'infinity:random'
+        }
+        
+        let isEaster = InfinityMod.provider.easterizer.isEaster(nameString)
+        
+        if (!isEaster && !nameString.startsWith('generated_')) {
+            nameString = 'generated_' + nameString
+        }
+        return 'infinity:' + nameString
+    } else {
+        return 'infinity:random'
+    }
+}

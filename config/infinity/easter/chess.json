@@ -10,10 +10,7 @@
       ]
     },
     "dawn": false,
-    "star_brightness_night": 0.0,
-    "iridescent_map": {
-      "type": "static"
-    }
+    "star_brightness_night": 0.0
   },
   "generator": {
     "type": "minecraft:noise",

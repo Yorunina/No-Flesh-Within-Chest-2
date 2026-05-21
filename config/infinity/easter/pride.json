@@ -8,10 +8,7 @@
       ]
     },
     "star_brightness_night": 1.0,
-    "num_stars": 3000,
-    "iridescent_map": {
-      "type": "linear"
-    }
+    "num_stars": 3000
   },
   "generator": {
     "type": "minecraft:noise",

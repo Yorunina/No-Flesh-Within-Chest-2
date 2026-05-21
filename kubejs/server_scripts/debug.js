@@ -1,18 +1,9 @@
 // priority: 500
-BlockEvents.rightClicked(event => {
-    const player = event.player
-    if (!player.getMainHandItem().is('stick')) return
-    const block = event.block
-    const state = block.getBlockState()
-    block.entity.persistentData.putString('genType', 'ore_common')
-})
-
 ItemEvents.rightClicked('stick', event => {
     const player = event.player
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
-    SetEternalWinterState(server, 2)
     // player.give(GetPlayerHeadItem('YoruNina'))
     // player.give(Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[18,22,20],Deployed:0b,File:"苹果乐.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE"}'))
     // SetDaySpeed(1)

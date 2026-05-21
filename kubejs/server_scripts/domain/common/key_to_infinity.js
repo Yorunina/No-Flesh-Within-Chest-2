@@ -10,7 +10,6 @@ BlockEvents.rightClicked('infinity:nether_portal', event => {
     let dimStr = entity.getDimension()
     if (dimStr.getPath().startsWith('generated_')) {
         item.setHoverName(dimStr.getPath().replace('generated_', ''))
-        return
     } else {
         item.setHoverName(dimStr.getPath())
     }

@@ -1,9 +1,6 @@
 {
   "infinity_version": 2004002,
   "options": {
-    "iridescent_map": {
-      "type": "circles"
-    }
   },
   "generator": {
     "type": "minecraft:noise",

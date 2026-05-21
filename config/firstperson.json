@@ -13,7 +13,9 @@
     "create:handheld_worldshaper",
     "map_atlases:atlas",
     "antiqueatlas:antique_atlas",
-    "create:extendo_grip"
+    "create:extendo_grip",
+    "hangglider:hang_glider",
+    "hangglider:reinforced_hang_glider"
   ],
   "autoToggleModItems": [
     "exposure:camera"

@@ -1941,11 +1941,9 @@
 		{
 			dependencies: ["4329E9383BBF0B7E"]
 			description: [
-				"这是一片由史莱姆统治的原野，在数据层面，其维度名称正被称作为&6Slime&r。"
+				"这是一片由史莱姆统治的原野，在数据层面，其维度名称正被称作为&6slime&r。"
 				""
 				"唯一的奇怪点就是这些史莱姆的体内似乎都携带着一个&6随机的方块&r。这个方块的种类横跨之广，以至于我现在都愿意相信所有的方块都可以通过其获得. . ."
-				""
-				"但由于其奇怪的碰撞箱，击杀它可能需要一些时间和技巧。"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2741,7 +2739,7 @@
 			y: 28.0d
 		}
 		{
-			dependencies: ["5F95F25DAC9FBAAA"]
+			dependencies: ["57BBCCCD732ED543"]
 			description: [
 				"为了方便后续的长途旅行，您可能需要一个能快速构造出路径的设备。"
 				""
@@ -2763,7 +2761,38 @@
 				item: "ropebridge:bridge_builder"
 				type: "item"
 			}]
-			title: "在高空中旅行"
+			title: "在高空中步行"
+			x: 14.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5F95F25DAC9FBAAA"]
+			description: [
+				"为了方便后续的长途旅行，您可能需要一个&6类似于鞘翅&r一样的能够将高度转换为动能的工具。"
+				""
+				"&6滑翔翼&r便是一个前期可以获得的高效旅行方式。"
+				""
+				"除此之外，滑翔翼似乎可以和各种能够&6让您高高跃起的工具&r进行配合，达到快速旅行的目的。"
+			]
+			id: "57BBCCCD732ED543"
+			rewards: [{
+				id: "26265381FDBCEE0D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用滑翔翼"
+			tasks: [{
+				id: "5632732C5CEAEC0C"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "在高空中滑行"
 			x: 18.0d
 			y: 4.0d
 		}
