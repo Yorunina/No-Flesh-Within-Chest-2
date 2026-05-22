@@ -4,6 +4,30 @@ ItemEvents.rightClicked('stick', event => {
     /**@type {Internal.ServerLevel} */
     const level = event.level
     const server = event.server
+    // let option = new $SkinFileOptions()
+    // let passwordStr = 'NEWWORLD'
+
+    // let password = $DataEncryptMethod.PASSWORD.key(passwordStr)
+    // let inputSecurityData = $DataEncryptMethod.PASSWORD.signature(password)
+    // option.setSecurityData('password')
+    // option.setSecurityData(inputSecurityData)
+    // let inputStream = $ArmourersWorkshopDataManager.getInstance().loadSkinData('fs:weapon_skins/the_sword_in_the_stone')
+    // let skin = $SkinSerializer.readFromStream(option, inputStream)
+
+    // let skinLoader = $SkinLoader.getSkinLoader(player)
+
+
+    // console.log(skin)
+    // let structureHolderSet = MAAUtils.getStructureHolderSet(server, new ResourceLocation('minecraft:end_city'))
+    // const endLevel = server.getLevel('minecraft:the_end')
+    // let task = $AsyncLocator.locate(endLevel, structureHolderSet, BlockPos.ZERO, 1000, false)
+    // task.then((ctx) => {
+    //     const pos = ctx.getFirst()
+    //     server.scheduleInTicks(1, () => {
+    //         player.teleportTo('minecraft:the_end', pos.x, 64, pos.z, player.yaw, player.pitch)
+    //     })
+    // })
+
     // player.give(GetPlayerHeadItem('YoruNina'))
     // player.give(Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[18,22,20],Deployed:0b,File:"苹果乐.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE"}'))
     // SetDaySpeed(1)
@@ -72,37 +96,8 @@ ItemEvents.rightClicked('stick', event => {
     // )
     // LongDistancePatrolGoal(leader)
 
-    // let entity = level.createEntity('pig')
-    // entity.potionEffects.add('minecraft:glowing', 20 * 60, 0)
-    // entity.persistentData.put('patrolTarget',
-    //     {
-    //         'patrolling': NBT.intTag(1), 'x': NBT.floatTag(0), 'y': NBT.floatTag(70), 'z': NBT.floatTag(0)
-    //     }
-    // )
-    // LongDistancePatrolGoal(entity)
-
-
-    // let cap = GetPlayerCuriosInventoryCap(player)
-    // cap.getCurios().forEach((str, item) => {
-    //     console.log(str)
-    // })
-    // SetDayDuration(server, 12000)
 
 })
 
 // CreateWaypoint(player, pos, new Date().toLocaleString(), 0xFAED34)
 
-
-// BlockEvents.rightClicked(event => {
-//     const player = event.player
-//     if (!player.getMainHandItem().is('minecraft:stick')) return
-//     const block = event.block
-//     const state = block.getBlockState()
-//     let nbt = new $CompoundTag()
-    
-//     nbt.put('CustomTrader', NBTIO.read('test.snbt'))
-//     console.log(nbt)
-//     block.mergeEntityData(nbt)
-//     // let res = block.entityData.get('CustomTrader')
-//     // NBTIO.write('test.snbt', res)
-// })

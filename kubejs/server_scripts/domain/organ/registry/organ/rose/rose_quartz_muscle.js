@@ -33,7 +33,7 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
  */
 function RoseQuartzMuscleTakeOn(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
-    OrganSkinAdd(entity, 'chest', 'rose_arm')
+    OrganSkinAdd(entity, 'chest', 'secret/chestcavity/rose_arm')
 }
 
 /**
@@ -45,7 +45,7 @@ function RoseQuartzMuscleTakeOn(customData, event, organItem, organIndex, slotTy
  */
 function RoseQuartzMuscleTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
-    OrganSkinRemove(entity, 'chest', 'rose_arm')
+    OrganSkinRemove(entity, 'chest', 'secret/chestcavity/rose_arm')
 }
 
 

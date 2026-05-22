@@ -1,0 +1,49 @@
+{
+  "id": "ponderer:",
+  "items": [
+    "minecraft:"
+  ],
+  "title": {
+    "en_us": "New Scene - ",
+    "zh_cn": "新场景 - "
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "en_us": "Scene 1",
+        "zh_cn": "场景 1"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "en_us": "Edit this ponder scene!",
+            "zh_cn": "编辑这个思索场景!"
+          },
+          "point": [
+            2.5,
+            2.0,
+            2.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        }
+      ]
+    }
+  ]
+}

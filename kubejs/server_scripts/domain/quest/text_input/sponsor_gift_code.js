@@ -103,7 +103,7 @@ RegisterSponsorGiftCode('在启动了', (event) => {
 })
 RegisterSponsorGiftCode('早上好！骑士', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:slime_ball', '{AttributeModifiers:[{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47228,233218,-94456]},{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,47528,233218,-95056]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47828,233218,-95656]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,48128,233218,-96256]}],HideFlags:2,display:{Lore:[\'[{"text":"Good morning! Rider!","italic":false,"color":"#4bb77c"}]\'],Name:\'[{"text":"Barrier","italic":false,"color":"#4bb77c"}]\'}}'))
+    player.give(Item.of('minecraft:slime_ball', '{ArmourersWorkshop:{Identifier:"secret/sponsor/barrier",SkinType:"armourers:item"},AttributeModifiers:[{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47228,233218,-94456]},{Amount:10,AttributeName:"generic.armor",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,47528,233218,-95056]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47828,233218,-95656]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,48128,233218,-96256]}],HideFlags:2,display:{Lore:[\'[{"text":"Good morning! Rider!","italic":false,"color":"#4bb77c"}]\'],Name:\'[{"text":"Barrier","italic":false,"color":"#4bb77c"}]\'}}'))
     player.give(GetPlayerHeadItem('sjsxh125'))
 })
 RegisterSponsorGiftCode('偷盗者', (event) => {
@@ -627,7 +627,7 @@ RegisterSponsorGiftCode('可是萝莉鸟妈真的很棒哎', (event) => {
 })
 RegisterSponsorGiftCode('冲击大王', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:magma_cream', '{AttributeModifiers:[{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54370,32940,-108740]},{Amount:20,AttributeName:"generic.max_health",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54670,32940,-109340]},{Amount:5,AttributeName:"generic.attack_knockback",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54970,32940,-109940]},{Amount:29,AttributeName:"generic.attack_damage",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,55270,32940,-110540]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"offhand",UUID:[I;-126420,55570,32940,-111140]}],HideFlags:7,Unbreakable:1,display:{Lore:[\'[{"text":"Good morning! Rider! ","italic":false,"color":"#ff0000"}]\'],Name:\'[{"text":"Impact","italic":false,"color":"#ff0000"}]\'}}'))
+    player.give(Item.of('minecraft:magma_cream', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\impact",SkinType:"armourers:item"},AttributeModifiers:[{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54370,32940,-108740]},{Amount:20,AttributeName:"generic.max_health",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54670,32940,-109340]},{Amount:5,AttributeName:"generic.attack_knockback",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,54970,32940,-109940]},{Amount:29,AttributeName:"generic.attack_damage",Name:"1779222884828",Slot:"mainhand",UUID:[I;-126420,55270,32940,-110540]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779222884828",Slot:"offhand",UUID:[I;-126420,55570,32940,-111140]}],HideFlags:7,Unbreakable:1,display:{Lore:[\'[{"text":"Good morning! Rider! ","italic":false,"color":"#ff0000"}]\'],Name:\'[{"text":"Impact","italic":false,"color":"#ff0000"}]\'}}'))
     player.give(GetPlayerHeadItem('KALTIST_Esperant'))
 })
 RegisterSponsorGiftCode('SAIKAI', (event) => {
@@ -812,4 +812,35 @@ RegisterSponsorGiftCode('回忆中的世界', (event) => {
     player.give(Item.of('minecraft:soul_sand', 3))
     player.tell(Text.of('冥冥中自有感应——你终将归返记忆深处的故界，去弑那命定之祂。'))
     player.give(GetPlayerHeadItem('medalert'))
+})
+RegisterSponsorGiftCode('再见了大小姐', (event) => {
+    const player = event.player
+    player.give(Item.of('waystones:waystone', 1))
+    const server = player.server
+    let structureHolderSet = MAAUtils.getStructureHolderSet(server, new ResourceLocation('minecraft:end_city'))
+    const endLevel = server.getLevel('minecraft:the_end')
+    let task = $AsyncLocator.locate(endLevel, structureHolderSet, BlockPos.ZERO, 1000, false)
+    task.then((ctx) => {
+        const pos = ctx.getFirst()
+        server.scheduleInTicks(1, () => {
+            player.teleportTo('minecraft:the_end', pos.x, 64, pos.z, player.yaw, player.pitch)
+        })
+    })
+    player.tell(Text.of('还回来吃饭吗？'))
+    player.give(GetPlayerHeadItem('Don_Rhine'))
+})
+RegisterSponsorGiftCode('我不会再等了', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:diamond'))
+    player.give(Item.of('minecraft:diamond_sword', '{Damage:0,display:{Name:\'{"text":"血盟誓约"}\'}}').enchant('minecraft:smite', 5))
+    player.give(GetPlayerHeadItem('iNostY'))
+})
+RegisterSponsorGiftCode('让邺城燃烧', (event) => {
+    const player = event.player
+    player.give(Item.of('createdieselgenerators:lighter', '{Fluid:{Amount:200,FluidName:"createdieselgenerators:gasoline"},Type:0}').enchant('minecraft:fire_aspect', 5).enchant('minecraft:sharpness', 5))
+    player.give(GetPlayerHeadItem('KGYsh'))
+})
+RegisterSponsorGiftCode('是关东煮来了', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('Yitheizi'), Item.of('kaleidoscope_cookery:brown_mushroom_pot_soup', '{display:{Name:\'{"text":"棕色关东煮"}\'}}'), Item.of('kaleidoscope_cookery:crimson_fungus_pot_soup', '{display:{Name:\'{"text":"异画关东煮"}\'}}'), Item.of('kaleidoscope_cookery:buddha_jumps_over_the_wall', '{display:{Name:\'{"text":"豪华版关东煮"}\'}}'), Item.of('kaleidoscope_cookery:warped_fungus_pot_soup', '{display:{Name:\'{"text":"绿色关东煮"}\'}}'), Item.of('kaleidoscope_cookery:red_mushroom_pot_soup', '{display:{Name:\'{"text":"红色关东煮"}\'}}')])
 })

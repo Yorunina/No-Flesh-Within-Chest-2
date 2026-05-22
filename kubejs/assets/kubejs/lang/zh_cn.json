@@ -1635,6 +1635,8 @@
     "schematic.basic_create_storage": "基础机械仓储",
     "schematic.ars_garden": "魔艺花园",
     "schematic.arcane_organ": "秘学管风琴",
+    "schematic.blood_big_windmill": "血肉与大风车",
+    "schematic.auto_source_gem": "自动化魔源宝石",
     "_comment.golem_material": "傀儡材料",
     "golem_material.biomancy.living_flesh": "鲜活肉块",
     "_comment.jei": "JEI兼容",

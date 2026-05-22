@@ -42,7 +42,7 @@ LightmansCustomGachaTraderModel.prototype = {
 
 
 function LightmansGachaPriceModel() {
-    this.value = 20
+    this.value = 30
     this.chain = 'main'
     this.type = 'lightmanscurrency:coins'
     return this

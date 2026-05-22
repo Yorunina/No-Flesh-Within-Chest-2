@@ -489,11 +489,6 @@ ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
-            let crystal = machine.getItemStored('input_3')
-            if (!crystal || !crystal.is('kubejs:source_focus_crystal')) return ctx.error('')
-            if (Math.random() < 0.1) {
-                machine.setItemStored('input_3', 'kubejs:exhausted_source_focus_crystal')
-            }
             const outputExtract = machine.getItemStored('output_1')
             const inputTarget = machine.getItemStored('input_1')
             if (!validWorldMantleInputTarget(inputTarget)) return ctx.success()
@@ -505,24 +500,9 @@ ServerEvents.recipes(event => {
             }
             return ctx.success()
         })
-        .requireFunctionToStart(ctx => {
-            const machine = ctx.getMachine()
-            let crystal = machine.getItemStored('input_3')
-            if (crystal && crystal.is('kubejs:source_focus_crystal')) {
-                return ctx.success()
-            }
-            return ctx.error('')
-        })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
+        .requireItem(Item.of('kubejs:source_focus_crystal', 1), 'input_3')
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .resetOnError()
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
-        .produceItem(Item.of('minecraft:command_block', 1))
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 64), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 64), 'input_2')
-        .requireItem(Item.of('kubejs:oracle_module', 1), 'input_1')
         .resetOnError()
 
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
@@ -540,7 +520,7 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('create:chromatic_compound', 64), 'input_2')
         .requireItem(Item.of('create:blaze_cake', 1), 'input_1')
         .resetOnError()
-    
+
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
         .produceItem(Item.of('create:creative_motor', 1))
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)

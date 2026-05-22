@@ -1,9 +1,7 @@
 // priority: 500
 StartupEvents.registry('item', event => {
     event.create('kubejs:animted_soul').maxStackSize(1).texture('kubejs:item/organs/magic/animted_soul').tag('kubejs:magic')
-
     event.create('kubejs:shulker_eye').maxStackSize(1).texture('kubejs:item/organs/magic/shulker_eye').tag('kubejs:magic')
-
     // 星宝石
     event.create('kubejs:whirlisprig_star_gem').maxStackSize(1).texture('kubejs:item/organs/magic/whirlisprig_star_gem').tag('kubejs:magic').tag('kubejs:gem')
     event.create('kubejs:heal_star_gem').maxStackSize(1).texture('kubejs:item/organs/magic/heal_star_gem').tag('kubejs:magic').tag('kubejs:gem')
