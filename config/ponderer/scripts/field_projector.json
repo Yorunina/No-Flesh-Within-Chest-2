@@ -1,0 +1,411 @@
+{
+  "id": "ponderer:field_projector",
+  "items": [
+    "compactcrafting:field_projector"
+  ],
+  "title": {
+    "zh_cn": "如何使用立场投影仪",
+    "en_us": "New Scene - field_projector"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "zh_cn": "构造立场并且执行合成",
+        "en_us": "Scene 1"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:basic_xxl",
+          "scale": 0.5,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "west"
+          },
+          "blockPos": [
+            14,
+            1,
+            7
+          ],
+          "blockPos2": [
+            14,
+            1,
+            7
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "idle",
+          "duration": 10
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "放置下第一个投影仪后右键"
+          },
+          "point": [
+            14.5,
+            1.0,
+            8.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "east"
+          },
+          "blockPos": [
+            6,
+            1,
+            7
+          ],
+          "blockPos2": [
+            6,
+            1,
+            7
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "east"
+          },
+          "blockPos": [
+            2,
+            1,
+            7
+          ],
+          "blockPos2": [
+            2,
+            1,
+            7
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "在远处会出现不同尺寸的放置提示"
+          },
+          "point": [
+            6.5,
+            1.0,
+            8.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "放置的越远，允许合成的结构就越大"
+          },
+          "point": [
+            1.0,
+            1.5,
+            7.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "east"
+          },
+          "blockPos": [
+            6,
+            1,
+            7
+          ],
+          "blockPos2": [
+            6,
+            1,
+            7
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "destroy_block",
+          "blockPos": [
+            2,
+            1,
+            7
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "选择一个位置放置投影仪，再次右键"
+          },
+          "point": [
+            5.5,
+            1.0,
+            7.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "north"
+          },
+          "blockPos": [
+            10,
+            1,
+            11
+          ],
+          "blockPos2": [
+            10,
+            1,
+            11
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "south"
+          },
+          "blockPos": [
+            10,
+            1,
+            3
+          ],
+          "blockPos2": [
+            10,
+            1,
+            3
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "此时会出现所需的另外两个投影仪位置"
+          },
+          "point": [
+            10.5,
+            1.0,
+            11.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "north"
+          },
+          "blockPos": [
+            10,
+            1,
+            11
+          ],
+          "blockPos2": [
+            10,
+            1,
+            11
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "set_block",
+          "block": "compactcrafting:field_projector",
+          "blockProperties": {
+            "facing": "south"
+          },
+          "blockPos": [
+            10,
+            1,
+            3
+          ],
+          "blockPos2": [
+            10,
+            1,
+            3
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "放置后即会构成压缩合成投影空间"
+          },
+          "point": [
+            10.5,
+            1.0,
+            11.5
+          ],
+          "placeNearTarget": true,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "set_block",
+          "block": "create:brass_block",
+          "blockPos": [
+            11,
+            1,
+            6
+          ],
+          "blockPos2": [
+            9,
+            3,
+            8
+          ],
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "在黄色范围内放置指定结构"
+          },
+          "point": [
+            10.5,
+            1.0,
+            8.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 40
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            10.5,
+            8.0,
+            7.5
+          ],
+          "motion": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "count": 1,
+          "item": "create:brass_ingot"
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "投入指定的催化物品，即可开始合成"
+          },
+          "point": [
+            10.5,
+            1.0,
+            8.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "replace_blocks",
+          "block": "minecraft:air",
+          "blockPos": [
+            11,
+            1,
+            6
+          ],
+          "blockPos2": [
+            9,
+            3,
+            8
+          ]
+        },
+        {
+          "type": "clear_item_entities",
+          "item": "create:brass_ingot",
+          "blockPos": [
+            11,
+            1,
+            6
+          ],
+          "blockPos2": [
+            9,
+            5,
+            8
+          ]
+        },
+        {
+          "type": "create_item_entity",
+          "pos": [
+            10.5,
+            3.0,
+            7.5
+          ],
+          "motion": [
+            0.0,
+            0.5,
+            0.0
+          ],
+          "count": 1,
+          "item": "create:creative_motor"
+        }
+      ]
+    }
+  ]
+}
