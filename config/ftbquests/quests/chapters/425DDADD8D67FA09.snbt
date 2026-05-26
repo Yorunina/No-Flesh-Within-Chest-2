@@ -169,6 +169,7 @@
 				"当您制作出后，鼠标指向该物品&6长按思索按键&r，即可在前人精心准备的幻灯片中了解如何正确使用它。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "678E67B0D26DAF91"
 			rewards: [
 				{

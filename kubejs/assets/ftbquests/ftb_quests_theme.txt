@@ -5,6 +5,10 @@ check_icon: ftbquests:textures/gui/complete.png
 checkmark_task_active: ftbquests:textures/gui/checkmark_task_active.png
 checkmark_task_inactive: ftbquests:textures/gui/checkmark_task_inactive.png
 
+# 零
+[594AA7CC1FBE7B4D]
+background: kubejs:textures/gui/tasks/background/chapter_0_background.png; color=rgb(0, 0, 0); tile_size=64
+
 # 壹
 [0AC42F4BE2EDBB08]
 background: kubejs:textures/gui/tasks/background/chapter_1_background.png; color=rgb(0, 0, 0); tile_size=64

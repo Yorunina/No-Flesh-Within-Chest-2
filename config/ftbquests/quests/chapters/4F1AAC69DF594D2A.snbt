@@ -5,6 +5,16 @@
 	group: "2FA8E662F6D4EAED"
 	icon: "minecraft:writable_book"
 	id: "4F1AAC69DF594D2A"
+	images: [{
+		click: "https://space.bilibili.com/12669477"
+		dependency: "0C9135B3D0FBF45E"
+		height: 1.5d
+		image: "kubejs:textures/gui/tasks/others/subcribe.png"
+		rotation: 0.0d
+		width: 3.05d
+		x: 0.1d
+		y: -1.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

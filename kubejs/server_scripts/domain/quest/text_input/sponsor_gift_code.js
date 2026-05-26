@@ -48,10 +48,9 @@ RegisterSponsorGiftCode('awa', (event) => {
     player.give(Item.of('minecraft:firework_rocket', 64, '{Fireworks:{Flight:3b}}'))
     player.give(GetPlayerHeadItem('ting_ling'))
 })
-RegisterSponsorGiftCode('苹果乐', (event) => {
+RegisterSponsorGiftCode('GrandBlue', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:apple', 1224))
-    player.give(GetPlayerHeadItem('Exusiai_i'))
+    GivePlayerItemList(player, [GetPlayerHeadItem('Exusiai_i'), Item.of('vinery:cristel_wine', 64, `{display:{Name:'{"text":"乌龙茶"}'}, EffectAmplifier:0,EffectDuration:1800,Year:0}`), Item.of('create:netherite_diving_helmet', '{Damage:0}'), Item.of('create:netherite_diving_boots', '{Damage:0}'), Item.of('create:netherite_backtank', '{Air:900}'), Item.of('minecraft:netherite_leggings', '{Damage:0}')])
 })
 RegisterSponsorGiftCode('千夜寒怎么做', (event) => {
     const player = event.player
@@ -103,7 +102,7 @@ RegisterSponsorGiftCode('在启动了', (event) => {
 })
 RegisterSponsorGiftCode('早上好！骑士', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:slime_ball', '{ArmourersWorkshop:{Identifier:"secret/sponsor/barrier",SkinType:"armourers:item"},AttributeModifiers:[{Amount:8,AttributeName:"generic.armor",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47228,233218,-94456]},{Amount:8,AttributeName:"generic.armor",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,47528,233218,-95056]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47828,233218,-95656]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,48128,233218,-96256]}],HideFlags:2,display:{Lore:[\'[{"text":"Good morning! Rider!","italic":false,"color":"#4bb77c"}]\'],Name:\'[{"text":"Barrier","italic":false,"color":"#4bb77c"}]\'}}'))
+    player.give(Item.of('minecraft:magma_cream', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\barrier",SkinOptions:{EmbeddedItemRenderer:2,TooltipFlags:183},SkinType:"armourers:item"},AttributeModifiers:[{Amount:8,AttributeName:"generic.armor",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47228,233218,-94456]},{Amount:8,AttributeName:"generic.armor",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,47528,233218,-95056]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"mainhand",UUID:[I;-126421,47828,233218,-95656]},{Amount:1,AttributeName:"generic.knockback_resistance",Name:"1779377627684",Slot:"offhand",UUID:[I;-126421,48128,233218,-96256]}],HideFlags:2,display:{Lore:[\'[{"text":"Good morning! Rider!","italic":false,"color":"#4bb77c"}]\'],Name:\'[{"text":"Barrier","italic":false,"color":"#4bb77c"}]\'}}'))
     player.give(GetPlayerHeadItem('sjsxh125'))
 })
 RegisterSponsorGiftCode('偷盗者', (event) => {
@@ -607,7 +606,7 @@ RegisterSponsorGiftCode('胖宝宝哈基米', (event) => {
 RegisterSponsorGiftCode('mfrz', (event) => {
     const player = event.player
     const level = player.level
-    /**@type {Internal.Cat} */
+    /**@type {Internal.Villager} */
     let villager = level.createEntity('minecraft:villager')
     villager.mergeNbt(`{CustomName:'["美服忍者"]',CustomNameVisible:1b}`)
     villager.setPos(player.position())
@@ -635,9 +634,9 @@ RegisterSponsorGiftCode('冲击大王', (event) => {
 })
 RegisterSponsorGiftCode('SAIKAI', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:netherite_shovel', "{Damage:0,Unbreakable:1,display:{Lore:['[{\"text\":\"应该用叉勺···在下水道吃拼好饭时···\",\"italic\":false,\"color\":\"#B4684D\",\"underlined\":true}]','[{\"text\":\"女儿啊......看来你忘记帮我解冻了\",\"italic\":false,\"color\":\"dark_gray\",\"italic\":true}]'],Name:'[{\"text\":\"神谕终端[双蛇杖]\",\"italic\":false,\"color\":\"gold\"}]'}}").enchant('sharpness', 9))
+    player.give(Item.of('minecraft:netherite_shovel', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\spork",SkinOptions:{EmbeddedItemRenderer:2,TooltipFlags:183},SkinType:"armourers:item"},Damage:0,Unbreakable:1,display:{Lore:[\'[{"text":"应该用叉勺···在下水道吃拼好饭时···","italic":false,"color":"#B4684D","underlined":true}]\',\'[{"text":"女儿啊......看来你忘记帮我解冻了","italic":false,"color":"dark_gray","italic":true}]\'],Name:\'[{"text":"神谕终端[双蛇杖]","italic":false,"color":"gold"}]\'}}').enchant('minecraft:sharpness', 9))
     player.give(Item.of('minecraft:paper', '{AttributeModifiers:[{Amount:2d,AttributeName:"generic.luck",Name:"1779224367042",Slot:"offhand",UUID:[I;-126420,15153,45311,-30306]}],display:{Lore:[\'[{"text":"致 Player，打开哔哩哔哩 YoruNina 的主页点击关注","italic":false,"color":"white"}]\',\'[{"text":"并在最近三个视频中三连并留下一句赞美","italic":false,"color":"white"}]\',\'[{"text":"后单曲循环 SAIKAI 325次。","italic":false,"color":"white"}]\'],Name:\'[{"text":"✿指令[纸条]","italic":false,"color":"blue"}]\'}}'))
-    player.give(Item.of('minecraft:carved_pumpkin', '{AttributeModifiers:[{Amount:3,AttributeName:"generic.attack_damage",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54558,4318,-109116]},{Amount:-3,AttributeName:"generic.armor",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54858,4318,-109716]},{Amount:0.15d,AttributeName:"generic.attack_damage",Name:"1779221247370",Operation:1,Slot:"head",UUID:[I;-126420,55158,4318,-110316]}],Unbreakable:1,display:{Lore:[\'[{"text":"- 攻击等级+3，防御等级-3","italic":false,"color":"white"}]\',\'[{"text":"- 受到的单方面攻击伤害-25%","italic":false,"color":"white"}]\',\'[{"text":"- 基础攻击造成的伤害+15%","italic":false,"color":"white"}]\',\'[{"text":"...如果就这样放你离开，你大概永远也不会再回家吧。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"就算拦下你，让你留在这里，我也已经一无所剩了。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"不过......总比被空虚的悔意绞痛心脏要好，不是吗?","italic":false,"color":"dark_gray","strikethrough":true}]\'],Name:\'[{"text":"灼烧着的伤口","italic":false,"color":"red"}]\'}}').enchant('protection', 6))
+    player.give(Item.of('minecraft:carved_pumpkin', '{ArmourersWorkshop:{Identifier:"secret\\\\sponsor\\\\burnt_wounds",SkinOptions:{EmbeddedItemRenderer:2,TooltipFlags:183},SkinType:"armourers:head"},AttributeModifiers:[{Amount:3,AttributeName:"generic.attack_damage",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54558,4318,-109116]},{Amount:-3,AttributeName:"generic.armor",Name:"1779221247370",Slot:"head",UUID:[I;-126420,54858,4318,-109716]},{Amount:0.15d,AttributeName:"generic.attack_damage",Name:"1779221247370",Operation:1,Slot:"head",UUID:[I;-126420,55158,4318,-110316]}],Unbreakable:1,display:{Lore:[\'[{"text":"- 攻击等级+3，防御等级-3","italic":false,"color":"white"}]\',\'[{"text":"- 受到的单方面攻击伤害-25%","italic":false,"color":"white"}]\',\'[{"text":"- 基础攻击造成的伤害+15%","italic":false,"color":"white"}]\',\'[{"text":"...如果就这样放你离开，你大概永远也不会再回家吧。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"就算拦下你，让你留在这里，我也已经一无所剩了。","italic":false,"color":"dark_gray","strikethrough":true}]\',\'[{"text":"不过......总比被空虚的悔意绞痛心脏要好，不是吗?","italic":false,"color":"dark_gray","strikethrough":true}]\'],Name:\'[{"text":"灼烧着的伤口","italic":false,"color":"red"}]\'},hideEnchant:1b}').enchant('minecraft:protection', 6).enchant('minecraft:binding_curse', 1))
     player.give(GetPlayerHeadItem('Tsuki_Kira'))
 })
 RegisterSponsorGiftCode('组一辈子乐队吧', (event) => {
@@ -805,7 +804,7 @@ RegisterSponsorGiftCode('剑心犹在', (event) => {
 })
 RegisterSponsorGiftCode('光头恶霸', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:golden_helmet', '{display:{Name:\'{"text":"-99%恶魔概率"}\'},Unbreakable:1b,AttributeModifiers:[{Amount:20,AttributeName:"generic.max_health",Name:"1779387676814",Slot:"head",UUID:[I;-126422,80582,225,-161164]},{Amount:-0.15d,AttributeName:"generic.movement_speed",Name:"1779387676814",Operation:1,Slot:"head",UUID:[I;-126422,80882,225,-161764]},{Amount:-5,AttributeName:"generic.knockback_resistance",Name:"1779387676814",Operation:1,Slot:"head",UUID:[I;-126422,81182,225,-162364]},{Amount:-5,AttributeName:"generic.armor",Name:"1779387676814",Slot:"head",UUID:[I;-126422,81482,225,-162964]},{Amount:-5,AttributeName:"generic.armor_toughness",Name:"1779387676814",Slot:"head",UUID:[I;-126422,81782,225,-163564]},{Amount:-1,AttributeName:"forge:entity_reach",Name:"1779387676814",Slot:"head",UUID:[I;-126422,82082,225,-164164]}],Damage:0,RepairCost:1,hideEnchant:1b}').enchant('minecraft:binding_curse', 1))
+    player.give(Item.of('minecraft:golden_helmet', '{display:{Name:\'{"text":"-99%恶魔概率"}\'},Unbreakable:1b,AttributeModifiers:[{Amount:20,AttributeName:"generic.max_health",Name:"1779387676814",Slot:"head",UUID:[I;-126422,80582,225,-161164]},{Amount:-0.15d,AttributeName:"generic.movement_speed",Name:"1779387676814",Operation:1,Slot:"head",UUID:[I;-126422,80882,225,-161764]},{Amount:-5,AttributeName:"generic.knockback_resistance",Name:"1779387676814",Operation:1,Slot:"head",UUID:[I;-126422,81182,225,-162364]},{Amount:-5,AttributeName:"generic.armor",Name:"1779387676814",Slot:"head",UUID:[I;-126422,81482,225,-162964]},{Amount:-5,AttributeName:"generic.armor_toughness",Name:"1779387676814",Slot:"head",UUID:[I;-126422,81782,225,-163564]},{Amount:-1,AttributeName:"forge:entity_reach",Name:"1779387676814",Slot:"head",UUID:[I;-126422,82082,225,-164164]}],Damage:0,hideEnchant:1b}').enchant('minecraft:binding_curse', 1))
     player.give(GetPlayerHeadItem('AcidArtifact833'))
 })
 RegisterSponsorGiftCode('回忆中的世界', (event) => {
@@ -950,4 +949,90 @@ RegisterSponsorGiftCode('lets go！！！', (event) => {
     const player = event.player
     GivePlayerItemList(player, [Item.of('minecraft:observer', 2), 'minecraft:sticky_piston', 'minecraft:end_rod', 'minecraft:oak_boat', 'minecraft:sheep_spawn_egg'])
     player.tell(Text.of('喜欢曹羊'))
+})
+RegisterSponsorGiftCode('钻石？钻石！', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:diamond', 6))
+    player.give(GetPlayerHeadItem('moxianyang'))
+})
+RegisterSponsorGiftCode('我会死亡回归', (event) => {
+    const player = event.player
+    player.potionEffects.add('minecraft:slowness', 20 * 60, 48)
+    player.potionEffects.add('minecraft:resistance', 20 * 60, 6)
+    player.give(GetPlayerHeadItem('prepromax'))
+})
+RegisterSponsorGiftCode('一个疯丫头', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:shulker_box', '{BlockEntityTag:{Items:[{Count:1b,Slot:0b,id:"minecraft:pig_spawn_egg",tag:{EntityTag:{ActiveEffects:[{Amplifier:0,Duration:2147483647,Id:10,ShowParticles:0b},{Amplifier:0,Duration:2147483647,Id:24,ShowParticles:0b}],Attributes:[{Base:18347.0f,Name:"generic.max_health"}],CustomName:\'[{"text":"阿","color":"#FF0000"},{"text":"尔","color":"#FF7F00"},{"text":"托","color":"#FFFF00"},{"text":"莉","color":"#00FF00"},{"text":"雅","color":"#00FFFF"},{"text":"·","color":"#0000FF"},{"text":"卡","color":"#8B00FF"},{"text":"斯","color":"#FF0000"},{"text":"特","color":"#FF7F00"},{"text":"（","color":"#FFFF00"},{"text":"b","color":"#00FF00"},{"text":"e","color":"#00FFFF"},{"text":"r","color":"#0000FF"},{"text":"s","color":"#8B00FF"},{"text":"e","color":"#FF0000"},{"text":"r","color":"#FF7F00"},{"text":"k","color":"#FFFF00"},{"text":"e","color":"#00FF00"},{"text":"r","color":"#00FFFF"},{"text":"）","color":"#0000FF"}]\',CustomNameVisible:1b,Health:18347.0f,PersistenceRequired:1b,Tags:["custom_pig_egg"],id:"minecraft:pig"},display:{Name:\'{"text":"延塔杰尔的野猪蛋"}\'}}},{Count:1b,Slot:1b,id:"simplehats:rabbitears",tag:{display:{Lore:[\'{"text":"终于暴露本性了吗，延塔杰尔的野猪。竟然戴上兔耳，真是不知羞耻。","italic":true,"color":"#C3EEF4"}\']}}},{Count:1b,Slot:2b,id:"simplehats:headphonesblue",tag:{display:{Name:\'{"text":"耳机喵"}\'}}}]},display:{Lore:[\'{"text":"内含野猪蛋、兔耳朵、蓝色耳机"}\'],Name:\'{"text":"「冠位戴冠战：Berserker」推荐召唤"}\'}}'))
+    player.give(GetPlayerHeadItem('morgan_lef_ay'))
+})
+RegisterSponsorGiftCode('像这样的使魔总共有6个', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('__Miku____'), Item.of('ars_nouveau:drygmy_charm', 8), Item.of('ars_nouveau:ritual_containment', 8), 'ars_nouveau:ritual_brazier'])
+})
+RegisterSponsorGiftCode('中指永不遗忘', (event) => {
+    const player = event.player
+    player.tell(Text.of('原来是我们的家人啊。（理智+10）'))
+    GivePlayerItemList(player, [GetPlayerHeadItem('Aio7911'), Item.of('minecraft:chain', 64, `{display:{Name:'{"text":"忠义锁链"}'}}`), Item.of('minecraft:chainmail_helmet', `{Damage:0,display:{Name:'{"text":"大哥的证明"}'}}`), Item.of('minecraft:chainmail_chestplate', `{Damage:0,display:{Name:'{"text":"大哥的证明"}'}}`), Item.of('minecraft:chainmail_leggings', `{Damage:0,display:{Name:'{"text":"大哥的证明"}'}}`), Item.of('minecraft:chainmail_boots', `{Damage:0,display:{Name:'{"text":"大哥的证明"}'}}`)])
+})
+RegisterSponsorGiftCode('ultra_gold', (event) => {
+    const player = event.player
+    player.tell(Text.of('苹果好吃还是萝卜好吃？'))
+    GivePlayerItemList(player, [GetPlayerHeadItem('LQlq233'), Item.of('minecraft:enchanted_golden_apple', 4), Item.of('minecraft:golden_carrot', 64), 'sophisticatedbackpacks:gold_backpack'])
+})
+RegisterSponsorGiftCode('嘻嘻我一定要活下去', (event) => {
+    const player = event.player
+    player.tell(Text.of('你的太阳落山了'))
+    player.give(Item.of('minecraft:diamond_hoe', `{display:{Name:'{"text":"濡湿小镰刀"}'}}`))
+    player.give(GetPlayerHeadItem('GuanYin2022'))
+})
+RegisterSponsorGiftCode('魔女审判', (event) => {
+    const player = event.player
+    player.setHeadArmorItem('minecraft:bucket')
+    player.tell(Text.of('我当时睡得可香了'))
+    GivePlayerItemList(player, [GetPlayerHeadItem('DrCaCO3'), Item.of('minecraft:potion', `{Potion:"minecraft:strong_poison",display:{Name:'{"text":"特雷德基姆"}'}}`), 'minecraft:apple'])
+})
+RegisterSponsorGiftCode('我要打上海Major', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('FlyMouse7878'), Item.of('minecraft:cooked_chicken', `{display:{Name:'{"text":"山姆烤鸡"}'}}`), Item.of('minecraft:egg', `{display:{Name:'{"text":"danking"}'}}`)])
+})
+RegisterSponsorGiftCode('Yoshino', (event) => {
+    const player = event.player
+    player.tell(Text.of('小心蛞蝓'))
+    GivePlayerItemList(player, [GetPlayerHeadItem('Yoshino_395'), 'minecraft:axolotl_bucket', Item.of('minecraft:name_tag', `{display:{Name:'{"text":"kaname"}'}}`)])
+})
+RegisterSponsorGiftCode('251130', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:rose_bush', `{Unbreakable:1b,display:{Name:'{"text":"永恒的爱"}',Lore:['{"text":"永远爱你，聂聂，这是给你的花","color":"gray"}']}}`))
+})
+RegisterSponsorGiftCode('三叉戟狂欢节', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:trident', `{Unbreakable:1b}`).enchant('minecraft:riptide', 10).enchant('minecraft:impaling', 10).enchant('minecraft:channeling', 10))
+    player.give(Item.of('minecraft:trident', `{Unbreakable:1b}`).enchant('minecraft:loyalty', 10).enchant('minecraft:impaling', 10).enchant('minecraft:channeling', 10))
+    player.give(GetPlayerHeadItem('Ayanrmi_Rei'))
+})
+RegisterSponsorGiftCode('123321', (event) => {
+    const player = event.player
+    player.give(Item.of('supplementaries:slingshot', `{display:{Name:'{"text":"平平无奇的一把弹弓"}',Lore:['{"text":"奇怪？有一种想发射点什么的欲望逐渐觉醒。（或许可以试试一些千奇百怪的东西？）","color":"gray"}']}}`).enchant('minecraft:loyalty', 3))
+    player.give(GetPlayerHeadItem('WXXY321'))
+})
+// RegisterSponsorGiftCode('我要抓走你的麻麻', (event) => {
+//     const player = event.player
+//     player.give(Item.of('minecraft:dragon_egg', `{display:{Name:'{"text":"陈晖洁"}'}}`))
+//     player.give(Item.of('minecraft:dragon_egg', `{display:{Name:'{"text":"塔露拉"}'}}`))
+//     player.give(GetPlayerHeadItem('Lin_Jian_Love'))
+// })
+RegisterSponsorGiftCode('铠甲合体', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [Item.of('minecraft:netherite_chestplate', '{Damage:0}').enchant('minecraft:mending', 1), Item.of('minecraft:netherite_leggings', '{Damage:0}').enchant('minecraft:mending', 1), Item.of('minecraft:netherite_boots', '{Damage:0}').enchant('minecraft:mending', 1), Item.of('minecraft:netherite_helmet', '{Damage:0}').enchant('minecraft:mending', 1)])
+})
+RegisterSponsorGiftCode('不是堕天使', (event) => {
+    const player = event.player
+    player.give(Item.of('simplehats:halo'))
+    player.give(GetPlayerHeadItem('Zhou_Zi_Wu'))
+})
+RegisterSponsorGiftCode('我说欢愉，你耳朵聋吗？', (event) => {
+    const player = event.player
+    player.give(Item.of('create:pink_postbox', 2))
+    player.give(GetPlayerHeadItem('wdhvite'))
 })

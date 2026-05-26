@@ -161,9 +161,7 @@ ServerEvents.recipes(event => {
 		'ACBCA',
 		'ABEBA',
 		'ACDCA',
-		' ADA ',
-		'  D  ',
-		'  F  ',
+		' AFA ',
 	], {
 		A: '#forge:plates/brass',
 		B: 'minecraft:glowstone_dust',

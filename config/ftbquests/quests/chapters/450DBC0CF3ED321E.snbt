@@ -200,6 +200,7 @@
 				""
 				"加工台即是进行匠艺加工的核心方块。您可以将任何工具放置到加工台中间的空白处，即会显示该工具可供改造的部件。"
 			]
+			hide_until_deps_complete: true
 			id: "5A1D7D83A92CCA53"
 			rewards: [
 				{

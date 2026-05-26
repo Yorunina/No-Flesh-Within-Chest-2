@@ -55,7 +55,7 @@
 				"在本次旅程中，我将会控制该任务系统引导您完成所有的游玩历程，以尽可能简明、有效的方式来让您了解您所必须要在此完成的事情。&6请您在游戏流程中尽可能多的留意任务描述文本&r，以避免各种不必要的麻烦。"
 				""
 				"现在，请您使用鼠标，点击&6「任务」下方&r的类似&6聊天气泡&r的按钮，即&6文本输入按钮&r。在点击打开后&e输入任意文本&r，以完成本任务。"
-				"{image:kubejs:textures/gui/tasks/chapter_0/neo.png width:20 height:20 align:center}"
+				"{image:kubejs:textures/gui/tasks/chapter_1/neo.png width:20 height:20 align:center}"
 				"{@pagebreak}"
 				"&6感谢您阅读到了这里&r！看来您完全明白我前面所说的“&6留意&r”是什么意思了！"
 				""
