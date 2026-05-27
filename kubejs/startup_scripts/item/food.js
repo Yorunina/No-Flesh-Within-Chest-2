@@ -32,7 +32,9 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:sausage_casing').texture('kubejs:item/food/sausage_casing').food(food => food.hunger(1).saturation(0.5))
 
     event.create('kubejs:human_meat_sausage').texture('kubejs:item/food/human_meat_sausage').food(food => food.hunger(6).saturation(1))
+    event.create('kubejs:crispy_bone_human_meat_sausage').texture('kubejs:item/food/crispy_bone_human_meat_sausage').food(food => food.hunger(6).saturation(1.2))
     event.create('kubejs:animal_meat_sausage').texture('kubejs:item/food/animal_meat_sausage').food(food => food.hunger(4).saturation(1.2))
+    event.create('kubejs:crispy_bone_animal_meat_sausage').texture('kubejs:item/food/crispy_bone_animal_meat_sausage').food(food => food.hunger(4).saturation(1.5))
     event.create('kubejs:insect_meat_sausage').texture('kubejs:item/food/insect_meat_sausage').food(food => food.hunger(4).saturation(1.2).effect('minecraft:regeneration', 600, 0, 1))
     event.create('kubejs:nether_meat_sausage').texture('kubejs:item/food/nether_meat_sausage').food(food => food.hunger(4).saturation(1.2).effect('minecraft:fire_resistance', 600, 0, 1))
     event.create('kubejs:dragon_meat_sausage').texture('kubejs:item/food/dragon_meat_sausage').food(food => food.hunger(6).saturation(1.5))

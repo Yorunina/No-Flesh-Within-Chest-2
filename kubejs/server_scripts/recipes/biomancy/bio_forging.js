@@ -32,5 +32,4 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Ingredient.of('#forge:heads', 1), Item.of('kubejs:silverfish_gland', 1), Item.of('biomancy:bio_lumens', 1)], Item.of('kubejs:animted_soul'), 'biomancy:organ', 20) 
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:deserted_gula_worm_nest'), Item.of('biomancy:bloomberry'), Item.of('kubejs:human_meat_sausage'), Item.of('minecraft:target')], Item.of('kubejs:gula_beacon'), 'biomancy:organ', 50) 
-    
 })

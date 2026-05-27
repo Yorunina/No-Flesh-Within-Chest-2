@@ -76,7 +76,7 @@ RegisterSponsorGiftCode('按住"W"开始思索', (event) => {
 })
 RegisterSponsorGiftCode('！？猪猪？！', (event) => {
     const player = event.player
-    player.give(Item.of('minecraft:porkchop'))
+    player.give(Item.of('minecraft:porkchop', '{"ars_nouveau:reactive_caster":{current_slot:0,flavor:"",hidden_recipe:"",is_hidden:0b,spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_touch",part1:"ars_nouveau:glyph_snare",size:2},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:180,g:25,r:255,type:"ars_nouveau:constant"}}}}}').enchant('ars_nouveau:reactive', 4))
     player.give(GetPlayerHeadItem('Hydroxice24'))
 })
 RegisterSponsorGiftCode('7999', (event) => {
@@ -968,7 +968,7 @@ RegisterSponsorGiftCode('一个疯丫头', (event) => {
 })
 RegisterSponsorGiftCode('像这样的使魔总共有6个', (event) => {
     const player = event.player
-    GivePlayerItemList(player, [GetPlayerHeadItem('__Miku____'), Item.of('ars_nouveau:drygmy_charm', 8), Item.of('ars_nouveau:ritual_containment', 8), 'ars_nouveau:ritual_brazier'])
+    GivePlayerItemList(player, [GetPlayerHeadItem('__Miku____'), Item.of('ars_nouveau:drygmy_charm', 8), Item.of('ars_nouveau:ritual_containment', 8), 'ars_nouveau:ritual_brazier', Item.of('ars_nouveau:mob_jar', 8)])
 })
 RegisterSponsorGiftCode('中指永不遗忘', (event) => {
     const player = event.player
@@ -1016,12 +1016,14 @@ RegisterSponsorGiftCode('123321', (event) => {
     player.give(Item.of('supplementaries:slingshot', `{display:{Name:'{"text":"平平无奇的一把弹弓"}',Lore:['{"text":"奇怪？有一种想发射点什么的欲望逐渐觉醒。（或许可以试试一些千奇百怪的东西？）","color":"gray"}']}}`).enchant('minecraft:loyalty', 3))
     player.give(GetPlayerHeadItem('WXXY321'))
 })
-// RegisterSponsorGiftCode('我要抓走你的麻麻', (event) => {
-//     const player = event.player
-//     player.give(Item.of('minecraft:dragon_egg', `{display:{Name:'{"text":"陈晖洁"}'}}`))
-//     player.give(Item.of('minecraft:dragon_egg', `{display:{Name:'{"text":"塔露拉"}'}}`))
-//     player.give(GetPlayerHeadItem('Lin_Jian_Love'))
-// })
+RegisterSponsorGiftCode('我要抓走你的麻麻', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:dragon_egg', `{display:{Name:'{"text":"陈晖洁"}'}}`))
+    player.give(Item.of('minecraft:dragon_egg', `{display:{Name:'{"text":"塔露拉"}'}}`))
+    player.give(Item.of('tetra:modular_sword', "{Damage:0,EnchantmentMapping:{},HideFlags:3,RepairCost:0,display:{Name:'{\"text\":\"赤霄\"}'},honing_available:0b,honing_progress:210,id:\"2cb541cd-87f3-472d-a3b5-8784ca82c27e\",\"sword/basic_blade_material\":\"basic_blade/netherite\",\"sword/basic_hilt_material\":\"basic_hilt/stick\",\"sword/blade\":\"sword/basic_blade\",\"sword/blade:arrested\":0,\"sword/blade:blade/tempered\":3,\"sword/decorative_pommel_material\":\"decorative_pommel/diamond\",\"sword/guard\":\"sword/makeshift_guard\",\"sword/hilt\":\"sword/basic_hilt\",\"sword/makeshift_guard_material\":\"makeshift_guard/diamond\",\"sword/pommel\":\"sword/decorative_pommel\"}").enchant('minecraft:sweeping', 3).enchant('minecraft:fire_aspect', 5))
+    player.tell(Text.of('多索雷斯之夏'))
+    player.give(GetPlayerHeadItem('Lin_Jian_Love'))
+})
 RegisterSponsorGiftCode('铠甲合体', (event) => {
     const player = event.player
     GivePlayerItemList(player, [Item.of('minecraft:netherite_chestplate', '{Damage:0}').enchant('minecraft:mending', 1), Item.of('minecraft:netherite_leggings', '{Damage:0}').enchant('minecraft:mending', 1), Item.of('minecraft:netherite_boots', '{Damage:0}').enchant('minecraft:mending', 1), Item.of('minecraft:netherite_helmet', '{Damage:0}').enchant('minecraft:mending', 1)])
@@ -1035,4 +1037,64 @@ RegisterSponsorGiftCode('我说欢愉，你耳朵聋吗？', (event) => {
     const player = event.player
     player.give(Item.of('create:pink_postbox', 2))
     player.give(GetPlayerHeadItem('wdhvite'))
+})
+RegisterSponsorGiftCode('大师中的大师', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:netherite_axe', `{display:{Name:'{"text":"指引明路的苍蓝星"}'}}`))
+    player.give(GetPlayerHeadItem('WiSo8259'))
+})
+RegisterSponsorGiftCode('石头领域大神', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('AllenKroc'), Item.of('minecraft:stone', 64), Item.of('minecraft:deepslate', 64), Item.of('minecraft:granite', 64), Item.of('minecraft:diorite', 64), Item.of('minecraft:andesite', 64), Item.of('chisel:iron_chisel', '{Damage:0}')])
+})
+RegisterSponsorGiftCode('蒸汽时代', (event) => {
+    const player = event.player
+    GivePlayerItemList(player, [GetPlayerHeadItem('xiaowen08'), Item.of('create:fluid_tank', 64), Item.of('create:steam_engine', 9), Item.of('create:blaze_burner', 9), Item.of('create:goggles'), Item.of('create:wrench'), Item.of('create:extendo_grip', '{Damage:0}')])
+})
+RegisterSponsorGiftCode('baka', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:blue_ice', 64, `{display:{Name:'{"text":"cirno"}'}}`))
+    player.tell(Text.of('说别人笨蛋的人才是笨蛋！'))
+    player.give(GetPlayerHeadItem('Yeguoguo117'))
+})
+RegisterSponsorGiftCode('甜不生我大小咩大人 糖果人万古如长夜！', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:heart_of_the_sea', `{display:{Name:'{"text":"糖果心"}'}}`))
+    player.give(Item.of('minecraft:poppy', `{display:{Name:'{"text":"糖果胰"}'}}`))
+    player.give(Item.of('biomancy:despoil_sickle', `{display:{Name:'{"text":"邪恶糖果羊尾"}'}}`))
+})
+RegisterSponsorGiftCode('keep you waiting huh？', (event) => {
+    const player = event.player
+    player.give(Item.of('kubejs:crispy_bone_human_meat_sausage', `{display:{Name:'{"text":"脆骨肠"}',Lore:['{"text":"是的你终于玩到脆骨肠2了","color":"gray"}']}}`))
+    player.give(Item.of('kubejs:crispy_bone_animal_meat_sausage', `{display:{Name:'{"text":"脆骨肠"}',Lore:['{"text":"是的你终于玩到脆骨肠2了","color":"gray"}']}}`))
+    player.give(GetPlayerHeadItem('lobotomy2312'))
+})
+RegisterSponsorGiftCode('众神陨落之地', (event) => {
+    const player = event.player
+    player.teleportTo('minecraft:the_nether', 0, 130, 0, player.yaw, player.pitch)
+    player.give(GetPlayerHeadItem('xingluolll'))
+})
+RegisterSponsorGiftCode('Chara', (event) => {
+    const player = event.player
+    player.give(Item.of('bakery:bread_knife', `{AttributeModifiers:[{Amount:9.9d,AttributeName:"generic.attack_damage",Name:"1779894130231",Slot:"mainhand",UUID:[I;-126427,23998,23155,-47996]}],Damage:0,display:{Name:'{"text":"真正的刀", "color":"red"}'}}`))
+    player.give(GetPlayerHeadItem('KAIBAI1'))
+})
+RegisterSponsorGiftCode('power', (event) => {
+    const player = event.player
+    player.give(Item.of('ars_nouveau:spell_bow', `{display:{Name:'{"text":"俄里翁奔雷"}',Lore:['{"text":"","extra":[{"text":"弓","color":"#FFD700"},{"text":"身","color":"#FCC200"},{"text":"镌","color":"#FAAD00"},{"text":"刻","color":"#F89800"},{"text":"猎","color":"#F68300"},{"text":"户","color":"#F46E00"},{"text":"星","color":"#F25900"},{"text":"纹","color":"#F04400"},{"text":"，","color":"#EE2F00"},{"text":"引","color":"#EC1A00"},{"text":"九","color":"#EA0500"},{"text":"天","color":"#E80000"},{"text":"惊","color":"#D60000"},{"text":"雷","color":"#C40000"},{"text":"为","color":"#B20000"},{"text":"矢","color":"#A00000"}]}' ,'{"text":"","extra":[{"text":"开","color":"#00FFFF"},{"text":"弓","color":"#00F5F5"},{"text":"则","color":"#00EBEB"},{"text":"风","color":"#00E1E1"},{"text":"雷","color":"#00D7D7"},{"text":"相","color":"#00CDCD"},{"text":"随","color":"#00C3C3"},{"text":"，","color":"#00B9B9"},{"text":"箭","color":"#00AFAF"},{"text":"出","color":"#00A5A5"},{"text":"如","color":"#009B9B"},{"text":"奔","color":"#009191"},{"text":"雷","color":"#008787"},{"text":"驰","color":"#007D7D"},{"text":"野","color":"#007373"},{"text":"，","color":"#008080"},{"text":"凡","color":"#007A7A"},{"text":"被","color":"#007575"},{"text":"锁","color":"#007070"},{"text":"定","color":"#006B6B"},{"text":"之","color":"#006666"},{"text":"物","color":"#006161"},{"text":"，","color":"#005C5C"},{"text":"难","color":"#005757"},{"text":"逃","color":"#005252"},{"text":"雷","color":"#004D4D"},{"text":"霆","color":"#004848"},{"text":"追","color":"#004343"},{"text":"猎","color":"#003E3E"}]}' ,'{"text":"","extra":[{"text":"凡","color":"#FF77FF"},{"text":"被","color":"#F066F0"},{"text":"锁","color":"#E155E1"},{"text":"定","color":"#D244D2"},{"text":"之","color":"#C333C3"},{"text":"物","color":"#B422B4"},{"text":"，","color":"#A511A5"},{"text":"难","color":"#960096"},{"text":"逃","color":"#870087"},{"text":"雷","color":"#880088"},{"text":"霆","color":"#770077"},{"text":"追","color":"#660066"},{"text":"猎","color":"#550055"}]}']}, "ars_nouveau:caster":{current_slot:0,flavor:"",hidden_recipe:"",is_hidden:0b,spell_count:1,spells:{spell0:{name:"",recipe:{part0:"ars_nouveau:glyph_projectile",part1:"ars_nouveau:glyph_lightning",size:2},sound:{pitch:1.0f,soundTag:{id:"ars_nouveau:fire_family"},volume:1.0f},spellColor:{b:180,g:25,r:255,type:"ars_nouveau:constant"}}}}}`))
+})
+RegisterSponsorGiftCode('熹妃回宫！！！', (event) => {
+    const player = event.player
+    player.give(Item.of('minecraft:diamond_sword', `{Unbreakable:1b,display:{Name:'{"text":"青鸾剑"}'}}`))
+    player.give(GetPlayerHeadItem('muli_zr'))
+})
+RegisterSponsorGiftCode('陵光神君', (event) => {
+    const player = event.player
+    player.give(Item.of('kubejs:fiery_core', `{display:{Name:'{"text":"离火之精","color":"red"}',Lore:['{"text":"飞朱鸟使先驱兮","color":"red"}']}}`))
+    player.give(GetPlayerHeadItem('VermilionBird'))
+})
+RegisterSponsorGiftCode('42', (event) => {
+    const player = event.player
+    player.tell(Text.of('木染：加油喵，要吃饱吃好喵'))
+    GivePlayerItemList(player, [GetPlayerHeadItem('muran2026'), Item.of('cornucopia:cornucopia', `{display:{Name:'{"text":"木染给你的饭袋"}'}}`), Item.of('vinery:jellie_wine', 10, '{EffectAmplifier:0,EffectDuration:1800,Year:1}'), Item.of('kaleidoscope_cookery:beef_noodle', 64), Item.of('kaleidoscope_cookery:country_style_mixed_vegetables', 32)])
 })
