@@ -1,4 +1,5 @@
 .*/
+.*.json
 .DS_Store
 /crash-reports/
 emi.json

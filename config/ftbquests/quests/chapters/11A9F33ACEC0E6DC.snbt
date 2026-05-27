@@ -591,6 +591,7 @@
 				count: 1L
 				icon: "kubejs:tasty_hamburg"
 				id: "7DF0B9092828B067"
+				item: "kubejs:tasty_hamburg"
 				title: "品尝美味汉堡"
 				type: "maa:eat_item"
 			}]
@@ -1075,6 +1076,7 @@
 				""
 				"请您寻找到&6山羊&r，并且&6打开它的胸腔&r，你可以从中找到一个极其独特的器官战利品。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:goat_spawn_egg"
 			id: "54BBCB6C78712B0D"
 			rewards: [{
@@ -1207,6 +1209,7 @@
 				""
 				"不过好在，借由本次探索，我们也能够了解到美味虫的&b冰山一角&r，相信未来迟早有一天，我们会搞清楚维度虫及其可能的其他变种的所有秘密。"
 			]
+			hide_until_deps_complete: true
 			icon: "kubejs:dimensional_worm"
 			id: "279EB57E529F3640"
 			rewards: [{

@@ -143,6 +143,7 @@
 				""
 				"其他的属性也都有各自的作用，具体您可以使用&6固定提示框&r按键将物品提示固定住，而后将鼠标放在词条上观察。"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:muscle"

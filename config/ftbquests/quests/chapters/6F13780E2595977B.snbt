@@ -307,6 +307,7 @@
 				""
 				"不知道您是否对此事感兴趣，愿意与我一同探索创世工匠所遗留的宝藏？"
 			]
+			hide_until_deps_complete: true
 			icon: "tetra:forged_workbench"
 			id: "585F5FEF231F0B44"
 			rewards: [{
