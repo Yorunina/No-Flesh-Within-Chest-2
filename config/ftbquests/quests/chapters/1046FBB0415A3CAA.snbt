@@ -125,7 +125,7 @@
 				stat: "minecraft:total_world_time"
 				title: "行程至此"
 				type: "stat"
-				value: 720000
+				value: 360000
 			}]
 			x: 0.0d
 			y: 0.0d
@@ -171,6 +171,7 @@
 			]
 			icon: "kubejs:dimensional_worm"
 			id: "2E34A2B03950E15E"
+			incompatible: ["4BC0581046C250D5"]
 			shape: "none"
 			size: 3.0d
 			subtitle: "咕噜噜噜噜噜噜噜噜噜噜，饿饿饿饿饿饿饿饿饿饿饿饿"
@@ -198,6 +199,7 @@
 			]
 			icon: "kubejs:dimensional_worm"
 			id: "74E1C83962A64BB7"
+			incompatible: ["4BC0581046C250D5"]
 			invisible: true
 			rewards: [{
 				auto: "no_toast"
@@ -275,6 +277,7 @@
 				"&c在你想起来你那个狗屁约定之前，我们会无休止的吞噬！&r"
 			]
 			id: "28B0B07A19295E57"
+			incompatible: ["4BC0581046C250D5"]
 			rewards: [{
 				auto: "no_toast"
 				icon: "kaleidoscope_cookery:braised_beef"
@@ -542,7 +545,6 @@
 		}
 		{
 			dependencies: [
-				"7531026821B67389"
 				"5B825CBF6EC40CDC"
 				"7C6D3C980314CBF7"
 			]
@@ -562,6 +564,7 @@
 				}
 			}
 			id: "0A30963862F5CFBF"
+			invisible: true
 			progression_mode: "linear"
 			rewards: [{
 				id: "66AC5830ED7E3E01"
@@ -570,9 +573,12 @@
 			}]
 			subtitle: "[特定频道的讯号]"
 			tasks: [{
-				id: "71597850A73D2AF8"
-				title: "略有印象"
-				type: "checkmark"
+				icon: "supplementaries:key"
+				id: "0675EA778BD3FBC0"
+				isServer: true
+				stage: "ftb_immune_dim_worm"
+				title: "条件满足"
+				type: "maa:astages"
 			}]
 			title: "寻找一丝追忆"
 			x: 11.0d
@@ -784,7 +790,7 @@
 			description: [
 				"感谢您的帮助。"
 				""
-				"在您的帮助下，&6我成功的框定了一个有限的维度范围&r，并且&6有效的将维度虫从中清除&r。"
+				"在您的帮助下，&6我成功的框定了一个有限的维度范围&r，并且&6有效的将维度虫从中清除。&r"
 				""
 				"之后它们再也无法打扰到我们了。"
 			]
@@ -797,7 +803,7 @@
 					type: "item"
 				}
 				{
-					auto: "invisible"
+					auto: "no_toast"
 					icon: {
 						Count: 1
 						id: "createdieselgenerators:chemical_sprayer"
@@ -817,11 +823,22 @@
 					titleId: "kubejs:dim_worm"
 					type: "titles:title"
 				}
+				{
+					auto: "invisible"
+					icon: "kubejs:dimensional_worm"
+					id: "0A74DCA81DB4688A"
+					ignore_reward_blocking: true
+					isServer: true
+					remove: false
+					stage: "ftb_immune_dim_worm"
+					title: "免疫维度虫"
+					type: "maa:astages"
+				}
 			]
 			subtitle: "维度已被稳定"
 			tasks: [{
 				consume_items: true
-				count: 16L
+				count: 4L
 				id: "39BCCFA97DA24893"
 				item: "kubejs:dimension_shards"
 				type: "item"
@@ -1110,9 +1127,9 @@
 		{
 			dependencies: ["3605CD44FC0A6F8B"]
 			description: [
-				"请您在&6（2048, 64, 4096）&r这个坐标周围10格范围内，随便朝某个方向拍照，并且将照片洗出。"
+				"请您在&6（2048, 64, 4096）&r这个坐标周围16格范围内，随便朝某个方向拍照，并且将照片洗出。"
 				""
-				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的 数据模式。"
+				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的数据模式。"
 			]
 			id: "48ED491D2B099E30"
 			rewards: [{
@@ -1128,7 +1145,7 @@
 					Count: 1
 					id: "maa:exposure_photo_pos"
 					tag: {
-						value: "2048,64,4096,10"
+						value: "2048,64,4096,16"
 					}
 				}
 				title: "一张(2048,64,4096)位置附近的照片"
@@ -1143,7 +1160,7 @@
 			description: [
 				"请您在&6（5000,64,0）&r这个坐标周围16格范围内，随便朝某个方向拍照，并且将照片洗出。"
 				""
-				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的 数据模式。"
+				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的数据模式。"
 			]
 			id: "0E8525932886B03F"
 			rewards: [{
@@ -1174,7 +1191,7 @@
 			description: [
 				"请您在&6（0,1024,0）&r这个坐标周围16格范围内，随便朝某个方向拍照，并且将照片洗出。"
 				""
-				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的 数据模式。"
+				"在我的猜测中，这个位置可能存在世界的&6“裂口”&r。虽然裂口用肉眼和相机均不可见，但通过相机的帧处理，我可以截获其特有的数据模式。"
 			]
 			id: "0D897D4E46384346"
 			rewards: [{
@@ -1398,6 +1415,43 @@
 			title: "&6让故事“开始”结束&r"
 			x: 11.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["2678AE772D365B92"]
+			description: ["&6呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕呕&r"]
+			icon: {
+				Count: 1
+				id: "biomancy:injector"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BC0581046C250D5"
+			rewards: [{
+				id: "053A078F205C4B48"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.0d
+			subtitle: "什么？什么？什么？什么？"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "biomancy:injector"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6E1DB6F13F9A126C"
+				isServer: true
+				stage: "ftb_immune_dim_worm"
+				title: "免疫维度虫"
+				type: "maa:astages"
+			}]
+			title: "&6免疫剂生效&r"
+			x: 0.0d
+			y: 14.5d
 		}
 	]
 	title: "贰"

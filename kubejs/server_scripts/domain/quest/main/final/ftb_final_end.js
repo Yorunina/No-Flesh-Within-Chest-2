@@ -3,6 +3,7 @@ ServerEvents.tick(event => {
     const server = event.server
     if (server.tickCount % 20 != 0) return
     if (!AStages.serverHasStage(FTBFinalIteration30, server)) return
+    // 多少分钟一天
     let ms = FloorFix(20 / GetDaySpeed(), 3)
     if (ms <= 0.01) {
         // 清空所有Astage和任务进度

@@ -72,12 +72,12 @@ function FinalDayEvent(event) {
     }
     if (AStages.serverHasStage(FTBFinalIteration10, server)) {
         let mobModifier = server.persistentData.get('finalMobSpawnProp')
-        mobModifier.putFloat('healthMult', mobModifier.getFloat('healthMult') * 1.2)
+        mobModifier.putFloat('healthMult', mobModifier.getFloat('healthMult') * 1.5)
         mobModifier.putFloat('attackAdd', mobModifier.getFloat('attackAdd') * 1.1)
         server.persistentData.put('finalMobSpawnProp', mobModifier)
     } else if (AStages.serverHasStage(FTBFinalIteration5, server)) {
         let mobModifier = server.persistentData.get('finalMobSpawnProp')
-        mobModifier.putFloat('healthMult', mobModifier.getFloat('healthMult') + 0.1)
+        mobModifier.putFloat('healthMult', mobModifier.getFloat('healthMult') + 0.2)
         mobModifier.putFloat('attackAdd', mobModifier.getFloat('attackAdd') + 0.5)
         server.persistentData.put('finalMobSpawnProp', mobModifier)
     }
