@@ -9,4 +9,5 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'gateways' })
     event.remove({ mod: 'compactcrafting' })
     event.remove({ id: 'wormhole_artifact:wormhole_remote' })
+    event.remove({ id: 'cataclysm:belt_of_beginner' })
 })

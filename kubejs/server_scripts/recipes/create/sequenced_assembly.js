@@ -138,5 +138,20 @@ ServerEvents.recipes(event => {
     )
         .transitionalItem(CommonTransitionalItem)
         .loops(5)
+
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:world_computer')
+        ],
+        'create:brass_block',
+        [
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'kubejs:reverse_causality_chip']),
+            event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('createdieselgenerators:ethanol', 250)]),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(8)
 })
 

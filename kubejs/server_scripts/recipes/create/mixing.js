@@ -48,8 +48,8 @@ ServerEvents.recipes(event => {
         [Item.of('kubejs:oracle_gate'), Item.of('kubejs:circuit_board'), Fluid.of('create:potion', 560, { Bottle: "REGULAR", Potion: "minecraft:poison" })], 20 * 8).superheated()
 
     event.recipes.create.mixing(
-        ['create:chromatic_compound'],
-        ['#forge:ingots/iron', '#forge:ingots/copper', '#forge:ingots/gold', '#forge:ingots/zinc', '#forge:gems/emerald', 'minecraft:coal', '#forge:gems/diamond', '#forge:dusts/redstone', '#forge:gems/lapis'], 20 * 20).superheated()
+        [Item.of('create:chromatic_compound', 4)],
+        ['#forge:ingots/iron', '#forge:ingots/copper', '#forge:ingots/gold', '#forge:ingots/zinc', '#forge:gems/emerald', '#forge:dusts/redstone'], 20 * 20).superheated()
 
     event.recipes.create.mixing(
         ['kubejs:colorful_dye'],

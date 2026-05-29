@@ -1,0 +1,14 @@
+#Render equipped Curios lanterns on the player's waist.
+renderWaistLantern = true
+#Apply a small pendulum swing to waist lantern rendering.
+enablePhysics = true
+#How strongly player movement affects lantern swing.
+#Range: 0.0 ~ 3.0
+bounciness = 0.75
+#Render the lantern on the left side of the waist.
+leftSide = false
+#Render the lantern closer to the back of the waist.
+backLantern = false
+#Make Iris/Oculus see a Curios lantern as the offhand item for shader held-item lighting.
+shaderOffhandOverride = true
+

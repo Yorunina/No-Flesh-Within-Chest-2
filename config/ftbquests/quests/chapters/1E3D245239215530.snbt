@@ -384,7 +384,7 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
+				count: 16L
 				id: "7AB7786298B4767A"
 				item: "kubejs:unstable_matter"
 				type: "item"
