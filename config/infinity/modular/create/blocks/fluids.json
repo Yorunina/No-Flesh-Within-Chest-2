@@ -13,20 +13,6 @@
 				"fluidName": "create:honey",
 				"Name": "create:honey"
 			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"fluidName": "create:potion",
-				"Name": "minecraft:air"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"fluidName": "create:tea",
-				"Name": "minecraft:air"
-			}
 		}
 	]
 }

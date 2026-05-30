@@ -1,5 +1,4 @@
 // priority: 999
-// todo 边界条件 玩家不在线时的表现
 function NewPickItemBDNetGoal(entity) {
     return new $CustomGoal(
         'pick_item_bdnet',

@@ -20,7 +20,6 @@ function RedPandaTailEntityTick(customData, event, organItem, organIndex, slotTy
     let feetBlockState = feetBlock.getBlockState()
     if (!feetBlockState) return
     let berryBush = 'minecraft:sweet_berry_bush'
-    // todo 升级魔源浆果 
     // let berryBush = 'ars_nouveau:sourceberry_bush'
     let canPlant = feetBlockState.block.canSustainPlant(feetBlockState, level, blockPos, Direction.DOWN, Block.getBlock(berryBush))
     if (!canPlant) return

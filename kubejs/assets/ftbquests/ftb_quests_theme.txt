@@ -12,7 +12,6 @@ background: kubejs:textures/gui/tasks/background/chapter_0_background.png; color
 # 壹
 [0AC42F4BE2EDBB08]
 background: kubejs:textures/gui/tasks/background/chapter_1_background.png; color=rgb(0, 0, 0); tile_size=64
-quest_completed_color: #dba213
 dependency_line_texture: kubejs:textures/gui/tasks/background/dependency_1.png
 dependency_line_completed_color: #ffffff
 

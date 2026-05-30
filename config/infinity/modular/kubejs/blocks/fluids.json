@@ -1,0 +1,39 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:molten_emerald_fluid",
+				"Name": "kubejs:molten_emerald_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:molten_copper_fluid",
+				"Name": "kubejs:molten_copper_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:molten_diamond_fluid",
+				"Name": "kubejs:molten_diamond_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:molten_gold_fluid",
+				"Name": "kubejs:molten_gold_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:molten_iron_fluid",
+				"Name": "kubejs:molten_iron_fluid"
+			}
+		}
+	]
+}

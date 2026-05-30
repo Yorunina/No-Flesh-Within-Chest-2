@@ -46,7 +46,7 @@
 #Items
 [item]
 	#Spawn Caster Tomes in Dungeon Loot?
-	spawnTomes = true
+	spawnTomes = false
 	#How much mana the Ring of Jumping consumes per jump
 	#Range: 0 ~ 10000
 	jumpRingCost = 30

@@ -72,6 +72,13 @@
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/diamond_ore.png"
+				}
+			}
 			id: "4CD51B13B77E0C9E"
 			rewards: [{
 				auto: "enabled"
@@ -81,6 +88,7 @@
 				type: "custom"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "以前人之问流传于世"
 			tasks: [{
 				count: 1L
@@ -117,7 +125,13 @@
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["&7一张布满划痕的唱片，其上贴有一个标签，注明：“听了会很饿”&r"]
-			icon: "kubejs:faded_disc"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/diamond_ore.png"
+				}
+			}
 			id: "241E469417A467F1"
 			rewards: [{
 				id: "38F8A2824948A2BF"
@@ -125,6 +139,7 @@
 				type: "item"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "被灰尘覆盖的唱片"
 			tasks: [{
 				id: "7B092B25FEB68E22"
@@ -132,16 +147,18 @@
 				type: "checkmark"
 			}]
 			title: "一张破旧的音乐唱片"
-			x: 13.8d
-			y: 8.8d
+			x: 18.75d
+			y: 3.0000000000000004d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["&7结有大块海渍的怪异道具，虽然你不了解它是用作什么的，但一股冲动使得你想要不顾一切地将其纳为己有。&r"]
 			icon: {
 				Count: 1
-				id: "kubejs:prismarine_crown"
-				tag: { }
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/emerald_ore.png"
+				}
 			}
 			id: "12273F8B7FDCB9B2"
 			rewards: [{
@@ -154,6 +171,7 @@
 				type: "item"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "曾经为王、王为曾经"
 			tasks: [{
 				id: "12F8BDBFC12FA9D4"
@@ -161,12 +179,19 @@
 				type: "checkmark"
 			}]
 			title: "曾经为王的证明"
-			x: -5.8d
-			y: 8.85d
+			x: -18.450000000000003d
+			y: 10.8d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/emerald_ore.png"
+				}
+			}
 			id: "626233DC1095036E"
 			rewards: [{
 				auto: "enabled"
@@ -176,6 +201,7 @@
 				type: "custom"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "以前人之问流传于世"
 			tasks: [{
 				count: 1L
@@ -186,12 +212,19 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "前人所埋藏宝藏之一"
-			x: -4.8d
-			y: -8.7d
+			x: -19.5d
+			y: -9.75d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["以我的信息处理能力，仅能够解明并开启&6 3 &r个前人所留之宝藏，这是其一。"]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/redstone_ore.png"
+				}
+			}
 			id: "343D2F562292CF6C"
 			rewards: [{
 				auto: "enabled"
@@ -201,6 +234,7 @@
 				type: "custom"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "以前人之问流传于世"
 			tasks: [{
 				count: 1L
@@ -211,13 +245,19 @@
 				type: "maa:kube_text_input"
 			}]
 			title: "前人所埋藏宝藏之一"
-			x: 14.8d
-			y: -1.0d
+			x: 17.700000000000003d
+			y: 13.65d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["&7这些徽章似乎有着一种奇异的魔力，但你又说不清——你只感觉到它们有些太陈旧了。&r"]
-			icon: "kubejs:badge"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/redstone_ore.png"
+				}
+			}
 			id: "54E04F95D9FB9CFC"
 			rewards: [{
 				icon: "kubejs:badge"
@@ -228,6 +268,7 @@
 				type: "maa:kube"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "徽章上写着行行小字"
 			tasks: [{
 				id: "0D70B4DA7B22D491"
@@ -235,13 +276,19 @@
 				type: "checkmark"
 			}]
 			title: "荣誉的象征"
-			x: 0.1d
-			y: 10.4d
+			x: -9.75d
+			y: 16.650000000000002d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["&7这或许只是一团木屑&r"]
-			icon: "kubejs:sawdust"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/gold_ore.png"
+				}
+			}
 			id: "5389F88C96D13BA3"
 			rewards: [{
 				id: "7DBD138C2ADC8CA0"
@@ -249,6 +296,7 @@
 				type: "item"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "沉寂在最底部"
 			tasks: [{
 				id: "7FC34EAFCE0681B0"
@@ -256,13 +304,19 @@
 				type: "checkmark"
 			}]
 			title: "在最为华贵的角落"
-			x: 8.95d
-			y: 11.8d
+			x: 23.55d
+			y: -8.850000000000001d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: ["&7一杯有着诡异味道的柠檬茶，你已经无法辨认其是在什么时候制作的了。&r"]
-			icon: "kubejs:glutinous_lemon_juice"
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/gold_ore.png"
+				}
+			}
 			id: "6DBA9517EAE282B9"
 			rewards: [{
 				id: "44329ABE931D1B9C"
@@ -270,14 +324,56 @@
 				type: "item"
 			}]
 			shape: "none"
+			size: 1.5d
 			subtitle: "在历史中幸存而来的"
 			tasks: [{
 				id: "7D75CDD57C50FF2E"
 				title: "什么味道"
 				type: "checkmark"
 			}]
-			x: -13.65d
-			y: 9.8d
+			x: 25.500000000000004d
+			y: 16.650000000000002d
+		}
+		{
+			dependencies: ["440318F5E2A002F4"]
+			description: [
+				"&7一张纸，似乎因为被水浸泡过已经皱巴巴的。&r"
+				""
+				"&7上面的许多字迹已经无法辨认，但其笔迹力度极大，以至于纸张背后有着明显的痕迹。&r"
+			]
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/sponsor/coal_ore.png"
+				}
+			}
+			id: "677EAA462224BF44"
+			rewards: [{
+				id: "593BA63F588AAEBD"
+				item: {
+					Count: 1
+					id: "minecraft:paper"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"不要在当下留下遗憾\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "none"
+			size: 1.5d
+			subtitle: "不知道是谁留下的"
+			tasks: [{
+				id: "61C1D808F827811F"
+				title: "从角落里抠出来"
+				type: "checkmark"
+			}]
+			title: "皱巴巴的纸张"
+			x: 3.0d
+			y: 16.7d
 		}
 	]
 	title: "外传：被尊重者"

@@ -1,5 +1,4 @@
 // priority: 501
-// todo 回归测试
 function NewGulaChallengeGoal(entity) {
     return new $CustomGoal(
         'gula_challenge',
