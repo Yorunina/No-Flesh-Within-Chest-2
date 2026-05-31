@@ -157,7 +157,7 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:textures/gui/tasks/sponsor/emerald_ore.png"
+					Icon: "kubejs:textures/gui/tasks/sponsor/coal_ore.png"
 				}
 			}
 			id: "12273F8B7FDCB9B2"
@@ -222,7 +222,7 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:textures/gui/tasks/sponsor/redstone_ore.png"
+					Icon: "kubejs:textures/gui/tasks/sponsor/coal_ore.png"
 				}
 			}
 			id: "343D2F562292CF6C"
@@ -345,7 +345,7 @@
 				Count: 1
 				id: "ftbquests:custom_icon"
 				tag: {
-					Icon: "kubejs:textures/gui/tasks/sponsor/coal_ore.png"
+					Icon: "kubejs:textures/gui/tasks/sponsor/gold_ore.png"
 				}
 			}
 			id: "677EAA462224BF44"
