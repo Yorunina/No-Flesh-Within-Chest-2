@@ -33,10 +33,10 @@ debugLevel=0
 		#Whether the Coin Mint machine can be crafted.
 		#Disabling will not remove and exist Coin Mints from the world, nor prevent their use.
 		#Default: true
-		canCraftCoinMint=true
+		canCraftCoinMint=false
 		#Whether or not built-in coin mint recipes that turn resources into coins will be loaded.
 		#Default: true
-		canMint=true
+		canMint=false
 		#Whether or not built-in coin mint recipes that turn coins back into resources will be loaded.
 		#Default: false
 		canMelt=false

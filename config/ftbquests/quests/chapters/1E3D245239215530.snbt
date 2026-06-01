@@ -2368,7 +2368,7 @@
 			rewards: [
 				{
 					id: "317E5F07D06A2233"
-					item: "lightmanscurrency:coin_netherite"
+					item: "lightmanscurrency:coin_emerald"
 					type: "item"
 				}
 				{

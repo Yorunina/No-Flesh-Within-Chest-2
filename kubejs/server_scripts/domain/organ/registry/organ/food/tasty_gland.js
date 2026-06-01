@@ -16,7 +16,7 @@ function TastyGlandEntityBeInteracted(customData, event, organItem, organIndex, 
     const player = event.player
     /**@type {Internal.PathfinderMob} */
     const target = event.target
-    if (!(target.isLiving() && target instanceof $PathfinderMob)) return
+    if (!target.isLiving()) return
     const level = event.level
     if (event.getHand() != 'main_hand') return
     if (!player.mainHandItem.isEmpty()) return

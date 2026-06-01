@@ -19,7 +19,6 @@ function SymbioctoArmEntityInteract(customData, event, organItem, organIndex, sl
     const target = event.target
     if (player.isVehicle()) return
     target.startRiding(player, true)
-    player.connection.send(new $ClientboundSetPassengersPacket(player))
 }
 
 /**
@@ -38,8 +37,24 @@ function SymbioctoArmEntityBeInteracted(customData, event, organItem, organIndex
     player.startRiding(target, true)
 }
 
+
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingFallEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function SymbioctoArmEntityFall(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (!entity.isPlayer()) return
+    if (entity.getPassengers().size() <= 0) return
+    entity.getFirstPassenger().stopRiding()
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:symbiocto_arm')
         .addOnlyStrategy('entity_interact', SymbioctoArmEntityInteract)
         .addOnlyStrategy('entity_be_interacted', SymbioctoArmEntityBeInteracted)
+        .addOnlyStrategy('entity_fall', SymbioctoArmEntityFall)
 )
