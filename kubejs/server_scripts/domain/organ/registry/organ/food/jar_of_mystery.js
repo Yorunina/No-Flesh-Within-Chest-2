@@ -16,6 +16,9 @@ function JarOfMysteryFoodEaten(customData, event, organItem, organIndex, slotTyp
     let curDamage = organItem.getDamageValue() + 1
     player.potionEffects.add('minecraft:absorption', 20 * 20, 0)
     if (curDamage >= organItem.getMaxDamage()) {
+        MAAUtils.onKubeTaskFinish('jar_of_mystery_grow', player, (pTask, pPlayer, pTeamData) => {
+            pTeamData.addProgress(pTask, 1)
+        })
         let replaceItem = Item.of('kubejs:worm_larva')
         replaceItem.setDamageValue(replaceItem.getMaxDamage())
         SetChestCavityOrgan(customData, player.chestCavityInstance, replaceItem, organIndex, slotType, true)
@@ -28,5 +31,4 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:jar_of_mystery')
         .addOnlyStrategy('food_eaten', JarOfMysteryFoodEaten)
 )
-
 

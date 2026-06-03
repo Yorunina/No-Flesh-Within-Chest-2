@@ -78,4 +78,28 @@ ServerEvents.recipes(event => {
         ['#forge:ingots/iron', 'minecraft:blue_ice', '#forge:ingots/iron'],
         ['', '#forge:ingots/iron', '']
     ])
+    event.remove({ id: 'exposure_polaroid:instant_black_and_white_slide' })
+    event.shaped(Item.of('exposure_polaroid:instant_black_and_white_slide', 3), [
+        ['', '', ''],
+        ['#forge:dyes/white', '#forge:dyes/black', '#forge:dyes/white'],
+        ['minecraft:paper', 'minecraft:paper', 'minecraft:paper']
+    ])
+    event.remove({ id: 'exposure_polaroid:instant_color_slide' })
+    event.shaped(Item.of('exposure_polaroid:instant_color_slide', 3), [
+        ['', '', ''],
+        ['minecraft:red_dye', 'minecraft:yellow_dye', 'minecraft:blue_dye'],
+        ['minecraft:paper', 'minecraft:paper', 'minecraft:paper']
+    ])
+    event.remove({ id: 'exposure_polaroid:high_sensitivity_instant_black_and_white_slide' })
+    event.shaped(Item.of('exposure_polaroid:high_sensitivity_instant_black_and_white_slide', 3), [
+        ['', 'minecraft:prismarine_crystals', ''],
+        ['#forge:dyes/white', '#forge:dyes/black', '#forge:dyes/white'],
+        ['minecraft:paper', 'minecraft:paper', 'minecraft:paper']
+    ])
+    event.remove({ id: 'exposure_polaroid:high_sensitivity_instant_color_slide' })
+    event.shaped(Item.of('exposure_polaroid:high_sensitivity_instant_color_slide', 3), [
+        ['', 'minecraft:prismarine_crystals', ''],
+        ['minecraft:red_dye', 'minecraft:yellow_dye', 'minecraft:blue_dye'],
+        ['minecraft:paper', 'minecraft:paper', 'minecraft:paper']
+    ])
 })

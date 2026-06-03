@@ -270,6 +270,13 @@
 				"美味虫的幼体无法从您的胸腔直接取出，待您食用足够多的食物之后，其会自然而然进化为成虫，脱离寄生主体。"
 			]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "kubejs:worm_larva"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "3786F4EF9AB65A30"
 			rewards: [{
 				id: "4CE48D2F169A099E"
@@ -278,15 +285,18 @@
 			}]
 			subtitle: "它破罐而出"
 			tasks: [{
-				id: "3329CE650015AD2C"
-				item: {
+				count: 1L
+				icon: {
 					Count: 1
 					id: "kubejs:worm_larva"
 					tag: {
 						Damage: 0
 					}
 				}
-				type: "item"
+				id: "6133C10DED520D7A"
+				kubeId: "jar_of_mystery_grow"
+				title: "蠕虫幼体破罐而出"
+				type: "maa:kube"
 			}]
 			title: "蠕虫幼体"
 			x: 5.0d

@@ -1,6 +1,0 @@
-{
-  "chestcavity": "kubejs:cc_types/nether/wither_skeleton.json",
-  "entities": [
-    "minecraft:wither_skeleton"
-  ]
-}

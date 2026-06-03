@@ -15,7 +15,7 @@ function PerseveranceWitnessCuriosStrategy(customData, event, stackHandler, curi
     if (curDamage > 0) {
         let slotMaxSize = Math.floor(curDamage / PerseveranceWitnessEachSlotSizeDamage)
         curDamage = curDamage % PerseveranceWitnessEachSlotSizeDamage
-        if (slotMaxSize != 0 && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
+        if (slotMaxSize != 0 && !AStages.serverHasStage(FTBFinalTimerStart, event.entity.server)) {
             let dimNet = DimensionsNet.getPrimaryNetFromPlayer(event.source.actual)
             if (dimNet) {
                 let unifiedStorage = dimNet.getUnifiedStorage()

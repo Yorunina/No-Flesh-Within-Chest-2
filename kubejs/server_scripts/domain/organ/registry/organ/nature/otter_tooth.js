@@ -1,4 +1,10 @@
 // priority: 500
+ServerEvents.recipes(event => {
+    $AxeItem.STRIPPABLES.put(Block.getBlock('ars_nouveau:blue_archwood_log'), Block.getBlock('ars_nouveau:stripped_blue_archwood_log'))
+    $AxeItem.STRIPPABLES.put(Block.getBlock('ars_nouveau:red_archwood_log'), Block.getBlock('ars_nouveau:stripped_red_archwood_log'))
+    $AxeItem.STRIPPABLES.put(Block.getBlock('ars_nouveau:purple_archwood_log'), Block.getBlock('ars_nouveau:stripped_purple_archwood_log'))
+    $AxeItem.STRIPPABLES.put(Block.getBlock('ars_nouveau:green_archwood_log'), Block.getBlock('ars_nouveau:stripped_green_archwood_log'))
+})
 RegistryOrgan('kubejs:otter_tooth')
     .addScore('chestcavity:strength', 1)
     .addScore('chestcavity:swim_speed', 1)

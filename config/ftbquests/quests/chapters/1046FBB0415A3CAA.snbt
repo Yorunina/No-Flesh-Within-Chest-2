@@ -125,7 +125,7 @@
 				stat: "minecraft:total_world_time"
 				title: "行程至此"
 				type: "stat"
-				value: 360000
+				value: 720000
 			}]
 			x: 0.0d
 			y: 0.0d
@@ -152,7 +152,7 @@
 				leaderboard: "infinity:dimensions_opened_stat"
 				title: "？"
 				type: "leaderboards:server_achieve_stat"
-				value: 16L
+				value: 32L
 			}]
 			title: "&6好吃&r"
 			x: -10.5d
@@ -200,7 +200,6 @@
 			icon: "kubejs:dimensional_worm"
 			id: "74E1C83962A64BB7"
 			incompatible: ["4BC0581046C250D5"]
-			invisible: true
 			rewards: [{
 				auto: "no_toast"
 				icon: {
@@ -1433,6 +1432,7 @@
 				}
 			}
 			id: "4BC0581046C250D5"
+			invisible: true
 			rewards: [{
 				id: "053A078F205C4B48"
 				item: "lightmanscurrency:coin_gold"

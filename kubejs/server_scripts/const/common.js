@@ -5,7 +5,7 @@ const DeviationNum = 0.000001
 const FourDirectionOffset = [[0, 1], [0, -1], [1, 0], [-1, 0]]
 const EightDirectionOffset = [[0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [1, -1], [-1, 1], [-1, -1]]
 const FourDiagonalDirectionOffset = [[1, 1], [1, -1], [-1, 1], [-1, -1]]
-const EquimentSlotList = ['mainhand', 'offhand', 'head', 'chest', 'legs', 'feet']
+const EquimentSlotList = ['mainhand', 'offhand', 'feet', 'legs', 'chest', 'head']
 
 const SourceJarMax = 10000
 
