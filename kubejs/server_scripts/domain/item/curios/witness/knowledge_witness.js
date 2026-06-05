@@ -1,6 +1,6 @@
 //priority: 500
 RegistryWitnessStrategy('kubejs:knowledge_witness', KnowledgeWitnessCuriosStrategy)
-const KnowledgeWitnessEachLevelDamage = 1000
+const KnowledgeWitnessEachLevelDamage = 10000
 /** 
 * @param {*} customData 
 * @param {Internal.LivingDamageEvent} event 
@@ -15,7 +15,7 @@ function KnowledgeWitnessCuriosStrategy(customData, event, stackHandler, curiosI
     const nbt = curiosItem.getNbt()
     let curDamage = nbt.getLong('damageAmount') + event.amount
     if (curDamage > KnowledgeWitnessEachLevelDamage) {
-        let exp = Math.floor(curDamage / KnowledgeWitnessEachLevelDamage) * 100
+        let exp = Math.floor(curDamage / KnowledgeWitnessEachLevelDamage) * 200
         curDamage = curDamage % KnowledgeWitnessEachLevelDamage
         let experienceAttr = player.getAttribute('attributeslib:experience_gained')
         if (experienceAttr) exp = experienceAttr.getValue() * exp

@@ -37,7 +37,7 @@
                     "generic.attack_speed": -0.05,
                     "generic.attack_damage": 1
                 },
-                "durability": 1.2,
+                "durability": 1.5,
                 "integrity": 0,
                 "magicCapacity": 1.5,
                 "glyph": {

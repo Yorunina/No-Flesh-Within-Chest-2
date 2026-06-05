@@ -1292,7 +1292,7 @@
     "tooltips.kubejs.knowledge_witness.default.1": "知识为万物之见证",
     "tooltips.kubejs.knowledge_witness.shift.1": "    §6★§r 佩戴时，造成§6任意伤害§r均会为该见证累计进度",
     "tooltips.kubejs.knowledge_witness.shift.2": "    §6★§r 当进度达到要求时，会给予玩家§6经验§r",
-    "tooltips.kubejs.knowledge_witness.alt.1": "    →  %s： 经验 x 100",
+    "tooltips.kubejs.knowledge_witness.alt.1": "    →  %s： 经验 x 200",
     "tooltips.kubejs.knowledge_witness.alt.2": "    -  该见证已累计给予 %s 点经验",
     "item.kubejs.eternal_oath": "永恒的誓言",
     "tooltips.kubejs.eternal_oath.default.1": "我对你宣誓，不再没收后人的任何财产",
