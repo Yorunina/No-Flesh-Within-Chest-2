@@ -907,7 +907,7 @@
 				icon: "minecraft:wheat"
 				id: "019003C08356D47A"
 				leaderboard: "leaderboards:animals_bred"
-				min: 10
+				min: 1
 				rank: 1
 				title: "繁殖动物数称霸"
 				type: "leaderboards:rank_task"
