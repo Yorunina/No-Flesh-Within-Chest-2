@@ -72,7 +72,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:rat_ear').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/rat_ear')
 
-    event.create('kubejs:bee_honey_stomach').maxStackSize(1).maxDamage(10).tag('kubejs:nature').texture('kubejs:item/organs/nature/bee_honey_stomach').tag('kubejs:stomach')
+    event.create('kubejs:bee_honey_stomach').maxStackSize(1).maxDamage(5).tag('kubejs:nature').texture('kubejs:item/organs/nature/bee_honey_stomach').tag('kubejs:stomach')
 
     event.create('kubejs:wolf_fang').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/wolf_fang')
 

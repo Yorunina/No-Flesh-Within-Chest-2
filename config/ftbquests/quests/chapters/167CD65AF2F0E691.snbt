@@ -27,6 +27,7 @@
 			y: 11.0d
 		}
 		{
+			click: "https://no-flesh-within-chest-ii.fandom.com/zh/wiki/No_Flesh_Within_Chest_II_Wiki"
 			dependency: "473AA9B909ED8EB0"
 			height: 6.27d
 			image: "kubejs:textures/gui/tasks/prologue/hello_world.png"
