@@ -26,7 +26,7 @@ LeaderboardsEvents.registryLeaderboards(event => {
 		new LeaderboardFromStat(
 			new ResourceLocation('maa:exavate_times'),
 			Text.translatable('leaderboard.maa.exavate_times'),
-			MAARegistration.EXCAVATE_TIMES_STAT,
+			MAAStats.EXCAVATE_TIMES_STAT,
 			false,
 			LeaderboardFromStat.DEFAULT
 		)
