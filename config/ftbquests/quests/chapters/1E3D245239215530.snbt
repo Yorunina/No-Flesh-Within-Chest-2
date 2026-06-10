@@ -85,8 +85,8 @@
 				""
 				"或许我们可以通过这种效应来做一些事情。"
 			]
+			hide_until_deps_complete: true
 			id: "3059F62A16427246"
-			invisible: true
 			rewards: [{
 				id: "5E90B09BA6AA322A"
 				item: "lightmanscurrency:coin_gold"
@@ -121,7 +121,7 @@
 			shape: "circle"
 			subtitle: "我来替您设计"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "5A7DA0C8AF0563B2"
 				title: "稍等片刻"

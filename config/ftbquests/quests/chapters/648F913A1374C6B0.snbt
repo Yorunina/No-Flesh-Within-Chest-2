@@ -102,8 +102,8 @@
 				""
 				"结合它们&6“未成型”&r的名称来看，很有可能有某种方法可以让这些肿瘤成长为&6“成型”&r的状态，进而揭示这些隐藏属性。"
 			]
+			hide_until_deps_complete: true
 			id: "2FBC5269D17457E9"
-			invisible: true
 			rewards: [{
 				id: "45000E1BBA4FDE8B"
 				item: "lightmanscurrency:coin_gold"
@@ -141,7 +141,7 @@
 			}]
 			subtitle: "调查肿瘤相关信息"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "23F232F04DBA3F74"
 				title: "稍等片刻"
@@ -939,7 +939,7 @@
 			}]
 			subtitle: "予汝玫瑰"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "26B0D2E6227019A0"
 				title: "稍等片刻"

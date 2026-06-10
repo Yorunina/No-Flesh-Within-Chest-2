@@ -217,10 +217,10 @@
 				""
 				"在过去的日志里，里面明确存在极少部分玩家&6榨取地幔能&r的记录。或许我们可以学习他们，同样开采地幔能以获取一定的发展优势。"
 			]
+			hide_until_deps_complete: true
 			icon: "create:blaze_cake"
 			id: "1E56E0456EA6D888"
 			incompatible: ["238304E64039192F"]
-			invisible: true
 			rewards: [{
 				id: "66EBC46E8D722DB1"
 				item: "lightmanscurrency:coin_gold"
@@ -1127,7 +1127,7 @@
 			}]
 			subtitle: "我们的未来"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "70E0F201C2EAA909"
 				title: "稍等片刻"

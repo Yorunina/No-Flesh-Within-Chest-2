@@ -26,7 +26,22 @@ function ArmadilloShellEntityTick(customData, event, organItem, organIndex, slot
     attr.addPermanentModifier(modifier)
 }
 
+/**
+* @param {OrganEventCustomData} customData
+* @param {Internal.LivingHurtEvent} event
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function ArmadilloShellChestCavityTakeOff(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (!(entity instanceof $LivingEntity)) return
+    let attr = entity.getAttribute('minecraft:generic.armor')
+    attr.removePermanentModifier(ArmadilloShellDefenseUpUUID)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:armadillo_shell')
         .addOnlyStrategy('entity_tick', ArmadilloShellEntityTick)
+        .addOnlyStrategy('organ_take_off', ArmadilloShellChestCavityTakeOff)
 )

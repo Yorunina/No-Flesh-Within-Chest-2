@@ -124,7 +124,7 @@
 	team_prop_defaults: {
 		# Default explosion protection for claimed chunks
 		# Default: false
-		def_allow_explosions: true
+		def_allow_explosions: false
 		
 		# Default mode for block breaking and placing in claimed chunks (NeoForge only)
 		# Default: "allies"

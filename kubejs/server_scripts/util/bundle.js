@@ -15,7 +15,7 @@ function RemoveBundleOneStack(stack) {
     let pStack = $ItemStack.of(items.getCompound(0))
     items.remove(0)
     if (items.isEmpty()) {
-        pStack.removeTagKey('Items')
+        nbt.remove('Items')
     }
     return Optional.of(pStack)
 }
@@ -43,9 +43,23 @@ function RemoveBundleItem(stack, index, count) {
     }
 
     if (items.isEmpty()) {
-        pStack.removeTagKey('Items')
+        nbt.remove('Items')
     }
 }
+
+/**
+ * 清空收纳袋内所有物品
+ * @param {Internal.ItemStack} stack
+ * @returns {Internal.ItemStack[]} 被移除的物品列表
+ */
+function ClearBundle(stack) {
+    let contents = GetBundleContents(stack)
+    if (contents.length == 0) return []
+    let nbt = stack.getNbt()
+    if (nbt != null) nbt.remove('Items')
+    return contents
+}
+
 /**
  * 
  * @param {Internal.Entity} entity 
@@ -129,19 +143,20 @@ function AddItemIntoBundle(bundleStack, insertedStack, maxWeight, weightFunc) {
 
     let items = nbt.getList('Items', TAG_COMPOUND)
     let remainder = insertedStack.copyWithCount(insertCount)
-    let matchTagOpt = items.stream()
-        .filter(tag => $ItemStack.isSameItemSameTags($ItemStack.of(tag), remainder))
-        .findFirst()
-    if (matchTagOpt.isPresent()) {
-        let matchTag = matchTagOpt.get()
-        let matchItem = $ItemStack.of(matchTag)
+    let matchIdx = -1
+    for (let i = 0; i < items.size(); i++) {
+        if ($ItemStack.isSameItemSameTags($ItemStack.of(items.getCompound(i)), remainder)) {
+            matchIdx = i
+            break
+        }
+    }
+    if (matchIdx >= 0) {
+        let matchItem = $ItemStack.of(items.getCompound(matchIdx))
         if (matchItem.getCount() >= matchItem.getMaxStackSize()) {
-            items.add(0, remainder.save(new CompoundTag()))
+            items.add(0, remainder.save(new $CompoundTag()))
         } else {
             matchItem.grow(remainder.getCount())
-            matchItem.save(matchTag)
-            items.remove(matchTag)
-            items.add(0, matchTag)
+            items.set(matchIdx, matchItem.save(new $CompoundTag()))
         }
     } else {
         items.add(0, remainder.save(new $CompoundTag()))

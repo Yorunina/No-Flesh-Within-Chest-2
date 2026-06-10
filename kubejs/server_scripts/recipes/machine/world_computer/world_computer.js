@@ -509,7 +509,7 @@ ServerEvents.recipes(event => {
         .produceItem(Item.of('minecraft:command_block', 1))
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 64), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 64), 'input_2')
+        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .requireItem(Item.of('kubejs:oracle_module', 1), 'input_1')
         .resetOnError()
 
@@ -517,7 +517,7 @@ ServerEvents.recipes(event => {
         .produceItem(Item.of('create:creative_blaze_cake', 1))
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:flame_crystal', 1), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 64), 'input_2')
+        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .requireItem(Item.of('create:blaze_cake', 1), 'input_1')
         .resetOnError()
 
@@ -525,7 +525,7 @@ ServerEvents.recipes(event => {
         .produceItem(Item.of('create:creative_motor', 1))
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 8), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 64), 'input_2')
+        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .requireItem(Item.of('createdieselgenerators:diesel_engine', 1), 'input_1')
         .resetOnError()
 })

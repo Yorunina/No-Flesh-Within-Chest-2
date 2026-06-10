@@ -291,8 +291,8 @@
 				""
 				"其不仅能够为我们&6提供一些正常极其难以获得的资源&r，更重要的是能够极大的&6扩展我们对于现在世界的基本认知&r。"
 			]
+			hide_until_deps_complete: true
 			id: "2408DFE03E1133D3"
-			invisible: true
 			rewards: [{
 				id: "5B113BE309544749"
 				item: "lightmanscurrency:coin_gold"
@@ -1195,7 +1195,7 @@
 			]
 			subtitle: "从何而来的消息"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "0AA8EC9B7361AA3A"
 				title: "稍等片刻"

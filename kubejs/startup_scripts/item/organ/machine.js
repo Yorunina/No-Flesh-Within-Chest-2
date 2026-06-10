@@ -16,7 +16,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:prowler_rotating_shaft').maxStackSize(1).texture('kubejs:item/organs/machine/prowler_rotating_shaft').tag('kubejs:machine')
 
     event.create('kubejs:watcher_probe').maxStackSize(1).texture('kubejs:item/organs/machine/watcher_probe').tag('kubejs:machine')
-    
+
     event.create('kubejs:fiery_core').maxStackSize(1).texture('kubejs:item/organs/machine/fiery_core').fireResistant().tag('kubejs:machine').tag('kubejs:heart')
 
     event.create('kubejs:thermometer').maxStackSize(1).texture('kubejs:item/organs/machine/thermometer').tag('kubejs:machine').tag('kubejs:bone')

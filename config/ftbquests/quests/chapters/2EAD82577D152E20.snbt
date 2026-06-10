@@ -581,8 +581,8 @@
 				""
 				"通过这些&6踪迹&r，我们或许能够发现更多能被我们利用的技术。"
 			]
+			hide_until_deps_complete: true
 			id: "7DFD8F39E1AC3083"
-			invisible: true
 			rewards: [{
 				id: "20A8F00CE6DE29FE"
 				item: "lightmanscurrency:coin_gold"
@@ -2094,7 +2094,7 @@
 			shape: "none"
 			subtitle: "追寻踪迹至此"
 			tasks: [{
-				elapsedTime: 180L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "48FBCB006618B007"
 				title: "静候扫描"

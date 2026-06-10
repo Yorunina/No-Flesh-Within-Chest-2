@@ -67,9 +67,9 @@
 			icon: "minecraft:oak_sapling"
 			id: "473AA9B909ED8EB0"
 			rewards: [{
-				icon: "minecraft:diamond"
+				icon: "minecraft:oak_sapling"
 				id: "07414EC3DE13EE69"
-				item: "minecraft:oak_sapling"
+				item: "minecraft:diamond"
 				type: "item"
 			}]
 			shape: "none"

@@ -1235,7 +1235,7 @@
 			}]
 			subtitle: "确认世界的裂口"
 			tasks: [{
-				elapsedTime: 180L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "0677CF00DAEFCEAC"
 				title: "稍等片刻"

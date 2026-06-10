@@ -74,30 +74,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["46E78442AD5DB22E"]
-			description: [
-				"为了进一步探索生物技术，我们需要制作一些&6特殊的药剂&r。"
-				""
-				"这些药剂由于其本身的活跃特性，需要被放置在特殊的&6有机试管&r中。为了在后续的生物炼金技术中迅速取得突破，您最好提前多准备一些有机试管。"
-			]
-			id: "518A9614F706B9F3"
-			invisible: true
-			rewards: [{
-				id: "53649BF0F092B6C7"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "基础针剂容器"
-			tasks: [{
-				id: "58A772A2562FCCBA"
-				item: "biomancy:vial"
-				type: "item"
-			}]
-			title: "探寻生物技术的极限"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["5915C77B5C546047"]
 			description: [
 				"在整理过后，我大概知晓了如何&6初步进行胸腔的扩容&r。"
@@ -244,7 +220,7 @@
 			}]
 			subtitle: "胸腔技术改进"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "5CEB1A494AE05826"
 				title: "稍等片刻"
@@ -944,6 +920,30 @@
 			title: "高效器官摘取法"
 			x: -24.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["46E78442AD5DB22E"]
+			description: [
+				"为了进一步探索生物技术，我们需要制作一些&6特殊的药剂&r。"
+				""
+				"这些药剂由于其本身的活跃特性，需要被放置在特殊的&6有机试管&r中。为了在后续的生物炼金技术中迅速取得突破，您最好提前多准备一些有机试管。"
+			]
+			hide_until_deps_complete: true
+			id: "518A9614F706B9F3"
+			rewards: [{
+				id: "53649BF0F092B6C7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "基础针剂容器"
+			tasks: [{
+				id: "58A772A2562FCCBA"
+				item: "biomancy:vial"
+				type: "item"
+			}]
+			title: "探寻生物技术的极限"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	title: "传闻：胸腔扩容"

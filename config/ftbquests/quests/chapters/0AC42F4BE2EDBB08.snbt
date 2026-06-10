@@ -271,7 +271,7 @@
 				id: "54746139866A967C"
 				title: "挖掘铁矿石"
 				type: "questsadditions:break"
-				value: 3L
+				value: 1L
 			}]
 			x: 0.0d
 			y: 6.0d
@@ -899,7 +899,7 @@
 			y: 9.0d
 		}
 		{
-			dependencies: ["563D136C06E38A60"]
+			dependencies: ["4A1C6C6150E32CEE"]
 			description: [
 				"在这个世界中，似乎有大量的&6概念&r被具象化为了另一种形式——比如说一种&6饰品&r。"
 				""
@@ -911,11 +911,6 @@
 			id: "28C86788D85A6138"
 			rewards: [
 				{
-					id: "588FC7BAB1420E33"
-					item: "lightmanscurrency:coin_gold"
-					type: "item"
-				}
-				{
 					count: 1
 					icon: "kubejs:story_witness"
 					id: "771561DE10AE80F5"
@@ -923,6 +918,11 @@
 					isPermanent: true
 					slot: "witness"
 					type: "maa:curios_slot"
+				}
+				{
+					id: "588FC7BAB1420E33"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
 				}
 			]
 			subtitle: "概念具象化"
@@ -933,7 +933,7 @@
 			}]
 			title: "名为见证的挂饰"
 			x: 3.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
@@ -1070,10 +1070,10 @@
 			}]
 			title: "见证者"
 			x: 6.0d
-			y: 12.0d
+			y: 13.5d
 		}
 		{
-			dependencies: ["4A1C6C6150E32CEE"]
+			dependencies: ["563D136C06E38A60"]
 			description: [
 				"在这个世界中，似乎有大量的&6概念&r被具象化为了另一种形式——比如说一种&6饰品&r。"
 				""
@@ -1084,11 +1084,6 @@
 			id: "7E16877C14CFD254"
 			rewards: [
 				{
-					id: "5069F2A6FE48A3B6"
-					item: "lightmanscurrency:coin_gold"
-					type: "item"
-				}
-				{
 					count: 1
 					icon: "kubejs:eternal_oath"
 					id: "0069746500E68AE5"
@@ -1096,6 +1091,11 @@
 					isPermanent: true
 					slot: "oath"
 					type: "maa:curios_slot"
+				}
+				{
+					id: "5069F2A6FE48A3B6"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
 				}
 			]
 			subtitle: "概念具象化"
@@ -1106,7 +1106,7 @@
 			}]
 			title: "名为誓言的胸针"
 			x: 3.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]

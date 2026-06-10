@@ -161,7 +161,7 @@ function GetModularItemMineSpeed(stack) {
  * @returns {Internal.ItemStack}
  */
 function GetEntityHeadItem(entity) {
-    if (entity.isPlayer) {
+    if (entity.isPlayer()) {
         entity.getGameProfile()
         return Item.of('minecraft:player_head', $NbtUtils.writeGameProfile(new $CompoundTag(), entity.getGameProfile()))
     } else if (Entity2EntityHeadItem[entity.getType()]) {

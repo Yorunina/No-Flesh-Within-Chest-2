@@ -5,14 +5,14 @@
   "instrumentVolumeFactor": 1.0,
   "perceivedLoudnessAdjustmentFactor": 0.5,
   "mobInstrumentFactors": {
-    "minecraft:piglin_brute": 0.01,
-    "minecraft:pillager": 0.01,
-    "minecraft:skeleton": 0.01,
-    "minecraft:wither_skeleton": 0.01,
-    "minecraft:zombified_piglin": 0.01,
-    "minecraft:piglin": 0.01,
-    "minecraft:husk": 0.01,
-    "minecraft:zombie": 0.01
+    "minecraft:piglin_brute": 0.0,
+    "minecraft:pillager": 0.0,
+    "minecraft:skeleton": 0.0,
+    "minecraft:wither_skeleton": 0.0,
+    "minecraft:zombified_piglin": 0.0,
+    "minecraft:piglin": 0.0,
+    "minecraft:husk": 0.0,
+    "minecraft:zombie": 0.0
   },
   "mobInstrumentDropFactor": 0.085,
   "showOtherPlayersMelodies": true,

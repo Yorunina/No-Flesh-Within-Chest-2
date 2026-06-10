@@ -227,8 +227,10 @@ StartupEvents.registry('item', event => {
                 PlayBundleRemoveSound(player)
                 RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
             } else if (oStack.isBlock()) {
-                let added = AddItemIntoBundle(stack, slot.safeTake(oStack.getCount(), 65535, player), 1, (pStack) => 1)
+                let taken = slot.safeTake(oStack.getCount(), 65535, player)
+                let added = AddItemIntoBundle(stack, taken, 1, (pStack) => 1)
                 if (added > 0) PlayerBundleInsertSound(player)
+                if (taken.getCount() > added) slot.safeInsert(taken.copyWithCount(taken.getCount() - added))
             }
             return true
         })
@@ -270,8 +272,10 @@ StartupEvents.registry('item', event => {
                 PlayBundleRemoveSound(player)
                 RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
             } else if (oStack.isBlock()) {
-                let added = AddItemIntoBundle(stack, slot.safeTake(oStack.getCount(), 65535, player), 4, (pStack) => 1)
+                let taken = slot.safeTake(oStack.getCount(), 65535, player)
+                let added = AddItemIntoBundle(stack, taken, 4, (pStack) => 1)
                 if (added > 0) PlayerBundleInsertSound(player)
+                if (taken.getCount() > added) slot.safeInsert(taken.copyWithCount(taken.getCount() - added))
             }
             return true
         })

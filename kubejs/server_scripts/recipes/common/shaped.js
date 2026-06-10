@@ -102,4 +102,10 @@ ServerEvents.recipes(event => {
         ['minecraft:red_dye', 'minecraft:yellow_dye', 'minecraft:blue_dye'],
         ['minecraft:paper', 'minecraft:paper', 'minecraft:paper']
     ])
+    event.remove({ id: 'waystones:warp_stone' })
+    event.shaped(Item.of('waystones:warp_stone'), [
+        ['minecraft:gold_nugget', 'minecraft:iron_nugget', 'minecraft:gold_nugget'],
+        ['minecraft:iron_nugget', 'minecraft:stone_bricks', 'minecraft:iron_nugget'],
+        ['minecraft:gold_nugget', 'minecraft:iron_nugget', 'minecraft:gold_nugget']
+    ])
 })

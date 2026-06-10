@@ -156,9 +156,9 @@
 				""
 				"如果我们使用一些有效的&6药水&r，或许可以将其从中显现。"
 			]
+			hide_until_deps_complete: true
 			icon: "bakery:jar"
 			id: "2404C834CBCBB197"
-			invisible: true
 			rewards: [{
 				id: "72895F0B7F1A99B6"
 				item: "lightmanscurrency:coin_gold"
@@ -1069,7 +1069,7 @@
 			}]
 			subtitle: "这些虫子是怎么居住在里面的？"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "44C6F5D93973EBDE"
 				title: "静候佳音"

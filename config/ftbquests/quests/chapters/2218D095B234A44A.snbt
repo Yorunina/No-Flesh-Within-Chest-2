@@ -184,10 +184,11 @@
 				""
 				"因此，请您使用开胸器打开猪的胸腔，您可以取出它的任意器官以实验不同属性会导致的效果。"
 			]
+			icon: "simplehats:pighead"
 			id: "1D65BF71E2DCA300"
 			rewards: [{
-				id: "52FC369A48FEC100"
-				item: "lightmanscurrency:piggy_bank"
+				id: "1374ED2BF245D46A"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "先从简单的生物开始"

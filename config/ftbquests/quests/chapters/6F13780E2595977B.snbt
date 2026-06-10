@@ -173,9 +173,9 @@
 				""
 				"这种加工工序被层层掩盖，只有具有足够经验的工匠在锻造时才可能让工具的属性中包含这个标签。"
 			]
+			hide_until_deps_complete: true
 			icon: "tetra:hammer_base"
 			id: "428D9599A58515E7"
-			invisible: true
 			rewards: [{
 				id: "71801311A94D2398"
 				item: "lightmanscurrency:coin_gold"
@@ -286,7 +286,7 @@
 			}]
 			subtitle: "我需要收集更多的信息"
 			tasks: [{
-				elapsedTime: 300L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "5FD51CB999EA8CCC"
 				title: "稍等片刻"
@@ -1805,7 +1805,7 @@
 			}]
 			subtitle: "发想已成"
 			tasks: [{
-				elapsedTime: 180L
+				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "1350CE70DEC5DE4B"
 				title: "准备创世工序"
