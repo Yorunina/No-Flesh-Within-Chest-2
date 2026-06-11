@@ -14,7 +14,7 @@
 			"other_set": "minecraft:villages",
 			"chunk_count": 10
 		},
-		"spacing": 24,
-		"separation": 12
+		"spacing": 32,
+		"separation": 16
 	}
 }

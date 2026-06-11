@@ -12,8 +12,8 @@ RegistryOrgan('kubejs:bison_horn')
 * @param {string} slotType
 */
 function BisonHornEntityDoDamage(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    event.amount = event.amount + (entity.maxHealth - entity.health) * 2
+    const source = event.source.actual
+    event.amount = event.amount + (source.maxHealth - source.health) * 2
 }
 
 RegistryOrganStrategy(

@@ -6,8 +6,6 @@ BlockEvents.rightClicked('cataclysm:altar_of_fire', event => {
     /**@type {Internal.ModularItem} */
     const item = stack.getItem()
     if (!item || !player) return
-    let damageValue = stack.getDamageValue()
-    if (damageValue != 0) return
     if (player.playingAnimation) return
     if (!TetraJSUtils.isModularItem(item)) return
     if (IsPreForge(stack, PreForgeTypeFlamberge)) return

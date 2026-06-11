@@ -1167,6 +1167,63 @@
 			x: -6.0d
 			y: 6.0d
 		}
+		{
+			description: [
+				"为了方便后续的长途旅行，您可能需要一个&6类似于鞘翅&r一样的能够将高度转换为动能的工具。"
+				""
+				"&6滑翔翼&r便是一个前期可以获得的高效旅行方式。"
+				""
+				"除此之外，滑翔翼似乎可以和各种能够&6让您高高跃起的工具&r进行配合，达到快速旅行的目的。"
+			]
+			id: "57BBCCCD732ED543"
+			rewards: [{
+				id: "26265381FDBCEE0D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用滑翔翼"
+			tasks: [{
+				id: "5632732C5CEAEC0C"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "在高空中滑行"
+			x: -3.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["57BBCCCD732ED543"]
+			description: [
+				"为了方便后续的长途旅行，您可能需要一个能快速构造出路径的设备。"
+				""
+				"&6绳桥枪&r便是最佳的方案。"
+				""
+				"手持绳桥枪右键瞄准，在您的面前有方块的情况下，&6松开右键便可以生成一条绳桥&r；&6绳桥无法斜向生成&r，因此目标位置必须要在您的正东/正南/正西/正北方向。"
+				""
+				"绳桥的材质可以通过背包中持有的半砖类型而变化。"
+			]
+			id: "563087C8FE4275E8"
+			rewards: [{
+				id: "4F9096733B9D4C3C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "使用绳桥"
+			tasks: [{
+				id: "6D5A97FF5A9CDD06"
+				item: "ropebridge:bridge_builder"
+				type: "item"
+			}]
+			title: "在高空中步行"
+			x: -4.5d
+			y: 13.5d
+		}
 	]
-	title: "壹"
+	title: "序章"
 }

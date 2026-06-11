@@ -672,6 +672,35 @@
 			x: 5.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["04BD8BC9319A7E1C"]
+			description: [
+				"仅使用肋骨刃牙获取特殊掉落效率实在过于低下。"
+				""
+				"您可以制作&6血肉掠夺镰&r，在持有它击杀生物的情况下，生物会有更高概率掉落其对应的特殊掉落。"
+			]
+			id: "4C9C986207ACC0AF"
+			rewards: [{
+				id: "59FBED2ACA70C0D0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "血肉掠夺方案"
+			tasks: [{
+				id: "7AD877B2DCE04C06"
+				item: {
+					Count: 1
+					id: "biomancy:despoil_sickle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "更高效的掠夺方案"
+			x: 2.5d
+			y: 5.0d
+		}
 	]
 	title: "认知：胸腔"
 }

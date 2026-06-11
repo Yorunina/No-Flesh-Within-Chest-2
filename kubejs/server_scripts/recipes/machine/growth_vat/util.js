@@ -91,11 +91,11 @@ function ProliferateTumor(machine, fluid, item, slotId) {
         let potentialOrganData = nbt.getCompound('potentialOrganData')
         if (Math.random() > (organData.size() / (organData.size() + potentialOrganData.size()))) {
             let randomKey = RandomGet(potentialOrganData.allKeys.toArray())
-            let randomValue = FloorFix(potentialOrganData.getFloat(randomKey) * 0.8, 2)
+            let randomValue = FloorFix(potentialOrganData.getFloat(randomKey) * 0.9, 2)
             potentialOrganData.putFloat(randomKey, randomValue)
         } else {
             let randomKey = RandomGet(organData.allKeys.toArray())
-            let randomValue = FloorFix(organData.getFloat(randomKey) * 0.8, 2)
+            let randomValue = FloorFix(organData.getFloat(randomKey) * 0.9, 2)
             organData.putFloat(randomKey, randomValue)
         }
     } else if (random < 0.5) {

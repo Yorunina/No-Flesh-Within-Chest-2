@@ -802,7 +802,7 @@
     "tooltips.kubejs.tasty_gland.alt.1": "    §6★§r 装备该器官的生物在被交互时，会消耗自身当前生命值的一半（最高不超过40）以§6恢复交互者的饥饿值§r",
     "item.kubejs.bison_horn": "野牛角",
     "tooltips.kubejs.bison_horn.default.1": "狂热的血液摧毁着双方的身体",
-    "tooltips.kubejs.bison_horn.alt.1": "    §6★§r 你的攻击会附加当前已损失生命值 §62§r 倍的额外伤害",
+    "tooltips.kubejs.bison_horn.alt.1": "    §6★§r 你的攻击会附加自身当前已损失生命值 §62§r 倍的额外伤害",
     "item.kubejs.turkey_gizzard": "火鸡砂囊",
     "tooltips.kubejs.turkey_gizzard.default.1": "完全不宜消化！",
     "tooltips.kubejs.turkey_gizzard.alt.1": "    §6★§r 食用不可%s的食物时，有 %s %s会使该器官%s的物品被§4粉碎§r",

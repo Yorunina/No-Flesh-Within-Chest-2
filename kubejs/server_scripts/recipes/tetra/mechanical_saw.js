@@ -3,12 +3,9 @@ BlockEvents.rightClicked('create:mechanical_saw', event => {
     const player = event.player
     const level = event.level
     const stack = event.item
-    const block = event.block
     /**@type {Internal.ModularItem} */
     const item = stack.getItem()
     if (!item || !player) return
-    let damageValue = stack.getDamageValue()
-    if (damageValue != 0) return
     if (player.playingAnimation) return
     if (!TetraJSUtils.isModularItem(item)) return
     if (IsPreForge(stack, PreForgeTypeMechanicalSaw)) return

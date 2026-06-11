@@ -4,7 +4,7 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0x50C878)
         .temperature(2000)
         .stillTexture('kubejs:block/fluid/molten_emerald_fluid')
-        .flowingTexture('kubejs:fluid/molten_emerald_fluid')
+        .flowingTexture('kubejs:block/fluid/molten_emerald_fluid')
 
     event.create('molten_copper_fluid')
         .bucketColor(0xC05630)
