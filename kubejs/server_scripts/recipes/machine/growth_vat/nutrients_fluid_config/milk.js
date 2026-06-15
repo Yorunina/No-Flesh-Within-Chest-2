@@ -1,7 +1,7 @@
 // priority: 502
 const MilkOrganDataWeightModel = new WeightRandomModel()
-    .addWeightRandom({ name: 'chestcavity:detoxification', mean: 1, sigma: 1 }, 15)
-    .addWeightRandom({ name: 'chestcavity:filtration', mean: 1, sigma: 1 }, 15)
+    .addWeightRandom({ name: 'chestcavity:detoxification', mean: 1.5, sigma: 0.8 }, 30)
+    .addWeightRandom({ name: 'chestcavity:filtration', mean: 1.5, sigma: 0.8 }, 30)
     .addWeightRandom({ name: 'chestcavity:health', mean: -1, sigma: 0.5 }, 15)
 
 const MilkPotentialOrganDataWeightModel = new WeightRandomModel()

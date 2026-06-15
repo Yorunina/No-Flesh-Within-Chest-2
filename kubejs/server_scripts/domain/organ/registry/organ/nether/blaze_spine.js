@@ -23,7 +23,7 @@ function BlazeSpineEntityDoDamage(customData, event, organItem, organIndex, slot
     let fireTicks = Math.max(source.getRemainingFireTicks() - 60, 0)
     source.setRemainingFireTicks(fireTicks)
     target.setRemainingFireTicks(fireTicks)
-    if (slotType == MachinaryLubricant) return
+    if (slotType == RevolutionFlame) return
     SetCustomDataMap(chestCavity, 'blazeSpineCounter', blazeSpineCounter)
     if (blazeSpineCounter > 0) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText(blazeSpineCounter.toFixed(0))

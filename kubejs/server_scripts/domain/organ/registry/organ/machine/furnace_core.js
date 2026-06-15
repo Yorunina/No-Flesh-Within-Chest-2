@@ -61,6 +61,7 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     const chestCavity = sourceEntity.chestCavityInstance
+    const inventoryTypeData = chestCavity.getInventoryTypeData()
     let damageValue = 2 + GetCustomDataMap(chestCavity, 'furnaceCoreRelay', 0)
     // 烈焰槽位解除耐久消耗提升限制
     if (slotType != RevolutionFlame) {
@@ -77,10 +78,12 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
         let replaceItem = Item.of('kubejs:burning_heart')
         SetChestCavityOrgan(customData, chestCavity, replaceItem, organIndex, slotType, false)
         // 革命之钟触发烈焰加压器
-        if (chestCavity.inventory.find('kubejs:revolution_bell') > -1) {
+        let blazePressurizerIndex = chestCavity.inventory.find('kubejs:revolution_bell')
+        if (blazePressurizerIndex > -1) {
             if (sourceEntity instanceof $ServerPlayer) {
                 if (!sourceEntity.getCooldowns().isOnCooldown('kubejs:blaze_pressurizer')) {
-                    let counter = BlazePressurizerActive(chestCavity, slotType)
+                    // todo 测试
+                    let counter = BlazePressurizerActive(chestCavity, inventoryTypeData.getSlotType(blazePressurizerIndex))
                     let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(organIndex).setCustomText(counter.toFixed(0))
                     SetOrganEffect(chestCavity, organEffect)
                     sourceEntity.addItemCooldown('kubejs:blaze_pressurizer', 20 * 30)

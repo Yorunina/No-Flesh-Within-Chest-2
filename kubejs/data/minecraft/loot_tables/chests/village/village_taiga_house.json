@@ -148,6 +148,11 @@
           ],
           "name": "minecraft:spruce_log",
           "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:organ_purification_tank",
+          "weight": 2
         }
       ],
       "rolls": {

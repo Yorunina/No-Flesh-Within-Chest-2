@@ -20,7 +20,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:gateways_auxiliary_material
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
     .addDefault(Text.translatable('tooltips.kubejs.gateways_auxiliary_material.default.1').gray())
     .addShift(Text.translatable('tooltips.kubejs.gateways_auxiliary_material.shift.1'))
-    .addShift(Text.translatable('tooltips.kubejs.gateways_auxiliary_material.shift.2', Text.gold('+4'), Text.lightPurple('+2')))
+    .addShift(Text.translatable('tooltips.kubejs.gateways_auxiliary_material.shift.2', Text.gold('+5'), Text.lightPurple('+2')))
 )
 
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:gateways_auxiliary_material_4')

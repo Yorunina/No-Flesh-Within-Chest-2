@@ -34,7 +34,7 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.tags('entity_type', event => {
-    event.add('ars_nouveau:drygmy_blacklist', [])
+    event.add('ars_nouveau:drygmy_blacklist', ['wildernature:raccoon'])
 })
 
 

@@ -150,6 +150,59 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag('kubejs:infected')
         .tag('kubejs:stomach')
+
+    event.create('kubejs:navigating_liver')
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            const nbt = stack.getOrCreateTag()
+            if (nbt.getInt('locating') == 1) return false
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
+            if (oStack.isEmpty()) {
+                RemoveBundleOneStack(stack).ifPresent(pStack => {
+                    PlayBundleRemoveSound(player)
+                    access.set(pStack)
+                })
+                nbt.put('locating', 0)
+            } else if (oStack.getItem() instanceof $BaseSelectorItem) {
+                let added = AddItemIntoBundle(stack, oStack, 1, (pStack) => 1)
+                if (added > 0) {
+                    PlayerBundleInsertSound(player)
+                    oStack.shrink(added)
+                }
+                nbt.put('locating', 0)
+            }
+            return true
+        })
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            const nbt = stack.getOrCreateTag()
+            if (nbt.getInt('locating') == 1) return false
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
+            let oStack = slot.getItem()
+            if (oStack.isEmpty()) {
+                PlayBundleRemoveSound(player)
+                RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
+                nbt.put('locating', 0)
+            } else if (oStack.getItem() instanceof $BaseSelectorItem) {
+                let taken = slot.safeTake(oStack.getCount(), 65535, player)
+                let added = AddItemIntoBundle(stack, taken, 1, (pStack) => 1)
+                if (added > 0) PlayerBundleInsertSound(player)
+                if (taken.getCount() > added) slot.safeInsert(taken.copyWithCount(taken.getCount() - added))
+                nbt.put('locating', 0)
+            }
+            return true
+        })
+        .barWidth((stack) => {
+            let stackList = GetBundleContents(stack)
+            return Math.min(1 + 12 * stackList.length, 13)
+        })
+        .barColor(() => Color.DARK_BLUE)
+        .tooltipImage((stack) => {
+            let itemList = $NonNullList.create()
+            GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
+            return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
+        })
+        .canFitInsideContainerItems(false)
+        .texture('kubejs:item/organs/infected/navigating_liver')
+        .maxStackSize(1)
+        .tag('kubejs:infected')
+        .tag('kubejs:liver')
 })
-
-

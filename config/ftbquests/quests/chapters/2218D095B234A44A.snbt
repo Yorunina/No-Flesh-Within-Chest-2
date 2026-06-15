@@ -35,7 +35,7 @@
 			rotation: 0.0d
 			width: 9.67d
 			x: 13.5d
-			y: 8.5d
+			y: 1.5d
 		}
 		{
 			dependency: "1D2835C031D8C57F"
@@ -149,7 +149,7 @@
 				""
 				"一般而言，对生物来说，必须要具备有至少为1的&6健康&r和至少为1的&6神经效率&r，前者会保证你不会持续流血，后者可以保证你能移动。"
 				""
-				"其他的属性也都有各自的作用，具体您可以使用&6固定提示框按键（默认为D）&r将物品提示固定住，而后将鼠标放在词条上观察。"
+				"其他的属性也都有各自的作用，具体您可以使用&6固定提示框按键（默认为~）&r将物品提示固定住，而后将鼠标放在词条上观察。"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -429,8 +429,8 @@
 				type: "checkmark"
 			}]
 			title: "逃离排异反应"
-			x: 7.5d
-			y: 10.0d
+			x: 10.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["70010BB6C23E4927"]
@@ -740,6 +740,50 @@
 			title: "世界器官综述"
 			x: 2.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["4FBC882804C1F6A9"]
+			description: [
+				"在生物锻造台中，存在有一个专门的器官页面用于合成一些特殊器官。"
+				""
+				"其中，一种叫作&6方向肝&r的器官可能对您的生存大有帮助。"
+				""
+				"制作配套的&6结构角质皮&r和&6群系角质皮&r，通过角质皮选中你想要前往的特殊结构/群系，并将其放置在方向肝中，即可让方向肝将角质皮转换为对应位置的藏宝图。"
+				""
+				"但某些时候，结构和群系太难以寻找，方向肝最多只能寻找到&68000格以内&r的结构——您可能需要重新选择您的目标。"
+			]
+			hide_dependency_lines: true
+			id: "5B724E22912157A6"
+			rewards: [
+				{
+					id: "5BE54FD456EA2F91"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "20D7D863109C9AC3"
+					item: "maa:structure_selector"
+					type: "item"
+				}
+				{
+					id: "41133AB4BA8FEDE0"
+					item: "maa:biome_selector"
+					type: "item"
+				}
+			]
+			subtitle: "使用器官定位"
+			tasks: [{
+				id: "4D2AB6EFD7776531"
+				item: {
+					Count: 1
+					id: "kubejs:navigating_liver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "找寻迷失的方向"
+			x: 7.5d
+			y: 10.0d
 		}
 	]
 	title: "认知：胸腔"

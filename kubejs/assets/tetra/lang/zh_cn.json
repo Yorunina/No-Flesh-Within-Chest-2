@@ -1390,6 +1390,8 @@
   "tetra.stats.hoe_dig.tooltip": "该工具适用于收获作物",
   "tetra.stats.holo.percussionScanner": "敲击扫描器",
   "tetra.stats.holo.percussionScanner.tooltip": "全息球放置在地上时启用扫描模式。在扫描模式下，可用锤子敲击全息球来扫描区块中的古代遗迹",
+  "tetra.stats.attack_speed_normalized": "速度",
+  "tetra.stats.attack_speed_normalized.tooltip": "影响 §e%s 的攻击速度",
   "tetra.stats.holo.percussionScanner.tooltip_extended": "区块在 §e40 度§7 锥形范围内扫描，基于玩家相对于全息球站立的位置，每次敲击扫描 §e4§7 个区块。\n \n锤子属性加成:\n §e+ 每级锤子等级增加 12 度锥形大小§7\n §e+ 每点锤子效率增加 1/4 区块§7（忽略速度修正）\n \n包含遗迹的区块在扫描器界面中用橙色光束高亮显示。",
   "tetra.stats.holo.sweeperHorizontalSpread": "水平扫描",
   "tetra.stats.holo.sweeperHorizontalSpread.tooltip": "扫描器水平分辨率为 §e%s 单位\n§7单位间角度: §e%s 度",

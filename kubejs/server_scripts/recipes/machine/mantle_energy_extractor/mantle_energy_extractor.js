@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
             return ctx.error('')
         })
         .produceItem('kubejs:flame_crystal', 'output_flame')
-        .requireSourcePerTick(128)
+        .requireSourcePerTick(16)
         .requireSource(1000)
         .resetOnError()
 
@@ -148,8 +148,10 @@ ServerEvents.recipes(event => {
             const biome = level.getBiome(pos).get()
             const biomeTemp = biome.getBaseTemperature()
             if (biomeTemp <= -0.5) return ctx.success()
-            let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
-            SetBiomeByChunk(level, GetChunkAccess(level, pos), targetBiome)
+            if (Math.random() < 1 - depthBar / MantleEnergyExtractorMaxDepth) {
+                let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
+                SetBiomeByChunk(level, GetChunkAccess(level, pos), targetBiome)
+            }
             IncreaseEternalWinterCounter(server, 5)
 
             const depthBar = Math.max(data.getInt('depth_bar'), 200)

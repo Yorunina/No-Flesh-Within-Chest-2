@@ -163,3 +163,6 @@ const $ClipContextFluid = Java.loadClass('net.minecraft.world.level.ClipContext$
 const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.void_tentacle.VoidTentacle')
 const $AsyncLocator = Java.loadClass('brightspark.asynclocator.AsyncLocator')
 const $TargetDummyEntity = Java.loadClass('net.mehvahdjukaar.dummmmmmy.common.TargetDummyEntity')
+
+const $BaseSelectorItem = Java.loadClass('net.yorunina.maa.items.BaseSelectorItem')
+const $BiomeSource = Java.loadClass('net.minecraft.world.level.biome.BiomeSource')

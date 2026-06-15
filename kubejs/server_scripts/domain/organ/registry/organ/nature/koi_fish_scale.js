@@ -22,7 +22,7 @@ function KoiFishScaleKeyActive(customData, event, organItem, organIndex, slotTyp
 
     let mapItem = $MapItem.create(level, chestPos.x, chestPos.z, 1, true, true)
     $MapItem.renderBiomePreviewMap(level, mapItem)
-    $MapItemSavedData.addTargetDecoration(mapItem, chestPos, "+", $MapDecorationType.RED_X)
+    $MapItemSavedData.addTargetDecoration(mapItem, chestPos, '+', $MapDecorationType.RED_X)
     player.give(mapItem.withName(Text.translatable('map.kubejs.airdrop')))
     level.playSound(null, player.getX(), player.getY(), player.getZ(), 'item.book.page_turn', player.getSoundSource(), 0.5, 1)
 

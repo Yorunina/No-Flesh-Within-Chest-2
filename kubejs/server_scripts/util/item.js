@@ -20,7 +20,7 @@ function DeserializeItemFromNbt(data) {
 function GetTreaseMapItem(level, pos) {
     let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
     $MapItem.renderBiomePreviewMap(level, mapItem)
-    $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)
+    $MapItemSavedData.addTargetDecoration(mapItem, pos, '+', $MapDecorationType.RED_X)
     return mapItem
 }
 

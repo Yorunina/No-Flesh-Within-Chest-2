@@ -20,6 +20,6 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     if (fireTicks <= needTicks) return
     let damage =  fireTicks / 20 * effectEfficiency * 0.5
     targetEntity.invulnerableTime = 0
-    targetEntity.attack(targetEntity.damageSources().onFire(), damage)
+    targetEntity.attack(sourceEntity.damageSources().onFire(), damage)
     targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() - needTicks)
 })

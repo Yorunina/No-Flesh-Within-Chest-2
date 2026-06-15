@@ -12,21 +12,30 @@ ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 900)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.getAmount() < 250) return ctx.error()
             GrowthVatOutputSlotsList.forEach(pSlotId => {
                 let item = machine.getItemStored(pSlotId)
                 if (!item || item.isEmpty()) return
                 UnformedTumorGrowth(machine, item, pSlotId)
             })
             IncrGrowthVatRuns(machine.owner)
+            machine.removeFluidFromTank('nutrient_solution', 250, false)
             return ctx.success()
         })
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            return ctx.error('')
+        })
         .requireItem('kubejs:simple_culture_medium', 'input_slot')
-        .requireFluidTag('kubejs:nutrients_fluid', 250, 'nutrient_solution')
 
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 900)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.getAmount() < 250) return ctx.error()
             GrowthVatOutputSlotsList.forEach(pSlotId => {
                 let item = machine.getItemStored(pSlotId)
                 if (!item || item.isEmpty()) {
@@ -36,16 +45,23 @@ ServerEvents.recipes(event => {
                 }
             })
             IncrGrowthVatRuns(machine.owner)
+            machine.removeFluidFromTank('nutrient_solution', 250, false)
             return ctx.success()
         })
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            return ctx.error('')
+        })
         .requireItem('kubejs:culture_medium', 'input_slot')
-        .requireFluidTag('kubejs:nutrients_fluid', 250, 'nutrient_solution')
 
 
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 900)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.getAmount() < 250) return ctx.error()
             GrowthVatOutputSlotsList.forEach(pSlotId => {
                 let item = machine.getItemStored(pSlotId)
                 if (item && !item.isEmpty()) {
@@ -53,15 +69,22 @@ ServerEvents.recipes(event => {
                 }
             })
             IncrGrowthVatRuns(machine.owner)
+            machine.removeFluidFromTank('nutrient_solution', 250, false)
             return ctx.success()
         })
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            return ctx.error('')
+        })
         .requireItem('kubejs:mutation_culture_medium', 'input_slot')
-        .requireFluidTag('kubejs:nutrients_fluid', 250, 'nutrient_solution')
 
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 900)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.getAmount() < 250) return ctx.error()
             let outputItems = []
             let emptySlots = []
             GrowthVatOutputSlotsList.forEach(pSlotId => {
@@ -79,16 +102,23 @@ ServerEvents.recipes(event => {
                 machine.setItemStored(pSlotId, outputItems[index])
             })
             IncrGrowthVatRuns(machine.owner)
+            machine.removeFluidFromTank('nutrient_solution', 250, false)
             return ctx.success()
         })
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            return ctx.error('')
+        })
         .requireItem('kubejs:proliferation_culture_medium', 'input_slot')
-        .requireFluidTag('kubejs:nutrients_fluid', 250, 'nutrient_solution')
 
 
     event.recipes.custommachinery.custom_machine('kubejs:growth_vat', 900)
         .requireFunctionOnEnd(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.getAmount() < 250) return ctx.error()
             let unformedTumorList = []
             GrowthVatOutputSlotsList.forEach(pSlotId => {
                 let item = machine.getItemStored(pSlotId)
@@ -98,8 +128,14 @@ ServerEvents.recipes(event => {
             })
             MixUnformedTumorAttri(machine, fluid, unformedTumorList)
             IncrGrowthVatRuns(machine.owner)
+            machine.removeFluidFromTank('nutrient_solution', 250, false)
             return ctx.success()
         })
+        .requireFunctionToStart(ctx => {
+            const machine = ctx.getMachine()
+            let fluid = machine.getFluidStored('nutrient_solution')
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            return ctx.error('')
+        })
         .requireItem('kubejs:mixed_culture_medium', 'input_slot')
-        .requireFluidTag('kubejs:nutrients_fluid', 250, 'nutrient_solution')
 })

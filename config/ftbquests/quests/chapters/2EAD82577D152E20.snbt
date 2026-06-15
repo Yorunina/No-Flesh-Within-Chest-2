@@ -1536,7 +1536,7 @@
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["拍摄一张&6舵背鲸&r和它身上&6舵盘&r的照片！尽量拍全一些！因为它真的很大！"]
+			description: ["拍摄一张&6舵背鲸&r和它身上&6舵轮&r的照片！尽量拍全一些！因为它真的很大！"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "35796740FDCA3F1A"

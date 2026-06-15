@@ -1218,7 +1218,7 @@
 		{
 			dependencies: ["4BEDD898484E1898"]
 			description: [
-				"有些时候，您需要对比多个物品信息。可以通过&6固定提示框按键（默认为D）&r将物品提示固定到屏幕。"
+				"有些时候，您需要对比多个物品信息。可以通过&6固定提示框按键（默认为~）&r将物品提示固定到屏幕。"
 				""
 				"若您需要取消已经固定的物品提示，则可以通过&6右键点击该提示框取消其固定状态&r。"
 				""
@@ -1242,6 +1242,31 @@
 			title: "悬浮物品框"
 			x: 3.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["02F541A35C373603"]
+			description: [
+				"在您堆放了很多存储方块后，一个能够统合所有存储方块的终端变成了急需品。"
+				""
+				"您可以制作一个&6存储终端&r，&6将其放置在任意在存储容器上&r，即可通过该终端来统合一定区域内所有的链接的存储以快速存取。"
+				""
+				"在此基础上，您还可以制作&6合成终端&r、&6无限终端&r等不同的访问方式，来提高该存储的可用性。"
+			]
+			hide_dependency_lines: true
+			id: "42D69F3F93550767"
+			rewards: [{
+				id: "7665DC9D899D42F5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "统合一切"
+			tasks: [{
+				id: "5ACDB9BEC5A7CF41"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 9.0d
 		}
 	]
 	title: "序章"

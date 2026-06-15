@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:magam_colloid')
  */
 function MagamColloidEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (slotType == RevolutionFlameType) {
+    if (slotType == RevolutionFlame) {
         let fireTick = 60 * event.amount
         let remainTick = entity.getRemainingFireTicks()
         if (fireTick <= remainTick) {
@@ -29,5 +29,5 @@ function MagamColloidEntityBeHurt(customData, event, organItem, organIndex, slot
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:magam_colloid')
-        .addStrategy('entity_be_hurt', MagamColloidEntityBeHurt)
+        .addOnlyStrategy('entity_be_hurt', MagamColloidEntityBeHurt)
 )
