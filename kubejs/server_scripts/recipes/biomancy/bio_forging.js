@@ -36,4 +36,6 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Ingredient.of('#kubejs:liver'), Item.of('minecraft:compass'), Item.of('biomancy:flesh_bits')], Item.of('kubejs:navigating_liver'), 'biomancy:organ', 20)
     event.recipes.biomancy.bio_forging([Item.of('minecraft:map'), Item.of('minecraft:leather'), Item.of('minecraft:redstone')], Item.of('maa:structure_selector'), 'biomancy:organ', 5)
     event.recipes.biomancy.bio_forging([Item.of('minecraft:map'), Item.of('minecraft:leather'), Item.of('minecraft:mossy_cobblestone')], Item.of('maa:biome_selector'), 'biomancy:organ', 5)
+
+    event.recipes.biomancy.bio_forging([Ingredient.of('#kubejs:heart'), Item.of('biomancy:healing_additive'), Item.of('minecraft:enchanted_golden_apple'), Item.of('biomancy:flesh_bits', 4)], Item.of('kubejs:heart_of_mercy'), 'biomancy:organ', 50)
 })

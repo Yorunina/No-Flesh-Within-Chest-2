@@ -1229,8 +1229,9 @@
 			icon: "minecraft:item_frame"
 			id: "246F98FFF269D869"
 			rewards: [{
-				id: "16A41D6F77939243"
-				item: "lightmanscurrency:coin_gold"
+				count: 3
+				id: "28831DF588AAA34D"
+				item: "minecraft:emerald"
 				type: "item"
 			}]
 			subtitle: "更好的阅读方式"
@@ -1267,6 +1268,34 @@
 			}]
 			x: -6.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["246F98FFF269D869"]
+			description: [
+				"有些时候，可能您希望把某个物品直接放置到世界上。"
+				""
+				"使用&6放置物品按键（默认P）&r，手持任意物品对准任意方块即可让该物品被放置在墙面、地板等任意物品表面。"
+				""
+				"这在装饰方面会有很棒的效果。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:glow_item_frame"
+			id: "51540FD7CFA0C7B6"
+			rewards: [{
+				count: 3
+				id: "754AEA9FD9FE6EF4"
+				item: "minecraft:cactus"
+				type: "item"
+			}]
+			subtitle: "将任意物品放置下来"
+			tasks: [{
+				id: "0C4260691FA6526A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "物品放置"
+			x: 6.0d
+			y: 1.5d
 		}
 	]
 	title: "序章"

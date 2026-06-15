@@ -22,6 +22,6 @@
         "items": [ "cataclysm:black_steel_ingot" ]
     },
     "requiredTools": {
-        "hammer_dig": "minecraft:diamond"
+        "hammer_dig": "minecraft:gold"
     }
 }

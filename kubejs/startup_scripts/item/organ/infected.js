@@ -64,6 +64,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:infected')
         .tag('kubejs:bone')
 
+    event.create('kubejs:heart_of_mercy').maxStackSize(1).tag('kubejs:infected').tag('kubejs:heart').texture('kubejs:item/organs/infected/heart_of_mercy')
+
     event.create('kubejs:devour_teeth').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/devour_teeth')
 
     event.create('kubejs:nightmare_core').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/nightmare_core').tag('kubejs:organ').tag('kubejs:heart')

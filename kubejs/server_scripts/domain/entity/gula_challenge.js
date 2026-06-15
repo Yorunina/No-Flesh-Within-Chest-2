@@ -95,8 +95,8 @@ function NewGulaChallengeGoal(entity) {
                     if (round >= 7) {
                         plonkBlockEntity.insertStack(Item.of('candlelight:note_paper_written',
                             `{author:"§kGula§r",text:["
-                            ${Text.translatable(`tooltips.gula_challenge.text.7`).getString()}"],
-                            title:"${Text.translatable(`tooltips.gula_challenge.title.7`).getString()}"}`), 0)
+                            ${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.text.7`).component)}"],
+                            title:"${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.title.7`).component)}"}`), 0)
                         plonkBlockEntity.setChanged()
                         plonkBlockEntity.clean()
                         let nearestPlayer = GetNearestPlayer(level, mob.position(), 16)
@@ -105,7 +105,7 @@ function NewGulaChallengeGoal(entity) {
                     }
                     let targetDish = Item.of(GetGulaChallengeTargetDish(round))
                     plonkBlockEntity.insertStack(Item.of('candlelight:note_paper_written',
-                        `{author:"§kGula§r",text:["${Text.translatable(`tooltips.gula_challenge.text.${round}`, targetDish.getHoverName().getString()).getString()}"],title:"${Text.translatable(`tooltips.gula_challenge.title.${round}`).getString()}"}`), 0)
+                        `{author:"§kGula§r",text:["${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.text.${round}`, targetDish.getHoverName().component).component)}"],title:"${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.title.${round}`).component)}"}`), 0)
                     plonkBlockEntity.setChanged()
                     plonkBlockEntity.clean()
                     level.playSound(null, tablePos.getX(), tablePos.getY(), tablePos.getZ(), 'item.book.page_turn', mob.getSoundSource(), 1, 1)

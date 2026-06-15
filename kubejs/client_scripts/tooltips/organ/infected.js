@@ -79,6 +79,11 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:witch_fibroma')
     .addAlt(Text.translatable('tooltips.kubejs.witch_fibroma.alt.1', KeyActiveHover))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:heart_of_mercy')
+    .addDefault(Text.translatable('tooltips.kubejs.heart_of_mercy.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.heart_of_mercy.alt.1', SurgicalAnesthesiaHover, SurgicalAnesthesiaHover))
+)
+
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:navigating_liver')
     .addAlt(Text.translatable('tooltips.kubejs.navigating_liver.alt.1'))
     .addDefault((text, item) => {
