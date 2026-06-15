@@ -13,7 +13,7 @@ PlayerEvents.respawned(event => {
             player.setGameMode('spectator')
             player.fallDistance = 0
         } else {
-            server.getPlayerList().getBans().add(new $UserBanListEntry(player.getGameProfile(), null, null, Text.translatable('fake_extreme_mode.kubejs.banReason').getString()))
+            server.getPlayerList().getBans().add(new $UserBanListEntry(player.getGameProfile(), null,'Console',null, Text.translatable('fake_extreme_mode.kubejs.banReason').getString()))
             player.connection.disconnect(Text.translatable('fake_extreme_mode.kubejs.banReason'))
         }
     } else if (AStages.playerHasStage('ftb_extre_wound_2', player)) {
