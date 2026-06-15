@@ -15,7 +15,7 @@ function PigStomachFoodEaten(customData, event, organItem, organIndex, slotType)
     /**@type {Player} */
     const entity = event.entity
     if (!entity.isPlayer()) return
-    const chestCavity = event.chestCavity
+    const chestCavity = entity.getChestCavityInstance()
     let digestion = chestCavity.getOrganScore('chestcavity:digestion')
     entity.potionEffects.add('farm_and_charm:sustenance', Math.max(200, digestion * 20 * 5 + 200), 0, false, false)
 }
