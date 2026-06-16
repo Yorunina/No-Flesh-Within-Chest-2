@@ -17,7 +17,7 @@ function ExtremeFitnessUpdateOrganScore(event) {
             ExtremeFitnessHealthUpUUID,
             ExtremeFitnessHealthUpIdentifier,
             organScoreValue / 100 * 3,
-            $Operation.ADDITION)
+            $Operation.MULTIPLY_BASE)
     )
 }
 

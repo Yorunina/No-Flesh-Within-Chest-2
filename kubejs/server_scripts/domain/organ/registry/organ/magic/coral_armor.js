@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:coral_armor')
     .addScore('chestcavity:defense', 1.5)
     .addScore('kubejs:extreme_fitness', 0.5)
     .setCanSpawn(true)
+
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.LivingHurtEvent} event 

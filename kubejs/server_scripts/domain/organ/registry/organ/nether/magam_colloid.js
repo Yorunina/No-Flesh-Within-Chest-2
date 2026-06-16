@@ -17,9 +17,10 @@ function MagamColloidEntityBeHurt(customData, event, organItem, organIndex, slot
         let remainTick = entity.getRemainingFireTicks()
         if (fireTick <= remainTick) {
             entity.setRemainingFireTicks(remainTick - fireTick)
+            event.setAmount(event.amount - Math.floor(fireTick / 60))
         } else {
-            event.setAmount(event.amount - Math.floor(remainTick / 60))
             entity.setRemainingFireTicks(0)
+            event.setAmount(event.amount - Math.floor(remainTick / 60))
         }
     } else {
         let fireTick = 20 * event.amount

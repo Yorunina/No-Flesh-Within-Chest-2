@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
                     level.updateNeighborsAt(block.getPos(), block.blockState.getBlock())
                     return ctx.error('')
                 }
-                data.putInt('target_resource', targetResource + Math.floor(Math.random() * 300000) - 150000)
+                data.putInt('target_resource', Clamp(targetResource + Math.floor(Math.random() * 300000) - 150000, 0, 1000000))
                 needUpdate = true
             }
             if (needUpdate) {
@@ -357,7 +357,7 @@ ServerEvents.recipes(event => {
             }
             if (ctx.remainingTime % 600 == 0 && ctx.remainingTime != 3600) {
                 let targetResource = data.getInt('target_resource')
-                data.putInt('target_resource', targetResource + Math.floor(Math.random() * 300000) - 150000)
+                data.putInt('target_resource', Clamp(targetResource + Math.floor(Math.random() * 300000) - 150000, 0, 1000000))
                 needUpdate = true
             }
             if (needUpdate) {

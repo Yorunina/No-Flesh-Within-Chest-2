@@ -167,6 +167,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                     GatewayUtils.buildAttributeModifier('minecraft:generic.armor_toughness', 'addition', levelIndicator)
                 ]
             })
+            .setCompoundTag(GatewayNBTEntityAwaken)
         )
         .addPiece(22, 28, new StandardWaveEntityItemModel(100, 'minecraft:blaze')
             .setModifier((levelIndicator, chaosIndicator) => {

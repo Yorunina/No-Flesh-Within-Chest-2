@@ -73,30 +73,18 @@ function GetChunkFromMap(level, chunkMap, pos) {
 /**
  * 在某区块设定生态群系
  * @param {Internal.ServerLevel} level 
- * @param {Internal.ChunkAccess} chunkAccess
+ * @param {Internal.Position} pos
  * @param {string} biomeName
  */
-function SetBiomeByChunk(level, chunkAccess, biomeName) {
-    let levelBiomeRegistryOpt = level.registryAccess().registry($Registries.BIOME)
-    if (!levelBiomeRegistryOpt.isPresent()) return
-
-    let biomeHolderOpt = levelBiomeRegistryOpt.get().getHolder($ResourceKey.create($Registries.BIOME, new ResourceLocation(biomeName)))
-    if (!biomeHolderOpt.isPresent()) return
-    let biomeHolder = biomeHolderOpt.get()
-
-    chunkAccess.getSections().forEach(section => {
-        let biomes = section.getBiomes()
-        if (biomes instanceof $PalettedContainer) {
-            let biomeId = biomes.data.palette().idFor(biomeHolder)
-            let size = biomes.data.storage().getSize()
-            let i = 0
-            while (i <= (size - 1)) {
-                biomes.data.storage().set(i, biomeId)
-                i++
-            }
-        }
-    })
-    chunkAccess.setUnsaved(true)
+function SetBiomeByPosChunk(level, pos, biomeName) {
+    const chunkX = Math.floor(pos.x / 16)
+    const chunkZ = Math.floor(pos.z / 16)
+    const minX = chunkX * 16
+    const minZ = chunkZ * 16
+    const maxX = minX + 15
+    const maxZ = minZ + 15
+    const aabb = AABB.of(minX, level.getMinBuildHeight(), minZ, maxX + 1, level.getMaxBuildHeight(), maxZ + 1)
+    MAAUtils.setBiomeInArea(level, aabb, biomeName)
 }
 
 /**

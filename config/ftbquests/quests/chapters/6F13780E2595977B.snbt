@@ -258,7 +258,7 @@
 						value: "genesis_inspiration>=3"
 					}
 				}
-				title: "任意工具的任意部件具有≥3的创世启迪改良"
+				title: "任意工具锻造时满足3种不同的创世启迪改良"
 				type: "item"
 			}]
 			title: "&6庆贺吧！此乃创世工艺！&r"

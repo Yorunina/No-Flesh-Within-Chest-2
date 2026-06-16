@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
             const machine = ctx.getMachine()
             const data = machine.getData()
             const depthBar = data.getInt('depth_bar')
-            data.putInt('depth_bar', depthBar + 1)
+            data.putInt('depth_bar', Math.min(depthBar + 1, MantleEnergyExtractorMaxDepth))
             const outputExtract = machine.getItemStored('output_extract')
             const inputTarget = machine.getItemStored('input_target')
             if (!validMantleInputTarget(inputTarget, depthBar)) return ctx.success()
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
             const server = level.getServer()
             const pos = block.getPos()
             const depthBar = Math.round(data.getFloat('depth_bar'))
-            data.putInt('depth_bar', depthBar + 200)
+            data.putInt('depth_bar', Math.min(depthBar + 200, MantleEnergyExtractorMaxDepth))
             if (Math.random() < 0.1) {
                 machine.setItemStored('input_crystal', 'kubejs:exhausted_source_focus_crystal')
             }
@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
 
             if (Math.random() < 1 - depthBar / MantleEnergyExtractorMaxDepth) {
                 let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
-                SetBiomeByChunk(level, GetChunkAccess(level, pos), targetBiome)
+                SetBiomeByPosChunk(level, pos, targetBiome)
                 IncreaseEternalWinterCounter(server, 2)
             }
             return ctx.success()
@@ -150,7 +150,7 @@ ServerEvents.recipes(event => {
             if (biomeTemp <= -0.5) return ctx.success()
             if (Math.random() < 1 - depthBar / MantleEnergyExtractorMaxDepth) {
                 let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
-                SetBiomeByChunk(level, GetChunkAccess(level, pos), targetBiome)
+                SetBiomeByPosChunk(level, pos, targetBiome)
             }
             IncreaseEternalWinterCounter(server, 5)
 

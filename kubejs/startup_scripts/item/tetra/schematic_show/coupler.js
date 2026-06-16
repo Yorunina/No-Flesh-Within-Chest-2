@@ -11,6 +11,7 @@ $CustomRequirement.registerCustomFunction('coupler', ctx => {
     }
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
+    if (!TetraJSUtils.isModularItem(modularItem)) return
     let maxDamage = modularItem.getMaxDamage(stack)
     if (maxDamage < 2000) return false
     let mineSpeed = GetModularItemMineSpeed(stack)

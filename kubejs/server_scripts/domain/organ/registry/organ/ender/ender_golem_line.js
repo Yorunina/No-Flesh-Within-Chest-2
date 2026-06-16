@@ -14,15 +14,16 @@ RegistryOrgan('kubejs:ender_golem_line')
 function EnderGolemLineKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const level = event.level
-    let playerPos = player.blockPosition()
-    let entityList = GetLivingWithinRadius(level, playerPos, 10, (level, entity) => {
+    const chestCavity = player.getChestCavityInstance()
+    const strengthScore = chestCavity.getOrganScoreOrDefault('chestcavity:strength', 0)
+    let playerPos = player.position()
+    let entityList = GetLivingWithinRadiusVec3d(level, playerPos, 32, (level, entity) => {
         return !entity.equals(player)
     })
     entityList.forEach(entity => {
         let entityPos = entity.position()
         let diff = playerPos.subtract(entityPos)
-        diff = diff.normalize().scale(1)
-        entity.setDeltaMovement(diff)
+        entity.setDeltaMovement(Vec3dNormalize(diff).scale(strengthScore))
         for (let i = 0; i < 3; i++) {
             level.spawnParticles($ParticleTypes.PORTAL, true, entityPos.x() + Math.random(), entityPos.y() + Math.random(), entityPos.z() + Math.random(), 0.2, 0.3, 0.2, 5, 0)
         }

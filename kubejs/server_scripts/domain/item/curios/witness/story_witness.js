@@ -11,12 +11,12 @@ const StoryWitnessLootList = [
     { damage: 50000, lootList: [Item.of('kubejs:perseverance_witness')] },
     { damage: 100000, lootList: [Item.of('kubejs:knowledge_witness')] },
     { damage: 1000000, lootList: [Item.of('cataclysm:altar_of_fire')] },
-    { damage: 10000000, lootList: [Item.of('minecraft:warden_spawn_egg')] },
-    { damage: 100000000, lootList: [Item.of('minecraft:potion', '{Potion:"potioncore:flight"}')] },
-    { damage: 1000000000, lootList: [Item.of('create:creative_blaze_cake')] },
-    { damage: 10000000000, lootList: [Item.of('kaleidoscope_cookery:sakura_fubuki')] },
-    { damage: 100000000000, lootList: [Item.of('chisel:futura/controller')] },
-    { damage: 1000000000000, lootList: [Item.of('kaleidoscope_cookery:transmutation_lunch_bag')] }
+    { damage: 5000000, lootList: [Item.of('minecraft:warden_spawn_egg')] },
+    { damage: 10000000, lootList: [Item.of('minecraft:potion', '{Potion:"potioncore:flight"}')] },
+    { damage: 50000000, lootList: [Item.of('create:creative_blaze_cake')] },
+    { damage: 100000000, lootList: [Item.of('kaleidoscope_cookery:sakura_fubuki')] },
+    { damage: 500000000, lootList: [Item.of('chisel:futura/controller')] },
+    { damage: 1000000000, lootList: [Item.of('kaleidoscope_cookery:transmutation_lunch_bag')] }
 ]
 
 /** 

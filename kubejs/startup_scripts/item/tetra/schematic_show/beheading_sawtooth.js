@@ -11,6 +11,7 @@ $CustomRequirement.registerCustomFunction('beheading_sawtooth', ctx => {
     }
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
+    if (!TetraJSUtils.isModularItem(modularItem)) return
     let attackDamageAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1), 2)
     if (attackDamageAttributeValue < 9) return false
     let maxDamage = modularItem.getMaxDamage(stack)

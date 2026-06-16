@@ -11,6 +11,7 @@ $CustomRequirement.registerCustomFunction('heat_or_grinding_handle', ctx => {
     }
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
+    if (!TetraJSUtils.isModularItem(modularItem)) return
     let maxDamage = modularItem.getMaxDamage(stack)
     if (maxDamage < 1000) return false
     let attackDamageAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'minecraft:generic.attack_damage', 1), 2)

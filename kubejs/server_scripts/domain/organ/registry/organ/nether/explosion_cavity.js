@@ -20,7 +20,7 @@ function ExplosionCavityKeyActive(customData, event, organItem, organIndex, slot
     let damageAmount = Math.floor(fireTick / 20)
     /**@type {Internal.LivingEntity[]} */
     let entityList = GetLivingWithinRadiusVec3d(level, playerPos, 5, (plevel, pEntity) => !pEntity.equals(player))
-    let damageSource = level.damageSources().explosion(player, null)
+    let damageSource = level.damageSources().explosion(player, player)
     entityList.forEach(pEntity => pEntity.attack(damageSource, damageAmount))
     level.createExplosion(playerPos.x(), playerPos.y(), playerPos.z()).explode()
     player.setRemainingFireTicks(fireTick - 200)

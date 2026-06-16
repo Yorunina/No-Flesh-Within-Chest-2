@@ -671,6 +671,7 @@
 				}
 			}
 			id: "2D33BCD423DAC69A"
+			invisible: true
 			rewards: [{
 				auto: "no_toast"
 				icon: "minecraft:oak_sapling"
@@ -685,7 +686,7 @@
 				count: 1L
 				icon: "minecraft:clock"
 				id: "1F1CF0B0A8ED25DE"
-				kubeId: "final_iteration_1"
+				kubeId: "ftb_final_iteration_1"
 				title: "&6终局计时器达 1&r"
 				type: "maa:kube"
 			}]

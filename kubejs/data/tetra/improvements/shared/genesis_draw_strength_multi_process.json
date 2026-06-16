@@ -2,7 +2,7 @@
     {
         "key": "genesis_draw_strength_multi_process",
         "infinite": true,
-        "integrity": 0,
+        "integrity": -1,
         "attributes": {
           "**tetra:draw_strength": 0.2
         }

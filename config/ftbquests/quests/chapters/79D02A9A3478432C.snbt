@@ -1382,7 +1382,7 @@
 			subtitle: "平衡地幔能之法"
 			tasks: [{
 				consume_items: true
-				count: 1024L
+				count: 256L
 				id: "58755CD452227639"
 				item: "minecraft:coal_block"
 				type: "item"
@@ -1431,7 +1431,7 @@
 					type: "maa:claim_item"
 				}
 				{
-					amount: 10000000L
+					amount: 1000000L
 					fluid: "minecraft:lava"
 					id: "700E798626A15D5C"
 					type: "fluid"
@@ -1465,7 +1465,7 @@
 			subtitle: "平衡地幔能之法"
 			tasks: [{
 				consume_items: true
-				count: 1024L
+				count: 256L
 				id: "1BA844D34F285354"
 				item: "create:blaze_cake"
 				type: "item"
@@ -1502,7 +1502,7 @@
 			subtitle: "平衡地幔能之法"
 			tasks: [{
 				consume_items: true
-				count: 16L
+				count: 8L
 				id: "751344437AF6A829"
 				item: "cataclysm:lava_power_cell"
 				type: "item"
@@ -1859,7 +1859,7 @@
 				""
 				"岩浆生命循环系统能够使用一种特殊的燃料提高您的身体热量，即消耗工业文明的高效燃料——&6汽油&r。"
 				""
-				"当使用汽油作为燃料，将您的燃烧持续时间延长到十分钟以上时，您的肉体便做好了&6接受极致烈焰的准备&r。"
+				"当使用汽油作为燃料，将您的燃烧持续时间延长到三分钟以上时，您的肉体便做好了&6接受极致烈焰的准备&r。"
 			]
 			hide_until_deps_complete: true
 			id: "7480BAD551F85642"

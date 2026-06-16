@@ -3,7 +3,6 @@ $CustomRequirement.registerCustomFunction('ancient_mechanical_stave', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack
-    
     if (!level || level.isClientSide()) {
         if (AStagesClient.getServerAndPlayerClientStages().contains('ftb_genesis_process_done')) return true
     } else {
@@ -11,6 +10,7 @@ $CustomRequirement.registerCustomFunction('ancient_mechanical_stave', ctx => {
     }
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
+    if (!TetraJSUtils.isModularItem(modularItem)) return
     let seekingArrowEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:seeking_arrow')
     if (seekingArrowEfficiency < 14) return false
     let drawSpeedAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'tetra:draw_speed'), 2)

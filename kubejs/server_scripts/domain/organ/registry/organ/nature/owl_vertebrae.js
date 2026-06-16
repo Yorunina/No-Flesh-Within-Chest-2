@@ -13,12 +13,9 @@ RegistryOrgan('kubejs:owl_vertebrae')
 * @param {string} slotType
 */
 function OwlVertebraeEntityTick(customData, event, organItem, organIndex, slotType) {
-    const level = event.level
     const entity = event.entity
     if (entity.hasEffect('minecraft:night_vision') && entity.getEffect('minecraft:night_vision').getDuration() > 20 * 15) return
-    if (!level.isDay()) {
-        entity.potionEffects.add('minecraft:night_vision', 20 * 30, 0, false, false)
-    }
+    entity.potionEffects.add('minecraft:night_vision', 20 * 30, 0, false, false)
 }
 
 RegistryOrganStrategy(

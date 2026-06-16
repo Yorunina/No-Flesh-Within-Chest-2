@@ -86,6 +86,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:heart_of_mercy')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:navigating_liver')
     .addAlt(Text.translatable('tooltips.kubejs.navigating_liver.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.navigating_liver.alt.2'))
     .addDefault((text, item) => {
         let res = []
         const nbt = item.getOrCreateTag()

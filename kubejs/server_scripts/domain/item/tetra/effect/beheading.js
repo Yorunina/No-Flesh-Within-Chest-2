@@ -12,8 +12,7 @@ LootJS.modifiers(event => {
             if (!TetraJSUtils.isModularItem(modularItem)) return
             let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:beheading')
             if (effectLevel <= 0) return
-
-            if (Math.random() > effectLevel * 2) return
+            if (Math.random() > effectLevel * 0.02) return
             let headItem = GetEntityHeadItem(entity)
             if (!headItem) return
             ctx.loot.add(headItem)

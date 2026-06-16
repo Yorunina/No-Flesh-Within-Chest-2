@@ -195,7 +195,7 @@
 				type: "item"
 			}]
 			title: "甘蔗农场"
-			x: -3.5d
+			x: 1.0d
 			y: 18.5d
 		}
 		{
@@ -253,8 +253,8 @@
 				type: "item"
 			}]
 			title: "树脂农场"
-			x: -3.5d
-			y: -5.0d
+			x: 13.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
@@ -284,8 +284,8 @@
 				type: "item"
 			}]
 			title: "烈焰农场"
-			x: 21.0d
-			y: -5.0d
+			x: -3.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
@@ -640,7 +640,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["2650CE0D76584853"]
+			dependencies: ["0A9B08286B960B9F"]
 			description: [
 				"通过开采一种叫做地幔矿藏的特殊虚拟矿脉，能够获得地幔矿石。"
 				""
@@ -660,8 +660,8 @@
 				type: "item"
 			}]
 			title: "开采地幔矿藏"
-			x: 1.5d
-			y: 18.5d
+			x: 16.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
@@ -682,7 +682,7 @@
 			}]
 			title: "下界疣农场"
 			x: -3.5d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["635648F942615025"]
@@ -736,7 +736,7 @@
 			}]
 			title: "蜘蛛眼农场"
 			x: -3.5d
-			y: 4.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -1225,7 +1225,7 @@
 				type: "item"
 			}]
 			title: "红石生产"
-			x: 10.0d
+			x: 9.5d
 			y: 16.0d
 		}
 		{
@@ -1531,7 +1531,7 @@
 				type: "item"
 			}]
 			title: "铁锭农场"
-			x: 11.5d
+			x: 4.0d
 			y: 18.5d
 		}
 		{
@@ -1675,7 +1675,7 @@
 			y: 14.0d
 		}
 		{
-			dependencies: ["2650CE0D76584853"]
+			dependencies: ["0A9B08286B960B9F"]
 			description: [
 				"通过开采虚拟油田，我们可以获得足够多的原油。"
 				""
@@ -1716,8 +1716,8 @@
 				}
 			]
 			title: "原油开采"
-			x: 6.0d
-			y: 18.5d
+			x: 16.5d
+			y: 11.0d
 		}
 		{
 			dependencies: ["510293AECD56FF12"]
@@ -1932,7 +1932,7 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["2650CE0D76584853"]
+			dependencies: ["0A9B08286B960B9F"]
 			description: ["青金石并没有什么有效的获取方法，目前最优的方法是通过&6虚拟矿脉&r开采获取。"]
 			id: "7FD4BB658CCB587F"
 			rewards: [{
@@ -1949,8 +1949,8 @@
 				type: "item"
 			}]
 			title: "青金石采掘"
-			x: 21.0d
-			y: 18.5d
+			x: 16.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -2473,6 +2473,88 @@
 			title: "获取所有生物的奶"
 			x: 8.5d
 			y: -2.0d
+		}
+		{
+			dependencies: ["2650CE0D76584853"]
+			description: [
+				"很多时候，我们需要从世界上获取极其大量的矿物——其数量大到直接开采获得几乎是不可能的。"
+				""
+				"为此，我们需要开采一些特殊的“数据矿藏”来解决此类问题。"
+				""
+				"通过&6探矿杖&r，可以探测到当前区块中的隐藏的虚拟矿脉，当您确定了虚拟矿脉后，即可通过&6矿物钻井/流体钻井&r对其进行开采。"
+				""
+				"这个过程中，您需要为矿机提供&6极其大量的应力&r，并且选取对应的钻头。"
+			]
+			icon: "createoreexcavation:drilling_machine"
+			id: "0A9B08286B960B9F"
+			rewards: [{
+				id: "5AA361D00DFBD56E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "虚拟矿藏开掘"
+			tasks: [
+				{
+					id: "0DD53D7158B3373D"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "createoreexcavation:drilling_machine"
+								}
+								{
+									Count: 1b
+									id: "createoreexcavation:extractor"
+								}
+							]
+						}
+					}
+					title: "矿物钻井/流体钻井"
+					type: "item"
+				}
+				{
+					id: "48C043C4F0D2765B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "createoreexcavation:netherite_drill"
+								}
+								{
+									Count: 1b
+									id: "createoreexcavation:diamond_drill"
+								}
+								{
+									Count: 1b
+									id: "createoreexcavation:drill"
+								}
+							]
+						}
+					}
+					title: "任意钻头"
+					type: "item"
+				}
+				{
+					id: "7A6844A4BBB06971"
+					item: {
+						Count: 1
+						id: "createoreexcavation:vein_finder"
+						tag: {
+							isFiltered: 0b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "开采虚拟矿藏"
+			x: 8.5d
+			y: 18.5d
 		}
 	]
 	title: "传闻：大世界计算机"

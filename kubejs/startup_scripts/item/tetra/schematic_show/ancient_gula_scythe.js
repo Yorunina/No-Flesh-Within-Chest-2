@@ -11,6 +11,7 @@ $CustomRequirement.registerCustomFunction('ancient_gula_scythe', ctx => {
     }
     /**@type {Internal.ModularItem} */
     const modularItem = stack.getItem()
+    if (!TetraJSUtils.isModularItem(modularItem)) return
     let devourBloodEfficiency = modularItem.getEffectEfficiency(stack, 'kubejs:devour_blood')
     if (devourBloodEfficiency < 8) return false
     let attackSpeedAttributeValue = RoundFix(modularItem.getAttributeValue(stack, 'generic.attack_speed'), 2)
