@@ -691,18 +691,11 @@
 				type: "item"
 			}]
 			subtitle: "制作金属碎片"
-			tasks: [
-				{
-					id: "148F528154F74706"
-					item: "tetravsikt:iron_coal_mix"
-					type: "item"
-				}
-				{
-					id: "64EE1E1DFEC9AB18"
-					item: "tetra:metal_scrap"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "64EE1E1DFEC9AB18"
+				item: "tetra:metal_scrap"
+				type: "item"
+			}]
 			title: "研习更高的加工等级"
 			x: 6.0d
 			y: 0.0d
