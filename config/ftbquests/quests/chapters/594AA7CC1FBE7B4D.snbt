@@ -671,7 +671,6 @@
 				}
 			}
 			id: "2D33BCD423DAC69A"
-			invisible: true
 			rewards: [{
 				auto: "no_toast"
 				icon: "minecraft:oak_sapling"
@@ -683,12 +682,10 @@
 			size: 3.0d
 			subtitle: "我们向上生长、学习、终与树同高"
 			tasks: [{
-				count: 1L
 				icon: "minecraft:clock"
-				id: "1F1CF0B0A8ED25DE"
-				kubeId: "ftb_final_iteration_1"
-				title: "&6终局计时器达 1&r"
-				type: "maa:kube"
+				id: "026C2C36646EA58F"
+				title: "&6开启终局&r"
+				type: "custom"
 			}]
 			title: "&6生长痛&r"
 			x: 0.0d

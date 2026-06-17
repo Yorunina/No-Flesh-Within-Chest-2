@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:mashed_potato_pancreas')
     .addScore('chestcavity:digestion', 1.5)
-    .addScore('kubejs:extreme_fitness', -1)
     .addScore('chestcavity:defense', -1)
 
 /**

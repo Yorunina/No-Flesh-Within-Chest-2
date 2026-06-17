@@ -43,7 +43,7 @@ function EnergyBottleRedDoDamage(customData, event, organItem, organIndex, slotT
         switch (slotType) {
             case RevolutionFlame:
                 if (organItem.getDamageValue() + 10 <= organItem.getMaxDamage()) {
-                    let damageRate = FloorFix(organItem.getMaxDamage() - organItem.getDamageValue() / organItem.getMaxDamage(), 2)
+                    let damageRate = FloorFix((organItem.getMaxDamage() - organItem.getDamageValue()) / organItem.getMaxDamage(), 2)
                     let value = GetCustomDataOrDefault(customData, 'burningItemMultiplierBoost', 0)
                     SetCustomData(customData, 'burningItemMultiplierBoost', value + damageRate * 2)
                     organItem.setDamageValue(organItem.getDamageValue() + 10)

@@ -26,13 +26,13 @@ function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex,
         if (!handler) continue
         let fluid = handler.getFluid()
         if (fluid.getAmount() <= 0) continue
-        if (fluid.containsFluid('minecraft:lava')) {
+        if (fluid.containsFluid(Fluid.of('minecraft:lava', 1))) {
             if (fireTick + 20 * mult > 12000 * mult) continue
             handler.drain(Fluid.of('minecraft:lava', 1), 'execute')
             fireTick = fireTick + 40 * mult
             break
         }
-        if (fluid.containsFluid('createdieselgenerators:gasoline')) {
+        if (fluid.containsFluid(Fluid.of('createdieselgenerators:gasoline', 1))) {
             if (fireTick + 60 * mult > 12000 * mult) continue
             handler.drain(Fluid.of('createdieselgenerators:gasoline', 1), 'execute')
             fireTick = fireTick + 20 * mult

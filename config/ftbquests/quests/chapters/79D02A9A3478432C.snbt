@@ -466,7 +466,7 @@
 			description: [
 				"魔源汇聚晶体是一种&6极易损坏&r的物品。"
 				""
-				"在使用地幔能提取器时，&6每次钻探都会有概率使魔源汇聚晶体损毁&r。且魔源汇聚晶体损毁后无法重新充能，会直接变为废品。"
+				"在使用地幔能提取器时，&6每次钻探都会有概率使魔源汇聚晶体损毁&r。"
 				""
 				"因此在使用时请您多加关注，避免进行无意义暴力钻探浪费魔源汇聚晶体。"
 				""
@@ -1709,25 +1709,15 @@
 				type: "item"
 			}]
 			subtitle: "更加炽热！"
-			tasks: [
-				{
-					entity: "minecraft:magma_cube"
-					icon: "minecraft:magma_cube_spawn_egg"
-					id: "33101C9D4DCFC881"
-					inventoryType: "minecraft:empty"
-					type: "chestcavity:open_chest_cavity_task"
-					value: 1L
+			tasks: [{
+				id: "381304D9786C1574"
+				item: {
+					Count: 1
+					id: "kubejs:magam_colloid"
+					tag: { }
 				}
-				{
-					id: "381304D9786C1574"
-					item: {
-						Count: 1
-						id: "kubejs:magam_colloid"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "寻找更加炽热的东西"
 			x: 2.0d
 			y: 22.0d
@@ -1754,25 +1744,15 @@
 				type: "item"
 			}]
 			subtitle: "烈焰缠身"
-			tasks: [
-				{
-					entity: "minecraft:strider"
-					icon: "minecraft:strider_spawn_egg"
-					id: "0E15DAF52512E93B"
-					inventoryType: "minecraft:empty"
-					type: "chestcavity:open_chest_cavity_task"
-					value: 1L
+			tasks: [{
+				id: "2DC762F8755B7ECE"
+				item: {
+					Count: 1
+					id: "kubejs:fiery_core"
+					tag: { }
 				}
-				{
-					id: "2DC762F8755B7ECE"
-					item: {
-						Count: 1
-						id: "kubejs:fiery_core"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "烈焰防护"
 			x: 2.0d
 			y: 19.0d
@@ -1827,25 +1807,15 @@
 				type: "item"
 			}]
 			subtitle: "灼热炎魂"
-			tasks: [
-				{
-					entity: "minecraft:blaze"
-					icon: "minecraft:blaze_spawn_egg"
-					id: "59C68D91E3E4AA52"
-					inventoryType: "minecraft:empty"
-					type: "chestcavity:open_chest_cavity_task"
-					value: 1L
+			tasks: [{
+				id: "3D5BBA3F6E44152F"
+				item: {
+					Count: 1
+					id: "kubejs:blaze_spine"
+					tag: { }
 				}
-				{
-					id: "3D5BBA3F6E44152F"
-					item: {
-						Count: 1
-						id: "kubejs:blaze_spine"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "将炽热赠予所有人"
 			x: 4.5d
 			y: 22.0d
@@ -1857,9 +1827,7 @@
 				""
 				"为了保证您全身各处都能够处于极高的温度，您需要使用&6岩浆生命循环系统&r来均衡这种热量。"
 				""
-				"岩浆生命循环系统能够使用一种特殊的燃料提高您的身体热量，即消耗工业文明的高效燃料——&6汽油&r。"
-				""
-				"当使用汽油作为燃料，将您的燃烧持续时间延长到三分钟以上时，您的肉体便做好了&6接受极致烈焰的准备&r。"
+				"岩浆生命循环系统能够使用几种燃料提升您身上的火焰持续时长，最常见的类如&6岩浆&r或&6汽油&r。"
 			]
 			hide_until_deps_complete: true
 			id: "7480BAD551F85642"
@@ -2060,7 +2028,7 @@
 				""
 				"在您的&6燃烧时间大于三分钟&r时，义体改造装置便会因为巨大的内能而自发的驱动改造进行，进而&6使您的胸腔转变成为完全崭新的形态&r。"
 				""
-				"为了能够达到如此长的燃烧时间，您需要使用&6汽油&r作为燃料进行升温。"
+				"为了能够达到如此长的燃烧时间，您需要使用&6汽油&r或&6岩浆&r作为燃料进行升温。"
 			]
 			icon: {
 				Count: 1

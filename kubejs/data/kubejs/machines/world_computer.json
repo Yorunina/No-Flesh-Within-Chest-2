@@ -34,7 +34,8 @@
       "type": "custommachinery:item",
       "id": "input_3",
       "filter": [
-        "kubejs:reverse_causality_chip"
+        "kubejs:reverse_causality_chip",
+        "kubejs:source_focus_crystal"
       ],
       "whitelist": true,
       "mode": "input"

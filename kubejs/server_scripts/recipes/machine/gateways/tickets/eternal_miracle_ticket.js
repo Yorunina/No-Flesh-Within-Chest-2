@@ -1,7 +1,7 @@
 // priority: 500
 RegistryArtificalTicketConvertConfig(new ArtificalTicketConvertConfigModel()
     .setCondition((machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) => levelIndicator >= 20 && typeIndicator >= 50)
-    .setResult((machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) => rewardList.push(new GatewayStackReward(Item.of('kubejs:eternal_miracle_ticket'))))
+    .setResult((machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) => new GatewayStackReward(Item.of('kubejs:eternal_miracle_ticket')))
 )
 ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:eternal_altar', 200)

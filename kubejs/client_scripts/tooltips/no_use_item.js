@@ -12,5 +12,4 @@ ItemEvents.tooltip(tooltip => {
     MarkNoUseItem('sophisticatedbackpacks:inception_upgrade')
     MarkNoUseItem('sophisticatedbackpacks:stack_upgrade_omega_tier')
     MarkNoUseItem('cataclysm:meat_shredder')
-    MarkNoUseItem('cataclysm:belt_of_beginner')
 })

@@ -461,7 +461,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(9, 9, new StandardWaveEntityItemModel(1000, 'minecraft:warden')
+        .addPiece(9, 10, new StandardWaveEntityItemModel(1000, 'minecraft:warden')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 100 * levelIndicator),
@@ -470,7 +470,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(24, 24, new StandardWaveEntityItemModel(1000, 'cataclysm:ignis')
+        .addPiece(24, 25, new StandardWaveEntityItemModel(1000, 'cataclysm:ignis')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 100 * levelIndicator),
@@ -479,7 +479,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(42, 42, new StandardWaveEntityItemModel(1000, 'cataclysm:the_harbinger')
+        .addPiece(42, 43, new StandardWaveEntityItemModel(1000, 'cataclysm:the_harbinger')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 100 * levelIndicator),
@@ -489,7 +489,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
             })
             .setCompoundTag(GatewayNBTHarbingerActive)
         )
-        .addPiece(51, 51, new StandardWaveEntityItemModel(1000, 'cataclysm:maledictus')
+        .addPiece(51, 52, new StandardWaveEntityItemModel(1000, 'cataclysm:maledictus')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 100 * levelIndicator),

@@ -72,6 +72,24 @@ function NavigatingLiverEntityTick(customData, event, organItem, organIndex, slo
                 level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), 'item.book.page_turn', entity.getSoundSource(), 0.5, 1)
             })
         })
+    } else if (selectorStack.is('maa:create_ore_excavation_selector')) {
+        nbt.putInt('locating', 1)
+        MAAUtils.searchVeinAsync(level, targetId, entity.blockPosition(), NavigatingLiverSearchRadius, (targetPos) => {
+            if (!targetPos) return nbt.putInt('locating', 2)
+            server.scheduleInTicks(1, () => {
+                if (!organItem) return
+                nbt.putInt('locating', 0)
+
+                let mapItem = $MapItem.create(level, targetPos.x, targetPos.z, 1, true, true)
+                $MapItem.renderBiomePreviewMap(level, mapItem)
+                $MapItemSavedData.addTargetDecoration(mapItem, targetPos, '+', $MapDecorationType.RED_X)
+                mapItem = mapItem.withName(Text.translatable('biome.' + targetId.getNamespace() + '.' + targetId.getPath()))
+                RemoveBundleItem(organItem, 0, 1)
+                AddItemIntoBundle(organItem, mapItem, 1, (pStack) => 1)
+
+                level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), 'item.book.page_turn', entity.getSoundSource(), 0.5, 1)
+            })
+        })
     }
 }
 
@@ -89,6 +107,9 @@ ItemEvents.rightClicked('kubejs:navigating_liver', event => {
     GetBundleContents(item).forEach((pStack) => {
         outputList.push(pStack.copyAndClear())
     })
+    if (outputList.length <= 0) return
+    $AsyncLocator.setupExecutorService()
+    MAAUtils.shutdownAllSearchers()
     GivePlayerItemList(player, outputList)
     ClearBundle(item)
     nbt.putInt('locating', 0)

@@ -77,8 +77,8 @@ ServerEvents.recipes(event => {
                 machine.setItemStored('output_extract', outputItem)
             }
 
-            if (Math.random() < 1 - depthBar / MantleEnergyExtractorMaxDepth) {
-                let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
+            if (Math.random() < depthBar / MantleEnergyExtractorMaxDepth) {
+                let targetBiome = getBiome2LowerTemperature(biomeTemp)
                 SetBiomeByPosChunk(level, pos, targetBiome)
                 IncreaseEternalWinterCounter(server, 2)
             }
@@ -148,13 +148,12 @@ ServerEvents.recipes(event => {
             const biome = level.getBiome(pos).get()
             const biomeTemp = biome.getBaseTemperature()
             if (biomeTemp <= -0.5) return ctx.success()
-            if (Math.random() < 1 - depthBar / MantleEnergyExtractorMaxDepth) {
-                let targetBiome = getBiome2LowerTemperature(biomeTemp, biome.getDownfall())
+            const depthBar = Math.max(data.getInt('depth_bar'), 200)
+            if (Math.random() < depthBar / MantleEnergyExtractorMaxDepth * 3) {
+                let targetBiome = getBiome2LowerTemperature(biomeTemp)
                 SetBiomeByPosChunk(level, pos, targetBiome)
             }
             IncreaseEternalWinterCounter(server, 5)
-
-            const depthBar = Math.max(data.getInt('depth_bar'), 200)
             data.putInt('depth_bar', Math.min(depthBar * 2, MantleEnergyExtractorMaxDepth))
 
             return ctx.success()
@@ -197,26 +196,16 @@ function validMantleInputTarget(input, depth) {
  * @param {number} baseTemp 
  * @returns {String}
  */
-function getBiome2LowerTemperature(baseTemp, downFall) {
+function getBiome2LowerTemperature(baseTemp) {
     if (baseTemp >= 2) {
         return 'minecraft:stony_peaks' // 1.0, 0.3
     }
-    if (downFall <= 0.5) {
-        if (baseTemp >= 1) {
-            return 'minecraft:plains'
-        } else if (baseTemp >= 0.5) {
-            return RandomGet(['minecraft:stony_shore', 'minecraft:windswept_forest', 'minecraft:windswept_hills'])
-        } else if (baseTemp > 0) {
-            return 'minecraft:snowy_plains'
-        }
-    } else {
-        if (baseTemp >= 1) {
-            return RandomGet(['minecraft:forest', 'minecraft:swamp', 'minecraft:birch_forest'])
-        } else if (baseTemp >= 0.5) {
-            return RandomGet(['minecraft:old_growth_spruce_taiga', 'minecraft:old_growth_spruce_taiga', 'minecraft:taiga'])
-        } else if (baseTemp > 0) {
-            return 'minecraft:snowy_plains'
-        }
+    if (baseTemp >= 1) {
+        return ['minecraft:forest', 'minecraft:swamp', 'minecraft:birch_forest', 'minecraft:plains']
+    } else if (baseTemp >= 0.5) {
+        return RandomGet(['minecraft:stony_shore', 'minecraft:windswept_forest', 'minecraft:windswept_hills', 'minecraft:old_growth_spruce_taiga', 'minecraft:old_growth_spruce_taiga', 'minecraft:taiga'])
+    } else if (baseTemp > 0) {
+        return 'minecraft:snowy_plains'
     }
     return 'minecraft:snowy_taiga' // -0.5
 }

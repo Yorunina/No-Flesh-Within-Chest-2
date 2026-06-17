@@ -3,7 +3,7 @@ RegistryArtificalTicketConvertConfig(new ArtificalTicketConvertConfigModel()
     .setCondition((machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) => {
         return levelIndicator >= 50 && typeIndicator == 0 && chaosIndicator == 0
     })
-    .setResult((machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) => rewardList.push(new GatewayStackReward(Item.of('kubejs:primal_miracle_ticket'))))
+    .setResult((machine, player, levelIndicator, chaosIndicator, typeIndicator, rewardList) => new GatewayStackReward(Item.of('kubejs:primal_miracle_ticket')))
 )
 
 ServerEvents.recipes(event => {
