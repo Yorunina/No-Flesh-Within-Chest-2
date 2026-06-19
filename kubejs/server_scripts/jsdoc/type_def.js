@@ -12,6 +12,9 @@
  * @property {boolean} needRefreshSpellSelection
  */
 
+/**
+ * @typedef {Object} ChampionEventCustomData
+ */
 
 /**
  * @typedef {Object} AirdropDeathEventCustomData

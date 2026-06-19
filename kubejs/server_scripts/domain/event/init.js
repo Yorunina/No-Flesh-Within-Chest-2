@@ -3,6 +3,10 @@
  * @type {Object<string, OrganStrategyModel>}
  */
 const OrganStrategyMap = {}
+/**
+ * @type {Object<string, ChampionEventModel>}
+ */
+const ChampionStrategyMap = {}
 
 /**
  * 
@@ -10,4 +14,12 @@ const OrganStrategyMap = {}
  */
 function RegistryOrganStrategy(strategyModel) {
     OrganStrategyMap[strategyModel.itemId] = strategyModel
+}
+
+/**
+ * 
+ * @param {ChampionStrategyModel} strategyModel 
+ */
+function RegistryChampionStrategy(strategyModel) {
+    ChampionStrategyMap[strategyModel.id] = strategyModel
 }

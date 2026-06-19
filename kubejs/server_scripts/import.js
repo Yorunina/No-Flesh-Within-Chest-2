@@ -89,6 +89,7 @@ const $MobEffectApplicableEvent = Java.loadClass('net.minecraftforge.event.entit
 const $LivingFallEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingFallEvent')
 const $PlayerSpawnPhantomsEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerSpawnPhantomsEvent')
 const $PlayerChangedDimensionEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent')
+const $LivingTickEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingEvent$LivingTickEvent')
 
 
 

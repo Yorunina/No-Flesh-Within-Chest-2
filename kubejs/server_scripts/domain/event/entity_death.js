@@ -1,6 +1,8 @@
 // priority: 999
 const OrganEntityDeathEvent = new OrganEventModel('entity_death')
 const OrganEntityKillEvent = new OrganEventModel('entity_kill')
+const ChampionEntityDeathEvent = new ChampionEventModel('entity_death')
+const ChampionEntityKillEvent = new ChampionEventModel('entity_kill')
 
 EntityEvents.death(event => {
     const entity = event.entity
@@ -11,6 +13,10 @@ EntityEvents.death(event => {
     OrganEntityDeathEvent.run(entity, customData, [event])
     if (killer && killer.isAlive()) {
         OrganEntityKillEvent.run(killer, customData, [event])
+    }
+    ChampionEntityDeathEvent.run(entity, customData, [event])
+    if (killer && killer.isAlive()) {
+        ChampionEntityKillEvent.run(killer, customData, [event])
     }
 })
 

@@ -1,7 +1,6 @@
 // priority: 999
 const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
-// todo
-const ChampionEntityBeHurtEvent = new OrganEventModel('champion_entity_be_hurt')
+const ChampionEntityBeHurtEvent = new ChampionEventModel('entity_be_hurt')
 
 /**
  * 
@@ -11,4 +10,5 @@ const ChampionEntityBeHurtEvent = new OrganEventModel('champion_entity_be_hurt')
 function OrganEntityBeHurt(event, customData) {
     const entity = event.entity
     OrganEntityBeHurtEvent.run(entity, customData, [event])
+    ChampionEntityBeHurtEvent.run(entity, customData, [event])
 }

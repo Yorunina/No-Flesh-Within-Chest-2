@@ -1,5 +1,6 @@
 // priority: 999
 const OrganEntityTickEvent = new OrganEventModel('entity_tick')
+const ChampionEntityTickEvent = new ChampionEventModel('entity_tick')
 
 /**
  * 能够进入该事件必须要满足该实体的胸腔是被开启过的状态
@@ -11,4 +12,12 @@ ChestCavityEvents.openedEntityTick(event => {
     let customData = {}
     OrganEntityTickEvent.run(entity, customData, [event])
     PhotosynthesisEntityTick(event)
+})
+
+// 实际EntityTick事件
+NativeEvents.onEvent($LivingTickEvent, /**@param {Internal.LivingEvent$LivingTickEvent} event **/event => {
+    const entity = event.entity
+    if (!entity || entity.age % 20 != 0) return
+    let customData = {}
+    ChampionEntityTickEvent.run(entity, customData, [event])
 })
