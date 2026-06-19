@@ -75,7 +75,7 @@ function ExtractantMaterial1Strategy(customData, machine, levelIndicator, chaosI
  */
 function ExtractantMaterial2Strategy(customData, machine, levelIndicator, chaosIndicator, typeIndicator, extractantItem, auxiliaryItem) {
     let stackList = ExtractantMaterial2LootWeightModel.getWeightRandomObjs(Math.min(Math.floor(2 + levelIndicator / 10), 5))
-    if (levelIndicator >= 30 && Math.random() < 0.2) stackList.push('minecraft:spawner')
+    if (levelIndicator >= 30 && Math.random() < 0.2) stackList.push(Item.of('minecraft:spawner'))
     if (Math.random() < levelIndicator * 0.01 + 0.2) stackList.push(Item.of('kubejs:desperate_memory', 1).withNBT(genCuriosAttriValueNbt(FloorFix(levelIndicator * (Math.random() * 5 + 1) * 0.1, 2))))
     customData.rewardList.push(new GatewayStackListReward(stackList))
 }

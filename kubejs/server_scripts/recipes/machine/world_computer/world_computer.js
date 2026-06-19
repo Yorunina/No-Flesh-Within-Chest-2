@@ -516,7 +516,7 @@ ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
         .produceItem(Item.of('create:creative_blaze_cake', 1))
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:flame_crystal', 1), 'input_3')
+        .requireItem(Item.of('kubejs:reverse_causality_chip', 1), 'input_3')
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .requireItem(Item.of('create:blaze_cake', 1), 'input_1')
         .resetOnError()

@@ -79,10 +79,9 @@ function FurnaceCoreDoDamage(customData, event, organItem, organIndex, slotType)
         SetChestCavityOrgan(customData, chestCavity, replaceItem, organIndex, slotType, false)
         // 革命之钟触发烈焰加压器
         let blazePressurizerIndex = chestCavity.inventory.find('kubejs:blaze_pressurizer')
-        if (blazePressurizerIndex > -1) {
+        if (blazePressurizerIndex > -1 && chestCavity.inventory.find('kubejs:revolution_bell') > -1) {
             if (sourceEntity instanceof $ServerPlayer) {
                 if (!sourceEntity.getCooldowns().isOnCooldown('kubejs:blaze_pressurizer')) {
-                    // todo 测试
                     let counter = BlazePressurizerActive(chestCavity, inventoryTypeData.getSlotType(blazePressurizerIndex))
                     let organEffect = new OragnEffectModel(Item.of('kubejs:blaze_pressurizer')).setPriority(organIndex).setCustomText(counter.toFixed(0))
                     SetOrganEffect(chestCavity, organEffect)

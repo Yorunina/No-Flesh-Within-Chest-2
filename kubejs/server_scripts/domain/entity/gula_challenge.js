@@ -90,24 +90,19 @@ function NewGulaChallengeGoal(entity) {
                 if (!onTableBlock || onTableBlock.blockState.isAir()) {
                     let round = persistentData.getInt('round')
                     level.setBlockAndUpdate(onTablePos, GetPlonkDefaultBlockState())
-                    /**@type {Internal.TilePlacedItems} */
-                    let plonkBlockEntity = level.getBlockEntity(onTablePos)
                     if (round >= 7) {
-                        plonkBlockEntity.insertStack(Item.of('candlelight:note_paper_written',
-                            `{author:"§kGula§r",text:["
-                            ${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.text.7`).component)}"],
-                            title:"${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.title.7`).component)}"}`), 0)
-                        plonkBlockEntity.setChanged()
-                        plonkBlockEntity.clean()
-                        let nearestPlayer = GetNearestPlayer(level, mob.position(), 16)
+                        let nearestPlayer = GetNearestPlayer(level, mob.blockPosition(), 32)
+                        if (nearestPlayer) {
+                            nearestPlayer.tell(Text.translatable('tooltips.gula_challenge.text.7'))
+                        }
                         MAAUtils.onKubeTaskFinish('gula_challenge_success', nearestPlayer, (task, pPlayer, teamData) => teamData.addProgress(task, 1))
                         return mob.persistentData.remove('gulaChallenge')
                     }
                     let targetDish = Item.of(GetGulaChallengeTargetDish(round))
-                    plonkBlockEntity.insertStack(Item.of('candlelight:note_paper_written',
-                        `{author:"§kGula§r",text:["${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.text.${round}`, targetDish.getHoverName().component).component)}"],title:"${$Serializer.toJson(Text.translatable(`tooltips.gula_challenge.title.${round}`).component)}"}`), 0)
-                    plonkBlockEntity.setChanged()
-                    plonkBlockEntity.clean()
+                    let nearestPlayer = GetNearestPlayer(level, mob.blockPosition(), 32)
+                    if (nearestPlayer) {
+                        nearestPlayer.tell(Text.translatable(`tooltips.gula_challenge.text.${round}`, Text.gold(targetDish.getHoverName())))
+                    }
                     level.playSound(null, tablePos.getX(), tablePos.getY(), tablePos.getZ(), 'item.book.page_turn', mob.getSoundSource(), 1, 1)
                     persistentData.putInt('round', round + 1)
                     persistentData.putString('targetDish', targetDish.getId())

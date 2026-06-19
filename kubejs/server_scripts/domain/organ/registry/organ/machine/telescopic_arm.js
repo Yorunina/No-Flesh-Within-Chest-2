@@ -45,5 +45,5 @@ function TelescopicAttackArmChestCavityUpdate(customData, event, organItem, orga
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:telescopic_attack_arm')
-        .addOnlyStrategy('chest_cavity_update', TelescopicArmChestCavityUpdate)
+        .addOnlyStrategy('chest_cavity_update', TelescopicAttackArmChestCavityUpdate)
 )

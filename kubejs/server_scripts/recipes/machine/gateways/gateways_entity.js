@@ -157,6 +157,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                     GatewayUtils.buildAttributeModifier('minecraft:generic.attack_damage', 'addition', levelIndicator * 0.5)
                 ]
             })
+            .setCompoundTag(GatewayNBTEntityAwaken)
         )
         .addPiece(16, 20, new StandardWaveEntityItemModel(500, 'cataclysm:kobolediator')
             .setModifier((levelIndicator, chaosIndicator) => {
