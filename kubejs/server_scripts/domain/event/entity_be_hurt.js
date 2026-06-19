@@ -1,5 +1,7 @@
 // priority: 999
 const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
+// todo
+const ChampionEntityBeHurtEvent = new OrganEventModel('champion_entity_be_hurt')
 
 /**
  * 

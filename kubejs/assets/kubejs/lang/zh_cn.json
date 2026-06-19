@@ -430,7 +430,7 @@
     "tooltips.kubejs.revolution_bell.default.1": "兄弟们，把增压器拉开！现在轮到我们出场了！",
     "tooltips.kubejs.revolution_bell.alt.1": "    §6★§r 在切换到§6心火状态§r时，能够自动触发§6烈焰加压器§r的%s效果",
     "tooltips.kubejs.revolution_bell.alt.2": "    §6★§r 如果为非玩家触发，那么不会触发§6烈焰加压器§r的物品冷却",
-    "item.kubejs.blaze_pressurizer": "烈焰增压器",
+    "item.kubejs.blaze_pressurizer": "烈焰加压器",
     "tooltips.kubejs.blaze_pressurizer.default.1": "现在是主场作战时间！从现在开始，任何、任何人都是英雄！",
     "tooltips.kubejs.blaze_pressurizer.alt.1": "    §6★§r %s该器官时，会获得 %s 层§c烈火超压§r效果",
     "tooltips.kubejs.blaze_pressurizer.alt.2": "    §6★§r 如果玩家造成的伤害被§6满溢能量瓶§r加成，则会消耗§c烈火超压§r层数以提高能量瓶的效果",
