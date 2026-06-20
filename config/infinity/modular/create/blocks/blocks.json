@@ -961,26 +961,6 @@
 			"key": {
 				"float": true,
 				"laggy": true,
-				"Name": "create:creative_crate",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": true,
-				"Name": "create:creative_fluid_tank",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": true,
 				"Name": "create:creative_motor",
 				"top": true,
 				"full": false

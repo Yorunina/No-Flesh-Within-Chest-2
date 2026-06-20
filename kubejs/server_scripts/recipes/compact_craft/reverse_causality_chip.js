@@ -4,8 +4,7 @@ ServerEvents.recipes(event => {
         .miniaturization(
             [Item.of('kubejs:reverse_causality_chip', 1)],
             Item.of('kubejs:unstable_matter', 1),
-            200,
-            9
+            200
         ).setLayers([
             CCLayerType.MIXED.withPattern([
                 ['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A'],

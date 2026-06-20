@@ -1,6 +1,5 @@
 {
     "type": "compactcrafting:miniaturization",
-    "recipeSize": 5,
     "catalyst": {
         "id": "kubejs:unstable_matter",
         "Count": 1

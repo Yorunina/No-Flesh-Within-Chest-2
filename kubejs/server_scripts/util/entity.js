@@ -582,3 +582,43 @@ function CanMobSeeBlock(mob, targetPos) {
 function IsSunBurn(level, entity) {
     return level.isDay() && entity.getLightLevelDependentMagicValue() && !entity.isInWaterOrBubble() && !entity.isInPowderSnow && !entity.wasInPowderSnow && level.canSeeSky(entity.blockPosition())
 }
+
+
+/**
+ * 对实体周围的光环效果进行管理
+ * @param {Internal.LivingEntity} entity 光环源实体
+ * @param {number} radius 检测半径
+ * @param {(mob: Internal.LivingEntity) => boolean} filterFn 筛选目标实体的谓词
+ * @param {(mob: Internal.LivingEntity) => void} onEnter 新进入光环范围时回调
+ * @param {(mob: Internal.LivingEntity) => void} [onLeave] 离开光环范围时回调
+ * @param {string} [dataKey='auraMobs'] 持久化数据键名
+ */
+function ApplyAuraEffect(entity, radius, filterFn, onEnter, onLeave, dataKey = 'auraMobs') {
+    const level = entity.level
+    const pos = entity.position()
+    const persistentData = entity.persistentData
+    const prevMobIds = persistentData.getList(dataKey, TAG_STRING).stream().map(id => id.getAsString()).toArray()
+    const prevMobSet = new Set(prevMobIds)
+
+    const nearByMobs = GetLivingWithinRadiusVec3d(level, pos, radius, (pLevel, pMob) => filterFn(pMob))
+    const curMobIds = nearByMobs.map(mob => String(UUID.toString(mob.uuid)))
+    const curMobSet = new Set(curMobIds)
+    persistentData.put(dataKey, curMobIds)
+
+    // 新进入范围：直接使用已有的 nearByMobs 引用，避免二次查询实体
+    if (onEnter) {
+        nearByMobs.forEach(mob => {
+            if (!prevMobSet.has(UUID.toString(mob.uuid))) onEnter(mob)
+        })
+    }
+
+    // 离开范围
+    if (onLeave) {
+        prevMobIds.forEach(pId => {
+            if (!curMobSet.has(String(pId))) {
+                const mob = level.getEntity(UUID.fromString(pId))
+                if (mob) onLeave(mob)
+            }
+        })
+    }
+}

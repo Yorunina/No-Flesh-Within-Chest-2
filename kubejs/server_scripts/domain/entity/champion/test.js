@@ -6,8 +6,11 @@
 * @param {number} championLevel
 */
 function TestEntityTick(customData, event, championKey, championLevel) {
-    const entity = event.entity
-    entity.attack(1)
+    ApplyAuraEffect(event.entity, 16,
+        (mob) => !mob.isPlayer() && mob.isMonster(),
+        (mob) => mob.setGlowing(true),
+        (mob) => mob.setGlowing(false)
+    )
 }
 
 RegistryChampionStrategy(
