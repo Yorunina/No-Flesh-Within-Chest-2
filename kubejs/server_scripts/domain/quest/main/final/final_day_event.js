@@ -47,10 +47,6 @@ function FinalDayEvent(event) {
         AStages.addStageToServer(FTBFinalIteration10, server)
         AStages.addStageToServer(FTBFinalDimRestrict2, server)
         AStages.removeStageFromServer(FTBFinalDimRestrict1, server)
-        // 全局锁定维度网络
-        MAAUtils.getAllDimNet(server).forEach(dimnet => {
-            dimnet.setLocked(true)
-        })
     }
     if (finalTimer >= 5 && !AStages.serverHasStage(FTBFinalIteration5, server)) {
         AStages.addStageToServer(FTBFinalIteration5, server)

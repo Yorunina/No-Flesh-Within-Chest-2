@@ -2030,10 +2030,8 @@
 			tasks: [{
 				icon: "beyonddimensions:net_creater"
 				id: "1DE85E26AA13670B"
-				slotCapacity: 1L
-				slotMaxSize: 1
 				title: "建立维度联系"
-				type: "maa:dim_net"
+				type: "custom"
 			}]
 			title: "维度网络"
 			x: 13.5d

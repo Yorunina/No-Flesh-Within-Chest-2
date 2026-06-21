@@ -48,8 +48,4 @@ function ResetAllExceptStagesAndTask(server) {
     SetNightSpeed(1)
     // 重置所有玩家计数器信息
     ScoreUtil.resetAllPlayerStats(server, global.STAT_FINAL_TIMER)
-    // 解锁全维度网络
-    MAAUtils.getAllDimNet(server).forEach(dimnet => {
-        dimnet.setLocked(false)
-    })
 }

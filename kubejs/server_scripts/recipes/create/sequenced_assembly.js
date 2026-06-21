@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.sequenced_assembly(
         [
-            Item.of('kubejs:random_tick_spring').withChance(0.1),
-            Item.of('kubejs:refined_brass_ingot').withChance(0.9),
+            Item.of('kubejs:random_tick_spring').withChance(0.3),
+            Item.of('kubejs:refined_brass_ingot').withChance(0.7),
         ],
         'kubejs:refined_brass_ingot',
         [

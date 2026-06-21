@@ -1179,36 +1179,6 @@
 			y: -5.5d
 		}
 		{
-			dependencies: [
-				"1C316C6505326313"
-				"279EB57E529F3640"
-				"3786F4EF9AB65A30"
-			]
-			description: [
-				"一个猜想，如果我们能够让美味虫将我们的&6维度网络误识别为食品容器&r，那我们或许可以利用它们的空间扩展能力，间接扩展我们维度网络的大小。"
-				""
-				"但是方案目前还没有找到，毕竟美味虫是一种比较&6难以捉摸&r的物种。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			icon: "beyonddimensions:net_creater"
-			id: "54B50CDDC84E543B"
-			rewards: [{
-				id: "36812F06E7D9933F"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "美味虫利用理论"
-			tasks: [{
-				id: "546C550669204CD7"
-				title: "说的有道理"
-				type: "checkmark"
-			}]
-			title: "&6领域交差：异次元扩容术&r"
-			x: 8.5d
-			y: 8.0d
-		}
-		{
 			dependencies: ["4DB48FF831D57F33"]
 			description: [
 				"经过检测，美味虫似乎是一种名为&6“维度虫”&r的特殊生物（数据）的变种。"
@@ -1238,92 +1208,6 @@
 			title: "美味虫的远房亲戚"
 			x: 10.5d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"54B50CDDC84E543B"
-				"7CD591898F55BC60"
-			]
-			description: [
-				"呃，有一个令人惊讶的消息——似乎是美味虫之间具有一种&6特殊的意识网络&r，它们可以向我发送一些讯息。"
-				""
-				"就在您刚刚吃下美味虫的同时，我收到了一条消息，现在回放给您。"
-				""
-				"&6——回放中&r"
-				""
-				"&7**不会做可以不做，口感如干柴，味道如臭虾. . .有考虑过把嘴和屁股缝起来吗。评分：0 / 10，比外行还要外行的果蝇**&r"
-				""
-				"虽然说对方似乎非常不满意您的一些行为，但是至少说明对方是一个有智慧的物种（或者说是群体？），那我们其实可以尝试和它们谈谈，达成一些合作关系。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "ftbquests:custom_icon"
-				tag: {
-					Icon: "kubejs:textures/gui/tasks/taste_in_jar/oncall_icon.png"
-				}
-			}
-			id: "47B92A0A1393BE4F"
-			rewards: [{
-				id: "4AC4BBEE84C0169B"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "none"
-			size: 1.2d
-			subtitle: "看起来不怎么好吃"
-			tasks: [{
-				count: 1L
-				id: "0672A362E6189C7C"
-				item: "kubejs:simple_cooked_taste_worm"
-				title: "品尝简单处理的美味虫"
-				type: "maa:eat_item"
-			}]
-			title: "深谷来电"
-			x: 17.1d
-			y: 9.3d
-		}
-		{
-			dependencies: ["47B92A0A1393BE4F"]
-			description: [
-				"我尝试和它们沟通了一下，情况大概是——这种事情它们已经做过很多次了，它们可以帮我们这个忙，不过有一个条件。"
-				""
-				"它们需要我们提供&6足够美味的食物&r，才能够给予您的维度空间一定的扩容。具体扩容程度取决于它们族群对于您提供食物的评价. . ."
-				""
-				"此外，它们还指出了能够有效跟它们沟通的一个方式——即&6虚空胃袋&r。"
-				""
-				"其制作方法是将&6幼虫&r放置于胸腔内，当&a成长质量大于1&r时，如果临近位置（临近八个方向上）没有其他的器官，美味虫幼虫会变异为&6虚空胃袋&r。"
-				""
-				"在佩戴虚空胃袋时，您可以通过进食来将食物供给给它们。不过虚空胃袋在您首次进食激活后，只能存续60s。因此您需要在&660s内进食花样足够多的食物&r才. . ."
-				""
-				"&7** 反正你吃就完事啦，你吃的时候我们会告诉你我们打算出多少力！还有，把你的臭脚给洗干净点，你脚上有味。 **&r"
-				""
-				"抱歉，我暂时允许了它们的直接数据通信，不过确实如它们所说，只要您稍微尝试，就能明白该如何使用。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "4F1FFCBD1BF6A6E4"
-			rewards: [{
-				id: "29AA82E28180EBB5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "一次友好的沟通"
-			tasks: [{
-				id: "6415C74DA344C336"
-				item: {
-					Count: 1
-					id: "kubejs:void_stomach_pouch"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "友好沟通"
-			x: 17.1d
-			y: 12.0d
 		}
 	]
 	title: "秘闻：罐装美味"

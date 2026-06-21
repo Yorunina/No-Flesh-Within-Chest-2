@@ -14,8 +14,8 @@ function AllayWingChestCavityTakeOn(customData, event, organItem, organIndex, sl
     const entity = event.entity
     if (!(entity instanceof $OwnableEntity)) return
     if (entity.type == 'minecraft:allay') return
-    RemoveCustomGoalByName(entity.goalSelector, 'pick_item_bdnet')
-    entity.goalSelector.addGoal(0, NewPickItemBDNetGoal(entity))
+    RemoveCustomGoalByName(entity.goalSelector, 'pick_item_for_player')
+    entity.goalSelector.addGoal(0, NewPickItemForPlayerGoal(entity))
 }
 
 /**
@@ -29,7 +29,7 @@ function AllayWingChestCavityTakeOff(customData, event, organItem, organIndex, s
     const entity = event.entity
     if (!(entity instanceof $OwnableEntity)) return
     if (entity.type == 'minecraft:allay') return
-    RemoveCustomGoalByName(entity.goalSelector, 'pick_item_bdnet')
+    RemoveCustomGoalByName(entity.goalSelector, 'pick_item_for_player')
 }
 
 RegistryOrganStrategy(

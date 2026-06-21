@@ -20,7 +20,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:story_witness')
             { damage: 3000, lootList: [Item.of('kubejs:koi_fish_scale')] },
             { damage: 5000, lootList: [Item.of('tetra:geode', 8)] },
             { damage: 10000, lootList: [Item.of('kubejs:bravery_witness')] },
-            { damage: 50000, lootList: [Item.of('kubejs:perseverance_witness')] },
+            { damage: 50000, lootList: [Item.of('toms_storage:ts.adv_wireless_terminal')] },
             { damage: 100000, lootList: [Item.of('kubejs:knowledge_witness')] },
             { damage: 1000000, lootList: [Item.of('cataclysm:altar_of_fire')] },
             { damage: 5000000, lootList: [Item.of('minecraft:warden_spawn_egg')] },

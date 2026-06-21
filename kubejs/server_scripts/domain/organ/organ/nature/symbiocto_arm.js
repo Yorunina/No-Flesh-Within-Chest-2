@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:symbiocto_arm')
     .addScore('chestcavity:strength', 1)
     .setCanSpawn(true)
-
+// todo 需要回归测试
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.ItemEntityInteractedEventJS} event
@@ -14,9 +14,10 @@ function SymbioctoArmEntityInteract(customData, event, organItem, organIndex, sl
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     if (!player) return
+    const target = event.target
+    if (target.equals(player)) return
     if (event.getHand() != 'main_hand') return
     if (!player.mainHandItem.isEmpty()) return
-    const target = event.target
     if (player.isVehicle()) return
     target.startRiding(player, true)
 }
@@ -33,6 +34,7 @@ function SymbioctoArmEntityBeInteracted(customData, event, organItem, organIndex
     const player = event.player
     if (!player) return
     const target = event.target
+    if (target.equals(player)) return
     if (target.isVehicle()) return
     player.startRiding(target, true)
 }

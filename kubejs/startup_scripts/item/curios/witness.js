@@ -10,15 +10,6 @@ StartupEvents.registry('minecraft:item', event => {
         .tag('curios:witness')
     event.create('kubejs:story_proof', 'basic').texture('kubejs:item/materials/story_proof').maxStackSize(1)
 
-    event.create('kubejs:perseverance_witness', 'basic')
-        .texture('kubejs:item/curios/perseverance_witness')
-        .maxStackSize(1)
-        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
-            .canEquip(() => true)
-            .canUnequip(() => true)
-        )
-        .tag('curios:witness')
-
     event.create('kubejs:bravery_witness', 'basic')
         .texture('kubejs:item/curios/bravery_witness')
         .maxStackSize(1)

@@ -1195,10 +1195,6 @@
 						items: [
 							{
 								Count: 1b
-								id: "kubejs:perseverance_witness"
-							}
-							{
-								Count: 1b
 								id: "kubejs:bravery_witness"
 							}
 							{

@@ -1,19 +1,16 @@
 // priority: 999
-function NewPickItemBDNetGoal(entity) {
+// todo 需要回归测试
+function NewPickItemForPlayerGoal(entity) {
     return new $CustomGoal(
-        'pick_item_bdnet',
+        'pick_item_for_player',
         entity,
         /** @param {Internal.TamableAnimal} mob **/ mob => {
             if (!mob.owner || !mob.owner.isPlayer()) return false
-            let dimNet = DimensionsNet.getPrimaryNetFromPlayer(mob.owner)
-            if (!dimNet) return false
-            return !dimNet.unifiedStorage.isFullSlotsSize()
+            return true
         },
         /** @param {Internal.TamableAnimal} mob **/ mob => {
             if (!mob.owner || !mob.owner.isPlayer()) return false
-            let dimNet = DimensionsNet.getPrimaryNetFromPlayer(mob.owner)
-            if (!dimNet) return false
-            return !dimNet.unifiedStorage.isFullSlotsSize()
+            return true
         },
         true, // 是否允许中断
         /** @param {Internal.TamableAnimal} mob **/ mob => {
@@ -31,21 +28,15 @@ function NewPickItemBDNetGoal(entity) {
             const pos = mob.position()
             /** @type {Internal.ItemEntity} */
             let targetItemEntity = GetNearestEntityVec3d(level, pos, 16, (level, entity) => {
-                if (entity instanceof $ItemEntity) return true 
+                if (entity instanceof $ItemEntity) return true
             })
             if (!targetItemEntity) return
             let targetPos = targetItemEntity.position()
             if (mob.position().distanceTo(targetPos) <= 2) {
-                let dimnet = DimensionsNet.getPrimaryNetFromPlayer(mob.owner)
-                if (!dimnet) return
                 let targetItem = targetItemEntity.getItem()
-                let remainingCount = dimnet.unifiedStorage.insert(new $ItemStackKey(targetItem), targetItem.getCount(), false)
-                    level.playSound(null, targetPos.x(), targetPos.y(), targetPos.z(), 'entity.item.pickup', mob.getSoundSource(), 1, 1)
-                if (remainingCount.isEmpty()) {
-                    targetItemEntity.discard()
-                } else {
-                    targetItemEntity.setItem(remainingCount.toStack())
-                }
+                mob.owner.give(targetItem)
+                level.playSound(null, targetPos.x(), targetPos.y(), targetPos.z(), 'entity.item.pickup', mob.getSoundSource(), 1, 1)
+                targetItemEntity.discard()
             } else {
                 NavigateWithDegradeVec3d(mob, targetPos, 1.0)
             }

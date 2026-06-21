@@ -19,7 +19,6 @@ function WitchStomachKeyActive(customData, event, organItem, organIndex, slotTyp
     if (potion.effects.isEmpty()) return
     let effects = potion.getEffects()
     for (let effect of effects) {
-        // todo
         player.potionEffects.add(effect.effect, effect.duration, effect.amplifier)
     }
     player.addItemCooldown(organItem, 20 * 120)

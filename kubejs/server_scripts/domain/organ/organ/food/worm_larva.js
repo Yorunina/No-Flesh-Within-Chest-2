@@ -60,12 +60,6 @@ function ParasiteLarvaFoodEaten(customData, event, organItem, organIndex, slotTy
                 level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.burp', player.getSoundSource(), 1, 1)
                 return
             }
-            // 虚空胃袋转化
-            if (emptyItemCount >= aroundRelativeSlots.length) {
-                SetChestCavityOrgan(customData, player.chestCavityInstance, Item.of('kubejs:void_stomach_pouch'), organIndex, slotType, true)
-                level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.player.burp', player.getSoundSource(), 1, 1)
-                return
-            }
         }
         // 美味虫
         let replaceItem = Item.of('kubejs:worm_of_taste')
