@@ -490,7 +490,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
             })
             .setCompoundTag(GatewayNBTHarbingerActive)
         )
-        .addPiece(51, 52, new StandardWaveEntityItemModel(1000, 'cataclysm:maledictus')
+        .addPiece(51, 52, new StandardWaveEntityItemModel(1000, 'cataclysm:scylla')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 100 * levelIndicator),

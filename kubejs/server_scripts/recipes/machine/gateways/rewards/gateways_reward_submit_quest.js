@@ -23,7 +23,7 @@ function eternalAltarSubmitQuest(summoner, levelIndicator, chaosIndicator, typeI
     if (typeIndicator == 8) taskIdList.push('eternal_altar_type_warden')
     else if (typeIndicator == 24) taskIdList.push('eternal_altar_type_ignis')
     else if (typeIndicator == 42) taskIdList.push('eternal_altar_type_harbinger')
-    else if (typeIndicator == 51) taskIdList.push('eternal_altar_type_maledictus')
+    else if (typeIndicator == 51) taskIdList.push('eternal_altar_type_scylla')
 
     MAAUtils.onKubeTasksFinish(taskIdList, summoner, (task, pPlayer, pTeamData) => {
         pTeamData.addProgress(task, 1)

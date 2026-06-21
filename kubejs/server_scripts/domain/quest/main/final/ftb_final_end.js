@@ -42,6 +42,7 @@ MAAEvents.ftbQuestCheckRepeatable('55DE4F49CDD42FDF', event => {
 function ResetAllExceptStagesAndTask(server) {
     // 删除生物生成的影响
     server.persistentData.remove('finalMobSpawnProp')
+    SetEternalWinterState(server, 0)
     // 重置时间
     SetDaySpeed(1)
     SetNightSpeed(1)

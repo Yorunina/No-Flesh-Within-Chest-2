@@ -1355,7 +1355,7 @@
 			description: [
 				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
 				""
-				"该位置位于异类苦寒监牢中，其中存在着名为&c“咒翼灵骸”&r的高威胁单位，对应的门扉类型为&6 51 &r。"
+				"该位置位于异类苦寒监牢中，其中存在着名为&c“斯库拉”&r的高威胁单位，对应的门扉类型为&6 51 &r。"
 				""
 				"您&6需要将门扉的类型调整为 51 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
 			]
@@ -1370,7 +1370,7 @@
 				count: 1L
 				icon: "cataclysm:cursed_tombstone"
 				id: "18CA2A84E6163EFE"
-				kubeId: "eternal_altar_type_maledictus"
+				kubeId: "eternal_altar_type_scylla"
 				title: "唤醒并压制类型为51的门扉"
 				type: "maa:kube"
 			}]
