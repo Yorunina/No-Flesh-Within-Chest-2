@@ -13,6 +13,7 @@ function ChampionHealthBoostEntitySpawned(customData, event, championKey, champi
     const attribute = entity.getAttribute('minecraft:generic.max_health')
     if (!attribute) return
     attribute.addPermanentModifier(new $AttributeModifier(ChampionHealthBoostHealthUpUUID, ChampionHealthBoostHealthUpIdentifier, Math.pow(2, championLevel), $Operation.MULTIPLY_BASE))
+    entity.heal(entity.getMaxHealth())
 }
 
 RegistryChampionStrategy(
