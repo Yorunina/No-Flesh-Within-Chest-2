@@ -1,0 +1,28 @@
+{
+  "infinity_version": 2004002,
+  "type": "hunting",
+  "options": {
+    "portal_color": 10027008,
+    "dawn": false,
+    "time_scale": 0.0,
+    "star_brightness_night": 1.0
+  },
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "height": 1,
+          "block": "minecraft:bedrock"
+        },
+        {
+          "height": 1,
+          "block": "minecraft:black_concrete"
+        }
+      ]
+    }
+  }
+}

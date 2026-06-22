@@ -605,14 +605,32 @@ function ApplyAuraEffect(entity, radius, filterFn, onEnter, onLeave, dataKey = '
     const curMobSet = new Set(curMobIds)
     persistentData.put(dataKey, curMobIds)
 
-    // 新进入范围：直接使用已有的 nearByMobs 引用，避免二次查询实体
     if (onEnter) {
         nearByMobs.forEach(mob => {
             if (!prevMobSet.has(UUID.toString(mob.uuid))) onEnter(mob)
         })
     }
 
-    // 离开范围
+    if (onLeave) {
+        prevMobIds.forEach(pId => {
+            if (!curMobSet.has(String(pId))) {
+                const mob = level.getEntity(UUID.fromString(pId))
+                if (mob) onLeave(mob)
+            }
+        })
+    }
+}
+
+/**
+ * 
+ * @param {Internal.LivingEntity} entity 
+ * @param {(mob: Internal.LivingEntity) => void} onLeave 
+ * @param {string} [dataKey='auraMobs']
+ */
+function RemoveAuraEffect(entity, onLeave, dataKey = 'auraMobs') {
+    const level = entity.level
+    const persistentData = entity.persistentData
+    const prevMobIds = persistentData.getList(dataKey, TAG_STRING).stream().map(id => id.getAsString()).toArray()
     if (onLeave) {
         prevMobIds.forEach(pId => {
             if (!curMobSet.has(String(pId))) {

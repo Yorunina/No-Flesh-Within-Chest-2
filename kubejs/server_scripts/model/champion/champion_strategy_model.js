@@ -1,5 +1,5 @@
 // priority: 2000
-const $ChampionEventIdType = 'entity_be_hurt' || 'entity_tick' || 'entity_death' || 'entity_kill'
+const $ChampionEventIdType = 'entity_be_hurt' || 'entity_tick' || 'entity_death' || 'entity_kill' || 'entity_spawned'
 
 function ChampionStrategyModel(id) {
     /** @type {String} */

@@ -2412,5 +2412,11 @@
     "create_ore_excavation.createoreexcavation.ore_vein_type/zinc": "锌矿",
     "create_ore_excavation.createoreexcavation.ore_vein_type/water": "水",
     "create_ore_excavation.createoreexcavation.ore_vein_type/emerald": "绿宝石",
-    "create_ore_excavation.createoreexcavation.ore_vein_type/iron": "铁矿"
+    "create_ore_excavation.createoreexcavation.ore_vein_type/iron": "铁矿",
+    "_comment.champion": "精英怪",
+    "champion.affix.damage_aura.name": "群体增伤 %s",
+    "champion.affix.heal_aura.name": "群体恢复 %s",
+    "champion.affix.speed_aura.name": "群体加速 %s",
+    "champion.affix.split_on_death.name": "死亡分裂 %s",
+    "champion.affix.health_boost.name": "强健 %s"
 }
