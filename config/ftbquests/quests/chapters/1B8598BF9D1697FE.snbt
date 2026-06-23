@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1B8598BF9D1697FE"
-	group: "78F99AC9360F0137"
+	group: "0B365C36A50478AA"
 	icon: "kubejs:eternal_altar"
 	id: "1B8598BF9D1697FE"
 	images: [
@@ -279,11 +279,11 @@
 			y: 5.5d
 		}
 	]
-	order_index: 3
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["588B97AAEC0E2385"]
+			dependencies: ["61CC83511416B246"]
 			description: [
 				"首先，请允许我恭喜您击败了先驱者，获取了重要的材料——&6凋灵合金锭&r。"
 				""
@@ -1406,7 +1406,7 @@
 					count: 1
 					icon: {
 						Count: 1
-						id: "kubejs:primal_miracle"
+						id: "kubejs:eternal_miracle"
 						tag: { }
 					}
 					id: "1A0A7BDFE4B06B9E"
@@ -1593,5 +1593,5 @@
 			y: -24.5d
 		}
 	]
-	title: "秘闻：永恒门扉"
+	title: "传闻：永恒门扉"
 }

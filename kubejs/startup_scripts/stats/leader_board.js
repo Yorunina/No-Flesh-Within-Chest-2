@@ -82,16 +82,4 @@ LeaderboardsEvents.registryLeaderboards(event => {
 		player => player.getStats().getValue(global.STAT_TETRA_CRAFT_GENESIS) > 0
 	)
 
-	event.register(
-		global.STAT_FINAL_TIMER,
-		Text.translatable('leaderboard.kubejs.final_timer'),
-		player => {
-			return Text.of(player.getStats().getValue(global.STAT_FINAL_TIMER).toFixed(0))
-		},
-		player => {
-			return player.getStats().getValue(global.STAT_FINAL_TIMER)
-		},
-		Comparator.comparingInt(player => player.getStats().getValue(global.STAT_FINAL_TIMER)).reversed(),
-		player => player.getStats().getValue(global.STAT_FINAL_TIMER) > 0
-	)
 })

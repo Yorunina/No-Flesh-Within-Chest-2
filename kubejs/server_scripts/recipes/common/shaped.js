@@ -113,4 +113,17 @@ ServerEvents.recipes(event => {
         ['', '#forge:leather', ''],
         ['', '#kubejs:stomach', '']
     ])
+    event.remove({ id: 'toms_storage:storage_terminal' })
+    event.shaped(Item.of('toms_storage:ts.storage_terminal'), [
+        ['#minecraft:planks', '#forge:ingots/iron', '#minecraft:planks'],
+        ['#c:glass_blocks', '#forge:chests/wooden', '#c:glass_blocks'],
+        ['#minecraft:planks', '#forge:ingots/iron', '#minecraft:planks']
+    ])
+    
+    event.remove({ id: 'toms_storage:crafting_terminal' })
+    event.shaped(Item.of('toms_storage:ts.crafting_terminal'), [
+        ['minecraft:crafting_table', '#forge:storage_blocks/copper', 'minecraft:crafting_table'],
+        ['#forge:storage_blocks/copper', 'toms_storage:ts.storage_terminal', '#forge:storage_blocks/copper'],
+        ['minecraft:crafting_table', '#forge:storage_blocks/copper', 'minecraft:crafting_table']
+    ])
 })

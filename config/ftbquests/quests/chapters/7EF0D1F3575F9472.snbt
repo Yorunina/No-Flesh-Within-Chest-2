@@ -107,12 +107,16 @@
 			}]
 			subtitle: "获取类任务"
 			tasks: [{
-				count: 1L
-				icon: "minecraft:oak_log"
-				id: "72DE55E275C662B0"
-				kubeId: "final_end_1"
-				title: "任何种类原木"
-				type: "maa:kube"
+				id: "1709D6C7C355CD48"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "任意类型原木"
+				type: "item"
 			}]
 			title: "砍下第一块原木"
 			x: 0.0d

@@ -1,7 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:hedgehog_thorn')
-    .addScore('chestcavity:defense', 1)
-    .addScore('kubejs:extreme_fitness', 1)
+    .addScore('chestcavity:defense', 2)
     .setCanSpawn(true)
 /**
  * @param {OrganEventCustomData} customData

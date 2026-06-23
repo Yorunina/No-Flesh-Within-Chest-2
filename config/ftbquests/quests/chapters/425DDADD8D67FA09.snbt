@@ -86,11 +86,11 @@
 			y: 2.0d
 		}
 	]
-	order_index: 1
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["5D90233550E7D188"]
+			dependencies: ["1AD43758DA5521C0"]
 			description: [
 				"相信您在挖矿时遇到了一些从来没有见到过的矿物——比如说&6锌矿&r。"
 				""
@@ -896,5 +896,5 @@
 			y: -3.0d
 		}
 	]
-	title: "认知：机械"
+	title: "常识：机械"
 }

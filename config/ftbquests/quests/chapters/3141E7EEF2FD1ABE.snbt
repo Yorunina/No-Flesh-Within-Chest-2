@@ -62,7 +62,7 @@
 			y: -11.5d
 		}
 	]
-	order_index: 2
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -121,7 +121,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["5D90233550E7D188"]
+			dependencies: ["4FC5598C55413963"]
 			description: [
 				"可能您也发现了，在世界中偶尔会遇到一些颜色奇特的特殊木材，其被称为&6至高木&r。"
 				""
@@ -554,5 +554,5 @@
 			y: -5.0d
 		}
 	]
-	title: "认知：魔源"
+	title: "常识：魔源"
 }

@@ -38,6 +38,7 @@ StartupEvents.registry('item', event => {
     RegistryChestCavityInjection(event, 'player_21', 'kubejs:cc_inventory_types/player_21')
     RegistryChestCavityInjection(event, 'player_25', 'kubejs:cc_inventory_types/player_25')
     RegistryChestCavityInjection(event, 'player_27', 'kubejs:cc_inventory_types/player_27')
+    RegistryChestCavityInjection(event, 'transdimensional_mechanized', 'kubejs:cc_inventory_types/transdimensional_mechanized')
 
     event.create('empty_injection').maxStackSize(1).texture(`kubejs:item/injections/empty_injection`)
         .useDuration(itemStack => 65)

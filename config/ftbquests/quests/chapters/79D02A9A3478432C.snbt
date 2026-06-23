@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "79D02A9A3478432C"
-	group: "78F99AC9360F0137"
+	group: "0B365C36A50478AA"
 	icon: "create:creative_blaze_cake"
 	id: "79D02A9A3478432C"
 	images: [
@@ -207,11 +207,11 @@
 			y: 11.45d
 		}
 	]
-	order_index: 1
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["588B97AAEC0E2385"]
+			dependencies: ["79404493E0C3DF1B"]
 			description: [
 				"在扫描日志时，我意外发现了这个世界中所谓“地热能”的存在——或者说是&6“地幔能”&r，因为它的组成相当复杂，不过我们并不需要利用这些物质——我们可以利用组成这些物质的数据，进行随意的操控。"
 				""
@@ -1512,7 +1512,6 @@
 			y: 26.0d
 		}
 		{
-			dependencies: ["588B97AAEC0E2385"]
 			description: [
 				"&b曾经，一场巨大的冰雪灾难降临到这片世界. . .&r"
 				""
@@ -2052,5 +2051,5 @@
 			y: 24.5d
 		}
 	]
-	title: "秘闻：地幔燃料"
+	title: "传闻：地幔燃料"
 }

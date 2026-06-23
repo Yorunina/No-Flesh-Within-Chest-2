@@ -3,7 +3,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "11A9F33ACEC0E6DC"
-	group: "78F99AC9360F0137"
+	group: "0B365C36A50478AA"
 	icon: {
 		Count: 1
 		id: "kubejs:jar_of_mystery"
@@ -144,11 +144,11 @@
 			y: 16.0d
 		}
 	]
-	order_index: 0
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["588B97AAEC0E2385"]
+			dependencies: ["14A4E17E4416A28C"]
 			description: [
 				"等下，我好像在这个罐子中&6发现了什么东西&r. . ."
 				""
@@ -1210,5 +1210,5 @@
 			y: 0.0d
 		}
 	]
-	title: "秘闻：罐装美味"
+	title: "传闻：罐装美味"
 }

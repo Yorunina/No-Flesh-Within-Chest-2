@@ -106,6 +106,14 @@ const FunctionalEntityTypeHover = Text.translatable('tooltips.kubejs.hover.funct
         Text.translatable('tooltips.kubejs.hover.functional_entity_type.1'),
         Text.translatable('tooltips.kubejs.hover.functional_entity_type.2'),
     ]))
+
+const TransdimnesionalMechanizedTypeHover = Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.0').lightPurple().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.0').lightPurple(),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.1'),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.2'),
+    ]))
+
 const GulaTypeHover = Text.translatable('tooltips.kubejs.hover.gula_type.0').color('#ce00ee').underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.gula_type.0').color('#ce00ee'),
@@ -160,7 +168,7 @@ const SatenanceEffectHover = Text.translatable('tooltips.kubejs.hover.sustenance
         Text.translatable('tooltips.kubejs.hover.sustenance_effect.0').gold(),
         Text.translatable('tooltips.kubejs.hover.sustenance_effect.1'),
     ]))
-    
+
 const ExtremeStrengthHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple(),

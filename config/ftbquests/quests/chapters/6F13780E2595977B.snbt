@@ -167,7 +167,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["46E78442AD5DB22E"]
+			dependencies: ["0826B6D55FFA146F"]
 			description: [
 				"请等下！在驱动锻锤进行锻造的时候，我发现了一串&6特殊的数据标记&r，它似乎暗示了一种&6极其特殊的加工工序&r！"
 				""

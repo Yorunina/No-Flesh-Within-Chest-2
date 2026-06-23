@@ -61,7 +61,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["5D90233550E7D188"]
+			dependencies: ["28573ECFB4844619"]
 			description: [
 				"经过少部分生物扫描确认，绝大多数被扫描生物均绑定了一系列特殊属性，该部分属性会对生物本身的能力产生极大的影响。因此，我期望您能够协助我调查此认知的具体面貌。"
 				""
@@ -718,30 +718,6 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["180947BC2C1A1516"]
-			description: [
-				"[\"现阶段，您可以通过在JEI中搜索\",{\"text\":\"$organ\",\"underlined\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"copy_to_clipboard\",\"value\":\"$organ\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":\"点此复制\"}},\"来查看所有的器官。\"]"
-				""
-				"这只是个&6临时方案&r，在后续版本中，会有更细致的图鉴来描述各个器官的效果。"
-			]
-			icon: "exposure:album"
-			id: "43227BE4252AEDC8"
-			rewards: [{
-				id: "384BB9BFF1D16094"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "世界上的所有器官"
-			tasks: [{
-				id: "304BB80EEB89D6C3"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "世界器官综述"
-			x: 2.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["4FBC882804C1F6A9"]
 			description: [
 				"在生物锻造台中，存在有一个专门的器官页面用于合成一些特殊器官。"
@@ -786,5 +762,5 @@
 			y: 10.0d
 		}
 	]
-	title: "认知：胸腔"
+	title: "常识：胸腔"
 }

@@ -1,0 +1,39 @@
+{
+    "slotDefinitions": [
+        {"x": 8, "y": 21},
+        {"x": 8, "y": 39},
+        {"x": 8, "y": 58},
+        {"x": 8, "y": 77},
+        {"x": 8, "y": 95},
+        {"x": 63, "y": 28, "type": "transdimensional_factory"},
+        {"x": 81, "y": 28, "type": "transdimensional_factory"},
+        {"x": 99, "y": 28, "type": "transdimensional_factory"},
+        {"x": 63, "y": 66, "type": "transdimensional_mechanized"},
+        {"x": 81, "y": 66, "type": "transdimensional_mechanized"},
+        {"x": 99, "y": 66, "type": "transdimensional_mechanized"},
+        {"x": 152, "y": 21},
+        {"x": 152, "y": 39},
+        {"x": 152, "y": 58},
+        {"x": 152, "y": 77},
+        {"x": 152, "y": 95}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/transdimensional_mechanized.png",
+    "playerInventoryPosition": {
+        "x": 0,
+        "y": 43
+    },
+    "titlePosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    },
+    "backgroundSize": {
+        "x": 180,
+        "y": 209
+    },
+    "inventoryLabelPosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    }
+}

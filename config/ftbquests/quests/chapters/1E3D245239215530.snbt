@@ -71,11 +71,11 @@
 			y: 21.2d
 		}
 	]
-	order_index: 1
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["46E78442AD5DB22E"]
+			dependencies: ["0FF6CCEECFC2CD22"]
 			description: [
 				"奇怪，黄铜及其相关造物似乎都具有一些极其奇特的属性。"
 				""

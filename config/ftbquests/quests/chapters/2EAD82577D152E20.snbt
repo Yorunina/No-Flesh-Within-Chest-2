@@ -567,11 +567,11 @@
 			y: -10.9d
 		}
 	]
-	order_index: 2
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["46E78442AD5DB22E"]
+			dependencies: ["0FB97C6DBA850966"]
 			description: [
 				"在您使用传送石碑进行传送时，我想到了一个问题。"
 				""
