@@ -25,10 +25,4 @@ StartupEvents.registry('fluid', event => {
         .temperature(2000)
         .stillTexture('kubejs:block/fluid/molten_rose_quartz')
         .flowingTexture('kubejs:block/fluid/molten_rose_quartz')
-
-    event.create('primal_nutrients_fluid')
-        .bucketColor(0xe271f4)
-        .stillTexture('kubejs:block/fluid/primal_nutrients_fluid')
-        .flowingTexture('kubejs:block/fluid/primal_nutrients_fluid')
-        .tag('kubejs:nutrients_fluid')
 })

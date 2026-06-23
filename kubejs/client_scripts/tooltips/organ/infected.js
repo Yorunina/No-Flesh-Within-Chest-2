@@ -32,16 +32,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:rosy_tumor')
     .addAlt(Text.translatable('tooltips.kubejs.rosy_tumor.alt.1'))
 )
 
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:primal_heart')
-    .addDefault(Text.translatable('tooltips.kubejs.primal_heart.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.primal_heart.alt.1'))
-)
-
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:primal_bone_cage')
-    .addDefault(Text.translatable('tooltips.kubejs.primal_bone_cage.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.primal_bone_cage.alt.1').red())
-)
-
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:devour_teeth')
     .addDefault(Text.translatable('tooltips.kubejs.devour_teeth.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.devour_teeth.alt.1'))

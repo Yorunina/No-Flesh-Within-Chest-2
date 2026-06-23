@@ -51,19 +51,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:infected')
         .tag('kubejs:tumor')
 
-    event.create('kubejs:primal_heart')
-        .texture('kubejs:item/organs/infected/primal_heart')
-        .food(food => food.hunger(4).saturation(0.5).effect('minecraft:darkness', 600, 0, 1))
-        .maxStackSize(1)
-        .tag('kubejs:infected')
-        .tag('kubejs:heart')
-
-    event.create('kubejs:primal_bone_cage')
-        .texture('kubejs:item/organs/infected/primal_bone_cage')
-        .maxStackSize(1)
-        .tag('kubejs:infected')
-        .tag('kubejs:bone')
-
     event.create('kubejs:heart_of_mercy').maxStackSize(1).tag('kubejs:infected').tag('kubejs:heart').texture('kubejs:item/organs/infected/heart_of_mercy')
 
     event.create('kubejs:devour_teeth').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/devour_teeth')

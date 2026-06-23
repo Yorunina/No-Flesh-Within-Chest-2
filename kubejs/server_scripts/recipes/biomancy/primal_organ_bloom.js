@@ -5,6 +5,7 @@ BiomancyEvents.onOrganBloomHarvest(event => {
     const level = event.level
     const player = event.player
     const pos = event.pos
-    block.popResource(level, pos, Item.of('kubejs:primal_heart'))
+    // todo 可以添加自定义器官
+    // block.popResource(level, pos, Item.of('kubejs:primal_heart'))
     player.attack(level.damageSources().sweetBerryBush(), 1)
 })

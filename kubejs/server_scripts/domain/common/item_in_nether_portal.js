@@ -48,19 +48,6 @@ InfinityEvents.itemInPortal(event => {
         let nameString = GetInfinityKeyDim(itemStack)
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById(nameString, level, pos)
-    } else if (itemStack.is('exposure:photograph') && itemStack.hasNBT() && !AStages.serverHasStage(FTBFinalTimerStart, event.server)) {
-        let nbt = itemStack.getNbt()
-        if (!nbt.contains('photograph_frame')) return
-        let frameNbt = nbt.getCompound('photograph_frame')
-        if (!frameNbt.contains('photographer')) return
-        let photographerNbt = frameNbt.getCompound('photographer')
-        let phtographerId = photographerNbt.getUUID('uuid')
-        let targetPlayer = level.getPlayerByUUID(phtographerId)
-        if (!targetPlayer) return
-        if (!DimensionsNet.hasAnyNet(targetPlayer)) {
-            MAAUtils.createBDNetForPlayer(targetPlayer, null, 27)
-            level.playSound(null, targetPlayer.getX(), targetPlayer.getY(), targetPlayer.getZ(), 'ui.toast.challenge_complete', targetPlayer.getSoundSource(), 0.25, 1)
-        }
     } else if (InfinityPortalItem2Item.has(itemId)) {
         itemEntity.setPortalCooldown(100)
         itemEntity.setItem(Item.of(InfinityPortalItem2Item.get(itemId), itemStack.getCount()))

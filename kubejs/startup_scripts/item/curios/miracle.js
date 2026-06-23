@@ -29,17 +29,4 @@ StartupEvents.registry('minecraft:item', event => {
         .tag('curios:miracle')
 
 
-    event.create('kubejs:primal_miracle', 'basic')
-        .texture('kubejs:item/curios/primal_miracle')
-        .maxStackSize(1)
-        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
-            .canEquip(() => true)
-            .canUnequip(() => true)
-            .dynamicAttribute(ctx => {
-                const item = ctx.getStack()
-                const nbt = item.getOrCreateTag()
-                ctx.modify('attributeslib:experience_gained', 'PrimalMiracleExperienceMultiplier', nbt.getInt('value') * 0.01, 'addition')
-            })
-        )
-        .tag('curios:miracle')
 })

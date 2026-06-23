@@ -123,11 +123,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:living_beef_wellington')
     .addAlt(Text.translatable('tooltips.kubejs.living_beef_wellington.alt.1', Text.gold('1'), ExtremeStrengthHover))
 )
 
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:gula_beacon')
-    .addDefault(Text.translatable('tooltips.kubejs.gula_beacon.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.gula_beacon.alt.1'))
-)
-
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:tasty_gland')
     .addDefault(Text.translatable('tooltips.kubejs.tasty_gland.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.tasty_gland.alt.1'))

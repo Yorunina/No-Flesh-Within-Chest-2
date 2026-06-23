@@ -128,8 +128,6 @@ function eternalAltarGatewayReward(machine, player, levelIndicator, chaosIndicat
         data.put('chaos_indicator', Clamp(chaosIndicator - levelModifier - 1, 0, 60))
     }
 
-    if (levelIndicator >= 50) rewardList.push(new GatewayFunctionReward((ctx) => IncrMiracleCuriosCounter(ctx.summoner(), 'kubejs:primal_miracle')))
-
     eternalAltarSubmitQuest(player, levelIndicator, chaosIndicator, typeIndicator)
     // 门扉常规奖励
     rewardList.push(eternalAltarGatewayTypeStackReward(levelIndicator, chaosIndicator, typeIndicator))

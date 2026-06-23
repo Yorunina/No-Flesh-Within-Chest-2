@@ -29,8 +29,6 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Ingredient.of('#forge:heads', 1), Item.of('kubejs:silverfish_gland', 1), Item.of('biomancy:bio_lumens', 1)], Item.of('kubejs:animted_soul'), 'biomancy:organ', 20)
 
-    event.recipes.biomancy.bio_forging([Item.of('kubejs:deserted_gula_worm_nest'), Item.of('biomancy:bloomberry'), Item.of('kubejs:human_meat_sausage'), Item.of('minecraft:target')], Item.of('kubejs:gula_beacon'), 'biomancy:organ', 50)
-
     event.recipes.biomancy.bio_forging([Ingredient.of('#kubejs:liver'), Item.of('minecraft:compass'), Item.of('biomancy:flesh_bits')], Item.of('kubejs:navigating_liver'), 'biomancy:organ', 20)
     event.recipes.biomancy.bio_forging([Item.of('minecraft:map'), Item.of('minecraft:leather'), Item.of('minecraft:redstone')], Item.of('maa:structure_selector'), 'biomancy:organ', 5)
     event.recipes.biomancy.bio_forging([Item.of('minecraft:map'), Item.of('minecraft:leather'), Item.of('minecraft:mossy_cobblestone')], Item.of('maa:biome_selector'), 'biomancy:organ', 5)
