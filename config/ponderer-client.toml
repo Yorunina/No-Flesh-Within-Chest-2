@@ -43,10 +43,25 @@ defaultEditable = true
 	#Default: 16384. Range: 1024-65536. Adjust based on your model limits.
 	#Range: 1024 ~ 65536
 	maxTokens = 16384
+	#AI configuration source: 'custom', 'codex', or 'claude_code'.
+	#Custom uses the fields below. Codex and Claude Code read local tool configuration.
+	configSource = "custom"
 
 [pack]
 	#Show a chat prompt when a registered pack's scripts have all been deleted.
 	#The prompt offers to unregister the pack from the registry.
 	#Set to false to suppress these prompts.
 	orphanPrompt = true
+
+[projector]
+	#Text scale multiplier for miniature projectors.
+	#Higher values make overlay text (text windows, input bubbles) larger.
+	#Default: 2.5. Range: 0.5-5.0.
+	#Range: 0.5 ~ 5.0
+	miniatureTextScale = 2.5
+	#Text scale multiplier for life-size projectors.
+	#Higher values make overlay text (text windows, input bubbles) larger.
+	#Default: 1.25. Range: 0.5-5.0.
+	#Range: 0.5 ~ 5.0
+	lifeSizeTextScale = 1.25
 

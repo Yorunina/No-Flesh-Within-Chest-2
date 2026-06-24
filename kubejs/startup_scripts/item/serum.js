@@ -15,12 +15,17 @@ function RegistryEntityInducerSerumFromFleshBlob(targetEntityType, name, time) {
                     target.potionEffects.add('kubejs:differentiation_induction', time, 0)
                 }
             })
-            .canAffectPlayerSelf((serumData, targetSelf) => false)
+            .canAffectPlayerSelf((level, serumData, targetSelf) => true)
+            .affectPlayerSelf((level, serumData, targetSelf) => {
+                targetSelf.potionEffects.add('kubejs:differentiation_induction', time, 0)
+            })
     })
     StartupEvents.registry('item', event => {
         event.create(`kubejs:${name}_inducer_serum`, 'biomancy:basic_serum')
             .texture(`kubejs:item/inducer/${name}_inducer_serum`)
             .serum(`kubejs:${name}_inducer`)
+            .tag('kubejs:induction_serum')
     })
 }
 
+RegistryEntityInducerSerumFromFleshBlob('minecraft:pig', 'pig', 6000)

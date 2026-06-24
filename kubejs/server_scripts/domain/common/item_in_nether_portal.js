@@ -3,7 +3,7 @@ const InfinityPortalItem2Item = new Map()
 function RegisterPortalItem2Item(item, item2) {
     InfinityPortalItem2Item.set(item, item2)
 }
-
+RegisterPortalItem2Item('compactmachines:machine_large', 'compactmachines:machine_giant')
 
 const InfinityPortalItem2DimId = new Map()
 function RegisterPortalItem2DimId(dimItem, dimId) {

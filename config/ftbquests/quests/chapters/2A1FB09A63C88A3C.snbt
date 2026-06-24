@@ -1,0 +1,257 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2A1FB09A63C88A3C"
+	group: "0B365C36A50478AA"
+	icon: "compactmachines:wall"
+	id: "2A1FB09A63C88A3C"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["14EE172659669E78"]
+			description: [
+				"在无限维度之后，我找到了一个稳定利用无限维度的方法——通过这个方法，可以大幅度优化我们现有的产线，优化我们对胸腔的利用方式。"
+				""
+				"我把这种利用方法称为&6超维利用&r，而我们利用的主要手段则是基于一个被称为&6压缩空间方块&r的设备。"
+			]
+			icon: "compactmachines:wall"
+			id: "3B9F7FC959F4F068"
+			rewards: [{
+				id: "60C68609FC0B1034"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "无限维度的新课题"
+			tasks: [{
+				id: "313D96A5001492EC"
+				item: "compactmachines:wall"
+				type: "item"
+			}]
+			title: "窥破无限的努力"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B9F7FC959F4F068"]
+			description: [
+				"制作压缩空间机械和个人缩放设备。将压缩空间机械放置在世界的任意位置上，而后&6手持个人缩放设备右键压缩空间机械&r，即可通过压缩空间机械潜入到特殊的压缩空间维度中。"
+				""
+				"每个压缩空间机械的内部空间大小有限，随着压缩空间的等级提升，其内部空间大小也会不断提升，您可以根据您的实际需求，选择对应大小的压缩空间。"
+				""
+				"若想要退出压缩空间，则手持个人缩放设备，&6右键压缩空间墙壁，即可退出到正常世界中&r。"
+			]
+			icon: "compactmachines:personal_shrinking_device"
+			id: "122DB11A949DB228"
+			rewards: [{
+				id: "2A5A97396D1CF6CC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "潜入压缩空间"
+			tasks: [
+				{
+					id: "1A91F9ABABB8F396"
+					item: "compactmachines:personal_shrinking_device"
+					type: "item"
+				}
+				{
+					id: "0364EC151412D974"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "compactmachines:machine_tiny"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_small"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_normal"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_large"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_giant"
+								}
+								{
+									Count: 1b
+									id: "compactmachines:machine_maximum"
+								}
+							]
+						}
+					}
+					title: "任意压缩空间机械"
+					type: "item"
+				}
+			]
+			title: "压缩空间机械"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["122DB11A949DB228"]
+			description: [
+				"相比于直接对产线的空间进行扩展，使用压缩空间的灵活度和集成度更高——这依赖于各种接口的使用。"
+				""
+				"通过&6在压缩空间内部的墙壁上放置不同的接口&r，你可以定义在压缩空间外部压缩机械的输入/输出配置。"
+				""
+				"这意味着，你可以&6将一个精简的产线完全挪入压缩空间中&r，进而在不同的面实现不同的功能。"
+			]
+			icon: {
+				Count: 1
+				id: "compactmachines:tunnel"
+				tag: {
+					definition: {
+						id: "compactmachines:item"
+					}
+				}
+			}
+			id: "6C33052572100482"
+			rewards: [{
+				id: "037A40C09CF67D51"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "压缩空间的特殊交互方式"
+			tasks: [{
+				id: "09399865E38B7344"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compactmachines:tunnel"
+								tag: {
+									definition: {
+										id: "compactmachines:energy"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "compactmachines:tunnel"
+								tag: {
+									definition: {
+										id: "compactmachines:fluid"
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "compactmachines:tunnel"
+								tag: {
+									definition: {
+										id: "compactmachines:item"
+									}
+								}
+							}
+						]
+					}
+				}
+				title: "任意接口"
+				type: "item"
+			}]
+			title: "压缩空间交互"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6C33052572100482"]
+			description: [
+				"刚才我也有提到——除了在产线中可以利用&6压缩机械&r，您也可以在胸腔中使用。"
+				""
+				"但为了应用这些额外的空间，我们需要一个崭新的利用形式，这需要您对自己的胸腔进行一次&6再分化&r。"
+				""
+				"请您制作&6任意一种诱导血清&r，在准备好后，我会告诉您后续的操作。"
+			]
+			id: "3FBC546A3EF78EA4"
+			rewards: [{
+				id: "6B348F9463932F27"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "压缩空间胸腔利用方式"
+			tasks: [{
+				id: "786D18782B08D3DD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "kubejs:induction_serum"
+					}
+				}
+				title: "任意诱导血清"
+				type: "item"
+			}]
+			title: "准备自我分化"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3FBC546A3EF78EA4"]
+			description: [
+				"在您准备好诱导血清后，潜入压缩空间维度，即可准备胸腔改造。"
+				""
+				"该胸腔改造的方式极为简单——只需要对自己注射&6任意诱导血清&r，使自身进入再分化状态，若&6在再分化状态期间一直位于压缩空间维度中&r，即会转变为特殊的&6超维胸腔&r。"
+			]
+			id: "0A26BCE55EC7C58F"
+			rewards: [{
+				id: "776B799A9A602FD1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "转变为超维胸腔"
+			tasks: [{
+				dimension: "compactmachines:compact_world"
+				icon: "compactmachines:wall"
+				id: "591C6753537D8026"
+				title: "潜入压缩空间维度"
+				type: "dimension"
+			}]
+			title: "特异的空间压力"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0A26BCE55EC7C58F"]
+			description: [
+				"恭喜！看来您成功转变成为了超维胸腔——准确来说，是&6超维机械胸腔&r。"
+				""
+				"这种超维胸腔能够通过3个特殊的&6超维工厂&r槽位，直接访问胸腔内部的压缩机械方块，并且将其产出物直接提供给位于其上方的&6超维机械&r。"
+				""
+				"因此，为了让超维胸腔能够达到完全运行的状态，您&6至少需要3个压缩空间方块&r，以及&6至少3个能够利用的超维机械器官&r——正巧，在曾经的记录中就存在有几个这样的器官，请允许我为您逐个介绍。"
+			]
+			id: "0B6DD0B62C0B5118"
+			rewards: [{
+				id: "1C1572CD7083DBE8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "胸腔链接空间"
+			tasks: [{
+				entity: "minecraft:empty"
+				icon: "kubejs:transdimensional_mechanized_injection"
+				id: "2D8D4F70CB1B6C6B"
+				inventoryType: "kubejs:cc_inventory_types/transdimensional_mechanized"
+				title: "打开&6超维胸腔 - 机械"
+				type: "chestcavity:open_chest_cavity_task"
+				value: 1L
+			}]
+			title: "心系无限"
+			x: 2.5d
+			y: 8.0d
+		}
+	]
+	title: "传闻：超维工厂"
+}

@@ -54,4 +54,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(
         ['kubejs:flame_fragment'],
         [Fluid.of('minecraft:lava', 1000), 'minecraft:obsidian'], 20 * 10).superheated()
+
+    event.remove({ id: 'createutilities:mixing/void_steel_ingot' })
+    event.recipes.create.mixing(
+        ['createutilities:void_steel_ingot'],
+        ['minecraft:iron_ingot', 'minecraft:end_stone'], 20 * 10).heated()
 })

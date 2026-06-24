@@ -254,6 +254,9 @@ hostileGolemSoundVolumeFactor = 1.0
 	#Soul Repair modifier healing only when golem health is below this percentage
 	#Range: 0.0 ~ 1.0
 	soulHealingThreshold = 0.75
+	#Soul Repair bonus on armor items
+	#Range: 0.0 ~ 10.0
+	soulHealingArmorBonus = 0.5
 
 ["cataclysm compat"]
 	#Harbinger Helmet Bonus: Death Laser damage boost
@@ -280,6 +283,18 @@ hostileGolemSoundVolumeFactor = 1.0
 	#Ignitium golem skill damage factor
 	#Range: 0.0 ~ 1.0
 	ignisSkillDamageFactor = 0.5
+	#Cursium Golem Chestplate: Revive Cooldown
+	#Range: 10 ~ 10000
+	maledictusReviveCD = 360
+	#Cursium Golem Chestplate: Cursium Part/Armor reduction on revive cooldown
+	#Range: 10 ~ 10000
+	maledictusReviveCDPartReduction = 30
+	#Cursium Golem Chestplate: Revived health percentage
+	#Range: 0.01 ~ 1.0
+	maledictusRevivePHP = 0.25
+	#Cursium Golem Chestplate: Cursium Part/Armor bonus on revived health
+	#Range: 0.0 ~ 1.0
+	maledictusRevivePHPPartBonus = 0.125
 
 ["composite material compat"]
 	#Dungeon Absorption: lifesteal ratio for melee damage.

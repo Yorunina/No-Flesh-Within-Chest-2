@@ -398,6 +398,29 @@
 			x: 0.0d
 			y: 2.5d
 		}
+		{
+			dependencies: [
+				"1AD43758DA5521C0"
+				"0503656541D6410D"
+				"0FB97C6DBA850966"
+			]
+			description: [
+				"&o&7标签：&c胸腔&7、&6机械动力&7、&6生产优化&r"
+				"&o&7推荐指数：★★★☆（高）"
+				"&o&7难度指数：★★（难度低）"
+			]
+			icon: "compactmachines:wall"
+			id: "14EE172659669E78"
+			subtitle: "解锁 传闻：地幔燃料 章节"
+			tasks: [{
+				id: "217D8C8B976685DA"
+				title: "解锁 传闻：地幔燃料 章节"
+				type: "checkmark"
+			}]
+			title: "探秘地幔燃料"
+			x: 6.0d
+			y: 7.5d
+		}
 	]
 	title: "可能"
 }

@@ -26,7 +26,7 @@ function SweetHeartChestCavityUpdate(customData, event, organItem, organIndex, s
         value += foodHunger
     }
     if (value != 0) {
-        chestCavity.setOrganScore('chestcavity:health', chestCavity.getOrganScore('chestcavity:nutrition') + value)
+        customData.maxHealth.addAttributeModifier(value * 0.125, 'addition', 'base')
     }
 }
 

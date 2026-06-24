@@ -25,7 +25,7 @@ const MachinaryLubricantSlotType = Text.translatable('slot_type.kubejs.machinary
 const GulaSlotType = Text.translatable('slot_type.kubejs.gula_slot.1').color('#ae5dce')
 const ContainerSlotType = Text.translatable('slot_type.kubejs.container_slot.1').color('#afbab7')
 const DigestSlotType = Text.translatable('slot_type.kubejs.digest_slot.1').color('#d5e05a')
-
+const TransdimensionalMechanizedType = Text.translatable('slot_type.kubejs.transdimensional_mechanized.1').color('#ae5dce')
 
 const LuckHover = Text.translatable('tooltips.kubejs.hover.luck.0').green().underlined()
     .hover(HoverTextList([
