@@ -36,8 +36,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:golem_plating').maxStackSize(1).tag('kubejs:machine').tag('kubejs:basic').texture('kubejs:item/organs/machine/golem_plating').tag('kubejs:bone')
     event.create('kubejs:piston_muscle').maxStackSize(1).tag('kubejs:machine').tag('kubejs:basic').texture('kubejs:item/organs/machine/piston_muscle').tag('kubejs:muscle')
 
+    event.create('kubejs:pure_color_reaction').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/pure_color_reaction').tag('kubejs:stomach')
+    event.create('kubejs:blood_crystal_factory').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/blood_crystal_factory').tag('kubejs:heart')
 })
-
-// 1 输入 -> 完全独立于整合包原有内容的产线（不用其他mod的东西作为中间产物，液体除外） -> n 个输出 -> 器官反馈 -> 1 输入
-
-// 1 激素前体物质A -> 变流体 -> 分馏 -> 多个流体 -> 

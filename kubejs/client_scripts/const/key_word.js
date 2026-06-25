@@ -203,3 +203,25 @@ const PotentialTumorScoreHover = Text.translatable('tooltips.kubejs.hover.potent
         Text.translatable('tooltips.kubejs.hover.potential_tumor_score.0').darkGreen(),
         Text.translatable('tooltips.kubejs.hover.potential_tumor_score.1')
     ]))
+const DyeRGBConfigHover = Text.translatable('tooltips.kubejs.hover.dye_rgb_config.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.1'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.2'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.3'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.4'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.5'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.6'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.7'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.8'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.9'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.10'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.11'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.12'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.13'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.14'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.15'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.16'),
+        Text.translatable('tooltips.kubejs.hover.dye_rgb_config.17')
+    ]))
+    

@@ -17,7 +17,7 @@ function ChimeraHeartEntityBeHurt(customData, event, organItem, organIndex, slot
     if (!entity.isPlayer()) return
     if (OrganItemCoolDown(entity, organItem)) return
     if (event.amount <= entity.getHealth() + entity.getAbsorptionAmount()) return
-    entity.setAbsorptionAmount(entity.getAbsorptionAmount() + event.amount)
+    entity.setAbsorptionAmount(entity.maxHealth)
     event.amount = 0
     entity.addItemCooldown(organItem, 20 * 180)
 }

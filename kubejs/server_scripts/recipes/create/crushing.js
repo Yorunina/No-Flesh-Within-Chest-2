@@ -7,5 +7,5 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.crushing([Item.of('minecraft:bone_meal'), Item.of('minecraft:bone_meal').withChance(0.7)], Ingredient.of('#kubejs:bone')).processingTime(400)
     event.recipes.create.crushing([Item.of('minecraft:bone_meal', 2), Item.of('minecraft:bone_meal').withChance(0.7)], Ingredient.of('#kubejs:spine')).processingTime(400)
-    event.recipes.create.crushing([Item.of('minecraft:wither_skeleton_skull'), Item.of('minecraft:nether_star').withChance(0.5)], Item.of('kubejs:wither_skull')).processingTime(400)
+    event.recipes.create.crushing([Item.of('minecraft:red_dye').withChance(0.5), Item.of('minecraft:orange_dye').withChance(0.5), Item.of('minecraft:yellow_dye').withChance(0.5), Item.of('minecraft:green_dye').withChance(0.5), Item.of('minecraft:cyan_dye').withChance(0.5), Item.of('minecraft:blue_dye').withChance(0.5), Item.of('minecraft:purple_dye').withChance(0.5)], Item.of('kubejs:rainbow_compound')).processingTime(400)
 })

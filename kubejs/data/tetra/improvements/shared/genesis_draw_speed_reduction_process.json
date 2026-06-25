@@ -4,7 +4,7 @@
         "infinite": true,
         "integrity": -1,
         "attributes": {
-          "tetra:draw_speed": -0.05
+          "tetra:draw_speed": -0.1
         }
     }
 ]

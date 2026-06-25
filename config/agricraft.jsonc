@@ -1,0 +1,136 @@
+{
+    "core": {
+        // Set to false to prevent AgriCraft from enabling its mod compatibility datapacks / resourcepacks by default
+        "register_packs_by_default": true,
+        // Set to false to disable planting of (agricraft) seeds outside crop sticks
+        "plant_off_crop_sticks": true,
+        // Set to false to disable collision boxes on crop sticks
+        "crop_sticks_collide": true,
+        // Set to true to allow only fertile plants to be able to cause, participate in, or contribute to a spreading / mutation action (note that this may cause issues with obtaining some specific plants)
+        "only_fertile_crops_spread": false,
+        // Set to false if to disable triggering of mutations by using fertilizers on a cross crop.
+        "allow_fertilizer_mutation": true,
+        // Set to true to allow mutations on clone events (spreading from single crop).
+        "clone_mutations": false,
+        // Set to true to override vanilla farming, meaning vanilla seeds will be converted to agricraft seeds on planting.
+        "override_vanilla_farming": true,
+        // Set to true to convert seeds only in the analyzer. Has no effect if "Override vanilla farming" is set to false.
+        "converts_seed_only_in_analyzer": false,
+        /*
+         * Global growth rate multiplier for crops.
+         * Range: 0.0 - 3.0
+         */
+        "growth_multiplier": 1.0,
+        // Set this to true to make only mature crops drop seeds (to encourage trowel usage).
+        "only_mature_seed_drops": false,
+        // Set to true to completely disable the spawning of weeds
+        "disable_weeds": false,
+        // Set to false to disable mature weeds killing plants
+        "mature_weeds_kill_plants": true,
+        // Set to false to disable the spreading of weeds
+        "weeds_spreading": true,
+        // Set this to true to have weeds destroy the crop sticks when they are broken with weeds (to encourage rake usage).
+        "weeds_destroy_crop_sticks": false,
+        // Set to false if you wish to disable drops from raking weeds.
+        "raking_drops_items": true,
+        /*
+         * Defines the seed compost value, if set to zero, seeds will not be compostable
+         * Range: 0.0 - 1.0
+         */
+        "seed_compost_value": 0.3,
+        /*
+         * The amount of seeds one seed bag can hold.
+         * Range: 8 - 256
+         */
+        "seed_bag_capactity": 64,
+        /*
+         * Enchantment cost in player levels to enchant the seed bag.
+         * Range: 0 - 30
+         */
+        "seed_bag_enchant_cost": 10
+    },
+    "stats": {
+        /*
+         * Minimum allowed value of the Gain stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "gain_min": 1,
+        /*
+         * Maximum allowed value of the Gain stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "gain_max": 10,
+        // Set to true to hide the Gain stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.
+        "gain_hidden": false,
+        /*
+         * Minimum allowed value of the Growth stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "growth_min": 1,
+        /*
+         * Maximum allowed value of the Growth stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "growth_max": 10,
+        // Set to true to hide the Growth stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.
+        "growth_hidden": false,
+        /*
+         * Minimum allowed value of the Strength stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "strength_min": 1,
+        /*
+         * Maximum allowed value of the Strength stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "strength_max": 10,
+        // Set to true to hide the Strength stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.
+        "strength_hidden": false,
+        /*
+         * Minimum allowed value of the Resistance stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "resistance_min": 1,
+        /*
+         * Maximum allowed value of the Resistance stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "resistance_max": 10,
+        // Set to true to hide the Resistance stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.
+        "resistance_hidden": false,
+        /*
+         * Minimum allowed value of the Fertility stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "fertility_min": 1,
+        /*
+         * Maximum allowed value of the Fertility stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "fertility_max": 10,
+        // Set to true to hide the Fertility stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.
+        "fertility_hidden": false,
+        /*
+         * Minimum allowed value of the Mutativity stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "mutativity_min": 1,
+        /*
+         * Maximum allowed value of the Mutativity stat (setting min and max equal will freeze the stat to that value in crop breeding)
+         * Range: 1 - 10
+         */
+        "mutativity_max": 10,
+        // Set to true to hide the Mutativity stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.
+        "mutativity_hidden": false
+    },
+    "compat": {
+        // Set to false to disable compatibility with Botania (in case things break)
+        "botania": true,
+        // Set to false to disable compatibility with Mystical Agriculture (in case things break)
+        "mysticalagriculture": true,
+        // If true, harvesting drones will be able to harvest AgriCraft crops
+        "pneumaticcraft": true,
+        // If set to true, plant gatherer will be able to harvest AgriCraft crops
+        "industrialforegoing": true
+    }
+}
