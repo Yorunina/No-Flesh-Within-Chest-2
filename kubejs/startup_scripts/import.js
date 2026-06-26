@@ -56,3 +56,5 @@ const $WitherSkullProjectile = Java.loadClass('io.redspace.ironsspellbooks.entit
 const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics.deployer.DeployerFakePlayer')
 
 const $BaseSelectorItem = Java.loadClass('net.yorunina.maa.items.BaseSelectorItem')
+
+const $PotionBrewing = Java.loadClass('net.minecraft.world.item.alchemy.PotionBrewing')

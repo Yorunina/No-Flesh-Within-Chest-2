@@ -8,7 +8,7 @@ MAAEvents.cauldronCraft(event => {
     if (!boiling) return
     if (!fluidStack.hasTag()) return
     let fluidNbt = fluidStack.getTag()
-    if (!fluidNbt.contains('Potion') || fluidNbt.getString('Potion') != 'biomancy:primordial_infestation') return
+    if (!fluidNbt.contains('Potion') || (fluidNbt.getString('Potion') != 'biomancy:primordial_infestation' && fluidNbt.getString('Potion') != 'biomancy:long_primordial_infestation')) return
     if (fluidCount < 1) return
     for (let i = 0; i < items.length; i++) {
         let item = items.get(i)
@@ -19,7 +19,6 @@ MAAEvents.cauldronCraft(event => {
         resOrgan = item.copyAndClear()
         break
     }
-
     fluidStack.setCount(fluidCount - 1)
     event.setCraftResult(FluidAndItemCraftResult.of(resOrgan, fluidStack))
 })

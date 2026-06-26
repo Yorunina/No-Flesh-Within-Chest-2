@@ -1,8 +1,9 @@
 // priority: 1000
-MoreJSEvents.registerPotionBrewing(event => {
-    event.addPotionBrewing('minecraft:prismarine_shard', 'minecraft:strength', 'minecraft:water_breathing')
-    event.addPotionBrewing('minecraft:copper_ingot', 'minecraft:awkward', 'potioncore:lightning')
+// 依赖于access widen
+StartupEvents.postInit(event => {
+    $PotionBrewing.addMix('minecraft:strength', 'minecraft:prismarine_shard', 'minecraft:water_breathing')
+    $PotionBrewing.addMix('minecraft:awkward', 'minecraft:copper_ingot', 'potioncore:lightning')
 
-    event.addPotionBrewing('biomancy:acid_extract', 'biomancy:primordial_infestation', 'chestcavity:organ_slip')
-    event.addPotionBrewing('minecraft:redstone', 'chestcavity:organ_slip', 'chestcavity:long_organ_slip')
+    $PotionBrewing.addMix('biomancy:primordial_infestation', 'biomancy:acid_extract', 'chestcavity:organ_slip')
+    $PotionBrewing.addMix('chestcavity:organ_slip', 'minecraft:redstone', 'chestcavity:long_organ_slip')
 })

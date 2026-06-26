@@ -13,4 +13,11 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.filling([Item.of('minecraft:green_dye', 1)], [Item.of('minecraft:yellow_dye'), Fluid.of('biomancy:acid', 1)])
     event.recipes.create.filling([Item.of('minecraft:red_dye', 1)], [Item.of('minecraft:yellow_dye'), Fluid.of('minecraft:lava', 1)])
+
+    event.recipes.create.filling([Item.of('biomancy:breeding_stimulant', 1)], [Item.of('biomancy:vial'), Fluid.of('kubejs:neuroexcitatory_hormone_fluid', 250)])
+    event.recipes.create.filling([Item.of('biomancy:ageing_serum', 1)], [Item.of('biomancy:vial'), Fluid.of('kubejs:ageing_fluid', 250)])
+    event.recipes.create.filling([Item.of('biomancy:rejuvenation_serum', 1)], [Item.of('biomancy:vial'), Fluid.of('kubejs:rejuvenation_fluid', 250)])
+    event.recipes.create.filling([Item.of('biomancy:cleansing_serum', 1)], [Item.of('biomancy:vial'), Fluid.of('minecraft:milk', 250)])
+    
 })
+

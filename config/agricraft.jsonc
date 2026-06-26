@@ -5,7 +5,7 @@
         // Set to false to disable planting of (agricraft) seeds outside crop sticks
         "plant_off_crop_sticks": true,
         // Set to false to disable collision boxes on crop sticks
-        "crop_sticks_collide": true,
+        "crop_sticks_collide": false,
         // Set to true to allow only fertile plants to be able to cause, participate in, or contribute to a spreading / mutation action (note that this may cause issues with obtaining some specific plants)
         "only_fertile_crops_spread": false,
         // Set to false if to disable triggering of mutations by using fertilizers on a cross crop.
@@ -13,14 +13,14 @@
         // Set to true to allow mutations on clone events (spreading from single crop).
         "clone_mutations": false,
         // Set to true to override vanilla farming, meaning vanilla seeds will be converted to agricraft seeds on planting.
-        "override_vanilla_farming": true,
+        "override_vanilla_farming": false,
         // Set to true to convert seeds only in the analyzer. Has no effect if "Override vanilla farming" is set to false.
         "converts_seed_only_in_analyzer": false,
         /*
          * Global growth rate multiplier for crops.
          * Range: 0.0 - 3.0
          */
-        "growth_multiplier": 1.0,
+        "growth_multiplier": 2.0,
         // Set this to true to make only mature crops drop seeds (to encourage trowel usage).
         "only_mature_seed_drops": false,
         // Set to true to completely disable the spawning of weeds
@@ -28,7 +28,7 @@
         // Set to false to disable mature weeds killing plants
         "mature_weeds_kill_plants": true,
         // Set to false to disable the spreading of weeds
-        "weeds_spreading": true,
+        "weeds_spreading": false,
         // Set this to true to have weeds destroy the crop sticks when they are broken with weeds (to encourage rake usage).
         "weeds_destroy_crop_sticks": false,
         // Set to false if you wish to disable drops from raking weeds.
@@ -42,7 +42,7 @@
          * The amount of seeds one seed bag can hold.
          * Range: 8 - 256
          */
-        "seed_bag_capactity": 64,
+        "seed_bag_capactity": 256,
         /*
          * Enchantment cost in player levels to enchant the seed bag.
          * Range: 0 - 30
@@ -125,12 +125,12 @@
     },
     "compat": {
         // Set to false to disable compatibility with Botania (in case things break)
-        "botania": true,
+        "botania": false,
         // Set to false to disable compatibility with Mystical Agriculture (in case things break)
-        "mysticalagriculture": true,
+        "mysticalagriculture": false,
         // If true, harvesting drones will be able to harvest AgriCraft crops
-        "pneumaticcraft": true,
+        "pneumaticcraft": false,
         // If set to true, plant gatherer will be able to harvest AgriCraft crops
-        "industrialforegoing": true
+        "industrialforegoing": false
     }
 }

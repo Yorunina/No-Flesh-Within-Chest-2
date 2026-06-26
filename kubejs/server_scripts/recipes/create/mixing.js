@@ -59,8 +59,4 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(
         ['createutilities:void_steel_ingot'],
         ['minecraft:iron_ingot', 'minecraft:end_stone'], 20 * 10).heated()
-
-    // event.recipes.create.mixing(
-    //     ['supplementaries:soap'],
-    //     ['supplementaries:soap', ], 20 * 10).heated()
 })

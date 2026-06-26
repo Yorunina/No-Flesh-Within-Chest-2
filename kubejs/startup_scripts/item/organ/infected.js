@@ -12,6 +12,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:rotten_spleen').maxStackSize(1).food(food => food.hunger(1).saturation(0.5).effect('minecraft:hunger', 200, 0, 0.6)).tag('kubejs:infected').tag('kubejs:basic').texture('kubejs:item/organs/infected/rotten_spleen').tag('kubejs:spleen')
     event.create('kubejs:rotten_stomach').maxStackSize(1).food(food => food.hunger(1).saturation(0.5).effect('minecraft:hunger', 200, 0, 0.6)).tag('kubejs:infected').tag('kubejs:basic').texture('kubejs:item/organs/infected/rotten_stomach').tag('kubejs:stomach')
 
+    event.create('kubejs:malignant_cavity_flesh').maxStackSize(1).tag('kubejs:infected').texture('kubejs:item/organs/infected/malignant_cavity_flesh').tag('kubejs:organ').tag('kubejs:heart')
+
     event.create('kubejs:mutation_intestine').maxStackSize(1).food(food => food.hunger(3).saturation(0.5).effect('minecraft:fire_resistance', 200, 0, 1)).tag('kubejs:infected').texture('kubejs:item/organs/infected/mutation_intestine').tag('kubejs:intestine')
 
     event.create('kubejs:worm_neuron').maxStackSize(1).texture('kubejs:item/organs/infected/worm_neuron').tag('kubejs:infected')

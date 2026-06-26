@@ -16,6 +16,7 @@ ServerEvents.recipes(event => {
     event.recipes.createdieselgenerators.compression_molding(
         [Item.of('minecraft:gold_ingot')],
         [Fluid.of('kubejs:molten_gold_fluid', 90)], 'createdieselgenerators:bar')
+
     /** 铁 */
     event.recipes.create.mixing(
         [Fluid.of('kubejs:molten_iron_fluid', 90)],
@@ -32,6 +33,7 @@ ServerEvents.recipes(event => {
     event.recipes.createdieselgenerators.compression_molding(
         [Item.of('minecraft:iron_ingot')],
         [Fluid.of('kubejs:molten_iron_fluid', 90)], 'createdieselgenerators:bar')
+
     /** 铜 */
     event.recipes.create.mixing(
         [Fluid.of('kubejs:molten_copper_fluid', 90)],
@@ -59,6 +61,7 @@ ServerEvents.recipes(event => {
     event.recipes.createdieselgenerators.compression_molding(
         [Item.of('minecraft:diamond')],
         [Fluid.of('kubejs:molten_diamond_fluid', 90)], 'createdieselgenerators:bar')
+
     /** 绿宝石 */
     event.recipes.create.mixing(
         [Fluid.of('kubejs:molten_emerald_fluid', 100)],
@@ -69,4 +72,12 @@ ServerEvents.recipes(event => {
     event.recipes.createdieselgenerators.compression_molding(
         [Item.of('minecraft:emerald')],
         [Fluid.of('kubejs:molten_emerald_fluid', 100)], 'createdieselgenerators:bar')
+
+    /** 血晶 */
+    event.recipes.create.mixing(
+        [Fluid.of('kubejs:blood_fluid', 90)],
+        [Item.of('kubejs:blood_crystal')], 20 * 10).heated()
+    event.recipes.createdieselgenerators.compression_molding(
+        [Item.of('kubejs:blood_crystal')],
+        [Fluid.of('kubejs:blood_fluid', 90)], 'createdieselgenerators:bar')
 })

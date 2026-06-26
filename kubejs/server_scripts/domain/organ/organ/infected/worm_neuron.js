@@ -26,12 +26,7 @@ function WormNeuronEntityTick(customData, event, organItem, organIndex, slotType
     nbt.put('potentialOrganData', potentialOrganData)
     nbt.put('organData', organData)
     let canSetSlotList = []
-    for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) {
-        if (chestCavity.inventory.getItem(i).isEmpty()) {
-            canSetSlotList.push(i)
-        }
-    }
-
+    for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) if (chestCavity.inventory.getItem(i).isEmpty()) canSetSlotList.push(i)
     if (canSetSlotList.length == 0) {
         SetChestCavityOrgan(customData, chestCavity, Item.of('kubejs:malignant_neuron_tumor'), organIndex, slotType, true)
         return
