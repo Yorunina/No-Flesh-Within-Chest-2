@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:malignant_cavity_flesh')
     .addScore('chestcavity:health', 1.0)
     .addScore('chestcavity:endurance', -1.0)
-// todo 器官描述
+
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
@@ -17,9 +17,7 @@ function MalignantCavityFleshEntityTick(customData, event, organItem, organIndex
 
     let canSetSlotList = []
     for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) if (chestCavity.inventory.getItem(i).isEmpty()) canSetSlotList.push(i)
-
     if (canSetSlotList.length == 0) return
-    
     let targetIndex = RandomGet(canSetSlotList)
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
     SetChestCavityOrgan(customData, chestCavity, Item.of('biomancy:fibrous_flesh'), targetIndex, targetSlotType, true)

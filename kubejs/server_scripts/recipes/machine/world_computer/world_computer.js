@@ -485,6 +485,19 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('minecraft:emerald', 16), 'input_1')
         .resetOnError()
 
+    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
+        .requireFunctionOnEnd(ctx => {
+            const block = ctx.getBlock()
+            const level = block.getLevel()
+            let res = level.gameRules.kjs$getBoolean('doDaylightCycle')
+            level.gameRules.set('doDaylightCycle', res ? 'false' : 'true')
+            return ctx.success()
+        })
+        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
+        .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
+        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
+        .requireItem(Item.of('minecraft:lantern', 16), 'input_1')
+        .resetOnError()
 
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
         .requireFunctionOnEnd(ctx => {

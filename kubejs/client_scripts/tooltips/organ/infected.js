@@ -95,3 +95,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:navigating_liver')
         return res
     })
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:malignant_cavity_flesh')
+    .addDefault(Text.translatable('tooltips.kubejs.malignant_cavity_flesh.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.malignant_cavity_flesh.alt.1', KeyActiveHover))
+)

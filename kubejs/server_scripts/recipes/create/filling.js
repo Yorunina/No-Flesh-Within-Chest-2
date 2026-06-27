@@ -18,6 +18,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling([Item.of('biomancy:ageing_serum', 1)], [Item.of('biomancy:vial'), Fluid.of('kubejs:ageing_fluid', 250)])
     event.recipes.create.filling([Item.of('biomancy:rejuvenation_serum', 1)], [Item.of('biomancy:vial'), Fluid.of('kubejs:rejuvenation_fluid', 250)])
     event.recipes.create.filling([Item.of('biomancy:cleansing_serum', 1)], [Item.of('biomancy:vial'), Fluid.of('minecraft:milk', 250)])
-    
-})
 
+    event.recipes.create.filling([Item.of('kaleidoscope_cookery:oil', 1)], [Fluid.of('kubejs:blood_fat_fluid', 250)])
+})

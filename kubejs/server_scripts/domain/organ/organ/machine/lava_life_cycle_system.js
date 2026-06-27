@@ -13,11 +13,35 @@ RegistryOrgan('kubejs:lava_life_cycle_system')
  */
 function LavaLifeCycleSystemEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    let fireTick = entity.getRemainingFireTicks()
-    let mult = (slotType == MachinaryLubricant) ? 4 : 1
+    const server = event.server
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()
+
+    if (slotType == TransdimensionalMechanized) {
+        if (entity.age % 1200 != 0) return
+        let needHeal = entity.getMaxHealth() - entity.getHealth()
+        if (needHeal <= 0) return
+        let curRelativePos = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
+        let targetRelativePos = invTypeData.getRelativeSlotDefinition(curRelativePos.getX(), curRelativePos.getY() - TransdimensionalMechanizedRelativeYSlot)
+        if (!targetRelativePos) return
+        let compressBlockItem = ccInv.getStackInSlot(targetRelativePos.getId())
+
+        let roomOpt = CompactMachineUtil.getRoomFromItem(compressBlockItem)
+        if (!roomOpt || roomOpt.isEmpty()) return
+        const room = roomOpt.get()
+        let fluidOpt = CompactMachineUtil.getFluid(server, room, 'down')
+
+        if (fluidOpt.isEmpty()) return
+        let fluid = fluidOpt.get()
+        let fluidAmount = Math.min(needHeal * 100, fluid.getAmount())
+        fluid.setAmount(fluid.getAmount() - fluidAmount)
+        entity.heal(Math.floor(fluidAmount / 100))
+        return
+    }
+
+    let fireTick = entity.getRemainingFireTicks()
+    let mult = (slotType == MachinaryLubricant) ? 4 : 1
     let aroundRelativeSlots = GetDirectionRelativeSlotByParam(invTypeData, organIndex, FourDirectionOffset)
     for (let slotDefinition of aroundRelativeSlots) {
         let curItem = ccInv.getStackInSlot(slotDefinition.getId())

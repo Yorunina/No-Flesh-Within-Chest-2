@@ -224,4 +224,13 @@ const DyeRGBConfigHover = Text.translatable('tooltips.kubejs.hover.dye_rgb_confi
         Text.translatable('tooltips.kubejs.hover.dye_rgb_config.16'),
         Text.translatable('tooltips.kubejs.hover.dye_rgb_config.17')
     ]))
+
+const PheromoneConfigHover = Text.translatable('tooltips.kubejs.hover.pheromone_config.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.pheromone_config.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.pheromone_config.1'),
+        Text.translatable('tooltips.kubejs.hover.pheromone_config.2'),
+        Text.translatable('tooltips.kubejs.hover.pheromone_config.3'),
+        Text.translatable('tooltips.kubejs.hover.pheromone_config.4'),
+    ]))
     

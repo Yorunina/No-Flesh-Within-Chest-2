@@ -75,9 +75,9 @@ ServerEvents.recipes(event => {
 
     /** 血晶 */
     event.recipes.create.mixing(
-        [Fluid.of('kubejs:blood_fluid', 90)],
+        [Fluid.of('kubejs:blood_fluid', 500)],
         [Item.of('kubejs:blood_crystal')], 20 * 10).heated()
     event.recipes.createdieselgenerators.compression_molding(
         [Item.of('kubejs:blood_crystal')],
-        [Fluid.of('kubejs:blood_fluid', 90)], 'createdieselgenerators:bar')
+        [Fluid.of('kubejs:blood_fluid', 500)], 'createdieselgenerators:bar')
 })

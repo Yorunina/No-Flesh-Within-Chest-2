@@ -2,14 +2,13 @@
 RegistryOrgan('kubejs:pure_color_reaction')
     .addScore('chestcavity:detoxification', 1.0)
     .addScore('chestcavity:filtration', -1.0)
+
 const PureColorReactionTempAttackUpUUID = UUID.fromString('A83844BB-9390-4766-8152-C1E33315066D')
 const PureColorReactionTempAttackUpIdentifier = 'PureColorReactionAttackUp'
 const PureColorReactionTempHealthUpUUID = UUID.fromString('5E0EE00B-906C-4D24-9AB2-5F9E69713372')
 const PureColorReactionTempHealthUpIdentifier = 'PureColorReactionHealthUp'
 const PureColorReactionTempArmorUpUUID = UUID.fromString('83C520C7-1615-4F84-B594-8168194B465E')
 const PureColorReactionTempArmorUpIdentifier = 'PureColorReactionArmorUp'
-
-
 
 /**
 * 
@@ -22,6 +21,7 @@ const PureColorReactionTempArmorUpIdentifier = 'PureColorReactionArmorUp'
 function PureColorReactionEntityTick(customData, event, organItem, organIndex, slotType) {
     if (slotType != TransdimensionalMechanized) return
     const entity = event.entity
+    const server = event.server
     if (entity.age % 1200 != 0) return
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
@@ -29,6 +29,7 @@ function PureColorReactionEntityTick(customData, event, organItem, organIndex, s
 
     let curRelativePos = invTypeData.getSlotDefinition(organIndex).getRelativePosition()
     let targetRelativePos = invTypeData.getRelativeSlotDefinition(curRelativePos.getX(), curRelativePos.getY() - TransdimensionalMechanizedRelativeYSlot)
+    if (!targetRelativePos) return
     let compressBlockItem = ccInv.getStackInSlot(targetRelativePos.getId())
 
     let roomOpt = CompactMachineUtil.getRoomFromItem(compressBlockItem)
@@ -38,7 +39,7 @@ function PureColorReactionEntityTick(customData, event, organItem, organIndex, s
 
     let itemHandlerLazyOpt = CompactMachineUtil.getItemHandler(server, room, 'down')
     let r = 0, g = 0, b = 0
-    if (itemHandlerLazyOpt.isPresent()) return
+    if (!itemHandlerLazyOpt.isPresent()) return
     let itemHandler = itemHandlerLazyOpt.resolve().get()
     for (let i = 0; i < itemHandler.getSlots(); i++) {
         let pItem = itemHandler.getStackInSlot(i)
