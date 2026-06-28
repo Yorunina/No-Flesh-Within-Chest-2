@@ -24,11 +24,11 @@
                 "requirements": [
                     {
                         "type": "tetra:module",
-                        "module": "double/gula_scythe_right"
+                        "module": "double/ancient_gula_scythe_right"
                     },
                     {
                         "type": "tetra:module",
-                        "module": "double/gula_scythe_left"
+                        "module": "double/ancient_gula_scythe_left"
                     }
                 ]
             },

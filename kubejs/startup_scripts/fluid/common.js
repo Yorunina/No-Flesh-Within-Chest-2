@@ -36,22 +36,22 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('kubejs:block/fluid/blood_fluid')
 
     event.create('blood_fat_fluid')
-        .bucketColor(0xC3403E)
+        .bucketColor(0xD1D7BA)
         .stillTexture('kubejs:block/fluid/blood_fat_fluid')
         .flowingTexture('kubejs:block/fluid/blood_fat_fluid')
 
     event.create('neuroexcitatory_hormone_fluid')
-        .bucketColor(0xC3403E)
+        .bucketColor(0x751D46)
         .stillTexture('kubejs:block/fluid/neuroexcitatory_hormone_fluid')
         .flowingTexture('kubejs:block/fluid/neuroexcitatory_hormone_fluid')
 
     event.create('rejuvenation_fluid')
-        .bucketColor(0xC3403E)
+        .bucketColor(0xD1FF75)
         .stillTexture('kubejs:block/fluid/rejuvenation_fluid')
         .flowingTexture('kubejs:block/fluid/rejuvenation_fluid')
 
     event.create('ageing_fluid')
-        .bucketColor(0xC3403E)
+        .bucketColor(0xFFFF5F)
         .stillTexture('kubejs:block/fluid/ageing_fluid')
         .flowingTexture('kubejs:block/fluid/ageing_fluid')
 })
