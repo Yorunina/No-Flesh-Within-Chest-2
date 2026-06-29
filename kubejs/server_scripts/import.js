@@ -166,3 +166,5 @@ const $TargetDummyEntity = Java.loadClass('net.mehvahdjukaar.dummmmmmy.common.Ta
 
 const $BaseSelectorItem = Java.loadClass('net.yorunina.maa.items.BaseSelectorItem')
 const $BiomeSource = Java.loadClass('net.minecraft.world.level.biome.BiomeSource')
+
+const $TrophyBlock = Java.loadClass('cy.jdkdigital.trophymanager.common.block.TrophyBlock')

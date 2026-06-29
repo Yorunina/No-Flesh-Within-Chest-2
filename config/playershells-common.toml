@@ -1,0 +1,25 @@
+#Maximum energy storage capacity of the Shell Forge
+#Range: > 1
+shellForgeEnergyCapacity = 1000000
+#Energy consumed by the Shell Forge to create a single Shell (must not exceed the energy capacity)
+#Range: > 1
+shellForgeEnergyUsageCreation = 1000000
+#Energy consumed by the Shell Forge per tick to maintain an alive Shell (must not exceed the energy capacity)
+#If you want to disable decaying, simply set this value to 0
+#Range: > 0
+shellForgeEnergyUsageMaintenance = 0
+#Time required to progress by 1% during Shell creation (in ticks)
+#Range: > 1
+shellForgeCreationCooldown = 20
+#Time required to progress by 1% during Shell decay (in ticks)
+#Range: > 1
+shellForgeDecayCooldown = 10
+#Maximum energy storage capacity of the Centrifuge
+#Range: > 1
+centrifugeEnergyCapacity = 100000
+#Energy consumed by the Centrifuge per tick
+#Range: > 1
+centrifugeEnergyUsage = 3000
+#If enabled, the player will respawn in the nearest shell after death, even in hardcore mode. When disabled, death in hardcore mode remains permanent
+transferIntoShellAfterDeath = true
+

@@ -6,4 +6,5 @@ EntityEvents.spawned(event => {
     if (!entity) return
     let customData = {}
     ChampionEntitySpawnedEvent.run(entity, customData, [event])
+    OathEntitySpawned(event)
 })

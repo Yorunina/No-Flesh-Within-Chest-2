@@ -19,4 +19,3 @@ EntityEvents.death(event => {
         ChampionEntityKillEvent.run(killer, customData, [event])
     }
 })
-

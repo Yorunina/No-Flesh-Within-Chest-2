@@ -9,7 +9,7 @@ const TurtleShellTempDefenseIdentifier = 'TurtleShellTempDefenseUp'
 
 /**
 * @param {OrganEventCustomData} customData
-* @param {Internal.LivingHurtEvent} event 
+* @param {Internal.LivingHurtEvent} event
 * @param {Internal.ItemStack} organItem
 * @param {number} organIndex
 * @param {string} slotType
@@ -30,21 +30,21 @@ function TurtleShellEntityBeHurt(customData, event, organItem, organIndex, slotT
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
+ * @param {Internal.EvaluateChestCavityJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  */
 function TurtleShellOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
-    let attributeInstance = entity.getAttribute('minecraft:generic.attack_damage')
+    let attributeInstance = entity.getAttribute('minecraft:generic.armor')
     if (!attributeInstance) return
     attributeInstance.removeModifier(TurtleShellTempDefenseUpUUID)
 }
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS} event 
+ * @param {Internal.OpenedEntityTickJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
@@ -60,7 +60,7 @@ function TurtleShellEntityTick(customData, event, organItem, organIndex, slotTyp
 
     attributeInstance.removeModifier(TurtleShellTempDefenseUpUUID)
     if (value <= 0) return
-    let attributeModifier = new $AttributeModifier(TurtleShellTempDefenseUpUUID, 'TurtleShellTempDefenseUp', value, $Operation.ADDITION)
+    let attributeModifier = new $AttributeModifier(TurtleShellTempDefenseUpUUID, TurtleShellTempDefenseIdentifier, value, $Operation.ADDITION)
     attributeInstance.addPermanentModifier(attributeModifier)
 }
 

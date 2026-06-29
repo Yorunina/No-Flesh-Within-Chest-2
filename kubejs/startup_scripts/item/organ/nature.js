@@ -169,6 +169,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:gills').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/gills').tag('kubejs:lung')
 
+    event.create('kubejs:chop_rib').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/chop_rib').tag('kubejs:bone')
+
     event.create('kubejs:explosion_bag').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
             if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false

@@ -1,5 +1,6 @@
 // priority: 5000
 const DrygmyBlacklistTag = $TagKey.create($Registries.ENTITY_TYPE, 'ars_nouveau:drygmy_blacklist')
+const WoodBlockTag = $TagKey.create($Registries.BLOCK, 'minecraft:logs')
 ServerEvents.tags('item', event => {
     event.remove('curios:waist', ['cataclysm:belt_of_beginner'])
     event.remove('curios:rings', ['cataclysm:ring_of_grudged'])
@@ -38,6 +39,8 @@ ServerEvents.tags('item', event => {
     event.add('minecraft:music_discs', ['kubejs:faded_disc', 'kubejs:assumptions_disc'])
 
     event.add('farm_and_charm:container', ['kubejs:sausage_casing', 'minecraft:stick'])
+
+    event.add('kubejs:count_day_oath', ['kubejs:growing_oath', 'kubejs:immortal_oath'])
 })
 
 ServerEvents.tags('entity_type', event => {
