@@ -26,6 +26,8 @@ const GulaSlotType = Text.translatable('slot_type.kubejs.gula_slot.1').color('#a
 const ContainerSlotType = Text.translatable('slot_type.kubejs.container_slot.1').color('#afbab7')
 const DigestSlotType = Text.translatable('slot_type.kubejs.digest_slot.1').color('#d5e05a')
 const TransdimensionalMechanizedType = Text.translatable('slot_type.kubejs.transdimensional_mechanized.1').color('#ae5dce')
+const FertileSlotType = Text.translatable('slot_type.kubejs.fertile_slot.1').color('#ff672b')
+const HarvestSlotType = Text.translatable('slot_type.kubejs.harvest_slot.1').color('#ff672b')
 
 const LuckHover = Text.translatable('tooltips.kubejs.hover.luck.0').green().underlined()
     .hover(HoverTextList([
@@ -114,6 +116,13 @@ const TransdimnesionalMechanizedTypeHover = Text.translatable('tooltips.kubejs.h
         Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.2'),
     ]))
 
+const PlantTypeHover = Text.translatable('tooltips.kubejs.hover.plant_type.0').green().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.plant_type.0').green(),
+        Text.translatable('tooltips.kubejs.hover.plant_type.1'),
+        Text.translatable('tooltips.kubejs.hover.plant_type.2'),
+    ]))
+
 const GulaTypeHover = Text.translatable('tooltips.kubejs.hover.gula_type.0').color('#ce00ee').underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.gula_type.0').color('#ce00ee'),
@@ -167,6 +176,12 @@ const SatenanceEffectHover = Text.translatable('tooltips.kubejs.hover.sustenance
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.sustenance_effect.0').gold(),
         Text.translatable('tooltips.kubejs.hover.sustenance_effect.1'),
+    ]))
+
+const FullChargeAttackHover = Text.translatable('tooltips.kubejs.hover.full_charge_attack.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.full_charge_attack.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.full_charge_attack.1'),
     ]))
 
 const ExtremeStrengthHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple().underlined()
@@ -233,4 +248,3 @@ const PheromoneConfigHover = Text.translatable('tooltips.kubejs.hover.pheromone_
         Text.translatable('tooltips.kubejs.hover.pheromone_config.3'),
         Text.translatable('tooltips.kubejs.hover.pheromone_config.4'),
     ]))
-    

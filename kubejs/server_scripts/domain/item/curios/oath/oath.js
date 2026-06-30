@@ -47,14 +47,6 @@ LootJS.modifiers(event => {
         })
 })
 
-ItemEvents.rightClicked('kubejs:eternal_oath', event => {
-    const item = event.item
-    if (!item.hasNBT()) item.setNbt(new $CompoundTag())
-    const nbt = item.getNbt()
-    let state = nbt.getInt('state')
-    nbt.putInt('state', (state + 1) % 12)
-})
-
 /**
  * @param {Internal.MinecraftServer} server
  * @returns 
@@ -80,8 +72,9 @@ function OathDayCountIncr(server) {
  * 
  * @param {Internal.EntitySpawnedEventJS} event 
  */
-function OathEntitySpawned(event) {
-    const player = event.player
+function OathEntitySpawned(event, customData) {
+    const player = customData.player
+    if (!player) return
     /**@type {Internal.LivingEntity} */
     const entity = event.entity
     if (!entity.isLiving()) return
@@ -115,20 +108,21 @@ function OathEntitySpawned(event) {
 function ApplyEternalOathSpawnedAttr(entity, state) {
     const spawnConfig = EternalOathEntitySpawnedConfig[state]
     let healthAttr = entity.getAttribute('minecraft:generic.max_health')
-    if (healthAttr) {
-        healthAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.healthMulti, 'multiply_base'))
+    if (healthAttr && spawnConfig.healthMulti != 1) {
+        healthAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.healthMulti - 1, 'multiply_base'))
+        entity.setHealth(entity.getMaxHealth())
     }
     let attackAttr = entity.getAttribute('minecraft:generic.attack_damage')
-    if (attackAttr) {
-        attackAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.attackMulti, 'multiply_base'))
+    if (attackAttr && spawnConfig.attackMulti != 1) {
+        attackAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.attackMulti - 1, 'multiply_base'))
     }
     let armorAttr = entity.getAttribute('minecraft:generic.armor')
-    if (armorAttr) {
-        armorAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.armorMulti, 'multiply_base'))
+    if (armorAttr && spawnConfig.armorMulti != 1) {
+        armorAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.armorMulti - 1, 'multiply_base'))
     }
     let armorToughnessAttr = entity.getAttribute('minecraft:generic.armor_toughness')
-    if (armorToughnessAttr) {
-        armorToughnessAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.toughnessMulti, 'multiply_base'))
+    if (armorToughnessAttr && spawnConfig.toughnessMulti != 1) {
+        armorToughnessAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, spawnConfig.toughnessMulti - 1, 'multiply_base'))
     }
 }
 
@@ -141,8 +135,10 @@ function ApplyEternalOathSpawnedAttr(entity, state) {
  */
 function ApplyOathSpawnedAttr(entity, uuid, identifier, dayCount) {
     let healthAttr = entity.getAttribute('minecraft:generic.max_health')
+    if (dayCount == 0) return
     if (healthAttr) {
         healthAttr.addPermanentModifier(new $AttributeModifier(uuid, identifier, dayCount * 0.2, 'multiply_base'))
+        entity.setHealth(entity.getMaxHealth())
     }
     let attackAttr = entity.getAttribute('minecraft:generic.attack_damage')
     if (attackAttr) {

@@ -24,7 +24,11 @@ StartupEvents.registry('mob_effect', event => {
                     vitaToxinsDamage = sourceEntity.getMaxHealth() * vitaToxinsCoe
                     break
             }
+            entity.invulnerableTime = 0
             entity.attack(entity.damageSources().magic(), vitaToxinsDamage * (lvl * 0.25 + 0.5))
+        })
+        .removeEffect((entity, attributeMap, lvl) => {
+            if (entity.isLiving()) ResetPutridToxins(entity)
         })
         .color(Color.DARK_RED)
 })

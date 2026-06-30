@@ -13,7 +13,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:growing_oath')
         let dayCount = nbt.getInt('dayCount')
         return [
             Text.translatable('tooltips.kubejs.growing_oath.alt.1', Text.gold(dayCount.toFixed(0))),
-            Text.translatable('tooltips.kubejs.growing_oath.alt.2', Text.gold(dayCount * 0.2), Text.gold(dayCount * 0.02), Text.gold(dayCount * 0.1), Text.gold(dayCount * 0.1)),
+            Text.translatable('tooltips.kubejs.growing_oath.alt.2', Text.gold(dayCount * 0.2 + 1), Text.gold(dayCount * 0.02 + 1), Text.gold(dayCount * 0.1 + 1), Text.gold(dayCount * 0.1 + 1)),
         ]
     })
 )

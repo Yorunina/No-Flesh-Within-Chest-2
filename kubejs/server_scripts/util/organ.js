@@ -73,9 +73,29 @@ function SetPutridToxinsDamage(target, damage) {
  * @returns {number}
  */
 function GetPutridToxinsDamage(target) {
-    return target.getPersistentData().contains('putridToxinsDamage') ? target.getPersistentData().getFloat('putridToxinsDamage') : 0
+    return target.getPersistentData().getFloat('putridToxinsDamage')
 }
 
+
+/**
+ * 
+ * @param {Internal.LivingEntity} target 
+ * @returns {number}
+ */
+function ResetPutridToxins(target) {
+    return target.getPersistentData().remove('putridToxinsDamage')
+}
+
+
+/**
+ * 
+ * @param {Internal.LivingEntity} target 
+ */
+function ResetVitaToxins(target) {
+    target.getPersistentData().remove('vitaToxinsSource')
+    target.getPersistentData().remove('vitaToxinsType')
+    target.getPersistentData().remove('vitaToxinsCoe')
+}
 
 
 /**
@@ -103,6 +123,15 @@ function GetVitaToxinsSource(target) {
  */
 function SetVitaToxinsType(target, type) {
     target.getPersistentData().putString('vitaToxinsType', type)
+}
+
+/**
+ * 
+ * @param {Internal.LivingEntity} target 
+ * @returns 
+ */
+function GetVitaToxinsType(target) {
+    return target.getPersistentData().contains('vitaToxinsType') ? target.getPersistentData().getString('vitaToxinsType') : 'attack_damage'
 }
 
 /**

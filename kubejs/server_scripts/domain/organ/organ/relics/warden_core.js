@@ -27,9 +27,7 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
         ray.entity.invulnerableTime = 0
         counter++
     }
-    if (ray.block) {
-        distance = player.getPosition(1.0).distanceTo(ray.block.pos)
-    }
+    if (ray.block) distance = player.getPosition(1.0).distanceTo(ray.block.pos)
     for (let i = 0; i < distance; i++) {
         let vec3 = vec3Nor.scale(i).add(player.getEyePosition())
         level.spawnParticles($ParticleTypes.SONIC_BOOM, false, vec3.x(), vec3.y(), vec3.z(), 0, 0, 0, 1, 0)

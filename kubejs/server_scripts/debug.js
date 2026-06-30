@@ -1,11 +1,12 @@
 // priority: 500
 ItemEvents.rightClicked('stick', event => {
     const player = event.player
-    const offHandItem = player.getOffHandItem()
-    let roomOpt = CompactMachineUtil.getRoomFromItem(offHandItem)
-    if (roomOpt.isEmpty()) return
-    const room = roomOpt.get()
-    const server = event.server
-    // player.give(CompactMachineUtil.extractItem(server, room, 'up', 0, 64, false))
-    CompactMachineUtil.insertItem(server, room, 'east', Item.of('minecraft:gold_ingot'), false)
+    const level = event.level
+    let pos = new BlockPos(0, 56, 0)
+    /**@type {Internal.ShellForgeBlockEntity} */
+    const blockEntity = level.getBlockEntity(pos)
+    let playerData = blockEntity.createFreshPlayerData(level)
+    playerData.putInt("playerGameType", 2)
+    playerData.putInt("previousPlayerGameType", 0)
+    blockEntity.createShellByData(player.uuid, playerData)
 })

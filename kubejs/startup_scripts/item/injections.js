@@ -9,6 +9,7 @@ RegistryChestCavityInjection('player_21', 'kubejs:cc_inventory_types/player_21')
 RegistryChestCavityInjection('player_25', 'kubejs:cc_inventory_types/player_25')
 RegistryChestCavityInjection('player_27', 'kubejs:cc_inventory_types/player_27')
 RegistryChestCavityInjection('transdimensional_mechanized', 'kubejs:cc_inventory_types/transdimensional_mechanized')
+RegistryChestCavityInjection('plant', 'kubejs:cc_inventory_types/plant')
 
 /**
  * @param {string} typeName 

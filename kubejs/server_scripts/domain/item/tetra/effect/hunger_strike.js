@@ -6,7 +6,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     /**@type {Player} */
     const sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isPlayer()) return
-    if (IsFullChargeAttck(sourceEntity)) return
+    if (!IsFullChargeAttck(sourceEntity)) return
     let heldItem = sourceEntity.mainHandItem
     /**@type {Internal.ModularItem} */
     let modularItem = heldItem.getItem()

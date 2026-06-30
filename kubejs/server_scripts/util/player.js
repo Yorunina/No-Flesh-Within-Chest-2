@@ -32,7 +32,7 @@ function SetPlayerNoFireDamage(player) {
  * @param {Internal.ServerPlayer} player 
  */
 function IsFullChargeAttck(player) {
-    return player.getAttackStrengthScale(0) < 0.9
+    return player.getAttackStrengthScale(0) >= 0.9
 }
 
 /**

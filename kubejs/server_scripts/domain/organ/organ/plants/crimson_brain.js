@@ -24,8 +24,7 @@ function CrimsonBrainEntityKill(customData, event, organItem, organIndex, slotTy
         if (pEntity instanceof $TamableAnimal) {
             if (pEntity.getOwner() && pEntity.getOwner().isPlayer()) return false
         }
-        if (pEntity.is(killer)) return false
-        if (pEntity.is(entity)) return false
+        if (pEntity.is(killer) || pEntity.is(entity)) return false
         return true
     })
     entityList.forEach(/**@param {Internal.LivingEntity} pEntity*/pEntity => {

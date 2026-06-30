@@ -23,6 +23,16 @@ StartupEvents.registry('minecraft:item', event => {
             })
             .canUnequip(() => true)
         )
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
+                if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())
+                const nbt = stack.getNbt()
+                let state = nbt.getInt('state')
+                nbt.putInt('state', (state + 1) % 12)
+                return true
+            }
+            return false
+        })
         .tag('curios:oath')
 
     event.create('kubejs:growing_oath', 'basic')

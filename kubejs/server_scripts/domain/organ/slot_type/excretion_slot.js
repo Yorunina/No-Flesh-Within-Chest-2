@@ -18,7 +18,7 @@ function SetChestCavityOrgan(customData, ccInstance, organItem, organIndex, slot
         inventory.setItemNoUpdate(organIndex, organItem)
     }
 
-    if (slotType == ExcretionSlot) {
+    if (slotType == ExcretionSlot || slotType == HarvestSlot) {
         if (!customData['excretionOrganList']) {
             customData['excretionOrganList'] = new Map()
         }

@@ -3,8 +3,6 @@ RegistryOrgan('kubejs:twisting_weeping_intestine')
     .addScore('chestcavity:nutrition', 1.5)
     .addScore('kubejs:photosynthesis', 0.5)
 
-
-
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.NetworkEventJS} event 
@@ -16,9 +14,8 @@ function TwistingWeepingIntestineKeyActiveOnly(customData, event, organItem, org
     const player = event.player
     const chestCavity = player.chestCavityInstance
     SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', true)
-    let organEffect = new OragnEffectModel(organItem).setPriority(organIndex)
-    SetOrganEffect(chestCavity, organEffect)
-    player.addItemCooldown(organItem, 20 * 30)
+    SetOrganEffect(chestCavity, new OragnEffectModel(organItem).setPriority(organIndex))
+    player.addItemCooldown(organItem, 20 * 20)
 }
 
 /**
@@ -29,11 +26,7 @@ function TwistingWeepingIntestineKeyActiveOnly(customData, event, organItem, org
 * @param {string} slotType
 */
 function TwistingWeepingIntestineChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = event.chestCavity
-    if (entity instanceof $ServerPlayer) {
-        RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')
-    }
+    if (event.entity instanceof $ServerPlayer) RemoveOrganEffect(event.chestCavity, 'kubejs:twisting_weeping_intestine')
 }
 
 /**
@@ -47,6 +40,7 @@ function TwistingWeepingIntestineDoDamage(customData, event, organItem, organInd
     /** @type {Internal.LivingEntity} */
     const entity = event.source.actual
     const chestCavity = entity.chestCavityInstance
+
     /** @type {number} */
     let twistingIntestineAttackReady = GetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', false)
     if (!twistingIntestineAttackReady) return
@@ -54,15 +48,17 @@ function TwistingWeepingIntestineDoDamage(customData, event, organItem, organInd
     const target = event.entity
     if (!target.hasEffect('kubejs:putrid_toxins')) return
     let effect = target.getEffect('kubejs:putrid_toxins')
-
     let damage = (effect.getAmplifier() * 0.25 + 0.25) * GetPutridToxinsDamage(target) * effect.getDuration() / 40
-    event.amount = damage + event.amount
-    SetCustomDataMap(chestCavity, 'twistingIntestineAttack', true)
+    if (slotType == FertileSlot) {
+        event.amount = event.amount + damage
+    } else {
+        target.invulnerableTime = 0
+        target.attack(entity.damageSources().magic(), damage)
+    }
+    target.removeEffect('kubejs:putrid_toxins')
     SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', false)
 
-    if (entity instanceof $ServerPlayer) {
-        RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')
-    }
+    if (entity instanceof $ServerPlayer) RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')
 }
 
 RegistryOrganStrategy(
