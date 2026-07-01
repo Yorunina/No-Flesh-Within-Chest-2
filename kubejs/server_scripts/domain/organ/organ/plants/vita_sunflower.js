@@ -19,7 +19,16 @@ function VitaSunflowerDoDamage(customData, event, organItem, organIndex, slotTyp
     let leftDamage = organItem.getMaxDamage() - organItem.getDamageValue()
     if (leftDamage < 10) return
     organItem.setDamageValue(organItem.getMaxDamage())
-    effect.setDuration(effect.duration + 20 * leftDamage)
+    if (slotType == FertileSlot) {
+        let duration = effect.duration + 100 * leftDamage
+        if (duration > 60 * 20) {
+            SetVitaToxinsCoe(target, GetVitaToxinsCoe(target) + 1)
+            duration = duration / 2
+        }
+        effect.setDuration(duration)
+    } else {
+        effect.setDuration(effect.duration + 20 * leftDamage)
+    }
 }
 
 /**
@@ -31,9 +40,9 @@ function VitaSunflowerDoDamage(customData, event, organItem, organIndex, slotTyp
  */
 function VitaSunflowerEntityTick(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
-    if (organItem.getDamageValue() - 1 >= 0) {
-        organItem.setDamageValue(organItem.getDamageValue() - 1)
-    }
+    let curDamage = organItem.getDamageValue() - 1
+    if (curDamage >= 0) organItem.setDamageValue(curDamage)
+
     if (entity instanceof $ServerPlayer) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)

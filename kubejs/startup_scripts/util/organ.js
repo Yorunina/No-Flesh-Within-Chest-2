@@ -143,6 +143,14 @@ function SetVitaToxinsCoe(target, coe) {
     target.getPersistentData().putFloat('vitaToxinsCoe', coe)
 }
 
+/**
+ * @param {Internal.LivingEntity} target
+ * @returns {number}
+ */
+function GetVitaToxinsCoe(target) {
+    return target.getPersistentData().getFloat('vitaToxinsCoe')
+}
+
 
 /**
  * 

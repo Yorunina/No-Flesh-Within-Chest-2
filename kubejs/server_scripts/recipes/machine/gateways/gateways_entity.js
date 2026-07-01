@@ -462,7 +462,7 @@ const GatewayWaveEntityMapping = new PiecewiseMappingModel()
                 ]
             })
         )
-        .addPiece(9, 10, new StandardWaveEntityItemModel(1000, 'minecraft:warden')
+        .addPiece(8, 9, new StandardWaveEntityItemModel(1000, 'minecraft:warden')
             .setModifier((levelIndicator, chaosIndicator) => {
                 return [
                     GatewayUtils.buildAttributeModifier('minecraft:generic.max_health', 'addition', 100 * levelIndicator),

@@ -1,7 +1,7 @@
 // priority: 500
 ItemEvents.rightClicked('kubejs:organ_purification_tank', event => {
     const player = event.player
-    if (!player.isShiftKeyDown()) return
+    if (!player.isCrouching()) return
     const item = event.item
     let outputList = []
     GetBundleContents(item).forEach((pStack) => {
@@ -17,7 +17,7 @@ ItemEvents.rightClicked('kubejs:organ_purification_tank', event => {
 
 ItemEvents.rightClicked('kubejs:organ_bundle', event => {
     const player = event.player
-    if (!player.isShiftKeyDown()) return
+    if (!player.isCrouching()) return
     const item = event.item
     let outputList = []
     GetBundleContents(item).forEach((pStack) => {

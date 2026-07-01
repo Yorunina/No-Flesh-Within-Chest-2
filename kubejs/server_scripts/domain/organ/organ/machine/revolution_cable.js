@@ -28,5 +28,5 @@ function RevolutionCableChestCavityUpdate(customData, event, organItem, organInd
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:revolution_cable')
-        .addOnlyStrategy('chest_cavity_update', RevolutionCableChestCavityUpdate)
+        .addStrategy('chest_cavity_update', RevolutionCableChestCavityUpdate)
 )

@@ -16,8 +16,6 @@ function CrimsonBrainEntityKill(customData, event, organItem, organIndex, slotTy
     const killer = event.source.actual
     if (!entity.hasEffect('kubejs:putrid_toxins')) return
     let effect = entity.getEffect('kubejs:putrid_toxins')
-    let duration = effect.duration
-    let amplifier = effect.amplifier
     let damage = GetPutridToxinsDamage(entity)
     let entityList = GetLivingWithinRadius(level, entity.blockPosition(), 4, (pLevel, pEntity) => {
         if (pEntity.isPlayer()) return false
@@ -28,10 +26,14 @@ function CrimsonBrainEntityKill(customData, event, organItem, organIndex, slotTy
         return true
     })
     entityList.forEach(/**@param {Internal.LivingEntity} pEntity*/pEntity => {
-        // 强化效果，如果存在效果，就会延续时间，而不是跳过，等级取最大值
-        if (pEntity.hasEffect('kubejs:putrid_toxins')) return
-        SetPutridToxinsDamage(pEntity, damage)
-        pEntity.potionEffects.add('kubejs:putrid_toxins', duration, amplifier, false, false)
+        if (!pEntity.hasEffect('kubejs:putrid_toxins')) {
+            SetPutridToxinsDamage(pEntity, damage)
+            pEntity.potionEffects.add('kubejs:putrid_toxins', effect.duration, effect.amplifier, false, false)
+        }
+        if (slotType == FertileSlot) {
+            pEntity.invulnerableTime = 0
+            pEntity.attack(entity.damageSources().magic(), (effect.amplifier * 0.25 + 0.25) * damage * effect.duration / 40)
+        }
     })
 }
 

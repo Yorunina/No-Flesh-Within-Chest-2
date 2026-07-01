@@ -14,39 +14,77 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
     const entity = event.entity
     const level = event.level
     const chestCavity = event.chestCavity
-    if (Math.random() > 1) return
-    let digestion = chestCavity.getOrganScore('chestcavity:digestion')
-    let growthCnt = Math.min(Math.floor(digestion / 5) + 1, 1)
-    const hasTentaclesHarvester = GetCustomDataMap(chestCavity, 'hasTentaclesHarvester', 0)
-    const hasWhirlisprigStarGem = GetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 0)
+    if (entity.isPlayer() && !entity.isCrouching()) return
     const radius = 4
-    const diameter = radius * 2 + 1
-    for (let i = 0; i < growthCnt; i++) {
-        let rx = Math.floor(Math.random() * diameter) - radius
-        let rz = Math.floor(Math.random() * diameter) - radius
-        let entityBlockPos = entity.getOnPos()
-        let targetBlockPos = new BlockPos(entityBlockPos.x + rx, Math.ceil(entityBlockPos.y) + 1, entityBlockPos.z + rz)
-        let targetBlockState = level.getBlockState(targetBlockPos)
-        if ($BoneMealItem.applyBonemeal(Item.of('minecraft:bone_meal'), level, targetBlockPos, null)) {
-            level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
-            level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-        }
+    const entityPos = entity.position()
 
-        if (hasTentaclesHarvester == 0) return
-        if (targetBlockState.hasProperty(BlockProperties.AGE_7) && targetBlockState.getValue(BlockProperties.AGE_7).intValue() == 7) {
-            let lootContext = new $LootParamsBuilder(level)
-                .withParameter(LootContextParams.ORIGIN, new Vec3d(targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ()))
-                .withParameter(LootContextParams.BLOCK_STATE, targetBlockState)
-                .withParameter(LootContextParams.THIS_ENTITY, entity)
-                .withParameter(LootContextParams.TOOL, entity.getMainHandItem())
-            targetBlockState.getDrops(lootContext).forEach(itemStack => {
-                $Containers.dropItemStack(level, targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ(), itemStack.copy())
-            })
-            level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
-            level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-            if (hasWhirlisprigStarGem == 0) {
-                targetBlockState = targetBlockState.setValue(BlockProperties.AGE_7, Int2Integer(0))
-                level.setBlockAndUpdate(targetBlockPos, targetBlockState)
+    for (let l = 0; l <= radius; ++l) {
+        for (let i = 0; i <= l; i = i > 0 ? -i : 1 - i) {
+            for (let j = i < l && i > -l ? l : 0; j <= l; j = j > 0 ? -j : 1 - j) {
+                let targetBlockPos = new BlockPos(Math.floor(entityPos.x() + i), Math.ceil(entityPos.y()), Math.floor(entityPos.z() + j))
+                let targetBlockState = level.getBlockState(targetBlockPos)
+                let targetBlock = targetBlockState.block
+
+                if (targetBlock instanceof $BonemealableBlock && targetBlock.isValidBonemealTarget(level, targetBlockPos, targetBlockState, false)) {
+                    if (targetBlock.isBonemealSuccess(level, level.random, targetBlockPos, targetBlockState)) {
+                        targetBlock.performBonemeal(level, level.random, targetBlockPos, targetBlockState)
+                        level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
+                        level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
+                    }
+                }
+
+                if (GetCustomDataMap(chestCavity, 'hasTentaclesHarvester', 0) == 0) continue
+
+                if (targetBlockState.hasProperty(BlockProperties.AGE_2) && targetBlockState.getValue(BlockProperties.AGE_2).intValue() == 2) {
+                    let lootContext = new $LootParamsBuilder(level)
+                        .withParameter($LootContextParams.ORIGIN, new Vec3d(targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ()))
+                        .withParameter($LootContextParams.BLOCK_STATE, targetBlockState)
+                        .withParameter($LootContextParams.THIS_ENTITY, entity)
+                        .withParameter($LootContextParams.TOOL, entity.getMainHandItem())
+                    targetBlockState.getDrops(lootContext).forEach(pItem => {
+                        $Containers.dropItemStack(level, targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ(), pItem)
+                    })
+                    level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
+                    level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
+                    if (GetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 0) == 0) {
+                        targetBlockState = targetBlockState.setValue(BlockProperties.AGE_2, Int2Integer(0))
+                        level.setBlockAndUpdate(targetBlockPos, targetBlockState)
+                    }
+                    continue
+                }
+
+                if (targetBlockState.hasProperty(BlockProperties.AGE_7) && targetBlockState.getValue(BlockProperties.AGE_7).intValue() == 7 && !(targetBlock instanceof $StemGrownBlock)) {
+                    let lootContext = new $LootParamsBuilder(level)
+                        .withParameter($LootContextParams.ORIGIN, new Vec3d(targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ()))
+                        .withParameter($LootContextParams.BLOCK_STATE, targetBlockState)
+                        .withParameter($LootContextParams.THIS_ENTITY, entity)
+                        .withParameter($LootContextParams.TOOL, entity.getMainHandItem())
+                    targetBlockState.getDrops(lootContext).forEach(pItem => {
+                        $Containers.dropItemStack(level, targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ(), pItem)
+                    })
+                    level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
+                    level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
+                    if (GetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 0) == 0) {
+                        targetBlockState = targetBlockState.setValue(BlockProperties.AGE_7, Int2Integer(0))
+                        level.setBlockAndUpdate(targetBlockPos, targetBlockState)
+                    }
+                    continue
+                }
+
+                let pBlockEntity = level.getBlockEntity(targetBlockPos)
+                if (pBlockEntity instanceof $CropBlockEntity) {
+                    if (!pBlockEntity.canBeHarvested()) continue
+
+                    pBlockEntity.getHarvestProducts(pItem => {
+                        $Containers.dropItemStack(level, targetBlockPos.getX(), targetBlockPos.getY(), targetBlockPos.getZ(), pItem)
+                    })
+                    level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
+                    level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
+                    if (GetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 0) == 0) {
+                        pBlockEntity.setGrowthStage(pBlockEntity.getPlant().getGrowthStageAfterHarvest())
+                    }
+                    pBlockEntity.getPlant().onHarvest(pBlockEntity, entity)
+                }
             }
         }
     }

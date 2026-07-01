@@ -168,3 +168,6 @@ const $BaseSelectorItem = Java.loadClass('net.yorunina.maa.items.BaseSelectorIte
 const $BiomeSource = Java.loadClass('net.minecraft.world.level.biome.BiomeSource')
 
 const $TrophyBlock = Java.loadClass('cy.jdkdigital.trophymanager.common.block.TrophyBlock')
+const $CropBlockEntity = Java.loadClass('com.agricraft.agricraft.common.block.entity.CropBlockEntity')
+const $StemGrownBlock = Java.loadClass('net.minecraft.world.level.block.StemGrownBlock')
+const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')

@@ -9,6 +9,7 @@ StartupEvents.registry('mob_effect', event => {
             /**@type {UUID} */
             let vitaToxinsSource = GetVitaToxinsSource(entity)
             if (!vitaToxinsSource) return
+            /**@type {Internal.LivingEntity} */
             const sourceEntity = $CommonUtil.getEntityByUUID(level, vitaToxinsSource)
             if (!sourceEntity) return
             let vitaToxinsType = GetVitaToxinsType(entity)
@@ -22,6 +23,13 @@ StartupEvents.registry('mob_effect', event => {
                     break
                 case 'max_health':
                     vitaToxinsDamage = sourceEntity.getMaxHealth() * vitaToxinsCoe
+                    break
+                case 'armor':
+                    attribute = sourceEntity.getAttribute('minecraft:generic.armor')
+                    if (!attribute) return
+                    vitaToxinsDamage = attribute.getValue() * vitaToxinsCoe
+                    break
+                default:
                     break
             }
             entity.invulnerableTime = 0

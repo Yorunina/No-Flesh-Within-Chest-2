@@ -16,16 +16,20 @@ function VitaRoseLiverDoDamage(customData, event, organItem, organIndex, slotTyp
     const sourceEntity = event.source.actual
     /**@type {Internal.LivingEntity} */
     const target = event.entity
-    if (target.getHealth() < target.getMaxHealth() * 0.99) return
-    target.potionEffects.add('kubejs:vita_toxins', 20 * 60, 0, false, false)
     if (!sourceEntity.getUuid()) return
+    if (!target.hasEffect('kubejs:vita_toxins')) return
+    target.potionEffects.add('kubejs:vita_toxins', 20 * 60, 0, false, false)
+
     SetVitaToxinsSource(target, sourceEntity.getUuid())
-    if (GetCustomDataMap(target.chestCavityInstance, 'hasVitaBerry', 0) == 1) {
+    if (GetCustomDataMap(sourceEntity.chestCavityInstance, 'hasVitaBerry', 0) == 1) {
         SetVitaToxinsType(target, 'max_health')
-        SetVitaToxinsCoe(target, 2)
+        SetVitaToxinsCoe(target, slotType == FertileSlot ? 10 : 2)
+    } else if (GetCustomDataMap(sourceEntity.chestCavityInstance, 'hasVitaBerry', 0) == 2) {
+        SetVitaToxinsType(target, 'armor')
+        SetVitaToxinsCoe(target, slotType == FertileSlot ? 10 : 2)
     } else {
         SetVitaToxinsType(target, 'attack_damage')
-        SetVitaToxinsCoe(target, 1)
+        SetVitaToxinsCoe(target, slotType == FertileSlot ? 5 : 1)
     }
 }
 

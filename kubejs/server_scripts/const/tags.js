@@ -61,3 +61,7 @@ ServerEvents.tags('fluid', event => {
     event.add('kubejs:nutrients_fluid', ['create:honey', 'minecraft:milk', 'biomancy:acid'])
     event.add('create:bottomless/allow', ['kubejs:molten_iron_fluid', 'kubejs:molten_copper_fluid', 'kubejs:molten_diamond_fluid', 'kubejs:molten_emerald_fluid', 'kubejs:molten_gold_fluid', 'minecraft:milk', 'biomancy:acid'])
 })
+
+ServerEvents.tags('mob_effect', event => {
+    event.add('cataclysm:effective_for_bosses', ['chestcavity:organ_slip', 'chestcavity:surgical_anesthesia'])
+})

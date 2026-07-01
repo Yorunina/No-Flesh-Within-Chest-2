@@ -14,14 +14,15 @@ function CherryBoneEntityBeHurt(customData, event, organItem, organIndex, slotTy
     /**@type {Internal.ServerPlayer} */
     const sourceEntity = event.source.actual
     if (!sourceEntity) return
-    if (sourceEntity.hasEffect('kubejs:vita_toxins')) {
-        let effect = sourceEntity.getEffect('kubejs:vita_toxins')
+    let effectId = slotType == FertileSlot ? 'kubejs:putrid_toxins' : 'kubejs:vita_toxins'
+    if (sourceEntity.hasEffect(effectId)) {
+        let effect = sourceEntity.getEffect(effectId)
         if (effect.duration > event.amount * 20) {
             effect.setDuration(effect.duration - event.amount * 20)
             event.amount = 0
         } else {
             event.amount -= effect.duration / 20
-            sourceEntity.removeEffect('kubejs:vita_toxins')
+            sourceEntity.removeEffect(effectId)
         }
     }
 }

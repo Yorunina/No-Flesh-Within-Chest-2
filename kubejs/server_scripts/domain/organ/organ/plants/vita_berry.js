@@ -13,7 +13,11 @@ RegistryOrgan('kubejs:vita_berry')
 */
 function VitaBerryChestCavityTakeOn(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    SetCustomDataMap(entity.chestCavityInstance, 'hasVitaBerry', 1)
+    if (slotType == FertileSlot) {
+        SetCustomDataMap(entity.chestCavityInstance, 'hasVitaBerry', 2)
+    } else {
+        SetCustomDataMap(entity.chestCavityInstance, 'hasVitaBerry', 1)
+    }
 }
 
 /**
