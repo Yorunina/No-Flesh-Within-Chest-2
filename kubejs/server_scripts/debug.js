@@ -5,8 +5,11 @@ ItemEvents.rightClicked('stick', event => {
     let pos = new BlockPos(0, 56, 0)
     /**@type {Internal.ShellForgeBlockEntity} */
     const blockEntity = level.getBlockEntity(pos)
+    /**@type {Internal.CompoundTag} */
     let playerData = blockEntity.createFreshPlayerData(level)
-    playerData.putInt("playerGameType", 2)
-    playerData.putInt("previousPlayerGameType", 0)
+    playerData.putInt('playerGameType', 2)
+    playerData.putInt('previousPlayerGameType', 0)
+    playerData.putBoolean('infLifeShell', false)
+    playerData.putString('playerType', 'amusement')
     blockEntity.createShellByData(player.uuid, playerData)
 })

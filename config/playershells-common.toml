@@ -11,5 +11,5 @@ centrifugeEnergyCapacity = 100000
 #Range: > 1
 centrifugeEnergyUsage = 3000
 #If enabled, the player will respawn in the nearest shell after death, even in hardcore mode. When disabled, death in hardcore mode remains permanent
-transferIntoShellAfterDeath = false
+transferIntoShellAfterDeath = true
 

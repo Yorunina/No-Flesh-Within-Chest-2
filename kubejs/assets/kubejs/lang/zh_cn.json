@@ -1076,7 +1076,7 @@
     "tooltips.kubejs.worm_neuron.default.1": "重塑胸腔血肉",
     "tooltips.kubejs.worm_neuron.alt.1": "    §6★§r 处在胸腔中时，如果胸腔具有空位，则§6每分钟§r会在空位处生成一属性随机的§6未成型肿瘤§r",
     "tooltips.kubejs.worm_neuron.alt.2": "    §6★§r §6未成型肿瘤§r具有随机 §62§r 条%s和 §61§r 条%s，属性数值随机范围根据属性种类不同各有差异",
-    "item.kubejs.malignant_cavity_flesh": "恶性胸腔血肉",
+    "item.kubejs.malignant_cavity_flesh": "痔多心",
     "tooltips.kubejs.malignant_cavity_flesh.default.1": "再生、再生、再生",
     "tooltips.kubejs.malignant_cavity_flesh.alt.1": "    §6★§r 处在胸腔中时，如果胸腔具有空位，则§6每10秒§r会在空位处生成一块§6纤维状血肉块§r",
     "item.kubejs.malignant_neuron_tumor": "恶性神经元肿瘤",

@@ -16,8 +16,9 @@ function ScyllaStarGemEffectResolvePost(customData, event, organItem, organIndex
     /**@type {Internal.LivingEntity } */
     let entity = hitResult.getEntity()
     if (entity.isOnFire()) {
+        let fireTicks = entity.getRemainingFireTicks()
         entity.extinguishFire()
-        entity.setTicksFrozen(entity.getRemainingFireTicks() * 2)
+        entity.setTicksFrozen(fireTicks * 2)
         entity.potionEffects.add('minecraft:fire_resistance', 10 * 20, 0, false, false)
     }
 }
