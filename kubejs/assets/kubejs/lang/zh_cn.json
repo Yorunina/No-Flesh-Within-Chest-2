@@ -1387,6 +1387,7 @@
     "item.kubejs.faded_disc.desc": "Faded - 一种异样的食欲油然而生",
     "item.kubejs.assumptions_disc": "音乐唱片",
     "item.kubejs.assumptions_disc.desc": "Assumptions - 还没听懂",
+    "item.kubejs.trophy_sword": "奖杯剑",
     "_comment.gui": "GUI",
     "gui.kubejs.title.name.suffix": "的",
     "gui.kubejs.title.chestcavity": "胸腔",
@@ -1599,7 +1600,7 @@
     "spell.kubejs.advance_stomp": "践踏",
     "spell.kubejs.advance_wither_skull": "凋零之首",
     "_comment.vein": "矿脉",
-    "vein.kubejs.ancient_remains": "古代残骸",
+    "vein.kubejs.ancient_remains": "古代骸骨",
     "vein.kubejs.mantle_ore": "地幔矿石",
     "_comment._blocks": "方块",
     "block.kubejs.mantle_energy_extractor": "地幔能提取器",
@@ -2482,5 +2483,10 @@
     "champion.affix.split_on_death.name": "死亡分裂 %s",
     "champion.affix.health_boost.name": "强健 %s",
     "_comment.fluid_type": "流体类型",
-    "fluid_type.biomancy.acid": "酸液"
+    "fluid_type.biomancy.acid": "酸液",
+    "_comment.soil": "农业土壤",
+    "soil.agricraft.kubejs.flesh": "血肉块",
+    "soil.agricraft.kubejs.malignant_flesh": "恶性血肉块",
+    "soil.agricraft.kubejs.primal_flesh": "原始血肉块",
+    "soil.agricraft.kubejs.bone": "骨块"
 }

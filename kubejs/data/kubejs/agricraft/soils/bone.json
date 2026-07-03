@@ -1,0 +1,15 @@
+{
+  "acidity": "neutral",
+  "growth_modifier": 0.5,
+  "humidity": "arid",
+  "mods": [],
+  "nutrients": "none",
+  "variants": [
+    {
+      "block": "minecraft:bone_block"
+    },
+    {
+      "block": "biomancy:primal_bone_block"
+    }
+  ]
+}

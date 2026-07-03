@@ -1,0 +1,21 @@
+{
+  "acidity": "slightly_acidic",
+  "growth_modifier": 1.5,
+  "humidity": "wet",
+  "mods": [],
+  "nutrients": "very_low",
+  "variants": [
+    {
+      "block": "biomancy:primal_flesh"
+    },
+    {
+      "block": "biomancy:smooth_primal_flesh"
+    },
+    {
+      "block": "biomancy:fibrous_primal_flesh"
+    },
+    {
+      "block": "biomancy:porous_primal_flesh"
+    }
+  ]
+}

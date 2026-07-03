@@ -1,0 +1,12 @@
+{
+  "acidity": "slightly_acidic",
+  "growth_modifier": 0.8,
+  "humidity": "wet",
+  "mods": [],
+  "nutrients": "very_low",
+  "variants": [
+    {
+      "block": "biomancy:malignant_flesh"
+    }
+  ]
+}

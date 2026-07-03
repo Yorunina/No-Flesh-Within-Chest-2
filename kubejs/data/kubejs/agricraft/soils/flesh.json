@@ -1,0 +1,15 @@
+{
+  "acidity": "slightly_alkaline",
+  "growth_modifier": 1.2,
+  "humidity": "wet",
+  "mods": [],
+  "nutrients": "very_high",
+  "variants": [
+    {
+      "block": "biomancy:flesh"
+    },
+    {
+      "block": "biomancy:fibrous_flesh"
+    }
+  ]
+}

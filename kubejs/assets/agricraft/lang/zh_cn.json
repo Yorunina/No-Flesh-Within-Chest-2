@@ -15,7 +15,7 @@
   "item.agricraft.wooden_crop_sticks": "作物架（木质）",
   "item.agricraft.iron_crop_sticks": "作物架（铁质）",
   "item.agricraft.obsidian_crop_sticks": "作物架（黑曜石质）",
-  "item.agricraft.seed_bag": "神奇种子分类袋",
+  "item.agricraft.seed_bag": "种子分类袋",
   "item.agricraft.copper_nugget": "铜粒",
   "item.agricraft.coal_pebble": "煤粒",
   "item.agricraft.diamond_shard": "钻石碎片",
@@ -214,7 +214,7 @@
     "emi.category.agricraft.requirement": "生长要求",
 
   "soil.agricraft.minecraft.clay": "黏土",
-  "soil.agricraft.minecraft.crimsom_nylium": "绯红菌岩",
+  "soil.agricraft.minecraft.crimson_nylium": "绯红菌岩",
   "soil.agricraft.minecraft.farmland": "耕地",
   "soil.agricraft.minecraft.mycelium": "菌丝体",
   "soil.agricraft.minecraft.podzol": "灰化土",

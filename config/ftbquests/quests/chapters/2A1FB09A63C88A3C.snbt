@@ -252,6 +252,77 @@
 			x: 2.5d
 			y: 8.0d
 		}
+		{
+			dependencies: ["0B6DD0B62C0B5118"]
+			id: "1CCA4998BDE14E93"
+			tasks: [{
+				id: "687A55316900FE68"
+				item: {
+					Count: 1
+					id: "kubejs:pure_color_reaction"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0B6DD0B62C0B5118"]
+			id: "525B0E70D3BDBE09"
+			tasks: [{
+				id: "369CD6FE20778F0C"
+				item: {
+					Count: 1
+					id: "kubejs:blood_crystal_factory"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0B6DD0B62C0B5118"]
+			id: "2037A5E8F30A4E65"
+			tasks: [{
+				id: "0661683EB4FAA493"
+				item: {
+					Count: 1
+					id: "kubejs:machine_witch_fibroma"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["525B0E70D3BDBE09"]
+			id: "5D26A05B1C2F2C7D"
+			tasks: [{
+				id: "46068C0DE90B0532"
+				item: {
+					Count: 1
+					id: "kubejs:malignant_cavity_flesh"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1CCA4998BDE14E93"]
+			id: "2D80F357A8747BC0"
+			tasks: [{
+				id: "5BA497C163A2A814"
+				item: "kubejs:rainbow_compound"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.5d
+		}
 	]
 	title: "传闻：超维工厂"
 }

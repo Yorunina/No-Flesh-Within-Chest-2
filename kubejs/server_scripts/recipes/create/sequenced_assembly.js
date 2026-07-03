@@ -153,5 +153,34 @@ ServerEvents.recipes(event => {
     )
         .transitionalItem(CommonTransitionalItem)
         .loops(8)
-})
 
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:pure_color_reaction')
+        ],
+        'minecraft:iron_block',
+        [
+            event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:red_dye']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:green_dye']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'minecraft:blue_dye']),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('minecraft:milk', 250)]),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(7)
+
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('kubejs:blood_crystal_factory')
+        ],
+        'minecraft:redstone_block',
+        [
+            event.recipes.create.cutting(CommonTransitionalItem, CommonTransitionalItem),
+            event.recipes.create.filling(CommonTransitionalItem, [CommonTransitionalItem, Fluid.of('kubejs:blood_fluid', 250)]),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create_connected:control_chip']),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(4)
+})
