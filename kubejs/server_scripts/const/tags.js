@@ -20,6 +20,8 @@ ServerEvents.tags('item', event => {
 
     event.add('kubejs:machine', [])
 
+    event.add('forge:crops/lettuce', ['farm_and_charm:lettuce'])
+
     // 经验修补禁用标签
     event.add('maa:cannot_mending', ['kubejs:furnace_core', 'kubejs:burning_heart', 'kubejs:energy_bottle_red', 'kubejs:soul_cage', 'kubejs:red_wolf_beard', 'kubejs:raccoon_paw', 'kubejs:boar_nose', 'kubejs:ignited_armour', 'kubejs:pitcher_stomach', 'kubejs:vita_sunflower', 'kubejs:ender_guardian_spine', 'kubejs:harbinger_lung'])
 

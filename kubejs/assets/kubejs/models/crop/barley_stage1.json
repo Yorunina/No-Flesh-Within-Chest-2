@@ -1,0 +1,6 @@
+{
+  "parent": "agricraft:crop/crop_hash",
+  "textures": {
+    "crop": "kubejs:block/crop/barley_stage0"
+  }
+}

@@ -261,7 +261,7 @@
 				""
 				"但稍等. . . &c好像这个世界存在一些问题&r，我会在之后为您查明这些问题，暂且还&6请您先按照任务的要求挖掘对应数量的矿物&r。"
 			]
-			icon: "minecraft:iron_ore"
+			icon: "minecraft:iron_ingot"
 			id: "2B5EE534394F9950"
 			rewards: [{
 				id: "3E2B20B2D46C18BB"
@@ -270,13 +270,9 @@
 			}]
 			subtitle: "挖掘类任务"
 			tasks: [{
-				block: "forge:ores/iron"
-				block_type: 1
-				checkItem: false
-				id: "5D2A5D057AA51E32"
-				title: "挖掘铁矿石"
-				type: "questsadditions:break"
-				value: 3L
+				id: "448DBCA53F59D4BD"
+				item: "minecraft:iron_ingot"
+				type: "item"
 			}]
 			x: 0.0d
 			y: -6.0d
