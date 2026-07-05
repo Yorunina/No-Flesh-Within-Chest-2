@@ -1,64 +1,9 @@
 // priority: 500
-const OrganEffectSlotDefinition = [
-    {
-        id: 'organ_effect_0',
-        x: '-$screenW/2+149',
-        y: '3'
-    },
-    {
-        id: 'organ_effect_1',
-        x: '-$screenW/2+167',
-        y: '3'
-    },
-    {
-        id: 'organ_effect_2',
-        x: '-$screenW/2+185',
-        y: '3'
-    },
-    {
-        id: 'organ_effect_3',
-        x: '-$screenW/2+203',
-        y: '3'
-    },
-    {
-        id: 'organ_effect_4',
-        x: '-$screenW/2+221',
-        y: '3'
-    }
-]
+const ORGAN_EFFECT_SYNC_CHANNEL = 'organ_effect_sync'
+const MAX_ORGAN_EFFECT_SLOTS = 5
 
 PlayerEvents.loggedIn(event => {
-    event.player.paint({
-        'organ_effect_ui': {
-            'type': 'rectangle',
-            'x': '-$screenW/2+220',
-            'y': '0',
-            'z': 1,
-            'w': 98,
-            'h': 23,
-            'alignX': 'right',
-            'alignY': 'bottom',
-            'texture': 'kubejs:textures/gui/organ_effect_ui.png',
-            'visible': false
-        }
-    })
-    let paintObj = {}
-    OrganEffectSlotDefinition.forEach(slotDef => {
-        paintObj[slotDef.id] = {
-            'type': 'item',
-            'x': slotDef.x,
-            'y': slotDef.y,
-            'z': 1,
-            'w': 14,
-            'h': 14,
-            'alignX': 'right',
-            'alignY': 'bottom',
-            'item': 'minecraft:air',
-            'overlay': true,
-            'visible': false
-        }
-    })
-    event.player.paint(paintObj)
+    syncOrganEffects(event.player)
 })
 
 PlayerEvents.tick(event => {
@@ -67,43 +12,46 @@ PlayerEvents.tick(event => {
     const chestCavity = player.chestCavityInstance
     const customDataMap = chestCavity.customDataMap
     if (!customDataMap.containsKey('organEffectChanged') || !customDataMap.get('organEffectChanged')) return
-    if (!customDataMap.containsKey('organEffectMap')) return
-    /** @type {Map<string, OragnEffectModel>} */
-    let organEffectMap = customDataMap.get('organEffectMap')
-    let organEffectList = []
-    organEffectMap.forEach((value, key) => {
-        if (value instanceof OragnEffectModel) {
-            organEffectList.push(value)
-        }
-    })
-
-    organEffectList.sort((a, b) => {
-        return b.priority - a.priority
-    })
-    let paintObj = {}
-    for (let i = 0; i < organEffectList.length; i++) {
-        if (i >= OrganEffectSlotDefinition.length) break
-        /**@type {OragnEffectModel} */
-        let effect = organEffectList[i]
-        let slotDef = OrganEffectSlotDefinition[i]
-        paintObj[slotDef.id] = {
-            'x': slotDef.x,
-            'y': slotDef.y,
-            'item': effect.item.id,
-            'overlay': effect.overlay,
-            'customText': effect.customText,
-            'visible': effect.visible
-        }
-    }
-    for (let i = organEffectList.length; i < OrganEffectSlotDefinition.length; i++) {
-        let slotDef = OrganEffectSlotDefinition[i]
-        paintObj[slotDef.id] = { 'visible': false }
-    }
-    if (organEffectList.length <= 0) {
-        paintObj['organ_effect_ui'] = { 'visible': false }
-    } else {
-        paintObj['organ_effect_ui'] = { 'visible': true } 
-    }
     customDataMap.put('organEffectChanged', false)
-    player.paint(paintObj)
+    syncOrganEffects(player)
 })
+
+/**
+ * Collect organ effects from chestCavity and send to client via network.
+ * @param {Internal.ServerPlayer} player
+ */
+function syncOrganEffects(player) {
+    const chestCavity = player.chestCavityInstance
+    if (!chestCavity) return
+    const customDataMap = chestCavity.customDataMap
+
+    /** @type {OragnEffectModel[]} */
+    let organEffectList = []
+    if (customDataMap.containsKey('organEffectMap')) {
+        /** @type {Map<string, OragnEffectModel>} */
+        let organEffectMap = customDataMap.get('organEffectMap')
+        organEffectMap.forEach((value, key) => {
+            if (value instanceof OragnEffectModel) {
+                organEffectList.push(value)
+            }
+        })
+    }
+
+    organEffectList.sort((a, b) => b.priority - a.priority)
+
+    let effectListTag = new $ListTag()
+    for (let i = 0; i < Math.min(organEffectList.length, MAX_ORGAN_EFFECT_SLOTS); i++) {
+        let effect = organEffectList[i]
+        let tag = new $CompoundTag()
+        tag.putString('itemId', String(effect.item.id))
+        tag.putString('customText', effect.customText || '')
+        tag.putBoolean('visible', effect.visible)
+        tag.putBoolean('overlay', effect.overlay)
+        tag.putInt('priority', effect.priority)
+        effectListTag.add(tag)
+    }
+
+    let data = new $CompoundTag()
+    data.put('effects', effectListTag)
+    player.sendData(ORGAN_EFFECT_SYNC_CHANNEL, data)
+}

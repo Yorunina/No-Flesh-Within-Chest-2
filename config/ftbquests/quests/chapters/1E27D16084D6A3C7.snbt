@@ -3,6 +3,11 @@
 	default_quest_shape: ""
 	filename: "1E27D16084D6A3C7"
 	group: "0B365C36A50478AA"
+	icon: {
+		Count: 1
+		id: "kubejs:crimson_brain"
+		tag: { }
+	}
 	id: "1E27D16084D6A3C7"
 	order_index: 9
 	quest_links: [ ]

@@ -1,0 +1,80 @@
+<body>
+    <div id="organ-effect-panel">
+        <div id="organ-effect-bg"></div>
+        <div id="organ-effect-slots">
+            <div class="slot-wrapper">
+                <slot id="effect-slot-0" class="effect-slot"></slot>
+                <span id="effect-text-0" class="effect-text"></span>
+            </div>
+            <div class="slot-wrapper">
+                <slot id="effect-slot-1" class="effect-slot"></slot>
+                <span id="effect-text-1" class="effect-text"></span>
+            </div>
+            <div class="slot-wrapper">
+                <slot id="effect-slot-2" class="effect-slot"></slot>
+                <span id="effect-text-2" class="effect-text"></span>
+            </div>
+            <div class="slot-wrapper">
+                <slot id="effect-slot-3" class="effect-slot"></slot>
+                <span id="effect-text-3" class="effect-text"></span>
+            </div>
+            <div class="slot-wrapper">
+                <slot id="effect-slot-4" class="effect-slot"></slot>
+                <span id="effect-text-4" class="effect-text"></span>
+            </div>
+        </div>
+    </div>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #organ-effect-panel {
+            position: fixed;
+            right: 4%;
+            bottom: 0;
+            width: 98px;
+            height: 23px;
+            visibility: hidden;
+        }
+        #organ-effect-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("textures/organ_effect_ui.png");
+            background-size: 100% 100%;
+        }
+        #organ-effect-slots {
+            position: absolute;
+            left: 5px;
+            bottom: 5px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .slot-wrapper {
+            position: relative;
+            width: 14px;
+            height: 14px;
+        }
+        .effect-slot {
+            --aui-slot-size: 14;
+            --aui-slot-render-bg: false;
+            --aui-slot-icon-scale: 0.875;
+            width: 14px;
+            height: 14px;
+        }
+        .effect-text {
+            position: absolute;
+            bottom: -1px;
+            right: -1px;
+            font-size: 8px;
+            color: #FFFFFF;
+            pointer-events: none;
+            visibility: hidden;
+            line-height: 1;
+        }
+    </style>
+</body>

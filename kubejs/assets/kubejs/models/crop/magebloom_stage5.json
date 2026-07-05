@@ -1,0 +1,6 @@
+{
+  "parent": "agricraft:crop/crop_hash",
+  "textures": {
+    "crop": "kubejs:block/crop/magebloom_stage2"
+  }
+}

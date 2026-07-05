@@ -1,0 +1,7 @@
+
+[debug]
+	#Enable dev auto-reload when local files change.
+	autoReload = false
+	#Enable AI helper screenshots (1 per second, keep latest 3) under screenshots/aui.
+	aiAutoScreenshot = false
+
