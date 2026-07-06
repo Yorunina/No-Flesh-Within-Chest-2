@@ -87,10 +87,9 @@ function updateOrganEffectSlots(effects) {
         let slot = doc.getElementById('effect-slot-' + i)
         let text = doc.getElementById('effect-text-' + i)
         if (slot == null) continue
-
         if (i < effects.length && effects[i].visible) {
             let effect = effects[i]
-            slot.innerText = ''
+            slot.innerText = effect.itemId
             if (text != null) {
                 if (effect.overlay && effect.customText && effect.customText.length > 0) {
                     text.innerText = effect.customText
