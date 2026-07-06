@@ -30,13 +30,14 @@ function MachineWitchStomachEntityTick(customData, event, organItem, organIndex,
     const room = roomOpt.get()
     CompactMachineUtil.getAllFluidsBySide(server, room).forEach((direction, fluid) => {
         if (!fluid.hasTag()) return
+        if (fluid.getAmount() < 5) return
         let potion = MAAUtils.getPotionByTag(fluid.getTag())
         let effects = potion.getEffects()
         if (effects.isEmpty()) return
         for (let effect of effects) {
             entity.potionEffects.add(effect.effect, effect.duration, effect.amplifier)
         }
-        fluid.setAmount(fluid.getAmount() - 1)
+        fluid.setAmount(fluid.getAmount() - 5)
     })
 }
 

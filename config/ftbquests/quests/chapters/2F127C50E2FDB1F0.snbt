@@ -411,14 +411,37 @@
 			]
 			icon: "compactmachines:wall"
 			id: "14EE172659669E78"
-			subtitle: "解锁 传闻：地幔燃料 章节"
+			subtitle: "解锁 传闻：超维工厂 章节"
 			tasks: [{
 				id: "217D8C8B976685DA"
-				title: "解锁 传闻：地幔燃料 章节"
+				title: "解锁 传闻：超维工厂 章节"
 				type: "checkmark"
 			}]
-			title: "探秘地幔燃料"
+			title: "探秘超维工厂"
 			x: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0503656541D6410D"]
+			description: [
+				"&o&7标签：&c胸腔&7、&6机械动力&7、&6生产优化&r"
+				"&o&7推荐指数：★★★☆（高）"
+				"&o&7难度指数：★★（难度低）"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:crimson_brain"
+				tag: { }
+			}
+			id: "113A1FBEF3E7EC83"
+			subtitle: "解锁 传闻：血肉孢子 章节"
+			tasks: [{
+				id: "6B6AC667A14BFA56"
+				title: "解锁 传闻：血肉孢子 章节"
+				type: "checkmark"
+			}]
+			title: "探秘血肉孢子"
+			x: 8.0d
 			y: 7.5d
 		}
 	]

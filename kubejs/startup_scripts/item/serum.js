@@ -27,7 +27,13 @@ function RegistryEntityInducerSerumFromFleshBlob(targetEntityType, name, time) {
     })
 }
 
+StartupEvents.registry('item', event => {
+    event.create(`kubejs:empty_inducer_serum`)
+        .texture(`kubejs:item/serums/empty_inducer_serum`)
+})
+
 RegistryEntityInducerSerumFromFleshBlob('minecraft:pig', 'pig', 6000)
+RegistryEntityInducerSerumFromFleshBlob('minecraft:cow', 'cow', 6000)
 
 StartupEvents.registry('item', event => {
     event.create(`kubejs:alpha_pheromone_serum`, 'biomancy:basic_serum')

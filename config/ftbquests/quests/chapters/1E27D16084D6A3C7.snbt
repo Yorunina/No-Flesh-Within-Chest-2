@@ -11,6 +11,53 @@
 	id: "1E27D16084D6A3C7"
 	order_index: 9
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["113A1FBEF3E7EC83"]
+			description: [
+				"一些信息显示，这个世界中的作物要远比我们想的有潜力的多——不光指作物的产量，更是指作物的种类。"
+				""
+				"想要完全发掘它们的潜力，我们需要制作&6作物架&r，并且使用特殊的方法进行培育。"
+			]
+			id: "25E0023B9DF54C2C"
+			rewards: [{
+				id: "3266E40C62F92EF9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "植物中蕴含的潜力"
+			tasks: [{
+				id: "691B64228CA32210"
+				item: "agricraft:wooden_crop_sticks"
+				type: "item"
+			}]
+			title: "新的领域"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25E0023B9DF54C2C"]
+			id: "73AC29CE33479E8A"
+			rewards: [
+				{
+					id: "1D891CF44F8BA25A"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "5CD3BBD1A6EBC331"
+					item: "agricraft:journal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4EFDE2675BE92EDC"
+				item: "agricraft:seed_analyzer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+	]
 	title: "传闻：血肉孢子"
 }

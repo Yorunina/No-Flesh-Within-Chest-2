@@ -44,17 +44,6 @@
         "value": 1
       }
     },
-    "alshanex_familiars:sound_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
     "attributeslib:armor_shred": {
       "enabled": false,
       "min": {
@@ -165,17 +154,6 @@
         "value": 1024
       }
     },
-    "kubejs:dream_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "irons_spellbooks:casting_movespeed": {
       "enabled": false,
       "min": {
@@ -188,17 +166,6 @@
       }
     },
     "irons_spellbooks:cast_time_reduction": {
-      "enabled": false,
-      "min": {
-        "default": -100,
-        "value": -100
-      },
-      "max": {
-        "default": 100,
-        "value": 100
-      }
-    },
-    "alshanex_familiars:sound_magic_resist": {
       "enabled": false,
       "min": {
         "default": -100,
@@ -1197,17 +1164,6 @@
       "max": {
         "default": 512,
         "value": 512
-      }
-    },
-    "kubejs:dream_spell_resistance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     },
     "attributeslib:arrow_damage": {

@@ -254,8 +254,20 @@
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
-			description: [""]
+			description: [
+				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				""
+				"&6虹彩反应炉&r便是其一——其本身虽然能源源不断产出能够被分解为各种色彩的&6虹彩化合物&r，但苦于胸腔大小限制，无法将其转换为可用的染料。"
+				""
+				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
+			]
 			id: "1CCA4998BDE14E93"
+			rewards: [{
+				id: "59CCED3FF2319E1E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维工厂实战课题之一"
 			tasks: [{
 				id: "687A55316900FE68"
 				item: {
@@ -266,11 +278,24 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
+			description: [
+				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				""
+				"&6血晶工厂&r便是其一——其本身虽然能将生物的生命值转换为可以长期储存的&c血晶&r或者&c血液&r，但苦于没有足够的空间，无法让血液和血晶转换为血晶工厂可以利用的&6费洛蒙&r。"
+				""
+				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
+			]
 			id: "525B0E70D3BDBE09"
+			rewards: [{
+				id: "5D8DE5E49EF48A36"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维工厂实战课题之一"
 			tasks: [{
 				id: "369CD6FE20778F0C"
 				item: {
@@ -281,11 +306,24 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
+			description: [
+				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				""
+				"&6械学巫术纤维瘤&r便是其一——其本身需要&6消耗液体状态的药水&r为玩家提供持久的药水状态。"
+				""
+				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
+			]
 			id: "2037A5E8F30A4E65"
+			rewards: [{
+				id: "1479971D2BFC4BFD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维工厂实战课题之一"
 			tasks: [{
 				id: "0661683EB4FAA493"
 				item: {
@@ -296,11 +334,24 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 9.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["525B0E70D3BDBE09"]
+			description: [
+				"为了满足血晶工厂的费洛蒙消耗，您需要提供一个稳定产出&6有机试管&r的方法。"
+				""
+				"&6痔多心&r就是一个能够稳定产出有机试管的方法。佩戴该器官的生物会源源不断的产出&6纤维状血肉块&r。如若产出的槽位是&6排泄&r槽位，那么纤维状血肉块便会作为掉落物掉落。"
+				""
+				"使用分解体分解纤维状血肉块，即可获得&6弹性纤维&r，而后便可以加工为有机试管。"
+			]
 			id: "5D26A05B1C2F2C7D"
+			rewards: [{
+				id: "41CC06FD20357DD8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "有机试管产线"
 			tasks: [{
 				id: "46068C0DE90B0532"
 				item: {
@@ -311,18 +362,225 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 7.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1CCA4998BDE14E93"]
+			description: [
+				"虹彩反应炉是一个极其特殊的器官，其可以消耗压缩空间输出的染料，根据染料的颜色转换为对应的属性。"
+				""
+				"每分钟，虹彩反应炉便会产生&664 个虹彩化合物&r以供给产线去产出所需的染料。"
+				""
+				"&6不同的染料会为您提供不同的属性乘区加成&r——举例而言，一红色染料会提供0.01攻击力的乘区倍率，而一白色染料会提供0.003攻击力、0.003最大生命值和0.004护甲的乘区倍率。"
+				""
+				"因此，您如果需要最大化特化该器官的能力，需要进行大量的&6颜色反应&r以获得某个纯色。"
+			]
 			id: "2D80F357A8747BC0"
+			rewards: [{
+				id: "58B13CE4FD423216"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "虹彩化合物的处理"
 			tasks: [{
 				id: "5BA497C163A2A814"
 				item: "kubejs:rainbow_compound"
 				type: "item"
 			}]
 			x: 7.5d
-			y: 5.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2D80F357A8747BC0"]
+			description: [
+				"所谓&6转色反应&r，即通过一些特殊配方可以让染料互相转换。"
+				""
+				"举例而言，您可以通过注液配方，向部分染料注入岩浆/水/蜂蜜液体，以使其转化为某纯色。"
+				""
+				"当然，您也可以&6不局限于使用虹彩化合物分解出来的材料供给虹彩反应炉&r——如果材料允许，您完全可以自己建设一套稳定的产线来维持虹彩反应炉的消耗。"
+			]
+			icon: "minecraft:red_dye"
+			id: "54D1D2519A0BDE86"
+			rewards: [{
+				id: "4771970562194D6E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "染料的互相转化"
+			tasks: [{
+				id: "4419CFE790E9F3BC"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dyes"
+					}
+				}
+				title: "任意染料"
+				type: "item"
+			}]
+			title: "转色反应"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5D26A05B1C2F2C7D"]
+			description: [
+				"通过&6对血液的分馏&r，可以得到四种不同的流体。这些流体可以通过注液配方转换为对应的有机试剂。"
+				""
+				"这些有机试剂和&6费洛蒙前体&r混合即可获得对应的费洛蒙。"
+				""
+				"血晶工厂会根据供给的费洛蒙种类的差异，为生物提供不同的基础数值加成——举例而言，若有一&6费洛蒙 - α&r被消耗，则玩家基础的攻击力数值在下个周期内会提高 1 点。"
+				""
+				"为了得到您所需要的属性，您可能需要使用&6生物荧光黏液&r转换费洛蒙的种类，进而专一化数值。"
+			]
+			id: "0022018D11289105"
+			rewards: [{
+				id: "74263DB8AB84D8AA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "费洛蒙产线"
+			tasks: [{
+				id: "5CA4C908381E309E"
+				item: "kubejs:precursor_pheromone_serum"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2037A5E8F30A4E65"]
+			description: [
+				"尽管械学巫术纤维瘤每个周期仅会&6消耗5mb的药水&r，但长期维持最好提供一个稳定的药水来源——使用乳腺榨奶生物便是一个提供药水的稳定方案。"
+				""
+				"但除此之外，您也可以尝试构筑自动化炼药产线以供给长期维持；亦或是手动往压缩空间中囤入大量炼药材料，由于巫术纤维瘤消耗并不高，因此也能够使用较长时间。"
+			]
+			id: "1A942236AD51E70C"
+			rewards: [{
+				id: "7F6CE35B3C8B5295"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "药水泛滥如洪"
+			tasks: [{
+				id: "783A0297D64EBA77"
+				item: {
+					Count: 1
+					id: "kubejs:mammary_gland"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "乳腺"
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B6DD0B62C0B5118"]
+			description: [
+				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				""
+				"&6岩浆生命循环系统&r便是其一——借由压缩空间，可以完全发挥其能力，&6消耗岩浆来快速恢复玩家生命值&r。"
+				""
+				"该系统可以配合血晶工厂，在血晶工厂消耗完成后迅速恢复玩家生命，以避免血晶工厂带来的负面效果。"
+			]
+			id: "3785C5FDB0DF689B"
+			rewards: [{
+				id: "6DCE881651D3BCBF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维工厂实战课题之一"
+			tasks: [{
+				id: "5E5BEA2404C466A9"
+				item: {
+					Count: 1
+					id: "kubejs:lava_life_cycle_system"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 14.0d
+		}
+		{
+			id: "4C9DB9A20787330C"
+			tasks: [{
+				id: "0809086C38E0D435"
+				item: "kubejs:transdimensional_mechanized_injection"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6C33052572100482"]
+			description: [
+				"由于压缩空间大小有限，部分产线无法在一个压缩空间中完成，此时您可能会尝试使用压缩空间中&6套娃压缩空间&r的方式来解决空间危机——但实际上还有一个更好的方式。"
+				""
+				"请您制作一块&6虚空钢锭&r，为我们后续的无限传输提供基础材料支持。"
+			]
+			id: "10D71CC7F16C3939"
+			rewards: [{
+				id: "5AAC95CC87042982"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "压缩空间之外"
+			tasks: [{
+				id: "0D951AFCAD5FB7A3"
+				item: "createutilities:void_steel_ingot"
+				type: "item"
+			}]
+			title: "压缩空间交互法"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["10D71CC7F16C3939"]
+			description: [
+				"使用虚空钢锭，您便可以制成虚空晶体管、虚空机壳，进而制作出各种虚空设备。"
+				""
+				"所谓虚空设备，即是可以通过虚空&6远程传输物品、流体、应力&r的特殊设备。通过在虚空设备上标记物品以区分不同的频道，即可让对应的虚空设备互相链接。"
+				""
+				"&6虚空箱子和虚空储罐可以跨维度交互&r——但虚空马达由于应力的特殊性质无法跨维度使用，因此您可能需要在压缩空间中专门制作一个应力提供空间来使用虚空马达。"
+			]
+			icon: "createutilities:void_chest"
+			id: "3067DE2DA2BAFCCA"
+			rewards: [{
+				id: "23EFC50D5D640842"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "无限传输方案"
+			tasks: [{
+				id: "15734FEAA0EA90D4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "createutilities:void_chest"
+							}
+							{
+								Count: 1b
+								id: "createutilities:void_tank"
+							}
+							{
+								Count: 1b
+								id: "createutilities:void_motor"
+							}
+						]
+					}
+				}
+				title: "任意虚空设备"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
 		}
 	]
 	title: "传闻：超维工厂"
