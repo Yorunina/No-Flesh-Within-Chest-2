@@ -4,16 +4,12 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:pitcher_stomach').maxStackSize(1).texture('kubejs:item/organs/plant/pitcher_stomach').maxDamage(10).tag('kubejs:plant').tag('kubejs:stomach')
     event.create('kubejs:crimson_brain').maxStackSize(1).texture('kubejs:item/organs/plant/crimson_brain').tag('kubejs:plant')
     event.create('kubejs:twisting_weeping_intestine').maxStackSize(1).texture('kubejs:item/organs/plant/twisting_weeping_intestine').tag('kubejs:plant').tag('kubejs:intestine')
-
     event.create('kubejs:vita_rose_liver').maxStackSize(1).texture('kubejs:item/organs/plant/vita_rose_liver').tag('kubejs:plant').tag('kubejs:liver')
-
     event.create('kubejs:lily_pad_lung').maxStackSize(1).texture('kubejs:item/organs/plant/lily_pad_lung').tag('kubejs:plant').tag('kubejs:lung')
     event.create('kubejs:cherry_bone').maxStackSize(1).texture('kubejs:item/organs/plant/cherry_bone').tag('kubejs:plant').tag('kubejs:bone')
-
     event.create('kubejs:vita_berry').maxStackSize(1).texture('kubejs:item/organs/plant/vita_berry').tag('kubejs:plant')
     event.create('kubejs:vita_sunflower').maxStackSize(1).texture('kubejs:item/organs/plant/vita_sunflower').maxDamage(15).tag('kubejs:plant')
-
     event.create('kubejs:rootling_ectoplasm').maxStackSize(1).texture('kubejs:item/organs/plant/rootling_ectoplasm').tag('kubejs:plant')
     event.create('kubejs:foliaath_stem').maxStackSize(1).texture('kubejs:item/organs/plant/foliaath_stem').tag('kubejs:plant').tag('kubejs:spine')
-
+    event.create('kubejs:crimson_rib').maxStackSize(1).tag('kubejs:plant').texture('kubejs:item/organs/nature/crimson_rib').tag('kubejs:bone')
 })

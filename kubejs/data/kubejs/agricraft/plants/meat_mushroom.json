@@ -31,17 +31,17 @@
         "soil_acidity": {
             "type": "equal",
             "tolerance_factor": 0.2,
-            "value": "neutral"
+            "value": "slightly_alkaline"
         },
         "soil_humidity": {
             "type": "equal",
             "tolerance_factor": 0.15,
-            "value": "watery"
+            "value": "wet"
         },
         "soil_nutrients": {
             "type": "equal_or_higher",
             "tolerance_factor": 0.1,
-            "value": "high"
+            "value": "very_high"
         }
     },
     "seeds": [],

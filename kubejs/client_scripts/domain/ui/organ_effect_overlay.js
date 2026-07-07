@@ -74,7 +74,6 @@ function updateOrganEffectOverlay(effects) {
     }
     overlayHasEffects = true
     applyPanelVisibility()
-    // Screen 打开时不更新子元素，避免 innerText 在容器 UI 层渲染
     if (screenOpen) return
     updateOrganEffectSlots(effects)
 }

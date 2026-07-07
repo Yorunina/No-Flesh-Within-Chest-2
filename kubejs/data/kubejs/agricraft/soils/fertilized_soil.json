@@ -1,0 +1,12 @@
+{
+  "acidity": "neutral",
+  "growth_modifier": 3,
+  "humidity": "wet",
+  "mods": [],
+  "nutrients": "very_high",
+  "variants": [
+    {
+      "block": "farm_and_charm:fertilized_farmland"
+    }
+  ]
+}

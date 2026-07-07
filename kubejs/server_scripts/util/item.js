@@ -43,15 +43,15 @@ function GetLootTable(lootId) {
  */
 function SpawnLootAtLocation(level, blockPos, lootList) {
     /**@type {Internal.ItemStack[][]} */
-    let itemChunks = SliceChunkArray(lootList, 3)
-    let tickCounter = 5
+    let itemChunks = SliceChunkArray(lootList, 10)
+    let tickCounter = 3
     itemChunks.forEach(itemChunk => {
         level.server.scheduleInTicks(tickCounter, callback => {
             itemChunk.forEach(item => {
                 $Containers.dropItemStack(level, blockPos.x, blockPos.y, blockPos.z, item.copy())
             })
         })
-        tickCounter = tickCounter + 10
+        tickCounter = tickCounter + 3
     })
 }
 

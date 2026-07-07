@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Ingredient.of('#kubejs:heart'), Item.of('biomancy:healing_additive'), Item.of('minecraft:enchanted_golden_apple'), Item.of('biomancy:flesh_bits', 4)], Item.of('kubejs:heart_of_mercy'), 'biomancy:organ', 100)
     event.recipes.biomancy.bio_forging([Ingredient.of('#kubejs:heart'), Item.of('biomancy:ageing_serum'), Item.of('biomancy:fibrous_flesh')], Item.of('kubejs:malignant_cavity_flesh'), 'biomancy:organ', 30)
+    event.recipes.biomancy.bio_forging([Ingredient.of('#kubejs:bone'), Item.of('minecraft:crimson_fungus'), Item.of('biomancy:regenerative_fluid')], Item.of('kubejs:crimson_rib'), 'biomancy:organ', 30)
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:tough_fibers', 1)], Item.of('kubejs:empty_inducer_serum'), 'biomancy:components', 5)
 })

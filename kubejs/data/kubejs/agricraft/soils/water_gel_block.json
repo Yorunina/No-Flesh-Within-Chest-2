@@ -1,0 +1,12 @@
+{
+  "acidity": "neutral",
+  "growth_modifier": 1,
+  "humidity": "flooded",
+  "mods": [],
+  "nutrients": "medium",
+  "variants": [
+    {
+      "block": "biomancy:water_gel_block"
+    }
+  ]
+}

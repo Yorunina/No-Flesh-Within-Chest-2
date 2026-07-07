@@ -248,3 +248,25 @@ const PheromoneConfigHover = Text.translatable('tooltips.kubejs.hover.pheromone_
         Text.translatable('tooltips.kubejs.hover.pheromone_config.3'),
         Text.translatable('tooltips.kubejs.hover.pheromone_config.4'),
     ]))
+
+const PrimitivePlantHover = Text.translatable('tooltips.kubejs.hover.primitive_plant.0').red().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.primitive_plant.0').red(),
+        Text.translatable('tooltips.kubejs.hover.primitive_plant.1'),
+        Text.translatable('tooltips.kubejs.hover.primitive_plant.2'),
+    ]))
+
+const PressurizedArmFluidConfigHover = Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.0').red().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.0').red(),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.1'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.2'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.3'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.4'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.5'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.6'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.7'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.8'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.9'),
+        Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.10'),
+    ]))

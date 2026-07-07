@@ -8,15 +8,15 @@
         {
             "chance": 1.0,
             "item": "biomancy:tough_fibers",
-            "max": 8,
-            "min": 2,
+            "max": 4,
+            "min": 1,
             "required": true
         },
         {
             "chance": 1.0,
             "item": "biomancy:elastic_fibers",
-            "max": 4,
-            "min": 1,
+            "max": 8,
+            "min": 2,
             "required": true
         }
     ],
@@ -31,17 +31,17 @@
         "soil_acidity": {
             "type": "equal",
             "tolerance_factor": 0.2,
-            "value": "neutral"
+            "value": "slightly_acidic"
         },
         "soil_humidity": {
             "type": "equal",
             "tolerance_factor": 0.15,
-            "value": "watery"
+            "value": "wet"
         },
         "soil_nutrients": {
             "type": "equal_or_higher",
             "tolerance_factor": 0.1,
-            "value": "high"
+            "value": "very_low"
         }
     },
     "seeds": [],

@@ -30,7 +30,7 @@
     "requirement": {
         "light_tolerance_factor": 0.5,
         "max_light": 16,
-        "min_light": 10,
+        "min_light": 4,
         "seasons": [
             "spring",
             "autumn"
@@ -42,13 +42,13 @@
         },
         "soil_humidity": {
             "type": "equal",
-            "tolerance_factor": 0.15,
-            "value": "watery"
+            "tolerance_factor": 0.2,
+            "value": "arid"
         },
         "soil_nutrients": {
             "type": "equal_or_higher",
             "tolerance_factor": 0.1,
-            "value": "high"
+            "value": "none"
         }
     },
     "seeds": [],

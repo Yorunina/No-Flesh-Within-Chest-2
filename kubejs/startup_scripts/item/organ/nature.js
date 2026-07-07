@@ -166,10 +166,11 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:insect_intestine').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_intestine').tag('kubejs:intestine')
     event.create('kubejs:insect_lung').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_lung').tag('kubejs:lung')
     event.create('kubejs:insect_muscle').food(food => food.hunger(1).saturation(0.5).effect('minecraft:nausea', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/insect_muscle').tag('kubejs:muscle')
-
     event.create('kubejs:gills').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/gills').tag('kubejs:lung')
 
-    event.create('kubejs:chop_rib').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/chop_rib').tag('kubejs:bone')
+    event.create('kubejs:chop_rib').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/chop_rib').tag('kubejs:bone')
+    event.create('kubejs:twinkle_rib').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/twinkle_rib').tag('kubejs:bone')
+    event.create('kubejs:rocky_kidney').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/rocky_kidney').tag('kubejs:kidney')
 
     event.create('kubejs:explosion_bag').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {

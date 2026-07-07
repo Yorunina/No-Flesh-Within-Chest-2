@@ -505,16 +505,6 @@
 			y: 14.0d
 		}
 		{
-			id: "4C9DB9A20787330C"
-			tasks: [{
-				id: "0809086C38E0D435"
-				item: "kubejs:transdimensional_mechanized_injection"
-				type: "item"
-			}]
-			x: 12.5d
-			y: 8.0d
-		}
-		{
 			dependencies: ["6C33052572100482"]
 			description: [
 				"由于压缩空间大小有限，部分产线无法在一个压缩空间中完成，此时您可能会尝试使用压缩空间中&6套娃压缩空间&r的方式来解决空间危机——但实际上还有一个更好的方式。"
@@ -581,6 +571,39 @@
 			}]
 			x: 5.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["0A26BCE55EC7C58F"]
+			description: [
+				"为了让压缩空间内存放的机械能够在玩家不在的时候正常运行，您需要使其所在的区块&6维持加载&r状态。"
+				""
+				"最简单的方法便是您通过&6FTB Chunk声明区块&r进行强加载——亦或是使用&6区块加载器&r，来保证一定范围的空间持续加载。"
+				""
+				"但不管怎么样，请您在&7搭建完成压缩空间内部产线后一定要检查是否进行了加载&r！否则可能会出现排查不出产线问题但实际无产出的尴尬局面。"
+			]
+			icon: "create_power_loader:brass_chunk_loader"
+			id: "154BC9A8506406D5"
+			rewards: [
+				{
+					id: "7512EA74CDD874C1"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "66FAA1EFBFBD15AE"
+					item: "create_power_loader:brass_chunk_loader"
+					type: "item"
+				}
+			]
+			subtitle: "永恒运行符"
+			tasks: [{
+				id: "7E4BB5F45D5ADFB4"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "加载压缩空间"
+			x: 0.0d
+			y: 10.0d
 		}
 	]
 	title: "传闻：超维工厂"

@@ -360,3 +360,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:chop_rib')
     .addAlt(Text.translatable('tooltips.kubejs.chop_rib.alt.1'))
     .addAlt(Text.translatable('tooltips.kubejs.chop_rib.alt.2'))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:rocky_kidney')
+    .addDefault(Text.translatable('tooltips.kubejs.rocky_kidney.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.rocky_kidney.alt.1'))
+)

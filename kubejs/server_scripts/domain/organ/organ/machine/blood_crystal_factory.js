@@ -46,6 +46,7 @@ function BloodCrystalFactoryEntityTick(customData, event, organItem, organIndex,
     let targetRelativePos = invTypeData.getRelativeSlotDefinition(curRelativePos.getX(), curRelativePos.getY() - TransdimensionalMechanizedRelativeYSlot)
     if (!targetRelativePos) return
     let compressBlockItem = ccInv.getStackInSlot(targetRelativePos.getId())
+    if (!compressBlockItem) return
     let roomOpt = CompactMachineUtil.getRoomFromItem(compressBlockItem)
     if (!roomOpt || roomOpt.isEmpty()) return
     const room = roomOpt.get()

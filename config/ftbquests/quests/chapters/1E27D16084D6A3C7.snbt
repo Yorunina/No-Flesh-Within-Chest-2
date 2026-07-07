@@ -37,6 +37,13 @@
 		}
 		{
 			dependencies: ["25E0023B9DF54C2C"]
+			description: [
+				"为了能够让种子种植到作物架上，您需要将种子放入种子分析仪进行鉴定，转化为特殊的&6可培育种子&r。"
+				""
+				"可培育种子具有多个特殊属性，且这些属性存在显性、隐形基因，在杂交时，会&6遵循分离定律&r培育出对应的子代。"
+				""
+				"具体属性的作用，我已经将其打印成&6农业日志&r分发给您，请您有空阅读。"
+			]
 			id: "73AC29CE33479E8A"
 			rewards: [
 				{
@@ -50,12 +57,264 @@
 					type: "item"
 				}
 			]
+			subtitle: "种子转化"
 			tasks: [{
 				id: "4EFDE2675BE92EDC"
 				item: "agricraft:seed_analyzer"
 				type: "item"
 			}]
+			title: "种子分析"
 			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73AC29CE33479E8A"]
+			description: [
+				"除了常见的作物外，在世界上还隐藏有各种各样的特殊作物——这些作物绝大部分需要杂交获得，小部分则可以通过在世界中探索战利品获得。"
+				""
+				"装备&6绯红肋&r后，打开世界中的战利品箱，概率会获得&c远古作物&r种子。"
+				""
+				"远古作物本身如果用于种植，可以生产不同的血肉材料，但其更重要的便是用于更多种子的杂交。"
+			]
+			id: "16BC90547AAC6998"
+			rewards: [{
+				id: "474A2CB90C93C7DB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "追寻原初的呼唤"
+			tasks: [{
+				id: "770FBC2EF42161D4"
+				item: {
+					Count: 1
+					id: "kubejs:crimson_rib"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["73AC29CE33479E8A"]
+			description: [
+				"相比于常规作物，在作物架上种植的特殊作物有着各异的生长要求——一般来说，这些生长条件都与其所能生长的&6土壤种类&r相关。"
+				""
+				"举例而言，&6稻米&r由于需求漫灌及以上的土壤水分要求，因此在其&6抗性为1&r时（种子的最初状态），&6仅能够种植在水凝胶上&r。"
+				""
+				"但随着杂交使其抗性提升，在&6抗性达到5&r时，&6稻米便可以种植在黏土上&r——这些信息您都可以通过对作物种子&6使用JEI预览&r到。"
+				""
+				"因此，土壤的选择虽然重要，但仍可以通过作物本身的培养来克服这些困难。"
+			]
+			id: "1CD0E619EF33D8D5"
+			rewards: [{
+				id: "3F807546179395AD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "选择合适的土壤"
+			tasks: [{
+				id: "1AF4FDC7D2BDDEAF"
+				item: "agricraft:magnifying_glass"
+				type: "item"
+			}]
+			title: "选择土壤"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16BC90547AAC6998"]
+			description: ["血髓根棘作为&c远古作物&r，种植其本身可以收获大量的&6弹性纤维&r和&6强韧纤维&r。"]
+			id: "6AD85F273DB040D5"
+			rewards: [{
+				id: "19D68846FEB587A4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古作物之一"
+			tasks: [{
+				id: "0E4E961AD30023CD"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:blood_marrow_root_spine"
+								rec: "kubejs:blood_marrow_root_spine"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["16BC90547AAC6998"]
+			description: ["肉孢蕈作为&c远古作物&r，种植其本身可以收获大量的&6小块肉&r和&6鲜活血肉&r。"]
+			id: "24B11A69FBE77570"
+			rewards: [{
+				id: "594F749CEDFB3E9D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古作物之一"
+			tasks: [{
+				id: "1C8A3886E1623FB1"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:meat_mushroom"
+								rec: "kubejs:meat_mushroom"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["16BC90547AAC6998"]
+			description: ["软骨丝草作为&c远古作物&r，种植其本身可以收获大量的&6骨头碎片&r、&6矿物碎块&r和&6宝石碎块&r。"]
+			id: "36C5778B61447524"
+			rewards: [{
+				id: "229B17C49ED2DE50"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古作物之一"
+			tasks: [{
+				id: "22561460892D26D2"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:softstem_grass"
+								rec: "kubejs:softstem_grass"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1CD0E619EF33D8D5"]
+			description: [
+				"可能您已经注意到了，如果在一个&6已经放置有作物架的方块上再次使用作物架右键&r，会使其变为一种十字交叉的特殊形态——这即是杂交架。"
+				""
+				"在杂交架两侧若放置有已经种植了作物的杂交架，则在两侧作物生长完成后，概率在杂交架所在位置产生杂交后代。"
+				""
+				"杂交存在三种可能的情况，分别是&6突变杂交&r（杂交后变为新植物）、&6数值杂交&r（杂交不修改植物类型但修改数值）和&6繁衍&r（出现与父代种类完全相同的杂交结果）。"
+				""
+				"为了获得新的作物，您需要尽可能进行突变杂交，这需要您将两侧的父代设置为符合杂交要求的父代。"
+				""
+				"为了提高现有作物的属性，您需要尽可能的进行数值杂交，这需要您将两侧父代设置为同一植物或不会发生突变的植物。"
+			]
+			id: "4D793403C8FAA94E"
+			rewards: [{
+				id: "0F28ACE24CEC3DD4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "如何进行杂交"
+			tasks: [{
+				id: "32ECA9D437D8B7ED"
+				item: {
+					Count: 1
+					id: "agricraft:trowel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "杂交工艺"
+			x: 4.0d
 			y: 2.0d
 		}
 	]
