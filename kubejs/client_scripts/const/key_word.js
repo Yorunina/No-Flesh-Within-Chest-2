@@ -116,6 +116,13 @@ const TransdimnesionalMechanizedTypeHover = Text.translatable('tooltips.kubejs.h
         Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.2'),
     ]))
 
+const RelicAwakeningTypeHover = Text.translatable('tooltips.kubejs.hover.relic_awakening_type.0').lightPurple().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.relic_awakening_type.0').lightPurple(),
+        Text.translatable('tooltips.kubejs.hover.relic_awakening_type.1'),
+        Text.translatable('tooltips.kubejs.hover.relic_awakening_type.2'),
+    ]))
+
 const PlantTypeHover = Text.translatable('tooltips.kubejs.hover.plant_type.0').green().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.plant_type.0').green(),

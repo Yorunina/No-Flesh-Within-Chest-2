@@ -7,4 +7,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:dimensional_worm').texture('kubejs:item/materials/dimensional_worm').maxStackSize(1)
     event.create('kubejs:rainbow_compound').texture('kubejs:item/materials/rainbow_compound').maxStackSize(64)
     event.create('kubejs:blood_crystal').texture('kubejs:item/materials/blood_crystal').maxStackSize(64)
+
+    event.create('kubejs:relic_paper').texture('kubejs:item/materials/relic_paper').maxStackSize(64)
+    event.create('kubejs:relic_metal').texture('kubejs:item/materials/relic_metal').maxStackSize(64)
+    event.create('kubejs:relic_gem').texture('kubejs:item/materials/relic_gem').maxStackSize(64)
 })

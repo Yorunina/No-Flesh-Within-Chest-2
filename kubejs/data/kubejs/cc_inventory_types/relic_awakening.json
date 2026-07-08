@@ -1,0 +1,26 @@
+{
+    "slotDefinitions": [
+        {"x": 87, "y": 49, "type": "awake_relic_slot"},
+        {"x": 105, "y": 49, "type": "awake_relic_slot"},
+        {"x": 123, "y": 49, "type": "awake_relic_slot"}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/relic_awakening.png",
+    "playerInventoryPosition": {
+        "x": 7,
+        "y": 41
+    },
+    "titlePosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    },
+    "backgroundSize": {
+        "x": 187,
+        "y": 211
+    },
+    "inventoryLabelPosition": {
+        "x": 0,
+        "y": 0,
+        "hide": true
+    }
+}
