@@ -58,3 +58,4 @@ const $DeployerFakePlayer = Java.loadClass('com.simibubi.create.content.kinetics
 const $BaseSelectorItem = Java.loadClass('net.yorunina.maa.items.BaseSelectorItem')
 
 const $PotionBrewing = Java.loadClass('net.minecraft.world.item.alchemy.PotionBrewing')
+const $CropBlockEntity = Java.loadClass('com.agricraft.agricraft.common.block.entity.CropBlockEntity')

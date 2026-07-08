@@ -67,7 +67,6 @@ function PressurizedArmTakeOff(customData, event, organItem, organIndex, slotTyp
     if (entity instanceof $ServerPlayer) RemoveOrganEffect(chestCavity, 'kubejs:pressurized_arm')
 }
 
-
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.LivingHurtEvent} event 

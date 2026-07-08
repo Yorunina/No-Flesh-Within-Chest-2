@@ -605,6 +605,34 @@
 			x: 0.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["0B6DD0B62C0B5118"]
+			description: [
+				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				""
+				"&6加压机械臂&r便是其一——在主动使用该器官时，会消耗可用的&6加压流体&r，&6强化下一次攻击威力&r。"
+				""
+				"由于其流体消耗过于巨大，正常在胸腔内进行使用几乎是不可能的——但借由超维胸腔，流体交互可以借由压缩空间完成。"
+			]
+			id: "60A2344C1CA7858A"
+			rewards: [{
+				id: "6E0B5CFAD55D39B5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维工厂实战课题之一"
+			tasks: [{
+				id: "281D1D58A001D3B1"
+				item: {
+					Count: 1
+					id: "kubejs:pressurized_arm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 16.0d
+		}
 	]
 	title: "传闻：超维工厂"
 }

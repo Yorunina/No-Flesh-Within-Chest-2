@@ -97,7 +97,7 @@
          */
         "resistance_max": 10,
         // Set to true to hide the Resistance stat (hidden stats will not show up in tooltips or seed analysis). Setting min and max equal and hiding a stat effectively disables it, with its behaviour at the defined value for min and max.
-        "resistance_hidden": false,
+        "resistance_hidden": true,
         /*
          * Minimum allowed value of the Fertility stat (setting min and max equal will freeze the stat to that value in crop breeding)
          * Range: 1 - 10

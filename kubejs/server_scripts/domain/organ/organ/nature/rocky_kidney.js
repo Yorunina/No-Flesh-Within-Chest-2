@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:rocky_kidney')
     .addScore('chestcavity:filtration', 1)
     .addScore('chestcavity:detoxification', 0.5)
-
+// todo 添加获取方式
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.EvaluateChestCavityJS} event

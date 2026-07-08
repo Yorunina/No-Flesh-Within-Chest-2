@@ -1,0 +1,12 @@
+{
+  "acidity": "neutral",
+  "growth_modifier": 100,
+  "humidity": "damp",
+  "mods": [],
+  "nutrients": "medium",
+  "variants": [
+    {
+      "block": "kubejs:infinity_soil"
+    }
+  ]
+}

@@ -100,9 +100,9 @@
 			description: [
 				"相比于常规作物，在作物架上种植的特殊作物有着各异的生长要求——一般来说，这些生长条件都与其所能生长的&6土壤种类&r相关。"
 				""
-				"举例而言，&6稻米&r由于需求漫灌及以上的土壤水分要求，因此在其&6抗性为1&r时（种子的最初状态），&6仅能够种植在水凝胶上&r。"
+				"举例而言，&6稻米&r由于需求漫灌及以上的土壤水分要求，因此在其&6适应为1&r时（种子的最初状态），&6仅能够种植在水凝胶上&r。"
 				""
-				"但随着杂交使其抗性提升，在&6抗性达到5&r时，&6稻米便可以种植在黏土上&r——这些信息您都可以通过对作物种子&6使用JEI预览&r到。"
+				"但随着杂交使其抗性提升，在&6适应达到5&r时，&6稻米便可以种植在黏土上&r——这些信息您都可以通过对作物种子&6使用JEI预览&r到。"
 				""
 				"因此，土壤的选择虽然重要，但仍可以通过作物本身的培养来克服这些困难。"
 			]
@@ -316,6 +316,173 @@
 			title: "杂交工艺"
 			x: 4.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["4D793403C8FAA94E"]
+			description: [
+				"收获属性能够提高作物掉落产物的数量——具体而言，随着收获属性的增加，能够进行更多次的战利品随机。"
+				""
+				"每有 3 点收获属性，&6在收获作物时会进行一次额外的战利品随机&r。在计算最终实际奖励时，会从所有的战利品随机结果中，&6选取随机到数量最多的结果作为实际收获数量&r。"
+				""
+				"因此，理论来说，&6只要有 9 点的收获属性，就可以获得到最大的收获收益。&r"
+			]
+			id: "3269D57BA3493FA9"
+			rewards: [{
+				id: "50EAE0DBD145DF09"
+				item: "kubejs:infinity_soil"
+				type: "item"
+			}]
+			subtitle: "通往植物大师之路"
+			tasks: [{
+				icon: "minecraft:wheat_seeds"
+				id: "5F2F336B6B26CA1E"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_tier:[gain,10]"
+					}
+				}
+				title: "收获属性为10的任意种子"
+				type: "item"
+			}]
+			title: "杂交之路 - 收获"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4D793403C8FAA94E"]
+			description: ["生长属性定义了&6作物在执行生长刻时进阶到下一阶段的概率&r——这可以通俗理解为，生长属性越高，作物的生长速度越快。"]
+			id: "6AEA1A1CA22ABAA1"
+			rewards: [{
+				id: "06F4F37D473ECB55"
+				item: "kubejs:infinity_soil"
+				type: "item"
+			}]
+			subtitle: "通往植物大师之路"
+			tasks: [{
+				icon: "minecraft:wheat_seeds"
+				id: "28B823944F73E641"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_tier:[growth,10]"
+					}
+				}
+				title: "生长属性为10的任意种子"
+				type: "item"
+			}]
+			title: "杂交之路 - 生长"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D793403C8FAA94E"]
+			description: [
+				"突变属性决定了属性的进化倾向，在杂交发生时，&6突变属性越高，则属性更倾向于正面突变&r。"
+				""
+				"举例来说，在突变为 1 时，有30%左右的概率产生正向突变，45%概率不突变，25%发生负向突变。"
+				""
+				"而在突变为 5 时，有56%的概率正向突变，25%不突变，19%负向。"
+				""
+				"&6突变为 10 时，则100%会产生正向突变。&r"
+			]
+			id: "53A3B635F7A567C6"
+			rewards: [{
+				id: "33CC6A16D4D8A1ED"
+				item: "kubejs:infinity_soil"
+				type: "item"
+			}]
+			subtitle: "通往植物大师之路"
+			tasks: [{
+				icon: "minecraft:wheat_seeds"
+				id: "027955C6866A21B9"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_tier:[mutativity,10]"
+					}
+				}
+				title: "突变属性为10的任意种子"
+				type: "item"
+			}]
+			title: "杂交之路 - 突变"
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4D793403C8FAA94E"]
+			description: [
+				"繁衍属性的本质是&6繁衍竞争力&r——它不影响作物自身的生长速度或产量，而是影响作物在杂交繁衍系统中被选为亲本的概率，其主要遵循下两条规则："
+				""
+				"&6排序优先：&r繁衍高的作物在杂交基因候选列表中排在前面，更可能被选为杂交亲本。"
+				""
+				"&6概率筛选：&r繁衍值直接决定通过杂交筛选的概率，值越高越容易成为候选。"
+				""
+				"&6繁衍越高，在交叉作物架的杂交过程中，它更有机会把自己的基因传给下一代。&r"
+			]
+			id: "196867677EBA8420"
+			rewards: [{
+				id: "1990A52C20C6C966"
+				item: "kubejs:infinity_soil"
+				type: "item"
+			}]
+			subtitle: "通往植物大师之路"
+			tasks: [{
+				icon: "minecraft:wheat_seeds"
+				id: "40F16B68858925D4"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_tier:[fertility,10]"
+					}
+				}
+				title: "繁衍属性为10的任意种子"
+				type: "item"
+			}]
+			title: "杂交之路 - 繁衍"
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4D793403C8FAA94E"]
+			description: [
+				"适应指的是作物对整体环境的适应能力。"
+				""
+				"&6在适应增长时，会根据作物本身的属性，对作物的生长条件放宽。&r"
+				""
+				"举例而言，作物的湿度、酸度、养分要求，会随着适应属性的提升而放宽要求。"
+				""
+				"对于光照、方块需求、生物群系需求、维度需求、季节需求在达到指定的适应标准时便会被忽略。"
+				""
+				"因此，&6将作物培育出较高的适应属性有助于使用生长系数更高的土壤以加快产出。&r"
+			]
+			id: "439C4B6E25626CE7"
+			rewards: [{
+				id: "7473F5A94B67B990"
+				item: "kubejs:infinity_soil"
+				type: "item"
+			}]
+			subtitle: "通往植物大师之路"
+			tasks: [{
+				icon: "minecraft:wheat_seeds"
+				id: "54544C56D65BA7C6"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_tier:[strength,10]"
+					}
+				}
+				title: "适应属性为10的任意种子"
+				type: "item"
+			}]
+			title: "杂交之路 - 适应"
+			x: 8.0d
+			y: 5.0d
 		}
 	]
 	title: "传闻：血肉孢子"

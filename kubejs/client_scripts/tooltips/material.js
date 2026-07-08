@@ -143,3 +143,12 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:blood_crystal')
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:rainbow_compound')
     .addDefault(Text.translatable('tooltips.kubejs.rainbow_compound.default.1').gray())
 )
+
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:infinity_soil')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.infinity_soil.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.infinity_soil.shift.1'))
+    .addShift(Text.translatable('tooltips.kubejs.infinity_soil.shift.2'))
+)
