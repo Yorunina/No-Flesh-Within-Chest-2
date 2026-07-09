@@ -627,6 +627,17 @@
         "value": 1024
       }
     },
+    "block_factorys_bosses:roll_count": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 9,
+        "value": 9
+      }
+    },
     "attributeslib:overheal": {
       "enabled": false,
       "min": {

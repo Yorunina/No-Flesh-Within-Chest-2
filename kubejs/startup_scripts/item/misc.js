@@ -11,4 +11,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:relic_paper').texture('kubejs:item/materials/relic_paper').maxStackSize(64)
     event.create('kubejs:relic_metal').texture('kubejs:item/materials/relic_metal').maxStackSize(64)
     event.create('kubejs:relic_gem').texture('kubejs:item/materials/relic_gem').maxStackSize(64)
+    event.create('kubejs:relic_scroll').texture('kubejs:item/materials/relic_scroll').maxStackSize(64)
 })

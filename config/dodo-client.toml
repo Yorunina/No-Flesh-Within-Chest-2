@@ -1,0 +1,7 @@
+
+[Etc]
+	#ScreenShake(on/off)
+	"ScreenShake(on/off)" = true
+	#CustomBossBar(on/off)
+	"CustomBossBar(on/off)" = true
+

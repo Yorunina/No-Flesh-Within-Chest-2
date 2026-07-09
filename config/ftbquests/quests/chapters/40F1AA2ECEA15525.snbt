@@ -1,0 +1,151 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "40F1AA2ECEA15525"
+	group: "0B365C36A50478AA"
+	icon: {
+		Count: 1
+		id: "kubejs:twinkle_rib"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "40F1AA2ECEA15525"
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["56C104161CB63D9C"]
+			description: [
+				"在制作肋骨牙刃时，我便发现了存在另一特殊肋骨——其名称叫作&6闪耀肋骨&r。"
+				""
+				"闪耀肋骨的基本效果为在开启战利品箱时，会随机复制其中的一个战利品并且插入到当前战利品箱中，且&6这个效果可以叠加&r。"
+				""
+				"但除该效果之外，另一个效果也非常引人深思——即特殊的战利品表和特殊的遗物战利品。"
+				""
+				"因此，我针对该内容进行了深挖，请允许我指引您寻找这些早已被遗忘的&6闪耀过往&r。"
+			]
+			id: "2EA410FBC8182C1E"
+			rewards: [{
+				id: "39B2407F8C974BDF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "复制战利品"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "kubejs:twinkle_rib"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6A916C6B22BE26E6"
+				item: {
+					Count: 1
+					id: "kubejs:twinkle_rib"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "闪耀于现世的过往"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EA410FBC8182C1E"]
+			description: [
+				"其描述的特殊战利品表之一即为&6村庄战利品表&r。"
+				""
+				"在村庄战利品表的箱子探索时，有&610%&r的概率会产出&6遗物纸张&r。"
+			]
+			id: "305ACD49FA86FBBF"
+			rewards: [{
+				id: "44F4FAE5CD4D2213"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古的第一份记忆"
+			tasks: [{
+				id: "701445890C095A68"
+				item: "kubejs:relic_paper"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2EA410FBC8182C1E"]
+			description: [
+				"其描述的特殊战利品表之一即为&6墓园战利品表&r。"
+				""
+				"在墓园战利品表的箱子探索时，有&620%&r的概率会产出&6遗物金属&r。"
+			]
+			id: "3B26637D669DE1B5"
+			rewards: [{
+				id: "21DF2FD246CD32E9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古的第二份记忆"
+			tasks: [{
+				id: "017754F25B4E096B"
+				item: "kubejs:relic_metal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2EA410FBC8182C1E"]
+			description: [
+				"其描述的特殊战利品表之一即为&6埋藏的宝藏战利品表&r。"
+				""
+				"在埋藏的宝藏战利品表的箱子探索时，&6必然&r会产出&6遗物宝石&r。"
+			]
+			id: "572CF91CDDDB8DC8"
+			rewards: [{
+				id: "6E2211D719E2EDCA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古的第三份记忆"
+			tasks: [{
+				id: "12681FCB1DFD4915"
+				item: "kubejs:relic_gem"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"305ACD49FA86FBBF"
+				"3B26637D669DE1B5"
+				"572CF91CDDDB8DC8"
+			]
+			description: [
+				"通过遗物纸张、遗物金属和遗物宝石，可以制成&6遗物卷轴&r。"
+				""
+				"遗物卷轴可以用于唤醒遗物器官持有者远古的能力——使用该物品&6右键交互对应的生物&r，会&6大幅提升对方的战斗力&r，不过在其死亡后，会&6掉落特殊的遗物器官战利品&r。"
+			]
+			id: "1A23554F0563EDB6"
+			rewards: [{
+				id: "31838CFAE956E9C9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "记载远古的第一秒流逝"
+			tasks: [{
+				id: "33BD28E3AA7FBFC8"
+				item: "kubejs:relic_scroll"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+	]
+	title: "传闻：遗物觉醒"
+}

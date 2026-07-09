@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
         ['', '#forge:leather', ''],
         ['', '#kubejs:stomach', '']
     ])
-    
+
     event.remove({ id: 'toms_storage:storage_terminal' })
     event.shaped(Item.of('toms_storage:ts.storage_terminal'), [
         ['#minecraft:planks', '#forge:ingots/iron', '#minecraft:planks'],
@@ -133,5 +133,11 @@ ServerEvents.recipes(event => {
         ['#forge:obsidian', '#forge:obsidian', '#forge:obsidian'],
         ['#forge:obsidian', 'minecraft:ender_eye', '#forge:obsidian'],
         ['#forge:obsidian', '#forge:obsidian', '#forge:obsidian']
+    ])
+
+    event.shaped(Item.of('kubejs:relic_scroll', 3), [
+        ['', 'kubejs:relic_paper', 'kubejs:relic_metal'],
+        ['kubejs:relic_paper', 'kubejs:relic_gem', 'kubejs:relic_paper'],
+        ['kubejs:relic_metal', 'kubejs:relic_paper', '']
     ])
 })

@@ -1,0 +1,44 @@
+
+["Boss bars"]
+	#Our mod has the ability to modify how the healthbars of certain bosses appear. Pick the one that suits you most.
+	#"OFF" : Disable the healthbar from rendering.
+	#"VANILLA" : All healthbars will appear vanilla.
+	#"SIMPLE" : Render the healthbar in a simple custom texture.
+	#"FANCY" : Render the healthbar in a fancy custom texture.
+	#Select the "DEFAULT" option on a boss to have the setting follow the default one.
+	#Allowed Values: OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should be used by default?" = "FANCY"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should the Warden use?" = "OFF"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should the Ender Dragon use?" = "DEFAULT"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should the Wither use?" = "DEFAULT"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should Skor, The Yeti use?" = "DEFAULT"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should Ashlord, The Infernal Dragon use?" = "DEFAULT"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should Sirok, The Sandworm use?" = "DEFAULT"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should Helvar, the Underworld Knight use?" = "DEFAULT"
+	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
+	"What kind of healthbar should Volrak, the Kraken use?" = "DEFAULT"
+
+[Rolling]
+	"Will the camera rotate when rolling while in first-person view" = false
+	"Will there be a GUI element displaying current roll count" = true
+	#GUI anchors are preset locations for the rolling GUI visual to appear. Pick the one that suits you most.
+	#"HOTBAR_RIGHT" : At the immediate right of your hotbar.
+	#"HOTBAR_LEFT" : At the immediate left of your hotbar.
+	#"TOP_LEFT" : In the top left corner of your screen.
+	#"TOP_RIGHT" : In the top right corner of your screen.
+	#"BOTTOM_LEFT" : In the bottom left corner of your screen.
+	#"BOTTOM_RIGHT" : In the bottom right corner of your screen.
+	#"SCREEN_CENTER" : At the exact middle of your screen?
+	#Allowed Values: HOTBAR_RIGHT, HOTBAR_LEFT, TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT, SCREEN_CENTER
+	"The GUI anchor will be" = "HOTBAR_RIGHT"
+	#You can also additionally offset the GUI element with the use of the X and Y offset values.
+	"Roll GUI element X offset (Bigger number goes right, negative goes left)" = 0
+	"Roll GUI element Y offset (Bigger number goes down, negative goes up)" = 0
+

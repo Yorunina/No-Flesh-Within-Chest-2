@@ -76,6 +76,8 @@ const OrganTagMap = {
     'kubejs:entity_fall': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_fall')),
     'kubejs:shield_block_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block_only')),
     'kubejs:shield_block': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block')),
+    'kubejs:player_roll_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_roll_only')),
+    'kubejs:player_roll': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_roll'))
     'kubejs:villager_update_special_prices_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices_only')),
     'kubejs:villager_update_special_prices': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices')),
 }
