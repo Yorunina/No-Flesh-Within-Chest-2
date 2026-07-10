@@ -45,8 +45,6 @@ const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellD
 const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal')
 const $OwnableEntity = Java.loadClass('net.minecraft.world.entity.OwnableEntity')
 
-const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
-
 const $EvaluateChestCavityJS = Java.loadClass('net.tigereye.chestcavity.compat.kubejs.events.EvaluateChestCavityJS')
 const $WineYears = Java.loadClass('net.satisfy.vinery.core.util.WineYears')
 

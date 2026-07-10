@@ -1,0 +1,6 @@
+{
+  "chance": 0.25,
+  "child": "kubejs:twistcap_fungus",
+  "parent1": "minecraft:nether_wart",
+  "parent2": "kubejs:meat_mushroom"
+}

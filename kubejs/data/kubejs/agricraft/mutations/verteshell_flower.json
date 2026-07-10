@@ -1,0 +1,6 @@
+{
+  "chance": 0.25,
+  "child": "kubejs:verteshell_flower",
+  "parent1": "kubejs:lettuce",
+  "parent2": "kubejs:softstem_grass"
+}

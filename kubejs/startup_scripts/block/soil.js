@@ -1,6 +1,6 @@
 // priority: 500
 StartupEvents.registry('block', event => {
-    event.create('kubejs:infinity_soil', 'basic')
+    event.create('kubejs:infinity_soil', 'basic').textureAll('kubejs:block/soil/infinity_soil')
         .blockEntity(ctx => {
             ctx.tick(5, 0, pCtx => {
                 const level = pCtx.level

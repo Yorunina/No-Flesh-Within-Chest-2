@@ -133,8 +133,7 @@
 			}]
 			subtitle: "远古作物之一"
 			tasks: [{
-				id: "0E4E961AD30023CD"
-				item: {
+				icon: {
 					Count: 1
 					id: "agricraft:seed"
 					tag: {
@@ -170,7 +169,16 @@
 						}
 					}
 				}
+				id: "0E4E961AD30023CD"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:blood_marrow_root_spine]"
+					}
+				}
 				match_nbt: false
+				title: "血髓根棘种子"
 				type: "item"
 			}]
 			x: -2.0d
@@ -187,8 +195,7 @@
 			}]
 			subtitle: "远古作物之一"
 			tasks: [{
-				id: "1C8A3886E1623FB1"
-				item: {
+				icon: {
 					Count: 1
 					id: "agricraft:seed"
 					tag: {
@@ -224,7 +231,16 @@
 						}
 					}
 				}
+				id: "1C8A3886E1623FB1"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:meat_mushroom]"
+					}
+				}
 				match_nbt: false
+				title: "肉孢蕈孢子"
 				type: "item"
 			}]
 			x: 0.0d
@@ -241,8 +257,7 @@
 			}]
 			subtitle: "远古作物之一"
 			tasks: [{
-				id: "22561460892D26D2"
-				item: {
+				icon: {
 					Count: 1
 					id: "agricraft:seed"
 					tag: {
@@ -278,7 +293,16 @@
 						}
 					}
 				}
+				id: "22561460892D26D2"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:softstem_grass]"
+					}
+				}
 				match_nbt: false
+				title: "软骨丝草种子"
 				type: "item"
 			}]
 			x: 2.0d
@@ -483,6 +507,798 @@
 			title: "杂交之路 - 适应"
 			x: 8.0d
 			y: 5.0d
+		}
+		{
+			description: ["法师之花种子则是来源于附魔装置——&6任意的种子和魔源宝石合成&r便可以获得法师之花种子。"]
+			id: "0574A75B6E1E40FB"
+			rewards: [{
+				id: "22CC59BB4641790C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "以魔源之力萃取而成"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:magebloom"
+								rec: "kubejs:magebloom"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "1F6D6CB5FB591233"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:magebloom]"
+					}
+				}
+				title: "法师之花种子"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0574A75B6E1E40FB"
+				"36C5778B61447524"
+			]
+			id: "5207ADD4211DB1F4"
+			rewards: [{
+				id: "746776FFCEEBACD4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "奇异的课题结论！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:bilung_cherry"
+								rec: "kubejs:bilung_cherry"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "461324B85F45C3C3"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:bilung_cherry]"
+					}
+				}
+				title: "肺樱种子"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"亚麻是一种罕见的种子，偶尔您可以在野外遇到成熟的亚麻，但更多时候您会在&6掠夺者的哨塔&r中获取到它。"
+				""
+				"亚麻不仅可以用于制成绳子，其更是一种重要的&6种子油原料&r。"
+				""
+				"如果您无法获取到亚麻，也可以尝试从&6流浪商人&r处获取。"
+			]
+			id: "55EC44FEB0B7C802"
+			rewards: [{
+				id: "5FE58C839340C702"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "亚麻与亚麻籽"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:flax"
+								rec: "kubejs:flax"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "64FCABCCAB855086"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:flax]"
+					}
+				}
+				title: "亚麻种子"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"55EC44FEB0B7C802"
+				"6AD85F273DB040D5"
+			]
+			description: [
+				"亚麻和血髓根棘进行杂交时，概率会产生一个极其特殊的结果——&6灵笼果&r！"
+				""
+				"灵笼果是一种非生产型作物，其可能的产出结果为&6木灵灵质&r或&6灯笼胃&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+				""
+				"&6木灵灵质&r对后续作物的增产帮助极大，建议您尽早获取。"
+			]
+			id: "7CE0F6503A1688A4"
+			rewards: [{
+				id: "1022545C353AEAF6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "奇异的课题结论！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:spiritcage_fruit"
+								rec: "kubejs:spiritcage_fruit"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "623D50B23E22E6FD"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:spiritcage_fruit]"
+					}
+				}
+				title: "灵笼果种子"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			description: ["甜浆果生成于任何&6针叶林群系&r之中，您可以轻易找到它。"]
+			id: "4BFB0F2C7309CB95"
+			rewards: [{
+				id: "59B6FF26BB4D3C1C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "酸浆果种子"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "minecraft:sweet_berries"
+								rec: "minecraft:sweet_berries"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "181E2F8786A7154D"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[minecraft:sweet_berries]"
+					}
+				}
+				title: "甜浆果种子"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4BFB0F2C7309CB95"
+				"24B11A69FBE77570"
+			]
+			description: [
+				"甜浆果和肉孢蕈进行杂交时，概率会产生一个极其特殊的结果——&6梅肾蘑&r！"
+				""
+				"梅肾蘑是一种非生产型作物，其可能的产出结果为&6活肉莓果&r或&6啤酒肾&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+			]
+			id: "34D7C5AA137D9449"
+			rewards: [{
+				id: "51488E2F01E6E180"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "奇异的课题结论！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:plumkidney_mushroom"
+								rec: "kubejs:plumkidney_mushroom"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "5AE9495CC2382ED0"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:plumkidney_mushroom]"
+					}
+				}
+				title: "梅肾蘑孢子"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 8.5d
+		}
+		{
+			description: ["下界疣可以由&6下界堡垒&r中获得，作为一种常见的酿药原料，您大概率已经有所种植。"]
+			id: "1DF882CBEDBED745"
+			rewards: [{
+				id: "4A0B43DF17F72EE5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "酿药台常客"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "minecraft:nether_wart"
+								rec: "minecraft:nether_wart"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "356A226A024ADA31"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[minecraft:nether_wart]"
+					}
+				}
+				title: "下界疣孢子"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1DF882CBEDBED745"
+				"24B11A69FBE77570"
+			]
+			id: "2C1F1CF75F69653E"
+			subtitle: "奇异的课题结论！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:twistcap_fungus"
+								rec: "kubejs:twistcap_fungus"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "009C120FC641FE24"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:twistcap_fungus]"
+					}
+				}
+				title: "扭盖菌孢子"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"29E2AA7B8122ABA3"
+				"36C5778B61447524"
+			]
+			id: "3BF6D4382987C474"
+			rewards: [{
+				id: "2D346BD56F78802A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "奇异的课题结论！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:verteshell_flower"
+								rec: "kubejs:verteshell_flower"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "3681CD5921C7ED7F"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:verteshell_flower]"
+					}
+				}
+				title: "椎壳花种子"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			description: ["&6生菜种子&r可以从野外的野生生菜中获取，亦可以在穿戴草帽或缀花草帽时破坏草丛获得。"]
+			icon: {
+				Count: 1
+				id: "agricraft:seed"
+				tag: {
+					genes: {
+						fertility: {
+							dom: 1
+							rec: 1
+						}
+						gain: {
+							dom: 1
+							rec: 1
+						}
+						growth: {
+							dom: 1
+							rec: 1
+						}
+						mutativity: {
+							dom: 1
+							rec: 1
+						}
+						resistance: {
+							dom: 1
+							rec: 1
+						}
+						species: {
+							dom: "kubejs:lettuce"
+							rec: "kubejs:lettuce"
+						}
+						strength: {
+							dom: 1
+							rec: 1
+						}
+					}
+				}
+			}
+			id: "29E2AA7B8122ABA3"
+			rewards: [{
+				id: "1DDF72CBE674113D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "生菜？生菜。"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:lettuce"
+								rec: "kubejs:lettuce"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "4EB2B28DDDAB4CFB"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:lettuce]"
+					}
+				}
+				title: "生菜种子"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"6AD85F273DB040D5"
+				"5DFD68F1C3169030"
+			]
+			description: [
+				"小麦和血髓根棘进行杂交时，概率会产生一个极其特殊的结果——&6肝草&r！"
+				""
+				"肝草是一种非生产型作物，其唯一可能的产出结果为&6活肉玫瑰肝&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+			]
+			id: "4D5B0DE5C50958CB"
+			rewards: [{
+				id: "059A5723E05F8130"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "奇异的课题结论！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:livergrass"
+								rec: "kubejs:livergrass"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "6B5D1D6A700A6647"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:livergrass]"
+					}
+				}
+				title: "肝草种子"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			description: ["&6小麦种子&r作为最常见且最容易获取的种子，其大多数特性都被人们所知——除了接下来我要为您说明的这些。"]
+			id: "5DFD68F1C3169030"
+			rewards: [{
+				id: "6BED220140437766"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "最常见的种子"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "minecraft:wheat"
+								rec: "minecraft:wheat"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "126B469FBEF30924"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[minecraft:wheat]"
+					}
+				}
+				title: "小麦种子"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.5d
 		}
 	]
 	title: "传闻：血肉孢子"

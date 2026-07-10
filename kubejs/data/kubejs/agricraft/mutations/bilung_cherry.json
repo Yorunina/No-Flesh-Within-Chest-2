@@ -1,0 +1,6 @@
+{
+  "chance": 0.25,
+  "child": "kubejs:bilung_cherry",
+  "parent1": "kubejs:magebloom",
+  "parent2": "kubejs:softstem_grass"
+}

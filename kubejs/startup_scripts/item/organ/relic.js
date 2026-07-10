@@ -11,5 +11,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:scylla_star_gem').maxStackSize(1).tag('kubejs:relic').tag('kubejs:magic').texture('kubejs:item/organs/relic/scylla_star_gem').tag('kubejs:gem')
     event.create('kubejs:dying_heart').food(food => food.hunger(3).saturation(1)).maxStackSize(1).tag('kubejs:relic').tag('kubejs:magic').texture('kubejs:item/organs/relic/dying_heart')
     event.create('kubejs:wither_skull').maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/wither_skull')
-    event.create('kubejs:twinkle_rib').maxDamage(16).maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/nature/twinkle_rib').tag('kubejs:bone')
+    event.create('kubejs:twinkle_rib').maxDamage(16).maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/twinkle_rib').tag('kubejs:bone')
+    event.create('kubejs:infernal_dragon_skin').maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/infernal_dragon_skin')
 })

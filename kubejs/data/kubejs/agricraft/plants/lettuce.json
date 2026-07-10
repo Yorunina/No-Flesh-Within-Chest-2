@@ -13,7 +13,7 @@
             "required": true
         },
         {
-            "chance": 0.05,
+            "chance": 0.1,
             "item": "kaleidoscope_cookery:caterpillar",
             "max": 1,
             "min": 1,

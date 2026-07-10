@@ -1,0 +1,6 @@
+{
+  "chance": 0.25,
+  "child": "kubejs:livergrass",
+  "parent1": "minecraft:wheat",
+  "parent2": "kubejs:blood_marrow_root_spine"
+}

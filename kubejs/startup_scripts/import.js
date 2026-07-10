@@ -59,3 +59,5 @@ const $BaseSelectorItem = Java.loadClass('net.yorunina.maa.items.BaseSelectorIte
 
 const $PotionBrewing = Java.loadClass('net.minecraft.world.item.alchemy.PotionBrewing')
 const $CropBlockEntity = Java.loadClass('com.agricraft.agricraft.common.block.entity.CropBlockEntity')
+const $ImpulseCastData = Java.loadClass('io.redspace.ironsspellbooks.capabilities.magic.ImpulseCastData')
+const $SpinAttackType = Java.loadClass('io.redspace.ironsspellbooks.player.SpinAttackType')

@@ -8,8 +8,8 @@
         {
             "chance": 1.0,
             "item": "supplementaries:flax",
-            "max": 4,
-            "min": 1,
+            "max": 8,
+            "min": 2,
             "required": true
         }
     ],
