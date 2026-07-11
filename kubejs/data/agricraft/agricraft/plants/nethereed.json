@@ -1,0 +1,71 @@
+{
+  "cloneable": true,
+  "fireproof": true,
+  "growth_bonus": 0.015,
+  "growth_chance": 0.25,
+  "harvest_stage": 0,
+  "modifiers": [
+    {
+      "id": "agricraft:thorns"
+    },
+    {
+      "id": "agricraft:bushy"
+    },
+    {
+      "id": "agricraft:burn"
+    }
+  ],
+  "mods": [],
+  "products": [
+    {
+      "chance": 1,
+      "item": "agricraft:netherite_sliver",
+      "max": 4,
+      "min": 1,
+      "required": true
+    }
+  ],
+  "requirement": {
+    "block_conditions": [
+      {
+        "block": "#agricraft:ores/netherite_scrap",
+        "strength": 8
+      }
+    ],
+    "dimensions": {},
+    "fluid_condition": {},
+    "light_tolerance_factor": 0.5,
+    "max_light": 16,
+    "min_light": 10,
+    "seasons": [
+      "summer"
+    ],
+    "soil_acidity": {
+      "type": "equal",
+      "tolerance_factor": 0.2,
+      "value": "slightly_alkaline"
+    },
+    "soil_humidity": {
+      "type": "equal",
+      "tolerance_factor": 0.2,
+      "value": "dry"
+    },
+    "soil_nutrients": {
+      "type": "equal",
+      "tolerance_factor": 0.2,
+      "value": "low"
+    }
+  },
+  "seeds": [],
+  "spread_chance": 0.025,
+  "stages": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+  ]
+}

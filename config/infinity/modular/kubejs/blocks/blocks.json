@@ -1,0 +1,14 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"float": true,
+				"laggy": false,
+				"Name": "kubejs:infinity_soil",
+				"top": true,
+				"full": true
+			}
+		}
+	]
+}

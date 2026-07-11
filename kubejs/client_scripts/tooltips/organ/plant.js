@@ -17,6 +17,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:crimson_brain')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:hop_kidney')
     .addDefault(Text.translatable('tooltips.kubejs.hop_kidney.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.hop_kidney.alt.1', KeyActiveHover))
+    .addAlt(Text.translatable('tooltips.kubejs.hop_kidney.alt.2'))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:lily_pad_lung')

@@ -9,7 +9,7 @@ StartupEvents.registry('block', event => {
                 let pBlockEntity = level.getBlockEntity(targetBlockPos)
                 if (pBlockEntity instanceof $CropBlockEntity) {
                     if (pBlockEntity.canBeHarvested()) return
-                    pBlockEntity.applyGrowthTick()
+                    pBlockEntity.modpackActuallyAdditions$forceApplyGrowthTick()
                 }
             })
         })

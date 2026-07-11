@@ -1,0 +1,37 @@
+{
+  "kill_plant": false,
+  "mods": [],
+  "negative_on": [],
+  "neutral_on": [],
+  "particles": [
+    {
+      "amount": 2,
+      "delta_x": 0.6,
+      "delta_y": 0.4,
+      "delta_z": 0.6,
+      "particle": "minecraft:happy_villager",
+      "when": [
+        "positive"
+      ]
+    },
+    {
+      "amount": 2,
+      "delta_x": 0.6,
+      "delta_y": 0.4,
+      "delta_z": 0.6,
+      "particle": "minecraft:smoke",
+      "when": [
+        "negative"
+      ]
+    }
+  ],
+  "potency": 16,
+  "reduce_growth": true,
+  "trigger_mutation": true,
+  "trigger_weeds": true,
+  "variants": [
+    {
+      "item": "biomancy:fertilizer"
+    }
+  ]
+}

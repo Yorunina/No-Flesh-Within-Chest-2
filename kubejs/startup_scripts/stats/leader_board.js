@@ -22,6 +22,17 @@ LeaderboardsEvents.registryLeaderboards(event => {
 	)
 
 	event.registerByLeaderboard(
+		new ResourceLocation('maa:crops_planted'),
+		new LeaderboardFromStat(
+			new ResourceLocation('maa:crops_planted'),
+			Text.translatable('leaderboard.maa.crops_planted'),
+			MAAStats.CROPS_PLANTED_STAT,
+			false,
+			LeaderboardFromStat.DEFAULT
+		)
+	)
+
+	event.registerByLeaderboard(
 		new ResourceLocation('maa:exavate_times'),
 		new LeaderboardFromStat(
 			new ResourceLocation('maa:exavate_times'),

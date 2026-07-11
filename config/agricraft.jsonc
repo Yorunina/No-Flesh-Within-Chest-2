@@ -3,7 +3,7 @@
         // Set to false to prevent AgriCraft from enabling its mod compatibility datapacks / resourcepacks by default
         "register_packs_by_default": true,
         // Set to false to disable planting of (agricraft) seeds outside crop sticks
-        "plant_off_crop_sticks": true,
+        "plant_off_crop_sticks": false,
         // Set to false to disable collision boxes on crop sticks
         "crop_sticks_collide": false,
         // Set to true to allow only fertile plants to be able to cause, participate in, or contribute to a spreading / mutation action (note that this may cause issues with obtaining some specific plants)

@@ -1,0 +1,57 @@
+{
+  "cloneable": true,
+  "growth_bonus": 0.025,
+  "growth_chance": 0.6,
+  "harvest_stage": 4,
+  "mods": [],
+  "products": [
+    {
+      "chance": 1.0,
+      "item": "#agricraft:nuggets/iron",
+      "max": 8,
+      "min": 1,
+      "required": true
+    }
+  ],
+  "requirement": {
+    "block_conditions": [
+      {
+        "block": "#agricraft:ores/iron",
+        "strength": 4
+      }
+    ],
+    "light_tolerance_factor": 0.5,
+    "max_light": 16,
+    "min_light": 10,
+    "seasons": [
+      "spring"
+    ],
+    "soil_acidity": {
+      "type": "equal",
+      "tolerance_factor": 0.2,
+      "value": "slightly_alkaline"
+    },
+    "soil_humidity": {
+      "type": "equal",
+      "tolerance_factor": 0.2,
+      "value": "dry"
+    },
+    "soil_nutrients": {
+      "type": "equal",
+      "tolerance_factor": 0.2,
+      "value": "low"
+    }
+  },
+  "seeds": [],
+  "spread_chance": 0.1,
+  "stages": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16
+  ]
+}

@@ -125,6 +125,7 @@
 		{
 			dependencies: ["16BC90547AAC6998"]
 			description: ["血髓根棘作为&c远古作物&r，种植其本身可以收获大量的&6弹性纤维&r和&6强韧纤维&r。"]
+			hide_dependent_lines: true
 			id: "6AD85F273DB040D5"
 			rewards: [{
 				id: "19D68846FEB587A4"
@@ -187,6 +188,7 @@
 		{
 			dependencies: ["16BC90547AAC6998"]
 			description: ["肉孢蕈作为&c远古作物&r，种植其本身可以收获大量的&6小块肉&r和&6鲜活血肉&r。"]
+			hide_dependent_lines: true
 			id: "24B11A69FBE77570"
 			rewards: [{
 				id: "594F749CEDFB3E9D"
@@ -249,6 +251,7 @@
 		{
 			dependencies: ["16BC90547AAC6998"]
 			description: ["软骨丝草作为&c远古作物&r，种植其本身可以收获大量的&6骨头碎片&r、&6矿物碎块&r和&6宝石碎块&r。"]
+			hide_dependent_lines: true
 			id: "36C5778B61447524"
 			rewards: [{
 				id: "229B17C49ED2DE50"
@@ -509,7 +512,9 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["73AC29CE33479E8A"]
 			description: ["法师之花种子则是来源于附魔装置——&6任意的种子和魔源宝石合成&r便可以获得法师之花种子。"]
+			hide_dependency_lines: true
 			id: "0574A75B6E1E40FB"
 			rewards: [{
 				id: "22CC59BB4641790C"
@@ -565,8 +570,8 @@
 				title: "法师之花种子"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 5.5d
+			x: 2.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -628,10 +633,11 @@
 				title: "肺樱种子"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 7.0d
+			x: 2.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["73AC29CE33479E8A"]
 			description: [
 				"亚麻是一种罕见的种子，偶尔您可以在野外遇到成熟的亚麻，但更多时候您会在&6掠夺者的哨塔&r中获取到它。"
 				""
@@ -639,6 +645,7 @@
 				""
 				"如果您无法获取到亚麻，也可以尝试从&6流浪商人&r处获取。"
 			]
+			hide_dependency_lines: true
 			id: "55EC44FEB0B7C802"
 			rewards: [{
 				id: "5FE58C839340C702"
@@ -694,8 +701,8 @@
 				title: "亚麻种子"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.5d
+			x: -2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -764,11 +771,13 @@
 				title: "灵笼果种子"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 7.0d
+			x: -2.0d
+			y: 8.5d
 		}
 		{
+			dependencies: ["73AC29CE33479E8A"]
 			description: ["甜浆果生成于任何&6针叶林群系&r之中，您可以轻易找到它。"]
+			hide_dependency_lines: true
 			id: "4BFB0F2C7309CB95"
 			rewards: [{
 				id: "59B6FF26BB4D3C1C"
@@ -824,7 +833,7 @@
 				title: "甜浆果种子"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -0.5d
 			y: 7.0d
 		}
 		{
@@ -896,7 +905,9 @@
 			y: 8.5d
 		}
 		{
+			dependencies: ["73AC29CE33479E8A"]
 			description: ["下界疣可以由&6下界堡垒&r中获得，作为一种常见的酿药原料，您大概率已经有所种植。"]
+			hide_dependency_lines: true
 			id: "1DF882CBEDBED745"
 			rewards: [{
 				id: "4A0B43DF17F72EE5"
@@ -952,13 +963,18 @@
 				title: "下界疣孢子"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 7.0d
 		}
 		{
 			dependencies: [
 				"1DF882CBEDBED745"
 				"24B11A69FBE77570"
+			]
+			description: [
+				"下界疣和肉孢蕈进行杂交时，概率会产生一个极其特殊的结果——&6扭盖菌&r！"
+				""
+				"扭盖菌是一种非生产型作物，其可能的产出结果为&6绯红脑&r或&6扭结绯红肠&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
 			]
 			id: "2C1F1CF75F69653E"
 			subtitle: "奇异的课题结论！"
@@ -1010,13 +1026,18 @@
 				title: "扭盖菌孢子"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.0d
 			y: 8.5d
 		}
 		{
 			dependencies: [
 				"29E2AA7B8122ABA3"
 				"36C5778B61447524"
+			]
+			description: [
+				"生菜和软骨丝草进行杂交时，概率会产生一个极其特殊的结果——&6椎壳花&r！"
+				""
+				"椎壳花是一种非生产型作物，其可能的产出结果为&6膨大花蕊&r或&6巨噬花茎&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
 			]
 			id: "3BF6D4382987C474"
 			rewards: [{
@@ -1074,10 +1095,12 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 8.0d
+			y: 8.5d
 		}
 		{
+			dependencies: ["73AC29CE33479E8A"]
 			description: ["&6生菜种子&r可以从野外的野生生菜中获取，亦可以在穿戴草帽或缀花草帽时破坏草丛获得。"]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -1169,8 +1192,8 @@
 				title: "生菜种子"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 5.5d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1237,11 +1260,13 @@
 				title: "肝草种子"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 8.0d
+			x: -3.5d
+			y: 8.5d
 		}
 		{
+			dependencies: ["73AC29CE33479E8A"]
 			description: ["&6小麦种子&r作为最常见且最容易获取的种子，其大多数特性都被人们所知——除了接下来我要为您说明的这些。"]
+			hide_dependency_lines: true
 			id: "5DFD68F1C3169030"
 			rewards: [{
 				id: "6BED220140437766"
@@ -1297,8 +1322,1416 @@
 				title: "小麦种子"
 				type: "item"
 			}]
+			x: -3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"1447BEDDB07EC1E7"
+				"4BB0AC8AAF19E6DD"
+			]
+			description: [
+				"将&6朱顶绿和金刚大丽&r杂交，您便可以获得资源作物——炼狱芦苇。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植炼狱芦苇&r，且在沙砾下必须放置有&6远古残骸&r。"
+				""
+				"在炼狱芦苇的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "agricraft:netherite_sliver"
+			id: "287E5613684EAF8A"
+			rewards: [{
+				id: "60897E2BD17E4B95"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:nethereed"
+								rec: "agricraft:nethereed"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "3A061B46EE755E5C"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:nethereed]"
+					}
+				}
+				title: "炼狱芦苇种子"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62E9CB57569D552F"]
+			description: [
+				"将&6紫晶花和石英菊&r杂交，您便可以获得资源作物——朱顶绿。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植朱顶绿&r，且在沙砾下必须放置有&6绿宝石矿/深层绿宝石矿&r。"
+				""
+				"在朱顶绿的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "agricraft:emerald_shard"
+			id: "1447BEDDB07EC1E7"
+			rewards: [{
+				id: "5F7CC42DF2644610"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:emeryllis"
+								rec: "agricraft:emeryllis"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "2706B2ACF3D37490"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:emeryllis]"
+					}
+				}
+				title: "朱顶绿种子"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"09796DB8E7F508F4"
+				"55129AF3380D7FAA"
+			]
+			description: [
+				"将&6紫晶花和闪耀疣&r杂交，您便可以获得资源作物——金刚大丽。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植金刚大丽&r，且在沙砾下必须放置有&6钻石矿/深层钻石矿&r。"
+				""
+				"在金刚大丽的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "minecraft:diamond"
+			id: "4BB0AC8AAF19E6DD"
+			rewards: [{
+				id: "0BCE77B399CB648A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:diamahlia"
+								rec: "agricraft:diamahlia"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "7B574637C14BE96A"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:diamahlia]"
+					}
+				}
+				title: "金刚大丽种子"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09796DB8E7F508F4"]
+			description: [
+				"将&6红灌木和闪耀疣&r杂交，您便可以获得资源作物——石英菊。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植石英菊&r，且在沙砾下必须放置有&6下界石英矿石&r。"
+				""
+				"在石英菊的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "agricraft:quartz_shard"
+			id: "62E9CB57569D552F"
+			rewards: [{
+				id: "32D31A51CBF1C4EB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:quartzanthemum"
+								rec: "agricraft:quartzanthemum"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "49441B1A3E806152"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:quartzanthemum]"
+					}
+				}
+				title: "石英菊种子"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B4CE5D58AD3D310"]
+			description: [
+				"将&6红灌木和蓝熏衣&r杂交，您便可以获得资源作物——紫晶花。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植紫晶花&r，且在沙砾下必须放置有&6紫水晶块&r。"
+				""
+				"在紫晶花的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "agricraft:amathyllis_petal"
+			id: "55129AF3380D7FAA"
+			rewards: [{
+				id: "1AAA8284E174C2B7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:amathyllis"
+								rec: "agricraft:amathyllis"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "609B9064EF8EB83C"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:amathyllis]"
+					}
+				}
+				title: "紫晶花种子"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"33355D4849FFD6D8"
+				"556908C646C0A9F7"
+			]
+			description: [
+				"将&6金光花和下界疣&r杂交，您便可以获得资源作物——闪耀疣。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植闪耀疣&r，且在沙砾下必须放置有&6荧石&r。"
+				""
+				"在闪耀疣的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "minecraft:glowstone_dust"
+			id: "09796DB8E7F508F4"
+			rewards: [{
+				id: "5D26CDD2F106D133"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:nitor_wart"
+								rec: "agricraft:nitor_wart"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "562EBAF2B473532E"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:nitor_wart]"
+					}
+				}
+				title: "闪耀疣孢子"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0B4CE5D58AD3D310"]
+			description: [
+				"将&6铁叶草和蓝熏衣&r杂交，您便可以获得资源作物——红灌木。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植红灌木&r，且在沙砾下必须放置有&6红石矿石/深层红石矿石&r。"
+				""
+				"在红灌木的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "minecraft:gold_nugget"
+			id: "33355D4849FFD6D8"
+			rewards: [{
+				id: "43F5F0A2F82F5CB7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:aurigold"
+								rec: "agricraft:aurigold"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "408569C4FF83758D"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:aurigold]"
+					}
+				}
+				title: "金光花种子"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["349BE75979DD5489"]
+			description: [
+				"将&6铁叶草和蓝熏衣&r杂交，您便可以获得资源作物——红灌木。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植红灌木&r，且在沙砾下必须放置有&6红石矿石/深层红石矿石&r。"
+				""
+				"在红灌木的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "minecraft:redstone"
+			id: "0B4CE5D58AD3D310"
+			rewards: [{
+				id: "2B909FC8E51166FB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:redstodendron"
+								rec: "agricraft:redstodendron"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "7CF846A6A5AA2938"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:redstodendron]"
+					}
+				}
+				title: "红灌木种子"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6C51BF4948F21EDD"
+				"62C35BEA5E37DCD5"
+			]
+			description: [
+				"将&6铁叶草作物和矢车菊作物放置在杂交架的相对两侧&r，您便可以通过杂交获得一种特殊的资源作物——蓝薰衣。"
+				""
+				"蓝薰衣对生长条件同样有着相对苛刻的要求，默认情况下，您&6只能够在沙砾上种植蓝薰衣&r，且在沙砾下必须放置有&6青金石矿石/深层青金石矿石&r。"
+				""
+				"在蓝薰衣的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "minecraft:lapis_lazuli"
+			id: "349BE75979DD5489"
+			rewards: [{
+				id: "7EB73B94D52CC284"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:lapender"
+								rec: "agricraft:lapender"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "6A733A4AAB6D42F2"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:lapender]"
+					}
+				}
+				title: "蓝薰衣种子"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62C35BEA5E37DCD5"]
+			description: [
+				"通过&6将原版的矢车菊放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊矢车菊种子。"
+				""
+				"如果您无法找到&6矢车菊&r，也可以尝试&6通过杂交来获取&r——在杂交流程中的大部分染料作物大都可以通过这种方式将花朵转化为对应的种子。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:blue_dye"
+			id: "6C51BF4948F21EDD"
+			rewards: [{
+				id: "4AA34517F5215A6B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界常见作物名录"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "minecraft:cornflower"
+								rec: "minecraft:cornflower"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "18CDA957B3B2F7FD"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[minecraft:cornflower]"
+					}
+				}
+				title: "矢车菊种子"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["73AC29CE33479E8A"]
+			description: [
+				"通过&6将原版的南瓜种子放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊南瓜种子。"
+				""
+				"作物架上的南瓜种子并&6不会结出方块形式的南瓜&r作为产物——它会如同普通作物一样，右键收割后获得南瓜物品。"
+			]
+			icon: "minecraft:pumpkin"
+			id: "43E5DE89BA28671E"
+			rewards: [{
+				id: "66EA36198BFBA96D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界常见作物名录"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "minecraft:pumpkin"
+								rec: "minecraft:pumpkin"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "5C0BAC1E346C0A3C"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[minecraft:pumpkin]"
+					}
+				}
+				title: "南瓜种子"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["73AC29CE33479E8A"]
+			description: [
+				"通过&6将原版的西瓜种子放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊西瓜种子。"
+				""
+				"作物架上的西瓜种子并&6不会结出方块形式的瓜块&r作为产物——它会如同普通作物一样，右键收割后获得西瓜片。"
+			]
+			icon: "minecraft:melon"
+			id: "6350B7BA52C1A4B1"
+			rewards: [{
+				id: "47968705932CCE0D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界常见作物名录"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "minecraft:melon"
+								rec: "minecraft:melon"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "66B03107A7909F6E"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[minecraft:melon]"
+					}
+				}
+				title: "西瓜种子"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"43E5DE89BA28671E"
+				"6350B7BA52C1A4B1"
+			]
+			description: [
+				"将&6西瓜作物和南瓜作物放置在杂交架的相对两侧&r，您便可以通过杂交获得一种特殊的资源作物——铁叶草。"
+				""
+				"相比于常规作物，铁叶草对生长条件有着相对苛刻的要求，默认情况下，您&6只能够在沙砾上种植铁叶草&r，且在沙砾下必须放置有&6铁矿石/深层铁矿石&r。"
+				""
+				"随着作物的&6适应&r等级提升，铁叶草的可种植土壤范围也会随之扩大，因此您也可以在早期便开始尝试提高父代作物的属性，以便于后续杂交后直接获得高级作物。"
+				""
+				"在铁叶草的&6适应等级达到4之后，便可以不需要再在下方放置铁矿石&r，因此请多多培育作物！"
+			]
+			icon: "minecraft:iron_nugget"
+			id: "62C35BEA5E37DCD5"
+			rewards: [{
+				id: "009678BABC291159"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "agricraft:ferranium"
+								rec: "agricraft:ferranium"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "7052ABFDA7ACBB98"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[agricraft:ferranium]"
+					}
+				}
+				title: "铁叶草种子"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["33355D4849FFD6D8"]
+			description: ["通过&6将原版的下界疣放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊下界疣种子。"]
+			hide_dependency_lines: true
+			id: "556908C646C0A9F7"
+			rewards: [{
+				id: "16C462A038920B62"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "世界常见作物名录"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "minecraft:nether_wart"
+								rec: "minecraft:nether_wart"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "12EAE4806708552E"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[minecraft:nether_wart]"
+					}
+				}
+				title: "下界疣孢子"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1CD0E619EF33D8D5"]
+			description: [
+				"使用肥料可以有效的提高作物生长 \\& 杂交的速度。"
+				""
+				"举例而言，&6骨粉、炼金肥料和营养膏&r这三种肥料不仅可以催熟作物——当&6使用这些物品右键杂交架时，也可以使杂交作物快速出现&r。其中以营养膏最为经济，催熟效果最好。"
+				""
+				"堆肥则是能够一次性催熟大片区域，但无法触发杂交行为，因此只推荐用于大片低级作物的区域使用。"
+				""
+				"不同作物对于肥料的敏感性不同，一般而言，&6杂交难度越高的作物（如资源作物）越不容易被催熟&r。"
+			]
+			icon: "biomancy:nutrient_paste"
+			id: "2BC9B9A5611DF493"
+			rewards: [{
+				id: "3C3636F47D1DAF06"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "催熟与杂交"
+			tasks: [{
+				id: "1B5BC45193079458"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "biomancy:nutrient_paste"
+							}
+							{
+								Count: 1b
+								id: "biomancy:fertilizer"
+							}
+							{
+								Count: 1b
+								id: "minecraft:bone_meal"
+							}
+							{
+								Count: 1b
+								id: "farm_and_charm:fertilizer"
+							}
+							{
+								Count: 1b
+								id: "farm_and_charm:compost"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				title: "任意一种肥料"
+				type: "item"
+			}]
+			title: "选择合适的肥料"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"由向日葵和膨大花蕊制成的诡异器官，虽然并不是直接从作物上获得，&6但其含植量实在是令人担忧&r。"
+				""
+				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				""
+				"通过该器官，&6若对方身上存在活肉霉毒效果，则会尝试延长该毒素的持续时间&r。"
+			]
+			id: "29E45355EA60C4E6"
+			rewards: [{
+				id: "00953E53C4C90984"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "活肉霉毒的研究"
+			tasks: [{
+				id: "5F6B07F3A743985F"
+				item: {
+					Count: 1
+					id: "kubejs:vita_sunflower"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				""
+				"通过该器官，可以&6将活肉霉毒关联的属性从攻击力切换到最大生命值&r——这对于某些特定环境有着极其强大的作用。"
+			]
+			id: "3C7660C834B1EDB9"
+			rewards: [{
+				id: "3FFF20DD6803857E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "活肉霉毒的研究"
+			tasks: [{
+				id: "4D3502D4B92F3F4A"
+				item: {
+					Count: 1
+					id: "kubejs:vita_berry"
+					tag: { }
+				}
+				type: "item"
+			}]
 			x: -5.5d
-			y: 5.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				""
+				"通过本植物，&6可以轻松的给敌人附加活肉霉毒效果，且将攻击力关联到活肉霉毒毒素效果上&r。"
+			]
+			id: "571205E4A010E818"
+			rewards: [{
+				id: "2FE8599EE4708D2D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "活肉霉毒的研究"
+			tasks: [{
+				id: "2D7CBBF7981DB687"
+				item: {
+					Count: 1
+					id: "kubejs:vita_rose_liver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				""
+				"通过该器官，&6若对方身上存在活肉霉毒效果，则可以通过消耗对方身上毒素的持续时间为自己抵御伤害&r。"
+			]
+			id: "0F85D05C9B7C69C9"
+			rewards: [{
+				id: "5CD5711E75B72A35"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "活肉霉毒的研究"
+			tasks: [{
+				id: "48C1B2C71A882FD7"
+				item: {
+					Count: 1
+					id: "kubejs:cherry_bone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				""
+				"通过本植物，您可以&6每十次攻击来为敌人赋予恶腐蚀毒效果&r。基于此，您可以在第十次攻击前，通过特殊手段临时提高赋毒攻击的伤害，进而提高持续的毒素伤害。"
+			]
+			id: "1B3DACCFB0C905B7"
+			rewards: [{
+				id: "72BA643138F31449"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "恶腐蚀毒的研究"
+			tasks: [{
+				id: "27FEE941E471C439"
+				item: {
+					Count: 1
+					id: "kubejs:pitcher_stomach"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			id: "130BE89C7093C6F2"
+			rewards: [{
+				id: "53984A290316C734"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "恶腐蚀毒的研究"
+			tasks: [{
+				id: "4EF4F0D966FB32E5"
+				item: {
+					Count: 1
+					id: "kubejs:lily_pad_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			id: "555499E0C10FA9C6"
+			rewards: [{
+				id: "6DDAD19FDC2EA059"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "恶腐蚀毒的研究"
+			tasks: [{
+				id: "20B859550182D8BE"
+				item: {
+					Count: 1
+					id: "kubejs:crimson_brain"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			id: "6FE8A756ED0793B4"
+			rewards: [{
+				id: "5D0125776CD6FBF8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "恶腐蚀毒的研究"
+			tasks: [{
+				id: "08F38551AFF482B7"
+				item: {
+					Count: 1
+					id: "kubejs:twisting_weeping_intestine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			id: "4271444363CC9CF0"
+			rewards: [{
+				id: "169E613A1BFB39DD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2AF7754CDA86A7E4"
+				item: {
+					Count: 1
+					id: "kubejs:foliaath_stem"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			id: "097DBD22AB0B46BF"
+			rewards: [{
+				id: "2FE59D5EBA796189"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "03EDFE487EEDFF79"
+				item: {
+					Count: 1
+					id: "kubejs:hop_kidney"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			id: "3D4C22EA3CC333B5"
+			rewards: [{
+				id: "5719EBD400B42322"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6E92D02E91994D28"
+				item: {
+					Count: 1
+					id: "kubejs:rootling_ectoplasm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6BCFAD682406F180"]
+			id: "5B24D3C8C88CC080"
+			tasks: [{
+				id: "08C0C03D4308B564"
+				leaderboard: "maa:crops_planted"
+				min: 1
+				rank: 1
+				type: "leaderboards:rank_task"
+			}]
+			x: 0.0d
+			y: 17.0d
+		}
+		{
+			dependencies: [
+				"4D5B0DE5C50958CB"
+				"7CE0F6503A1688A4"
+				"34D7C5AA137D9449"
+				"2C1F1CF75F69653E"
+				"5207ADD4211DB1F4"
+				"3BF6D4382987C474"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:vita_rose_liver"
+				tag: { }
+			}
+			id: "1FF6321E6FE68ECC"
+			rewards: [{
+				id: "298F3A0E7CE1F3F9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这安全吗？"
+			tasks: [{
+				id: "1DFFEF0C6400AD2F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:foliaath_stem"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:hop_kidney"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:vita_sunflower"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:twisting_weeping_intestine"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:rootling_ectoplasm"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:vita_berry"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:pitcher_stomach"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:vita_rose_liver"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:cherry_bone"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:crimson_brain"
+								tag: { }
+							}
+							{
+								Count: 1b
+								id: "kubejs:lily_pad_lung"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "任意需作物获得的植物器官"
+				type: "item"
+			}]
+			title: "动物与非动物的边界"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1E7CD654764B508D"]
+			id: "6BCFAD682406F180"
+			tasks: [{
+				id: "7D7FAA3422A50824"
+				item: "kubejs:plant_injection"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1FF6321E6FE68ECC"]
+			id: "1E7CD654764B508D"
+			tasks: [{
+				id: "3C06B9043A55431F"
+				item: "minecraft:stripped_oak_log"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
 		}
 	]
 	title: "传闻：血肉孢子"

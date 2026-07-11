@@ -169,3 +169,5 @@ const $TrophyBlock = Java.loadClass('cy.jdkdigital.trophymanager.common.block.Tr
 const $CropBlockEntity = Java.loadClass('com.agricraft.agricraft.common.block.entity.CropBlockEntity')
 const $StemGrownBlock = Java.loadClass('net.minecraft.world.level.block.StemGrownBlock')
 const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')
+
+const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
