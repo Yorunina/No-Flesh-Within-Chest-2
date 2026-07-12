@@ -55,7 +55,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2EA410FBC8182C1E"]
+			dependencies: ["729F2DAEE008D92C"]
 			description: [
 				"其描述的特殊战利品表之一即为&6村庄战利品表&r。"
 				""
@@ -74,10 +74,10 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["2EA410FBC8182C1E"]
+			dependencies: ["729F2DAEE008D92C"]
 			description: [
 				"其描述的特殊战利品表之一即为&6墓园战利品表&r。"
 				""
@@ -96,10 +96,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["2EA410FBC8182C1E"]
+			dependencies: ["729F2DAEE008D92C"]
 			description: [
 				"其描述的特殊战利品表之一即为&6埋藏的宝藏战利品表&r。"
 				""
@@ -118,7 +118,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -144,7 +144,35 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2EA410FBC8182C1E"]
+			description: [
+				"在此之前，请您准备一个名为&6方向肝&r的器官，以及配套的各式&6角质皮&r（尤其是结构角质皮）。"
+				""
+				"通过在角质皮中选择您需要前往的结构，并且将其放置到&6处于胸腔的方向肝内&r，其便会搜寻对应的结构并尝试将角质皮转换为对应的藏宝图。"
+				""
+				"如果出现长时间搜索无效，请您将该器官取出并手持右键，以将其中的角质皮安全取出。"
+			]
+			id: "729F2DAEE008D92C"
+			rewards: [{
+				id: "7E8F186C2BC46B08"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "寻找恰当的方向"
+			tasks: [{
+				id: "7ECBCE57578BC204"
+				item: {
+					Count: 1
+					id: "kubejs:navigating_liver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "传闻：遗物觉醒"
