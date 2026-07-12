@@ -1,7 +1,7 @@
 {
   "cloneable": true,
   "growth_bonus": 0.025,
-  "growth_chance": 0.35,
+  "growth_chance": 0.8,
   "harvest_stage": 4,
   "mods": [],
   "products": [

@@ -61,3 +61,10 @@ const $PotionBrewing = Java.loadClass('net.minecraft.world.item.alchemy.PotionBr
 const $CropBlockEntity = Java.loadClass('com.agricraft.agricraft.common.block.entity.CropBlockEntity')
 const $ImpulseCastData = Java.loadClass('io.redspace.ironsspellbooks.capabilities.magic.ImpulseCastData')
 const $SpinAttackType = Java.loadClass('io.redspace.ironsspellbooks.player.SpinAttackType')
+const $BlackHole = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.black_hole.BlackHole')
+
+const $EntityHitResult = Java.loadClass('net.minecraft.world.phys.EntityHitResult')
+const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult')
+const $SpellUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SpellUtil')
+const $ClientboundSetEntityMotionPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket')
+const $SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')

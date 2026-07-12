@@ -12,10 +12,13 @@ ItemEvents.rightClicked('stick', event => {
     // playerData.putBoolean('infLifeShell', false)
     // playerData.putString('playerType', 'amusement')
     // blockEntity.createShellByData(player.uuid, playerData)
+
 })
 
 ItemEvents.entityInteracted('minecraft:stick', event => {
-    MobBattleUtil.setEntityFriendlyToPlayers(event.target)
+    // MobBattleUtil.setEntityFriendlyToPlayers(event.target)
     // MobBattleUtil.addEntitiesToTeam('team_1', event.target)
-
+    let nbt = new $CompoundTag()
+    nbt.putInt('entityId', event.target.id)
+    event.player.sendData('debug', nbt)
 })

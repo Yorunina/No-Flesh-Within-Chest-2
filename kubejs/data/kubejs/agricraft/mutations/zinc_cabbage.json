@@ -1,0 +1,6 @@
+{
+  "chance": 0.25,
+  "child": "kubejs:zinc_cabbage",
+  "parent1": "kubejs:lettuce",
+  "parent2": "agricraft:ferranium"
+}

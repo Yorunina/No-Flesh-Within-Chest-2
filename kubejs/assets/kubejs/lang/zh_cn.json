@@ -2582,6 +2582,7 @@
     "plant.agricraft.kubejs.spiritcage_fruit": "灵笼果",
     "plant.agricraft.kubejs.livergrass": "肝草",
     "plant.agricraft.kubejs.bilung_cherry": "肺樱",
+    "plant.agricraft.kubejs.zinc_cabbage": "卷锌菜",
     "_comment.seed": "农业种子",
     "seed.agricraft.kubejs.oat": "燕麦种子",
     "seed.agricraft.kubejs.barley": "大麦种子",
@@ -2611,6 +2612,7 @@
     "seed.agricraft.kubejs.spiritcage_fruit": "灵笼果种子",
     "seed.agricraft.kubejs.livergrass": "肝草种子",
     "seed.agricraft.kubejs.bilung_cherry": "肺樱种子",
+    "seed.agricraft.kubejs.zinc_cabbage": "卷锌菜种子",
     "_comment.trophy": "奖杯名称",
     "trophy.kubejs.test.name": "测试奖杯名称"
 }
