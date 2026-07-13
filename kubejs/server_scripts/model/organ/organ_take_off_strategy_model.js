@@ -45,13 +45,14 @@ OrganTakeOffStrategyModel.prototype = {
 
         let strategyFuncList = []
         for (let i = 0; i < oldContainerSize; i++) {
-            let slotType = oldInvTypeData.getSlotType(i)
-            if (IsContainerSlot(slotType)) continue
+            let oldSlotType = oldInvTypeData.getSlotType(i)
+            if (IsContainerSlot(oldSlotType)) continue
+            let slotType = invTypeData.getSlotType(i)
             let oldItem = oldccInv.getStackInSlot(i)
             if (!oldItem || oldItem.isEmpty()) continue
             if (i <= newContainerSize) {
                 let newItem = ccInv.getStackInSlot(i)
-                if (oldItem.equals(newItem, true) && !IsContainerSlot(invTypeData.getSlotType(i))) continue
+                if (oldItem.equals(newItem, true) && oldSlotType == slotType) continue
             }
             let itemId = oldItem.id
             let strategyModel = OrganStrategyMap[itemId]
@@ -72,12 +73,12 @@ OrganTakeOffStrategyModel.prototype = {
                     if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
                         onlyMap.set(itemId, true)
                         organEventStrategy['only'].forEach(e => {
-                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(oldItem, i, slotType)))
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(oldItem, i, oldSlotType)))
                         })
                     }
                     if (organEventStrategy['default']) {
                         organEventStrategy['default'].forEach(e => {
-                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(oldItem, i, slotType)))
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(oldItem, i, oldSlotType)))
                         })
                     }
                 }

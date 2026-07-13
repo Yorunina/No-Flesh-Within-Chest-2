@@ -47,11 +47,12 @@ OrganTakeOnStrategyModel.prototype = {
         for (let i = 0; i < newContainerSize; i++) {
             let slotType = invTypeData.getSlotType(i)
             if (IsContainerSlot(slotType)) continue
+            let oldSlotType = oldInvTypeData.getSlotType(i)
             let newItem = ccInv.getStackInSlot(i)
             if (!newItem || newItem.isEmpty()) continue
             if (i <= oldContainerSize) {
                 let oldItem = oldccInv.getStackInSlot(i)
-                if (newItem.equals(oldItem, true) && !IsContainerSlot(oldInvTypeData.getSlotType(i))) continue
+                if (newItem.equals(oldItem, true) && oldSlotType == slotType) continue
             }
 
             let itemId = newItem.id
