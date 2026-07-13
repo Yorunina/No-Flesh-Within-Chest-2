@@ -68,3 +68,6 @@ const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult'
 const $SpellUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SpellUtil')
 const $ClientboundSetEntityMotionPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket')
 const $SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')
+const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
+const $FlameStrikeParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.FlameStrikeParticleOptions')
+const $FireEruptionAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.FireEruptionAoe')

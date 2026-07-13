@@ -47,13 +47,10 @@ function FloorAboveZero(value) {
  * @returns {any[]}
  */
 function Shuffle(arr) {
-    var length = arr.length,
-        temp,
-        random
+    var length = arr.length, temp, random
     while (0 != length) {
         random = Math.floor(Math.random() * length)
         length--
-        // swap
         temp = arr[length]
         arr[length] = arr[random]
         arr[random] = temp
@@ -114,7 +111,11 @@ function RandomWithLuck(luck, luckThreshold) {
     return Math.max.apply(null, randomList)
 }
 
-
+/**
+ * 
+ * @param {Player} player 
+ * @returns 
+ */
 function RandomWithPlayerLuck(player) {
     let luckDeity = 10
     let luck = player.luck
@@ -218,7 +219,7 @@ function NormalRandom(mean, sigma) {
 
 
 /**
- * 
+ * Vec3d normalize替代方法
  * @param {Internal.Vec3d} vec3d 
  * @returns {Internal.Vec3d}
  */
@@ -228,7 +229,7 @@ function Vec3dNormalize(vec3d) {
 }
 
 /**
- * 
+ * Vec3d multiply替代方法
  * @param {Internal.Vec3d} vec3d 
  * @param {number} pFactorX 
  * @param {number} pFactorY 
@@ -237,4 +238,15 @@ function Vec3dNormalize(vec3d) {
  */
 function Vec3dMultiply(vec3d, pFactorX, pFactorY, pFactorZ) {
     return new Vec3d(vec3d.x() * pFactorX, vec3d.y() * pFactorY, vec3d.z() * pFactorZ)
+}
+
+/**
+ * 线性插值
+ * @param {number} delta - 插值因子 [0, 1]
+ * @param {number} start
+ * @param {number} end
+ * @returns {number}
+ */
+function Lerp(delta, start, end) {
+    return start + delta * (end - start)
 }

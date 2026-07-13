@@ -1,6 +1,6 @@
 // priority: 500
 StartupEvents.registry('irons_spellbooks:spells', event => {
-    event.create('advance_burning_dash')
+    event.create('burning_dash')
         .setCooldownSeconds(3)
         .setBaseManaCost(10)
         .setManaCostPerLevel(0)
@@ -25,10 +25,10 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const playerMagicData = ctx.playerMagicData
 
             entity.hasImpulse = true
-            const multiplier = (15 + spell.getSpellPower(spellLevel, entity)) / 12.0
+            const multiplier = (40 + spell.getSpellPower(spellLevel, entity)) / 12.0
 
             let forward = entity.getLookAngle()
-            let vec = Vec3dNormalize(Vec3dMultiply(forward, 3, 1, 3)).add(new Vec3d(0, 0.25, 0)).scale(multiplier)
+            let vec = Vec3dNormalize(Vec3dMultiply(forward, 3, 1, 3)).scale(multiplier).add(new Vec3d(0, 0.25, 0))
             if (entity.onGround()) {
                 entity.setPos(entity.position().add(new Vec3d(0, 1.5, 0)))
                 vec = vec.add(new Vec3d(0, 0.25, 0))
@@ -36,13 +36,8 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
 
             playerMagicData.setAdditionalCastData(new $ImpulseCastData(vec.x(), vec.y(), vec.z(), true))
             const dm = entity.getDeltaMovement()
-            entity.setDeltaMovement(new Vec3d(Mth.lerp(0.75, dm.x(), vec.x()), Mth.lerp(0.75, dm.y(), vec.y()), Mth.lerp(0.75, dm.z(), vec.z())))
-            let damage = 0
-            const attackAttr = entity.getAttribute('minecraft:generic.attack_damage')
-            if (attackAttr) damage = attackAttr.getValue()
-
-            entity.addEffect(new $MobEffectInstance('irons_spellbooks:burning_dash', 15, damage, false, false, false))
-            entity.invulnerableTime = 20
+            entity.setDeltaMovement(new Vec3d(Lerp(0.75, dm.x(), vec.x()), Lerp(0.75, dm.y(), vec.y()), Lerp(0.75, dm.z(), vec.z())))
+            entity.addEffect(new $MobEffectInstance('irons_spellbooks:burning_dash', 15, 0, false, false, false))
             playerMagicData.getSyncedData().setSpinAttackType($SpinAttackType.FIRE)
         })
         .getDamageSource(ctx => {

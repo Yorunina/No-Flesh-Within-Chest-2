@@ -17,7 +17,6 @@ PlayerEvents.tick(event => {
 })
 
 /**
- * Collect organ effects from chestCavity and send to client via network.
  * @param {Internal.ServerPlayer} player
  */
 function syncOrganEffects(player) {

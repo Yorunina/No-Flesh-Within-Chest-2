@@ -7,7 +7,7 @@
   "products": [
     {
       "chance": 1.0,
-      "item": "#agricraft:nuggets/zine",
+      "item": "create:zinc_nugget",
       "max": 8,
       "min": 1,
       "required": true

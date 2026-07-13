@@ -1672,10 +1672,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: [
-				"33355D4849FFD6D8"
-				"556908C646C0A9F7"
-			]
+			dependencies: ["33355D4849FFD6D8"]
 			description: [
 				"将&6金光花和下界疣&r杂交，您便可以获得资源作物——闪耀疣。"
 				""
@@ -2222,68 +2219,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["33355D4849FFD6D8"]
-			description: ["通过&6将原版的下界疣放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊下界疣种子。"]
-			hide_dependency_lines: true
-			id: "556908C646C0A9F7"
-			rewards: [{
-				id: "16C462A038920B62"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "世界常见作物名录"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "agricraft:seed"
-					tag: {
-						genes: {
-							fertility: {
-								dom: 1
-								rec: 1
-							}
-							gain: {
-								dom: 1
-								rec: 1
-							}
-							growth: {
-								dom: 1
-								rec: 1
-							}
-							mutativity: {
-								dom: 1
-								rec: 1
-							}
-							resistance: {
-								dom: 1
-								rec: 1
-							}
-							species: {
-								dom: "minecraft:nether_wart"
-								rec: "minecraft:nether_wart"
-							}
-							strength: {
-								dom: 1
-								rec: 1
-							}
-						}
-					}
-				}
-				id: "12EAE4806708552E"
-				item: {
-					Count: 1
-					id: "maa:kube_custom"
-					tag: {
-						value: "agricraft_seed_species:[minecraft:nether_wart]"
-					}
-				}
-				title: "下界疣孢子"
-				type: "item"
-			}]
-			x: -9.0d
-			y: 0.5d
-		}
-		{
 			dependencies: ["1CD0E619EF33D8D5"]
 			description: [
 				"使用肥料可以有效的提高作物生长 \\& 杂交的速度。"
@@ -2480,6 +2415,11 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				""
+				"通过本植物，您可以有效&6提高恶腐蚀毒的等级&r，进而提高输出能力。"
+			]
 			id: "130BE89C7093C6F2"
 			rewards: [{
 				id: "53984A290316C734"
@@ -2501,6 +2441,11 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				""
+				"通过本植物，您可以在击杀持有恶腐蚀毒的生物时，&6将恶腐蚀毒有效扩散&r，进而提高群体杀伤力。"
+			]
 			id: "555499E0C10FA9C6"
 			rewards: [{
 				id: "6DDAD19FDC2EA059"
@@ -2522,6 +2467,11 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				""
+				"通过本植物，您可以&6立刻结算恶腐蚀毒的持续伤害&r，提高短期的爆发能力。"
+			]
 			id: "6FE8A756ED0793B4"
 			rewards: [{
 				id: "5D0125776CD6FBF8"
@@ -2543,12 +2493,14 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
+			description: ["巨噬花茎能够&6略微延长部分药水的持续时间&r——虽然大多数情况下，这并没有什么作用。"]
 			id: "4271444363CC9CF0"
 			rewards: [{
 				id: "169E613A1BFB39DD"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "日常生产的研究"
 			tasks: [{
 				id: "2AF7754CDA86A7E4"
 				item: {
@@ -2563,12 +2515,18 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"啤酒肾的内部可以放入各类啤酒，并且通过啤酒肾的主动使用方法来主动获取这些啤酒的效果。"
+				""
+				"通过啤酒肾触发的效果会&6继承啤酒品质带来的影响&r，其最简单的应用便是通过&6海莉啤酒&r来获得无限期的爱意滑翔效果。"
+			]
 			id: "097DBD22AB0B46BF"
 			rewards: [{
 				id: "2FE59D5EBA796189"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "日常生产的研究"
 			tasks: [{
 				id: "03EDFE487EEDFF79"
 				item: {
@@ -2583,12 +2541,14 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
+			description: ["木灵灵质允许玩家通过潜行催熟&6同一水平面上大范围的作物&r——在非玩家实体上也可以生效。"]
 			id: "3D4C22EA3CC333B5"
 			rewards: [{
 				id: "5719EBD400B42322"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "日常生产的研究"
 			tasks: [{
 				id: "6E92D02E91994D28"
 				item: {
@@ -2732,6 +2692,74 @@
 			}]
 			x: 0.0d
 			y: 14.0d
+		}
+		{
+			dependencies: ["62C35BEA5E37DCD5"]
+			description: [
+				"将&6生菜和铁叶草&r杂交，您便可以获得资源作物——卷锌菜。"
+				""
+				"默认情况下，您&6只能够在沙砾上种植卷锌菜&r，且在沙砾下必须放置有&6锌矿石/深层锌矿石&r。"
+				""
+				"在卷锌菜的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
+			]
+			icon: "create:zinc_nugget"
+			id: "1FCFCD7C401A7978"
+			rewards: [{
+				id: "4FEE97CE654FDF97"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利用植物改善生产"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:zinc_cabbage"
+								rec: "kubejs:zinc_cabbage"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "6289CCC918BF094D"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:zinc_cabbage]"
+					}
+				}
+				title: "卷锌菜种子"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
 		}
 	]
 	title: "传闻：血肉孢子"

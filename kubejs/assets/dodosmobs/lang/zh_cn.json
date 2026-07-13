@@ -1,0 +1,12 @@
+{
+  "itemGroup.dodosmobs.item": "Dodo的物品",
+  "item.dodosmobs.amalgam_claws": "汞合金爪",
+  "item.dodosmobs.chimera_armor_chestplate": "奇美拉胸甲",
+  "item.dodosmobs.chimera_claw": "奇美拉爪",
+  "item.dodosmobs.bone_chimera_spawn_egg": "骸骨奇美拉刷怪蛋",
+  "entity.dodosmobs.bone_chimera": "骸骨奇美拉",
+  "effect.dodosmobs.wound": "伤口",
+  "death.attack.dodosmobs.wound": "伤口洞开",
+  "death.attack.dodosmobs.wound.player": "伤口洞开",
+  "entity.dodosmobs.dead_horn": "死亡号角"
+}

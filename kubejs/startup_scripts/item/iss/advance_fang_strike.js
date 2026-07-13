@@ -25,7 +25,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 spawn = new Vec3d(spawn.x(), GetGroundLevel(level, spawn, 8), spawn.z())
                 if (!level.getBlockState(BlockPos.containing(spawn).below()).isAir()) {
                     let delay = i / 3
-                    let fang = new $ExtendedEvokerFang(level, spawn.x(), spawn.y(), spawn.z(), (entity.getYHeadRot() - 90) * Mth.DEG_TO_RAD, delay, entity, damage)
+                    let fang = new $ExtendedEvokerFang(level, spawn.x(), spawn.y(), spawn.z(), (entity.getYHeadRot() - 90) * DEG_TO_RAD, delay, entity, damage)
                     level.addFreshEntity(fang)
                 }
             }

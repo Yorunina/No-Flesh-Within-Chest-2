@@ -24,7 +24,6 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 && castData.getCastingEntity() instanceof $AbstractConeProjectile) {
                 castData.getCastingEntity().setDealDamageActive()
             } else {
-                EntityJSUtils.getEntityBuilder('kubejs:advance_dragon_breath')
                 /**@type {Internal.AbstractConeProjectile} */
                 let dragonBreathProjectile = level.createEntity('kubejs:advance_dragon_breath')
                 dragonBreathProjectile.setOwner(entity)

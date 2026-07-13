@@ -1,5 +1,4 @@
-// priority: 1000
-
+// priority: 3001
 /**
  * 从数组中随机获取一个元素
  * 如果数组为空或未定义，则返回 null
@@ -34,23 +33,29 @@ function FloorFix(value, n) {
 }
 
 /**
+ * 向下取整并且保证大于0
+ * @param {number} value 
+ * @returns {number}
+ */
+function FloorAboveZero(value) {
+    return Math.max(Math.floor(value), 0)
+}
+
+/**
  * 洗牌算法
  * @param {any[]} a 
  * @returns {any[]}
  */
 function Shuffle(arr) {
-    var length = arr.length,
-        temp,
-        random;
+    var length = arr.length, temp, random
     while (0 != length) {
         random = Math.floor(Math.random() * length)
-        length--;
-        // swap
-        temp = arr[length];
-        arr[length] = arr[random];
-        arr[random] = temp;
+        length--
+        temp = arr[length]
+        arr[length] = arr[random]
+        arr[random] = temp
     }
-    return arr;
+    return arr
 }
 
 /**
@@ -84,6 +89,7 @@ function RandomGetN(arr, count) {
     return arrCopy.slice(0, count)
 }
 
+
 /**
  * 幸运重roll
  * @param {number} luck 
@@ -105,7 +111,11 @@ function RandomWithLuck(luck, luckThreshold) {
     return Math.max.apply(null, randomList)
 }
 
-
+/**
+ * 
+ * @param {Player} player 
+ * @returns 
+ */
 function RandomWithPlayerLuck(player) {
     let luckDeity = 10
     let luck = player.luck
@@ -121,6 +131,36 @@ function UnionArry(arr1, arr2) {
     return arr1.concat(arr2.filter(function (v) { return !(arr1.indexOf(v) > -1) }))
 }
 
+function AddIfNotExist(arr, item) {
+    if (arr.indexOf(item) == -1) {
+        arr.push(item)
+    }
+}
+
+/**
+ * @param {Vec3i} vec3i 
+ * @returns {BlockPos}
+ */
+function ConvertVec3i2BlockPos(vec3i) {
+    return new BlockPos(vec3i.x, vec3i.y, vec3i.z)
+}
+
+/**
+ * @param {vec3d} vec3d 
+ * @returns {BlockPos}
+ */
+function ConvertVec3d2BlockPos(vec3d) {
+    return new BlockPos(vec3d.x(), vec3d.y(), vec3d.z())
+}
+
+/**
+ * @param {BlockPos} blockPos 
+ * @returns {Vec3d}
+ */
+function ConvertBlockPos2Vec3d(blockPos) {
+    return new Vec3d(blockPos.x, blockPos.y, blockPos.z)
+}
+
 
 /**
  * 
@@ -133,15 +173,53 @@ function Int2Integer(num) {
 
 
 /**
- * @param {BlockPos} blockPos 
- * @returns {Vec3d}
+ * @param {any[]} array 
+ * @param {Number} chunkSize 
+ * @returns {any[][]}
  */
-function ConvertBlockPos2Vec3d(blockPos) {
-    return new Vec3d(blockPos.x, blockPos.y, blockPos.z)
+function SliceChunkArray(array, chunkSize) {
+    let chunks = []
+    for (let i = 0; i < array.length; i += chunkSize) {
+        chunks.push(array.slice(i, i + chunkSize))
+    }
+    return chunks
 }
 
 /**
  * 
+ * @param {number} num 
+ * @param {number} min 
+ * @param {number} max 
+ * @returns 
+ */
+function Clamp(num, min, max) {
+    return Math.min(Math.max(num, min), max)
+}
+
+/**
+ * 生成一个服从标准正态分布 N(0,1) 的随机数
+ * @returns {number} 标准正态分布随机数
+ */
+function StandardNormalRandom() {
+    let u = 0, v = 0
+    while (u == 0) u = Math.random() // 避免 u = 0，因为 ln(0) 无定义
+    while (v == 0) v = Math.random() // v 可为零，但 cos/sin 没问题，此处为对称处理
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * JavaMath.PI * v)
+}
+
+/**
+ * 生成服从正态分布 N(mean, sigma^2) 的随机数
+ * @param {number} mean    均值 μ
+ * @param {number} sigma   标准差 σ
+ * @returns {number} 正态分布随机数
+ */
+function NormalRandom(mean, sigma) {
+    return mean + sigma * StandardNormalRandom()
+}
+
+
+/**
+ * Vec3d normalize替代方法
  * @param {Internal.Vec3d} vec3d 
  * @returns {Internal.Vec3d}
  */
@@ -151,7 +229,7 @@ function Vec3dNormalize(vec3d) {
 }
 
 /**
- * 
+ * Vec3d multiply替代方法
  * @param {Internal.Vec3d} vec3d 
  * @param {number} pFactorX 
  * @param {number} pFactorY 
@@ -160,4 +238,15 @@ function Vec3dNormalize(vec3d) {
  */
 function Vec3dMultiply(vec3d, pFactorX, pFactorY, pFactorZ) {
     return new Vec3d(vec3d.x() * pFactorX, vec3d.y() * pFactorY, vec3d.z() * pFactorZ)
+}
+
+/**
+ * 线性插值
+ * @param {number} delta - 插值因子 [0, 1]
+ * @param {number} start
+ * @param {number} end
+ * @returns {number}
+ */
+function Lerp(delta, start, end) {
+    return start + delta * (end - start)
 }

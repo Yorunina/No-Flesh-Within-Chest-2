@@ -28,6 +28,7 @@ const DigestSlotType = Text.translatable('slot_type.kubejs.digest_slot.1').color
 const TransdimensionalMechanizedType = Text.translatable('slot_type.kubejs.transdimensional_mechanized.1').color('#ae5dce')
 const FertileSlotType = Text.translatable('slot_type.kubejs.fertile_slot.1').color('#ff672b')
 const HarvestSlotType = Text.translatable('slot_type.kubejs.harvest_slot.1').color('#ff672b')
+const AwakeRelicSlotType = Text.translatable('slot_type.kubejs.awake_relic_slot.1').color('#e33100')
 
 const LuckHover = Text.translatable('tooltips.kubejs.hover.luck.0').green().underlined()
     .hover(HoverTextList([

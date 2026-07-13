@@ -171,3 +171,4 @@ const $StemGrownBlock = Java.loadClass('net.minecraft.world.level.block.StemGrow
 const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.BonemealableBlock')
 
 const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
+const $SpinAttackType = Java.loadClass('io.redspace.ironsspellbooks.player.SpinAttackType')
