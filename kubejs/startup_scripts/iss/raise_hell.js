@@ -4,14 +4,14 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
     event.create('advance_raise_hell')
         .setCooldownSeconds(25)
         .setBaseManaCost(90)
-        .setManaCostPerLevel(45)
-        .setBaseSpellPower(15)
+        .setManaCostPerLevel(0)
+        .setBaseSpellPower(0)
         .setSpellPowerPerLevel(0)
-        .setCastTime(16)
+        .setCastTime(20)
         .setCastType('long')
         .setSchool('irons_spellbooks:fire')
         .setMinRarity('legendary')
-        .setMaxLevel(5)
+        .setMaxLevel(1)
         .setAllowLooting(false)
         .setStartSound('irons_spellbooks:spell.raise_hell.prepare')
         .setFinishSound('irons_spellbooks:entity.fire_eruption.slam')
@@ -29,10 +29,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
 
             if (!playerMagicData.getPlayerCooldowns().isOnCooldown(spell) &&
                 !playerMagicData.getPlayerRecasts().hasRecastForSpell(spell.getSpellId())) {
-                const recast = new $RecastInstance(
-                    spell.getSpellId(), spellLevel, spell.getRecastCount(spellLevel, entity),
-                    80, castSource, null
-                )
+                const recast = new RecastInstance(spell.getSpellId(), spellLevel, spell.getRecastCount(spellLevel, entity), 80, castSource, null)
                 playerMagicData.getPlayerRecasts().addRecast(recast, playerMagicData)
             }
 

@@ -634,8 +634,8 @@
         "value": 0
       },
       "max": {
-        "default": 9,
-        "value": 9
+        "default": 1024,
+        "value": 1024
       }
     },
     "attributeslib:overheal": {

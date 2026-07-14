@@ -1,0 +1,26 @@
+enableShulkerTeleporterCameraOffset = true
+enableShulkerTeleporterPlayerClipping = true
+
+[creeperBlastChamber]
+	enableExplosionParticles = true
+
+[universalJoint]
+	#Range: 0 ~ 256
+	previewRange = 16
+
+[beltParticles]
+	#Range: 0.0 ~ 1.0
+	slimeBeltBaseChance = 0.035
+	#Range: 0.0 ~ 1.0
+	slimeBeltLengthChance = 0.008
+	#Range: 0.0 ~ 1.0
+	slimeBeltSpeedChance = 0.12
+	#Range: 0.0 ~ 1.0
+	slimeBeltMaxChance = 0.18
+	#Range: 0.0 ~ 1.0
+	magmaBeltBaseChance = 0.025
+	#Range: 0.0 ~ 1.0
+	magmaBeltLengthChance = 0.006
+	#Range: 0.0 ~ 1.0
+	magmaBeltMaxChance = 0.16
+

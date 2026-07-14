@@ -1,8 +1,8 @@
 // priority: 500
 StartupEvents.registry('irons_spellbooks:spells', event => {
-    event.create('burning_dash')
-        .setCooldownSeconds(3)
-        .setBaseManaCost(10)
+    event.create('eternal_burning_dash')
+        .setCooldownSeconds(2)
+        .setBaseManaCost(5)
         .setManaCostPerLevel(0)
         .setBaseSpellPower(1)
         .setSpellPowerPerLevel(1)

@@ -44,7 +44,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 const offsetVector = targetEntity.getBoundingBox().getCenter().subtract(entity.getEyePosition())
                 if (offsetVector.dot(forward) < 0) continue
 
-                if ($ISSDamageSources.applyDamage(targetEntity, damage, damageSource)) {
+                if (ISSDamageSources.applyDamage(targetEntity, damage, damageSource)) {
                     MagicManager.spawnParticles(level, IronsSpellsParticleHelper.FIRE,
                         targetEntity.getX(), targetEntity.getY() + targetEntity.getBbHeight() * 0.5, targetEntity.getZ(),
                         30,

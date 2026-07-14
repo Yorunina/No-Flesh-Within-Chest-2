@@ -67,7 +67,7 @@ StartupEvents.registry('entity_type', event => {
             const entity = entityHitResult.getEntity()
             const level = projectile.level
             const owner = projectile.getOwner()
-            if ($ISSDamageSources.applyDamage(entity, projectile.damage,
+            if (ISSDamageSources.applyDamage(entity, projectile.damage,
                 SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('kubejs:advance_dragon_breath')).getDamageSource(projectile, owner)
             )) {
                 if (owner instanceof $LivingEntity) {
@@ -94,9 +94,9 @@ StartupEvents.registry('entity_type', event => {
             const customData = pool.customData
             const owner = pool.getOwner()
             if (!customData.containsKey('damageSources')) {
-                customData.put('damageSources', new DamageSource($ISSDamageSources.getHolderFromResource(target, $ISSDamageTypes.DRAGON_BREATH_POOL), pool, owner))
+                customData.put('damageSources', new DamageSource(ISSDamageSources.getHolderFromResource(target, $ISSDamageTypes.DRAGON_BREATH_POOL), pool, owner))
             }
-            $ISSDamageSources.ignoreNextKnockback(target)
+            ISSDamageSources.ignoreNextKnockback(target)
             if (owner instanceof $Player && owner.getLuck() > 0) {
                 target.setTicksFrozen(target.getTicksFrozen() + owner.getLuck() * 2)
             }

@@ -1,6 +1,6 @@
 // priority: 500
 StartupEvents.registry('item', event => {
-    event.create('kubejs:immortal_volcanic_rock').maxStackSize(1).texture('kubejs:item/organs/relic/immortal_volcanic_rock').tag('kubejs:relic').tag('kubejs:nether')
+
     event.create('kubejs:warden_core').maxStackSize(1).texture('kubejs:item/organs/relic/warden_core').tag('kubejs:relic')
     event.create('kubejs:netherite_muscle').maxStackSize(1).texture('kubejs:item/organs/relic/netherite_muscle').tag('kubejs:relic').tag('kubejs:nether').tag('kubejs:muscle')
     event.create('kubejs:ender_guardian_spine').maxDamage(10).maxStackSize(1).texture('kubejs:item/organs/relic/ender_guardian_spine').tag('kubejs:relic').tag('kubejs:ender').tag('kubejs:spine')
@@ -12,5 +12,11 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:dying_heart').food(food => food.hunger(3).saturation(1)).maxStackSize(1).tag('kubejs:relic').tag('kubejs:magic').texture('kubejs:item/organs/relic/dying_heart')
     event.create('kubejs:wither_skull').maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/wither_skull')
     event.create('kubejs:twinkle_rib').maxDamage(16).maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/twinkle_rib').tag('kubejs:bone')
-    event.create('kubejs:rough_infernal_dragon_skin').maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/rough_infernal_dragon_skin')
+
+    // 炼狱巨龙
+    event.create('kubejs:rough_infernal_dragon_skin').maxStackSize(1).texture('kubejs:item/organs/relic/rough_infernal_dragon_skin').tag('kubejs:relic')
+    event.create('kubejs:infernal_dragon_skin').maxStackSize(1).texture('kubejs:item/organs/relic/infernal_dragon_skin').tag('kubejs:relic')
+    // 焰魔
+    event.create('kubejs:immortal_volcanic_rock').maxStackSize(1).texture('kubejs:item/organs/relic/immortal_volcanic_rock').tag('kubejs:relic').tag('kubejs:nether')
+    event.create('kubejs:immortal_volcanic_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/immortal_volcanic_crystal').tag('kubejs:relic').tag('kubejs:nether')
 })

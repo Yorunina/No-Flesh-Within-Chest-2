@@ -172,3 +172,5 @@ const $BonemealableBlock = Java.loadClass('net.minecraft.world.level.block.Bonem
 
 const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.AlcoholManager')
 const $SpinAttackType = Java.loadClass('io.redspace.ironsspellbooks.player.SpinAttackType')
+const $ShockwaveParticlesPacket = Java.loadClass('io.redspace.ironsspellbooks.network.particles.ShockwaveParticlesPacket')
+const $BlastwaveParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions')
