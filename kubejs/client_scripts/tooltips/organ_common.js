@@ -57,17 +57,17 @@ ItemEvents.tooltip(tooltip => {
                     return
                 }
                 break
-            case tooltip.isCtrl():
-                if (customToolTips.ctrlTooltips.length > 0) {
-                    lineNum = AddTextLines(text, [customToolTips.ctrlHoldingDescription], lineNum)
-                    lineNum = AddTextFuncLines(text, customToolTips.ctrlTooltips, item, lineNum)
-                    return
-                }
-                break
             case tooltip.isAlt():
                 if (customToolTips.altTooltips.length > 0) {
                     lineNum = AddTextLines(text, [customToolTips.altHoldingDescription], lineNum)
                     lineNum = AddTextFuncLines(text, customToolTips.altTooltips, item, lineNum)
+                    return
+                }
+                break
+            case tooltip.isCtrl():
+                if (customToolTips.ctrlTooltips.length > 0) {
+                    lineNum = AddTextLines(text, [customToolTips.ctrlHoldingDescription], lineNum)
+                    lineNum = AddTextFuncLines(text, customToolTips.ctrlTooltips, item, lineNum)
                     return
                 }
                 break
@@ -77,12 +77,12 @@ ItemEvents.tooltip(tooltip => {
             lineNum = AddTextLines(text, [customToolTips.shiftDescription], lineNum)
         }
 
-        if (customToolTips.ctrlTooltips.length > 0) {
-            lineNum = AddTextLines(text, [customToolTips.ctrlDescription], lineNum)
-        }
-
         if (customToolTips.altTooltips.length > 0) {
             lineNum = AddTextLines(text, [customToolTips.altDescription], lineNum)
+        }
+
+        if (customToolTips.ctrlTooltips.length > 0) {
+            lineNum = AddTextLines(text, [customToolTips.ctrlDescription], lineNum)
         }
 
         if (item.hasTag('chestcavity:cannot_remove') || nbt.getBoolean('cannotRemove')) {

@@ -1,8 +1,7 @@
 // priority: 500
 StartupEvents.registry('irons_spellbooks:spells', event => {
-    // todo
-    event.create('advance_raise_hell')
-        .setCooldownSeconds(25)
+    event.create('raise_hell')
+        .setCooldownSeconds(15)
         .setBaseManaCost(90)
         .setManaCostPerLevel(0)
         .setBaseSpellPower(0)
@@ -17,7 +16,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setFinishSound('irons_spellbooks:entity.fire_eruption.slam')
         .setCastStartAnimation('irons_spellbooks:overhead_two_handed_swing', true, true)
         .setCanBeInterrupted((player) => false)
-        .setRecastCount((spellLevel, entity) => spellLevel)
+        .setRecastCount((spellLevel, entity) => 3)
         .onCast(ctx => {
             if (ctx.level.isClientSide()) return
             const level = ctx.level
@@ -28,28 +27,26 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const castSource = ctx.castSource
 
             if (!playerMagicData.getPlayerCooldowns().isOnCooldown(spell) &&
-                !playerMagicData.getPlayerRecasts().hasRecastForSpell(spell.getSpellId())) {
+                !playerMagicData.getPlayerRecasts()["hasRecastForSpell(io.redspace.ironsspellbooks.api.spells.AbstractSpell)"](spell)) {
                 const recast = new RecastInstance(spell.getSpellId(), spellLevel, spell.getRecastCount(spellLevel, entity), 80, castSource, null)
                 playerMagicData.getPlayerRecasts().addRecast(recast, playerMagicData)
             }
 
             const radius = 8
-            const range = 1.7
             const eyePos = entity.getEyePosition()
             const forward = entity.getForward()
-            const rayEnd = eyePos.add(forward.multiply(range, 0, range))
-            const raycast = ISSUtils.raycastForBlock(level, eyePos, rayEnd, $ClipContext.Fluid.NONE)
+            const rayEnd = eyePos.add(forward.multiply(1.7, 0, 1.7))
+            const raycast = ISSUtils.raycastForBlock(level, eyePos, rayEnd, 'none')
             const hitLocation = ISSUtils.moveToRelativeGroundLevel(level, raycast.getLocation(), 3)
-
+            let attackAttr = entity.getAttribute('minecraft:generic.attack_damage')
+            const damage = attackAttr ? attackAttr.getValue() : 5
             const aoe = new $FireEruptionAoe(level, radius)
             aoe.setOwner(entity)
-            aoe.setDamage(spell.getSpellPower(spellLevel, entity) + ISSUtils.getWeaponDamage(entity))
+            aoe.setDamage(damage)
             aoe.moveTo(hitLocation)
             level.addFreshEntity(aoe)
 
-            CameraShakeManager.addCameraShake(
-                new CameraShakeData(level, 20 + radius, hitLocation, radius * 2 + 5)
-            )
+            CameraShakeManager.addCameraShake(new CameraShakeData(level, 20 + radius, hitLocation, radius * 2 + 5))
         })
         .getEffectiveCastTime(ctx => {
             return ctx.spell.getCastTime(ctx.spellLevel)

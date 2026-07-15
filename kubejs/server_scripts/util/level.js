@@ -126,6 +126,6 @@ function GetGroundLevel(level, start, maxSteps) {
             }
         }
     }
-    let lower = level.clip(new $ClipContext(start, start.add(0, maxSteps * -2, 0), $ClipContextBlock.COLLIDER, $ClipContextFluid.NONE, null)).getLocation()
+    let lower = level.clip(new $ClipContext(start, start.add(0, maxSteps * -2, 0), 'collider', 'none', null)).getLocation()
     return lower.getY()
 }

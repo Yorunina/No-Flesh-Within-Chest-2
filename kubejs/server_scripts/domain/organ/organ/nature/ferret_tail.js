@@ -3,6 +3,7 @@ RegistryOrgan('kubejs:ferret_tail')
     .addScore('chestcavity:nerves', 0.25)
     .addScore('chestcavity:speed', 1)
     .setCanSpawn(true)
+
 /**
 * @param {OrganEventCustomData} customData
 * @param {Internal.EvaluateChestCavityJS} event
@@ -12,7 +13,9 @@ RegistryOrgan('kubejs:ferret_tail')
 */
 function FerretTailChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    chestCavity.setOrganScore('chestcavity:speed', 1)
+    if (chestCavity.getOrganScore('chestcavity:speed') > 1) {
+        chestCavity.setOrganScore('chestcavity:speed', 1)
+    }
 }
 
 

@@ -1,9 +1,7 @@
 // priority: 500
-RegistryOrgan('kubejs:maledictus_wing')
+RegistryOrgan('kubejs:worn_maledictus_wing')
     .addScore('chestcavity:speed', 2)
     .addScore('chestcavity:strength', 1)
-    .addScore('kubejs:crit_chance', 1)
-    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -12,7 +10,7 @@ RegistryOrgan('kubejs:maledictus_wing')
 * @param {number} organIndex
 * @param {string} slotType
 */
-function MaledictusWingKeyActive(customData, event, organItem, organIndex, slotType) {
+function WornMaledictusWingKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const level = event.level
     const server = event.server
@@ -44,10 +42,9 @@ function MaledictusWingKeyActive(customData, event, organItem, organIndex, slotT
     player.addItemCooldown(organItem, 20 * 30)
 }
 
-
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:maledictus_wing')
-        .addOnlyStrategy('key_active', MaledictusWingKeyActive)
+    new OrganStrategyModel('kubejs:worn_maledictus_wing')
+        .addOnlyStrategy('key_active', WornMaledictusWingKeyActive)
 )
 
 

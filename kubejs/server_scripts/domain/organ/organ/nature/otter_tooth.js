@@ -25,7 +25,7 @@ function OtterToothBlockRightClicked(customData, event, organItem, organIndex, s
     let resultBlockState = $AxeItem.getAxeStrippingState(block.blockState)
     if (!resultBlockState) return
     block.popItemFromFace(Item.of('kubejs:sawdust', Math.ceil(Math.random() * 4)), event.facing)
-    level.playSound(null, block.pos.getX(), block.pos.getY(), block.pos.getZ(), 'item.axe.strip', $SoundSource.BLOCKS, 1, 1)
+    level.playSound(null, block.pos.getX(), block.pos.getY(), block.pos.getZ(), 'item.axe.strip', 'blocks', 1, 1)
     level.setBlockAndUpdate(block.pos, resultBlockState)
 }
 

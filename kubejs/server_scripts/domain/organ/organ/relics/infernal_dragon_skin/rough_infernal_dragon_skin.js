@@ -10,7 +10,7 @@ RegistryOrgan('kubejs:rough_infernal_dragon_skin')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function InfernalDragonSkinUpdateChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function InfernalDragonSkinChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
@@ -32,6 +32,6 @@ function InfernalDragonSkinTakeOff(customData, event, organItem, organIndex, slo
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:rough_infernal_dragon_skin')
-        .addOnlyStrategy('chest_cavity_update', InfernalDragonSkinUpdateChestCavityUpdate)
+        .addOnlyStrategy('chest_cavity_update', InfernalDragonSkinChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', InfernalDragonSkinTakeOff)
 )

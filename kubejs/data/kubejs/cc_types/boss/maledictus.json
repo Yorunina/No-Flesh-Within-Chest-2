@@ -1,9 +1,6 @@
 {
     "defaultChestCavity": [
-        {"item": "kubejs:maledictus_wing", "position": 1}
-    ],
-    "baseOrganScores": [
-        {"id": "chestcavity:ease_of_access","value": "1"}
+        {"item": "kubejs:worn_maledictus_wing", "position": 1}
     ],
     "inventoryType": "kubejs:cc_inventory_types/relic"
 }

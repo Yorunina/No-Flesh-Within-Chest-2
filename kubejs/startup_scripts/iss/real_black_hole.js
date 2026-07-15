@@ -40,7 +40,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 }
             }
 
-            level.playSound(null, center.x(), center.y(), center.z(),'irons_spellbooks:spell.black_hole.cast', $SoundSource.AMBIENT, 4, 1)
+            level.playSound(null, center.x(), center.y(), center.z(),'irons_spellbooks:spell.black_hole.cast', 'ambient', 4, 1)
 
             const blackHole = new $BlackHole(level, entity)
             blackHole.setRadius(radius)

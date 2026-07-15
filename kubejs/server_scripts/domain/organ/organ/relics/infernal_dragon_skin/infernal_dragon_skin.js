@@ -10,7 +10,7 @@ RegistryOrgan('kubejs:infernal_dragon_skin')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function InfernalDragonSkinUpdateChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function InfernalDragonSkinChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
@@ -60,11 +60,7 @@ function InfernalDragonSkinPlayerRoll(customData, event, organItem, organIndex, 
     let attackDamageAttr = player.getAttribute('minecraft:generic.attack_damage')
     let attackDamage = attackDamageAttr.getValue()
     server.scheduleRepeatingInTicks(2, (ctx) => {
-        let entityInRadius = GetLivingWithinRadius(level, player.blockPosition(), 3, (curlevel, curEntity) => {
-            if (!curEntity.isPlayer()) {
-                return true
-            }
-        })
+        let entityInRadius = GetLivingWithinRadius(level, player.blockPosition(), 3, (curlevel, curEntity) => !ISSDamageSources.isFriendlyFireBetween(curEntity, player))
         entityInRadius.forEach(entity => {
             entity.attack(level.damageSources().playerAttack(player), attackDamage)
             entity.invulnerableTime = 0
@@ -76,7 +72,7 @@ function InfernalDragonSkinPlayerRoll(customData, event, organItem, organIndex, 
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:infernal_dragon_skin')
-        .addOnlyStrategy('chest_cavity_update', InfernalDragonSkinUpdateChestCavityUpdate)
+        .addOnlyStrategy('chest_cavity_update', InfernalDragonSkinChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', InfernalDragonSkinTakeOff)
         .addOnlyStrategy('player_roll', InfernalDragonSkinPlayerRoll)
 )

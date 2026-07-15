@@ -62,8 +62,6 @@ const $SpellUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SpellUt
 const $ClientboundSetEntityMotionPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket')
 
 const $AxeItem = Java.loadClass('net.minecraft.world.item.AxeItem')
-const $SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')
-
 const $CreateRecipesType = Java.loadClass('com.simibubi.create.AllRecipeTypes')
 const $RecipeWrapper = Java.loadClass('net.minecraftforge.items.wrapper.RecipeWrapper')
 const $ProcessingInventory = Java.loadClass('com.simibubi.create.content.processing.recipe.ProcessingInventory')
@@ -155,8 +153,6 @@ const $GachaMachineBlockEntity = Java.loadClass('io.github.lightman314.lightmans
 const $CapabilityInterfaceBlockEntity = Java.loadClass('io.github.lightman314.lightmanscurrency.common.blockentity.CapabilityInterfaceBlockEntity')
 
 const $ClipContext = Java.loadClass('net.minecraft.world.level.ClipContext')
-const $ClipContextBlock = Java.loadClass('net.minecraft.world.level.ClipContext$Block')
-const $ClipContextFluid = Java.loadClass('net.minecraft.world.level.ClipContext$Fluid')
 
 const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.void_tentacle.VoidTentacle')
 const $AsyncLocator = Java.loadClass('brightspark.asynclocator.AsyncLocator')
@@ -174,3 +170,4 @@ const $AlcoholManager = Java.loadClass('net.satisfy.brewery.core.effect.alcohol.
 const $SpinAttackType = Java.loadClass('io.redspace.ironsspellbooks.player.SpinAttackType')
 const $ShockwaveParticlesPacket = Java.loadClass('io.redspace.ironsspellbooks.network.particles.ShockwaveParticlesPacket')
 const $BlastwaveParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions')
+const $FireEruptionAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.FireEruptionAoe')

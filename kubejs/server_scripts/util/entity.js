@@ -562,13 +562,7 @@ function CanMobSeeBlock(mob, targetPos) {
     const level = mob.level
     let eyePos = mob.getEyePosition()
     let targetVec = Vec3d.atCenterOf(targetPos)
-    let clipContext = new $ClipContext(
-        eyePos,
-        targetVec,
-        $ClipContextBlock.COLLIDER,
-        $ClipContextFluid.NONE,
-        mob
-    )
+    let clipContext = new $ClipContext(eyePos, targetVec, 'collider', 'none', mob)
     let hitResult = level.clip(clipContext)
     return hitResult instanceof $BlockHitResult && hitResult.getBlockPos().equals(targetPos)
 }

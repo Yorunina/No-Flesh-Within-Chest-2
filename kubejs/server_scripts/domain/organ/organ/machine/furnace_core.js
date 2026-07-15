@@ -225,7 +225,7 @@ function BurningHeartDoDamageDefer(customData, event, organItem, organIndex, slo
     }
     damageBoost = damageBoost * blazerBoost
     multiplierBoost = multiplierBoost * blazerBoost
-    event.amount = (event.amount + damageBoost) * (2 + multiplierBoost)
+    event.amount = (event.amount + damageBoost) * (3 + multiplierBoost)
 }
 
 

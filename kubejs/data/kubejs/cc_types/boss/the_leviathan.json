@@ -1,7 +1,7 @@
 {
     "defaultChestCavity": [   
-        {"item": "kubejs:leviathan_rib", "position": 0},
-        {"item": "kubejs:leviathan_rib", "position": 2}
+        {"item": "kubejs:corroded_leviathan_rib", "position": 0},
+        {"item": "kubejs:corroded_leviathan_rib", "position": 2}
     ],
     "baseOrganScores": [],
     "inventoryType": "kubejs:cc_inventory_types/relic"

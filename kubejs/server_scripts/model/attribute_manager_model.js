@@ -8,7 +8,7 @@ function AttributeManagerModel(attr) {
     this.baseAddModifier = 0
     this.baseMultiModifier = 0
     this.allAddModifier = 0
-    this.allMultiModifier = 0
+    this.allMultiModifier = []
     this.isModified = false
 }
 
@@ -27,7 +27,7 @@ AttributeManagerModel.prototype = {
      * @returns {number}
      */
     calResult: function () {
-        return (this.attr * (1 + this.baseMultiModifier) + this.baseAddModifier) * (1 + this.allMultiModifier) + this.allAddModifier
+        return (this.attr * (1 + this.baseMultiModifier) + this.baseAddModifier) * (1 + this.allMultiModifier.reduce((a, b) => a * (1 + b), 1)) + this.allAddModifier
     },
     /**
      * 
@@ -49,7 +49,7 @@ AttributeManagerModel.prototype = {
                 // 这应当是一个本不存在的状态
                 this.allAddModifier = this.allAddModifier + num
             } else if (modifierType == 'multiple') {
-                this.allMultiModifier = this.allMultiModifier + num
+                this.allMultiModifier.push(num)
             }
         }
         return this
@@ -84,8 +84,8 @@ AttributeManagerModel.prototype = {
             let attributeModifier = new $AttributeModifier(attributeUUIDModel.baseMulti, identifier + 'BaseMulti', this.baseMultiModifier, $Operation.MULTIPLY_BASE)
             attributeInstance.addPermanentModifier(attributeModifier)
         }
-        if (this.allMultiModifier != 0) {
-            let attributeModifier = new $AttributeModifier(attributeUUIDModel.allMulti, identifier + 'AllMulti', this.allMultiModifier, $Operation.MULTIPLY_TOTAL)
+        if (this.allMultiModifier.length > 0) {
+            let attributeModifier = new $AttributeModifier(attributeUUIDModel.allMulti, identifier + 'AllMulti', this.allMultiModifier.reduce((a, b) => a * (1 + b), 1) - 1, $Operation.MULTIPLY_TOTAL)
             attributeInstance.addPermanentModifier(attributeModifier)
         }
     }
