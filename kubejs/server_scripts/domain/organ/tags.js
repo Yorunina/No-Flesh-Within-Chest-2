@@ -1,6 +1,7 @@
 // priority: 800
 const EventId2TagId = {
     'item_right_clicked': 'kubejs:item_right_clicked',
+    'item_left_clicked': 'kubejs:item_left_clicked',
     'entity_do_damage': 'kubejs:entity_do_damage',
     'chest_cavity_update': 'kubejs:chest_cavity_update',
     'food_eaten': 'kubejs:food_eaten',

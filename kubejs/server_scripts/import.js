@@ -171,3 +171,5 @@ const $SpinAttackType = Java.loadClass('io.redspace.ironsspellbooks.player.SpinA
 const $ShockwaveParticlesPacket = Java.loadClass('io.redspace.ironsspellbooks.network.particles.ShockwaveParticlesPacket')
 const $BlastwaveParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions')
 const $FireEruptionAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.FireEruptionAoe')
+const $PoisonSplash = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.poison_cloud.PoisonSplash')
+const $FlameStrikeParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.FlameStrikeParticleOptions')

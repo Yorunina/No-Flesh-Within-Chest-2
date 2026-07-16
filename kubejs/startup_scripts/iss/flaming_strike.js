@@ -1,16 +1,16 @@
 // priority: 500
 StartupEvents.registry('irons_spellbooks:spells', event => {
-    event.create('advance_flaming_strike')
-        .setCooldownSeconds(15)
+    event.create('flaming_strike')
+        .setCooldownSeconds(10)
         .setBaseManaCost(30)
-        .setManaCostPerLevel(15)
-        .setBaseSpellPower(5)
-        .setSpellPowerPerLevel(2)
+        .setManaCostPerLevel(0)
+        .setBaseSpellPower(0)
+        .setSpellPowerPerLevel(0)
         .setCastTime(10)
         .setCastType('long')
         .setSchool('irons_spellbooks:fire')
         .setMinRarity('common')
-        .setMaxLevel(5)
+        .setMaxLevel(1)
         .setCanBeInterrupted((player) => false)
         .setStartSound('irons_spellbooks:spell.flaming_strike.begin')
         .setFinishSound('irons_spellbooks:spell.flaming_strike.cast')
@@ -20,21 +20,17 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const level = ctx.level
             const entity = ctx.entity
             const spell = ctx.spell
-            const spellLevel = ctx.spellLevel
             const playerMagicData = ctx.playerMagicData
 
-            const radius = 3.25
-            const distance = 1.9
+            const radius = 4
             const forward = entity.getForward()
 
-            const hitLocation = entity.position().add(0, entity.getBbHeight() * 0.3, 0).add(forward.scale(distance))
+            const hitLocation = entity.position().add(0, entity.getBbHeight() * 0.3, 0).add(forward.scale(2))
 
             const entities = level.getEntitiesWithin(AABB.ofSize(hitLocation, radius * 2, radius, radius * 2))
             const damageSource = spell.getDamageSource(entity)
-
-            const spellPower = spell.getSpellPower(spellLevel, entity)
-            const damage = spellPower + 10
-
+            const attackAttr = entity.getAttribute('minecraft:generic.attack_damage')
+            const damage = attackAttr ? attackAttr.getValue() * 2 : 10
             for (let targetEntity of entities) {
                 if (!targetEntity.isAlive()) continue
                 if (targetEntity.position().subtract(entity.getEyePosition()).dot(forward) < 0) continue
@@ -45,12 +41,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 if (offsetVector.dot(forward) < 0) continue
 
                 if (ISSDamageSources.applyDamage(targetEntity, damage, damageSource)) {
-                    MagicManager.spawnParticles(level, IronsSpellsParticleHelper.FIRE,
-                        targetEntity.getX(), targetEntity.getY() + targetEntity.getBbHeight() * 0.5, targetEntity.getZ(),
-                        30,
-                        targetEntity.getBbWidth() * 0.5, targetEntity.getBbHeight() * 0.5, targetEntity.getBbWidth() * 0.5,
-                        0.03, false)
-                    EnchantmentHelper.doPostAttackEffects(level, targetEntity, damageSource)
+                    MagicManager.spawnParticles(level, IronsSpellsParticleHelper.FIRE, targetEntity.getX(), targetEntity.getY() + targetEntity.getBbHeight() * 0.5, targetEntity.getZ(), 30, targetEntity.getBbWidth() * 0.5, targetEntity.getBbHeight() * 0.5, targetEntity.getBbWidth() * 0.5, 0.03, false)
                 }
             }
 

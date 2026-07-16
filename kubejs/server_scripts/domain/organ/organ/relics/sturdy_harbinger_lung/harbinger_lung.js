@@ -1,8 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:harbinger_lung')
-    .addScore('chestcavity:breath_capacity', 1)
-    .addScore('chestcavity:breath_recovery', 1)
-    .setCanSpawn(true)
+    .addScore('chestcavity:breath_capacity', 3)
+    .addScore('chestcavity:breath_recovery', 3)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

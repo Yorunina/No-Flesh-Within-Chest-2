@@ -33,7 +33,7 @@
         },
         "soil_nutrients": {
             "type": "equal_or_higher",
-            "tolerance_factor": 0.1,
+            "tolerance_factor": 0.2,
             "value": "medium"
         }
     },

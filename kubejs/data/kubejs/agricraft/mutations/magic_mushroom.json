@@ -1,0 +1,6 @@
+{
+  "chance": 0.25,
+  "child": "kubejs:magic_mushroom",
+  "parent1": "kubejs:twistcap_fungus",
+  "parent2": "kubejs:meat_mushroom"
+}

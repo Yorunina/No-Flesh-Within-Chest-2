@@ -5,4 +5,4 @@ ItemEvents.entityInteracted('kubejs:relic_scroll', event => {
     
 })
 
-const RelicsBoss = ['dodosmobs:bone_chimera', 'block_factorys_bosses:infernal_dragon']
+const RelicsBoss = ['block_factorys_bosses:infernal_dragon']

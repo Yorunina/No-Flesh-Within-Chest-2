@@ -6,17 +6,10 @@
     "mods": [],
     "products": [
         {
-            "chance": 0.1,
-            "item": "kubejs:pitcher_stomach",
-            "max": 1,
-            "min": 1,
-            "required": true
-        },
-        {
-            "chance": 0.1,
-            "item": "kubejs:rootling_ectoplasm",
-            "max": 1,
-            "min": 1,
+            "chance": 1.0,
+            "item": "kubejs:magic_mushroom",
+            "max": 8,
+            "min": 2,
             "required": true
         }
     ],
@@ -31,17 +24,17 @@
         "soil_acidity": {
             "type": "equal",
             "tolerance_factor": 0.2,
-            "value": "neutral"
+            "value": "slightly_alkaline"
         },
         "soil_humidity": {
             "type": "equal",
             "tolerance_factor": 0.2,
-            "value": "damp"
+            "value": "wet"
         },
         "soil_nutrients": {
             "type": "equal_or_higher",
             "tolerance_factor": 0.2,
-            "value": "medium"
+            "value": "very_high"
         }
     },
     "seeds": [],

@@ -35,12 +35,12 @@
         },
         "soil_humidity": {
             "type": "equal",
-            "tolerance_factor": 0.15,
+            "tolerance_factor": 0.2,
             "value": "damp"
         },
         "soil_nutrients": {
             "type": "equal_or_higher",
-            "tolerance_factor": 0.1,
+            "tolerance_factor": 0.2,
             "value": "medium"
         }
     },

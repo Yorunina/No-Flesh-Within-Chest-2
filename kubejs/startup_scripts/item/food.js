@@ -38,4 +38,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:insect_meat_sausage').texture('kubejs:item/food/insect_meat_sausage').food(food => food.hunger(4).saturation(1.2).effect('minecraft:regeneration', 600, 0, 1))
     event.create('kubejs:nether_meat_sausage').texture('kubejs:item/food/nether_meat_sausage').food(food => food.hunger(4).saturation(1.2).effect('minecraft:fire_resistance', 600, 0, 1))
     event.create('kubejs:dragon_meat_sausage').texture('kubejs:item/food/dragon_meat_sausage').food(food => food.hunger(6).saturation(1.5))
+
+    event.create('kubejs:magic_mushroom').texture('kubejs:item/food/magic_mushroom').food(food => food.hunger(3).saturation(4).effect('chestcavity:surgical_anesthesia', 600, 0, 1))
 })

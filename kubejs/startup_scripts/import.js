@@ -70,3 +70,4 @@ const $FireEruptionAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spel
 const $ShockwaveParticlesPacket = Java.loadClass('io.redspace.ironsspellbooks.network.particles.ShockwaveParticlesPacket')
 const $BlastwaveParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions')
 const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.void_tentacle.VoidTentacle')
+const $PoisonSplash = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.poison_cloud.PoisonSplash')
