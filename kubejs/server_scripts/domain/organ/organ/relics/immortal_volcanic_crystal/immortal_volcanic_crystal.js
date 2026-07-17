@@ -44,8 +44,6 @@ function ImmortalVolcanicCrystalEntityFall(customData, event, organItem, organIn
     const entity = event.entity
     const level = entity.level
     const radius = 10
-    const duration = 400
-    const rendAmplifier = 9
 
     MagicManager.spawnParticles(level, new $BlastwaveParticleOptions(SchoolRegistry.FIRE.get().getTargetingColor(), radius), entity.getX(), entity.getY() + 0.165, entity.getZ(), 1, 0, 0, 0, 0, true)
 
@@ -58,12 +56,11 @@ function ImmortalVolcanicCrystalEntityFall(customData, event, organItem, organIn
     )
 
     const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (level, pEntity) => !ISSDamageSources.isFriendlyFireBetween(pEntity, entity) && ISSUtils["hasLineOfSight(net.minecraft.world.level.Level,net.minecraft.world.entity.Entity,net.minecraft.world.entity.Entity,boolean)"](level, entity, pEntity, true))
-    let damage = 0
-    let attackDamageAttr = entity.getAttribute('minecraft:generic.attack_damage')
-    if (attackDamageAttr) damage = attackDamageAttr.getValue()
+    const attackDamageAttr = entity.getAttribute('minecraft:generic.attack_damage')
+    const damage = attackDamageAttr ? attackDamageAttr.getValue() : 0
 
     for (let target of targets) {
-        target.addEffect(new $MobEffectInstance('irons_spellbooks:rend', duration, rendAmplifier))
+        target.addEffect(new $MobEffectInstance('irons_spellbooks:rend', 400, 9))
         target.setRemainingFireTicks(200)
         target.attack(level.damageSources().mobAttack(entity), 10 * damage)
         target.invulnerableTime = 0

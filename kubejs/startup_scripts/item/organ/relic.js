@@ -3,7 +3,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:warden_core').maxStackSize(1).texture('kubejs:item/organs/relic/warden_core').tag('kubejs:relic')
 
     event.create('kubejs:ender_guardian_spine').maxDamage(10).maxStackSize(1).texture('kubejs:item/organs/relic/ender_guardian_spine').tag('kubejs:relic').tag('kubejs:ender').tag('kubejs:spine')
-    event.create('kubejs:scylla_star_gem').maxStackSize(1).tag('kubejs:relic').tag('kubejs:magic').texture('kubejs:item/organs/relic/scylla_star_gem').tag('kubejs:gem')
 
     event.create('kubejs:dying_heart').food(food => food.hunger(3).saturation(1)).maxStackSize(1).tag('kubejs:relic').tag('kubejs:magic').texture('kubejs:item/organs/relic/dying_heart')
     event.create('kubejs:wither_skull').maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/wither_skull')
@@ -31,5 +30,9 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:wizened_toxic_gland').maxStackSize(1).texture('kubejs:item/organs/relic/wizened_toxic_gland').tag('kubejs:relic').tag('kubejs:magic')
     event.create('kubejs:plump_toxic_gland').maxStackSize(1).texture('kubejs:item/organs/relic/plump_toxic_gland').tag('kubejs:relic').tag('kubejs:magic')
     // 先驱者
+    event.create('kubejs:harbinger_lung').maxStackSize(1).texture('kubejs:item/organs/relic/harbinger_lung').tag('kubejs:relic').tag('kubejs:lung').tag('kubejs:machine')
     event.create('kubejs:sturdy_harbinger_lung').maxStackSize(1).texture('kubejs:item/organs/relic/sturdy_harbinger_lung').tag('kubejs:relic').tag('kubejs:lung').tag('kubejs:machine')
+    // 斯库拉
+    event.create('kubejs:rough_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/rough_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:shining_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/shining_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
 })

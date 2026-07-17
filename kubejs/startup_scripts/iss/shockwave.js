@@ -22,7 +22,9 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const spell = ctx.spell
 
             const radius = 16
-            const damage = 4 + spell.getSpellPower(8, entity) * 0.75
+            const attackDamageAttr = entity.getAttribute('minecraft:generic.attack_damage')
+            const damage = attackDamageAttr ? attackDamageAttr.getValue() : 10
+
 
             MagicManager.spawnParticles(level, new $BlastwaveParticleOptions(0.7, 1, 1, radius * 1.02), entity.getX(), entity.getY() + 0.15, entity.getZ(), 1, 0, 0, 0, 0, true)
             MagicManager.spawnParticles(level, new $BlastwaveParticleOptions(0.7, 1, 1, radius * 0.98), entity.getX(), entity.getY() + 0.15, entity.getZ(), 1, 0, 0, 0, 0, true)
@@ -31,10 +33,6 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             MagicManager.spawnParticles(level, IronsSpellsParticleHelper.ELECTRICITY, entity.getX(), entity.getY() + 1, entity.getZ(), 80, 0.25, 0.25, 0.25, 0.7 + radius * 0.1, false)
 
             CameraShakeManager.addCameraShake(new CameraShakeData(level, 30, entity.position(), radius * 2))
-
-            const dummyBolt = new $LightningBolt('minecraft:lightning_bolt', level)
-            dummyBolt.setDamage(0)
-            dummyBolt.setVisualOnly(true)
 
             const start = entity.getBoundingBox().getCenter()
             const damageSource = spell.getDamageSource(entity)
