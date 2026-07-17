@@ -173,3 +173,5 @@ const $BlastwaveParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.pa
 const $FireEruptionAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.FireEruptionAoe')
 const $PoisonSplash = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.poison_cloud.PoisonSplash')
 const $FlameStrikeParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.FlameStrikeParticleOptions')
+const $LightningBolt = Java.loadClass('net.minecraft.world.entity.LightningBolt')
+const $ZapParticleOption = Java.loadClass('io.redspace.ironsspellbooks.particle.ZapParticleOption')

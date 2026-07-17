@@ -71,3 +71,5 @@ const $ShockwaveParticlesPacket = Java.loadClass('io.redspace.ironsspellbooks.ne
 const $BlastwaveParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions')
 const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.void_tentacle.VoidTentacle')
 const $PoisonSplash = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.poison_cloud.PoisonSplash')
+const $LightningBolt = Java.loadClass('net.minecraft.world.entity.LightningBolt')
+const $ZapParticleOption = Java.loadClass('io.redspace.ironsspellbooks.particle.ZapParticleOption')
