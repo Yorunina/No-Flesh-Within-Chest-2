@@ -73,3 +73,4 @@ const $VoidTentacle = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.
 const $PoisonSplash = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.poison_cloud.PoisonSplash')
 const $LightningBolt = Java.loadClass('net.minecraft.world.entity.LightningBolt')
 const $ZapParticleOption = Java.loadClass('io.redspace.ironsspellbooks.particle.ZapParticleOption')
+const $IceTombEntity = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.ice_tomb.IceTombEntity')

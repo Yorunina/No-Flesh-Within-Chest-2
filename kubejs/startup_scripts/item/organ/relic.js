@@ -35,4 +35,14 @@ StartupEvents.registry('item', event => {
     // 斯库拉
     event.create('kubejs:rough_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/rough_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
     event.create('kubejs:shining_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/shining_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
+    // 雪怪
+    event.create('kubejs:decayed_yeti_fur').maxStackSize(1).texture('kubejs:item/organs/relic/decayed_yeti_fur').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:yeti_fur').maxStackSize(1).texture('kubejs:item/organs/relic/yeti_fur').tag('kubejs:relic').tag('kubejs:magic')
+    // 冥界骑士
+    event.create('kubejs:underworld_knight_debris').maxStackSize(1).texture('kubejs:item/organs/relic/underworld_knight_debris').tag('kubejs:relic').tag('kubejs:magic').tag('kubejs:bone')
+    event.create('kubejs:underworld_knight_bone').maxStackSize(1).texture('kubejs:item/organs/relic/underworld_knight_bone').tag('kubejs:relic').tag('kubejs:magic').tag('kubejs:bone')
+    // 克拉肯
+    event.create('kubejs:kraken_cloudy_eye').maxStackSize(1).texture('kubejs:item/organs/relic/kraken_cloudy_eye').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:kraken_eye').maxStackSize(1).texture('kubejs:item/organs/relic/kraken_eye').tag('kubejs:relic').tag('kubejs:magic')
+    
 })

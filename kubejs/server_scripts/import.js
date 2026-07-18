@@ -175,3 +175,5 @@ const $PoisonSplash = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.
 const $FlameStrikeParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.FlameStrikeParticleOptions')
 const $LightningBolt = Java.loadClass('net.minecraft.world.entity.LightningBolt')
 const $ZapParticleOption = Java.loadClass('io.redspace.ironsspellbooks.particle.ZapParticleOption')
+const $IceTombEntity = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.ice_tomb.IceTombEntity')
+const $BlackHole = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.black_hole.BlackHole')

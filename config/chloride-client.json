@@ -49,10 +49,10 @@
   "tileEntityDistanceCulling": true,
   "tileEntityCullingDistanceX": 4096,
   "tileEntityCullingDistanceY": 32,
-  "entityDistanceCulling": true,
+  "entityDistanceCulling": false,
   "entityCullingDistanceX": 4096,
   "entityCullingDistanceY": 32,
-  "monsterDistanceCulling": false,
+  "monsterDistanceCulling": true,
   "monsterCullingDistanceX": 16384,
   "monsterCullingDistanceY": 64,
   "entityWhitelist": [

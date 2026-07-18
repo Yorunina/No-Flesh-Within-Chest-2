@@ -35,7 +35,6 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 if (!targetEntity.isAlive()) continue
                 if (targetEntity.position().subtract(entity.getEyePosition()).dot(forward) < 0) continue
                 if (entity.distanceToSqr(targetEntity) >= radius * radius) continue
-                if (!ISSUtils.hasLineOfSight(level, entity.getEyePosition(), targetEntity.getBoundingBox().getCenter(), true)) continue
 
                 const offsetVector = targetEntity.getBoundingBox().getCenter().subtract(entity.getEyePosition())
                 if (offsetVector.dot(forward) < 0) continue

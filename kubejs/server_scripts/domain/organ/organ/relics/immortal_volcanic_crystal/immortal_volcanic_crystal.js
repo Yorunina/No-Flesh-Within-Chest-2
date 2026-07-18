@@ -55,7 +55,7 @@ function ImmortalVolcanicCrystalEntityFall(customData, event, organItem, organIn
         )
     )
 
-    const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (level, pEntity) => !ISSDamageSources.isFriendlyFireBetween(pEntity, entity) && ISSUtils["hasLineOfSight(net.minecraft.world.level.Level,net.minecraft.world.entity.Entity,net.minecraft.world.entity.Entity,boolean)"](level, entity, pEntity, true))
+    const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (level, pEntity) => !ISSDamageSources.isFriendlyFireBetween(pEntity, entity))
     const attackDamageAttr = entity.getAttribute('minecraft:generic.attack_damage')
     const damage = attackDamageAttr ? attackDamageAttr.getValue() : 0
 

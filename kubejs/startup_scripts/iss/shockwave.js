@@ -37,7 +37,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const start = entity.getBoundingBox().getCenter()
             const damageSource = spell.getDamageSource(entity)
 
-            const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (pLevel, pEntity) => pEntity != entity && pEntity.isPickable() && !pEntity.isSpectator() && !ISSDamageSources.isFriendlyFireBetween(pEntity, entity) && ISSUtils['hasLineOfSight(net.minecraft.world.level.Level,net.minecraft.world.entity.Entity,net.minecraft.world.entity.Entity,boolean)'](level, entity, pEntity, true))
+            const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (pLevel, pEntity) => pEntity.isPickable() && !pEntity.isSpectator() && !ISSDamageSources.isFriendlyFireBetween(pEntity, entity))
 
             for (let pTarget of targets) {
                 let dest = pTarget.getBoundingBox().getCenter()

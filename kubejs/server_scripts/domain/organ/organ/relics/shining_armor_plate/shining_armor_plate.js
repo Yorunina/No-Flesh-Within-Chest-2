@@ -39,7 +39,7 @@ function ShiningArmorPlateTakeOff(customData, event, organItem, organIndex, slot
  * @param {string} slotType
  */
 function ShiningArmorPlateEntityFall(customData, event, organItem, organIndex, slotType) {
-    // if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicSlot) return
     if (event.distance < 3) return
     const entity = event.entity
     const level = entity.level
@@ -57,7 +57,7 @@ function ShiningArmorPlateEntityFall(customData, event, organItem, organIndex, s
     CameraShakeManager.addCameraShake(new CameraShakeData(level, 30, entity.position(), radius * 2))
 
     const start = entity.getBoundingBox().getCenter()
-    const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (pLevel, pEntity) => pEntity != entity && pEntity.isPickable() && !pEntity.isSpectator() && !ISSDamageSources.isFriendlyFireBetween(pEntity, entity) && ISSUtils['hasLineOfSight(net.minecraft.world.level.Level,net.minecraft.world.entity.Entity,net.minecraft.world.entity.Entity,boolean)'](level, entity, pEntity, true))
+    const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (pLevel, pEntity) => pEntity.isPickable() && !pEntity.isSpectator() && !ISSDamageSources.isFriendlyFireBetween(pEntity, entity))
     const damageSource = level.damageSources().magic()
     for (let pTarget of targets) {
         let dest = pTarget.getBoundingBox().getCenter()

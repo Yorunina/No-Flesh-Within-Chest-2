@@ -36,7 +36,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 )
             )
 
-            const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (level, pEntity) => !ISSDamageSources.isFriendlyFireBetween(pEntity, entity) && ISSUtils["hasLineOfSight(net.minecraft.world.level.Level,net.minecraft.world.entity.Entity,net.minecraft.world.entity.Entity,boolean)"](level, entity, pEntity, true))
+            const targets = GetLivingWithinRadiusVec3d(level, entity.position(), radius, (level, pEntity) => !ISSDamageSources.isFriendlyFireBetween(pEntity, entity))
 
             for (let target of targets) {
                 target.addEffect(new $MobEffectInstance('irons_spellbooks:rend', duration, rendAmplifier))

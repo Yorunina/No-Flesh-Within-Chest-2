@@ -13,7 +13,8 @@
   "entityWhitelist": [
     "botania:mana_burst",
     "drg_flares:drg_flares",
-    "quark:soul_bead"
+    "quark:soul_bead",
+    "irons_spellbooks:black_hole"
   ],
   "tracingDistance": 128,
   "debugMode": false,
@@ -66,7 +67,8 @@
     "createbigcannons:pitch_contraption",
     "minecraft:item_display",
     "cinematiccataclysm:ignis_cutscene",
-    "voidscape:corrupted_pawn"
+    "voidscape:corrupted_pawn",
+    "irons_spellbooks:black_hole"
   ],
   "disableF3": false,
   "skipEntityCulling": false,
