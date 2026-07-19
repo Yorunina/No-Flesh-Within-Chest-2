@@ -10,7 +10,7 @@ RegistryOrgan('kubejs:sturdy_harbinger_lung')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function SturdyHararbingerLungChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function SturdyHarbingerLungChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
@@ -24,7 +24,7 @@ function SturdyHararbingerLungChestCavityUpdate(customData, event, organItem, or
  * @param {number} organIndex
  * @param {string} slotType
  */
-function SturdyHararbingerLungTakeOff(customData, event, organItem, organIndex, slotType) {
+function SturdyHarbingerLungTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
     if (!entity.isPlayer()) return
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'kubejs:flaming_strike')
@@ -37,7 +37,7 @@ function SturdyHararbingerLungTakeOff(customData, event, organItem, organIndex, 
  * @param {number} organIndex
  * @param {string} slotType
  */
-function SturdyHararbingerLungItemLeftClicked(customData, event, organItem, organIndex, slotType) {
+function SturdyHarbingerLungItemLeftClicked(customData, event, organItem, organIndex, slotType) {
     if (slotType != AwakeRelicSlot) return
     const entity = event.entity
     const level = event.level
@@ -72,8 +72,8 @@ function SturdyHararbingerLungItemLeftClicked(customData, event, organItem, orga
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:sturdy_harbinger_lung')
-        .addOnlyStrategy('chest_cavity_update', SturdyHararbingerLungChestCavityUpdate)
-        .addOnlyStrategy('organ_take_off', SturdyHararbingerLungTakeOff)
-        .addOnlyStrategy('item_left_clicked', SturdyHararbingerLungItemLeftClicked)
+        .addOnlyStrategy('chest_cavity_update', SturdyHarbingerLungChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', SturdyHarbingerLungTakeOff)
+        .addOnlyStrategy('item_left_clicked', SturdyHarbingerLungItemLeftClicked)
 
 )

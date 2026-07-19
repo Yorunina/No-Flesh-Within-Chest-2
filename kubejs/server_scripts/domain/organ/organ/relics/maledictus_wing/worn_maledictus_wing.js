@@ -26,11 +26,7 @@ function WornMaledictusWingKeyActive(customData, event, organItem, organIndex, s
     let playerStrength = chestCavity.getOrganScore('chestcavity:strength')
     server.scheduleRepeatingInTicks(2, (ctx) => {
         level.spawnParticles($ParticleTypes.SONIC_BOOM, false, player.x, player.y, player.z, 0, 0, 0, 1, 0)
-        let entityInRadius = GetLivingWithinRadius(level, player.blockPosition(), 3, (curlevel, curEntity) => {
-            if (!curEntity.isPlayer()) {
-                return true
-            }
-        })
+        let entityInRadius = GetLivingWithinRadius(level, player.blockPosition(), 3, (curlevel, curEntity) => !curEntity.isPlayer())
         entityInRadius.forEach(entity => {
             entity.attack(level.damageSources().playerAttack(player), 5 * playerStrength)
             entity.invulnerableTime = 0

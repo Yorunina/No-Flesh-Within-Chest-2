@@ -13,7 +13,8 @@ RegistryOrgan('kubejs:twinkle_rib')
 function TwinkleRibChestLootStrategy(customData, event, organItem, organIndex, slotType) {
     const loot = event.loot
     if (organItem.getDamageValue() >= organItem.getMaxDamage()) return
-    event.addLoot(RandomGet(loot))
+    let moreLoot = RandomGet(loot)
+    if (moreLoot) event.addLoot(moreLoot)
     const lootTableId = event.lootTableId
     if (lootTableId.getPath().startsWith('chests/village/')) {
         event.addLoot(LootEntry.of('kubejs:relic_paper').withChance(0.1))

@@ -37,7 +37,7 @@ function YetiFurTakeOff(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  */
 function YetiFurEntityKill(customData, event, organItem, organIndex, slotType) {
-    // if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicSlot) return
     const entity = event.entity
     const source = event.source.actual
     const level = entity.level

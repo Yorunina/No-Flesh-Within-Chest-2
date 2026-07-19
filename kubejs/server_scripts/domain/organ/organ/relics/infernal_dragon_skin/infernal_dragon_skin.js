@@ -58,7 +58,7 @@ function InfernalDragonSkinPlayerRoll(customData, event, organItem, organIndex, 
     player.connection.send(new $ClientboundSetEntityMotionPacket(player))
     let timer = 0
     let attackDamageAttr = player.getAttribute('minecraft:generic.attack_damage')
-    let attackDamage = attackDamageAttr.getValue()
+    let attackDamage = attackDamageAttr ? attackDamageAttr.getValue() : 5
     server.scheduleRepeatingInTicks(2, (ctx) => {
         let entityInRadius = GetLivingWithinRadius(level, player.blockPosition(), 3, (curlevel, curEntity) => !ISSDamageSources.isFriendlyFireBetween(curEntity, player))
         entityInRadius.forEach(entity => {

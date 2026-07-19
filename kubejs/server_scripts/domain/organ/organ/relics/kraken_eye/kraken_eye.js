@@ -36,6 +36,7 @@ function KrakenEyeTakeOff(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  */
 function KrakenEyeEntityDeath(customData, event, organItem, organIndex, slotType) {
+    if (slotType != AwakeRelicSlot) return
     const entity = event.entity
     const level = event.level
     const radius = 16

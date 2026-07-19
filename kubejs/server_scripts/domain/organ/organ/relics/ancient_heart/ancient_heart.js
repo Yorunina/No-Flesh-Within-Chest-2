@@ -39,7 +39,7 @@ function AncientHeartOrganTakeOff(customData, event, organItem, organIndex, slot
  * @param {string} slotType
  */
 function AncientHeartEntityTick(customData, event, organItem, organIndex, slotType) {
-    // if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicSlot) return
     const entity = event.entity
     const level = entity.level
     if (entity.isMoving()) return

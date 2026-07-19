@@ -23,7 +23,6 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
             const radius = 16
             const raycast = ISSUtils.raycastForEntity(level, entity, 48, true)
             let center = raycast.getLocation()
-
             level.playSound(null, center.x(), center.y(), center.z(), 'irons_spellbooks:spell.black_hole.cast', 'ambient', 4, 1)
 
             const blackHole = new $BlackHole(level, entity)
