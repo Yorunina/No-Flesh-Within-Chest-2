@@ -2684,12 +2684,67 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
+			description: [
+				"在众多作物中，存在一种名为迷咕麻菇的作物，其具有极强的致幻性。"
+				""
+				"直接食用它的果实，会获得名为&6手术麻醉&r的效果。持有该效果时，生物会陷入无智能状态，并且变得&6易于开胸&r。"
+			]
 			id: "1E7CD654764B508D"
-			tasks: [{
-				id: "3C06B9043A55431F"
-				item: "minecraft:stripped_oak_log"
+			rewards: [{
+				id: "4765BA8395B658E2"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "迷咕？麻菇？"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 1
+								rec: 1
+							}
+							gain: {
+								dom: 1
+								rec: 1
+							}
+							growth: {
+								dom: 1
+								rec: 1
+							}
+							mutativity: {
+								dom: 1
+								rec: 1
+							}
+							resistance: {
+								dom: 1
+								rec: 1
+							}
+							species: {
+								dom: "kubejs:magic_mushroom"
+								rec: "kubejs:magic_mushroom"
+							}
+							strength: {
+								dom: 1
+								rec: 1
+							}
+						}
+					}
+				}
+				id: "3C06B9043A55431F"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "agricraft_seed_species:[kubejs:magic_mushroom]"
+					}
+				}
+				title: "迷咕麻菇种子"
+				type: "item"
+			}]
+			title: "植物安全手术守则"
 			x: 0.0d
 			y: 14.0d
 		}
@@ -2760,6 +2815,23 @@
 			}]
 			x: -6.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["1E7CD654764B508D"]
+			id: "0E665908D464191D"
+			tasks: [{
+				id: "04D8F23E87FFDE6D"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "chestcavity:surgical_anesthesia"
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 14.0d
 		}
 	]
 	title: "传闻：血肉孢子"

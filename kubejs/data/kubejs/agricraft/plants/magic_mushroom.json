@@ -8,8 +8,15 @@
         {
             "chance": 1.0,
             "item": "kubejs:magic_mushroom",
-            "max": 8,
-            "min": 2,
+            "max": 3,
+            "min": 1,
+            "required": true
+        },
+        {
+            "chance": 0.8,
+            "item": "kubejs:magic_mushroom_colloid",
+            "max": 1,
+            "min": 1,
             "required": true
         }
     ],

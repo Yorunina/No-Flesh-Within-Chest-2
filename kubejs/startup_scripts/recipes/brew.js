@@ -6,4 +6,6 @@ StartupEvents.postInit(event => {
 
     $PotionBrewing.addMix('biomancy:primordial_infestation', 'biomancy:acid_extract', 'chestcavity:organ_slip')
     $PotionBrewing.addMix('chestcavity:organ_slip', 'minecraft:redstone', 'chestcavity:long_organ_slip')
+    $PotionBrewing.addMix('minecraft:awkward', 'kubejs:magic_mushroom_colloid', 'chestcavity:surgical_anesthesia')
+    $PotionBrewing.addMix('chestcavity:surgical_anesthesia', 'minecraft:redstone', 'chestcavity:long_surgical_anesthesia')
 })

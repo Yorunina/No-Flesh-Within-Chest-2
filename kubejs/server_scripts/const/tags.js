@@ -47,6 +47,7 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('entity_type', event => {
     event.add('ars_nouveau:drygmy_blacklist', ['wildernature:raccoon'])
+    event.removeAll('modulargolems:friendly')
 })
 
 
@@ -66,5 +67,6 @@ ServerEvents.tags('fluid', event => {
 })
 
 ServerEvents.tags('mob_effect', event => {
+    // 灾变Boss效果
     event.add('cataclysm:effective_for_bosses', ['chestcavity:organ_slip', 'chestcavity:surgical_anesthesia'])
 })

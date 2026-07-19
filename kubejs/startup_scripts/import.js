@@ -59,6 +59,7 @@ const $CropBlockEntity = Java.loadClass('com.agricraft.agricraft.common.block.en
 const $ImpulseCastData = Java.loadClass('io.redspace.ironsspellbooks.capabilities.magic.ImpulseCastData')
 const $SpinAttackType = Java.loadClass('io.redspace.ironsspellbooks.player.SpinAttackType')
 const $BlackHole = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.black_hole.BlackHole')
+const $AbstractGolem = Java.loadClass('dev.xkmc.modulargolems.content.entity.common.AbstractGolemEntity')
 
 const $EntityHitResult = Java.loadClass('net.minecraft.world.phys.EntityHitResult')
 const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult')

@@ -1,0 +1,8 @@
+{
+  "enchantment.usefulspyglass.marking": "标记",
+  "enchantment.usefulspyglass.marking.desc": "按下攻击键以在望远镜中标记一个生物。",
+  "enchantment.usefulspyglass.precision": "精准",
+  "enchantment.usefulspyglass.precision.desc": "在使用远程武器时，手持望远镜并蹲下可以获得缩放效果。射物获得完美的准确率并造成额外伤害。",
+  "enchantment.usefulspyglass.spotter": "观察者",
+  "enchantment.usefulspyglass.spotter.desc": "在望远镜中按下攻击键以召唤一个末影眼，持续标记目标位置附近的生物。"
+}
