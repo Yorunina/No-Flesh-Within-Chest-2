@@ -1,0 +1,29 @@
+{
+	icon: "kubejs:infinity_soil"
+	id: "431507334EAAB00B"
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "kubejs:infinity_soil"
+			ignore_reward_blocking: true
+			isServer: false
+			remove: false
+			stage: "ftb_infinity_soil_recipe"
+			title: "私有息壤配方"
+			type: "maa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "kubejs:infinity_soil"
+			ignore_reward_blocking: true
+			isServer: true
+			remove: false
+			stage: "ftb_infinity_soil_recipe"
+			title: "公开息壤配方"
+			type: "maa:astages"
+		}
+	]
+	title: "息壤配方"
+}

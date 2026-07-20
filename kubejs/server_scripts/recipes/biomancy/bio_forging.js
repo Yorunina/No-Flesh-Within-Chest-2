@@ -1,8 +1,8 @@
 // priority: 1000
-AStages.addRestrictionForRecipe('plant/plant_injection_recipe', 'ftb_plant_injection_recipe', 'biomancy:bio_forging', ['kubejs:plant_injection'])
 AStages.addRestrictionForRecipe('gula/gula_injection_recipe', 'ftb_gula_injection_recipe', 'biomancy:bio_forging', ['kubejs:gula_injection'])
 AStages.addRestrictionForRecipe('revolution_machine/revolution_machine_injection_recipe', 'ftb_revolution_machine_injection_recipe', 'biomancy:bio_forging', ['kubejs:revolution_machine_injection'])
 AStages.addRestrictionForRecipe('rose/rose_injection_recipe', 'ftb_rose_injection_recipe', 'biomancy:bio_forging', ['kubejs:rose_injection'])
+AStages.addRestrictionForRecipe('infinity_soil/infinity_soil_recipe', 'ftb_infinity_soil_recipe', 'biomancy:bio_forging', ['kubejs:infinity_soil'])
 
 ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Ingredient.of('#farm_and_charm:dough', 4), Ingredient.of('#kubejs:muscle'), Item.of('biomancy:healing_additive')], Item.of('kubejs:gluten_muscle'), 'biomancy:organ', 10)
@@ -47,7 +47,9 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:tough_fibers', 1)], Item.of('kubejs:empty_inducer_serum'), 'biomancy:components', 5)
 
-    event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('kubejs:magic_mushroom', 8)], Item.of('kubejs:plant_injection', 1), 'biomancy:organ', 100).id('kubejs:plant_injection')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:magic_mushroom', 8), Item.of('farm_and_charm:fertilized_soil', 1), Item.of('biomancy:water_gel_block', 1)], Item.of('kubejs:infinity_soil'), 'biomancy:components', 50).id('kubejs:infinity_soil')
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('kubejs:magic_mushroom', 8)], Item.of('kubejs:plant_injection', 1), 'biomancy:organ', 100)
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('kubejs:deserted_gula_worm_nest')], Item.of('kubejs:gula_injection', 1), 'biomancy:organ', 100).id('kubejs:gula_injection')
 

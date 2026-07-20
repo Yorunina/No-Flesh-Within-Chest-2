@@ -2563,14 +2563,37 @@
 		}
 		{
 			dependencies: ["6BCFAD682406F180"]
+			description: [
+				"可能您注意到了，在之前的任务中我曾经将一种特殊的土壤——&6息壤&r——作为任务的奖励。"
+				""
+				"该土壤可以无条件的&6催熟任何在作物架上的作物&r，甚至可以无视作物的生长条件。"
+				""
+				"但这种土壤会带来&6世界的不稳定&r——大量使用这种土壤，可能会有&c世界崩坏&r的危险。"
+				""
+				"因此我决定，将息壤的制成方法赠予给最了解作物的人——只要您能够在作物架种植最多的作物，那边可以选择是否公开化这样技术。"
+				"{@pagebreak}"
+				"公开配方会使所有人都可以制作息壤。"
+				""
+				"私有配方会使您成为唯一能够制作息壤的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+			]
 			id: "5B24D3C8C88CC080"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7AD364DB0E5D1DDD"
+				table_id: 4833777691996631051L
+				type: "choice"
+			}]
+			subtitle: "奇异土壤"
 			tasks: [{
+				icon: "agricraft:wooden_crop_sticks"
 				id: "08C0C03D4308B564"
 				leaderboard: "maa:crops_planted"
 				min: 1
 				rank: 1
+				title: "作物架种植称霸"
 				type: "leaderboards:rank_task"
 			}]
+			title: "息壤配方"
 			x: 0.0d
 			y: 17.0d
 		}
@@ -2582,6 +2605,11 @@
 				"2C1F1CF75F69653E"
 				"5207ADD4211DB1F4"
 				"3BF6D4382987C474"
+			]
+			description: [
+				"严格来说，使用植物作为器官是非常不安全的——但您也不需要过度担心！因为我已经发现了一种特殊胸腔的存在。"
+				""
+				"在历史记录中，这种胸腔被简单的称作&6植物胸腔&r，其可以最大幅度发挥这些植物器官的能力，并且&6非常安全&r。"
 			]
 			icon: {
 				Count: 1
@@ -2673,12 +2701,38 @@
 		}
 		{
 			dependencies: ["1E7CD654764B508D"]
+			description: [
+				"&6恭喜！&r"
+				""
+				"植物胸腔提供给了生物一个非常非常安全的方式以在胸腔内维持这些植物器官的活性！"
+				""
+				"通过植物胸腔内&6丰饶槽位&r的激活，大部分植物器官会有着极其特殊的增强，以在战斗中和日常生产中帮助您前进。"
+				""
+				"请您活用这份能力，以便完成我们的冒险故事！"
+			]
 			id: "6BCFAD682406F180"
+			rewards: [
+				{
+					id: "5BD03E694AC37CCA"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "5F4BA234826F4234"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
+			]
+			subtitle: "植物之心"
 			tasks: [{
 				id: "7D7FAA3422A50824"
 				item: "kubejs:plant_injection"
 				type: "item"
 			}]
+			title: "&6庆贺吧！此乃植物胸腔！&r"
 			x: 0.0d
 			y: 15.5d
 		}
@@ -2688,6 +2742,8 @@
 				"在众多作物中，存在一种名为&6迷咕麻菇&r的作物，其具有极强的致幻性。"
 				""
 				"直接食用它的果实，会获得名为&6手术麻醉&r的效果。持有该效果时，生物会陷入无法移动的状态，并且变得&6易于开胸&r。"
+				""
+				"这种果实同样是植物胸腔的重要原料，&6在获得少量迷咕麻菇果后，与三阶注射器在生物锻台合成&r，便能够制成植物注射器。"
 			]
 			id: "1E7CD654764B508D"
 			rewards: [{
@@ -2818,13 +2874,18 @@
 		}
 		{
 			dependencies: ["1E7CD654764B508D"]
-			description: ["使用&6迷咕麻菇果&r便可以制成手术麻醉药水。"]
+			description: [
+				"使用&6迷咕麻菇胶质&r便可以制成手术麻醉药水。"
+				""
+				"被手术麻醉效果影响的生物会&6无法移动且变得易于开胸&r。"
+			]
 			id: "0E665908D464191D"
 			rewards: [{
 				id: "3C4BFC9BA99231E1"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "简易开胸方案"
 			tasks: [{
 				id: "04D8F23E87FFDE6D"
 				item: {
