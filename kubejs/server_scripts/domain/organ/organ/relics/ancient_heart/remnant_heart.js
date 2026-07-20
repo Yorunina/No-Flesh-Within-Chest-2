@@ -3,7 +3,6 @@
 RegistryOrgan('kubejs:remnant_heart')
     .addScore('chestcavity:health', 2)
     .addScore('chestcavity:fire_resistant', 1)
-    .setCanSpawn(true)
 
 /**
  * @param {OrganBlockRightClickedStrategyCustomData} customData

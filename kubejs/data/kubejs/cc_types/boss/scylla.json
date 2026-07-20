@@ -1,6 +1,6 @@
 {
     "defaultChestCavity": [   
-        {"item": "kubejs:rough_armor_plate", "position": 1}
+        {"item": "kubejs:cold_armor_plate", "position": 1}
     ],
     "baseOrganScores": [],
     "inventoryType": "kubejs:cc_inventory_types/relic"

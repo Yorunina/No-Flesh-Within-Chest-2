@@ -2,7 +2,7 @@
 RegistryOrgan('kubejs:ancient_heart')
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:health', 1)
-    .setCanSpawn(true)
+
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 

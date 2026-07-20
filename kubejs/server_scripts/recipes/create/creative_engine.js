@@ -1,5 +1,5 @@
 // priority: 1000
-AStages.addRestrictionForRecipe('create/genesis_blueprint_recipe', 'ftb_world_computer_3', 'minecraft:crafting', 'kubejs:creative_motor_manual_only')
+AStages.addRestrictionForRecipe('create/genesis_blueprint_recipe', 'ftb_world_computer_3', 'minecraft:crafting', ['kubejs:creative_motor_manual_only'])
 
 ServerEvents.recipes(event => {
     event.shaped('create:creative_motor', [

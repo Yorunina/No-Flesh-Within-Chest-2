@@ -9,40 +9,51 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:twinkle_rib').maxDamage(16).maxStackSize(1).tag('kubejs:relic').texture('kubejs:item/organs/relic/twinkle_rib').tag('kubejs:bone')
 
     // 炼狱巨龙
-    event.create('kubejs:rough_infernal_dragon_skin').maxStackSize(1).texture('kubejs:item/organs/relic/rough_infernal_dragon_skin').tag('kubejs:relic').tag('kubejs:magic')
-    event.create('kubejs:infernal_dragon_skin').maxStackSize(1).texture('kubejs:item/organs/relic/infernal_dragon_skin').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:decayed_infernal_dragon_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/decayed_infernal_dragon_crystal').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:infernal_dragon_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/infernal_dragon_crystal').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:ancient_infernal_dragon_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_infernal_dragon_crystal').tag('kubejs:relic').tag('kubejs:magic')
     // 焰魔
     event.create('kubejs:immortal_volcanic_rock').maxStackSize(1).texture('kubejs:item/organs/relic/immortal_volcanic_rock').tag('kubejs:relic').tag('kubejs:nether')
     event.create('kubejs:immortal_volcanic_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/immortal_volcanic_crystal').tag('kubejs:relic').tag('kubejs:nether')
+    event.create('kubejs:ancient_immortal_volcanic_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_immortal_volcanic_crystal').tag('kubejs:relic').tag('kubejs:nether')
     // 下界合金巨兽
     event.create('kubejs:broken_netherite_muscle').maxStackSize(1).texture('kubejs:item/organs/relic/broken_netherite_muscle').tag('kubejs:relic').tag('kubejs:nether').tag('kubejs:muscle')
     event.create('kubejs:netherite_muscle').maxStackSize(1).texture('kubejs:item/organs/relic/netherite_muscle').tag('kubejs:relic').tag('kubejs:nether').tag('kubejs:muscle')
+    event.create('kubejs:ancient_netherite_muscle').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_netherite_muscle').tag('kubejs:relic').tag('kubejs:nether').tag('kubejs:muscle')
     // 咒翼
     event.create('kubejs:worn_maledictus_wing').maxStackSize(1).texture('kubejs:item/organs/relic/worn_maledictus_wing').tag('kubejs:relic').tag('kubejs:magic')
     event.create('kubejs:maledictus_wing').maxStackSize(1).texture('kubejs:item/organs/relic/maledictus_wing').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:ancient_maledictus_wing').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_maledictus_wing').tag('kubejs:relic').tag('kubejs:magic')
     // 利维亚桑
     event.create('kubejs:corroded_leviathan_rib').maxStackSize(1).texture('kubejs:item/organs/relic/corroded_leviathan_rib').tag('kubejs:relic').tag('kubejs:bone').tag('kubejs:magic')
     event.create('kubejs:leviathan_rib').maxStackSize(1).texture('kubejs:item/organs/relic/leviathan_rib').tag('kubejs:relic').tag('kubejs:bone').tag('kubejs:magic')
+    event.create('kubejs:ancient_leviathan_rib').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_leviathan_rib').tag('kubejs:relic').tag('kubejs:bone').tag('kubejs:magic')
     // 远古遗骸
     event.create('kubejs:remnant_heart').maxStackSize(1).texture('kubejs:item/organs/relic/remnant_heart').tag('kubejs:heart').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:awaken_heart').maxStackSize(1).texture('kubejs:item/organs/relic/awaken_heart').tag('kubejs:heart').tag('kubejs:relic').tag('kubejs:magic')
     event.create('kubejs:ancient_heart').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_heart').tag('kubejs:heart').tag('kubejs:relic').tag('kubejs:magic')
     // 沙虫
-    event.create('kubejs:wizened_toxic_gland').maxStackSize(1).texture('kubejs:item/organs/relic/wizened_toxic_gland').tag('kubejs:relic').tag('kubejs:magic')
-    event.create('kubejs:plump_toxic_gland').maxStackSize(1).texture('kubejs:item/organs/relic/plump_toxic_gland').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:abnormal_sand_gland').maxStackSize(1).texture('kubejs:item/organs/relic/abnormal_sand_gland').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:poison_sand_gland').maxStackSize(1).texture('kubejs:item/organs/relic/poison_sand_gland').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:ancient_poison_sand_gland').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_poison_sand_gland').tag('kubejs:relic').tag('kubejs:magic')
     // 先驱者
     event.create('kubejs:harbinger_lung').maxStackSize(1).texture('kubejs:item/organs/relic/harbinger_lung').tag('kubejs:relic').tag('kubejs:lung').tag('kubejs:machine')
     event.create('kubejs:sturdy_harbinger_lung').maxStackSize(1).texture('kubejs:item/organs/relic/sturdy_harbinger_lung').tag('kubejs:relic').tag('kubejs:lung').tag('kubejs:machine')
+    event.create('kubejs:ancient_harbinger_lung').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_harbinger_lung').tag('kubejs:relic').tag('kubejs:lung').tag('kubejs:machine')
     // 斯库拉
-    event.create('kubejs:rough_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/rough_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
-    event.create('kubejs:shining_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/shining_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:cold_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/cold_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:shining_cold_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/shining_cold_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:ancient_cold_armor_plate').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_cold_armor_plate').tag('kubejs:relic').tag('kubejs:magic')
     // 雪怪
-    event.create('kubejs:decayed_yeti_fur').maxStackSize(1).texture('kubejs:item/organs/relic/decayed_yeti_fur').tag('kubejs:relic').tag('kubejs:magic')
-    event.create('kubejs:yeti_fur').maxStackSize(1).texture('kubejs:item/organs/relic/yeti_fur').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:cold_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/cold_crystal').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:eternal_cold_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/eternal_cold_crystal').tag('kubejs:relic').tag('kubejs:magic')
+    event.create('kubejs:ancient_eternal_cold_crystal').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_eternal_cold_crystal').tag('kubejs:relic').tag('kubejs:magic')
     // 冥界骑士
     event.create('kubejs:underworld_knight_debris').maxStackSize(1).texture('kubejs:item/organs/relic/underworld_knight_debris').tag('kubejs:relic').tag('kubejs:magic').tag('kubejs:bone')
     event.create('kubejs:underworld_knight_bone').maxStackSize(1).texture('kubejs:item/organs/relic/underworld_knight_bone').tag('kubejs:relic').tag('kubejs:magic').tag('kubejs:bone')
+    event.create('kubejs:ancient_underworld_knight_bone').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_underworld_knight_bone').tag('kubejs:relic').tag('kubejs:magic').tag('kubejs:bone')
     // 克拉肯
     event.create('kubejs:kraken_cloudy_eye').maxStackSize(1).texture('kubejs:item/organs/relic/kraken_cloudy_eye').tag('kubejs:relic').tag('kubejs:magic')
     event.create('kubejs:kraken_eye').maxStackSize(1).texture('kubejs:item/organs/relic/kraken_eye').tag('kubejs:relic').tag('kubejs:magic')
-    
+    event.create('kubejs:ancient_kraken_eye').maxStackSize(1).texture('kubejs:item/organs/relic/ancient_kraken_eye').tag('kubejs:relic').tag('kubejs:magic')
 })

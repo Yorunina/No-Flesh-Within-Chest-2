@@ -1,4 +1,4 @@
-// priority: 950
+// priority: 3000
 const NET_HIGHLIGHT_POS = 'highlight_pos'
 /**
  * 展示方块的边框线

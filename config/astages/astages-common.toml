@@ -1,0 +1,78 @@
+
+[Notifications]
+	#Show a chat warning to admins when a stage is not associated with any restriction.
+	"Enable Missing Stage Warning" = true
+
+	[Notifications."Stage Addition Visuals"]
+		#How the notification is shown when a player gains a stage. Options: TITLE, ACTION_BAR, CHAT
+		#Allowed Values: TITLE, ACTION_BAR, CHAT, NONE
+		"Display Type" = "TITLE"
+		#The color of the text when a stage is added
+		#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+		"Text Color" = "GREEN"
+		#Animation fade-in time in ticks for the title notification
+		#Range: 0 ~ 72000
+		"Fade In Ticks" = 20
+		#How long the title notification stays on screen in ticks
+		#Range: 0 ~ 72000
+		"Stay Ticks" = 60
+		#Animation fade-out time in ticks for the title notification
+		#Range: 0 ~ 72000
+		"Fade Out Ticks" = 20
+
+	[Notifications."Stage Removal Visuals"]
+		#How the notification is shown when a player loses a stage.
+		#Allowed Values: TITLE, ACTION_BAR, CHAT, NONE
+		"Display Type" = "CHAT"
+		#The color of the text when a stage is removed
+		#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+		"Text Color" = "RED"
+		#Animation fade-in time in ticks for the title notification
+		#Range: 0 ~ 72000
+		"Fade In Ticks" = 20
+		#How long the title notification stays on screen in ticks
+		#Range: 0 ~ 72000
+		"Stay Ticks" = 60
+		#Animation fade-out time in ticks for the title notification
+		#Range: 0 ~ 72000
+		"Fade Out Ticks" = 20
+
+["File Management"]
+	#Choose if simple restrictions must be read from the world/server folder or the global config folder.
+	#Allowed Values: CONFIG_FOLDER, SERVER_FOLDER
+	"Read Simple Restrictions" = "CONFIG_FOLDER"
+	#Set how many times the simple restrictions file is rewritten after additions before forcing a save.
+	#Range: > 1
+	"Update File After X Additions" = 5
+	#If true, the simple restrictions JSON file will be formatted with clean spacing. If false, it will be saved on a single line (saves space).
+	"Pretty Print Simple Restrictions" = true
+
+[Mechanics]
+	#If true, execute stage addition operations (adding multiple stages at once via code) will show an alert. 
+	#If false, alerts will not be shown.
+	"Enable Add All Operation Stage Alert" = true
+	#If true, bulk stage removal operations (removing multiple stages at once via code) will show an alert. 
+	#If false, alerts will not be shown.
+	"Enable Remove All Operation Stage Alert" = true
+	#If true, uses an injection Mixin to force AStages' loot restrictions to run as the absolute last check, after all other mods have finished.
+	#If false, relies on Forge's standard Global Loot Modifier registry order (JSON).
+	#Ignored if LootJS is installed!
+	"Force Last Loot Modifier Execution" = false
+	#If true, enables an additional check on entity drops via the 'LivingDropsEvent'.
+	#WARNING: This option may cause conflicts, item duplication, or compatibility issues with loot restriction replacer or other loot-modifying mods. 
+	#Enable this ONLY if strictly necessary (e.g., if standard mob drop restrictions are not working as expected).
+	"Enable Living Drops Event Check" = false
+
+[Developer]
+	#Enable test-mode used by developers to check if all restrictions work as expected.
+	"Enable Test Mode" = false
+	#Show detailed backend logs related to development and parsing.
+	"Enable Dev Logs" = false
+	#Log the spawn types for every entity generated via FinalizeSpawnEvent.
+	"Enable Mob Spawn Logs" = false
+	#Whitelist spawn types shown in logs if `Enable Mob Spawn Logs` is true.
+	#If empty, all types will be logged. Allowed values: [NATURAL, CHUNK_GENERATION, SPAWNER, STRUCTURE, BREEDING, MOB_SUMMONED, JOCKEY, EVENT, CONVERSION, REINFORCEMENT, TRIGGERED, BUCKET, SPAWN_EGG, COMMAND, DISPENSER, PATROL]
+	"Whitelist Spawn Types" = []
+	#Whitelist entity types shown in logs (e.g., 'minecraft:zombie'). If empty, all entities are logged.
+	"Whitelist Entity Types" = []
+

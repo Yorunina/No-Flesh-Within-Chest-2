@@ -1,0 +1,9 @@
+
+[Experimental]
+	#Enable experimental settings for the LevelChunk class (Client-side only).
+	#Warning: May cause visual glitches.
+	"Enable LevelChunk Experiments" = false
+	#Enable experimental settings for the LevelChunkSection class (Client-side only).
+	#Warning: May cause visual glitches.
+	"Enable LevelChunkSection Experiments" = false
+
