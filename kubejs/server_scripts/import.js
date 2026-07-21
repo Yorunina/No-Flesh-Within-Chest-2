@@ -43,7 +43,6 @@ const $InfestedBlock = Java.loadClass('net.minecraft.world.level.block.InfestedB
 
 const $SpellData = Java.loadClass('io.redspace.ironsspellbooks.api.spells.SpellData')
 const $TamableAnimal = Java.loadClass('net.minecraft.world.entity.TamableAnimal')
-const $OwnableEntity = Java.loadClass('net.minecraft.world.entity.OwnableEntity')
 
 const $EvaluateChestCavityJS = Java.loadClass('net.tigereye.chestcavity.compat.kubejs.events.EvaluateChestCavityJS')
 const $WineYears = Java.loadClass('net.satisfy.vinery.core.util.WineYears')
@@ -177,3 +176,6 @@ const $LightningBolt = Java.loadClass('net.minecraft.world.entity.LightningBolt'
 const $ZapParticleOption = Java.loadClass('io.redspace.ironsspellbooks.particle.ZapParticleOption')
 const $IceTombEntity = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.ice_tomb.IceTombEntity')
 const $BlackHole = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.black_hole.BlackHole')
+
+const $AbstractGeoEntityPart = Java.loadClass('net.unusual.block_factorys_bosses.entity.boss.part.AbstractGeoEntityPart')
+const $OwnableEntity = Java.loadClass('net.minecraft.world.entity.OwnableEntity')

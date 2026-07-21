@@ -47,7 +47,16 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('entity_type', event => {
     event.add('ars_nouveau:drygmy_blacklist', ['wildernature:raccoon'])
-    event.removeAll('modulargolems:friendly')
+    // event.removeAll('modulargolems:friendly')
+    event.add('kubejs:relics_boss',
+        [
+            'block_factorys_bosses:yeti',
+            'block_factorys_bosses:infernal_dragon',
+            'block_factorys_bosses:sandworm',
+            'block_factorys_bosses:kraken',
+            'block_factorys_bosses:kraken_tentacle', // 多部位生物特殊处理
+            'block_factorys_bosses:underworld_knight',
+        ])
 })
 
 
@@ -63,10 +72,21 @@ ServerEvents.tags('block', event => {
 
 ServerEvents.tags('fluid', event => {
     event.add('kubejs:nutrients_fluid', ['create:honey', 'minecraft:milk', 'biomancy:acid'])
-    event.add('create:bottomless/allow', ['kubejs:molten_iron_fluid', 'kubejs:molten_copper_fluid', 'kubejs:molten_diamond_fluid', 'kubejs:molten_emerald_fluid', 'kubejs:molten_gold_fluid', 'minecraft:milk', 'biomancy:acid'])
+    event.add('create:bottomless/allow', [
+        'kubejs:molten_iron_fluid',
+        'kubejs:molten_copper_fluid',
+        'kubejs:molten_diamond_fluid',
+        'kubejs:molten_emerald_fluid',
+        'kubejs:molten_gold_fluid',
+        'minecraft:milk',
+        'biomancy:acid'
+    ])
 })
 
 ServerEvents.tags('mob_effect', event => {
     // 灾变Boss效果
-    event.add('cataclysm:effective_for_bosses', ['chestcavity:organ_slip', 'chestcavity:surgical_anesthesia'])
+    event.add('cataclysm:effective_for_bosses', [
+        'chestcavity:organ_slip', 
+        'chestcavity:surgical_anesthesia'
+    ])
 })

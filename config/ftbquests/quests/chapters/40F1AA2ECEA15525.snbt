@@ -155,6 +155,11 @@
 				""
 				"如果出现长时间搜索无效，请您将该器官取出并手持右键，以将其中的角质皮安全取出。"
 			]
+			icon: {
+				Count: 1
+				id: "kubejs:navigating_liver"
+				tag: { }
+			}
 			id: "729F2DAEE008D92C"
 			rewards: [{
 				id: "7E8F186C2BC46B08"
@@ -162,15 +167,42 @@
 				type: "item"
 			}]
 			subtitle: "寻找恰当的方向"
-			tasks: [{
-				id: "7ECBCE57578BC204"
-				item: {
-					Count: 1
-					id: "kubejs:navigating_liver"
-					tag: { }
+			tasks: [
+				{
+					id: "7ECBCE57578BC204"
+					item: {
+						Count: 1
+						id: "kubejs:navigating_liver"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6DB067383B6BA791"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "maa:create_ore_excavation_selector"
+								}
+								{
+									Count: 1b
+									id: "maa:biome_selector"
+								}
+								{
+									Count: 1b
+									id: "maa:structure_selector"
+								}
+							]
+						}
+					}
+					title: "任意角质皮"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 2.0d
 		}

@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
         ['#forge:obsidian', '#forge:obsidian', '#forge:obsidian']
     ])
 
-    event.shaped(Item.of('kubejs:relic_scroll', 3), [
+    event.shaped(Item.of('kubejs:relic_scroll_1', 1), [
         ['', 'kubejs:relic_paper', 'kubejs:relic_metal'],
         ['kubejs:relic_paper', 'kubejs:relic_gem', 'kubejs:relic_paper'],
         ['kubejs:relic_metal', 'kubejs:relic_paper', '']

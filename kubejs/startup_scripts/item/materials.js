@@ -11,6 +11,15 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:relic_paper').texture('kubejs:item/materials/relic_paper').maxStackSize(64)
     event.create('kubejs:relic_metal').texture('kubejs:item/materials/relic_metal').maxStackSize(64)
     event.create('kubejs:relic_gem').texture('kubejs:item/materials/relic_gem').maxStackSize(64)
-    event.create('kubejs:relic_scroll').texture('kubejs:item/materials/relic_scroll').maxStackSize(64)
+    event.create('kubejs:relic_scroll_1').texture('kubejs:item/materials/relic_scroll_1').maxStackSize(1)
+        .useDuration(itemStack => 40)
+        .useAnimation('bow')
+        .use((level, player, hand) => true)
+        .releaseUsing((itemstack, level, entity) => itemstack)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return Item.empty
+            if (entity.isPlayer()) AStages.addStageToPlayer('relics_knowledge_1', entity)
+            return Item.empty
+        })
     event.create('kubejs:swollen_stamen').texture('kubejs:item/materials/swollen_stamen').maxStackSize(64)
 })

@@ -18,7 +18,6 @@ function KnockbackOrganScore(event) {
             KnockbackAttckKnockbackUUID,
             KnockbackAttckKnockbackIdentifier,
             0.5 * organScoreValue,
-
             $Operation.ADDITION)
     )
 }

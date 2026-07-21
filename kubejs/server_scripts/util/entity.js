@@ -634,3 +634,18 @@ function RemoveAuraEffect(entity, onLeave, dataKey = 'auraMobs') {
         })
     }
 }
+
+/**
+ * 获取实体的主实体（类似多部位生物）
+ * @param {Internal.LivingEntity} entity 
+ * @returns {Internal.LivingEntity}
+ */
+function GetOwnerEntity(entity) {
+    if (entity instanceof $AbstractGeoEntityPart) {
+        return entity.getParent() ? GetOwnerEntity(entity.getParent()) : entity
+    }
+    if (entity instanceof $OwnableEntity) {
+        return entity.getOwner() ? GetOwnerEntity(entity.getOwner()) : entity
+    }
+    return entity
+}

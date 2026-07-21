@@ -9,5 +9,6 @@ EntityEvents.spawned(event => {
     customData.player = GetNearestPlayer(event.level, entity.blockPosition(), 128)
     ChampionEntitySpawnedEvent.run(entity, customData, [event])
     OathEntitySpawned(event, customData)
+    IncenseEntitySpawned(event, customData)
     entity.persistentData.putBoolean('hadSpawned', true)
 })

@@ -75,3 +75,6 @@ const $PoisonSplash = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.
 const $LightningBolt = Java.loadClass('net.minecraft.world.entity.LightningBolt')
 const $ZapParticleOption = Java.loadClass('io.redspace.ironsspellbooks.particle.ZapParticleOption')
 const $IceTombEntity = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.ice_tomb.IceTombEntity')
+
+const $AbstractGeoEntityPart = Java.loadClass('net.unusual.block_factorys_bosses.entity.boss.part.AbstractGeoEntityPart')
+const $OwnableEntity = Java.loadClass('net.minecraft.world.entity.OwnableEntity')
