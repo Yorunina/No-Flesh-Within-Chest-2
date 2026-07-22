@@ -4,7 +4,7 @@ $CustomRequirement.registerCustomFunction('genesis_integrity_process', ctx => {
     const level = ctx.world
     
     if (!level || level.isClientSide()) {
-        let stages = AStagesClient.getServerAndPlayerClientStages()
+        let stages = AStagesClient.getServerAndPlayerStages()
         if (stages.contains('ftb_genesis_process_done') && stages.contains('ftb_genesis_integrity_process')) return true
     } else {
         if (AStages.serverAndPlayerHasStage(player, 'ftb_genesis_process_done') && AStages.serverAndPlayerHasStage(player, 'ftb_genesis_integrity_process')) return true

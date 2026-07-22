@@ -23,7 +23,7 @@
 				""
 				"但除该效果之外，另一个效果也非常引人深思——即特殊的战利品表和特殊的遗物战利品。"
 				""
-				"因此，我针对该内容进行了深挖，请允许我指引您寻找这些早已被遗忘的&6闪耀过往&r。"
+				"为了针对该内容进行了深挖，请允许我指引您寻找这些早已被遗忘的&6闪耀过往&r。"
 			]
 			id: "2EA410FBC8182C1E"
 			rewards: [{
@@ -55,7 +55,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["729F2DAEE008D92C"]
+			dependencies: ["7BCEE113CFCB696A"]
 			description: [
 				"其描述的特殊战利品表之一即为&6村庄战利品表&r。"
 				""
@@ -74,10 +74,10 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["729F2DAEE008D92C"]
+			dependencies: ["7BCEE113CFCB696A"]
 			description: [
 				"其描述的特殊战利品表之一即为&6墓园战利品表&r。"
 				""
@@ -96,10 +96,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["729F2DAEE008D92C"]
+			dependencies: ["7BCEE113CFCB696A"]
 			description: [
 				"其描述的特殊战利品表之一即为&6埋藏的宝藏战利品表&r。"
 				""
@@ -118,7 +118,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -129,7 +129,9 @@
 			description: [
 				"通过遗物纸张、遗物金属和遗物宝石，可以制成&6遗物卷轴&r。"
 				""
-				"遗物卷轴可以用于唤醒遗物器官持有者远古的能力——使用该物品&6右键交互对应的生物&r，会&6大幅提升对方的战斗力&r，不过在其死亡后，会&6掉落特殊的遗物器官战利品&r。"
+				"遗物卷轴分为多卷，现在您可以制成第一卷，右键长按使用后您便可以得到&6遗物熏香&r的知识。"
+				""
+				"通过&6遗物熏香&r，可以复苏部分遗物生物过去的力量。"
 			]
 			id: "1A23554F0563EDB6"
 			rewards: [{
@@ -139,12 +141,12 @@
 			}]
 			subtitle: "记载远古的第一秒流逝"
 			tasks: [{
-				id: "33BD28E3AA7FBFC8"
-				item: "kubejs:relic_scroll"
+				id: "5F602257D67C46E4"
+				item: "kubejs:relic_scroll_1"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["2EA410FBC8182C1E"]
@@ -205,6 +207,656 @@
 			]
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6斯库拉&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6卫城（Acropolis）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6凛冽甲片&r。"
+			]
+			id: "2C9EA2EF6AC10775"
+			rewards: [{
+				id: "685DDA18FE17954A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "5047C2065837EC06"
+				item: {
+					Count: 1
+					id: "kubejs:cold_armor_plate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6雪怪&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6雪怪藏身处（Yeti Hideout）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6寒冷晶石&r。"
+			]
+			id: "341DB6D152D1225F"
+			rewards: [{
+				id: "16E70DE389D2D9B2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "693B656D2809AB7E"
+				item: {
+					Count: 1
+					id: "kubejs:cold_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6冥界骑士&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6地下竞技场（Underworld Arena）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6冥界遗骨&r。"
+			]
+			id: "28FCB1C9D34DB253"
+			rewards: [{
+				id: "76D8B8FCD2D3F7B0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "6C968EF16F3E6CCC"
+				item: {
+					Count: 1
+					id: "kubejs:underworld_knight_debris"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6咒翼灵骸&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6苦寒监牢（Frosted Prison）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6破碎咒翼&r。"
+			]
+			id: "0A2472E4E1B54370"
+			rewards: [{
+				id: "3FF9188B2BCD7DBC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "53B230417C0AF6F4"
+				item: {
+					Count: 1
+					id: "kubejs:worn_maledictus_wing"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6克拉肯&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6克拉肯商船（Kraken Ship）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6浑浊克拉肯之眼&r。"
+			]
+			id: "0BB9E24B3F842DE2"
+			rewards: [{
+				id: "54DF8619459736B0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "6A96FF733F9D0709"
+				item: {
+					Count: 1
+					id: "kubejs:kraken_cloudy_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6炼狱巨龙&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6龙之塔（Dagon Tower）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6黯淡狱龙晶&r。"
+			]
+			id: "1DCB109CF4005867"
+			rewards: [{
+				id: "5FFC356AB49E1C80"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "653DBA305A533610"
+				item: {
+					Count: 1
+					id: "kubejs:decayed_infernal_dragon_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6沙虫&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6沙虫巢（Sandworm Nest）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6异常沙腺&r。"
+			]
+			id: "339DF2098154F323"
+			rewards: [{
+				id: "358894091A153B27"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "25A9E40DDBD927FE"
+				item: {
+					Count: 1
+					id: "kubejs:abnormal_sand_gland"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6先驱者&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6远古工厂（Ancient Factory）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6先驱肺炉&r。"
+			]
+			id: "6EF3C8CDC8154A64"
+			rewards: [{
+				id: "5AA351C4AF88CCC2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "1D29919D395D9A00"
+				item: {
+					Count: 1
+					id: "kubejs:harbinger_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6下界合金巨兽&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6灵魂锻造厂（Soul Black Smith）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6残破合金肌肉&r。"
+			]
+			id: "7DB783C41BCF6310"
+			rewards: [{
+				id: "6802CC0429FD21B0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "062DC920F7C09021"
+				item: {
+					Count: 1
+					id: "kubejs:broken_netherite_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6利维坦&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6沉没之城（Sunken City）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6海蚀利维坦肋骨&r。"
+			]
+			id: "47DCBA14E6459E71"
+			rewards: [{
+				id: "1242AE5F25AF3B6C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "3A8E798421469DDC"
+				item: {
+					Count: 1
+					id: "kubejs:corroded_leviathan_rib"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6远古遗骸&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6诅咒金字塔（Cursed Pyramid）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6遗骸之心&r。"
+			]
+			id: "1D5B9FDE3FC3837B"
+			rewards: [{
+				id: "55BDCDC0EE46986E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "52F9EB3081084E6D"
+				item: {
+					Count: 1
+					id: "kubejs:remnant_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["729F2DAEE008D92C"]
+			description: [
+				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				""
+				"&6焰魔&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6烈焰竞技场（Burning Arena）&r，便可以定位到祂的存在。"
+				""
+				"击败祂，便可以获得遗物器官&6不灭火山岩&r。"
+			]
+			id: "059E6ED7F3062E69"
+			rewards: [{
+				id: "62C30C9A650FD5D1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "470C01A155D0450A"
+				item: {
+					Count: 1
+					id: "kubejs:immortal_volcanic_rock"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"47DCBA14E6459E71"
+				"2C9EA2EF6AC10775"
+				"341DB6D152D1225F"
+				"28FCB1C9D34DB253"
+				"0A2472E4E1B54370"
+				"1DCB109CF4005867"
+				"339DF2098154F323"
+				"6EF3C8CDC8154A64"
+				"7DB783C41BCF6310"
+				"0BB9E24B3F842DE2"
+				"1D5B9FDE3FC3837B"
+				"059E6ED7F3062E69"
+			]
+			description: [
+				"感谢您的付出！目前的信息已经足够推测出&6闪耀肋骨所指的特殊地点&r为何。"
+				""
+				"请稍等片刻。"
+			]
+			id: "7BCEE113CFCB696A"
+			min_required_dependencies: 3
+			rewards: [{
+				id: "732AC764323D787C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "整理信息"
+			tasks: [{
+				elapsedTime: 30L
+				icon: "supplementaries:hourglass"
+				id: "1EB4B6D0BD020475"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			title: "遗物化的调查"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "35CFA75942400A76"
+			rewards: [{
+				id: "133BDB870349F004"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "1C8028F98B36D76B"
+				item: {
+					Count: 1
+					id: "kubejs:leviathan_rib"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1A23554F0563EDB6"]
+			id: "263474323AC7D863"
+			tasks: [{
+				id: "378A48DD8BA07774"
+				item: "kubejs:relics_incense"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "3C1152364EB96049"
+			rewards: [{
+				id: "65D68B5EA8A1142C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "34CCCD69B9E95803"
+				item: {
+					Count: 1
+					id: "kubejs:shining_cold_armor_plate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "3922F9E25776C9C1"
+			rewards: [{
+				id: "768A61C8ED83CCE5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "3AB5C3E1EA5138D9"
+				item: {
+					Count: 1
+					id: "kubejs:eternal_cold_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "0C67D51B75723DBE"
+			rewards: [{
+				id: "755663505915346A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "776689F12B66C516"
+				item: {
+					Count: 1
+					id: "kubejs:underworld_knight_bone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "01C02EC3262ED238"
+			rewards: [{
+				id: "0432B3E9B420A42A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "0F80661B62471605"
+				item: {
+					Count: 1
+					id: "kubejs:maledictus_wing"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "25BFA0B0BB0BA5CB"
+			rewards: [{
+				id: "20E4C6FFB4F3ED36"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "1CC2EF6C724CD3CA"
+				item: {
+					Count: 1
+					id: "kubejs:infernal_dragon_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "210077F9A1E7FDF9"
+			rewards: [{
+				id: "4633F3D3966A9BC6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "00CEE16A334AE3B7"
+				item: {
+					Count: 1
+					id: "kubejs:poison_sand_gland"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "0E2C42F3C3F855B8"
+			rewards: [{
+				id: "73CC2F26B4A001EB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "6B72CE683460D35D"
+				item: {
+					Count: 1
+					id: "kubejs:sturdy_harbinger_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "724357D1E0F705EB"
+			rewards: [{
+				id: "0036416FAE05E99F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "0AE2ADF49204C9C1"
+				item: {
+					Count: 1
+					id: "kubejs:netherite_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "2EDB5EAA79ADF6E9"
+			rewards: [{
+				id: "0971F52B6FE5BF86"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "0015CB7F095A507C"
+				item: {
+					Count: 1
+					id: "kubejs:kraken_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "33D856FA444DF78F"
+			rewards: [{
+				id: "68B1420D81E1D75A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "3713AC6EB630156A"
+				item: {
+					Count: 1
+					id: "kubejs:awaken_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [""]
+			id: "6DA9DAA47E6D2F8E"
+			rewards: [{
+				id: "48617276B0545824"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物器官之一"
+			tasks: [{
+				id: "58081B81B6AC6018"
+				item: {
+					Count: 1
+					id: "kubejs:immortal_volcanic_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 14.0d
 		}
 	]
 	title: "传闻：遗物觉醒"

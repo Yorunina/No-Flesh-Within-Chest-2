@@ -56,3 +56,20 @@ function JoinWithSeparator(separator, list) {
     })
     return result
 }
+
+/**
+ * @param {Internal.MutableComponent[]} tooltips
+ * @param {Number} intervalMs
+ * @param {Number} phase
+ * @returns {function(Internal.List<any>, Internal.ItemStack): Internal.MutableComponent[]}
+ */
+function RotatingTooltip(tooltips, intervalMs, phase) {
+    intervalMs = intervalMs || 1000
+    phase = phase || 0
+    return function (text, item) {
+        // 用系统时钟算当前索引，每 intervalMs 毫秒切换一次，循环
+        let index = Math.floor((Date.now() - phase) / intervalMs) % tooltips.length
+        if (index < 0) index += tooltips.length
+        return [tooltips[index]]
+    }
+}

@@ -3,7 +3,7 @@
 const MBToolStructureStageMap = new Map()
 MbtoolKJSEvents.ScreenLoadStructures(event => {
     const structures = event.structures
-    const stages = AStagesClient.getServerAndPlayerClientStages()
+    const stages = AStagesClient.getServerAndPlayerStages()
     let resList = []
     structures.forEach(structure => {
         let id = String(structure.id)

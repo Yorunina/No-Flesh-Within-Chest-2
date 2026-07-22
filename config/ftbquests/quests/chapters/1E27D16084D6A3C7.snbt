@@ -2576,6 +2576,7 @@
 				""
 				"私有配方会使您成为唯一能够制作息壤的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
 			]
+			icon: "kubejs:infinity_soil"
 			id: "5B24D3C8C88CC080"
 			rewards: [{
 				exclude_from_claim_all: true

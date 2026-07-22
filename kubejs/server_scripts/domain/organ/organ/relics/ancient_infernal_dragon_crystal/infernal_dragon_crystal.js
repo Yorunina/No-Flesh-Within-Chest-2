@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:infernal_dragon_skin')
+RegistryOrgan('kubejs:infernal_dragon_crystal')
     .addScore('kubejs:roll_energy', 1)
     .addScore('chestcavity:fire_resistant', 3)
 
@@ -32,7 +32,7 @@ function InfernalDragonSkinTakeOff(customData, event, organItem, organIndex, slo
 
 
 RegistryOrganStrategy(
-    new OrganStrategyModel('kubejs:infernal_dragon_skin')
+    new OrganStrategyModel('kubejs:infernal_dragon_crystal')
         .addOnlyStrategy('chest_cavity_update', InfernalDragonSkinChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', InfernalDragonSkinTakeOff)
 )

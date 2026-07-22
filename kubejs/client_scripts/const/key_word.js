@@ -278,3 +278,9 @@ const PressurizedArmFluidConfigHover = Text.translatable('tooltips.kubejs.hover.
         Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.9'),
         Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.10'),
     ]))
+
+const RelicsBossHover = Text.translatable('tooltips.kubejs.hover.relics_boss.0').color('#e67b00').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.relics_boss.0').color('#e67b00'),
+        Text.translatable('tooltips.kubejs.hover.relics_boss.1'),
+    ]))

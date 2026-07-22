@@ -5,7 +5,7 @@ $CustomRequirement.registerCustomFunction('gula_scythe', ctx => {
     const stack = ctx.targetStack
     
     if (!level || level.isClientSide()) {
-        if (AStagesClient.getServerAndPlayerClientStages().contains('ftb_genesis_process_done')) return true
+        if (AStagesClient.serverAndPlayerHasStage('ftb_genesis_process_done')) return true
     } else {
         if (AStages.serverAndPlayerHasStage(player, 'ftb_genesis_process_done')) return true
     }

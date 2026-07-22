@@ -175,6 +175,7 @@
 				""
 				"请您制作&6任意一种诱导血清&r，在准备好后，我会告诉您后续的操作。"
 			]
+			icon: "kubejs:pig_inducer_serum"
 			id: "3FBC546A3EF78EA4"
 			rewards: [{
 				id: "6B348F9463932F27"

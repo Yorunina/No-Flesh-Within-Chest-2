@@ -1,5 +1,4 @@
 // priority: 500
-
 /**
  * @param {ChampionEventCustomData} customData
  * @param {Internal.LivingEntityDeathEventJS} event 

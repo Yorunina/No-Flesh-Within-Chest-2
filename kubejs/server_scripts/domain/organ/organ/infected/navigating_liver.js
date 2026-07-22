@@ -3,7 +3,7 @@ RegistryOrgan('kubejs:navigating_liver')
     .addScore('chestcavity:defense', -1)
     .addScore('chestcavity:detoxification', 1)
 
-const NavigatingLiverSearchRadius = 8000
+const NavigatingLiverSearchRadius = 10000
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
@@ -16,7 +16,7 @@ function NavigatingLiverEntityTick(customData, event, organItem, organIndex, slo
     const server = entity.server
     /**@type {Internal.ServerLevel} */
     const level = event.level
-    // if (entity.age % 100 != 0) return
+    if (entity.age % 20 != 0) return
     const nbt = organItem.getNbt()
     if (nbt.getInt('locating') != 0) return
 
