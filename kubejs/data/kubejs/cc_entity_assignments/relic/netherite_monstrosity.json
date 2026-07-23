@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/relic/netherite_monstrosity.json",
+  "entities": [
+    "cataclysm:netherite_monstrosity"
+  ]
+}

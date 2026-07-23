@@ -40,4 +40,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:blood_crystal_factory').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/blood_crystal_factory').tag('kubejs:heart')
     event.create('kubejs:machine_witch_fibroma').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/machine_witch_fibroma').tag('kubejs:stomach')
     event.create('kubejs:pressurized_arm').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/pressurized_arm').tag('kubejs:muscle')
+
+    event.create('kubejs:damage_mod').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/damage_mod')
 })

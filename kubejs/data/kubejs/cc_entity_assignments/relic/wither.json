@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/relic/wither.json",
+  "entities": [
+    "minecraft:wither"
+  ]
+}

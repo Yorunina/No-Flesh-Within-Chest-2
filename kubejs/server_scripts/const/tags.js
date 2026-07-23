@@ -50,6 +50,13 @@ ServerEvents.tags('entity_type', event => {
     // event.removeAll('modulargolems:friendly')
     event.add('kubejs:relics_boss',
         [
+            'cataclysm:ancient_remnant',
+            'cataclysm:ignis',
+            'cataclysm:maledictus',
+            'cataclysm:netherite_monstrosity',
+            'cataclysm:scylla',
+            'cataclysm:the_harbinger',
+            'cataclysm:the_leviathan',
             'block_factorys_bosses:yeti',
             'block_factorys_bosses:infernal_dragon',
             'block_factorys_bosses:sandworm',
@@ -86,7 +93,10 @@ ServerEvents.tags('fluid', event => {
 ServerEvents.tags('mob_effect', event => {
     // 灾变Boss效果
     event.add('cataclysm:effective_for_bosses', [
-        'chestcavity:organ_slip', 
-        'chestcavity:surgical_anesthesia'
+        'chestcavity:organ_slip',
+        'chestcavity:surgical_anesthesia',
+        'kubejs:vita_toxins',
+        'kubejs:putrid_toxins',
+        'kubejs:marking'
     ])
 })

@@ -284,3 +284,9 @@ const RelicsBossHover = Text.translatable('tooltips.kubejs.hover.relics_boss.0')
         Text.translatable('tooltips.kubejs.hover.relics_boss.0').color('#e67b00'),
         Text.translatable('tooltips.kubejs.hover.relics_boss.1'),
     ]))
+
+const MarkingHover = Text.translatable('tooltips.kubejs.hover.marking.0').color('#00beb4').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.marking.0').color('#00beb4'),
+        Text.translatable('tooltips.kubejs.hover.marking.1'),
+    ]))

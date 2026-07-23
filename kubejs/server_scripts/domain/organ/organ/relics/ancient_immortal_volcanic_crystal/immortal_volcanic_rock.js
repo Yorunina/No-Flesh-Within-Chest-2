@@ -18,7 +18,22 @@ function ImmortalVolcanicRockEntityTick(customData, event, organItem, organIndex
     }
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingDeathEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function ImmortalVolcanicRockEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'relics') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:immortal_volcanic_crystal'), organIndex, slotType, true)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:immortal_volcanic_rock')
         .addOnlyStrategy('entity_tick', ImmortalVolcanicRockEntityTick)
+        .addOnlyStrategy('entity_kill', ImmortalVolcanicRockEntityKill)
 )

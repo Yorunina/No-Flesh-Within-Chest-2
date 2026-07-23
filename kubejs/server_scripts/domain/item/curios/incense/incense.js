@@ -20,18 +20,17 @@ function IncenseEntitySpawned(event, customData) {
 
     oathStacks.allItems.forEach(pItem => {
         if (pItem.is('kubejs:relics_incense')) {
+            let championTag = new $CompoundTag()
+            championTag.putInt('low_freq_protection', 2)
+            entity.persistentData.put('champion', championTag)
             let healthAttr = entity.getAttribute('minecraft:generic.max_health')
             if (healthAttr) {
-                healthAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, 100, 'multiply_base'))
+                healthAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, 9, 'multiply_base'))
                 entity.setHealth(entity.getMaxHealth())
             }
             let armorAttr = entity.getAttribute('minecraft:generic.armor')
             if (armorAttr) {
-                armorAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, 100, 'multiply_base'))
-            }
-            let armorToughnessAttr = entity.getAttribute('minecraft:generic.armor_toughness')
-            if (armorToughnessAttr) {
-                armorToughnessAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, 100, 'multiply_base'))
+                armorAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, 100, 'addition'))
             }
         }
     })

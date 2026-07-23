@@ -179,3 +179,4 @@ const $BlackHole = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.bla
 
 const $AbstractGeoEntityPart = Java.loadClass('net.unusual.block_factorys_bosses.entity.boss.part.AbstractGeoEntityPart')
 const $OwnableEntity = Java.loadClass('net.minecraft.world.entity.OwnableEntity')
+const $TargetingConditions = Java.loadClass('net.minecraft.world.entity.ai.targeting.TargetingConditions')

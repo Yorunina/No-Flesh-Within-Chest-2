@@ -38,9 +38,24 @@ function WornMaledictusWingKeyActive(customData, event, organItem, organIndex, s
     player.addItemCooldown(organItem, 20 * 30)
 }
 
+/**
+* @param {OrganEventCustomData} customData
+* @param {Internal.LivingDeathEvent} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function WornMaledictusWingEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'relics') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:maledictus_wing'), organIndex, slotType, true)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:worn_maledictus_wing')
         .addOnlyStrategy('key_active', WornMaledictusWingKeyActive)
+        .addOnlyStrategy('entity_kill', WornMaledictusWingEntityKill)
 )
 
 

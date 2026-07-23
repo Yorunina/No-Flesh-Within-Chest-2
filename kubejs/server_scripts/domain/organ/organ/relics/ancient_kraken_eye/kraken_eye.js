@@ -30,8 +30,23 @@ function KrakenEyeTakeOff(customData, event, organItem, organIndex, slotType) {
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'kubejs:real_black_hole')
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingDeathEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function KrakenEyeEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'ancient') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_kraken_eye'), organIndex, slotType, true)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:kraken_eye')
         .addOnlyStrategy('chest_cavity_update', KrakenEyeChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', KrakenEyeTakeOff)
+        .addOnlyStrategy('entity_kill', KrakenEyeEntityKill)
 )

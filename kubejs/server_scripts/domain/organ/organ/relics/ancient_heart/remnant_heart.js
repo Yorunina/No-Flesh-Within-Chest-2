@@ -39,10 +39,24 @@ function RemnantHeartBlockRightClicked(customData, event, organItem, organIndex,
             level.setBlockEntity(gravelEntity)
             break
     }
+}
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingDeathEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function RemnantHeartEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'relics') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:awaken_heart'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:remnant_heart')
         .addOnlyStrategy('block_right_clicked', RemnantHeartBlockRightClicked)
+        .addOnlyStrategy('entity_kill', RemnantHeartEntityKill)
 )

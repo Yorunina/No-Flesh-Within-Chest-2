@@ -6,9 +6,9 @@ EntityEvents.spawned(event => {
     if (!entity) return
     let customData = {}
     if (entity.persistentData.getBoolean('hadSpawned')) return
+    entity.persistentData.putBoolean('hadSpawned', true)
     customData.player = GetNearestPlayer(event.level, entity.blockPosition(), 128)
     ChampionEntitySpawnedEvent.run(entity, customData, [event])
     OathEntitySpawned(event, customData)
     IncenseEntitySpawned(event, customData)
-    entity.persistentData.putBoolean('hadSpawned', true)
 })

@@ -30,8 +30,23 @@ function SturdyHarbingerLungTakeOff(customData, event, organItem, organIndex, sl
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'kubejs:flaming_strike')
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingDeathEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function SturdyHarbingerLungEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'ancient') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_harbinger_lung'), organIndex, slotType, true)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:sturdy_harbinger_lung')
         .addOnlyStrategy('chest_cavity_update', SturdyHarbingerLungChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', SturdyHarbingerLungTakeOff)
+        .addOnlyStrategy('entity_kill', SturdyHarbingerLungEntityKill)
 )

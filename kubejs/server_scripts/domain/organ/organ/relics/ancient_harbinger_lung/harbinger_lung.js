@@ -12,6 +12,12 @@ RegistryOrgan('kubejs:harbinger_lung')
 */
 function HarbingerLungEntityKill(customData, event, organItem, organIndex, slotType) {
     const target = event.entity
+    
+    if (target.type == 'cataclysm:scylla' && target.persistentData.getString('relicsStage') == 'relics') {
+        SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:sturdy_harbinger_lung'), organIndex, slotType, true)
+        return
+    }
+
     if (!target.isOnFire()) return
     /**@type {Internal.LivingEntity} */
     const killer = event.source.actual

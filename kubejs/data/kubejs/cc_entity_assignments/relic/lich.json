@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/relic/lich.json",
+  "entities": [
+    "graveyard:lich"
+  ]
+}

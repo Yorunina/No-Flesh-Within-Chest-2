@@ -30,8 +30,23 @@ function EternalColdCrystalTakeOff(customData, event, organItem, organIndex, slo
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'kubejs:ice_aura')
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingDeathEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function EternalColdCrystalEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'ancient') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_eternal_cold_crystal'), organIndex, slotType, true)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:eternal_cold_crystal')
         .addOnlyStrategy('chest_cavity_update', EternalColdCrystalChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', EternalColdCrystalTakeOff)
+        .addOnlyStrategy('entity_kill', EternalColdCrystalEntityKill)
 )

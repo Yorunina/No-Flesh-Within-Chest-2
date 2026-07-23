@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:cc_types/relic/ender_dragon.json",
+    "entities": [
+        "minecraft:ender_dragon"
+    ]
+}

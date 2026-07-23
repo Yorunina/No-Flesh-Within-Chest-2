@@ -36,3 +36,4 @@ const $GuiStatIndicator = Java.loadClass('se.mickelus.tetra.gui.stats.bar.GuiSta
 const $TooltipGetterInteger = Java.loadClass('se.mickelus.tetra.gui.stats.getter.TooltipGetterInteger')
 
 const $SpriteResourceLoader = Java.loadClass('net.minecraft.client.renderer.texture.atlas.SpriteResourceLoader')
+const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')

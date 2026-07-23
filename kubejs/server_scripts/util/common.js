@@ -250,3 +250,26 @@ function Vec3dMultiply(vec3d, pFactorX, pFactorY, pFactorZ) {
 function Lerp(delta, start, end) {
     return start + delta * (end - start)
 }
+
+/**
+ * 将数字转换为罗马数字字符串
+ * @param {number} num
+ * @returns {string}
+ */
+function ToRomanNumeral(num) {
+    num = Math.floor(num)
+    if (!isFinite(num) || num <= 0) return ''
+    const romanMap = [
+        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+    ]
+    let result = ''
+    for (let i = 0; i < romanMap.length; i++) {
+        while (num >= romanMap[i][0]) {
+            result += romanMap[i][1]
+            num -= romanMap[i][0]
+        }
+    }
+    return result
+}

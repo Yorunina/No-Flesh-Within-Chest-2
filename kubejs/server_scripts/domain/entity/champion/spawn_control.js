@@ -1,13 +1,25 @@
 // priority: 1000
 const ChampionAuroWeightConfig = new WeightRandomModel()
-    .addWeightRandom({ key: 'damage_aura', maxLevel: 10, color: '#e82102' }, 10)
-    .addWeightRandom({ key: 'heal_aura', maxLevel: 10, color: '#83fa7f' }, 10)
-    .addWeightRandom({ key: 'speed_aura', maxLevel: 10, color: '#e7fc32' }, 10)
+    .addWeightRandom({ key: 'damage_aura', maxLevel: 10 }, 10)
+    .addWeightRandom({ key: 'heal_aura', maxLevel: 10 }, 10)
+    .addWeightRandom({ key: 'speed_aura', maxLevel: 10 }, 10)
 
 
 const ChampionSelfWeightConfig = new WeightRandomModel()
-    .addWeightRandom({ key: 'split_on_death', maxLevel: 10, color: '#ec1aff' }, 10)
-    .addWeightRandom({ key: 'health_boost', maxLevel: 10, color: '#66fc61' }, 10)
+    .addWeightRandom({ key: 'split_on_death', maxLevel: 10 }, 10)
+    .addWeightRandom({ key: 'health_boost', maxLevel: 10 }, 10)
+
+const ChampionColorConfig = {
+    'split_on_death': '#ec1aff',
+    'health_boost': '#66fc61',
+    'damage_aura': '#e82102',
+    'heal_aura': '#83fa7f',
+    'speed_aura': '#e7fc32',
+    'low_damage_restriction': '#00c6e4',
+    'low_freq_protection': '#00c6e4',
+    'high_damage_suppression': '#e49c00',
+    'high_freq_protection': '#e49c00',
+}
 
 /**
  * @type {PiecewiseMappingModel}
@@ -95,21 +107,16 @@ function ApplyChampionEntityEffect(entity) {
     if (existingTag && !existingTag.isEmpty()) return
 
     let affixes = []
-    if (Math.random() > 0.5) {
-        affixes.push(ChampionAuroWeightConfig.getWeightRandomObj())
-    }
-    if (Math.random() > 0.2) {
-        affixes = affixes.concat(ChampionSelfWeightConfig.getWeightRandomObjs(1))
-    }
-
+    if (Math.random() > 0.5) affixes.push(ChampionAuroWeightConfig.getWeightRandomObj())
+    if (Math.random() > 0.2) affixes = affixes.concat(ChampionSelfWeightConfig.getWeightRandomObjs(1))
     if (Object.keys(affixes).length === 0) return
 
     const championTag = new $CompoundTag()
-    let entityName = Text.empty()
+    const entityName = Text.empty()
     affixes.forEach(pObj => {
         let pLevel = Math.ceil(Math.random() * pObj.maxLevel)
         championTag.putInt(pObj.key, pLevel)
-        entityName.append(Text.translatable(`champion.affix.${pObj.key}.name`, MAAUtils.toRomanNumeral(pLevel)).color(pObj.color))
+        entityName.append(Text.translatable(`champion.affix.${pObj.key}.name`, ToRomanNumeral(pLevel)).color(ChapionColorConfig[pObj.key]))
         entityName.append(Text.of(' / ').darkGray())
     })
 

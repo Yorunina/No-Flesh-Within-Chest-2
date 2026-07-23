@@ -10,7 +10,7 @@ RegistryOrgan('kubejs:ancient_infernal_dragon_crystal')
  * @param {number} organIndex
  * @param {string} slotType
  */
-function AncientInfernalDragonSkinChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function AncientInfernalDragonCrystalChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     if (!entity.isPlayer()) return
     const chestCavity = event.chestCavity
@@ -24,7 +24,7 @@ function AncientInfernalDragonSkinChestCavityUpdate(customData, event, organItem
  * @param {number} organIndex
  * @param {string} slotType
  */
-function AncientInfernalDragonSkinTakeOff(customData, event, organItem, organIndex, slotType) {
+function AncientInfernalDragonCrystalTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
     if (!entity.isPlayer()) return
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'kubejs:eternal_burning_dash')
@@ -37,7 +37,7 @@ function AncientInfernalDragonSkinTakeOff(customData, event, organItem, organInd
  * @param {number} organIndex
  * @param {string} slotType
  */
-function AncientInfernalDragonSkinPlayerRoll(customData, event, organItem, organIndex, slotType) {
+function AncientInfernalDragonCrystalPlayerRoll(customData, event, organItem, organIndex, slotType) {
     if (slotType != AwakeRelicSlot) return
     /**@type {Internal.ServerPlayer} */
     const player = event.player
@@ -72,7 +72,7 @@ function AncientInfernalDragonSkinPlayerRoll(customData, event, organItem, organ
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ancient_infernal_dragon_crystal')
-        .addOnlyStrategy('chest_cavity_update', AncientInfernalDragonSkinChestCavityUpdate)
-        .addOnlyStrategy('organ_take_off', AncientInfernalDragonSkinTakeOff)
-        .addOnlyStrategy('player_roll', AncientInfernalDragonSkinPlayerRoll)
+        .addOnlyStrategy('chest_cavity_update', AncientInfernalDragonCrystalChestCavityUpdate)
+        .addOnlyStrategy('organ_take_off', AncientInfernalDragonCrystalTakeOff)
+        .addOnlyStrategy('player_roll', AncientInfernalDragonCrystalPlayerRoll)
 )

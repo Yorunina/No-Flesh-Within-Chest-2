@@ -30,8 +30,23 @@ function DecayedInfernalDragonCrystalTakeOff(customData, event, organItem, organ
     RemoveSpellSelectionBySpellId(customData, chestCavity, 'kubejs:burning_dash')
 }
 
+/**
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.LivingDeathEvent} event 
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @param {string} slotType
+ */
+function DecayedInfernalDragonCrystalEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'relics') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:infernal_dragon_crystal'), organIndex, slotType, true)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:decayed_infernal_dragon_crystal')
         .addOnlyStrategy('chest_cavity_update', DecayedInfernalDragonCrystalChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', DecayedInfernalDragonCrystalTakeOff)
+        .addOnlyStrategy('entity_kill', DecayedInfernalDragonCrystalEntityKill)
 )

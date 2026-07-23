@@ -111,3 +111,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:wither_skull')
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:soul_wing')
     .addDefault(Text.translatable('tooltips.kubejs.soul_wing.default.1').gray())
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:damage_mod')
+    .addDefault(Text.translatable('tooltips.kubejs.damage_mod.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.damage_mod.alt.1', MarkingHover))
+)

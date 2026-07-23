@@ -23,7 +23,22 @@ function AbnormalSandGlandKeyActive(customData, event, organItem, organIndex, sl
     player.addItemCooldown(organItem, 20 * 15)
 }
 
+/**
+* @param {OrganEventCustomData} customData
+* @param {Internal.LivingDeathEvent} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function AbnormalSandGlandEntityKill(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    if (entity.type != 'cataclysm:scylla') return
+    if (entity.persistentData.getString('relicsStage') != 'relics') return
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:poison_sand_gland'), organIndex, slotType, true)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:abnormal_sand_gland')
         .addOnlyStrategy('key_active', AbnormalSandGlandKeyActive)
+        .addOnlyStrategy('entity_kill', AbnormalSandGlandEntityKill)
 )

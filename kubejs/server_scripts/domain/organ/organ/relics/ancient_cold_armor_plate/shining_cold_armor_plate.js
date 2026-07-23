@@ -41,7 +41,7 @@ function ShiningColdArmorPlateEntityKill(customData, event, organItem, organInde
     const entity = event.entity
     if (entity.type != 'cataclysm:scylla') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
-    SetChestCavityOrgan(customData, entity.chestCavityInstance, Item.of('kubejs:ancient_cold_armor_plate'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_cold_armor_plate'), organIndex, slotType, true)
 }
 
 
