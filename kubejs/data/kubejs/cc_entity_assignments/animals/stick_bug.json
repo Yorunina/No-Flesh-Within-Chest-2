@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/stick_bug.json",
+  "entities": [
+    "crittersandcompanions:stick_bug"
+  ]
+}

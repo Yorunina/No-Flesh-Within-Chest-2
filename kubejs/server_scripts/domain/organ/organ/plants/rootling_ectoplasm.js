@@ -33,7 +33,7 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
                     }
                 }
 
-                if (GetCustomDataMap(chestCavity, 'hasTentaclesHarvester', 0) == 0) continue
+                if (GetCustomDataMap(chestCavity, 'hasRolyPolyMouth', 0) == 0) continue
 
                 if (targetBlockState.hasProperty(BlockProperties.AGE_2) && targetBlockState.getValue(BlockProperties.AGE_2).intValue() == 2) {
                     let lootContext = new $LootParamsBuilder(level)

@@ -517,6 +517,18 @@ function SummonFireballTowardFacing(entity, level) {
     level.addFreshEntity(fireballEntity)
 }
 
+/**
+ * @param {Internal.LivingEntity} entity
+ * @param {Internal.Level} level
+ */
+function SummonMudTowardFacing(entity, level) {
+    let entityFacing = Vec3dNormalize(entity.getForward())
+    let projectile = new $MudBallProjectile(level, entity)
+    projectile.setOwner(entity)
+    projectile.setPos(entity.getX() - (entity.getBbWidth() + 1.0) * 0.5 * JavaMath.sin(entity.yBodyRot * JavaMath.PI / 180), entity.getEyeY() - 0.1, entity.getZ() + (entity.getBbWidth() + 1.0) * 0.5 * JavaMath.cos(entity.yBodyRot * (JavaMath.PI / 180)))
+    projectile.setMotion(entityFacing.x() * 2, entityFacing.y() * 2, entityFacing.z() * 2)
+    level.addFreshEntity(projectile)
+}
 
 
 /**

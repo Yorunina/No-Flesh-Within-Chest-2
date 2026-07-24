@@ -41,6 +41,35 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:jumping_spider_leg')
     .addAlt(Text.translatable('tooltips.kubejs.jumping_spider_leg.alt.1'))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:snail_shell')
+    .addDefault(Text.translatable('tooltips.kubejs.snail_shell.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.snail_shell.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:roly_poly_shell')
+    .addDefault(Text.translatable('tooltips.kubejs.roly_poly_shell.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.roly_poly_shell.alt.1', KeyActiveHover))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:stick_bug_exoskeleton')
+    .addDefault(Text.translatable('tooltips.kubejs.stick_bug_exoskeleton.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.stick_bug_exoskeleton.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:ladybug_wing')
+    .addDefault(Text.translatable('tooltips.kubejs.ladybug_wing.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.ladybug_wing.alt.1'))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:weevil_mouth')
+    .addDefault(Text.translatable('tooltips.kubejs.weevil_mouth.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.weevil_mouth.alt.1', KeyActiveHover))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:stag_beetle_mandibles')
+    .addDefault(Text.translatable('tooltips.kubejs.stag_beetle_mandibles.default.1').gray())
+)
+
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:spider_leg')
     .addDefault(Text.translatable('tooltips.kubejs.spider_leg.default.1').gray())
 )

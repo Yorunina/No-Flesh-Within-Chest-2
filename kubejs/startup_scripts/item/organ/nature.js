@@ -136,6 +136,18 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:armadillo_shell').maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/armadillo_shell')
 
+    event.create('kubejs:snail_shell').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/snail_shell')
+
+    event.create('kubejs:stick_bug_exoskeleton').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/stick_bug_exoskeleton').tag('kubejs:bone')
+
+    event.create('kubejs:roly_poly_shell').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/roly_poly_shell')
+
+    event.create('kubejs:ladybug_wing').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/ladybug_wing')
+
+    event.create('kubejs:weevil_mouth').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/weevil_mouth')
+    
+    event.create('kubejs:stag_beetle_mandibles').maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/stag_beetle_mandibles')
+
     event.create('kubejs:appendix').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/appendix').tag('kubejs:appendix')
     event.create('kubejs:intestine').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/intestine').tag('kubejs:intestine')
     event.create('kubejs:heart').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').tag('kubejs:basic').texture('kubejs:item/organs/nature/heart').tag('kubejs:heart')

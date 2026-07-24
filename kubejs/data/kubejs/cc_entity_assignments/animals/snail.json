@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/animals/snail.json",
+  "entities": [
+    "crittersandcompanions:snail"
+  ]
+}

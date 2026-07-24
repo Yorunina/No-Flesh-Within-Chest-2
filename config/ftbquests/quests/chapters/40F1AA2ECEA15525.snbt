@@ -134,11 +134,22 @@
 				"通过&6遗物熏香&r，可以复苏部分遗物生物过去的力量。"
 			]
 			id: "1A23554F0563EDB6"
-			rewards: [{
-				id: "31838CFAE956E9C9"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 1
+					icon: "kubejs:relics_incense"
+					id: "4D5C64111B9FA108"
+					ignore_reward_blocking: true
+					isPermanent: true
+					slot: "incense"
+					type: "maa:curios_slot"
+				}
+				{
+					id: "31838CFAE956E9C9"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+			]
 			subtitle: "记载远古的第一秒流逝"
 			tasks: [{
 				id: "5F602257D67C46E4"
@@ -607,7 +618,18 @@
 		}
 		{
 			dependencies: ["1A23554F0563EDB6"]
+			description: [
+				"当您佩戴熏香饰品时，周围生成的遗物生物便会得到对应熏香饰品上的描述效果——这个过程被称为&6遗物化&r。"
+				""
+				"击杀遗物化的遗物生物，能够使您胸腔中的&6低级遗物器官进化&r，例如当您&6携带破损咒翼时击杀遗物化的咒翼灵骸&r，则破损咒翼便会进化为咒翼，其他器官同理。"
+			]
 			id: "263474323AC7D863"
+			rewards: [{
+				id: "70267A90FB2339F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "唤醒过去的力量"
 			tasks: [{
 				id: "378A48DD8BA07774"
 				item: "kubejs:relics_incense"
