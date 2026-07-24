@@ -54,6 +54,16 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:wither_bone_cage')
     .addAlt(Text.translatable('tooltips.kubejs.wither_bone_cage.alt.1', Text.gold('20%'), LuckHover, Text.gold('5')))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:freezing_bone_cage')
+    .addDefault(Text.translatable('tooltips.kubejs.freezing_bone_cage.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.freezing_bone_cage.alt.1', FrozenHover))
+)
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:flaming_bone_cage')
+    .addDefault(Text.translatable('tooltips.kubejs.flaming_bone_cage.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.flaming_bone_cage.alt.1', OnFireHover))
+)
+
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:nightmare_core')
     .addDefault(Text.translatable('tooltips.kubejs.nightmare_core.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.nightmare_core.alt.1'))

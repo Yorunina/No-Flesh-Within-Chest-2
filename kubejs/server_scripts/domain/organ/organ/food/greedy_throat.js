@@ -43,7 +43,7 @@ function GreedyThroatFoodEaten(customData, event, organItem, organIndex, slotTyp
     }
     let targetSlotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
     SetChestCavityOrgan(customData, chestCavity, itemCopy, targetIndex, targetSlotType, true)
-    if (player instanceof $ServerPlayer) {
+    if (player.isPlayer()) {
         player.addItemCooldown(organItem, 20 * 10)
     }
 }

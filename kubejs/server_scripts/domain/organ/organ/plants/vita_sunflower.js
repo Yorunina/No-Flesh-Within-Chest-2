@@ -43,7 +43,7 @@ function VitaSunflowerEntityTick(customData, event, organItem, organIndex, slotT
     let curDamage = organItem.getDamageValue() - 1
     if (curDamage >= 0) organItem.setDamageValue(curDamage)
 
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
@@ -59,7 +59,7 @@ function VitaSunflowerEntityTick(customData, event, organItem, organIndex, slotT
 function VitaSunflowerChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RemoveOrganEffect(chestCavity, 'kubejs:vita_sunflower')
     }
 }

@@ -14,7 +14,7 @@ function BlazePressurizerChestCavityTakeOffOnly(customData, event, organItem, or
     const entity = event.entity
     const chestCavity = event.chestCavity
     SetCustomDataMap(chestCavity, 'blazePressurizerCounter', 0)
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RemoveOrganEffect(chestCavity, 'kubejs:blaze_pressurizer')
     }
 }

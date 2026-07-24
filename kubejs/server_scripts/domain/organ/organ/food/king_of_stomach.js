@@ -92,7 +92,7 @@ function KingOfStomachChestCavityUpdate(customData, event, organItem, organIndex
  */
 function KingOfStomachTakeOn(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
-    if (slotType == GulaSlot && entity instanceof $ServerPlayer) {
+    if (slotType == GulaSlot && entity.isPlayer()) {
         entity.foodData.setNoAddExhaustion(true)
     }
     OrganSkinAdd(entity, 'chest', 'secret/chestcavity/gula_body')
@@ -107,7 +107,7 @@ function KingOfStomachTakeOn(customData, event, organItem, organIndex, slotType)
  */
 function KingOfStomachTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
-    if (slotType == GulaSlot && entity instanceof $ServerPlayer) {
+    if (slotType == GulaSlot && entity.isPlayer()) {
         entity.foodData.setNoAddExhaustion(false)
     }
     OrganSkinRemove(entity, 'chest', 'secret/chestcavity/gula_body')

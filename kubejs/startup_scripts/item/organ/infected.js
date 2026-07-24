@@ -27,8 +27,9 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:malignant_neuron_tumor').food(food => food.hunger(1).saturation(1)).texture('kubejs:item/organs/infected/malignant_neuron_tumor').maxDamage(600).maxStackSize(1).tag('kubejs:organ').tag('kubejs:infected')
 
     event.create('kubejs:bone_cage').texture('kubejs:item/organs/infected/bone_cage').maxStackSize(1).tag('kubejs:infected').tag('kubejs:bone')
-
     event.create('kubejs:wither_bone_cage').texture('kubejs:item/organs/infected/wither_bone_cage').maxStackSize(1).tag('kubejs:infected').tag('kubejs:bone')
+    event.create('kubejs:freezing_bone_cage').texture('kubejs:item/organs/infected/freezing_bone_cage').maxStackSize(1).tag('kubejs:infected').tag('kubejs:bone')
+    event.create('kubejs:flaming_bone_cage').texture('kubejs:item/organs/infected/flaming_bone_cage').maxStackSize(1).tag('kubejs:infected').tag('kubejs:bone')
 
     event.create('kubejs:parasitic_tumor')
         .overrideStackedOnOther((stack, slot, action, player) => {

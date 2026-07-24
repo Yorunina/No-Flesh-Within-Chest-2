@@ -1,0 +1,8 @@
+{
+    "chestcavity": "kubejs:cc_types/undead/soul_skeleton.json",
+    "entities": [
+        "minecraft:stray",
+        "block_factorys_bosses:soul_skeleton",
+        "block_factorys_bosses:soul_knight_wither_skeleton"
+    ]
+}

@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:sea_bunny_skin')
  */
 function SeaBunnyGlandEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         let magicData = entity.getMagicData()
         let curMana = magicData.getMana()
         if (curMana <= 30) return

@@ -40,7 +40,7 @@ function BeeHoneyStomachBlockRightClicked(customData, event, organItem, organInd
  */
 function BeeHoneyStomachOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RemoveOrganEffect(chestCavity, 'kubejs:bee_honey_stomach')
     }
 }
@@ -54,7 +54,7 @@ function BeeHoneyStomachOrganTakeOff(customData, event, organItem, organIndex, s
  */
 function BeeHoneyStomachOrganTakeOn(customData, event, organItem, organIndex, slotType) {
     const { entity, chestCavity } = event
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }

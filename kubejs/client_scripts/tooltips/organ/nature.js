@@ -320,6 +320,11 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:pillager_gland')
     .addAlt(Text.translatable('tooltips.kubejs.pillager_gland.alt.1'))
 )
 
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:pirate_eye')
+    .addDefault(Text.translatable('tooltips.kubejs.pirate_eye.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.pirate_eye.alt.1'))
+)
+
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:rabbit_foot')
     .addDefault(Text.translatable('tooltips.kubejs.rabbit_foot.default.1').gray())
 )

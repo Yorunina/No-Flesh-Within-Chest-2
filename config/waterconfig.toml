@@ -1,0 +1,9 @@
+# File lockdown protects config files from external edits taking effect at runtime.
+# OFF: files can be hot-edited and reloaded while running (default).
+# I_READ_THE_COMMENT_SOFT: runtime reload is disabled — external edits are ignored and
+#   overwritten on the next save, so hot-editing no longer takes effect.
+# I_READ_THE_COMMENT_HARD: not implemented yet (falls back to SOFT); will additionally hold an
+#   OS lock so external programs cannot write the files at all.
+# The values are verbose on purpose: turning lockdown on must be a deliberate, informed choice.
+# Accepted values are: [OFF, I_READ_THE_COMMENT_SOFT, I_READ_THE_COMMENT_HARD]
+lockdownConfigFiles = "OFF"

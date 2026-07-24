@@ -55,6 +55,26 @@ function SpawnLootAtLocation(level, blockPos, lootList) {
     })
 }
 
+/**
+ * 
+ * @param {Internal.Level} level 
+ * @param {Vec3d} pos 
+ * @param {Internal.ItemStack[]} lootList 
+ */
+function SpawnLootAtVec3(level, pos, lootList) {
+    /**@type {Internal.ItemStack[][]} */
+    let itemChunks = SliceChunkArray(lootList, 10)
+    let tickCounter = 3
+    itemChunks.forEach(itemChunk => {
+        level.server.scheduleInTicks(tickCounter, callback => {
+            itemChunk.forEach(item => {
+                $Containers.dropItemStack(level, pos.x(), pos.y(), pos.z(), item.copy())
+            })
+        })
+        tickCounter = tickCounter + 3
+    })
+}
+
 
 /**
  * 

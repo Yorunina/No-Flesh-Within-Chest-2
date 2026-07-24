@@ -16,7 +16,7 @@ function HippocamtusScaleShieldBlock(customData, event, organItem, organIndex, s
     let forzenTicks = source.getTicksFrozen()
     source.setTicksFrozen(forzenTicks + 60)
     if (forzenTicks <= 0) return
-    customData.thornsDamage = customData.thornsDamage + forzenTicks / 10
+    customData.thornsDamage = customData.thornsDamage + forzenTicks / 40
 }
 
 

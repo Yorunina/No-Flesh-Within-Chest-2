@@ -1,0 +1,7 @@
+{
+    "defaultChestCavity": [   
+        {"item": "kubejs:underworld_knight_debris", "position": 1}
+    ],
+    "baseOrganScores": [],
+    "inventoryType": "kubejs:cc_inventory_types/relic"
+}

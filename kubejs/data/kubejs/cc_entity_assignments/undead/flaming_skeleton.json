@@ -1,0 +1,8 @@
+{
+  "chestcavity": "kubejs:cc_types/undead/flaming_skeleton.json",
+  "entities": [
+    "block_factorys_bosses:dragon_guard_sword",
+    "block_factorys_bosses:flaming_skeleton_guard_fireball",
+    "block_factorys_bosses:flaming_skeleton_guard_sword"
+  ]
+}

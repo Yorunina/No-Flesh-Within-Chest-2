@@ -30,7 +30,7 @@ function FrogTongueKeyActive(customData, event, organItem, organIndex, slotType)
 function FrogTongueChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RemoveOrganEffect(chestCavity, 'kubejs:frog_tongue')
     }
 }

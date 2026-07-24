@@ -22,9 +22,9 @@ function SoulCageEntityKill(customData, event, organItem, organIndex, slotType) 
     if (damageValue > recoverValue) {
         organItem.setDamageValue(damageValue - recoverValue)
     } else {
-        organItem.setDamageValue(0) 
+        organItem.setDamageValue(0)
     }
-    if (sourceEntity instanceof $ServerPlayer) {
+    if (sourceEntity.isPlayer()) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
@@ -40,7 +40,7 @@ function SoulCageEntityKill(customData, event, organItem, organIndex, slotType) 
 function SoulCageChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RemoveOrganEffect(chestCavity, 'kubejs:soul_cage')
     }
 }
@@ -59,7 +59,7 @@ function SoulCageEntityTick(customData, event, organItem, organIndex, slotType) 
     if (entity.getMaxHealth() - entity.getHealth() == 0) return
     entity.heal(2)
     organItem.setDamageValue(damageValue + 1)
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(entity.chestCavityInstance, organEffect)
     }
@@ -70,5 +70,5 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:soul_cage')
         .addOnlyStrategy('entity_kill', SoulCageEntityKill)
         .addOnlyStrategy('organ_take_off', SoulCageChestCavityTakeOffOnly)
-       .addOnlyStrategy('entity_tick', SoulCageEntityTick)
+        .addOnlyStrategy('entity_tick', SoulCageEntityTick)
 )

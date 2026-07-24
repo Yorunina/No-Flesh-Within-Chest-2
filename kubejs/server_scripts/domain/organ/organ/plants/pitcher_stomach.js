@@ -22,7 +22,7 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
     if (curDamage == 1) CommonDingNotice(sourceEntity.level, sourceEntity)
     if (curDamage > 0) {
         organItem.setDamageValue(curDamage - 1)
-        if (sourceEntity instanceof $ServerPlayer) SetOrganEffect(chestCavity, new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0)))
+        if (sourceEntity.isPlayer()) SetOrganEffect(chestCavity, new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0)))
         return
     }
 
@@ -40,7 +40,7 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
         SetPutridToxinsDamage(target, event.amount)
     }
 
-    if (sourceEntity instanceof $ServerPlayer) SetOrganEffect(chestCavity, new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0)))
+    if (sourceEntity.isPlayer()) SetOrganEffect(chestCavity, new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0)))
 }
 
 /**
@@ -53,7 +53,7 @@ function PitcherStomachDoDamageDefer(customData, event, organItem, organIndex, s
 function PitcherStomachChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const chestCavity = event.chestCavity
-    if (entity instanceof $ServerPlayer) RemoveOrganEffect(chestCavity, 'kubejs:pitcher_stomach')
+    if (entity.isPlayer()) RemoveOrganEffect(chestCavity, 'kubejs:pitcher_stomach')
 }
 
 RegistryOrganStrategy(

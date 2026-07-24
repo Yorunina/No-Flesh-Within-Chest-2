@@ -69,6 +69,12 @@ const FrozenHover = Text.translatable('tooltips.kubejs.hover.frozen.0').aqua().u
         Text.translatable('tooltips.kubejs.hover.frozen.1'),
         Text.translatable('tooltips.kubejs.hover.frozen.2'),
     ]))
+const OnFireHover = Text.translatable('tooltips.kubejs.hover.on_fire.0').color('#ff6f00').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.on_fire.0').color('#ff6f00'),
+        Text.translatable('tooltips.kubejs.hover.on_fire.1'),
+    ]))
+    
 const SoildCoreHover = Text.translatable('tooltips.kubejs.hover.solid_core.0').gray().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.solid_core.0').gray(),

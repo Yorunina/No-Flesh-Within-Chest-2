@@ -10,7 +10,6 @@ const $Rotation = Java.loadClass('net.minecraft.world.level.block.Rotation')
 const $PalettedContainer = Java.loadClass('net.minecraft.world.level.chunk.PalettedContainer')
 const $StructureMode = Java.loadClass('net.minecraft.world.level.block.state.properties.StructureMode')
 const $MobEffects = Java.loadClass('net.minecraft.world.effect.MobEffects')
-const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player')
 const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
 const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
@@ -85,7 +84,7 @@ const $LivingFallEvent = Java.loadClass('net.minecraftforge.event.entity.living.
 const $PlayerSpawnPhantomsEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerSpawnPhantomsEvent')
 const $PlayerChangedDimensionEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent')
 const $LivingTickEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingEvent$LivingTickEvent')
-
+const $TradeWithVillagerEvent = Java.loadClass('net.minecraftforge.event.entity.player.TradeWithVillagerEvent')
 
 
 const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')

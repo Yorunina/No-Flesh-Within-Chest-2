@@ -17,7 +17,7 @@ function PhotosynthesisEntityTick(event) {
     if (photosynthesisTimer < 10) return customDataMap.put('photosynthesisTimer', photosynthesisTimer)
     customDataMap.put('photosynthesisTimer', 0)
 
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RecoverPlayerHungerAndSaturation(entity, photosynthesis * 0.5)
     } else {
         entity.heal(photosynthesis)

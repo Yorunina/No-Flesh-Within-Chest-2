@@ -26,7 +26,7 @@ function TwistingWeepingIntestineKeyActiveOnly(customData, event, organItem, org
 * @param {string} slotType
 */
 function TwistingWeepingIntestineChestCavityTakeOffOnly(customData, event, organItem, organIndex, slotType) {
-    if (event.entity instanceof $ServerPlayer) RemoveOrganEffect(event.chestCavity, 'kubejs:twisting_weeping_intestine')
+    if (event.entity.isPlayer()) RemoveOrganEffect(event.chestCavity, 'kubejs:twisting_weeping_intestine')
 }
 
 /**
@@ -58,7 +58,7 @@ function TwistingWeepingIntestineDoDamage(customData, event, organItem, organInd
         target.attack(entity.damageSources().magic(), damage)
         target.removeEffect('kubejs:putrid_toxins')
         SetCustomDataMap(chestCavity, 'twistingIntestineAttackReady', false)
-        if (entity instanceof $ServerPlayer) RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')
+        if (entity.isPlayer()) RemoveOrganEffect(chestCavity, 'kubejs:twisting_weeping_intestine')
     }
 }
 

@@ -1,0 +1,8 @@
+{
+    "chestcavity": "kubejs:cc_types/animals/pirate.json",
+    "entities": [
+        "block_factorys_bosses:crossbow_pirate",
+        "block_factorys_bosses:pirate_rook",
+        "block_factorys_bosses:pirate_captain"
+    ]
+}

@@ -114,6 +114,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:pillager_gland').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pillager_gland')
 
+    event.create('kubejs:pirate_eye').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pirate_eye')
+
     event.create('kubejs:pufferfish_liver').food(food => food.hunger(2).saturation(1).effect('minecraft:poison', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/pufferfish_liver').tag('kubejs:liver')
 
     event.create('kubejs:rabbit_foot').food(food => food.hunger(1).saturation(0.5)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nature/rabbit_foot')

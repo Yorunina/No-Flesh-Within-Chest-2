@@ -1,0 +1,7 @@
+{
+    "defaultChestCavity": [   
+        {"item": "kubejs:cold_crystal", "position": 1}
+    ],
+    "baseOrganScores": [],
+    "inventoryType": "kubejs:cc_inventory_types/relic"
+}

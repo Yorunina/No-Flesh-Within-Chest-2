@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/relic/infernal_dragon.json",
+  "entities": [
+    "block_factorys_bosses:infernal_dragon"
+  ]
+}

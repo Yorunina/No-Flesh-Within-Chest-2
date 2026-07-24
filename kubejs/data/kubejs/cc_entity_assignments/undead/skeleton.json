@@ -1,7 +1,6 @@
 {
   "chestcavity": "kubejs:cc_types/undead/skeleton.json",
   "entities": [
-    "minecraft:skeleton",
-    "minecraft:stray"
+    "minecraft:skeleton"
   ]
 }

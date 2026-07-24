@@ -29,7 +29,7 @@ function RedWolfBeardEntityTick(customData, event, organItem, organIndex, slotTy
         let attributeModifier = new $AttributeModifier(RedWolfBeardTempSpeedUpUUID, 'RedWolfBeardTempSpeedUp', 0.5, $Operation.MULTIPLY_BASE)
         attributeInstance.addPermanentModifier(attributeModifier)
     }
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
@@ -49,7 +49,7 @@ function RedWolfBeardTakeOff(customData, event, organItem, organIndex, slotType)
         attributeInstance.removeModifier(RedWolfBeardTempSpeedUpUUID)
     }
 
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RemoveOrganEffect(chestCavity, 'kubejs:red_wolf_beard')
     }
 }
@@ -63,7 +63,7 @@ function RedWolfBeardTakeOff(customData, event, organItem, organIndex, slotType)
  */
 function RedWolfBeardTakeOn(customData, event, organItem, organIndex, slotType) {
     const { chestCavity, entity } = event
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }
@@ -87,7 +87,7 @@ function RedWolfBeardEntityKill(customData, event, organItem, organIndex, slotTy
     organItem.setDamageValue(damageValue - 3)
     sourceEntity.heal(4)
     sourceEntity.potionEffects.add('minecraft:absorption', 20 * 10, 0)
-    if (sourceEntity instanceof $ServerPlayer) {
+    if (sourceEntity.isPlayer()) {
         let organEffect = new OragnEffectModel(organItem).setPriority(organIndex).setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
         SetOrganEffect(chestCavity, organEffect)
     }

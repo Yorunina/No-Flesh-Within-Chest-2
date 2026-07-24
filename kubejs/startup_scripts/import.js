@@ -11,7 +11,6 @@ const $AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attribu
 
 const $RangedAttribute = Java.loadClass('net.minecraft.world.entity.ai.attributes.RangedAttribute')
 const $EntityType = Java.loadClass('net.minecraft.world.entity.EntityType')
-const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
 const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
 const $CommonUtil = Java.loadClass('net.tigereye.chestcavity.util.CommonUtil')
 const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.IntegerProperty')

@@ -1,0 +1,7 @@
+{
+    "defaultChestCavity": [   
+        {"item": "kubejs:kraken_cloudy_eye", "position": 1}
+    ],
+    "baseOrganScores": [],
+    "inventoryType": "kubejs:cc_inventory_types/relic"
+}

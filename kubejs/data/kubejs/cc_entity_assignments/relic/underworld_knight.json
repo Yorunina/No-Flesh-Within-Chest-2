@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/relic/underworld_knight.json",
+  "entities": [
+    "block_factorys_bosses:underworld_knight"
+  ]
+}

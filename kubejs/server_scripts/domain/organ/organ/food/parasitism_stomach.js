@@ -44,7 +44,7 @@ function ParasitismStomachTakeOff(customData, event, organItem, organIndex, slot
     const chestCavity = event.chestCavity
     SetCustomDataMap(chestCavity, 'parasitismStomachCounter', 0)
     SetCustomDataMap(chestCavity, 'parasitismStomachAttackUp', 0)
-    if (entity instanceof $ServerPlayer) {
+    if (entity.isPlayer()) {
         RemoveOrganEffect(chestCavity, 'kubejs:parasitism_stomach')
     }
 }
