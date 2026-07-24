@@ -4,22 +4,9 @@ const ChampionAuroWeightConfig = new WeightRandomModel()
     .addWeightRandom({ key: 'heal_aura', maxLevel: 10 }, 10)
     .addWeightRandom({ key: 'speed_aura', maxLevel: 10 }, 10)
 
-
 const ChampionSelfWeightConfig = new WeightRandomModel()
     .addWeightRandom({ key: 'split_on_death', maxLevel: 10 }, 10)
     .addWeightRandom({ key: 'health_boost', maxLevel: 10 }, 10)
-
-const ChampionColorConfig = {
-    'split_on_death': '#ec1aff',
-    'health_boost': '#66fc61',
-    'damage_aura': '#e82102',
-    'heal_aura': '#83fa7f',
-    'speed_aura': '#e7fc32',
-    'low_damage_restriction': '#00c6e4',
-    'low_freq_protection': '#00c6e4',
-    'high_damage_suppression': '#e49c00',
-    'high_freq_protection': '#e49c00',
-}
 
 /**
  * @type {PiecewiseMappingModel}
@@ -112,17 +99,11 @@ function ApplyChampionEntityEffect(entity) {
     if (Object.keys(affixes).length === 0) return
 
     const championTag = new $CompoundTag()
-    const entityName = Text.empty()
     affixes.forEach(pObj => {
         let pLevel = Math.ceil(Math.random() * pObj.maxLevel)
         championTag.putInt(pObj.key, pLevel)
-        entityName.append(Text.translatable(`champion.affix.${pObj.key}.name`, ToRomanNumeral(pLevel)).color(ChapionColorConfig[pObj.key]))
-        entityName.append(Text.of(' / ').darkGray())
     })
 
-    entityName.append(entity.getName())
-    entity.setCustomName(entityName)
-    entity.setCustomNameVisible(true)
     persistentData.put('champion', championTag)
     entity.setGlowing(true)
 }

@@ -596,7 +596,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6海蚀利维坦肋骨&r的情况下再次击败遗物化&6利维坦&r，即可使其转变为&6利维坦肋骨&r。"]
 			id: "35CFA75942400A76"
 			rewards: [{
 				id: "133BDB870349F004"
@@ -640,7 +640,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6凛冽甲片&r的情况下再次击败遗物化&6斯库&r，即可使其转变为&6明耀凛冽甲片&r。"]
 			id: "3C1152364EB96049"
 			rewards: [{
 				id: "65D68B5EA8A1142C"
@@ -662,7 +662,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6寒冷晶石&r的情况下再次击败遗物化&6雪怪&r，即可使其转变为&6永冻晶石&r。"]
 			id: "3922F9E25776C9C1"
 			rewards: [{
 				id: "768A61C8ED83CCE5"
@@ -684,7 +684,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6冥界遗骨&r的情况下再次击败遗物化&6冥界骑士&r，即可使其转变为&6冥界坚骨&r。"]
 			id: "0C67D51B75723DBE"
 			rewards: [{
 				id: "755663505915346A"
@@ -706,7 +706,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6海蚀利维坦肋骨&r的情况下再次击败遗物化&6利维坦&r，即可使其转变为&6利维坦肋骨&r。"]
 			id: "01C02EC3262ED238"
 			rewards: [{
 				id: "0432B3E9B420A42A"
@@ -728,7 +728,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6黯淡狱龙晶&r的情况下再次击败遗物化&6炼狱巨龙&r，即可使其转变为&6狱龙晶&r。"]
 			id: "25BFA0B0BB0BA5CB"
 			rewards: [{
 				id: "20E4C6FFB4F3ED36"
@@ -750,7 +750,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6异常沙腺&r的情况下再次击败遗物化&6沙虫&r，即可使其转变为&6剧毒沙腺&r。"]
 			id: "210077F9A1E7FDF9"
 			rewards: [{
 				id: "4633F3D3966A9BC6"
@@ -772,7 +772,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6先驱肺炉&r的情况下再次击败遗物化&6先驱者&r，即可使其转变为&6坚固先驱肺炉&r。"]
 			id: "0E2C42F3C3F855B8"
 			rewards: [{
 				id: "73CC2F26B4A001EB"
@@ -794,7 +794,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6残破合金肌肉&r的情况下再次击败遗物化&6下界合金巨兽&r，即可使其转变为&6下界合金肌肉&r。"]
 			id: "724357D1E0F705EB"
 			rewards: [{
 				id: "0036416FAE05E99F"
@@ -816,7 +816,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6浑浊克拉肯之眼&r的情况下再次击败遗物化&6克拉肯&r，即可使其转变为&6克拉肯之眼&r。"]
 			id: "2EDB5EAA79ADF6E9"
 			rewards: [{
 				id: "0971F52B6FE5BF86"
@@ -838,7 +838,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6遗骸之心&r的情况下再次击败遗物化&6远古遗骸&r，即可使其转变为&6觉醒之心&r。"]
 			id: "33D856FA444DF78F"
 			rewards: [{
 				id: "68B1420D81E1D75A"
@@ -860,7 +860,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: [""]
+			description: ["佩戴遗物熏香后，在装备有&6不灭火山岩&r的情况下再次击败遗物化&6焰魔&r，即可使其转变为&6不灭焰晶&r。"]
 			id: "6DA9DAA47E6D2F8E"
 			rewards: [{
 				id: "48617276B0545824"
@@ -879,6 +879,36 @@
 			}]
 			x: 11.0d
 			y: 14.0d
+		}
+		{
+			dependencies: ["263474323AC7D863"]
+			description: [
+				"在某些特殊场景下（例如遗物化），敌人会获得一些&6特殊的词条加成&r。"
+				""
+				"这些加成会赋予敌方生物极大的强化——甚至于在未掌握情报的情况下完全无法造成有效杀伤。"
+				""
+				"以遗物化为例，遗物化中存在两种分别叫作&6低伤限制&r和&6高伤抑制&r的精英词条。"
+				""
+				"前者的效果是免疫低于指定数值的伤害，后者则是在造成大伤害时敌人会获得巨大伤害减免。"
+				""
+				"因此在战斗前十分有必要预先了解敌人可能的词条类型，进而转变您的战斗方式。"
+			]
+			icon: "minecraft:name_tag"
+			id: "6729015A224A8B14"
+			rewards: [{
+				id: "51E8108C49942245"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "精英词条"
+			tasks: [{
+				id: "1BDA331873AC60CA"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "遗物化与精英化"
+			x: 2.5d
+			y: 12.0d
 		}
 	]
 	title: "传闻：遗物觉醒"

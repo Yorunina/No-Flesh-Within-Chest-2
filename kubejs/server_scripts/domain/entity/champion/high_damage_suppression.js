@@ -14,7 +14,7 @@ function ChampionHighDamageSuppressionEntityBeHurt(customData, event, championKe
 
     const threshold = maxHealth * 0.1 / championLevel
 
-    if (event.amount > threshold) event.amount = event.amount * 0.2
+    if (event.amount > threshold) event.amount = event.amount * 0.1
 }
 
 RegistryChampionStrategy(

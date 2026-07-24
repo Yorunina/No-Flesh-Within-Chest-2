@@ -21,7 +21,11 @@ function IncenseEntitySpawned(event, customData) {
     oathStacks.allItems.forEach(pItem => {
         if (pItem.is('kubejs:relics_incense')) {
             let championTag = new $CompoundTag()
-            championTag.putInt('low_freq_protection', 2)
+            if (Math.random() < 0.5) {
+                championTag.putInt('high_damage_suppression', 1)
+            } else {
+                championTag.putInt('low_damage_restriction', 1)
+            }
             entity.persistentData.put('champion', championTag)
             let healthAttr = entity.getAttribute('minecraft:generic.max_health')
             if (healthAttr) {
@@ -30,7 +34,7 @@ function IncenseEntitySpawned(event, customData) {
             }
             let armorAttr = entity.getAttribute('minecraft:generic.armor')
             if (armorAttr) {
-                armorAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, 100, 'addition'))
+                armorAttr.addPermanentModifier(new $AttributeModifier(EternalOathEntitySpawnedUUID, EternalOathEntitySpawnedIdentifier, 90, 'addition'))
             }
         }
     })

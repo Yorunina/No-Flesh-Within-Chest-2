@@ -15,16 +15,12 @@ function LadybugWingEntityTick(customData, event, organItem, organIndex, slotTyp
     const entity = event.entity
     if (entity.age % 200 != 0) return
     const level = event.level
-    level.getEntitiesOfClass($TamableAnimal, entity.getBoundingBox().inflate(4),
-        tamableAnimal => {
-            if (tamableAnimal == entity) return false
-            if (!tamableAnimal.isTame()) return false
-            return tamableAnimal.getHealth() < tamableAnimal.getMaxHealth()
-        }
-    )
-        .forEach(target => target.addEffect(
-            new $MobEffectInstance('minecraft:regeneration', 220, 0, false, false))
-        )
+    level.getEntitiesOfClass($TamableAnimal, entity.getBoundingBox().inflate(4), tamableAnimal => {
+        if (tamableAnimal == entity) return false
+        if (!tamableAnimal.isTame()) return false
+        return tamableAnimal.getHealth() < tamableAnimal.getMaxHealth()
+    })
+        .forEach(target => target.potionEffects.add('minecraft:regeneration', 220, 0, false, false))
 }
 
 RegistryOrganStrategy(

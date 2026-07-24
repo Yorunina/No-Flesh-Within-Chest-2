@@ -296,3 +296,35 @@ const MarkingHover = Text.translatable('tooltips.kubejs.hover.marking.0').color(
         Text.translatable('tooltips.kubejs.hover.marking.0').color('#00beb4'),
         Text.translatable('tooltips.kubejs.hover.marking.1'),
     ]))
+
+const ChampionLowDamageRestrictionHover = Text.translatable('tooltips.kubejs.hover.champion_low_damage_restriction.0').color('#9aa0a6').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_low_damage_restriction.0').color('#9aa0a6'),
+        Text.translatable('tooltips.kubejs.hover.champion_low_damage_restriction.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_low_damage_restriction.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_low_damage_restriction.3'),
+    ]))
+
+const ChampionHighDamageSuppressionHover = Text.translatable('tooltips.kubejs.hover.champion_high_damage_suppression.0').color('#d63333').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_high_damage_suppression.0').color('#d63333'),
+        Text.translatable('tooltips.kubejs.hover.champion_high_damage_suppression.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_high_damage_suppression.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_high_damage_suppression.3'),
+    ]))
+
+const ChampionHighFreqProtectionHover = Text.translatable('tooltips.kubejs.hover.champion_high_freq_protection.0').color('#ffb700').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_high_freq_protection.0').color('#ffb700'),
+        Text.translatable('tooltips.kubejs.hover.champion_high_freq_protection.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_high_freq_protection.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_high_freq_protection.3'),
+    ]))
+
+const ChampionLowFreqProtectionHover = Text.translatable('tooltips.kubejs.hover.champion_low_freq_protection.0').color('#33d6d6').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_low_freq_protection.0').color('#33d6d6'),
+        Text.translatable('tooltips.kubejs.hover.champion_low_freq_protection.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_low_freq_protection.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_low_freq_protection.3'),
+    ]))
