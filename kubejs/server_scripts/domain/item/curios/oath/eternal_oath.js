@@ -25,8 +25,30 @@ function EternalOathChestLoot(customData, event, curiosItem) {
     const nbt = curiosItem.getOrCreateTag()
     const state = Math.min(nbt.getInt('state'), 11)
     const spawnConfig = EternalOathEntitySpawnedConfig[state]
+    if (spawnConfig.lootMulti == 1) return
+    let overflowStacks = []
     event.loot.forEach(pLoot => {
-        pLoot.setCount(pLoot.getCount() * spawnConfig.lootMulti)
+        let maxStackSize = pLoot.getMaxStackSize()
+        let newCount = Math.floor(pLoot.getCount() * spawnConfig.lootMulti)
+        if (newCount <= 0) {
+            pLoot.setCount(0)
+            return
+        }
+        let overflowCount = newCount - maxStackSize
+        if (overflowCount <= 0) {
+            pLoot.setCount(newCount)
+        } else {
+            pLoot.setCount(maxStackSize)
+            for (let i = 0; i < Math.floor(overflowCount / maxStackSize); i++) {
+                overflowStacks.push(pLoot.copyWithCount(maxStackSize))
+            }
+            if (overflowCount % maxStackSize > 0) {
+                overflowStacks.push(pLoot.copyWithCount(overflowCount % maxStackSize))
+            }
+        }
+    })
+    overflowStacks.forEach(pLoot => {
+        event.loot.add(pLoot)
     })
 }
 

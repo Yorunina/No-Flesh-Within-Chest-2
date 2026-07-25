@@ -2,7 +2,6 @@
 RegistryOrgan('kubejs:twinkle_rib')
     .addScore('chestcavity:defense', 0.5)
 
-
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.LootContextJS} event 
@@ -22,6 +21,9 @@ function TwinkleRibChestLootStrategy(customData, event, organItem, organIndex, s
         event.addLoot(LootEntry.of('kubejs:relic_metal').withChance(0.2))
     } else if (lootTableId.getPath().endsWith('buried_treasure')) {
         event.addLoot(LootEntry.of('kubejs:relic_gem'))
+    } 
+    if (event.loot.size() >= 18) {
+        event.addLoot(LootEntry.of('kubejs:ancient_crystal').withChance(0.1))
     }
     organItem.setDamageValue(organItem.getDamageValue() + 1)
 }

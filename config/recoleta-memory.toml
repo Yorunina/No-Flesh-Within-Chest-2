@@ -1,0 +1,122 @@
+
+#Recoleta - memory reduction settings
+[memory]
+	#Maximum particles kept alive per render-style. Vanilla = 16384.
+	#Lowering this value shrinks the bounded EvictingQueue used by
+	#ParticleEngine and reclaims a large block of client-side heap.
+	#Range: 256 ~ 16384
+	particlePerTypeCap = 4096
+	#Periodically call ArrayList#trimToSize() and StringBuilder#trimToSize()
+	#on registered long-lived containers during low-tick periods.
+	enableSlackTrimmer = true
+	#Evict soft caches when heap occupancy crosses pressureRatio.
+	enablePressureEviction = true
+	#Heap-occupancy ratio above which soft caches are forcefully evicted.
+	#Range: 0.5 ~ 0.99
+	pressureRatio = 0.85
+	#Maximum number of stale Reference entries drained from internal
+	#ReferenceQueues per game tick. Bounded to keep tick pause low,
+	#mimicking Shenandoah's concurrent-marking philosophy.
+	#Range: 1 ~ 4096
+	referenceDrainBudgetPerTick = 64
+	#Soft cap on the young generation of GenerationalPool instances.
+	#Range: 16 ~ 65536
+	youngPoolCapacity = 256
+	#Soft cap on the old generation of GenerationalPool instances.
+	#Range: 4 ~ 65536
+	oldPoolCapacity = 64
+	#Use PackedAabb long keys for WalkNodeEvaluator collision cache
+	#to avoid retaining many short-lived AABB instances as map keys.
+	enablePackedAabbPathCache = true
+	#Replace allocation-heavy spawn-distance checks in NaturalSpawner
+	#with equivalent scalar math (no Vec3/ChunkPos temporaries).
+	enableSpawnerDistanceAllocationPatch = true
+	#Right-size CompoundTag backing maps for common small-NBT workloads.
+	enableCompoundTagSmallMaps = true
+	#Compare CapabilityDispatcher writers entry-by-entry to avoid
+	#building two full CompoundTag snapshots on every ItemStack
+	#equality check (used by inventory/container sync paths).
+	enableCapabilityFastCompare = true
+	#Right-size the block-entity list inside ClientboundLevelChunkPacketData
+	#so it starts at a small capacity instead of the default 10 slots.
+	enableChunkPacketRightSize = true
+	#Cache ResourceLocation.toString() output through a bounded SoftLruCache.
+	#Vanilla rebuilds the 'namespace:path' string on every call; with this on,
+	#repeated toString() invocations on the same ResourceLocation return the
+	#same String instance. Soft references let the JVM evict under heap pressure.
+	enableResourceLocationToStringCache = true
+	#Maximum entries kept in the ResourceLocation.toString() cache.
+	#The cache is bounded LRU + soft-referenced; entries beyond this count
+	#are dropped in least-recently-used order regardless of memory pressure.
+	#Range: 256 ~ 65536
+	resourceLocationToStringCacheSize = 4096
+	#Canonicalise LiteralContents instances inside Component.literal(text).
+	#Vanilla allocates a fresh LiteralContents record on every call; with this
+	#on, repeated calls with the same text share the same LiteralContents object.
+	#MutableComponent itself is still allocated per call (it is mutable, so
+	#sharing is unsafe). Soft references let the JVM evict under heap pressure.
+	enableLiteralContentsCache = true
+	#Maximum entries kept in the LiteralContents cache.
+	#1024 covers vanilla's well-known constant labels plus the leading working
+	#set of mod-supplied strings; raise if your modpack creates many distinct
+	#literal Components.
+	#Range: 64 ~ 16384
+	literalContentsCacheSize = 1024
+	#Right-size the staging HashMap built inside
+	#SimpleJsonResourceReloadListener.prepare(). Vanilla starts at the JDK
+	#default of 16 buckets even though datapack directories typically hold
+	#hundreds to thousands of entries (recipes, advancements, loot tables,
+	#tags), forcing 5-8 successive resize copies during every reload. The
+	#right-sized map avoids that resize churn entirely.
+	enableReloadListenerRightSize = true
+	#Initial capacity for the reload-listener staging HashMap.
+	#Vanilla recipes alone are ~500; a modpack with 200+ mods can push
+	#individual reload listeners past 5000. 512 is a reasonable middle
+	#ground that still covers single-arg listeners (tags/fluids) without
+	#wasting much when they only hold a few dozen entries.
+	#Range: 16 ~ 16384
+	reloadListenerStagingCapacity = 512
+	#Initial capacity for ModelBakery's four staging maps
+	#(unbakedCache, bakedCache, topLevelModels, bakedTopLevelModels).
+	#Vanilla 1.20.1 ships ~3000 baked models; modded packs frequently
+	#exceed 8000. Default 8192 covers most modded sessions in one
+	#allocation; raise if your pack pushes past that and you see
+	#long reload pauses.
+	#Range: 256 ~ 65536
+	modelBakeryStagingCapacity = 8192
+	#Canonicalise Style instances attached to MutableComponent.
+	#Vanilla derives a fresh Style on every withStyle/applyStyle call
+	#even though the resulting content is often identical to a Style
+	#another Component already holds. Interning collapses those duplicate
+	#instances; long-lived component trees retain only one Style per
+	#unique content. Soft references let the JVM reclaim canonical
+	#entries that no Component still references.
+	enableStyleIntern = true
+	#Initial capacity of the four HashBiMap fields on every ForgeRegistry.
+	#Vanilla starts each at 16 buckets and resizes seven times to reach
+	#the ~2048-bucket layout needed by the largest 1.20.1 registries
+	#(Block, Item, SoundEvent). 1024 absorbs all vanilla content in one
+	#allocation; raise if your modpack pushes a single registry past 1500
+	#entries and you observe extra resize churn during startup.
+	#Range: 16 ~ 65536
+	forgeRegistryBiMapCapacity = 1024
+	#Right-size the lists several clientbound game packets allocate via
+	#Lists.newArrayList() (set-equipment, update-attributes, light-update).
+	#Vanilla starts each at the JDK default of 10 slots even though the
+	#real payload is a handful of entries; these packets fire per entity
+	#and per chunk-light update, so the slack is paid thousands of times
+	#per second during normal play.
+	enablePacketRightSize = true
+	#Right-size the sibling list inside MutableComponent.create().
+	#Vanilla allocates a 10-slot ArrayList for every component even though
+	#the overwhelming majority of components (chat lines, tooltips, button
+	#labels) carry zero to two siblings. Starting at capacity 2 trims the
+	#resident slack on the millions of components a session builds.
+	enableComponentSiblingsRightSize = true
+	#Right-size the result lists brain AI sensors build each scan and hand
+	#to Brain memory (secondary-POI, piglin-specific). Vanilla uses
+	#Lists.newArrayList() (10 slots); the lists usually hold 0-4 entries and
+	#are retained as brain memory until the next sensor tick, so the slack
+	#multiplies by the loaded mob count.
+	enableAiSensorRightSize = true
+

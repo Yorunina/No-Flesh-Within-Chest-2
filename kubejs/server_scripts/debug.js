@@ -15,6 +15,8 @@
 //     event.player.sendData('debug')
 // })
 
+import { event } from "jquery"
+
 ItemEvents.entityInteracted('minecraft:stick', event => {
     const level = event.level
     const target = event.target

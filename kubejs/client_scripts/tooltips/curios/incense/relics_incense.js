@@ -8,7 +8,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:relics_incense')
     .addShift(Text.translatable('tooltips.kubejs.relics_incense.shift.1', RelicsBossHover))
     .addAlt(Text.translatable('tooltips.kubejs.relics_incense.alt.1', RelicsBossHover))
     .addAlt(RotatingTooltip([
-        Text.translatable('tooltips.kubejs.relics_incense.alt.2', ChampionLowDamageRestrictionHover),
-        Text.translatable('tooltips.kubejs.relics_incense.alt.3', ChampionHighDamageSuppressionHover),
+        Text.translatable('tooltips.kubejs.relics_incense.alt.2', ChampionLowDamageRestrictionHover).gray(),
+        Text.translatable('tooltips.kubejs.relics_incense.alt.3', ChampionHighDamageSuppressionHover).gray(),
     ], 1000))
 )

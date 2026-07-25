@@ -4,6 +4,7 @@ AStages.addRestrictionForRecipe('revolution_machine/revolution_machine_injection
 AStages.addRestrictionForRecipe('rose/rose_injection_recipe', 'ftb_rose_injection_recipe', 'biomancy:bio_forging', ['kubejs:rose_injection'])
 AStages.addRestrictionForRecipe('infinity_soil/infinity_soil_recipe', 'ftb_infinity_soil_recipe', 'biomancy:bio_forging', ['kubejs:infinity_soil'])
 AStages.addRestrictionForRecipe('relics_incense/relics_incense_recipe', 'relics_knowledge_1', 'biomancy:bio_forging', ['kubejs:relics_incense'])
+AStages.addRestrictionForRecipe('ancient_incense/ancient_incense_recipe', 'relics_knowledge_2', 'biomancy:bio_forging', ['kubejs:ancient_incense'])
 
 ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Ingredient.of('#farm_and_charm:dough', 4), Ingredient.of('#kubejs:muscle'), Item.of('biomancy:healing_additive')], Item.of('kubejs:gluten_muscle'), 'biomancy:organ', 10)
@@ -47,6 +48,8 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Item.of('biomancy:living_flesh'), Item.of('kubejs:swollen_stamen'), Item.of('minecraft:sunflower')], Item.of('kubejs:vita_sunflower'), 'biomancy:organ', 30)
 
     event.recipes.biomancy.bio_forging([Item.of('supplementaries:ash', 8), Item.of('minecraft:nether_wart', 8), Item.of('minecraft:paper', 8)], Item.of('kubejs:relics_incense'), 'biomancy:components', 30).id('kubejs:relics_incense')
+    
+    event.recipes.biomancy.bio_forging([Item.of('supplementaries:ash', 8), Item.of('kubejs:ancient_crystal', 1), Item.of('minecraft:paper', 8)], Item.of('kubejs:ancient_incense'), 'biomancy:components', 30).id('kubejs:ancient_incense')
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:tough_fibers', 1)], Item.of('kubejs:empty_inducer_serum'), 'biomancy:components', 5)
 

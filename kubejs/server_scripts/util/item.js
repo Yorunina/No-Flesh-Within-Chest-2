@@ -188,6 +188,7 @@ function GetEntityHeadItem(entity) {
     }
     return null
 }
+
 /**
  * @param {string} playerName 
  * @returns {Internal.ItemStack}

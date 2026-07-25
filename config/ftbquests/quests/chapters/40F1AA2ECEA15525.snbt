@@ -67,7 +67,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "远古的第一份记忆"
+			subtitle: "遗物的第一份记忆"
 			tasks: [{
 				id: "701445890C095A68"
 				item: "kubejs:relic_paper"
@@ -89,7 +89,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "远古的第二份记忆"
+			subtitle: "遗物的第二份记忆"
 			tasks: [{
 				id: "017754F25B4E096B"
 				item: "kubejs:relic_metal"
@@ -111,7 +111,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "远古的第三份记忆"
+			subtitle: "遗物的第三份记忆"
 			tasks: [{
 				id: "12681FCB1DFD4915"
 				item: "kubejs:relic_gem"
@@ -153,7 +153,7 @@
 			subtitle: "记载远古的第一秒流逝"
 			tasks: [{
 				id: "5F602257D67C46E4"
-				item: "kubejs:relic_scroll_1"
+				item: "kubejs:relics_scroll_1"
 				type: "item"
 			}]
 			x: 0.0d
@@ -629,7 +629,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "唤醒过去的力量"
+			subtitle: "唤醒遗物的力量"
 			tasks: [{
 				id: "378A48DD8BA07774"
 				item: "kubejs:relics_incense"
@@ -640,7 +640,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6凛冽甲片&r的情况下再次击败遗物化&6斯库&r，即可使其转变为&6明耀凛冽甲片&r。"]
+			description: ["佩戴遗物熏香后，在装备有&6凛冽甲片&r的情况下再次击败遗物化&6斯库拉&r，即可使其转变为&6明耀凛冽甲片&r。"]
 			id: "3C1152364EB96049"
 			rewards: [{
 				id: "65D68B5EA8A1142C"
@@ -706,7 +706,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6海蚀利维坦肋骨&r的情况下再次击败遗物化&6利维坦&r，即可使其转变为&6利维坦肋骨&r。"]
+			description: ["佩戴遗物熏香后，在装备有&6破损咒翼&r的情况下再次击败遗物化&6咒翼灵骸&r，即可使其转变为&6咒翼&r。"]
 			id: "01C02EC3262ED238"
 			rewards: [{
 				id: "0432B3E9B420A42A"
@@ -909,6 +909,376 @@
 			title: "遗物化与精英化"
 			x: 2.5d
 			y: 12.0d
+		}
+		{
+			dependencies: [
+				"35CFA75942400A76"
+				"3C1152364EB96049"
+				"3922F9E25776C9C1"
+				"0C67D51B75723DBE"
+				"01C02EC3262ED238"
+				"25BFA0B0BB0BA5CB"
+				"210077F9A1E7FDF9"
+				"0E2C42F3C3F855B8"
+				"724357D1E0F705EB"
+				"2EDB5EAA79ADF6E9"
+				"33D856FA444DF78F"
+				"6DA9DAA47E6D2F8E"
+			]
+			description: [
+				"在您进行遗物生物的清理过程中，我意外找到了另外的一些踪迹。"
+				""
+				"这些踪迹指向了遗物之前更远的过去——请允许我将其命名为&6远古&r——而这些生物在远古时期，拥有着更加强大的能力。"
+				""
+				"我需要些事件来整理这些信息，请您稍等片刻。"
+			]
+			icon: "supplementaries:hourglass"
+			id: "4BBFD32ECC9FB0B5"
+			min_required_dependencies: 3
+			rewards: [{
+				id: "72A8C645AA5A3063"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "遗物化之后"
+			tasks: [{
+				elapsedTime: 30L
+				icon: "supplementaries:hourglass"
+				id: "47DA3563B2E7A2ED"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			title: "远古化的调查"
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["4BBFD32ECC9FB0B5"]
+			description: ["闪耀肋骨描述的特殊战利品表还有一个——如&6若一个箱子的战利品超过了18格&r，则有&610%&r的可能会生成名为&6远古水晶&r的特殊产物。"]
+			id: "04BF46B34F490034"
+			rewards: [{
+				id: "5986CAB0EBCB1C6E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古化的必要条件"
+			tasks: [{
+				id: "26A851B4ACB6B510"
+				item: "kubejs:ancient_crystal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["04BF46B34F490034"]
+			description: [
+				"使用&6远古水晶&r，便可以制成另一卷&6遗物卷轴&r。"
+				""
+				"使用该卷轴，便会得到有关&6远古化&r的相关启发——这能够将我们现在已有的遗物器官推向另一个境界。"
+			]
+			id: "42E7A50E6CB4381E"
+			rewards: [{
+				id: "09BA7F1440455434"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "记载远古的第二秒流逝"
+			tasks: [{
+				id: "1E2A2903B9E18F02"
+				item: "kubejs:relics_scroll_2"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			dependencies: ["42E7A50E6CB4381E"]
+			description: [
+				"当佩戴远古熏香时，在您周围生成的遗物生物将会&6远古化&r。"
+				""
+				"远古化的遗物生物具有更强大的战斗力——更重要的是，&6携带已经进化过一次的遗物器官，可以通过击杀远古化的遗物生物再一次完成进化&r。"
+				""
+				"期待您对这些遗物器官的进一步开发！"
+			]
+			id: "2E7EEFA804FA4154"
+			rewards: [{
+				id: "00448E2B3E8A4964"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "唤醒远古的力量"
+			tasks: [{
+				id: "314A68AC16CBC814"
+				item: "kubejs:ancient_incense"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 21.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6利维坦肋骨&r的情况下再次击败远古化&6利维坦&r，即可使其转变为&6远古利维坦肋骨&r。"]
+			id: "3DCAA51901E3AB44"
+			rewards: [{
+				id: "378963897A785AF6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "7321C5AA10273401"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_leviathan_rib"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6凛冽甲片&r的情况下再次击败远古化&6斯库拉&r，即可使其转变为&6远古凛冽甲片&r。"]
+			id: "67AE9B1F6D2589D8"
+			rewards: [{
+				id: "52171C5C5D0EF215"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "1F94A518C1140A9D"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_cold_armor_plate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6永冻晶石&r的情况下再次击败远古化&6雪怪&r，即可使其转变为&6远古永冻晶石&r。"]
+			id: "68120136E5824934"
+			rewards: [{
+				id: "68BB01B31B972991"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "09472EFA55049DFC"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_eternal_cold_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6冥界坚骨&r的情况下再次击败远古化&6冥界骑士&r，即可使其转变为&6远古冥界坚骨&r。"]
+			id: "0FFE186D0222F557"
+			rewards: [{
+				id: "5B700A954B16C110"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "36E1595788B5CCD2"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_underworld_knight_bone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6咒翼&r的情况下再次击败远古化&6咒翼灵骸&r，即可使其转变为&6远古咒翼&r。"]
+			id: "4B611B8A985D8097"
+			rewards: [{
+				id: "230423110D70B48C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "5D2DF5DA72DFEA9D"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_maledictus_wing"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6狱龙晶&r的情况下再次击败远古化&6炼狱巨龙&r，即可使其转变为&6远古狱龙晶&r。"]
+			id: "306CF10967AA8929"
+			rewards: [{
+				id: "087859F0909D0C8B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "4C5A868C55BF53ED"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_infernal_dragon_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6剧毒沙腺&r的情况下再次击败远古化&6沙虫&r，即可使其转变为&6远古剧毒沙腺&r。"]
+			id: "2C5FCD29F322554B"
+			rewards: [{
+				id: "71A4559FA649A757"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "1213F47E5DC1BCC0"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_poison_sand_gland"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6坚固先驱肺炉&r的情况下再次击败远古化&6先驱者&r，即可使其转变为&6远古先驱肺炉&r。"]
+			id: "7CE84D79568270B5"
+			rewards: [{
+				id: "28139F5D9CBECE20"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "22151260B12F2E8D"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_harbinger_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6下界合金肌肉&r的情况下再次击败远古化&6下界合金巨兽&r，即可使其转变为&6远古合金肌肉&r。"]
+			id: "0566A09FBBEE8632"
+			rewards: [{
+				id: "30B86D6D64A80ABC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "6217CE2D4023FAFB"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_netherite_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6克拉肯之眼&r的情况下再次击败远古化&6克拉肯&r，即可使其转变为&6远古克拉肯之眼&r。"]
+			id: "63848C1D169E8AD4"
+			rewards: [{
+				id: "34FAD6732D2C4C09"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "0E195BA56782E87A"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_kraken_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6觉醒之心&r的情况下再次击败远古化&6远古遗骸&r，即可使其转变为&6远古之心&r。"]
+			id: "72C4E9213C68A150"
+			rewards: [{
+				id: "13C220D9FC15CD48"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "048DE9767DA0CA07"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["2E7EEFA804FA4154"]
+			description: ["佩戴遗物熏香后，在装备有&6不灭焰晶&r的情况下再次击败远古化&6焰魔&r，即可使其转变为&6远古不灭焰晶&r。"]
+			id: "1B679B310F52D2CF"
+			rewards: [{
+				id: "7D926B745E33DA85"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古器官之一"
+			tasks: [{
+				id: "3B0E91B7093E0A90"
+				item: {
+					Count: 1
+					id: "kubejs:ancient_immortal_volcanic_crystal"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 23.5d
 		}
 	]
 	title: "传闻：遗物觉醒"

@@ -16,7 +16,7 @@
 		menuClasses = []
 
 	[common.safeList]
-		menuClasses = ["net.minecraft.world.inventory.ChestMenu", "net.minecraft.world.inventory.HopperMenu", "net.minecraft.world.inventory.DispenserMenu", "net.minecraft.world.inventory.ShulkerBoxMenu"]
+		menuClasses = ["net.minecraft.world.inventory.ChestMenu", "net.minecraft.world.inventory.HopperMenu", "net.minecraft.world.inventory.DispenserMenu", "net.minecraft.world.inventory.ShulkerBoxMenu", "com.lootrbiggerchest.menu.LootrBiggerChestMenu"]
 
 	[common.layout]
 		#Anchor offsets still use screenClass=x,y.

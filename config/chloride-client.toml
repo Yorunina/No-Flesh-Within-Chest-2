@@ -65,7 +65,7 @@ modpackMode = false
   chunkFadeSpeed = "SLOW"
 
   # Accepted values are: [ALL, OFF]
-  leavesCulling = "OFF"
+  leavesCulling = "ALL"
 
   # Y level where the dark below-horizon void plane starts rendering; 63 keeps vanilla behavior, lower it to remove the dark sky band at low heights
   # Value must be less than '256' and greater than '-64'

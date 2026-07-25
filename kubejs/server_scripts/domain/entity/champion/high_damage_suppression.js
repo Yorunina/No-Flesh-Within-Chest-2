@@ -11,8 +11,7 @@ function ChampionHighDamageSuppressionEntityBeHurt(customData, event, championKe
 
     const maxHealth = entity.getMaxHealth()
     if (maxHealth <= 0) return
-
-    const threshold = maxHealth * 0.1 / championLevel
+    const threshold = maxHealth * 0.2 / championLevel
 
     if (event.amount > threshold) event.amount = event.amount * 0.1
 }

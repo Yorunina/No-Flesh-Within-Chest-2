@@ -1,5 +1,6 @@
 // priority: 5000
 const DrygmyBlacklistTag = $TagKey.create($Registries.ENTITY_TYPE, 'ars_nouveau:drygmy_blacklist')
+const RelicsBossTagKey = $TagKey.create($Registries.ENTITY_TYPE, 'kubejs:relics_boss')
 const WoodBlockTag = $TagKey.create($Registries.BLOCK, 'minecraft:logs')
 ServerEvents.tags('item', event => {
     event.remove('curios:waist', ['cataclysm:belt_of_beginner'])

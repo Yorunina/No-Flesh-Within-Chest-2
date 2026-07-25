@@ -1,0 +1,88 @@
+MaxEntityEntities = 128
+qualityModes = "NORMAL"
+RenderWeather = "NORMAL"
+FastItemRender = false
+RenderDisplayItem = false
+blackListedEntities = []
+whiteListedEntities = []
+BlackTagListEntity = []
+WhiteTagListEntity = []
+isAlwaysShowItemCount = true
+startTime = 30.735
+Hud = false
+HudRXTX = false
+HudFPS = false
+HudCPU = false
+HudGPU = false
+HudRAM = false
+HudPlayerPos = false
+HudServer = false
+HudCameraTarget = false
+Mood = false
+MaxParticleDistance = 256
+WhiteListedParticle = []
+BlackListedParticle = []
+GuiEasyRamMode = true
+GuiDisplayRamUsage = false
+UseAui = false
+TextBackground = false
+TextureAnimatedSprites = true
+SoundDevicesMonitor = false
+SetParticleMaxAge = false
+ParticleMaxAge = 1
+MinDistance = 5
+EntityDistance = 64
+ParticlePerformance = false
+ParticleCountLimit = 16384
+BlockBreakParticle = true
+AsyncCompute = false
+SoftCull = true
+DynamicEntityBudget = true
+BlackBlockEntities = []
+WhiteBlockEntities = []
+MaxBlockEntityCount = 64
+BlockEntityDistance = 128
+onCull = true
+VisibleCulling = true
+EntityRenderPerformance = false
+CullMode = "COMPATIBILITY"
+ParticleFastCollision = false
+CullBlockEntity = true
+CullEntity = true
+CullParticle = true
+
+[[HudTextConfig]]
+key = "ruok.options.hud.fps.info"
+x = 4
+y = 4
+enabled = false
+
+[[HudTextConfig]]
+key = "ruok.options.hud.system.info"
+x = 4
+y = 17
+enabled = false
+
+[[HudTextConfig]]
+key = "ruok.options.hud.playerpos.info"
+x = 4
+y = 30
+enabled = false
+
+[[HudTextConfig]]
+key = "ruok.options.hud.server.info"
+x = 4
+y = 43
+enabled = false
+
+[[HudTextConfig]]
+key = "ruok.options.hud.cameratarget.info"
+x = 4
+y = 56
+enabled = false
+
+[[HudTextConfig]]
+key = "ruok.options.hud.rtxt.info"
+x = 4
+y = 69
+enabled = false
