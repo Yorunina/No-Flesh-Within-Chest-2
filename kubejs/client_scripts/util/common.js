@@ -77,7 +77,7 @@ function RandomGetN(arr, count) {
     if (count >= arrCopy.length) {
         let concatTimes = count / arrCopy.length
         for (let i = 0; i < concatTimes; i++) {
-            arrCopy.concat(arr)
+            arrCopy = arrCopy.concat(arr)
         }
     }
     Shuffle(arrCopy)

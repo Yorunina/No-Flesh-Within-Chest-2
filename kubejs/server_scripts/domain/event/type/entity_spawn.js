@@ -1,14 +1,21 @@
 // priority: 999
 const ChampionEntitySpawnedEvent = new ChampionEventModel('entity_spawned')
+const CuriosEntitySpawnedEvent = new CuriosEventModel('entity_spawned')
+
 
 EntityEvents.spawned(event => {
     const entity = event.entity
     if (!entity) return
-    let customData = {}
+    // 暂只处理LivingEntity
+    if (!entity.isLiving()) return
+    
     if (entity.persistentData.getBoolean('hadSpawned')) return
     entity.persistentData.putBoolean('hadSpawned', true)
-    customData.player = GetNearestPlayer(event.level, entity.blockPosition(), 128)
+    const player = GetNearestPlayer(event.level, entity.blockPosition(), 128)
+    let customData = {
+        player: player,
+    }
     ChampionEntitySpawnedEvent.run(entity, customData, [event])
-    OathEntitySpawned(event, customData)
-    IncenseEntitySpawned(event, customData)
+    if (!player) return
+    CuriosEntitySpawnedEvent.run(player, customData, [event])
 })

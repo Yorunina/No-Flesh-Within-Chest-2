@@ -82,9 +82,9 @@ function UnformedTumorMutationGrowth(machine, fluid, item, slotId) {
  * @returns {Internal.ItemStack[]}
  */
 function ProliferateTumor(machine, fluid, item, slotId) {
-    if (!item.hasTag('kubejs:tumor')) return
+    if (!item.hasTag('kubejs:tumor')) return []
     let random = Math.random()
-    if (!item.hasNBT()) return
+    if (!item.hasNBT()) return []
     if (random > 0.85) {
         let nbt = item.getNbt()
         let organData = nbt.getCompound('organData')
@@ -101,6 +101,7 @@ function ProliferateTumor(machine, fluid, item, slotId) {
     } else if (random < 0.3) {
         return []
     }
+    machine.setItemStored(slotId, item)
     let targetItem = item.copy()
     return [targetItem]
 }

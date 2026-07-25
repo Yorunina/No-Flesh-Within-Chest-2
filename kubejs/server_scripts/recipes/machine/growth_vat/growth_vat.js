@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
-            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.getAmount() >= 250) return ctx.success()
             return ctx.error('')
         })
         .requireItem('kubejs:simple_culture_medium', 'input_slot')
@@ -51,7 +51,7 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
-            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.getAmount() >= 250) return ctx.success()
             return ctx.error('')
         })
         .requireItem('kubejs:culture_medium', 'input_slot')
@@ -75,7 +75,7 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
-            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.getAmount() >= 250) return ctx.success()
             return ctx.error('')
         })
         .requireItem('kubejs:mutation_culture_medium', 'input_slot')
@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
-            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.getAmount() >= 250) return ctx.success()
             return ctx.error('')
         })
         .requireItem('kubejs:proliferation_culture_medium', 'input_slot')
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             let fluid = machine.getFluidStored('nutrient_solution')
-            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.amount >= 250) return ctx.success()
+            if (fluid.hasTag('kubejs:nutrients_fluid') && fluid.getAmount() >= 250) return ctx.success()
             return ctx.error('')
         })
         .requireItem('kubejs:mixed_culture_medium', 'input_slot')

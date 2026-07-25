@@ -7,7 +7,7 @@ const ChampionEntityBeHurtEvent = new ChampionEventModel('entity_be_hurt')
  * @param {Internal.LivingDamageEvent} event 
  * @param {*} customData 
  */
-function OrganEntityBeHurt(event, customData) {
+function EntityBeHurt(event, customData) {
     const entity = event.entity
     OrganEntityBeHurtEvent.run(entity, customData, [event])
     ChampionEntityBeHurtEvent.run(entity, customData, [event])

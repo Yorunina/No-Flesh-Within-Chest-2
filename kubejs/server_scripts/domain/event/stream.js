@@ -10,7 +10,7 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     let customData = {
         thornsDamage: 0
     }
-    OrganEntityDoDamage(event, customData)
+    EntityDoDamage(event, customData)
     if (customData.thornsDamage > 0 && event.entity) {
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
@@ -30,7 +30,7 @@ NativeEvents.onEvent($LivingDamageEvent, /** @param {Internal.LivingDamageEvent}
     let customData = {
         thornsDamage: 0
     }
-    OrganEntityBeHurt(event, customData)
+    EntityBeHurt(event, customData)
     if (customData.thornsDamage > 0 && event.source.actual) {
         let level = event.entity.level
         event.source.actual.attack(level.damageSources().thorns(event.entity), customData.thornsDamage)
@@ -46,6 +46,6 @@ LootJS.modifiers(context => {
     context.addLootTypeModifier(LootType.CHEST)
         .apply(event => {
             // StandardizeChestLoot(event)
-            OrganChestLootHandle(event)
+            ChestLootHandle(event)
         })
 })

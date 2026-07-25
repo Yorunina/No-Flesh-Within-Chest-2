@@ -41,8 +41,6 @@ ServerEvents.tags('item', event => {
     event.add('minecraft:music_discs', ['kubejs:faded_disc', 'kubejs:assumptions_disc'])
 
     event.add('farm_and_charm:container', ['kubejs:sausage_casing', 'minecraft:stick'])
-
-    event.add('kubejs:count_day_oath', ['kubejs:growing_oath', 'kubejs:immortal_oath'])
 })
 
 ServerEvents.tags('entity_type', event => {

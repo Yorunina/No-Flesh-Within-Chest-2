@@ -1,4 +1,5 @@
 // priority: 500
+const CuriosNewDayEvent = new CuriosEventModel('new_day')
 ServerEvents.tick(event => {
     const server = event.server
     if (server.tickCount % 20 != 0) return
@@ -12,6 +13,10 @@ ServerEvents.tick(event => {
     let lastDayCount = persistentData.getInt('dayCount')
     if (lastDayCount == dayCount) return
     persistentData.putInt('dayCount', dayCount)
-
-    OathDayCountIncr(server)
+    let customData = {
+        dayCount: dayCount,
+    }
+    server.playerList.players.forEach(pPlayer => {
+        CuriosNewDayEvent.run(pPlayer, customData, [event])
+    })
 })
