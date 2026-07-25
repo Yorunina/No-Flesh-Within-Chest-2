@@ -328,3 +328,43 @@ const ChampionLowFreqProtectionHover = Text.translatable('tooltips.kubejs.hover.
         Text.translatable('tooltips.kubejs.hover.champion_low_freq_protection.2'),
         Text.translatable('tooltips.kubejs.hover.champion_low_freq_protection.3'),
     ]))
+
+const ChampionRepelHover = Text.translatable('tooltips.kubejs.hover.champion_repel.0').color('#5bc0de').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_repel.0').color('#5bc0de'),
+        Text.translatable('tooltips.kubejs.hover.champion_repel.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_repel.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_repel.3'),
+    ]))
+
+const ChampionPullHover = Text.translatable('tooltips.kubejs.hover.champion_pull.0').color('#9b59b6').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_pull.0').color('#9b59b6'),
+        Text.translatable('tooltips.kubejs.hover.champion_pull.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_pull.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_pull.3'),
+    ]))
+
+const ChampionPurityProtectionHover = Text.translatable('tooltips.kubejs.hover.champion_purity_protection.0').color('#ecf0f1').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_purity_protection.0').color('#ecf0f1'),
+        Text.translatable('tooltips.kubejs.hover.champion_purity_protection.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_purity_protection.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_purity_protection.3'),
+    ]))
+
+const ChampionChaosProtectionHover = Text.translatable('tooltips.kubejs.hover.champion_chaos_protection.0').color('#7f8c8d').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_chaos_protection.0').color('#7f8c8d'),
+        Text.translatable('tooltips.kubejs.hover.champion_chaos_protection.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_chaos_protection.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_chaos_protection.3'),
+    ]))
+
+const ChampionStunAuraHover = Text.translatable('tooltips.kubejs.hover.champion_stun_aura.0').color('#f39c12').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.champion_stun_aura.0').color('#f39c12'),
+        Text.translatable('tooltips.kubejs.hover.champion_stun_aura.1'),
+        Text.translatable('tooltips.kubejs.hover.champion_stun_aura.2'),
+        Text.translatable('tooltips.kubejs.hover.champion_stun_aura.3'),
+    ]))
