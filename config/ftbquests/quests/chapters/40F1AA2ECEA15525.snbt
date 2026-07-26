@@ -950,7 +950,7 @@
 			}]
 			title: "远古化的调查"
 			x: 0.0d
-			y: 15.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["4BBFD32ECC9FB0B5"]
@@ -968,7 +968,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 17.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["04BF46B34F490034"]
@@ -990,7 +990,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 19.5d
+			y: 20.0d
 		}
 		{
 			dependencies: ["42E7A50E6CB4381E"]
@@ -1014,7 +1014,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 21.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1036,7 +1036,7 @@
 				type: "item"
 			}]
 			x: -11.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1058,7 +1058,7 @@
 				type: "item"
 			}]
 			x: -9.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1080,7 +1080,7 @@
 				type: "item"
 			}]
 			x: -7.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1102,7 +1102,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1124,7 +1124,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1146,7 +1146,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1168,7 +1168,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1190,7 +1190,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1212,7 +1212,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1234,7 +1234,7 @@
 				type: "item"
 			}]
 			x: 7.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1256,7 +1256,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 23.5d
+			y: 24.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1278,7 +1278,98 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 23.5d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"3DCAA51901E3AB44"
+				"67AE9B1F6D2589D8"
+				"68120136E5824934"
+				"0FFE186D0222F557"
+				"4B611B8A985D8097"
+				"306CF10967AA8929"
+				"2C5FCD29F322554B"
+				"7CE84D79568270B5"
+				"0566A09FBBEE8632"
+				"63848C1D169E8AD4"
+				"72C4E9213C68A150"
+				"1B679B310F52D2CF"
+			]
+			description: [
+				"首先，请允许我&6恭喜您&r获得了如此多的&6远古化遗物器官&r。"
+				""
+				"而这些远古化的器官需要&6特殊的槽位&r才能够激活其强大效果。"
+				""
+				"为此，我们需要&6遗物胸腔&r——这也是我们马上将要做的事情。"
+			]
+			id: "1EEF5DDAC832934C"
+			min_required_dependencies: 3
+			rewards: [{
+				id: "12AA3280DA5DD3D1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古化之后"
+			tasks: [{
+				elapsedTime: 30L
+				icon: "supplementaries:hourglass"
+				id: "7AB496EC1BB8BB49"
+				title: "稍等片刻"
+				type: "questsadditions:time"
+			}]
+			title: "永恒的调查"
+			x: 0.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["2CC7CA595011BE0F"]
+			description: [
+				"&6永恒熏香&r是记录在所有熏香类别之外的特殊熏香——因为其是由我创造的。"
+				""
+				"佩戴永恒熏香时，&6开启战利品箱&r会累计永恒熏香的极端适应计数器；&6击败由永恒熏香生成的特殊遗物生物&r，便会获得极致力量计数器。"
+				""
+				"使用鼠标指针拿起永恒熏香，并且&6使用持有永恒熏香的鼠标指针右键任意遗物器官&r，即可进行&b镌刻&r。"
+				""
+				"被镌刻的器官在激活时会获得永恒熏香所记录的器官属性，且永恒熏香的属性并不会丢失。"
+			]
+			id: "6D0776424A322770"
+			rewards: [{
+				id: "25314C8BCEB2A008"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "往永恒的又一瞥"
+			tasks: [{
+				id: "00A3785E7FB2DE3A"
+				item: "kubejs:eternal_incense"
+				type: "item"
+			}]
+			title: "远古远古之前"
+			x: 0.0d
+			y: 30.0d
+		}
+		{
+			dependencies: ["1EEF5DDAC832934C"]
+			description: [
+				"使用&6鼠标指针拿起远古熏香&r，并且&6使用携带有远古熏香的鼠标指针右击叁型注射器&r，即可获得&6遗物觉醒注射器&r。"
+				""
+				"注射遗物注射器，您便可以取得您应取得的&6遗物槽位&r。"
+			]
+			id: "2CC7CA595011BE0F"
+			rewards: [{
+				id: "60EE2E1D708FC51C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "获得遗物注射器"
+			tasks: [{
+				id: "7B90A63734C6CC7F"
+				item: "kubejs:relics_awakening_injection"
+				type: "item"
+			}]
+			title: "&6庆贺吧！此乃遗物胸腔！&r"
+			x: 0.0d
+			y: 28.0d
 		}
 	]
 	title: "传闻：遗物觉醒"

@@ -20,7 +20,7 @@ ItemEvents.tooltip(tooltip => {
         let organData = ChestCavityUtils.lookupOrgan(item, null)
         if (organData) {
             organData.organScores.forEach((score, value) => {
-                let roundValue = FloorFix(value, 2)
+                let roundValue = RoundFix(value, 2)
                 let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`)
                     .hover([
                         Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).gold(),

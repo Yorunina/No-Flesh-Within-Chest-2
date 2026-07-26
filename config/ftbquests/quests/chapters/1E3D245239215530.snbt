@@ -360,7 +360,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "38C09FA237D93E79"
 				item: "kubejs:stable_substrate"
 				type: "item"
@@ -415,7 +414,6 @@
 			shape: "circle"
 			subtitle: "为了计算机元件"
 			tasks: [{
-				count: 64L
 				id: "09AB9FB5B5C31A87"
 				item: "kubejs:refined_brass_ingot"
 				type: "item"
@@ -440,7 +438,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "64FA1F67A85DC0AD"
 				item: "kubejs:redstone_capacitor"
 				type: "item"
@@ -465,7 +462,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "7C95BC8E2984C891"
 				item: "kubejs:simulated_unit"
 				type: "item"
@@ -520,7 +516,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "40EC03017B82250F"
 				item: "kubejs:counterweight_gear"
 				type: "item"
@@ -575,7 +570,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "6A3C763FE625A857"
 				item: "kubejs:timing_valve"
 				type: "item"
@@ -605,7 +599,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "1258570B169D6F2A"
 				item: "kubejs:random_tick_spring"
 				type: "item"
@@ -630,7 +623,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "6072181D1C025B2D"
 				item: "kubejs:structural_bolt"
 				type: "item"
@@ -1084,7 +1076,6 @@
 			shape: "circle"
 			subtitle: "为了大世界计算机"
 			tasks: [{
-				count: 64L
 				id: "0E95DF7495DAF3BE"
 				item: "kubejs:amethyst_resonator"
 				type: "item"

@@ -16,7 +16,7 @@ function RelicsOrganScoreTooltips(noRelics) {
         }
         Object.keys(organScore).forEach(key => {
             let score = key.toString()
-            let roundValue = FloorFix(organScore.getFloat(key), 2)
+            let roundValue = RoundFix(organScore.getFloat(key), 2)
             let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score}`)
                 .hover([
                     Text.translate(`tooltips.kubejs.score_tag.${score}`).gold(),

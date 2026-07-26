@@ -16,6 +16,14 @@ StartupEvents.registry('minecraft:item', event => {
             .canEquip(() => true)
             .canUnequip(() => true)
         )
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
+            const oStack = slot.getItem()
+            if (oStack.isEmpty()) return false
+            if (!oStack.is('kubejs:player_27_injection')) return false
+            slot.set(Item.of('kubejs:relics_awakening_injection', 1))
+            return true
+        })
         .tag('curios:incense')
 
     event.create('kubejs:eternal_incense', 'basic')
@@ -30,12 +38,12 @@ StartupEvents.registry('minecraft:item', event => {
             const nbt = stack.getOrCreateTag()
             const relicsKills = nbt.getInt('relicsKills') + 1
             const lootTimes = nbt.getInt('lootTimes') + 1
-            
+
             const oStack = slot.getItem()
             if (oStack.isEmpty()) return false
             if (!oStack.hasTag('kubejs:organ') || !oStack.hasTag('kubejs:relics')) return false
-            
             if (!oStack.hasNBT()) oStack.setNbt(new $CompoundTag())
+
             const oNbt = oStack.getNbt()
             const organDataNbt = new $CompoundTag()
             organDataNbt.putFloat('kubejs:extreme_strength', relicsKills * 0.1)

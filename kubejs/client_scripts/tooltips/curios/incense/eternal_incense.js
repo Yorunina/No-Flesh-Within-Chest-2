@@ -32,7 +32,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:eternal_incense')
         const lootTimes = nbt.getInt('lootTimes') + 1
         const relicsKills = nbt.getInt('relicsKills') + 1
         return [
-            Text.translatable('tooltips.kubejs.eternal_incense.ctrl.3', ExtremeStrengthHover, (relicsKills * 0.1).toFixed(1), ExtremeFitnessHover, (lootTimes * 0.01).toFixed(2)).gray(),
+            Text.translatable('tooltips.kubejs.eternal_incense.ctrl.3', ExtremeStrengthHover, RoundFix(relicsKills * 0.1, 1), ExtremeFitnessHover, RoundFix(lootTimes * 0.01, 2)).gray(),
         ]
     })
 )
