@@ -3,5 +3,5 @@
         {"item": "kubejs:immortal_volcanic_rock", "position": 1}
     ],
     "baseOrganScores": [],
-    "inventoryType": "kubejs:cc_inventory_types/relic"
+    "inventoryType": "kubejs:cc_inventory_types/relics"
 }

@@ -49,4 +49,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', LeviathanRibChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', LeviathanRibOrganTakeOff)
         .addOnlyStrategy('entity_kill', LeviathanRibEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

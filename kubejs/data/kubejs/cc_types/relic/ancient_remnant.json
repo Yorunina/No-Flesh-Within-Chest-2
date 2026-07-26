@@ -3,5 +3,5 @@
         {"item": "kubejs:remnant_heart", "position": 1}
     ],
     "baseOrganScores": [],
-    "inventoryType": "kubejs:cc_inventory_types/relic"
+    "inventoryType": "kubejs:cc_inventory_types/relics"
 }

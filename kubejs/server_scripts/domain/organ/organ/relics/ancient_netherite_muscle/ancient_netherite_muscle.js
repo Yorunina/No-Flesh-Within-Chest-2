@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:ancient_netherite_muscle')
 * @param {string} slotType
 */
 function AncientNetheriteMuscleChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const chestCavity = event.chestCavity
     let extremeStrength = chestCavity.getOrganScore('kubejs:extreme_strength') * 0.25
     customData.attackDamage.addAttributeModifier(extremeStrength, 'multiple', 'all')
@@ -22,4 +22,5 @@ function AncientNetheriteMuscleChestCavityUpdate(customData, event, organItem, o
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ancient_netherite_muscle')
         .addOnlyStrategy('chest_cavity_update', AncientNetheriteMuscleChestCavityUpdate)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

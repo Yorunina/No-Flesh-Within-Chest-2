@@ -49,4 +49,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', PoisonSandGlandChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', PoisonSandGlandTakeOff)
         .addOnlyStrategy('entity_kill', PoisonSandGlandEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

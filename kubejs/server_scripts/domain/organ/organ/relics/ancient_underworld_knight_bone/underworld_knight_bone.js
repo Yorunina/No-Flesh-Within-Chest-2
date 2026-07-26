@@ -21,4 +21,5 @@ function UnderworldKnightBoneEntityKill(customData, event, organItem, organIndex
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:underworld_knight_bone')
         .addOnlyStrategy('entity_kill', UnderworldKnightBoneEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

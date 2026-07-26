@@ -50,4 +50,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('organ_take_off', ImmortalVolcanicCrystalTakeOff)
         .addOnlyStrategy('chest_cavity_update', ImmortalVolcanicCrystalUpdateChestCavityUpdate)
         .addOnlyStrategy('entity_kill', ImmortalVolcanicCrystalEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

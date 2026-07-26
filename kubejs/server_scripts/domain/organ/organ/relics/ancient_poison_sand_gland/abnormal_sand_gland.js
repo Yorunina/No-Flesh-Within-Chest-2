@@ -41,4 +41,5 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:abnormal_sand_gland')
         .addOnlyStrategy('key_active', AbnormalSandGlandKeyActive)
         .addOnlyStrategy('entity_kill', AbnormalSandGlandEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

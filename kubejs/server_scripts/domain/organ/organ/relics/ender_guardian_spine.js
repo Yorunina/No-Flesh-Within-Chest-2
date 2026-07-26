@@ -26,6 +26,7 @@ function EnderGuardianSpineBeHurt(customData, event, organItem, organIndex, slot
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ender_guardian_spine')
         .addOnlyStrategy('entity_be_hurt', EnderGuardianSpineBeHurt)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )
 
 

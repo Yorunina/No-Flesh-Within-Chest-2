@@ -16,12 +16,12 @@ function TwinkleRibChestLootStrategy(customData, event, organItem, organIndex, s
     if (moreLoot) event.addLoot(moreLoot)
     const lootTableId = event.lootTableId
     if (lootTableId.getPath().startsWith('chests/village/')) {
-        event.addLoot(LootEntry.of('kubejs:relic_paper').withChance(0.1))
+        event.addLoot(LootEntry.of('kubejs:relics_paper').withChance(0.1))
     } else if (lootTableId.getNamespace() == 'graveyard') {
-        event.addLoot(LootEntry.of('kubejs:relic_metal').withChance(0.2))
+        event.addLoot(LootEntry.of('kubejs:relics_metal').withChance(0.2))
     } else if (lootTableId.getPath().endsWith('buried_treasure')) {
-        event.addLoot(LootEntry.of('kubejs:relic_gem'))
-    } 
+        event.addLoot(LootEntry.of('kubejs:relics_gem'))
+    }
     if (event.loot.size() >= 18) {
         event.addLoot(LootEntry.of('kubejs:ancient_crystal').withChance(0.1))
     }
@@ -31,4 +31,5 @@ function TwinkleRibChestLootStrategy(customData, event, organItem, organIndex, s
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:twinkle_rib')
         .addStrategy('chest_loot', TwinkleRibChestLootStrategy)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

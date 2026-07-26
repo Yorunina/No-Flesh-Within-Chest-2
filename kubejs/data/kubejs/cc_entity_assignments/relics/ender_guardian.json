@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/relics/ender_guardian.json",
+  "entities": [
+    "cataclysm:ender_guardian"
+  ]
+}

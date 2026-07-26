@@ -49,4 +49,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', SturdyHarbingerLungChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', SturdyHarbingerLungTakeOff)
         .addOnlyStrategy('entity_kill', SturdyHarbingerLungEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

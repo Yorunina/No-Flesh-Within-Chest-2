@@ -20,4 +20,5 @@ function BrokenNetheriteMuscleEntityKill(customData, event, organItem, organInde
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:broken_netherite_muscle')
         .addOnlyStrategy('entity_kill', BrokenNetheriteMuscleEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

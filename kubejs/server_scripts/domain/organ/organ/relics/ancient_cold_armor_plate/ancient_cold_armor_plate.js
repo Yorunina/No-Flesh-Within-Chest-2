@@ -39,7 +39,7 @@ function AncientColdArmorPlateTakeOff(customData, event, organItem, organIndex, 
  * @param {string} slotType
  */
 function AncientColdArmorPlateEntityFall(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     if (event.distance < 3) return
     const entity = event.entity
     const level = entity.level
@@ -77,4 +77,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', AncientColdArmorPlateChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientColdArmorPlateTakeOff)
         .addOnlyStrategy('entity_fall', AncientColdArmorPlateEntityFall)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

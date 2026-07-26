@@ -16,7 +16,7 @@ function AncientMaledictusWingOrganTakeOn(customData, event, organItem, organInd
     if (!entity.isPlayer()) return
     if (entity.isCreative() || entity.isSpectator()) return
     entity.getAbilities().mayfly = true
-    entity.getAbilities().setFlyingSpeed(slotType == AwakeRelicSlot ? 0.05 : 0.005)
+    entity.getAbilities().setFlyingSpeed(slotType == AwakeRelicsSlot ? 0.05 : 0.005)
     entity.onUpdateAbilities()
 }
 
@@ -46,6 +46,7 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ancient_maledictus_wing')
         .addOnlyStrategy('organ_take_on', AncientMaledictusWingOrganTakeOn)
         .addOnlyStrategy('organ_take_off', AncientMaledictusWingOrganTakeOff)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )
 
 

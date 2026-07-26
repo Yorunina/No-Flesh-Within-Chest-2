@@ -51,4 +51,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', AwakenHeartChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AwakenHeartOrganTakeOff)
         .addOnlyStrategy('entity_kill', AwakenHeartEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

@@ -1,5 +1,5 @@
 {
-  "chestcavity": "kubejs:cc_types/relic/sandworm.json",
+  "chestcavity": "kubejs:cc_types/relics/sandworm.json",
   "entities": [
     "block_factorys_bosses:sandworm"
   ]

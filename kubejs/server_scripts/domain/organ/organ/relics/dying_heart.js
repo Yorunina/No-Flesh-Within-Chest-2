@@ -33,4 +33,5 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:dying_heart')
         .addOnlyStrategy('chest_cavity_update', DyingHeartChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', DyingHeartTakeOff)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

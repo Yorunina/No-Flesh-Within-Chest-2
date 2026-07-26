@@ -40,7 +40,7 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
             entityInRadius.forEach(entity => {
                 counter++
                 entity.attack(damageSource, 10 + Math.min(xpLevel * 0.5, 50))
-                entity.invulnerableTime = 0 
+                entity.invulnerableTime = 0
             })
         }
     }
@@ -52,4 +52,5 @@ function WardenCoreKeyActive(customData, event, organItem, organIndex, slotType)
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:warden_core')
         .addOnlyStrategy('key_active', WardenCoreKeyActive)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

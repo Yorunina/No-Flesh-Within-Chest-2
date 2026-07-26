@@ -56,6 +56,7 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:worn_maledictus_wing')
         .addOnlyStrategy('key_active', WornMaledictusWingKeyActive)
         .addOnlyStrategy('entity_kill', WornMaledictusWingEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )
 
 

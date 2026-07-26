@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:cc_types/relics/ignis.json",
+  "entities": [
+    "cataclysm:ignis"
+  ]
+}

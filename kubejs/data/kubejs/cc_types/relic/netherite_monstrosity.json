@@ -4,5 +4,5 @@
         {"item": "kubejs:broken_netherite_muscle", "position": 2}
     ],
     "baseOrganScores": [],
-    "inventoryType": "kubejs:cc_inventory_types/relic"
+    "inventoryType": "kubejs:cc_inventory_types/relics"
 }

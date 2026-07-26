@@ -21,4 +21,5 @@ function CorrodedLeviathanRibEntityKill(customData, event, organItem, organIndex
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:corroded_leviathan_rib')
         .addOnlyStrategy('entity_kill', CorrodedLeviathanRibEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

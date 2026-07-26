@@ -49,4 +49,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', EternalColdCrystalChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', EternalColdCrystalTakeOff)
         .addOnlyStrategy('entity_kill', EternalColdCrystalEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

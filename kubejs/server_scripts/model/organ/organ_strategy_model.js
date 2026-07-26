@@ -29,7 +29,7 @@ OrganStrategyModel.prototype = {
      * 
      * @param {$OrganEventIdType} eventId 
      * @param {any} func 
-     * @param {number} priority
+     * @param {number} priority 优先级
      * @returns 
      */
     addOnlyStrategy: function (eventId, func, priority) {

@@ -38,7 +38,7 @@ function AncientKrakenEyeTakeOff(customData, event, organItem, organIndex, slotT
  * @param {string} slotType
  */
 function AncientKrakenEyeEntityDeath(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const entity = event.entity
     const level = event.level
     const radius = 16
@@ -62,4 +62,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', AncientKrakenEyeChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientKrakenEyeTakeOff)
         .addOnlyStrategy('entity_death', AncientKrakenEyeEntityDeath)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

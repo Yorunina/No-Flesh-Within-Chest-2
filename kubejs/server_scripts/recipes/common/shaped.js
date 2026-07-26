@@ -136,13 +136,13 @@ ServerEvents.recipes(event => {
     ])
 
     event.shaped(Item.of('kubejs:relics_scroll_1', 1), [
-        ['', 'kubejs:relic_paper', 'kubejs:relic_metal'],
-        ['kubejs:relic_paper', 'kubejs:relic_gem', 'kubejs:relic_paper'],
-        ['kubejs:relic_metal', 'kubejs:relic_paper', '']
+        ['', 'kubejs:relics_paper', 'kubejs:relics_metal'],
+        ['kubejs:relics_paper', 'kubejs:relics_gem', 'kubejs:relics_paper'],
+        ['kubejs:relics_metal', 'kubejs:relics_paper', '']
     ])
     event.shaped(Item.of('kubejs:relics_scroll_2', 1), [
-        ['', 'kubejs:relic_paper', 'kubejs:relic_metal'],
-        ['kubejs:relic_paper', 'kubejs:ancient_crystal', 'kubejs:relic_paper'],
-        ['kubejs:relic_metal', 'kubejs:relic_paper', '']
+        ['', 'kubejs:relics_paper', 'kubejs:relics_metal'],
+        ['kubejs:relics_paper', 'kubejs:ancient_crystal', 'kubejs:relics_paper'],
+        ['kubejs:relics_metal', 'kubejs:relics_paper', '']
     ])
 })

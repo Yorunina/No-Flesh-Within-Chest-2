@@ -49,4 +49,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', KrakenEyeChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', KrakenEyeTakeOff)
         .addOnlyStrategy('entity_kill', KrakenEyeEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

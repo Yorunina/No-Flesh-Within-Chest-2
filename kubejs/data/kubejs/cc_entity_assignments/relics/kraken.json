@@ -1,5 +1,5 @@
 {
-  "chestcavity": "kubejs:cc_types/relic/kraken.json",
+  "chestcavity": "kubejs:cc_types/relics/kraken.json",
   "entities": [
     "block_factorys_bosses:kraken"
   ]

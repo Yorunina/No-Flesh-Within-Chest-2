@@ -9,9 +9,9 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:blood_crystal').texture('kubejs:item/materials/blood_crystal').maxStackSize(64)
     event.create('kubejs:swollen_stamen').texture('kubejs:item/materials/swollen_stamen').maxStackSize(64)
 
-    event.create('kubejs:relic_paper').texture('kubejs:item/materials/relic_paper').maxStackSize(64)
-    event.create('kubejs:relic_metal').texture('kubejs:item/materials/relic_metal').maxStackSize(64)
-    event.create('kubejs:relic_gem').texture('kubejs:item/materials/relic_gem').maxStackSize(64)
+    event.create('kubejs:relics_paper').texture('kubejs:item/materials/relics_paper').maxStackSize(64)
+    event.create('kubejs:relics_metal').texture('kubejs:item/materials/relics_metal').maxStackSize(64)
+    event.create('kubejs:relics_gem').texture('kubejs:item/materials/relics_gem').maxStackSize(64)
     event.create('kubejs:ancient_crystal').texture('kubejs:item/materials/ancient_crystal').maxStackSize(64)
     
     event.create('kubejs:relics_scroll_1').texture('kubejs:item/materials/relics_scroll_1').maxStackSize(1)

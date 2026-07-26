@@ -49,4 +49,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', DecayedInfernalDragonCrystalChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', DecayedInfernalDragonCrystalTakeOff)
         .addOnlyStrategy('entity_kill', DecayedInfernalDragonCrystalEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

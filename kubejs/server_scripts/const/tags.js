@@ -1,6 +1,7 @@
 // priority: 5000
 const DrygmyBlacklistTag = $TagKey.create($Registries.ENTITY_TYPE, 'ars_nouveau:drygmy_blacklist')
 const RelicsBossTagKey = $TagKey.create($Registries.ENTITY_TYPE, 'kubejs:relics_boss')
+const RelicsBossPartTagKey = $TagKey.create($Registries.ENTITY_TYPE, 'kubejs:relics_boss_part')
 const WoodBlockTag = $TagKey.create($Registries.BLOCK, 'minecraft:logs')
 ServerEvents.tags('item', event => {
     event.remove('curios:waist', ['cataclysm:belt_of_beginner'])
@@ -60,8 +61,12 @@ ServerEvents.tags('entity_type', event => {
             'block_factorys_bosses:infernal_dragon',
             'block_factorys_bosses:sandworm',
             'block_factorys_bosses:kraken',
-            'block_factorys_bosses:kraken_tentacle', // 多部位生物特殊处理
             'block_factorys_bosses:underworld_knight',
+        ])
+    // 多部位生物特殊处理
+    event.add('kubejs:relics_boss_part',
+        [
+            'block_factorys_bosses:kraken_tentacle'
         ])
 })
 

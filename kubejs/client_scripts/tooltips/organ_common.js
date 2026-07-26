@@ -5,8 +5,8 @@ ItemEvents.tooltip(tooltip => {
 
         let lineNum = 1
         let organTagTooltipsList = []
-        let nbt = item.getOrCreateTag()
-        let itemMaxStackSizeStr = item.getMaxStackSize().toFixed(0)
+        const nbt = item.getOrCreateTag()
+        const itemMaxStackSizeStr = item.getMaxStackSize().toFixed(0)
         item.getTags().toArray().forEach(/**@param {Internal.TagKey} tag*/tag => {
             let tagLocation = String(tag.location())
             if (!OrganTagMap[tagLocation]) return

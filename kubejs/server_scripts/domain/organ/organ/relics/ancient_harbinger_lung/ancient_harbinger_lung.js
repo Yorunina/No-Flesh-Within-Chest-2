@@ -38,7 +38,7 @@ function AncientHarbingerLungTakeOff(customData, event, organItem, organIndex, s
  * @param {string} slotType
  */
 function AncientHarbingerLungItemLeftClicked(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const entity = event.entity
     const level = event.level
 
@@ -75,5 +75,6 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', AncientHarbingerLungChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientHarbingerLungTakeOff)
         .addOnlyStrategy('item_left_clicked', AncientHarbingerLungItemLeftClicked)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 
 )

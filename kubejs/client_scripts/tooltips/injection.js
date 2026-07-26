@@ -37,11 +37,11 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:transdimensional_mechanized
     .addShift(Text.translatable('tooltips.kubejs.transdimensional_mechanized_injection.shift.1', ChestcavityTypeHover, TransdimnesionalMechanizedTypeHover))
 )
 
-ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:relic_awakening_injection')
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:relics_awakening_injection')
     .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
-    .addDefault(Text.translatable('tooltips.kubejs.relic_awakening_injection.default.1').gray())
-    .addShift(Text.translatable('tooltips.kubejs.relic_awakening_injection.shift.1', ChestcavityTypeHover, RelicAwakeningTypeHover))
+    .addDefault(Text.translatable('tooltips.kubejs.relics_awakening_injection.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.relics_awakening_injection.shift.1', ChestcavityTypeHover, RelicsAwakeningTypeHover))
 )
 
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:plant_injection')

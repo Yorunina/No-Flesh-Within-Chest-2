@@ -28,7 +28,7 @@ const DigestSlotType = Text.translatable('slot_type.kubejs.digest_slot.1').color
 const TransdimensionalMechanizedType = Text.translatable('slot_type.kubejs.transdimensional_mechanized.1').color('#ae5dce')
 const FertileSlotType = Text.translatable('slot_type.kubejs.fertile_slot.1').color('#ff672b')
 const HarvestSlotType = Text.translatable('slot_type.kubejs.harvest_slot.1').color('#ff672b')
-const AwakeRelicSlotType = Text.translatable('slot_type.kubejs.awake_relic_slot.1').color('#e33100')
+const AwakeRelicsSlotType = Text.translatable('slot_type.kubejs.awake_relics_slot.1').color('#e33100')
 
 const LuckHover = Text.translatable('tooltips.kubejs.hover.luck.0').green().underlined()
     .hover(HoverTextList([
@@ -36,6 +36,16 @@ const LuckHover = Text.translatable('tooltips.kubejs.hover.luck.0').green().unde
         Text.translatable('tooltips.kubejs.hover.luck.1'),
         Text.translatable('tooltips.kubejs.hover.luck.2'),
         Text.translatable('tooltips.kubejs.hover.luck.3')
+    ]))
+const ItemCoverHover = Text.translatable('tooltips.kubejs.hover.item_cover.0').aqua().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.item_cover.0').aqua(),
+        Text.translatable('tooltips.kubejs.hover.item_cover.1'),
+    ]))
+const EngraveHover = Text.translatable('tooltips.kubejs.hover.engrave.0').aqua().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.engrave.0').aqua(),
+        Text.translatable('tooltips.kubejs.hover.engrave.1'),
     ]))
 
 const AlwaysEatHover = Text.translatable('tooltips.kubejs.hover.always_eat.0').gold().underlined()
@@ -74,7 +84,7 @@ const OnFireHover = Text.translatable('tooltips.kubejs.hover.on_fire.0').color('
         Text.translatable('tooltips.kubejs.hover.on_fire.0').color('#ff6f00'),
         Text.translatable('tooltips.kubejs.hover.on_fire.1'),
     ]))
-    
+
 const SoildCoreHover = Text.translatable('tooltips.kubejs.hover.solid_core.0').gray().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.solid_core.0').gray(),
@@ -123,11 +133,11 @@ const TransdimnesionalMechanizedTypeHover = Text.translatable('tooltips.kubejs.h
         Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.2'),
     ]))
 
-const RelicAwakeningTypeHover = Text.translatable('tooltips.kubejs.hover.relic_awakening_type.0').lightPurple().underlined()
+const RelicsAwakeningTypeHover = Text.translatable('tooltips.kubejs.hover.relics_awakening_type.0').lightPurple().underlined()
     .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.hover.relic_awakening_type.0').lightPurple(),
-        Text.translatable('tooltips.kubejs.hover.relic_awakening_type.1'),
-        Text.translatable('tooltips.kubejs.hover.relic_awakening_type.2'),
+        Text.translatable('tooltips.kubejs.hover.relics_awakening_type.0').lightPurple(),
+        Text.translatable('tooltips.kubejs.hover.relics_awakening_type.1'),
+        Text.translatable('tooltips.kubejs.hover.relics_awakening_type.2'),
     ]))
 
 const PlantTypeHover = Text.translatable('tooltips.kubejs.hover.plant_type.0').green().underlined()

@@ -50,5 +50,6 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', ColdArmorPlateChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', ColdArmorPlateTakeOff)
         .addOnlyStrategy('entity_kill', ColdArmorPlateEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )
 

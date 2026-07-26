@@ -36,4 +36,5 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:immortal_volcanic_rock')
         .addOnlyStrategy('entity_tick', ImmortalVolcanicRockEntityTick)
         .addOnlyStrategy('entity_kill', ImmortalVolcanicRockEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

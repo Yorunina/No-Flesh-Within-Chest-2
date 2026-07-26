@@ -59,4 +59,5 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:remnant_heart')
         .addOnlyStrategy('block_right_clicked', RemnantHeartBlockRightClicked)
         .addOnlyStrategy('entity_kill', RemnantHeartEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

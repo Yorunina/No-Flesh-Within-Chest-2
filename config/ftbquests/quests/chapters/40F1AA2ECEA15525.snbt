@@ -70,7 +70,7 @@
 			subtitle: "遗物的第一份记忆"
 			tasks: [{
 				id: "701445890C095A68"
-				item: "kubejs:relic_paper"
+				item: "kubejs:relics_paper"
 				type: "item"
 			}]
 			x: -2.0d
@@ -92,7 +92,7 @@
 			subtitle: "遗物的第二份记忆"
 			tasks: [{
 				id: "017754F25B4E096B"
-				item: "kubejs:relic_metal"
+				item: "kubejs:relics_metal"
 				type: "item"
 			}]
 			x: 0.0d
@@ -114,7 +114,7 @@
 			subtitle: "遗物的第三份记忆"
 			tasks: [{
 				id: "12681FCB1DFD4915"
-				item: "kubejs:relic_gem"
+				item: "kubejs:relics_gem"
 				type: "item"
 			}]
 			x: 2.0d
@@ -908,7 +908,7 @@
 			}]
 			title: "遗物化与精英化"
 			x: 2.5d
-			y: 12.0d
+			y: 11.0d
 		}
 		{
 			dependencies: [

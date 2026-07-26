@@ -3,5 +3,5 @@
         {"item": "kubejs:cold_armor_plate", "position": 1}
     ],
     "baseOrganScores": [],
-    "inventoryType": "kubejs:cc_inventory_types/relic"
+    "inventoryType": "kubejs:cc_inventory_types/relics"
 }

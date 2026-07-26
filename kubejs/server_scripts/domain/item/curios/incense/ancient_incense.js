@@ -8,16 +8,17 @@ const AncientIncenseEntitySpawnedIdentifier = 'AncientIncenseModifier'
  */
 function AncientIncenseEntitySpawned(customData, event, curiosItem) {
     const entity = event.entity
-    if (!entity.entityType.is(RelicsBossTagKey)) return
+    const isBossPart = entity.entityType.is(RelicsBossPartTagKey)
+    const isBoss = entity.entityType.is(RelicsBossTagKey)
+    if (!isBoss && !isBossPart) return
 
-    const championTag = new $CompoundTag()
-    if (Math.random() < 0.5) {
-        championTag.putInt('high_freq_protection', 1)
-    } else {
-        championTag.putInt('low_freq_protection', 1)
+    if (isBoss) {
+        const championTag = new $CompoundTag()
+        Math.random() < 0.5 ? championTag.putInt('high_freq_protection', 1) : championTag.putInt('low_freq_protection', 1)
+        entity.persistentData.put('champion', championTag)
+        entity.persistentData.putString('relicsStage', 'ancient')
     }
-    entity.persistentData.put('champion', championTag)
-    entity.persistentData.putString('relicsStage', 'ancient')
+
     let healthAttr = entity.getAttribute('minecraft:generic.max_health')
     if (healthAttr) {
         healthAttr.addPermanentModifier(new $AttributeModifier(AncientIncenseEntitySpawnedUUID, AncientIncenseEntitySpawnedIdentifier, 19, 'multiply_base'))

@@ -38,7 +38,7 @@ function AncientInfernalDragonCrystalTakeOff(customData, event, organItem, organ
  * @param {string} slotType
  */
 function AncientInfernalDragonCrystalPlayerRoll(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     /**@type {Internal.ServerPlayer} */
     const player = event.player
     const server = event.server
@@ -75,4 +75,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', AncientInfernalDragonCrystalChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientInfernalDragonCrystalTakeOff)
         .addOnlyStrategy('player_roll', AncientInfernalDragonCrystalPlayerRoll)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

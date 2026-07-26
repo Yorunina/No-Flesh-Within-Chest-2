@@ -61,6 +61,7 @@ RegistryOrganStrategy(
         .addOnlyStrategy('organ_take_on', MaledictusWingOrganTakeOn)
         .addOnlyStrategy('organ_take_off', MaledictusWingOrganTakeOff)
         .addOnlyStrategy('entity_kill', MaledictusWingEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )
 
 

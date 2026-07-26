@@ -38,11 +38,11 @@ function AncientPoisonSandGlandTakeOff(customData, event, organItem, organIndex,
  * @param {string} slotType
  */
 function AncientPoisonSandGlandEntityKill(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const entity = event.entity
     const source = event.source.actual
     const level = entity.level
-    
+
     const poisonSplash = new $PoisonSplash(level)
     poisonSplash.setOwner(source)
     poisonSplash.moveTo(entity.position())
@@ -57,4 +57,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', AncientPoisonSandGlandChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientPoisonSandGlandTakeOff)
         .addOnlyStrategy('entity_kill', AncientPoisonSandGlandEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

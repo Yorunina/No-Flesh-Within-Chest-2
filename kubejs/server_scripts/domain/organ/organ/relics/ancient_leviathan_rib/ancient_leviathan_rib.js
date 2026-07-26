@@ -39,7 +39,7 @@ function AncientLeviathanRibOrganTakeOff(customData, event, organItem, organInde
  * @param {string} slotType
  */
 function AncientLeviathanRibEntityBeHurt(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const entity = event.entity
     const source = event.source.actual
     if (!source) return
@@ -58,4 +58,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('entity_be_hurt', AncientLeviathanRibEntityBeHurt)
         .addOnlyStrategy('chest_cavity_update', AncientLeviathanRibChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientLeviathanRibOrganTakeOff)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

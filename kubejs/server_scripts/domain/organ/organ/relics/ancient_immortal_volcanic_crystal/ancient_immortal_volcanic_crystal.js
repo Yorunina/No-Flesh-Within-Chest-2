@@ -38,7 +38,7 @@ function AncientImmortalVolcanicCrystalTakeOff(customData, event, organItem, org
  * @param {string} slotType
  */
 function AncientImmortalVolcanicCrystalEntityFall(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     if (event.distance < 3) return
     const entity = event.entity
     const level = entity.level
@@ -73,4 +73,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('organ_take_off', AncientImmortalVolcanicCrystalTakeOff)
         .addOnlyStrategy('chest_cavity_update', AncientImmortalVolcanicCrystalUpdateChestCavityUpdate)
         .addOnlyStrategy('entity_fall', AncientImmortalVolcanicCrystalEntityFall)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

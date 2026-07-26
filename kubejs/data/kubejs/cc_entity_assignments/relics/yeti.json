@@ -1,5 +1,5 @@
 {
-  "chestcavity": "kubejs:cc_types/relic/yeti.json",
+  "chestcavity": "kubejs:cc_types/relics/yeti.json",
   "entities": [
     "block_factorys_bosses:yeti"
   ]

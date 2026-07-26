@@ -1,2 +1,2 @@
 // priority: 500
-const AwakeRelicSlot = 'awake_relic_slot'
+const AwakeRelicsSlot = 'awake_relics_slot'

@@ -2,5 +2,5 @@
     "defaultChestCavity": [
         {"item": "kubejs:worn_maledictus_wing", "position": 1}
     ],
-    "inventoryType": "kubejs:cc_inventory_types/relic"
+    "inventoryType": "kubejs:cc_inventory_types/relics"
 }

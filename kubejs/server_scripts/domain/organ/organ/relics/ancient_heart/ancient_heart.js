@@ -39,7 +39,7 @@ function AncientHeartOrganTakeOff(customData, event, organItem, organIndex, slot
  * @param {string} slotType
  */
 function AncientHeartEntityTick(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const entity = event.entity
     const level = entity.level
     if (entity.isMoving()) return
@@ -58,4 +58,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('entity_tick', AncientHeartEntityTick)
         .addOnlyStrategy('chest_cavity_update', AncientHeartChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientHeartOrganTakeOff)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

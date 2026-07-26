@@ -11,7 +11,7 @@ RegistryOrgan('kubejs:ancient_underworld_knight_bone')
 * @param {string} slotType
 */
 function AncientUnderworldKnightBoneChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const chestCavity = event.chestCavity
     let extremeFitness = chestCavity.getOrganScore('kubejs:extreme_fitness') * 0.25
     customData.maxHealth.addAttributeModifier(extremeFitness, 'multiple', 'all')
@@ -21,4 +21,5 @@ function AncientUnderworldKnightBoneChestCavityUpdate(customData, event, organIt
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ancient_underworld_knight_bone')
         .addOnlyStrategy('chest_cavity_update', AncientUnderworldKnightBoneChestCavityUpdate)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

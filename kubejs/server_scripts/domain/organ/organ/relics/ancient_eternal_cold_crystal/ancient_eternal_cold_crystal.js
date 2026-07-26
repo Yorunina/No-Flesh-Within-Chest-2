@@ -39,7 +39,7 @@ function AncientEternalColdCrystalTakeOff(customData, event, organItem, organInd
  * @param {string} slotType
  */
 function AncientEternalColdCrystalEntityKill(customData, event, organItem, organIndex, slotType) {
-    if (slotType != AwakeRelicSlot) return
+    if (slotType != AwakeRelicsSlot) return
     const entity = event.entity
     const source = event.source.actual
     const level = entity.level
@@ -67,4 +67,5 @@ RegistryOrganStrategy(
         .addOnlyStrategy('chest_cavity_update', AncientEternalColdCrystalChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientEternalColdCrystalTakeOff)
         .addOnlyStrategy('entity_kill', AncientEternalColdCrystalEntityKill)
+        .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

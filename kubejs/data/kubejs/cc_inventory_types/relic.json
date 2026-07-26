@@ -4,7 +4,7 @@
         {"x": 92, "y": 86},
         {"x": 110, "y": 86}
     ],
-    "backgroundTexture": "kubejs:textures/gui/chest_cavity/relic.png",
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/relics.png",
     "playerInventoryPosition": {
         "x": 12,
         "y": 60
