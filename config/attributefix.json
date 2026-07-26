@@ -583,6 +583,17 @@
         "value": 10000
       }
     },
+    "kubejs:loot_multiplier": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "ars_nouveau:ars_nouveau.perk.warding": {
       "enabled": false,
       "min": {

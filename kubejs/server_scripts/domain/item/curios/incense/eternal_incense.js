@@ -1,5 +1,4 @@
 // priority: 500
-// todo 没想好
 const EternalIncenseEntitySpawnedUUID = UUID.fromString('A86EE410-F466-41CB-8181-85C1D5739561')
 const EternalIncenseEntitySpawnedIdentifier = 'EternalIncenseModifier'
 /**
@@ -10,6 +9,7 @@ const EternalIncenseEntitySpawnedIdentifier = 'EternalIncenseModifier'
 function EternalIncenseEntitySpawned(customData, event, curiosItem) {
     const entity = event.entity
     if (!entity.entityType.is(RelicsBossTagKey)) return
+    
 }
 
 /**

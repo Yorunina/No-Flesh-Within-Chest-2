@@ -2,55 +2,19 @@
 const EternalOathEntitySpawnedUUID = UUID.fromString('82FFC3F4-EB37-46B8-87CE-05668E406FE6')
 const EternalOathEntitySpawnedIdentifier = 'EternalOathModifier'
 const EternalOathEntitySpawnedConfig = [
-    { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1, lootMulti: 1 },
-    { healthMulti: 2, attackMulti: 1, armorMulti: 1, toughnessMulti: 1, lootMulti: 1.1 },
-    { healthMulti: 3, attackMulti: 1, armorMulti: 1, toughnessMulti: 1, lootMulti: 1.2 },
-    { healthMulti: 5, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1, lootMulti: 1.5 },
-    { healthMulti: 10, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1, lootMulti: 1.8 },
-    { healthMulti: 20, attackMulti: 2, armorMulti: 1.5, toughnessMulti: 1.5, lootMulti: 2 },
-    { healthMulti: 30, attackMulti: 3, armorMulti: 1.5, toughnessMulti: 1.5, lootMulti: 2.2 },
-    { healthMulti: 50, attackMulti: 4, armorMulti: 2, toughnessMulti: 2, lootMulti: 2.5 },
-    { healthMulti: 100, attackMulti: 5, armorMulti: 2, toughnessMulti: 2, lootMulti: 3 },
-    { healthMulti: 300, attackMulti: 6, armorMulti: 2.5, toughnessMulti: 2.5, lootMulti: 3 },
-    { healthMulti: 500, attackMulti: 7, armorMulti: 2.5, toughnessMulti: 2.5, lootMulti: 3 },
-    { healthMulti: 1000, attackMulti: 8, armorMulti: 3, toughnessMulti: 3, lootMulti: 3 },
+    { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1, lootMulti: 0 },
+    { healthMulti: 2, attackMulti: 1, armorMulti: 1, toughnessMulti: 1, lootMulti: 0.1 },
+    { healthMulti: 3, attackMulti: 1, armorMulti: 1, toughnessMulti: 1, lootMulti: 0.2 },
+    { healthMulti: 5, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1, lootMulti: 0.5 },
+    { healthMulti: 10, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1, lootMulti: 0.8 },
+    { healthMulti: 20, attackMulti: 2, armorMulti: 1.5, toughnessMulti: 1.5, lootMulti: 1 },
+    { healthMulti: 30, attackMulti: 3, armorMulti: 1.5, toughnessMulti: 1.5, lootMulti: 1.2 },
+    { healthMulti: 50, attackMulti: 4, armorMulti: 2, toughnessMulti: 2, lootMulti: 1.5 },
+    { healthMulti: 100, attackMulti: 5, armorMulti: 2, toughnessMulti: 2, lootMulti: 2 },
+    { healthMulti: 300, attackMulti: 6, armorMulti: 2.5, toughnessMulti: 2.5, lootMulti: 2 },
+    { healthMulti: 500, attackMulti: 7, armorMulti: 2.5, toughnessMulti: 2.5, lootMulti: 2 },
+    { healthMulti: 1000, attackMulti: 8, armorMulti: 3, toughnessMulti: 3, lootMulti: 2 },
 ]
-
-/**
- * @param {OrganEventCustomData} customData
- * @param {Internal.LootContextJS} event 
- * @param {Internal.ItemStack} curiosItem
- */
-function EternalOathChestLoot(customData, event, curiosItem) {
-    const nbt = curiosItem.getOrCreateTag()
-    const state = Math.min(nbt.getInt('state'), 11)
-    const spawnConfig = EternalOathEntitySpawnedConfig[state]
-    if (spawnConfig.lootMulti == 1) return
-    let overflowStacks = []
-    event.loot.forEach(pLoot => {
-        let maxStackSize = pLoot.getMaxStackSize()
-        let newCount = Math.floor(pLoot.getCount() * spawnConfig.lootMulti)
-        if (newCount <= 0) {
-            pLoot.setCount(0)
-            return
-        }
-        let overflowCount = newCount - maxStackSize
-        if (overflowCount <= 0) {
-            pLoot.setCount(newCount)
-        } else {
-            pLoot.setCount(maxStackSize)
-            for (let i = 0; i < Math.floor(overflowCount / maxStackSize); i++) {
-                overflowStacks.push(pLoot.copyWithCount(maxStackSize))
-            }
-            if (overflowCount % maxStackSize > 0) {
-                overflowStacks.push(pLoot.copyWithCount(overflowCount % maxStackSize))
-            }
-        }
-    })
-    overflowStacks.forEach(pLoot => {
-        event.loot.add(pLoot)
-    })
-}
 
 /**
  * @param {OrganEventCustomData} customData
@@ -84,6 +48,5 @@ function EternalOathEntitySpawned(customData, event, curiosItem) {
 
 
 RegistryCuriosStrategy(new CuriosStrategyModel('kubejs:eternal_oath')
-    .addStrategy('chest_loot', EternalOathChestLoot)
     .addStrategy('entity_spawned', EternalOathEntitySpawned)
 )
