@@ -30,6 +30,27 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:functional_entity_injection
     .addShift(Text.translatable('tooltips.kubejs.functional_entity_injection.shift.1', ChestcavityTypeHover, FunctionalEntityTypeHover))
 )
 
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:transdimensional_relics_injection')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.transdimensional_relics_injection.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.transdimensional_relics_injection.shift.1', ChestcavityTypeHover, TransdimnesionalRelicsTypeHover))
+)
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:transdimensional_plant_injection')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.transdimensional_plant_injection.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.transdimensional_plant_injection.shift.1', ChestcavityTypeHover, TransdimnesionalPlantTypeHover))
+)
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:transdimensional_rose_injection')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.transdimensional_rose_injection.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.transdimensional_rose_injection.shift.1', ChestcavityTypeHover, TransdimnesionalRoseTypeHover))
+)
+
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:transdimensional_mechanized_injection')
     .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
     .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))

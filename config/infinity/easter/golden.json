@@ -20,7 +20,7 @@
             "aquifers_enabled": false,
             "ore_veins_enabled": false,
             "default_block": {
-                "Name": "minecraft:raw_gold_block"
+                "Name": "minecraft:gold_block"
             },
             "default_fluid": {
                 "Name": "kubejs:molten_gold_fluid"
@@ -139,7 +139,7 @@
                     {
                         "type": "minecraft:block",
                         "result_state": {
-                            "Name": "minecraft:raw_gold_block"
+                            "Name": "minecraft:gold_block"
                         }
                     }
                 ]

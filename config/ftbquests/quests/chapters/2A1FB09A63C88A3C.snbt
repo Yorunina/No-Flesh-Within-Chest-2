@@ -451,33 +451,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["2037A5E8F30A4E65"]
-			description: [
-				"尽管械学巫术纤维瘤每个周期仅会&6消耗5mb的药水&r，但长期维持最好提供一个稳定的药水来源——使用乳腺榨奶生物便是一个提供药水的稳定方案。"
-				""
-				"但除此之外，您也可以尝试构筑自动化炼药产线以供给长期维持；亦或是手动往压缩空间中囤入大量炼药材料，由于巫术纤维瘤消耗并不高，因此也能够使用较长时间。"
-			]
-			id: "1A942236AD51E70C"
-			rewards: [{
-				id: "7F6CE35B3C8B5295"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "药水泛滥如洪"
-			tasks: [{
-				id: "783A0297D64EBA77"
-				item: {
-					Count: 1
-					id: "kubejs:mammary_gland"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "乳腺"
-			x: 7.5d
-			y: 12.0d
-		}
-		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
 				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
@@ -502,8 +475,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 14.0d
+			x: 7.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["6C33052572100482"]
@@ -631,8 +604,53 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 16.0d
+			x: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0B6DD0B62C0B5118"]
+			description: [
+				"超维胸腔有着极其强的兼容能力——在研究中，超维胸腔能够几乎完美的兼容任何特殊槽位。"
+				""
+				"这意味着，我们可以通过一些化合工作，&6将某些胸腔的强力槽位复合到超维胸腔中&r，获得更加强大的威力。"
+				""
+				"如果您能够提供给我&6玫瑰、植物、遗物&r任一注射器，我们便能够创造对应的超维复合胸腔。"
+			]
+			id: "1E8FD6C71E7460EF"
+			rewards: [{
+				id: "08987923241F1DC2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维胸腔的异常混合"
+			tasks: [{
+				id: "68F4503CA42AAFB1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:plant_injection"
+							}
+							{
+								Count: 1b
+								id: "kubejs:rose_injection"
+							}
+							{
+								Count: 1b
+								id: "kubejs:relics_awakening_injection"
+							}
+						]
+					}
+				}
+				title: "任一符合要求的特殊注射器"
+				type: "item"
+			}]
+			title: "超维混合工艺"
+			x: 2.5d
+			y: 10.0d
 		}
 	]
 	title: "传闻：超维工厂"

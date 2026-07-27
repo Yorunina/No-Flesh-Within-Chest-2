@@ -3,13 +3,7 @@
 	default_quest_shape: ""
 	filename: "40F1AA2ECEA15525"
 	group: "0B365C36A50478AA"
-	icon: {
-		Count: 1
-		id: "kubejs:twinkle_rib"
-		tag: {
-			Damage: 0
-		}
-	}
+	icon: "kubejs:relics_incense"
 	id: "40F1AA2ECEA15525"
 	order_index: 10
 	quest_links: [ ]
@@ -1356,11 +1350,21 @@
 				"注射遗物注射器，您便可以取得您应取得的&6遗物槽位&r。"
 			]
 			id: "2CC7CA595011BE0F"
-			rewards: [{
-				id: "60EE2E1D708FC51C"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "60EE2E1D708FC51C"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "36E2623150238D0D"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "章节完成"
+					type: "maa:kube"
+				}
+			]
 			subtitle: "获得遗物注射器"
 			tasks: [{
 				id: "7B90A63734C6CC7F"

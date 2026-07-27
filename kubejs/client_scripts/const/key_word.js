@@ -133,6 +133,27 @@ const TransdimnesionalMechanizedTypeHover = Text.translatable('tooltips.kubejs.h
         Text.translatable('tooltips.kubejs.hover.transdimensional_mechanized_type.2'),
     ]))
 
+const TransdimnesionalRelicsTypeHover = Text.translatable('tooltips.kubejs.hover.transdimensional_relics_type.0').lightPurple().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.transdimensional_relics_type.0').lightPurple(),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_relics_type.1'),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_relics_type.2'),
+    ]))
+
+const TransdimnesionalPlantTypeHover = Text.translatable('tooltips.kubejs.hover.transdimensional_plant_type.0').lightPurple().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.transdimensional_plant_type.0').lightPurple(),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_plant_type.1'),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_plant_type.2'),
+    ]))
+
+const TransdimnesionalRoseTypeHover = Text.translatable('tooltips.kubejs.hover.transdimensional_rose_type.0').lightPurple().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.transdimensional_rose_type.0').lightPurple(),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_rose_type.1'),
+        Text.translatable('tooltips.kubejs.hover.transdimensional_rose_type.2'),
+    ]))
+
 const RelicsAwakeningTypeHover = Text.translatable('tooltips.kubejs.hover.relics_awakening_type.0').lightPurple().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.relics_awakening_type.0').lightPurple(),

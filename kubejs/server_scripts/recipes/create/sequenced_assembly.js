@@ -1,6 +1,21 @@
 // priority: 1000
 const CommonTransitionalItem = 'create:incomplete_precision_mechanism'
 ServerEvents.recipes(event => {
+    event.remove({ id: 'create_biotech:sequenced_assembly/bionic_mechanism' })
+    event.recipes.create.sequenced_assembly(
+        [
+            Item.of('create_biotech:bionic_mechanism')
+        ],
+        'create:brass_sheet',
+        [
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create:cogwheel']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'create:large_cogwheel']),
+            event.recipes.create.deploying(CommonTransitionalItem, [CommonTransitionalItem, 'biomancy:flesh_bits']),
+        ]
+    )
+        .transitionalItem(CommonTransitionalItem)
+        .loops(5)
+
     event.recipes.create.sequenced_assembly(
         [
             Item.of('kubejs:redstone_capacitor')

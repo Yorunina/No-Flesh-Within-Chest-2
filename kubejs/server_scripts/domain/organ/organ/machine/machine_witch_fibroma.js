@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:machine_witch_fibroma')
     .addScore('chestcavity:digestion', 1)
-    .addScore('chestcavity:filtration', 0.5)
+    .addScore('chestcavity:filtration', 1.5)
 
 /**
  * @param {OrganEventCustomData} customData

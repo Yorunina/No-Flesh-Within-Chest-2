@@ -2,7 +2,7 @@
 StartupEvents.registry('block', event => {
     event.create('kubejs:infinity_soil', 'basic').textureAll('kubejs:block/soil/infinity_soil')
         .blockEntity(ctx => {
-            ctx.tick(5, 0, pCtx => {
+            ctx.tick(10, 0, pCtx => {
                 const level = pCtx.level
                 if (level.isClientSide()) return
                 const targetBlockPos = pCtx.blockPos.above()
