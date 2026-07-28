@@ -43,6 +43,7 @@ ServerEvents.tags('item', event => {
     event.add('minecraft:music_discs', ['kubejs:faded_disc', 'kubejs:assumptions_disc'])
 
     event.add('farm_and_charm:container', ['kubejs:sausage_casing', 'minecraft:stick'])
+    event.add('kubejs:compact_machine', ['compactmachines:machine_maximum', 'compactmachines:machine_giant', 'compactmachines:machine_large', 'compactmachines:machine_normal', 'compactmachines:machine_small', 'compactmachines:machine_tiny'])
 })
 
 ServerEvents.tags('entity_type', event => {

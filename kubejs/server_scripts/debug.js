@@ -1,21 +1,26 @@
 // priority: 500
-// ItemEvents.rightClicked('stick', event => {
-//     // const player = event.player
-//     // const level = event.level
-//     // let pos = new BlockPos(0, 56, 0)
-//     // /**@type {Internal.ShellForgeBlockEntity} */
-//     // const blockEntity = level.getBlockEntity(pos)
-//     // /**@type {Internal.CompoundTag} */
-//     // let playerData = blockEntity.createFreshPlayerData(level)
-//     // playerData.putInt('playerGameType', 2)
-//     // playerData.putInt('previousPlayerGameType', 0)
-//     // playerData.putBoolean('infLifeShell', false)
-//     // playerData.putString('playerType', 'amusement')
-//     // blockEntity.createShellByData(player.uuid, playerData)
-//     event.player.sendData('debug')
-// })
+ItemEvents.rightClicked('stick', event => {
+    // const player = event.player
+    // const level = event.level
+    // let pos = new BlockPos(0, 56, 0)
+    // /**@type {Internal.ShellForgeBlockEntity} */
+    // const blockEntity = level.getBlockEntity(pos)
+    // /**@type {Internal.CompoundTag} */
+    // let playerData = blockEntity.createFreshPlayerData(level)
+    // playerData.putInt('playerGameType', 2)
+    // playerData.putInt('previousPlayerGameType', 0)
+    // playerData.putBoolean('infLifeShell', false)
+    // playerData.putString('playerType', 'amusement')
+    // blockEntity.createShellByData(player.uuid, playerData)
+    // event.player.sendData('debug')
 
-import { event } from "jquery"
+    const level = event.level
+    const player = event.player
+    let tempSphere = new RingSphereModel()
+        .addRingProperties(Block.getBlock('minecraft:diamond_block').defaultBlockState(), 18, 2, 45, 45)
+        .addRingProperties(Block.getBlock('minecraft:gold_block').defaultBlockState(), 20, 2, -45, -45)
+    tempSphere.generateSphere(level, player.block.getPos().atY(100))
+})
 
 ItemEvents.entityInteracted('minecraft:stick', event => {
     const level = event.level
@@ -67,3 +72,5 @@ ItemEvents.firstLeftClicked('minecraft:blaze_powder', event => {
     MobBattleUtil.removeTeam(level, 'team_1')
     MobBattleUtil.removeTeam(level, 'team_2')
 })
+
+

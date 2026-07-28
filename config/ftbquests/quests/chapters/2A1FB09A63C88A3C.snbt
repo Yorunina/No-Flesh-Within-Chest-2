@@ -233,6 +233,7 @@
 				""
 				"因此，为了让超维胸腔能够达到完全运行的状态，您&6至少需要3个压缩空间方块&r，以及&6至少3个能够利用的超维机械器官&r——正巧，在曾经的记录中就存在有几个这样的器官，请允许我为您逐个介绍。"
 			]
+			icon: "compactmachines:machine_normal"
 			id: "0B6DD0B62C0B5118"
 			rewards: [{
 				id: "1C1572CD7083DBE8"
@@ -616,6 +617,7 @@
 				""
 				"如果您能够提供给我&6玫瑰、植物、遗物&r任一注射器，我们便能够创造对应的超维复合胸腔。"
 			]
+			icon: "kubejs:empty_injection"
 			id: "1E8FD6C71E7460EF"
 			rewards: [{
 				id: "08987923241F1DC2"
@@ -648,9 +650,204 @@
 				title: "任一符合要求的特殊注射器"
 				type: "item"
 			}]
-			title: "超维混合工艺"
+			title: "超维复合工艺"
 			x: 2.5d
-			y: 10.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["20EF3FA93587E702"]
+			description: ["通过简单的将两种注射器混合，即可得到&6超维植物注射器&r。"]
+			id: "048BE33EAD003AD1"
+			rewards: [{
+				id: "0DECA87C5FCB3B29"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维 - 植物 复合胸腔"
+			tasks: [{
+				id: "137CE82E0F33F49A"
+				item: "kubejs:transdimensional_plant_injection"
+				type: "item"
+			}]
+			title: "复合尝试：植物"
+			x: 0.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["20EF3FA93587E702"]
+			description: ["通过简单的将两种注射器混合，即可得到&6超维玫瑰注射器&r"]
+			id: "52E640CD23931C4D"
+			rewards: [{
+				id: "01D4A9C93F4E0514"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维 - 玫瑰 复合胸腔"
+			tasks: [{
+				id: "3B4CDA13F8B57A4C"
+				item: "kubejs:transdimensional_rose_injection"
+				type: "item"
+			}]
+			title: "复合尝试：玫瑰"
+			x: 2.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["20EF3FA93587E702"]
+			description: ["通过简单的将两种注射器混合，即可得到&6超维遗物注射器&r"]
+			id: "171B154319E23270"
+			rewards: [{
+				id: "35C8D53DC9600B00"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维 - 遗物 复合胸腔"
+			tasks: [{
+				id: "2D03986E44959208"
+				item: "kubejs:transdimensional_relics_injection"
+				type: "item"
+			}]
+			title: "复合尝试：遗物"
+			x: 4.5d
+			y: 18.0d
+		}
+		{
+			dependencies: ["37E67F565A378E4D"]
+			description: ["向常规的&6叁型注射器中注入传送液&r，即可建立起胸腔和异常维度（压缩空间）的关系，进而制成超维注射器。"]
+			id: "20EF3FA93587E702"
+			rewards: [{
+				id: "012DBA44439C3500"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "精造注射器"
+			tasks: [{
+				id: "6DDE6B6B3E3A4B60"
+				item: "kubejs:transdimensional_mechanized_injection"
+				type: "item"
+			}]
+			title: "超维注射器"
+			x: 2.5d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1E8FD6C71E7460EF"]
+			description: [
+				"为了能够进行复合，您需要优先制作超维胸腔的注射器版本，因此，您需要获得&6传送液&r。"
+				""
+				"使用&6动力泵抽取下界传送门方块&r，可以破坏传送门并且获得250 mb的传送液。"
+				""
+				"通过反复点火下界传送门，便可以大量获取传送液，用于超维注射器的制作。"
+			]
+			icon: "create_biotech:teleportation_bucket"
+			id: "37E67F565A378E4D"
+			rewards: [{
+				id: "52FD8A6354151AD8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "获取传送液"
+			tasks: [
+				{
+					id: "2781DC7218A9F170"
+					item: {
+						Count: 1
+						id: "ftbquests:screen_1"
+						tag: {
+							BlockEntityTag: {
+								ForgeCaps: {
+									"astages:owners": {
+										owner: [I;
+											-224672219
+											1723023954
+											-2042640788
+											-662891648
+										]
+									}
+								}
+								TaskID: 7597460271569704942L
+								TeamID: [I;
+									-224672219
+									1723023954
+									-2042640788
+									-662891648
+								]
+								id: "ftbquests:core_task_screen"
+							}
+							display: {
+								Lore: ["\"(+NBT)\""]
+							}
+						}
+					}
+					title: "点此获取&6特制任务屏幕"
+					type: "item"
+				}
+				{
+					amount: 1000L
+					fluid: "create_biotech:teleportation"
+					id: "696F99DD2A0E17EE"
+					type: "fluid"
+				}
+			]
+			title: "传送液和超维空间"
+			x: 2.5d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"048BE33EAD003AD1"
+				"52E640CD23931C4D"
+				"171B154319E23270"
+			]
+			description: [
+				"除了这三种复合之外，&6理论上超维胸腔可以和任意胸腔进行复合&r，进而模拟其部分功能。"
+				""
+				"但我们现在对压缩空间的开发尚且有限，更多的复合可能性还要&6等待未来的进一步调查&r. . ."
+			]
+			icon: "minecraft:clock"
+			id: "58163223631ACE3D"
+			rewards: [{
+				id: "357D23D18E55679A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更多的可能性"
+			tasks: [{
+				id: "3235E1BC5C1F1339"
+				title: "可能吧"
+				type: "checkmark"
+			}]
+			title: "复合可能"
+			x: 2.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0B6DD0B62C0B5118"]
+			description: [
+				"超维工厂的存在，使得部分器官进行资源生产的模式得到了极大的扩展。"
+				""
+				"&6矿核生成器&r便是其中之一——您可以&6将矿物放置在该器官中&r，在&6主动使用该器官&r时，便会在其连接的压缩空间中&6生成对应矿物的真实矿脉&r。"
+				""
+				"但这一过程会完全将压缩空间给&6塞满&r，因此进入采掘前要做好会窒息的准备。"
+			]
+			id: "11B80545DBF73142"
+			rewards: [{
+				id: "11DFECEBECBF9F9F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "超维工厂实战课题之一"
+			tasks: [{
+				id: "47B0617E968AA780"
+				item: {
+					Count: 1
+					id: "kubejs:ore_vein_generator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 12.0d
 		}
 	]
 	title: "传闻：超维工厂"

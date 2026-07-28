@@ -1375,6 +1375,34 @@
 			x: 0.0d
 			y: 28.0d
 		}
+		{
+			dependencies: ["6729015A224A8B14"]
+			description: [
+				"由于部分精英怪词条具有受伤变更相关的效果，因此您大概率在实际战斗中需要一个手段来观察造成伤害的变化。"
+				""
+				"基于此，您可以制成一个名为&6伤害模组&r的器官，其在攻击敌人时会为其&6赋予标记效果&r——能够&6让生物受伤的具体数值以类似假人的方式显示出来&r。"
+				""
+				"通过此方式，您可以在战斗中查看造伤的具体情况。"
+			]
+			id: "4C6E39BECC5E1E20"
+			rewards: [{
+				id: "7194F458D25BD055"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "多加观察"
+			tasks: [{
+				id: "2EC1A2487211252E"
+				item: {
+					Count: 1
+					id: "kubejs:damage_mod"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 11.0d
+		}
 	]
 	title: "传闻：遗物觉醒"
 }

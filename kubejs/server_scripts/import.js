@@ -182,3 +182,10 @@ const $TargetingConditions = Java.loadClass('net.minecraft.world.entity.ai.targe
 const $SimpleMenuProvider = Java.loadClass('net.minecraft.world.SimpleMenuProvider')
 const $ChestMenu = Java.loadClass('net.minecraft.world.inventory.ChestMenu')
 const $MudBallProjectile = Java.loadClass('io.github.bonsaistudi0s.crittersandcompanions.common.entity.projectiles.MudBallProjectile')
+
+const $ChorusFlowerBlock = Java.loadClass('net.minecraft.world.level.block.ChorusFlowerBlock')
+const $BambooStalkBlock = Java.loadClass('net.minecraft.world.level.block.BambooStalkBlock')
+const $BambooLeaves = Java.loadClass('net.minecraft.world.level.block.state.properties.BambooLeaves')
+
+const $ImprovedNoise = Java.loadClass('net.minecraft.world.level.levelgen.synth.ImprovedNoise')
+const $RandomSource = Java.loadClass('net.minecraft.util.RandomSource')

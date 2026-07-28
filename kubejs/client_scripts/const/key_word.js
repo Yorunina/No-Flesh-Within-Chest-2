@@ -316,6 +316,12 @@ const PressurizedArmFluidConfigHover = Text.translatable('tooltips.kubejs.hover.
         Text.translatable('tooltips.kubejs.hover.pressurized_arm_fluid_config.10'),
     ]))
 
+const VeinCoreOreHover = Text.translatable('tooltips.kubejs.hover.vein_core_ore.0').color('#00b8fb').underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.vein_core_ore.0').color('#00b8fb'),
+        Text.translatable('tooltips.kubejs.hover.vein_core_ore.1'),
+    ]))
+    
 const RelicsBossHover = Text.translatable('tooltips.kubejs.hover.relics_boss.0').color('#e67b00').underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.relics_boss.0').color('#e67b00'),

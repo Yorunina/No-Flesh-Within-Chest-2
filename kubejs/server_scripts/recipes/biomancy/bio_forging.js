@@ -64,4 +64,10 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('cataclysm:ignitium_ingot', 8)], Item.of('kubejs:revolution_machine_injection', 1), 'biomancy:organ', 100).id('kubejs:revolution_machine_injection')
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('create:polished_rose_quartz', 8)], Item.of('kubejs:rose_injection', 1), 'biomancy:organ', 100).id('kubejs:rose_injection')
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:transdimensional_mechanized_injection', 1), Item.of('kubejs:plant_injection', 1)], Item.of('kubejs:transdimensional_plant_injection'), 'biomancy:organ', 100).id('kubejs:transdimensional_plant_injection')
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:transdimensional_mechanized_injection', 1), Item.of('kubejs:rose_injection', 1)], Item.of('kubejs:transdimensional_rose_injection'), 'biomancy:organ', 100).id('kubejs:transdimensional_rose_injection')
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:transdimensional_mechanized_injection', 1), Item.of('kubejs:relics_awakening_injection', 1)], Item.of('kubejs:transdimensional_relics_injection'), 'biomancy:organ', 100).id('kubejs:transdimensional_relics_injection')
 })

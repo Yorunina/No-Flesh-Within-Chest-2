@@ -533,51 +533,6 @@
 			y: 24.0d
 		}
 		{
-			dependencies: ["4A1C6C6150E32CEE"]
-			description: [
-				"在这个世界中，似乎有大量的&6概念&r被具象化为了另一种形式——比如说一种&6饰品&r。"
-				""
-				"这种名为见证的饰品即是其中一类，您可以轻松制作名为&6故事的见证&r的见证饰品。"
-				""
-				"见证饰品&6佩带在玩家身上&r时，通过积累玩家造成的伤害，便能够结算对应的阶段奖励，这对您的生存将会有极大的帮助。"
-			]
-			hide_until_deps_complete: true
-			id: "28C86788D85A6138"
-			rewards: [{
-				id: "588FC7BAB1420E33"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "概念具象化"
-			tasks: [{
-				id: "0E4B31D24385E193"
-				item: "kubejs:story_witness"
-				type: "item"
-			}]
-			title: "名为见证的挂饰"
-			x: 3.0d
-			y: 13.5d
-		}
-		{
-			dependencies: ["28C86788D85A6138"]
-			description: ["由于见证系列饰品的触发方式均为造成&6伤害触发&r，因此您可以制作一个&6试验假人&r——其不具有攻击性，但是能够作为极佳的输出木桩使用，进而不断触发伤害累计的效果。"]
-			id: "3EAB05477DC10CE1"
-			rewards: [{
-				id: "00776DF61EA78079"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "一切由谁来见证"
-			tasks: [{
-				id: "121A95EE0EF752D4"
-				item: "dummmmmmy:target_dummy"
-				type: "item"
-			}]
-			title: "见证者"
-			x: 6.0d
-			y: 13.5d
-		}
-		{
 			dependencies: ["563D136C06E38A60"]
 			description: [
 				"在这个世界中，似乎有大量的&6概念&r被具象化为了另一种形式——比如说一种&6饰品&r。"
@@ -601,50 +556,6 @@
 			title: "名为誓言的胸针"
 			x: 3.0d
 			y: 12.0d
-		}
-		{
-			dependencies: ["28C86788D85A6138"]
-			description: [
-				"你可以通过&6故事的见证&r获得各种各样的新的见证。"
-				""
-				"其中不乏有一些能够用于&6获取资源、获取经验、以及扩容容器的类型&r——但无一例外，它们都需要您累计足够多的伤害才能够触发效果。"
-			]
-			icon: {
-				Count: 1
-				id: "kubejs:knowledge_witness"
-				tag: { }
-			}
-			id: "305C7E95F3826187"
-			rewards: [{
-				id: "34C56B1A37EE5311"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "更多的见证"
-			tasks: [{
-				id: "35E1121C93936929"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:bravery_witness"
-							}
-							{
-								Count: 1b
-								id: "kubejs:knowledge_witness"
-							}
-						]
-					}
-				}
-				title: "其他的见证"
-				type: "item"
-			}]
-			title: "见证中的见证"
-			x: 3.0d
-			y: 15.0d
 		}
 		{
 			dependencies: ["4BEDD898484E1898"]

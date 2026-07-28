@@ -40,6 +40,50 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:blood_crystal_factory').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/blood_crystal_factory').tag('kubejs:heart')
     event.create('kubejs:machine_witch_fibroma').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/machine_witch_fibroma').tag('kubejs:stomach')
     event.create('kubejs:pressurized_arm').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/pressurized_arm').tag('kubejs:muscle')
+    event.create('kubejs:ore_vein_generator').maxStackSize(1)
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
+            if (oStack.isEmpty()) {
+                RemoveBundleOneStack(stack).ifPresent(pStack => {
+                    PlayBundleRemoveSound(player)
+                    access.set(pStack)
+                })
+            } else if (oStack.hasTag('forge:ores')) {
+                let added = AddItemIntoBundle(stack, oStack, 3, (pStack) => 1)
+                if (added > 0) {
+                    PlayerBundleInsertSound(player)
+                    oStack.shrink(added)
+                }
+            }
+            return true
+        })
+        .overrideStackedOnOther((stack, slot, action, player) => {
+            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
+            let oStack = slot.getItem()
+            if (oStack.isEmpty()) {
+                PlayBundleRemoveSound(player)
+                RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
+            } else if (oStack.hasTag('forge:ores')) {
+                let taken = slot.safeTake(oStack.getCount(), 65535, player)
+                let added = AddItemIntoBundle(stack, taken, 3, (pStack) => 1)
+                if (added > 0) PlayerBundleInsertSound(player)
+                if (taken.getCount() > added) slot.safeInsert(taken.copyWithCount(taken.getCount() - added))
+            }
+            return true
+        })
+        .barWidth((stack) => {
+            let stackList = GetBundleContents(stack)
+            return Math.min(1 + 12 * Math.min(stackList.length, 1), 13)
+        })
+        .barColor(() => Color.DARK_BLUE)
+        .tooltipImage((stack) => {
+            let itemList = $NonNullList.create()
+            GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
+            return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => pStack.getMaxStackSize() / 64)))
+        })
+        .canFitInsideContainerItems(false)
+        .texture('kubejs:item/organs/machine/ore_vein_generator')
+        .tag('kubejs:machine')
 
     event.create('kubejs:damage_mod').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/damage_mod')
 })

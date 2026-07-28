@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"考虑到这个世界存在太多的未知数，为了确保您能较方便的与您的同伴取得联系，请您尽可能早的制作&6魔镜&r。"
 				""
@@ -36,6 +37,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"如若遇到了需要&6大规模点亮周围环境&r的场景，您可以使用&6野火灯笼&r来进行区域点亮。"
 				""
@@ -61,6 +63,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"在扫描物品时，我偶然发现了名为背包的特殊存储方式，其相较于收纳袋不仅便捷，且可以配置在特殊的名为饰品的栏位中。"
 				""
@@ -86,6 +89,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"为了方便后续的长途旅行，您可能需要一个&6类似于鞘翅&r一样的能够将高度转换为动能的工具。"
 				""
@@ -216,6 +220,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"&6将金币投入下界传送门&r中，可打开一个前往指定维度的特殊传送门，其被命名为&6商店维度&r。"
 				""
@@ -252,6 +257,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"看来您获得了一个&6武器皮肤&r！这是一个很罕见的物品！"
 				""
@@ -309,6 +315,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"在您堆放了很多存储方块后，一个能够统合所有存储方块的终端变成了急需品。"
 				""
@@ -334,6 +341,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"但是，仅依靠背包想必您是无法通过羸弱的常规存储方式应对当前局面。"
 				""
@@ -406,6 +414,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["70FCE36692E184AD"]
 			id: "5D59836FFE601158"
 			tasks: [{
 				id: "79AF786E0CA8D9A3"
@@ -705,6 +714,25 @@
 			]
 			x: 2.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["5D59836FFE601158"]
+			description: ["&6试验假人&r是一个极其友善的伤害测试对象，制作一个试验假人可以让您了解您的当前输出水平。"]
+			id: "3EAB05477DC10CE1"
+			rewards: [{
+				id: "00776DF61EA78079"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一切由谁来见证"
+			tasks: [{
+				id: "121A95EE0EF752D4"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			title: "见证者"
+			x: -2.5d
+			y: 4.5d
 		}
 	]
 	title: "常识：世界"
