@@ -80,11 +80,19 @@
 			]
 			hide_until_deps_complete: true
 			id: "0F77217F484D0D20"
-			rewards: [{
-				id: "75C80DBED621BC7F"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "75C80DBED621BC7F"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4E1F5696F65E9CA0"
+					table_id: 2341603259726464384L
+					type: "choice"
+				}
+			]
 			subtitle: "制作入门法术书"
 			tasks: [{
 				id: "1CDD7E9489EAC308"

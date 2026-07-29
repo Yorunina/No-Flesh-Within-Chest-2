@@ -1,6 +1,7 @@
 {
   "replace": true,
   "entries": [
+    "ars_nouveau:dungeon_loot",
     "biomancy:despoil",
     "biomancy:cat_morning_gift",
     "kaleidoscope_cookery:zombified_piglin",

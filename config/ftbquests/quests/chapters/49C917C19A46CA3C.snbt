@@ -19,8 +19,6 @@
 				""
 				"因此，&6最为稳定的传送方法便是您和另一位玩家约定好，对方手持魔镜时，您再进行传送&r。"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "24D645FF144CBC13"
 			rewards: [{
 				id: "424EE80C8E49AD56"
@@ -45,8 +43,6 @@
 				""
 				"在拆除该灯笼时如果遇到了光源无法正常销毁的问题，则可以使用&6霜冻珍珠&r消除。"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "2E911706C477B127"
 			rewards: [{
 				id: "55952A37D054CCAF"
@@ -71,8 +67,6 @@
 				""
 				"在背包容量不足时，您可以使用铁、铜等金属将其升级为铁制背包、铜制背包等，以扩大它的存储空间。"
 			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "67786E2C6F7CD355"
 			rewards: [{
 				id: "25277D7A12766F93"
@@ -98,13 +92,23 @@
 				"除此之外，滑翔翼似乎可以和各种能够&6让您高高跃起的工具&r进行配合，达到快速旅行的目的。"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			id: "57BBCCCD732ED543"
-			rewards: [{
-				id: "26265381FDBCEE0D"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "26265381FDBCEE0D"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "38265CF416620FEB"
+					item: {
+						Count: 1
+						id: "kubejs:fox_tail"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			subtitle: "使用滑翔翼"
 			tasks: [{
 				id: "5632732C5CEAEC0C"
@@ -263,7 +267,6 @@
 				""
 				"您可以通过制作一个&6镶嵌工作台&r，将武器皮肤镶嵌在任意物品上——物品便会展现出武器皮肤的样式，并且不影响其原有的功能。"
 			]
-			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "armourers_workshop:skin"
@@ -323,7 +326,6 @@
 				""
 				"在此基础上，您还可以制作&6合成终端&r、&6无限终端&r等不同的访问方式，来提高该存储的可用性。"
 			]
-			hide_dependency_lines: true
 			id: "42D69F3F93550767"
 			rewards: [{
 				id: "7665DC9D899D42F5"
@@ -384,7 +386,6 @@
 				""
 				"当您选择完成后，即可手持该打印机，在世界中预览到该结构最终的放置效果。在&6打印机内部资源充足&r的情况下，您可以直接&6通过右键放置复杂结构&r。"
 			]
-			hide_until_deps_complete: true
 			id: "183701E5F614F6AD"
 			rewards: [{
 				id: "089245EBF2888F1C"
@@ -519,12 +520,18 @@
 		}
 		{
 			dependencies: ["2E86A80952F7ABBF"]
+			description: [
+				"制作高级无线终端，并且&6在绑定的终端附近建造一个等级为 1 的信标&r，即可在同一个维度的任何地方访问这个终端。"
+				""
+				"如果建造的信标等级为  4 ，则可以在任意维度访问这个终端。"
+			]
 			id: "24FA90BAA128AB87"
 			rewards: [{
 				id: "4BF7E5FA79A0CC25"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "无限无线访问方式"
 			tasks: [{
 				id: "175FC7F48ACE90BF"
 				item: "toms_storage:ts.adv_wireless_terminal"
@@ -733,6 +740,30 @@
 			title: "见证者"
 			x: -2.5d
 			y: 4.5d
+		}
+		{
+			dependencies: ["09ED755A64A62187"]
+			description: [
+				"在商店维度中，商店房间按照区块被划分成了不同的房间。"
+				""
+				"通过维度&6棚顶的不同的图样&r，您可以大致猜测出此类商店房间的用途，进而快速筛选自己所需要的物品。"
+			]
+			icon: "lightmanscurrency:gacha_machine_white"
+			id: "597D31A6E18DFF66"
+			rewards: [{
+				id: "4C402B52AA58B0A5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "棚顶的暗语"
+			tasks: [{
+				id: "3677DD688EAC67A1"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "商店种类"
+			x: -4.0d
+			y: -1.5d
 		}
 	]
 	title: "常识：世界"

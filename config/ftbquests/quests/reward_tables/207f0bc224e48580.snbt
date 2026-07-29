@@ -1,0 +1,312 @@
+{
+	id: "207F0BC224E48580"
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "ars_nouveau:caster_tome"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 0
+						hidden_recipe: ""
+						is_hidden: 0b
+						spell_count: 1
+						spells: {
+							spell0: {
+								recipe: {
+									part0: "ars_nouveau:glyph_touch"
+									part1: "kubejs:glyph_horizon_destory"
+									part2: "ars_nouveau:glyph_aoe"
+									part3: "ars_nouveau:glyph_aoe"
+									part4: "ars_nouveau:glyph_aoe"
+									size: 5
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 109
+									r: 255
+									type: "ars_nouveau:rainbow"
+								}
+							}
+						}
+					}
+					display: {
+						Name: "{\"italic\":true,\"color\":\"gold\",\"translate\":\"tome.kubejs.level_soil.name\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ars_nouveau:caster_tome"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 0
+						hidden_recipe: ""
+						is_hidden: 0b
+						spell_count: 1
+						spells: {
+							spell0: {
+								recipe: {
+									part0: "ars_nouveau:glyph_self"
+									part1: "ars_nouveau:glyph_blink"
+									part2: "ars_nouveau:glyph_amplify"
+									size: 3
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 180
+									g: 25
+									r: 255
+									type: "ars_nouveau:constant"
+								}
+							}
+						}
+					}
+					display: {
+						Name: "{\"italic\":true,\"color\":\"gold\",\"translate\":\"tome.kubejs.blink.name\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ars_nouveau:caster_tome"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 0
+						hidden_recipe: ""
+						is_hidden: 0b
+						spell_count: 1
+						spells: {
+							spell0: {
+								recipe: {
+									part0: "ars_nouveau:glyph_self"
+									part1: "ars_nouveau:glyph_leap"
+									part2: "ars_nouveau:glyph_amplify"
+									part3: "ars_nouveau:glyph_amplify"
+									part4: "ars_nouveau:glyph_amplify"
+									size: 5
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 180
+									g: 25
+									r: 255
+									type: "ars_nouveau:constant"
+								}
+							}
+						}
+					}
+					display: {
+						Name: "{\"italic\":true,\"color\":\"gold\",\"translate\":\"tome.kubejs.self_leap.name\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ars_nouveau:caster_tome"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 0
+						hidden_recipe: ""
+						is_hidden: 0b
+						spell_count: 1
+						spells: {
+							spell0: {
+								recipe: {
+									part0: "ars_nouveau:glyph_self"
+									part1: "ars_nouveau:glyph_launch"
+									part2: "ars_nouveau:glyph_launch"
+									part3: "ars_nouveau:glyph_glide"
+									part4: "ars_nouveau:glyph_duration_down"
+									size: 5
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:fire_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 180
+									g: 25
+									r: 255
+									type: "ars_nouveau:constant"
+								}
+							}
+						}
+					}
+					display: {
+						Name: "{\"italic\":true,\"color\":\"gold\",\"translate\":\"tome.kubejs.gliding.name\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ars_nouveau:caster_tome"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 0
+						hidden_recipe: ""
+						is_hidden: 0b
+						spell_count: 1
+						spells: {
+							spell0: {
+								recipe: {
+									part0: "ars_nouveau:glyph_self"
+									part1: "ars_nouveau:glyph_delay"
+									part2: "ars_nouveau:glyph_delay"
+									part3: "ars_nouveau:glyph_delay"
+									part4: "ars_nouveau:glyph_harm"
+									size: 5
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 109
+									r: 255
+									type: "ars_nouveau:rainbow"
+								}
+							}
+						}
+					}
+					display: {
+						Name: "{\"italic\":true,\"color\":\"gold\",\"translate\":\"tome.kubejs.self_hurt.name\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ars_nouveau:caster_tome"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 0
+						hidden_recipe: ""
+						is_hidden: 0b
+						spell_count: 1
+						spells: {
+							spell0: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_projectile"
+									part1: "ars_nouveau:glyph_fell"
+									part2: "ars_nouveau:glyph_aoe"
+									part3: "ars_nouveau:glyph_aoe"
+									part4: "ars_nouveau:glyph_delay"
+									part5: "ars_nouveau:glyph_extend_time"
+									part6: "ars_nouveau:glyph_smelt"
+									part7: "ars_nouveau:glyph_aoe"
+									part8: "ars_nouveau:glyph_aoe"
+									part9: "ars_nouveau:glyph_aoe"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 109
+									r: 255
+									type: "ars_nouveau:rainbow"
+								}
+							}
+						}
+					}
+					display: {
+						Name: "{\"italic\":true,\"color\":\"gold\",\"translate\":\"tome.kubejs.lumber_smelting.name\"}"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ars_nouveau:caster_tome"
+				tag: {
+					"ars_nouveau:caster": {
+						current_slot: 0
+						hidden_recipe: ""
+						is_hidden: 0b
+						spell_count: 1
+						spells: {
+							spell0: {
+								name: ""
+								recipe: {
+									part0: "ars_nouveau:glyph_underfoot"
+									part1: "ars_nouveau:glyph_linger"
+									part2: "ars_nouveau:glyph_accelerate"
+									part3: "ars_nouveau:glyph_extend_time"
+									part4: "ars_nouveau:glyph_extend_time"
+									part5: "ars_nouveau:glyph_heal"
+									part6: "ars_nouveau:glyph_amplify"
+									part7: "ars_nouveau:glyph_amplify"
+									part8: "ars_nouveau:glyph_amplify"
+									part9: "ars_nouveau:glyph_amplify"
+									size: 10
+								}
+								sound: {
+									pitch: 1.0f
+									soundTag: {
+										id: "ars_nouveau:tempestry_family"
+									}
+									volume: 1.0f
+								}
+								spellColor: {
+									b: 1
+									g: 109
+									r: 255
+									type: "ars_nouveau:rainbow"
+								}
+							}
+						}
+					}
+					display: {
+						Name: "{\"italic\":true,\"color\":\"gold\",\"translate\":\"tome.kubejs.healing_aura.name\"}"
+					}
+				}
+			}
+		}
+	]
+	title: "奖励法术书"
+}

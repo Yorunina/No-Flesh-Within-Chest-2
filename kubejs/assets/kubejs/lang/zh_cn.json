@@ -2873,5 +2873,16 @@
     "seed.agricraft.kubejs.zinc_cabbage": "卷锌菜种子",
     "seed.agricraft.kubejs.magic_mushroom": "迷咕麻菇孢子",
     "_comment.trophy": "奖杯名称",
-    "trophy.kubejs.test.name": "测试奖杯名称"
+    "trophy.kubejs.test.name": "测试奖杯名称",
+    "_comment.custom_tome": "新生魔艺预制法术",
+    "tome.kubejs.self_leap.name": "腾跃",
+    "tome.kubejs.blink.name": "闪现",
+    "tome.kubejs.level_soil.name": "平地",
+    "tome.kubejs.gliding.name": "滑翔",
+    "tome.kubejs.self_hurt.name": "自伤",
+    "tome.kubejs.lumber_smelting.name": "伐炭",
+    "tome.kubejs.healing_aura.name": "治愈",
+    "_comment.custom_glyph": "自定义魔符",
+    "kubejs.glyph_desc.glyph_horizon_destory": "低耗能破坏方块——但不掉落任何物品。使用范围扩展时，不会向下方扩展破坏范围，适合用于平整地形",
+    "kubejs.glyph_name.glyph_horizon_destory": "销毁（水平）"
 }
