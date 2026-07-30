@@ -2,7 +2,7 @@
 	icon: "titles:title_scroll_uncommon"
 	id: "6B6FFC174C7BB9DD"
 	loot_size: 1
-	order_index: 8
+	order_index: 7
 	rewards: [
 		{
 			auto: "invisible"

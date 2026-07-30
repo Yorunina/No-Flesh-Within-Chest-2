@@ -1,7 +1,7 @@
 {
 	id: "5ECDC2709BF335D5"
 	loot_size: 1
-	order_index: 4
+	order_index: 3
 	rewards: [
 		{
 			auto: "invisible"

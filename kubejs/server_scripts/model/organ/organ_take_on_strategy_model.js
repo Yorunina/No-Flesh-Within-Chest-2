@@ -57,14 +57,14 @@ OrganTakeOnStrategyModel.prototype = {
 
             let itemId = newItem.id
             let strategyModel = OrganStrategyMap[itemId]
-            if (entity.isPlayer() && newItem.hasTag('kubejs:key_active')) {
-                let data = new $CompoundTag()
-                data.putString('type', 'add')
-                data.putInt('slot', i)
-                data.putString('itemId', itemId)
-                EnqueueSendData(entity, 'update_organ_skill_wheel_item', data)
-            }
             if (strategyModel) {
+                if (entity.isPlayer() && IsItemNeedKeyActive(newItem, slotType)) {
+                    let data = new $CompoundTag()
+                    data.putString('type', 'add')
+                    data.putInt('slot', i)
+                    data.putString('itemId', itemId)
+                    EnqueueSendData(entity, 'update_organ_skill_wheel_item', data)
+                }
                 Object.keys(strategyModel.strategyMap).forEach(eventId => {
                     ccInstance.addListener(eventId, i)
                 })

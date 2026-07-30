@@ -2346,15 +2346,13 @@
 		{
 			dependencies: ["38D0994640B7E463"]
 			description: [
-				"将&6书与笔&r与&6逆因芯片&r放置在完成构造的大世界计算机中执行配方，我们就能完成大世界计算机对于当前世界的逻辑注入。"
+				"恭喜！至此，您完成了大世界计算机的构建——进而我们获取到了&6世界注入&r的基本能力。"
 				""
-				"至此，恭喜您完成了大世界计算机的构建，而我们也已经获得了我们需要的能力——&6一定程度操控世界的能力&r。"
+				"将&6任意大世界令牌&r与&6逆因芯片&r放置在完成构造的大世界计算机中执行配方，我们就能完成大世界计算机对于当前世界的逻辑注入。"
 				""
 				"对于您来说，您可以使用大世界计算机自由的更改一些世界常数，并且制造一些以前&d完全无法想象&r的产物。"
 				""
 				"对于我来说，得益于您的不懈探索，我对于世界的掌控程度又一次得到了提高，这对我们后续的发展有着极其重要的作用。"
-				""
-				"请注意，大世界计算机的配方显示并不完全——这是因为大世界计算机本身并不是用于生产材料的——其主要功能是用于修改一些&c世界规律&r，其具体效果可能需要您进行试验分析。"
 			]
 			icon: "kubejs:world_computer"
 			id: "133A28D884F01479"
@@ -2383,57 +2381,34 @@
 			shape: "diamond"
 			subtitle: "倘若星不再依照星轨行进，那我又该将航线驶向何方"
 			tasks: [{
-				icon: "kubejs:world_computer"
-				id: "124AF04D5E9729EB"
-				isServer: true
-				stage: "ftb_world_computer_2"
-				title: "完成世界注入"
-				type: "maa:astages"
+				id: "39425DBC3774D133"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:world_token_gamerule"
+							}
+							{
+								Count: 1b
+								id: "kubejs:world_token_creative"
+							}
+							{
+								Count: 1b
+								id: "kubejs:world_token_weather"
+								tag: { }
+							}
+						]
+					}
+				}
+				title: "任意大世界令牌"
+				type: "item"
 			}]
 			title: "&6庆贺吧！此乃大世界计算机！&r"
 			x: 8.5d
 			y: 11.0d
-		}
-		{
-			dependencies: ["133A28D884F01479"]
-			description: [
-				"大世界计算机已经预测到了&d创造马达&r的出现。"
-				""
-				"现在我已经获得了创造马达的配方，但是由于创造马达严重破坏了该世界的对称性，我并不确定将其配方直接公开是否会影响整个世界的稳定性。"
-				""
-				"因此，相比于让我来决定创造马达配方的何去何从，不如让最精英的玩家来决定。"
-				""
-				"如若您能够在该世界中，&6进行最多次的虚拟矿脉开采（且至少100次）&r，那么您便可以选择性的公开或者私有化创造马达配方。"
-				""
-				"{@pagebreak}"
-				"公开配方会使所有人都可以制作创造马达。"
-				""
-				"私有配方会使您成为唯一能够制作创造马达的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			icon: "create:creative_motor"
-			id: "72265CC11B4E1D53"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "4EE8532251438037"
-				table_id: 5085267122707911832L
-				type: "choice"
-			}]
-			shape: "diamond"
-			subtitle: "大师的领悟"
-			tasks: [{
-				icon: "createoreexcavation:drilling_machine"
-				id: "53B6BF72B0FC81A3"
-				leaderboard: "maa:exavate_times"
-				min: 100
-				rank: 1
-				title: "虚拟矿脉开采次数称霸"
-				type: "leaderboards:rank_task"
-			}]
-			title: "大世界计算机之后"
-			x: 20.5d
-			y: 7.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]

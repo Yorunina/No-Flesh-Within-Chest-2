@@ -33,13 +33,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3B9F7FC959F4F068"]
+			dependencies: ["2145E5211B72C903"]
 			description: [
 				"制作压缩空间机械和个人缩放设备。将压缩空间机械放置在世界的任意位置上，而后&6手持个人缩放设备右键压缩空间机械&r，即可通过压缩空间机械潜入到特殊的压缩空间维度中。"
 				""
-				"每个压缩空间机械的内部空间大小有限，随着压缩空间的等级提升，其内部空间大小也会不断提升，您可以根据您的实际需求，选择对应大小的压缩空间。"
-				""
-				"若想要退出压缩空间，则手持个人缩放设备，&6右键压缩空间墙壁，即可退出到正常世界中&r。"
+				"若想要退出压缩空间，则手持个人缩放设备，&6右键任意位置，即可退出到正常世界中&r。"
 			]
 			icon: "compactmachines:personal_shrinking_device"
 			id: "122DB11A949DB228"
@@ -49,53 +47,14 @@
 				type: "item"
 			}]
 			subtitle: "潜入压缩空间"
-			tasks: [
-				{
-					id: "1A91F9ABABB8F396"
-					item: "compactmachines:personal_shrinking_device"
-					type: "item"
-				}
-				{
-					id: "0364EC151412D974"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "compactmachines:machine_tiny"
-								}
-								{
-									Count: 1b
-									id: "compactmachines:machine_small"
-								}
-								{
-									Count: 1b
-									id: "compactmachines:machine_normal"
-								}
-								{
-									Count: 1b
-									id: "compactmachines:machine_large"
-								}
-								{
-									Count: 1b
-									id: "compactmachines:machine_giant"
-								}
-								{
-									Count: 1b
-									id: "compactmachines:machine_maximum"
-								}
-							]
-						}
-					}
-					title: "任意压缩空间机械"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1A91F9ABABB8F396"
+				item: "compactmachines:personal_shrinking_device"
+				type: "item"
+			}]
 			title: "压缩空间机械"
 			x: 0.0d
-			y: 2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["122DB11A949DB228"]
@@ -164,7 +123,7 @@
 			}]
 			title: "压缩空间交互"
 			x: 0.0d
-			y: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6C33052572100482"]
@@ -197,7 +156,7 @@
 			}]
 			title: "准备自我分化"
 			x: 0.0d
-			y: 6.0d
+			y: 11.0d
 		}
 		{
 			dependencies: ["3FBC546A3EF78EA4"]
@@ -222,7 +181,7 @@
 			}]
 			title: "特异的空间压力"
 			x: 0.0d
-			y: 8.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0A26BCE55EC7C58F"]
@@ -235,11 +194,21 @@
 			]
 			icon: "compactmachines:machine_normal"
 			id: "0B6DD0B62C0B5118"
-			rewards: [{
-				id: "1C1572CD7083DBE8"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1C1572CD7083DBE8"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "3C2A4BFC30000F4F"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "完成章节"
+					type: "maa:kube"
+				}
+			]
 			subtitle: "胸腔链接空间"
 			tasks: [{
 				entity: "minecraft:empty"
@@ -250,9 +219,9 @@
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "心系无限"
+			title: "&6庆贺吧！此乃超维胸腔！&r"
 			x: 2.5d
-			y: 8.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -280,7 +249,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 8.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -308,7 +277,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 10.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -336,7 +305,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 12.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["525B0E70D3BDBE09"]
@@ -364,7 +333,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 10.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["1CCA4998BDE14E93"]
@@ -390,7 +359,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 8.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["2D80F357A8747BC0"]
@@ -423,7 +392,7 @@
 			}]
 			title: "转色反应"
 			x: 10.0d
-			y: 8.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["5D26A05B1C2F2C7D"]
@@ -449,7 +418,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 10.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -477,7 +446,7 @@
 				type: "item"
 			}]
 			x: 7.5d
-			y: 12.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["6C33052572100482"]
@@ -500,7 +469,7 @@
 			}]
 			title: "压缩空间交互法"
 			x: 2.5d
-			y: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["10D71CC7F16C3939"]
@@ -545,7 +514,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 4.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0A26BCE55EC7C58F"]
@@ -578,7 +547,7 @@
 			}]
 			title: "加载压缩空间"
 			x: 0.0d
-			y: 10.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -606,7 +575,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 12.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -652,7 +621,7 @@
 			}]
 			title: "超维复合工艺"
 			x: 2.5d
-			y: 12.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
@@ -671,7 +640,7 @@
 			}]
 			title: "复合尝试：植物"
 			x: 0.5d
-			y: 18.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
@@ -690,7 +659,7 @@
 			}]
 			title: "复合尝试：玫瑰"
 			x: 2.5d
-			y: 18.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
@@ -709,7 +678,7 @@
 			}]
 			title: "复合尝试：遗物"
 			x: 4.5d
-			y: 18.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["37E67F565A378E4D"]
@@ -728,7 +697,7 @@
 			}]
 			title: "超维注射器"
 			x: 2.5d
-			y: 16.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["1E8FD6C71E7460EF"]
@@ -791,7 +760,7 @@
 			]
 			title: "传送液和超维空间"
 			x: 2.5d
-			y: 14.0d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -819,7 +788,7 @@
 			}]
 			title: "复合可能"
 			x: 2.5d
-			y: 20.0d
+			y: 25.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -847,7 +816,89 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 12.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["52A176CFE929083A"]
+			description: [
+				"使用空白压缩空间机械，即可制作任意规格的&6压缩空间机械&r。"
+				""
+				"不同规格的压缩空间，对应了不同的内部空间大小，其最小的规格为 3 * 3 * 3，最大的则为 13 * 13 * 13。"
+				""
+				"压缩空间并不一定是越大越好——如若要制造的产线规模非常小，可以选用较小的压缩空间便于减少无效物流距离。"
+			]
+			icon: "compactmachines:machine_giant"
+			id: "2145E5211B72C903"
+			rewards: [{
+				id: "4BA37645CCFB0ADF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "潜入准备"
+			tasks: [{
+				id: "434FEA55F9B42B09"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "compactmachines:machine_tiny"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_small"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_normal"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_large"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_giant"
+							}
+							{
+								Count: 1b
+								id: "compactmachines:machine_maximum"
+							}
+						]
+					}
+				}
+				title: "任意压缩空间机械"
+				type: "item"
+			}]
+			title: "压缩空间"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3B9F7FC959F4F068"]
+			description: [
+				"为了制作压缩空间机械，您需要制造它的前置材料——&6空白压缩空间机械&r。"
+				""
+				"空白压缩空间机械不仅是一种材料，同时它也是可以用于复制已绑定的压缩空间机械的特殊工具。"
+				""
+				"在某些场景下，您需要&6同一个压缩空间机械既作为物品存放于胸腔中，又作为方块放置于世界中&r，此时即可使用空白压缩空间机械复制。"
+			]
+			id: "52A176CFE929083A"
+			rewards: [{
+				id: "28D7688E1C3C75D9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "空白空间"
+			tasks: [{
+				id: "3DC9D36D1FF9F34D"
+				item: "kubejs:blank_compact_machine"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "传闻：超维工厂"

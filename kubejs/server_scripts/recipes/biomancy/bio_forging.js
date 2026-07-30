@@ -32,6 +32,10 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:healing_additive', 1), Item.of('kubejs:worm_of_taste', 1), Item.of('biomancy:toxin_gland', 1)], Item.of('kubejs:tasty_gland'), 'biomancy:organ', 10)
 
+    event.recipes.biomancy.bio_forging([Item.of('dummmmmmy:target_dummy', 1), Item.of('minecraft:iron_block', 1), Ingredient.of('#kubejs:spine', 1)], Item.of('kubejs:damage_mod'), 'biomancy:organ', 40)
+
+    event.recipes.biomancy.bio_forging([Item.of('ars_nouveau:ritual_scrying', 1), Item.of('minecraft:gold_block', 3), Ingredient.of('#kubejs:stomach', 1)], Item.of('kubejs:scry_stomach_pouch'), 'biomancy:organ', 10)
+
     event.recipes.biomancy.bio_forging([Item.of('biomancy:elastic_fibers', 1), Item.of('biomancy:mineral_fragment', 1), Item.of('minecraft:ender_eye', 1)], Item.of('kubejs:blood_extractor'), 'biomancy:organ', 8)
 
     event.recipes.biomancy.bio_forging([Ingredient.of('#forge:heads', 1), Item.of('kubejs:silverfish_gland', 1), Item.of('biomancy:bio_lumens', 1)], Item.of('kubejs:animted_soul'), 'biomancy:organ', 20)

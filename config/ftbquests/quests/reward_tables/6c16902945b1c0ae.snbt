@@ -2,7 +2,7 @@
 	icon: "kubejs:gula_injection"
 	id: "6C16902945B1C0AE"
 	loot_size: 1
-	order_index: 3
+	order_index: 2
 	rewards: [
 		{
 			auto: "invisible"

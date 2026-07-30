@@ -2,7 +2,6 @@
 RegistryOrgan('kubejs:scry_stomach_pouch')
     .addScore('chestcavity:nutrition', 1)
     .addScore('kubejs:magic_capacity', 2)
-    .setCanSpawn(true)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData

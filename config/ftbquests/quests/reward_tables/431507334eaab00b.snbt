@@ -2,7 +2,7 @@
 	icon: "kubejs:infinity_soil"
 	id: "431507334EAAB00B"
 	loot_size: 1
-	order_index: 9
+	order_index: 8
 	rewards: [
 		{
 			auto: "invisible"

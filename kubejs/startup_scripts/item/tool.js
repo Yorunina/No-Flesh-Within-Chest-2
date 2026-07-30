@@ -159,4 +159,52 @@ StartupEvents.registry('item', event => {
         .maxDamage(32)
         .maxStackSize(1)
         .tag('minecraft:swords').tag('forge:tools').tag('minecraft:tools').texture('kubejs:item/tools/trophy_sword')
+
+    event.create('kubejs:blank_compact_machine')
+        .maxStackSize(1)
+        .texture('kubejs:item/tools/blank_compact_machine')
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if (action != ClickAction.SECONDARY) return false
+            if (!oStack.hasTag('kubejs:compact_machine')) return false
+            if (!oStack.hasNBT()) return false
+            if (!oStack.getNbt().contains('room_pos')) return false
+            slot.set(oStack.copyWithCount(stack.getCount()))
+            return true
+        })
+
+    event.create('kubejs:world_token_gamerule').texture('kubejs:item/materials/world_token_gamerule').maxStackSize(1)
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
+                if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())
+                const nbt = stack.getNbt()
+                let state = nbt.getInt('state')
+                nbt.putInt('state', (state + 1) % 24)
+                return true
+            }
+            return false
+        })
+
+    event.create('kubejs:world_token_creative').texture('kubejs:item/materials/world_token_creative').maxStackSize(1)
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
+                if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())
+                const nbt = stack.getNbt()
+                let state = nbt.getInt('state')
+                nbt.putInt('state', (state + 1) % 8)
+                return true
+            }
+            return false
+        })
+
+    event.create('kubejs:world_token_weather').texture('kubejs:item/materials/world_token_weather').maxStackSize(1)
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
+                if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())
+                const nbt = stack.getNbt()
+                let state = nbt.getInt('state')
+                nbt.putInt('state', (state + 1) % 3)
+                return true
+            }
+            return false
+        })
 })

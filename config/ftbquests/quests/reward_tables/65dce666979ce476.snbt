@@ -2,7 +2,7 @@
 	icon: "create:wrench"
 	id: "65DCE666979CE476"
 	loot_size: 1
-	order_index: 5
+	order_index: 4
 	rewards: [
 		{
 			icon: "minecraft:slime_ball"

@@ -43,3 +43,13 @@ OrganStrategyModel.prototype = {
         return this
     },
 }
+
+/**
+ * @param {Internal.ItemStack} item 
+ * @param {String} slotType 
+ * @returns {boolean}
+ */
+function IsItemNeedKeyActive(item, slotType) {
+    if (item.hasTag('kubejs:key_active')) return true
+    return false
+}

@@ -1,5 +1,5 @@
 // priority: 999
-const OrganKeyBindEvent = new OrganKeyActiveEventModel('key_active')
+const OrganKeyActiveEvent = new OrganKeyActiveEventModel('key_active')
 
 NetworkEvents.dataReceived('key_active', event => {
     const player = event.player
@@ -8,6 +8,6 @@ NetworkEvents.dataReceived('key_active', event => {
     var itemId = nbt.getString('itemId')
     let customData = {}
     if (OrganItemCoolDown(player, Item.of(itemId))) return
-    OrganKeyBindEvent.run(player, itemId, customData, [event])
+    OrganKeyActiveEvent.run(player, itemId, customData, [event])
     UpdateClientISSSpellDataEvent(customData, player)
 })

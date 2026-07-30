@@ -1,7 +1,7 @@
 // priority: 500
 ItemEvents.rightClicked('stick', event => {
-    // const player = event.player
-    // const level = event.level
+    const player = event.player
+    const level = event.level
     // let pos = new BlockPos(0, 56, 0)
     // /**@type {Internal.ShellForgeBlockEntity} */
     // const blockEntity = level.getBlockEntity(pos)
@@ -14,12 +14,12 @@ ItemEvents.rightClicked('stick', event => {
     // blockEntity.createShellByData(player.uuid, playerData)
     // event.player.sendData('debug')
 
-    const level = event.level
-    const player = event.player
-    let tempSphere = new RingSphereModel()
-        .addRingProperties(Block.getBlock('minecraft:diamond_block').defaultBlockState(), 18, 2, 45, 45)
-        .addRingProperties(Block.getBlock('minecraft:gold_block').defaultBlockState(), 20, 2, -45, -45)
-    tempSphere.generateSphere(level, player.block.getPos().atY(100))
+    // const level = event.level
+    // const player = event.player
+    // let tempSphere = new RingSphereModel()
+    //     .addRingProperties(Block.getBlock('minecraft:diamond_block').defaultBlockState(), 18, 2, 45, 45)
+    //     .addRingProperties(Block.getBlock('minecraft:gold_block').defaultBlockState(), 20, 2, -45, -45)
+    // tempSphere.generateSphere(level, player.block.getPos().atY(100))
 })
 
 ItemEvents.entityInteracted('minecraft:stick', event => {

@@ -1,6 +1,9 @@
 // priority: 500
 const WorldComputerMachineStructure = [["AAAAA", "ACCCA", "ACCCA", "ACCCA", "AAAAA"], ["ABBBA", "BFEFB", "BELEB", "BDKOB", "ABmBA"], ["ABBBA", "BH HB", "B N B", "BHMHB", "ABBBA"], ["ABBBA", "BIIIB", "BILIB", "BIIIB", "ABBBA"], ["AAAAA", "ABBBA", "ABBBA", "ABBBA", "AAAAA"]]
 const WorldComputerMachineStructureMapping = { "F": "kubejs:computing_core", "I": "kubejs:world_renderer", "M": "biomancy:impermeable_membrane", "B": "createprism:brass_glass_casing", "A": "create:brass_casing", "H": "create_connected:kinetic_battery", "O": "kubejs:entity_simulator", "C": "kubejs:data_compressor", "K": "biomancy:flesh", "L": "kubejs:cerebral_brain_processor", "N": "create_power_loader:brass_chunk_loader", "D": "kubejs:quantum_dimension_resolver", "E": "kubejs:void_diffraction_vault" }
+const WorldTokenGameRuleList = ['disableRaids', 'doDaylightCycle', 'doEntityDrops', 'doFireTick', 'doInsomnia', 'doMobLoot', 'doMobSpawning', 'doPatrolSpawning', 'doTraderSpawning', 'doVinesSpread', 'doWardenSpawning', 'doWeatherCycle', 'drowningDamage', 'fallDamage', 'fireDamage', 'freezeDamage', 'keepInventory', 'keepWallet', 'mobExplosionDropDecay', 'mobGriefing', 'naturalRegeneration', 'showDeathMessages', 'tntExplosionDropDecay', 'waterSourceConversion']
+const WorldTokenCreativeList = ['create:creative_blaze_cake', 'create:creative_motor', 'minecraft:command_block', 'ars_nouveau:creative_source_jar', 'ars_nouveau:creative_spell_book', 'functionalstorage:max_storage_upgrade', 'sophisticatedbackpacks:stack_upgrade_omega_tier', 'sophisticatedbackpacks:inception_upgrade']
+
 ServerEvents.recipes(event => {
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnStart(ctx => {
@@ -403,100 +406,56 @@ ServerEvents.recipes(event => {
         .produceItem(Item.of('kubejs:entity_simulator', 1), 'output_1')
         .resetOnError()
 
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 1200)
+    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnEnd(ctx => {
-            console.log('Congratulations.')
-            console.log('New Horizon Establish.')
-            console.log('Keep promise and explore the world you can\'t arrive.')
-            const server = ctx.block.level.server
-            if (!AStages.serverHasStage('ftb_world_computer_2', server)) {
-                AStages.addStageToServer('ftb_world_computer_2', server)
-            }
-            return ctx.success()
-        })
-        .requireFunctionToStart(ctx => {
+            const block = ctx.getBlock()
+            const level = block.getLevel()
+
             const machine = ctx.getMachine()
-            let bookItem = machine.getItemStored('input_1')
-            if (bookItem.hasNBT()) {
-                let nbt = bookItem.getNbt()
-                let pages = nbt.getList('pages', TAG_STRING)
-                for (let page of pages) {
-                    console.warn(page.getAsString())
-                }
-            }
+            const tokenItem = machine.getItemStored('input_1')
+            const nbt = tokenItem.getOrCreateTag()
+            level.setRainLevel(nbt.getInt('state'))
             return ctx.success()
         })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip'), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound'), 'input_2')
-        .requireItem(Item.of('minecraft:writable_book'), 'input_1')
-        .resetOnError()
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
-        .requireFunctionOnEnd(ctx => {
-            ctx.block.level.setRainLevel(2)
-            return ctx.success()
-        })
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 1), 'input_3')
+        .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('minecraft:lightning_rod', 1), 'input_1')
+        .requireItem(Item.of('kubejs:world_token_weather', 1), 'input_1', false)
         .resetOnError()
 
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnEnd(ctx => {
             const block = ctx.getBlock()
             const level = block.getLevel()
-            let res = level.gameRules.kjs$getBoolean('doInsomnia')
-            level.gameRules.set('doInsomnia', res ? 'false' : 'true')
+
+            const machine = ctx.getMachine()
+            const tokenItem = machine.getItemStored('input_1')
+            const nbt = tokenItem.getOrCreateTag()
+
+            const gameRuleStr = WorldTokenGameRuleList[nbt.getInt('state')]
+            let res = level.gameRules.kjs$getBoolean(gameRuleStr)
+            level.gameRules.set(gameRuleStr, res ? 'false' : 'true')
             return ctx.success()
         })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('minecraft:phantom_membrane', 16), 'input_1')
+        .requireItem(Item.of('kubejs:world_token_gamerule', 1), 'input_1', false)
         .resetOnError()
 
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnEnd(ctx => {
-            const block = ctx.getBlock()
-            const level = block.getLevel()
-            let res = level.gameRules.kjs$getBoolean('doPatrolSpawning')
-            level.gameRules.set('doPatrolSpawning', res ? 'false' : 'true')
+            const machine = ctx.getMachine()
+            const tokenItem = machine.getItemStored('input_1')
+            const nbt = tokenItem.getOrCreateTag()
+            const creativeItem = WorldTokenCreativeList[nbt.getInt('state')]
+            machine.setItemStored('output_1', Item.of(creativeItem))
             return ctx.success()
         })
         .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
         .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('minecraft:totem_of_undying', 1), 'input_1')
-        .resetOnError()
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
-        .requireFunctionOnEnd(ctx => {
-            const block = ctx.getBlock()
-            const level = block.getLevel()
-            let res = level.gameRules.kjs$getBoolean('doTraderSpawning')
-            level.gameRules.set('doTraderSpawning', res ? 'false' : 'true')
-            return ctx.success()
-        })
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('minecraft:emerald', 16), 'input_1')
-        .resetOnError()
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
-        .requireFunctionOnEnd(ctx => {
-            const block = ctx.getBlock()
-            const level = block.getLevel()
-            let res = level.gameRules.kjs$getBoolean('doDaylightCycle')
-            level.gameRules.set('doDaylightCycle', res ? 'false' : 'true')
-            return ctx.success()
-        })
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('minecraft:lantern', 16), 'input_1')
+        .requireItem(Item.of('kubejs:world_token_creative', 1), 'input_1', false)
         .resetOnError()
 
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
@@ -518,29 +477,6 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .resetOnError()
 
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
-        .produceItem(Item.of('minecraft:command_block', 1))
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 64), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('kubejs:oracle_module', 1), 'input_1')
-        .resetOnError()
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
-        .produceItem(Item.of('create:creative_blaze_cake', 1))
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 1), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('create:blaze_cake', 1), 'input_1')
-        .resetOnError()
-
-    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 6000)
-        .produceItem(Item.of('create:creative_motor', 1))
-        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
-        .requireItem(Item.of('kubejs:reverse_causality_chip', 8), 'input_3')
-        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
-        .requireItem(Item.of('createdieselgenerators:diesel_engine', 1), 'input_1')
-        .resetOnError()
 })
 
 /**

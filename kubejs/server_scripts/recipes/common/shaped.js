@@ -1,5 +1,12 @@
 // priority: 1000
 ServerEvents.recipes(event => {
+    event.shapeless('minecraft:paper', ['kubejs:sawdust', 'kubejs:sawdust', 'kubejs:sawdust'])
+    event.remove({ id: 'torchmaster:frozen_pearl' })
+    event.shapeless('torchmaster:frozen_pearl', ['minecraft:ender_pearl', 'minecraft:light_blue_dye'])
+    event.shapeless('crittersandcompanions:dragonfly_wing', ['kubejs:dragonfly_wing'])
+    event.shapeless(Item.of('exposure:album'), ['minecraft:writable_book', 'minecraft:emerald', 'minecraft:leather'])
+    event.shapeless(Item.of('minecraft:yellow_dye'), ['minecraft:red_dye', 'minecraft:green_dye'])
+
     event.remove({ output: 'cataclysm:mechanical_fusion_anvil' })
     event.shaped('cataclysm:mechanical_fusion_anvil', [
         ['minecraft:redstone_block', 'minecraft:blackstone', 'minecraft:redstone_block'],
@@ -145,4 +152,23 @@ ServerEvents.recipes(event => {
         ['kubejs:relics_paper', 'kubejs:ancient_crystal', 'kubejs:relics_paper'],
         ['kubejs:relics_metal', 'kubejs:relics_paper', '']
     ])
+
+
+    event.remove({ id: 'compactmachines:machine_tiny' })
+    event.remove({ id: 'compactmachines:machine_small' })
+    event.remove({ id: 'compactmachines:machine_normal' })
+    event.remove({ id: 'compactmachines:machine_large' })
+    event.remove({ id: 'compactmachines:machine_giant' })
+    event.remove({ id: 'compactmachines:machine_maximum' })
+    event.shaped(Item.of('kubejs:blank_compact_machine'), [
+        ['compactmachines:wall', 'compactmachines:wall', 'compactmachines:wall'],
+        ['compactmachines:wall', '', 'compactmachines:wall'],
+        ['compactmachines:wall', 'compactmachines:wall', 'compactmachines:wall']
+    ])
+    event.shapeless(Item.of('compactmachines:machine_tiny'), ['kubejs:blank_compact_machine', 'minecraft:copper_block'])
+    event.shapeless(Item.of('compactmachines:machine_small'), ['kubejs:blank_compact_machine', 'minecraft:iron_block'])
+    event.shapeless(Item.of('compactmachines:machine_normal'), ['kubejs:blank_compact_machine', 'minecraft:gold_block'])
+    event.shapeless(Item.of('compactmachines:machine_large'), ['kubejs:blank_compact_machine', '#forge:obsidian'])
+    event.shapeless(Item.of('compactmachines:machine_giant'), ['kubejs:blank_compact_machine', 'minecraft:diamond_block'])
+    event.shapeless(Item.of('compactmachines:machine_maximum'), ['kubejs:blank_compact_machine', 'minecraft:netherite_block'])
 })

@@ -1,6 +1,0 @@
-{
-    "add_cosmetic": false,
-    "order": 1048,
-    "icon": "kubejs:slot/witness",
-    "validators": ["curios:tag"]
-}

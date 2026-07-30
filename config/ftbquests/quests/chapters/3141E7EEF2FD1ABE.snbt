@@ -90,6 +90,7 @@
 					exclude_from_claim_all: true
 					id: "4E1F5696F65E9CA0"
 					table_id: 2341603259726464384L
+					title: "奖励法术书"
 					type: "choice"
 				}
 			]

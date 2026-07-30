@@ -1,7 +1,7 @@
 
 [Notifications]
 	#Show a chat warning to admins when a stage is not associated with any restriction.
-	"Enable Missing Stage Warning" = true
+	"Enable Missing Stage Warning" = false
 
 	[Notifications."Stage Addition Visuals"]
 		#How the notification is shown when a player gains a stage. Options: TITLE, ACTION_BAR, CHAT

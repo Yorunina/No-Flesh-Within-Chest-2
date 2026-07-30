@@ -2,7 +2,7 @@
 	icon: "biomancy:bloomberry"
 	id: "3BBA8FA63849155C"
 	loot_size: 1
-	order_index: 6
+	order_index: 5
 	rewards: [
 		{
 			auto: "invisible"

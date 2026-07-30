@@ -15,7 +15,7 @@
 			rotation: 0.0d
 			width: 24.38d
 			x: -0.5d
-			y: 28.5d
+			y: 25.5d
 		}
 		{
 			dependency: "4C247D4E88F1A179"
@@ -23,8 +23,8 @@
 			image: "kubejs:textures/gui/tasks/chapter_1/error_task_frame.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: -0.07d
-			y: 24.05d
+			x: -0.09515476463471373d
+			y: 21.041429699327082d
 		}
 		{
 			dependency: "24908FF341485C05"
@@ -280,7 +280,7 @@
 			}]
 			title: "更高效的采掘方案"
 			x: 0.0d
-			y: 12.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
@@ -301,7 +301,7 @@
 			}]
 			title: "前往下界"
 			x: 0.0d
-			y: 13.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["4A1C6C6150E32CEE"]
@@ -354,7 +354,7 @@
 			]
 			title: "将岩浆带回家"
 			x: 0.0d
-			y: 15.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["288B079239EA5947"]
@@ -384,7 +384,7 @@
 			}]
 			title: "获取烈焰棒"
 			x: 0.0d
-			y: 18.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["07EF7BB4192A11D0"]
@@ -408,7 +408,7 @@
 				type: "structure"
 			}]
 			x: 0.0d
-			y: 16.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["50BA5AF34D9AA99F"]
@@ -429,7 +429,7 @@
 				type: "maa:kube"
 			}]
 			x: 0.0d
-			y: 19.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["287364726E87F8F4"]
@@ -454,7 +454,7 @@
 			}]
 			title: "击杀末影龙"
 			x: 0.0d
-			y: 21.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["62CEA192AD10DD8A"]
@@ -500,7 +500,7 @@
 			}]
 			title: "&6我们的故事结束了&r"
 			x: 0.0d
-			y: 22.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["4C247D4E88F1A179"]
@@ -530,7 +530,7 @@
 			}]
 			title: "等下. . .出现了些问题"
 			x: 0.0d
-			y: 24.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
@@ -554,8 +554,8 @@
 				type: "item"
 			}]
 			title: "名为誓言的胸针"
-			x: 3.0d
-			y: 12.0d
+			x: 2.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["4BEDD898484E1898"]
@@ -566,7 +566,6 @@
 				""
 				"有些时候，在物品描述中会存在有带下划线的表述。您可以通过将其物品提示框固定后，将&6鼠标悬浮在下划线文字上&r查看进一步信息。"
 			]
-			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "minecraft:item_frame"
 			id: "246F98FFF269D869"
@@ -583,35 +582,7 @@
 				type: "checkmark"
 			}]
 			title: "悬浮物品框"
-			x: 3.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["246F98FFF269D869"]
-			description: [
-				"有些时候，可能您希望把某个物品直接放置到世界上。"
-				""
-				"使用&6放置物品按键（默认P）&r，手持任意物品对准任意方块即可让该物品被放置在墙面、地板等任意物品表面。"
-				""
-				"这在装饰方面会有很棒的效果。"
-			]
-			hide_dependency_lines: true
-			icon: "minecraft:glow_item_frame"
-			id: "51540FD7CFA0C7B6"
-			rewards: [{
-				count: 3
-				id: "754AEA9FD9FE6EF4"
-				item: "minecraft:cactus"
-				type: "item"
-			}]
-			subtitle: "将任意物品放置下来"
-			tasks: [{
-				id: "0C4260691FA6526A"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "物品放置"
-			x: 6.0d
+			x: 2.0d
 			y: 1.5d
 		}
 	]
