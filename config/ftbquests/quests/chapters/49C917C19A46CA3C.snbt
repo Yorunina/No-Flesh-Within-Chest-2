@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"考虑到这个世界存在太多的未知数，为了确保您能较方便的与您的同伴取得联系，请您尽可能早的制作&6魔镜&r。"
 				""
@@ -31,9 +32,10 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -3.5d
+			y: 4.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"如若遇到了需要&6大规模点亮周围环境&r的场景，您可以使用&6野火灯笼&r来进行区域点亮。"
 				""
@@ -54,10 +56,10 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 1.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["0FB3E1E25CCAFF16"]
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"在扫描物品时，我偶然发现了名为背包的特殊存储方式，其相较于收纳袋不仅便捷，且可以配置在特殊的名为饰品的栏位中。"
 				""
@@ -81,6 +83,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"为了方便后续的长途旅行，您可能需要一个&6类似于鞘翅&r一样的能够将高度转换为动能的工具。"
 				""
@@ -125,7 +128,7 @@
 		{
 			dependencies: ["57BBCCCD732ED543"]
 			description: [
-				"为了方便后续的长途旅行，您可能需要一个能快速构造出路径的设备。"
+				"为了方便后续部分特殊场景的移动，您可能需要一个能快速构造出路径的设备。"
 				""
 				"&6绳桥枪&r便是最佳的方案。"
 				""
@@ -190,7 +193,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 1.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["24D645FF144CBC13"]
@@ -218,9 +221,10 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -3.5d
+			y: 4.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"&6将金币投入下界传送门&r中，可打开一个前往指定维度的特殊传送门，其被命名为&6商店维度&r。"
 				""
@@ -257,6 +261,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"看来您获得了一个&6武器皮肤&r！这是一个很罕见的物品！"
 				""
@@ -282,6 +287,17 @@
 				{
 					id: "4946D192AA487D24"
 					item: "armourers_workshop:skinning-table"
+					type: "item"
+				}
+				{
+					id: "7909C85E805A442D"
+					item: {
+						Count: 1
+						id: "kubejs:trophy_sword"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -313,7 +329,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["0FB3E1E25CCAFF16"]
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"在您堆放了很多存储方块后，一个能够统合所有存储方块的终端变成了急需品。"
 				""
@@ -338,7 +354,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["0FB3E1E25CCAFF16"]
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"但是，仅依靠背包想必您是无法通过羸弱的常规存储方式应对当前局面。"
 				""
@@ -371,7 +387,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["563087C8FE4275E8"]
+			dependencies: ["5D59836FFE601158"]
 			description: [
 				"在某些时候，您可能会需要建造一些&6指定类型的复杂结构&r——由于我只能通过极其有限的文字交流方式与您沟通，因此我并不能有效的向您表达如何构造这些结构。"
 				""
@@ -406,16 +422,37 @@
 				type: "item"
 			}]
 			title: "知识打印器"
-			x: -7.5d
-			y: 2.5d
+			x: -4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["70FCE36692E184AD"]
+			description: [
+				"本章节是我经过对该世界扫描后，总结而成的一系列对您生存有帮助的信息。"
+				""
+				"其包含了生存的各方面内容——如&6存储、地图探索、饮食改良等. . .&r能极大程度让您适应新世界的生活。"
+			]
+			icon: "supplementaries:globe"
 			id: "5D59836FFE601158"
+			rewards: [
+				{
+					id: "674160EA7ECFB583"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "32CD40CAF075847B"
+					item: "supplementaries:globe"
+					type: "item"
+				}
+			]
+			subtitle: "所谓世界"
 			tasks: [{
 				id: "79AF786E0CA8D9A3"
+				title: "我已了解"
 				type: "checkmark"
 			}]
+			title: "生于世界之中"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -718,6 +755,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["5D59836FFE601158"]
 			description: ["&6试验假人&r是一个极其友善的伤害测试对象，制作一个试验假人可以让您了解您的当前输出水平。"]
 			id: "3EAB05477DC10CE1"
 			rewards: [{
@@ -733,7 +771,7 @@
 			}]
 			title: "见证者"
 			x: -4.5d
-			y: 4.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["09ED755A64A62187"]
@@ -760,14 +798,54 @@
 			y: -2.0d
 		}
 		{
-			id: "0FB3E1E25CCAFF16"
-			tasks: [{
-				id: "2C64E626517388B7"
-				title: "存储"
-				type: "checkmark"
+			dependencies: ["6DF4D3AE711778B7"]
+			description: [
+				"除了玩家与玩家之间的传送之外——您还可以&6通过制作传送石和传送石碑，实现定点传送&r。"
+				""
+				"举例而言，您可以通过在经常到访的地点（如您的定居点）放置传送石碑并且命名。这样您便可以在任何其他传送石碑，或者使用传送石，来传送到 这些地点。"
+			]
+			icon: {
+				Count: 1
+				id: "waystones:warp_stone"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5D1AE549116F1B69"
+			rewards: [{
+				id: "7278DACC8B6A250B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			subtitle: "使用传送石碑"
+			tasks: [
+				{
+					id: "7C791707F46F2E02"
+					item: {
+						Count: 1
+						id: "waystones:warp_stone"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "648B8A11442AD4F1"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "waystones:waystones"
+						}
+					}
+					title: "任意一传送石碑"
+					type: "item"
+				}
+			]
+			title: "定点传送"
+			x: -7.5d
+			y: 4.0d
 		}
 	]
 	title: "常识：世界"

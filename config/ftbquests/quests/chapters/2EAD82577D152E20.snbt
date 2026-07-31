@@ -171,21 +171,12 @@
 			y: 31.0d
 		}
 		{
-			dependency: "20A8A171833B2F50"
-			height: 4.4d
-			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
-			rotation: 0.0d
-			width: 3.0d
-			x: 9.5d
-			y: 31.0d
-		}
-		{
 			dependency: "4329E9383BBF0B7E"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 1.5d
+			x: 5.5d
 			y: 31.0d
 		}
 		{
@@ -195,7 +186,7 @@
 			order: 1
 			rotation: 0.0d
 			width: 3.0d
-			x: 1.5d
+			x: 5.5d
 			y: 31.0d
 		}
 		{
@@ -204,7 +195,7 @@
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 5.5d
+			x: 13.5d
 			y: 31.0d
 		}
 		{
@@ -214,22 +205,10 @@
 			order: 1
 			rotation: 0.0d
 			width: 3.0d
-			x: 5.5d
-			y: 31.0d
-		}
-		{
-			dependency: "1242839DAB198513"
-			height: 4.4d
-			hideDependency: "49BCABE5A8123636"
-			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_bd.png"
-			order: 1
-			rotation: 0.0d
-			width: 3.0d
 			x: 13.5d
 			y: 31.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -244,11 +223,10 @@
 			order: 1
 			rotation: 0.0d
 			width: 3.0d
-			x: 9.5d
+			x: 21.5d
 			y: 43.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -267,16 +245,6 @@
 			y: 37.0d
 		}
 		{
-			dependency: "1242839DAB198513"
-			height: 4.4d
-			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
-			rotation: 0.0d
-			width: 3.0d
-			x: 17.5d
-			y: 31.0d
-		}
-		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -295,7 +263,6 @@
 			y: 37.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -304,7 +271,6 @@
 			y: 37.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -313,7 +279,6 @@
 			y: 37.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -322,7 +287,6 @@
 			y: 37.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -331,7 +295,6 @@
 			y: 37.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -390,7 +353,6 @@
 			y: 37.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -399,7 +361,6 @@
 			y: 43.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -408,7 +369,6 @@
 			y: 43.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -437,7 +397,6 @@
 			y: 43.0d
 		}
 		{
-			dependency: "7ACE1C4CE1A9D896"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
@@ -451,7 +410,7 @@
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 1.5d
+			x: 5.5d
 			y: 49.0d
 		}
 		{
@@ -460,7 +419,7 @@
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_nexus.png"
 			rotation: 0.0d
 			width: 4.3d
-			x: 5.45d
+			x: 13.45d
 			y: 49.08d
 		}
 		{
@@ -480,7 +439,7 @@
 			order: 1
 			rotation: 0.0d
 			width: 2.46d
-			x: 1.5d
+			x: 5.5d
 			y: 48.63d
 		}
 		{
@@ -490,32 +449,23 @@
 			order: 1
 			rotation: 0.0d
 			width: 3.0d
-			x: 5.5d
+			x: 13.5d
 			y: 49.0d
 		}
 		{
-			dependency: "49BCABE5A8123636"
+			dependency: "1C316C6505326313"
 			height: 3.0d
 			image: "minecraft:block/nether_portal"
 			rotation: 0.0d
 			width: 3.0d
-			x: 13.5d
+			x: 21.5d
 			y: 30.5d
 		}
 		{
-			dependency: "49BCABE5A8123636"
+			dependency: "1C316C6505326313"
 			height: 4.4d
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_bd2.png"
 			order: 1
-			rotation: 0.0d
-			width: 3.0d
-			x: 13.5d
-			y: 31.0d
-		}
-		{
-			dependency: "49BCABE5A8123636"
-			height: 4.4d
-			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
 			rotation: 0.0d
 			width: 3.0d
 			x: 21.5d
@@ -528,7 +478,7 @@
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_infinity_key_generating.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 9.5d
+			x: 21.5d
 			y: 48.5d
 		}
 		{
@@ -537,7 +487,7 @@
 			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_infinity_key_ready.png"
 			rotation: 0.0d
 			width: 3.0d
-			x: 9.5d
+			x: 21.5d
 			y: 48.5d
 		}
 		{
@@ -565,6 +515,52 @@
 			width: 34.98d
 			x: 10.2d
 			y: -10.9d
+		}
+		{
+			dependency: "20A8A171833B2F50"
+			height: 4.4d
+			hideDependency: "1C316C6505326313"
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_bd.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 21.5d
+			y: 31.0d
+		}
+		{
+			height: 4.5d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 43.0d
+		}
+		{
+			height: 4.5d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 21.5d
+			y: 43.0d
+		}
+		{
+			dependency: "42DA89117F452364"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_pink.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 13.5d
+			y: 43.0d
+		}
+		{
+			dependency: "233A3A75F3C14EA7"
+			height: 4.4d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/portal_cores/portal_core_sand.png"
+			order: 1
+			rotation: 0.0d
+			width: 3.0d
+			x: 9.5d
+			y: 43.0d
 		}
 	]
 	order_index: 1
@@ -1901,7 +1897,7 @@
 				type: "dimension"
 			}]
 			title: "探访被发现的原野"
-			x: 1.5d
+			x: 5.5d
 			y: 28.0d
 		}
 		{
@@ -1973,7 +1969,7 @@
 				type: "item"
 			}]
 			title: "史莱姆构成的原野"
-			x: 1.5d
+			x: 5.5d
 			y: 32.5d
 		}
 		{
@@ -2000,40 +1996,6 @@
 				type: "dimension"
 			}]
 			title: "探访不确定的世界"
-			x: 5.5d
-			y: 28.0d
-		}
-		{
-			dependencies: ["1C316C6505326313"]
-			description: [
-				"历经一段时间的扫描后，我意识到，这些维度的数量很有可能是&c近乎无穷大&r的——当然，在数据上是有限的，但是对于您来说几乎是无穷大。"
-				""
-				"这意味着我们没有办法像之前计划的那样顺着踪迹一点一点调查清楚这一切都是怎么创造出来的。不过好消息是，我们现在就有一个办法能够利用这些宽广诡异的维度。"
-				""
-				"请您将任意一张&6自己拍摄的照片&r投入下界传送门中，随后，您便会创建一个跟您关联的&6维度网络&r。"
-				""
-				"通过&6维度网络开启按键&r，您即可与自己的维度网络交互。它可以理解为绑定在您身上的一个专属维度，您可以在里面存储物品，而无需佩戴任何设备。"
-				"{@pagebreak}"
-				"原理上，这其实是我建立起了一个随机维度和您的关联，当您操作维度网络时，其物品会被存储在那个维度空间中。"
-				""
-				"目前，这个维度空间可能比较有限，您只能存储&6相当有限种&r的物品（27种不同的物品）在维度网络中。后续我相信一定有方法可以进一步拓展存储能力，但这需要时间。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "1242839DAB198513"
-			rewards: [{
-				id: "6310D0D7EC13F449"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "利用无限维度之一"
-			tasks: [{
-				icon: "beyonddimensions:net_creater"
-				id: "1DE85E26AA13670B"
-				title: "建立维度联系"
-				type: "custom"
-			}]
-			title: "维度网络"
 			x: 13.5d
 			y: 28.0d
 		}
@@ -2073,7 +2035,7 @@
 				type: "item"
 			}]
 			title: "错误的导向！"
-			x: 5.5d
+			x: 13.5d
 			y: 32.5d
 		}
 		{
@@ -2101,69 +2063,11 @@
 				type: "questsadditions:time"
 			}]
 			title: "停下脚步"
-			x: 9.5d
-			y: 32.5d
-		}
-		{
-			dependencies: ["1242839DAB198513"]
-			description: [
-				"除此之外，为了最大限度的使用维度网络，您需要一些方块来让维度网络进行世界交互。"
-				""
-				"请您将一块&6钻石块丢到下界传送门&r中，其应当会转化成为对应的&6维度网络通道&r。"
-				""
-				"通过维度网络通道，可以制作出各种各样用于和维度网络交互的设备，在后面我会举一个例子作为介绍，向您解释它的基本功能。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "49BCABE5A8123636"
-			rewards: [{
-				id: "1E676F06211B9551"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "none"
-			subtitle: "维度网络交流信标"
-			tasks: [{
-				id: "2986BE449D72E9E7"
-				item: "beyonddimensions:net_pathway"
-				type: "item"
-			}]
-			x: 13.5d
-			y: 32.5d
-		}
-		{
-			dependencies: ["49BCABE5A8123636"]
-			description: [
-				"使用凿子可以将其转换为任意维度网络模块。"
-				""
-				"- 将维度网络通道放置在任意位置，&6潜行右击&r以绑定您的维度网络。"
-				""
-				"- 而后将&6维度网络模块&r（如此处的网络接口）放置在临近通道的位置，即可让通道链接到网络接口。"
-				""
-				"- 在网络接口中标记物品，即可让物品自动的从您的维度网络中输出输入。"
-				""
-				"- 使用其他的模块也是同理，再次请允许我不再赘述。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			id: "1E560E6025CC2C22"
-			rewards: [{
-				id: "2313C40283FAC301"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "none"
-			subtitle: "物品交互方案"
-			tasks: [{
-				id: "39A038CB34327FBE"
-				item: "beyonddimensions:net_interface"
-				type: "item"
-			}]
 			x: 21.5d
 			y: 32.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: ["用草方块作为引子，您便可以来到一个富有规律山脉的世界。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2187,34 +2091,7 @@
 			y: 44.5d
 		}
 		{
-			dependencies: ["1242839DAB198513"]
-			description: [
-				"好了，在插曲之后，我挑选了几个比较&6特殊&r的维度给您探索。"
-				""
-				"其实我大概已经有一些结论了，但只有在您拜访过这些维度之后，您才大概能够理解这个结论。"
-			]
-			hide_dependency_lines: true
-			hide_until_deps_complete: true
-			icon: "minecraft:writable_book"
-			id: "7ACE1C4CE1A9D896"
-			rewards: [{
-				id: "1A50C721917A4AEA"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "none"
-			subtitle: "踪迹之N"
-			tasks: [{
-				id: "0A19DC62E986C4D7"
-				title: "追寻踪迹"
-				type: "checkmark"
-			}]
-			title: "继续追寻踪迹"
-			x: 17.5d
-			y: 32.5d
-		}
-		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: ["用樱花树叶作为引子，您便可以来到一个呈现螺旋形生成樱花林的世界。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2238,7 +2115,7 @@
 			y: 44.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: ["用黑色羊毛作为引子，您便会来到一个黑白羊毛构成的棋盘世界。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2262,7 +2139,7 @@
 			y: 38.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: [
 				"用砖块作为引子，您便会来到一个孤独者所在的世界。"
 				""
@@ -2290,7 +2167,7 @@
 			y: 38.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: [
 				"用苔石作为引子，您便可以来到一个极其特殊的世界——这个世界是本游戏早期设计中的世界，其大部分内容在如今的世界中都已不存在。"
 				""
@@ -2318,7 +2195,7 @@
 			y: 38.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: ["用海绵作为引子，您便可以访问由海绵分形图案组成的世界。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2342,7 +2219,7 @@
 			y: 38.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: ["以木棍作为引子，则可以将您带入到一个虚空维度之中。在这个维度的中心，应当有前人留下的，为空岛生存所准备的基本物资。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2366,7 +2243,7 @@
 			y: 38.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: ["以陶瓦为引子，您可以来到一个被陶瓦路分割的世界。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2390,7 +2267,7 @@
 			y: 38.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: [
 				"以白色混凝土作为引子，您便可以来到存在一只朗顿蚂蚁方块的超平坦维度。"
 				""
@@ -2425,7 +2302,7 @@
 			y: 38.5d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: [
 				"以世界唯一的龙蛋作为引子，您便可以来到随机生成方块构成的混乱维度。"
 				""
@@ -2449,7 +2326,7 @@
 				type: "dimension"
 			}]
 			title: "探索网格维度"
-			x: 9.5d
+			x: 21.5d
 			y: 44.5d
 		}
 		{
@@ -2465,6 +2342,8 @@
 				"2455A4DF5434609A"
 				"28000C5318439D41"
 				"354161CC18BA01F3"
+				"233A3A75F3C14EA7"
+				"42DA89117F452364"
 			]
 			description: [
 				"在长久的寻找之中，我明确了一个事实——这些维度远比想象的还要多得多，它的数量大到使用我的最大数据类型都几乎无法存储。"
@@ -2541,7 +2420,7 @@
 				type: "dimension"
 			}]
 			title: "证明所言非虚"
-			x: 1.5d
+			x: 5.5d
 			y: 50.5d
 		}
 		{
@@ -2573,8 +2452,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "&6庆贺吧！此乃通往无尽之钥！&r"
-			x: 9.53d
-			y: 48.44d
+			x: 21.55d
+			y: 48.45d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]
@@ -2640,7 +2519,7 @@
 				type: "leaderboards:rank_task"
 			}]
 			title: "无限中转站"
-			x: 5.5d
+			x: 13.5d
 			y: 50.5d
 		}
 		{
@@ -2708,7 +2587,7 @@
 			y: 3.8d
 		}
 		{
-			dependencies: ["7ACE1C4CE1A9D896"]
+			dependencies: ["1C316C6505326313"]
 			description: ["用菌光体作为引子，您便可以来到一个埋藏在地底深处的世界。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2732,29 +2611,52 @@
 			y: 44.5d
 		}
 		{
-			dependencies: ["49BCABE5A8123636"]
-			description: [
-				"将&6淡蓝色染料&r投入到传送门中，即可获得能够用于共享维度网络的&6成员连接符&r。"
-				""
-				"您可以通过手持该物品右键将自己的网络标记到该连接符上，之后便可以将该连接符送给其他玩家，进而让其他玩家加入到您的网络中。"
-				""
-				"除此之外，您还可以将成员连接符再次投入到传送门中以获得网络销毁符、网络赠送符、管理员连接符。其分别对应销毁、合并、添加管理的功能。"
-			]
+			dependencies: ["1C316C6505326313"]
+			description: ["用砂岩作为引子，您便可以来到红石俱备世界。"]
 			hide_dependency_lines: true
-			id: "45BB469CB7E0F613"
+			icon: "minecraft:sandstone"
+			id: "233A3A75F3C14EA7"
 			rewards: [{
-				id: "4791F47D1CC81E73"
+				id: "7761B634ED18770F"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "将网络共享"
+			shape: "none"
+			subtitle: "大量踪迹之一"
 			tasks: [{
-				id: "6F7AAF775603C98E"
-				item: "beyonddimensions:net_member_inviter"
+				dimension: "infinity:redstone_flat"
+				icon: "minecraft:sandstone"
+				id: "46BF163E4E0E69C7"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索红石俱备"
+			x: 9.5d
+			y: 44.5d
+		}
+		{
+			dependencies: ["1C316C6505326313"]
+			description: ["用粉色染色玻璃为引子，可以来到奇幻的饱和世界。"]
+			hide_dependency_lines: true
+			icon: "minecraft:pink_stained_glass"
+			id: "42DA89117F452364"
+			rewards: [{
+				id: "3B581BFDE05F9A35"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			x: 21.5d
-			y: 28.0d
+			shape: "none"
+			subtitle: "大量踪迹之一"
+			tasks: [{
+				dimension: "bro:saturated"
+				icon: "minecraft:pink_stained_glass"
+				id: "6DAAAD33A305B8B3"
+				title: "访问维度"
+				type: "dimension"
+			}]
+			title: "探索饱和世界"
+			x: 13.5d
+			y: 44.5d
 		}
 	]
 	title: "传闻：重现黄金乡"
