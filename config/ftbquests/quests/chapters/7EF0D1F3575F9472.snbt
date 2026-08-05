@@ -593,11 +593,6 @@
 				}
 			}
 			id: "37D3DEA4E9074D5E"
-			rewards: [{
-				id: "06381B1A521282DF"
-				item: "kubejs:story_proof"
-				type: "item"
-			}]
 			shape: "none"
 			size: 2.0d
 			subtitle: "永无终止的故事"

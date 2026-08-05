@@ -1,12 +1,26 @@
 {
     "slotDefinitions": [
-        {"x": 87, "y": 49, "type": "awake_relics_slot"},
-        {"x": 105, "y": 49, "type": "awake_relics_slot"},
-        {"x": 123, "y": 49, "type": "awake_relics_slot"}
+        {"x": 29, "y": 29},
+        {"x": 11, "y": 47},
+        {"x": 29, "y": 47},
+        {"x": 11, "y": 65},
+        {"x": 29, "y": 65},
+        {"x": 11, "y": 83},
+        {"x": 29, "y": 83},
+        {"x": 54, "y": 58, "type": "awake_relics_slot"},
+        {"x": 96, "y": 21, "type": "awake_relics_slot"},
+        {"x": 138, "y": 58, "type": "awake_relics_slot"},
+        {"x": 163, "y": 29},
+        {"x": 163, "y": 47},
+        {"x": 181, "y": 47},
+        {"x": 163, "y": 65},
+        {"x": 181, "y": 65},
+        {"x": 163, "y": 83},
+        {"x": 181, "y": 83}
     ],
     "backgroundTexture": "kubejs:textures/gui/chest_cavity/relics_awakening.png",
     "playerInventoryPosition": {
-        "x": 7,
+        "x": 16,
         "y": 41
     },
     "titlePosition": {
@@ -15,8 +29,8 @@
         "hide": true
     },
     "backgroundSize": {
-        "x": 187,
-        "y": 211
+        "x": 208,
+        "y": 206
     },
     "inventoryLabelPosition": {
         "x": 0,
