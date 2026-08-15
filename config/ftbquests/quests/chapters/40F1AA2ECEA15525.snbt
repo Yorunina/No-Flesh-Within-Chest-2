@@ -5,6 +5,61 @@
 	group: "0B365C36A50478AA"
 	icon: "kubejs:relics_incense"
 	id: "40F1AA2ECEA15525"
+	images: [
+		{
+			height: 2.83d
+			image: "kubejs:textures/gui/tasks/relics_awakening/title.png"
+			rotation: 0.0d
+			width: 28.0d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependency: "2EA410FBC8182C1E"
+			height: 4.5d
+			image: "kubejs:textures/gui/tasks/relics_awakening/task_begin.png"
+			rotation: 0.0d
+			width: 2.39d
+			x: -0.05d
+			y: 1.2873979591836715d
+		}
+		{
+			dependency: "729F2DAEE008D92C"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/relics_awakening/bg_1.png"
+			rotation: 0.0d
+			width: 20.9375d
+			x: 0.1103086780016227d
+			y: 5.369650655425232d
+		}
+		{
+			dependency: "263474323AC7D863"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/relics_awakening/bg_2.png"
+			rotation: 0.0d
+			width: 20.9375d
+			x: 0.01497379171180313d
+			y: 13.618634349382347d
+		}
+		{
+			dependency: "42E7A50E6CB4381E"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/relics_awakening/bg_3.png"
+			rotation: 0.0d
+			width: 20.9375d
+			x: -0.09663335114533567d
+			y: 20.33292006366807d
+		}
+		{
+			dependency: "1EEF5DDAC832934C"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/relics_awakening/relics_task_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 26.5d
+		}
+	]
 	order_index: 10
 	quest_links: [ ]
 	quests: [
@@ -19,12 +74,14 @@
 				""
 				"为了针对该内容进行了深挖，请允许我指引您寻找这些早已被遗忘的&6闪耀过往&r。"
 			]
+			hide_until_deps_complete: true
 			id: "2EA410FBC8182C1E"
 			rewards: [{
 				id: "39B2407F8C974BDF"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "复制战利品"
 			tasks: [{
 				icon: {
@@ -55,20 +112,23 @@
 				""
 				"在村庄战利品表的箱子探索时，有&610%&r的概率会产出&6遗物纸张&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "305ACD49FA86FBBF"
 			rewards: [{
 				id: "44F4FAE5CD4D2213"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物的第一份记忆"
 			tasks: [{
 				id: "701445890C095A68"
 				item: "kubejs:relics_paper"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 8.0d
+			x: -1.0802340563226096d
+			y: 6.595399522442314d
 		}
 		{
 			dependencies: ["7BCEE113CFCB696A"]
@@ -77,20 +137,23 @@
 				""
 				"在墓园战利品表的箱子探索时，有&620%&r的概率会产出&6遗物金属&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "3B26637D669DE1B5"
 			rewards: [{
 				id: "21DF2FD246CD32E9"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物的第二份记忆"
 			tasks: [{
 				id: "017754F25B4E096B"
 				item: "kubejs:relics_metal"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.0d
+			x: -0.008941597310496263d
+			y: 6.595399522442314d
 		}
 		{
 			dependencies: ["7BCEE113CFCB696A"]
@@ -99,20 +162,23 @@
 				""
 				"在埋藏的宝藏战利品表的箱子探索时，&6必然&r会产出&6遗物宝石&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "572CF91CDDDB8DC8"
 			rewards: [{
 				id: "6E2211D719E2EDCA"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物的第三份记忆"
 			tasks: [{
 				id: "12681FCB1DFD4915"
 				item: "kubejs:relics_gem"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 8.0d
+			x: 1.0861573607907715d
+			y: 6.619206021531468d
 		}
 		{
 			dependencies: [
@@ -127,6 +193,7 @@
 				""
 				"通过&6遗物熏香&r，可以复苏部分遗物生物过去的力量。"
 			]
+			hide_dependency_lines: true
 			id: "1A23554F0563EDB6"
 			rewards: [
 				{
@@ -144,14 +211,15 @@
 					type: "item"
 				}
 			]
+			shape: "none"
 			subtitle: "记载远古的第一秒流逝"
 			tasks: [{
 				id: "5F602257D67C46E4"
 				item: "kubejs:relics_scroll_1"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 0.01486490177865818d
+			y: 7.523852986919472d
 		}
 		{
 			dependencies: ["2EA410FBC8182C1E"]
@@ -162,6 +230,9 @@
 				""
 				"如果出现长时间搜索无效，请您将该器官取出并手持右键，以将其中的角质皮安全取出。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:navigating_liver"
@@ -173,6 +244,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "寻找恰当的方向"
 			tasks: [
 				{
@@ -211,7 +283,7 @@
 				}
 			]
 			x: 0.0d
-			y: 2.0d
+			y: 2.3d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -228,6 +300,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "5047C2065837EC06"
@@ -238,8 +311,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 4.0d
+			x: -6.579535345918124d
+			y: 5.071783580736188d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -256,6 +329,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "693B656D2809AB7E"
@@ -266,8 +340,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 4.0d
+			x: -5.055919404212013d
+			y: 5.071783580736188d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -284,6 +358,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "6C968EF16F3E6CCC"
@@ -294,8 +369,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 4.0d
+			x: -4.651208919696323d
+			y: 2.4054556827504854d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -312,6 +387,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "53B230417C0AF6F4"
@@ -322,8 +398,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 4.0d
+			x: 1.5622873425739385d
+			y: 2.3340361854830007d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -340,6 +416,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "6A96FF733F9D0709"
@@ -350,8 +427,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 4.0d
+			x: 5.014229710501851d
+			y: 5.071783580736181d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -368,6 +445,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "653DBA305A533610"
@@ -378,8 +456,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: -3.2228189743468363d
+			y: 2.3816491836613167d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -396,6 +474,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "25A9E40DDBD927FE"
@@ -406,8 +485,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
+			x: -1.6992030326407246d
+			y: 2.4054556827504783d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -424,6 +503,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "1D29919D395D9A00"
@@ -434,8 +514,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 4.0d
+			x: 3.085903284280043d
+			y: 2.3578426845721623d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -452,6 +532,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "062DC920F7C09021"
@@ -462,8 +543,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.0d
+			x: 4.5380997287186915d
+			y: 2.3340361854830007d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -480,6 +561,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "3A8E798421469DDC"
@@ -490,8 +572,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
-			y: 4.0d
+			x: -8.031731790356773d
+			y: 5.071783580736188d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -508,6 +590,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "52F9EB3081084E6D"
@@ -518,8 +601,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.0d
+			x: 6.514039153118816d
+			y: 5.071783580736181d
 		}
 		{
 			dependencies: ["729F2DAEE008D92C"]
@@ -536,6 +619,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "470C01A155D0450A"
@@ -546,8 +630,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 4.0d
+			x: 7.966235597557457d
+			y: 5.071783580736181d
 		}
 		{
 			dependencies: [
@@ -569,6 +653,8 @@
 				""
 				"请稍等片刻。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "7BCEE113CFCB696A"
 			min_required_dependencies: 3
 			rewards: [{
@@ -576,6 +662,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "整理信息"
 			tasks: [{
 				elapsedTime: 30L
@@ -585,8 +672,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "遗物化的调查"
-			x: 0.0d
-			y: 6.0d
+			x: -0.008941597310496263d
+			y: 5.619333059786825d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -597,6 +684,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "1C8028F98B36D76B"
@@ -607,8 +695,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
-			y: 14.0d
+			x: -5.377883351145336d
+			y: 10.082920063668055d
 		}
 		{
 			dependencies: ["1A23554F0563EDB6"]
@@ -617,20 +705,24 @@
 				""
 				"击杀遗物化的遗物生物，能够使您胸腔中的&6低级遗物器官进化&r，例如当您&6携带破损咒翼时击杀遗物化的咒翼灵骸&r，则破损咒翼便会进化为咒翼，其他器官同理。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "263474323AC7D863"
 			rewards: [{
 				id: "70267A90FB2339F1"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "唤醒遗物的力量"
 			tasks: [{
 				id: "378A48DD8BA07774"
 				item: "kubejs:relics_incense"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.0d
+			x: -0.03274809639965781d
+			y: 9.095081926803907d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -641,6 +733,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "34CCCD69B9E95803"
@@ -651,8 +744,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 14.0d
+			x: -6.627883351145336d
+			y: 11.368634349382347d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -663,6 +756,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "3AB5C3E1EA5138D9"
@@ -673,8 +767,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 14.0d
+			x: -5.342169065431051d
+			y: 12.690062920810917d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -685,6 +779,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "776689F12B66C516"
@@ -695,8 +790,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 14.0d
+			x: -6.627883351145336d
+			y: 14.404348635096632d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -707,6 +802,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "0F80661B62471605"
@@ -717,8 +813,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 14.0d
+			x: 5.407830934568949d
+			y: 10.082920063668055d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -729,6 +825,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "1CC2EF6C724CD3CA"
@@ -739,8 +836,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 14.0d
+			x: -5.342169065431058d
+			y: 15.725777206525201d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -751,6 +848,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "00CEE16A334AE3B7"
@@ -761,8 +859,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 14.0d
+			x: -6.627883351145336d
+			y: 17.047205777953778d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -773,6 +871,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "6B72CE683460D35D"
@@ -783,8 +882,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 14.0d
+			x: 6.693545220283227d
+			y: 11.368634349382347d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -795,6 +894,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "0AE2ADF49204C9C1"
@@ -805,8 +905,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 14.0d
+			x: 5.372116648854664d
+			y: 12.690062920810917d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -817,6 +917,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "0015CB7F095A507C"
@@ -827,8 +928,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 14.0d
+			x: 6.693545220283241d
+			y: 14.440062920810917d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -839,6 +940,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "3713AC6EB630156A"
@@ -849,8 +951,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 14.0d
+			x: 5.407830934568949d
+			y: 15.690062920810917d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -861,6 +963,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物器官之一"
 			tasks: [{
 				id: "58081B81B6AC6018"
@@ -871,8 +974,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 14.0d
+			x: 6.693545220283241d
+			y: 17.047205777953778d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
@@ -887,6 +990,7 @@
 				""
 				"因此在战斗前十分有必要预先了解敌人可能的词条类型，进而转变您的战斗方式。"
 			]
+			hide_dependency_lines: true
 			icon: "minecraft:name_tag"
 			id: "6729015A224A8B14"
 			rewards: [{
@@ -894,6 +998,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "精英词条"
 			tasks: [{
 				id: "1BDA331873AC60CA"
@@ -901,8 +1006,8 @@
 				type: "checkmark"
 			}]
 			title: "遗物化与精英化"
-			x: 2.5d
-			y: 11.0d
+			x: 2.4193213097836193d
+			y: 9.095081926803907d
 		}
 		{
 			dependencies: [
@@ -926,6 +1031,8 @@
 				""
 				"我需要些事件来整理这些信息，请您稍等片刻。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "supplementaries:hourglass"
 			id: "4BBFD32ECC9FB0B5"
 			min_required_dependencies: 3
@@ -934,6 +1041,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "遗物化之后"
 			tasks: [{
 				elapsedTime: 30L
@@ -943,26 +1051,29 @@
 				type: "questsadditions:time"
 			}]
 			title: "远古化的调查"
-			x: 0.0d
-			y: 16.0d
+			x: 0.01497379171180313d
+			y: 12.904348635096639d
 		}
 		{
 			dependencies: ["4BBFD32ECC9FB0B5"]
 			description: ["闪耀肋骨描述的特殊战利品表还有一个——如&6若一个箱子的战利品超过了18格&r，则有&610%&r的可能会生成名为&6远古水晶&r的特殊产物。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "04BF46B34F490034"
 			rewards: [{
 				id: "5986CAB0EBCB1C6E"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古化的必要条件"
 			tasks: [{
 				id: "26A851B4ACB6B510"
 				item: "kubejs:ancient_crystal"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 18.0d
+			x: -0.02074049400248157d
+			y: 14.082920063668077d
 		}
 		{
 			dependencies: ["04BF46B34F490034"]
@@ -971,20 +1082,22 @@
 				""
 				"使用该卷轴，便会得到有关&6远古化&r的相关启发——这能够将我们现在已有的遗物器官推向另一个境界。"
 			]
+			hide_dependency_lines: true
 			id: "42E7A50E6CB4381E"
 			rewards: [{
 				id: "09BA7F1440455434"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "记载远古的第二秒流逝"
 			tasks: [{
 				id: "1E2A2903B9E18F02"
 				item: "kubejs:relics_scroll_2"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 20.0d
+			x: -0.02074049400248157d
+			y: 15.368634349382361d
 		}
 		{
 			dependencies: ["42E7A50E6CB4381E"]
@@ -995,12 +1108,16 @@
 				""
 				"期待您对这些遗物器官的进一步开发！"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			id: "2E7EEFA804FA4154"
 			rewards: [{
 				id: "00448E2B3E8A4964"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "唤醒远古的力量"
 			tasks: [{
 				id: "314A68AC16CBC814"
@@ -1008,7 +1125,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 22.0d
+			y: 21.0d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1019,6 +1136,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "7321C5AA10273401"
@@ -1029,8 +1147,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
-			y: 24.0d
+			x: -8.025204779716766d
+			y: 20.832920063668077d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1041,6 +1159,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "1F94A518C1140A9D"
@@ -1051,8 +1170,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 24.0d
+			x: -6.560919065431037d
+			y: 20.86863434938236d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1063,6 +1182,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "09472EFA55049DFC"
@@ -1073,8 +1193,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 24.0d
+			x: -5.060919065431044d
+			y: 20.86863434938237d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1085,6 +1205,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "36E1595788B5CCD2"
@@ -1095,8 +1216,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 24.0d
+			x: -4.632347636859613d
+			y: 23.547205777953792d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1107,6 +1228,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "5D2DF5DA72DFEA9D"
@@ -1117,8 +1239,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 24.0d
+			x: 1.6176523631403867d
+			y: 23.618634349382376d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1129,6 +1251,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "4C5A868C55BF53ED"
@@ -1139,8 +1262,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 24.0d
+			x: -3.2037762082881898d
+			y: 23.547205777953792d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1151,6 +1274,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "1213F47E5DC1BCC0"
@@ -1161,8 +1285,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 24.0d
+			x: -1.7037762082881898d
+			y: 23.547205777953792d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1173,6 +1297,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "22151260B12F2E8D"
@@ -1183,8 +1308,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 24.0d
+			x: 3.081938077426088d
+			y: 23.58292006366809d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1195,6 +1320,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "6217CE2D4023FAFB"
@@ -1205,8 +1331,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 24.0d
+			x: 4.54622379171181d
+			y: 23.58292006366809d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1217,6 +1343,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "0E195BA56782E87A"
@@ -1227,8 +1354,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.0d
-			y: 24.0d
+			x: 5.010509505997518d
+			y: 20.86863434938237d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1239,6 +1366,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "048DE9767DA0CA07"
@@ -1249,8 +1377,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: 24.0d
+			x: 6.510509505997518d
+			y: 20.86863434938237d
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
@@ -1261,6 +1389,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古器官之一"
 			tasks: [{
 				id: "3B0E91B7093E0A90"
@@ -1271,8 +1400,8 @@
 				}
 				type: "item"
 			}]
-			x: 11.0d
-			y: 24.0d
+			x: 7.974795220283241d
+			y: 20.86863434938237d
 		}
 		{
 			dependencies: [
@@ -1296,6 +1425,8 @@
 				""
 				"为此，我们需要&6遗物胸腔&r——这也是我们马上将要做的事情。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "1EEF5DDAC832934C"
 			min_required_dependencies: 3
 			rewards: [{
@@ -1303,6 +1434,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "远古化之后"
 			tasks: [{
 				elapsedTime: 30L
@@ -1312,8 +1444,8 @@
 				type: "questsadditions:time"
 			}]
 			title: "永恒的调查"
-			x: 0.0d
-			y: 26.0d
+			x: 0.010509505997518431d
+			y: 22.082920063668084d
 		}
 		{
 			dependencies: ["2CC7CA595011BE0F"]
@@ -1326,12 +1458,22 @@
 				""
 				"被镌刻的器官在激活时会获得永恒熏香所记录的器官属性，且永恒熏香的属性并不会丢失。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "6D0776424A322770"
-			rewards: [{
-				id: "25314C8BCEB2A008"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "25314C8BCEB2A008"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "55A7D96F035C6ED4"
+					titleId: "kubejs:forever_incense"
+					type: "titles:title"
+				}
+			]
 			subtitle: "往永恒的又一瞥"
 			tasks: [{
 				id: "00A3785E7FB2DE3A"
@@ -1349,6 +1491,7 @@
 				""
 				"注射遗物注射器，您便可以取得您应取得的&6遗物槽位&r。"
 			]
+			hide_until_deps_complete: true
 			id: "2CC7CA595011BE0F"
 			rewards: [
 				{
@@ -1364,7 +1507,13 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "717794C78F115702"
+					item: "kubejs:task_singularity_11"
+					type: "item"
+				}
 			]
+			shape: "none"
 			subtitle: "获得遗物注射器"
 			tasks: [{
 				id: "7B90A63734C6CC7F"
@@ -1373,7 +1522,7 @@
 			}]
 			title: "&6庆贺吧！此乃遗物胸腔！&r"
 			x: 0.0d
-			y: 28.0d
+			y: 26.5d
 		}
 		{
 			dependencies: ["6729015A224A8B14"]
@@ -1384,12 +1533,14 @@
 				""
 				"通过此方式，您可以在战斗中查看造伤的具体情况。"
 			]
+			hide_dependency_lines: true
 			id: "4C6E39BECC5E1E20"
 			rewards: [{
 				id: "7194F458D25BD055"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "多加观察"
 			tasks: [{
 				id: "2EC1A2487211252E"
@@ -1400,8 +1551,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 11.0d
+			x: 4.133389244203009d
+			y: 9.071275427714752d
 		}
 	]
 	title: "传闻：遗物觉醒"

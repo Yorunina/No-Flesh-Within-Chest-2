@@ -1,113 +1,304 @@
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+All Rights Reserved
 
-Creative Commons Corporation ("Creative Commons") is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an "as-is" basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+Copyright (c) 2026 Neha YoruNina. All Rights Reserved.
 
-Using Creative Commons Public Licenses
+========================================================================
+                         Definitions / 定义
+========================================================================
 
-Creative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below. The following considerations are for informational purposes only, are not exhaustive, and do not form part of our licenses.
+In this license, the following terms have the following meanings:
 
-Considerations for licensors: Our public licenses are intended for use by those authorized to give the public permission to use material in ways otherwise restricted by copyright and certain other rights. Our licenses are irrevocable. Licensors should read and understand the terms and conditions of the license they choose before applying it. Licensors should also secure all rights necessary before applying our licenses so that the public can reuse the material as expected. Licensors should clearly mark any material not subject to the license. This includes other CC-licensed material, or material used under an exception or limitation to copyright. More considerations for licensors : wiki.creativecommons.org/Considerations_for_licensors
+- "the Author" or "the Licensor" refers to Neha YoruNina, the creator
+  and rights holder of this modpack's original content.
+- "the Modpack" refers to the Minecraft modpack compilation titled
+  "No Flesh Within Chest 2", including its original content as defined
+  in Section 1.
+- "Original Content" refers to the materials authored by the Author as
+  listed in Section 1.
+- "Third-Party Content" refers to the materials excluded from this
+  license as listed in Section 2.
 
-Considerations for the public: By using one of our public licenses, a licensor grants the public permission to use the licensed material under specified terms and conditions. If the licensor's permission is not necessary for any reason–for example, because of any applicable exception or limitation to copyright–then that use is not regulated by the license. Our licenses grant only permissions under copyright and certain other rights that a licensor has authority to grant. Use of the licensed material may still be restricted for other reasons, including because others have copyright or other rights in the material. A licensor may make special requests, such as asking that all changes be marked or described. Although not required by our licenses, you are encouraged to respect those requests where reasonable. More considerations for the public : wiki.creativecommons.org/Considerations_for_licensees
+========================================================================
+                    Scope of License / 权利边界
+========================================================================
 
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
+No part of the Original Content may be reproduced, distributed, or
+transmitted in any form or by any means, including but not limited to
+copying, re-uploading, mirroring, repackaging, or inclusion in other
+modpacks, without the prior written permission of the Author.
 
-By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+Permission is granted solely for personal, non-commercial use, including
+downloading, installing, and playing the Modpack, as well as running or
+playing on non-commercial servers (whether private or public), provided
+that no monetary fee or commercial benefit is derived from such use.
+Accepting voluntary donations that solely cover reasonable hosting and
+operating costs shall not, by itself, be considered commercial use.
 
-Section 1 – Definitions.
+This license applies ONLY to the Original Content. The rights boundary
+is defined as follows:
 
-a. Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
-b. Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
-c. BY-NC-SA Compatible License means a license listed at creativecommons.org/compatiblelicenses, approved by Creative Commons as essentially the equivalent of this Public License.
-d. Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
-e. Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
-f. Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
-g. License Elements means the license attributes listed in the name of a Creative Commons Public License. The License Elements of this Public License are Attribution, NonCommercial, and ShareAlike.
-h. Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
-i. Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
-j. Licensor means the individual(s) or entity(ies) granting rights under this Public License.
-k. NonCommercial means not primarily intended for or directed towards commercial advantage or monetary compensation. For purposes of this Public License, the exchange of the Licensed Material for other material subject to Copyright and Similar Rights by digital file-sharing or similar means is NonCommercial provided there is no payment of monetary compensation in connection with the exchange.
-l. Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
-m. Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
-n. You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
-Section 2 – Scope.
+1. CONTENT COVERED BY THIS LICENSE (All Rights Reserved)
+   The following materials are the original work of the Author and are
+   protected under this "All Rights Reserved" license, to the extent
+   such protection is available under applicable copyright law:
+   - KubeJS scripts and original code authored by the Author within the
+     kubejs/ directory, EXCLUDING any third-party external resources
+     listed in Section 2
+   - Configuration file modifications authored by the Author in config/,
+     defaultconfigs/, and serverconfigs/ (only the modifications;
+     default mod configs remain with their respective authors)
+   - Quest books and quest data authored by the Author
+     (kubejs/data/ftbquests/)
+   - Custom resource packs and textures authored by the Author within
+     resourcepacks/ (only the content authored by the Author)
+   - Custom recipes, loot tables, and tag modifications authored by
+     the Author
+   - The selection, arrangement, and balancing design of this Modpack
+     (compilation copyright, to the extent recognized by applicable law)
 
-a. License grant.
-Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
-A. reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and
-B. produce, reproduce, and Share Adapted Material for NonCommercial purposes only.
-Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
-Term. The term of this Public License is specified in Section 6(a).
-Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
-Downstream recipients.
-A. Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
-B. Additional offer from the Licensor – Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter's License You apply.
-C. No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
-No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
-b. Other rights.
-Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
-Patent and trademark rights are not licensed under this Public License.
-To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties, including when the Licensed Material is used other than for NonCommercial purposes.
-Section 3 – License Conditions.
+2. CONTENT NOT COVERED BY THIS LICENSE (Third-Party Rights)
+   The following materials are NOT owned by the Author and are
+   EXPLICITLY EXCLUDED from this license. They retain their respective
+   original licenses, copyrights, and terms set by their original
+   authors:
+   - All mods located in the "mods/" directory
+   - All mod jar files, regardless of their license (MIT, LGPL, GPL,
+     Apache 2.0, custom licenses, etc.)
+   - Default config files shipped with each mod (as authored by the mod
+     developer; only the modifications made by the Author are covered
+     by Section 1 of this license)
+   - Default assets, textures, and code shipped with each mod
+   - Libraries and dependencies located in the "libraries/" directory
+   - Minecraft itself and its assets, owned by Mojang AB / Microsoft
+   - External resources bundled within the kubejs/ directory, including
+     but not limited to the following (and any other third-party content
+     clearly identifiable as external):
+       * kubejs/data/ATI Structures/    (third-party structure data)
+       * kubejs/data/Chest Village/     (third-party structure data)
+       * kubejs/data/saturated/         (third-party data pack content)
+       * kubejs/assets/CreateWaystones/ (third-party asset pack)
+     These resources are the work of their respective authors and are
+     NOT covered by this license. They retain their original licenses,
+     and any redistribution must comply with their respective authors'
+     terms.
 
-Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+3. NO CLAIM OF OWNERSHIP
+   The Author does not claim any copyright, ownership, or distribution
+   rights over the Third-Party Content or Minecraft itself. All
+   trademarks and copyrights belong to their respective owners.
 
-a. Attribution.
-If You Share the Licensed Material (including in modified form), You must:
-A. retain the following if it is supplied by the Licensor with the Licensed Material:
+4. UPSTREAM COMPLIANCE
+   The Modpack is a compilation of independently licensed third-party
+   mods and Original Content. Where a third-party mod's license (e.g.,
+   GPL, LGPL, AGPL) imposes copyleft obligations on derivative works,
+   such obligations apply only to the extent legally required for the
+   specific third-party content and its derivatives, and do not
+   automatically extend to the independently authored Original Content
+   of this Modpack. If any conflict arises between this license and an
+   upstream copyleft license, the stricter terms shall prevail for the
+   affected third-party content only. The user is responsible for
+   verifying compliance with all upstream licenses.
 
-i. identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
-ii. a copyright notice;
-iii. a notice that refers to this Public License;
-iv. a notice that refers to the disclaimer of warranties;
-v. a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
-B. indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+5. STREAMING AND CONTENT CREATION
+   Permission is granted to record, stream, screenshot, and create
+   derivative audiovisual content (such as Let's Play videos, live
+   streams, and reviews) featuring the Modpack on platforms such as
+   YouTube, Bilibili, Twitch, and similar services, provided that:
+   (a) such use is primarily non-commercial in nature (monetization
+       via standard platform ad programs or voluntary tips is
+       permitted, but direct paywalling of Modpack access is not);
+   (b) reasonable attribution is provided to the Author in the video
+       description or equivalent metadata (e.g., a link to the
+       official release channel and the Modpack name).
+   This permission extends only to the Original Content and does not
+   override any restrictions imposed by Third-Party Content licenses.
 
-C. indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
+6. DISCLAIMER OF WARRANTIES
+   THE MODPACK AND ITS ORIGINAL CONTENT ARE PROVIDED "AS IS", WITHOUT
+   WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+   TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE, AND NON-INFRINGEMENT. TO THE EXTENT PERMITTED BY APPLICABLE
+   LAW, THE AUTHOR SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT,
+   INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM
+   THE USE OF OR INABILITY TO USE THE MODPACK.
 
-You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
-If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
-b. ShareAlike.In addition to the conditions in Section 3(a), if You Share Adapted Material You produce, the following conditions also apply.
-The Adapter's License You apply must be a Creative Commons license with the same License Elements, this version or later, or a BY-NC-SA Compatible License.
-You must include the text of, or the URI or hyperlink to, the Adapter's License You apply. You may satisfy this condition in any reasonable manner based on the medium, means, and context in which You Share Adapted Material.
-You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, Adapted Material that restrict exercise of the rights granted under the Adapter's License You apply.
-Section 4 – Sui Generis Database Rights.
+7. SEVERABILITY
+   If any provision of this license is held to be unenforceable, invalid,
+   or illegal by a court of competent jurisdiction, such provision shall
+   be severed and the remaining provisions shall remain in full force
+   and effect.
 
-Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
+8. TERMINATION
+   This license is granted conditionally on the user's compliance with
+   its terms. Any violation of this license by the user shall result in
+   automatic termination of the rights granted herein, effective
+   immediately and without notice. Upon termination, the user must
+   cease all reproduction, distribution, and use of the Original
+   Content. Rights may be reinstated at the sole discretion of the
+   Author if the violating user cures the violation within 30 days of
+   becoming aware of it and provides written assurance of future
+   compliance.
 
-a. for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database for NonCommercial purposes only;
-b. if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and
-c. You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
-For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
-Section 5 – Disclaimer of Warranties and Limitation of Liability.
+9. CHANGES TO THIS LICENSE
+   The Author reserves the right to modify this license at any time.
+   The version of the license in effect at the time of distribution
+   governs the corresponding copy of the Modpack.
 
-a. Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
-b. To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
-c. The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
-Section 6 – Term and Termination.
+10. AI-GENERATED CONTENT NOTICE AND FALLBACK
+    This license document was drafted with the assistance of artificial
+    intelligence (AI) tools. While reasonable effort has been made to
+    ensure its accuracy and legal validity, no representation or
+    warranty is made that the AI-generated portions are free from error,
+    legally enforceable, or suitable for any particular jurisdiction.
+    In the event that any AI-generated provision of this license is
+    found to be invalid, unenforceable, ambiguous, or otherwise
+    defective, the affected content shall revert to the default "All
+    Rights Reserved" status as if such provision had not been
+    included—that is, no rights beyond those granted by default under
+    applicable copyright law shall be deemed granted to any user, and
+    all rights not expressly and validly granted herein are reserved by
+    the Author. This fallback clause shall not affect the validity of
+    any other provision that is not AI-generated or that is
+    independently valid under applicable law.
 
-a. This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
+11. LANGUAGE
+    This license is provided in both English and Chinese. In the event
+    of any conflict or inconsistency between the two versions, the
+    English version shall prevail and be considered authoritative.
 
-b. Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
+For licensing inquiries or redistribution permission, please contact
+the Author (Neha YoruNina) via the official release channel where you
+obtained this Modpack.
 
-automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
-upon express reinstatement by the Licensor.
-For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
+========================================================================
+                    中文版本 (Chinese Translation)
+========================================================================
 
-c. For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
+保留所有权利
 
-d. Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+版权所有 (c) 2026 Neha YoruNina。保留所有权利。
 
-Section 7 – Other Terms and Conditions.
+========================================================================
+                            定义
+========================================================================
 
-a. The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
-b. Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
-Section 8 – Interpretation.
+本许可证中，下列术语具有以下含义：
 
-a. For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
-b. To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
-c. No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
-d. Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
-Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the "Licensor." The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark "Creative Commons" or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.
+- "作者"或"许可方"指 Neha YoruNina，即本整合包原创内容的创作者
+  与权利持有人。
+- "本整合包"指名为「No Flesh Within Chest 2」的 Minecraft 整合包
+  汇编作品，包括第 1 节定义的原创内容。
+- "原创内容"指由作者创作、列于第 1 节的材料。
+- "第三方内容"指依第 2 节排除在本许可证之外的材料。
 
-Creative Commons may be contacted at creativecommons.org.
+========================================================================
+                    权利边界 / Scope of License
+========================================================================
+
+未经作者事先书面许可，任何人不得以任何形式或任何方式复制、分发或传播
+原创内容的任何部分，包括但不限于：复制、重新上传、镜像、重新打包，
+或将本整合包包含在其他整合包中。
+
+本整合包仅允许用于个人非商业用途，包括下载、安装、游玩本整合包，以及
+在非商业服务器（无论私人或公开）上运行或游玩本整合包，前提是不得从中
+获取金钱费用或商业利益。接受仅用于覆盖合理托管与运营成本的自愿捐赠，
+本身不视为商业用途。
+
+本许可证仅适用于原创内容。权利边界如下：
+
+1. 受本许可证约束的内容 (All Rights Reserved)
+   以下内容为作者的原创作品，在适用著作权法保护范围内，受本「保留
+   所有权利」许可证保护：
+   - KubeJS 脚本及由作者在 kubejs/ 目录下创作的原创代码，但不包括
+     第 2 节中列出的第三方外部资源
+   - 由作者在 config/、defaultconfigs/、serverconfigs/ 中所做的配置
+     文件修改（仅修改部分；Mod 默认配置仍归各自作者所有）
+   - 由作者创作的任务书及任务数据 (kubejs/data/ftbquests/)
+   - 由作者在 resourcepacks/ 中创作的自定义资源包及贴图（仅限由作者
+     创作的内容）
+   - 由作者创作的自定义配方、战利品表及标签修改
+   - 本整合包的选择、编排与平衡性设计（汇编作品著作权，在适用法律
+     承认的范围内）
+
+2. 不受本许可证约束的内容 (第三方权利)
+   以下内容不属于作者所有，明确排除在本许可证之外。它们保留各自的
+   原始许可证、著作权及原作者设定的条款：
+   - 位于 "mods/" 目录下的所有 Mod
+   - 所有 Mod 的 jar 文件，无论其采用何种许可证 (MIT、LGPL、GPL、
+     Apache 2.0、自定义许可证等)
+   - 各 Mod 自带的默认配置文件 (由 Mod 开发者创作；仅作者所做的
+     修改部分受本许可证第 1 节约束)
+   - 各 Mod 自带的默认资产、贴图及代码
+   - 位于 "libraries/" 目录下的库文件及依赖
+   - Minecraft 游戏本体及其资产，归 Mojang AB / Microsoft 所有
+   - kubejs/ 目录下捆绑的外部资源，包括但不限于以下内容（以及其他
+     可明确识别为第三方的内容）：
+       * kubejs/data/ATI Structures/    (第三方结构数据)
+       * kubejs/data/Chest Village/     (第三方结构数据)
+       * kubejs/data/saturated/         (第三方数据包内容)
+       * kubejs/assets/CreateWaystones/ (第三方资源包)
+     这些资源为各自原作者的作品，不受本许可证约束。它们保留各自的
+     原始许可证，任何二次分发必须遵守各自作者的条款。
+
+3. 不主张所有权
+   作者不对第三方内容或 Minecraft 游戏本体主张任何著作权、所有权
+   或分发权。所有商标及著作权均归各自所有者所有。
+
+4. 上游合规性
+   本整合包是独立许可的第三方 Mod 与原创内容的汇编。当第三方 Mod 的
+   许可证（例如 GPL、LGPL、AGPL）对衍生作品施加 copyleft 义务时，
+   此类义务仅在法律对该特定第三方内容及其衍生作品所要求的范围内
+   适用，并不自动延伸至本整合包中独立创作的原创内容。若本许可证与
+   上游 copyleft 许可证发生冲突，就受影响的第三方内容而言，以较严格
+   的条款为准。使用者有责任核实并遵守所有上游许可证。
+
+5. 直播与内容创作
+   允许在 YouTube、Bilibili、Twitch 等平台录制、直播、截图本整合包
+   并创作衍生音视频内容（如实况解说视频、直播、评测等），前提是：
+   (a) 此类使用主要为非商业性质（通过平台标准广告计划或自愿打赏
+       变现是允许的，但不得直接对本整合包的访问设置付费门槛）；
+   (b) 在视频描述或同等元数据中合理注明作者（例如提供官方发布
+       渠道链接和整合包名称）。
+   本许可仅延伸至原创内容，不覆盖第三方内容许可证所施加的任何限制。
+
+6. 免责声明
+   本整合包及其原创内容按"现状"（AS IS）提供，不附带任何形式的明示
+   或默示担保，包括但不限于适销性、特定用途适用性及不侵权的担保。
+   在适用法律允许的范围内，作者对因使用或无法使用本整合包而产生的
+   任何直接、间接、附带、特殊、后果性或惩罚性损失不承担责任。
+
+7. 可分割性
+   若本许可证的任何条款被有管辖权的法院认定为不可执行、无效或违法，
+   该条款应予分离，其余条款仍保持完全效力。
+
+8. 终止
+   本许可证以使用者遵守其条款为条件授予。使用者一旦违反本许可证，
+   本许可证授予的权利即自动终止，立即生效且无需通知。终止后，使用者
+   必须停止一切对原创内容的复制、分发和使用。若违规使用者在得知违规
+   后 30 日内予以纠正并提供书面未来合规保证，作者可酌情决定恢复其
+   权利。
+
+9. 许可证变更
+   作者保留随时修改本许可证的权利。分发时有效的许可证版本管辖相应
+   副本的使用。
+
+10. AI 生成内容提示与兜底条款
+    本许可证文件系借助人工智能 (AI) 工具协助起草。虽然已尽合理努力
+    确保其准确性与法律有效性，但不就 AI 生成部分是否免于错误、是否
+    具有法律可执行性、或是否适用于任何特定司法管辖区作出任何陈述或
+    担保。若本许可证中任何 AI 生成条款被认定为无效、不可执行、存在
+    歧义或存在其他缺陷，该受影响内容应回归至默认的「保留所有权利」
+    (All Rights Reserved) 状态，视同该条款从未被纳入本许可证——即：
+    除适用著作权法默认授予的权利外，不得视为向任何使用者授予任何
+    额外权利，本许可证未明确且有效授予的一切权利均由作者保留。本
+    兜底条款不影响任何非 AI 生成条款或在适用法律下独立有效之其他
+    条款的效力。
+
+11. 语言
+    本许可证以英文和中文同时提供。若两版本发生冲突或不一致，以英文
+    版本为准并视为权威版本。
+
+如需获取许可授权或二次分发许可，请通过您获取本整合包的官方发布渠道
+联系作者 (Neha YoruNina)。
+
+注：本中文版本仅供参考，如有与英文版本不一致之处，以英文版本为准。

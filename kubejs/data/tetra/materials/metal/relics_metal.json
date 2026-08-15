@@ -1,0 +1,27 @@
+{
+    "key": "relics_metal",
+    "category": "metal",
+    "primary": 8.2,
+    "secondary": 5.0,
+    "tertiary": 3.1,
+    "durability": 480,
+    "integrityCost": 4,
+    "integrityGain": 3,
+    "magicCapacity": 120,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "f0d891",
+        "texture": "d9bf73"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "kubejs:relics_metal" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:gold"
+    }
+}

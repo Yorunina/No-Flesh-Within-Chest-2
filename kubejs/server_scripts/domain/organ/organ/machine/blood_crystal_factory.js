@@ -21,7 +21,7 @@ const BloodCrystalFactoryTempArmorUpIdentifier = 'BloodCrystalFactoryArmorUp'
 function BloodCrystalFactoryEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const server = event.server
-    if (entity.age % 1200 != 0) return
+    if (entity.age % 60 != 0) return
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()
@@ -61,15 +61,18 @@ function BloodCrystalFactoryEntityTick(customData, event, organItem, organIndex,
     for (let i = 0; i < itemHandler.getSlots(); i++) {
         let pItem = itemHandler.getStackInSlot(i)
         if (pItem.is('kubejs:alpha_pheromone_serum')) {
-            attack += 1
+            attack += pItem.getCount()
+            itemHandler.extractItem(i, pItem.getCount(), false)
             continue
         }
         if (pItem.is('kubejs:beta_pheromone_serum')) {
-            armor += 1
+            armor += pItem.getCount()
+            itemHandler.extractItem(i, pItem.getCount(), false)
             continue
         }
         if (pItem.is('kubejs:gamma_pheromone_serum')) {
-            health += 1
+            health += pItem.getCount()
+            itemHandler.extractItem(i, pItem.getCount(), false)
             continue
         }
     }

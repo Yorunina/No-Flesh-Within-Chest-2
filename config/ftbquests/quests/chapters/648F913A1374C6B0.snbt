@@ -676,6 +676,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "418EB651DB59D1E1"
+					item: "kubejs:task_singularity_7"
+					type: "item"
+				}
 			]
 			shape: "none"
 			subtitle: "此心予我"

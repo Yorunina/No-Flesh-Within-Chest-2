@@ -5,29 +5,45 @@ check_icon: ftbquests:textures/gui/complete.png
 checkmark_task_active: ftbquests:textures/gui/checkmark_task_active.png
 checkmark_task_inactive: ftbquests:textures/gui/checkmark_task_inactive.png
 
-# 壹
+# 序章
 [0AC42F4BE2EDBB08]
 background: kubejs:textures/gui/tasks/background/chapter_1_background.png; color=rgb(0, 0, 0); tile_size=64
 dependency_line_texture: kubejs:textures/gui/tasks/background/dependency_1.png
 dependency_line_completed_color: #ffffff
 
-# 认知：胸腔
+# 常识：胸腔
 [2218D095B234A44A]
 background: kubejs:textures/gui/tasks/background/chestcavity_background.png; color=rgb(0, 0, 0); tile_size=64
 
-# 认知：机械
+# 常识：机械
 [425DDADD8D67FA09]
 background: kubejs:textures/gui/tasks/background/machine_background.png; color=rgb(0, 0, 0); tile_size=64
 
-# 认知：魔源
+# 常识：魔源
 [3141E7EEF2FD1ABE]
 background: kubejs:textures/gui/tasks/background/magic_background.png; color=rgb(0, 0, 0); tile_size=64
 
-# 认知：匠艺
+# 常识：匠艺
 [450DBC0CF3ED321E]
 background: kubejs:textures/gui/tasks/background/tetra_background.png; color=rgb(0, 0, 0); tile_size=64
 
-# 引
+# 常识：世界
+[49C917C19A46CA3C]
+background: kubejs:textures/gui/tasks/background/the_world_background.png; color=rgb(0, 0, 0); tile_size=64
+
+# 可能
+[2F127C50E2FDB1F0]
+background: kubejs:textures/gui/tasks/background/possibility_background.png; color=rgb(0, 0, 0); tile_size=64
+
+# 血肉孢子
+[1E27D16084D6A3C7]
+background: kubejs:textures/gui/tasks/background/flesh_wart_background.png; color=rgb(0, 0, 0); tile_size=64
+
+# 遗物觉醒
+[40F1AA2ECEA15525]
+background: kubejs:textures/gui/tasks/background/relics_background.png; color=rgb(0, 0, 0); tile_size=64
+
+# 引子
 [167CD65AF2F0E691]
 background: kubejs:textures/gui/tasks/background/prologue_background.png; color=rgb(0, 0, 0); tile_size=64
 

@@ -841,6 +841,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "50F62EAA6F118919"
+					item: "kubejs:task_singularity_1"
+					type: "item"
+				}
 			]
 			shape: "square"
 			size: 1.5d

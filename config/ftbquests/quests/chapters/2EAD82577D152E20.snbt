@@ -2409,6 +2409,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "6FE3F324658CDA8C"
+					item: "kubejs:task_singularity_2"
+					type: "item"
+				}
 			]
 			shape: "none"
 			subtitle: "来吧，来到这无穷无尽的图书馆"

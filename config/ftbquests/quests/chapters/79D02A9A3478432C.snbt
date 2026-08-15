@@ -1874,6 +1874,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "3540026C57738DB1"
+					item: "kubejs:task_singularity_6"
+					type: "item"
+				}
 			]
 			shape: "none"
 			subtitle: "我奉行我之准则"

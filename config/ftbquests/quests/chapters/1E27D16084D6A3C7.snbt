@@ -9,6 +9,59 @@
 		tag: { }
 	}
 	id: "1E27D16084D6A3C7"
+	images: [
+		{
+			dependency: "73AC29CE33479E8A"
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/flesh_wart/plant_manual.png"
+			rotation: 0.0d
+			width: 37.5d
+			x: -6.5d
+			y: 14.5d
+		}
+		{
+			dependency: "73AC29CE33479E8A"
+			height: 12.0d
+			image: "kubejs:textures/gui/tasks/flesh_wart/gene.png"
+			rotation: 0.0d
+			width: 28.44d
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/flesh_wart/task_link.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -14.0d
+			y: 24.5d
+		}
+		{
+			dependency: "1E7CD654764B508D"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/flesh_wart/plant_task_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: -2.0d
+			y: 24.5d
+		}
+		{
+			height: 4.0d
+			image: "kubejs:textures/gui/tasks/flesh_wart/title_flesh.png"
+			rotation: 0.0d
+			width: 13.392d
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			height: 4.3d
+			image: "kubejs:textures/gui/tasks/flesh_wart/title_wart.png"
+			rotation: 0.0d
+			width: 12.5d
+			x: 0.8412528105670702d
+			y: -5.082536238326931d
+		}
+	]
 	order_index: 9
 	quest_links: [ ]
 	quests: [
@@ -19,6 +72,7 @@
 				""
 				"想要完全发掘它们的潜力，我们需要制作&6作物架&r，并且使用特殊的方法进行培育。"
 			]
+			hide_until_deps_complete: true
 			id: "25E0023B9DF54C2C"
 			rewards: [{
 				id: "3266E40C62F92EF9"
@@ -44,6 +98,7 @@
 				""
 				"具体属性的作用，我已经将其打印成&6农业日志&r分发给您，请您有空阅读。"
 			]
+			hide_until_deps_complete: true
 			id: "73AC29CE33479E8A"
 			rewards: [
 				{
@@ -65,7 +120,7 @@
 			}]
 			title: "种子分析"
 			x: 0.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -76,6 +131,7 @@
 				""
 				"远古作物本身如果用于种植，可以生产不同的血肉材料，但其更重要的便是用于更多种子的杂交。"
 			]
+			hide_until_deps_complete: true
 			id: "16BC90547AAC6998"
 			rewards: [{
 				id: "474A2CB90C93C7DB"
@@ -93,7 +149,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -106,6 +162,7 @@
 				""
 				"因此，土壤的选择虽然重要，但仍可以通过作物本身的培养来克服这些困难。"
 			]
+			hide_until_deps_complete: true
 			id: "1CD0E619EF33D8D5"
 			rewards: [{
 				id: "3F807546179395AD"
@@ -119,8 +176,8 @@
 				type: "item"
 			}]
 			title: "选择土壤"
-			x: 2.0d
-			y: 2.0d
+			x: 2.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["16BC90547AAC6998"]
@@ -183,7 +240,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["16BC90547AAC6998"]
@@ -246,7 +303,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["16BC90547AAC6998"]
@@ -309,7 +366,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 5.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1CD0E619EF33D8D5"]
@@ -341,8 +398,8 @@
 				type: "item"
 			}]
 			title: "杂交工艺"
-			x: 4.0d
-			y: 2.0d
+			x: 5.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
@@ -353,15 +410,23 @@
 				""
 				"因此，理论来说，&6只要有 9 点的收获属性，就可以获得到最大的收获收益。&r"
 			]
+			icon_scale: 1.2d
 			id: "3269D57BA3493FA9"
 			rewards: [{
 				id: "50EAE0DBD145DF09"
 				item: "kubejs:infinity_soil"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "通往植物大师之路"
 			tasks: [{
-				icon: "minecraft:wheat_seeds"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:textures/gui/tasks/flesh_wart/icon_harvest.png"
+					}
+				}
 				id: "5F2F336B6B26CA1E"
 				item: {
 					Count: 1
@@ -374,21 +439,29 @@
 				type: "item"
 			}]
 			title: "杂交之路 - 收获"
-			x: 8.0d
-			y: 0.5d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
 			description: ["生长属性定义了&6作物在执行生长刻时进阶到下一阶段的概率&r——这可以通俗理解为，生长属性越高，作物的生长速度越快。"]
+			icon_scale: 1.2d
 			id: "6AEA1A1CA22ABAA1"
 			rewards: [{
 				id: "06F4F37D473ECB55"
 				item: "kubejs:infinity_soil"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "通往植物大师之路"
 			tasks: [{
-				icon: "minecraft:wheat_seeds"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:textures/gui/tasks/flesh_wart/icon_growth.png"
+					}
+				}
 				id: "28B823944F73E641"
 				item: {
 					Count: 1
@@ -401,8 +474,8 @@
 				type: "item"
 			}]
 			title: "杂交之路 - 生长"
-			x: 8.0d
-			y: 2.0d
+			x: 8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
@@ -415,15 +488,23 @@
 				""
 				"&6突变为 10 时，则100%会产生正向突变。&r"
 			]
+			icon_scale: 1.2d
 			id: "53A3B635F7A567C6"
 			rewards: [{
 				id: "33CC6A16D4D8A1ED"
 				item: "kubejs:infinity_soil"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "通往植物大师之路"
 			tasks: [{
-				icon: "minecraft:wheat_seeds"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:textures/gui/tasks/flesh_wart/icon_mutation.png"
+					}
+				}
 				id: "027955C6866A21B9"
 				item: {
 					Count: 1
@@ -436,8 +517,8 @@
 				type: "item"
 			}]
 			title: "杂交之路 - 突变"
-			x: 8.0d
-			y: 3.5d
+			x: 8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
@@ -450,15 +531,23 @@
 				""
 				"&6繁衍越高，在交叉作物架的杂交过程中，它更有机会把自己的基因传给下一代。&r"
 			]
+			icon_scale: 1.2d
 			id: "196867677EBA8420"
 			rewards: [{
 				id: "1990A52C20C6C966"
 				item: "kubejs:infinity_soil"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "通往植物大师之路"
 			tasks: [{
-				icon: "minecraft:wheat_seeds"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:textures/gui/tasks/flesh_wart/icon_reproduction.png"
+					}
+				}
 				id: "40F16B68858925D4"
 				item: {
 					Count: 1
@@ -471,8 +560,8 @@
 				type: "item"
 			}]
 			title: "杂交之路 - 繁衍"
-			x: 8.0d
-			y: -1.0d
+			x: 8.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
@@ -487,15 +576,23 @@
 				""
 				"因此，&6将作物培育出较高的适应属性有助于使用生长系数更高的土壤以加快产出。&r"
 			]
+			icon_scale: 1.2d
 			id: "439C4B6E25626CE7"
 			rewards: [{
 				id: "7473F5A94B67B990"
 				item: "kubejs:infinity_soil"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "通往植物大师之路"
 			tasks: [{
-				icon: "minecraft:wheat_seeds"
+				icon: {
+					Count: 1
+					id: "ftbquests:custom_icon"
+					tag: {
+						Icon: "kubejs:textures/gui/tasks/flesh_wart/icon_adaptation.png"
+					}
+				}
 				id: "54544C56D65BA7C6"
 				item: {
 					Count: 1
@@ -508,8 +605,8 @@
 				type: "item"
 			}]
 			title: "杂交之路 - 适应"
-			x: 8.0d
-			y: 5.0d
+			x: 8.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -570,20 +667,36 @@
 				title: "法师之花种子"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 7.0d
+			x: 1.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
 				"0574A75B6E1E40FB"
 				"36C5778B61447524"
 			]
+			description: [
+				"法师之花和软骨丝进行杂交时，概率会产生一个极其特殊的结果——&6肺樱&r！"
+				""
+				"肺樱是一种非生产型作物，其可能的产出结果为&6百合肺叶&r或&6樱骨&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/flesh_wart/pg_bilung_cherry.png"
+				}
+			}
+			icon_scale: 4.0d
 			id: "5207ADD4211DB1F4"
 			rewards: [{
 				id: "746776FFCEEBACD4"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "奇异的课题结论！"
 			tasks: [{
 				icon: {
@@ -633,8 +746,8 @@
 				title: "肺樱种子"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 8.5d
+			x: 1.32d
+			y: 15.89d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -701,8 +814,8 @@
 				title: "亚麻种子"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 7.0d
+			x: -14.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -716,12 +829,23 @@
 				""
 				"&6木灵灵质&r对后续作物的增产帮助极大，建议您尽早获取。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/flesh_wart/pg_spiritcage_fruit.png"
+				}
+			}
+			icon_scale: 4.0d
 			id: "7CE0F6503A1688A4"
 			rewards: [{
 				id: "1022545C353AEAF6"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "奇异的课题结论！"
 			tasks: [{
 				icon: {
@@ -771,8 +895,8 @@
 				title: "灵笼果种子"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 8.5d
+			x: -14.45d
+			y: 15.75d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -833,8 +957,8 @@
 				title: "甜浆果种子"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 7.0d
+			x: -9.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -846,12 +970,23 @@
 				""
 				"梅肾蘑是一种非生产型作物，其可能的产出结果为&6活肉莓果&r或&6啤酒肾&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/flesh_wart/pg_plumkidney_mushroom.png"
+				}
+			}
+			icon_scale: 4.0d
 			id: "34D7C5AA137D9449"
 			rewards: [{
 				id: "51488E2F01E6E180"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "奇异的课题结论！"
 			tasks: [{
 				icon: {
@@ -901,8 +1036,8 @@
 				title: "梅肾蘑孢子"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 8.5d
+			x: -9.25d
+			y: 15.85d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -963,8 +1098,8 @@
 				title: "下界疣孢子"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 7.0d
+			x: -4.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -976,7 +1111,18 @@
 				""
 				"扭盖菌是一种非生产型作物，其可能的产出结果为&6绯红脑&r或&6扭结绯红肠&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/flesh_wart/pg_crimson_brain.png"
+				}
+			}
+			icon_scale: 4.0d
 			id: "2C1F1CF75F69653E"
+			shape: "none"
 			subtitle: "奇异的课题结论！"
 			tasks: [{
 				icon: {
@@ -1026,8 +1172,8 @@
 				title: "扭盖菌孢子"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 8.5d
+			x: -3.98d
+			y: 15.95d
 		}
 		{
 			dependencies: [
@@ -1039,12 +1185,23 @@
 				""
 				"椎壳花是一种非生产型作物，其可能的产出结果为&6膨大花蕊&r或&6巨噬花茎&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/flesh_wart/pg_verteshell_flower.png"
+				}
+			}
+			icon_scale: 4.0d
 			id: "3BF6D4382987C474"
 			rewards: [{
 				id: "2D346BD56F78802A"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "奇异的课题结论！"
 			tasks: [{
 				icon: {
@@ -1094,8 +1251,8 @@
 				title: "椎壳花种子"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.5d
+			x: 6.53d
+			y: 15.82d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -1192,8 +1349,8 @@
 				title: "生菜种子"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 7.0d
+			x: 6.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1205,12 +1362,23 @@
 				""
 				"肝草是一种非生产型作物，其唯一可能的产出结果为&6活肉玫瑰肝&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/flesh_wart/pg_livergrass.png"
+				}
+			}
+			icon_scale: 4.0d
 			id: "4D5B0DE5C50958CB"
 			rewards: [{
 				id: "059A5723E05F8130"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "none"
 			subtitle: "奇异的课题结论！"
 			tasks: [{
 				icon: {
@@ -1260,8 +1428,8 @@
 				title: "肝草种子"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 8.5d
+			x: -19.7d
+			y: 15.85d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -1322,8 +1490,8 @@
 				title: "小麦种子"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 7.0d
+			x: -19.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -1337,13 +1505,22 @@
 				""
 				"在炼狱芦苇的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_until_deps_complete: true
 			icon: "agricraft:netherite_sliver"
 			id: "287E5613684EAF8A"
-			rewards: [{
-				id: "60897E2BD17E4B95"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "60897E2BD17E4B95"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "6CF83CF20117F9D0"
+					titleId: "kubejs:farmer_delight"
+					type: "titles:title"
+				}
+			]
 			subtitle: "利用植物改善生产"
 			tasks: [{
 				icon: {
@@ -1393,8 +1570,8 @@
 				title: "炼狱芦苇种子"
 				type: "item"
 			}]
-			x: -13.5d
-			y: 2.0d
+			x: -22.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["62E9CB57569D552F"]
@@ -1405,6 +1582,8 @@
 				""
 				"在朱顶绿的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "agricraft:emerald_shard"
 			id: "1447BEDDB07EC1E7"
 			rewards: [{
@@ -1461,8 +1640,8 @@
 				title: "朱顶绿种子"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 2.0d
+			x: -20.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1476,6 +1655,7 @@
 				""
 				"在金刚大丽的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:diamond"
 			id: "4BB0AC8AAF19E6DD"
 			rewards: [{
@@ -1532,8 +1712,8 @@
 				title: "金刚大丽种子"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 3.5d
+			x: -19.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["09796DB8E7F508F4"]
@@ -1544,6 +1724,8 @@
 				""
 				"在石英菊的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "agricraft:quartz_shard"
 			id: "62E9CB57569D552F"
 			rewards: [{
@@ -1600,8 +1782,8 @@
 				title: "石英菊种子"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 2.0d
+			x: -17.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0B4CE5D58AD3D310"]
@@ -1612,6 +1794,9 @@
 				""
 				"在紫晶花的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			icon: "agricraft:amathyllis_petal"
 			id: "55129AF3380D7FAA"
 			rewards: [{
@@ -1668,7 +1853,7 @@
 				title: "紫晶花种子"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -11.5d
 			y: 3.5d
 		}
 		{
@@ -1680,6 +1865,8 @@
 				""
 				"在闪耀疣的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:glowstone_dust"
 			id: "09796DB8E7F508F4"
 			rewards: [{
@@ -1736,8 +1923,8 @@
 				title: "闪耀疣孢子"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 2.0d
+			x: -15.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0B4CE5D58AD3D310"]
@@ -1748,6 +1935,8 @@
 				""
 				"在红灌木的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:gold_nugget"
 			id: "33355D4849FFD6D8"
 			rewards: [{
@@ -1804,7 +1993,7 @@
 				title: "金光花种子"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -13.0d
 			y: 2.0d
 		}
 		{
@@ -1816,6 +2005,7 @@
 				""
 				"在红灌木的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:redstone"
 			id: "0B4CE5D58AD3D310"
 			rewards: [{
@@ -1872,8 +2062,8 @@
 				title: "红灌木种子"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 2.0d
+			x: -11.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -1887,6 +2077,8 @@
 				""
 				"在蓝薰衣的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:lapis_lazuli"
 			id: "349BE75979DD5489"
 			rewards: [{
@@ -1943,8 +2135,8 @@
 				title: "蓝薰衣种子"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 2.0d
+			x: -8.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["62C35BEA5E37DCD5"]
@@ -1954,6 +2146,7 @@
 				"如果您无法找到&6矢车菊&r，也可以尝试&6通过杂交来获取&r——在杂交流程中的大部分染料作物大都可以通过这种方式将花朵转化为对应的种子。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:blue_dye"
 			id: "6C51BF4948F21EDD"
 			rewards: [{
@@ -2010,8 +2203,8 @@
 				title: "矢车菊种子"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.5d
+			x: -8.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -2020,6 +2213,7 @@
 				""
 				"作物架上的南瓜种子并&6不会结出方块形式的南瓜&r作为产物——它会如同普通作物一样，右键收割后获得南瓜物品。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:pumpkin"
 			id: "43E5DE89BA28671E"
 			rewards: [{
@@ -2076,8 +2270,8 @@
 				title: "南瓜种子"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
@@ -2086,6 +2280,7 @@
 				""
 				"作物架上的西瓜种子并&6不会结出方块形式的瓜块&r作为产物——它会如同普通作物一样，右键收割后获得西瓜片。"
 			]
+			hide_until_deps_complete: true
 			icon: "minecraft:melon"
 			id: "6350B7BA52C1A4B1"
 			rewards: [{
@@ -2142,7 +2337,7 @@
 				title: "西瓜种子"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -4.0d
 			y: 1.0d
 		}
 		{
@@ -2159,6 +2354,8 @@
 				""
 				"在铁叶草的&6适应等级达到4之后，便可以不需要再在下方放置铁矿石&r，因此请多多培育作物！"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:iron_nugget"
 			id: "62C35BEA5E37DCD5"
 			rewards: [{
@@ -2215,8 +2412,8 @@
 				title: "铁叶草种子"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.0d
+			x: -6.357142857142854d
+			y: 2.767857142857146d
 		}
 		{
 			dependencies: ["1CD0E619EF33D8D5"]
@@ -2274,7 +2471,7 @@
 				type: "item"
 			}]
 			title: "选择合适的肥料"
-			x: 2.0d
+			x: 2.5d
 			y: 0.0d
 		}
 		{
@@ -2286,6 +2483,8 @@
 				""
 				"通过该器官，&6若对方身上存在活肉霉毒效果，则会尝试延长该毒素的持续时间&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "29E45355EA60C4E6"
 			rewards: [{
 				id: "00953E53C4C90984"
@@ -2304,8 +2503,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 11.0d
+			x: -11.650241947488396d
+			y: 21.022570580745125d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2314,6 +2513,8 @@
 				""
 				"通过该器官，可以&6将活肉霉毒关联的属性从攻击力切换到最大生命值&r——这对于某些特定环境有着极其强大的作用。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "3C7660C834B1EDB9"
 			rewards: [{
 				id: "3FFF20DD6803857E"
@@ -2330,8 +2531,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 11.0d
+			x: -16.293099090345535d
+			y: 20.98685629503084d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2340,6 +2541,8 @@
 				""
 				"通过本植物，&6可以轻松的给敌人附加活肉霉毒效果，且将攻击力关联到活肉霉毒毒素效果上&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "571205E4A010E818"
 			rewards: [{
 				id: "2FE8599EE4708D2D"
@@ -2356,8 +2559,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 11.0d
+			x: -14.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2366,6 +2569,8 @@
 				""
 				"通过该器官，&6若对方身上存在活肉霉毒效果，则可以通过消耗对方身上毒素的持续时间为自己抵御伤害&r。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "0F85D05C9B7C69C9"
 			rewards: [{
 				id: "5CD5711E75B72A35"
@@ -2382,8 +2587,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 11.0d
+			x: -10.221670518916966d
+			y: 22.70114200931655d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2392,6 +2597,8 @@
 				""
 				"通过本植物，您可以&6每十次攻击来为敌人赋予恶腐蚀毒效果&r。基于此，您可以在第十次攻击前，通过特殊手段临时提高赋毒攻击的伤害，进而提高持续的毒素伤害。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "1B3DACCFB0C905B7"
 			rewards: [{
 				id: "72BA643138F31449"
@@ -2410,8 +2617,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.0d
-			y: 12.5d
+			x: -15.150241947488396d
+			y: 28.736856295030833d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2420,6 +2627,8 @@
 				""
 				"通过本植物，您可以有效&6提高恶腐蚀毒的等级&r，进而提高输出能力。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "130BE89C7093C6F2"
 			rewards: [{
 				id: "53984A290316C734"
@@ -2436,8 +2645,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
-			y: 12.5d
+			x: -17.90024194748839d
+			y: 22.879713437887972d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2446,6 +2655,8 @@
 				""
 				"通过本植物，您可以在击杀持有恶腐蚀毒的生物时，&6将恶腐蚀毒有效扩散&r，进而提高群体杀伤力。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "555499E0C10FA9C6"
 			rewards: [{
 				id: "6DDAD19FDC2EA059"
@@ -2462,8 +2673,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: 12.5d
+			x: -9.793099090345535d
+			y: 24.522570580745125d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2472,6 +2683,8 @@
 				""
 				"通过本植物，您可以&6立刻结算恶腐蚀毒的持续伤害&r，提高短期的爆发能力。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "6FE8A756ED0793B4"
 			rewards: [{
 				id: "5D0125776CD6FBF8"
@@ -2488,12 +2701,14 @@
 				}
 				type: "item"
 			}]
-			x: -2.5d
-			y: 12.5d
+			x: -10.57881337605982d
+			y: 27.05828486645941d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: ["巨噬花茎能够&6略微延长部分药水的持续时间&r——虽然大多数情况下，这并没有什么作用。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "4271444363CC9CF0"
 			rewards: [{
 				id: "169E613A1BFB39DD"
@@ -2510,8 +2725,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.5d
-			y: 14.0d
+			x: -12.400241947488396d
+			y: 28.70114200931655d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2520,6 +2735,8 @@
 				""
 				"通过啤酒肾触发的效果会&6继承啤酒品质带来的影响&r，其最简单的应用便是通过&6海莉啤酒&r来获得无限期的爱意滑翔效果。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "097DBD22AB0B46BF"
 			rewards: [{
 				id: "2FE59D5EBA796189"
@@ -2536,12 +2753,14 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
-			y: 14.0d
+			x: -17.185956233202674d
+			y: 27.451142009316555d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: ["木灵灵质允许玩家通过潜行催熟&6同一水平面上大范围的作物&r——在非玩家实体上也可以生效。"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "3D4C22EA3CC333B5"
 			rewards: [{
 				id: "5719EBD400B42322"
@@ -2558,8 +2777,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: 14.0d
+			x: -18.185956233202674d
+			y: 25.201142009316555d
 		}
 		{
 			dependencies: ["6BCFAD682406F180"]
@@ -2576,6 +2795,7 @@
 				""
 				"私有配方会使您成为唯一能够制作息壤的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
 			]
+			hide_until_deps_complete: true
 			icon: "kubejs:infinity_soil"
 			id: "5B24D3C8C88CC080"
 			rewards: [{
@@ -2595,8 +2815,8 @@
 				type: "leaderboards:rank_task"
 			}]
 			title: "息壤配方"
-			x: 0.0d
-			y: 17.0d
+			x: 1.5d
+			y: 24.5d
 		}
 		{
 			dependencies: [
@@ -2612,6 +2832,7 @@
 				""
 				"在历史记录中，这种胸腔被简单的称作&6植物胸腔&r，其可以最大幅度发挥这些植物器官的能力，并且&6非常安全&r。"
 			]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "kubejs:vita_rose_liver"
@@ -2697,8 +2918,8 @@
 				type: "item"
 			}]
 			title: "动物与非动物的边界"
-			x: 0.0d
-			y: 10.0d
+			x: -14.0d
+			y: 24.5d
 		}
 		{
 			dependencies: ["1E7CD654764B508D"]
@@ -2711,6 +2932,7 @@
 				""
 				"请您活用这份能力，以便完成我们的冒险故事！"
 			]
+			hide_until_deps_complete: true
 			id: "6BCFAD682406F180"
 			rewards: [
 				{
@@ -2726,7 +2948,13 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "49DD1433CB6CEC9B"
+					item: "kubejs:task_singularity_10"
+					type: "item"
+				}
 			]
+			shape: "none"
 			subtitle: "植物之心"
 			tasks: [{
 				id: "7D7FAA3422A50824"
@@ -2734,8 +2962,8 @@
 				type: "item"
 			}]
 			title: "&6庆贺吧！此乃植物胸腔！&r"
-			x: 0.0d
-			y: 15.5d
+			x: -2.0d
+			y: 24.5d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
@@ -2746,6 +2974,7 @@
 				""
 				"这种果实同样是植物胸腔的重要原料，&6在获得少量迷咕麻菇果后，与三阶注射器在生物锻台合成&r，便能够制成植物注射器。"
 			]
+			hide_until_deps_complete: true
 			id: "1E7CD654764B508D"
 			rewards: [{
 				id: "4765BA8395B658E2"
@@ -2802,8 +3031,8 @@
 				type: "item"
 			}]
 			title: "植物安全手术守则"
-			x: 0.0d
-			y: 14.0d
+			x: -6.0d
+			y: 24.5d
 		}
 		{
 			dependencies: ["62C35BEA5E37DCD5"]
@@ -2814,6 +3043,7 @@
 				""
 				"在卷锌菜的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
 			]
+			hide_until_deps_complete: true
 			icon: "create:zinc_nugget"
 			id: "1FCFCD7C401A7978"
 			rewards: [{
@@ -2870,8 +3100,8 @@
 				title: "卷锌菜种子"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 3.5d
+			x: -6.357142857142854d
+			y: 5.517857142857139d
 		}
 		{
 			dependencies: ["1E7CD654764B508D"]
@@ -2880,6 +3110,7 @@
 				""
 				"被手术麻醉效果影响的生物会&6无法移动且变得易于开胸&r。"
 			]
+			hide_dependency_lines: true
 			id: "0E665908D464191D"
 			rewards: [{
 				id: "3C4BFC9BA99231E1"
@@ -2898,8 +3129,8 @@
 				}
 				type: "item"
 			}]
-			x: 2.5d
-			y: 14.0d
+			x: -6.0d
+			y: 27.0d
 		}
 	]
 	title: "传闻：血肉孢子"

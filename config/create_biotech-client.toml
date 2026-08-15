@@ -1,5 +1,7 @@
 enableShulkerTeleporterCameraOffset = true
 enableShulkerTeleporterPlayerClipping = true
+#Render experience in Create fluid tanks as a conventional fluid instead of experience orbs.
+renderExperienceAsFluid = false
 
 [creeperBlastChamber]
 	enableExplosionParticles = true

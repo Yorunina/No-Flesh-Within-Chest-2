@@ -5,10 +5,10 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .removeEffect((entity, attributeMap, lvl) => {
             const level = entity.level
-            if (level.isClientSide()) return
+            if (level.isClientSide()) return true
             if (entity instanceof $FleshBlob) {
                 let targetEntityType = entity.persistentData.getString('inducerEntityType')
-                if (!targetEntityType) return
+                if (!targetEntityType) return true
                 let targetEntity = level.createEntity(targetEntityType)
                 targetEntity.setPos(entity.getPosition(1.0))
                 targetEntity.finalizeSpawn(level, level.getCurrentDifficultyAt(entity.getPosition(1.0)), 'mob_summoned', null, null)

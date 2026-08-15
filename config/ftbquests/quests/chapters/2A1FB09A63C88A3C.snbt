@@ -5,6 +5,104 @@
 	group: "0B365C36A50478AA"
 	icon: "compactmachines:wall"
 	id: "2A1FB09A63C88A3C"
+	images: [
+		{
+			height: 10.0d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/title_transdimensional.png"
+			rotation: 0.0d
+			width: 12.38d
+			x: -8.5d
+			y: -4.5d
+		}
+		{
+			height: 15.1d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/title_factory.png"
+			rotation: 0.0d
+			width: 16.33d
+			x: -5.5d
+			y: -3.5d
+		}
+		{
+			height: 25.0d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/transdimensional_factory_background.png"
+			order: -1
+			rotation: 0.0d
+			width: 40.0d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 0.6d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/desc_text.png"
+			rotation: 0.0d
+			width: 8.47d
+			x: 12.0d
+			y: 10.5d
+		}
+		{
+			dependency: "0A26BCE55EC7C58F"
+			height: 3.0d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/task_frame.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			height: 2.0d
+			hideDependency: "048BE33EAD003AD1"
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/combination_lock.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.75d
+			y: 15.053571428571438d
+		}
+		{
+			height: 2.0d
+			hideDependency: "52E640CD23931C4D"
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/combination_lock.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.75d
+			y: 18.5d
+		}
+		{
+			height: 2.0d
+			hideDependency: "171B154319E23270"
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/combination_lock.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.75d
+			y: 22.0d
+		}
+		{
+			dependency: "048BE33EAD003AD1"
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/combination_plant.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.75d
+			y: 15.05d
+		}
+		{
+			dependency: "171B154319E23270"
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/combination_relics.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.75d
+			y: 22.0d
+		}
+		{
+			dependency: "52E640CD23931C4D"
+			height: 2.0d
+			image: "kubejs:textures/gui/tasks/transdimensional_factory/combination_rose.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -6.75d
+			y: 18.5d
+		}
+	]
 	order_index: 8
 	quest_links: [ ]
 	quests: [
@@ -15,6 +113,7 @@
 				""
 				"我把这种利用方法称为&6超维利用&r，而我们利用的主要手段则是基于一个被称为&6压缩空间方块&r的设备。"
 			]
+			hide_until_deps_complete: true
 			icon: "compactmachines:wall"
 			id: "3B9F7FC959F4F068"
 			rewards: [{
@@ -53,8 +152,8 @@
 				type: "item"
 			}]
 			title: "压缩空间机械"
-			x: 0.0d
-			y: 7.0d
+			x: 7.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["122DB11A949DB228"]
@@ -122,8 +221,8 @@
 				type: "item"
 			}]
 			title: "压缩空间交互"
-			x: 0.0d
-			y: 9.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6C33052572100482"]
@@ -134,7 +233,7 @@
 				""
 				"请您制作&6任意一种诱导血清&r，在准备好后，我会告诉您后续的操作。"
 			]
-			icon: "kubejs:pig_inducer_serum"
+			icon: "kubejs:animal_inducer_serum"
 			id: "3FBC546A3EF78EA4"
 			rewards: [{
 				id: "6B348F9463932F27"
@@ -155,8 +254,8 @@
 				type: "item"
 			}]
 			title: "准备自我分化"
-			x: 0.0d
-			y: 11.0d
+			x: 10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3FBC546A3EF78EA4"]
@@ -180,8 +279,8 @@
 				type: "dimension"
 			}]
 			title: "特异的空间压力"
-			x: 0.0d
-			y: 13.0d
+			x: 10.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0A26BCE55EC7C58F"]
@@ -192,7 +291,9 @@
 				""
 				"因此，为了让超维胸腔能够达到完全运行的状态，您&6至少需要3个压缩空间方块&r，以及&6至少3个能够利用的超维机械器官&r——正巧，在曾经的记录中就存在有几个这样的器官，请允许我为您逐个介绍。"
 			]
-			icon: "compactmachines:machine_normal"
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: "kubejs:transdimensional_mechanized_injection"
 			id: "0B6DD0B62C0B5118"
 			rewards: [
 				{
@@ -208,7 +309,19 @@
 					title: "完成章节"
 					type: "maa:kube"
 				}
+				{
+					icon: "titles:title_scroll_rare"
+					id: "4BF7B71CE6E9F8F0"
+					titleId: "kubejs:chest_cavity_universe"
+					type: "titles:title"
+				}
+				{
+					id: "126CA7018A76CD24"
+					item: "kubejs:task_singularity_9"
+					type: "item"
+				}
 			]
+			shape: "none"
 			subtitle: "胸腔链接空间"
 			tasks: [{
 				entity: "minecraft:empty"
@@ -220,8 +333,8 @@
 				value: 1L
 			}]
 			title: "&6庆贺吧！此乃超维胸腔！&r"
-			x: 2.5d
-			y: 13.0d
+			x: 4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -232,6 +345,8 @@
 				""
 				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "1CCA4998BDE14E93"
 			rewards: [{
 				id: "59CCED3FF2319E1E"
@@ -248,8 +363,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 13.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -260,6 +375,8 @@
 				""
 				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "525B0E70D3BDBE09"
 			rewards: [{
 				id: "5D8DE5E49EF48A36"
@@ -276,8 +393,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 15.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -288,6 +405,8 @@
 				""
 				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "2037A5E8F30A4E65"
 			rewards: [{
 				id: "1479971D2BFC4BFD"
@@ -304,8 +423,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 17.0d
+			x: 2.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["525B0E70D3BDBE09"]
@@ -332,8 +451,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 15.0d
+			x: -3.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1CCA4998BDE14E93"]
@@ -358,8 +477,8 @@
 				item: "kubejs:rainbow_compound"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 13.0d
+			x: -3.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2D80F357A8747BC0"]
@@ -391,8 +510,8 @@
 				type: "item"
 			}]
 			title: "转色反应"
-			x: 10.0d
-			y: 13.0d
+			x: -6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5D26A05B1C2F2C7D"]
@@ -417,8 +536,8 @@
 				item: "kubejs:precursor_pheromone_serum"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 15.0d
+			x: -6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -429,6 +548,8 @@
 				""
 				"该系统可以配合血晶工厂，在血晶工厂消耗完成后迅速恢复玩家生命，以避免血晶工厂带来的负面效果。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "3785C5FDB0DF689B"
 			rewards: [{
 				id: "6DCE881651D3BCBF"
@@ -445,8 +566,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: 17.0d
+			x: 2.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6C33052572100482"]
@@ -455,6 +576,7 @@
 				""
 				"请您制作一块&6虚空钢锭&r，为我们后续的无限传输提供基础材料支持。"
 			]
+			hide_until_deps_complete: true
 			id: "10D71CC7F16C3939"
 			rewards: [{
 				id: "5AAC95CC87042982"
@@ -468,8 +590,8 @@
 				type: "item"
 			}]
 			title: "压缩空间交互法"
-			x: 2.5d
-			y: 9.0d
+			x: 12.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["10D71CC7F16C3939"]
@@ -513,8 +635,8 @@
 				title: "任意虚空设备"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 9.0d
+			x: 12.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0A26BCE55EC7C58F"]
@@ -525,6 +647,7 @@
 				""
 				"但不管怎么样，请您在&7搭建完成压缩空间内部产线后一定要检查是否进行了加载&r！否则可能会出现排查不出产线问题但实际无产出的尴尬局面。"
 			]
+			hide_until_deps_complete: true
 			icon: "create_power_loader:brass_chunk_loader"
 			id: "154BC9A8506406D5"
 			rewards: [
@@ -546,8 +669,8 @@
 				type: "checkmark"
 			}]
 			title: "加载压缩空间"
-			x: 0.0d
-			y: 15.0d
+			x: 12.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -558,6 +681,8 @@
 				""
 				"由于其流体消耗过于巨大，正常在胸腔内进行使用几乎是不可能的——但借由超维胸腔，流体交互可以借由压缩空间完成。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "60A2344C1CA7858A"
 			rewards: [{
 				id: "6E0B5CFAD55D39B5"
@@ -574,8 +699,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
-			y: 17.0d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -586,6 +711,7 @@
 				""
 				"如果您能够提供给我&6玫瑰、植物、遗物&r任一注射器，我们便能够创造对应的超维复合胸腔。"
 			]
+			hide_until_deps_complete: true
 			icon: "kubejs:empty_injection"
 			id: "1E8FD6C71E7460EF"
 			rewards: [{
@@ -620,8 +746,8 @@
 				type: "item"
 			}]
 			title: "超维复合工艺"
-			x: 2.5d
-			y: 17.0d
+			x: 4.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
@@ -632,6 +758,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			size: 2.0d
 			subtitle: "超维 - 植物 复合胸腔"
 			tasks: [{
 				id: "137CE82E0F33F49A"
@@ -639,8 +766,8 @@
 				type: "item"
 			}]
 			title: "复合尝试：植物"
-			x: 0.5d
-			y: 23.0d
+			x: -5.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
@@ -651,6 +778,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			size: 2.0d
 			subtitle: "超维 - 玫瑰 复合胸腔"
 			tasks: [{
 				id: "3B4CDA13F8B57A4C"
@@ -658,8 +786,8 @@
 				type: "item"
 			}]
 			title: "复合尝试：玫瑰"
-			x: 2.5d
-			y: 23.0d
+			x: -5.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
@@ -670,6 +798,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			size: 2.0d
 			subtitle: "超维 - 遗物 复合胸腔"
 			tasks: [{
 				id: "2D03986E44959208"
@@ -677,12 +806,13 @@
 				type: "item"
 			}]
 			title: "复合尝试：遗物"
-			x: 4.5d
-			y: 23.0d
+			x: -5.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["37E67F565A378E4D"]
 			description: ["向常规的&6叁型注射器中注入传送液&r，即可建立起胸腔和异常维度（压缩空间）的关系，进而制成超维注射器。"]
+			hide_until_deps_complete: true
 			id: "20EF3FA93587E702"
 			rewards: [{
 				id: "012DBA44439C3500"
@@ -696,8 +826,8 @@
 				type: "item"
 			}]
 			title: "超维注射器"
-			x: 2.5d
-			y: 21.0d
+			x: 4.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["1E8FD6C71E7460EF"]
@@ -759,8 +889,8 @@
 				}
 			]
 			title: "传送液和超维空间"
-			x: 2.5d
-			y: 19.0d
+			x: 4.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -773,6 +903,8 @@
 				""
 				"但我们现在对压缩空间的开发尚且有限，更多的复合可能性还要&6等待未来的进一步调查&r. . ."
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: "minecraft:clock"
 			id: "58163223631ACE3D"
 			rewards: [{
@@ -787,8 +919,8 @@
 				type: "checkmark"
 			}]
 			title: "复合可能"
-			x: 2.5d
-			y: 25.0d
+			x: -11.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
@@ -799,6 +931,8 @@
 				""
 				"但这一过程会完全将压缩空间给&6塞满&r，因此进入采掘前要做好会窒息的准备。"
 			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			id: "11B80545DBF73142"
 			rewards: [{
 				id: "11DFECEBECBF9F9F"
@@ -815,8 +949,8 @@
 				}
 				type: "item"
 			}]
-			x: 12.5d
-			y: 17.0d
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["52A176CFE929083A"]
@@ -873,8 +1007,8 @@
 				type: "item"
 			}]
 			title: "压缩空间"
-			x: 0.0d
-			y: 4.5d
+			x: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3B9F7FC959F4F068"]
@@ -897,8 +1031,8 @@
 				item: "kubejs:blank_compact_machine"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 2.5d
+			y: 0.0d
 		}
 	]
 	title: "传闻：超维工厂"

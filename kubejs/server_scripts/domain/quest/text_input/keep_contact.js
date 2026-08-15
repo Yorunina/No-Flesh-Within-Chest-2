@@ -37,3 +37,14 @@ RegisterKeepContactStrategy(
     },
     100
 )
+
+RegisterKeepContactStrategy(
+    () => true,
+    (player, inputText, teamData, task) => {
+        if (inputText.includes('to') && inputText.includes('the') && inputText.includes('future')) {
+            TitleManager.unlockTitle(player, 'kubejs:to_the_future')
+            return
+        }
+    },
+    100
+)

@@ -19,7 +19,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:world_token_gamerule')
 )
 
 
-const WorldTokenCreativeList = ['create:creative_blaze_cake', 'create:creative_motor', 'minecraft:command_block', 'ars_nouveau:creative_source_jar', 'ars_nouveau:creative_spell_book', 'functionalstorage:max_storage_upgrade', 'sophisticatedbackpacks:stack_upgrade_omega_tier', 'sophisticatedbackpacks:inception_upgrade']
+const WorldTokenCreativeList = ['create:creative_blaze_cake', 'create:creative_motor', 'minecraft:command_block', 'ars_nouveau:creative_source_jar', 'ars_nouveau:creative_spell_book', 'functionalstorage:max_storage_upgrade', 'sophisticatedbackpacks:stack_upgrade_omega_tier', 'sophisticatedbackpacks:inception_upgrade', 'kubejs:key_to_infinity', 'kubejs:bridge_mod']
 
 ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:world_token_creative')
     .setShiftDescription(Text.translatable('tooltips.kubejs.world_token.shift.1'))

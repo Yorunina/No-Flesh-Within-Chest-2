@@ -5,6 +5,14 @@
 	group: "63198C281F0E9667"
 	icon: "supplementaries:globe"
 	id: "49C917C19A46CA3C"
+	images: [{
+		height: 4.0d
+		image: "kubejs:textures/gui/tasks/the_world/title.png"
+		rotation: 0.0d
+		width: 17.93d
+		x: 0.5d
+		y: -6.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -32,7 +40,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -56,7 +64,7 @@
 				type: "item"
 			}]
 			x: -4.5d
-			y: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -79,8 +87,8 @@
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 2.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -123,7 +131,7 @@
 			}]
 			title: "在高空中滑行"
 			x: -4.5d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["57BBCCCD732ED543"]
@@ -150,7 +158,7 @@
 			}]
 			title: "在高空中步行"
 			x: -6.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["67786E2C6F7CD355"]
@@ -174,8 +182,8 @@
 				type: "item"
 			}]
 			title: "背包升级"
-			x: 4.0d
-			y: 4.5d
+			x: 2.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2E911706C477B127"]
@@ -193,7 +201,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: -5.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["24D645FF144CBC13"]
@@ -221,7 +229,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -258,7 +266,7 @@
 			}]
 			title: "前往遗留下的维度"
 			x: -4.5d
-			y: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -326,7 +334,7 @@
 			}]
 			title: "皮肤镶嵌"
 			x: -4.5d
-			y: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -350,8 +358,8 @@
 				type: "item"
 			}]
 			title: "统合一切存储"
-			x: 6.0d
-			y: 3.0d
+			x: 4.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -383,8 +391,8 @@
 				type: "item"
 			}]
 			title: "抽屉存储"
-			x: 2.0d
-			y: 3.0d
+			x: -1.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -423,7 +431,7 @@
 			}]
 			title: "知识打印器"
 			x: -4.5d
-			y: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["70FCE36692E184AD"]
@@ -432,6 +440,8 @@
 				""
 				"其包含了生存的各方面内容——如&6存储、地图探索、饮食改良等. . .&r能极大程度让您适应新世界的生活。"
 			]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
 			icon: "supplementaries:globe"
 			id: "5D59836FFE601158"
 			rewards: [
@@ -446,6 +456,7 @@
 					type: "item"
 				}
 			]
+			size: 2.0d
 			subtitle: "所谓世界"
 			tasks: [{
 				id: "79AF786E0CA8D9A3"
@@ -472,8 +483,8 @@
 				type: "item"
 			}]
 			title: "更便捷的终端"
-			x: 6.0d
-			y: 4.5d
+			x: 4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["02F541A35C373603"]
@@ -547,7 +558,7 @@
 				type: "item"
 			}]
 			title: "抽屉升级"
-			x: 2.0d
+			x: 0.5d
 			y: 4.5d
 		}
 		{
@@ -570,8 +581,8 @@
 				type: "item"
 			}]
 			title: "终极存取方案"
-			x: 6.0d
-			y: 6.0d
+			x: 4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["42D69F3F93550767"]
@@ -646,8 +657,8 @@
 				type: "item"
 			}]
 			title: "大宗物品存储"
-			x: 7.5d
-			y: 3.0d
+			x: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["02F541A35C373603"]
@@ -669,8 +680,8 @@
 				type: "item"
 			}]
 			title: "军械库"
-			x: 0.0d
-			y: 4.5d
+			x: -1.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["02F541A35C373603"]
@@ -717,8 +728,8 @@
 				type: "item"
 			}]
 			title: "压缩抽屉"
-			x: 0.0d
-			y: 6.0d
+			x: -1.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["02F541A35C373603"]
@@ -751,7 +762,7 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
+			x: 0.5d
 			y: 6.0d
 		}
 		{
@@ -771,7 +782,7 @@
 			}]
 			title: "见证者"
 			x: -4.5d
-			y: -3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["09ED755A64A62187"]
@@ -795,7 +806,7 @@
 			}]
 			title: "商店种类"
 			x: -6.0d
-			y: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6DF4D3AE711778B7"]
@@ -845,7 +856,7 @@
 			]
 			title: "定点传送"
 			x: -7.5d
-			y: 4.0d
+			y: 5.5d
 		}
 	]
 	title: "常识：世界"

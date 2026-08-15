@@ -172,7 +172,7 @@ StartupEvents.registry('item', event => {
             return true
         })
 
-    event.create('kubejs:world_token_gamerule').texture('kubejs:item/materials/world_token_gamerule').maxStackSize(1)
+    event.create('kubejs:world_token_gamerule').texture('kubejs:item/tools/world_token_gamerule').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
             if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
                 if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())
@@ -184,19 +184,19 @@ StartupEvents.registry('item', event => {
             return false
         })
 
-    event.create('kubejs:world_token_creative').texture('kubejs:item/materials/world_token_creative').maxStackSize(1)
+    event.create('kubejs:world_token_creative').texture('kubejs:item/tools/world_token_creative').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
             if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
                 if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())
                 const nbt = stack.getNbt()
                 let state = nbt.getInt('state')
-                nbt.putInt('state', (state + 1) % 8)
+                nbt.putInt('state', (state + 1) % 10)
                 return true
             }
             return false
         })
 
-    event.create('kubejs:world_token_weather').texture('kubejs:item/materials/world_token_weather').maxStackSize(1)
+    event.create('kubejs:world_token_weather').texture('kubejs:item/tools/world_token_weather').maxStackSize(1)
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
             if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
                 if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())

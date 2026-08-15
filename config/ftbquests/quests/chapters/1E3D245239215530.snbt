@@ -2377,6 +2377,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "57EB320AC7C3526D"
+					item: "kubejs:task_singularity_3"
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			subtitle: "倘若星不再依照星轨行进，那我又该将航线驶向何方"

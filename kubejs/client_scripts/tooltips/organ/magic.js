@@ -115,3 +115,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:damage_mod')
     .addDefault(Text.translatable('tooltips.kubejs.damage_mod.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.damage_mod.alt.1', MarkingHover))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:bridge_mod')
+    .addDefault(Text.translatable('tooltips.kubejs.bridge_mod.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.bridge_mod.alt.1'))
+)

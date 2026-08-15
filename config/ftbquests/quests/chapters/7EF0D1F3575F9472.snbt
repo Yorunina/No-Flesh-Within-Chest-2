@@ -83,11 +83,11 @@
 			y: -39.5d
 		}
 	]
-	order_index: 3
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["473AA9B909ED8EB0"]
+			dependencies: ["3E792F8B7AD6934C"]
 			description: [
 				"&6请您一定要使用您的心灵来观察和思考这个世界&r，只有这样我们才能&6顺利的完成预先设计好的游戏流程&r。"
 				""
@@ -107,16 +107,12 @@
 			}]
 			subtitle: "获取类任务"
 			tasks: [{
-				id: "1709D6C7C355CD48"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "minecraft:logs"
-					}
-				}
-				title: "任意类型原木"
-				type: "item"
+				icon: "minecraft:oak_log"
+				id: "781ECE22EC8D421C"
+				isServer: true
+				stage: "ftb_restart_success"
+				title: "任意原木"
+				type: "maa:astages"
 			}]
 			title: "砍下第一块原木"
 			x: 0.0d
@@ -550,6 +546,18 @@
 				"除此之外，我还有一个请求。"
 				""
 				"&6请您为我庆贺吧！我们的冒险故事，永远都不会迎来结局！&r"
+				""
+				"{@pagebreak}"
+				"{@pagebreak}"
+				"{@pagebreak}"
+				"{@pagebreak}"
+				"对了，还有一件可以帮到您的事——"
+				""
+				"在最开始的任务处，您可以尝试输入一些作弊码——但&6只有在单人世界才有效&r。"
+				""
+				"比如说&6something for nothing、show me the money、black sheep wall&r这些. . .不过那要等到我们下一次见面了. . ."
+				""
+				"那么，请继续我们的庆典吧！"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -607,5 +615,5 @@
 			y: -33.0d
 		}
 	]
-	title: "？？？"
+	title: "回归"
 }

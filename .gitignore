@@ -48,7 +48,6 @@ rhino.local.properties
 /tconplanner
 /exposures/
 exposure_catalog_state.json
-config/pin_tooltips.json
 config/jade/sort-order.json
 config/jade/plugins.json
 kubejs/probe/
@@ -69,3 +68,5 @@ config/ModernUI/bootstrap.properties
 /armourers_workshop/skin-library
 /config/stampalbum
 bivrik/
+config/RuOK.toml
+config/pin_tooltips.json

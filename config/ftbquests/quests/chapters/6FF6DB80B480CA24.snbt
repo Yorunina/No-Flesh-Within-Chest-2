@@ -1,0 +1,211 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6FF6DB80B480CA24"
+	group: ""
+	icon: "kubejs:task_singularity_9"
+	id: "6FF6DB80B480CA24"
+	images: [
+		{
+			height: 30.72d
+			image: "kubejs:textures/gui/tasks/inside/task_line.png"
+			rotation: 0.0d
+			width: 30.72d
+			x: -0.34d
+			y: -12.250451922588958d
+		}
+		{
+			dependency: "3E792F8B7AD6934C"
+			height: 38.0d
+			image: "kubejs:textures/gui/tasks/inside/task_effect.png"
+			order: 1
+			rotation: 0.0d
+			width: 38.0d
+			x: -0.17d
+			y: -10.88d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"7A23A51E0B5083CD"
+				"0B2A3C3CD5A76705"
+				"5A1D4D3F99DDE49B"
+				"311C6FF6791AA394"
+				"68CFF789C6282718"
+				"26976568ACF9DE31"
+				"1195C2351EA06F4C"
+				"26797B8AA95C66A2"
+				"268D0FC5F05A02DC"
+				"331285D7F0B760CD"
+				"4293287DE904FF55"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "kubejs:textures/gui/tasks/inside/restart_icon.png"
+				}
+			}
+			id: "3E792F8B7AD6934C"
+			min_required_dependencies: 6
+			rewards: [{
+				auto: "invisible"
+				id: "61CF201878F2833E"
+				ignore_reward_blocking: true
+				isServer: true
+				remove: false
+				stage: "ftb_restart"
+				title: "重启"
+				type: "maa:astages"
+			}]
+			shape: "none"
+			size: 3.0d
+			tasks: [{
+				id: "0A7DBAD0E04E34D9"
+				title: "重启吧"
+				type: "checkmark"
+			}]
+			title: "重启"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "0B2A3C3CD5A76705"
+			tasks: [{
+				consume_items: true
+				id: "46D0949069845BFC"
+				item: "kubejs:task_singularity_1"
+				type: "item"
+			}]
+			x: -8.359039704755347d
+			y: -23.50045192258895d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "331285D7F0B760CD"
+			tasks: [{
+				consume_items: true
+				id: "1C7137217421D6F8"
+				item: "kubejs:task_singularity_2"
+				type: "item"
+			}]
+			x: 6.9d
+			y: -19.72d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "26797B8AA95C66A2"
+			tasks: [{
+				consume_items: true
+				id: "01103A8E18D5BE78"
+				item: "kubejs:task_singularity_3"
+				type: "item"
+			}]
+			x: 4.36d
+			y: -14.64330906544609d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "26976568ACF9DE31"
+			tasks: [{
+				consume_items: true
+				id: "5CC9664C5025040F"
+				item: "kubejs:task_singularity_4"
+				type: "item"
+			}]
+			x: -0.1d
+			y: -18.18d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "268D0FC5F05A02DC"
+			tasks: [{
+				consume_items: true
+				id: "2CE6A8870AECAADB"
+				item: "kubejs:task_singularity_5"
+				type: "item"
+			}]
+			x: -6.6d
+			y: -21.55d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "7A23A51E0B5083CD"
+			tasks: [{
+				consume_items: true
+				id: "7390C7640C82B92B"
+				item: "kubejs:task_singularity_6"
+				type: "item"
+			}]
+			x: 3.1d
+			y: -12.39330906544609d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "1195C2351EA06F4C"
+			tasks: [{
+				consume_items: true
+				id: "0868C9ADA4CDA0EB"
+				item: "kubejs:task_singularity_7"
+				type: "item"
+			}]
+			x: -4.18046827618393d
+			y: -22.17902335116038d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "4293287DE904FF55"
+			tasks: [{
+				consume_items: true
+				id: "70990180DA27B1F7"
+				item: "kubejs:task_singularity_8"
+				type: "item"
+			}]
+			x: -2.573325419041069d
+			y: -24.67902335116038d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "5A1D4D3F99DDE49B"
+			tasks: [{
+				consume_items: true
+				id: "2A8913618658ED54"
+				item: "kubejs:task_singularity_9"
+				type: "item"
+			}]
+			x: 3.1409602952446534d
+			y: -23.286166208303236d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "311C6FF6791AA394"
+			tasks: [{
+				consume_items: true
+				id: "50490ECA86256863"
+				item: "kubejs:task_singularity_10"
+				type: "item"
+			}]
+			x: 8.46d
+			y: -22.214737636874666d
+		}
+		{
+			dependencies: ["5417CA220CCAE3C5"]
+			id: "68CFF789C6282718"
+			tasks: [{
+				consume_items: true
+				id: "116D80B38CA2AD5C"
+				item: "kubejs:task_singularity_11"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -14.64330906544609d
+		}
+	]
+	title: "内部"
+}

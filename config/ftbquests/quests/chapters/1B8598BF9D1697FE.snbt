@@ -1246,6 +1246,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "79E3CC1C2598F600"
+					item: "kubejs:task_singularity_8"
+					type: "item"
+				}
 			]
 			subtitle: "假若奇迹真的存在"
 			tasks: [{

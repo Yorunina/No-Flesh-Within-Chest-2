@@ -86,4 +86,5 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine')
 
     event.create('kubejs:damage_mod').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/damage_mod')
+    event.create('kubejs:bridge_mod').maxStackSize(1).tag('kubejs:machine').texture('kubejs:item/organs/machine/bridge_mod')
 })

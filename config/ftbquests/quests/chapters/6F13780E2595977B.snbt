@@ -239,6 +239,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "5D3A256A0D3B7C62"
+					item: "kubejs:task_singularity_4"
+					type: "item"
+				}
 			]
 			shape: "diamond"
 			subtitle: "匠工创世创工匠"

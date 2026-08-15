@@ -509,18 +509,27 @@
 				""
 				"但本次情况稍有特殊，似乎&6在返回时，您未能正常触发终末之诗的画面&r，进而导致我的程序没有正常的终止。"
 				""
-				"我会尽快排查问题出现的原因，在我能够解决该问题时会第一时间通知您。"
+				"&6所幸，在创建之初，我便设计了重置方案，只要如果您能够帮助我完成重启，我和您的故事应当便可以迎来结束。&r"
 				""
-				"&6在此期间，请您耐心进行世界其他内容的探索，我会尽可能辅佐您完成这个冒险故事，直到我的程序终结之时。&r"
+				"接下来，我会授予您内部的权限——我因各种限制，无法在内部指引您，因此请您多加小心。"
 			]
 			hide_until_deps_complete: true
 			icon: "supplementaries:hourglass"
 			id: "5417CA220CCAE3C5"
-			rewards: [{
-				id: "1494CCE7CB14712E"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1494CCE7CB14712E"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					auto: "no_toast"
+					icon: "cataclysm:crystallized_coral_fragments"
+					id: "536EA12EC1532589"
+					title: "内部访问权限授予"
+					type: "custom"
+				}
+			]
 			shape: "none"
 			subtitle: "程序未正常终止"
 			tasks: [{
@@ -543,8 +552,8 @@
 			]
 			id: "7E16877C14CFD254"
 			rewards: [{
-				id: "5069F2A6FE48A3B6"
-				item: "lightmanscurrency:coin_gold"
+				id: "2F04420F2735D9B6"
+				item: "minecraft:diamond"
 				type: "item"
 			}]
 			subtitle: "概念具象化"
@@ -584,6 +593,30 @@
 			title: "悬浮物品框"
 			x: 2.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["4C247D4E88F1A179"]
+			description: [
+				"在获取到头衔时，您可以通过&6打开头衔界面（默认按键L）&r来配置对应的头衔。"
+				""
+				"通过点击头衔界面的左上角按钮，可以让头衔显示名称在里/表之间反复切换。"
+			]
+			icon: "titles:title_scroll_rare"
+			id: "64C657D9C3B6A3AA"
+			rewards: [{
+				id: "284CDC0565C6D4E3"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			subtitle: "如何使用头衔"
+			tasks: [{
+				id: "2A768C4699CA30AC"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "使用头衔"
+			x: 1.5d
+			y: 19.5d
 		}
 	]
 	title: "序章"

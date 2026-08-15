@@ -44,7 +44,7 @@ function PureColorReactionEntityTick(customData, event, organItem, organIndex, s
     let itemHandler = itemHandlerLazyOpt.resolve().get()
     for (let i = 0; i < itemHandler.getSlots(); i++) {
         let pItem = itemHandler.getStackInSlot(i)
-        if (pItem.is('#forge:dyes')) {
+        if (pItem.hasTag('forge:dyes')) {
             let dyeRatio = DyeRGBRatioConfig[pItem.getId()]
             r += dyeRatio.r * pItem.getCount()
             g += dyeRatio.g * pItem.getCount()

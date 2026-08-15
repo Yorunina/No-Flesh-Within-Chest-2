@@ -323,6 +323,7 @@ RegistryShopItemTraderType('blueprint',
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[25,7,10],Deployed:0b,File:"schematic.create_all_in_one.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1200).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[20,41,18],Deployed:0b,File:"schematic.smithing_template_god.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 500).setTradeLimitRule(1), 100)
         .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[35,24,27],Deployed:0b,File:"schematic.sakura_house.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 1200).setTradeLimitRule(1), 100)
+        .addWeightRandom(CreateSimpleTradeModel([Item.of('create:schematic', '{Anchor:{X:0,Y:0,Z:0},Bounds:[13,12,14],Deployed:0b,File:"schematic.organ_purify_device.nbt",Mirror:"NONE",Owner:"prefab",Rotation:"NONE",canSurvivalPrint:1b}')], 200).setTradeLimitRule(1), 100)
 )
 
 RegistryShopItemTraderType('graveyard',

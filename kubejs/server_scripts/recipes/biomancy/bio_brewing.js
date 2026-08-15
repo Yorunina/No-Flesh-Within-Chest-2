@@ -18,5 +18,5 @@ ServerEvents.recipes(event => {
     event.recipes.biomancy.bio_brewing(['biomancy:bio_lumens'], 'kubejs:gamma_pheromone_serum', 'kubejs:alpha_pheromone_serum')
 
     // 分化血清
-    event.recipes.biomancy.bio_brewing(['biomancy:flesh_bits', 'minecraft:pink_dye', 'minecraft:sugar'], 'kubejs:empty_inducer_serum', 'kubejs:pig_inducer_serum')
+    event.recipes.biomancy.bio_brewing(['biomancy:flesh_bits', 'minecraft:pink_dye', 'minecraft:sugar'], 'kubejs:empty_inducer_serum', 'kubejs:animal_inducer_serum')
 })

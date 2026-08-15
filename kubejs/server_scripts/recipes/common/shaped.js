@@ -152,6 +152,11 @@ ServerEvents.recipes(event => {
         ['kubejs:relics_paper', 'kubejs:ancient_crystal', 'kubejs:relics_paper'],
         ['kubejs:relics_metal', 'kubejs:relics_paper', '']
     ])
+    event.shaped(Item.of('kubejs:trophy_sword', '{Damage:0}'), [
+        ['', 'kubejs:relics_metal', ''],
+        ['', 'kubejs:relics_metal', ''],
+        ['', 'minecraft:stick', '']
+    ])
 
 
     event.remove({ id: 'compactmachines:machine_tiny' })

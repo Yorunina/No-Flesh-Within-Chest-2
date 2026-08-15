@@ -47,4 +47,15 @@ StartupEvents.registry('item', event => {
             return Item.empty
         })
 
+    event.create('kubejs:task_singularity_1').texture('kubejs:item/materials/singularity/1').maxStackSize(1)
+    event.create('kubejs:task_singularity_2').texture('kubejs:item/materials/singularity/2').maxStackSize(1)
+    event.create('kubejs:task_singularity_3').texture('kubejs:item/materials/singularity/3').maxStackSize(1)
+    event.create('kubejs:task_singularity_4').texture('kubejs:item/materials/singularity/4').maxStackSize(1)
+    event.create('kubejs:task_singularity_5').texture('kubejs:item/materials/singularity/5').maxStackSize(1)
+    event.create('kubejs:task_singularity_6').texture('kubejs:item/materials/singularity/6').maxStackSize(1)
+    event.create('kubejs:task_singularity_7').texture('kubejs:item/materials/singularity/7').maxStackSize(1)
+    event.create('kubejs:task_singularity_8').texture('kubejs:item/materials/singularity/8').maxStackSize(1)
+    event.create('kubejs:task_singularity_9').texture('kubejs:item/materials/singularity/9').maxStackSize(1)
+    event.create('kubejs:task_singularity_10').texture('kubejs:item/materials/singularity/10').maxStackSize(1)
+    event.create('kubejs:task_singularity_11').texture('kubejs:item/materials/singularity/11').maxStackSize(1)
 })

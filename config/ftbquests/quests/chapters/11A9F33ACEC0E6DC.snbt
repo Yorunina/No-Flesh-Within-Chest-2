@@ -992,6 +992,11 @@
 					title: "章节完成"
 					type: "maa:kube"
 				}
+				{
+					id: "253140518A5A91C0"
+					item: "kubejs:task_singularity_5"
+					type: "item"
+				}
 			]
 			shape: "none"
 			subtitle: "这是我们的谢礼"
