@@ -39,7 +39,7 @@ function PoisonSandGlandTakeOff(customData, event, organItem, organIndex, slotTy
 */
 function PoisonSandGlandEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'block_factorys_bosses:sandworm') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_poison_sand_gland'), organIndex, slotType, true)
 }

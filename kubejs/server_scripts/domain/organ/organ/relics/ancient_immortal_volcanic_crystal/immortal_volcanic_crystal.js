@@ -39,7 +39,7 @@ function ImmortalVolcanicCrystalTakeOff(customData, event, organItem, organIndex
  */
 function ImmortalVolcanicCrystalEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:ignis') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_immortal_volcanic_crystal'), organIndex, slotType, true)
 }

@@ -39,7 +39,7 @@ function SturdyHarbingerLungTakeOff(customData, event, organItem, organIndex, sl
  */
 function SturdyHarbingerLungEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:the_harbinger') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_harbinger_lung'), organIndex, slotType, true)
 }

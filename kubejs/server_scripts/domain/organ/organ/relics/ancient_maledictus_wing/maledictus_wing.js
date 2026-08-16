@@ -50,7 +50,7 @@ function MaledictusWingOrganTakeOff(customData, event, organItem, organIndex, sl
  */
 function MaledictusWingEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:maledictus') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_maledictus_wing'), organIndex, slotType, true)
 }

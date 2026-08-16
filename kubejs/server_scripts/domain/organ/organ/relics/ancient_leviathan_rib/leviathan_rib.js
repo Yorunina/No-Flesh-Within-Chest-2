@@ -39,7 +39,7 @@ function LeviathanRibOrganTakeOff(customData, event, organItem, organIndex, slot
  */
 function LeviathanRibEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:the_leviathan') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_leviathan_rib'), organIndex, slotType, true)
 }

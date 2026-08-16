@@ -20,6 +20,7 @@
 			y: 14.5d
 		}
 		{
+			alpha: 128
 			dependency: "73AC29CE33479E8A"
 			height: 12.0d
 			image: "kubejs:textures/gui/tasks/flesh_wart/gene.png"

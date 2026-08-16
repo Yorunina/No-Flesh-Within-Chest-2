@@ -27,7 +27,7 @@ function ImmortalVolcanicRockEntityTick(customData, event, organItem, organIndex
  */
 function ImmortalVolcanicRockEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:ignis') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:immortal_volcanic_crystal'), organIndex, slotType, true)
 }

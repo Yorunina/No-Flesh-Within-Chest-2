@@ -39,7 +39,7 @@ function KrakenCloudyEyeTakeOff(customData, event, organItem, organIndex, slotTy
  */
 function KrakenCloudEyeEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'block_factorys_bosses:kraken') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:kraken_eye'), organIndex, slotType, true)
 }

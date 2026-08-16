@@ -21,7 +21,7 @@ const BloodCrystalFactoryTempArmorUpIdentifier = 'BloodCrystalFactoryArmorUp'
 function BloodCrystalFactoryEntityTick(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const server = event.server
-    if (entity.age % 60 != 0) return
+    if (entity.age % 1200 != 0) return
     const chestCavity = event.chestCavity
     const ccInv = chestCavity.inventory
     const invTypeData = chestCavity.getInventoryTypeData()

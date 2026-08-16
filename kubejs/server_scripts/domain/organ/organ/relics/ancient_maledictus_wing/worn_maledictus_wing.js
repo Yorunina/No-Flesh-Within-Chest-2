@@ -47,7 +47,7 @@ function WornMaledictusWingKeyActive(customData, event, organItem, organIndex, s
 */
 function WornMaledictusWingEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:maledictus') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:maledictus_wing'), organIndex, slotType, true)
 }

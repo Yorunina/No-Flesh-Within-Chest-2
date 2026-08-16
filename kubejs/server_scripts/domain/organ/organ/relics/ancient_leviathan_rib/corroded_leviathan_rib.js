@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:corroded_leviathan_rib')
 */
 function CorrodedLeviathanRibEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:the_leviathan') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:leviathan_rib'), organIndex, slotType, true)
 }

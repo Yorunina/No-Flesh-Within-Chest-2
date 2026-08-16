@@ -39,7 +39,7 @@ function ColdCrystalTakeOff(customData, event, organItem, organIndex, slotType) 
  */
 function ColdCrystalEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'block_factorys_bosses:yeti') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:eternal_cold_crystal'), organIndex, slotType, true)
 }

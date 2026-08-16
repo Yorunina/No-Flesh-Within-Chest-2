@@ -32,7 +32,7 @@ function AbnormalSandGlandKeyActive(customData, event, organItem, organIndex, sl
 */
 function AbnormalSandGlandEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'block_factorys_bosses:sandworm') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:poison_sand_gland'), organIndex, slotType, true)
 }

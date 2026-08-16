@@ -39,7 +39,7 @@ function InfernalDragonCrystalTakeOff(customData, event, organItem, organIndex, 
  */
 function InfernalDragonCrystalEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'block_factorys_bosses:infernal_dragon') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_infernal_dragon_crystal'), organIndex, slotType, true)
 }

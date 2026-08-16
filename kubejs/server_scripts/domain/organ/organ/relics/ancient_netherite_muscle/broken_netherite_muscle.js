@@ -12,7 +12,7 @@ RegistryOrgan('kubejs:broken_netherite_muscle')
 */
 function BrokenNetheriteMuscleEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:netherite_monstrosity') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:netherite_muscle'), organIndex, slotType, true)
 }

@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:underworld_knight_bone')
 */
 function UnderworldKnightBoneEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'block_factorys_bosses:underworld_knight') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_underworld_knight_bone'), organIndex, slotType, true)
 }

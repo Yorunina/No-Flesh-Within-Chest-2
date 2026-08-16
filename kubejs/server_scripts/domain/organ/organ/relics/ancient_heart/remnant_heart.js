@@ -50,7 +50,7 @@ function RemnantHeartBlockRightClicked(customData, event, organItem, organIndex,
  */
 function RemnantHeartEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.type != 'cataclysm:scylla') return
+    if (entity.type != 'cataclysm:ancient_remnant') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
     SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:awaken_heart'), organIndex, slotType, true)
 }
