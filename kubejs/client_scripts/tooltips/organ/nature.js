@@ -111,7 +111,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:red_wolf_beard')
     .addDefault(Text.translatable('tooltips.kubejs.red_wolf_beard.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.red_wolf_beard.alt.1', KeyActiveHover, Text.gold('30')))
     .addAlt(Text.translatable('tooltips.kubejs.red_wolf_beard.alt.2', Text.gold('1'), Text.gold('50%')))
-    .addAlt(Text.translatable('tooltips.kubejs.red_wolf_beard.alt.3', Text.gold('2'), Text.gold('4')))
+    .addAlt(Text.translatable('tooltips.kubejs.red_wolf_beard.alt.3', KillEntityHover, Text.gold('2'), Text.gold('4')))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:raccoon_paw')

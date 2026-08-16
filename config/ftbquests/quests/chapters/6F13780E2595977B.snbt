@@ -1167,10 +1167,15 @@
 				"我经过发想后，得到的第一个可行工具改良方案为&6耦合器&r。"
 				""
 				"耦合器是一种将绑定结进行现代强化的部件。您需要&6优先为双头工具制作绑定&r，才能从中得到耦合器的启发。"
-				""
-				"为了解锁绑定的制作原理图，您需要制作&6织布机&r并将其放在加工台的周围。"
 			]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "4AC681B7C67BEEDB"
 			rewards: [{
 				id: "25F93F7527700802"
@@ -1179,8 +1184,33 @@
 			}]
 			subtitle: "从能制作绑定结开始"
 			tasks: [{
-				id: "3F7FBCA0B78EBC2A"
-				item: "minecraft:loom"
+				icon: {
+					Count: 1
+					id: "minecraft:diamond_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5524A64583BC82BD"
+				item: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_pickaxe_left_material": "basic_pickaxe/iron"
+						"double/basic_pickaxe_right_material": "basic_pickaxe/diamond"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_pickaxe_left"
+						"double/head_right": "double/basic_pickaxe_right"
+						"double/head_right:arrested": 0
+						honing_progress: 440
+						id: "f34447a7-0a6e-48bf-bc36-15d99e5a50fd"
+					}
+				}
+				match_nbt: false
+				title: "任意双头工具"
 				type: "item"
 			}]
 			title: "绑定启发"
@@ -1195,10 +1225,15 @@
 				"我经过发想后，得到的第二个可行工具改良方案为&6热能手柄&r和&6研磨手柄&r。"
 				""
 				"这两种手柄是一种将手柄进行现代强化的部件。您需要&6优先为双头工具制作手柄，并且为其进行裹柄&r，才能够在手柄的基础上得到现代化启发。"
-				""
-				"为了解锁裹柄的制作原理图，您需要制作&6高炉&r并将其放在加工台的周围。"
 			]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_axe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7C8A23D446317A08"
 			rewards: [{
 				id: "6F87F641E4E94D77"
@@ -1207,8 +1242,33 @@
 			}]
 			subtitle: "从裹柄工艺开始"
 			tasks: [{
-				id: "2C327D891D4C1805"
-				item: "minecraft:blast_furnace"
+				icon: {
+					Count: 1
+					id: "minecraft:diamond_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "5F1CD97D64303A8C"
+				item: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_pickaxe_left_material": "basic_pickaxe/iron"
+						"double/basic_pickaxe_right_material": "basic_pickaxe/diamond"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_pickaxe_left"
+						"double/head_right": "double/basic_pickaxe_right"
+						"double/head_right:arrested": 0
+						honing_progress: 440
+						id: "f34447a7-0a6e-48bf-bc36-15d99e5a50fd"
+					}
+				}
+				match_nbt: false
+				title: "任意双头工具"
 				type: "item"
 			}]
 			title: "裹柄启发"
@@ -1223,10 +1283,15 @@
 				"我经过发想后，得到的第三个可行工具改良方案为&6斩首锯齿&r。"
 				""
 				"这是一种将加固件进行现代化强化的技艺。您需要&6优先为剑类工具进行血槽加固&r，才能启发得到斩首锯齿的原理图。"
-				""
-				"为了解锁强化血槽的原理图，您需要制作&6铁砧&r并将其放在加工台的周围。"
 			]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "573B18502C8359B2"
 			rewards: [{
 				id: "3B3443863F5A11E0"
@@ -1235,8 +1300,35 @@
 			}]
 			subtitle: "从血槽工艺开始"
 			tasks: [{
-				id: "5418B5A5FF4AD6BD"
-				item: "minecraft:anvil"
+				icon: {
+					Count: 1
+					id: "minecraft:diamond_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "599635E208571FFD"
+				item: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 240
+						id: "ecfba90c-33e1-496b-9d84-d6c7b5f1e238"
+						"sword/basic_blade_material": "basic_blade/iron"
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/basic_blade"
+						"sword/decorative_pommel_material": "decorative_pommel/netherite"
+						"sword/guard": "sword/makeshift_guard"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/hilt:basic_hilt/soot": 0
+						"sword/makeshift_guard_material": "makeshift_guard/netherite"
+						"sword/pommel": "sword/decorative_pommel"
+					}
+				}
+				match_nbt: false
+				title: "任意剑"
 				type: "item"
 			}]
 			title: "血槽启发"
@@ -1245,11 +1337,7 @@
 		}
 		{
 			dependencies: ["4AC681B7C67BEEDB"]
-			description: [
-				"当您放置了织布机后，在加工台中应已经可见了双头工具特有的&6绑定&r部件。"
-				""
-				"请将任意双头工具安装绑定部件，接下来我会告诉您具体如何制作&6耦合器&r。"
-			]
+			description: ["请将任意双头工具安装绑定部件，接下来我会告诉您具体如何制作&6耦合器&r。"]
 			icon: {
 				Count: 1
 				id: "tetra:modular_double"
@@ -1323,11 +1411,7 @@
 		}
 		{
 			dependencies: ["7C8A23D446317A08"]
-			description: [
-				"当您放置了高炉后，在加工台中应已经可见了双头工具手柄特有的&6裹柄&r改进。"
-				""
-				"请将任意双头工具进行裹柄改良，接下来我会告诉您具体如何制作&6热能手柄&r和&6研磨手柄&r。"
-			]
+			description: ["请将任意双头工具进行裹柄改良，接下来我会告诉您具体如何制作&6热能手柄&r和&6研磨手柄&r。"]
 			id: "7F90D10E3909F105"
 			rewards: [{
 				id: "45682ED2DD4C0E21"
@@ -1372,11 +1456,7 @@
 		}
 		{
 			dependencies: ["573B18502C8359B2"]
-			description: [
-				"当您放置了铁砧后，在加工台中应已经可见了武器特有的&6强化血槽&r部件。"
-				""
-				"请为任意武器安装强化血槽，接下来我会告诉您具体如何制作&6斩首锯齿&r。"
-			]
+			description: ["请为任意武器安装强化血槽，接下来我会告诉您具体如何制作&6斩首锯齿&r。"]
 			id: "45FD19BF9DBC0B90"
 			rewards: [{
 				id: "31D0ACAE08623B4B"

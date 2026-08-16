@@ -73,6 +73,16 @@ const KeyActiveHover = Text.translatable('tooltips.kubejs.hover.key_active.0').g
         Text.translatable('tooltips.kubejs.hover.key_active.0').gold(),
         Text.translatable('tooltips.kubejs.hover.key_active.1')
     ]))
+const KillEntityHover = Text.translatable('tooltips.kubejs.hover.kill_entity.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.kill_entity.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.kill_entity.1')
+    ]))
+const EntityDeathHover = Text.translatable('tooltips.kubejs.hover.entity_death.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.entity_death.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.entity_death.1')
+    ]))
 const FrozenHover = Text.translatable('tooltips.kubejs.hover.frozen.0').aqua().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.frozen.0').aqua(),

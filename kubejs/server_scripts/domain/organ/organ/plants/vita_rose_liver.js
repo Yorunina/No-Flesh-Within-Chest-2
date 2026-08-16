@@ -17,7 +17,7 @@ function VitaRoseLiverDoDamage(customData, event, organItem, organIndex, slotTyp
     /**@type {Internal.LivingEntity} */
     const target = event.entity
     if (!sourceEntity.getUuid()) return
-    if (!target.hasEffect('kubejs:vita_toxins')) return
+    if (target.hasEffect('kubejs:vita_toxins')) return
     target.potionEffects.add('kubejs:vita_toxins', 20 * 60, 0, false, false)
 
     SetVitaToxinsSource(target, sourceEntity.getUuid())

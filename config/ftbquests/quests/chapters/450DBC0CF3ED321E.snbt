@@ -572,74 +572,6 @@
 			y: 7.5d
 		}
 		{
-			dependencies: ["4352DE73166C1622"]
-			description: [
-				"除了拐杖外，还有大量的特种模块化工具可以制造。但这些工具往往需要提供其他的加工台才能够正常锻造。"
-				""
-				"比如，您可以将锻造台放置在加工台附近，加工台即可解锁砍刀身、指环、配重等多种可用的武器部件。"
-				""
-				"类似的&6砂轮、铁砧、锻造台、制箭台、附魔台、织布机、高炉、锻造加工台甚至幽匿催发体&r，都可以为加工台提供不同的制造能力，进而解锁各种部件。"
-				""
-				"但在您精研这些方块前，请先使用&6周围放置有锻造台的加工台&r，&6改造任意一把剑的剑身至砍刀身&r。"
-				"{@pagebreak}"
-				"锻造台 - &7指环、配重、环首、砍刀身"
-				"&r"
-				"幽匿催发体 - &7未绑定的提取器"
-				"&r"
-				"织布机 - &7裹柄、绑定"
-				"&r"
-				"制箭台 - &7长臂、反曲臂、弓臂调节器、稳定器"
-				"&r"
-				"高炉 - &7裹柄"
-				"&r"
-				"铁砧 - &7锛头、羊角头、镰、重剑身、强化血槽"
-				"&r"
-				"附魔台 - &7镶嵌"
-				"&r"
-				"砂轮 - &7短剑身、锯齿、刻制倒钩&r"
-			]
-			id: "47FECDBBB74D22BA"
-			rewards: [{
-				id: "297CA961974E6C1F"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "解锁隐藏的原理图"
-			tasks: [{
-				icon: {
-					Count: 1
-					id: "tetra:modular_sword"
-					tag: {
-						Damage: 0
-						HideFlags: 1
-						honing_progress: 240
-						id: "a4243437-48e5-44c9-8acf-edc059d2dcdd"
-						"sword/basic_hilt_material": "basic_hilt/stick"
-						"sword/blade": "sword/machete"
-						"sword/decorative_pommel_material": "decorative_pommel/iron"
-						"sword/guard": "sword/makeshift_guard"
-						"sword/hilt": "sword/basic_hilt"
-						"sword/machete_material": "machete/iron"
-						"sword/makeshift_guard_material": "makeshift_guard/iron"
-						"sword/pommel": "sword/decorative_pommel"
-					}
-				}
-				id: "5289B9A00359BBD8"
-				item: {
-					Count: 1
-					id: "maa:tetra_module"
-					tag: {
-						value: "[sword/blade]:[sword/machete]"
-					}
-				}
-				title: "任意剑身类型为砍刀身的武器"
-				type: "item"
-			}]
-			title: "研习原理图"
-			x: 6.0d
-			y: 2.5d
-		}
-		{
 			dependencies: ["1571ABBF59F33928"]
 			description: [
 				"通过金属碎片，您可以制成锻锤——一种可以放置在工作台上方两格生效的特殊锤类锻造工具。"
@@ -672,11 +604,11 @@
 				type: "item"
 			}]
 			title: "研习锻造工坊"
-			x: 6.0d
-			y: -2.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["47FECDBBB74D22BA"]
+			dependencies: ["4352DE73166C1622"]
 			description: [
 				"您可能会发现在某些情况下，需要远超于黑曜石锤子的加工等级。"
 				""
@@ -704,8 +636,8 @@
 				}
 			]
 			title: "研习更高的加工等级"
-			x: 6.0d
-			y: 0.0d
+			x: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["75A6BEDA4695AFC6"]
@@ -788,11 +720,11 @@
 				type: "item"
 			}]
 			title: "研习稳定锻造之法"
-			x: 3.0d
-			y: 0.0d
+			x: 6.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["47FECDBBB74D22BA"]
+			dependencies: ["1571ABBF59F33928"]
 			description: [
 				"在地下深处，层层叠叠的&6深板岩之间&r，偶尔你会看到一些零落的白色光球。"
 				""
@@ -813,7 +745,7 @@
 				type: "item"
 			}]
 			title: "地底深处"
-			x: 3.0d
+			x: 6.0d
 			y: 2.5d
 		}
 	]
