@@ -1,7 +1,7 @@
 // priority: 999
 const PlayerTypeDimensionRule = {
-    'default': { blackList: ['kubejs:amusement_park', 'minecraft:the_nether'] },
-    'amusement': { whiteList: ['kubejs:amusement_park'] },
+    'default': { blackList: [] },
+    'amusement': { whiteList: [] },
     'rouge': { whiteList: [] }
 }
 MAAEvents.playerDimensionChange(event => {

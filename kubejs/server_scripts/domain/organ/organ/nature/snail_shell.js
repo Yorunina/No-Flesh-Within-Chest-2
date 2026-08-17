@@ -13,13 +13,17 @@ RegistryOrgan('kubejs:snail_shell')
 */
 function SnailShellEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
-    if (entity.hasEffect('minecraft:resistance')) {
+    if (entity.hasEffect('minecraft:resistance') && entity.getEffect('minecraft:resistance').getDuration() > 20 * 5) {
         let effect = entity.getEffect('minecraft:resistance')
-        entity.potionEffects.add('minecraft:resistance', 20 * 10, Math.min(effect.getAmplifier() + 1, 4), false, false)
+        entity.potionEffects.add('minecraft:resistance', 20 * 10, Math.min(effect.getAmplifier() + 1, 3), false, false)
+    } else {
+        entity.potionEffects.add('minecraft:resistance', 20 * 10, 0, false, false)
     }
-    if (entity.hasEffect('minecraft:slowness')) {
+    if (entity.hasEffect('minecraft:slowness') && entity.getEffect('minecraft:slowness').getDuration() > 20 * 5) {
         let effect = entity.getEffect('minecraft:slowness')
-        entity.potionEffects.add('minecraft:slowness', 20 * 10, Math.min(effect.getAmplifier() + 1, 4), false, false)
+        entity.potionEffects.add('minecraft:slowness', 20 * 10, Math.min(effect.getAmplifier() + 1, 3), false, false)
+    } else {
+        entity.potionEffects.add('minecraft:slowness', 20 * 10, 0, false, false)
     }
 }
 

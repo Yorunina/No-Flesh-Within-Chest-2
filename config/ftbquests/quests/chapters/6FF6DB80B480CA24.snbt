@@ -43,7 +43,6 @@
 				"4293287DE904FF55"
 			]
 			hide_dependency_lines: true
-			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"

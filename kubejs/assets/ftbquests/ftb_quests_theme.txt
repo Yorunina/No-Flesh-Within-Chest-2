@@ -35,6 +35,10 @@ background: kubejs:textures/gui/tasks/background/the_world_background.png; color
 [2F127C50E2FDB1F0]
 background: kubejs:textures/gui/tasks/background/possibility_background.png; color=rgb(0, 0, 0); tile_size=64
 
+# 内部
+[6FF6DB80B480CA24]
+background: kubejs:textures/gui/tasks/background/inside_background.png; color=rgb(0, 0, 0); tile_size=64
+
 # 血肉孢子
 [1E27D16084D6A3C7]
 background: kubejs:textures/gui/tasks/background/flesh_wart_background.png; color=rgb(0, 0, 0); tile_size=64

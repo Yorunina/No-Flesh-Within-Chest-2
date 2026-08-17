@@ -861,7 +861,7 @@
     "tooltips.kubejs.jumping_spider_leg.alt.1": "    §6★§r 除§6跳蛛以外§r的生物安装该器官，只要该生物处在地面上，会每秒强制触发一次跳跃 ",
     "item.kubejs.snail_shell": "蜗牛壳",
     "tooltips.kubejs.snail_shell.default.1": "安全速度",
-    "tooltips.kubejs.snail_shell.alt.1": "    §6★§r 受到伤害时，会获得持续10秒的§6抗性提升§r和§6缓慢效果§r，效果最高到5级",
+    "tooltips.kubejs.snail_shell.alt.1": "    §6★§r 受到伤害时，会获得持续10秒的§6抗性提升§r和§6缓慢效果§r，效果最高到4级",
     "item.kubejs.stick_bug_exoskeleton": "竹节虫骨骼",
     "tooltips.kubejs.stick_bug_exoskeleton.default.1": "融入环境",
     "tooltips.kubejs.stick_bug_exoskeleton.alt.1": "    §6★§r 当生物静止时，会获得短期的§6真实隐身§r",

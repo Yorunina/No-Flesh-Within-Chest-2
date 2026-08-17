@@ -30,7 +30,6 @@ function BloodCrystalFactoryEntityTick(customData, event, organItem, organIndex,
     if (convertableHealth <= 0) return
     if (slotType != TransdimensionalMechanized) {
         let bloodCrystalCount = Math.min(Math.max(Math.floor(convertableHealth / 2), 0), 64)
-        entity.setHealth(entity.getHealth() - bloodCrystalCount * 2)
         if (bloodCrystalCount <= 0) return
         let canSetSlotList = []
         for (let i = 0; i < chestCavity.inventory.getContainerSize(); i++) if (chestCavity.inventory.getItem(i).isEmpty()) canSetSlotList.push(i)

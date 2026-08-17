@@ -138,7 +138,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'compactmachines:wall' })
     event.shaped(Item.of('compactmachines:wall', 8), [
         ['#forge:obsidian', '#forge:obsidian', '#forge:obsidian'],
-        ['#forge:obsidian', 'minecraft:ender_eye', '#forge:obsidian'],
+        ['#forge:obsidian', 'minecraft:netherite_ingot', '#forge:obsidian'],
         ['#forge:obsidian', '#forge:obsidian', '#forge:obsidian']
     ])
 
