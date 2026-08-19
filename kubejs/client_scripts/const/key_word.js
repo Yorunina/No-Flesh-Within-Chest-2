@@ -83,6 +83,12 @@ const EntityDeathHover = Text.translatable('tooltips.kubejs.hover.entity_death.0
         Text.translatable('tooltips.kubejs.hover.entity_death.0').gold(),
         Text.translatable('tooltips.kubejs.hover.entity_death.1')
     ]))
+const EntityFallHover = Text.translatable('tooltips.kubejs.hover.entity_fall.0').gold().underlined()
+    .hover(HoverTextList([
+        Text.translatable('tooltips.kubejs.hover.entity_fall.0').gold(),
+        Text.translatable('tooltips.kubejs.hover.entity_fall.1'),
+        Text.translatable('tooltips.kubejs.hover.entity_fall.2')
+    ]))
 const FrozenHover = Text.translatable('tooltips.kubejs.hover.frozen.0').aqua().underlined()
     .hover(HoverTextList([
         Text.translatable('tooltips.kubejs.hover.frozen.0').aqua(),

@@ -4,7 +4,7 @@ StartupEvents.registry('mob_effect', event => {
         .harmful()
         .effectTick((entity, lvl) => {
             if (entity.age % 40 != 0) return
-            if (!(entity.isLiving() && entity instanceof $PathfinderMob)) return
+            if (!entity.isLiving()) return
             const level = entity.level
             /**@type {UUID} */
             let vitaToxinsSource = GetVitaToxinsSource(entity)

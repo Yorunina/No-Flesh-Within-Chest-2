@@ -266,7 +266,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:dragonfly_wing')
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:camel_hump')
     .addDefault(Text.translatable('tooltips.kubejs.camel_hump.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.camel_hump.alt.1'))
+    .addAlt(Text.translatable('tooltips.kubejs.camel_hump.alt.1', EntityFallHover))
     .addAlt(Text.translatable('tooltips.kubejs.camel_hump.alt.2', KeyActiveHover))
 )
 

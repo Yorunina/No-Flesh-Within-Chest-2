@@ -102,7 +102,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:ancient_immortal_volcanic_cry
     .addDefault(Text.translatable('tooltips.kubejs.ancient_immortal_volcanic_crystal.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.ancient_immortal_volcanic_crystal.alt.1'))
     .addCtrl(AwakeRelicsSlotType)
-    .addCtrl(Text.translatable('tooltips.kubejs.ancient_immortal_volcanic_crystal.ctrl.1'))
+    .addCtrl(Text.translatable('tooltips.kubejs.ancient_immortal_volcanic_crystal.ctrl.1', EntityFallHover))
     .addCtrl(RelicsOrganScoreTooltips(true))
 )
 
@@ -249,7 +249,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:ancient_cold_armor_plate')
     .addDefault(Text.translatable('tooltips.kubejs.ancient_cold_armor_plate.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.ancient_cold_armor_plate.alt.1'))
     .addCtrl(AwakeRelicsSlotType)
-    .addCtrl(Text.translatable('tooltips.kubejs.ancient_cold_armor_plate.ctrl.1'))
+    .addCtrl(Text.translatable('tooltips.kubejs.ancient_cold_armor_plate.ctrl.1', EntityFallHover))
     .addCtrl(RelicsOrganScoreTooltips(true))
 )
 

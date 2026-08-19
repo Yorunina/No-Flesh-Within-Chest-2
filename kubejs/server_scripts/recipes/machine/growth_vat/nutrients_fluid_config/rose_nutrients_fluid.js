@@ -1,6 +1,6 @@
 // priority: 502
 const RoseNutrientsOrganDataWeightModel = new WeightRandomModel()
-    .addWeightRandom({ name: 'kubejs:rosy', mean: 1, sigma: 0.4 }, 5)
+    .addWeightRandom({ name: 'kubejs:rosy', mean: 2, sigma: 0.8 }, 5)
 
 const RoseNutrientsPotentialOrganDataWeightModel = new WeightRandomModel()
     .addWeightRandom({ name: 'chestcavity:defense', mean: 0.5, sigma: 0.5 }, 5)

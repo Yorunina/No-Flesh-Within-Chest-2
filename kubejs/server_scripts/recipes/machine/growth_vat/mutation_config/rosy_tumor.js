@@ -1,7 +1,7 @@
 // priority: 502
 const RosyTumorMutationConfigModel = new TumorMutationConfigModel()
     .setCondition((machine, fluid, item, slotId, organData) => {
-        return organData.getFloat('kubejs:rosy') >= 1.0 && Math.random() > 0.5
+        return organData.getFloat('kubejs:rosy') >= 1.0 && Math.random() > 0.25
     })
     .setResult((machine, fluid, item, slotId, organData) => {
         let tumorNbt = new $CompoundTag()
