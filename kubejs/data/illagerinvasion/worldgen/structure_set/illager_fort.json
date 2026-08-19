@@ -8,8 +8,8 @@
     "frequency": 0.2,
     "frequency_reduction_method": "legacy_type_1",
     "salt": 169476082,
-    "separation": 32,
-    "spacing": 64
+    "separation": 48,
+    "spacing": 128
   },
   "structures": [
     {

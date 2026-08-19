@@ -22,7 +22,7 @@ function TwinkleRibChestLootStrategy(customData, event, organItem, organIndex, s
     } else if (lootTableId.getPath().endsWith('buried_treasure')) {
         event.addLoot(LootEntry.of('kubejs:relics_gem'))
     }
-    if (event.loot.size() >= 18) {
+    if (loot.stream().mapToInt(pLoot => pLoot.getCount()).sum() >= 64) {
         event.addLoot(LootEntry.of('kubejs:ancient_crystal').withChance(0.1))
     }
     organItem.setDamageValue(organItem.getDamageValue() + 1)

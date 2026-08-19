@@ -6,8 +6,8 @@
       "other_set": "minecraft:villages"
     },
     "salt": 169476081,
-    "separation": 32,
-    "spacing": 64
+    "separation": 48,
+    "spacing": 128
   },
   "structures": [
     {

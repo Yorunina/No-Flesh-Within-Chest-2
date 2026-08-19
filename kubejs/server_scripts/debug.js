@@ -1,7 +1,5 @@
 // priority: 500
 ItemEvents.rightClicked('stick', event => {
-    const player = event.player
-    const level = event.level
     console.warn('测试版本，禁止使用')
     // let pos = new BlockPos(0, 56, 0)
     // /**@type {Internal.ShellForgeBlockEntity} */

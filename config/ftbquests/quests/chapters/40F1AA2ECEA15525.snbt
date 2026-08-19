@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2EA410FBC8182C1E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "40F1AA2ECEA15525"
@@ -73,6 +74,8 @@
 				"但除该效果之外，另一个效果也非常引人深思——即特殊的战利品表和特殊的遗物战利品。"
 				""
 				"为了针对该内容进行了深挖，请允许我指引您寻找这些早已被遗忘的&6闪耀过往&r。"
+				""
+				"请注意，器官效果先于饰品结算——这意味着会优先复制战利品而后应用誓言的效果。"
 			]
 			hide_until_deps_complete: true
 			id: "2EA410FBC8182C1E"
@@ -1056,7 +1059,7 @@
 		}
 		{
 			dependencies: ["4BBFD32ECC9FB0B5"]
-			description: ["闪耀肋骨描述的特殊战利品表还有一个——如&6若一个箱子的战利品超过了18格&r，则有&610%&r的可能会生成名为&6远古水晶&r的特殊产物。"]
+			description: ["闪耀肋骨描述的特殊战利品表还有一个——如&6若一个箱子的战利品总数超过了64个&r，则有&610%&r的可能会生成名为&6远古水晶&r的特殊产物。"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "04BF46B34F490034"
