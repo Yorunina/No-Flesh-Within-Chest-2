@@ -8,8 +8,6 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:leaf_insect_exoskeleton').maxStackSize(1).texture('kubejs:item/organs/nature/leaf_insect_exoskeleton').tag('kubejs:nature')
 
-    event.create('kubejs:tentacles_harvester').maxStackSize(1).texture('kubejs:item/organs/nature/tentacles_harvester').tag('kubejs:nature')
-
     event.create('kubejs:dumbo_octopus_hat').maxStackSize(1).texture('kubejs:item/organs/nature/dumbo_octopus_hat').tag('kubejs:nature')
 
     event.create('kubejs:ferret_tail').food(food => food.hunger(2).saturation(0.5)).maxStackSize(1).texture('kubejs:item/organs/nature/ferret_tail').tag('kubejs:nature')

@@ -51,6 +51,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Item.of('biomancy:living_flesh'), Item.of('kubejs:swollen_stamen'), Item.of('minecraft:sunflower')], Item.of('kubejs:vita_sunflower'), 'biomancy:organ', 30)
 
+    event.recipes.biomancy.bio_forging([Item.of('biomancy:living_flesh'), Item.of('kubejs:swollen_stamen'), Item.of('minecraft:weeping_vines')], Item.of('kubejs:tentacles_harvester'), 'biomancy:organ', 30)
+
     event.recipes.biomancy.bio_forging([Item.of('supplementaries:ash', 8), Item.of('minecraft:nether_wart', 8), Item.of('minecraft:paper', 8)], Item.of('kubejs:relics_incense'), 'biomancy:components', 30).id('kubejs:relics_incense')
 
     event.recipes.biomancy.bio_forging([Item.of('supplementaries:ash', 8), Item.of('kubejs:ancient_crystal', 1), Item.of('minecraft:paper', 8)], Item.of('kubejs:ancient_incense'), 'biomancy:components', 30).id('kubejs:ancient_incense')

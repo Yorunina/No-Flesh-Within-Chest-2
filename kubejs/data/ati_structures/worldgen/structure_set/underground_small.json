@@ -1,0 +1,31 @@
+{
+  "structures": [
+    {
+      "structure": "ati_structures:underwater_dungeon",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:silverfish_nest",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:sculk_deposit",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:rotting_temple_underground",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:pufferfish_cave",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 123895344,
+    "locate_offset": [0, 0, 0],
+    "spacing": 30,
+    "separation": 20
+  }
+}

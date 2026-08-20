@@ -10,7 +10,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:vita_sunflower').maxStackSize(1).texture('kubejs:item/organs/plant/vita_sunflower').maxDamage(15).tag('kubejs:plant')
     event.create('kubejs:rootling_ectoplasm').maxStackSize(1).texture('kubejs:item/organs/plant/rootling_ectoplasm').tag('kubejs:plant')
     event.create('kubejs:foliaath_stem').maxStackSize(1).texture('kubejs:item/organs/plant/foliaath_stem').tag('kubejs:plant').tag('kubejs:spine')
-    event.create('kubejs:crimson_rib').maxStackSize(1).tag('kubejs:plant').texture('kubejs:item/organs/plant/crimson_rib').tag('kubejs:bone')
+    event.create('kubejs:crimson_rib').maxStackSize(1).texture('kubejs:item/organs/plant/crimson_rib').tag('kubejs:bone').tag('kubejs:plant')
+    event.create('kubejs:tentacles_harvester').maxStackSize(1).texture('kubejs:item/organs/plant/tentacles_harvester').tag('kubejs:plant').tag('kubejs:muscle')
 
     event.create('kubejs:hop_kidney')
         .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {

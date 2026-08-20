@@ -14,10 +14,6 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:moew_nose')
     .addAlt(Text.translatable('tooltips.kubejs.moew_nose.alt.1'))
 )
 
-RegistryOrganTooltip(new MultiStateTooltip('kubejs:tentacles_harvester')
-    .addDefault(Text.translatable('tooltips.kubejs.tentacles_harvester.default.1').gray())
-    .addAlt(Text.translatable('tooltips.kubejs.tentacles_harvester.alt.1'))
-)
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:leaf_insect_exoskeleton')
     .addDefault(Text.translatable('tooltips.kubejs.leaf_insect_exoskeleton.default.1').gray())

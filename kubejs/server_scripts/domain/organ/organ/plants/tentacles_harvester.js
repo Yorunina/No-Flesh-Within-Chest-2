@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:tentacles_harvester')
-    .addScore('chestcavity:digestion', 1)
-    .addScore('chestcavity:defense', -2)
+    .addScore('chestcavity:detoxification', 1)
+    .addScore('chestcavity:strength', 1)
 
 
 /**

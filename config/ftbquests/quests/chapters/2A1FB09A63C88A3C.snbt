@@ -575,7 +575,7 @@
 			description: [
 				"由于压缩空间大小有限，部分产线无法在一个压缩空间中完成，此时您可能会尝试使用压缩空间中&6套娃压缩空间&r的方式来解决空间危机——但实际上还有一个更好的方式。"
 				""
-				"请您制作一块&6虚空钢锭&r，为我们后续的无限传输提供基础材料支持。"
+				"请您制作一块&6虚空钢锭&r，为我们后续的无线传输提供基础材料支持。"
 			]
 			hide_until_deps_complete: true
 			id: "10D71CC7F16C3939"
@@ -610,7 +610,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "无限传输方案"
+			subtitle: "无线传输方案"
 			tasks: [{
 				id: "15734FEAA0EA90D4"
 				item: {

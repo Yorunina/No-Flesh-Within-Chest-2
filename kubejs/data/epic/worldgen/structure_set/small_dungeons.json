@@ -1,0 +1,23 @@
+{
+  "structures": [
+    {
+      "structure": "epic:small_ice_dungeon",
+      "weight": 1
+    },
+    {
+      "structure": "epic:small_plains_dungeon",
+      "weight": 1
+    },
+    {
+      "structure": "epic:small_sand_dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 987,
+    "locate_offset": [0, 0, 0],
+    "spacing": 50,
+    "separation": 30
+  }
+}

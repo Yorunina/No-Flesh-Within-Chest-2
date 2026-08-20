@@ -1,0 +1,22 @@
+{
+    "structures": [
+        {
+            "structure": "ati_structures:gnome_hut",
+            "weight": 1
+        },
+        {
+            "structure": "ati_structures:warden_monument",
+            "weight": 1
+        },
+        {
+            "structure": "ati_structures:ancient_vessel",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 111,
+        "separation": 99,
+        "salt": 34562347
+    }
+}

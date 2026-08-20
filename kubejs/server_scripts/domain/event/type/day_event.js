@@ -1,4 +1,4 @@
-// priority: 500
+// priority: 999
 const CuriosNewDayEvent = new CuriosEventModel('new_day')
 ServerEvents.tick(event => {
     const server = event.server

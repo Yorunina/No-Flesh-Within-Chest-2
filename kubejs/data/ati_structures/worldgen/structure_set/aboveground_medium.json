@@ -1,0 +1,55 @@
+{
+  "structures": [
+    {
+      "structure": "ati_structures:dark_tower",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:dojo",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:monastery_tower",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:small_keep",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:illager_tower",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:mosque",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:lighthouse",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:overgrown_outpost",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:wither_keep",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:dark_keep",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 500,
+    "locate_offset": [
+      0,
+      0,
+      0
+    ],
+    "spacing": 60,
+    "separation": 20
+  }
+}

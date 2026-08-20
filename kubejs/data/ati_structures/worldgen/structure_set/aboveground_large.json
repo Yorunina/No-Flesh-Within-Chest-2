@@ -1,0 +1,103 @@
+{
+  "structures": [
+    {
+      "structure": "ati_structures:ancient_temple",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:desert_outpost",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:fortified_temple",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:granite_fort",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:herobrine_stronghold",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:jungle_settlement",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:manor",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:marble_chateau",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:old_fort",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:quarry",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:sinking_temple",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:tavern",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:villager_inn",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:woodland_keep",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:ruined_castle",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:arachnid_dwelling",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:steam_house",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:jungle_grotto",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:castillo",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:ati_stoneworks",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:old_residence",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:catalonian_castle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 93,
+    "locate_offset": [
+      0,
+      0,
+      0
+    ],
+    "spacing": 100,
+    "separation": 70
+  }
+}

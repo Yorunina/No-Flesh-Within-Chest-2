@@ -85,3 +85,8 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:crimson_rib')
     .addAlt(Text.translatable('tooltips.kubejs.crimson_rib.alt.1', Text.gold('50%'), LuckHover, PrimitivePlantHover))
     .addAlt(Text.translatable('tooltips.kubejs.crimson_rib.alt.2', PrimitivePlantHover, Text.gold('50%')))
 )
+
+RegistryOrganTooltip(new MultiStateTooltip('kubejs:tentacles_harvester')
+    .addDefault(Text.translatable('tooltips.kubejs.tentacles_harvester.default.1').gray())
+    .addAlt(Text.translatable('tooltips.kubejs.tentacles_harvester.alt.1'))
+)

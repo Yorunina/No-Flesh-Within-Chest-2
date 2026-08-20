@@ -1,0 +1,23 @@
+{
+  "structures": [
+    {
+      "structure": "ati_structures:underground_monument",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:spider_nest",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:wither_cavern",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 817997296,
+    "locate_offset": [0, 0, 0],
+    "spacing": 50,
+    "separation": 25
+  }
+}

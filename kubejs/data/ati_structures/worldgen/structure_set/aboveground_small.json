@@ -1,0 +1,63 @@
+{
+  "structures": [
+    {
+      "structure": "ati_structures:deepslate_keep",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:haunted_ruin",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:ice_tribe",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:nomadic_camp",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:rotten_log",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:stray_ruins",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:rotting_temple",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:old_home",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:illager_homestead",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:mud_tower",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:storage_house",
+      "weight": 1
+    },
+    {
+      "structure": "ati_structures:storage_shack",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 100000,
+    "locate_offset": [
+      0,
+      0,
+      0
+    ],
+    "spacing": 40,
+    "separation": 15
+  }
+}
