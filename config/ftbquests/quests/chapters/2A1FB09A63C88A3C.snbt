@@ -849,8 +849,8 @@
 			subtitle: "获取传送液"
 			tasks: [
 				{
-					id: "2781DC7218A9F170"
-					item: {
+					id: "1E4D67134D919AC6"
+					itemStack: {
 						Count: 1
 						id: "ftbquests:screen_1"
 						tag: {
@@ -880,7 +880,7 @@
 						}
 					}
 					title: "点此获取&6特制任务屏幕"
-					type: "item"
+					type: "maa:claim_item"
 				}
 				{
 					amount: 1000L

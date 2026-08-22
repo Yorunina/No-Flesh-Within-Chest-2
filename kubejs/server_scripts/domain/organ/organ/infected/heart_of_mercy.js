@@ -21,5 +21,5 @@ function HeartOfMercyEntityDoDamage(customData, event, organItem, organIndex, sl
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:heart_of_mercy')
-        .addOnlyStrategy('entity_do_damage', HeartOfMercyEntityDoDamage)
+        .addOnlyStrategy('entity_do_damage', HeartOfMercyEntityDoDamage, 1)
 )
