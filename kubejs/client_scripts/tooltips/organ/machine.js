@@ -25,7 +25,7 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:energy_bottle_red')
     .addCtrl(MachinaryLubricantSlotType)
     .addCtrl(Text.translatable('tooltips.kubejs.energy_bottle_red.ctrl.1', Text.gold('300%')))
     .addCtrl(RevolutionFlameType)
-    .addCtrl(Text.translatable('tooltips.kubejs.energy_bottle_red.ctrl.2', Text.gold('200%')))
+    .addCtrl(Text.translatable('tooltips.kubejs.energy_bottle_red.ctrl.2', Text.gold('1000%')))
 )
 
 RegistryOrganTooltip(new MultiStateTooltip('kubejs:revolution_cable')
