@@ -2835,6 +2835,7 @@
 				"在历史记录中，这种胸腔被简单的称作&6植物胸腔&r，其可以最大幅度发挥这些植物器官的能力，并且&6非常安全&r。"
 			]
 			hide_dependency_lines: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "kubejs:vita_rose_liver"

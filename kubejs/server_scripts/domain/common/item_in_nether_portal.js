@@ -49,13 +49,17 @@ InfinityEvents.itemInPortal(event => {
         let nameString = GetInfinityKeyDim(itemStack)
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById(nameString, level, pos)
+        return
     } else if (InfinityPortalItem2Item.has(itemId)) {
         itemEntity.setPortalCooldown(100)
         itemEntity.setItem(Item.of(InfinityPortalItem2Item.get(itemId), itemStack.getCount()))
+        return
     } else if (InfinityPortalItem2DimId.has(itemId)) {
         itemEntity.remove('changed_dimension')
         InfinityPortalCreator.tryCreatePortalById(InfinityPortalItem2DimId.get(itemId), level, pos)
+        return
     }
+    itemEntity.setPortalCooldown(0)
 })
 
 /**
