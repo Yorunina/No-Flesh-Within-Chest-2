@@ -2842,6 +2842,7 @@
 				tag: { }
 			}
 			id: "1FF6321E6FE68ECC"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "298F3A0E7CE1F3F9"
 				item: "lightmanscurrency:coin_gold"

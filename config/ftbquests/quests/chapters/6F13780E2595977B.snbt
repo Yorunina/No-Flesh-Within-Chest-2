@@ -1132,7 +1132,7 @@
 			hide_until_deps_complete: true
 			icon: "tetra:hammer_base"
 			id: "75096F8EF539CB29"
-			min_required_dependencies: 2
+			min_required_dependencies: 1
 			rewards: [
 				{
 					id: "200258A8FE5462ED"
@@ -1883,6 +1883,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "03C7BEEA8B969DD3"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "5FF93A1775163B20"
 				item: "lightmanscurrency:coin_gold"

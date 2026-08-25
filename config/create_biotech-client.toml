@@ -2,6 +2,8 @@ enableShulkerTeleporterCameraOffset = true
 enableShulkerTeleporterPlayerClipping = true
 #Render experience in Create fluid tanks as a conventional fluid instead of experience orbs.
 renderExperienceAsFluid = false
+#Render captured creatures on cardboard box fronts. Disable to use the packager-style face and skip entity icon caches.
+renderCapturedEntitiesOnBoxes = true
 
 [creeperBlastChamber]
 	enableExplosionParticles = true

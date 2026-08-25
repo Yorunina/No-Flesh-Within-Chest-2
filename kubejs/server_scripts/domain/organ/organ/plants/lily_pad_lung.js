@@ -1,6 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:lily_pad_lung')
-    .addScore('chestcavity:defense', 1.5)
+    .addScore('chestcavity:breath_capacity', 0.5)
+    .addScore('chestcavity:breath_recovery', 1)
     .addScore('kubejs:photosynthesis', 0.5)
 
 /**

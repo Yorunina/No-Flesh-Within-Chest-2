@@ -72,7 +72,25 @@ function PureColorReactionEntityTick(customData, event, organItem, organIndex, s
     }
 }
 
+/**
+* @param {OrganChestCavityUpdateStrategyCustomData} customData
+* @param {Internal.EvaluateChestCavityJS} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function PureColorReactionTakeOff(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    let attackAttr = entity.getAttribute('minecraft:generic.attack_damage')
+    if (attackAttr) attackAttr.removePermanentModifier(PureColorReactionTempAttackUpUUID)
+    let armorAttr = entity.getAttribute('minecraft:generic.armor')
+    if (armorAttr) armorAttr.removePermanentModifier(PureColorReactionTempArmorUpUUID)
+    let healthAttr = entity.getAttribute('minecraft:generic.max_health')
+    if (healthAttr) healthAttr.removePermanentModifier(PureColorReactionTempHealthUpUUID)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:pure_color_reaction')
         .addOnlyStrategy('entity_tick', PureColorReactionEntityTick)
+        .addOnlyStrategy('organ_take_off', PureColorReactionTakeOff)
 )

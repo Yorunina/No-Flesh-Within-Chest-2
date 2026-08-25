@@ -95,7 +95,26 @@ function BloodCrystalFactoryEntityTick(customData, event, organItem, organIndex,
     }
 }
 
+
+/**
+* @param {OrganChestCavityUpdateStrategyCustomData} customData
+* @param {Internal.EvaluateChestCavityJS} event 
+* @param {Internal.ItemStack} organItem
+* @param {number} organIndex
+* @param {string} slotType
+*/
+function BloodCrystalFactoryTakeOff(customData, event, organItem, organIndex, slotType) {
+    const entity = event.entity
+    let attackAttr = entity.getAttribute('minecraft:generic.attack_damage')
+    if (attackAttr) attackAttr.removePermanentModifier(BloodCrystalFactoryTempAttackUpUUID)
+    let armorAttr = entity.getAttribute('minecraft:generic.armor')
+    if (armorAttr) armorAttr.removePermanentModifier(BloodCrystalFactoryTempArmorUpUUID)
+    let healthAttr = entity.getAttribute('minecraft:generic.max_health')
+    if (healthAttr) healthAttr.removePermanentModifier(BloodCrystalFactoryTempHealthUpUUID)
+}
+
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:blood_crystal_factory')
         .addOnlyStrategy('entity_tick', BloodCrystalFactoryEntityTick)
+        .addOnlyStrategy('organ_take_off', BloodCrystalFactoryTakeOff)
 )

@@ -665,7 +665,7 @@
     "tooltips.kubejs.mutation_intestine.alt.1": "    §6★§r 被附加饥饿效果时，会使§6饥饿§r效果转变为持续时间相同、等级相同的§6再生§r效果",
     "item.kubejs.guardian_core": "守卫者核心",
     "tooltips.kubejs.guardian_core.default.1": "异世之物的馈赠",
-    "tooltips.kubejs.guardian_core.alt.1": "    §6★§r 被附加缓慢效果时，会使§6缓慢§r效果转变为持续时间相同、等级相同的§6急迫§r效果",
+    "tooltips.kubejs.guardian_core.alt.1": "    §6★§r 被附加挖掘疲劳效果时，会使§6挖掘疲劳§r效果转变为持续时间相同、等级相同的§6急迫§r效果",
     "item.kubejs.phantom_wing": "指翼膜",
     "tooltips.kubejs.phantom_wing.default.1": "轻灵如蝉翼",
     "item.kubejs.rabbit_foot": "兔脚",

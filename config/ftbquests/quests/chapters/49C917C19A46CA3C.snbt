@@ -858,6 +858,28 @@
 			x: -7.5d
 			y: 5.5d
 		}
+		{
+			dependencies: ["42D69F3F93550767"]
+			description: [
+				"为了让多个容器被存储终端访问，您需要制作一个&6存储连接器&r。"
+				""
+				"存储连接器会将一定范围内的容器全部连接到此处，进而方面您统一通过一个终端管理。"
+			]
+			id: "734783A2E419DD19"
+			rewards: [{
+				id: "4B914D64483C1578"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "多容器连接"
+			tasks: [{
+				id: "50E76C53487D8E36"
+				item: "toms_storage:ts.inventory_connector"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
 	]
 	title: "常识：世界"
 }
