@@ -25,7 +25,7 @@ function EternalIncenseEntitySpawned(customData, event, curiosItem) {
 
     let healthAttr = entity.getAttribute('minecraft:generic.max_health')
     if (healthAttr) {
-        healthAttr.addPermanentModifier(new $AttributeModifier(EternalIncenseEntitySpawnedUUID, EternalIncenseEntitySpawnedIdentifier, relicsKills * 20, 'multiply_base'))
+        healthAttr.addPermanentModifier(new $AttributeModifier(EternalIncenseEntitySpawnedUUID, EternalIncenseEntitySpawnedIdentifier, relicsKills * 10, 'multiply_base'))
         entity.setHealth(entity.getMaxHealth())
     }
     let armorAttr = entity.getAttribute('minecraft:generic.armor')

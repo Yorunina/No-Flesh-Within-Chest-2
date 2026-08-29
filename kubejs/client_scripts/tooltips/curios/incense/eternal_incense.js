@@ -22,7 +22,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:eternal_incense')
             Text.translatable('tooltips.kubejs.eternal_incense.alt.3', ChampionChaosProtectionHover, championLevelStr).gray(),
             Text.translatable('tooltips.kubejs.eternal_incense.alt.3', ChampionPurityProtectionHover, championLevelStr).gray(),
         ], 500)(text, item)
-        res.push(Text.translatable('tooltips.kubejs.eternal_incense.alt.2', Text.of((championLevel * 20).toFixed(0)).gold(), Text.of((championLevel * 20 + 100).toFixed(0)).gold()).gray())
+        res.push(Text.translatable('tooltips.kubejs.eternal_incense.alt.2', Text.of(`${(championLevel * 10).toFixed(0)}00%`).gold(), Text.of((championLevel * 20 + 100).toFixed(0)).gold()).gray())
         return res
     })
     .addCtrl(Text.translatable('tooltips.kubejs.eternal_incense.ctrl.1', RelicsBossHover, EngraveHover))

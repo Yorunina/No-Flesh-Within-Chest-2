@@ -1,6 +1,6 @@
 // priority: 501
 /**
- * 永恒遗物镌刻方法，优先级需要高些，推荐10
+ * 永恒熏香镌刻方法，优先级需要高些，推荐10
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
  * @param {Internal.ItemStack} organItem
