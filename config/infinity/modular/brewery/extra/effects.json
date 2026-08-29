@@ -1,0 +1,148 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:blackout",
+				"Color": 1118481,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:combustion",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:drunk",
+				"Color": 14736687,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:explosion",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:haley",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:healingtouch",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:lightning_strike",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:mining",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:pacify",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:partystarter",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:pintcharisma",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:protectivetouch",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:renewingtouch",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:repulsion",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:snowwhite",
+				"Color": 0,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "brewery:toxictouch",
+				"Color": 0,
+				"Instant": false
+			}
+		}
+	]
+}

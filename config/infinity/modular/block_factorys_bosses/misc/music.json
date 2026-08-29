@@ -1,0 +1,28 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:music.ashlord"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:music.helvar"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:music.nerakyss"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:music.sirok"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:music.skor"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:music.yeti_intro"
+		}
+	]
+}

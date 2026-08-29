@@ -14,13 +14,13 @@ function HarbingerLungEntityKill(customData, event, organItem, organIndex, slotT
     const target = event.entity
 
     if (target.type == 'cataclysm:the_harbinger' && target.persistentData.getString('relicsStage') == 'relics') {
-        SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:sturdy_harbinger_lung'), organIndex, slotType, true)
+        SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:sturdy_harbinger_lung'), organIndex, slotType, true)
         return
     }
 
     if (!target.isOnFire()) return
     /**@type {Internal.LivingEntity} */
-    const killer = event.source.actual
+    const killer = customData.killer
     let fireTicksRemain = target.getRemainingFireTicks()
     if (fireTicksRemain <= 0) return
     killer.heal(Math.floor(fireTicksRemain / 20))

@@ -4,280 +4,280 @@
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:createmonsterroom",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "create_structures_arise:createfluidtank",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createfluidtank"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:honey_pit",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:pillagersteampunkairship"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:createcontainer",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:crimsite_tower"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "none",
+				"id": "create_structures_arise:minetrain",
+				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:chocolate_pit"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "beard_box",
+				"id": "create_structures_arise:createdesertwell",
+				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:obsidiantemple"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createminiskyvillage"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "underground_structures",
+				"id": "create_structures_arise:create_dungeon_base",
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:create_dungeon_base"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:deadlordshouse",
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:deadlordshouse"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:windmill",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createdesertwell"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:towerofochrum",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:create_copper_statue"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:create_copper_statue",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createoldruine"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:createlittleman",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:minetrain"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createlittleman"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
+				"id": "create_structures_arise:createminiskyvillage",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:honey_pit"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:createwitchhut",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createcushercrane"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:pillager_boat",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createairdrop"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:pillager_boat"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createcontainer"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createhouse"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
+				"id": "create_structures_arise:create_bastion",
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:darkcastle"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:crimsite_tower",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:windmill"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:createhouse",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createwitchhut"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "create_structures_arise:createpickaxestatue",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "create_structures_arise:darkcastle",
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:create_bastion"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
+				"id": "create_structures_arise:obsidiantemple",
+				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createlosttrainstation"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createpickaxestatue"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
+				"id": "create_structures_arise:pillagersteampunkairship",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:create_ruined_castle"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:towerofochrum"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
+				"id": "create_structures_arise:create_ruined_castle",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
-				},
-				"id": "create_structures_arise:createmonsterroom"
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "create_structures_arise:createoldruine",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "create_structures_arise:createlosttrainstation",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "create_structures_arise:createcushercrane",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "create_structures_arise:createairdrop",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "create_structures_arise:chocolate_pit",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				}
 			}
 		}
 	]

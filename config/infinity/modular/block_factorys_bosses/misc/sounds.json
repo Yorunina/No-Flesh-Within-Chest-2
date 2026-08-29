@@ -1,0 +1,492 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:block.underworld_arena_door.close"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:block.underworld_arena_door.key_insertion"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:block.underworld_arena_door.open"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.barrage_rift.closing"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.barrage_rift.jump"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.barrage_rift.rift_fireball"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.barrage_rift.rift_idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.barrage_rift.rift_open"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.barrage_rift.slash_air"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.cannon.fire"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.cannon.get_out"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.cannon.impact"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.cannon.reload"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.cannon.seat"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.crate.land"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.bite"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.claw"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.fire_smelted_item"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.fireballs"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.firelayer"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.footstep"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.phase_transition"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.roar"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.spawn"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.tailswipe"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.dragon.wing"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.ice_gauntlet.icicle_break"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.ice_gauntlet.icicle_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.ice_gauntlet.icicle_spawning"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.attack_voiceline"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.block"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.combo1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.combo2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.dodge"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.fake_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.footstep"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.heavy_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.horizontal_slash"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.horizontal_slash_transition"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.intro"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.introduction_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.jumpspin_1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.jumpspin_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.jumpspin_3"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.knock_off"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.knocked_down"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.light_attack_1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.light_attack_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.light_heavy_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.resurrection"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.revenge_attack"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.stack_remove"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.thrust"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.vertical_slash"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.vertical_slash_transition"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.wisp_explode"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.knight.wisp_explode_last"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.death_final"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.grab_and_throw"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.growling"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.intro"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.light_slam"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.phase_transition"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.strong_slam"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.tentacle_death"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.warning"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.kraken.water_movement"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.roll"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sand_column.eruption"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.bite"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.charge"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.dive"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.dive_long"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.dive_short"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.emerge"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.impact"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.poison_spit"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.screech"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.sandworm.tail_impact"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.silence"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.enrage"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.footstep"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.groundsmash"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.handswipe"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.handswipe2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.hit"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.ice_barrage"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.ice_barrage_whirlpool"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.jump"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.land"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.punch"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.ranged_control"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.ranged_control_ice_block"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:entity.yeti.spawn"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.dagger_stab"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.ice_gauntlet.blast_1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.ice_gauntlet.blast_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.ice_gauntlet.icicle_pickup"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.ice_gauntlet.punch"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.ice_gauntlet.throw_icicle"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.knight_sword_swing"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.large_sword_swing"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.sandworm_gauntlet.poison_barrage_release"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.charging"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.disappearing"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.smash_ground"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.spawn_tentacles"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.tentacle_strike_the_ground"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.throw_back"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.throw_forth"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.undying_tentacle.throw_grab"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:item.warrior_sword_swing"
+		}
+	]
+}

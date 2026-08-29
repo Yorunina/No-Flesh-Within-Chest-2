@@ -54,10 +54,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "infinity:chromatic_potion"
-		},
-		{
-			"weight": 1.0,
 			"key": "infinity:chromatic_wool"
 		},
 		{
@@ -79,26 +75,6 @@
 		{
 			"weight": 1.0,
 			"key": "infinity:footprint"
-		},
-		{
-			"weight": 1.0,
-			"key": "infinity:iridescence_bucket"
-		},
-		{
-			"weight": 1.0,
-			"key": "infinity:iridescent_carpet"
-		},
-		{
-			"weight": 1.0,
-			"key": "infinity:iridescent_potion"
-		},
-		{
-			"weight": 1.0,
-			"key": "infinity:iridescent_star"
-		},
-		{
-			"weight": 1.0,
-			"key": "infinity:iridescent_wool"
 		},
 		{
 			"weight": 1.0,

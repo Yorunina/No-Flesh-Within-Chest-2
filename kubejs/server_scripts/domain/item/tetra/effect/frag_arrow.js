@@ -3,7 +3,7 @@ TetraJSEvents.createArrow('bow', event => {
     if (event.drawProgress < 18) return
     applyFragArrowEffect(event)
 })
-TetraJSEvents.createArrow('crowssbow', event => {
+TetraJSEvents.createArrow('crossbow', event => {
     applyFragArrowEffect(event)
 })
 
@@ -17,8 +17,9 @@ function applyFragArrowEffect(event) {
     let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:frag_arrow')
     let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:frag_arrow')
     if (effectEfficiency <= 0 || effectLevel <= 0) return
-    let aoeArrowEntity = new AoeArrowEntity(event.getProjectile())
-    aoeArrowEntity.setDamageFactor(0.1 + effectEfficiency * 0.1)
-    aoeArrowEntity.setAoeSize(2 + effectLevel * 0.5)
+    let aoeArrowEntity = EntityJSUtils.createArrowFrom(event.getProjectile(), 'kubejs:aoe_arrow')
+    aoeArrowEntity.persistentData.putBoolean('kubejs_aoe_done', false)
+    aoeArrowEntity.persistentData.putFloat('kubejs_aoe_damage_factor', 0.1 + effectEfficiency * 0.1)
+    aoeArrowEntity.persistentData.putFloat('kubejs_aoe_size', 2 + effectLevel * 0.5)
     event.setProjectile(aoeArrowEntity)
 }

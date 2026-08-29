@@ -1,0 +1,31 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "modulargolems:maledictus_rage",
+				"Color": -1,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "modulargolems:mechanical_force",
+				"Color": -1,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "modulargolems:mechanical_mobility",
+				"Color": -1,
+				"Instant": false
+			}
+		}
+	]
+}

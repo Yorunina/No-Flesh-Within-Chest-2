@@ -3,20 +3,20 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "doapi:standard",
+				"float": false,
 				"top": true,
+				"Name": "doapi:standard",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "doapi:wall_standard",
+				"float": false,
 				"top": false,
+				"Name": "doapi:wall_standard",
 				"full": false
 			}
 		}

@@ -1,8 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:rose_quartz_muscle')
-    .addScore('chestcavity:strength', 1.5)
-    .addScore('chestcavity:defense', -0.5)
-    .addScore('kubejs:rosy', 1.0)
+    .addScore('chestcavity:strength', 2)
+    .addScore('kubejs:rosy', 1)
 
 
 /**
@@ -16,7 +15,7 @@ function RoseQuartzMuscleChestCavityUpdate(customData, event, organItem, organIn
     const chestCavity = event.chestCavity
     let rosyValue = chestCavity.getOrganScore('kubejs:rosy')
     switch (slotType) {
-        case 'rosy_explosion': {
+        case RosyExplosionSlot: {
             rosyValue = rosyValue + chestCavity.getOrganScore('chestcavity:strength') * chestCavity.inventory.countNonEmpty()
             break
         }

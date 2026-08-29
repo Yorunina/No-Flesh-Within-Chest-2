@@ -15,7 +15,7 @@ function CorrodedLeviathanRibEntityKill(customData, event, organItem, organIndex
     const entity = event.entity
     if (entity.type != 'cataclysm:the_leviathan') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:leviathan_rib'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:leviathan_rib'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

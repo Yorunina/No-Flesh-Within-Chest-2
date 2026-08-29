@@ -7,8 +7,8 @@
   "products": [
     {
       "chance": 1.0,
-      "item": "#agricraft:nuggets/gold",
-      "max": 8,
+      "item": "minecraft:gold_nugget",
+      "max": 6,
       "min": 1,
       "required": true
     }

@@ -15,7 +15,7 @@ function UnderworldKnightDebrisEntityKill(customData, event, organItem, organInd
     const entity = event.entity
     if (entity.type != 'block_factorys_bosses:underworld_knight') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:underworld_knight_bone'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:underworld_knight_bone'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

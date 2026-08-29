@@ -3,298 +3,298 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 2445989,
+				"Category": "beneficial",
 				"Name": "minecraft:absorption",
-				"Category": "beneficial"
+				"Color": 2445989,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 745784,
+				"Category": "neutral",
 				"Name": "minecraft:bad_omen",
-				"Category": "neutral"
+				"Color": 745784,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 2039587,
+				"Category": "harmful",
 				"Name": "minecraft:blindness",
-				"Category": "harmful"
+				"Color": 2039587,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 1950417,
+				"Category": "beneficial",
 				"Name": "minecraft:conduit_power",
-				"Category": "beneficial"
+				"Color": 1950417,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 2696993,
+				"Category": "harmful",
 				"Name": "minecraft:darkness",
-				"Category": "harmful"
+				"Color": 2696993,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 8954814,
+				"Category": "beneficial",
 				"Name": "minecraft:dolphins_grace",
-				"Category": "beneficial"
+				"Color": 8954814,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 16750848,
+				"Category": "beneficial",
 				"Name": "minecraft:fire_resistance",
-				"Category": "beneficial"
+				"Color": 16750848,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 9740385,
+				"Category": "neutral",
 				"Name": "minecraft:glowing",
-				"Category": "neutral"
+				"Color": 9740385,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 14270531,
+				"Category": "beneficial",
 				"Name": "minecraft:haste",
-				"Category": "beneficial"
+				"Color": 14270531,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 16284963,
+				"Category": "beneficial",
 				"Name": "minecraft:health_boost",
-				"Category": "beneficial"
+				"Color": 16284963,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 4521796,
+				"Category": "beneficial",
 				"Name": "minecraft:hero_of_the_village",
-				"Category": "beneficial"
+				"Color": 4521796,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 5797459,
+				"Category": "harmful",
 				"Name": "minecraft:hunger",
-				"Category": "harmful"
+				"Color": 5797459,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": true,
-				"Color": 11101546,
+				"Category": "harmful",
 				"Name": "minecraft:instant_damage",
-				"Category": "harmful"
+				"Color": 11101546,
+				"Instant": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": true,
-				"Color": 16262179,
+				"Category": "beneficial",
 				"Name": "minecraft:instant_health",
-				"Category": "beneficial"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 16185078,
-				"Name": "minecraft:invisibility",
-				"Category": "beneficial"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 16646020,
-				"Name": "minecraft:jump_boost",
-				"Category": "beneficial"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 13565951,
-				"Name": "minecraft:levitation",
-				"Category": "harmful"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 5882118,
-				"Name": "minecraft:luck",
-				"Category": "beneficial"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 4866583,
-				"Name": "minecraft:mining_fatigue",
-				"Category": "harmful"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 5578058,
-				"Name": "minecraft:nausea",
-				"Category": "harmful"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 12779366,
-				"Name": "minecraft:night_vision",
-				"Category": "beneficial"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 8889187,
-				"Name": "minecraft:poison",
-				"Category": "harmful"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 13458603,
-				"Name": "minecraft:regeneration",
-				"Category": "beneficial"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": false,
-				"Color": 9520880,
-				"Name": "minecraft:resistance",
-				"Category": "beneficial"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"Instant": true,
 				"Color": 16262179,
+				"Instant": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "minecraft:invisibility",
+				"Color": 16185078,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "minecraft:jump_boost",
+				"Color": 16646020,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "harmful",
+				"Name": "minecraft:levitation",
+				"Color": 13565951,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "minecraft:luck",
+				"Color": 5882118,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "harmful",
+				"Name": "minecraft:mining_fatigue",
+				"Color": 4866583,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "harmful",
+				"Name": "minecraft:nausea",
+				"Color": 5578058,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "minecraft:night_vision",
+				"Color": 12779366,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "harmful",
+				"Name": "minecraft:poison",
+				"Color": 8889187,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "minecraft:regeneration",
+				"Color": 13458603,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
+				"Name": "minecraft:resistance",
+				"Color": 9520880,
+				"Instant": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Category": "beneficial",
 				"Name": "minecraft:saturation",
-				"Category": "beneficial"
+				"Color": 16262179,
+				"Instant": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 15978425,
+				"Category": "beneficial",
 				"Name": "minecraft:slow_falling",
-				"Category": "beneficial"
+				"Color": 15978425,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 9154528,
+				"Category": "harmful",
 				"Name": "minecraft:slowness",
-				"Category": "harmful"
+				"Color": 9154528,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 3402751,
+				"Category": "beneficial",
 				"Name": "minecraft:speed",
-				"Category": "beneficial"
+				"Color": 3402751,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 16762624,
+				"Category": "beneficial",
 				"Name": "minecraft:strength",
-				"Category": "beneficial"
+				"Color": 16762624,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 12624973,
+				"Category": "harmful",
 				"Name": "minecraft:unluck",
-				"Category": "harmful"
+				"Color": 12624973,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 10017472,
+				"Category": "beneficial",
 				"Name": "minecraft:water_breathing",
-				"Category": "beneficial"
+				"Color": 10017472,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 4738376,
+				"Category": "harmful",
 				"Name": "minecraft:weakness",
-				"Category": "harmful"
+				"Color": 4738376,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 7561558,
+				"Category": "harmful",
 				"Name": "minecraft:wither",
-				"Category": "harmful"
+				"Color": 7561558,
+				"Instant": false
 			}
 		}
 	]

@@ -20,7 +20,7 @@
     {
       "chance": 1,
       "item": "agricraft:netherite_sliver",
-      "max": 4,
+      "max": 3,
       "min": 1,
       "required": true
     }

@@ -3,124 +3,29 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-						]
-					}
-				},
-				"id": "cataclysm:frosted_prison"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "full",
-						"spawns": [
-							{
-								"type": "cataclysm:koboleton",
-								"weight": 1,
-								"minCount": 1,
-								"maxCount": 1
-							}
-						]
-					}
-				},
-				"id": "cataclysm:desert_site"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-						]
-					}
-				},
-				"id": "cataclysm:abandoned_village"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-						]
-					}
-				},
-				"id": "cataclysm:sunken_city"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-						]
-					}
-				},
-				"id": "cataclysm:abandoned_spire"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-						]
-					}
-				},
-				"id": "cataclysm:cursed_pyramid"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
 				"step": "underground_decoration",
+				"id": "cataclysm:amethyst_nest",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
 					"monster": {
 						"bounding_box": "piece",
 						"spawns": [
 							{
-								"type": "cataclysm:amethyst_crab",
 								"weight": 1,
 								"minCount": 1,
+								"type": "cataclysm:amethyst_crab",
 								"maxCount": 1
 							}
 						]
 					}
-				},
-				"id": "cataclysm:amethyst_nest"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "cataclysm:cursed_pyramid",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
 					"monster": {
@@ -128,35 +33,50 @@
 						"spawns": [
 						]
 					}
-				},
-				"id": "cataclysm:acropolis"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "cataclysm:abandoned_temple",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+						]
+					}
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "cataclysm:desert_occupied_village",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 					"monster": {
 						"bounding_box": "full",
 						"spawns": [
 							{
-								"type": "cataclysm:koboleton",
 								"weight": 1,
 								"minCount": 1,
+								"type": "cataclysm:koboleton",
 								"maxCount": 1
 							}
 						]
 					}
-				},
-				"id": "cataclysm:desert_occupied_village"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "cataclysm:abandoned_spire",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 					"monster": {
@@ -164,14 +84,14 @@
 						"spawns": [
 						]
 					}
-				},
-				"id": "cataclysm:abandoned_temple"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "cataclysm:sunken_city",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
 					"monster": {
@@ -179,35 +99,86 @@
 						"spawns": [
 						]
 					}
-				},
-				"id": "cataclysm:soul_black_smith"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "cataclysm:soul_black_smith",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+						]
+					}
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "cataclysm:frosted_prison",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+						]
+					}
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "cataclysm:ruined_citadel",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
 					"monster": {
 						"bounding_box": "piece",
 						"spawns": [
 							{
-								"type": "cataclysm:endermaptera",
 								"weight": 3,
 								"minCount": 1,
+								"type": "cataclysm:endermaptera",
 								"maxCount": 1
 							}
 						]
 					}
-				},
-				"id": "cataclysm:ruined_citadel"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "cataclysm:desert_site",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "full",
+						"spawns": [
+							{
+								"weight": 1,
+								"minCount": 1,
+								"type": "cataclysm:koboleton",
+								"maxCount": 1
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "cataclysm:acropolis",
 				"terrain_adaptation": "none",
 				"spawn_overrides": {
 					"monster": {
@@ -215,18 +186,47 @@
 						"spawns": [
 						]
 					}
-				},
-				"id": "cataclysm:burning_arena"
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "cataclysm:burning_arena",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+						]
+					}
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "cataclysm:abandoned_village",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+						]
+					}
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "underground_decoration",
+				"id": "cataclysm:ancient_factory",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "cataclysm:ancient_factory"
+				}
 			}
 		}
 	]

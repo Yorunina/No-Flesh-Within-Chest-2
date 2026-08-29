@@ -114,6 +114,14 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:causes_continuous_geyser_eruptions"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:causes_periodic_geyser_eruptions"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:cave_vines"
 		},
 		{
@@ -143,14 +151,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:convertable_to_mud"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_chests"
 		},
 		{
 			"weight": 1.0,
@@ -346,10 +346,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:lanterns"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:lapis_ores"
 		},
 		{
@@ -363,10 +359,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:leaves/archwood_leaves"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:lightning_rods"
 		},
 		{
 			"weight": 1.0,
@@ -606,6 +598,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:speleothems"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:spruce_logs"
 		},
 		{
@@ -635,6 +631,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:strider_warm_blocks"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_spike_replaceable"
 		},
 		{
 			"weight": 1.0,
@@ -746,10 +746,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:wooden_shelves"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:wooden_slabs"
 		},
 		{
@@ -767,6 +763,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:wool_carpets"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:wrench_pickup"
 		}
 	]
 }

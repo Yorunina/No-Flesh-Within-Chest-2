@@ -12,11 +12,11 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:blood_extractor')
         if (organScores.size() <= 0) return [Text.translatable('tooltips.kubejs.blood_extractor.shift.invalid')]
         organScores.tags.forEach((score, value) => {
             let roundValue = FloorFix(value.getAsFloat(), 2)
-            let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`)
+            let scoreString = Text.translate(`tooltips.organ_score.${score.toString()}`)
                 .hover([
-                    Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).gold(),
+                    Text.translate(`tooltips.organ_score.${score.toString()}`).gold(),
                     NewLine,
-                    Text.translate(`tooltips.kubejs.score_tag.hover.${score.toString()}`)
+                    Text.translate(`tooltips.organ_score.hover.${score.toString()}`)
                 ])
                 .yellow()
             let scoreTooltips = Text.translatable('tooltips.kubejs.blood_extractor.shift.1', scoreString, Text.yellow(roundValue))

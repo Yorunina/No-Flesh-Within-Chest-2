@@ -1,0 +1,308 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:big_explosion"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:big_star"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:black_falling_dust"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:blazing_cloud"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:blazing_dust"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:blazing_flame"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:dust_cloud"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:explosion"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:falling_dust"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:fancy_smoke"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:fire_aoe"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:fire_cloud"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:fire_cloud_smoke"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:glint"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ground_dust"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ice_whirlpool_1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ice_whirlpool_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ice_whirlpool_3"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ice_whirlpool_4"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ice_whirlpool_5"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_3"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_dust"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_event"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_soul_once"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_souls"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_souls_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_souls_3"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_souls_3_died"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:introduction_attack_souls_died_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:invul_wisp"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:invul_wisp_inactive"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:knight_smoke_impact_1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:knight_smoke_impact_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:magical_dot"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:mark_glint"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:mark_glint_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:mark_glint_3"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:mark_glint_exp"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:mark_glint_exp_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_10"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_2"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_4"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_6"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_6_low"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_7"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_8"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:phase_transition_9"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:pixel"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:poison_spit"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:red_smoke"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:red_spark"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:rift"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:rift_close"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:rift_open"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ring"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:sand_rock"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:smoke"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:snow_cloud"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:snow_flake"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:soul"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:soul_cloud"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:soul_flip"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:soul_smoke"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:soul_trail"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:star"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:weird_smoke"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_death_frost"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_death_light"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_death_shockwave"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_death_soft"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_death_solid"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_ice_chunk"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_smoke_impact_1"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:yeti_smoke_impact_2"
+		}
+	]
+}

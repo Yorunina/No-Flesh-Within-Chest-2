@@ -3,1349 +3,1349 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:acacia_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:acacia_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:acacia_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:acacia_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:acacia_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:acacia_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:bamboo_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:bamboo_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:bamboo_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:bamboo_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:bamboo_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:bamboo_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:bamboo_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:bamboo_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:bamboo_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:basalt_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:basalt_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:basalt_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:beef_wellington_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:birch_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:birch_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:birch_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:birch_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:birch_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:birch_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:candlelight_banner",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:candlelight_wall_banner",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cherry_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cherry_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cherry_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cherry_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:cherry_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cherry_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:chocolate_box",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cobblestone_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:cobblestone_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:cobblestone_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:cooking_pan",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:cooking_pot",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:crimson_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:crimson_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:crimson_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:crimson_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:crimson_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:crimson_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:dark_oak_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:dark_oak_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:dark_oak_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:dark_oak_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:dark_oak_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:dark_oak_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:deepslate_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:deepslate_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:deepslate_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:dinner_bell",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:end_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:end_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:end_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:floorboard",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:fresh_garden_salad_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:glass",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:granite_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:granite_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:granite_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:hearth",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:jewelry_box",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:jungle_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:jungle_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:jungle_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:jungle_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:jungle_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:jungle_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:lamp",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:lasagne_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:mangrove_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:mangrove_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:mangrove_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:mangrove_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:mangrove_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:mangrove_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:mud_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:mud_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:mud_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:note_paper",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:oak_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:oak_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:oak_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:oak_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:oak_shelf",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:oak_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:painting",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:pork_ribs_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:potted_rose",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:quartz_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:quartz_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:quartz_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:red_nether_bricks_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:red_nether_bricks_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:red_nether_bricks_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "candlelight:rose",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:sandstone_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:sandstone_kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "candlelight:sandstone_stove",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:side_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:sideboard",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:sofa",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:spruce_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:spruce_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:spruce_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:spruce_drawer",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": true,
 				"float": false,
-				"laggy": true,
-				"Name": "candlelight:spruce_shelf",
 				"top": false,
+				"Name": "candlelight:spruce_shelf",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:spruce_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
-				"Name": "candlelight:stone_bricks_counter",
+				"float": true,
 				"top": true,
+				"Name": "candlelight:stone_bricks_counter",
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
-				"Name": "candlelight:stone_bricks_kitchen_sink",
+				"float": true,
 				"top": true,
+				"Name": "candlelight:stone_bricks_kitchen_sink",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
-				"Name": "candlelight:stone_bricks_stove",
+				"float": true,
+				"top": true,
 				"Properties": {
 					"lit": "false"
 				},
-				"top": true,
+				"Name": "candlelight:stone_bricks_stove",
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "candlelight:table_set",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:table_sign",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:tomato_mozzarella_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:typewriter_copper",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:typewriter_iron",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:warped_big_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:warped_cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "candlelight:warped_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
-				"Name": "candlelight:warped_drawer",
+				"float": true,
 				"top": true,
+				"Name": "candlelight:warped_drawer",
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "candlelight:warped_shelf",
-				"top": false,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"float": true,
-				"laggy": false,
-				"Name": "candlelight:warped_table",
-				"top": true,
-				"full": false
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
 				"float": false,
+				"top": false,
+				"Name": "candlelight:warped_shelf",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"laggy": false,
-				"Name": "candlelight:wine_glass",
+				"float": true,
 				"top": true,
+				"Name": "candlelight:warped_table",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": false,
+				"top": true,
+				"Name": "candlelight:wine_glass",
 				"full": false
 			}
 		}

@@ -2,6 +2,14 @@
 	"elements": [
 		{
 			"weight": 1.0,
+			"key": "crittersandcompanions:acorn"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:acorn_hat"
+		},
+		{
+			"weight": 1.0,
 			"key": "crittersandcompanions:clam"
 		},
 		{
@@ -58,7 +66,15 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "crittersandcompanions:ladybug_spawn_egg"
+		},
+		{
+			"weight": 1.0,
 			"key": "crittersandcompanions:leaf_insect_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:netherite_dragonfly_armor"
 		},
 		{
 			"weight": 1.0,
@@ -83,6 +99,10 @@
 		{
 			"weight": 1.0,
 			"key": "crittersandcompanions:red_panda_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:roly_poly_spawn_egg"
 		},
 		{
 			"weight": 1.0,
@@ -115,6 +135,26 @@
 		{
 			"weight": 1.0,
 			"key": "crittersandcompanions:silk_lead"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:snail_slime_bottle"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:snail_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:stag_beetle_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:stick_bug_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:weevil_spawn_egg"
 		}
 	]
 }

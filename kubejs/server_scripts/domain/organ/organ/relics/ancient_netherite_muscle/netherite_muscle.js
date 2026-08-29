@@ -15,7 +15,7 @@ function NetheriteMuscleEntityKill(customData, event, organItem, organIndex, slo
     const entity = event.entity
     if (entity.type != 'cataclysm:netherite_monstrosity') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_netherite_muscle'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:ancient_netherite_muscle'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

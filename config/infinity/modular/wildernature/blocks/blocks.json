@@ -3,110 +3,110 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "wildernature:bison_trophy",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": true,
 				"float": true,
-				"laggy": true,
+				"top": true,
 				"Name": "wildernature:bounty_board",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "wildernature:bunny_stalker_banner",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "wildernature:bunny_stalker_wall_banner",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "wildernature:cod_catcher_banner",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "wildernature:cod_catcher_wall_banner",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "wildernature:deer_trophy",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "wildernature:hazelnut_bush",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "wildernature:red_wolf_trophy",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "wildernature:wolf_trapper_banner",
+				"float": false,
 				"top": true,
+				"Name": "wildernature:wolf_trapper_banner",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "wildernature:wolf_trapper_wall_banner",
+				"float": false,
 				"top": false,
+				"Name": "wildernature:wolf_trapper_wall_banner",
 				"full": false
 			}
 		}

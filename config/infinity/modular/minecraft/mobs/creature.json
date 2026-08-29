@@ -113,6 +113,10 @@
       "weight": 1.0
     },
     {
+      "key": "minecraft:wandering_trader",
+      "weight": 1.0
+    },
+    {
       "key": "minecraft:wolf",
       "weight": 1.0
     }

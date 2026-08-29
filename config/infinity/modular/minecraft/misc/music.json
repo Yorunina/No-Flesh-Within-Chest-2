@@ -118,6 +118,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:music.overworld.sulfur_caves"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:music.overworld.swamp"
 		},
 		{
@@ -139,6 +143,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:music_disc.blocks"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:music_disc.bounce"
 		},
 		{
 			"weight": 1.0,

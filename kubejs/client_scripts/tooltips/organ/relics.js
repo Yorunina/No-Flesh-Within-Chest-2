@@ -17,11 +17,11 @@ function RelicsOrganScoreTooltips(noRelics) {
         Object.keys(organScore).forEach(key => {
             let score = key.toString()
             let roundValue = RoundFix(organScore.getFloat(key), 2)
-            let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score}`)
+            let scoreString = Text.translate(`tooltips.organ_score.${score}`)
                 .hover([
-                    Text.translate(`tooltips.kubejs.score_tag.${score}`).gold(),
+                    Text.translate(`tooltips.organ_score.${score}`).gold(),
                     NewLine,
-                    Text.translate(`tooltips.kubejs.score_tag.hover.${score}`)
+                    Text.translate(`tooltips.organ_score.hover.${score}`)
                 ])
                 .gold().underlined()
             let scoreTooltips = Text.translatable('tooltips.kubejs.relics_organ_score.ctrl.2', Text.gold(itemMaxStackSizeStr), Text.gold(roundValue), scoreString).gray()

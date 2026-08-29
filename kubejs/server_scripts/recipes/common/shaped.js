@@ -158,7 +158,6 @@ ServerEvents.recipes(event => {
         ['', 'minecraft:stick', '']
     ])
 
-
     event.remove({ id: 'compactmachines:machine_tiny' })
     event.remove({ id: 'compactmachines:machine_small' })
     event.remove({ id: 'compactmachines:machine_normal' })
@@ -176,4 +175,11 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('compactmachines:machine_large'), ['kubejs:blank_compact_machine', '#forge:obsidian'])
     event.shapeless(Item.of('compactmachines:machine_giant'), ['kubejs:blank_compact_machine', 'minecraft:diamond_block'])
     event.shapeless(Item.of('compactmachines:machine_maximum'), ['kubejs:blank_compact_machine', 'minecraft:netherite_block'])
+
+    event.shapeless(Item.of('agricraft:coal_pebble', 9), ['minecraft:coal'])
+    event.shapeless(Item.of('agricraft:diamond_shard', 9), ['minecraft:diamond'])
+    event.shapeless(Item.of('agricraft:emerald_shard', 9), ['minecraft:emerald'])
+    event.shapeless(Item.of('agricraft:quartz_shard', 9), ['minecraft:quartz'])
+    event.shapeless(Item.of('agricraft:netherite_sliver', 9), ['minecraft:netherite_scrap'])
+    event.shapeless(Item.of('agricraft:amathyllis_petal', 9), ['minecraft:amethyst_shard'])
 })

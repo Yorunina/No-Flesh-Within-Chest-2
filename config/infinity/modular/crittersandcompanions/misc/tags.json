@@ -1,0 +1,12 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:bug_spawn_ground"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:ferret_dig_grounds"
+		}
+	]
+}

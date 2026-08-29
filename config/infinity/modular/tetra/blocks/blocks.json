@@ -3,640 +3,640 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "tetra:arcane_fire",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:basic_workbench",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:block_geode",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:chthonic_extractor",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:core_extractor",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:depleted_bedrock",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_0_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_0_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_1_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_1_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_ruined_0_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_ruined_0_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_ruined_1_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:earthpiercer_ruined_1_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_0_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_0_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_0_2",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_1_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_1_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_1_2",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_2_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_2_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_2_2",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_pipe",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_piston",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_0_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_0_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_0_2",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_1_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_1_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_1_2",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_2_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_2_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:extractor_ruined_2_2",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:forged_container",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "tetra:forged_crate",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:forged_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:forged_platform",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:forged_platform_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:forged_vent",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:forged_wall",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:forged_workbench",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:fractured_bedrock",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:hammer_base",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:hammer_head",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "tetra:holosphere",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "tetra:rack",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "tetra:scroll_open",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "tetra:scroll_rolled",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": true,
 				"float": false,
-				"laggy": true,
-				"Name": "tetra:scroll_wall",
 				"top": false,
+				"Name": "tetra:scroll_wall",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:seeping_bedrock",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_0_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_0_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_1_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_1_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_2_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_2_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_ruined_0_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_ruined_0_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_ruined_1_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_ruined_1_1",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "tetra:stonecutter_ruined_2_0",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
-				"Name": "tetra:stonecutter_ruined_2_1",
+				"float": true,
 				"top": true,
+				"Name": "tetra:stonecutter_ruined_2_1",
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
-				"Name": "tetra:transfer_unit",
+				"float": true,
 				"top": true,
+				"Name": "tetra:transfer_unit",
 				"full": false
 			}
 		}

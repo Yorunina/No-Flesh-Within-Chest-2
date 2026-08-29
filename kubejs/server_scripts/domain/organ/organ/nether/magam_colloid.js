@@ -23,7 +23,7 @@ function MagamColloidEntityBeHurt(customData, event, organItem, organIndex, slot
             event.setAmount(event.amount - Math.floor(remainTick / 60))
         }
     } else {
-        let fireTick = 20 * event.amount
+        let fireTick = 20 * Math.min(event.amount, entity.getMaxHealth())
         entity.setRemainingFireTicks(entity.getRemainingFireTicks() + fireTick)
     }
 }

@@ -7,8 +7,8 @@
   "products": [
     {
       "chance": 1.0,
-      "item": "#agricraft:nuggets/emerald",
-      "max": 8,
+      "item": "agricraft:emerald_shard",
+      "max": 6,
       "min": 1,
       "required": true
     }

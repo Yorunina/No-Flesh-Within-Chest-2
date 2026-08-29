@@ -1,0 +1,12 @@
+
+#General
+[general]
+	#Randomize the drawer inventory when the content changes [Default: true]
+	randomizeOnChange = true
+	#The percentage of the drawer that needs to be filled for the inventory to jam [Default: 0.9 (90%)]
+	#Range: 0.0 ~ 1.0
+	jamPercentage = 0.9
+	#The chance the drawer jams when the 'jamPercentage' is met [Default: 0.3 (30%)]
+	#Range: 0.0 ~ 1.0
+	jamChance = 0.3
+

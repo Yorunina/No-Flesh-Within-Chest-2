@@ -1,0 +1,123 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:cinematic_kraken",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:crossbow_pirate",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:dragon_guard_sword",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:flaming_skeleton_guard_fireball",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:flaming_skeleton_guard_sword",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:ghost_tentacle",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:infernal_dragon",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:kraken",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:kraken_tentacle",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:pile_of_bones",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:pirate_captain",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:pirate_rook",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:sandworm",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:soul_knight_wither_skeleton",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:soul_skeleton",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:underworld_knight",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "block_factorys_bosses:yeti",
+				"Category": "monster"
+			}
+		}
+	]
+}

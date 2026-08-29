@@ -1,0 +1,19 @@
+{
+  "block.junkdrawers.acacia_drawer": "金合欢木杂物抽屉",
+  "block.junkdrawers.bamboo_drawer": "竹制杂物抽屉",
+  "block.junkdrawers.birch_drawer": "白桦木杂物抽屉",
+  "block.junkdrawers.cherry_drawer": "樱花木杂物抽屉",
+  "block.junkdrawers.crimson_drawer": "绯红木杂物抽屉",
+  "block.junkdrawers.dark_oak_drawer": "深色橡木杂物抽屉",
+  "block.junkdrawers.drawer": "橡木杂物抽屉",
+  "block.junkdrawers.jungle_drawer": "丛林木杂物抽屉",
+  "block.junkdrawers.mangrove_drawer": "红树木杂物抽屉",
+  "block.junkdrawers.spruce_drawer": "云杉木杂物抽屉",
+  "block.junkdrawers.warped_drawer": "诡异木杂物抽屉",
+  "itemGroup.junkdrawers.tab": "杂物抽屉",
+  "junkdrawers.container.drawer": "杂物抽屉",
+  "junkdrawers.drawer.jammed": "抽屉卡住了，请重试",
+  "junkdrawers.subtitle.drawer.close": "抽屉关闭",
+  "junkdrawers.subtitle.drawer.jammed": "抽屉卡住",
+  "junkdrawers.subtitle.drawer.open": "抽屉打开"
+}

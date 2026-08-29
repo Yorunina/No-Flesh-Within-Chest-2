@@ -3,19 +3,19 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 14500864,
+				"Category": "harmful",
 				"Name": "supplementaries:flammable",
-				"Category": "harmful"
+				"Color": 14500864,
+				"Instant": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Instant": false,
-				"Color": 7095583,
+				"Category": "harmful",
 				"Name": "supplementaries:overencumbered",
-				"Category": "harmful"
+				"Color": 7095583,
+				"Instant": false
 			}
 		}
 	]

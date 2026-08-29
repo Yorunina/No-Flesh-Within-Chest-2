@@ -1,8 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:rose_quartz_dialyzer')
-    .addScore('chestcavity:filtration', 2.0)
-    .addScore('chestcavity:defense', -1)
-    .addScore('kubejs:rosy', 0.5)
+    .addScore('chestcavity:filtration', 2)
+    .addScore('kubejs:rosy', 1)
 
 /**
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -16,7 +15,7 @@ function RoseQuartzDialyzerKeyActiveOnly(customData, event, organItem, organInde
     const chestCavity = player.chestCavityInstance
     let repairValue = chestCavity.getOrganScore('kubejs:rosy') * 3
     switch (slotType) {
-        case 'rosy_explosion': {
+        case RosyExplosionSlot: {
             repairValue = repairValue + chestCavity.getOrganScore('chestcavity:filtration') * chestCavity.inventory.countNonEmpty()
             break
         }

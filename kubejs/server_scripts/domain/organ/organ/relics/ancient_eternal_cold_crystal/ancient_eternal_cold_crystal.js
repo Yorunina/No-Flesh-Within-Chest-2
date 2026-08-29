@@ -41,7 +41,7 @@ function AncientEternalColdCrystalTakeOff(customData, event, organItem, organInd
 function AncientEternalColdCrystalEntityKill(customData, event, organItem, organIndex, slotType) {
     if (slotType != AwakeRelicsSlot) return
     const entity = event.entity
-    const source = event.source.actual
+    const source = customData.killer
     const level = entity.level
 
     const radius = 6

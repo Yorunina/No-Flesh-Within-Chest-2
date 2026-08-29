@@ -50,10 +50,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:acacia_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:acacia_sign"
 		},
 		{
@@ -238,10 +234,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:bamboo_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:bamboo_sign"
 		},
 		{
@@ -363,10 +355,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:birch_sapling"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:birch_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -874,10 +862,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:cherry_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:cherry_sign"
 		},
 		{
@@ -922,7 +906,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:chiseled_copper"
+			"key": "minecraft:chiseled_cinnabar"
 		},
 		{
 			"weight": 1.0,
@@ -958,6 +942,10 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:chiseled_sulfur"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:chorus_flower"
 		},
 		{
@@ -967,6 +955,38 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:chorus_plant"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar_brick_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar_brick_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar_brick_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar_bricks"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:cinnabar_wall"
 		},
 		{
 			"weight": 1.0,
@@ -1114,63 +1134,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:copper_axe"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_bars"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:copper_block"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_boots"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_chestplate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_golem_spawn_egg"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_helmet"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_hoe"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_horse_armor"
 		},
 		{
 			"weight": 1.0,
@@ -1178,39 +1142,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_leggings"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_nugget"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:copper_ore"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_pickaxe"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_shovel"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_sword"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_torch"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -1307,10 +1239,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:crimson_roots"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:crimson_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -1487,10 +1415,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:dark_oak_sapling"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:dark_oak_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -1914,47 +1838,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:exposed_chiseled_copper"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:exposed_copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_bars"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -1967,10 +1851,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:exposed_cut_copper_stairs"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:exposed_lightning_rod"
 		},
 		{
 			"weight": 1.0,
@@ -2630,10 +2510,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:jungle_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:jungle_sign"
 		},
 		{
@@ -3078,10 +2954,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:mangrove_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:mangrove_sign"
 		},
 		{
@@ -3235,6 +3107,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:music_disc_blocks"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:music_disc_bounce"
 		},
 		{
 			"weight": 1.0,
@@ -3466,10 +3342,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:oak_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:oak_sign"
 		},
 		{
@@ -3578,47 +3450,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:oxidized_chiseled_copper"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:oxidized_copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_bars"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -3631,10 +3463,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:oxidized_cut_copper_stairs"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:oxidized_lightning_rod"
 		},
 		{
 			"weight": 1.0,
@@ -3707,10 +3535,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:pale_oak_sapling"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:pale_oak_shelf"
 		},
 		{
 			"weight": 1.0,
@@ -3950,6 +3774,22 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:polished_cinnabar"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:polished_cinnabar_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:polished_cinnabar_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:polished_cinnabar_wall"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:polished_deepslate"
 		},
 		{
@@ -3990,6 +3830,22 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "minecraft:polished_sulfur"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:polished_sulfur_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:polished_sulfur_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:polished_sulfur_wall"
+		},
+		{
+			"weight": 1.0,
 			"key": "minecraft:popped_chorus_fruit"
 		},
 		{
@@ -4003,6 +3859,10 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:potato"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:potent_sulfur"
 		},
 		{
 			"weight": 1.0,
@@ -4790,10 +4650,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:spruce_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:spruce_sign"
 		},
 		{
@@ -5007,6 +4863,50 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:sugar_cane"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_brick_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_brick_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_brick_wall"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_bricks"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_cube_bucket"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_cube_spawn_egg"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_slab"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_spike"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_stairs"
+		},
+		{
+			"weight": 1.0,
+			"key": "minecraft:sulfur_wall"
 		},
 		{
 			"weight": 1.0,
@@ -5234,10 +5134,6 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:warped_shelf"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:warped_sign"
 		},
 		{
@@ -5266,47 +5162,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:waxed_chiseled_copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_bars"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:waxed_copper_block"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -5322,47 +5178,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_chiseled_copper"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:waxed_exposed_copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_bars"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -5378,55 +5194,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:waxed_exposed_lightning_rod"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_lightning_rod"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_chiseled_copper"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:waxed_oxidized_copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_bars"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -5442,51 +5210,7 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:waxed_oxidized_lightning_rod"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_chiseled_copper"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:waxed_weathered_copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_bars"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -5502,55 +5226,11 @@
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:waxed_weathered_lightning_rod"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:wayfinder_armor_trim_smithing_template"
 		},
 		{
 			"weight": 1.0,
-			"key": "minecraft:weathered_chiseled_copper"
-		},
-		{
-			"weight": 1.0,
 			"key": "minecraft:weathered_copper"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_bars"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_bulb"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_chain"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_chest"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_door"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_golem_statue"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_grate"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_lantern"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_copper_trapdoor"
 		},
 		{
 			"weight": 1.0,
@@ -5563,10 +5243,6 @@
 		{
 			"weight": 1.0,
 			"key": "minecraft:weathered_cut_copper_stairs"
-		},
-		{
-			"weight": 1.0,
-			"key": "minecraft:weathered_lightning_rod"
 		},
 		{
 			"weight": 1.0,

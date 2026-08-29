@@ -8,14 +8,14 @@
 			}
 		},
 		{
-			"weight": 4.0,
+			"weight": 8.0,
 			"key": {
 				"fluidName": "minecraft:lava",
 				"Name": "minecraft:lava"
 			}
 		},
 		{
-			"weight": 8.0,
+			"weight": 15.0,
 			"key": {
 				"fluidName": "minecraft:water",
 				"Name": "minecraft:water"

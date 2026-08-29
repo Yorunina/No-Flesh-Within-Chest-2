@@ -4,21 +4,21 @@
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "bakery:bakery",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 					"creature": {
 						"bounding_box": "piece",
 						"spawns": [
 							{
-								"type": "minecraft:pig",
 								"weight": 1,
 								"minCount": 1,
+								"type": "minecraft:pig",
 								"maxCount": 4
 							}
 						]
 					}
-				},
-				"id": "bakery:bakery"
+				}
 			}
 		}
 	]

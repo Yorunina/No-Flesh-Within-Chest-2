@@ -41,7 +41,7 @@ function ColdCrystalEntityKill(customData, event, organItem, organIndex, slotTyp
     const entity = event.entity
     if (entity.type != 'block_factorys_bosses:yeti') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:eternal_cold_crystal'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:eternal_cold_crystal'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

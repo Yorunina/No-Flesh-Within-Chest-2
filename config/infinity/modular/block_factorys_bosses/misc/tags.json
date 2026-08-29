@@ -1,0 +1,20 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:bone_remains"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:protection_exempt"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:ship_planks"
+		},
+		{
+			"weight": 1.0,
+			"key": "block_factorys_bosses:underworld_arena_valid_spawn"
+		}
+	]
+}

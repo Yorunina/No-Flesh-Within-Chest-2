@@ -3,10 +3,190 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
-				"Name": "kubejs:infinity_soil",
+				"float": true,
 				"top": true,
+				"Name": "kubejs:buffer_circuit",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:cerebral_brain_processor",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:circuit_board",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:computing_core",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:data_bus",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:data_compressor",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:entity_simulator",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:eternal_altar",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:glutinous_lemon_juice",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:growth_vat",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:infinity_soil",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:mantle_energy_extractor",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:oracle_module",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:quantum_dimension_resolver",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:spatial_stabilizer",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:timing_module",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:void_diffraction_vault",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:world_computer",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "kubejs:world_renderer",
 				"full": true
 			}
 		}

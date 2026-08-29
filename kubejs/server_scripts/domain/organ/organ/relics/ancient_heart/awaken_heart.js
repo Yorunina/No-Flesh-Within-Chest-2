@@ -41,7 +41,7 @@ function AwakenHeartEntityKill(customData, event, organItem, organIndex, slotTyp
     const entity = event.entity
     if (entity.type != 'cataclysm:ancient_remnant') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_heart'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:ancient_heart'), organIndex, slotType, true)
 }
 
 

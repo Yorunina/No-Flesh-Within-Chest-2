@@ -3,1466 +3,1466 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:abyssal_egg",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:altar_of_abyss",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:altar_of_amethyst",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:altar_of_fire",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:altar_of_void",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:ancient_metal_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:aptrgangr_head",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:aptrgangr_wall_head",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_brick_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_brick_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_brick_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_bricks",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_fence",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_cindaria",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_clawdian",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_empty",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_harvest",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_hippocamtus",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_sea",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_smithing",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_thunder",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_underworld",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_urchinkin",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:azure_seastone_mural_wisdom",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_pillar_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_tiles",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:azure_seastone_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:black_steel_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:black_steel_fence",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:black_steel_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:blackstone_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:boss_respawner",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chiseled_azure_seastone",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chiseled_azure_seastone_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chiseled_azure_seastone_pillar_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chiseled_end_stone_bricks",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chiseled_obsidian_bricks",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chiseled_purpur_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chiseled_stone_brick_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chorus_fence",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chorus_planks",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chorus_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chorus_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chorus_stem",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:chorus_trapdoor",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:cursed_tombstone",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:cursium_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_cindaria_1",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_cindaria_2",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_cindaria_3",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_cindaria_4",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_clawdian_1",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_clawdian_2",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_clawdian_3",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_clawdian_4",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_hippocamtus_1",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_hippocamtus_2",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_hippocamtus_3",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_hippocamtus_4",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_1",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_2",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_3",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_4",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_5",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_6",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_7",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_8",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_scylla_9",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"face": "floor"
+				},
 				"Name": "cataclysm:curved_azure_seastone_urchinkin",
-				"Properties": {
-					"face": "floor"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:door_of_seal",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:draugr_head",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:draugr_wall_head",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:dungeon_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:emp",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:end_stone_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:end_stone_teleport_trap_bricks",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:enderite_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:frosted_stone_brick_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:frosted_stone_brick_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:frosted_stone_brick_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:frosted_stone_bricks",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "cataclysm:goddess_statue",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:ignitium_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:kobolediator_skull",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:kobolediator_wall_skull",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:mechanical_fusion_anvil",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:obsidian_brick_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:obsidian_brick_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:obsidian_brick_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:obsidian_bricks",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:obsidian_explosion_trap_bricks",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:obsidian_fence",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:obsidian_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": false,
 				"float": false,
-				"laggy": false,
+				"top": true,
 				"Name": "cataclysm:pointed_icicle",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_azure_seastone",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_azure_seastone_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_azure_seastone_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_azure_seastone_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_end_stone",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_end_stone_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_end_stone_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_obsidian",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_obsidian_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_obsidian_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_obsidian_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:polished_sandstone",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:prismarine_brick_fence",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:prismarine_brick_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:purpur_tile_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:purpur_tile_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:purpur_tile_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:purpur_tile_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:purpur_tiles",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:purpur_void_rune_trap_block",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:purpur_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:quartz_brick_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:sandstone_falling_trap",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:sandstone_ignite_trap",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "cataclysm:sandstone_poison_dart_trap",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:stone_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:stone_tile_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:stone_tile_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:stone_tile_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:stone_tiles",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:void_crystal",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:void_infused_end_stone_bricks",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:void_lantern_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:void_purpur_tiles",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "cataclysm:void_stone",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
-				"Name": "cataclysm:witherite_block",
+				"float": true,
 				"top": true,
+				"Name": "cataclysm:witherite_block",
 				"full": true
 			}
 		}

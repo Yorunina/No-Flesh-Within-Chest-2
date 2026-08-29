@@ -3,325 +3,325 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "amendments:carpet_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "amendments:carpet_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_black",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_blue",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_brown",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_cyan",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_gray",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_green",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_light_blue",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_light_gray",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_lime",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_magenta",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_orange",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_pink",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_purple",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_red",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_white",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:ceiling_banner_yellow",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "amendments:directional_cake",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "amendments:double_cake",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "amendments:dye_cauldron",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": false,
 				"Name": "amendments:hanging_flower_pot",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "amendments:liquid_cauldron",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "amendments:skull_candle",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "amendments:skull_candle_soul",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "amendments:skull_candle_soul_wall",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
+				"Properties": {
+					"lit": "false"
+				},
 				"Name": "amendments:skull_candle_wall",
-				"Properties": {
-					"lit": "false"
-				},
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": true,
 				"float": true,
-				"laggy": true,
-				"Name": "amendments:skull_pile",
 				"top": true,
+				"Name": "amendments:skull_pile",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "amendments:tool_hook",
+				"float": false,
 				"top": false,
+				"Name": "amendments:tool_hook",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "amendments:wall_lantern",
+				"float": false,
+				"top": false,
 				"Properties": {
 					"lit": "false"
 				},
-				"top": false,
+				"Name": "amendments:wall_lantern",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "amendments:water_lily_pad",
+				"float": false,
 				"top": false,
+				"Name": "amendments:water_lily_pad",
 				"full": false
 			}
 		}

@@ -3,8 +3,22 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"fluidName": "kubejs:molten_emerald_fluid",
-				"Name": "kubejs:molten_emerald_fluid"
+				"fluidName": "kubejs:ageing_fluid",
+				"Name": "kubejs:ageing_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:blood_fat_fluid",
+				"Name": "kubejs:blood_fat_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:blood_fluid",
+				"Name": "kubejs:blood_fluid"
 			}
 		},
 		{
@@ -24,6 +38,13 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"fluidName": "kubejs:molten_emerald_fluid",
+				"Name": "kubejs:molten_emerald_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"fluidName": "kubejs:molten_gold_fluid",
 				"Name": "kubejs:molten_gold_fluid"
 			}
@@ -33,6 +54,48 @@
 			"key": {
 				"fluidName": "kubejs:molten_iron_fluid",
 				"Name": "kubejs:molten_iron_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:molten_rose_quartz",
+				"Name": "kubejs:molten_rose_quartz"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:neuroexcitatory_hormone_fluid",
+				"Name": "kubejs:neuroexcitatory_hormone_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:nutrients_fluid",
+				"Name": "kubejs:nutrients_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:rejuvenation_fluid",
+				"Name": "kubejs:rejuvenation_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:rose_nutrients_fluid",
+				"Name": "kubejs:rose_nutrients_fluid"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"fluidName": "kubejs:rotten_nutrients_fluid",
+				"Name": "kubejs:rotten_nutrients_fluid"
 			}
 		}
 	]

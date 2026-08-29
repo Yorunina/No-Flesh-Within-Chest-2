@@ -41,7 +41,7 @@ function KrakenCloudEyeEntityKill(customData, event, organItem, organIndex, slot
     const entity = event.entity
     if (entity.type != 'block_factorys_bosses:kraken') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:kraken_eye'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:kraken_eye'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

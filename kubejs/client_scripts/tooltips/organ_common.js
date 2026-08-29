@@ -22,11 +22,11 @@ ItemEvents.tooltip(tooltip => {
         if (organData) {
             organData.organScores.forEach((score, value) => {
                 let roundValue = RoundFix(value, 2)
-                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`)
+                let scoreString = Text.translate(`tooltips.organ_score.${score.toString()}`)
                     .hover([
-                        Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).gold(),
+                        Text.translate(`tooltips.organ_score.${score.toString()}`).gold(),
                         NewLine,
-                        Text.translate(`tooltips.kubejs.score_tag.hover.${score.toString()}`)
+                        Text.translate(`tooltips.organ_score.hover.${score.toString()}`)
                     ])
                     .yellow().underlined()
 
@@ -39,7 +39,7 @@ ItemEvents.tooltip(tooltip => {
             let potentialOrganData = nbt.getCompound('potentialOrganData')
             let potentialAttributeNum = potentialOrganData.size()
             for (let i = 0; i < potentialAttributeNum; i++) {
-                scoreTooltipsList.push(Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(itemMaxStackSizeStr), Text.yellow('0').obfuscated(), Text.translatable('tooltips.kubejs.score_tag.potential_score').yellow().obfuscated()))
+                scoreTooltipsList.push(Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(itemMaxStackSizeStr), Text.yellow('0').obfuscated(), Text.translatable('tooltips.organ_score.potential_score').yellow().obfuscated()))
             }
         }
 
@@ -101,7 +101,7 @@ ItemEvents.tooltip(tooltip => {
         if (organData) {
             organData.organScores.forEach((score, value) => {
                 let roundValue = RoundFix(value, 2)
-                let scoreString = Text.translate(`tooltips.kubejs.score_tag.${score.toString()}`).getString()
+                let scoreString = Text.translate(`tooltips.organ_score.${score.toString()}`).getString()
                 let scoreTooltips = Text.translatable('tooltips.kubejs.common_organ.1', Text.yellow(item.getMaxStackSize().toFixed(0)), Text.yellow(roundValue), Text.yellow(scoreString))
                 scoreTooltipsList.push(scoreTooltips)
             })

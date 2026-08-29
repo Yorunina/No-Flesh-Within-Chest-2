@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:thermometer')
     .addScore('chestcavity:fire_resistant', -2)
-    .addScore('chestcavity:defense', -1)
+    .addScore('chestcavity:defense', 1)
 
 /**
  * @param {OrganEventCustomData} customData

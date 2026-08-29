@@ -7,8 +7,8 @@
   "products": [
     {
       "chance": 1.0,
-      "item": "#agricraft:nuggets/iron",
-      "max": 8,
+      "item": "minecraft:iron_nugget",
+      "max": 6,
       "min": 1,
       "required": true
     }

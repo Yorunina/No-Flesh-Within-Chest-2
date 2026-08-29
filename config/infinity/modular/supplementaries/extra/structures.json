@@ -4,10 +4,10 @@
 			"weight": 1.0,
 			"key": {
 				"step": "strongholds",
+				"id": "supplementaries:way_sign",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "supplementaries:way_sign"
+				}
 			}
 		}
 	]

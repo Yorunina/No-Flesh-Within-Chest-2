@@ -42,7 +42,7 @@ function EternalIncenseEntitySpawned(customData, event, curiosItem) {
 function EternalIncenseEntityKill(customData, event, curiosItem) {
     const entity = event.entity
     const nbt = curiosItem.getOrCreateTag()
-    if (entity.entityType.is(RelicsBossTagKey)) return
+    if (!entity.entityType.is(RelicsBossTagKey)) return
     nbt.putInt('relicsKills', nbt.getInt('relicsKills') + 1)
 }
 

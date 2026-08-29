@@ -1,6 +1,6 @@
 // priority: 500
 RegistryOrgan('kubejs:damage_mod')
-    .addScore('chestcavity:speed', -1)
+    .addScore('chestcavity:defense', 1)
 
 /**
  * @param {OrganEventCustomData} customData

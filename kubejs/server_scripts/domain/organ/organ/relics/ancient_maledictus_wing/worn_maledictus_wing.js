@@ -28,7 +28,7 @@ function WornMaledictusWingKeyActive(customData, event, organItem, organIndex, s
         level.spawnParticles($ParticleTypes.SONIC_BOOM, false, player.x, player.y, player.z, 0, 0, 0, 1, 0)
         let entityInRadius = GetLivingWithinRadius(level, player.blockPosition(), 3, (curlevel, curEntity) => !curEntity.isPlayer())
         entityInRadius.forEach(entity => {
-            entity.attack(level.damageSources().playerAttack(player), 5 * playerStrength)
+            entity.attack(level.damageSources().playerAttack(player), 20 * playerStrength)
             entity.invulnerableTime = 0
         })
         if (timer > 5) ctx.clear()
@@ -49,7 +49,7 @@ function WornMaledictusWingEntityKill(customData, event, organItem, organIndex, 
     const entity = event.entity
     if (entity.type != 'cataclysm:maledictus') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:maledictus_wing'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:maledictus_wing'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

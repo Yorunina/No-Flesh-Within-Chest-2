@@ -10,6 +10,14 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "crittersandcompanions:entity.bugs.hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.bugs.walk"
+		},
+		{
+			"weight": 1.0,
 			"key": "crittersandcompanions:entity.dragonfly.ambient"
 		},
 		{
@@ -26,7 +34,15 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "crittersandcompanions:entity.ladybug.fly"
+		},
+		{
+			"weight": 1.0,
 			"key": "crittersandcompanions:entity.leaf_insect.death"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.leaf_insect.eat"
 		},
 		{
 			"weight": 1.0,
@@ -83,6 +99,30 @@
 		{
 			"weight": 1.0,
 			"key": "crittersandcompanions:entity.shima_enaga.ambient"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.shima_enaga.fly"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.snail.gary_hurt"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.snail.gary_idle"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.snail.gary_purr"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.snail.gary_sing"
+		},
+		{
+			"weight": 1.0,
+			"key": "crittersandcompanions:entity.snail.walk"
 		}
 	]
 }

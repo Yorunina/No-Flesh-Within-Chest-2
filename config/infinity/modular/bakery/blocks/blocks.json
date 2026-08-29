@@ -3,513 +3,513 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:apple_cupcake_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:apple_jam",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:apple_pie",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:baguette_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:baker_station",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "bakery:bakery_banner",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "bakery:bakery_wall_banner",
+				"float": false,
 				"top": false,
+				"Name": "bakery:bakery_wall_banner",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:blank_cake",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:braided_bread_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:bread_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:bread_crate",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:breadbox",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:brick_counter",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:bun_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:bundt_cake",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:cabinet",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:cake_display",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:cake_stand",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:chocolate_box",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:chocolate_cake",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:chocolate_cookie_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:chocolate_gateau",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:chocolate_jam",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": false,
 				"float": false,
-				"laggy": false,
+				"top": true,
 				"Name": "bakery:chocolate_tart",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:crusty_bread_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:cupcake_display",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
-				"Name": "bakery:drawer",
+				"float": true,
 				"top": true,
+				"Name": "bakery:drawer",
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:glowberry_jam",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:glowberry_tart",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:iron_bench",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:iron_chair",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:iron_table",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:jar",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": false,
 				"float": true,
-				"laggy": false,
+				"top": true,
 				"Name": "bakery:kitchen_sink",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:linzer_tart",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
-				"Name": "bakery:pudding",
+				"float": false,
 				"top": true,
+				"Name": "bakery:pudding",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
-				"Name": "bakery:small_cooking_pot",
+				"float": false,
+				"top": true,
 				"Properties": {
 					"lit": "false"
 				},
-				"top": true,
+				"Name": "bakery:small_cooking_pot",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:strawberry_cake",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:strawberry_cookie_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:strawberry_cupcake_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:strawberry_jam",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:street_sign",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:sweetberry_cake",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:sweetberry_cookie_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "bakery:sweetberry_cupcake_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": false,
 				"float": false,
-				"laggy": false,
+				"top": true,
 				"Name": "bakery:sweetberry_jam",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:toast_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:tray",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "bakery:waffle_block",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "bakery:wall_cabinet",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
-				"Name": "bakery:wall_display",
+				"float": true,
 				"top": true,
+				"Name": "bakery:wall_display",
 				"full": false
 			}
 		}

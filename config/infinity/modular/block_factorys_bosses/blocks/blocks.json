@@ -1,0 +1,424 @@
+{
+	"elements": [
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_chain",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_broken",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_cracked",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_straight",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_variation",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_wet",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_wet_broken",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_wet_cracked",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_wet_straight",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:big_oak_planks_wet_variation",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:bone_remains",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:bone_remains_legs",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:bone_remains_rib_cage",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:boss_spawner",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:candles",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:cannonball",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": false,
+				"top": true,
+				"Name": "block_factorys_bosses:coin_pile",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:corpse",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:dragon_banner",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:dragon_skull",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:guardrail",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:guardrail_diagonal",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:ice_block_particules",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:kraken_spawner",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:net",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": false,
+				"top": true,
+				"Name": "block_factorys_bosses:plank",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:prison_door",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:rope_roll",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:rusty_prison_door",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": false,
+				"top": true,
+				"Name": "block_factorys_bosses:ship_lantern",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:ship_steering_wheel",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:tall_candles",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:tall_candles_cross",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:tall_vase",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:under_world_tall_candle_cross",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:underwold_candles",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": false,
+				"top": false,
+				"Name": "block_factorys_bosses:underwold_wall_torch",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": true,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:underworld_arena_door",
+				"full": true
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:underworld_tall_candles",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": true,
+				"top": true,
+				"Name": "block_factorys_bosses:vase",
+				"full": false
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"laggy": false,
+				"float": false,
+				"top": false,
+				"Name": "block_factorys_bosses:wall_torch",
+				"full": false
+			}
+		}
+	]
+}

@@ -4,16 +4,37 @@
 			"weight": 1.0,
 			"key": {
 				"step": "underground_structures",
-				"terrain_adaptation": "none",
+				"id": "biomancy:abandoned_lab",
+				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
-				},
-				"id": "biomancy:keter_worm"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "underground_structures",
+				"id": "biomancy:carcass_worm",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "underground_structures",
+				"id": "biomancy:keter_worm",
+				"terrain_adaptation": "none",
+				"spawn_overrides": {
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "underground_structures",
+				"id": "biomancy:vault",
 				"terrain_adaptation": "beard_box",
 				"spawn_overrides": {
 					"ambient": {
@@ -26,28 +47,7 @@
 						"spawns": [
 						]
 					}
-				},
-				"id": "biomancy:vault"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "underground_structures",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-				},
-				"id": "biomancy:carcass_worm"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "underground_structures",
-				"terrain_adaptation": "beard_box",
-				"spawn_overrides": {
-				},
-				"id": "biomancy:abandoned_lab"
+				}
 			}
 		}
 	]

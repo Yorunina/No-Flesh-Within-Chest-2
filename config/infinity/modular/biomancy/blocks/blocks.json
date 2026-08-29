@@ -3,830 +3,830 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:acid_cauldron",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "biomancy:acid_splatter",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "biomancy:active_muscle",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:adult_permeable_membrane",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:adult_permeable_membrane_pane",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:baby_permeable_membrane",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:baby_permeable_membrane_pane",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:bio_forge",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:bio_lab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "biomancy:bio_lantern_blue",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "biomancy:bio_lantern_yellow",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:biometric_membrane",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:bloomlight",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:chiseled_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:chrysalis",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:decomposer",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:digester",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_primal_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_primal_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_primal_flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fibrous_primal_flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_door",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_fence",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_fence_gate",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_iris_door",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "biomancy:flesh_ladder",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_pillar",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": true,
 				"Name": "biomancy:flesh_spike",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:fleshkin_chest",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": true,
+				"float": false,
+				"top": true,
 				"Name": "biomancy:fleshkin_pressure_plate",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:full_flesh_door",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:impermeable_membrane",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:impermeable_membrane_pane",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:malignant_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:malignant_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:malignant_flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "biomancy:malignant_flesh_veins",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:malignant_flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:maw_hopper",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:modular_larynx",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:oneway_membrane",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:ornate_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:ornate_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:packed_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:packed_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:packed_flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:packed_flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:porous_primal_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:porous_primal_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:porous_primal_flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:porous_primal_flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
+				"float": false,
+				"top": false,
 				"Name": "biomancy:primal_bloom",
-				"top": false,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_bone_block",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": false,
 				"laggy": false,
-				"Name": "biomancy:primal_organ_bloom",
+				"float": false,
 				"top": false,
+				"Name": "biomancy:primal_organ_bloom",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_orifice",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_permeable_membrane",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primal_permeable_membrane_pane",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
+				"laggy": false,
 				"float": false,
-				"laggy": false,
+				"top": true,
 				"Name": "biomancy:primordial_bio_lantern",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:primordial_cradle",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:smooth_primal_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:smooth_primal_flesh_slab",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:smooth_primal_flesh_stairs",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:smooth_primal_flesh_wall",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:storage_sac",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:tendon_chain",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:tongue",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:tubular_flesh",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:undead_permeable_membrane",
-				"top": true,
 				"full": true
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
+				"float": true,
+				"top": true,
 				"Name": "biomancy:undead_permeable_membrane_pane",
-				"top": true,
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": true,
-				"Name": "biomancy:vial_holder",
+				"float": true,
 				"top": true,
+				"Name": "biomancy:vial_holder",
 				"full": false
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"float": true,
 				"laggy": false,
-				"Name": "biomancy:water_gel_block",
+				"float": true,
 				"top": true,
+				"Name": "biomancy:water_gel_block",
 				"full": false
 			}
 		}

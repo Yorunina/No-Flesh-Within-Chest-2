@@ -29,7 +29,7 @@ function ImmortalVolcanicRockEntityKill(customData, event, organItem, organIndex
     const entity = event.entity
     if (entity.type != 'cataclysm:ignis') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:immortal_volcanic_crystal'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:immortal_volcanic_crystal'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

@@ -286,6 +286,18 @@
 		},
 		{
 			"weight": 1.0,
+			"key": "modulargolems:maledictus_chestplate"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:maledictus_helmet"
+		},
+		{
+			"weight": 1.0,
+			"key": "modulargolems:maledictus_shinguard"
+		},
+		{
+			"weight": 1.0,
 			"key": "modulargolems:mechanical_arm"
 		},
 		{

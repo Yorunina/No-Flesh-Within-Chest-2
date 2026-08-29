@@ -81,7 +81,7 @@ function RedWolfBeardEntityKill(customData, event, organItem, organIndex, slotTy
     let damageValue = organItem.getDamageValue()
     if (damageValue == 0 || damageValue == organItem.getMaxDamage()) return
     /**@type {Internal.LivingEntity} */
-    const sourceEntity = event.source.actual
+    const sourceEntity = customData.killer
     if (!sourceEntity.isLiving()) return
     const chestCavity = sourceEntity.chestCavityInstance
     organItem.setDamageValue(damageValue - 3)

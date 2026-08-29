@@ -65,6 +65,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('kubejs:magic_mushroom', 8)], Item.of('kubejs:plant_injection', 1), 'biomancy:organ', 100)
 
+    event.recipes.biomancy.bio_forging([Item.of('minecraft:redstone_lamp'), Item.of('tetra:metal_scrap', 4)], Item.of('chestcavity:organ_catalogue'), 'biomancy:organ', 20)
+
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('kubejs:deserted_gula_worm_nest')], Item.of('kubejs:gula_injection', 1), 'biomancy:organ', 100).id('kubejs:gula_injection')
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:player_27_injection'), Item.of('cataclysm:ignitium_ingot', 8)], Item.of('kubejs:revolution_machine_injection', 1), 'biomancy:organ', 100).id('kubejs:revolution_machine_injection')

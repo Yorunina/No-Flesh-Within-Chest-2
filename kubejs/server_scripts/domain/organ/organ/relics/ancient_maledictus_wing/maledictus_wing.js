@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:maledictus_wing')
     .addScore('chestcavity:speed', 2)
-    .addScore('chestcavity:strength', 1)
+    .addScore('kubejs:creative_flight', 1)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -15,7 +15,6 @@ function MaledictusWingOrganTakeOn(customData, event, organItem, organIndex, slo
     const entity = event.entity
     if (!entity.isPlayer()) return
     if (entity.isCreative() || entity.isSpectator()) return
-    entity.getAbilities().mayfly = true
     entity.getAbilities().setFlyingSpeed(0.005)
     entity.onUpdateAbilities()
 }
@@ -31,12 +30,6 @@ function MaledictusWingOrganTakeOff(customData, event, organItem, organIndex, sl
     /**@type {Internal.ServerPlayer} */
     const entity = event.entity
     if (!entity.isPlayer()) return
-    entity.getAbilities().mayfly = true
-
-    if (!entity.isCreative() && !entity.isSpectator()) {
-        entity.getAbilities().flying = false
-        entity.getAbilities().mayfly = false
-    }
     entity.getAbilities().setFlyingSpeed(0.05)
     entity.onUpdateAbilities()
 }
@@ -52,7 +45,7 @@ function MaledictusWingEntityKill(customData, event, organItem, organIndex, slot
     const entity = event.entity
     if (entity.type != 'cataclysm:maledictus') return
     if (entity.persistentData.getString('relicsStage') != 'ancient') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:ancient_maledictus_wing'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:ancient_maledictus_wing'), organIndex, slotType, true)
 }
 
 

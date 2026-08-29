@@ -437,6 +437,13 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"Name": "minecraft:sulfur_cube",
+				"Category": "monster"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"Name": "minecraft:tadpole",
 				"Category": "creature"
 			}

@@ -25,7 +25,7 @@
 			"weight": 1.0,
 			"key": {
 				"Name": "crittersandcompanions:jumping_spider",
-				"Category": "creature"
+				"Category": "ambient"
 			}
 		},
 		{
@@ -33,6 +33,13 @@
 			"key": {
 				"Name": "crittersandcompanions:koi_fish",
 				"Category": "water_ambient"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "crittersandcompanions:ladybug",
+				"Category": "ambient"
 			}
 		},
 		{
@@ -59,6 +66,13 @@
 		{
 			"weight": 1.0,
 			"key": {
+				"Name": "crittersandcompanions:roly_poly",
+				"Category": "ambient"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
 				"Name": "crittersandcompanions:sea_bunny",
 				"Category": "water_ambient"
 			}
@@ -68,6 +82,34 @@
 			"key": {
 				"Name": "crittersandcompanions:shima_enaga",
 				"Category": "creature"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "crittersandcompanions:snail",
+				"Category": "ambient"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "crittersandcompanions:stag_beetle",
+				"Category": "ambient"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "crittersandcompanions:stick_bug",
+				"Category": "ambient"
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "crittersandcompanions:weevil",
+				"Category": "ambient"
 			}
 		}
 	]

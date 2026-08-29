@@ -52,14 +52,18 @@ RegisterFirstTaskStrategy(
 RegisterFirstTaskStrategy(
     (player, inputText, teamData, task) => player.server.singleplayer && inputText == 'show me the money',
     (player, inputText, teamData, task) => {
+        let moneyItems = new $ListTag()
+        for (let i = 0; i < 78; i++) {
+            let pNbt = new $CompoundTag()
+            pNbt.putString('id', 'lightmanscurrency:coin_netherite')
+            pNbt.putInt('Count', 64)
+            pNbt.putInt('Slot', i)
+            moneyItems.add(pNbt)
+        }
         player.give(Item.of('lightmanscurrency:wallet_ender_dragon', {
             AutoConvert: true,
             BonusSlots: 36,
-            Items: Array.from({ length: 78 }, (_, i) => ({
-                Count: 64,
-                Slot: i,
-                id: 'lightmanscurrency:coin_netherite'
-            }))
+            Items: moneyItems
         }))
     },
     100

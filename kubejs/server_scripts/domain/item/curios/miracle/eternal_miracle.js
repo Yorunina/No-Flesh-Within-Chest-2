@@ -5,7 +5,7 @@
  * @param {Internal.ItemStack} curiosItem
  */
 function EternalMiracleEntityKill(customData, event, curiosItem) {
-    const killer = event.source.actual
+    const killer = customData.killer
     if (!killer) return
     const entity = event.entity
     if (entity.getTicksFrozen() < 140) return

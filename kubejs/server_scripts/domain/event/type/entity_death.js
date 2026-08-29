@@ -8,10 +8,11 @@ const CuriosEntityKillEvent = new CuriosEventModel('entity_kill')
 
 EntityEvents.death(event => {
     const entity = event.entity
-    /**@type {Internal.LivingEntity} */
-    const killer = event.source.actual ? event.source.actual : (entity.lastHurtByPlayer ? entity.lastHurtByPlayer : entity.lastHurtByMob)
     if (!entity) return
-    let customData = {}
+    const killer = event.source.actual ? event.source.actual : entity.getKillCredit()
+    let customData = {
+        killer: killer
+    }
     CuriosEntityDeathEvent.run(entity, customData, [event])
     OrganEntityDeathEvent.run(entity, customData, [event])
     ChampionEntityDeathEvent.run(entity, customData, [event])

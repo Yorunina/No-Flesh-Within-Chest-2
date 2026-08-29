@@ -1,7 +1,7 @@
 // priority: 500
 RegistryOrgan('kubejs:ancient_maledictus_wing')
     .addScore('chestcavity:speed', 2)
-    .addScore('chestcavity:strength', 1)
+    .addScore('kubejs:creative_flight', 1)
 
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -15,7 +15,6 @@ function AncientMaledictusWingOrganTakeOn(customData, event, organItem, organInd
     const entity = event.entity
     if (!entity.isPlayer()) return
     if (entity.isCreative() || entity.isSpectator()) return
-    entity.getAbilities().mayfly = true
     entity.getAbilities().setFlyingSpeed(slotType == AwakeRelicsSlot ? 0.05 : 0.005)
     entity.onUpdateAbilities()
 }
@@ -31,16 +30,9 @@ function AncientMaledictusWingOrganTakeOff(customData, event, organItem, organIn
     /**@type {Internal.ServerPlayer} */
     const entity = event.entity
     if (!entity.isPlayer()) return
-    entity.getAbilities().mayfly = true
-
-    if (!entity.isCreative() && !entity.isSpectator()) {
-        entity.getAbilities().flying = false
-        entity.getAbilities().mayfly = false
-    }
     entity.getAbilities().setFlyingSpeed(0.05)
     entity.onUpdateAbilities()
 }
-
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ancient_maledictus_wing')

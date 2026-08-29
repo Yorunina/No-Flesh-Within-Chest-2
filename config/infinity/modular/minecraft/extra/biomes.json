@@ -3,456 +3,463 @@
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": 10387789,
-				"Name": "minecraft:badlands"
+				"Name": "minecraft:badlands",
+				"Color": 10387789
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -13583605,
-				"Name": "minecraft:bamboo_jungle"
+				"Name": "minecraft:bamboo_jungle",
+				"Color": -13583605
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:basalt_deltas"
+				"Name": "minecraft:basalt_deltas",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -8934609,
-				"Name": "minecraft:beach"
+				"Name": "minecraft:beach",
+				"Color": -8934609
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9721536,
-				"Name": "minecraft:birch_forest"
+				"Name": "minecraft:birch_forest",
+				"Color": -9721536
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": 11983713,
-				"Name": "minecraft:cherry_grove"
+				"Name": "minecraft:cherry_grove",
+				"Color": 11983713
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:cold_ocean"
+				"Name": "minecraft:cold_ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:crimson_forest"
+				"Name": "minecraft:crimson_forest",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10899920,
-				"Name": "minecraft:dark_forest"
+				"Name": "minecraft:dark_forest",
+				"Color": -10899920
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:deep_cold_ocean"
+				"Name": "minecraft:deep_cold_ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -8934609,
-				"Name": "minecraft:deep_dark"
+				"Name": "minecraft:deep_dark",
+				"Color": -8934609
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:deep_frozen_ocean"
+				"Name": "minecraft:deep_frozen_ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:deep_lukewarm_ocean"
+				"Name": "minecraft:deep_lukewarm_ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:deep_ocean"
+				"Name": "minecraft:deep_ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:desert"
+				"Name": "minecraft:desert",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -8934609,
-				"Name": "minecraft:dripstone_caves"
+				"Name": "minecraft:dripstone_caves",
+				"Color": -8934609
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:end_barrens"
+				"Name": "minecraft:end_barrens",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:end_highlands"
+				"Name": "minecraft:end_highlands",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:end_midlands"
+				"Name": "minecraft:end_midlands",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": 10387789,
-				"Name": "minecraft:eroded_badlands"
+				"Name": "minecraft:eroded_badlands",
+				"Color": 10387789
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10899920,
-				"Name": "minecraft:flower_forest"
+				"Name": "minecraft:flower_forest",
+				"Color": -10899920
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10899920,
-				"Name": "minecraft:forest"
+				"Name": "minecraft:forest",
+				"Color": -10899920
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:frozen_ocean"
+				"Name": "minecraft:frozen_ocean",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:frozen_peaks"
+				"Name": "minecraft:frozen_peaks",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:frozen_river"
+				"Name": "minecraft:frozen_river",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:grove"
+				"Name": "minecraft:grove",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:ice_spikes"
+				"Name": "minecraft:ice_spikes",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:jagged_peaks"
+				"Name": "minecraft:jagged_peaks",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -13583605,
-				"Name": "minecraft:jungle"
+				"Name": "minecraft:jungle",
+				"Color": -13583605
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:lukewarm_ocean"
+				"Name": "minecraft:lukewarm_ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:lush_caves"
+				"Name": "minecraft:lush_caves",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": 9285927,
-				"Name": "minecraft:mangrove_swamp"
+				"Name": "minecraft:mangrove_swamp",
+				"Color": 9285927
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10245816,
-				"Name": "minecraft:meadow"
+				"Name": "minecraft:meadow",
+				"Color": -10245816
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -13911281,
-				"Name": "minecraft:mushroom_fields"
+				"Name": "minecraft:mushroom_fields",
+				"Color": -13911281
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:nether_wastes"
+				"Name": "minecraft:nether_wastes",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:ocean"
+				"Name": "minecraft:ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9721536,
-				"Name": "minecraft:old_growth_birch_forest"
+				"Name": "minecraft:old_growth_birch_forest",
+				"Color": -9721536
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9919137,
-				"Name": "minecraft:old_growth_pine_taiga"
+				"Name": "minecraft:old_growth_pine_taiga",
+				"Color": -9919137
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9919388,
-				"Name": "minecraft:old_growth_spruce_taiga"
+				"Name": "minecraft:old_growth_spruce_taiga",
+				"Color": -9919388
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": 8883574,
-				"Name": "minecraft:pale_garden"
+				"Name": "minecraft:pale_garden",
+				"Color": 8883574
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -8934609,
-				"Name": "minecraft:plains"
+				"Name": "minecraft:plains",
+				"Color": -8934609
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:river"
+				"Name": "minecraft:river",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:savanna"
+				"Name": "minecraft:savanna",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:savanna_plateau"
+				"Name": "minecraft:savanna_plateau",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:small_end_islands"
+				"Name": "minecraft:small_end_islands",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10182024,
-				"Name": "minecraft:snowy_beach"
+				"Name": "minecraft:snowy_beach",
+				"Color": -10182024
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:snowy_plains"
+				"Name": "minecraft:snowy_plains",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:snowy_slopes"
+				"Name": "minecraft:snowy_slopes",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -10444421,
-				"Name": "minecraft:snowy_taiga"
+				"Name": "minecraft:snowy_taiga",
+				"Color": -10444421
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:soul_sand_valley"
+				"Name": "minecraft:soul_sand_valley",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -12666865,
-				"Name": "minecraft:sparse_jungle"
+				"Name": "minecraft:sparse_jungle",
+				"Color": -12666865
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -8213474,
-				"Name": "minecraft:stony_peaks"
+				"Name": "minecraft:stony_peaks",
+				"Color": -8213474
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9591957,
-				"Name": "minecraft:stony_shore"
+				"Name": "minecraft:stony_shore",
+				"Color": -9591957
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -8934609,
-				"Name": "minecraft:sunflower_plains"
+				"Name": "minecraft:sulfur_caves",
+				"Color": -8934609
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": 6975545,
-				"Name": "minecraft:swamp"
+				"Name": "minecraft:sunflower_plains",
+				"Color": -8934609
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9919388,
-				"Name": "minecraft:taiga"
+				"Name": "minecraft:swamp",
+				"Color": 6975545
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:the_end"
+				"Name": "minecraft:taiga",
+				"Color": -9919388
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:the_void"
+				"Name": "minecraft:the_end",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9328819,
-				"Name": "minecraft:warm_ocean"
+				"Name": "minecraft:the_void",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:warped_forest"
+				"Name": "minecraft:warm_ocean",
+				"Color": -9328819
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9591957,
-				"Name": "minecraft:windswept_forest"
+				"Name": "minecraft:warped_forest",
+				"Color": -5331926
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9591957,
-				"Name": "minecraft:windswept_gravelly_hills"
+				"Name": "minecraft:windswept_forest",
+				"Color": -9591957
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -9591957,
-				"Name": "minecraft:windswept_hills"
+				"Name": "minecraft:windswept_gravelly_hills",
+				"Color": -9591957
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": -5331926,
-				"Name": "minecraft:windswept_savanna"
+				"Name": "minecraft:windswept_hills",
+				"Color": -9591957
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
-				"Color": 10387789,
-				"Name": "minecraft:wooded_badlands"
+				"Name": "minecraft:windswept_savanna",
+				"Color": -5331926
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"Name": "minecraft:wooded_badlands",
+				"Color": 10387789
 			}
 		}
 	]

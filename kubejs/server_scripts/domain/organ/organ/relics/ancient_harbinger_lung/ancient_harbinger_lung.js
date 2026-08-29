@@ -55,6 +55,7 @@ function AncientHarbingerLungItemLeftClicked(customData, event, organItem, organ
 
     for (let targetEntity of entities) {
         if (!targetEntity.isAlive()) continue
+        if (ISSDamageSources.isFriendlyFireBetween(targetEntity, entity)) continue
         if (targetEntity.position().subtract(entity.getEyePosition()).dot(forward) < 0) continue
         if (entity.distanceToSqr(targetEntity) >= radius * radius) continue
 

@@ -52,7 +52,7 @@ function RemnantHeartEntityKill(customData, event, organItem, organIndex, slotTy
     const entity = event.entity
     if (entity.type != 'cataclysm:ancient_remnant') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:awaken_heart'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:awaken_heart'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

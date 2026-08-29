@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:soul_cage')
 function SoulCageEntityKill(customData, event, organItem, organIndex, slotType) {
     let damageValue = organItem.getDamageValue()
     if (damageValue == 0) return
-    const sourceEntity = event.source.actual
+    const sourceEntity = customData.killer
     const chestCavity = sourceEntity.chestCavityInstance
     const entity = event.entity
     const level = entity.level

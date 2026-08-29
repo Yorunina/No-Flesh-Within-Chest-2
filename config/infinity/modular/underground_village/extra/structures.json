@@ -4,20 +4,20 @@
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "none",
+				"id": "underground_village:underground_village",
+				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
-				},
-				"id": "underground_village:underwater_village"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
+				"id": "underground_village:underwater_village",
+				"terrain_adaptation": "none",
 				"spawn_overrides": {
-				},
-				"id": "underground_village:underground_village"
+				}
 			}
 		}
 	]

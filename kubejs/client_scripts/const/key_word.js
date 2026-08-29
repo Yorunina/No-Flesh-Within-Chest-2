@@ -245,15 +245,15 @@ const FullChargeAttackHover = Text.translatable('tooltips.kubejs.hover.full_char
         Text.translatable('tooltips.kubejs.hover.full_charge_attack.1'),
     ]))
 
-const ExtremeStrengthHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple().underlined()
+const ExtremeStrengthHover = Text.translatable('tooltips.organ_score.kubejs:extreme_strength').lightPurple().underlined()
     .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_strength').lightPurple(),
-        Text.translatable('tooltips.kubejs.score_tag.hover.kubejs:extreme_strength'),
+        Text.translatable('tooltips.organ_score.kubejs:extreme_strength').lightPurple(),
+        Text.translatable('tooltips.organ_score.hover.kubejs:extreme_strength'),
     ]))
-const ExtremeFitnessHover = Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_fitness').lightPurple().underlined()
+const ExtremeFitnessHover = Text.translatable('tooltips.organ_score.kubejs:extreme_fitness').lightPurple().underlined()
     .hover(HoverTextList([
-        Text.translatable('tooltips.kubejs.score_tag.kubejs:extreme_fitness').lightPurple(),
-        Text.translatable('tooltips.kubejs.score_tag.hover.kubejs:extreme_fitness'),
+        Text.translatable('tooltips.organ_score.kubejs:extreme_fitness').lightPurple(),
+        Text.translatable('tooltips.organ_score.hover.kubejs:extreme_fitness'),
     ]))
 const FrostShieldHover = Text.translatable('tooltips.kubejs.hover.frost_shield.0').darkAqua().underlined()
     .hover(HoverTextList([

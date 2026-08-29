@@ -7,8 +7,8 @@
   "products": [
     {
       "chance": 1.0,
-      "item": "#agricraft:gems/lapis",
-      "max": 8,
+      "item": "minecraft:lapis_lazuli",
+      "max": 3,
       "min": 1,
       "required": true
     }

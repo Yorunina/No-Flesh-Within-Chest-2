@@ -79,6 +79,14 @@
 				}
 			}
 			id: "4F79F4816CF0D307"
+			rewards: [{
+				auto: "invisible"
+				id: "3307540759179A65"
+				ignore_reward_blocking: true
+				kubeId: "chapter_complete_raw"
+				title: "章节完成"
+				type: "maa:kube"
+			}]
 			subtitle: "选择可能性"
 			tasks: [{
 				id: "58F19E48BFAED873"

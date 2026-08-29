@@ -1,5 +1,4 @@
 // priority: 999
-// todo 需要回归测试
 function NewPickItemForPlayerGoal(entity) {
     return new $CustomGoal(
         'pick_item_for_player',

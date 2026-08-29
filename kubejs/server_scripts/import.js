@@ -78,21 +78,19 @@ const $LivingDamageEvent = Java.loadClass('net.minecraftforge.event.entity.livin
 const $EffectResolveEventPost = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Post')
 const $EffectResolveEventPre = Java.loadClass('com.hollingsworth.arsnouveau.api.event.EffectResolveEvent$Pre')
 const $ShieldBlockEvent = Java.loadClass('net.minecraftforge.event.entity.living.ShieldBlockEvent')
-const $AttackEntityEvent = Java.loadClass('net.minecraftforge.event.entity.player.AttackEntityEvent')
 const $MobEffectApplicableEvent = Java.loadClass('net.minecraftforge.event.entity.living.MobEffectEvent$Applicable')
 const $LivingFallEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingFallEvent')
 const $PlayerSpawnPhantomsEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerSpawnPhantomsEvent')
-const $PlayerChangedDimensionEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent')
 const $LivingTickEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingEvent$LivingTickEvent')
 const $TradeWithVillagerEvent = Java.loadClass('net.minecraftforge.event.entity.player.TradeWithVillagerEvent')
-
+const $PlayerCloneEvent = Java.loadClass('net.minecraftforge.event.entity.player.PlayerEvent$Clone')
 
 const $DrunkEffect = Java.loadClass('net.satisfy.brewery.core.effect.DrunkEffect')
 const $Containers = Java.loadClass('net.minecraft.world.Containers')
 const $CustomMachineContainer = Java.loadClass('fr.frinn.custommachinery.common.init.CustomMachineContainer')
 const $MachineTile = Java.loadClass('fr.frinn.custommachinery.api.machine.MachineTile')
 
-const $CustomGoal = Java.loadClass('net.liopyu.entityjs.util.ai.CustomGoal')
+const $CustomGoal = Java.loadClass('net.liopyu.entityjs.common.util.ai.CustomGoal')
 
 const $CameraItem = Java.loadClass('io.github.mortuusars.exposure.world.item.camera.CameraItem')
 const $FrameAddedEvent = Java.loadClass('io.github.mortuusars.exposure.forge.api.event.FrameAddedEvent')

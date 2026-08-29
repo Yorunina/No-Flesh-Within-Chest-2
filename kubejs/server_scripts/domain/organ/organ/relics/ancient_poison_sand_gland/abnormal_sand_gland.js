@@ -34,7 +34,7 @@ function AbnormalSandGlandEntityKill(customData, event, organItem, organIndex, s
     const entity = event.entity
     if (entity.type != 'block_factorys_bosses:sandworm') return
     if (entity.persistentData.getString('relicsStage') != 'relics') return
-    SetChestCavityOrgan(customData, event.source.actual.chestCavityInstance, Item.of('kubejs:poison_sand_gland'), organIndex, slotType, true)
+    SetChestCavityOrgan(customData, customData.killer.chestCavityInstance, Item.of('kubejs:poison_sand_gland'), organIndex, slotType, true)
 }
 
 RegistryOrganStrategy(

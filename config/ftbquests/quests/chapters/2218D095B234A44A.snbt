@@ -200,11 +200,18 @@
 			]
 			icon: "simplehats:pighead"
 			id: "1D65BF71E2DCA300"
-			rewards: [{
-				id: "1374ED2BF245D46A"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1374ED2BF245D46A"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "1443A8B7453FFF68"
+					item: "chestcavity:organ_catalogue"
+					type: "item"
+				}
+			]
 			subtitle: "先从简单的生物开始"
 			tasks: [{
 				entity: "minecraft:empty"

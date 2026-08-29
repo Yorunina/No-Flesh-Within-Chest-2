@@ -2,7 +2,6 @@
 RegistryOrgan('kubejs:symbiocto_arm')
     .addScore('chestcavity:strength', 1)
     .setCanSpawn(true)
-// todo 需要回归测试
 /**
 * @param {OrganChestCavityUpdateStrategyCustomData} customData
 * @param {Internal.ItemEntityInteractedEventJS} event

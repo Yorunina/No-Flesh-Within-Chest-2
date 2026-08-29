@@ -34,7 +34,7 @@
 			y: 5.369650655425232d
 		}
 		{
-			dependency: "263474323AC7D863"
+			dependency: "1A23554F0563EDB6"
 			height: 10.0d
 			image: "kubejs:textures/gui/tasks/relics_awakening/bg_2.png"
 			rotation: 0.0d

@@ -4,63 +4,63 @@
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "ars_nouveau:stalker_wilden_den",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 					"monster": {
 						"bounding_box": "piece",
 						"spawns": [
 							{
-								"type": "ars_nouveau:wilden_guardian",
+								"weight": 5,
+								"minCount": 3,
+								"type": "ars_nouveau:wilden_stalker",
+								"maxCount": 3
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"weight": 1.0,
+			"key": {
+				"step": "surface_structures",
+				"id": "ars_nouveau:guardian_wilden_den",
+				"terrain_adaptation": "beard_thin",
+				"spawn_overrides": {
+					"monster": {
+						"bounding_box": "piece",
+						"spawns": [
+							{
 								"weight": 5,
 								"minCount": 1,
+								"type": "ars_nouveau:wilden_guardian",
 								"maxCount": 3
 							}
 						]
 					}
-				},
-				"id": "ars_nouveau:guardian_wilden_den"
+				}
 			}
 		},
 		{
 			"weight": 1.0,
 			"key": {
 				"step": "surface_structures",
+				"id": "ars_nouveau:hunter_wilden_den",
 				"terrain_adaptation": "beard_thin",
 				"spawn_overrides": {
 					"monster": {
 						"bounding_box": "piece",
 						"spawns": [
 							{
+								"weight": 5,
+								"minCount": 3,
 								"type": "ars_nouveau:wilden_hunter",
-								"weight": 5,
-								"minCount": 3,
 								"maxCount": 3
 							}
 						]
 					}
-				},
-				"id": "ars_nouveau:hunter_wilden_den"
-			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"terrain_adaptation": "beard_thin",
-				"spawn_overrides": {
-					"monster": {
-						"bounding_box": "piece",
-						"spawns": [
-							{
-								"type": "ars_nouveau:wilden_stalker",
-								"weight": 5,
-								"minCount": 3,
-								"maxCount": 3
-							}
-						]
-					}
-				},
-				"id": "ars_nouveau:stalker_wilden_den"
+				}
 			}
 		}
 	]

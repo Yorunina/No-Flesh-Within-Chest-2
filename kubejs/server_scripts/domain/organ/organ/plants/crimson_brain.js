@@ -13,7 +13,7 @@ RegistryOrgan('kubejs:crimson_brain')
 function CrimsonBrainEntityKill(customData, event, organItem, organIndex, slotType) {
     const entity = event.entity
     const level = event.level
-    const killer = event.source.actual
+    const killer = customData.killer
     if (!entity.hasEffect('kubejs:putrid_toxins')) return
     let effect = entity.getEffect('kubejs:putrid_toxins')
     let damage = GetPutridToxinsDamage(entity)

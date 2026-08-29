@@ -8,7 +8,7 @@
     {
       "chance": 1.0,
       "item": "agricraft:amathyllis_petal",
-      "max": 8,
+      "max": 6,
       "min": 1,
       "required": true
     }
