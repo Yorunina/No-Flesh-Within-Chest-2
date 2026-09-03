@@ -34,6 +34,9 @@ ItemEvents.rightClicked(event => {
 
 BlockEvents.broken(event => {
     const player = event.player
+    const block = event.block
+    const level = event.level
+
     if (!player) return
     if (player.isCrouching()) return
     let uuidStr = String(player.UUID)
@@ -50,46 +53,66 @@ BlockEvents.broken(event => {
     if (nbt.contains('canVeinMining') && !nbt.getBoolean('canVeinMining')) return
     let maxBlockCount = effectEfficiency * 5 + 20
     let maxVeinRange = effectLevel + 5
-    const block = event.block
-    const level = event.level
+
     const blockState = block.blockState
     if (!blockState.canHarvestBlock(level, block.pos, player)) return
 
     veinMiningLockMap.set(uuidStr, level.time)
-    /**@type {VeinMiningBlockDepthModel[]} */
-    let veinMiningList = []
-    addValidNeighbors(veinMiningList, new VeinMiningBlockDepthModel(block.pos, 0))
     let minedBlockCount = 1
-    while (veinMiningList.length > 0 && minedBlockCount < maxBlockCount) {
-        let veinMiningTarget = veinMiningList.shift()
-        let pPos = veinMiningTarget.pos
-        let pBlockState = level.getBlockState(pPos)
-        if (pBlockState.isAir()) continue
-        if (!pBlockState.is(block.id)) continue
-        if (!pBlockState.canHarvestBlock(level, pPos, player)) continue
-        heldItem.mineBlock(level, pBlockState, pPos, player)
-        let pEntity = level.getBlockEntity(pPos)
-        pBlockState.block.playerDestroy(level, player, pPos, pBlockState, pEntity, heldItem)
-        pBlockState.onDestroyedByPlayer(level, pPos, player, true, level.getFluidState(pPos))
-        minedBlockCount++
-        if (veinMiningTarget.depth < maxVeinRange) {
-            addValidNeighbors(veinMiningList, new VeinMiningBlockDepthModel(pPos, 0))
-        }
 
+    try {
+        /** @type {Set<string>} */
+        let visitedBlockPosSet = new Set([getBlockPosKey(block.pos)])
+        /**@type {VeinMiningBlockDepthModel[]} */
+        let veinMiningList = []
+        let nextTargetIndex = 0
+        addValidNeighbors(veinMiningList, new VeinMiningBlockDepthModel(block.pos, 0), visitedBlockPosSet, maxVeinRange)
+
+        while (nextTargetIndex < veinMiningList.length && minedBlockCount < maxBlockCount) {
+            let veinMiningTarget = veinMiningList[nextTargetIndex++]
+            let pPos = veinMiningTarget.pos
+            let pBlockState = level.getBlockState(pPos)
+            if (pBlockState.isAir()) continue
+            if (!pBlockState.is(block.id)) continue
+            if (!pBlockState.canHarvestBlock(level, pPos, player)) continue
+            if (!player.gameMode.destroyBlock(pPos)) continue
+
+            minedBlockCount++
+            addValidNeighbors(veinMiningList, veinMiningTarget, visitedBlockPosSet, maxVeinRange)
+        }
+    } finally {
+        veinMiningLockMap.delete(uuidStr)
     }
+
     player.addExhaustion(minedBlockCount * 0.1)
-    veinMiningLockMap.delete(uuidStr)
 })
 
 /**
  * 
  * @param {VeinMiningBlockDepthModel[]}  veinMiningList 
  * @param {VeinMiningBlockDepthModel}  veinMiningBlock 
+ * @param {Set<string>} visitedBlockPosSet
+ * @param {number} maxVeinRange
  */
-function addValidNeighbors(veinMiningList, veinMiningBlock) {
+function addValidNeighbors(veinMiningList, veinMiningBlock, visitedBlockPosSet, maxVeinRange) {
     let pos = veinMiningBlock.pos
     let newDepth = veinMiningBlock.depth + 1
+    if (newDepth > maxVeinRange) return
+
     for (let offset of diagonalMiningOffsetList) {
-        veinMiningList.push(new VeinMiningBlockDepthModel(pos.offset(offset[0], offset[1], offset[2]), newDepth))
+        let neighborPos = pos.offset(offset[0], offset[1], offset[2])
+        let neighborPosKey = getBlockPosKey(neighborPos)
+        if (visitedBlockPosSet.has(neighborPosKey)) continue
+
+        visitedBlockPosSet.add(neighborPosKey)
+        veinMiningList.push(new VeinMiningBlockDepthModel(neighborPos, newDepth))
     }
+}
+
+/**
+ * @param {BlockPos} pos
+ * @returns {string}
+ */
+function getBlockPosKey(pos) {
+    return `${pos.getX()},${pos.getY()},${pos.getZ()}`
 }

@@ -10,7 +10,7 @@ StartupEvents.registry('mob_effect', event => {
             let vitaToxinsSource = GetVitaToxinsSource(entity)
             if (!vitaToxinsSource) return
             /**@type {Internal.LivingEntity} */
-            const sourceEntity = $CommonUtil.getEntityByUUID(level, vitaToxinsSource)
+            const sourceEntity = MAAUtils.getEntityByUUID(level, vitaToxinsSource)
             if (!sourceEntity) return
             let vitaToxinsType = GetVitaToxinsType(entity)
             let vitaToxinsCoe = GetVitaToxinsCoe(entity)
