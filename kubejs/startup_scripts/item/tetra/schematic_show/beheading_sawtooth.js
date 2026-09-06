@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('beheading_sawtooth', ctx => {
+TetraCustomRequirement.register('beheading_sawtooth', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack

@@ -1668,7 +1668,7 @@
 		{
 			dependencies: ["0A9B08286B960B9F"]
 			description: [
-				"通过开采虚拟油田，我们可以获得足够多的原油。"
+				"您需要制作一个&6抽油机&r，开采虚拟油田。"
 				""
 				"原油通过&6分馏&r之后，汽油可以作为可控燃烧室的有力燃料，柴油可以用于生产应力，都是非常有用的原料。"
 				""
@@ -1704,6 +1704,11 @@
 					fluid: "createdieselgenerators:crude_oil"
 					id: "053714E3E3020B35"
 					type: "fluid"
+				}
+				{
+					id: "00DFE958CCF690ED"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
 				}
 			]
 			title: "原油开采"

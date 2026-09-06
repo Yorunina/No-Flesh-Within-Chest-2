@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomCEFunction('nerves_inspiration', ctx => {
+TetraCustomCraftingEffectCondition.register('nerves_inspiration', ctx => {
     const player = ctx.player()
     const level = ctx.world()
     if (level.isClientSide()) return false

@@ -6,7 +6,7 @@
  */
 function GetModularItemMineSpeed(stack) {
     return Math.round(
-        TetraJS$ItemModularHandheld.getAttackSpeedHarvestModifier(
+        TetraItemModularHandheld.getAttackSpeedHarvestModifier(
             stack.getItem().getAttributeValue(stack, 'minecraft:generic.attack_speed', 4.0)) *
         stack.getItem().getToolData(stack).getEfficiency($ToolAction.get('pickaxe_dig'))
     )

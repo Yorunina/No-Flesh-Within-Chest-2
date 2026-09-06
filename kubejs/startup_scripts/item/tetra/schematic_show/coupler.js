@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('coupler', ctx => {
+TetraCustomRequirement.register('coupler', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack

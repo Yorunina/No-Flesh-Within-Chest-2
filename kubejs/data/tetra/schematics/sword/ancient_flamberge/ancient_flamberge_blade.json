@@ -9,7 +9,7 @@
 		"textureX": 48
 	},
 	"requirement":{
-		"type":"mr:custom",
+		"type":"tetrajs:custom",
 		"key":"ancient_flamberge_blade"
 	},
 	"translation": {

@@ -14,12 +14,12 @@
             {
                 "type": "tetra:not",
                 "requirement": {
-                    "type": "mr:all_improvement",
+                    "type": "tetrajs:all_improvement",
                     "improvement": "genesis_inspiration"
                 }
             },
             {
-                "type":"mr:custom",
+                "type":"tetrajs:custom",
                 "key":"effect_inspiration"
             }
         ]

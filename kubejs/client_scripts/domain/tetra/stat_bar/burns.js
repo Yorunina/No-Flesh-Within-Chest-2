@@ -5,7 +5,7 @@ TetraJSEvents.registerStatBar(event => {
         .setMax(100)
         .setMultiplier(10)
         .setLabelGetter('percentagelabel')
-        .addIntegerTooltip(TetraJS$StatBarHelper.effectLevel('kubejs:burns', 10, 0))
-        .addIntegerTooltip(TetraJS$StatBarHelper.effectEfficiency('kubejs:burns', 1, 0))
+        .addIntegerTooltip(TetraStatBarHelper.effectLevel('kubejs:burns', 10, 0))
+        .addIntegerTooltip(TetraStatBarHelper.effectEfficiency('kubejs:burns', 1, 0))
 })
 

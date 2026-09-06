@@ -4,7 +4,7 @@
         "single/handle"
     ],
     "requirement":{
-        "type":"mr:custom",
+        "type":"tetrajs:custom",
         "key":"heat_or_grinding_handle"
     },
     "rarity": "inspired",

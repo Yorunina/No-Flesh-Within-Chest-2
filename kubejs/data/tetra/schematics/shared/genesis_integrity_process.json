@@ -9,7 +9,7 @@
         "crossbow/stave"
     ],
     "requirement":{
-        "type":"mr:custom",
+        "type":"tetrajs:custom",
         "key":"genesis_integrity_process"
     },
     "rarity": "infinite",

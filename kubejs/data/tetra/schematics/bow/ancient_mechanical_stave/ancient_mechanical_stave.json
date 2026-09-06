@@ -4,7 +4,7 @@
         "bow/stave"
     ],
     "requirement":{
-        "type":"mr:custom",
+        "type":"tetrajs:custom",
         "key":"ancient_mechanical_stave"
     },
     "rarity": "ancient",

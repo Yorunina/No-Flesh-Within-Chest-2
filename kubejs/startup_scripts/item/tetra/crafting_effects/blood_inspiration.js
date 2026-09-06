@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomCEFunction('blood_inspiration', ctx => {
+TetraCustomCraftingEffectCondition.register('blood_inspiration', ctx => {
     const level = ctx.world()
     const pos = ctx.pos()
     if (level.isClientSide()) return false

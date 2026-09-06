@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('genesis_process_done', ctx => {
+TetraCustomRequirement.register('genesis_process_done', ctx => {
     const player = ctx.player
     const level = ctx.world
     if (!level || level.isClientSide()) {

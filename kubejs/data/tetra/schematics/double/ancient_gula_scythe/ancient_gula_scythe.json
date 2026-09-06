@@ -9,7 +9,7 @@
         "_right"
     ],
     "requirement":{
-        "type":"mr:custom",
+        "type":"tetrajs:custom",
         "key":"ancient_gula_scythe"
     },
     "materialSlotCount": 1,

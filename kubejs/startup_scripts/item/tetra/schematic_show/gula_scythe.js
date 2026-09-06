@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('gula_scythe', ctx => {
+TetraCustomRequirement.register('gula_scythe', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack

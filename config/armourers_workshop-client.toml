@@ -22,7 +22,7 @@
 	skinLoadAnimationTime = 200
 	#Whether allows skin to limit limbs of entities.
 	enableSkinLimitLimbs = true
-	#Whether clip the excess skin in the inventory gui.
+	#Whether clipLayer the excess skin in the inventory gui.
 	enableClipInInventory = true
 
 #Change (visual quality/performance) ratio by changing setting in this category.

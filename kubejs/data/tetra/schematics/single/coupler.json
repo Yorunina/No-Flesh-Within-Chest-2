@@ -4,7 +4,7 @@
         "single/binding"
     ],
     "requirement":{
-        "type":"mr:custom",
+        "type":"tetrajs:custom",
         "key":"coupler"
     },
     "rarity": "inspired",

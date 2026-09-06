@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomCEFunction('durability_inspiration', ctx => {
+TetraCustomCraftingEffectCondition.register('durability_inspiration', ctx => {
     const level = ctx.world()
     const stack = ctx.upgradedStack()
     if (level.isClientSide()) return false

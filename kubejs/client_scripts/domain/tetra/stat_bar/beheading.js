@@ -4,6 +4,6 @@ TetraJSEvents.registerStatBar(event => {
         .setMin(0)
         .setMax(100)
         .setLabelGetter('percentagelabel')
-        .setStatGetter(TetraJS$StatBarHelper.effectLevel('kubejs:beheading', 2, 0))
-        .addIntegerTooltip(TetraJS$StatBarHelper.effectLevel('kubejs:beheading', 2, 0))
+        .setStatGetter(TetraStatBarHelper.effectLevel('kubejs:beheading', 2, 0))
+        .addIntegerTooltip(TetraStatBarHelper.effectLevel('kubejs:beheading', 2, 0))
 })

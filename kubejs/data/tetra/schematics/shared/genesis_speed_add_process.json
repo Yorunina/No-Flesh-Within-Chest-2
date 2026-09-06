@@ -7,7 +7,7 @@
         "single/head"
     ],
     "requirement":{
-        "type":"mr:custom",
+        "type":"tetrajs:custom",
         "key":"genesis_process_done"
     },
     "rarity": "infinite",

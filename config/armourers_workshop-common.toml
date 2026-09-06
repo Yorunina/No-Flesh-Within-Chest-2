@@ -36,14 +36,16 @@
 	#2 = always enable
 	#Range: 0 ~ 2
 	enableFirstPersonSkinRenderer = 0
-	#If enabled the server will allow client use server skins in the resource pack.
-	enableServerSkinsInResourcePack = false
 	#If enabled the link tool will allow bind between different dimensions block.
 	enableLinkDimensional = true
 	#the link tool will allow max range in which blocks can be bound?
 	#0 = infinite range
 	#Range: 0 ~ 100000
 	maxLinkDistance = 0
+	#the max single packet size
+	#the unit is mb
+	#Range: 10 ~ 1000
+	maxPacketSize = 50
 
 #Setting to configure tooltips on skinned items.
 [tooltip]
@@ -148,8 +150,15 @@
 	#Valid override types are: sword, shield, bow, pickaxe, axe, shovel, hoe and item
 	#example ["sword:minecraft:iron_sword","sword:minecraft:gold_sword"]
 	itemOverrides = []
-	#Tries to automatically assign the correct type of skin type without config and tag.
+	#Tries to automatically assign the correct type of skin type without config and object.
 	enableMatchingByItemId = true
 	#If the matching system wrong, you can add the item id here to this ignore it.
 	matchingBlacklistByItemId = []
+
+#Setting for the resource pack.
+[resource-pack]
+	#Allow users to place a encrypted (auth-code mode) skin file into resource packs.
+	resourceAuthCode = ""
+	#If enabled the server will allow client use server skins in the resource pack.
+	allowsServerSkinsInResourcePack = false
 

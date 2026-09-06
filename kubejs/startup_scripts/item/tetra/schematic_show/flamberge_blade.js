@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('flamberge_blade', ctx => {
+TetraCustomRequirement.register('flamberge_blade', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack

@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('heat_or_grinding_handle', ctx => {
+TetraCustomRequirement.register('heat_or_grinding_handle', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack

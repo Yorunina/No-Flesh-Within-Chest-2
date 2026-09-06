@@ -4,8 +4,8 @@ TetraJSEvents.registerStatBar(event => {
         .setMin(0)
         .setMax(300)
         .setLabelGetter('percentagelabel')
-        .setStatGetter(TetraJS$StatBarHelper.effectEfficiency('kubejs:frag_arrow', 10, 10))
-        .addOneDecimalTooltip(TetraJS$StatBarHelper.effectLevel('kubejs:frag_arrow', 0.5, 2))
-        .addIntegerTooltip(TetraJS$StatBarHelper.effectEfficiency('kubejs:frag_arrow', 10, 10))
+        .setStatGetter(TetraStatBarHelper.effectEfficiency('kubejs:frag_arrow', 10, 10))
+        .addOneDecimalTooltip(TetraStatBarHelper.effectLevel('kubejs:frag_arrow', 0.5, 2))
+        .addIntegerTooltip(TetraStatBarHelper.effectEfficiency('kubejs:frag_arrow', 10, 10))
 })
 

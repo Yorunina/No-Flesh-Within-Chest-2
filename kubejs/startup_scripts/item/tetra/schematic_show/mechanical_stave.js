@@ -1,5 +1,5 @@
 // priority: 500
-$CustomRequirement.registerCustomFunction('mechanical_stave', ctx => {
+TetraCustomRequirement.register('mechanical_stave', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack
