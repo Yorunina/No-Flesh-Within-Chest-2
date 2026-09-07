@@ -77,6 +77,17 @@
         "value": 2048
       }
     },
+    "tetrawear:stealth": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 4,
+        "value": 4
+      }
+    },
     "irons_spellbooks:nature_magic_resist": {
       "enabled": false,
       "min": {
@@ -97,6 +108,17 @@
       "max": {
         "default": 1000,
         "value": 1000
+      }
+    },
+    "tetrawear:energy_harvest_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 16,
+        "value": 16
       }
     },
     "irons_spellbooks:lightning_magic_resist": {
@@ -154,6 +176,28 @@
         "value": 1024
       }
     },
+    "tetrawear:dodge_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 256,
+        "value": 256
+      }
+    },
+    "tetrawear:energy_attack_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 32,
+        "value": 32
+      }
+    },
     "irons_spellbooks:casting_movespeed": {
       "enabled": false,
       "min": {
@@ -185,6 +229,17 @@
       "max": {
         "default": 1024,
         "value": 1024
+      }
+    },
+    "tetrawear:heat_res": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 5,
+        "value": 5
       }
     },
     "l2damagetracker:fire_damage": {
@@ -715,6 +770,17 @@
         "value": 100
       }
     },
+    "tetrawear:energy_defence_cost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "attributeslib:cold_damage": {
       "enabled": false,
       "min": {
@@ -825,6 +891,17 @@
         "value": 2048
       }
     },
+    "tetrawear:agility": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "irons_spellbooks:cooldown_reduction": {
       "enabled": false,
       "min": {
@@ -845,6 +922,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "tetrawear:energy_item_use_cost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "attributeslib:dodge_chance": {
@@ -911,6 +999,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "tetrawear:cold_res": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 5,
+        "value": 5
       }
     },
     "irons_spellbooks:fire_magic_resist": {
@@ -1034,6 +1133,17 @@
         "value": 100
       }
     },
+    "tetrawear:dodge_energy_cost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 256,
+        "value": 256
+      }
+    },
     "cataclysm:additional_critical_damage": {
       "enabled": false,
       "min": {
@@ -1054,6 +1164,17 @@
       "max": {
         "default": 1,
         "value": 1
+      }
+    },
+    "tetrawear:energy_attack_cost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
       }
     },
     "ars_nouveau:ars_nouveau.perk.mana_regen": {
@@ -1087,6 +1208,17 @@
       "max": {
         "default": 4,
         "value": 4
+      }
+    },
+    "tetrawear:energy_harvest_cost": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
       }
     },
     "ars_nouveau:ars_nouveau.perk.feather": {
@@ -1166,6 +1298,17 @@
         "value": 1
       }
     },
+    "tetrawear:energy_toughness": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 20,
+        "value": 20
+      }
+    },
     "minecraft:generic.movement_speed": {
       "enabled": true,
       "min": {
@@ -1197,6 +1340,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "tetrawear:energy_armor": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 30
       }
     },
     "irons_lib:crit_damage": {
