@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "PPP",
+        " S ",
+        "SSS"
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "P": {
+            "item": "tetra:forged_pillar"
+        }
+    },
+    "result": {
+        "item": "tetra:forged_workbench",
+        "count": 1
+    }
+}

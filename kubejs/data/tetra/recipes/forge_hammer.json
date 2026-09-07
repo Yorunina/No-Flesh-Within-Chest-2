@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SRS",
+        "SCS",
+        "SPS"
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "P": {
+            "item": "tetra:forged_pillar"
+        },
+        "C": {
+            "item": "minecraft:copper_block"
+        },
+        "R": {
+            "item": "minecraft:redstone_block"
+        }
+    },
+    "result": {
+        "item": "tetra:hammer_base",
+        "count": 1
+    }
+}

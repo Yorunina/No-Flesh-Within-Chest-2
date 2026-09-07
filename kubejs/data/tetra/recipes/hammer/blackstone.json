@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " /#",
+        "/  "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:blackstone"
+        },
+        "/": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "tetra:modular_double",
+        "nbt": {
+            "id": "f3159e8e-23e7-44d2-8a78-765c43d0c6ee",
+            "double/head_left": "double/mallet_left",
+            "double/mallet_left_material": "mallet/blackstone",
+            "double/head_right": "double/butt_right",
+            "double/butt_right_material": "butt/blackstone",
+            "double/handle": "double/basic_handle",
+            "double/basic_handle_material": "basic_handle/stick"
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "name": "forged/planar_stabilizer_salvage",
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "tetra:metal_scrap",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:echo_shard",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

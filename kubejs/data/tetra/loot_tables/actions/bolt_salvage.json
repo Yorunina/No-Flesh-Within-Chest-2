@@ -1,0 +1,14 @@
+{
+    "pools": [
+        {
+            "name": "forged/bolt_salvage",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "tetra:metal_scrap"
+                }
+            ]
+        }
+    ]
+}

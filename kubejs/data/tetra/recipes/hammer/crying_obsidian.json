@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " /#",
+        "/  "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:crying_obsidian"
+        },
+        "/": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "tetra:modular_double",
+        "nbt": {
+            "id": "e491f1bd-6a2e-4212-80dd-d8928025d39e",
+            "double/head_left": "double/mallet_left",
+            "double/mallet_left_material": "mallet/obsidian",
+            "double/head_left:crying": 0,
+            "double/head_right": "double/butt_right",
+            "double/butt_right_material": "butt/obsidian",
+            "double/head_right:crying": 0,
+            "double/handle": "double/basic_handle",
+            "double/basic_handle_material": "basic_handle/stick"
+        }
+    }
+}

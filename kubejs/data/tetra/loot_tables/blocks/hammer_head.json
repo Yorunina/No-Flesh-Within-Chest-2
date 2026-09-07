@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "minecraft:entity_properties",
+                    "predicate": { },
+                    "entity": "this"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "tetra:hammer_base"
+                }
+            ]
+        }
+    ]
+}

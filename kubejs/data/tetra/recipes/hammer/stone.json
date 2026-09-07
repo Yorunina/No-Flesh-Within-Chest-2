@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " /#",
+        "/  "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:cobblestone"
+        },
+        "/": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "tetra:modular_double",
+        "nbt": {
+            "id": "78b6924d-3506-43be-a1e7-9ae990c38570",
+            "double/head_left": "double/mallet_left",
+            "double/mallet_left_material": "mallet/stone",
+            "double/head_right": "double/butt_right",
+            "double/butt_right_material": "butt/stone",
+            "double/handle": "double/basic_handle",
+            "double/basic_handle_material": "basic_handle/stick"
+        }
+    }
+}

@@ -26,6 +26,7 @@ StartupEvents.registry('item', event => {
     event.create('stable_substrate').texture('kubejs:item/materials/stable_substrate')
     event.create('amethyst_resonator').texture('kubejs:item/materials/amethyst_resonator')
     event.create('mantle_ore').texture('kubejs:item/materials/mantle_ore').maxStackSize(1)
+    event.create('kubejs:iron_coal_mix').texture('kubejs:item/materials/iron_coal_mix')
     event.create('kubejs:relics_scroll_1').texture('kubejs:item/materials/relics_scroll_1').maxStackSize(1)
         .useDuration(itemStack => 40)
         .useAnimation('bow')

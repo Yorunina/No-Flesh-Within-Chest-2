@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "H. ",
+        ".  ",
+        "   "
+    ],
+    "key": {
+        ".": {
+            "item": "tetra:metal_scrap"
+        },
+        "H": {
+            "type": "tetra:tool_action",
+            "tool": "hammer_dig",
+            "tier": {
+                "min": "minecraft:stone"
+            }
+        }
+    },
+    "result": {
+        "item": "tetra:forged_bolt",
+        "count": 2
+    }
+}

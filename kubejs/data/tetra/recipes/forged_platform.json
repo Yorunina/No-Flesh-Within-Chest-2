@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        "SSS",
+        "SDS"
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "D": {
+            "item": "minecraft:cobbled_deepslate"
+        }
+    },
+    "result": {
+        "item": "tetra:forged_platform",
+        "count": 6
+    }
+}

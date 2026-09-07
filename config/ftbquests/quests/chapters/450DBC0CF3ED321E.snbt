@@ -615,7 +615,7 @@
 				"为了&6达到高于5的加工等级&r，您需要准备一套&6锻锤设备&r，而其制作所需的材料正是由&6烟熏铁混合物&r烧制而成的&6金属碎片&r。"
 			]
 			hide_until_deps_complete: true
-			icon: "tetravsikt:iron_coal_mix"
+			icon: "kubejs:iron_coal_mix"
 			id: "1571ABBF59F33928"
 			rewards: [{
 				id: "74D05CB50CC324D0"
@@ -626,7 +626,7 @@
 			tasks: [
 				{
 					id: "148F528154F74706"
-					item: "tetravsikt:iron_coal_mix"
+					item: "kubejs:iron_coal_mix"
 					type: "item"
 				}
 				{

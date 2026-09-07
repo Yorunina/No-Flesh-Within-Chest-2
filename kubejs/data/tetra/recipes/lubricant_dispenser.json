@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "HSC",
+        "COC",
+        "CS "
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "C": {
+            "item": "minecraft:copper_ingot"
+        },
+        "O": {
+            "item": "minecraft:honeycomb"
+        },
+        "H": {
+            "type": "tetra:tool_action",
+            "tool": "hammer_dig",
+            "tier": {
+                "min": "minecraft:stone"
+            }
+        }
+    },
+    "result": {
+        "item": "tetra:lubricant_dispenser",
+        "count": 1
+    }
+}

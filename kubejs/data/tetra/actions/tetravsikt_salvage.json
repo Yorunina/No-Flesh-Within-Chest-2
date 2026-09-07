@@ -1,0 +1,32 @@
+[
+    {
+        "key": "salvage_planar_stabilizer_action",
+        "requirement": {
+            "items": [ "tetra:planar_stabilizer" ]
+        },
+        "requiredTools": {
+            "hammer_dig": "minecraft:stone"
+        },
+        "lootTable": "tetra:actions/planar_stabilizer_salvage"
+    },
+    {
+        "key": "salvage_combustion_chamber_action",
+        "requirement": {
+            "items": [ "tetra:combustion_chamber" ]
+        },
+        "requiredTools": {
+            "hammer_dig": "minecraft:stone"
+        },
+        "lootTable": "tetra:actions/combustion_chamber_salvage"
+    },
+    {
+        "key": "salvage_lubricant_dispenser_action",
+        "requirement": {
+            "items": [ "tetra:lubricant_dispenser" ]
+        },
+        "requiredTools": {
+            "hammer_dig": "minecraft:stone"
+        },
+        "lootTable": "tetra:actions/lubricant_dispenser_salvage"
+    }
+]

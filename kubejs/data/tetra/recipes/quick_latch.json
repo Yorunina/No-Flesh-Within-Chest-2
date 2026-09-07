@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " C ",
+        "HRS",
+        " C "
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "C": {
+            "item": "minecraft:copper_ingot"
+        },
+        "R": {
+            "item": "minecraft:redstone"
+        },
+        "H": {
+            "type": "tetra:tool_action",
+            "tool": "hammer_dig",
+            "tier": {
+                "min": "minecraft:stone"
+            }
+        }
+    },
+    "result": {
+        "item": "tetra:quick_latch",
+        "count": 1
+    }
+}

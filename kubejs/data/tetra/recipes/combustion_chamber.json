@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SSS",
+        "S S",
+        "CHC"
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "C": {
+            "item": "minecraft:copper_ingot"
+        },
+        "H": {
+            "type": "tetra:tool_action",
+            "tool": "hammer_dig",
+            "tier": {
+                "min": "minecraft:stone"
+            }
+        }
+    },
+    "result": {
+        "item": "tetra:combustion_chamber",
+        "count": 1
+    }
+}

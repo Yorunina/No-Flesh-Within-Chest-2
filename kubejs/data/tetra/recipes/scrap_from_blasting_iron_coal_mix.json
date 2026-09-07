@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:blasting",
+    "category": "misc",
+    "cookingtime": 200,
+    "experience": 0.7,
+    "group": "metal_scrap",
+    "ingredient": {
+        "item": "kubejs:iron_coal_mix"
+    },
+    "result": "tetra:metal_scrap"
+}

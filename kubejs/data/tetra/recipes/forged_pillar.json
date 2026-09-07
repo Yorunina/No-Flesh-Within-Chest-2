@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SS ",
+        "SSH",
+        "SS "
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "H": {
+            "type": "tetra:tool_action",
+            "tool": "hammer_dig",
+            "tier": {
+                "min": "minecraft:stone"
+            }
+        }
+    },
+    "result": {
+        "item": "tetra:forged_pillar",
+        "count": 1
+    }
+}

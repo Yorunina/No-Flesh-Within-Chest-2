@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " /#",
+        "/  "
+    ],
+    "key": {
+        "#": {
+            "tag": "forge:ingots/iron"
+        },
+        "/": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "tetra:modular_double",
+        "nbt": {
+            "id": "78b6924d-3506-43be-a1e7-9ae990c38570",
+            "double/basic_hammer_left_material": "basic_hammer/iron",
+            "double/basic_handle_material": "basic_handle/stick",
+            "double/basic_hammer_right_material": "basic_hammer/iron",
+            "double/handle": "double/basic_handle",
+            "double/basic_handle": "double/head_left",
+            "double/head_left": "double/basic_hammer_left",
+            "double/head_right": "double/basic_hammer_right"
+        }
+    }
+}

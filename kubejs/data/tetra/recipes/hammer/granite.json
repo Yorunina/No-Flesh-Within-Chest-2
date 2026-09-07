@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " /#",
+        "/  "
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:granite"
+        },
+        "/": {
+            "tag": "forge:rods/wooden"
+        }
+    },
+    "result": {
+        "item": "tetra:modular_double",
+        "nbt": {
+            "id": "c2783bc8-6f22-4f62-b464-80cb96403556",
+            "double/head_left": "double/mallet_left",
+            "double/mallet_left_material": "mallet/granite",
+            "double/head_right": "double/butt_right",
+            "double/butt_right_material": "butt/granite",
+            "double/handle": "double/basic_handle",
+            "double/basic_handle_material": "basic_handle/stick"
+        }
+    }
+}

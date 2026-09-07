@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "HSS",
+        "SLS",
+        "SS "
+    ],
+    "key": {
+        "S": {
+            "item": "tetra:metal_scrap"
+        },
+        "L": {
+            "item": "minecraft:lava_bucket"
+        },
+        "H": {
+            "type": "tetra:tool_action",
+            "tool": "hammer_dig",
+            "tier": {
+                "min": "minecraft:stone"
+            }
+        }
+    },
+    "result": {
+        "item": "tetra:thermal_cell",
+        "nbt": {
+            "Damage": 64
+        },
+        "count": 1
+    }
+}

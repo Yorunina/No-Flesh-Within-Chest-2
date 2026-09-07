@@ -1,0 +1,7 @@
+{
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "grip_hone/speed_mult",
+        "level": 4
+    }
+}
