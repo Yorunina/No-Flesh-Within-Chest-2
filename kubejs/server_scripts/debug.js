@@ -1,5 +1,6 @@
 // priority: 500
 ItemEvents.rightClicked('stick', event => {
+    event.player.sendData('debug')
     // let pos = new BlockPos(0, 56, 0)
     // /**@type {Internal.ShellForgeBlockEntity} */
     // const blockEntity = level.getBlockEntity(pos)

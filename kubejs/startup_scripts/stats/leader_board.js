@@ -1,5 +1,5 @@
 // priority: 999
-LeaderboardsEvents.registryLeaderboards(event => {
+MAAEvents.registryLeaderboards(event => {
 	event.registerByLeaderboard(
 		new ResourceLocation('infinity:portals_opened_stat'),
 		new LeaderboardFromStat(
@@ -7,7 +7,7 @@ LeaderboardsEvents.registryLeaderboards(event => {
 			Text.translatable('leaderboard.infinity.portals_opened_stat'),
 			$InfinityStats.PORTALS_OPENED_STAT,
 			false,
-			LeaderboardFromStat.DEFAULT
+			StatFormatters.DEFAULT
 		)
 	)
 	event.registerByLeaderboard(
@@ -17,7 +17,7 @@ LeaderboardsEvents.registryLeaderboards(event => {
 			Text.translatable('leaderboard.infinity.dimensions_opened_stat'),
 			$InfinityStats.DIMS_OPENED_STAT,
 			false,
-			LeaderboardFromStat.DEFAULT
+			StatFormatters.DEFAULT
 		)
 	)
 
@@ -28,7 +28,7 @@ LeaderboardsEvents.registryLeaderboards(event => {
 			Text.translatable('leaderboard.maa.crops_planted'),
 			MAAStats.CROPS_PLANTED_STAT,
 			false,
-			LeaderboardFromStat.DEFAULT
+			StatFormatters.DEFAULT
 		)
 	)
 
@@ -39,7 +39,7 @@ LeaderboardsEvents.registryLeaderboards(event => {
 			Text.translatable('leaderboard.maa.exavate_times'),
 			MAAStats.EXCAVATE_TIMES_STAT,
 			false,
-			LeaderboardFromStat.DEFAULT
+			StatFormatters.DEFAULT
 		)
 	)
 
@@ -50,7 +50,7 @@ LeaderboardsEvents.registryLeaderboards(event => {
 			Text.translatable('leaderboard.infinity.worlds_destroyed_stat'),
 			$InfinityStats.WORLDS_DESTROYED_STAT,
 			false,
-			LeaderboardFromStat.DEFAULT
+			StatFormatters.DEFAULT
 		)
 	)
 

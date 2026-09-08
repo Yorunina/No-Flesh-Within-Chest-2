@@ -37,7 +37,7 @@
   "block.tetra.transfer_unit": "传输单元",
   "effect.tetra.earthbound": "大地束缚",
   "effect.tetra.exhausted": "疲惫",
-  "effect.tetra.exhausted.tooltip": "行走速度降低§e%s%%§r，攻击速度和掘矿速度降低§e%s%%",
+  "effect.tetra.exhausted.tooltip": "行走速度降低§e%s%%§r，攻击速度和挖掘速度降低§e%s%%",
   "effect.tetra.howling": "风啸",
   "effect.tetra.howling.tooltip": "笼罩于疾风中，\n*移动速度提高§e%s%%§7；\n*有§e%s%%§7的几率使射入的弹射物偏转；\n*有§e%s%%§7的几率使偏转的弹射物被反弹",
   "effect.tetra.pried": "撬开",
