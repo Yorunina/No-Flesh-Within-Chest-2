@@ -32,17 +32,18 @@ function AncientInfernalDragonCrystalTakeOff(customData, event, organItem, organ
 
 /**
  * @param {OrganEventCustomData} customData
- * @param {Internal.RollEventJS} event 
+ * @param {Internal.DodgeEventJS} event 
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  */
-function AncientInfernalDragonCrystalPlayerRoll(customData, event, organItem, organIndex, slotType) {
+function AncientInfernalDragonCrystalPlayerDodge(customData, event, organItem, organIndex, slotType) {
     if (slotType != AwakeRelicsSlot) return
+    if (event.direction != 'front') return
     /**@type {Internal.ServerPlayer} */
     const player = event.player
-    const server = event.server
-    const level = event.level
+    const server = player.server
+    const level = player.level
     const playerMagicData = player.magicData
     player.hasImpulse = true
     let vec = Vec3dNormalize(Vec3dMultiply(player.getLookAngle(), 3, 1, 3)).scale(6).add(new Vec3d(0, 0.25, 0))
@@ -74,6 +75,6 @@ RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:ancient_infernal_dragon_crystal')
         .addOnlyStrategy('chest_cavity_update', AncientInfernalDragonCrystalChestCavityUpdate)
         .addOnlyStrategy('organ_take_off', AncientInfernalDragonCrystalTakeOff)
-        .addOnlyStrategy('player_roll', AncientInfernalDragonCrystalPlayerRoll)
+        .addOnlyStrategy('player_dodge', AncientInfernalDragonCrystalPlayerDodge)
         .addOnlyStrategy('chest_cavity_update', RelicsOrganScoreChestCavityUpdate, 10)
 )

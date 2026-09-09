@@ -21,7 +21,7 @@ const EventId2TagId = {
     'entity_fall': 'kubejs:entity_fall',
     'villager_update_special_prices': 'kubejs:villager_update_special_prices',
     'shield_block': 'kubejs:shield_block',
-    'player_roll': 'kubejs:player_roll',
+    'player_dodge': 'kubejs:player_dodge',
     'entity_death': 'kubejs:entity_death',
 }
 

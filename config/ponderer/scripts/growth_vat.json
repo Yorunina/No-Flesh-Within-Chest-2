@@ -11,6 +11,7 @@
     "ponderer:basic"
   ],
   "tags": [],
+  "editable": true,
   "scenes": [
     {
       "id": "s_dc4c2",
@@ -62,7 +63,7 @@
           "type": "text",
           "duration": 60,
           "text": {
-            "zh_cn": "该槽位用于放置不同类型的培养皿"
+            "zh_cn": "该槽位用于放置不同类型的培养基"
           },
           "point": [
             0.0,
@@ -266,6 +267,13 @@
           "type": "change_interface_slot",
           "interfaceSlots": [
             {
+              "slotIndex": 39,
+              "slotX": 83,
+              "slotY": 38,
+              "ingredientId": "kubejs:simple_culture_medium",
+              "ingredientKind": "item"
+            },
+            {
               "slotIndex": 40,
               "slotX": 71,
               "slotY": 18,
@@ -313,7 +321,7 @@
           "type": "text",
           "duration": 40,
           "text": {
-            "zh_cn": "培养基会被消耗，而未成型肿瘤会成长为肿瘤"
+            "zh_cn": "培养基不会被消耗，且未成型肿瘤会成长为肿瘤"
           },
           "point": [
             0.011,
