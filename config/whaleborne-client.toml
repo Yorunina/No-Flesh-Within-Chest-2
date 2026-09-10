@@ -3,4 +3,6 @@ hullbackArmorProgress = false
 #Determines how far hullback sounds travel.
 #Range: 0.0 ~ 5.0
 hullbackSoundDistance = 3.0
+#Built-in procedural Hullback wake rendering (foam, bow splash); independent from the Wakes mod's own integration.
+hullbackWakeRendering = false
 

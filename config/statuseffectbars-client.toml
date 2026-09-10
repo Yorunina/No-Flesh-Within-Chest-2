@@ -1,0 +1,95 @@
+
+[color]
+	#Color mode for status effect bars
+	#EFFECT_COLOR: Use the color of the status effect
+	#CUSTOM: Use custom colors defined below
+	#CATEGORY: Use colors based on effect category (beneficial/harmful/neutral)
+	#Allowed Values: EFFECT_COLOR, CATEGORY_COLOR, CUSTOM
+	colorMode = "EFFECT_COLOR"
+	#Background color of the bars (ARGB format)
+	#Range: > -2147483648
+	backgroundColor = -2147483648
+	#Foreground color for beneficial effects (ARGB format)
+	#Range: > -2147483648
+	beneficialForegroundColor = -2130706433
+	#Foreground color for harmful effects (ARGB format)
+	#Range: > -2147483648
+	harmfulForegroundColor = -2130706433
+	#Foreground color for neutral effects (ARGB format)
+	#Range: > -2147483648
+	neutralForegroundColor = -2130706433
+
+[behavior]
+	#Remaining duration in ticks above which the bar is hidden
+	#Set to 2147483647 (max int) to never hide bars based on duration
+	#Range: > 0
+	maxRemainingDuration = 2147483647
+	#Age in ticks under which the bar of ambient (i.e. beacon) effects is hidden
+	#Default is 90 ticks (80 + 10)
+	#Range: > 0
+	minAmbientAge = 90
+	#Render the original Stylish Effects timer
+	#When false, the original timer is hidden
+	renderOldTimer = false
+	#Render the custom timer for status effect bars when Stylish Effects is installed.
+	#When true, renders a smaller duration text at the top left of effects
+	renderCustomTimer = true
+
+[layout]
+
+	[layout.hud]
+		#Enable status effect bars in hud
+		enabled = true
+
+		[layout.hud.position]
+			#Direction of the bar
+			#Allowed Values: LEFT_TO_RIGHT, RIGHT_TO_LEFT, BOTTOM_TO_TOP, TOP_TO_BOTTOM
+			direction = "LEFT_TO_RIGHT"
+			#Whether the bar is placed relative to the end (bottom/right)
+			#or the start (top/left) of the effect rectangle
+			relativeToEnd = true
+
+		[layout.hud.shape]
+			#Thickness of the bar in pixels
+			#Range: 1 ~ 10
+			thickness = 1
+			#Padding along the bar's main axis
+			#Range: 0 ~ 20
+			collinearPadding = 3
+
+		[layout.hud.fineTuning]
+			#Offset along the bar's main axis
+			#Range: -50 ~ 50
+			collinearOffset = 0
+			#Offset perpendicular to the bar
+			#Range: -50 ~ 50
+			orthogonalOffset = 2
+
+	[layout.inventory]
+		#Enable status effect bars in inventory
+		enabled = true
+
+		[layout.inventory.position]
+			#Direction of the bar
+			#Allowed Values: LEFT_TO_RIGHT, RIGHT_TO_LEFT, BOTTOM_TO_TOP, TOP_TO_BOTTOM
+			direction = "LEFT_TO_RIGHT"
+			#Whether the bar is placed relative to the end (bottom/right)
+			#or the start (top/left) of the effect rectangle
+			relativeToEnd = true
+
+		[layout.inventory.shape]
+			#Thickness of the bar in pixels
+			#Range: 1 ~ 10
+			thickness = 1
+			#Padding along the bar's main axis
+			#Range: 0 ~ 20
+			collinearPadding = 4
+
+		[layout.inventory.fineTuning]
+			#Offset along the bar's main axis
+			#Range: -50 ~ 50
+			collinearOffset = 0
+			#Offset perpendicular to the bar
+			#Range: -50 ~ 50
+			orthogonalOffset = 3
+

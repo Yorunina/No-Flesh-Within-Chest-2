@@ -14,7 +14,6 @@ function RelicsOrganScoreChestCavityUpdate(customData, event, organItem, organIn
     if (!nbt.contains('relicsOrganScore')) return
     const relicsOrganScore = nbt.getCompound('relicsOrganScore')
     Object.keys(relicsOrganScore).forEach(key => {
-        let score = new ResourceLocation(key)
-        chestCavity.setOrganScore(score, relicsOrganScore.getFloat(key) + chestCavity.getOrganScore(score))
+        chestCavity.setOrganScore(new ResourceLocation(key), relicsOrganScore.getFloat(key) + chestCavity.getOrganScore(score))
     })
 }

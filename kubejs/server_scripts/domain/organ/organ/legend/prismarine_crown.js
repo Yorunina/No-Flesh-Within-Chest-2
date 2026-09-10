@@ -3,7 +3,6 @@ RegistryOrgan('kubejs:prismarine_crown')
     .addScore('chestcavity:water_breath', 1)
     .addScore('chestcavity:swim_speed', 1)
 
-
 /**
  * @param {OrganEventCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event 
