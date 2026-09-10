@@ -1164,7 +1164,7 @@
 			description: [
 				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
 				""
-				"我经过发想后，得到的第一个可行工具改良方案为&6耦合器&r。"
+				"我经过发想后，得到的第一个可行工具改良方案为&6探知接口&r。"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1332,7 +1332,7 @@
 		{
 			dependencies: ["4AC681B7C67BEEDB"]
 			description: [
-				"为了能够让被改造的双头工具承受住耦合器的结合力，需要&6工具至少具有2000点耐久度&r，且&6挖掘速度不得低于9&r。"
+				"为了能够让被改造的双头工具承受住探知接口的结合力，需要&6工具至少具有2000点耐久度&r，且&6挖掘速度不得低于9&r。"
 				""
 				"这意味着，您可能需要多次对工具进行打磨，同时尽可能多的使用能够增加耐久度的材料。"
 			]
@@ -1371,7 +1371,7 @@
 					Count: 1
 					id: "maa:kube_custom"
 					tag: {
-						value: "fit_coupler:[]"
+						value: "fit_scry_interface:[]"
 					}
 				}
 				title: "耐久度≥2000且挖掘速度≥9的双头工具"
@@ -1486,11 +1486,9 @@
 		{
 			dependencies: ["0D288D15FBA046CF"]
 			description: [
-				"在达成了之前的条件后，您便可以进行&6耦合器&r的制造。"
+				"在达成了之前的条件后，您便可以进行&6探知接口&r的制造。"
 				""
 				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
-				""
-				"只要&6再完成剩余两种发想部件&r，我们便具备了进行创世工序复原的全部资质！"
 			]
 			icon: {
 				Count: 1
@@ -1501,13 +1499,13 @@
 					"double/basic_handle_material": "basic_handle/stick"
 					"double/basic_pickaxe_left_material": "basic_pickaxe/netherite"
 					"double/basic_pickaxe_right_material": "basic_pickaxe/netherite"
-					"double/binding": "double/coupler"
-					"double/coupler_material": "coupler/string"
+					"double/binding": "double/scry_interface"
 					"double/handle": "double/basic_handle"
 					"double/handle:basic_handle/wrap/string": 0
 					"double/head_left": "double/basic_pickaxe_left"
 					"double/head_left:head_hone/speed": 1
 					"double/head_right": "double/basic_pickaxe_right"
+					"double/scry_interface_material": "scry_interface/string"
 					honing_count: 1
 					honing_progress: 515
 					id: "78e64268-4141-4025-8bce-2e2c910fe7b4"
@@ -1531,13 +1529,13 @@
 						"double/basic_handle_material": "basic_handle/stick"
 						"double/basic_pickaxe_left_material": "basic_pickaxe/netherite"
 						"double/basic_pickaxe_right_material": "basic_pickaxe/netherite"
-						"double/binding": "double/coupler"
-						"double/coupler_material": "coupler/string"
+						"double/binding": "double/scry_interface"
 						"double/handle": "double/basic_handle"
 						"double/handle:basic_handle/wrap/string": 0
 						"double/head_left": "double/basic_pickaxe_left"
 						"double/head_left:head_hone/speed": 1
 						"double/head_right": "double/basic_pickaxe_right"
+						"double/scry_interface_material": "scry_interface/string"
 						honing_count: 1
 						honing_progress: 515
 						id: "78e64268-4141-4025-8bce-2e2c910fe7b4"
@@ -1549,13 +1547,13 @@
 					Count: 1
 					id: "maa:tetra_module"
 					tag: {
-						value: "[double/binding]:[double/coupler]"
+						value: "[double/binding]:[double/scry_interface]"
 					}
 				}
-				title: "装有耦合器的双头工具"
+				title: "装有探知接口的双头工具"
 				type: "item"
 			}]
-			title: "安装耦合器"
+			title: "安装探知接口"
 			x: 27.5d
 			y: -2.5d
 		}
@@ -1565,8 +1563,6 @@
 				"在达成了之前的条件后，您便可以进行&6热能手柄&r和&6研磨手柄&r的制造。"
 				""
 				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
-				""
-				"只要&6再完成剩余两种发想部件&r，我们便具备了进行创世工序复原的全部资质！"
 			]
 			icon: {
 				Count: 1
@@ -1646,8 +1642,6 @@
 				"在达成了之前的条件后，您便可以进行&6斩首锯齿&r的制造。"
 				""
 				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
-				""
-				"只要&6再完成剩余两种发想部件&r，我们便具备了进行创世工序复原的全部资质！"
 			]
 			id: "5AE1E539302CD778"
 			rewards: [{

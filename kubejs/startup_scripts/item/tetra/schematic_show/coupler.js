@@ -1,5 +1,5 @@
 // priority: 500
-TetraCustomRequirement.register('coupler', ctx => {
+TetraCustomRequirement.register('scry_interface', ctx => {
     const player = ctx.player
     const level = ctx.world
     const stack = ctx.targetStack

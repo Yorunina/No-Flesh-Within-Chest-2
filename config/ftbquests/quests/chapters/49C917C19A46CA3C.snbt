@@ -87,7 +87,7 @@
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
-			x: 2.5d
+			x: 0.5d
 			y: 4.5d
 		}
 		{
@@ -182,7 +182,7 @@
 				type: "item"
 			}]
 			title: "背包升级"
-			x: 2.5d
+			x: 0.5d
 			y: 6.0d
 		}
 		{
@@ -358,7 +358,7 @@
 				type: "item"
 			}]
 			title: "统合一切存储"
-			x: 4.5d
+			x: 6.5d
 			y: 4.5d
 		}
 		{
@@ -483,7 +483,7 @@
 				type: "item"
 			}]
 			title: "更便捷的终端"
-			x: 4.5d
+			x: 5.0d
 			y: 6.0d
 		}
 		{
@@ -558,11 +558,11 @@
 				type: "item"
 			}]
 			title: "抽屉升级"
-			x: 0.5d
+			x: -3.0d
 			y: 4.5d
 		}
 		{
-			dependencies: ["2E86A80952F7ABBF"]
+			dependencies: ["42D69F3F93550767"]
 			description: [
 				"制作高级无线终端，并且&6在绑定的终端附近建造一个等级为 1 的信标&r，即可在同一个维度的任何地方访问这个终端。"
 				""
@@ -581,18 +581,12 @@
 				type: "item"
 			}]
 			title: "终极存取方案"
-			x: 4.5d
-			y: 7.5d
+			x: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["42D69F3F93550767"]
-			description: [
-				"除了箱子、桶、背包等存储方式之外，你也可以选用&6物品保险库&r进行大宗的物品存储。"
-				""
-				"但高级的保险库对资源的消耗相当巨大，您可以优先考虑使用&6最基本的物品保险库&r进行存储，其基本可以满足您的需求。"
-				""
-				"但过大的保险库可能会导致自动化时的卡顿，因此请酌情布置。"
-			]
+			description: ["除了箱子、桶、背包等存储方式之外，你也可以选用&6物品保险库&r进行大宗的物品存储。"]
 			icon: "create:item_vault"
 			id: "4803B6667E545653"
 			rewards: [{
@@ -602,64 +596,12 @@
 			}]
 			subtitle: "使用保险库进行大宗存储"
 			tasks: [{
-				id: "7DB67C948692DD24"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "create_bs:netherite_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:obsidian_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_connected:item_silo"
-							}
-							{
-								Count: 1b
-								id: "create:item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:wooden_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:copper_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:iron_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:emerald_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:gold_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:crystal_item_vault"
-							}
-							{
-								Count: 1b
-								id: "create_bs:diamond_item_vault"
-							}
-						]
-					}
-				}
-				title: "任意物品保险库"
+				id: "77AD257525FE4BBB"
+				item: "create:item_vault"
 				type: "item"
 			}]
 			title: "大宗物品存储"
-			x: 6.0d
+			x: 5.0d
 			y: 4.5d
 		}
 		{
@@ -764,8 +706,8 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
-			y: 7.5d
+			x: -3.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5D59836FFE601158"]
@@ -879,7 +821,115 @@
 				item: "toms_storage:ts.inventory_connector"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"61C6ED2F61B232F5"
+				"2E86A80952F7ABBF"
+			]
+			description: [
+				"直接使用合成终端管理大量容器存在潜在的性能问题，对于我的稳定运行会产生严重影响。"
+				""
+				"一个解决方案便是使用存储控制器进行桥接——&6将Tom的终端贴合在精妙存储控制器上，进而间接操作大量容器，会显著降低对性能的影响&r。"
+				""
+				"您可以&6使用存储工具将任意范围内的精妙存储容器远程连接到存储控制器上&r——因此就算不用终端访问，这也是一个极其优秀的中心化管理 \\& 自动化方案。"
+				""
+				"但本方案并不具有普适性，仅限于本世界中，该方案具有极其特殊的性能优化。"
+			]
+			icon: "sophisticatedstorage:controller"
+			id: "079E4A55C5F307CB"
+			rewards: [{
+				id: "62424753CE201C95"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "存储控制"
+			tasks: [
+				{
+					id: "7DD9AF6BB3817AC5"
+					item: "sophisticatedstorage:controller"
+					type: "item"
+				}
+				{
+					id: "6311F1B138F7B1C0"
+					item: {
+						Count: 1
+						id: "sophisticatedstorage:storage_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "万物归一"
+			x: 3.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["67786E2C6F7CD355"]
+			description: [
+				"除了背包之外，您可以制作与背包功能相似的精妙存储存储设备。"
+				""
+				"精妙存储相较于常规的存储方式，其具有着相当的扩展能力——无论是功能上还是存储能力上。"
+				""
+				"您可以考虑长期使用精妙存储作为自己的存储方案，需要扩展时&6通过类似于背包的升级进行扩展&r即可。"
+				""
+				"同时，精妙存储也具有着不同的存储等级——越高级的存储等级其可插入的升级和基础槽位就越多。"
+			]
+			icon: {
+				Count: 1
+				id: "sophisticatedstorage:chest"
+				tag: {
+					woodType: "oak"
+				}
+			}
+			id: "62185722933D5FDB"
+			rewards: [{
+				id: "169A6425A1D7090F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "长期存储方案"
+			tasks: [{
+				id: "287A7BA8E15CE008"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "sophisticatedstorage:all_storage"
+					}
+				}
+				title: "任意精妙存储容器"
+				type: "item"
+			}]
+			title: "精妙存储"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["62185722933D5FDB"]
+			description: [
+				"在存储页面的左侧，具有一个可以放置升级的插槽。"
+				""
+				"类似背包升级，您可以在这里放置任何存储可用的升级扩展存储容器的能力。"
+				""
+				"一个常用的升级是&6堆叠升级&r，其可以大幅度提升容器对于同类物品的存储能力。"
+			]
+			id: "61C6ED2F61B232F5"
+			rewards: [{
+				id: "482EB633E8A0C9B4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "提升存储能力"
+			tasks: [{
+				id: "493081C644EAA948"
+				item: "sophisticatedstorage:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			title: "存储升级"
+			x: 2.0d
 			y: 6.0d
 		}
 	]

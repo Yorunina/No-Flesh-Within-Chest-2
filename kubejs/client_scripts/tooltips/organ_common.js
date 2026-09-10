@@ -17,7 +17,6 @@ ItemEvents.tooltip(tooltip => {
         }
 
         let scoreTooltipsList = []
-        // todo 未来架构重构中的变动点，需注意
         let organData = ChestCavityUtils.lookupOrgan(item, null)
         if (organData) {
             organData.organScores.forEach((score, value) => {

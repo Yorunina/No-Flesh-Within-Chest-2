@@ -391,7 +391,7 @@
 			y: 5.0d
 		}
 		{
-			dependencies: ["4352DE73166C1622"]
+			dependencies: ["60157CC9CB77916C"]
 			description: [
 				"工具在使用时，会逐渐积累名为&6“打磨值”&r的特殊工具经验。当打磨值积累满后，即可在加工台对对应的主要部件进行不同的打磨改良。"
 				""
@@ -446,7 +446,7 @@
 				type: "item"
 			}]
 			title: "研习如何快速打磨"
-			x: 3.0d
+			x: 0.0d
 			y: 7.5d
 		}
 		{
@@ -747,6 +747,82 @@
 			title: "地底深处"
 			x: 6.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["4352DE73166C1622"]
+			description: [
+				"某些部件蕴含有极其特殊的效果，且这些效果往往会被材料属性所影响。"
+				""
+				"以耦合器为例，&6越高的密度连锁采集的可采集范围会变大，越高的灵活度则是越高的连锁方块上限&r。"
+				""
+				"因此，对于平时挖矿连锁数量较低但范围需求较大的场景，您最好选择密度较高的材料制作耦合器——例如垂泪藤。"
+			]
+			id: "7366C04DCADEAAAA"
+			rewards: [{
+				id: "270421F9E9008BE5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "制作耦合器"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/basic_pickaxe_left_material": "basic_pickaxe/stone"
+						"double/basic_pickaxe_right_material": "basic_pickaxe/stone"
+						"double/binding": "double/coupler"
+						"double/coupler_material": "coupler/string"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_pickaxe_left"
+						"double/head_right": "double/basic_pickaxe_right"
+						honing_progress: 290
+						id: "b0800122-497a-43e7-9f4e-9dbcc15af186"
+					}
+				}
+				id: "1C527E35EA2E5E7A"
+				item: {
+					Count: 1
+					id: "itemfilters:and"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tetra:modular_double"
+								tag: {
+									Damage: 0
+									HideFlags: 3
+									"double/basic_handle_material": "basic_handle/stick"
+									"double/basic_pickaxe_left_material": "basic_pickaxe/stone"
+									"double/basic_pickaxe_right_material": "basic_pickaxe/stone"
+									"double/binding": "double/coupler"
+									"double/coupler_material": "coupler/string"
+									"double/handle": "double/basic_handle"
+									"double/head_left": "double/basic_pickaxe_left"
+									"double/head_right": "double/basic_pickaxe_right"
+									honing_progress: 290
+									id: "b0800122-497a-43e7-9f4e-9dbcc15af186"
+								}
+							}
+							{
+								Count: 1b
+								id: "maa:tetra_module"
+								tag: {
+									value: "[double/binding]:[double/coupler]"
+								}
+							}
+						]
+					}
+				}
+				title: "任意绑定有耦合器的双头工具"
+				type: "item"
+			}]
+			title: "研习部件制作"
+			x: 3.0d
+			y: 7.5d
 		}
 	]
 	title: "常识：匠艺"

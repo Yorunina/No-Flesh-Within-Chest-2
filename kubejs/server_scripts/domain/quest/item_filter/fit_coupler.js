@@ -1,5 +1,5 @@
 // priority: 500
-MAAEvents.ftbCustomItemFilter('fit_coupler', event => {
+MAAEvents.ftbCustomItemFilter('fit_scry_interface', event => {
     const stack = event.testItem
     const modularItem = stack.getItem()
     if (!TetraJSUtils.isModularItem(modularItem)) return

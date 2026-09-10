@@ -74,3 +74,5 @@ bivrik/
 config/RuOK.toml
 config/pin_tooltips.json
 .curseclient
+.probe/*
+!.probe/probe-settings.json

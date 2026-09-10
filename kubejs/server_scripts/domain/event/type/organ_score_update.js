@@ -21,5 +21,5 @@ function RegistryOrganScoreAttribute(organScoreName, func) {
  * @returns 
  */
 function isScoreChanged(chestCavity, organScoreName) {
-    return chestCavity.getOldOrganScore(organScoreName) != chestCavity.getOrganScore(organScoreName)
+    return chestCavity.organScoreState.getPreviousScore(organScoreName) != chestCavity.getOrganScore(organScoreName)
 }

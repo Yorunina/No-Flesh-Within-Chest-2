@@ -1202,7 +1202,7 @@
     "tetra/schematic/armor/shared/undye.name": "洗涤",
     "tetra/schematic/armor/shared/undye.description": "用水桶洗去染料，使该部件恢复原本的颜色。",
     "tetra/schematic/armor/shared/undye.slot1": "水桶",
-    "item.tetrawear.modular_boot": "模块化靴子",
+    "item.tetrawear.modular_boots": "模块化靴子",
     "item.tetrawear.modular_helmet": "模块化头盔",
     "item.tetrawear.modular_leggings": "模块化护腿"
 }

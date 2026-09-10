@@ -1,9 +1,13 @@
 {
     "replace": true,
     "slots": [
-        "single/binding"
-    ],
-    "rarity": "basic",
+        "double/binding"
+    ],    
+    "requirement":{
+        "type":"tetrajs:custom",
+        "key":"scry_interface"
+    },
+    "rarity": "inspired",
     "materialSlotCount": 1,
     "displayType": "minor",
     "glyph": {
@@ -14,8 +18,8 @@
     "outcomes": [
         {
             "materials": [ "tetra:fibre/", "tetra:skin/" ],
-            "moduleKey": "single/coupler",
-            "moduleVariant": "coupler/"
+            "moduleKey": "double/scry_interface",
+            "moduleVariant": "scry_interface/"
         }
     ]
 }

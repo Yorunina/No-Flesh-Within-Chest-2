@@ -21,6 +21,7 @@ ItemEvents.rightClicked('stick', event => {
     // tempSphere.generateSphere(level, player.block.getPos().atY(100))
 })
 
+
 // ItemEvents.entityInteracted('minecraft:stick', event => {
 //     const level = event.level
 //     const target = event.target
@@ -71,5 +72,3 @@ ItemEvents.rightClicked('stick', event => {
 //     MobBattleUtil.removeTeam(level, 'team_1')
 //     MobBattleUtil.removeTeam(level, 'team_2')
 // })
-
-

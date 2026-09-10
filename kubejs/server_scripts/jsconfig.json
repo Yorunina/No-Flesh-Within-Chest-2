@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": false,
+        "lib": [
+            "ES2015"
+        ],
+        "module": "commonjs",
+        "rootDir": ".",
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "target": "ES2015",
+        "types": [],
+        "paths": {
+            "java:*": [
+                "../../.probe/server/packages/*",
+                "../../.probe/server/global/*",
+                "../../.probe/shared/*"
+            ]
+        }
+    },
+    "include": [
+        "./**/*.js",
+        "../../.probe/server/packages/**/*.d.ts",
+        "../../.probe/server/global/**/*.d.ts",
+        "../../.probe/shared/**/*.d.ts"
+    ]
+}

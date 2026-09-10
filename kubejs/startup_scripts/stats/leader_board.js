@@ -54,43 +54,37 @@ MAAEvents.registryLeaderboards(event => {
 		)
 	)
 
-	event.register(
+	event.registerByLeaderboard(
 		global.STAT_TETRA_CRAFT,
-		Text.translatable('leaderboard.kubejs.tetra_craft'),
-		player => {
-			return Text.of(player.getStats().getValue(global.STAT_TETRA_CRAFT).toFixed(0))
-		},
-		player => {
-			return player.getStats().getValue(global.STAT_TETRA_CRAFT)
-		},
-		Comparator.comparingInt(player => player.getStats().getValue(global.STAT_TETRA_CRAFT)).reversed(),
-		player => player.getStats().getValue(global.STAT_TETRA_CRAFT) > 0
+		new LeaderboardFromStat(
+			global.STAT_TETRA_CRAFT,
+			Text.translatable('leaderboard.kubejs.tetra_craft'),
+			Stats.CUSTOM.get(global.STAT_TETRA_CRAFT),
+			false,
+			StatFormatters.DEFAULT
+		)
 	)
 
-	event.register(
+	event.registerByLeaderboard(
 		global.STAT_GROWTH_VAT_RUNS,
-		Text.translatable('leaderboard.kubejs.growth_vat_runs'),
-		player => {
-			return Text.of(player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS).toFixed(0))
-		},
-		player => {
-			return player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS)
-		},
-		Comparator.comparingInt(player => player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS)).reversed(),
-		player => player.getStats().getValue(global.STAT_GROWTH_VAT_RUNS) > 0
+		new LeaderboardFromStat(
+			global.STAT_GROWTH_VAT_RUNS,
+			Text.translatable('leaderboard.kubejs.growth_vat_runs'),
+			Stats.CUSTOM.get(global.STAT_GROWTH_VAT_RUNS),
+			false,
+			StatFormatters.DEFAULT
+		)
 	)
 
-	event.register(
+	event.registerByLeaderboard(
 		global.STAT_TETRA_CRAFT_GENESIS,
-		Text.translatable('leaderboard.kubejs.tetra_craft_genesis'),
-		player => {
-			return Text.of(player.getStats().getValue(global.STAT_TETRA_CRAFT_GENESIS).toFixed(0))
-		},
-		player => {
-			return player.getStats().getValue(global.STAT_TETRA_CRAFT_GENESIS)
-		},
-		Comparator.comparingInt(player => player.getStats().getValue(global.STAT_TETRA_CRAFT_GENESIS)).reversed(),
-		player => player.getStats().getValue(global.STAT_TETRA_CRAFT_GENESIS) > 0
+		new LeaderboardFromStat(
+			global.STAT_TETRA_CRAFT_GENESIS,
+			Text.translatable('leaderboard.kubejs.tetra_craft_genesis'),
+			Stats.CUSTOM.get(global.STAT_TETRA_CRAFT_GENESIS),
+			false,
+			StatFormatters.DEFAULT
+		)
 	)
 
 })

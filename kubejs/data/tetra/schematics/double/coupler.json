@@ -3,11 +3,7 @@
     "slots": [
         "double/binding"
     ],
-    "requirement":{
-        "type":"tetrajs:custom",
-        "key":"coupler"
-    },
-    "rarity": "inspired",
+    "rarity": "basic",
     "materialSlotCount": 1,
     "displayType": "minor",
     "glyph": {

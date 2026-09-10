@@ -1,0 +1,29 @@
+{
+    "replace": true,
+    "type": "tetra:basic_module",
+    "slots": [ "double/binding" ],
+    "renderLayer": "higher",
+    "variants": [
+        {
+            "materials": [ "tetra:fibre/", "tetra:skin/" ],
+            "key": "scry_interface/",
+            "extract": {
+                "primaryEffects": {
+                    "kubejs:block_scry": [0, 1]
+                },
+                "tertiaryEffects": {
+                    "kubejs:block_scry": [1, 0]
+                },
+                "durability": 0.5,
+                "integrity": 0.2,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 0,
+                    "textureY": 48
+                },
+                "availableTextures": [ "default" ],
+                "models": [ { "location": "tetra:item/module/double/binding/scry_interface/" } ]
+            }
+        }
+    ]
+}
