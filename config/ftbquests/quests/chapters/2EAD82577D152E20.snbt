@@ -569,13 +569,13 @@
 		{
 			dependencies: ["0FB97C6DBA850966"]
 			description: [
-				"在您使用传送石碑进行传送时，我想到了一个问题。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest7DFD8F39E1AC3083.description1}"
 				""
-				"&6“商店”&r维度的绝对不是偶然。那么他究竟是因为什么而产生的，又是因为什么才产生的？"
+				"{ftbquests.chapter.2EAD82577D152E20.quest7DFD8F39E1AC3083.description2}"
 				""
-				"自一开始以来，我们忽略了太多太多关于这个世界的细节，或许我们真的需要好好记录下这一切。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest7DFD8F39E1AC3083.description3}"
 				""
-				"通过这些&6踪迹&r，我们或许能够发现更多能被我们利用的技术。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest7DFD8F39E1AC3083.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "7DFD8F39E1AC3083"
@@ -584,27 +584,27 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "起点亦是终点"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest7DFD8F39E1AC3083.subtitle}"
 			tasks: [{
 				block: "waystones:waystone"
 				block_type: 0
 				checkItem: false
 				id: "192C8B08294B5504"
 				isItemInteraction: false
-				title: "使用一次传送石碑"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest7DFD8F39E1AC3083.task.1813977617092269316.title}"
 				type: "questsadditions:use"
 				value: 1L
 			}]
-			title: "奇异点的反思"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest7DFD8F39E1AC3083.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7DFD8F39E1AC3083"]
 			description: [
-				"在当前世界中，存在有大量和当初我所知世界不同的结构存在。请您制造&6相机&r，并且使用相机记录下这一切，我会对这些数据进行分析处理。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F88ADBD557E73A8.description1}"
 				""
-				"为了让您能够胜任这个任务，我会指导您如何完成照片冲洗，并且进行几个简单的拍照测试。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F88ADBD557E73A8.description2}"
 			]
 			id: "3F88ADBD557E73A8"
 			rewards: [{
@@ -612,24 +612,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "用相机来记录一切"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest3F88ADBD557E73A8.subtitle}"
 			tasks: [{
 				id: "56781900DF9741E1"
 				item: "exposure:camera"
 				type: "item"
 			}]
-			title: "记录身边的一切"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest3F88ADBD557E73A8.title}"
 			x: 4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3F88ADBD557E73A8"]
 			description: [
-				"光制作出相机是无法直接使用的，您至少还需要一个光敏载体——比如说古老的胶卷。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest509FC63C6A0CF06A.description1}"
 				""
-				"胶卷包含&6黑白胶卷&r和&6彩色胶卷&r两种，您可以根据喜好来选择对应的胶卷。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest509FC63C6A0CF06A.description2}"
 				""
-				"两者相比较来说，黑白胶卷的冲洗更为简单直接，因此目标为完成任务的情况下，我更建议您使用黑白胶卷而非彩色胶卷。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest509FC63C6A0CF06A.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -641,7 +641,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "记录载体"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest509FC63C6A0CF06A.subtitle}"
 			tasks: [{
 				id: "2BDD9D9E57382052"
 				item: {
@@ -651,21 +651,21 @@
 						value: "exposure:film_rolls"
 					}
 				}
-				title: "胶卷"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest509FC63C6A0CF06A.task.3160855816877645906.title}"
 				type: "item"
 			}]
-			title: "制作胶卷"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest509FC63C6A0CF06A.title}"
 			x: 5.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["3F88ADBD557E73A8"]
 			description: [
-				"假若您拍摄完成，您需要将照片冲洗出来。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest4449195A34FB718E.description1}"
 				""
-				"为了冲洗出照片，您需要使用&6暗房&r作为冲洗工具。将胶卷通过水或者药水&6初步冲洗&r后，在暗房里放入不同的染料即可缓慢完成照片的冲洗。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest4449195A34FB718E.description2}"
 				""
-				"请您熟悉这个工具，我们后面为了记录各种各样的东西，会反复使用它。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest4449195A34FB718E.description3}"
 			]
 			hide_dependency_lines: true
 			id: "4449195A34FB718E"
@@ -675,24 +675,24 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "冲洗工具"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest4449195A34FB718E.subtitle}"
 			tasks: [{
 				id: "32967090AB62EAF4"
 				item: "exposure:lightroom"
 				type: "item"
 			}]
-			title: "制作暗房"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest4449195A34FB718E.title}"
 			x: 4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["3F88ADBD557E73A8"]
 			description: [
-				"看来您已经能够学会如何冲洗照片了。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest766A21B5DC7F7CF0.description1}"
 				""
-				"现在，我希望您能够通过您的眼睛，来收集这个世界上我们&6错过的一切&r。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest766A21B5DC7F7CF0.description2}"
 				""
-				"请注意，在后文中的拍照任务，需要您单独提供一张照片，&c堆叠的照片并不会被纳入检测&r。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest766A21B5DC7F7CF0.description3}"
 			]
 			id: "766A21B5DC7F7CF0"
 			rewards: [{
@@ -700,28 +700,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "记录您所见"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest766A21B5DC7F7CF0.subtitle}"
 			tasks: [{
 				advancement: "exposure:adventure/moment_in_time"
 				criterion: ""
 				id: "1661AF732E1606CE"
-				title: "记录一张照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest766A21B5DC7F7CF0.task.1612763050804643534.title}"
 				type: "advancement"
 			}]
-			title: "刹那光阴"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest766A21B5DC7F7CF0.title}"
 			x: 8.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["766A21B5DC7F7CF0"]
 			description: [
-				"这只是一个测试，让您了解到什么叫做&6拍摄到&r。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest22569BCCD8EFC6CC.description1}"
 				""
-				"正如本任务所要求，您需要拍摄一张包含&6鸡&r的照片。但是照片中对象不能太远，否则无法获得对应生物的观察信息；也不能拍照过偏，比如说生物只有一半出现在镜头是不合法的。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest22569BCCD8EFC6CC.description2}"
 				""
-				"因此在后续的拍摄中，请您尽可能保证&6实体完整出现在镜头&r内，以避免冲洗照片后无功而返的情况。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest22569BCCD8EFC6CC.description3}"
 				""
-				"当然，听说这也是人类摄影师最基本的素养之一，还请您不要用一些出人意料的表达手法，这可能影响我后续的数据分析。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest22569BCCD8EFC6CC.description4}"
 			]
 			icon: "minecraft:egg"
 			id: "22569BCCD8EFC6CC"
@@ -730,7 +730,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "先从简单的开始"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest22569BCCD8EFC6CC.subtitle}"
 			tasks: [{
 				icon: "minecraft:egg"
 				id: "05FFFCBECFCB595C"
@@ -741,21 +741,21 @@
 						value: "minecraft:chicken >= 1"
 					}
 				}
-				title: "拍摄一张“鸡”的照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest22569BCCD8EFC6CC.task.432341985711053148.title}"
 				type: "item"
 			}]
-			title: "记录您所见之生灵"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest22569BCCD8EFC6CC.title}"
 			x: 11.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["22569BCCD8EFC6CC"]
 			description: [
-				"这是另一个测试，用于说明倘若&6拍摄结构&r，对照片的基本需求。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest6E1EA50C5342A5DD.description1}"
 				""
-				"您需要拍摄一张村庄的照片，这里的村庄可以是大型、中型、小型的村庄，但必须是一个具有道路、房屋和村民的村庄才能称之为村庄。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest6E1EA50C5342A5DD.description2}"
 				""
-				"为了使照片有效，您&6必须站在该结构内拍照&r，照片才会被认为是拍摄了这个建筑。因此我强烈推荐您拍摄该结构内的事物，而不是拍摄整个结构的全景。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest6E1EA50C5342A5DD.description3}"
 			]
 			icon: "minecraft:emerald"
 			id: "6E1EA50C5342A5DD"
@@ -764,7 +764,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "再稍微复杂些"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest6E1EA50C5342A5DD.subtitle}"
 			tasks: [{
 				icon: "minecraft:emerald"
 				id: "663487963991C29E"
@@ -775,23 +775,23 @@
 						value: "ctov:small;ctov:medium;ctov:large"
 					}
 				}
-				title: "拍摄一张“村庄”的照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest6E1EA50C5342A5DD.task.7364660369938301598.title}"
 				type: "item"
 			}]
-			title: "记录您所见之地标"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest6E1EA50C5342A5DD.title}"
 			x: 14.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6E1EA50C5342A5DD"]
 			description: [
-				"这是最后一样测试。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest5F95F25DAC9FBAAA.description1}"
 				""
-				"请您拍摄一张包含&6至少一位村民&r，&6在村庄明亮处工作&r的照片。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest5F95F25DAC9FBAAA.description2}"
 				""
-				"在这个测试中，您需要面对不止一个条件，为了完成这个测试，您需要小心保证这些条件都能得到满足。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest5F95F25DAC9FBAAA.description3}"
 				""
-				"其“&6明亮&r”代表亮度较高，“&6村庄&r”说明了拍摄地点需要在村庄内，“&6至少一位村民&r”说明了拍摄的实体要求至少一个村民。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest5F95F25DAC9FBAAA.description4}"
 			]
 			icon: "simplehats:villagernose"
 			id: "5F95F25DAC9FBAAA"
@@ -800,7 +800,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "村民是我们难得的类人朋友"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest5F95F25DAC9FBAAA.subtitle}"
 			tasks: [{
 				icon: "simplehats:villagernose"
 				id: "2104BEE70A507E2E"
@@ -826,16 +826,16 @@
 						]
 					}
 				}
-				title: "获得指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest5F95F25DAC9FBAAA.task.2379236402678234670.title}"
 				type: "item"
 			}]
-			title: "我们的好朋友"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest5F95F25DAC9FBAAA.title}"
 			x: 18.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["&6爬行者&r在&6黑暗&r中慢慢靠近您的世纪性照片。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest14E235C60FC2ECC7.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "14E235C60FC2ECC7"
@@ -844,7 +844,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "它总是悄无声息"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest14E235C60FC2ECC7.subtitle}"
 			tasks: [{
 				icon: "minecraft:creeper_head"
 				id: "23617B72360B0173"
@@ -870,19 +870,19 @@
 						]
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest14E235C60FC2ECC7.task.2549454594531590515.title}"
 				type: "item"
 			}]
-			title: "苦力怕在阴暗中"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest14E235C60FC2ECC7.title}"
 			x: -0.5d
 			y: 15.5d
 		}
 		{
 			dependencies: ["5F95F25DAC9FBAAA"]
 			description: [
-				"尽管分析完后，这些照片都完全丧失了意义——但那是对我。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest6B524BB21FC95A01.description1}"
 				""
-				"对您来说，这些照片可能包含的&6不止其代表的信息&r那么简单，因此，希望您可以把照片存放在此处，用以作为你我的故事的链接。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest6B524BB21FC95A01.description2}"
 			]
 			id: "6B524BB21FC95A01"
 			rewards: [{
@@ -890,7 +890,7 @@
 				item: "lightmanscurrency:coin_emerald"
 				type: "item"
 			}]
-			subtitle: "回忆存放处"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest6B524BB21FC95A01.subtitle}"
 			tasks: [{
 				id: "557E526E1772C96A"
 				item: {
@@ -919,13 +919,13 @@
 				}
 				type: "item"
 			}]
-			title: "保存这一切"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest6B524BB21FC95A01.title}"
 			x: 21.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["&6监守者&r在&6远古都市&r，因为不安的噪音破土而出的珍稀画面。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest318B5462AAC0EA2C.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "318B5462AAC0EA2C"
@@ -934,7 +934,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "守卫者循声而至，随后摇头散开"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest318B5462AAC0EA2C.subtitle}"
 			tasks: [{
 				icon: "minecraft:sculk"
 				id: "632E88B2F4E37386"
@@ -960,16 +960,16 @@
 						]
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest318B5462AAC0EA2C.task.7146799960877659014.title}"
 				type: "item"
 			}]
-			title: "惊扰远古的守卫者"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest318B5462AAC0EA2C.title}"
 			x: 2.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["多只&6烈焰人&r环绕四周，紧张刺激的战斗令人肾上腺素飙升。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest61C07953977FBE7D.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "61C07953977FBE7D"
@@ -978,7 +978,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "燃烧金属之躯"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest61C07953977FBE7D.subtitle}"
 			tasks: [{
 				icon: "minecraft:blaze_powder"
 				id: "59C5755FAC8BD9CC"
@@ -989,16 +989,16 @@
 						value: "minecraft:blaze >= 3"
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest61C07953977FBE7D.task.6468705493564774860.title}"
 				type: "item"
 			}]
-			title: "身陷烈焰漩涡之中"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest61C07953977FBE7D.title}"
 			x: 4.5d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["&6牛&r、&6羊&r、&6鸡&r同时出现在画面上，它们正享受着自己的平凡生活，殊不知这番平凡是被您赐予的。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest5A99F20FF077C796.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "5A99F20FF077C796"
@@ -1007,7 +1007,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "如若饲养生物，那应从牛羊为主"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest5A99F20FF077C796.subtitle}"
 			tasks: [{
 				icon: "minecraft:feather"
 				id: "2F73661EC56693DC"
@@ -1040,16 +1040,16 @@
 						]
 					}
 				}
-				title: "获取指定的照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest5A99F20FF077C796.task.3419188824451224540.title}"
 				type: "item"
 			}]
-			title: "鸡牛羊与风之舞"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest5A99F20FF077C796.title}"
 			x: 7.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["一群&6小猪&r环绕在身边的温馨场景，虽然它们后面遭遇的大概率是残忍的屠刀. . ."]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest7D8F39C702BAB785.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7D8F39C702BAB785"
@@ -1058,7 +1058,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为了萝卜，或者为了繁衍"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest7D8F39C702BAB785.subtitle}"
 			tasks: [{
 				icon: "simplehats:pighead"
 				id: "51DEA59AA8846F34"
@@ -1069,16 +1069,16 @@
 						value: "minecraft:pig >= 5"
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest7D8F39C702BAB785.task.5899334645572726580.title}"
 				type: "item"
 			}]
-			title: "小猪军团的再进发"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest7D8F39C702BAB785.title}"
 			x: 9.5d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["画面记录下了&6恶魂&r发射&6火焰弹&r的宝贵瞬间，希望您在捕捉这画面时没有受伤。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest7D6B8F4427BDF3D4.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7D6B8F4427BDF3D4"
@@ -1087,7 +1087,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "它飘浮而来，随后又飘浮而去"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest7D6B8F4427BDF3D4.subtitle}"
 			tasks: [{
 				icon: "minecraft:fire_charge"
 				id: "3597393F2BDBE3A1"
@@ -1113,16 +1113,16 @@
 						]
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest7D6B8F4427BDF3D4.task.3861618148975043489.title}"
 				type: "item"
 			}]
-			title: "灰烬与火焰之舞"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest7D6B8F4427BDF3D4.title}"
 			x: 12.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["&6掠夺者&r在他们的&6蒸汽飞空艇&r上巡视新的征服目标——但是他们忘记了自己并不会使用&6大炮&r。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest38FAE1A100E355A0.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "38FAE1A100E355A0"
@@ -1131,7 +1131,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "它们将大炮指向更远的地方"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest38FAE1A100E355A0.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1203,16 +1203,16 @@
 						]
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest38FAE1A100E355A0.task.1453147174466568036.title}"
 				type: "item"
 			}]
-			title: "飞空艇与掠夺艺术"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest38FAE1A100E355A0.title}"
 			x: 14.5d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["在&6丛林&r中，偶尔一些&6村民&r会选择在树上&6筑家&r. . .就是这些家看起来并不怎么牢固。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest60F183947BCAB462.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "60F183947BCAB462"
@@ -1221,7 +1221,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "他们也不想向下看！"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest60F183947BCAB462.subtitle}"
 			tasks: [{
 				icon: "minecraft:jungle_sapling"
 				id: "067A9638012CBA32"
@@ -1232,16 +1232,16 @@
 						value: "ctov:small/village_jungle_tree;ctov:medium/village_jungle_tree;ctov:large/village_jungle_tree"
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest60F183947BCAB462.task.466850678668311090.title}"
 				type: "item"
 			}]
-			title: "浮空岛与浮空村"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest60F183947BCAB462.title}"
 			x: 17.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["&6铁傀儡&r会和&6村民&r一起出现，村民会和&6猫&r一起出现，因此，他们三者同时都出现也不是没有可能。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest124D19952BE48419.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "124D19952BE48419"
@@ -1250,7 +1250,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "铁傀儡保护村民，村民保护猫，那猫呢"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest124D19952BE48419.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1289,19 +1289,19 @@
 						]
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest124D19952BE48419.task.8692717647503121367.title}"
 				type: "item"
 			}]
-			title: "村庄生态的平衡"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest124D19952BE48419.title}"
 			x: 19.5d
 			y: 15.5d
 		}
 		{
 			dependencies: ["5F95F25DAC9FBAAA"]
 			description: [
-				"您可以通过&6第三人称切换&r的方式，在开启摄像头的时候拍摄您自己。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest530B934745125A72.description1}"
 				""
-				"这很有趣不是吗。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest530B934745125A72.description2}"
 			]
 			id: "530B934745125A72"
 			rewards: [{
@@ -1309,7 +1309,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "反观自己"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest530B934745125A72.subtitle}"
 			tasks: [{
 				icon: "minecraft:player_head"
 				id: "0B0ABC1EC7DCC75D"
@@ -1320,16 +1320,16 @@
 						value: "minecraft:player >= 1"
 					}
 				}
-				title: "拍摄一张包含“玩家”的照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest530B934745125A72.task.795655124572489565.title}"
 				type: "item"
 			}]
-			title: "我对我的定义"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest530B934745125A72.title}"
 			x: 18.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["偶尔会在世界中发现一些承载着大量&6机械物资&r的&6热气球&r，站在上面来一张&6自拍&r或许不错。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest32F948AC9FFEB8B9.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "32F948AC9FFEB8B9"
@@ -1338,7 +1338,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "截获机械物资！"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest32F948AC9FFEB8B9.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1368,16 +1368,16 @@
 						]
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest32F948AC9FFEB8B9.task.1543890150800328952.title}"
 				type: "item"
 			}]
-			title: "我、机械与热气球"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest32F948AC9FFEB8B9.title}"
 			x: 22.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["画面描述了在&6恶地&r生态群系下，一只&6犰狳&r蜷缩着身体，静静地等待着你的离开。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest569948788E7E213F.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "569948788E7E213F"
@@ -1386,7 +1386,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "这些生物很害怕！"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest569948788E7E213F.subtitle}"
 			tasks: [{
 				icon: "minecraft:armadillo_scute"
 				id: "3DCE3DC18683BC68"
@@ -1412,16 +1412,16 @@
 						]
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest569948788E7E213F.task.4453564982910762088.title}"
 				type: "item"
 			}]
-			title: "越危险越小心！"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest569948788E7E213F.title}"
 			x: -0.5d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["偶尔您会在世界上发现一些&6位于地下的村庄&r——严格意义上，它们并不算村庄，这仅仅只能算作一个庇护所！"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest6171DB7303057149.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "6171DB7303057149"
@@ -1430,7 +1430,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "环境似乎并不好"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest6171DB7303057149.subtitle}"
 			tasks: [{
 				icon: "minecraft:stone_bricks"
 				id: "03182472ED2BE504"
@@ -1441,16 +1441,16 @@
 						value: "underground_village:"
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest6171DB7303057149.task.222968257578788100.title}"
 				type: "item"
 			}]
-			title: "地下居民们的业余生活"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest6171DB7303057149.title}"
 			x: 2.0d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["如果您能发现&6蘑菇岛&r，请您一定要留下&6您&r和&6哞菇&r的自拍，这并不是为了分析数据，单纯是因为我很喜欢哞菇这种生物。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest4418CA94AA22BB26.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4418CA94AA22BB26"
@@ -1461,7 +1461,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "似乎并不是那么难吃"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest4418CA94AA22BB26.subtitle}"
 			tasks: [{
 				icon: "minecraft:red_mushroom"
 				id: "4062701A01FF24EF"
@@ -1494,16 +1494,16 @@
 						]
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest4418CA94AA22BB26.task.4639393823149991151.title}"
 				type: "item"
 			}]
-			title: "蘑菇遍布的岛屿"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest4418CA94AA22BB26.title}"
 			x: 4.5d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["您会在海底神殿遇到它的守护者——&6远古守护者&r。请您一定要拍摄一张它的照片！"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest4CAA51BAD4982EA2.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4CAA51BAD4982EA2"
@@ -1512,7 +1512,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "小心！"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest4CAA51BAD4982EA2.subtitle}"
 			tasks: [{
 				icon: "minecraft:heart_of_the_sea"
 				id: "46F4FBE2EBD6EF2D"
@@ -1523,16 +1523,16 @@
 						value: "minecraft:elder_guardian >= 1"
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest4CAA51BAD4982EA2.task.5112988429010267949.title}"
 				type: "item"
 			}]
-			title: "咕咕从水下涌上的气泡"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest4CAA51BAD4982EA2.title}"
 			x: 7.0d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["拍摄一张&6舵背鲸&r和它身上&6舵轮&r的照片！尽量拍全一些！因为它真的很大！"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest35796740FDCA3F1A.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "35796740FDCA3F1A"
@@ -1541,7 +1541,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为他带来解放吧"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest35796740FDCA3F1A.subtitle}"
 			tasks: [{
 				icon: "whaleborne:helm"
 				id: "4D4E230F3837A80F"
@@ -1567,16 +1567,16 @@
 						]
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest35796740FDCA3F1A.task.5570428337378535439.title}"
 				type: "item"
 			}]
-			title: "舵背鲸之号"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest35796740FDCA3F1A.title}"
 			x: 9.5d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["在&6幽暗&r的&6墓穴地下室&r中，危险的&6幽魂&r总是想要夺取你的魂魄。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest7CD76D088A4E820F.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7CD76D088A4E820F"
@@ -1585,7 +1585,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "这里有点黑"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest7CD76D088A4E820F.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1615,16 +1615,16 @@
 						]
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest7CD76D088A4E820F.task.1226408578813334550.title}"
 				type: "item"
 			}]
-			title: "幽暗古迹废墟"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest7CD76D088A4E820F.title}"
 			x: 12.0d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["&6狼&r会误以为&6骷髅&r身上的骨头是可以食用的. . .虽然好像确实都是可食用的！"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest5A38CC02FFCFB4DE.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "5A38CC02FFCFB4DE"
@@ -1633,7 +1633,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "身上全都是骨头呀"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest5A38CC02FFCFB4DE.subtitle}"
 			tasks: [{
 				icon: "minecraft:bone"
 				id: "7650318646627D51"
@@ -1660,16 +1660,16 @@
 						]
 					}
 				}
-				title: "获取特定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest5A38CC02FFCFB4DE.task.8525368547388587345.title}"
 				type: "item"
 			}]
-			title: "自由驱逐者"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest5A38CC02FFCFB4DE.title}"
 			x: 14.5d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["画面记录了4、5. . .至少&66只史莱姆&r在跳跃的场景。虽然史莱姆看起来可爱，但对玩家是极度富有敌意的。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.questFA2D477EE7E146.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "00FA2D477EE7E146"
@@ -1678,7 +1678,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "源源不断"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.questFA2D477EE7E146.subtitle}"
 			tasks: [{
 				icon: "simplehats:slime_cube_dnd"
 				id: "520F2C2C22FEE5CC"
@@ -1689,16 +1689,16 @@
 						value: "minecraft:slime >= 6"
 					}
 				}
-				title: "获得特定相片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.questFA2D477EE7E146.task.5912993403838064076.title}"
 				type: "item"
 			}]
-			title: "由史莱姆染成的绿"
+			title: "{ftbquests.chapter.2EAD82577D152E20.questFA2D477EE7E146.title}"
 			x: 17.0d
 			y: 19.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["画面记录了&6企鹅&r在&6冰刺之地&r，在冰面上缓慢行走的场景。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest359B8EFE5765385A.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "359B8EFE5765385A"
@@ -1714,7 +1714,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "企鹅在这里"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest359B8EFE5765385A.subtitle}"
 			tasks: [{
 				icon: "wildernature:penguin_spawn_egg"
 				id: "7E52D3A949AAFE5A"
@@ -1742,10 +1742,10 @@
 						]
 					}
 				}
-				title: "获得特定相片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest359B8EFE5765385A.task.9102570520908070490.title}"
 				type: "item"
 			}]
-			title: "凛冬若企鹅毛大雪"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest359B8EFE5765385A.title}"
 			x: 19.5d
 			y: 19.5d
 		}
@@ -1772,7 +1772,7 @@
 				"00FA2D477EE7E146"
 				"7CD76D088A4E820F"
 			]
-			description: ["这个任务没有什么取景地的要求，您只要按照您的想法拍摄出&6最好的照片&r并且&6提交&r即可。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest42611C6251FAB454.description1}"]
 			hide_dependency_lines: true
 			id: "42611C6251FAB454"
 			min_required_dependencies: 5
@@ -1781,21 +1781,21 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "拍摄一张惊世之作"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest42611C6251FAB454.subtitle}"
 			tasks: [{
 				consume_items: true
 				id: "1DEE2F3F915C7FFF"
 				item: "exposure:photograph"
-				title: "任意照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest42611C6251FAB454.task.2156713221625249791.title}"
 				type: "item"
 			}]
-			title: "收官之作"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest42611C6251FAB454.title}"
 			x: 25.5d
 			y: 22.5d
 		}
 		{
 			dependencies: ["6B524BB21FC95A01"]
-			description: ["拍摄一张&6您的朋友们&r的照片——当然，您也可以用&6很多村民&r来替代。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest28F29F5D3B3453B7.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "28F29F5D3B3453B7"
@@ -1804,7 +1804,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "只有有人在的世界才是"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest28F29F5D3B3453B7.subtitle}"
 			tasks: [{
 				icon: "minecraft:cake"
 				id: "294FC21CA6A20882"
@@ -1830,19 +1830,19 @@
 						]
 					}
 				}
-				title: "获取指定照片"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest28F29F5D3B3453B7.task.2976811307025696898.title}"
 				type: "item"
 			}]
-			title: "我们的好时光"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest28F29F5D3B3453B7.title}"
 			x: 22.0d
 			y: 19.5d
 		}
 		{
 			dependencies: ["42611C6251FAB454"]
 			description: [
-				"感谢您这段时间来的配合，我确实找到了几个&6特殊的维度&r。这些维度显然和&6商店维度&r有些关系。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest5B30D636925E1C1.description1}"
 				""
-				"现在请您搭建一个下界传送门，并且将&6黑曜石&r丢到下界门中——它绝对不会穿越到另一个维度的，它将会为您打开一扇通向未知的桥梁。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest5B30D636925E1C1.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1856,29 +1856,29 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "013958312F0D29FA"
-					title: "解锁头衔：&e异界行者"
+					title: "{ftbquests.chapter.2EAD82577D152E20.quest5B30D636925E1C1.reward.88198635976468986.title}"
 					titleId: "kubejs:explore_multiworld"
 					type: "titles:title"
 				}
 			]
-			subtitle: "踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest5B30D636925E1C1.subtitle}"
 			tasks: [{
 				dimension: "infinity:cube"
 				icon: "minecraft:obsidian"
 				id: "77C8EE5D8A23AD00"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest5B30D636925E1C1.task.8631410771372518656.title}"
 				type: "dimension"
 			}]
-			title: "探访被发现的牢笼"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest5B30D636925E1C1.title}"
 			x: -2.5d
 			y: 28.0d
 		}
 		{
 			dependencies: ["2E7B76E8277B6B60"]
 			description: [
-				"上一个维度不知道您觉得怎么样？在我看来，它可能有些单调。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest4329E9383BBF0B7E.description1}"
 				""
-				"现在请您将&6黏液球&r投掷到传送门中，它将会重新开启一道通向更加混乱世界的通道。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest4329E9383BBF0B7E.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1888,26 +1888,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "踪迹之二"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest4329E9383BBF0B7E.subtitle}"
 			tasks: [{
 				dimension: "infinity:slime"
 				icon: "minecraft:slime_ball"
 				id: "57A25EE636520C8B"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest4329E9383BBF0B7E.task.6314713970373692555.title}"
 				type: "dimension"
 			}]
-			title: "探访被发现的原野"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest4329E9383BBF0B7E.title}"
 			x: 5.5d
 			y: 28.0d
 		}
 		{
 			dependencies: ["05B30D636925E1C1"]
 			description: [
-				"一个无限延伸的，按照16 * 16 * 16构建而成的&6黑曜石维度&r——这绝对是有意而为之的，"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2E7B76E8277B6B60.description1}"
 				""
-				"它非常像一个监牢，用于将各种&6生物囚禁&r在其中的监牢。我不明白为什么会有这样的地方，更不理解它的意义是什么。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2E7B76E8277B6B60.description2}"
 				""
-				"我们必须前往下一个踪迹所在的位置，了解到真实的意图。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2E7B76E8277B6B60.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1919,7 +1919,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "分析结果：监牢"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest2E7B76E8277B6B60.subtitle}"
 			tasks: [{
 				icon: "exposure:photograph"
 				id: "3ADEE502CA6CF28F"
@@ -1930,19 +1930,19 @@
 						value: "infinity:cube"
 					}
 				}
-				title: "一张到达过黑曜石维度的证明"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest2E7B76E8277B6B60.task.4242079699178418831.title}"
 				type: "item"
 			}]
-			title: "暗无天日的黑曜石监牢"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest2E7B76E8277B6B60.title}"
 			x: -2.5d
 			y: 32.5d
 		}
 		{
 			dependencies: ["4329E9383BBF0B7E"]
 			description: [
-				"这是一片由史莱姆统治的原野，在数据层面，其维度名称正被称作为&6slime&r。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest7862A6B384A0E8B4.description1}"
 				""
-				"唯一的奇怪点就是这些史莱姆的体内似乎都携带着一个&6随机的方块&r。这个方块的种类横跨之广，以至于我现在都愿意相信所有的方块都可以通过其获得. . ."
+				"{ftbquests.chapter.2EAD82577D152E20.quest7862A6B384A0E8B4.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1954,7 +1954,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "混乱初现"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest7862A6B384A0E8B4.subtitle}"
 			tasks: [{
 				icon: "exposure:photograph"
 				id: "498D4EEEA0FE41C4"
@@ -1965,19 +1965,19 @@
 						value: "infinity:slime"
 					}
 				}
-				title: "一张证明"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest7862A6B384A0E8B4.task.5299979123295142340.title}"
 				type: "item"
 			}]
-			title: "史莱姆构成的原野"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest7862A6B384A0E8B4.title}"
 			x: 5.5d
 			y: 32.5d
 		}
 		{
 			dependencies: ["7862A6B384A0E8B4"]
 			description: [
-				"这是一个还&6未被我完全扫描&r的维度，其需要您使用&6龙息&r作为引信，修改下界传送门的方向。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest1633AB544EB13336.description1}"
 				""
-				"在那之后，辛苦您进入新的维度并且带回它的照片。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest1633AB544EB13336.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1987,28 +1987,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "踪迹其三"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest1633AB544EB13336.subtitle}"
 			tasks: [{
 				dimension: "infinity:missingno"
 				icon: "minecraft:dragon_breath"
 				id: "17B05FB7564336A2"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest1633AB544EB13336.task.1706969499804317346.title}"
 				type: "dimension"
 			}]
-			title: "探访不确定的世界"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest1633AB544EB13336.title}"
 			x: 13.5d
 			y: 28.0d
 		}
 		{
 			dependencies: ["1633AB544EB13336"]
 			description: [
-				"不好！请您尽快离开这个维度！"
+				"{ftbquests.chapter.2EAD82577D152E20.quest20A8A171833B2F50.description1}"
 				""
-				"这个维度由&6复杂的迷宫&r组成，稍微探索，便会让人迷失其中. . .更不要谈其无边无尽. . ."
+				"{ftbquests.chapter.2EAD82577D152E20.quest20A8A171833B2F50.description2}"
 				""
-				"此维度似乎是&6致敬某些作品&r而筑成，在代码逻辑中，其作为众多踪迹维度的边界存在——如果您未来再次来到这个维度，大概率是我们的穿越方案出了些什么问题。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest20A8A171833B2F50.description3}"
 				""
-				"所以，请您完全忘记龙息的方案吧，它显然有些危险。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest20A8A171833B2F50.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2020,7 +2020,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "这并非我本意！"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest20A8A171833B2F50.subtitle}"
 			tasks: [{
 				icon: "exposure:photograph"
 				id: "6A03D98DA1610964"
@@ -2031,19 +2031,19 @@
 						value: "infinity:missingno"
 					}
 				}
-				title: "一张证明"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest20A8A171833B2F50.task.7639188595271600484.title}"
 				type: "item"
 			}]
-			title: "错误的导向！"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest20A8A171833B2F50.title}"
 			x: 13.5d
 			y: 32.5d
 		}
 		{
 			dependencies: ["20A8A171833B2F50"]
 			description: [
-				"由于随意前往没有完全探明的维度还是过于危险了，在最差的情况下，这个世界都有可能因为这些稀奇古怪的维度而&c崩溃&r。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest1C316C6505326313.description1}"
 				""
-				"因此我决定&6优先进行扫描&r，而后再让您进行探索。请您稍等一段时间。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest1C316C6505326313.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2054,21 +2054,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "追寻踪迹至此"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest1C316C6505326313.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "48FBCB006618B007"
-				title: "静候扫描"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest1C316C6505326313.task.5259020192458518535.title}"
 				type: "questsadditions:time"
 			}]
-			title: "停下脚步"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest1C316C6505326313.title}"
 			x: 21.5d
 			y: 32.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["用草方块作为引子，您便可以来到一个富有规律山脉的世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest486E9213485BB076.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "486E9213485BB076"
@@ -2078,21 +2078,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest486E9213485BB076.subtitle}"
 			tasks: [{
 				dimension: "infinity:hills"
 				icon: "minecraft:grass_block"
 				id: "73119C9F2AEE3F9C"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest486E9213485BB076.task.8291580596399783836.title}"
 				type: "dimension"
 			}]
-			title: "探索间隙山谷"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest486E9213485BB076.title}"
 			x: 1.5d
 			y: 44.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["用樱花树叶作为引子，您便可以来到一个呈现螺旋形生成樱花林的世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest4FE89156D8CDCE29.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4FE89156D8CDCE29"
@@ -2102,21 +2102,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest4FE89156D8CDCE29.subtitle}"
 			tasks: [{
 				dimension: "infinity:spiral"
 				icon: "minecraft:cherry_leaves"
 				id: "2D001BC6B3A282EA"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest4FE89156D8CDCE29.task.3242622271938003690.title}"
 				type: "dimension"
 			}]
-			title: "探索螺旋樱花林"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest4FE89156D8CDCE29.title}"
 			x: -2.5d
 			y: 44.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["用黑色羊毛作为引子，您便会来到一个黑白羊毛构成的棋盘世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest2AB48534C195A790.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "2AB48534C195A790"
@@ -2126,24 +2126,24 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest2AB48534C195A790.subtitle}"
 			tasks: [{
 				dimension: "infinity:chess"
 				icon: "minecraft:black_wool"
 				id: "63D2314BE3126628"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest2AB48534C195A790.task.7192865756866045480.title}"
 				type: "dimension"
 			}]
-			title: "探索棋盘世界"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest2AB48534C195A790.title}"
 			x: -2.5d
 			y: 38.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
 			description: [
-				"用砖块作为引子，您便会来到一个孤独者所在的世界。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest303B0983EE1CEE05.description1}"
 				""
-				"不知道是谁把它留在了那里，又或者它自己选择了. . .但不管怎么样，我们后面要做的事情跟它无异。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest303B0983EE1CEE05.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2154,24 +2154,24 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest303B0983EE1CEE05.subtitle}"
 			tasks: [{
 				dimension: "infinity:isolation"
 				icon: "minecraft:bricks"
 				id: "67699D8BC3F364ED"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest303B0983EE1CEE05.task.7451660282074719469.title}"
 				type: "dimension"
 			}]
-			title: "探索孤独者的维度"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest303B0983EE1CEE05.title}"
 			x: 1.5d
 			y: 38.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
 			description: [
-				"用苔石作为引子，您便可以来到一个极其特殊的世界——这个世界是本游戏早期设计中的世界，其大部分内容在如今的世界中都已不存在。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest104E4B71FE7206FB.description1}"
 				""
-				"我们无法得知这个世界保留的意义是什么，或许只是单纯的——单纯的因为有无限的维度可以利用罢了。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest104E4B71FE7206FB.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2182,21 +2182,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest104E4B71FE7206FB.subtitle}"
 			tasks: [{
 				dimension: "infinity:classic"
 				icon: "minecraft:mossy_cobblestone"
 				id: "3E307EFB86CC2F20"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest104E4B71FE7206FB.task.4481221247997062944.title}"
 				type: "dimension"
 			}]
-			title: "探索过去的回忆"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest104E4B71FE7206FB.title}"
 			x: 5.5d
 			y: 38.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["用海绵作为引子，您便可以访问由海绵分形图案组成的世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.questE6E3462A96BC570.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "0E6E3462A96BC570"
@@ -2206,21 +2206,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.questE6E3462A96BC570.subtitle}"
 			tasks: [{
 				dimension: "infinity:sponge"
 				icon: "minecraft:sponge"
 				id: "08290671BBA83EEA"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.questE6E3462A96BC570.task.588008311897997034.title}"
 				type: "dimension"
 			}]
-			title: "探索分形海绵世界"
+			title: "{ftbquests.chapter.2EAD82577D152E20.questE6E3462A96BC570.title}"
 			x: 9.5d
 			y: 38.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["以木棍作为引子，则可以将您带入到一个虚空维度之中。在这个维度的中心，应当有前人留下的，为空岛生存所准备的基本物资。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest562BC502EA6B3A24.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "562BC502EA6B3A24"
@@ -2230,21 +2230,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest562BC502EA6B3A24.subtitle}"
 			tasks: [{
 				dimension: "infinity:content"
 				icon: "minecraft:stick"
 				id: "5F9710E31D2DC165"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest562BC502EA6B3A24.task.6887992722719621477.title}"
 				type: "dimension"
 			}]
-			title: "探索空岛维度"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest562BC502EA6B3A24.title}"
 			x: 13.5d
 			y: 38.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["以陶瓦为引子，您可以来到一个被陶瓦路分割的世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest2786AFE7AB7BE1E.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "02786AFE7AB7BE1E"
@@ -2254,24 +2254,24 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest2786AFE7AB7BE1E.subtitle}"
 			tasks: [{
 				dimension: "infinity:custom"
 				icon: "minecraft:terracotta"
 				id: "040DE7EDC05E5904"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest2786AFE7AB7BE1E.task.292144559169624324.title}"
 				type: "dimension"
 			}]
-			title: "探索预留地"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest2786AFE7AB7BE1E.title}"
 			x: 17.5d
 			y: 38.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
 			description: [
-				"以白色混凝土作为引子，您便可以来到存在一只朗顿蚂蚁方块的超平坦维度。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2455A4DF5434609A.description1}"
 				""
-				"右键它便会引发其自发性的行为——如果您对此非常感兴趣，我可以为您提供更多的蚂蚁进行试验。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2455A4DF5434609A.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2289,24 +2289,24 @@
 				}
 			]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest2455A4DF5434609A.subtitle}"
 			tasks: [{
 				dimension: "infinity:ant"
 				icon: "minecraft:white_concrete"
 				id: "0551006DF17BDB93"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest2455A4DF5434609A.task.383087915506064275.title}"
 				type: "dimension"
 			}]
-			title: "探索朗顿蚂蚁的世界"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest2455A4DF5434609A.title}"
 			x: 21.5d
 			y: 38.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
 			description: [
-				"以世界唯一的龙蛋作为引子，您便可以来到随机生成方块构成的混乱维度。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest28000C5318439D41.description1}"
 				""
-				"在其中，理论上您可以找到一切——但仅仅是理论上。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest28000C5318439D41.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2317,15 +2317,15 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之末"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest28000C5318439D41.subtitle}"
 			tasks: [{
 				dimension: "infinity:skygrid"
 				icon: "minecraft:dragon_egg"
 				id: "3BF061543E91DBE8"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest28000C5318439D41.task.4319059057103199208.title}"
 				type: "dimension"
 			}]
-			title: "探索网格维度"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest28000C5318439D41.title}"
 			x: 21.5d
 			y: 44.5d
 		}
@@ -2346,11 +2346,11 @@
 				"42DA89117F452364"
 			]
 			description: [
-				"在长久的寻找之中，我明确了一个事实——这些维度远比想象的还要多得多，它的数量大到使用我的最大数据类型都几乎无法存储。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest51ABDFF508A5451.description1}"
 				""
-				"不过尽管如此，寻找到一个目标维度并没有想象的那么难，因为只需要满足几个条件，我便可以宽松的认可它的存在。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest51ABDFF508A5451.description2}"
 				""
-				"我在无数的维度中，为您找到了一个物理意义上的“&6黄金乡&r”，通过&6金块&r作为引子，您便可以拜访这番天地。希望您喜欢我为您准备的&6这份礼物&r。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest51ABDFF508A5451.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2362,28 +2362,28 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "为您准备的礼物"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest51ABDFF508A5451.subtitle}"
 			tasks: [{
 				dimension: "infinity:golden"
 				icon: "minecraft:gold_block"
 				id: "24E0659A8994FAF4"
-				title: "访问“黄金乡”"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest51ABDFF508A5451.task.2657235494556203764.title}"
 				type: "dimension"
 			}]
-			title: "来吧，这“黄金乡”"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest51ABDFF508A5451.title}"
 			x: -2.5d
 			y: 50.5d
 		}
 		{
 			dependencies: ["051ABDFF508A5451"]
 			description: [
-				"为了证明我所言非虚，也为了向您解释这番天地的广阔，请您以&6书&r作为引子，来到这番维度。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.description1}"
 				""
-				"在这个维度中，每个书架都存放着一本写着一页字符的书籍。您可以通过右键书架无限的取出。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.description2}"
 				""
-				"这个维度是几乎无穷大的——这里正是&6巴别图书馆&r。任何字符长度低于书本一页的文本，在这里都能够得到完美的呈现。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.description3}"
 				""
-				"而这些维度也是如此——它们并不是遵循了什么规则生成，它们只是在混乱的组合所有的可能性，&6最后为我们、为您呈现上不同的奇迹！！&r"
+				"{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2397,7 +2397,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "40D2D8E0C8F17379"
-					title: "解锁头衔：&e数亿未来"
+					title: "{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.reward.4671034223492166521.title}"
 					titleId: "kubejs:multiworld_future"
 					type: "titles:title"
 				}
@@ -2406,7 +2406,7 @@
 					id: "4A370B8BB155CC3D"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.reward.5347755777129303101.title}"
 					type: "maa:kube"
 				}
 				{
@@ -2416,15 +2416,15 @@
 				}
 			]
 			shape: "none"
-			subtitle: "来吧，来到这无穷无尽的图书馆"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.subtitle}"
 			tasks: [{
 				dimension: "infinity:library"
 				icon: "minecraft:book"
 				id: "78B0CB0007A7859F"
-				title: "访问“图书馆”"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.task.8696674081441285535.title}"
 				type: "dimension"
 			}]
-			title: "证明所言非虚"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest2F9EE70E103CA5D0.title}"
 			x: 5.5d
 			y: 50.5d
 		}
@@ -2432,11 +2432,11 @@
 			can_repeat: true
 			dependencies: ["2F9EE70E103CA5D0"]
 			description: [
-				"通过有序的扫描，可以稳定的获得前往较为安全随机维度的方法。"
+				"{ftbquests.chapter.2EAD82577D152E20.questE25E431098EC128.description1}"
 				""
-				"但请注意，虽然相对安全，但随机维度本身就可能会招致例如&6世界崩溃&r/&6实体损坏&r的严重问题，在极端情况下，我们的冒险故事都会就此终止，请一定要认识到&c风险&r的存在！"
+				"{ftbquests.chapter.2EAD82577D152E20.questE25E431098EC128.description2}"
 				""
-				"通过每小时的扫描，可以稳定获取&6通往无尽之钥&r。您可以将其投入到传送门中开启一个随机维度，也可以通过将其重新命名，以定向的去往某个特定的维度。"
+				"{ftbquests.chapter.2EAD82577D152E20.questE25E431098EC128.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2448,32 +2448,32 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "请见证我们的冒险故事"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.questE25E431098EC128.subtitle}"
 			tasks: [{
 				elapsedTime: 1800L
 				icon: "supplementaries:hourglass"
 				id: "53BC87B3E5867EBD"
-				title: "穿越无尽"
+				title: "{ftbquests.chapter.2EAD82577D152E20.questE25E431098EC128.task.6033846807489314493.title}"
 				type: "questsadditions:time"
 			}]
-			title: "&6庆贺吧！此乃通往无尽之钥！&r"
+			title: "{ftbquests.chapter.2EAD82577D152E20.questE25E431098EC128.title}"
 			x: 21.55d
 			y: 48.45d
 		}
 		{
 			dependencies: ["2F9EE70E103CA5D0"]
 			description: [
-				"除此之外，我还发现了一个名为“&dnexus&r”（亦可称为&d中转站&r）的特殊维度，但是这个维度可以无限制的访问无限维度. . ."
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.description1}"
 				""
-				"这对于整个系统来说，这个维度的存在是极其危险的！会随时导致这个世界的崩溃！"
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.description2}"
 				""
-				"因此我通过限制权限，一定程度上限制了这个维度的进入，现在您可以通过投入。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.description3}"
 				""
-				"关于中转站的使用，我打算仅交付给少部分人，如果您能够在世界上取得&6疾跑距离第一&r的荣誉，那么我愿意让您来抉择是否应当公开中转站维度。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.description4}"
 				"{@pagebreak}"
-				"共享中转站维度会允许其他所有人进入该维度。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.description5}"
 				""
-				"私有中转站维度则仅会允许您进入到该维度。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.description6}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2507,7 +2507,7 @@
 				}
 			]
 			shape: "none"
-			subtitle: "无限的冒险故事"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2520,21 +2520,21 @@
 				leaderboard: "leaderboards:distance_sprinted"
 				min: 0
 				rank: 1
-				title: "疾跑距离称霸"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.task.808307468627705085.title}"
 				type: "leaderboards:rank_task"
 			}]
-			title: "无限中转站"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest3F9EFE9B6E8BDAF2.title}"
 			x: 13.5d
 			y: 50.5d
 		}
 		{
 			dependencies: ["530B934745125A72"]
 			description: [
-				"在相机配置中，您除了胶卷外，还可以具体配置相机的滤镜、镜头。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest55EE9E2181578BCC.description1}"
 				""
-				"您可以制作一个&6广角镜头&r来满足一些场景摄影的需求。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest55EE9E2181578BCC.description2}"
 				""
-				"除此之外，您也可以制作一&6个玻璃板&r作为滤镜，使照片的清晰度提升。"
+				"{ftbquests.chapter.2EAD82577D152E20.quest55EE9E2181578BCC.description3}"
 			]
 			icon: "kubejs:wide_angle_lens"
 			id: "55EE9E2181578BCC"
@@ -2543,7 +2543,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "短焦场景"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest55EE9E2181578BCC.subtitle}"
 			tasks: [
 				{
 					id: "4E5BC206392770AB"
@@ -2562,9 +2562,9 @@
 		{
 			dependencies: ["3F88ADBD557E73A8"]
 			description: [
-				"使用暗房打印照片在某些时候还是太慢了，您可以选择使用&6拍立得&r来快速获得相片以查看是否满足对应的拍摄条件。"
+				"{ftbquests.chapter.2EAD82577D152E20.questD0F8F2985EF7CC8.description1}"
 				""
-				"不过拍立得需要使用&6对应的相纸&r，其造价相比于胶卷更加昂贵。且拍立得无法安装滤镜、闪光灯等附加设备，功能相对有限。"
+				"{ftbquests.chapter.2EAD82577D152E20.questD0F8F2985EF7CC8.description2}"
 			]
 			icon: "exposure_polaroid:instant_camera"
 			id: "0D0F8F2985EF7CC8"
@@ -2581,19 +2581,19 @@
 					type: "item"
 				}
 			]
-			subtitle: "快捷照片生产设备"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.questD0F8F2985EF7CC8.subtitle}"
 			tasks: [{
 				id: "46BFAAF9116D4783"
 				item: "exposure_polaroid:instant_camera"
 				type: "item"
 			}]
-			title: "所见即所得"
+			title: "{ftbquests.chapter.2EAD82577D152E20.questD0F8F2985EF7CC8.title}"
 			x: 4.5d
 			y: 3.8d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["用菌光体作为引子，您便可以来到一个埋藏在地底深处的世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest354161CC18BA01F3.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "354161CC18BA01F3"
@@ -2603,21 +2603,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest354161CC18BA01F3.subtitle}"
 			tasks: [{
 				dimension: "infinity:cavern"
 				icon: "minecraft:shroomlight"
 				id: "6A58E0F15C591346"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest354161CC18BA01F3.task.7663122093211980614.title}"
 				type: "dimension"
 			}]
-			title: "探索螺旋洞穴"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest354161CC18BA01F3.title}"
 			x: 5.5d
 			y: 44.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["用砂岩作为引子，您便可以来到红石俱备世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest233A3A75F3C14EA7.description1}"]
 			hide_dependency_lines: true
 			icon: "minecraft:sandstone"
 			id: "233A3A75F3C14EA7"
@@ -2627,21 +2627,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest233A3A75F3C14EA7.subtitle}"
 			tasks: [{
 				dimension: "infinity:redstone_flat"
 				icon: "minecraft:sandstone"
 				id: "46BF163E4E0E69C7"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest233A3A75F3C14EA7.task.5097817760060041671.title}"
 				type: "dimension"
 			}]
-			title: "探索红石俱备"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest233A3A75F3C14EA7.title}"
 			x: 9.5d
 			y: 44.5d
 		}
 		{
 			dependencies: ["1C316C6505326313"]
-			description: ["用粉色染色玻璃为引子，可以来到奇幻的饱和世界。"]
+			description: ["{ftbquests.chapter.2EAD82577D152E20.quest42DA89117F452364.description1}"]
 			hide_dependency_lines: true
 			icon: "minecraft:pink_stained_glass"
 			id: "42DA89117F452364"
@@ -2651,18 +2651,18 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大量踪迹之一"
+			subtitle: "{ftbquests.chapter.2EAD82577D152E20.quest42DA89117F452364.subtitle}"
 			tasks: [{
 				dimension: "bro:saturated"
 				icon: "minecraft:pink_stained_glass"
 				id: "6DAAAD33A305B8B3"
-				title: "访问维度"
+				title: "{ftbquests.chapter.2EAD82577D152E20.quest42DA89117F452364.task.7902318933464955059.title}"
 				type: "dimension"
 			}]
-			title: "探索饱和世界"
+			title: "{ftbquests.chapter.2EAD82577D152E20.quest42DA89117F452364.title}"
 			x: 13.5d
 			y: 44.5d
 		}
 	]
-	title: "传闻：重现黄金乡"
+	title: "{ftbquests.chapter.2EAD82577D152E20.title}"
 }

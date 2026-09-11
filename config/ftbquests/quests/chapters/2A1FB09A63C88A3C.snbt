@@ -110,9 +110,9 @@
 		{
 			dependencies: ["14EE172659669E78"]
 			description: [
-				"在无限维度之后，我找到了一个稳定利用无限维度的方法——通过这个方法，可以大幅度优化我们现有的产线，优化我们对胸腔的利用方式。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3B9F7FC959F4F068.description1}"
 				""
-				"我把这种利用方法称为&6超维利用&r，而我们利用的主要手段则是基于一个被称为&6压缩空间方块&r的设备。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3B9F7FC959F4F068.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "compactmachines:wall"
@@ -122,22 +122,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "无限维度的新课题"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3B9F7FC959F4F068.subtitle}"
 			tasks: [{
 				id: "313D96A5001492EC"
 				item: "compactmachines:wall"
 				type: "item"
 			}]
-			title: "窥破无限的努力"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3B9F7FC959F4F068.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2145E5211B72C903"]
 			description: [
-				"制作压缩空间机械和个人缩放设备。将压缩空间机械放置在世界的任意位置上，而后&6手持个人缩放设备右键压缩空间机械&r，即可通过压缩空间机械潜入到特殊的压缩空间维度中。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest122DB11A949DB228.description1}"
 				""
-				"若想要退出压缩空间，则手持个人缩放设备，&6右键任意位置，即可退出到正常世界中&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest122DB11A949DB228.description2}"
 			]
 			icon: "compactmachines:personal_shrinking_device"
 			id: "122DB11A949DB228"
@@ -146,24 +146,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "潜入压缩空间"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest122DB11A949DB228.subtitle}"
 			tasks: [{
 				id: "1A91F9ABABB8F396"
 				item: "compactmachines:personal_shrinking_device"
 				type: "item"
 			}]
-			title: "压缩空间机械"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest122DB11A949DB228.title}"
 			x: 7.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["122DB11A949DB228"]
 			description: [
-				"相比于直接对产线的空间进行扩展，使用压缩空间的灵活度和集成度更高——这依赖于各种接口的使用。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest6C33052572100482.description1}"
 				""
-				"通过&6在压缩空间内部的墙壁上放置不同的接口&r，你可以定义在压缩空间外部压缩机械的输入/输出配置。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest6C33052572100482.description2}"
 				""
-				"这意味着，你可以&6将一个精简的产线完全挪入压缩空间中&r，进而在不同的面实现不同的功能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest6C33052572100482.description3}"
 			]
 			icon: {
 				Count: 1
@@ -180,7 +180,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "压缩空间的特殊交互方式"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest6C33052572100482.subtitle}"
 			tasks: [{
 				id: "09399865E38B7344"
 				item: {
@@ -218,21 +218,21 @@
 						]
 					}
 				}
-				title: "任意接口"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest6C33052572100482.task.664729983390544708.title}"
 				type: "item"
 			}]
-			title: "压缩空间交互"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest6C33052572100482.title}"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6C33052572100482"]
 			description: [
-				"刚才我也有提到——除了在产线中可以利用&6压缩机械&r，您也可以在胸腔中使用。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3FBC546A3EF78EA4.description1}"
 				""
-				"但为了应用这些额外的空间，我们需要一个崭新的利用形式，这需要您对自己的胸腔进行一次&6再分化&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3FBC546A3EF78EA4.description2}"
 				""
-				"请您制作&6任意一种诱导血清&r，在准备好后，我会告诉您后续的操作。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3FBC546A3EF78EA4.description3}"
 			]
 			icon: "kubejs:animal_inducer_serum"
 			id: "3FBC546A3EF78EA4"
@@ -241,7 +241,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "压缩空间胸腔利用方式"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3FBC546A3EF78EA4.subtitle}"
 			tasks: [{
 				id: "786D18782B08D3DD"
 				item: {
@@ -251,19 +251,19 @@
 						value: "kubejs:induction_serum"
 					}
 				}
-				title: "任意诱导血清"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3FBC546A3EF78EA4.task.8677618961409954781.title}"
 				type: "item"
 			}]
-			title: "准备自我分化"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3FBC546A3EF78EA4.title}"
 			x: 10.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3FBC546A3EF78EA4"]
 			description: [
-				"在您准备好诱导血清后，潜入压缩空间维度，即可准备胸腔改造。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.questA26BCE55EC7C58F.description1}"
 				""
-				"该胸腔改造的方式极为简单——只需要对自己注射&6任意诱导血清&r，使自身进入再分化状态，若&6在再分化状态期间一直位于压缩空间维度中&r，即会转变为特殊的&6超维胸腔&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.questA26BCE55EC7C58F.description2}"
 			]
 			id: "0A26BCE55EC7C58F"
 			rewards: [{
@@ -271,26 +271,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "转变为超维胸腔"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.questA26BCE55EC7C58F.subtitle}"
 			tasks: [{
 				dimension: "compactmachines:compact_world"
 				icon: "compactmachines:wall"
 				id: "591C6753537D8026"
-				title: "潜入压缩空间维度"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.questA26BCE55EC7C58F.task.6421120776304164902.title}"
 				type: "dimension"
 			}]
-			title: "特异的空间压力"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.questA26BCE55EC7C58F.title}"
 			x: 10.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["0A26BCE55EC7C58F"]
 			description: [
-				"恭喜！看来您成功转变成为了超维胸腔——准确来说，是&6超维机械胸腔&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.description1}"
 				""
-				"这种超维胸腔能够通过3个特殊的&6超维工厂&r槽位，直接访问胸腔内部的压缩机械方块，并且将其产出物直接提供给位于其上方的&6超维机械&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.description2}"
 				""
-				"因此，为了让超维胸腔能够达到完全运行的状态，您&6至少需要3个压缩空间方块&r，以及&6至少3个能够利用的超维机械器官&r——正巧，在曾经的记录中就存在有几个这样的器官，请允许我为您逐个介绍。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -307,7 +307,7 @@
 					id: "3C2A4BFC30000F4F"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "完成章节"
+					title: "{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.reward.4335361137806675791.title}"
 					type: "maa:kube"
 				}
 				{
@@ -323,28 +323,28 @@
 				}
 			]
 			shape: "none"
-			subtitle: "胸腔链接空间"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.subtitle}"
 			tasks: [{
 				entity: "minecraft:empty"
 				icon: "kubejs:transdimensional_mechanized_injection"
 				id: "2D8D4F70CB1B6C6B"
 				inventoryType: "kubejs:cc_inventory_types/transdimensional_mechanized"
-				title: "打开&6超维胸腔 - 机械"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.task.3282367049285463147.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "&6庆贺吧！此乃超维胸腔！&r"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.title}"
 			x: 4.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
-				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest1CCA4998BDE14E93.description1}"
 				""
-				"&6虹彩反应炉&r便是其一——其本身虽然能源源不断产出能够被分解为各种色彩的&6虹彩化合物&r，但苦于胸腔大小限制，无法将其转换为可用的染料。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest1CCA4998BDE14E93.description2}"
 				""
-				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest1CCA4998BDE14E93.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -354,7 +354,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "超维工厂实战课题之一"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest1CCA4998BDE14E93.subtitle}"
 			tasks: [{
 				id: "687A55316900FE68"
 				item: {
@@ -370,11 +370,11 @@
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
-				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest525B0E70D3BDBE09.description1}"
 				""
-				"&6血晶工厂&r便是其一——其本身虽然能将生物的生命值转换为可以长期储存的&c血晶&r或者&c血液&r，但苦于没有足够的空间，无法让血液和血晶转换为血晶工厂可以利用的&6费洛蒙&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest525B0E70D3BDBE09.description2}"
 				""
-				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest525B0E70D3BDBE09.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -384,7 +384,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "超维工厂实战课题之一"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest525B0E70D3BDBE09.subtitle}"
 			tasks: [{
 				id: "369CD6FE20778F0C"
 				item: {
@@ -400,11 +400,11 @@
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
-				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2037A5E8F30A4E65.description1}"
 				""
-				"&6械学巫术纤维瘤&r便是其一——其本身需要&6消耗液体状态的药水&r为玩家提供持久的药水状态。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2037A5E8F30A4E65.description2}"
 				""
-				"但借由超维胸腔对体内空间的扩展，这样的处理变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2037A5E8F30A4E65.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -414,7 +414,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "超维工厂实战课题之一"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest2037A5E8F30A4E65.subtitle}"
 			tasks: [{
 				id: "0661683EB4FAA493"
 				item: {
@@ -430,11 +430,11 @@
 		{
 			dependencies: ["525B0E70D3BDBE09"]
 			description: [
-				"为了满足血晶工厂的费洛蒙消耗，您需要提供一个稳定产出&6有机试管&r的方法。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest5D26A05B1C2F2C7D.description1}"
 				""
-				"&6痔多心&r就是一个能够稳定产出有机试管的方法。佩戴该器官的生物会源源不断的产出&6纤维状血肉块&r。如若产出的槽位是&6排泄&r槽位，那么纤维状血肉块便会作为掉落物掉落。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest5D26A05B1C2F2C7D.description2}"
 				""
-				"使用分解体分解纤维状血肉块，即可获得&6弹性纤维&r，而后便可以加工为有机试管。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest5D26A05B1C2F2C7D.description3}"
 			]
 			id: "5D26A05B1C2F2C7D"
 			rewards: [{
@@ -442,7 +442,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "有机试管产线"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest5D26A05B1C2F2C7D.subtitle}"
 			tasks: [{
 				id: "46068C0DE90B0532"
 				item: {
@@ -458,13 +458,13 @@
 		{
 			dependencies: ["1CCA4998BDE14E93"]
 			description: [
-				"虹彩反应炉是一个极其特殊的器官，其可以消耗压缩空间输出的染料，根据染料的颜色转换为对应的属性。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2D80F357A8747BC0.description1}"
 				""
-				"每分钟，虹彩反应炉便会产生&664 个虹彩化合物&r以供给产线去产出所需的染料。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2D80F357A8747BC0.description2}"
 				""
-				"&6不同的染料会为您提供不同的属性乘区加成&r——举例而言，一红色染料会提供0.01攻击力的乘区倍率，而一白色染料会提供0.003攻击力、0.003最大生命值和0.004护甲的乘区倍率。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2D80F357A8747BC0.description3}"
 				""
-				"因此，您如果需要最大化特化该器官的能力，需要进行大量的&6颜色反应&r以获得某个纯色。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2D80F357A8747BC0.description4}"
 			]
 			id: "2D80F357A8747BC0"
 			rewards: [{
@@ -472,7 +472,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "虹彩化合物的处理"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest2D80F357A8747BC0.subtitle}"
 			tasks: [{
 				id: "5BA497C163A2A814"
 				item: "kubejs:rainbow_compound"
@@ -484,11 +484,11 @@
 		{
 			dependencies: ["2D80F357A8747BC0"]
 			description: [
-				"所谓&6转色反应&r，即通过一些特殊配方可以让染料互相转换。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest54D1D2519A0BDE86.description1}"
 				""
-				"举例而言，您可以通过注液配方，向部分染料注入岩浆/水/蜂蜜液体，以使其转化为某纯色。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest54D1D2519A0BDE86.description2}"
 				""
-				"当然，您也可以&6不局限于使用虹彩化合物分解出来的材料供给虹彩反应炉&r——如果材料允许，您完全可以自己建设一套稳定的产线来维持虹彩反应炉的消耗。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest54D1D2519A0BDE86.description3}"
 			]
 			icon: "minecraft:red_dye"
 			id: "54D1D2519A0BDE86"
@@ -497,7 +497,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "染料的互相转化"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest54D1D2519A0BDE86.subtitle}"
 			tasks: [{
 				id: "4419CFE790E9F3BC"
 				item: {
@@ -507,23 +507,23 @@
 						value: "forge:dyes"
 					}
 				}
-				title: "任意染料"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest54D1D2519A0BDE86.task.4907181862472512444.title}"
 				type: "item"
 			}]
-			title: "转色反应"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest54D1D2519A0BDE86.title}"
 			x: -6.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["5D26A05B1C2F2C7D"]
 			description: [
-				"通过&6对血液的分馏&r，可以得到四种不同的流体。这些流体可以通过注液配方转换为对应的有机试剂。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest22018D11289105.description1}"
 				""
-				"这些有机试剂和&6费洛蒙前体&r混合即可获得对应的费洛蒙。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest22018D11289105.description2}"
 				""
-				"血晶工厂会根据供给的费洛蒙种类的差异，为生物提供不同的基础数值加成——举例而言，若有一&6费洛蒙 - α&r被消耗，则玩家基础的攻击力数值在下个周期内会提高 1 点。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest22018D11289105.description3}"
 				""
-				"为了得到您所需要的属性，您可能需要使用&6生物荧光黏液&r转换费洛蒙的种类，进而专一化数值。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest22018D11289105.description4}"
 			]
 			id: "0022018D11289105"
 			rewards: [{
@@ -531,7 +531,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "费洛蒙产线"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest22018D11289105.subtitle}"
 			tasks: [{
 				id: "5CA4C908381E309E"
 				item: "kubejs:precursor_pheromone_serum"
@@ -543,11 +543,11 @@
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
-				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3785C5FDB0DF689B.description1}"
 				""
-				"&6岩浆生命循环系统&r便是其一——借由压缩空间，可以完全发挥其能力，&6消耗岩浆来快速恢复玩家生命值&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3785C5FDB0DF689B.description2}"
 				""
-				"该系统可以配合血晶工厂，在血晶工厂消耗完成后迅速恢复玩家生命，以避免血晶工厂带来的负面效果。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3785C5FDB0DF689B.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -557,7 +557,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "超维工厂实战课题之一"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3785C5FDB0DF689B.subtitle}"
 			tasks: [{
 				id: "5E5BEA2404C466A9"
 				item: {
@@ -573,9 +573,9 @@
 		{
 			dependencies: ["6C33052572100482"]
 			description: [
-				"由于压缩空间大小有限，部分产线无法在一个压缩空间中完成，此时您可能会尝试使用压缩空间中&6套娃压缩空间&r的方式来解决空间危机——但实际上还有一个更好的方式。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest10D71CC7F16C3939.description1}"
 				""
-				"请您制作一块&6虚空钢锭&r，为我们后续的无线传输提供基础材料支持。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest10D71CC7F16C3939.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "10D71CC7F16C3939"
@@ -584,24 +584,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "压缩空间之外"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest10D71CC7F16C3939.subtitle}"
 			tasks: [{
 				id: "0D951AFCAD5FB7A3"
 				item: "createutilities:void_steel_ingot"
 				type: "item"
 			}]
-			title: "压缩空间交互法"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest10D71CC7F16C3939.title}"
 			x: 12.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["10D71CC7F16C3939"]
 			description: [
-				"使用虚空钢锭，您便可以制成虚空晶体管、虚空机壳，进而制作出各种虚空设备。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3067DE2DA2BAFCCA.description1}"
 				""
-				"所谓虚空设备，即是可以通过虚空&6远程传输物品、流体、应力&r的特殊设备。通过在虚空设备上标记物品以区分不同的频道，即可让对应的虚空设备互相链接。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3067DE2DA2BAFCCA.description2}"
 				""
-				"&6虚空箱子和虚空储罐可以跨维度交互&r——但虚空马达由于应力的特殊性质无法跨维度使用，因此您可能需要在压缩空间中专门制作一个应力提供空间来使用虚空马达。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest3067DE2DA2BAFCCA.description3}"
 			]
 			icon: "createutilities:void_chest"
 			id: "3067DE2DA2BAFCCA"
@@ -610,7 +610,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "无线传输方案"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3067DE2DA2BAFCCA.subtitle}"
 			tasks: [{
 				id: "15734FEAA0EA90D4"
 				item: {
@@ -633,7 +633,7 @@
 						]
 					}
 				}
-				title: "任意虚空设备"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest3067DE2DA2BAFCCA.task.1545666966258880724.title}"
 				type: "item"
 			}]
 			x: 12.5d
@@ -642,11 +642,11 @@
 		{
 			dependencies: ["0A26BCE55EC7C58F"]
 			description: [
-				"为了让压缩空间内存放的机械能够在玩家不在的时候正常运行，您需要使其所在的区块&6维持加载&r状态。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest154BC9A8506406D5.description1}"
 				""
-				"最简单的方法便是您通过&6FTB Chunk声明区块&r进行强加载——亦或是使用&6区块加载器&r，来保证一定范围的空间持续加载。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest154BC9A8506406D5.description2}"
 				""
-				"但不管怎么样，请您在&7搭建完成压缩空间内部产线后一定要检查是否进行了加载&r！否则可能会出现排查不出产线问题但实际无产出的尴尬局面。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest154BC9A8506406D5.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "create_power_loader:brass_chunk_loader"
@@ -663,24 +663,24 @@
 					type: "item"
 				}
 			]
-			subtitle: "永恒运行符"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest154BC9A8506406D5.subtitle}"
 			tasks: [{
 				id: "7E4BB5F45D5ADFB4"
-				title: "我已了解"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest154BC9A8506406D5.task.9100567533175103412.title}"
 				type: "checkmark"
 			}]
-			title: "加载压缩空间"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest154BC9A8506406D5.title}"
 			x: 12.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
-				"超维工厂的存在，能够让原本无法在胸腔内轻易搭建的大型产线变得可能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest60A2344C1CA7858A.description1}"
 				""
-				"&6加压机械臂&r便是其一——在主动使用该器官时，会消耗可用的&6加压流体&r，&6强化下一次攻击威力&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest60A2344C1CA7858A.description2}"
 				""
-				"由于其流体消耗过于巨大，正常在胸腔内进行使用几乎是不可能的——但借由超维胸腔，流体交互可以借由压缩空间完成。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest60A2344C1CA7858A.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -690,7 +690,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "超维工厂实战课题之一"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest60A2344C1CA7858A.subtitle}"
 			tasks: [{
 				id: "281D1D58A001D3B1"
 				item: {
@@ -706,11 +706,11 @@
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
-				"超维胸腔有着极其强的兼容能力——在研究中，超维胸腔能够几乎完美的兼容任何特殊槽位。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest1E8FD6C71E7460EF.description1}"
 				""
-				"这意味着，我们可以通过一些化合工作，&6将某些胸腔的强力槽位复合到超维胸腔中&r，获得更加强大的威力。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest1E8FD6C71E7460EF.description2}"
 				""
-				"如果您能够提供给我&6玫瑰、植物、遗物&r任一注射器，我们便能够创造对应的超维复合胸腔。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest1E8FD6C71E7460EF.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:empty_injection"
@@ -720,7 +720,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "超维胸腔的异常混合"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest1E8FD6C71E7460EF.subtitle}"
 			tasks: [{
 				id: "68F4503CA42AAFB1"
 				item: {
@@ -743,16 +743,16 @@
 						]
 					}
 				}
-				title: "任一符合要求的特殊注射器"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest1E8FD6C71E7460EF.task.7562757895644426161.title}"
 				type: "item"
 			}]
-			title: "超维复合工艺"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest1E8FD6C71E7460EF.title}"
 			x: 4.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
-			description: ["通过简单的将两种注射器混合，即可得到&6超维植物注射器&r。"]
+			description: ["{ftbquests.chapter.2A1FB09A63C88A3C.quest48BE33EAD003AD1.description1}"]
 			id: "048BE33EAD003AD1"
 			rewards: [{
 				id: "0DECA87C5FCB3B29"
@@ -760,19 +760,19 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "超维 - 植物 复合胸腔"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest48BE33EAD003AD1.subtitle}"
 			tasks: [{
 				id: "137CE82E0F33F49A"
 				item: "kubejs:transdimensional_plant_injection"
 				type: "item"
 			}]
-			title: "复合尝试：植物"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest48BE33EAD003AD1.title}"
 			x: -5.0d
 			y: 15.0d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
-			description: ["通过简单的将两种注射器混合，即可得到&6超维玫瑰注射器&r"]
+			description: ["{ftbquests.chapter.2A1FB09A63C88A3C.quest52E640CD23931C4D.description1}"]
 			id: "52E640CD23931C4D"
 			rewards: [{
 				id: "01D4A9C93F4E0514"
@@ -780,19 +780,19 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "超维 - 玫瑰 复合胸腔"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest52E640CD23931C4D.subtitle}"
 			tasks: [{
 				id: "3B4CDA13F8B57A4C"
 				item: "kubejs:transdimensional_rose_injection"
 				type: "item"
 			}]
-			title: "复合尝试：玫瑰"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest52E640CD23931C4D.title}"
 			x: -5.0d
 			y: 18.5d
 		}
 		{
 			dependencies: ["20EF3FA93587E702"]
-			description: ["通过简单的将两种注射器混合，即可得到&6超维遗物注射器&r"]
+			description: ["{ftbquests.chapter.2A1FB09A63C88A3C.quest171B154319E23270.description1}"]
 			id: "171B154319E23270"
 			rewards: [{
 				id: "35C8D53DC9600B00"
@@ -800,19 +800,19 @@
 				type: "item"
 			}]
 			size: 2.0d
-			subtitle: "超维 - 遗物 复合胸腔"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest171B154319E23270.subtitle}"
 			tasks: [{
 				id: "2D03986E44959208"
 				item: "kubejs:transdimensional_relics_injection"
 				type: "item"
 			}]
-			title: "复合尝试：遗物"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest171B154319E23270.title}"
 			x: -5.0d
 			y: 22.0d
 		}
 		{
 			dependencies: ["37E67F565A378E4D"]
-			description: ["向常规的&6叁型注射器中注入传送液&r，即可建立起胸腔和异常维度（压缩空间）的关系，进而制成超维注射器。"]
+			description: ["{ftbquests.chapter.2A1FB09A63C88A3C.quest20EF3FA93587E702.description1}"]
 			hide_until_deps_complete: true
 			id: "20EF3FA93587E702"
 			rewards: [{
@@ -820,24 +820,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "精造注射器"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest20EF3FA93587E702.subtitle}"
 			tasks: [{
 				id: "6DDE6B6B3E3A4B60"
 				item: "kubejs:transdimensional_mechanized_injection"
 				type: "item"
 			}]
-			title: "超维注射器"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest20EF3FA93587E702.title}"
 			x: 4.0d
 			y: 18.5d
 		}
 		{
 			dependencies: ["1E8FD6C71E7460EF"]
 			description: [
-				"为了能够进行复合，您需要优先制作超维胸腔的注射器版本，因此，您需要获得&6传送液&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest37E67F565A378E4D.description1}"
 				""
-				"使用&6动力泵抽取下界传送门方块&r，可以破坏传送门并且获得250 mb的传送液。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest37E67F565A378E4D.description2}"
 				""
-				"通过反复点火下界传送门，便可以大量获取传送液，用于超维注射器的制作。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest37E67F565A378E4D.description3}"
 			]
 			icon: "create_biotech:teleportation_bucket"
 			id: "37E67F565A378E4D"
@@ -846,7 +846,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "获取传送液"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest37E67F565A378E4D.subtitle}"
 			tasks: [
 				{
 					id: "1E4D67134D919AC6"
@@ -879,7 +879,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest37E67F565A378E4D.task.2183514726947986118.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -889,7 +889,7 @@
 					type: "fluid"
 				}
 			]
-			title: "传送液和超维空间"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest37E67F565A378E4D.title}"
 			x: 4.0d
 			y: 16.5d
 		}
@@ -900,9 +900,9 @@
 				"171B154319E23270"
 			]
 			description: [
-				"除了这三种复合之外，&6理论上超维胸腔可以和任意胸腔进行复合&r，进而模拟其部分功能。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest58163223631ACE3D.description1}"
 				""
-				"但我们现在对压缩空间的开发尚且有限，更多的复合可能性还要&6等待未来的进一步调查&r. . ."
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest58163223631ACE3D.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -913,24 +913,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "更多的可能性"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest58163223631ACE3D.subtitle}"
 			tasks: [{
 				id: "3235E1BC5C1F1339"
-				title: "可能吧"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest58163223631ACE3D.task.3618046074777703225.title}"
 				type: "checkmark"
 			}]
-			title: "复合可能"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest58163223631ACE3D.title}"
 			x: -11.5d
 			y: 18.5d
 		}
 		{
 			dependencies: ["0B6DD0B62C0B5118"]
 			description: [
-				"超维工厂的存在，使得部分器官进行资源生产的模式得到了极大的扩展。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest11B80545DBF73142.description1}"
 				""
-				"&6矿核生成器&r便是其中之一——您可以&6将矿物放置在该器官中&r，在&6主动使用该器官&r时，便会在其连接的压缩空间中&6生成对应矿物的真实矿脉&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest11B80545DBF73142.description2}"
 				""
-				"但这一过程会完全将压缩空间给&6塞满&r，因此进入采掘前要做好会窒息的准备。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest11B80545DBF73142.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -940,7 +940,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "超维工厂实战课题之一"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest11B80545DBF73142.subtitle}"
 			tasks: [{
 				id: "47B0617E968AA780"
 				item: {
@@ -956,11 +956,11 @@
 		{
 			dependencies: ["52A176CFE929083A"]
 			description: [
-				"使用空白压缩空间机械，即可制作任意规格的&6压缩空间机械&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2145E5211B72C903.description1}"
 				""
-				"不同规格的压缩空间，对应了不同的内部空间大小，其最小的规格为 3 * 3 * 3，最大的则为 13 * 13 * 13。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2145E5211B72C903.description2}"
 				""
-				"压缩空间并不一定是越大越好——如若要制造的产线规模非常小，可以选用较小的压缩空间便于减少无效物流距离。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest2145E5211B72C903.description3}"
 			]
 			icon: "compactmachines:machine_giant"
 			id: "2145E5211B72C903"
@@ -969,7 +969,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "潜入准备"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest2145E5211B72C903.subtitle}"
 			tasks: [{
 				id: "434FEA55F9B42B09"
 				item: {
@@ -1004,21 +1004,21 @@
 						]
 					}
 				}
-				title: "任意压缩空间机械"
+				title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest2145E5211B72C903.task.4850352978683767561.title}"
 				type: "item"
 			}]
-			title: "压缩空间"
+			title: "{ftbquests.chapter.2A1FB09A63C88A3C.quest2145E5211B72C903.title}"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3B9F7FC959F4F068"]
 			description: [
-				"为了制作压缩空间机械，您需要制造它的前置材料——&6空白压缩空间机械&r。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest52A176CFE929083A.description1}"
 				""
-				"空白压缩空间机械不仅是一种材料，同时它也是可以用于复制已绑定的压缩空间机械的特殊工具。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest52A176CFE929083A.description2}"
 				""
-				"在某些场景下，您需要&6同一个压缩空间机械既作为物品存放于胸腔中，又作为方块放置于世界中&r，此时即可使用空白压缩空间机械复制。"
+				"{ftbquests.chapter.2A1FB09A63C88A3C.quest52A176CFE929083A.description3}"
 			]
 			id: "52A176CFE929083A"
 			rewards: [{
@@ -1026,7 +1026,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "空白空间"
+			subtitle: "{ftbquests.chapter.2A1FB09A63C88A3C.quest52A176CFE929083A.subtitle}"
 			tasks: [{
 				id: "3DC9D36D1FF9F34D"
 				item: "kubejs:blank_compact_machine"
@@ -1036,5 +1036,5 @@
 			y: 0.0d
 		}
 	]
-	title: "传闻：超维工厂"
+	title: "{ftbquests.chapter.2A1FB09A63C88A3C.title}"
 }

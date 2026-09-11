@@ -77,7 +77,7 @@
 			click: "command:/ponder create:basin"
 			dependency: "560A05CD905A3EBA"
 			height: 1.0d
-			hover: ["点击以思索"]
+			hover: ["ftbquests.chapter.425DDADD8D67FA09.image.hovertext1"]
 			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
 			order: 2
 			rotation: 0.0d
@@ -92,9 +92,9 @@
 		{
 			dependencies: ["1AD43758DA5521C0"]
 			description: [
-				"相信您在挖矿时遇到了一些从来没有见到过的矿物——比如说&6锌矿&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3D02CAC6C9FF9512.description1}"
 				""
-				"锌矿是用于发展机械的重要矿物，为了能够顺利完成机械知识的学习，我建议您尽可能收集您所见到的所有锌矿。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3D02CAC6C9FF9512.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "3D02CAC6C9FF9512"
@@ -103,22 +103,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "了解锌矿"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest3D02CAC6C9FF9512.subtitle}"
 			tasks: [{
 				id: "7A7AB235828405CA"
 				item: "create:raw_zinc"
 				type: "item"
 			}]
-			title: "新矿物新启示"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest3D02CAC6C9FF9512.title}"
 			x: 3.5d
 			y: -1.8d
 		}
 		{
 			dependencies: ["3D02CAC6C9FF9512"]
 			description: [
-				"为了发展机械，我们需要足够多的安山岩来大量制作安山合金。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest7FAD357E92A68A9D.description1}"
 				""
-				"因此我强烈建议您把安山岩提升到与锌矿同等重要的地位上，且&6其需求量可能比锌矿要大的多&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest7FAD357E92A68A9D.description2}"
 			]
 			id: "7FAD357E92A68A9D"
 			rewards: [{
@@ -126,22 +126,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "多多积累安山岩"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest7FAD357E92A68A9D.subtitle}"
 			tasks: [{
 				id: "06E5488C5FAD6216"
 				item: "minecraft:andesite"
 				type: "item"
 			}]
-			title: "不常见的材料"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest7FAD357E92A68A9D.title}"
 			x: 3.5d
 			y: 0.7d
 		}
 		{
 			dependencies: ["7FAD357E92A68A9D"]
 			description: [
-				"通过&6锌粒/铁粒&r与&6安山岩&r进行合成，可以制成制造机械的基础材料——安山合金。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6ED1A20AB0BEA658.description1}"
 				""
-				"在后面的发展流程中，您需要大量安山合金，因此您需要多多储备安山岩。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6ED1A20AB0BEA658.description2}"
 			]
 			id: "6ED1A20AB0BEA658"
 			rewards: [{
@@ -149,24 +149,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "多多储备"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest6ED1A20AB0BEA658.subtitle}"
 			tasks: [{
 				id: "41ECBEF08D187E12"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
-			title: "机械基础材料"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest6ED1A20AB0BEA658.title}"
 			x: 3.5d
 			y: 3.3d
 		}
 		{
 			dependencies: ["6ED1A20AB0BEA658"]
 			description: [
-				"为了驱动机械，我们需要动力源。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest678E67B0D26DAF91.description1}"
 				""
-				"动力源的选取多种多样，但为了尽可能让您以最简洁的方式理解这些知识，我们先以手动动力源——&6手摇曲柄&r开始。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest678E67B0D26DAF91.description2}"
 				""
-				"当您制作出后，鼠标指向该物品&6长按思索按键&r，即可在前人精心准备的幻灯片中了解如何正确使用它。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest678E67B0D26DAF91.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -180,35 +180,35 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "12403FEE5FCA5124"
-					title: "解锁头衔：&e齿轮匠"
+					title: "{ftbquests.chapter.425DDADD8D67FA09.quest678E67B0D26DAF91.reward.1315121384234045732.title}"
 					titleId: "kubejs:gearsmith"
 					type: "titles:title"
 				}
 			]
-			subtitle: "最简单的动力源"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest678E67B0D26DAF91.subtitle}"
 			tasks: [{
 				id: "645E920DE816FD0A"
 				item: "create:hand_crank"
 				type: "item"
 			}]
-			title: "从生产动力开始"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest678E67B0D26DAF91.title}"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["678E67B0D26DAF91"]
 			description: [
-				"首先，我们要明确前提——为什么要制造动力机械。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.description1}"
 				""
-				"这个前提可以解释得很复杂，但基于我的理解，作为玩家的您、或者您们，&6制作动力机械的主要目的是“使用这个机械达成某个预先想好的目标”&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.description2}"
 				""
-				"与常规的武器锻造等不同，机械往往需要多个组件配合才能够产生效果。大部分精通于机械的玩家会&6预先决定好“要做什么”，进而回推“需要什么”&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.description3}"
 				""
-				"对于普通没有接受过此种思路熏陶的玩家，其很难理解为什么要制作某个短期内无法见到收益/自己完全意识不到收益的物品。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.description4}"
 				""
-				"&6因此，在本认知中，我会以一个最为常见的“要做什么”的目标，作为我们的线索。&r"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.description5}"
 				""
-				"但在此之前，&6请您先制作动力冲压机&r，其所需的安山机壳，只需&6手持安山合金，右键单击去皮的任意木材&r，即可制成。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.description6}"
 			]
 			icon: "create:mechanical_press"
 			id: "4559E83BDFE139FF"
@@ -217,7 +217,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "将物质压片"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.subtitle}"
 			tasks: [
 				{
 					id: "10F8846805018192"
@@ -230,22 +230,22 @@
 					type: "item"
 				}
 			]
-			title: "到第一个动力机械"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest4559E83BDFE139FF.title}"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["4559E83BDFE139FF"]
 			description: [
-				"您可以通过查看配方按键来查看如何制成铁板——最常见的方法便是使用动力冲压机，冲压下方的铁锭获得。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6BCFA180CF3AF597.description1}"
 				""
-				"因此，您需要将&6动力冲压机冲压面朝下放置&r，并保证其&6下方一格是空出来的空气方块&r，以保证您能够将铁锭投入该位置。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6BCFA180CF3AF597.description2}"
 				""
-				"之后，您需要将&6手摇曲柄插放到冲压机侧面具有传动杆的位置上&r，使曲柄的动力能够通过传动杆驱动冲压机运动。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6BCFA180CF3AF597.description3}"
 				""
-				"在一切准备就绪后，将一块&6铁锭丢入到冲压机正下方&r，而后对着&6曲柄长按右键摇动&r——您应当就可以看到对应的冲压机动画，和物品产出。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6BCFA180CF3AF597.description4}"
 				""
-				"这便是最简单的机械生产流程。在这个流程中，我们的目标是铁板，需要使用冲压机来获取。使用的动力源则是最简单的手摇动力。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6BCFA180CF3AF597.description5}"
 			]
 			id: "6BCFA180CF3AF597"
 			rewards: [{
@@ -253,30 +253,30 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "一套流程"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest6BCFA180CF3AF597.subtitle}"
 			tasks: [{
 				id: "088EC77D9963A577"
 				item: "create:iron_sheet"
 				type: "item"
 			}]
-			title: "最后驱动动力机械"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest6BCFA180CF3AF597.title}"
 			x: 0.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["6BCFA180CF3AF597"]
 			description: [
-				"前文也有所提到——为了让您更好的理解机械构建的流程，我们需要预先制定一个目标，而后逆推流程，进而完成我们的建设工作。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.description1}"
 				""
-				"我们的目标便是&6建造一个全自动，无人值守的林场&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.description2}"
 				""
-				"这是一个非常简单的目标，在历史日志中，其显示大部分玩家都会建造一个&6简单的林场&r来满足自己日常木材的需求。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.description3}"
 				""
-				"因此，我认为这是一个非常适合我们的课题——无论从难度上还是实用度上。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.description4}"
 				""
-				"所谓林场，其需要有的基本能力便是——&6伐木、种植、收集&r。满足这几样的需求之后，便是尽可能高的产量以及尽可能多的满足我们日常使用木材的基本需求。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.description5}"
 				""
-				"接下来，我会针对林场的基本能力诉求，拆分具体所要做的事情，辛苦您仔细阅读并且费心理解。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.description6}"
 			]
 			icon: "minecraft:oak_sapling"
 			id: "6B7A5AE2D8EFD037"
@@ -285,24 +285,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "一个最简单的目标"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.subtitle}"
 			tasks: [{
 				id: "3E9087B42BB66A9A"
-				title: "我已了解"
+				title: "{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.task.4508252434895104666.title}"
 				type: "checkmark"
 			}]
-			title: "目标，成为林业专家"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest6B7A5AE2D8EFD037.title}"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
 			description: [
-				"在林场的建造中，&6收割树木是极为重要的一环。"
-				"&r"
-				"在动力机械中，存在名为&6动力锯&r的方块，在提供动力时，可以收割其面对方向的树木。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest35D80EB805BF79B0.description1}"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest35D80EB805BF79B0.description2}"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest35D80EB805BF79B0.description3}"
 				""
-				"在具体使用时，动力锯需要对准树木的最底层方块，进而可以&6连锁破坏整棵树木&r。您可以使用思索来查看具体使用该动力机械的案例。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest35D80EB805BF79B0.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -312,13 +312,13 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "使用动力锯收割树木"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest35D80EB805BF79B0.subtitle}"
 			tasks: [{
 				id: "56747DCC4F7124CA"
 				item: "create:mechanical_saw"
 				type: "item"
 			}]
-			title: "如何收割木材"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest35D80EB805BF79B0.title}"
 			x: -7.0d
 			y: -0.5d
 		}
@@ -328,11 +328,11 @@
 				"7AD07D5DBC62292C"
 			]
 			description: [
-				"在完成树木的收割后，&6您需要考虑如何让林场中空出的部分重新种植上树木。&r"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3F5BB167BF4FF06B.description1}"
 				""
-				"&6机械手&r可以模仿玩家的右键或者左键，使其&6手持树苗右键&r即可满足补种的基本要求。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3F5BB167BF4FF06B.description2}"
 				""
-				"在整个林场建设中，我们可能需要将砍伐出来的树苗用于下一次的种植，因此我们需要&6做一些过滤&r，以避免机械手将其他我们不希望的方块放置出来。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3F5BB167BF4FF06B.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: false
@@ -342,28 +342,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "使用机械手模拟"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest3F5BB167BF4FF06B.subtitle}"
 			tasks: [{
 				id: "4BFF9BE72A74F4BC"
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "如何补种树木"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest3F5BB167BF4FF06B.title}"
 			x: -7.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["788A9985BFF98038"]
 			description: [
-				"在收割和种植之外，&6我们还需要考虑如何为这些机械提供动力。&r"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest39DDD2962FC52646.description1}"
 				""
-				"动力机械有着一个极其特殊的性质——一些可以在动态结构中发挥作用的动力机械，&6只要其所属的动态结构因动力而运动，动力机械自身便可以“借用”这部分动力运作&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest39DDD2962FC52646.description2}"
 				""
-				"因此，我们的目标从如何选择一个动力源，变成了&6应该采用什么样的方式来让我们的动力机械能够位于一个动态结构上并且发挥作用&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest39DDD2962FC52646.description3}"
 				""
-				"这里的解有很多，一个最常见省力的方式是，将所有的动力机械安装在&6动力轴承&r上，组装成一个旋转的水平柱。这意味着柱子扫过的圆形区域就是林场的种植区域。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest39DDD2962FC52646.description4}"
 				""
-				"同理，您也可以选择动力矿车、动力活塞等各种各样的方式来驱动您的动态结构，这里选择旋转机构主要还是从最简最通用的方案出发，以统一后续的口径。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest39DDD2962FC52646.description5}"
 			]
 			hide_until_deps_complete: false
 			id: "39DDD2962FC52646"
@@ -372,22 +372,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "动态结构动力提供"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest39DDD2962FC52646.subtitle}"
 			tasks: [{
 				id: "725E335B8F0D4FF1"
 				item: "create:mechanical_bearing"
 				type: "item"
 			}]
-			title: "如何提供动力"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest39DDD2962FC52646.title}"
 			x: -7.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
 			description: [
-				"传动杆不仅是一种合成材料，更是重要的动力传输方式。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest788A9985BFF98038.description1}"
 				""
-				"在机械动力的游玩流程中，您会需要大量的制造传动杆，因此您可以预先制作一批传动杆以备不时之需。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest788A9985BFF98038.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -397,7 +397,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "将动力延续"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest788A9985BFF98038.subtitle}"
 			tasks: [{
 				id: "42301B4D9066A3A5"
 				item: "create:shaft"
@@ -409,9 +409,9 @@
 		{
 			dependencies: ["560A05CD905A3EBA"]
 			description: [
-				"在一切准备就绪之后，您需要保持烈焰人燃烧室处于加热状态，随后向工作盆中置入&6铜锭&r和&6锌锭&r作为材料，一段时间后便可以获得黄铜。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest7AD07D5DBC62292C.description1}"
 				""
-				"黄铜也是一种非常常见的加工材料，因此我非常推荐您在空闲时多多制造以备不时之需。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest7AD07D5DBC62292C.description2}"
 			]
 			hide_until_deps_complete: false
 			id: "7AD07D5DBC62292C"
@@ -420,24 +420,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新世纪材料"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest7AD07D5DBC62292C.subtitle}"
 			tasks: [{
 				id: "074D1B995591F509"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "制成黄铜"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest7AD07D5DBC62292C.title}"
 			x: -10.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["69EF81C377807656"]
 			description: [
-				"在拥有了动力燃烧室后，您就拥有了能够进行&6加热配方&r和&b超级加热配方&r的能力。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest560A05CD905A3EBA.description1}"
 				""
-				"为了制作黄铜，您需要&6将烈焰人燃烧室放置在工作盆下方提供热源&r，随后&6将动力搅拌器其搅拌具朝向工作盆摆放在工作盆上方&r，提供动力进行加工"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest560A05CD905A3EBA.description2}"
 				""
-				"但默认状态下的烈焰人燃烧室是无法提供热量的，为了提供“加热”的条件，您需要&6为烈焰人燃烧室提供常规燃料（如手持煤炭右键）&r，使其进入燃烧状态，才能够让黄铜制作配方正常完成。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest560A05CD905A3EBA.description3}"
 			]
 			hide_until_deps_complete: false
 			icon: "create:mechanical_mixer"
@@ -447,7 +447,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "高温搅拌法"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest560A05CD905A3EBA.subtitle}"
 			tasks: [
 				{
 					id: "361E4EE09EED0669"
@@ -460,20 +460,20 @@
 					type: "item"
 				}
 			]
-			title: "进行动力搅拌"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest560A05CD905A3EBA.title}"
 			x: -7.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
 			description: [
-				"为了制作机械手，我们需要基本的黄铜材料。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest69EF81C377807656.description1}"
 				""
-				"而黄铜则需要通过&6动力搅拌器&r在&6工作盆&r中，在&6加热条件&r下搅拌而成。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest69EF81C377807656.description2}"
 				""
-				"为了满足加热的条件，我们需要一样特殊的加热手段——即&6烈焰人燃烧室&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest69EF81C377807656.description3}"
 				""
-				"您需要制成&6空的烈焰人燃烧室框架&r，而后&6手持框架右键活着的烈焰人或者烈焰人刷怪笼&r，将其转化成为烈焰人燃烧室。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest69EF81C377807656.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -484,7 +484,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制成烈焰人燃烧室"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest69EF81C377807656.subtitle}"
 			tasks: [
 				{
 					id: "749AFA72D122217D"
@@ -497,16 +497,16 @@
 					type: "item"
 				}
 			]
-			title: "高级加热手段"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest69EF81C377807656.title}"
 			x: -3.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["39798147F6F5CD1D"]
 			description: [
-				"为了使玫瑰石英的表面能够光滑到满足电子管制程的基本要求，您需要&6制作一些砂纸&r，随后一手持砂纸，另一手持玫瑰石英，&6对其进行磨制&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest1EE5D53FCD3BCA32.description1}"
 				""
-				"在磨制后，玫瑰石英则可以参与到各种各样的机械制作流程中来。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest1EE5D53FCD3BCA32.description2}"
 			]
 			hide_until_deps_complete: false
 			icon: {
@@ -522,7 +522,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "打磨玫瑰石英"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest1EE5D53FCD3BCA32.subtitle}"
 			tasks: [
 				{
 					id: "0B3D8F3A247A3715"
@@ -533,7 +533,7 @@
 							value: "create:sandpaper"
 						}
 					}
-					title: "任意砂纸"
+					title: "{ftbquests.chapter.425DDADD8D67FA09.quest1EE5D53FCD3BCA32.task.809960987879421717.title}"
 					type: "item"
 				}
 				{
@@ -542,13 +542,13 @@
 					type: "item"
 				}
 			]
-			title: "精修打磨技艺"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest1EE5D53FCD3BCA32.title}"
 			x: -3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6B7A5AE2D8EFD037"]
-			description: ["为了制成电子管，您需要准备一些&6玫瑰石英&r。但通过合成而来的&6粗制玫瑰石&r英无法满足电子管的精度需求。"]
+			description: ["{ftbquests.chapter.425DDADD8D67FA09.quest39798147F6F5CD1D.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "39798147F6F5CD1D"
@@ -557,13 +557,13 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "隐隐温热的特殊晶簇"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest39798147F6F5CD1D.subtitle}"
 			tasks: [{
 				id: "7F7B4CF49983E5CE"
 				item: "create:rose_quartz"
 				type: "item"
 			}]
-			title: "红色晶体"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest39798147F6F5CD1D.title}"
 			x: -3.5d
 			y: -0.5d
 		}
@@ -573,15 +573,15 @@
 				"079B9E3B196A43B6"
 			]
 			description: [
-				"恭喜，您在引导下成功搭建了一台能够&6完全无人看守的自动化动力机械结构&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.description1}"
 				""
-				"尽管它可能非常粗糙，或者甚至无法达到无人值守的要求，但重要的并非是搭建出来的机器是否有用，而是您学会了这种先&6拆分目标而后推导所需物品的基本能力&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.description2}"
 				""
-				"在拥有了这种能力后，&6任何所谓建造机械或者其他的困难都无法能够再阻挡您的探究之路&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.description3}"
 				""
-				"对于我们的机械教学之路来说，这可能是一个终点站。但对于您的探究之路，这可能、或者说&6这一定是一个起点&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.description4}"
 				""
-				"如果遇到无法解决的问题，您也可以选择咨询您的同伴，我作为引导系统，所能做的事情极其有限。最终能够影响事情成败的要素还是取决于您作为人的主观能动性。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.description5}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:oak_log"
@@ -596,7 +596,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "288D903B8EFE4DA1"
-					title: "解锁头衔：&e械学家"
+					title: "{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.reward.2922150318709820833.title}"
 					titleId: "kubejs:mechanics_scholar"
 					type: "titles:title"
 				}
@@ -605,12 +605,12 @@
 					id: "6D9A5847E9A50F2A"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.reward.7897721962433417002.title}"
 					type: "maa:kube"
 				}
 			]
 			shape: "square"
-			subtitle: "长远旅程的起点"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "001CAD1CF4095EF9"
@@ -621,19 +621,19 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "任意种类原木"
+				title: "{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.task.8071639212842745.title}"
 				type: "item"
 			}]
-			title: "建成属于您的第一座“奇迹”"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest1D8E839A9D730C.title}"
 			x: -10.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["213A5C217F398F0D"]
 			description: [
-				"在决定好了该如何摆放这些机械后，为了让几个这些机械形成一个整体，您需要使用&6强力胶右键框选您提前建造摆放好的机械&r，将其粘合成一个整体。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest47637031D6C57B8A.description1}"
 				""
-				"强力胶可以广泛用于动力结构的粘合，因此在您明确要构造动力结构时，请备足强力胶。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest47637031D6C57B8A.description2}"
 			]
 			id: "47637031D6C57B8A"
 			invisible: true
@@ -655,7 +655,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "使用强力胶粘合一切"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest47637031D6C57B8A.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: {
@@ -667,10 +667,10 @@
 				}
 				id: "17C5A9851BDC8FBA"
 				kubeId: "create_intro_task_hard"
-				title: "启用协议"
+				title: "{ftbquests.chapter.425DDADD8D67FA09.quest47637031D6C57B8A.task.1712961622447525818.title}"
 				type: "maa:kube"
 			}]
-			title: "组装动力结构"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest47637031D6C57B8A.title}"
 			x: -14.0d
 			y: 2.0d
 		}
@@ -681,15 +681,15 @@
 				"39DDD2962FC52646"
 			]
 			description: [
-				"&b如果您没有理解下文所说的内容，请您一定要告知我！"
-				"&r"
-				"在拥有了所有的部件后，我们要考虑如何将这些物品组合以满足我们的需求。这里我们需要明确一个特性作为大前提，即&6动力结构在运动时，本身是可以穿过任何方块和实体的&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.description1}"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.description2}"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.description3}"
 				""
-				"首先，树木是需要种植在泥土等基质上的，因此&6机械手指向的位置必须是基质上表面&r才能够正常种植树苗。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.description4}"
 				""
-				"其次，由于动力锯的特殊结构，您需要使其面向侧面，才能够正确使其收割到树木。由于动力锯只能连锁收割其上方的木材，因此&6其摆放位置必须位于基质上1格，与树苗相同的高度&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.description5}"
 				""
-				"最后，对于如何让这些结构运动起来，只要保证&6这些方块能够在动力轴承的驱动下，一体按照圆周轨迹运动&r，即可满足要求。动力轴承本身的动力来源则可以是水车等常见的基本动力源。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.description6}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -708,24 +708,24 @@
 					type: "choice"
 				}
 			]
-			subtitle: "组合的必要条件"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.subtitle}"
 			tasks: [{
 				id: "2023702EFCD15513"
-				title: "我已了解"
+				title: "{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.task.2315817980510950675.title}"
 				type: "checkmark"
 			}]
-			title: "动力结构组合方式"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest213A5C217F398F0D.title}"
 			x: -14.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["213A5C217F398F0D"]
 			description: [
-				"不结合实例的去完成前文所述的操作确实有些强人所难。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3E8E055CA54AFDA5.description1}"
 				""
-				"所幸，前人留下了一些能够让我们快速借鉴前人经验的方法——蓝图加农炮。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3E8E055CA54AFDA5.description2}"
 				""
-				"&6请您制作一门蓝图加农炮&r，我会将前人留存下的实例给予您，并且向您展示如何使用这些经验。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest3E8E055CA54AFDA5.description3}"
 			]
 			id: "3E8E055CA54AFDA5"
 			invisible: true
@@ -766,35 +766,35 @@
 					type: "item"
 				}
 			]
-			subtitle: "更简单的方式"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest3E8E055CA54AFDA5.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "create:schematicannon"
 				id: "30B10B9375A95581"
 				kubeId: "create_intro_task_easy"
-				title: "启动备用协议"
+				title: "{ftbquests.chapter.425DDADD8D67FA09.quest3E8E055CA54AFDA5.task.3508598312660456833.title}"
 				type: "maa:kube"
 			}]
-			title: "借前人之鉴"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest3E8E055CA54AFDA5.title}"
 			x: -14.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["3E8E055CA54AFDA5"]
 			description: [
-				"所谓蓝图加农炮，即是&6能够将前人留下的蓝图打印出来的强力工具&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.description1}"
 				""
-				"请您手持蓝图，选择世界上一个您觉得放置这个蓝图内存储的结构合适的地方进行部署。部署的操作相对比较简单，只需您&6手持蓝图&r，&6选择一个您中意的地方右键确认部署&r，即可让该蓝图绑定在对应的位置。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.description2}"
 				""
-				"而后，您可以通过按住Alt键选择不同的选项，对放置的位置进行微调——对于本蓝图来说，&6您最好将其往下放置一格，使其最下一层嵌入到地表中&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.description3}"
 				""
-				"随后，请您将该&6部署过的蓝图放置在蓝图加农炮内&r。蓝图加农炮会统计构建该蓝图所需的材料数量，您只需要将书本/剪贴板放置在右上角打印出物品清单，&6按照蓝图加农炮的要求补全这些材料&r，并且为其提供发射加农炮的火药。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.description4}"
 				""
-				"在准备完全时，&6点击蓝图加农炮的启动按钮&r，即可完美一比一复刻前人经验的结晶。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.description5}"
 				"{@pagebreak}"
-				"对于其他任意的机械，您都可以采用此种方法——毕竟人类最伟大的智慧，便是&6一代一代累计而来的知识&r，而非刻板教条的闭门造车。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.description6}"
 				""
-				"但独立的思考仍旧是被推荐的，请您在构建完成后，仔细观察其运行的状态，以便未来某天，您也能够创造出如此机构。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.description7}"
 			]
 			hide_dependent_lines: true
 			icon: "create:clipboard"
@@ -804,7 +804,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "部署蓝图"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.subtitle}"
 			tasks: [
 				{
 					id: "5592B6B8D1D22E4A"
@@ -817,16 +817,16 @@
 					type: "item"
 				}
 			]
-			title: "将前人的经验实体化"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest79B9E3B196A43B6.title}"
 			x: -14.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["47637031D6C57B8A"]
 			description: [
-				"对于驱动动态结构来说，动力源并不一定要选择最快、最大的。相反，能够适配动力结构的速度，&6体积最小，维护成本最低的动力源反而会是更优的选择&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest460C9F19E6BA2781.description1}"
 				""
-				"在本项目中，选择&6水车&r一般来说便是一个最优的方案。其转速不仅能够满足一般树场的要求，且不需要特殊人为维护，体积非常小巧。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest460C9F19E6BA2781.description2}"
 			]
 			hide_dependent_lines: true
 			id: "460C9F19E6BA2781"
@@ -835,24 +835,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "选择一个合适的动力源"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest460C9F19E6BA2781.subtitle}"
 			tasks: [{
 				id: "75D60376707FBFCE"
 				item: "create:water_wheel"
 				type: "item"
 			}]
-			title: "选择动力源"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest460C9F19E6BA2781.title}"
 			x: -14.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["47637031D6C57B8A"]
 			description: [
-				"在动态结构运行时，倘若动态结构没有存储空间，动力锯砍伐而下的木材会散落在地面上，难以收集。并且机械手也无法得到长久的树苗补充和回收利用。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest70E5C09736584D90.description1}"
 				""
-				"因此，您可以&6将木桶或者任意存储设施一齐粘合在动态结构上&r。这样，动力锯便可以将所有的收割产物全部纳入该容器中，机械手也可以直接取用容器中的树苗出来种植。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest70E5C09736584D90.description2}"
 				""
-				"但值得注意的是，您需要&6使用树苗在机械手上标记树苗白名单过滤器&r，以保证机械手只会放置树苗出来，而不会放置其他的一些奇怪的东西。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest70E5C09736584D90.description3}"
 			]
 			id: "70E5C09736584D90"
 			rewards: [{
@@ -860,24 +860,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "如何临时存储"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest70E5C09736584D90.subtitle}"
 			tasks: [{
 				id: "3B3521E6D54DB7AB"
 				item: "minecraft:barrel"
 				type: "item"
 			}]
-			title: "动态结构的存储问题"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest70E5C09736584D90.title}"
 			x: -14.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["3E8E055CA54AFDA5"]
 			description: [
-				"通过制作蓝图桌，您可以读取&6外部蓝图&r到当前世界内，进而通过蓝图加农炮进行打印。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest738A2D3BB4DB45B3.description1}"
 				""
-				"获取外部蓝图的方法则非常复杂——因为那是&6只有人类才能够做到的复杂社交活动&r。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest738A2D3BB4DB45B3.description2}"
 				""
-				"您可以&6向你的朋友咨询&r或者&6采用网络媒体进行打印蓝图的查询&r，以获得足够满足生存需求的蓝图。"
+				"{ftbquests.chapter.425DDADD8D67FA09.quest738A2D3BB4DB45B3.description3}"
 			]
 			id: "738A2D3BB4DB45B3"
 			rewards: [{
@@ -885,16 +885,16 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "不再受限于认知"
+			subtitle: "{ftbquests.chapter.425DDADD8D67FA09.quest738A2D3BB4DB45B3.subtitle}"
 			tasks: [{
 				id: "2EDD76F829D8535B"
 				item: "create:schematic_table"
 				type: "item"
 			}]
-			title: "自行借鉴他人之利"
+			title: "{ftbquests.chapter.425DDADD8D67FA09.quest738A2D3BB4DB45B3.title}"
 			x: -14.0d
 			y: -3.0d
 		}
 	]
-	title: "常识：机械"
+	title: "{ftbquests.chapter.425DDADD8D67FA09.title}"
 }

@@ -42,13 +42,13 @@
 		{
 			dependencies: ["473AA9B909ED8EB0"]
 			description: [
-				"很抱歉上个任务使用了有误导性的图标作为奖励——这是我给您的一个警示——&6请您一定要使用您的心灵来观察和思考这个世界&r，只有这样我们才能&6顺利的完成预先设计好的游戏流程&r。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest24C2BCAAAF1E55DE.description1}"
 				""
-				"现在我们应该步入正轨了，请&6寻找一棵树木&r，长按左键采集它下方的&6原木&r，并拾取该物品至物品栏中。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest24C2BCAAAF1E55DE.description2}"
 				""
-				"本任务会&6定期检测您的背包&r，如果存在该物品，那么任务会被视作完成。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest24C2BCAAAF1E55DE.description3}"
 				""
-				"如果一样物品在反复切换显示——这意味着这些物品都被允许作为任务完成的材料。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest24C2BCAAAF1E55DE.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:oak_log"
@@ -58,7 +58,7 @@
 				item: "minecraft:apple"
 				type: "item"
 			}]
-			subtitle: "获取类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest24C2BCAAAF1E55DE.subtitle}"
 			tasks: [{
 				icon: "minecraft:oak_log"
 				id: "49350BAE6BBF1546"
@@ -69,21 +69,21 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "任何种类原木"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest24C2BCAAAF1E55DE.task.5275135382294304070.title}"
 				type: "item"
 			}]
-			title: "砍下第一块原木"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest24C2BCAAAF1E55DE.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["24C2BCAAAF1E55DE"]
 			description: [
-				"如引言所说，我的任务是负责所有任务的引导，其中包含了任务系统本身的使用。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4BEDD898484E1898.description1}"
 				""
-				"本任务要求您&6使用原木在合成栏中&r，将其分解为四个木板，而后将其制成&6工作台&r。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4BEDD898484E1898.description2}"
 				""
-				"该任务仅会检测您的合成，因此请务必保证是您亲手完成该系列操作。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4BEDD898484E1898.description3}"
 			]
 			id: "4BEDD898484E1898"
 			rewards: [{
@@ -91,27 +91,27 @@
 				item: "minecraft:golden_apple"
 				type: "item"
 			}]
-			subtitle: "合成类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4BEDD898484E1898.subtitle}"
 			tasks: [{
 				id: "34F9DD77E5473C23"
 				item: "minecraft:crafting_table"
 				only_from_crafting: true
 				type: "item"
 			}]
-			title: "制作工作台"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4BEDD898484E1898.title}"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4BEDD898484E1898"]
 			description: [
-				"工作台的意义便是解锁更多的配方，在之后的旅途中，绝大多数的配方都需要在工作台中完成。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest605D95ACD24F7A46.description1}"
 				""
-				"当然，工作台也并不一定需要放置在地面上才能够使用。通过打开自己的背包，对工作台物品按下鼠标右键，可以直接在背包中打开对应的合成界面。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest605D95ACD24F7A46.description2}"
 				""
-				"现在，您需要合成出一个木镐，并且挖掘至少 3 块圆石类方块。随后，将&6圆石&r均&6提交&r到本任务&r中。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest605D95ACD24F7A46.description3}"
 				""
-				"本任务会消耗掉您的木镐和圆石，作为交换，会返还给您性能更为优秀的石镐。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest605D95ACD24F7A46.description4}"
 			]
 			icon: {
 				Count: 1
@@ -143,7 +143,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "提交类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest605D95ACD24F7A46.subtitle}"
 			tasks: [
 				{
 					id: "6E1307B08DAD2260"
@@ -167,20 +167,20 @@
 							value: "forge:cobblestone"
 						}
 					}
-					title: "任意圆石"
+					title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest605D95ACD24F7A46.task.977578090640811260.title}"
 					type: "item"
 				}
 			]
-			title: "制作木镐"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest605D95ACD24F7A46.title}"
 			x: 0.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["605D95ACD24F7A46"]
 			description: [
-				"当您学会制作工具之后，第一件事便是不断提高挖掘等级。因此，制作并且使用一个熔炉是一件非常重要的事情。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest18544E5B62DBC5EF.description1}"
 				""
-				"通过&6工作台&r合成出&6熔炉&r，将其放置到地面上，使用&6鼠标右键打开其界面&r，便可以完成本任务。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest18544E5B62DBC5EF.description2}"
 			]
 			id: "18544E5B62DBC5EF"
 			rewards: [{
@@ -188,27 +188,27 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			subtitle: "方块使用类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest18544E5B62DBC5EF.subtitle}"
 			tasks: [{
 				block: "minecraft:furnace"
 				block_type: 0
 				checkItem: false
 				id: "68BEB51F1B755E8D"
 				isItemInteraction: false
-				title: "使用一次熔炉"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest18544E5B62DBC5EF.task.7547669170728820365.title}"
 				type: "questsadditions:use"
 				value: 1L
 			}]
-			title: "使用熔炉进行加工"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest18544E5B62DBC5EF.title}"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["18544E5B62DBC5EF"]
 			description: [
-				"在预先设定好的游戏流程中，您需要在世界中向下挖掘，获取到一定量的&n&6铁矿石&r来提高您的挖掘等级。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest24908FF341485C05.description1}"
 				""
-				"当然，您也可以通过世界中的战利品来获取铁锭。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest24908FF341485C05.description2}"
 			]
 			icon: "minecraft:iron_ingot"
 			id: "24908FF341485C05"
@@ -218,7 +218,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			subtitle: "关键生存物资"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest24908FF341485C05.subtitle}"
 			tasks: [{
 				id: "457B9B3D155232F6"
 				item: "minecraft:iron_ingot"
@@ -230,13 +230,13 @@
 		{
 			dependencies: ["24908FF341485C05"]
 			description: [
-				"经过确认，这个世界并非跟与程式设定时所预期的世界相符。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4E805DA2B8D171E4.description1}"
 				""
-				"这种情况的原因复杂，通常涉及到&6新变量引入/外部环境更新/数据异常变更/极端边界场景&r。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4E805DA2B8D171E4.description2}"
 				""
-				"万幸，在Neo，即&6我&r，的程式设计之初，便考虑到了这种情况的出现，因此我会通过我所有的&6能力/权利/权限/功能/手段&r，确保您的世界流程正常&6演化/发展/进行/驱动&r。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4E805DA2B8D171E4.description3}"
 				""
-				"但我的所管辖权仅能覆盖任务引导区域，全面的对世界的扫描是&6被禁止/严格限制/&6无法做到&r。但我会尽力以我的方式理解这个世界运行的最新规则，以辅佐您完成应当完成的事。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4E805DA2B8D171E4.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:cookie"
@@ -248,22 +248,22 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "检测到异常"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4E805DA2B8D171E4.subtitle}"
 			tasks: [{
 				id: "0DC7518EA5C12788"
-				title: "知晓"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4E805DA2B8D171E4.task.992851915966588808.title}"
 				type: "checkmark"
 			}]
-			title: "计划有变"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4E805DA2B8D171E4.title}"
 			x: 0.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
 			description: [
-				"尽管世界存在有部分异常，但目前来看，异常所造成的影响并未对旧流程产生较大的影响。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest563D136C06E38A60.description1}"
 				""
-				"因此，请您在获得铁锭后制作铁镐，随后在世界上获取到&6钻石&r。获取钻石的流程可能并非来源于采掘，更有可能来自于世界上的自然生成，因此在这里并不对您的获取方式做任何限制。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest563D136C06E38A60.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "563D136C06E38A60"
@@ -272,47 +272,47 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "前往另一维度"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest563D136C06E38A60.subtitle}"
 			tasks: [{
 				id: "18FA21A0577F4290"
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			title: "更高效的采掘方案"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest563D136C06E38A60.title}"
 			x: 0.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
-			description: ["通过黑曜石搭建出下界门框架，您便可以轻松的访问&6下界维度&r。"]
+			description: ["{ftbquests.chapter.0AC42F4BE2EDBB08.quest4A1C6C6150E32CEE.description1}"]
 			id: "4A1C6C6150E32CEE"
 			rewards: [{
 				id: "35FE1E0C7ADC68BD"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "维度检测类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4A1C6C6150E32CEE.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "infinity:f4"
 				id: "7337839B31A591B5"
-				title: "访问下界"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4A1C6C6150E32CEE.task.8302249140656902581.title}"
 				type: "dimension"
 			}]
-			title: "前往下界"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4A1C6C6150E32CEE.title}"
 			x: 0.0d
 			y: 10.5d
 		}
 		{
 			dependencies: ["4A1C6C6150E32CEE"]
 			description: [
-				"某些时候，我可能需要您&6提交流体&r来完成任务，作为一类相对麻烦的任务类型，您可以按照以下步骤来完成流体的提交，同时这可能是成本最低的提交方式。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.description1}"
 				""
-				"&71.&r 在任务中领取对应的&6任务屏幕&r，我会在此类任务中为您发放特殊的&6用于任务提交的特殊任务屏幕&r，其可以被视作一个用于提交物品/流体的接口放置在世界上。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.description2}"
 				""
-				"&72.&r  在领取完毕后，将&6水龙头&r放置在&6任务屏幕上方&r，将&6流体源&r/&6装有流体的储罐&r放置在水龙头的另一端。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.description3}"
 				""
-				"&73.&r 打开水龙头，如果任务是可进行的，则流体会被抽取到任务屏幕中，即可完成该任务。 "
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.description4}"
 			]
 			icon: "minecraft:lava_bucket"
 			id: "07EF7BB4192A11D0"
@@ -321,7 +321,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "流体检测类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.subtitle}"
 			tasks: [
 				{
 					id: "24B832A70D8B8FAF"
@@ -335,7 +335,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.task.2645920474148343727.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -348,20 +348,20 @@
 					amount: 1000L
 					fluid: "minecraft:lava"
 					id: "783EED89DD910463"
-					title: "一桶岩浆"
+					title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.task.8664623909490984035.title}"
 					type: "fluid"
 				}
 			]
-			title: "将岩浆带回家"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest7EF7BB4192A11D0.title}"
 			x: 0.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["288B079239EA5947"]
 			description: [
-				"在下界要塞中存在烈焰人刷怪笼以及大量的烈焰人。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest50BA5AF34D9AA99F.description1}"
 				""
-				"通过&6击杀烈焰人&r，您便可以取得烈焰棒用于制作末影之眼。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest50BA5AF34D9AA99F.description2}"
 			]
 			icon: {
 				Count: 1
@@ -374,24 +374,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "击杀类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest50BA5AF34D9AA99F.subtitle}"
 			tasks: [{
 				entity: "minecraft:blaze"
 				id: "64049A20FB6EFCA6"
-				title: "击杀烈焰人"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest50BA5AF34D9AA99F.task.7207054770147622054.title}"
 				type: "kill"
 				value: 1L
 			}]
-			title: "获取烈焰棒"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest50BA5AF34D9AA99F.title}"
 			x: 0.0d
 			y: 15.0d
 		}
 		{
 			dependencies: ["07EF7BB4192A11D0"]
 			description: [
-				"为了能够前往末地，完成我们的旅途，您需要获取烈焰棒进而制作末影之眼定位要塞。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest288B079239EA5947.description1}"
 				""
-				"为了获得烈焰棒，&6您需要寻找到下界要塞&r。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest288B079239EA5947.description2}"
 			]
 			id: "288B079239EA5947"
 			rewards: [{
@@ -399,12 +399,12 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "结构寻找类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest288B079239EA5947.subtitle}"
 			tasks: [{
 				icon: "minecraft:nether_bricks"
 				id: "2FFB80D5DDBA6705"
 				structure: "minecraft:fortress"
-				title: "寻得下界要塞"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest288B079239EA5947.task.3457498794973357829.title}"
 				type: "structure"
 			}]
 			x: 0.0d
@@ -412,20 +412,20 @@
 		}
 		{
 			dependencies: ["50BA5AF34D9AA99F"]
-			description: ["当您制作了足够数量的末影之眼后，便可以出发&6在主世界中寻找要塞&r了。"]
+			description: ["{ftbquests.chapter.0AC42F4BE2EDBB08.quest287364726E87F8F4.description1}"]
 			id: "287364726E87F8F4"
 			rewards: [{
 				id: "1C8332D5B21EBBFD"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "特殊条件检测类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest287364726E87F8F4.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "minecraft:ender_eye"
 				id: "42C848E87907FBA3"
 				kubeId: "ender_eye_use"
-				title: "使用末影之眼定位要塞"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest287364726E87F8F4.task.4812176365145553827.title}"
 				type: "maa:kube"
 			}]
 			x: 0.0d
@@ -434,9 +434,9 @@
 		{
 			dependencies: ["287364726E87F8F4"]
 			description: [
-				"当您成功到达末地后，您需要等待片刻，在末影龙出现时，将其击杀，进而取得该成就。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest62CEA192AD10DD8A.description1}"
 				""
-				"击杀末影龙的方法很多，一般玩家会选择&6将周围的末影水晶全部拆除&r后，慢慢击杀。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest62CEA192AD10DD8A.description2}"
 			]
 			id: "62CEA192AD10DD8A"
 			rewards: [{
@@ -444,26 +444,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "成就检测类任务"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest62CEA192AD10DD8A.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_portal_frame"
 				id: "10D9F9B4809774E8"
-				title: "前往末地"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest62CEA192AD10DD8A.task.1214276128199898344.title}"
 				type: "dimension"
 			}]
-			title: "击杀末影龙"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest62CEA192AD10DD8A.title}"
 			x: 0.0d
 			y: 18.0d
 		}
 		{
 			dependencies: ["62CEA192AD10DD8A"]
 			description: [
-				"在您击杀完成末影龙，取得成就后，仅需要跃入末地主岛中间出现的传送门即可返回主世界！"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4C247D4E88F1A179.description1}"
 				""
-				"&6在这个返回过程中，会展示终末之诗，以赞扬您能够顺利完成这趟短暂的旅程！&r"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4C247D4E88F1A179.description2}"
 				""
-				"而&6我的引导任务也会在您看完终末之诗后结束&r，希望在下个世界能再次和您相遇！"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest4C247D4E88F1A179.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -485,33 +485,33 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "4618F9DF74819AD0"
-					title: "解锁头衔：&e终末舞者"
+					title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4C247D4E88F1A179.reward.5051061720223685328.title}"
 					titleId: "kubejs:ender_dancer"
 					type: "titles:title"
 				}
 			]
-			subtitle: "冒险故事圆满结束！"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4C247D4E88F1A179.subtitle}"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "minecraft:grass_block"
 				id: "03C7F088B8AB6150"
-				title: "回到主世界"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4C247D4E88F1A179.task.272450772483662160.title}"
 				type: "dimension"
 			}]
-			title: "&6我们的故事结束了&r"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest4C247D4E88F1A179.title}"
 			x: 0.0d
 			y: 19.5d
 		}
 		{
 			dependencies: ["4C247D4E88F1A179"]
 			description: [
-				"稍等下，这个任务本用于作为一个兜底方案——即玩家无法正常从末地返回主世界时使用的特殊任务。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.description1}"
 				""
-				"但本次情况稍有特殊，似乎&6在返回时，您未能正常触发终末之诗的画面&r，进而导致我的程序没有正常的终止。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.description2}"
 				""
-				"&6所幸，在创建之初，我便设计了重置方案，只要如果您能够帮助我完成重启，我和您的故事应当便可以迎来结束。&r"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.description3}"
 				""
-				"接下来，我会授予您内部的权限——我因各种限制，无法在内部指引您，因此请您多加小心。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "supplementaries:hourglass"
@@ -526,29 +526,29 @@
 					auto: "no_toast"
 					icon: "cataclysm:crystallized_coral_fragments"
 					id: "536EA12EC1532589"
-					title: "内部访问权限授予"
+					title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.reward.6011919774770210185.title}"
 					type: "custom"
 				}
 			]
 			shape: "none"
-			subtitle: "程序未正常终止"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.subtitle}"
 			tasks: [{
 				id: "083BE38633236C85"
-				title: "什么？"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.task.593317941452434565.title}"
 				type: "checkmark"
 			}]
-			title: "等下. . .出现了些问题"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest5417CA220CCAE3C5.title}"
 			x: 0.0d
 			y: 21.0d
 		}
 		{
 			dependencies: ["563D136C06E38A60"]
 			description: [
-				"在这个世界中，似乎有大量的&6概念&r被具象化为了另一种形式——比如说一种&6饰品&r。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest7E16877C14CFD254.description1}"
 				""
-				"这种名为誓言的饰品即是其中一类，您可以轻松制作名为&6永恒的誓言&r的誓言饰品。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest7E16877C14CFD254.description2}"
 				""
-				"誓言饰品具有着&6扭曲游戏规则&r的作用，往往能对游戏流程发挥着举足轻重的作用。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest7E16877C14CFD254.description3}"
 			]
 			id: "7E16877C14CFD254"
 			rewards: [{
@@ -556,24 +556,24 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			subtitle: "概念具象化"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest7E16877C14CFD254.subtitle}"
 			tasks: [{
 				id: "27E28F7234FC01A5"
 				item: "kubejs:eternal_oath"
 				type: "item"
 			}]
-			title: "名为誓言的胸针"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest7E16877C14CFD254.title}"
 			x: 2.0d
 			y: 9.0d
 		}
 		{
 			dependencies: ["4BEDD898484E1898"]
 			description: [
-				"有些时候，您需要对比多个物品信息。可以通过&6固定提示框按键（默认为~）&r将物品提示固定到屏幕。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest246F98FFF269D869.description1}"
 				""
-				"若您需要取消已经固定的物品提示，则可以通过&6右键点击该提示框取消其固定状态&r。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest246F98FFF269D869.description2}"
 				""
-				"有些时候，在物品描述中会存在有带下划线的表述。您可以通过将其物品提示框固定后，将&6鼠标悬浮在下划线文字上&r查看进一步信息。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest246F98FFF269D869.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:item_frame"
@@ -584,22 +584,22 @@
 				item: "minecraft:emerald"
 				type: "item"
 			}]
-			subtitle: "更好的阅读方式"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest246F98FFF269D869.subtitle}"
 			tasks: [{
 				id: "325AF4FD5827BF39"
-				title: "我已了解"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest246F98FFF269D869.task.3628481818743258937.title}"
 				type: "checkmark"
 			}]
-			title: "悬浮物品框"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest246F98FFF269D869.title}"
 			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["4C247D4E88F1A179"]
 			description: [
-				"在获取到头衔时，您可以通过&6打开头衔界面（默认按键L）&r来配置对应的头衔。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest64C657D9C3B6A3AA.description1}"
 				""
-				"通过点击头衔界面的左上角按钮，可以让头衔显示名称在里/表之间反复切换。"
+				"{ftbquests.chapter.0AC42F4BE2EDBB08.quest64C657D9C3B6A3AA.description2}"
 			]
 			icon: "titles:title_scroll_rare"
 			id: "64C657D9C3B6A3AA"
@@ -608,16 +608,16 @@
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			subtitle: "如何使用头衔"
+			subtitle: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest64C657D9C3B6A3AA.subtitle}"
 			tasks: [{
 				id: "2A768C4699CA30AC"
-				title: "我已了解"
+				title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest64C657D9C3B6A3AA.task.3059787231700594860.title}"
 				type: "checkmark"
 			}]
-			title: "使用头衔"
+			title: "{ftbquests.chapter.0AC42F4BE2EDBB08.quest64C657D9C3B6A3AA.title}"
 			x: 1.5d
 			y: 19.5d
 		}
 	]
-	title: "序章"
+	title: "{ftbquests.chapter.0AC42F4BE2EDBB08.title}"
 }

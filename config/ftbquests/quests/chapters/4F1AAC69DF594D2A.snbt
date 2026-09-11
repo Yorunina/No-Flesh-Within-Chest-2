@@ -21,188 +21,188 @@
 		{
 			dependencies: ["06D86C160EFEE66B"]
 			description: [
-				"首先声明，&6本章节完全独立于游戏流程之外&r，本章节内的任何设计均与主线流程、暗示、隐藏信息等无关，仅仅是作为故事结尾的&6日后谈&r而存在，且绝大部分内容毫无营养。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.description1}"
 				""
-				"&6首先，恭喜你完成本整合包目前的所有流程，特别庆祝。&r"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.description2}"
 				""
-				"可能您现在非常关心于那孱弱的剧情最后叙述了什么——或者说，剧情最后会真的只是这样吗——是的，现阶段只是这样，但后续的更新会不断补足 \\& 修正这些内容，前提是如果我会接着更新。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.description3}"
 				""
-				"做本整合包的目的一方面是证明&6脆1真的是无心之作&r，本质只是将我觉得好玩的东西添到一起而做出的作品，根本没所谓设计可言，因此设计了脆2以证明这样的整合包至少应当达到什么样的要求；"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.description4}"
 				""
-				"另一方面则是我想要进入自媒体行业，因此&6我需要一个作品来让我的身份得以为众人知&r——进而以更好的姿态起步。如果你对整合包内容满意，你可以在下面点击打开我的个人主页关注我，非常感谢；"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.description5}"
 				""
-				"当然了，正如商人不会让自己的利润率低于百分之两百——作为一个还算理智的成年人，其实这个整合包还具有第三方面的目的，即是尝试用该形式，向所有整合包作者、玩家证明，传统模式的整合包还是有出路的，&6传统整合包仍旧可以通过同样的模组进行内容的差异化&r——目前，我试图在用本整合包来触摸这个概念的顶峰。不过我的技术力太低，无法完全实现，但你们或许可以。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.description6}"
 				""
-				"{\"text\":\"是的，你可以点这里关注我\",\"underlined\":true,\"color\":\"gold\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/12669477\"}}"
+				"[\"\",{\"color\":\"gold\",\"underlined\":true,\"translate\":\"ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.rich_description1\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/12669477\"}}]"
 			]
 			id: "0C9135B3D0FBF45E"
-			subtitle: "既然结束了，自然也没啥奖励了"
+			subtitle: "{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.subtitle}"
 			tasks: [{
 				icon: "minecraft:oak_sapling"
 				id: "3B091E40373B0F66"
-				title: "诚如我之所言"
+				title: "{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.task.4253964584181501798.title}"
 				type: "maa:auto_complete"
 			}]
-			title: "结束了"
+			title: "{ftbquests.chapter.4F1AAC69DF594D2A.questC9135B3D0FBF45E.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0C9135B3D0FBF45E"]
 			description: [
-				"如若您真的有好好游玩游戏流程而不是通过创造直接浏览到这里，想必你会发现本整合包的一个重要特点——即&6任务、内容、机制的大幅差异化&r。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.description1}"
 				""
-				"理论上说，你在本整合包中的每个章节，所需的操作流程都具有极大的差异——这也是我在流程设计中所故意而为的——尽可能将多种类的游戏内容压缩到少量的游戏流程内，加速玩家体验差异化内容的进度。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.description2}"
 				""
-				"解释到这里可能有些抽象，那不妨我们举一个实际的例子，比如说&6我最满意的创世工匠章节&r——通常来说，Tetra为核心的整合包更多的会关注于材料的收集（因为这样可以驱动玩家去体验其他的模组内容）。但是本整合严格遵循认知为教程、传闻为模组主题深化；秘闻为模组交叉领域的基本概念。因此类如创世工匠等传闻章节，我就不能像常规整合包作者那样通过一个武器原理图拉着你满世界收集——没太大意义的材料。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.description3}"
 				""
-				"相对的，创世工匠章节真真正正将内容聚焦在了锻造这一件事上——这归功于对FTB检测能力的有效扩展，我可以用前所未见的方式检测玩家行为并且对应做出反馈。以此我可以将&6工具预锻造&r、&6传古化&r这些在普通整合包似乎都不值一提的小事上升到另一领域，降低玩家的理解成本，提高玩家行为价值。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.description4}"
 				""
-				"除此之外，创世工匠的后半部分——即&6卷轴锻造&r，也是一个非常容易想到的一个特色内容。差异化于普通的武器锻造，由于本整合包的锻造遗迹已经是非必须的探索内容，因此我需要将所有的卷轴都添加一个可以合理化获取的方式。一个很容易想到的方案便是将卷轴也通过锻造的方式锻造出来，进而精密的检测（实际上由于现在材料少，并不精密）玩家对材料和锻造的理解。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.description5}"
 				""
-				"最后的&6新世界工艺和真正的创世工艺则是对玩家的奖赏&r，这两者同样也会对玩家后续的游玩历程有着极其深刻的影响——进而，在创世工匠的寥寥三十几个任务间，便可以让玩家完全体验到几乎所有的Tetra内容（和相对应的延展）。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.description6}"
 				""
-				"类似的，大世界计算机、重现黄金乡、胸腔扩容也都是同样的原理，更多的则是专注于模组内容的全面展示和特色扩展。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.description7}"
 			]
 			id: "5C0E3884B9F53E18"
-			subtitle: "诚如我之所言"
+			subtitle: "{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.subtitle}"
 			tasks: [{
 				id: "2AFF3264BA57654B"
 				item: "minecraft:apple"
 				type: "item"
 			}]
-			title: "关于任务差异化"
+			title: "{ftbquests.chapter.4F1AAC69DF594D2A.quest5C0E3884B9F53E18.title}"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0C9135B3D0FBF45E"]
 			description: [
-				"其实本整合包的终章是比较粗糙的，有很多可以细化的地方。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest64E02B5B24B254D2.description1}"
 				""
-				"如果后续进行更新，&6终章内容的细化&r是必然会进行的。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest64E02B5B24B254D2.description2}"
 				""
-				"在此之外，则是增加更多的原创秘闻章节，对现有的器官效果进行不断的修改和深化——不太可能会再加入新的其他的引入大量内容的模组，除非它真的很好。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest64E02B5B24B254D2.description3}"
 				""
-				"后续更新的方向还是很多的，比如说&6植物类器官&r——实际上你已经可以在最初版本看到植物类器官，但是其并没有合成方式——与其对应的秘闻章节；&6Tetra工具、盔甲类型的进一步深化&r；&6更复杂战斗场景的搭建&r，而不是仅仅基于永恒祭坛，可能会有一个难度增加的狩猎维度或者类似于商店维度一样生成出来的地牢无尽维度等等。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest64E02B5B24B254D2.description4}"
 				""
-				"但另一个角度说，存在有一种可能性，后续的更新并不是我进行的——正如前文所言，我的目标其实并不是做整合包——做整合包需要消耗大量的精力去跟MC的机制斗智斗勇，还必须在MC的框架内讨好所有玩家。看似做MC整合包是一种偷懒做独游的方式，但实际上在精细化到某种地步时，MC作为制作载体反而对制作起到了极大的“负作用”。所以如果该项目效果不好，那轶闻此处写作的所有文本将会作为对后人的教诲指导他们更新——至于能做到什么程度则不为人知了。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest64E02B5B24B254D2.description5}"
 			]
 			id: "64E02B5B24B254D2"
-			subtitle: "诚如我之所言"
+			subtitle: "{ftbquests.chapter.4F1AAC69DF594D2A.quest64E02B5B24B254D2.subtitle}"
 			tasks: [{
 				id: "3D8F049E5E7DCBF3"
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			title: "关于更新计划"
+			title: "{ftbquests.chapter.4F1AAC69DF594D2A.quest64E02B5B24B254D2.title}"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["0C9135B3D0FBF45E"]
 			description: [
-				"我并非专业于游戏制作或相关领域的人，但自诩有些游戏理解，因此在此谈论一二。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description1}"
 				""
-				"我在制作脆1时实际想法便是做自己觉得有趣的——因此整合包内部并没有包含任何针对于玩家的思考。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description2}"
 				""
-				"但脆2制作时，我有着明确的目标——我应当、且能够做出来一个在传统整合包领域长时间霸榜的整合包。因此&6脆2中包含了大量与玩家的“心理战”&r。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description3}"
 				""
-				"这些心理战起源于我对玩家画像的基本把握和一些我个人认为的定理。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description4}"
 				""
-				"从游玩经历来说，&6脆1的玩家大部分为初入整合包、整合包轻度玩家、原版玩家、入坑MC的玩家组成&r，该部分玩家占比保守50%，最多约85%。因此我的主要目的就是为了服务这些玩家，保证整合包长期风评稳定。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description5}"
 				""
-				"其次，存在&6有约10~20%的资深玩家&r。这部分玩家尽管数量少，但会明显影响到整合包风评，因此我需要故意在整合包中设计一些可以跳跃阶段、可以无限刷、可以长期游玩的构筑系统，以确保这些玩家对于脆2的内容估计基本稳定，维护社区基本稳定。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description6}"
 				""
-				"从游玩趋向来说，脆1给玩家的印象是生存要素与战斗要素的结合，器官的构筑具有一定深度，但并不是所有玩家都能够接受，因此作为兜底方案的大胃王具有大量的选取率，本质是非强度类玩家对游戏内容的妥协。因此我最初的估计中，&6脆2就一定是要以生存要素为核心的整合包&r——后来在我发布前的一个投票也验证了这一观点。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description7}"
 				""
-				"&6大部分玩家（约占比50%）期望生存要素作为游戏核心&r——所谓生存要素，即类如资源积累、基地建设、世界探索等近原版玩法。&6部分玩家（约30%）期望以战斗要素作为游戏核心&r——以战斗驱动的核心流程，内容表现在Boss战、生存压力等方面。其余玩家则选择了我故意设置的一个模糊选项——即解密类流程，该部分玩家在调查问卷中相当于在生存和战斗中摇摆不定，他们更趋向于看到新的形式、未探索过的内容，一些奇思妙想结合在流程中。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description8}"
 				"{@pagebreak}"
-				"其实以我对玩家群体的理解，本可以不需要这个调查问卷——但我已经三年没有发布过新整合了。而&6这三年间，国内大量的整合包将冒险的概念塑造成了刷宝、堆数字、跑流程的代名词&r——进而极大的影响了当前冒险包圈子内很多整合包作者对于自己作品的定义。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description9}"
 				""
-				"这些环境变更以至于&6我无法将脆骨症2定义为冒险整合包，而只能定义为水槽包&r。但从传统定义来说，脆2反而更接近与冒险包的定义（至少我个人是这么觉得）。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description10}"
 				""
-				"我并不是觉得这样不好，也不是反对将冒险包重新定义，但&6环境的单一化必然会导致卷无可卷，进而演变为玩家所说的“没有好整合了”&r。你可以将其视作一种垄断，也可以将其看作因为环境单一时，系统对外界干扰的抗灾能力下降的表现。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description11}"
 				"{@pagebreak}"
-				"书归正传，关于游戏艺术美学，脆2通过任务设计，真真正正勉强达到了让MC整合包做这件事的边界——仅仅是摸到边界。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description12}"
 				""
-				"你可能问，美学在哪？在插图吗？那跟你有啥关系，那不是喵条画的吗？"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description13}"
 				""
-				"实际上，本整合包的美学即是在我能够预料到玩家所预料之后之事，因为&6系统极度收敛&r，我可以真正意义上与玩家展开心理战，预测玩家心理，进而精确操控玩家对整合包的期待。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description14}"
 				""
-				"举例来说，脆2的未成型肿瘤其实是可以看到成型结果，这是故意而为之的，这是给精进玩家的奖励而非故障；狐狸尾巴实际上是为了和滑翔翼配合而故意制作的，因为我们这个版本并没有风弹（后续应该会有）；探知胃袋故意做了和Lootr战利品箱、桶的兼容等等。除此之外，在任务系统中，初始任务的隐藏任务实际上是为了让玩家做一个背包和床；很多需要找特定结构的任务是故意做成X选Y的以避免找结构；所有秘闻、传闻的隐藏条件都有故意的勾引内容设计，尽管隐藏但实际上很容易触发等等。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description15}"
 				""
-				"除此之外，在游戏美学角度，每个章节都有着明确的构型。即&6旧内容 ➡新内容➡能力扩展&r。举例来说，脆2的大局构型是以&6认知➡传闻➡秘闻&r的，即&6基本内容➡精进内容➡杂合内容&r。对应到章节，传闻和秘闻则是用&6差异化内容➡解锁特定能力➡特定竞争目标&r构成。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description16}"
 				""
-				"&6总之，上面所说的既可能是我的臆想，也可能切有其事. . .但不管怎么样，做出来就是这样了。如果你觉得做得不错，那或许真的有美学存在，或者掌管美学的神存在。&r"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.description17}"
 			]
 			id: "1DFCDE3E77516E67"
-			subtitle: "诚如神之所言"
+			subtitle: "{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.subtitle}"
 			tasks: [{
 				id: "44DB9FFDD293BF2C"
 				item: "minecraft:stick"
 				type: "item"
 			}]
-			title: "关于游戏艺术美学"
+			title: "{ftbquests.chapter.4F1AAC69DF594D2A.quest1DFCDE3E77516E67.title}"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1DFCDE3E77516E67"]
 			description: [
-				"&6实际上脆2只做了16个月。&r"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description1}"
 				""
-				"原本我还有一个名为&6Sea Hai&r的项目，但因为一些原因泡汤了——而且很多玩家其实是不满意我在理想箱和黯光的发挥的，因此他们也不对Sea Hai有任何的好感。所以我选择放弃Sea Hai而是继承脆1的IP，进而&6打造一个就算做成屎也会成功的作品&r，脆2。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description2}"
 				""
-				"一开始推进完全是我和浅色丸子做的，原计划是制作一个类如脆1的整合包——其实那个版本的脆2更符合现在很多冒险包资深玩家对脆2的预期。但由于各种原因，我本来交给丸子的任务制作他并没有顺利完成，因此我自己扛下了任务的大旗。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description3}"
 				""
-				"而我本就是一个生性不安分的人，任何我感兴趣的领域只要让我稍微待一段时间都会掀起一些波浪. . .所以自然做任务的时候我也没多老实。我的技术力较低，但扩展任务能力还是绰绰有余，因此我便开始&6专研于如何用几乎相同的任务系统来表现出不同的游戏内容&r。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description4}"
 				""
-				"得益于喵凹条的加入，我的材质（包括后续的器官、武器建模、任务插图）得到了几乎完美的保障——我甚至不需要提供每个章节的想法，他便可以根据每个章节的内容自行编排，我只需要根据他的设计图造火箭就可以了（造火箭指的是在FTB中做像素级的材质拼合）。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description5}"
 				""
-				"因此，&6原计划在25年9月份发布的脆2，推迟到了26年2月&r，这也是你可以在沉浸式音乐中看到有春节序曲的原因（当然你也可以留到明年用）。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description6}"
 				""
-				"但26年2月的时候，发生了三件事，第一则是&6匠魂替换为Tetra&r，这花了半个月时间重做任务和流程；其次是&6终局内容的设计&r，这也花了半个月；最后则是&6商店方案的设计&r，从Oath到现在的Room。所以就一拖再拖，就&6到了26年6月&r。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description7}"
 				""
-				"如果你对为什么匠魂要替换成Tetra感兴趣，我可以详细解释给你听，但是这里的位置太小，就不写了，感兴趣可以关注我，或许某天我会为所有的观众解释这背后的设计原理。你只需要知道——这是有充分理由、绝对坚实的理由制成的，而不是某些玩家所说的“一拍脑袋”而促成的。最初将Tetra换为匠魂我就犹豫了十几天，而最后匠魂换为Tetra又犹豫了十几天，我可以以不带有任何偏见的方式说——&6在这里，Tetra确实要完全优于匠魂，仅限在这里&r。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description8}"
 				""
-				"所以三年到了，脆2做完了，这可能是最后一个整合包，但无所谓了。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description9}"
 				""
-				"&6哦对了，我不推荐你去做整合包，除非你真的没事干。&r"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.description10}"
 			]
 			id: "0ED5C15F47A1A725"
-			subtitle: "诚如我之所言"
+			subtitle: "{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.subtitle}"
 			tasks: [{
 				id: "5526CB5407265628"
 				item: "minecraft:ladder"
 				type: "item"
 			}]
-			title: "关于三年"
+			title: "{ftbquests.chapter.4F1AAC69DF594D2A.questED5C15F47A1A725.title}"
 			x: -5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5C0E3884B9F53E18"]
 			description: [
-				"实际上我在做任务的时候，流程还没做完。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest29C32F9F589758C8.description1}"
 				""
-				"我有一段时间在反复强调&6产研一体的局部优势&r——即能够根据技术能力边界确切的得到产品方案，产品方案是动态和技术细节结合的——这最终表现在了我的开发流程上，实际上脆2的任务做了6个月（是的，我几乎每天都做4~8小时，可参考我的录播或者Git History），因为每段任务我都需要合进去一个特殊的机制作为流程差异化的内容，因此写一个任务我可能就要停下来做一大堆特殊机制和功能扩展。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest29C32F9F589758C8.description2}"
 				""
-				"很多人可能觉得这太夸张了，确实我也这么觉得，因为&6一个任务要做两三个小时这本就特别离奇&r——但又不那么离奇。你可以仔细回想一下那些声称自己有上千任务的整合包，是否其大量任务的检测条件均为堆量任务。对于一个整合包来说，如果能够有200~300的流程任务，其实就已经够玩家去享受了，更多的任务都是对玩家的负担——尤其是你没有做任务隐藏，没有做流程控制，没有做玩家心理预期建设。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest29C32F9F589758C8.description3}"
 				""
-				"所以做&6流程差异化是一件非常耗费精力的事情&r，尽管在最后的展现上可能就是玩家一扫而过的东西——但每个一扫而过的背后都有大量的边界条件，有大量的优化点，有大量的取舍。这每件事都是需要时间成本的。"
+				"{ftbquests.chapter.4F1AAC69DF594D2A.quest29C32F9F589758C8.description4}"
 			]
 			id: "29C32F9F589758C8"
-			subtitle: "诚如我之所言"
+			subtitle: "{ftbquests.chapter.4F1AAC69DF594D2A.quest29C32F9F589758C8.subtitle}"
 			tasks: [{
 				id: "60B946B61A338CEA"
 				item: "minecraft:golden_apple"
 				type: "item"
 			}]
-			title: "关于流程之差异化"
+			title: "{ftbquests.chapter.4F1AAC69DF594D2A.quest29C32F9F589758C8.title}"
 			x: 5.0d
 			y: 0.0d
 		}
 	]
-	title: "轶闻"
+	title: "{ftbquests.chapter.4F1AAC69DF594D2A.title}"
 }

@@ -8,16 +8,16 @@
 			icon: "minecraft:slime_ball"
 			ignore_reward_blocking: true
 			kubeId: "unlock_create_intro_task_easy"
-			title: "感觉没听懂，独立完成有点难"
+			title: "{ftbquests.loot_table.7339994821011760246.item_1}"
 			type: "maa:kube"
 		}
 		{
 			icon: "create:wrench"
 			ignore_reward_blocking: true
 			kubeId: "unlock_create_intro_task_hard"
-			title: "我完全明白，我能独立完成"
+			title: "{ftbquests.loot_table.7339994821011760246.item_2}"
 			type: "maa:kube"
 		}
 	]
-	title: "机械认知抉择"
+	title: "{ftbquests.loot_table.7339994821011760246.title}"
 }

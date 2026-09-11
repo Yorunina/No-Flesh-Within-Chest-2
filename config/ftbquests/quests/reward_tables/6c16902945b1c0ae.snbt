@@ -11,7 +11,7 @@
 			isServer: false
 			remove: false
 			stage: "ftb_gula_injection_recipe"
-			title: "私有暴食注射器配方"
+			title: "{ftbquests.loot_table.7788571112521187502.item_1}"
 			type: "maa:astages"
 		}
 		{
@@ -21,9 +21,9 @@
 			isServer: true
 			remove: false
 			stage: "ftb_gula_injection_recipe"
-			title: "公开暴食注射器配方"
+			title: "{ftbquests.loot_table.7788571112521187502.item_2}"
 			type: "maa:astages"
 		}
 	]
-	title: "暴食注射器配方"
+	title: "{ftbquests.loot_table.7788571112521187502.title}"
 }

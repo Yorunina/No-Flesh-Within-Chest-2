@@ -81,7 +81,7 @@
 			click: "command:/ponder kubejs:growth_vat"
 			dependency: "2A309A1975C86D4A"
 			height: 1.0d
-			hover: ["点击以思索"]
+			hover: ["ftbquests.chapter.648F913A1374C6B0.image.hovertext1"]
 			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
 			order: 1
 			rotation: 0.0d
@@ -96,11 +96,11 @@
 		{
 			dependencies: ["3805FCA2063189FF"]
 			description: [
-				"似乎&c肿瘤神经元&r在胸腔中产生了一些特殊的物品。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest2FBC5269D17457E9.description1}"
 				""
-				"这些未成型肿瘤具有一些&6隐藏的属性&r，但是这些属性似乎并不能够通过常规方法来得以显现。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest2FBC5269D17457E9.description2}"
 				""
-				"结合它们&6“未成型”&r的名称来看，很有可能有某种方法可以让这些肿瘤成长为&6“成型”&r的状态，进而揭示这些隐藏属性。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest2FBC5269D17457E9.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "2FBC5269D17457E9"
@@ -109,7 +109,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "肿瘤的形成"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest2FBC5269D17457E9.subtitle}"
 			tasks: [{
 				id: "62B6BA6957772466"
 				item: {
@@ -119,18 +119,18 @@
 				}
 				type: "item"
 			}]
-			title: "异常发育组织"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest2FBC5269D17457E9.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2FBC5269D17457E9"]
 			description: [
-				"我相信在曾经的记录中会保留有&6肿瘤培养相关的知识&r，这是一种直觉。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest5800BE06814E4E8.description1}"
 				""
-				"现在请您稍等片刻，我将重新设置关键字扫描过去的日志，以了解与&6肿瘤&r、&6潜在属性&r等信息相关的日志。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest5800BE06814E4E8.description2}"
 				""
-				"请您稍加等待。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest5800BE06814E4E8.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "05800BE06814E4E8"
@@ -139,26 +139,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "调查肿瘤相关信息"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest5800BE06814E4E8.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "23F232F04DBA3F74"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest5800BE06814E4E8.task.2590188743369047924.title}"
 				type: "questsadditions:time"
 			}]
-			title: "收集器官培养相关资料"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest5800BE06814E4E8.title}"
 			x: 1.9d
 			y: -1.8d
 		}
 		{
 			dependencies: ["05800BE06814E4E8"]
 			description: [
-				"调查完成，经过技术确认，我发现了一种被称作“&6培养仓&r”的机械。您可以通过这种机械来培养肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest2A309A1975C86D4A.description1}"
 				""
-				"其最基本的用途便是将未成型肿瘤培养成成型肿瘤以&6揭露其隐藏的属性&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest2A309A1975C86D4A.description2}"
 				""
-				"因此，为了能够进一步调查体外器官培养相关的信息，&6请您先制作出培养仓&r，我会实时跟进，为您提供更多的信息以方便您的实际调查。我相信这种技术会对我们后续的生存大有裨益。。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest2A309A1975C86D4A.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "2A309A1975C86D4A"
@@ -167,22 +167,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作培养仓"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest2A309A1975C86D4A.subtitle}"
 			tasks: [{
 				id: "1D55D02A399C15F2"
 				item: "kubejs:growth_vat"
 				type: "item"
 			}]
-			title: "体外器官培养技术"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest2A309A1975C86D4A.title}"
 			x: 4.1d
 			y: -2.4d
 		}
 		{
 			dependencies: ["2A309A1975C86D4A"]
 			description: [
-				"为了运行培养仓，我们需要&6营养液&r作为体外培养的基本营养供给手段。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest547F9BE4C2F703C4.description1}"
 				""
-				"营养素需要&6使用机械动力的搅拌配方&r，将营养膏搅拌加工成为营养素。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest547F9BE4C2F703C4.description2}"
 			]
 			icon: "kubejs:nutrients_fluid_bucket"
 			id: "547F9BE4C2F703C4"
@@ -191,7 +191,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "体外组织必备的培养环境"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest547F9BE4C2F703C4.subtitle}"
 			tasks: [
 				{
 					id: "660869D90E5198A5"
@@ -205,7 +205,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.648F913A1374C6B0.quest547F9BE4C2F703C4.task.7352242772651382949.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -215,18 +215,18 @@
 					type: "fluid"
 				}
 			]
-			title: "营养素生产"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest547F9BE4C2F703C4.title}"
 			x: 6.4d
 			y: -2.6d
 		}
 		{
 			dependencies: ["547F9BE4C2F703C4"]
 			description: [
-				"除了营养液之外，为了将未成型肿瘤培育成型，我们还需要提供一个让肿瘤得以依附的基质——目前阶段，&6简易培养基&r就能够满足我们的需求。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7CAB1BCE485BF25A.description1}"
 				""
-				"制作完成简易培养基之后，我们就可以进行&6未成型肿瘤的体外培育&r了。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7CAB1BCE485BF25A.description2}"
 				""
-				"&6培养基在培育过程中不会被消耗&r，因此您不需要制作太多。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7CAB1BCE485BF25A.description3}"
 			]
 			id: "7CAB1BCE485BF25A"
 			rewards: [{
@@ -234,7 +234,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "将肿瘤培育成型"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest7CAB1BCE485BF25A.subtitle}"
 			tasks: [{
 				id: "5DB82FCD37457560"
 				item: "kubejs:simple_culture_medium"
@@ -246,9 +246,9 @@
 		{
 			dependencies: ["7CAB1BCE485BF25A"]
 			description: [
-				"将在培育仓的正中心&6绿色区域置入培养基&r，&6周围摆放好您需要培养的未成型肿瘤&r，在&6营养液充足&r的情况下，培养配方完成时便可以将周围的未成型肿瘤培育成常规肿瘤，并且揭示其隐藏的肿瘤属性。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest19A39C178E01F423.description1}"
 				""
-				"除此之外，我发现了另外的一些培养基，这些&6培养基具有着不同的培育效果&r，接下来我会为您举例几种培养基，您可以根据您的需求进行自由的器官培养。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest19A39C178E01F423.description2}"
 			]
 			id: "19A39C178E01F423"
 			rewards: [{
@@ -256,7 +256,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "将肿瘤培育成型"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest19A39C178E01F423.subtitle}"
 			tasks: [{
 				id: "1D0F1B3E8E01364E"
 				item: {
@@ -266,16 +266,16 @@
 				}
 				type: "item"
 			}]
-			title: "培育肿瘤"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest19A39C178E01F423.title}"
 			x: 10.3d
 			y: 0.3d
 		}
 		{
 			dependencies: ["19A39C178E01F423"]
 			description: [
-				"通过胸腔来培育未成型肿瘤可能有些费劲且不安全——"
+				"{ftbquests.chapter.648F913A1374C6B0.quest423AEF7EC222CA7F.description1}"
 				""
-				"您可以使用&6常规培养基来进行未成型肿瘤的&r培养，其相较于常规培养有很多优势，不仅&6效率高于体内培养&r，其也可以&6通过各种不同的营养液来培育不同的未成型肿瘤&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest423AEF7EC222CA7F.description2}"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -285,22 +285,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "通用培养手段"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest423AEF7EC222CA7F.subtitle}"
 			tasks: [{
 				id: "39724550E1191C14"
 				item: "kubejs:culture_medium"
 				type: "item"
 			}]
-			title: "常规培养基"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest423AEF7EC222CA7F.title}"
 			x: 12.2d
 			y: -0.5d
 		}
 		{
 			dependencies: ["19A39C178E01F423"]
 			description: [
-				"混合培养基并不是常规的培养基种类，其并不能将未成型肿瘤培育成型。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest3F751C531606F6D3.description1}"
 				""
-				"其主要功能为，将培养仓中所有&6未成型肿瘤&r的&6属性混合并且随机分配&r，其混合的属性包含所有的&6潜在属性&r和&6常规属性&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest3F751C531606F6D3.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -310,24 +310,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "将肿瘤混合"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest3F751C531606F6D3.subtitle}"
 			tasks: [{
 				id: "3EA8B6D5B42260B9"
 				item: "kubejs:mixed_culture_medium"
 				type: "item"
 			}]
-			title: "混合培养基"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest3F751C531606F6D3.title}"
 			x: 13.6d
 			y: 0.5d
 		}
 		{
 			dependencies: ["19A39C178E01F423"]
 			description: [
-				"突变培养基并非是一种常见的培养基。其主要用途并不是简单的将未成型肿瘤培育成型。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest17A8EB09B890834E.description1}"
 				""
-				"通过突变培养基，您可以将培养仓内放置的&6未成型肿瘤&r培育成成型肿瘤——但在&6肿瘤属性符合某些条件&r的情况下，其肿瘤会变异成为另一类型的肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest17A8EB09B890834E.description2}"
 				""
-				"不同种类的肿瘤会具有不同的&6基础器官标签&r以及&6属性修正&r，在变异成功后可能会使原本未成型肿瘤的数值发生巨大的改变。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest17A8EB09B890834E.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -337,28 +337,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "定向培育肿瘤"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest17A8EB09B890834E.subtitle}"
 			tasks: [{
 				id: "10BCD77245B8B32A"
 				item: "kubejs:mutation_culture_medium"
 				type: "item"
 			}]
-			title: "突变培养基"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest17A8EB09B890834E.title}"
 			x: 15.4d
 			y: 1.5d
 		}
 		{
 			dependencies: ["19A39C178E01F423"]
 			description: [
-				"当获得了属性优良的肿瘤时，您可以使用增殖培养基进行肿瘤的增殖。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest3C112008E390B113.description1}"
 				""
-				"在培养仓中心绿色区域使用增殖培养基，即可在当前周期启动对周围肿瘤的&6增殖工序&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest3C112008E390B113.description2}"
 				""
-				"增殖周期的结果存在三种可能的情况，分别是：&6正常增殖&r、&c劣化增殖&r和无增殖。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest3C112008E390B113.description3}"
 				""
-				"正常增殖情况下，肿瘤会产生一个与自身&6一模一样&r的副本；&c劣化增殖&r的情况下，虽然也会产生肿瘤的副本，但原本肿瘤和增殖出来的肿瘤的属性都会有所变化。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest3C112008E390B113.description4}"
 				""
-				"对于无增殖情况，则不会产生肿瘤的复制物。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest3C112008E390B113.description5}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -368,7 +368,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "肿瘤复制技术"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest3C112008E390B113.subtitle}"
 			tasks: [{
 				id: "49BA38CFE9834A72"
 				item: "kubejs:proliferation_culture_medium"
@@ -380,13 +380,13 @@
 		{
 			dependencies: ["423AEF7EC222CA7F"]
 			description: [
-				"在各种营养素中，我发现了一种名为“&c玫瑰营养素&r”的特殊营养素。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest30DFADD41A73DC07.description1}"
 				""
-				"其能够使培育出的肿瘤含有一种特殊属性，名为&6玫瑰化&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest30DFADD41A73DC07.description2}"
 				""
-				"目前我还没有查明这种属性的具体用途，但从介绍来看，其似乎是能够有效提高某些未知器官的能力发挥。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest30DFADD41A73DC07.description3}"
 				""
-				"为了查明，请您通过这种营养素进一步调查有关&6玫瑰&r的信息。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest30DFADD41A73DC07.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:rose_nutrients_fluid_bucket"
@@ -396,7 +396,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "未知意义的培养素"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest30DFADD41A73DC07.subtitle}"
 			tasks: [
 				{
 					id: "01739E5F325FC108"
@@ -410,7 +410,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.648F913A1374C6B0.quest30DFADD41A73DC07.task.104601348063871240.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -420,18 +420,18 @@
 					type: "fluid"
 				}
 			]
-			title: "特殊培养素：玫瑰"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest30DFADD41A73DC07.title}"
 			x: 21.5d
 			y: 0.2d
 		}
 		{
 			dependencies: ["30DFADD41A73DC07"]
 			description: [
-				"看来您通过玫瑰营养素培养出了第一批包含&6玫瑰化&r属性的肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest4E86FD2718C02061.description1}"
 				""
-				"这批肿瘤的属性条数极少，且属性也并没有明显优势——而最为重要的玫瑰化属性似乎也没有直接效果作用于您本身。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest4E86FD2718C02061.description2}"
 				""
-				"或者还有一种可能——&6玫瑰化&r是一种极其特殊的变异条件，当&6玫瑰化到达某种程度时&r，或许能够通过&6突变培养基&r将其变异为某种我们目前无法得知的存在。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest4E86FD2718C02061.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "4E86FD2718C02061"
@@ -440,7 +440,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为汝证明，吾之心性"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest4E86FD2718C02061.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -468,21 +468,21 @@
 						]
 					}
 				}
-				title: "玫瑰化≥0的肿瘤"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest4E86FD2718C02061.task.4991815883214298867.title}"
 				type: "item"
 			}]
-			title: "深入了解玫瑰"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest4E86FD2718C02061.title}"
 			x: 23.7d
 			y: 1.5d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
 			description: [
-				"通过将&6玫瑰化属性≥1&r且&6力量≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英肌肉&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7B17BE1E914B20B8.description1}"
 				""
-				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育力量较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高力量肿瘤&r上以获得符合要求的未成型肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7B17BE1E914B20B8.description2}"
 				""
-				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7B17BE1E914B20B8.description3}"
 			]
 			id: "7B17BE1E914B20B8"
 			rewards: [{
@@ -490,7 +490,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为吾证明"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest7B17BE1E914B20B8.subtitle}"
 			tasks: [{
 				id: "51269334ED0402FA"
 				item: {
@@ -500,18 +500,18 @@
 				}
 				type: "item"
 			}]
-			title: "芬芳考验课题之一"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest7B17BE1E914B20B8.title}"
 			x: 24.8d
 			y: -0.9d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
 			description: [
-				"通过将&6玫瑰化属性≥1&r且&6防御≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英肋骨&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest17CDACFF66B94C57.description1}"
 				""
-				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育防御较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高防御肿瘤&r上以获得符合要求的未成型肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest17CDACFF66B94C57.description2}"
 				""
-				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest17CDACFF66B94C57.description3}"
 			]
 			id: "17CDACFF66B94C57"
 			rewards: [{
@@ -519,7 +519,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为吾证明"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest17CDACFF66B94C57.subtitle}"
 			tasks: [{
 				id: "75968220DB41D1CA"
 				item: {
@@ -529,18 +529,18 @@
 				}
 				type: "item"
 			}]
-			title: "芬芳考验课题之三"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest17CDACFF66B94C57.title}"
 			x: 29.3d
 			y: -2.4d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
 			description: [
-				"通过将&6玫瑰化属性≥1&r且&6解毒效率≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英肝脏&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest99F508626A998A8.description1}"
 				""
-				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育解毒效率较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高解毒效率肿瘤&r上以获得符合要求的未成型肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest99F508626A998A8.description2}"
 				""
-				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest99F508626A998A8.description3}"
 			]
 			id: "099F508626A998A8"
 			rewards: [{
@@ -548,7 +548,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为吾证明"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest99F508626A998A8.subtitle}"
 			tasks: [{
 				id: "541C5961F38DC5C4"
 				item: {
@@ -558,18 +558,18 @@
 				}
 				type: "item"
 			}]
-			title: "芬芳考验课题之五"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest99F508626A998A8.title}"
 			x: 32.2d
 			y: -0.2d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
 			description: [
-				"通过将&6玫瑰化属性≥1&r且&6健康≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英心脏&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest6A23271F6A2023D0.description1}"
 				""
-				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育健康较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高健康肿瘤&r上以获得符合要求的未成型肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest6A23271F6A2023D0.description2}"
 				""
-				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest6A23271F6A2023D0.description3}"
 			]
 			id: "6A23271F6A2023D0"
 			rewards: [{
@@ -577,7 +577,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为吾证明"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest6A23271F6A2023D0.subtitle}"
 			tasks: [{
 				id: "13A3C03E304A2681"
 				item: {
@@ -587,18 +587,18 @@
 				}
 				type: "item"
 			}]
-			title: "芬芳考验课题之二"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest6A23271F6A2023D0.title}"
 			x: 26.5d
 			y: -2.3d
 		}
 		{
 			dependencies: ["743893C0E06CF624"]
 			description: [
-				"通过将&6玫瑰化属性≥1&r且&6血液过滤效率≥2&r的未成型肿瘤使用&6突变培养基&r在&6玫瑰营养素&r中培育，理论上即可稳定获得&c玫瑰石英透析器&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest663B39864DB186A8.description1}"
 				""
-				"由于玫瑰培养素本身&6很难生产出较高属性的肿瘤&r，因此您可能需要在其他类型的营养液中培育血液过滤效率较高的未成型肿瘤，而后通过&6混合培养基&r，将玫瑰未成型肿瘤的&6玫瑰化转移到高血液过滤效率肿瘤&r上以获得符合要求的未成型肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest663B39864DB186A8.description2}"
 				""
-				"当然，为了保险起见，您可以在进行混合之前先将用于混合的未成型肿瘤进行增殖，以免出现意外。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest663B39864DB186A8.description3}"
 			]
 			id: "663B39864DB186A8"
 			rewards: [{
@@ -606,7 +606,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "为吾证明"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest663B39864DB186A8.subtitle}"
 			tasks: [{
 				id: "39F9ED0485E7DD8F"
 				item: {
@@ -616,22 +616,22 @@
 				}
 				type: "item"
 			}]
-			title: "芬芳考验课题之四"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest663B39864DB186A8.title}"
 			x: 31.1d
 			y: -1.8d
 		}
 		{
 			dependencies: ["5A2C4544B9011D4F"]
 			description: [
-				"经模式确认，我现在已能够将&6玫瑰胸腔&r的模式装填入注射器中，以供后续快速切换胸腔类型使用。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.description1}"
 				""
-				"但由于玫瑰胸腔的力量较为强大，且其中还蕴含着包含肿瘤突变相关的&6未知议题&r，贸然将这种技术公开可能导致一些不可预料的结果。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.description2}"
 				""
-				"这种心境，或许经历了&6芬芳考验&r的您能够理解。因此，我决定将制作玫瑰注射器的方案以及其分发的权力赋予给&6肿瘤培育次数最多&r的玩家。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.description3}"
 				"{@pagebreak}"
-				"公开配方会使所有人都可以制作玫瑰注射器。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.description4}"
 				""
-				"私有配方会使您成为唯一能够制作玫瑰注射器的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.description5}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -643,23 +643,23 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			subtitle: "芬芳魔术"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.subtitle}"
 			tasks: [{
 				icon: "kubejs:growth_vat"
 				id: "214DA6683064BB20"
 				leaderboard: "kubejs:growth_vat_runs"
 				min: 1
 				rank: 1
-				title: "培育肿瘤次数争霸"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.task.2399757142877059872.title}"
 				type: "leaderboards:rank_task"
 			}]
-			title: "玫瑰注射器配方"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest59B331E95DB82528.title}"
 			x: 18.9d
 			y: 6.6d
 		}
 		{
 			dependencies: ["4EEBDB6CCA1410B8"]
-			description: ["&7** 汝心已证，芬芳既铸 **&r"]
+			description: ["{ftbquests.chapter.648F913A1374C6B0.quest5A2C4544B9011D4F.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			icon: "kubejs:rose_injection"
@@ -675,7 +675,7 @@
 					id: "58CBA5A761BE30CF"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.648F913A1374C6B0.quest5A2C4544B9011D4F.reward.6398389833927897295.title}"
 					type: "maa:kube"
 				}
 				{
@@ -685,30 +685,30 @@
 				}
 			]
 			shape: "none"
-			subtitle: "此心予我"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest5A2C4544B9011D4F.subtitle}"
 			tasks: [{
 				entity: "minecraft:empty"
 				icon: "kubejs:rose_injection"
 				id: "23269B6B3DC250C5"
 				inventoryType: "kubejs:cc_inventory_types/rose"
-				title: "打开玫瑰胸腔"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest5A2C4544B9011D4F.task.2532882725342433477.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "&6庆贺吧！此乃玫瑰胸腔！&r"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest5A2C4544B9011D4F.title}"
 			x: 18.9d
 			y: 4.7d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
 			description: [
-				"体外培养肿瘤具有几个好处。首要的便是其&6效率远高于胸腔内培育肿瘤&r，因为胸腔培育肿瘤需要预先留出足够多的空位，且要定期清空生成的肿瘤以避免肿瘤神经元退化为失活神经元肿瘤。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest299F4780D7FE105F.description1}"
 				""
-				"其次，&6体外培育肿瘤可以通过营养液影响未成型肿瘤的属性&r。相比于体内神经元培育其只能够生成类似于在基础培养液环境下培养的未成型肿瘤，在体外培养仓的肿瘤可以通过各种特定营养液进行培育，以获得较高的目标属性。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest299F4780D7FE105F.description2}"
 				""
-				"最后，便是在&6体外进行的肿瘤培养就算培养出负面属性也不会影响培育者本身&r，而在体内尤其是您自己的胸腔内培育肿瘤会因为胸腔属性改变造成各种各样的麻烦。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest299F4780D7FE105F.description3}"
 				""
-				"因此，请您多熟悉&6体外培育肿瘤&r的方法。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest299F4780D7FE105F.description4}"
 			]
 			id: "299F4780D7FE105F"
 			rewards: [{
@@ -716,7 +716,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "寻找特定肿瘤"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest299F4780D7FE105F.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -744,19 +744,19 @@
 						]
 					}
 				}
-				title: "培育力量≥1的肿瘤"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest299F4780D7FE105F.task.5131973943265270986.title}"
 				type: "item"
 			}]
-			title: "简单选育肿瘤"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest299F4780D7FE105F.title}"
 			x: 10.4d
 			y: -2.1d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
 			description: [
-				"在各类营养素中，存在一种名为“&6腐烂营养素&r”的特殊营养素。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7212143D1F0B4FFC.description1}"
 				""
-				"虽然腐烂营养素培育出的&6大量属性均为负面属性&r，但其能够稳定提供显性的&6力量相关属性&r，因此能够为您提升攻击力提供一个非常稳定的保障。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest7212143D1F0B4FFC.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:rotten_nutrients_fluid_bucket"
@@ -766,7 +766,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "用于培育力量相关肿瘤"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest7212143D1F0B4FFC.subtitle}"
 			tasks: [
 				{
 					id: "66F0FEFDA971E27B"
@@ -780,7 +780,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.648F913A1374C6B0.quest7212143D1F0B4FFC.task.7417708951702200955.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -790,16 +790,16 @@
 					type: "fluid"
 				}
 			]
-			title: "特殊培养素：腐烂"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest7212143D1F0B4FFC.title}"
 			x: 19.9d
 			y: -1.4d
 		}
 		{
 			dependencies: ["4E86FD2718C02061"]
 			description: [
-				"通过&6将玫瑰化属性≥1的未成型肿瘤使用突变培养基培育&r，即可概率获得&c玫瑰肿瘤&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest6475C1A0B29D8110.description1}"
 				""
-				"由于未成型肿瘤突变为概率现象，其中免不了要损失大量的未能成功突变而自然长大的肿瘤，因此您可以在进行突变培养前&6事先增殖一部分符合标准的肿瘤&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest6475C1A0B29D8110.description2}"
 			]
 			id: "6475C1A0B29D8110"
 			rewards: [{
@@ -807,7 +807,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "吾身已现"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest6475C1A0B29D8110.subtitle}"
 			tasks: [{
 				id: "2B1D87824345B28E"
 				item: {
@@ -817,18 +817,18 @@
 				}
 				type: "item"
 			}]
-			title: "炼就玫瑰肿瘤"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest6475C1A0B29D8110.title}"
 			x: 26.0d
 			y: 1.9d
 		}
 		{
 			dependencies: ["6475C1A0B29D8110"]
 			description: [
-				"我有一个关于玫瑰肿瘤的猜测，其根源在于一类由&6玫瑰石英&r构成的器官。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest1C15A9AE23C757B4.description1}"
 				""
-				"为了补充缺失的那部分猜测信息，请您为我提供&6少量玫瑰相关物质&r以进行进一步的实物考察。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest1C15A9AE23C757B4.description2}"
 				""
-				"在通过进一步确认后，我应该能提供给您证明这一系列器官存在的具体方法。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest1C15A9AE23C757B4.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "create:polished_rose_quartz"
@@ -838,7 +838,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "玫瑰的启示"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest1C15A9AE23C757B4.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -855,20 +855,20 @@
 					type: "item"
 				}
 			]
-			title: "一个可能的猜测"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest1C15A9AE23C757B4.title}"
 			x: 28.6d
 			y: 2.1d
 		}
 		{
 			dependencies: ["7212143D1F0B4FFC"]
 			description: [
-				"经腐烂营养素的启发，我发现了一种名为“&6寄生肿瘤&r”的特殊肿瘤类型，其可以通过健康＜0的肿瘤在突变培养基中概率突变而成。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest5E5B7FBDC663F063.description1}"
 				""
-				"在突变过程中，&6肿瘤属性和属性条数会出现大规模减少&r，但寄生肿瘤&6允许其自身寄生在其他的非肿瘤器官上&r，以提供额外的基础属性。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest5E5B7FBDC663F063.description2}"
 				""
-				"例如，原本一根肋骨可能仅能提供 1 的防御属性，但经过一个拥有 1.5 力量的寄生肿瘤寄生后，其属性可以达到 1.5 力量和 1 防御，即&6两者的加和&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest5E5B7FBDC663F063.description3}"
 				""
-				"因此，您可以通过大量培育寄生肿瘤来&6普遍的提高您的胸腔基础属性&r，间接提升您的战斗力。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest5E5B7FBDC663F063.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -878,7 +878,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "寄生型肿瘤"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest5E5B7FBDC663F063.subtitle}"
 			tasks: [{
 				id: "03EB9F562E4CF881"
 				item: {
@@ -888,18 +888,18 @@
 				}
 				type: "item"
 			}]
-			title: "寄生肿瘤"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest5E5B7FBDC663F063.title}"
 			x: 23.3d
 			y: -5.5d
 		}
 		{
 			dependencies: ["1C15A9AE23C757B4"]
 			description: [
-				"经确认，存在一系列被冠名为&6玫瑰&r的特殊器官，其存在于肿瘤的一类&6特殊突变路线&r中。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest743893C0E06CF624.description1}"
 				""
-				"通过培育具有&6玫瑰化&r且在&6力量、健康、防御、血液过滤效率、解毒效率其中任一方面有特长&r的肿瘤即可通过突变培养基将其突变为具有对应特长的玫瑰器官。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest743893C0E06CF624.description2}"
 				""
-				"请您按照指引，帮助我完成具体的&c芬芳考验&r。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest743893C0E06CF624.description3}"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -910,13 +910,13 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "我已确认证明方法"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest743893C0E06CF624.subtitle}"
 			tasks: [{
 				id: "0ADB0D2E600311A4"
-				title: "我将证明"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest743893C0E06CF624.task.782233453109383588.title}"
 				type: "checkmark"
 			}]
-			title: "芬芳考验"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest743893C0E06CF624.title}"
 			x: 30.6d
 			y: 1.5d
 		}
@@ -929,11 +929,11 @@
 				"099F508626A998A8"
 			]
 			description: [
-				"历经三次证明，我不仅意识到&6玫瑰系列器官&r的存在——在其背后，还存在着名为“&c玫瑰胸腔&r”的专有胸腔强化。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest16909BBBA99EE3A7.description1}"
 				""
-				"玫瑰器官借由&c玫瑰化&r属性，与其他属性建立起极其坚固的链接。据目前信息显示，经玫瑰胸腔强化后的玫瑰器官更能使这种链接从单向变为双向，可以有效地使某些属性成长到正常难以企及的位置。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest16909BBBA99EE3A7.description2}"
 				""
-				"现在我们只需要搞清楚如何获取到这种力量，请您稍加等待，以让我得到更多相关信息。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest16909BBBA99EE3A7.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -944,26 +944,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "予汝玫瑰"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest16909BBBA99EE3A7.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "26B0D2E6227019A0"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest16909BBBA99EE3A7.task.2787960055204420000.title}"
 				type: "questsadditions:time"
 			}]
-			title: "芬芳启示"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest16909BBBA99EE3A7.title}"
 			x: 34.7d
 			y: 1.4d
 		}
 		{
 			dependencies: ["16909BBBA99EE3A7"]
 			description: [
-				"&6已确认。&r"
+				"{ftbquests.chapter.648F913A1374C6B0.quest4EEBDB6CCA1410B8.description1}"
 				""
-				"您需要准备&c熔融玫瑰石英流体&r，在自己&6玫瑰化≥10&r的状态下，将自己置于该熔融流体中至&6窒息致死的前一刻&r，奇迹便会发生。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest4EEBDB6CCA1410B8.description2}"
 				""
-				"请您务必小心，尽管情报表明的结果非常确认此番行动的可靠性，但为保万一，您一定要保留有脱身手段。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest4EEBDB6CCA1410B8.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:molten_rose_quartz_bucket"
@@ -973,27 +973,27 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "见证汝心"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest4EEBDB6CCA1410B8.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:molten_rose_quartz_bucket"
 				id: "026AFB7C1947E7C6"
 				kubeId: "rose_cc_convert"
-				title: "在熔融玫瑰石英中窒息至临界"
+				title: "{ftbquests.chapter.648F913A1374C6B0.quest4EEBDB6CCA1410B8.task.174228046025844678.title}"
 				type: "maa:kube"
 			}]
-			title: "不证自明的课题"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest4EEBDB6CCA1410B8.title}"
 			x: 36.2d
 			y: 0.3d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
 			description: [
-				"尽管理论上来说，只有经过特制的营养素才能发挥最好的肿瘤培育效果。不过部分流体虽然没有经过加工，却一定程度上仍可以担任营养素的功能。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest68820765EDB72C40.description1}"
 				""
-				"&6蜂蜜&r是一种常见的食物原料，其还可以直接&6作为营养素&r用于肿瘤的培养。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest68820765EDB72C40.description2}"
 				""
-				"使用蜂蜜培养出的肿瘤拥有&6较好的健康状态&r，但由于其并非是专业的营养素，所以其他属性大都会有所缺失。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest68820765EDB72C40.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "create:honey_bucket"
@@ -1003,7 +1003,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "健康的营养素"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest68820765EDB72C40.subtitle}"
 			tasks: [
 				{
 					id: "01A3455CB4E69743"
@@ -1017,7 +1017,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.648F913A1374C6B0.quest68820765EDB72C40.task.118014279716083523.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1027,18 +1027,18 @@
 					type: "fluid"
 				}
 			]
-			title: "特殊培养素：蜂蜜"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest68820765EDB72C40.title}"
 			x: 18.1d
 			y: -2.7d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
 			description: [
-				"尽管理论上来说，只有经过特制的营养素才能发挥最好的肿瘤培育效果。不过部分流体虽然没有经过加工，却一定程度上仍可以担任营养素的功能。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest698B2A2E588DE4E4.description1}"
 				""
-				"&6牛奶&r是一种常见的营养食材，其可以直接&6作为营养素&r用于肿瘤的培养。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest698B2A2E588DE4E4.description2}"
 				""
-				"使用牛奶培养出的肿瘤普遍具有较高的&6血液过滤效率&r和&6解毒效率&r，但在其他方面都有着明显不足。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest698B2A2E588DE4E4.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:milk_bucket"
@@ -1048,7 +1048,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "剧毒物质"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest698B2A2E588DE4E4.subtitle}"
 			tasks: [
 				{
 					id: "17FB523C201B816A"
@@ -1062,7 +1062,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.648F913A1374C6B0.quest698B2A2E588DE4E4.task.1728065300216906090.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1072,18 +1072,18 @@
 					type: "fluid"
 				}
 			]
-			title: "特殊培养素：牛奶"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest698B2A2E588DE4E4.title}"
 			x: 15.8d
 			y: -2.7d
 		}
 		{
 			dependencies: ["423AEF7EC222CA7F"]
 			description: [
-				"尽管理论上来说，只有经过特制的营养素才能发挥最好的肿瘤培育效果。不过部分流体虽然没有经过加工，却一定程度上仍可以担任营养素的功能。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest25F8A6FFEE54F329.description1}"
 				""
-				"&6酸液&r是一种罕见的血肉产物，通常见于&6原始孔洞&r分泌，其可以直接&6作为营养素&r用于肿瘤的培养。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest25F8A6FFEE54F329.description2}"
 				""
-				"使用酸液培养出的肿瘤拥有&6优良的防御能力&r，但由于其并非是专业的营养素，所以其他属性大都会有所缺失。"
+				"{ftbquests.chapter.648F913A1374C6B0.quest25F8A6FFEE54F329.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "biomancy:acid_bucket"
@@ -1093,7 +1093,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "酸性环境"
+			subtitle: "{ftbquests.chapter.648F913A1374C6B0.quest25F8A6FFEE54F329.subtitle}"
 			tasks: [
 				{
 					id: "3AD00AC46F0E7B57"
@@ -1107,7 +1107,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.648F913A1374C6B0.quest25F8A6FFEE54F329.task.4237899088148724567.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1117,10 +1117,10 @@
 					type: "fluid"
 				}
 			]
-			title: "特殊培养素：酸液"
+			title: "{ftbquests.chapter.648F913A1374C6B0.quest25F8A6FFEE54F329.title}"
 			x: 13.9d
 			y: -1.9d
 		}
 	]
-	title: "传闻：体外培养"
+	title: "{ftbquests.chapter.648F913A1374C6B0.title}"
 }

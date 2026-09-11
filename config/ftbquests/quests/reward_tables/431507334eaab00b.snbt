@@ -11,7 +11,7 @@
 			isServer: false
 			remove: false
 			stage: "ftb_infinity_soil_recipe"
-			title: "私有息壤配方"
+			title: "{ftbquests.loot_table.4833777691996631051.item_1}"
 			type: "maa:astages"
 		}
 		{
@@ -21,9 +21,9 @@
 			isServer: true
 			remove: false
 			stage: "ftb_infinity_soil_recipe"
-			title: "公开息壤配方"
+			title: "{ftbquests.loot_table.4833777691996631051.item_2}"
 			type: "maa:astages"
 		}
 	]
-	title: "息壤配方"
+	title: "{ftbquests.loot_table.4833777691996631051.title}"
 }

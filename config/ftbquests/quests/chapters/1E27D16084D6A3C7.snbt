@@ -70,9 +70,9 @@
 		{
 			dependencies: ["113A1FBEF3E7EC83"]
 			description: [
-				"一些信息显示，这个世界中的作物要远比我们想的有潜力的多——不光指作物的产量，更是指作物的种类。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest25E0023B9DF54C2C.description1}"
 				""
-				"想要完全发掘它们的潜力，我们需要制作&6作物架&r，并且使用特殊的方法进行培育。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest25E0023B9DF54C2C.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "25E0023B9DF54C2C"
@@ -81,24 +81,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "植物中蕴含的潜力"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest25E0023B9DF54C2C.subtitle}"
 			tasks: [{
 				id: "691B64228CA32210"
 				item: "agricraft:wooden_crop_sticks"
 				type: "item"
 			}]
-			title: "新的领域"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest25E0023B9DF54C2C.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["25E0023B9DF54C2C"]
 			description: [
-				"为了能够让种子种植到作物架上，您需要将种子放入种子分析仪进行鉴定，转化为特殊的&6可培育种子&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest73AC29CE33479E8A.description1}"
 				""
-				"可培育种子具有多个特殊属性，且这些属性存在显性、隐形基因，在杂交时，会&6遵循分离定律&r培育出对应的子代。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest73AC29CE33479E8A.description2}"
 				""
-				"具体属性的作用，我已经将其打印成&6农业日志&r分发给您，请您有空阅读。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest73AC29CE33479E8A.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "73AC29CE33479E8A"
@@ -114,24 +114,24 @@
 					type: "item"
 				}
 			]
-			subtitle: "种子转化"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest73AC29CE33479E8A.subtitle}"
 			tasks: [{
 				id: "4EFDE2675BE92EDC"
 				item: "agricraft:seed_analyzer"
 				type: "item"
 			}]
-			title: "种子分析"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest73AC29CE33479E8A.title}"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
 			description: [
-				"除了常见的作物外，在世界上还隐藏有各种各样的特殊作物——这些作物绝大部分需要杂交获得，小部分则可以通过在世界中探索战利品获得。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest16BC90547AAC6998.description1}"
 				""
-				"装备&6绯红肋&r后，打开世界中的战利品箱，概率会获得&c远古作物&r种子。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest16BC90547AAC6998.description2}"
 				""
-				"远古作物本身如果用于种植，可以生产不同的血肉材料，但其更重要的便是用于更多种子的杂交。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest16BC90547AAC6998.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "16BC90547AAC6998"
@@ -140,7 +140,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "追寻原初的呼唤"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest16BC90547AAC6998.subtitle}"
 			tasks: [{
 				id: "770FBC2EF42161D4"
 				item: {
@@ -156,13 +156,13 @@
 		{
 			dependencies: ["73AC29CE33479E8A"]
 			description: [
-				"相比于常规作物，在作物架上种植的特殊作物有着各异的生长要求——一般来说，这些生长条件都与其所能生长的&6土壤种类&r相关。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1CD0E619EF33D8D5.description1}"
 				""
-				"举例而言，&6稻米&r由于需求漫灌及以上的土壤水分要求，因此在其&6适应为1&r时（种子的最初状态），&6仅能够种植在水凝胶上&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1CD0E619EF33D8D5.description2}"
 				""
-				"但随着杂交使其抗性提升，在&6适应达到5&r时，&6稻米便可以种植在黏土上&r——这些信息您都可以通过对作物种子&6使用JEI预览&r到。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1CD0E619EF33D8D5.description3}"
 				""
-				"因此，土壤的选择虽然重要，但仍可以通过作物本身的培养来克服这些困难。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1CD0E619EF33D8D5.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "1CD0E619EF33D8D5"
@@ -171,19 +171,19 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "选择合适的土壤"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest1CD0E619EF33D8D5.subtitle}"
 			tasks: [{
 				id: "1AF4FDC7D2BDDEAF"
 				item: "agricraft:magnifying_glass"
 				type: "item"
 			}]
-			title: "选择土壤"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1CD0E619EF33D8D5.title}"
 			x: 2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["16BC90547AAC6998"]
-			description: ["血髓根棘作为&c远古作物&r，种植其本身可以收获大量的&6弹性纤维&r和&6强韧纤维&r。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest6AD85F273DB040D5.description1}"]
 			hide_dependent_lines: true
 			id: "6AD85F273DB040D5"
 			rewards: [{
@@ -191,7 +191,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "远古作物之一"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest6AD85F273DB040D5.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -238,7 +238,7 @@
 					}
 				}
 				match_nbt: false
-				title: "血髓根棘种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest6AD85F273DB040D5.task.1030926406667740109.title}"
 				type: "item"
 			}]
 			x: -2.0d
@@ -246,7 +246,7 @@
 		}
 		{
 			dependencies: ["16BC90547AAC6998"]
-			description: ["肉孢蕈作为&c远古作物&r，种植其本身可以收获大量的&6小块肉&r和&6鲜活血肉&r。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest24B11A69FBE77570.description1}"]
 			hide_dependent_lines: true
 			id: "24B11A69FBE77570"
 			rewards: [{
@@ -254,7 +254,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "远古作物之一"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest24B11A69FBE77570.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -301,7 +301,7 @@
 					}
 				}
 				match_nbt: false
-				title: "肉孢蕈孢子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest24B11A69FBE77570.task.2056518331806138289.title}"
 				type: "item"
 			}]
 			x: 0.0d
@@ -309,7 +309,7 @@
 		}
 		{
 			dependencies: ["16BC90547AAC6998"]
-			description: ["软骨丝草作为&c远古作物&r，种植其本身可以收获大量的&6骨头碎片&r、&6矿物碎块&r和&6宝石碎块&r。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest36C5778B61447524.description1}"]
 			hide_dependent_lines: true
 			id: "36C5778B61447524"
 			rewards: [{
@@ -317,7 +317,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "远古作物之一"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest36C5778B61447524.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -364,7 +364,7 @@
 					}
 				}
 				match_nbt: false
-				title: "软骨丝草种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest36C5778B61447524.task.2474187450137519826.title}"
 				type: "item"
 			}]
 			x: 2.0d
@@ -373,15 +373,15 @@
 		{
 			dependencies: ["1CD0E619EF33D8D5"]
 			description: [
-				"可能您已经注意到了，如果在一个&6已经放置有作物架的方块上再次使用作物架右键&r，会使其变为一种十字交叉的特殊形态——这即是杂交架。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4D793403C8FAA94E.description1}"
 				""
-				"在杂交架两侧若放置有已经种植了作物的作物架，则在两侧作物生长完成后，概率在杂交架所在位置产生杂交后代。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4D793403C8FAA94E.description2}"
 				""
-				"杂交存在三种可能的情况，分别是&6突变杂交&r（杂交后变为新植物）、&6数值杂交&r（杂交不修改植物类型但修改数值）和&6繁衍&r（出现与父代种类完全相同的杂交结果）。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4D793403C8FAA94E.description3}"
 				""
-				"为了获得新的作物，您需要尽可能进行突变杂交，这需要您将两侧的父代设置为符合杂交要求的父代。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4D793403C8FAA94E.description4}"
 				""
-				"为了提高现有作物的属性，您需要尽可能的进行数值杂交，这需要您将两侧父代设置为同一植物或不会发生突变的植物。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4D793403C8FAA94E.description5}"
 			]
 			id: "4D793403C8FAA94E"
 			rewards: [{
@@ -389,7 +389,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "如何进行杂交"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest4D793403C8FAA94E.subtitle}"
 			tasks: [{
 				id: "32ECA9D437D8B7ED"
 				item: {
@@ -399,18 +399,18 @@
 				}
 				type: "item"
 			}]
-			title: "杂交工艺"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest4D793403C8FAA94E.title}"
 			x: 5.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
 			description: [
-				"收获属性能够提高作物掉落产物的数量——具体而言，随着收获属性的增加，能够进行更多次的战利品随机。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest3269D57BA3493FA9.description1}"
 				""
-				"每有 3 点收获属性，&6在收获作物时会进行一次额外的战利品随机&r。在计算最终实际奖励时，会从所有的战利品随机结果中，&6选取随机到数量最多的结果作为实际收获数量&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest3269D57BA3493FA9.description2}"
 				""
-				"因此，理论来说，&6只要有 9 点的收获属性，就可以获得到最大的收获收益。&r"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest3269D57BA3493FA9.description3}"
 			]
 			icon_scale: 1.2d
 			id: "3269D57BA3493FA9"
@@ -420,7 +420,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "通往植物大师之路"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest3269D57BA3493FA9.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -437,16 +437,16 @@
 						value: "agricraft_seed_tier:[gain,10]"
 					}
 				}
-				title: "收获属性为10的任意种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest3269D57BA3493FA9.task.6858757293960776222.title}"
 				type: "item"
 			}]
-			title: "杂交之路 - 收获"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest3269D57BA3493FA9.title}"
 			x: 8.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
-			description: ["生长属性定义了&6作物在执行生长刻时进阶到下一阶段的概率&r——这可以通俗理解为，生长属性越高，作物的生长速度越快。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest6AEA1A1CA22ABAA1.description1}"]
 			icon_scale: 1.2d
 			id: "6AEA1A1CA22ABAA1"
 			rewards: [{
@@ -455,7 +455,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "通往植物大师之路"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest6AEA1A1CA22ABAA1.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -472,23 +472,23 @@
 						value: "agricraft_seed_tier:[growth,10]"
 					}
 				}
-				title: "生长属性为10的任意种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest6AEA1A1CA22ABAA1.task.2934134277127005761.title}"
 				type: "item"
 			}]
-			title: "杂交之路 - 生长"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest6AEA1A1CA22ABAA1.title}"
 			x: 8.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
 			description: [
-				"突变属性决定了属性的进化倾向，在杂交发生时，&6突变属性越高，则属性更倾向于正面突变&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest53A3B635F7A567C6.description1}"
 				""
-				"举例来说，在突变为 1 时，有30%左右的概率产生正向突变，45%概率不突变，25%发生负向突变。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest53A3B635F7A567C6.description2}"
 				""
-				"而在突变为 5 时，有56%的概率正向突变，25%不突变，19%负向。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest53A3B635F7A567C6.description3}"
 				""
-				"&6突变为 10 时，则100%会产生正向突变。&r"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest53A3B635F7A567C6.description4}"
 			]
 			icon_scale: 1.2d
 			id: "53A3B635F7A567C6"
@@ -498,7 +498,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "通往植物大师之路"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest53A3B635F7A567C6.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -515,23 +515,23 @@
 						value: "agricraft_seed_tier:[mutativity,10]"
 					}
 				}
-				title: "突变属性为10的任意种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest53A3B635F7A567C6.task.178267971404833209.title}"
 				type: "item"
 			}]
-			title: "杂交之路 - 突变"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest53A3B635F7A567C6.title}"
 			x: 8.5d
 			y: 4.0d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
 			description: [
-				"繁衍属性的本质是&6繁衍竞争力&r——它不影响作物自身的生长速度或产量，而是影响作物在杂交繁衍系统中被选为亲本的概率，其主要遵循下两条规则："
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest196867677EBA8420.description1}"
 				""
-				"&6排序优先：&r繁衍高的作物在杂交基因候选列表中排在前面，更可能被选为杂交亲本。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest196867677EBA8420.description2}"
 				""
-				"&6概率筛选：&r繁衍值直接决定通过杂交筛选的概率，值越高越容易成为候选。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest196867677EBA8420.description3}"
 				""
-				"&6繁衍越高，在交叉作物架的杂交过程中，它更有机会把自己的基因传给下一代。&r"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest196867677EBA8420.description4}"
 			]
 			icon_scale: 1.2d
 			id: "196867677EBA8420"
@@ -541,7 +541,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "通往植物大师之路"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest196867677EBA8420.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -558,25 +558,25 @@
 						value: "agricraft_seed_tier:[fertility,10]"
 					}
 				}
-				title: "繁衍属性为10的任意种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest196867677EBA8420.task.4679639584475784660.title}"
 				type: "item"
 			}]
-			title: "杂交之路 - 繁衍"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest196867677EBA8420.title}"
 			x: 8.5d
 			y: -0.5d
 		}
 		{
 			dependencies: ["4D793403C8FAA94E"]
 			description: [
-				"适应指的是作物对整体环境的适应能力。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.description1}"
 				""
-				"&6在适应增长时，会根据作物本身的属性，对作物的生长条件放宽。&r"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.description2}"
 				""
-				"举例而言，作物的湿度、酸度、养分要求，会随着适应属性的提升而放宽要求。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.description3}"
 				""
-				"对于光照、方块需求、生物群系需求、维度需求、季节需求在达到指定的适应标准时便会被忽略。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.description4}"
 				""
-				"因此，&6将作物培育出较高的适应属性有助于使用生长系数更高的土壤以加快产出。&r"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.description5}"
 			]
 			icon_scale: 1.2d
 			id: "439C4B6E25626CE7"
@@ -586,7 +586,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "通往植物大师之路"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -603,16 +603,16 @@
 						value: "agricraft_seed_tier:[strength,10]"
 					}
 				}
-				title: "适应属性为10的任意种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.task.6076565733076871110.title}"
 				type: "item"
 			}]
-			title: "杂交之路 - 适应"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest439C4B6E25626CE7.title}"
 			x: 8.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
-			description: ["法师之花种子则是来源于附魔装置——&6任意的种子和魔源宝石合成&r便可以获得法师之花种子。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest574A75B6E1E40FB.description1}"]
 			hide_dependency_lines: true
 			id: "0574A75B6E1E40FB"
 			rewards: [{
@@ -620,7 +620,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "以魔源之力萃取而成"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest574A75B6E1E40FB.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -666,7 +666,7 @@
 						value: "agricraft_seed_species:[kubejs:magebloom]"
 					}
 				}
-				title: "法师之花种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest574A75B6E1E40FB.task.2264585716499026483.title}"
 				type: "item"
 			}]
 			x: 1.0d
@@ -678,9 +678,9 @@
 				"36C5778B61447524"
 			]
 			description: [
-				"法师之花和软骨丝进行杂交时，概率会产生一个极其特殊的结果——&6肺樱&r！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5207ADD4211DB1F4.description1}"
 				""
-				"肺樱是一种非生产型作物，其可能的产出结果为&6百合肺叶&r或&6樱骨&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5207ADD4211DB1F4.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -699,7 +699,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "奇异的课题结论！"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest5207ADD4211DB1F4.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -745,7 +745,7 @@
 						value: "agricraft_seed_species:[kubejs:bilung_cherry]"
 					}
 				}
-				title: "肺樱种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest5207ADD4211DB1F4.task.5049419981503448003.title}"
 				type: "item"
 			}]
 			x: 1.32d
@@ -754,11 +754,11 @@
 		{
 			dependencies: ["73AC29CE33479E8A"]
 			description: [
-				"亚麻是一种罕见的种子，偶尔您可以在野外遇到成熟的亚麻，但更多时候您会在&6掠夺者的哨塔&r中获取到它。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest55EC44FEB0B7C802.description1}"
 				""
-				"亚麻不仅可以用于制成绳子，其更是一种重要的&6种子油原料&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest55EC44FEB0B7C802.description2}"
 				""
-				"如果您无法获取到亚麻，也可以尝试从&6流浪商人&r处获取。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest55EC44FEB0B7C802.description3}"
 			]
 			hide_dependency_lines: true
 			id: "55EC44FEB0B7C802"
@@ -767,7 +767,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "亚麻与亚麻籽"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest55EC44FEB0B7C802.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -813,7 +813,7 @@
 						value: "agricraft_seed_species:[kubejs:flax]"
 					}
 				}
-				title: "亚麻种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest55EC44FEB0B7C802.task.7276879993463197830.title}"
 				type: "item"
 			}]
 			x: -14.0d
@@ -825,11 +825,11 @@
 				"6AD85F273DB040D5"
 			]
 			description: [
-				"亚麻和血髓根棘进行杂交时，概率会产生一个极其特殊的结果——&6灵笼果&r！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest7CE0F6503A1688A4.description1}"
 				""
-				"灵笼果是一种非生产型作物，其可能的产出结果为&6木灵灵质&r或&6灯笼胃&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest7CE0F6503A1688A4.description2}"
 				""
-				"&6木灵灵质&r对后续作物的增产帮助极大，建议您尽早获取。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest7CE0F6503A1688A4.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -848,7 +848,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "奇异的课题结论！"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest7CE0F6503A1688A4.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -894,7 +894,7 @@
 						value: "agricraft_seed_species:[kubejs:spiritcage_fruit]"
 					}
 				}
-				title: "灵笼果种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest7CE0F6503A1688A4.task.7078902915773163261.title}"
 				type: "item"
 			}]
 			x: -14.45d
@@ -902,7 +902,7 @@
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
-			description: ["甜浆果生成于任何&6针叶林群系&r之中，您可以轻易找到它。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest4BFB0F2C7309CB95.description1}"]
 			hide_dependency_lines: true
 			id: "4BFB0F2C7309CB95"
 			rewards: [{
@@ -910,7 +910,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "酸浆果种子"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest4BFB0F2C7309CB95.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -956,7 +956,7 @@
 						value: "agricraft_seed_species:[minecraft:sweet_berries]"
 					}
 				}
-				title: "甜浆果种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest4BFB0F2C7309CB95.task.1737878765337777485.title}"
 				type: "item"
 			}]
 			x: -9.0d
@@ -968,9 +968,9 @@
 				"24B11A69FBE77570"
 			]
 			description: [
-				"甜浆果和肉孢蕈进行杂交时，概率会产生一个极其特殊的结果——&6梅肾蘑&r！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest34D7C5AA137D9449.description1}"
 				""
-				"梅肾蘑是一种非生产型作物，其可能的产出结果为&6活肉莓果&r或&6啤酒肾&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest34D7C5AA137D9449.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -989,7 +989,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "奇异的课题结论！"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest34D7C5AA137D9449.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1035,7 +1035,7 @@
 						value: "agricraft_seed_species:[kubejs:plumkidney_mushroom]"
 					}
 				}
-				title: "梅肾蘑孢子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest34D7C5AA137D9449.task.6550847795731377872.title}"
 				type: "item"
 			}]
 			x: -9.25d
@@ -1043,7 +1043,7 @@
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
-			description: ["下界疣可以由&6下界堡垒&r中获得，作为一种常见的酿药原料，您大概率已经有所种植。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest1DF882CBEDBED745.description1}"]
 			hide_dependency_lines: true
 			id: "1DF882CBEDBED745"
 			rewards: [{
@@ -1051,7 +1051,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "酿药台常客"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest1DF882CBEDBED745.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1097,7 +1097,7 @@
 						value: "agricraft_seed_species:[minecraft:nether_wart]"
 					}
 				}
-				title: "下界疣孢子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1DF882CBEDBED745.task.3848926670241847857.title}"
 				type: "item"
 			}]
 			x: -4.0d
@@ -1109,9 +1109,9 @@
 				"24B11A69FBE77570"
 			]
 			description: [
-				"下界疣和肉孢蕈进行杂交时，概率会产生一个极其特殊的结果——&6扭盖菌&r！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest2C1F1CF75F69653E.description1}"
 				""
-				"扭盖菌是一种非生产型作物，其可能的产出结果为&6绯红脑&r或&6扭结绯红肠&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest2C1F1CF75F69653E.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1125,7 +1125,7 @@
 			icon_scale: 4.0d
 			id: "2C1F1CF75F69653E"
 			shape: "none"
-			subtitle: "奇异的课题结论！"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest2C1F1CF75F69653E.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1171,7 +1171,7 @@
 						value: "agricraft_seed_species:[kubejs:twistcap_fungus]"
 					}
 				}
-				title: "扭盖菌孢子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest2C1F1CF75F69653E.task.43929955326885412.title}"
 				type: "item"
 			}]
 			x: -3.98d
@@ -1183,9 +1183,9 @@
 				"36C5778B61447524"
 			]
 			description: [
-				"生菜和软骨丝草进行杂交时，概率会产生一个极其特殊的结果——&6椎壳花&r！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest3BF6D4382987C474.description1}"
 				""
-				"椎壳花是一种非生产型作物，其可能的产出结果为&6膨大花蕊&r或&6巨噬花茎&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest3BF6D4382987C474.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1204,7 +1204,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "奇异的课题结论！"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest3BF6D4382987C474.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1250,7 +1250,7 @@
 						value: "agricraft_seed_species:[kubejs:verteshell_flower]"
 					}
 				}
-				title: "椎壳花种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest3BF6D4382987C474.task.3927646132746317183.title}"
 				type: "item"
 			}]
 			x: 6.53d
@@ -1258,7 +1258,7 @@
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
-			description: ["&6生菜种子&r可以从野外的野生生菜中获取，亦可以在穿戴草帽或缀花草帽时破坏草丛获得。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest29E2AA7B8122ABA3.description1}"]
 			hide_dependency_lines: true
 			icon: {
 				Count: 1
@@ -1302,7 +1302,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "生菜？生菜。"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest29E2AA7B8122ABA3.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1348,7 +1348,7 @@
 						value: "agricraft_seed_species:[kubejs:lettuce]"
 					}
 				}
-				title: "生菜种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest29E2AA7B8122ABA3.task.5670791203191999739.title}"
 				type: "item"
 			}]
 			x: 6.5d
@@ -1360,9 +1360,9 @@
 				"5DFD68F1C3169030"
 			]
 			description: [
-				"小麦和血髓根棘进行杂交时，概率会产生一个极其特殊的结果——&6肝草&r！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4D5B0DE5C50958CB.description1}"
 				""
-				"肝草是一种非生产型作物，其唯一可能的产出结果为&6活肉玫瑰肝&r，但其获取的概率&6约为10%&r，因此在杂交完成后您可能需要很长的时间来获得这种器官。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4D5B0DE5C50958CB.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1381,7 +1381,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "奇异的课题结论！"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest4D5B0DE5C50958CB.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1427,7 +1427,7 @@
 						value: "agricraft_seed_species:[kubejs:livergrass]"
 					}
 				}
-				title: "肝草种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest4D5B0DE5C50958CB.task.7736372077875848775.title}"
 				type: "item"
 			}]
 			x: -19.7d
@@ -1435,7 +1435,7 @@
 		}
 		{
 			dependencies: ["73AC29CE33479E8A"]
-			description: ["&6小麦种子&r作为最常见且最容易获取的种子，其大多数特性都被人们所知——除了接下来我要为您说明的这些。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest5DFD68F1C3169030.description1}"]
 			hide_dependency_lines: true
 			id: "5DFD68F1C3169030"
 			rewards: [{
@@ -1443,7 +1443,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "最常见的种子"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest5DFD68F1C3169030.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1489,7 +1489,7 @@
 						value: "agricraft_seed_species:[minecraft:wheat]"
 					}
 				}
-				title: "小麦种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest5DFD68F1C3169030.task.1327232167108086052.title}"
 				type: "item"
 			}]
 			x: -19.5d
@@ -1501,11 +1501,11 @@
 				"4BB0AC8AAF19E6DD"
 			]
 			description: [
-				"将&6朱顶绿和金刚大丽&r杂交，您便可以获得资源作物——炼狱芦苇。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest287E5613684EAF8A.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植炼狱芦苇&r，且在沙砾下必须放置有&6远古残骸&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest287E5613684EAF8A.description2}"
 				""
-				"在炼狱芦苇的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest287E5613684EAF8A.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "agricraft:netherite_sliver"
@@ -1523,7 +1523,7 @@
 					type: "titles:title"
 				}
 			]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest287E5613684EAF8A.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1569,7 +1569,7 @@
 						value: "agricraft_seed_species:[agricraft:nethereed]"
 					}
 				}
-				title: "炼狱芦苇种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest287E5613684EAF8A.task.4181059295522414172.title}"
 				type: "item"
 			}]
 			x: -22.0d
@@ -1578,11 +1578,11 @@
 		{
 			dependencies: ["62E9CB57569D552F"]
 			description: [
-				"将&6紫晶花和石英菊&r杂交，您便可以获得资源作物——朱顶绿。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1447BEDDB07EC1E7.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植朱顶绿&r，且在沙砾下必须放置有&6绿宝石矿/深层绿宝石矿&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1447BEDDB07EC1E7.description2}"
 				""
-				"在朱顶绿的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1447BEDDB07EC1E7.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1593,7 +1593,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest1447BEDDB07EC1E7.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1639,7 +1639,7 @@
 						value: "agricraft_seed_species:[agricraft:emeryllis]"
 					}
 				}
-				title: "朱顶绿种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1447BEDDB07EC1E7.task.2812131473234293904.title}"
 				type: "item"
 			}]
 			x: -20.0d
@@ -1651,11 +1651,11 @@
 				"55129AF3380D7FAA"
 			]
 			description: [
-				"将&6紫晶花和闪耀疣&r杂交，您便可以获得资源作物——金刚大丽。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4BB0AC8AAF19E6DD.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植金刚大丽&r，且在沙砾下必须放置有&6钻石矿/深层钻石矿&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4BB0AC8AAF19E6DD.description2}"
 				""
-				"在金刚大丽的&6适应等级达到8之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest4BB0AC8AAF19E6DD.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:diamond"
@@ -1665,7 +1665,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest4BB0AC8AAF19E6DD.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1711,7 +1711,7 @@
 						value: "agricraft_seed_species:[agricraft:diamahlia]"
 					}
 				}
-				title: "金刚大丽种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest4BB0AC8AAF19E6DD.task.8887649594919086442.title}"
 				type: "item"
 			}]
 			x: -19.0d
@@ -1720,11 +1720,11 @@
 		{
 			dependencies: ["09796DB8E7F508F4"]
 			description: [
-				"将&6红灌木和闪耀疣&r杂交，您便可以获得资源作物——石英菊。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest62E9CB57569D552F.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植石英菊&r，且在沙砾下必须放置有&6下界石英矿石&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest62E9CB57569D552F.description2}"
 				""
-				"在石英菊的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest62E9CB57569D552F.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1735,7 +1735,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest62E9CB57569D552F.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1781,7 +1781,7 @@
 						value: "agricraft_seed_species:[agricraft:quartzanthemum]"
 					}
 				}
-				title: "石英菊种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest62E9CB57569D552F.task.5279374462716764498.title}"
 				type: "item"
 			}]
 			x: -17.5d
@@ -1790,11 +1790,11 @@
 		{
 			dependencies: ["0B4CE5D58AD3D310"]
 			description: [
-				"将&6红灌木和蓝熏衣&r杂交，您便可以获得资源作物——紫晶花。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest55129AF3380D7FAA.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植紫晶花&r，且在沙砾下必须放置有&6紫水晶块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest55129AF3380D7FAA.description2}"
 				""
-				"在紫晶花的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest55129AF3380D7FAA.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -1806,7 +1806,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest55129AF3380D7FAA.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1852,7 +1852,7 @@
 						value: "agricraft_seed_species:[agricraft:amathyllis]"
 					}
 				}
-				title: "紫晶花种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest55129AF3380D7FAA.task.6961316412221470780.title}"
 				type: "item"
 			}]
 			x: -11.5d
@@ -1861,11 +1861,11 @@
 		{
 			dependencies: ["33355D4849FFD6D8"]
 			description: [
-				"将&6金光花和下界疣&r杂交，您便可以获得资源作物——闪耀疣。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest9796DB8E7F508F4.description1}"
 				""
-				"默认情况下，您&6只能够在灵魂土上种植闪耀疣&r，且在灵魂土下必须放置有&6荧石&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest9796DB8E7F508F4.description2}"
 				""
-				"在闪耀疣的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest9796DB8E7F508F4.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1876,7 +1876,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest9796DB8E7F508F4.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1922,7 +1922,7 @@
 						value: "agricraft_seed_species:[agricraft:nitor_wart]"
 					}
 				}
-				title: "闪耀疣孢子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest9796DB8E7F508F4.task.6210106487762801454.title}"
 				type: "item"
 			}]
 			x: -15.5d
@@ -1931,11 +1931,11 @@
 		{
 			dependencies: ["0B4CE5D58AD3D310"]
 			description: [
-				"将&6铁叶草和红灌木&r杂交，您便可以获得资源作物——金光花。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest33355D4849FFD6D8.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植金光花&r，且在沙砾下必须放置有&6金矿石/深层金矿石&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest33355D4849FFD6D8.description2}"
 				""
-				"在金光花的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest33355D4849FFD6D8.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1946,7 +1946,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest33355D4849FFD6D8.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1992,7 +1992,7 @@
 						value: "agricraft_seed_species:[agricraft:aurigold]"
 					}
 				}
-				title: "金光花种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest33355D4849FFD6D8.task.4649238485151217037.title}"
 				type: "item"
 			}]
 			x: -13.0d
@@ -2001,11 +2001,11 @@
 		{
 			dependencies: ["349BE75979DD5489"]
 			description: [
-				"将&6铁叶草和蓝熏衣&r杂交，您便可以获得资源作物——红灌木。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.questB4CE5D58AD3D310.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植红灌木&r，且在沙砾下必须放置有&6红石矿石/深层红石矿石&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.questB4CE5D58AD3D310.description2}"
 				""
-				"在红灌木的&6适应等级达到6之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.questB4CE5D58AD3D310.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:redstone"
@@ -2015,7 +2015,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.questB4CE5D58AD3D310.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2061,7 +2061,7 @@
 						value: "agricraft_seed_species:[agricraft:redstodendron]"
 					}
 				}
-				title: "红灌木种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.questB4CE5D58AD3D310.task.9005025136485214520.title}"
 				type: "item"
 			}]
 			x: -11.0d
@@ -2073,11 +2073,11 @@
 				"62C35BEA5E37DCD5"
 			]
 			description: [
-				"将&6铁叶草作物和矢车菊作物放置在杂交架的相对两侧&r，您便可以通过杂交获得一种特殊的资源作物——蓝薰衣。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest349BE75979DD5489.description1}"
 				""
-				"蓝薰衣对生长条件同样有着相对苛刻的要求，默认情况下，您&6只能够在沙砾上种植蓝薰衣&r，且在沙砾下必须放置有&6青金石矿石/深层青金石矿石&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest349BE75979DD5489.description2}"
 				""
-				"在蓝薰衣的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest349BE75979DD5489.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2088,7 +2088,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest349BE75979DD5489.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2134,7 +2134,7 @@
 						value: "agricraft_seed_species:[agricraft:lapender]"
 					}
 				}
-				title: "蓝薰衣种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest349BE75979DD5489.task.7670538682720142066.title}"
 				type: "item"
 			}]
 			x: -8.5d
@@ -2143,9 +2143,9 @@
 		{
 			dependencies: ["62C35BEA5E37DCD5"]
 			description: [
-				"通过&6将原版的矢车菊放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊矢车菊种子。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6C51BF4948F21EDD.description1}"
 				""
-				"如果您无法找到&6矢车菊&r，也可以尝试&6通过杂交来获取&r——在杂交流程中的大部分染料作物大都可以通过这种方式将花朵转化为对应的种子。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6C51BF4948F21EDD.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2156,7 +2156,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "世界常见作物名录"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest6C51BF4948F21EDD.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2202,7 +2202,7 @@
 						value: "agricraft_seed_species:[minecraft:cornflower]"
 					}
 				}
-				title: "矢车菊种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest6C51BF4948F21EDD.task.1787270821278054397.title}"
 				type: "item"
 			}]
 			x: -8.5d
@@ -2211,9 +2211,9 @@
 		{
 			dependencies: ["73AC29CE33479E8A"]
 			description: [
-				"通过&6将原版的南瓜种子放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊南瓜种子。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest43E5DE89BA28671E.description1}"
 				""
-				"作物架上的南瓜种子并&6不会结出方块形式的南瓜&r作为产物——它会如同普通作物一样，右键收割后获得南瓜物品。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest43E5DE89BA28671E.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:pumpkin"
@@ -2223,7 +2223,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "世界常见作物名录"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest43E5DE89BA28671E.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2269,7 +2269,7 @@
 						value: "agricraft_seed_species:[minecraft:pumpkin]"
 					}
 				}
-				title: "南瓜种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest43E5DE89BA28671E.task.6632584121961679420.title}"
 				type: "item"
 			}]
 			x: -4.0d
@@ -2278,9 +2278,9 @@
 		{
 			dependencies: ["73AC29CE33479E8A"]
 			description: [
-				"通过&6将原版的西瓜种子放置在种子分析仪&r中，您便可以获得能够种植在作物架上的特殊西瓜种子。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6350B7BA52C1A4B1.description1}"
 				""
-				"作物架上的西瓜种子并&6不会结出方块形式的瓜块&r作为产物——它会如同普通作物一样，右键收割后获得西瓜片。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6350B7BA52C1A4B1.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:melon"
@@ -2290,7 +2290,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "世界常见作物名录"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest6350B7BA52C1A4B1.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2336,7 +2336,7 @@
 						value: "agricraft_seed_species:[minecraft:melon]"
 					}
 				}
-				title: "西瓜种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest6350B7BA52C1A4B1.task.7399468096715530094.title}"
 				type: "item"
 			}]
 			x: -4.0d
@@ -2348,13 +2348,13 @@
 				"6350B7BA52C1A4B1"
 			]
 			description: [
-				"将&6西瓜作物和南瓜作物放置在杂交架的相对两侧&r，您便可以通过杂交获得一种特殊的资源作物——铁叶草。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest62C35BEA5E37DCD5.description1}"
 				""
-				"相比于常规作物，铁叶草对生长条件有着相对苛刻的要求，默认情况下，您&6只能够在沙砾上种植铁叶草&r，且在沙砾下必须放置有&6铁矿石/深层铁矿石&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest62C35BEA5E37DCD5.description2}"
 				""
-				"随着作物的&6适应&r等级提升，铁叶草的可种植土壤范围也会随之扩大，因此您也可以在早期便开始尝试提高父代作物的属性，以便于后续杂交后直接获得高级作物。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest62C35BEA5E37DCD5.description3}"
 				""
-				"在铁叶草的&6适应等级达到4之后，便可以不需要再在下方放置铁矿石&r，因此请多多培育作物！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest62C35BEA5E37DCD5.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2365,7 +2365,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest62C35BEA5E37DCD5.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2411,7 +2411,7 @@
 						value: "agricraft_seed_species:[agricraft:ferranium]"
 					}
 				}
-				title: "铁叶草种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest62C35BEA5E37DCD5.task.8093720586266393496.title}"
 				type: "item"
 			}]
 			x: -6.357142857142854d
@@ -2420,13 +2420,13 @@
 		{
 			dependencies: ["1CD0E619EF33D8D5"]
 			description: [
-				"使用肥料可以有效的提高作物生长 \\& 杂交的速度。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest2BC9B9A5611DF493.description1}"
 				""
-				"举例而言，&6骨粉、炼金肥料和营养膏&r这三种肥料不仅可以催熟作物——当&6使用这些物品右键杂交架时，也可以使杂交作物快速出现&r。其中以营养膏最为经济，催熟效果最好。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest2BC9B9A5611DF493.description2}"
 				""
-				"堆肥则是能够一次性催熟大片区域，但无法触发杂交行为，因此只推荐用于大片低级作物的区域使用。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest2BC9B9A5611DF493.description3}"
 				""
-				"不同作物对于肥料的敏感性不同，一般而言，&6杂交难度越高的作物（如资源作物）越不容易被催熟&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest2BC9B9A5611DF493.description4}"
 			]
 			icon: "biomancy:nutrient_paste"
 			id: "2BC9B9A5611DF493"
@@ -2435,7 +2435,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "催熟与杂交"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest2BC9B9A5611DF493.subtitle}"
 			tasks: [{
 				id: "1B5BC45193079458"
 				item: {
@@ -2469,21 +2469,21 @@
 						]
 					}
 				}
-				title: "任意一种肥料"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest2BC9B9A5611DF493.task.1971385116542866520.title}"
 				type: "item"
 			}]
-			title: "选择合适的肥料"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest2BC9B9A5611DF493.title}"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"由向日葵和膨大花蕊制成的诡异器官，虽然并不是直接从作物上获得，&6但其含植量实在是令人担忧&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest29E45355EA60C4E6.description1}"
 				""
-				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest29E45355EA60C4E6.description2}"
 				""
-				"通过该器官，&6若对方身上存在活肉霉毒效果，则会尝试延长该毒素的持续时间&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest29E45355EA60C4E6.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2493,7 +2493,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "活肉霉毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest29E45355EA60C4E6.subtitle}"
 			tasks: [{
 				id: "5F6B07F3A743985F"
 				item: {
@@ -2511,9 +2511,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest3C7660C834B1EDB9.description1}"
 				""
-				"通过该器官，可以&6将活肉霉毒关联的属性从攻击力切换到最大生命值&r——这对于某些特定环境有着极其强大的作用。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest3C7660C834B1EDB9.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2523,7 +2523,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "活肉霉毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest3C7660C834B1EDB9.subtitle}"
 			tasks: [{
 				id: "4D3502D4B92F3F4A"
 				item: {
@@ -2539,9 +2539,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest571205E4A010E818.description1}"
 				""
-				"通过本植物，&6可以轻松的给敌人附加活肉霉毒效果，且将攻击力关联到活肉霉毒毒素效果上&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest571205E4A010E818.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2551,7 +2551,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "活肉霉毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest571205E4A010E818.subtitle}"
 			tasks: [{
 				id: "2D7CBBF7981DB687"
 				item: {
@@ -2567,9 +2567,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"这种植物与一种被称为&c活肉霉毒&r的特殊毒素紧密相关。感染该毒素的生物会受到与毒素施加者属性相关的伤害。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.questF85D05C9B7C69C9.description1}"
 				""
-				"通过该器官，&6若对方身上存在活肉霉毒效果，则可以通过消耗对方身上毒素的持续时间为自己抵御伤害&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.questF85D05C9B7C69C9.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2579,7 +2579,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "活肉霉毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.questF85D05C9B7C69C9.subtitle}"
 			tasks: [{
 				id: "48C1B2C71A882FD7"
 				item: {
@@ -2595,9 +2595,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1B3DACCFB0C905B7.description1}"
 				""
-				"通过本植物，您可以&6每十次攻击来为敌人赋予恶腐蚀毒效果&r。基于此，您可以在第十次攻击前，通过特殊手段临时提高赋毒攻击的伤害，进而提高持续的毒素伤害。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1B3DACCFB0C905B7.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2607,7 +2607,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "恶腐蚀毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest1B3DACCFB0C905B7.subtitle}"
 			tasks: [{
 				id: "27FEE941E471C439"
 				item: {
@@ -2625,9 +2625,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest130BE89C7093C6F2.description1}"
 				""
-				"通过本植物，您可以有效&6提高恶腐蚀毒的等级&r，进而提高输出能力。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest130BE89C7093C6F2.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2637,7 +2637,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "恶腐蚀毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest130BE89C7093C6F2.subtitle}"
 			tasks: [{
 				id: "4EF4F0D966FB32E5"
 				item: {
@@ -2653,9 +2653,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest555499E0C10FA9C6.description1}"
 				""
-				"通过本植物，您可以在击杀持有恶腐蚀毒的生物时，&6将恶腐蚀毒有效扩散&r，进而提高群体杀伤力。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest555499E0C10FA9C6.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2665,7 +2665,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "恶腐蚀毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest555499E0C10FA9C6.subtitle}"
 			tasks: [{
 				id: "20B859550182D8BE"
 				item: {
@@ -2681,9 +2681,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"这种植物与一种被称为&2恶腐蚀毒&r的特殊毒素紧密相关，该毒素会根据赋予毒素时所造成的伤害决定毒素强度。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6FE8A756ED0793B4.description1}"
 				""
-				"通过本植物，您可以&6立刻结算恶腐蚀毒的持续伤害&r，提高短期的爆发能力。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6FE8A756ED0793B4.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2693,7 +2693,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "恶腐蚀毒的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest6FE8A756ED0793B4.subtitle}"
 			tasks: [{
 				id: "08F38551AFF482B7"
 				item: {
@@ -2708,7 +2708,7 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
-			description: ["巨噬花茎能够&6略微延长部分药水的持续时间&r——虽然大多数情况下，这并没有什么作用。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest4271444363CC9CF0.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "4271444363CC9CF0"
@@ -2717,7 +2717,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "日常生产的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest4271444363CC9CF0.subtitle}"
 			tasks: [{
 				id: "2AF7754CDA86A7E4"
 				item: {
@@ -2733,9 +2733,9 @@
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"啤酒肾的内部可以放入各类啤酒，并且通过啤酒肾的主动使用方法来主动获取这些啤酒的效果。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest97DBD22AB0B46BF.description1}"
 				""
-				"通过啤酒肾触发的效果会&6继承啤酒品质带来的影响&r，其最简单的应用便是通过&6海莉啤酒&r来获得无限期的爱意滑翔效果。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest97DBD22AB0B46BF.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2745,7 +2745,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "日常生产的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest97DBD22AB0B46BF.subtitle}"
 			tasks: [{
 				id: "03EDFE487EEDFF79"
 				item: {
@@ -2760,7 +2760,7 @@
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
-			description: ["木灵灵质允许玩家通过潜行催熟&6同一水平面上大范围的作物&r——在非玩家实体上也可以生效。"]
+			description: ["{ftbquests.chapter.1E27D16084D6A3C7.quest3D4C22EA3CC333B5.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "3D4C22EA3CC333B5"
@@ -2769,7 +2769,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "日常生产的研究"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest3D4C22EA3CC333B5.subtitle}"
 			tasks: [{
 				id: "6E92D02E91994D28"
 				item: {
@@ -2785,17 +2785,17 @@
 		{
 			dependencies: ["6BCFAD682406F180"]
 			description: [
-				"可能您注意到了，在之前的任务中我曾经将一种特殊的土壤——&6息壤&r——作为任务的奖励。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.description1}"
 				""
-				"该土壤可以无条件的&6催熟任何在作物架上的作物&r，甚至可以无视作物的生长条件。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.description2}"
 				""
-				"但这种土壤会带来&6世界的不稳定&r——大量使用这种土壤，可能会有&c世界崩坏&r的危险。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.description3}"
 				""
-				"因此我决定，将息壤的制成方法赠予给最了解作物的人——只要您能够在作物架种植最多的作物，那边可以选择是否公开化这样技术。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.description4}"
 				"{@pagebreak}"
-				"公开配方会使所有人都可以制作息壤。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.description5}"
 				""
-				"私有配方会使您成为唯一能够制作息壤的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.description6}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:infinity_soil"
@@ -2806,17 +2806,17 @@
 				table_id: 4833777691996631051L
 				type: "choice"
 			}]
-			subtitle: "奇异土壤"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.subtitle}"
 			tasks: [{
 				icon: "agricraft:wooden_crop_sticks"
 				id: "08C0C03D4308B564"
 				leaderboard: "maa:crops_planted"
 				min: 1
 				rank: 1
-				title: "作物架种植称霸"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.task.630715317182051684.title}"
 				type: "leaderboards:rank_task"
 			}]
-			title: "息壤配方"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest5B24D3C8C88CC080.title}"
 			x: 1.5d
 			y: 24.5d
 		}
@@ -2830,9 +2830,9 @@
 				"3BF6D4382987C474"
 			]
 			description: [
-				"严格来说，使用植物作为器官是非常不安全的——但您也不需要过度担心！因为我已经发现了一种特殊胸腔的存在。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1FF6321E6FE68ECC.description1}"
 				""
-				"在历史记录中，这种胸腔被简单的称作&6植物胸腔&r，其可以最大幅度发挥这些植物器官的能力，并且&6非常安全&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1FF6321E6FE68ECC.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -2848,7 +2848,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "这安全吗？"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest1FF6321E6FE68ECC.subtitle}"
 			tasks: [{
 				id: "1DFFEF0C6400AD2F"
 				item: {
@@ -2918,23 +2918,23 @@
 						]
 					}
 				}
-				title: "任意需作物获得的植物器官"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1FF6321E6FE68ECC.task.2161709182657539375.title}"
 				type: "item"
 			}]
-			title: "动物与非动物的边界"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1FF6321E6FE68ECC.title}"
 			x: -14.0d
 			y: 24.5d
 		}
 		{
 			dependencies: ["1E7CD654764B508D"]
 			description: [
-				"&6恭喜！&r"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6BCFAD682406F180.description1}"
 				""
-				"植物胸腔提供给了生物一个非常非常安全的方式以在胸腔内维持这些植物器官的活性！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6BCFAD682406F180.description2}"
 				""
-				"通过植物胸腔内&6丰饶槽位&r的激活，大部分植物器官会有着极其特殊的增强，以在战斗中和日常生产中帮助您前进。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6BCFAD682406F180.description3}"
 				""
-				"请您活用这份能力，以便完成我们的冒险故事！"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest6BCFAD682406F180.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "6BCFAD682406F180"
@@ -2949,7 +2949,7 @@
 					id: "5F4BA234826F4234"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.1E27D16084D6A3C7.quest6BCFAD682406F180.reward.6866760403266781748.title}"
 					type: "maa:kube"
 				}
 				{
@@ -2959,24 +2959,24 @@
 				}
 			]
 			shape: "none"
-			subtitle: "植物之心"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest6BCFAD682406F180.subtitle}"
 			tasks: [{
 				id: "7D7FAA3422A50824"
 				item: "kubejs:plant_injection"
 				type: "item"
 			}]
-			title: "&6庆贺吧！此乃植物胸腔！&r"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest6BCFAD682406F180.title}"
 			x: -2.0d
 			y: 24.5d
 		}
 		{
 			dependencies: ["1FF6321E6FE68ECC"]
 			description: [
-				"在众多作物中，存在一种名为&6迷咕麻菇&r的作物，其具有极强的致幻性。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1E7CD654764B508D.description1}"
 				""
-				"直接食用它的果实，会获得名为&6手术麻醉&r的效果。持有该效果时，生物会陷入无法移动的状态，并且变得&6易于开胸&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1E7CD654764B508D.description2}"
 				""
-				"这种果实同样是植物胸腔的重要原料，&6在获得少量迷咕麻菇果后，与三阶注射器在生物锻台合成&r，便能够制成植物注射器。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1E7CD654764B508D.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "1E7CD654764B508D"
@@ -2985,7 +2985,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "迷咕？麻菇？"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest1E7CD654764B508D.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -3031,21 +3031,21 @@
 						value: "agricraft_seed_species:[kubejs:magic_mushroom]"
 					}
 				}
-				title: "迷咕麻菇种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1E7CD654764B508D.task.4325347919945614111.title}"
 				type: "item"
 			}]
-			title: "植物安全手术守则"
+			title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1E7CD654764B508D.title}"
 			x: -6.0d
 			y: 24.5d
 		}
 		{
 			dependencies: ["62C35BEA5E37DCD5"]
 			description: [
-				"将&6生菜和铁叶草&r杂交，您便可以获得资源作物——卷锌菜。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1FCFCD7C401A7978.description1}"
 				""
-				"默认情况下，您&6只能够在沙砾上种植卷锌菜&r，且在沙砾下必须放置有&6锌矿石/深层锌矿石&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1FCFCD7C401A7978.description2}"
 				""
-				"在卷锌菜的&6适应等级达到4之后，便可以不需要再在下方放置对应方块&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.quest1FCFCD7C401A7978.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "create:zinc_nugget"
@@ -3055,7 +3055,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "利用植物改善生产"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.quest1FCFCD7C401A7978.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -3101,7 +3101,7 @@
 						value: "agricraft_seed_species:[kubejs:zinc_cabbage]"
 					}
 				}
-				title: "卷锌菜种子"
+				title: "{ftbquests.chapter.1E27D16084D6A3C7.quest1FCFCD7C401A7978.task.7100431451601963341.title}"
 				type: "item"
 			}]
 			x: -6.357142857142854d
@@ -3110,9 +3110,9 @@
 		{
 			dependencies: ["1E7CD654764B508D"]
 			description: [
-				"使用&6迷咕麻菇胶质&r便可以制成手术麻醉药水。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.questE665908D464191D.description1}"
 				""
-				"被手术麻醉效果影响的生物会&6无法移动且变得易于开胸&r。"
+				"{ftbquests.chapter.1E27D16084D6A3C7.questE665908D464191D.description2}"
 			]
 			hide_dependency_lines: true
 			id: "0E665908D464191D"
@@ -3121,7 +3121,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "简易开胸方案"
+			subtitle: "{ftbquests.chapter.1E27D16084D6A3C7.questE665908D464191D.subtitle}"
 			tasks: [{
 				id: "04D8F23E87FFDE6D"
 				item: {
@@ -3137,5 +3137,5 @@
 			y: 27.0d
 		}
 	]
-	title: "传闻：血肉孢子"
+	title: "{ftbquests.chapter.1E27D16084D6A3C7.title}"
 }

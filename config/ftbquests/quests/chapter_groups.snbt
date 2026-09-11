@@ -1,8 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "63198C281F0E9667", title: "常识" }
-		{ id: "0B365C36A50478AA", title: "传闻" }
-		{ id: "74BE103AC753AC46", title: "外传" }
-		{ id: "2FA8E662F6D4EAED", title: "一切之外" }
+		{ id: "63198C281F0E9667", title: "{ftbquests.chapter_groups.7140892788120262247.title}" }
+		{ id: "0B365C36A50478AA", title: "{ftbquests.chapter_groups.807934572926105770.title}" }
+		{ id: "74BE103AC753AC46", title: "{ftbquests.chapter_groups.8412178998612962374.title}" }
+		{ id: "2FA8E662F6D4EAED", title: "{ftbquests.chapter_groups.3434248028592335597.title}" }
 	]
 }

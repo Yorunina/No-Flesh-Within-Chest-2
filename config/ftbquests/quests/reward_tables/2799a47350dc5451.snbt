@@ -10,7 +10,7 @@
 			isServer: true
 			remove: false
 			stage: "ftb_can_enter_nexus"
-			title: "共享中转站维度"
+			title: "{ftbquests.loot_table.2853492654100730961.item_1}"
 			type: "maa:astages"
 		}
 		{
@@ -20,9 +20,9 @@
 			isServer: false
 			remove: false
 			stage: "ftb_can_enter_nexus"
-			title: "私有中转站维度"
+			title: "{ftbquests.loot_table.2853492654100730961.item_2}"
 			type: "maa:astages"
 		}
 	]
-	title: "中转站维度抉择"
+	title: "{ftbquests.loot_table.2853492654100730961.title}"
 }

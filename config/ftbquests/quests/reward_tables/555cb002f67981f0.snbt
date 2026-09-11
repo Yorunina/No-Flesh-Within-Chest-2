@@ -10,7 +10,7 @@
 			isServer: false
 			remove: false
 			stage: "ftb_rose_injection_recipe"
-			title: "私有玫瑰注射器配方"
+			title: "{ftbquests.loot_table.6150984717852836336.item_1}"
 			type: "maa:astages"
 		}
 		{
@@ -20,9 +20,9 @@
 			isServer: true
 			remove: false
 			stage: "ftb_rose_injection_recipe"
-			title: "公开玫瑰注射器配方"
+			title: "{ftbquests.loot_table.6150984717852836336.item_2}"
 			type: "maa:astages"
 		}
 	]
-	title: "玫瑰注射器配方"
+	title: "{ftbquests.loot_table.6150984717852836336.title}"
 }

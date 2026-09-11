@@ -41,11 +41,11 @@
 		{
 			dependencies: ["4E805DA2B8D171E4"]
 			description: [
-				"感谢您的关键词，我成功的搜索到了相关的日志信息，借由此，我定位了一个预先被设计好的特殊章节。"
+				"{ftbquests.chapter.7B3419A1727C0C5A.quest1B4DAFA046EB8F20.description1}"
 				""
-				"该章节的设计非常奇怪，我无法正常对该章节进行任务的重点标注和重排序——就连加入这个任务，都已经在我的能力的极限范围。"
+				"{ftbquests.chapter.7B3419A1727C0C5A.quest1B4DAFA046EB8F20.description2}"
 				""
-				"接下来的东西，可能要由您自己来探索了，如果有新的信息，辛苦您继续通过保持联络进行提交。"
+				"{ftbquests.chapter.7B3419A1727C0C5A.quest1B4DAFA046EB8F20.description3}"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:player_head"
@@ -56,22 +56,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "身份特殊的玩家"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest1B4DAFA046EB8F20.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:badge"
 				id: "3875F001D6C0D542"
 				kubeId: "sponsor_task"
-				title: "赞助者的记录"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest1B4DAFA046EB8F20.task.4068421729087706434.title}"
 				type: "maa:kube"
 			}]
-			title: "&6被称为赞助者的玩家&r"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest1B4DAFA046EB8F20.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1B4DAFA046EB8F20"]
-			description: ["&7** 好想玩脆二 **&r"]
+			description: ["{ftbquests.chapter.7B3419A1727C0C5A.quest440318F5E2A002F4.description1}"]
 			icon: "candlelight:letter_open"
 			id: "440318F5E2A002F4"
 			rewards: [
@@ -83,24 +83,24 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "6978334FFDE9EB2D"
-					title: "解锁头衔：&e赞助者"
+					title: "{ftbquests.chapter.7B3419A1727C0C5A.quest440318F5E2A002F4.reward.7599880789843110701.title}"
 					titleId: "kubejs:sponsor"
 					type: "titles:title"
 				}
 			]
-			subtitle: "[一段模糊不清的语音]"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest440318F5E2A002F4.subtitle}"
 			tasks: [{
 				id: "1183166C34188972"
-				title: "什么？"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest440318F5E2A002F4.task.1261876974580173170.title}"
 				type: "checkmark"
 			}]
-			title: "重放"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest440318F5E2A002F4.title}"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
-			description: ["&7一张布满划痕的唱片，其上贴有一个标签，注明：“听了会很饿”&r"]
+			description: ["{ftbquests.chapter.7B3419A1727C0C5A.quest241E469417A467F1.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -116,19 +116,19 @@
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "被灰尘覆盖的唱片"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest241E469417A467F1.subtitle}"
 			tasks: [{
 				id: "7B092B25FEB68E22"
-				title: "轻轻拾起"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest241E469417A467F1.task.8865664783642693154.title}"
 				type: "checkmark"
 			}]
-			title: "一张破旧的音乐唱片"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest241E469417A467F1.title}"
 			x: 18.75d
 			y: 3.0000000000000004d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
-			description: ["&7结有大块海渍的怪异道具，虽然你不了解它是用作什么的，但一股冲动使得你想要不顾一切地将其纳为己有。&r"]
+			description: ["{ftbquests.chapter.7B3419A1727C0C5A.quest12273F8B7FDCB9B2.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -148,19 +148,19 @@
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "曾经为王、王为曾经"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest12273F8B7FDCB9B2.subtitle}"
 			tasks: [{
 				id: "12F8BDBFC12FA9D4"
-				title: "从角落拽出"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest12273F8B7FDCB9B2.task.1367051118184475092.title}"
 				type: "checkmark"
 			}]
-			title: "曾经为王的证明"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest12273F8B7FDCB9B2.title}"
 			x: -18.450000000000003d
 			y: 10.8d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
-			description: ["&7这些徽章似乎有着一种奇异的魔力，但你又说不清——你只感觉到它们有些太陈旧了。&r"]
+			description: ["{ftbquests.chapter.7B3419A1727C0C5A.quest54E04F95D9FB9CFC.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -174,24 +174,24 @@
 				id: "042439E16C9CE49A"
 				ignore_reward_blocking: true
 				kubeId: "gen_player_badge"
-				title: "奖章"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest54E04F95D9FB9CFC.reward.298427115665941658.title}"
 				type: "maa:kube"
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "徽章上写着行行小字"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest54E04F95D9FB9CFC.subtitle}"
 			tasks: [{
 				id: "0D70B4DA7B22D491"
-				title: "捡起其中一枚徽章"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest54E04F95D9FB9CFC.task.968472770346407057.title}"
 				type: "checkmark"
 			}]
-			title: "荣誉的象征"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest54E04F95D9FB9CFC.title}"
 			x: -9.75d
 			y: 16.8d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
-			description: ["&7这或许只是一团木屑&r"]
+			description: ["{ftbquests.chapter.7B3419A1727C0C5A.quest5389F88C96D13BA3.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -207,19 +207,19 @@
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "沉寂在最底部"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest5389F88C96D13BA3.subtitle}"
 			tasks: [{
 				id: "7FC34EAFCE0681B0"
-				title: "捧起来仔细查看"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest5389F88C96D13BA3.task.9206288580258202032.title}"
 				type: "checkmark"
 			}]
-			title: "在最为华贵的角落"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest5389F88C96D13BA3.title}"
 			x: 23.55d
 			y: -8.850000000000001d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
-			description: ["&7一杯有着诡异味道的柠檬茶，你已经无法辨认其是在什么时候制作的了。&r"]
+			description: ["{ftbquests.chapter.7B3419A1727C0C5A.quest6DBA9517EAE282B9.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -235,10 +235,10 @@
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "在历史中幸存而来的"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest6DBA9517EAE282B9.subtitle}"
 			tasks: [{
 				id: "7D75CDD57C50FF2E"
-				title: "什么味道"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest6DBA9517EAE282B9.task.9040358143813549870.title}"
 				type: "checkmark"
 			}]
 			x: 25.500000000000004d
@@ -247,9 +247,9 @@
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: [
-				"&7一张纸，似乎因为被水浸泡过已经皱巴巴的。&r"
+				"{ftbquests.chapter.7B3419A1727C0C5A.quest677EAA462224BF44.description1}"
 				""
-				"&7上面的许多字迹已经无法辨认，但其笔迹力度极大，以至于纸张背后有着明显的痕迹。&r"
+				"{ftbquests.chapter.7B3419A1727C0C5A.quest677EAA462224BF44.description2}"
 			]
 			icon: {
 				Count: 1
@@ -275,22 +275,22 @@
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "不知道是谁留下的"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest677EAA462224BF44.subtitle}"
 			tasks: [{
 				id: "61C1D808F827811F"
-				title: "从角落里抠出来"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest677EAA462224BF44.task.7044148825218842911.title}"
 				type: "checkmark"
 			}]
-			title: "皱巴巴的纸张"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest677EAA462224BF44.title}"
 			x: 3.0d
 			y: 16.7d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
 			description: [
-				"&7一个完全崭新的音乐唱片，就好像刚从封装里取出一样。&r"
+				"{ftbquests.chapter.7B3419A1727C0C5A.quest4FDD77A141F86F42.description1}"
 				""
-				"&7你不知道这是什么——至少现在还不知道。&r"
+				"{ftbquests.chapter.7B3419A1727C0C5A.quest4FDD77A141F86F42.description2}"
 			]
 			icon: {
 				Count: 1
@@ -307,19 +307,19 @@
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "什么鬼东西"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.quest4FDD77A141F86F42.subtitle}"
 			tasks: [{
 				id: "072AECC63CEB8CF3"
-				title: "从底部抽出"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.quest4FDD77A141F86F42.task.516485443457092851.title}"
 				type: "checkmark"
 			}]
-			title: "一张崭新的唱片"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.quest4FDD77A141F86F42.title}"
 			x: -17.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["440318F5E2A002F4"]
-			description: ["&7有什么机关被触动了，你似乎莫名其妙多了重身份。&r"]
+			description: ["{ftbquests.chapter.7B3419A1727C0C5A.questE6957F34A4B3337.description1}"]
 			icon: {
 				Count: 1
 				id: "ftbquests:custom_icon"
@@ -331,22 +331,22 @@
 			rewards: [{
 				icon: "titles:title_scroll_uncommon"
 				id: "017E3C60206C90EE"
-				title: "解锁头衔：&e你的老婆"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.questE6957F34A4B3337.reward.107589824661983470.title}"
 				titleId: "kubejs:your_wife"
 				type: "titles:title"
 			}]
 			shape: "none"
 			size: 1.5d
-			subtitle: "这是什么东西"
+			subtitle: "{ftbquests.chapter.7B3419A1727C0C5A.questE6957F34A4B3337.subtitle}"
 			tasks: [{
 				id: "5B8ADFB5CBD93FD5"
-				title: "轻轻触摸"
+				title: "{ftbquests.chapter.7B3419A1727C0C5A.questE6957F34A4B3337.task.6596330576139599829.title}"
 				type: "checkmark"
 			}]
-			title: "一块暗石"
+			title: "{ftbquests.chapter.7B3419A1727C0C5A.questE6957F34A4B3337.title}"
 			x: -7.800000000000001d
 			y: -6.9d
 		}
 	]
-	title: "外传：被尊重者"
+	title: "{ftbquests.chapter.7B3419A1727C0C5A.title}"
 }

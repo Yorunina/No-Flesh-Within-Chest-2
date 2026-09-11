@@ -11,7 +11,7 @@
 			isServer: false
 			remove: false
 			stage: "ftb_primal_bloom_plant"
-			title: "私有蕾莓种植技术"
+			title: "{ftbquests.loot_table.4303910337977587036.item_1}"
 			type: "maa:astages"
 		}
 		{
@@ -21,9 +21,9 @@
 			isServer: true
 			remove: false
 			stage: "ftb_primal_bloom_plant"
-			title: "公开蕾莓种植技术"
+			title: "{ftbquests.loot_table.4303910337977587036.item_2}"
 			type: "maa:astages"
 		}
 	]
-	title: "蕾莓种植技术"
+	title: "{ftbquests.loot_table.4303910337977587036.title}"
 }

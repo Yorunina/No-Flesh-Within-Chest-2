@@ -76,11 +76,11 @@
 		{
 			dependencies: ["5915C77B5C546047"]
 			description: [
-				"在整理过后，我大概知晓了如何&6初步进行胸腔的扩容&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest348CF124F966D213.description1}"
 				""
-				"为了扩容胸腔，我们需要制作&2小型酸液罐&r。而为了制作小型酸液罐，则需要一系列生物技术的突破. . ."
+				"{ftbquests.chapter.30B3D092011ABE08.quest348CF124F966D213.description2}"
 				""
-				"因此，请您先在生物炼金釜中制成&6有机化合物&r，以好进行后续的炼金配方。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest348CF124F966D213.description3}"
 			]
 			id: "348CF124F966D213"
 			rewards: [{
@@ -88,24 +88,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "攀升之路"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest348CF124F966D213.subtitle}"
 			tasks: [{
 				id: "1CB6E180909F17EA"
 				item: "biomancy:organic_compound"
 				type: "item"
 			}]
-			title: "生物技术的精进"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest348CF124F966D213.title}"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["348CF124F966D213"]
 			description: [
-				"接下来，我们需要制作&6配种兴奋剂&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest599ED9E67C252EC4.description1}"
 				""
-				"通过使用配种兴奋剂，可以&6让生物无视生殖冷却进行交配&r，进而迅速获得对应生物的幼崽。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest599ED9E67C252EC4.description2}"
 				""
-				"但是，我们并不是为了搞畜牧业而来制作配种兴奋剂的——我们需要它造成的副产物，即那些&6具有基因缺陷的生物后代&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest599ED9E67C252EC4.description3}"
 			]
 			hide_dependency_lines: true
 			id: "599ED9E67C252EC4"
@@ -114,22 +114,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "攀升于此"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest599ED9E67C252EC4.subtitle}"
 			tasks: [{
 				id: "13407778724F20FC"
 				item: "biomancy:breeding_stimulant"
 				type: "item"
 			}]
-			title: "生物技术对生物的影响"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest599ED9E67C252EC4.title}"
 			x: 2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["599ED9E67C252EC4"]
 			description: [
-				"通过向鸡注射配种兴奋剂，其在交配时，有低概率会产生具有严重基因缺陷的后代，其名为&c“血肉鸡”&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest247428B28C49C651.description1}"
 				""
-				"血肉鸡并不会正常产出鸡蛋，而是会产出&6“酸化鸡蛋”&r。其特性能够在分解器中被分解为胃液，进而有助于我们制成&6小型酸液罐&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest247428B28C49C651.description2}"
 			]
 			id: "247428B28C49C651"
 			rewards: [{
@@ -137,22 +137,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "血肉技术成型"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest247428B28C49C651.subtitle}"
 			tasks: [{
 				id: "4BCE93F948069A7F"
 				item: "biomancy:acidic_egg"
 				type: "item"
 			}]
-			title: "诱导基因缺陷"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest247428B28C49C651.title}"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["247428B28C49C651"]
 			description: [
-				"通过对酸化鸡蛋的分解，可以获得少量的&6胃液&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest66338DC20A34B58D.description1}"
 				""
-				"这就是我们所需要的全部了，&6第一次胸腔扩容计划已经准备就绪&r！"
+				"{ftbquests.chapter.30B3D092011ABE08.quest66338DC20A34B58D.description2}"
 			]
 			id: "66338DC20A34B58D"
 			rewards: [{
@@ -160,26 +160,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "不会危及生命的酸性"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest66338DC20A34B58D.subtitle}"
 			tasks: [{
 				id: "0068141E61CB65E0"
 				item: "biomancy:acid_extract"
 				type: "item"
 			}]
-			title: "生物之酸"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest66338DC20A34B58D.title}"
 			x: 2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["66338DC20A34B58D"]
 			description: [
-				"在生物锻炉中，您可以制成&6小型酸液罐&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest2B8F82F33E55703A.description1}"
 				""
-				"小心酸液罐处在胸腔中时会在胸腔环境的影响下，不停地损失自身的耐久度。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest2B8F82F33E55703A.description2}"
 				""
-				"在此期间，如果您进行了移动，则会因酸液的影响，受到少量伤害。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest2B8F82F33E55703A.description3}"
 				""
-				"&6当酸液罐的耐久归零时，您的胸腔便会完成第一次扩容&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest2B8F82F33E55703A.description4}"
 			]
 			id: "2B8F82F33E55703A"
 			rewards: [{
@@ -187,7 +187,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "忍受慢性痛苦"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest2B8F82F33E55703A.subtitle}"
 			tasks: [{
 				id: "77747E78D5B1CE49"
 				item: {
@@ -199,18 +199,18 @@
 				}
 				type: "item"
 			}]
-			title: "第一次胸腔扩容"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest2B8F82F33E55703A.title}"
 			x: 2.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["518A9614F706B9F3"]
 			description: [
-				"请稍等下！在您打算制作炼金制剂之前，我似乎发现了过去&6有关胸腔技术的记录&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5915C77B5C546047.description1}"
 				""
-				"其中表明，可能存在某些方法，能够使得我们&6扩展现有胸腔&r的大小，进而容纳更多的器官，有效增强您的生存与战斗能力。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5915C77B5C546047.description2}"
 				""
-				"但是为了整理这些记录，我需要一些时间，请您稍加等待。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5915C77B5C546047.description3}"
 			]
 			id: "5915C77B5C546047"
 			rewards: [{
@@ -218,26 +218,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "胸腔技术改进"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest5915C77B5C546047.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "5CEB1A494AE05826"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.30B3D092011ABE08.quest5915C77B5C546047.task.6695474173107525670.title}"
 				type: "questsadditions:time"
 			}]
-			title: "探寻胸腔与生物技术的关联"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest5915C77B5C546047.title}"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["5915C77B5C546047"]
 			description: [
-				"由于在胸腔扩容后，您的基因可能都会发生不可逆的转变，因此&6很有必要保留您当前的基因样本&r，以避免后续有其他需要。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest24BF83CE3C6ABE54.description1}"
 				""
-				"通过制作空注射器，您可以抽取自身的血液样本，进而&6保存当前的胸腔类型到注射器&r中。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest24BF83CE3C6ABE54.description2}"
 				""
-				"如果后续需要变化胸腔类型到之前的版本，则&6通过注射预留好的注射器即可&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest24BF83CE3C6ABE54.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "24BF83CE3C6ABE54"
@@ -246,19 +246,19 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "以备不时之需"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest24BF83CE3C6ABE54.subtitle}"
 			tasks: [{
 				id: "63A9D50FBAEC19B0"
 				item: "kubejs:empty_injection"
 				type: "item"
 			}]
-			title: "保存现有的胸腔"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest24BF83CE3C6ABE54.title}"
 			x: -2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2B8F82F33E55703A"]
-			description: ["由于未来的环境多变且复杂，无法确定是否需要旧的胸腔来执行某些仪式，因此建议您使用&6空注射器&r保存当前阶段的血样，以备不时之需。"]
+			description: ["{ftbquests.chapter.30B3D092011ABE08.quest25E39232CC1DA79B.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "25E39232CC1DA79B"
@@ -271,52 +271,52 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "46564C8DA185467F"
-					title: "解锁头衔：&e酸黄瓜"
+					title: "{ftbquests.chapter.30B3D092011ABE08.quest25E39232CC1DA79B.reward.5068322601836037759.title}"
 					titleId: "kubejs:sour_pickles"
 					type: "titles:title"
 				}
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "保留血样"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest25E39232CC1DA79B.subtitle}"
 			tasks: [{
 				id: "73796D47E076E82E"
 				item: "kubejs:player_21_injection"
 				type: "item"
 			}]
-			title: "保存血液样本"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest25E39232CC1DA79B.title}"
 			x: 5.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["24BF83CE3C6ABE54"]
-			description: ["尽管最初的胸腔大小有限，但我们&6尚不清楚是否后续会有某些需求需要我们使用这种最为基本的胸腔&r，因此您最好保存一份原初血样以备不时之需。"]
+			description: ["{ftbquests.chapter.30B3D092011ABE08.quest63E5CA4D2ADA9596.description1}"]
 			id: "63E5CA4D2ADA9596"
 			rewards: [{
 				id: "33BF624141E107A4"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "保留血样"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest63E5CA4D2ADA9596.subtitle}"
 			tasks: [{
 				id: "3AED304715CA691C"
 				item: "kubejs:player_17_injection"
 				type: "item"
 			}]
-			title: "最原初的血液样本"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest63E5CA4D2ADA9596.title}"
 			x: -2.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6E53B21FF92E150C"]
 			description: [
-				"在培育肉团和其他血肉生物的时候或许您会注意到，这些生物的胸腔中会携带名为&6蠕虫神经元&r的特殊器官。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5270808137CAF2D7.description1}"
 				""
-				"该器官在胸腔有空位的情况下，会不断在周围扭曲血肉，生成新的未成形肿瘤。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5270808137CAF2D7.description2}"
 				""
-				"但除此之外，如果在胸腔没有空位的情况下，其会扭曲自己的形态，转化为&c“恶性神经元肿瘤”&r。这种肿瘤便是我们进行第二次胸腔扩容的关键。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5270808137CAF2D7.description3}"
 				""
-				"因此，我们首要的工作便是从&6肉团等血肉生物的胸腔中取出蠕虫神经元&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5270808137CAF2D7.description4}"
 			]
 			id: "5270808137CAF2D7"
 			rewards: [{
@@ -324,7 +324,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "生物肿瘤培养"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest5270808137CAF2D7.subtitle}"
 			tasks: [{
 				id: "76F35F79CF40FB67"
 				item: {
@@ -334,16 +334,16 @@
 				}
 				type: "item"
 			}]
-			title: "前往第二阶的准备"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest5270808137CAF2D7.title}"
 			x: -12.75d
 			y: -8.5d
 		}
 		{
 			dependencies: ["25E39232CC1DA79B"]
 			description: [
-				"根据日志显示，在历史上有人&6最多进行了三次胸腔扩容&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest6E53B21FF92E150C.description1}"
 				""
-				"如果我们能够完全按照日志中的描述&6复现扩容流程&r，那我们至少也可以完成三次胸腔扩容，进而达到曾经我们无法触及的领域。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest6E53B21FF92E150C.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -357,25 +357,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "进一步扩容的可能性"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest6E53B21FF92E150C.subtitle}"
 			tasks: [{
 				id: "0ABD352E6E74EC29"
 				type: "checkmark"
 			}]
-			title: "前往第二阶的准备"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest6E53B21FF92E150C.title}"
 			x: -10.25d
 			y: -8.5d
 		}
 		{
 			dependencies: ["5270808137CAF2D7"]
 			description: [
-				"在胸腔填满的情况下，蠕虫神经元会自发的变化成恶性神经元肿瘤。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest1D5F295370D27514.description1}"
 				""
-				"恶性神经元肿瘤会降低大量的消化效率和营养效率，使得&6饥饿值的补充变得极其困难&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest1D5F295370D27514.description2}"
 				""
-				"您需要在佩戴该器官的情况下，&6受到累计600点伤害&r，使该肿瘤失活，进而获得我们所需的&c“失活神经元肿瘤”&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest1D5F295370D27514.description3}"
 				""
-				"由于该器官还会在每秒恢复其耐久度，因此&6在您自己的胸腔内佩戴该器官进行转化可能会极其困难&r. . ."
+				"{ftbquests.chapter.30B3D092011ABE08.quest1D5F295370D27514.description4}"
 			]
 			id: "1D5F295370D27514"
 			rewards: [{
@@ -383,7 +383,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "异常神经元表达"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest1D5F295370D27514.subtitle}"
 			tasks: [{
 				id: "4823369472C3D313"
 				item: {
@@ -401,11 +401,11 @@
 		{
 			dependencies: ["1D5F295370D27514"]
 			description: [
-				"由于您作为玩家，没有如此多的生命值，且恢复生命手段较为有限。因此，一个比较好的方案是&6使用一个傀儡作为临时宿主&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest65337ADF4CCA14EC.description1}"
 				""
-				"您将该恶性肿瘤临时植入它的身体，随后您对它进行攻击，等到器官发生转变后，再将器官取出即可。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest65337ADF4CCA14EC.description2}"
 				""
-				"为了制作傀儡，您需要一些&6傀儡胚料&r以组装一个能够承担这个职责的傀儡。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest65337ADF4CCA14EC.description3}"
 			]
 			hide_dependency_lines: true
 			id: "65337ADF4CCA14EC"
@@ -414,24 +414,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "组装傀儡作为临时宿主"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest65337ADF4CCA14EC.subtitle}"
 			tasks: [{
 				id: "20EFCA405EB2C274"
 				item: "modulargolems:metal_golem_template"
 				type: "item"
 			}]
-			title: "临时宿主"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest65337ADF4CCA14EC.title}"
 			x: -9.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["65337ADF4CCA14EC"]
 			description: [
-				"制作出来的傀儡目标是能够承受足够多的伤害，因此，&6生命值上限和生命恢复速度&r都是重要的考量标准。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest3019A17B512FFAA2.description1}"
 				""
-				"通过&6鲜活血肉制作的傀儡其拥有不俗的生命恢复速度&r，是制作这种承受大量伤害傀儡的不二材料之选。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest3019A17B512FFAA2.description2}"
 				""
-				"鲜活血肉可以通过&6击杀肉团&r来获得，因此您需要培育一定数量的肉团，或者使用&6巨化药水&r来增大肉团的体积，以获得更多的鲜活血肉。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest3019A17B512FFAA2.description3}"
 			]
 			id: "3019A17B512FFAA2"
 			rewards: [{
@@ -439,24 +439,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "尽可能多的承受伤害"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest3019A17B512FFAA2.subtitle}"
 			tasks: [{
 				id: "5D69D00083442E33"
 				item: "biomancy:living_flesh"
 				type: "item"
 			}]
-			title: "合适的傀儡材料"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest3019A17B512FFAA2.title}"
 			x: -11.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["3019A17B512FFAA2"]
 			description: [
-				"傀儡有三种构型可以选择，分别为大型傀儡、人形傀儡和犬型傀儡。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5D6FCABAF80E5527.description1}"
 				""
-				"为了能够有足够多的血量以承担伤害，最优的选择便是&6构造一个大型傀儡&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5D6FCABAF80E5527.description2}"
 				""
-				"通过将&6傀儡胚料放置在切石机上&r，切割获得大型傀儡对应的傀儡部件，而后将&6鲜活血肉和傀儡部件在铁砧结合&r即可得到能够实际使用的傀儡部件。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5D6FCABAF80E5527.description3}"
 			]
 			icon: {
 				Count: 1
@@ -471,7 +471,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "选择合适的构型"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest5D6FCABAF80E5527.subtitle}"
 			tasks: [{
 				id: "68DB4B20037C369A"
 				item: {
@@ -520,19 +520,19 @@
 						]
 					}
 				}
-				title: "制造任意一种血肉大型傀儡部件"
+				title: "{ftbquests.chapter.30B3D092011ABE08.quest5D6FCABAF80E5527.task.7555715400713647770.title}"
 				type: "item"
 			}]
-			title: "铸造大型金属傀儡部件"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest5D6FCABAF80E5527.title}"
 			x: -14.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["5D6FCABAF80E5527"]
 			description: [
-				"通过将器官放置在傀儡胸腔内，而后对其造成伤害，&6使恶性神经元肿瘤的耐久度迅速降低&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest172FA7DB23FEF315.description1}"
 				""
-				"当耐久度降低至零时，即可完成&6失活转化&r，将得到的失活神经元取出，我们便得到了前往第二次胸腔扩容的重要钥匙。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest172FA7DB23FEF315.description2}"
 			]
 			id: "172FA7DB23FEF315"
 			rewards: [{
@@ -540,7 +540,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "血肉的代价"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest172FA7DB23FEF315.subtitle}"
 			tasks: [{
 				id: "2A5C64026601F696"
 				item: {
@@ -552,18 +552,18 @@
 				}
 				type: "item"
 			}]
-			title: "失活神经元肿瘤"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest172FA7DB23FEF315.title}"
 			x: -16.5d
 			y: -11.0d
 		}
 		{
 			dependencies: ["172FA7DB23FEF315"]
 			description: [
-				"通过获得的失活神经元肿瘤在生物锻造台上进行加工，您便可以制取用于第二次胸腔扩容的&6贰阶注射器&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest2D04772D78C4E72F.description1}"
 				""
-				"&6贰阶注射器&r并不需要您处在壹阶胸腔的状态下才能够使用——您可以在任何胸腔类型的情况下通过注射贰阶注射器来将自己的胸腔&6修改为贰阶胸腔&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest2D04772D78C4E72F.description2}"
 				""
-				"同样的，您在获得了贰阶胸腔后，请尽量保留几份注射器血样，因为我们很快就要踏上&6第三次扩容&r的道路了。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest2D04772D78C4E72F.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -577,31 +577,31 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "67D207BDCFB0799C"
-					title: "解锁头衔：&e替罪羊"
+					title: "{ftbquests.chapter.30B3D092011ABE08.quest2D04772D78C4E72F.reward.7481050442830477724.title}"
 					titleId: "kubejs:scapegoat"
 					type: "titles:title"
 				}
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "失活神经元肿瘤血样提取"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest2D04772D78C4E72F.subtitle}"
 			tasks: [{
 				id: "39C34260411CFDD2"
 				item: "kubejs:player_25_injection"
 				type: "item"
 			}]
-			title: "第二次胸腔扩容"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest2D04772D78C4E72F.title}"
 			x: -6.5d
 			y: -12.5d
 		}
 		{
 			dependencies: ["2D04772D78C4E72F"]
 			description: [
-				"为了进行第三次胸腔扩容，我们需要&6培育恶性脉络&r，以获得一种特殊的血肉“作物”——&d蕾莓&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest7A2FF567EFD19C5E.description1}"
 				""
-				"恶性脉络是一个极其特殊的血肉产物——它具有着无限演化的可能。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest7A2FF567EFD19C5E.description2}"
 				""
-				"您需要在一个足够安全的地方&6部署原初摇篮&r，并且喂养它直到其在周围生成&6恶性脉络&r以便开展下一步我们的培养计划。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest7A2FF567EFD19C5E.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "7A2FF567EFD19C5E"
@@ -610,7 +610,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "无限生命之起源"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest7A2FF567EFD19C5E.subtitle}"
 			tasks: [{
 				id: "69802593CAB94D6B"
 				item: "biomancy:malignant_flesh_veins"
@@ -622,9 +622,9 @@
 		{
 			dependencies: ["234F6E06965E6BEA"]
 			description: [
-				"在获取了蕾光体后，您可以通过&6分解器分解蕾光体&r概率获得&d蕾莓&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.questEBECB93FABABCD6.description1}"
 				""
-				"蕾莓是用于第三次胸腔扩容的重要原料，&6请您不要误食掉它&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.questEBECB93FABABCD6.description2}"
 			]
 			id: "0EBECB93FABABCD6"
 			rewards: [{
@@ -632,24 +632,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "原初精华"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.questEBECB93FABABCD6.subtitle}"
 			tasks: [{
 				id: "7BF6B98D9EACB0CC"
 				item: "biomancy:bloomberry"
 				type: "item"
 			}]
-			title: "恶性血肉精华"
+			title: "{ftbquests.chapter.30B3D092011ABE08.questEBECB93FABABCD6.title}"
 			x: -22.0d
 			y: 0.5d
 		}
 		{
 			dependencies: ["0EBECB93FABABCD6"]
 			description: [
-				"酿造&d原初侵蚀药水&r，然后将其倒入&6炼药锅&r中。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest4BDC3EB3E3B69CE9.description1}"
 				""
-				"炼药锅下方需要使用&6热源&r（如营火）加热，待气泡冒出时，将&6器官丢入药水&r中，即可获得无主器官。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest4BDC3EB3E3B69CE9.description2}"
 				""
-				"该方法效率高且没有被肉团误食器官的风险，但需要大量的蕾莓来酿造药水，成本相对较高。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest4BDC3EB3E3B69CE9.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "4BDC3EB3E3B69CE9"
@@ -658,7 +658,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "原初净化之极"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest4BDC3EB3E3B69CE9.subtitle}"
 			tasks: [{
 				id: "55F24286AA932421"
 				item: {
@@ -670,20 +670,20 @@
 				}
 				type: "item"
 			}]
-			title: "高效器官净化法"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest4BDC3EB3E3B69CE9.title}"
 			x: -22.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7A2FF567EFD19C5E"]
 			description: [
-				"恶性脉络如原初温床类似，能够吞噬在其上方的&6生肉类食物&r并且将其转换为自己的“营养”。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest57B7B0D11A6D00D6.description1}"
 				""
-				"为了培育出足够大型的血肉结构，我们需要&6准备极其大量的生肉&r以为其作为营养来源。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest57B7B0D11A6D00D6.description2}"
 				""
-				"当营养充足时，恶性脉络会尝试向周围进行扩散。当周围有大量恶性脉络时，&6位于中心位置的恶性脉络会尝试分化成不同的方块&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest57B7B0D11A6D00D6.description3}"
 				""
-				"我们所需要的就是提供足够多的食物以及&6足够多的耐心&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest57B7B0D11A6D00D6.description4}"
 			]
 			icon: "minecraft:mutton"
 			id: "57B7B0D11A6D00D6"
@@ -692,7 +692,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "血肉人工培育"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest57B7B0D11A6D00D6.subtitle}"
 			tasks: [{
 				id: "5706FA5778095B89"
 				item: {
@@ -702,25 +702,25 @@
 						value: "biomancy:raw_meats"
 					}
 				}
-				title: "任意生肉"
+				title: "{ftbquests.chapter.30B3D092011ABE08.quest57B7B0D11A6D00D6.task.6270974784742972297.title}"
 				type: "item"
 			}]
-			title: "喂养恶性脉络"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest57B7B0D11A6D00D6.title}"
 			x: -24.5d
 			y: -4.5d
 		}
 		{
 			dependencies: ["57B7B0D11A6D00D6"]
 			description: [
-				"稍等！在刚才的调查中，我发现实际育成蕾莓所需的生肉量可能远超我们一开始所预计的！"
+				"{ftbquests.chapter.30B3D092011ABE08.quest62A4D12B41CFF4B5.description1}"
 				""
-				"由于蕾莓是在血肉结构后期才会极少量产生的结构，而在到达此阶段前，我们需要近万的生肉——这几乎是不可接受的！"
+				"{ftbquests.chapter.30B3D092011ABE08.quest62A4D12B41CFF4B5.description2}"
 				""
-				"好在在日志中有所提到曾经的人们&6使用下界之星作为肉类的代替&r，来让原初摇篮附近的恶性脉络获得大量营养。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest62A4D12B41CFF4B5.description3}"
 				""
-				"因此，我建议您设法获取下界之星，随后&6手持下界之星右键&r放置于结构中心的原初摇篮，而后&6使用该摇篮完成一次喂养&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest62A4D12B41CFF4B5.description4}"
 				""
-				"这样，下界之星中异常的生命能量就能够被原初摇篮和周围的恶性脉络吸收，进而大大的减少对生肉的需求。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest62A4D12B41CFF4B5.description5}"
 			]
 			id: "62A4D12B41CFF4B5"
 			rewards: [{
@@ -728,32 +728,32 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "节约生肉的方案"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest62A4D12B41CFF4B5.subtitle}"
 			tasks: [{
 				id: "0DCD50B51496DF01"
 				item: "minecraft:nether_star"
 				type: "item"
 			}]
-			title: "异质的吸引"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest62A4D12B41CFF4B5.title}"
 			x: -24.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["62A4D12B41CFF4B5"]
 			description: [
-				"随着日志内容的进一步破解，我了解到&c直接通过培养血肉获取蕾莓是极其困难的一件事&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.description1}"
 				""
-				"好在，我们还有备选方案，即通过&6分解器分解蕾光体进而获得蕾莓&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.description2}"
 				""
-				"相较于蕾莓生成的不稳定性，蕾光体的生成较有规律。其会&6在恶性血肉方块构成类似房间的结构后，若房间内部亮度低于5，则会将其分化为蕾光体&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.description3}"
 				""
-				"也就是说，您只要保证有一个由恶性血肉块构成的房间，其内部亮度低于5，则会不停地有血肉方块分化为蕾光体。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.description4}"
 				""
-				"在实际操作中，可能出现很长时间都无法封顶的情况。您可以采取&6人工建造一个非血肉块的屋顶来营造低亮度环境，诱导蕾光体形成&r，这会极大地减少蕾光体的培育周期。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.description5}"
 				""
-				"在蕾光体形成后，您便可以进行“采摘”，进行更为重要的下一步骤。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.description6}"
 				""
-				"在采摘后的血肉结构中，由于亮度会重新低于阈值，很快便会有新的蕾光体生成。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.description7}"
 			]
 			id: "234F6E06965E6BEA"
 			rewards: [
@@ -765,27 +765,27 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "579020153CE7891B"
-					title: "解锁头衔：&e抚育者"
+					title: "{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.reward.6309578353534273819.title}"
 					titleId: "kubejs:bring_up_me"
 					type: "titles:title"
 				}
 			]
-			subtitle: "获取蕾莓的快捷道路"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.subtitle}"
 			tasks: [{
 				id: "4987E24C5FFE701B"
 				item: "biomancy:bloomlight"
 				type: "item"
 			}]
-			title: "定向培养蕾光体"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest234F6E06965E6BEA.title}"
 			x: -22.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["0EBECB93FABABCD6"]
 			description: [
-				"由于蕾莓本身性质特殊，直接使用蕾莓对贰阶血清进行改造会对您的身体产生极大的副作用。因此我们需要&6制作狂化药剂&r作为辅助材料，进行叁型血清的制作。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5A5D9E78BE6A9095.description1}"
 				""
-				"狂化药剂的制作方法与之前的药剂相类似，但是工序相对复杂。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5A5D9E78BE6A9095.description2}"
 			]
 			id: "5A5D9E78BE6A9095"
 			rewards: [{
@@ -793,28 +793,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作狂化药剂"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest5A5D9E78BE6A9095.subtitle}"
 			tasks: [{
 				id: "666B6425490BDFA4"
 				item: "biomancy:frenzy_serum"
 				type: "item"
 			}]
-			title: "血清兼容药剂"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest5A5D9E78BE6A9095.title}"
 			x: -24.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["5A5D9E78BE6A9095"]
 			description: [
-				"&6恭喜您，成功制作出了叁型注射器，完成了目前已知的所有胸腔扩容方案。&r"
+				"{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.description1}"
 				""
-				"但由于我们的路途仍然遥远，我们对于世界本身的了解仍旧浅薄，尚不知道未来是否会有更宽广的胸腔——或者说更宽广的世界在等待着我们。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.description2}"
 				""
-				"但至少现在，我们已经取得了我们应该得到的成功。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.description3}"
 				""
-				"在早期的日志中，有部分记录称&6叁型胸腔&r为&c原初胸腔&r，或许我们现在所到达的终点仅仅是曾经人们的起点。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.description4}"
 				""
-				"但不管怎么样，恭喜您完成了这一系列荒诞的任务。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.description5}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -829,7 +829,7 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "451796D122D94BA5"
-					title: "解锁头衔：&e完美躯体"
+					title: "{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.reward.4978613738058369957.title}"
 					titleId: "kubejs:primal_chestcavity"
 					type: "titles:title"
 				}
@@ -838,7 +838,7 @@
 					id: "0177EFE9934C119E"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.reward.105816902744150430.title}"
 					type: "maa:kube"
 				}
 				{
@@ -849,30 +849,30 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "重归于此"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.subtitle}"
 			tasks: [{
 				id: "43CB531CB644894F"
 				item: "kubejs:player_27_injection"
 				type: "item"
 			}]
-			title: "&6庆贺吧！此乃胸腔原本之模样！&r"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest23D00C1EBDF3036C.title}"
 			x: -27.5d
 			y: -4.0d
 		}
 		{
 			dependencies: ["23D00C1EBDF3036C"]
 			description: [
-				"在各类垃圾信息中，我筛选出了后人所留下的一种特殊技术——即&6蕾莓快速扩产技术&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.description1}"
 				""
-				"在这种扩产技术加持下，您只需要&6手持蕾莓右键恶性血肉块，就可以在对应位置创造一颗原始肉蕾&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.description2}"
 				""
-				"但原始肉蕾具有相当不稳定的特性，其在成熟后还会将蕾莓抛射到其他位置，尝试产生新的血肉结构。如果将这份技术交予不了解内情的人，&c可能会导致世界不可逆的走向无止境的血肉化&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.description3}"
 				""
-				"因此，如果您能够在这方世界中取得&6繁殖动物数第一名的成绩&r，我便可以将这种特殊的蕾莓培养技术交予您。至于后续您是否要公开这种技术则完全取决于您对形势的判断。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.description4}"
 				"{@pagebreak}"
-				"公开技术会使所有人只要手持蕾莓右键恶性血肉块就可以创造原始肉蕾。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.description5}"
 				""
-				"私有配方会使您成为唯一能够使用这样技术的人，如果其他玩家取而代之，并不会影响您已获得技术的使用。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.description6}"
 			]
 			hide_until_deps_complete: true
 			id: "5C16EB8056E262E1"
@@ -883,28 +883,28 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			subtitle: "人造原始肉蕾"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.subtitle}"
 			tasks: [{
 				icon: "minecraft:wheat"
 				id: "019003C08356D47A"
 				leaderboard: "leaderboards:animals_bred"
 				min: 1
 				rank: 1
-				title: "繁殖动物数称霸"
+				title: "{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.task.112594116056372346.title}"
 				type: "leaderboards:rank_task"
 			}]
-			title: "蕾莓快速扩产技术"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest5C16EB8056E262E1.title}"
 			x: -16.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["4BDC3EB3E3B69CE9"]
 			description: [
-				"在原初药水的基础上，你可以酿造器官滑脱药水。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest70C13C3DDAA845F8.description1}"
 				""
-				"被器官滑脱药水影响的生物，&6在死亡时自身的器官会因为滑脱效果而全部掉落&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest70C13C3DDAA845F8.description2}"
 				""
-				"对于某些难以开胸的生物来说，器官滑脱药水是必要的，因此请您常备。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest70C13C3DDAA845F8.description3}"
 			]
 			id: "70C13C3DDAA845F8"
 			rewards: [{
@@ -912,7 +912,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "器官顺滑至极"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest70C13C3DDAA845F8.subtitle}"
 			tasks: [{
 				id: "312A047600146AC7"
 				item: {
@@ -924,16 +924,16 @@
 				}
 				type: "item"
 			}]
-			title: "高效器官摘取法"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest70C13C3DDAA845F8.title}"
 			x: -24.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["0503656541D6410D"]
 			description: [
-				"为了进一步探索生物技术，我们需要制作一些&6特殊的药剂&r。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest518A9614F706B9F3.description1}"
 				""
-				"这些药剂由于其本身的活跃特性，需要被放置在特殊的&6有机试管&r中。为了在后续的生物炼金技术中迅速取得突破，您最好提前多准备一些有机试管。"
+				"{ftbquests.chapter.30B3D092011ABE08.quest518A9614F706B9F3.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "518A9614F706B9F3"
@@ -942,16 +942,16 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "基础针剂容器"
+			subtitle: "{ftbquests.chapter.30B3D092011ABE08.quest518A9614F706B9F3.subtitle}"
 			tasks: [{
 				id: "58A772A2562FCCBA"
 				item: "biomancy:vial"
 				type: "item"
 			}]
-			title: "探寻生物技术的极限"
+			title: "{ftbquests.chapter.30B3D092011ABE08.quest518A9614F706B9F3.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 	]
-	title: "传闻：胸腔扩容"
+	title: "{ftbquests.chapter.30B3D092011ABE08.title}"
 }

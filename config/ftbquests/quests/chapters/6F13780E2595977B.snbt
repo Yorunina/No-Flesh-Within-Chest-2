@@ -169,9 +169,9 @@
 		{
 			dependencies: ["0826B6D55FFA146F"]
 			description: [
-				"请等下！在驱动锻锤进行锻造的时候，我发现了一串&6特殊的数据标记&r，它似乎暗示了一种&6极其特殊的加工工序&r！"
+				"{ftbquests.chapter.6F13780E2595977B.quest428D9599A58515E7.description1}"
 				""
-				"这种加工工序被层层掩盖，只有具有足够经验的工匠在锻造时才可能让工具的属性中包含这个标签。"
+				"{ftbquests.chapter.6F13780E2595977B.quest428D9599A58515E7.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "tetra:hammer_base"
@@ -181,31 +181,31 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "灵光一现筑传闻"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest428D9599A58515E7.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "tetra:hammer_base"
 				id: "4648330C698D02AB"
 				kubeId: "tetra_hammer_craft"
-				title: "使用锻锤锻造"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest428D9599A58515E7.task.5064353909381595819.title}"
 				type: "maa:kube"
 			}]
-			title: "灵光乍现"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest428D9599A58515E7.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"&6&l成功了！！！！！&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.description1}"
 				""
-				"&6我们成功的再一次&n发现了&r&6创世工序！&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.description2}"
 				""
-				"通过重塑创世启迪，重现创世工序——我们完全获得了有关创世工艺的知识！"
+				"{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.description3}"
 				""
-				"现在，您可以&6无视条件的铸造任何传古、启发工具，并且解锁对所有主要部件进行创世改造的能力&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.description4}"
 				""
-				"但由于这是您的发现，而我们已然不再那个蛮荒的传古时期，所以请允许我将其重命名为&6“新世界工艺”&r，&6以纪念您作为新世界工匠的功绩！&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.description5}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -221,13 +221,13 @@
 					isServer: false
 					remove: false
 					stage: "ftb_genesis_process_done"
-					title: "&6通晓创世工艺&r"
+					title: "{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.reward.1318140719095903547.title}"
 					type: "maa:astages"
 				}
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "0440DEA59DCDAB5F"
-					title: "解锁头衔：&e我创世"
+					title: "{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.reward.306489577559665503.title}"
 					titleId: "kubejs:my_genesis"
 					type: "titles:title"
 				}
@@ -236,7 +236,7 @@
 					id: "1659430E63B9BFAC"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.reward.1610392070843383724.title}"
 					type: "maa:kube"
 				}
 				{
@@ -246,7 +246,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "匠工创世创工匠"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -263,25 +263,25 @@
 						value: "genesis_inspiration>=3"
 					}
 				}
-				title: "任意工具锻造时满足3种不同的创世启迪改良"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.task.7793441374257866718.title}"
 				type: "item"
 			}]
-			title: "&6庆贺吧！此乃创世工艺！&r"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest33D6D51353372A8F.title}"
 			x: 27.0d
 			y: -8.5d
 		}
 		{
 			dependencies: ["428D9599A58515E7"]
 			description: [
-				"顺着这个数据标记，我理应可以在汪洋数据之海中获取到更多关于它的信息，但这&6需要些许时间&r，请您稍加等待。"
+				"{ftbquests.chapter.6F13780E2595977B.quest698564A81054C487.description1}"
 				""
-				"在此期间，请允许我向您解释这种探索的必要性。"
+				"{ftbquests.chapter.6F13780E2595977B.quest698564A81054C487.description2}"
 				""
-				"根据大量日志表示，这个世界是&6继承于某些玩家之手&r，其中有大量的技术来源于各类玩家——或者并非玩家的，跟您类似的上层实体——的创造。"
+				"{ftbquests.chapter.6F13780E2595977B.quest698564A81054C487.description3}"
 				""
-				"这些技术中不仅是原本我记载数据的扩充，更是这些玩家对于这个世界本身理解的表达。其中不乏大量&6对于生存有巨大帮助的技术&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest698564A81054C487.description4}"
 				""
-				"因此，对于此类需要隐藏的内容，我认为需要格外注意，一方面是获取此种技术&6有利于推进我们的故事&r，另一方面则是能够避免某些隐藏的灾难的发生。"
+				"{ftbquests.chapter.6F13780E2595977B.quest698564A81054C487.description5}"
 			]
 			id: "698564A81054C487"
 			rewards: [{
@@ -289,12 +289,12 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "我需要收集更多的信息"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest698564A81054C487.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "5FD51CB999EA8CCC"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest698564A81054C487.task.6905457187119336652.title}"
 				type: "questsadditions:time"
 			}]
 			x: 2.5d
@@ -303,15 +303,15 @@
 		{
 			dependencies: ["698564A81054C487"]
 			description: [
-				"经过确认，标签的用途为标记工具是否满足进行&6创世工序&r的要求。"
+				"{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.description1}"
 				""
-				"所谓创世工序，在记载中是用于&6在工具改良基础之上进行进一步工具改良的超常方法，能够极大限度的提高工具本身的属性和状态&r——在许多的日志中，创世工序被当作一种非常普遍的工具改良方式，广泛应用。"
+				"{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.description2}"
 				""
-				"但可惜的是，目前已扫描的日志中，并没有关于创世工序的任何信息记载，理论上，我们并没有一个明确的途径来还原创世工序. . ."
+				"{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.description3}"
 				""
-				"不过好消息是，创世工序的创作者——我们姑且称其为创世工匠——在研发创世工序时，进行了多种&6启发性工具锻造&r，&6倘若我们能够还原这些创世工匠所创造的启发性工具，或许就能够独立的重新发现创世工序&r！"
+				"{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.description4}"
 				""
-				"不知道您是否对此事感兴趣，愿意与我一同探索创世工匠所遗留的宝藏？"
+				"{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.description5}"
 			]
 			hide_until_deps_complete: true
 			icon: "tetra:forged_workbench"
@@ -321,26 +321,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "铸造传古工具"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.subtitle}"
 			tasks: [{
 				id: "5027FA81042BCFAD"
-				title: "奉身创世之道"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.task.5775860479153655725.title}"
 				type: "checkmark"
 			}]
-			title: "传世工匠传匠艺"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest585F5FEF231F0B44.title}"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["585F5FEF231F0B44"]
 			description: [
-				"日志中记载，创世工匠为打造足够奇特、锐利的武器，其从最为遥远的世界中取得最为炽热的火焰用于自己的工坊，进而锻造出了焰形剑。"
+				"{ftbquests.chapter.6F13780E2595977B.quest602B926C44DEAF04.description1}"
 				""
-				"焰形剑是一种形制如波浪的双手剑，在有限的记载中，创世工匠对焰形剑进行了多次改良，最终锻成&6焰形剑&r，进而得到了对创世工艺的启发。"
+				"{ftbquests.chapter.6F13780E2595977B.quest602B926C44DEAF04.description2}"
 				""
-				"根据这些记载，我猜测此处指出的&6“遥远的世界”&r、及&6“最为炽热的火焰”&r指向烈焰竞技场的烈焰祭坛。"
+				"{ftbquests.chapter.6F13780E2595977B.quest602B926C44DEAF04.description3}"
 				""
-				"请您前往下界，使用&6烈焰之眼&r，定位烈焰竞技场，并且找到&6烈焰祭坛&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest602B926C44DEAF04.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "602B926C44DEAF04"
@@ -349,28 +349,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "打造焰形剑"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest602B926C44DEAF04.subtitle}"
 			tasks: [{
 				icon: "cataclysm:altar_of_fire"
 				id: "6D5002B0E08C2F66"
 				observe_type: 0
 				timer: 0L
-				title: "观察烈焰祭坛"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest602B926C44DEAF04.task.7876798706975780710.title}"
 				to_observe: "cataclysm:altar_of_fire"
 				type: "observation"
 			}]
-			title: "复刻焰形剑"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest602B926C44DEAF04.title}"
 			x: 7.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["602B926C44DEAF04"]
 			description: [
-				"相比于使用祭坛的火焰进行锻造，创世工匠的做法更为简单——记录中，他&6仅是将工具探入火中借取火焰&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest7CC9540811456CDF.description1}"
 				""
-				"&7**  仅仅是稍微的接触，工具便损毁殆尽 **&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest7CC9540811456CDF.description2}"
 				""
-				"请您手持&6任意模块化剑类武器&r，将工具探入火中，模拟过去所发生的一切。"
+				"{ftbquests.chapter.6F13780E2595977B.quest7CC9540811456CDF.description3}"
 			]
 			id: "7CC9540811456CDF"
 			rewards: [{
@@ -378,7 +378,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "以最炽热的火焰"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest7CC9540811456CDF.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -407,21 +407,21 @@
 						value: "is_tetra_preforged:[flamberge]"
 					}
 				}
-				title: "炽焰锻造后的模块化工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest7CC9540811456CDF.task.4965634159544807924.title}"
 				type: "item"
 			}]
-			title: "预锻造模块化工具"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest7CC9540811456CDF.title}"
 			x: 10.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["7CC9540811456CDF"]
 			description: [
-				"在经过预锻造后，您的武器已经支零破碎，请您&6优先修复您的工具&r，而后将其剑刃在工匠台上打造为&6焰形剑剑刃&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest3F7877E62FE000C3.description1}"
 				""
-				"焰形剑作为一种特种剑刃，其能够在打击敌人的同时，在敌人的表皮上引发易燃的火焰。"
+				"{ftbquests.chapter.6F13780E2595977B.quest3F7877E62FE000C3.description2}"
 				""
-				"相比于常规火焰附加不同的是，&6焰形剑引发的火焰会不断累计&r——理论上，您可以通过使用焰形剑打击某个生物，使其长期处于燃烧状态。"
+				"{ftbquests.chapter.6F13780E2595977B.quest3F7877E62FE000C3.description3}"
 			]
 			id: "3F7877E62FE000C3"
 			rewards: [{
@@ -429,7 +429,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "步向传古工艺之路"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest3F7877E62FE000C3.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -460,23 +460,23 @@
 						value: "[sword/blade]:[sword/flamberge_blade]"
 					}
 				}
-				title: "任意包含焰形剑剑刃的模块化工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest3F7877E62FE000C3.task.1725289340262523954.title}"
 				type: "item"
 			}]
-			title: "锻造焰形剑"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest3F7877E62FE000C3.title}"
 			x: 12.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3104542F07625E0D"]
 			description: [
-				"&6恭喜！看来创世工匠留下的技艺仍旧有效！"
-				"&r"
-				"所谓传古工具，不过是创世工匠当时的随意之作——其隐藏在大量日志之中，一度让我认为是某种传说。但这一把把&b传古工具&r的铸成无一不是对创世工序存在的证明。"
+				"{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.description1}"
+				"{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.description2}"
+				"{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.description3}"
 				""
-				"传古焰形剑相比于焰形剑本身，虽然没有明显的外形和属性变化，但其具有&6明亮打击&r的特性，能够&6引爆敌人身上拥有的燃烧状态&r，使原本无用的长期燃烧效果能够在极短的时间内产生杀伤。"
+				"{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.description4}"
 				""
-				"尽管传古工具只是一个启发性工具，但只要精心维护，仍有一番用武之地。"
+				"{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.description5}"
 			]
 			id: "193FE4515D3E23A1"
 			rewards: [{
@@ -484,7 +484,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "匠艺再现"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -515,19 +515,19 @@
 						value: "[sword/blade]:[sword/ancient_flamberge_blade]"
 					}
 				}
-				title: "任意传古焰形剑"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.task.2622511049147746817.title}"
 				type: "item"
 			}]
-			title: "铸成传古焰形剑"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest193FE4515D3E23A1.title}"
 			x: 17.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["3F7877E62FE000C3"]
 			description: [
-				"创世工匠的日志中记录其焰形剑使用旧日材料轻易达到了&6概率烧伤延长20秒&r及&612点面板攻击力&r，而后，创世工匠便创造了其创世工艺启发之旅的第一把武器——我们现在可以称其为&9传古焰形剑&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest3104542F07625E0D.description1}"
 				""
-				"请您也模仿创世工匠制作此般武器，虽然我们没有过去世界中所使用的各种材料，但只要您愿意花费时间进行打磨钻研，便定能解决。"
+				"{ftbquests.chapter.6F13780E2595977B.quest3104542F07625E0D.description2}"
 			]
 			id: "3104542F07625E0D"
 			rewards: [{
@@ -535,7 +535,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "加深对于焰形剑的理解"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest3104542F07625E0D.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -566,21 +566,21 @@
 						value: "fit_ancient_flamberge_blade:[]"
 					}
 				}
-				title: "烧伤赋予时间≥20且攻击力≥12的焰形剑"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest3104542F07625E0D.task.510417333770317170.title}"
 				type: "item"
 			}]
-			title: "自创世工匠而传"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest3104542F07625E0D.title}"
 			x: 15.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["585F5FEF231F0B44"]
 			description: [
-				"日志中记载，创世工匠为打造足够暴虐的武器，其从最为隐秘的洞窟中，寻得一坛腐坏酸液，进而蚀铸了&6饕餮镰&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest7C426524EA1556CC.description1}"
 				""
-				"饕餮镰形制极似常见镰刀，但实际功能上，&6饕餮镰以血肉为食&r，通过手柄反哺于使用者。"
+				"{ftbquests.chapter.6F13780E2595977B.quest7C426524EA1556CC.description2}"
 				""
-				"根据日志记载，&6饕餮镰&r锻造使用的酸液为&6原初摇篮&r所产。"
+				"{ftbquests.chapter.6F13780E2595977B.quest7C426524EA1556CC.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "biomancy:primordial_cradle"
@@ -590,28 +590,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "打造饕餮镰"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest7C426524EA1556CC.subtitle}"
 			tasks: [{
 				icon: "biomancy:primordial_cradle"
 				id: "50362874D6A9DBC6"
 				observe_type: 0
 				timer: 0L
-				title: "观察原初摇篮"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest7C426524EA1556CC.task.5779851654059383750.title}"
 				to_observe: "biomancy:primordial_cradle"
 				type: "observation"
 			}]
-			title: "复刻饕餮镰"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest7C426524EA1556CC.title}"
 			x: 7.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7C426524EA1556CC"]
 			description: [
-				"相比于使用原初摇篮的酸液进行逐步蚀造，创世工匠的做法更为简单——记录中，他&6仅是将工具探入原初摇篮中覆盖一层血肉酸液&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest4964E62E5ECA2BAC.description1}"
 				""
-				"&7**  仅仅是稍微的接触，工具便损毁殆尽 **&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest4964E62E5ECA2BAC.description2}"
 				""
-				"请您手持&6任意模块化双头工具&r，将工具探入原初摇篮中，模拟过去所发生的一切。"
+				"{ftbquests.chapter.6F13780E2595977B.quest4964E62E5ECA2BAC.description3}"
 			]
 			icon: {
 				Count: 1
@@ -633,7 +633,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "以最为刺鼻的酸液"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest4964E62E5ECA2BAC.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -657,21 +657,21 @@
 						value: "is_tetra_preforged:[primordial_cradle]"
 					}
 				}
-				title: "酸液锻造后的模块化工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest4964E62E5ECA2BAC.task.7437397462338122162.title}"
 				type: "item"
 			}]
-			title: "预锻造模块化工具"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest4964E62E5ECA2BAC.title}"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4964E62E5ECA2BAC"]
 			description: [
-				"在经过预锻造后，您的武器已经支零破碎，请您&6优先修复您的工具&r，而后将双头工具的任意一头打造成为&6饕餮镰刃&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest29742AF38AA792FE.description1}"
 				""
-				"饕餮镰作为一种特种武器，其能够在&6打击它人时吸收对方的血肉以转化为其拥有者的饱和度&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest29742AF38AA792FE.description2}"
 				""
-				"通过不同材料打造的饕餮镰不仅有属性上的不同——使用&6骨质材料&r制造的饕餮镰更擅长于从生物身体上汲取养分，而其他材料制成的饕餮镰则更善于进行范围攻击。"
+				"{ftbquests.chapter.6F13780E2595977B.quest29742AF38AA792FE.description3}"
 			]
 			icon: {
 				Count: 1
@@ -697,7 +697,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "步向传古工艺之路"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest29742AF38AA792FE.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -740,19 +740,19 @@
 						]
 					}
 				}
-				title: "任意包含饕餮镰刃的模块化工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest29742AF38AA792FE.task.2171424339690843229.title}"
 				type: "item"
 			}]
-			title: "锻造饕餮镰"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest29742AF38AA792FE.title}"
 			x: 12.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["29742AF38AA792FE"]
 			description: [
-				"创世工匠的日志中记录其饕餮镰使用旧日材料轻易达到了&6单次饱食恢复大于等于0.8&r及&6至少为1的攻击速度&r，而后，创世工匠便创造了其创世工艺启发之旅的第二把武器——我们现在可以称其为&9传古饕餮镰&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest77EDD48A1C662FCE.description1}"
 				""
-				"请您也模仿创世工匠制作此般武器，虽然我们没有过去世界中所使用的各种材料，但双头工具的定义比较广泛，就算只有一头是饕餮镰刃，也可以被称作饕餮镰——因此可以通过选择另一头的工具类型来满足属性要求。"
+				"{ftbquests.chapter.6F13780E2595977B.quest77EDD48A1C662FCE.description2}"
 			]
 			id: "77EDD48A1C662FCE"
 			rewards: [{
@@ -760,7 +760,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "加深对于饕餮镰的理解"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest77EDD48A1C662FCE.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -791,23 +791,23 @@
 						value: "fit_ancient_gula_scythe:[]"
 					}
 				}
-				title: "单次饱食恢复≥0.8且攻速≥1的饕餮镰"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest77EDD48A1C662FCE.task.2605554539357602103.title}"
 				type: "item"
 			}]
-			title: "自创世工匠而传"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest77EDD48A1C662FCE.title}"
 			x: 15.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["77EDD48A1C662FCE"]
 			description: [
-				"&6恭喜！看来创世工匠留下的技艺仍旧有效！&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest49CEF56DE1747911.description1}"
 				""
-				"所谓传古工具，不过是创世工匠当时的随意之作——其隐藏在大量日志之中，一度让我认为是某种传说。但这一把把&b传古工具&r的铸成无一不是对创世工序存在的证明。"
+				"{ftbquests.chapter.6F13780E2595977B.quest49CEF56DE1747911.description2}"
 				""
-				"传古饕餮镰相比于饕餮镰本身，虽然没有明显的外形和属性变化，但其具有&6饥渴打击&r的特性，能够&6大幅消耗使用者的疲劳值（饥饿值）&r，进而&6按照使用者的最大生命值和特性效率&r，大幅增加使用者的输出。"
+				"{ftbquests.chapter.6F13780E2595977B.quest49CEF56DE1747911.description3}"
 				""
-				"但一旦使用者无法供养传古饕餮镰的消耗，其不再将对敌人造成伤害，而是开始侵蚀使用者自身。"
+				"{ftbquests.chapter.6F13780E2595977B.quest49CEF56DE1747911.description4}"
 			]
 			id: "49CEF56DE1747911"
 			rewards: [{
@@ -815,7 +815,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "匠艺再现"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest49CEF56DE1747911.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -860,21 +860,21 @@
 						]
 					}
 				}
-				title: "任意传古饕餮镰"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest49CEF56DE1747911.task.7390164320255585053.title}"
 				type: "item"
 			}]
-			title: "铸成传古饕餮镰"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest49CEF56DE1747911.title}"
 			x: 17.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["585F5FEF231F0B44"]
 			description: [
-				"日志中记载，创世工匠为打造足够精妙的弓，从自己的友人处借来了数以千计的机械原件，最后使用其中部分打造而成了&6机巧弓&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest1D33AD00D5E33F5A.description1}"
 				""
-				"机巧弓由技艺本身引导，能够将其发射的箭矢转换为具有特殊效能的&6特种箭矢&r，以完成一些复杂的工作或者单纯进行有效杀伤。"
+				"{ftbquests.chapter.6F13780E2595977B.quest1D33AD00D5E33F5A.description2}"
 				""
-				"尽管当初的制作技艺细节已然不可考，但从星星点点的记录来看，极有可能是通过&6动力锯&r完成预锻造的过程。"
+				"{ftbquests.chapter.6F13780E2595977B.quest1D33AD00D5E33F5A.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "create:mechanical_saw"
@@ -884,28 +884,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "打造机巧弓"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest1D33AD00D5E33F5A.subtitle}"
 			tasks: [{
 				icon: "create:mechanical_saw"
 				id: "5FA172893F17948A"
 				observe_type: 0
 				timer: 0L
-				title: "观察动力锯"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest1D33AD00D5E33F5A.task.6890914838648165514.title}"
 				to_observe: "create:mechanical_saw"
 				type: "observation"
 			}]
-			title: "复刻机巧弓"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest1D33AD00D5E33F5A.title}"
 			x: 7.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["1D33AD00D5E33F5A"]
 			description: [
-				"相比于我们想象中创世工匠使用动力锯进行精妙加工，从现有工具所遗留的数据来看，他当时可能只是粗略的将模块化弓使用动力锯进行了&6简单的处理&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6E6F8033B88378B2.description1}"
 				""
-				"&7**  仅仅是稍微的接触，工具便损毁殆尽 **&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest6E6F8033B88378B2.description2}"
 				""
-				"请您手持&6任意模块化弓&r，将工具右键放置在动力锯上，模拟过去所发生的一切。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6E6F8033B88378B2.description3}"
 			]
 			id: "6E6F8033B88378B2"
 			rewards: [{
@@ -913,7 +913,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "以最为精巧的切割"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest6E6F8033B88378B2.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -930,21 +930,21 @@
 						value: "is_tetra_preforged:[mechanical_saw]"
 					}
 				}
-				title: "切割锻造后的模块化工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest6E6F8033B88378B2.task.1770875149464660316.title}"
 				type: "item"
 			}]
-			title: "预锻造模块化工具"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest6E6F8033B88378B2.title}"
 			x: 10.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["6E6F8033B88378B2"]
 			description: [
-				"在经过预锻造后，您的武器已经支零破碎，请您&6优先修复您的工具&r，而后将模块化弓的弓臂打造成为&6机巧弓臂&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest4484E4E4683B59B7.description1}"
 				""
-				"&6机巧弓&r作为一种特殊弓种，其能够在&6满蓄力&r时，将射出的弓箭转换为特殊的&6追踪箭矢&r。追踪箭矢能够在射出后不断搜寻周围的目标以进行追踪。当目标搜寻到后，会立刻进入到&6特殊机动加速状态&r，在这种状态下，机巧弓的追踪箭矢会有更高、更稳定的箭矢终速。"
+				"{ftbquests.chapter.6F13780E2595977B.quest4484E4E4683B59B7.description2}"
 				""
-				"通过不同材料打造的机巧弓具有不同的&6追踪范围&r和&6机动终速&r，因此需要进行精心调整以达到最适合您的武器状态。"
+				"{ftbquests.chapter.6F13780E2595977B.quest4484E4E4683B59B7.description3}"
 			]
 			id: "4484E4E4683B59B7"
 			rewards: [{
@@ -952,7 +952,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "步向传古工艺之路"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest4484E4E4683B59B7.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -977,19 +977,19 @@
 						value: "[bow/stave]:[bow/mechanical_stave]"
 					}
 				}
-				title: "任意包含机巧弓臂的模块化工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest4484E4E4683B59B7.task.1854532341629208041.title}"
 				type: "item"
 			}]
-			title: "锻造机巧弓"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest4484E4E4683B59B7.title}"
 			x: 12.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["4484E4E4683B59B7"]
 			description: [
-				"创世工匠的日志中记录其机巧弓使用旧日材料轻易达到了&6机动速度最大4.5格/秒&r及&61.6以下的拉弓时间&r，而后，创世工匠便创造了其创世工艺启发之旅的第三把武器——我们现在可以称其为&9传古机巧弓&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5F9D59B4922E8B4C.description1}"
 				""
-				"请您也模仿创世工匠制作此般武器，虽然我们没有过去世界中所使用的各种材料，但倘若我们能够&6穷尽打磨之技&r，终究能够到达往日之高度。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5F9D59B4922E8B4C.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1014,7 +1014,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "加深对于机巧弓的理解"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest5F9D59B4922E8B4C.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1041,21 +1041,21 @@
 						value: "fit_ancient_mechanical_stave:[]"
 					}
 				}
-				title: "机动速度≥4.5格且拉弓时间≤1.6的机巧弓"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest5F9D59B4922E8B4C.task.4453117154755991539.title}"
 				type: "item"
 			}]
-			title: "自创世工匠而传"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest5F9D59B4922E8B4C.title}"
 			x: 15.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5F9D59B4922E8B4C"]
 			description: [
-				"&6恭喜！看来创世工匠留下的技艺仍旧有效！&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest733541A5359D4654.description1}"
 				""
-				"所谓传古工具，不过是创世工匠当时的随意之作——其隐藏在大量日志之中，一度让我认为是某种传说。但这一把把&b传古工具&r的铸成无一不是对创世工序存在的证明。"
+				"{ftbquests.chapter.6F13780E2595977B.quest733541A5359D4654.description2}"
 				""
-				"传古机巧弓相比于机巧弓，属性上没有太大差异，但其拥有&6破片箭矢&r，在&6击中方块时会发生爆炸&r，对周围一定范围的敌人&6造成等同于使用者近战攻击伤害与特性效率相关的伤害&r，并且&6继承近战攻击特效&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest733541A5359D4654.description3}"
 			]
 			icon: {
 				Count: 1
@@ -1081,7 +1081,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "匠艺再现"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest733541A5359D4654.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1109,10 +1109,10 @@
 						value: "[bow/stave]:[bow/ancient_mechanical_stave]"
 					}
 				}
-				title: "任意传古机巧弓"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest733541A5359D4654.task.8244746439193343761.title}"
 				type: "item"
 			}]
-			title: "铸成传古机巧弓"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest733541A5359D4654.title}"
 			x: 17.5d
 			y: 2.5d
 		}
@@ -1123,11 +1123,11 @@
 				"733541A5359D4654"
 			]
 			description: [
-				"&6感谢您对创世工序所做出的贡献&r——我们目前收集到有关创世工匠的信息已经足够让我们进入下一步的探索了。"
+				"{ftbquests.chapter.6F13780E2595977B.quest75096F8EF539CB29.description1}"
 				""
-				"正如之前所言，&6每件创世工具的完成无不是对创世工序真实存在的证明&r——目前，我已经找到了相关的日志信息，并且完成了相关的分析。"
+				"{ftbquests.chapter.6F13780E2595977B.quest75096F8EF539CB29.description2}"
 				""
-				"不过，为了能够真正复现创世工序，现在，&6轮到我们来启发我们自己了&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest75096F8EF539CB29.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "tetra:hammer_base"
@@ -1142,29 +1142,29 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "204C847EE288BC0F"
-					title: "解锁头衔：&e学无止境"
+					title: "{ftbquests.chapter.6F13780E2595977B.quest75096F8EF539CB29.reward.2327380787945061391.title}"
 					titleId: "kubejs:tinker_study"
 					type: "titles:title"
 				}
 			]
-			subtitle: "传古武器锻造之后"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest75096F8EF539CB29.subtitle}"
 			tasks: [{
 				elapsedTime: 180L
 				icon: "supplementaries:hourglass"
 				id: "61C0FC84D31A5DC0"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest75096F8EF539CB29.task.7043907464615058880.title}"
 				type: "questsadditions:time"
 			}]
-			title: "传古史实"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest75096F8EF539CB29.title}"
 			x: 20.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["75096F8EF539CB29"]
 			description: [
-				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest4AC681B7C67BEEDB.description1}"
 				""
-				"我经过发想后，得到的第一个可行工具改良方案为&6探知接口&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest4AC681B7C67BEEDB.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1180,7 +1180,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "从能制作绑定结开始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest4AC681B7C67BEEDB.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1208,19 +1208,19 @@
 					}
 				}
 				match_nbt: false
-				title: "任意双头工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest4AC681B7C67BEEDB.task.6135211409878581949.title}"
 				type: "item"
 			}]
-			title: "绑定启发"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest4AC681B7C67BEEDB.title}"
 			x: 22.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["75096F8EF539CB29"]
 			description: [
-				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest7C8A23D446317A08.description1}"
 				""
-				"我经过发想后，得到的第二个可行工具改良方案为&6热能手柄&r和&6研磨手柄&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest7C8A23D446317A08.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1236,7 +1236,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "从裹柄工艺开始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest7C8A23D446317A08.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1264,19 +1264,19 @@
 					}
 				}
 				match_nbt: false
-				title: "任意双头工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest7C8A23D446317A08.task.6853591865526073996.title}"
 				type: "item"
 			}]
-			title: "裹柄启发"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest7C8A23D446317A08.title}"
 			x: 22.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["75096F8EF539CB29"]
 			description: [
-				"&7您无法看到日志实属可惜，虽然我可以将日志内容同步到任务系统中，但由于文本量过大，且我尚未明确是何部分会引发此种发想，因此请允许我擅自主张，将自己受日志启发而出的工具类型授予给您，用于创世工序的再现。&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest573B18502C8359B2.description1}"
 				""
-				"我经过发想后，得到的第三个可行工具改良方案为&6斩首锯齿&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest573B18502C8359B2.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1292,7 +1292,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "从血槽工艺开始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest573B18502C8359B2.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1322,19 +1322,19 @@
 					}
 				}
 				match_nbt: false
-				title: "任意剑"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest573B18502C8359B2.task.6455406360800993277.title}"
 				type: "item"
 			}]
-			title: "血槽启发"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest573B18502C8359B2.title}"
 			x: 22.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["4AC681B7C67BEEDB"]
 			description: [
-				"为了能够让被改造的双头工具承受住探知接口的结合力，需要&6工具至少具有2000点耐久度&r，且&6挖掘速度不得低于9&r。"
+				"{ftbquests.chapter.6F13780E2595977B.questD288D15FBA046CF.description1}"
 				""
-				"这意味着，您可能需要多次对工具进行打磨，同时尽可能多的使用能够增加耐久度的材料。"
+				"{ftbquests.chapter.6F13780E2595977B.questD288D15FBA046CF.description2}"
 			]
 			id: "0D288D15FBA046CF"
 			rewards: [{
@@ -1342,7 +1342,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "现代工匠之启迪"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.questD288D15FBA046CF.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1374,19 +1374,19 @@
 						value: "fit_scry_interface:[]"
 					}
 				}
-				title: "耐久度≥2000且挖掘速度≥9的双头工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.questD288D15FBA046CF.task.4252374128252739993.title}"
 				type: "item"
 			}]
-			title: "匠艺我所执"
+			title: "{ftbquests.chapter.6F13780E2595977B.questD288D15FBA046CF.title}"
 			x: 25.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["7C8A23D446317A08"]
 			description: [
-				"为了能够让被改造的双头工具承受住手柄的特殊能效，需要&6工具至少具有1000点耐久度&r，但&6工具的攻击力不得高于1&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest84C51CDAE64FED4.description1}"
 				""
-				"这意味着，您可能需要精挑细选材料，并且合理规划工具类型，以保证耐久度和攻击力能够满足要求。"
+				"{ftbquests.chapter.6F13780E2595977B.quest84C51CDAE64FED4.description2}"
 			]
 			id: "084C51CDAE64FED4"
 			rewards: [{
@@ -1394,7 +1394,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "现代工匠之启迪"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest84C51CDAE64FED4.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1420,19 +1420,19 @@
 						value: "fit_heat_grinding_handle:[]"
 					}
 				}
-				title: "耐久度≥1000且攻击力≤1的双头工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest84C51CDAE64FED4.task.7389906949552063014.title}"
 				type: "item"
 			}]
-			title: "匠艺我所执"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest84C51CDAE64FED4.title}"
 			x: 25.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["573B18502C8359B2"]
 			description: [
-				"为了能够让被改造的武器承受住新加固部件的特殊能效，需要&6武器至少具有2000点耐久度&r，但&6工具的攻击力不得低于9&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5A86A72AFC55DF20.description1}"
 				""
-				"这意味着，您可能需要精挑细选材料，并且合理规划打磨，以保证耐久度和攻击力能够满足要求。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5A86A72AFC55DF20.description2}"
 			]
 			id: "5A86A72AFC55DF20"
 			rewards: [{
@@ -1440,7 +1440,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "现代工匠之启迪"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest5A86A72AFC55DF20.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1476,19 +1476,19 @@
 						value: "fit_beheading_sawtooth:[]"
 					}
 				}
-				title: "耐久度≥2000且攻击力≥9的武器"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest5A86A72AFC55DF20.task.2586563089443471867.title}"
 				type: "item"
 			}]
-			title: "匠艺我所执"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest5A86A72AFC55DF20.title}"
 			x: 25.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["0D288D15FBA046CF"]
 			description: [
-				"在达成了之前的条件后，您便可以进行&6探知接口&r的制造。"
+				"{ftbquests.chapter.6F13780E2595977B.quest31C551BCFF060F3B.description1}"
 				""
-				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest31C551BCFF060F3B.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1518,7 +1518,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "继创世工匠后"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest31C551BCFF060F3B.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1550,19 +1550,19 @@
 						value: "[double/binding]:[double/scry_interface]"
 					}
 				}
-				title: "装有探知接口的双头工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest31C551BCFF060F3B.task.2877529538674429946.title}"
 				type: "item"
 			}]
-			title: "安装探知接口"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest31C551BCFF060F3B.title}"
 			x: 27.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["084C51CDAE64FED4"]
 			description: [
-				"在达成了之前的条件后，您便可以进行&6热能手柄&r和&6研磨手柄&r的制造。"
+				"{ftbquests.chapter.6F13780E2595977B.quest729D887900900CCF.description1}"
 				""
-				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest729D887900900CCF.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1587,7 +1587,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "继创世工匠后"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest729D887900900CCF.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1629,19 +1629,19 @@
 						]
 					}
 				}
-				title: "装有热能手柄/研磨手柄的双头工具"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest729D887900900CCF.task.8016148895750688921.title}"
 				type: "item"
 			}]
-			title: "安装热能手柄/研磨手柄"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest729D887900900CCF.title}"
 			x: 27.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5A86A72AFC55DF20"]
 			description: [
-				"在达成了之前的条件后，您便可以进行&6斩首锯齿&r的制造。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5AE1E539302CD778.description1}"
 				""
-				"相比于传古工具，我把这些由我启发而来的工具称之为&6启发工具&r或者&6发想部件&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5AE1E539302CD778.description2}"
 			]
 			id: "5AE1E539302CD778"
 			rewards: [{
@@ -1649,7 +1649,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "继创世工匠后"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest5AE1E539302CD778.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1685,10 +1685,10 @@
 						value: "[sword/fuller]:[sword/beheading_sawtooth]"
 					}
 				}
-				title: "装有斩首锯齿的武器"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest5AE1E539302CD778.task.5428180810081551496.title}"
 				type: "item"
 			}]
-			title: "安装斩首锯齿"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest5AE1E539302CD778.title}"
 			x: 27.5d
 			y: 2.5d
 		}
@@ -1699,9 +1699,9 @@
 				"5AE1E539302CD778"
 			]
 			description: [
-				"历经&6模仿 - 发想 - 验证&r后，我现在有把握&6进行创世工序的完整复现&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest3C7BEEA8B969DD3.description1}"
 				""
-				"或者换句话来说，这并非是对过去创世工序的复刻，而是新世界工匠以自己理解创造的&6新世界工序&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest3C7BEEA8B969DD3.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "03C7BEEA8B969DD3"
@@ -1711,30 +1711,30 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "发想已成"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest3C7BEEA8B969DD3.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "1350CE70DEC5DE4B"
-				title: "准备创世工序"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest3C7BEEA8B969DD3.task.1391839269026651723.title}"
 				type: "questsadditions:time"
 			}]
-			title: "重现创世工序：准备"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest3C7BEEA8B969DD3.title}"
 			x: 30.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["539289784FDA630E"]
 			description: [
-				"将空白卷轴放置在加工台中，即会显示如何进行卷轴改良。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.description1}"
 				""
-				"卷轴根据其部件的种类不同，会提供不同的&6材质启发&r。除此之外，在纸材部件处，您可以发现存在一个特殊的原理图，其称作&6编撰&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.description2}"
 				""
-				"通过编撰，卷轴会根据自身效果等级进行转换。不同效果下的卷轴通过编撰会获得不同种类的目标卷轴。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.description3}"
 				""
-				"通常来说，在&6材质启发大于等于5&r的时候，进行编撰会获得对应材质类型的&6专精卷轴&r；若不满足任何特定的效果条件，则卷轴会被&6编撰为废纸&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.description4}"
 				""
-				"更重要的是，通过在卷轴的嵌孔槽位&6镶嵌不同种类的宝石&r，能够制作不同的&6启发卷轴&r，不同的启发卷轴同样也具有着不同的材质启发要求，您可以在&6完成宝石镶嵌后在嵌孔的详情栏位查看&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.description5}"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -1744,25 +1744,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "创造属于我的创世工序"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "minecraft:writable_book"
 				id: "603B6AEE2991B1B6"
 				kubeId: "tetra_scroll_writing"
-				title: "进行任意一次卷轴编撰"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.task.6934253622399185334.title}"
 				type: "maa:kube"
 			}]
-			title: "重现创世工序：编撰"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest6361C451E76A6805.title}"
 			x: 35.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6纯净钻石&r时，若卷轴的纤维启发和石材启发的数值均≥3，则卷轴会尝试转换成&6启发：力量&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest42978B55D947F8FE.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若您的胸腔力量≥15&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest42978B55D947F8FE.description2}"
 			]
 			id: "42978B55D947F8FE"
 			rewards: [{
@@ -1770,7 +1770,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于力量之始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest42978B55D947F8FE.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1802,19 +1802,19 @@
 						value: "strength_inspiration"
 					}
 				}
-				title: "启发：力量"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest42978B55D947F8FE.task.1324945715305843912.title}"
 				type: "item"
 			}]
-			title: "启发：力量"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest42978B55D947F8FE.title}"
 			x: 38.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6纯净紫水晶&r时，若卷轴的布料启发和宝石启发的数值均≥3，则卷轴会尝试转换成&6启发：星辉&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5E3F52BD93D59729.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工位置处于新月夜空下&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest5E3F52BD93D59729.description2}"
 			]
 			id: "5E3F52BD93D59729"
 			rewards: [{
@@ -1822,7 +1822,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于星辉之始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest5E3F52BD93D59729.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1854,19 +1854,19 @@
 						value: "starry_inspiration"
 					}
 				}
-				title: "启发：星辉"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest5E3F52BD93D59729.task.8795571213826680785.title}"
 				type: "item"
 			}]
-			title: "启发：星辉"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest5E3F52BD93D59729.title}"
 			x: 37.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6青金石&r时，若卷轴的革料启发和金属启发的数值均≥3，则卷轴会尝试转换成&6启发：雷暴&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest568E226F9690341C.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若天气处于雷暴&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest568E226F9690341C.description2}"
 			]
 			id: "568E226F9690341C"
 			rewards: [{
@@ -1874,7 +1874,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于雷暴之始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest568E226F9690341C.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1906,19 +1906,19 @@
 						value: "thunder_inspiration"
 					}
 				}
-				title: "启发：雷暴"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest568E226F9690341C.task.8996457676920288606.title}"
 				type: "item"
 			}]
-			title: "启发：雷暴"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest568E226F9690341C.title}"
 			x: 36.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6绿宝石&r时，若卷轴的骨材启发和布料启发的数值均≥3，则卷轴会尝试转换成&6启发：鲜血&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest281B257C8111B6F2.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若周围存在至少 3 个村民作为祭品&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest281B257C8111B6F2.description2}"
 			]
 			id: "281B257C8111B6F2"
 			rewards: [{
@@ -1926,7 +1926,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于鲜血之祭"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest281B257C8111B6F2.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -1958,19 +1958,19 @@
 						value: "blood_inspiration"
 					}
 				}
-				title: "启发：鲜血"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest281B257C8111B6F2.task.1646138666743292536.title}"
 				type: "item"
 			}]
-			title: "启发：鲜血"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest281B257C8111B6F2.title}"
 			x: 33.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6紫水晶&r时，若卷轴的纤维启发和木材启发的数值均≥3，则卷轴会尝试转换成&6启发：疲惫&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest938C17C9AE2BCD2.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工者的饱和度为满&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest938C17C9AE2BCD2.description2}"
 			]
 			id: "0938C17C9AE2BCD2"
 			rewards: [{
@@ -1978,7 +1978,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于疲惫之始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest938C17C9AE2BCD2.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2010,19 +2010,19 @@
 						value: "exhaustion_inspiration"
 					}
 				}
-				title: "启发：疲惫"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest938C17C9AE2BCD2.task.7672115694157750454.title}"
 				type: "item"
 			}]
-			title: "启发：疲惫"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest938C17C9AE2BCD2.title}"
 			x: 37.5d
 			y: -7.5d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6钻石&r时，若卷轴的宝石启发和布料启发的数值均≥3，则卷轴会尝试转换成&6启发：效果&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6989E589170E8BB1.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若加工者持有的效果数量≥5&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest6989E589170E8BB1.description2}"
 			]
 			id: "6989E589170E8BB1"
 			rewards: [{
@@ -2030,7 +2030,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于效果之始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest6989E589170E8BB1.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2062,19 +2062,19 @@
 						value: "effect_inspiration"
 					}
 				}
-				title: "启发：效果"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest6989E589170E8BB1.task.7633276347981938391.title}"
 				type: "item"
 			}]
-			title: "启发：效果"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest6989E589170E8BB1.title}"
 			x: 38.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6纯净青金石&r时，若卷轴的金属启发和鳞片启发的数值均≥3，则卷轴会尝试转换成&6启发：耐久&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest35E1C067D09D8668.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若工具在打造前的耐久上限≥2000&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest35E1C067D09D8668.description2}"
 			]
 			id: "35E1C067D09D8668"
 			rewards: [{
@@ -2082,7 +2082,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于耐久之始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest35E1C067D09D8668.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2114,19 +2114,19 @@
 						value: "durability_inspiration"
 					}
 				}
-				title: "启发：耐久"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest35E1C067D09D8668.task.8469644280274995828.title}"
 				type: "item"
 			}]
-			title: "启发：耐久"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest35E1C067D09D8668.title}"
 			x: 36.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["6361C451E76A6805"]
 			description: [
-				"镶嵌&6纯净绿宝石&r时，若卷轴的革料启发和骨材启发的数值均≥3，则卷轴会尝试转换成&6启发：附魔&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest2DEBE706168D957.description1}"
 				""
-				"当该卷轴被放置在加工台周围5 * 5 * 5范围内时，进行主要部件加工时，&6若工具在打造前持有的总附魔等级≥5&r，则工具该部件会获得&6创世启迪&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest2DEBE706168D957.description2}"
 			]
 			id: "02DEBE706168D957"
 			rewards: [{
@@ -2134,7 +2134,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启发于附魔之始"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest2DEBE706168D957.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2166,21 +2166,21 @@
 						value: "enchant_inspiration"
 					}
 				}
-				title: "启发：附魔"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest2DEBE706168D957.task.3234968525627696750.title}"
 				type: "item"
 			}]
-			title: "启发：附魔"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest2DEBE706168D957.title}"
 			x: 33.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["03C7BEEA8B969DD3"]
 			description: [
-				"创世工序即是通往无限改良之路的必要途径。通过完成&6创世工序&r，我们可以领悟进行工具无限改良的具体方法。"
+				"{ftbquests.chapter.6F13780E2595977B.quest539289784FDA630E.description1}"
 				""
-				"为了进行创世工序，我们需要制作&6创世启迪等级至少为 3 的任意工具类型&r，而为了获取创世启迪，我们需要制作某些特定卷轴。"
+				"{ftbquests.chapter.6F13780E2595977B.quest539289784FDA630E.description2}"
 				""
-				"这些卷轴被称作&6“启发”卷轴&r，相较于村民贩卖的专精卷轴，有着独一无二的用处——而为了制作这些卷轴，请您先制作几张&6空卷轴&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest539289784FDA630E.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "539289784FDA630E"
@@ -2189,34 +2189,34 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新世界工匠"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest539289784FDA630E.subtitle}"
 			tasks: [{
 				id: "0325628DB48D0210"
 				item: "kubejs:tetra_scroll"
 				type: "item"
 			}]
-			title: "重现创世工序：制卷"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest539289784FDA630E.title}"
 			x: 32.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["33D6D51353372A8F"]
 			description: [
-				"在庆祝后，有一件事我再三考虑，还是决定告知于您。"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description1}"
 				""
-				"&6我们现在使用的新世界工艺并非当年的真正创世工艺——而是我们基于对创世工艺现代理解的重新创造——也就是说，过去的创世工艺并非是我们现在使用的模样。&r"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description2}"
 				""
-				"其论据为——我在茫茫数据之中，找到了该条改良方案，其作为创世工匠的最常用手段，被记录在大量的日志中，借由此些数据我才勉强能够将其还原。"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description3}"
 				""
-				"其最基本的能力为：&6无视条件，强制为工具添加 1 的完整度&r。"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description4}"
 				""
-				"想必您大概能够理解这种工艺的意义为何——如若能自由使用这种技艺，结合我们现有的各种技术，可以说能够随意揉捏这个世界的形状。"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description5}"
 				""
-				"因此，我选择将抉择权交给&6最精通创世/新世界技艺的人&r。作为系统而言，我并没有对玩家体验的全面认知，而同为玩家的你们应当更能够理解这种能力是否应当被公开。"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description6}"
 				"{@pagebreak}"
-				"公开技术会使所有人在完成了该任务线后均能够使用真正的创世工艺进行改良。"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description7}"
 				""
-				"私有配方会使您成为唯一能够使用这样技术的人，如果其他玩家取而代之，并不会影响您已获得技术的使用。"
+				"{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.description8}"
 			]
 			hide_until_deps_complete: true
 			id: "74322D0F530CF0FE"
@@ -2228,7 +2228,7 @@
 			}]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "寻找真正的创世匠艺"
+			subtitle: "{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -2241,13 +2241,13 @@
 				leaderboard: "kubejs:tetra_craft_genesis"
 				min: 1
 				rank: 1
-				title: "创世工艺加工次数称霸"
+				title: "{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.task.8666423133450415126.title}"
 				type: "leaderboards:rank_task"
 			}]
-			title: "创世工匠之后"
+			title: "{ftbquests.chapter.6F13780E2595977B.quest74322D0F530CF0FE.title}"
 			x: 38.5d
 			y: 0.0d
 		}
 	]
-	title: "传闻：创世工匠"
+	title: "{ftbquests.chapter.6F13780E2595977B.title}"
 }

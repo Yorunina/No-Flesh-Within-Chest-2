@@ -67,15 +67,15 @@
 		{
 			dependencies: ["56C104161CB63D9C"]
 			description: [
-				"在制作肋骨牙刃时，我便发现了存在另一特殊肋骨——其名称叫作&6闪耀肋骨&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2EA410FBC8182C1E.description1}"
 				""
-				"闪耀肋骨的基本效果为在开启战利品箱时，会随机复制其中的一个战利品并且插入到当前战利品箱中，且&6这个效果可以叠加&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2EA410FBC8182C1E.description2}"
 				""
-				"但除该效果之外，另一个效果也非常引人深思——即特殊的战利品表和特殊的遗物战利品。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2EA410FBC8182C1E.description3}"
 				""
-				"为了针对该内容进行了深挖，请允许我指引您寻找这些早已被遗忘的&6闪耀过往&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2EA410FBC8182C1E.description4}"
 				""
-				"请注意，器官效果先于饰品结算——这意味着会优先复制战利品而后应用誓言的效果。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2EA410FBC8182C1E.description5}"
 			]
 			hide_until_deps_complete: true
 			id: "2EA410FBC8182C1E"
@@ -85,7 +85,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "复制战利品"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest2EA410FBC8182C1E.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -104,16 +104,16 @@
 				}
 				type: "item"
 			}]
-			title: "闪耀于现世的过往"
+			title: "{ftbquests.chapter.40F1AA2ECEA15525.quest2EA410FBC8182C1E.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7BCEE113CFCB696A"]
 			description: [
-				"其描述的特殊战利品表之一即为&6村庄战利品表&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest305ACD49FA86FBBF.description1}"
 				""
-				"在村庄战利品表的箱子探索时，有&610%&r的概率会产出&6遗物纸张&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest305ACD49FA86FBBF.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -124,7 +124,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物的第一份记忆"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest305ACD49FA86FBBF.subtitle}"
 			tasks: [{
 				id: "701445890C095A68"
 				item: "kubejs:relics_paper"
@@ -136,9 +136,9 @@
 		{
 			dependencies: ["7BCEE113CFCB696A"]
 			description: [
-				"其描述的特殊战利品表之一即为&6墓园战利品表&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest3B26637D669DE1B5.description1}"
 				""
-				"在墓园战利品表的箱子探索时，有&620%&r的概率会产出&6遗物金属&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest3B26637D669DE1B5.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -149,7 +149,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物的第二份记忆"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest3B26637D669DE1B5.subtitle}"
 			tasks: [{
 				id: "017754F25B4E096B"
 				item: "kubejs:relics_metal"
@@ -161,9 +161,9 @@
 		{
 			dependencies: ["7BCEE113CFCB696A"]
 			description: [
-				"其描述的特殊战利品表之一即为&6埋藏的宝藏战利品表&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest572CF91CDDDB8DC8.description1}"
 				""
-				"在埋藏的宝藏战利品表的箱子探索时，&6必然&r会产出&6遗物宝石&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest572CF91CDDDB8DC8.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -174,7 +174,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物的第三份记忆"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest572CF91CDDDB8DC8.subtitle}"
 			tasks: [{
 				id: "12681FCB1DFD4915"
 				item: "kubejs:relics_gem"
@@ -190,11 +190,11 @@
 				"572CF91CDDDB8DC8"
 			]
 			description: [
-				"通过遗物纸张、遗物金属和遗物宝石，可以制成&6遗物卷轴&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1A23554F0563EDB6.description1}"
 				""
-				"遗物卷轴分为多卷，现在您可以制成第一卷，右键长按使用后您便可以得到&6遗物熏香&r的知识。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1A23554F0563EDB6.description2}"
 				""
-				"通过&6遗物熏香&r，可以复苏部分遗物生物过去的力量。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1A23554F0563EDB6.description3}"
 			]
 			hide_dependency_lines: true
 			id: "1A23554F0563EDB6"
@@ -215,7 +215,7 @@
 				}
 			]
 			shape: "none"
-			subtitle: "记载远古的第一秒流逝"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest1A23554F0563EDB6.subtitle}"
 			tasks: [{
 				id: "5F602257D67C46E4"
 				item: "kubejs:relics_scroll_1"
@@ -227,11 +227,11 @@
 		{
 			dependencies: ["2EA410FBC8182C1E"]
 			description: [
-				"在此之前，请您准备一个名为&6方向肝&r的器官，以及配套的各式&6角质皮&r（尤其是结构角质皮）。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest729F2DAEE008D92C.description1}"
 				""
-				"通过在角质皮中选择您需要前往的结构，并且将其放置到&6处于胸腔的方向肝内&r，其便会搜寻对应的结构并尝试将角质皮转换为对应的藏宝图。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest729F2DAEE008D92C.description2}"
 				""
-				"如果出现长时间搜索无效，请您将该器官取出并手持右键，以将其中的角质皮安全取出。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest729F2DAEE008D92C.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -248,7 +248,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "寻找恰当的方向"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest729F2DAEE008D92C.subtitle}"
 			tasks: [
 				{
 					id: "7ECBCE57578BC204"
@@ -281,7 +281,7 @@
 							]
 						}
 					}
-					title: "任意角质皮"
+					title: "{ftbquests.chapter.40F1AA2ECEA15525.quest729F2DAEE008D92C.task.7903930837247960977.title}"
 					type: "item"
 				}
 			]
@@ -291,11 +291,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2C9EA2EF6AC10775.description1}"
 				""
-				"&6斯库拉&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6卫城（Acropolis）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2C9EA2EF6AC10775.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6凛冽甲片&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2C9EA2EF6AC10775.description3}"
 			]
 			id: "2C9EA2EF6AC10775"
 			rewards: [{
@@ -304,7 +304,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest2C9EA2EF6AC10775.subtitle}"
 			tasks: [{
 				id: "5047C2065837EC06"
 				item: {
@@ -320,11 +320,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest341DB6D152D1225F.description1}"
 				""
-				"&6雪怪&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6雪怪藏身处（Yeti Hideout）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest341DB6D152D1225F.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6寒冷晶石&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest341DB6D152D1225F.description3}"
 			]
 			id: "341DB6D152D1225F"
 			rewards: [{
@@ -333,7 +333,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest341DB6D152D1225F.subtitle}"
 			tasks: [{
 				id: "693B656D2809AB7E"
 				item: {
@@ -349,11 +349,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest28FCB1C9D34DB253.description1}"
 				""
-				"&6冥界骑士&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6地下竞技场（Underworld Arena）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest28FCB1C9D34DB253.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6冥界遗骨&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest28FCB1C9D34DB253.description3}"
 			]
 			id: "28FCB1C9D34DB253"
 			rewards: [{
@@ -362,7 +362,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest28FCB1C9D34DB253.subtitle}"
 			tasks: [{
 				id: "6C968EF16F3E6CCC"
 				item: {
@@ -378,11 +378,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.questA2472E4E1B54370.description1}"
 				""
-				"&6咒翼灵骸&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6苦寒监牢（Frosted Prison）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.questA2472E4E1B54370.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6破碎咒翼&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.questA2472E4E1B54370.description3}"
 			]
 			id: "0A2472E4E1B54370"
 			rewards: [{
@@ -391,7 +391,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.questA2472E4E1B54370.subtitle}"
 			tasks: [{
 				id: "53B230417C0AF6F4"
 				item: {
@@ -407,11 +407,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.questBB9E24B3F842DE2.description1}"
 				""
-				"&6克拉肯&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6克拉肯商船（Kraken Ship）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.questBB9E24B3F842DE2.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6浑浊克拉肯之眼&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.questBB9E24B3F842DE2.description3}"
 			]
 			id: "0BB9E24B3F842DE2"
 			rewards: [{
@@ -420,7 +420,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.questBB9E24B3F842DE2.subtitle}"
 			tasks: [{
 				id: "6A96FF733F9D0709"
 				item: {
@@ -436,11 +436,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1DCB109CF4005867.description1}"
 				""
-				"&6炼狱巨龙&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6龙之塔（Dagon Tower）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1DCB109CF4005867.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6黯淡狱龙晶&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1DCB109CF4005867.description3}"
 			]
 			id: "1DCB109CF4005867"
 			rewards: [{
@@ -449,7 +449,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest1DCB109CF4005867.subtitle}"
 			tasks: [{
 				id: "653DBA305A533610"
 				item: {
@@ -465,11 +465,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest339DF2098154F323.description1}"
 				""
-				"&6沙虫&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6沙虫巢（Sandworm Nest）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest339DF2098154F323.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6异常沙腺&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest339DF2098154F323.description3}"
 			]
 			id: "339DF2098154F323"
 			rewards: [{
@@ -478,7 +478,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest339DF2098154F323.subtitle}"
 			tasks: [{
 				id: "25A9E40DDBD927FE"
 				item: {
@@ -494,11 +494,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6EF3C8CDC8154A64.description1}"
 				""
-				"&6先驱者&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6远古工厂（Ancient Factory）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6EF3C8CDC8154A64.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6先驱肺炉&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6EF3C8CDC8154A64.description3}"
 			]
 			id: "6EF3C8CDC8154A64"
 			rewards: [{
@@ -507,7 +507,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest6EF3C8CDC8154A64.subtitle}"
 			tasks: [{
 				id: "1D29919D395D9A00"
 				item: {
@@ -523,11 +523,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest7DB783C41BCF6310.description1}"
 				""
-				"&6下界合金巨兽&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6灵魂锻造厂（Soul Black Smith）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest7DB783C41BCF6310.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6残破合金肌肉&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest7DB783C41BCF6310.description3}"
 			]
 			id: "7DB783C41BCF6310"
 			rewards: [{
@@ -536,7 +536,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest7DB783C41BCF6310.subtitle}"
 			tasks: [{
 				id: "062DC920F7C09021"
 				item: {
@@ -552,11 +552,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest47DCBA14E6459E71.description1}"
 				""
-				"&6利维坦&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6沉没之城（Sunken City）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest47DCBA14E6459E71.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6海蚀利维坦肋骨&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest47DCBA14E6459E71.description3}"
 			]
 			id: "47DCBA14E6459E71"
 			rewards: [{
@@ -565,7 +565,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest47DCBA14E6459E71.subtitle}"
 			tasks: [{
 				id: "3A8E798421469DDC"
 				item: {
@@ -581,11 +581,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1D5B9FDE3FC3837B.description1}"
 				""
-				"&6远古遗骸&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6诅咒金字塔（Cursed Pyramid）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1D5B9FDE3FC3837B.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6遗骸之心&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1D5B9FDE3FC3837B.description3}"
 			]
 			id: "1D5B9FDE3FC3837B"
 			rewards: [{
@@ -594,7 +594,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest1D5B9FDE3FC3837B.subtitle}"
 			tasks: [{
 				id: "52F9EB3081084E6D"
 				item: {
@@ -610,11 +610,11 @@
 		{
 			dependencies: ["729F2DAEE008D92C"]
 			description: [
-				"通过方向肝和结构角质皮，您可以搜索到这些遗物生物沉睡的位置。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest59E6ED7F3062E69.description1}"
 				""
-				"&6焰魔&r便是传说中的遗物生物之一——通过在结构角质皮中搜索&6烈焰竞技场（Burning Arena）&r，便可以定位到祂的存在。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest59E6ED7F3062E69.description2}"
 				""
-				"击败并将其开胸，便可以获得遗物器官&6不灭火山岩&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest59E6ED7F3062E69.description3}"
 			]
 			id: "059E6ED7F3062E69"
 			rewards: [{
@@ -623,7 +623,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest59E6ED7F3062E69.subtitle}"
 			tasks: [{
 				id: "470C01A155D0450A"
 				item: {
@@ -652,9 +652,9 @@
 				"059E6ED7F3062E69"
 			]
 			description: [
-				"感谢您的付出！目前的信息已经足够推测出&6闪耀肋骨所指的特殊地点&r为何。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest7BCEE113CFCB696A.description1}"
 				""
-				"请稍等片刻。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest7BCEE113CFCB696A.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -666,21 +666,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "整理信息"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest7BCEE113CFCB696A.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "1EB4B6D0BD020475"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.40F1AA2ECEA15525.quest7BCEE113CFCB696A.task.2212594324586234997.title}"
 				type: "questsadditions:time"
 			}]
-			title: "遗物化的调查"
+			title: "{ftbquests.chapter.40F1AA2ECEA15525.quest7BCEE113CFCB696A.title}"
 			x: -0.008941597310496263d
 			y: 5.619333059786825d
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6海蚀利维坦肋骨&r的情况下再次击败遗物化&6利维坦&r，即可使其转变为&6利维坦肋骨&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest35CFA75942400A76.description1}"]
 			id: "35CFA75942400A76"
 			rewards: [{
 				id: "133BDB870349F004"
@@ -688,7 +688,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest35CFA75942400A76.subtitle}"
 			tasks: [{
 				id: "1C8028F98B36D76B"
 				item: {
@@ -704,9 +704,9 @@
 		{
 			dependencies: ["1A23554F0563EDB6"]
 			description: [
-				"当您佩戴熏香饰品时，周围生成的遗物生物便会得到对应熏香饰品上的描述效果——这个过程被称为&6遗物化&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest263474323AC7D863.description1}"
 				""
-				"击杀遗物化的遗物生物，能够使您胸腔中的&6低级遗物器官进化&r，例如当您&6携带破损咒翼时击杀遗物化的咒翼灵骸&r，则破损咒翼便会进化为咒翼，其他器官同理。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest263474323AC7D863.description2}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -718,7 +718,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "唤醒遗物的力量"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest263474323AC7D863.subtitle}"
 			tasks: [{
 				id: "378A48DD8BA07774"
 				item: "kubejs:relics_incense"
@@ -729,7 +729,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6凛冽甲片&r的情况下再次击败遗物化&6斯库拉&r，即可使其转变为&6明耀凛冽甲片&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest3C1152364EB96049.description1}"]
 			id: "3C1152364EB96049"
 			rewards: [{
 				id: "65D68B5EA8A1142C"
@@ -737,7 +737,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest3C1152364EB96049.subtitle}"
 			tasks: [{
 				id: "34CCCD69B9E95803"
 				item: {
@@ -752,7 +752,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6寒冷晶石&r的情况下再次击败遗物化&6雪怪&r，即可使其转变为&6永冻晶石&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest3922F9E25776C9C1.description1}"]
 			id: "3922F9E25776C9C1"
 			rewards: [{
 				id: "768A61C8ED83CCE5"
@@ -760,7 +760,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest3922F9E25776C9C1.subtitle}"
 			tasks: [{
 				id: "3AB5C3E1EA5138D9"
 				item: {
@@ -775,7 +775,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6冥界遗骨&r的情况下再次击败遗物化&6冥界骑士&r，即可使其转变为&6冥界坚骨&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.questC67D51B75723DBE.description1}"]
 			id: "0C67D51B75723DBE"
 			rewards: [{
 				id: "755663505915346A"
@@ -783,7 +783,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.questC67D51B75723DBE.subtitle}"
 			tasks: [{
 				id: "776689F12B66C516"
 				item: {
@@ -798,7 +798,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6破损咒翼&r的情况下再次击败遗物化&6咒翼灵骸&r，即可使其转变为&6咒翼&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest1C02EC3262ED238.description1}"]
 			id: "01C02EC3262ED238"
 			rewards: [{
 				id: "0432B3E9B420A42A"
@@ -806,7 +806,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest1C02EC3262ED238.subtitle}"
 			tasks: [{
 				id: "0F80661B62471605"
 				item: {
@@ -821,7 +821,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6黯淡狱龙晶&r的情况下再次击败遗物化&6炼狱巨龙&r，即可使其转变为&6狱龙晶&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest25BFA0B0BB0BA5CB.description1}"]
 			id: "25BFA0B0BB0BA5CB"
 			rewards: [{
 				id: "20E4C6FFB4F3ED36"
@@ -829,7 +829,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest25BFA0B0BB0BA5CB.subtitle}"
 			tasks: [{
 				id: "1CC2EF6C724CD3CA"
 				item: {
@@ -844,7 +844,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6异常沙腺&r的情况下再次击败遗物化&6沙虫&r，即可使其转变为&6剧毒沙腺&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest210077F9A1E7FDF9.description1}"]
 			id: "210077F9A1E7FDF9"
 			rewards: [{
 				id: "4633F3D3966A9BC6"
@@ -852,7 +852,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest210077F9A1E7FDF9.subtitle}"
 			tasks: [{
 				id: "00CEE16A334AE3B7"
 				item: {
@@ -867,7 +867,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6先驱肺炉&r的情况下再次击败遗物化&6先驱者&r，即可使其转变为&6坚固先驱肺炉&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.questE2C42F3C3F855B8.description1}"]
 			id: "0E2C42F3C3F855B8"
 			rewards: [{
 				id: "73CC2F26B4A001EB"
@@ -875,7 +875,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.questE2C42F3C3F855B8.subtitle}"
 			tasks: [{
 				id: "6B72CE683460D35D"
 				item: {
@@ -890,7 +890,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6残破合金肌肉&r的情况下再次击败遗物化&6下界合金巨兽&r，即可使其转变为&6下界合金肌肉&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest724357D1E0F705EB.description1}"]
 			id: "724357D1E0F705EB"
 			rewards: [{
 				id: "0036416FAE05E99F"
@@ -898,7 +898,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest724357D1E0F705EB.subtitle}"
 			tasks: [{
 				id: "0AE2ADF49204C9C1"
 				item: {
@@ -913,7 +913,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6浑浊克拉肯之眼&r的情况下再次击败遗物化&6克拉肯&r，即可使其转变为&6克拉肯之眼&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest2EDB5EAA79ADF6E9.description1}"]
 			id: "2EDB5EAA79ADF6E9"
 			rewards: [{
 				id: "0971F52B6FE5BF86"
@@ -921,7 +921,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest2EDB5EAA79ADF6E9.subtitle}"
 			tasks: [{
 				id: "0015CB7F095A507C"
 				item: {
@@ -936,7 +936,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6遗骸之心&r的情况下再次击败遗物化&6远古遗骸&r，即可使其转变为&6觉醒之心&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest33D856FA444DF78F.description1}"]
 			id: "33D856FA444DF78F"
 			rewards: [{
 				id: "68B1420D81E1D75A"
@@ -944,7 +944,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest33D856FA444DF78F.subtitle}"
 			tasks: [{
 				id: "3713AC6EB630156A"
 				item: {
@@ -959,7 +959,7 @@
 		}
 		{
 			dependencies: ["263474323AC7D863"]
-			description: ["佩戴遗物熏香后，在装备有&6不灭火山岩&r的情况下再次击败遗物化&6焰魔&r，即可使其转变为&6不灭焰晶&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest6DA9DAA47E6D2F8E.description1}"]
 			id: "6DA9DAA47E6D2F8E"
 			rewards: [{
 				id: "48617276B0545824"
@@ -967,7 +967,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest6DA9DAA47E6D2F8E.subtitle}"
 			tasks: [{
 				id: "58081B81B6AC6018"
 				item: {
@@ -983,15 +983,15 @@
 		{
 			dependencies: ["263474323AC7D863"]
 			description: [
-				"在某些特殊场景下（例如遗物化），敌人会获得一些&6特殊的词条加成&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.description1}"
 				""
-				"这些加成会赋予敌方生物极大的强化——甚至于在未掌握情报的情况下完全无法造成有效杀伤。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.description2}"
 				""
-				"以遗物化为例，遗物化中存在两种分别叫作&6低伤限制&r和&6高伤抑制&r的精英词条。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.description3}"
 				""
-				"前者的效果是免疫低于指定数值的伤害，后者则是在造成大伤害时敌人会获得巨大伤害减免。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.description4}"
 				""
-				"因此在战斗前十分有必要预先了解敌人可能的词条类型，进而转变您的战斗方式。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.description5}"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:name_tag"
@@ -1002,13 +1002,13 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "精英词条"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.subtitle}"
 			tasks: [{
 				id: "1BDA331873AC60CA"
-				title: "我已了解"
+				title: "{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.task.2006972764059885770.title}"
 				type: "checkmark"
 			}]
-			title: "遗物化与精英化"
+			title: "{ftbquests.chapter.40F1AA2ECEA15525.quest6729015A224A8B14.title}"
 			x: 2.4193213097836193d
 			y: 9.095081926803907d
 		}
@@ -1028,11 +1028,11 @@
 				"6DA9DAA47E6D2F8E"
 			]
 			description: [
-				"在您进行遗物生物的清理过程中，我意外找到了另外的一些踪迹。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest4BBFD32ECC9FB0B5.description1}"
 				""
-				"这些踪迹指向了遗物之前更远的过去——请允许我将其命名为&6远古&r——而这些生物在远古时期，拥有着更加强大的能力。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest4BBFD32ECC9FB0B5.description2}"
 				""
-				"我需要些事件来整理这些信息，请您稍等片刻。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest4BBFD32ECC9FB0B5.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1045,21 +1045,21 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "遗物化之后"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest4BBFD32ECC9FB0B5.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "47DA3563B2E7A2ED"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.40F1AA2ECEA15525.quest4BBFD32ECC9FB0B5.task.5177509423935365869.title}"
 				type: "questsadditions:time"
 			}]
-			title: "远古化的调查"
+			title: "{ftbquests.chapter.40F1AA2ECEA15525.quest4BBFD32ECC9FB0B5.title}"
 			x: 0.01497379171180313d
 			y: 12.904348635096639d
 		}
 		{
 			dependencies: ["4BBFD32ECC9FB0B5"]
-			description: ["闪耀肋骨描述的特殊战利品表还有一个——如&6若一个箱子的战利品总数超过了64个&r，则有&610%&r的可能会生成名为&6远古水晶&r的特殊产物。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest4BF46B34F490034.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "04BF46B34F490034"
@@ -1069,7 +1069,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古化的必要条件"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest4BF46B34F490034.subtitle}"
 			tasks: [{
 				id: "26A851B4ACB6B510"
 				item: "kubejs:ancient_crystal"
@@ -1081,9 +1081,9 @@
 		{
 			dependencies: ["04BF46B34F490034"]
 			description: [
-				"使用&6远古水晶&r，便可以制成另一卷&6遗物卷轴&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest42E7A50E6CB4381E.description1}"
 				""
-				"使用该卷轴，便会得到有关&6远古化&r的相关启发——这能够将我们现在已有的遗物器官推向另一个境界。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest42E7A50E6CB4381E.description2}"
 			]
 			hide_dependency_lines: true
 			id: "42E7A50E6CB4381E"
@@ -1093,7 +1093,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "记载远古的第二秒流逝"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest42E7A50E6CB4381E.subtitle}"
 			tasks: [{
 				id: "1E2A2903B9E18F02"
 				item: "kubejs:relics_scroll_2"
@@ -1105,11 +1105,11 @@
 		{
 			dependencies: ["42E7A50E6CB4381E"]
 			description: [
-				"当佩戴远古熏香时，在您周围生成的遗物生物将会&6远古化&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2E7EEFA804FA4154.description1}"
 				""
-				"远古化的遗物生物具有更强大的战斗力——更重要的是，&6携带已经进化过一次的遗物器官，可以通过击杀远古化的遗物生物再一次完成进化&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2E7EEFA804FA4154.description2}"
 				""
-				"期待您对这些遗物器官的进一步开发！"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2E7EEFA804FA4154.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -1121,7 +1121,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "唤醒远古的力量"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest2E7EEFA804FA4154.subtitle}"
 			tasks: [{
 				id: "314A68AC16CBC814"
 				item: "kubejs:ancient_incense"
@@ -1132,7 +1132,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6利维坦肋骨&r的情况下再次击败远古化&6利维坦&r，即可使其转变为&6远古利维坦肋骨&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest3DCAA51901E3AB44.description1}"]
 			id: "3DCAA51901E3AB44"
 			rewards: [{
 				id: "378963897A785AF6"
@@ -1140,7 +1140,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest3DCAA51901E3AB44.subtitle}"
 			tasks: [{
 				id: "7321C5AA10273401"
 				item: {
@@ -1155,7 +1155,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6凛冽甲片&r的情况下再次击败远古化&6斯库拉&r，即可使其转变为&6远古凛冽甲片&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest67AE9B1F6D2589D8.description1}"]
 			id: "67AE9B1F6D2589D8"
 			rewards: [{
 				id: "52171C5C5D0EF215"
@@ -1163,7 +1163,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest67AE9B1F6D2589D8.subtitle}"
 			tasks: [{
 				id: "1F94A518C1140A9D"
 				item: {
@@ -1178,7 +1178,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6永冻晶石&r的情况下再次击败远古化&6雪怪&r，即可使其转变为&6远古永冻晶石&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest68120136E5824934.description1}"]
 			id: "68120136E5824934"
 			rewards: [{
 				id: "68BB01B31B972991"
@@ -1186,7 +1186,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest68120136E5824934.subtitle}"
 			tasks: [{
 				id: "09472EFA55049DFC"
 				item: {
@@ -1201,7 +1201,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6冥界坚骨&r的情况下再次击败远古化&6冥界骑士&r，即可使其转变为&6远古冥界坚骨&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.questFFE186D0222F557.description1}"]
 			id: "0FFE186D0222F557"
 			rewards: [{
 				id: "5B700A954B16C110"
@@ -1209,7 +1209,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.questFFE186D0222F557.subtitle}"
 			tasks: [{
 				id: "36E1595788B5CCD2"
 				item: {
@@ -1224,7 +1224,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6咒翼&r的情况下再次击败远古化&6咒翼灵骸&r，即可使其转变为&6远古咒翼&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest4B611B8A985D8097.description1}"]
 			id: "4B611B8A985D8097"
 			rewards: [{
 				id: "230423110D70B48C"
@@ -1232,7 +1232,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest4B611B8A985D8097.subtitle}"
 			tasks: [{
 				id: "5D2DF5DA72DFEA9D"
 				item: {
@@ -1247,7 +1247,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6狱龙晶&r的情况下再次击败远古化&6炼狱巨龙&r，即可使其转变为&6远古狱龙晶&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest306CF10967AA8929.description1}"]
 			id: "306CF10967AA8929"
 			rewards: [{
 				id: "087859F0909D0C8B"
@@ -1255,7 +1255,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest306CF10967AA8929.subtitle}"
 			tasks: [{
 				id: "4C5A868C55BF53ED"
 				item: {
@@ -1270,7 +1270,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6剧毒沙腺&r的情况下再次击败远古化&6沙虫&r，即可使其转变为&6远古剧毒沙腺&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest2C5FCD29F322554B.description1}"]
 			id: "2C5FCD29F322554B"
 			rewards: [{
 				id: "71A4559FA649A757"
@@ -1278,7 +1278,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest2C5FCD29F322554B.subtitle}"
 			tasks: [{
 				id: "1213F47E5DC1BCC0"
 				item: {
@@ -1293,7 +1293,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6坚固先驱肺炉&r的情况下再次击败远古化&6先驱者&r，即可使其转变为&6远古先驱肺炉&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest7CE84D79568270B5.description1}"]
 			id: "7CE84D79568270B5"
 			rewards: [{
 				id: "28139F5D9CBECE20"
@@ -1301,7 +1301,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest7CE84D79568270B5.subtitle}"
 			tasks: [{
 				id: "22151260B12F2E8D"
 				item: {
@@ -1316,7 +1316,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6下界合金肌肉&r的情况下再次击败远古化&6下界合金巨兽&r，即可使其转变为&6远古合金肌肉&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest566A09FBBEE8632.description1}"]
 			id: "0566A09FBBEE8632"
 			rewards: [{
 				id: "30B86D6D64A80ABC"
@@ -1324,7 +1324,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest566A09FBBEE8632.subtitle}"
 			tasks: [{
 				id: "6217CE2D4023FAFB"
 				item: {
@@ -1339,7 +1339,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6克拉肯之眼&r的情况下再次击败远古化&6克拉肯&r，即可使其转变为&6远古克拉肯之眼&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest63848C1D169E8AD4.description1}"]
 			id: "63848C1D169E8AD4"
 			rewards: [{
 				id: "34FAD6732D2C4C09"
@@ -1347,7 +1347,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest63848C1D169E8AD4.subtitle}"
 			tasks: [{
 				id: "0E195BA56782E87A"
 				item: {
@@ -1362,7 +1362,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6觉醒之心&r的情况下再次击败远古化&6远古遗骸&r，即可使其转变为&6远古之心&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest72C4E9213C68A150.description1}"]
 			id: "72C4E9213C68A150"
 			rewards: [{
 				id: "13C220D9FC15CD48"
@@ -1370,7 +1370,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest72C4E9213C68A150.subtitle}"
 			tasks: [{
 				id: "048DE9767DA0CA07"
 				item: {
@@ -1385,7 +1385,7 @@
 		}
 		{
 			dependencies: ["2E7EEFA804FA4154"]
-			description: ["佩戴遗物熏香后，在装备有&6不灭焰晶&r的情况下再次击败远古化&6焰魔&r，即可使其转变为&6远古不灭焰晶&r。"]
+			description: ["{ftbquests.chapter.40F1AA2ECEA15525.quest1B679B310F52D2CF.description1}"]
 			id: "1B679B310F52D2CF"
 			rewards: [{
 				id: "7D926B745E33DA85"
@@ -1393,7 +1393,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古器官之一"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest1B679B310F52D2CF.subtitle}"
 			tasks: [{
 				id: "3B0E91B7093E0A90"
 				item: {
@@ -1422,11 +1422,11 @@
 				"1B679B310F52D2CF"
 			]
 			description: [
-				"首先，请允许我&6恭喜您&r获得了如此多的&6远古化遗物器官&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1EEF5DDAC832934C.description1}"
 				""
-				"而这些远古化的器官需要&6特殊的槽位&r才能够激活其强大效果。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1EEF5DDAC832934C.description2}"
 				""
-				"为此，我们需要&6遗物胸腔&r——这也是我们马上将要做的事情。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest1EEF5DDAC832934C.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1438,28 +1438,28 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "远古化之后"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest1EEF5DDAC832934C.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "7AB496EC1BB8BB49"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.40F1AA2ECEA15525.quest1EEF5DDAC832934C.task.8841857909256665929.title}"
 				type: "questsadditions:time"
 			}]
-			title: "永恒的调查"
+			title: "{ftbquests.chapter.40F1AA2ECEA15525.quest1EEF5DDAC832934C.title}"
 			x: 0.010509505997518431d
 			y: 22.082920063668084d
 		}
 		{
 			dependencies: ["2CC7CA595011BE0F"]
 			description: [
-				"&6永恒熏香&r是记录在所有熏香类别之外的特殊熏香——因为其是由我创造的。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6D0776424A322770.description1}"
 				""
-				"佩戴永恒熏香时，&6开启战利品箱&r会累计永恒熏香的极端适应计数器；&6击败由永恒熏香生成的特殊遗物生物&r，便会获得极致力量计数器。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6D0776424A322770.description2}"
 				""
-				"使用鼠标指针拿起永恒熏香，并且&6使用持有永恒熏香的鼠标指针右键任意遗物器官&r，即可进行&b镌刻&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6D0776424A322770.description3}"
 				""
-				"被镌刻的器官在激活时会获得永恒熏香所记录的器官属性，且永恒熏香的属性并不会丢失。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest6D0776424A322770.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1477,22 +1477,22 @@
 					type: "titles:title"
 				}
 			]
-			subtitle: "往永恒的又一瞥"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest6D0776424A322770.subtitle}"
 			tasks: [{
 				id: "00A3785E7FB2DE3A"
 				item: "kubejs:eternal_incense"
 				type: "item"
 			}]
-			title: "远古远古之前"
+			title: "{ftbquests.chapter.40F1AA2ECEA15525.quest6D0776424A322770.title}"
 			x: 0.0d
 			y: 30.0d
 		}
 		{
 			dependencies: ["1EEF5DDAC832934C"]
 			description: [
-				"使用&6鼠标指针拿起远古熏香&r，并且&6使用携带有远古熏香的鼠标指针右击叁型注射器&r，即可获得&6遗物觉醒注射器&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2CC7CA595011BE0F.description1}"
 				""
-				"注射遗物注射器，您便可以取得您应取得的&6遗物槽位&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest2CC7CA595011BE0F.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "2CC7CA595011BE0F"
@@ -1507,7 +1507,7 @@
 					id: "36E2623150238D0D"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.40F1AA2ECEA15525.quest2CC7CA595011BE0F.reward.3954831386722143501.title}"
 					type: "maa:kube"
 				}
 				{
@@ -1517,24 +1517,24 @@
 				}
 			]
 			shape: "none"
-			subtitle: "获得遗物注射器"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest2CC7CA595011BE0F.subtitle}"
 			tasks: [{
 				id: "7B90A63734C6CC7F"
 				item: "kubejs:relics_awakening_injection"
 				type: "item"
 			}]
-			title: "&6庆贺吧！此乃遗物胸腔！&r"
+			title: "{ftbquests.chapter.40F1AA2ECEA15525.quest2CC7CA595011BE0F.title}"
 			x: 0.0d
 			y: 26.5d
 		}
 		{
 			dependencies: ["6729015A224A8B14"]
 			description: [
-				"由于部分精英怪词条具有受伤变更相关的效果，因此您大概率在实际战斗中需要一个手段来观察造成伤害的变化。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest4C6E39BECC5E1E20.description1}"
 				""
-				"基于此，您可以制成一个名为&6伤害模组&r的器官，其在攻击敌人时会为其&6赋予标记效果&r——能够&6让生物受伤的具体数值以类似假人的方式显示出来&r。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest4C6E39BECC5E1E20.description2}"
 				""
-				"通过此方式，您可以在战斗中查看造伤的具体情况。"
+				"{ftbquests.chapter.40F1AA2ECEA15525.quest4C6E39BECC5E1E20.description3}"
 			]
 			hide_dependency_lines: true
 			id: "4C6E39BECC5E1E20"
@@ -1544,7 +1544,7 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "多加观察"
+			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest4C6E39BECC5E1E20.subtitle}"
 			tasks: [{
 				id: "2EC1A2487211252E"
 				item: {
@@ -1558,5 +1558,5 @@
 			y: 9.071275427714752d
 		}
 	]
-	title: "传闻：遗物觉醒"
+	title: "{ftbquests.chapter.40F1AA2ECEA15525.title}"
 }

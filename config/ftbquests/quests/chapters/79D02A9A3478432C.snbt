@@ -38,7 +38,7 @@
 			click: "command:/ponder kubejs:mantle_energy_extractor"
 			dependency: "12E7C53A56C43097"
 			height: 1.0d
-			hover: ["点击以思索"]
+			hover: ["ftbquests.chapter.79D02A9A3478432C.image.hovertext1"]
 			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -213,9 +213,9 @@
 		{
 			dependencies: ["79404493E0C3DF1B"]
 			description: [
-				"在扫描日志时，我意外发现了这个世界中所谓“地热能”的存在——或者说是&6“地幔能”&r，因为它的组成相当复杂，不过我们并不需要利用这些物质——我们可以利用组成这些物质的数据，进行随意的操控。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest1E56E0456EA6D888.description1}"
 				""
-				"在过去的日志里，里面明确存在极少部分玩家&6榨取地幔能&r的记录。或许我们可以学习他们，同样开采地幔能以获取一定的发展优势。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest1E56E0456EA6D888.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "create:blaze_cake"
@@ -226,25 +226,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "意外发现"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest1E56E0456EA6D888.subtitle}"
 			tasks: [{
 				icon: "create:blaze_cake"
 				id: "61FACAA5CFB44E46"
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			title: "地幔能开采企划"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest1E56E0456EA6D888.title}"
 			x: 0.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6DC1C32BB829D65B"]
 			description: [
-				"目前来看，我们仍未得知在之前世界中的人是通过什么方法来进行地幔能提取的。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest50202CD4D6EAE6F4.description1}"
 				""
-				"但我发现了一个似乎可行的技术方案——即通过&6魔源技术来有效的刺穿地幔&r，其魔力特质能够在地下塑成由魔源组成的强力钻头，理论上只要能量足够，就可以抵抗任何程度的高压高温。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest50202CD4D6EAE6F4.description2}"
 				""
-				"因此，请您做好准备，我们要进行大批量&b魔法材料&r的制作了。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest50202CD4D6EAE6F4.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "50202CD4D6EAE6F4"
@@ -253,22 +253,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "奇异的道路"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest50202CD4D6EAE6F4.subtitle}"
 			tasks: [{
 				id: "65D06AF75009A6C8"
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
-			title: "魔科学"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest50202CD4D6EAE6F4.title}"
 			x: 10.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1E56E0456EA6D888"]
 			description: [
-				"在日志中并没有记载使用何种方法提取地幔能，因此我需要您帮忙提供一些分析样本，便于我完成对该技术的逆向。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6B9D9D4249A7839E.description1}"
 				""
-				"目前日志显示，此技术大概率涉及&6深层机械开采&r技术。我需要您提供&6100桶熔岩&r来作为样本，以分析使用机械开采应采用何种材料。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6B9D9D4249A7839E.description2}"
 			]
 			icon: "minecraft:lava_bucket"
 			id: "6B9D9D4249A7839E"
@@ -277,7 +277,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "我需要逆向分析原料"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6B9D9D4249A7839E.subtitle}"
 			tasks: [
 				{
 					id: "0AD06B0A31130A99"
@@ -291,7 +291,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest6B9D9D4249A7839E.task.779240427052272281.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -301,18 +301,18 @@
 					type: "fluid"
 				}
 			]
-			title: "逆向分析熔岩"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6B9D9D4249A7839E.title}"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6B9D9D4249A7839E"]
 			description: [
-				"在地幔中存在有大量由复杂物质构成的熔融矿石。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest790FB90699555383.description1}"
 				""
-				"若是想通过常规方式从&6临界点开采矿石&r倒是容易，但为了提取地幔能，我们需要一种能够穿过这种&6庞大熔融流体洪流&r的强大材料，其不仅能够刺穿地幔的高密流体，还能够抵抗高温。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest790FB90699555383.description2}"
 				""
-				"请&6稍等我一段时间&r，我将重新从日志中搜索相关信息以确认技术方向。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest790FB90699555383.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:mantle_ore"
@@ -322,26 +322,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "似乎并不简单"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest790FB90699555383.subtitle}"
 			tasks: [{
 				elapsedTime: 600L
 				icon: "supplementaries:hourglass"
 				id: "02AB74D2B5F16C1C"
-				title: "静候佳音"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest790FB90699555383.task.192375857437830172.title}"
 				type: "questsadditions:time"
 			}]
-			title: "遇到阻碍"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest790FB90699555383.title}"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["790FB90699555383"]
 			description: [
-				"最后我还需要您帮忙确认一件事。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6DC1C32BB829D65B.description1}"
 				""
-				"请您击杀&6下界合金巨兽&r，从其身上获取&6熔岩动力电池&r，我需要确认新技术方向的动力源是否能够使用此种原料。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6DC1C32BB829D65B.description2}"
 				""
-				"下界合金巨兽可以在下界生成的&6灵魂锻造厂&r中找到，您可以在下界使用&6巨兽之眼&r来定位这个结构。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6DC1C32BB829D65B.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "6DC1C32BB829D65B"
@@ -350,19 +350,19 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "我需要逆向分析原料"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6DC1C32BB829D65B.subtitle}"
 			tasks: [{
 				id: "1AE8C74542AA23E6"
 				item: "cataclysm:lava_power_cell"
 				type: "item"
 			}]
-			title: "最后确认"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6DC1C32BB829D65B.title}"
 			x: 8.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["50202CD4D6EAE6F4"]
-			description: ["为了将魔源在钻探区域集中，我们需要&6远距离凝聚魔源&r的仪器。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest16FFBFBA5BD5E545.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "16FFBFBA5BD5E545"
@@ -371,38 +371,38 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "远距离精确魔源控制"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest16FFBFBA5BD5E545.subtitle}"
 			tasks: [{
 				id: "267D23CBEB922F92"
 				item: "ars_nouveau:relay_warp"
 				type: "item"
 			}]
-			title: "折跃魔源"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest16FFBFBA5BD5E545.title}"
 			x: 15.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["50202CD4D6EAE6F4"]
-			description: ["为了创造安全的地幔能利用场景，我们需要在钻探区域附近&6维持一个安全的空腔&r。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest2470D63A410B9BED.description1}"]
 			id: "2470D63A410B9BED"
 			rewards: [{
 				id: "0FCC843913151089"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "方块行为操作"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest2470D63A410B9BED.subtitle}"
 			tasks: [{
 				id: "226BF759FA1830DF"
 				item: "ars_nouveau:shapers_focus"
 				type: "item"
 			}]
-			title: "塑形空腔"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest2470D63A410B9BED.title}"
 			x: 13.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["50202CD4D6EAE6F4"]
-			description: ["在地幔能提取时，我们需要&6定期执行某些法术程序&r，以确保地幔能提取稳定有效的进行。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest434D5EAD547C0C85.description1}"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
 			id: "434D5EAD547C0C85"
@@ -411,13 +411,13 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "自动法术执行器"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest434D5EAD547C0C85.subtitle}"
 			tasks: [{
 				id: "6FB6E2045DE3D526"
 				item: "ars_nouveau:timer_spell_turret"
 				type: "item"
 			}]
-			title: "自动法术"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest434D5EAD547C0C85.title}"
 			x: 15.0d
 			y: 2.0d
 		}
@@ -428,11 +428,11 @@
 				"434D5EAD547C0C85"
 			]
 			description: [
-				"成功了！现在我们通过使用支配权杖为这台机器&6供给魔源&r，就可以驱动它进行地幔能的采集了！"
+				"{ftbquests.chapter.79D02A9A3478432C.quest12E7C53A56C43097.description1}"
 				""
-				"地幔能准确来说不是一种能量，而是一种&6特殊的数据&r，通过这台机器，可以提取这部分数据加以扭曲，进而一定程度上&6复制某些类型的物品&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest12E7C53A56C43097.description2}"
 				""
-				"每次开采后，机器的&6提取深度会加深&r，其体现在机器中间的深度槽中。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest12E7C53A56C43097.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -446,31 +446,31 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "6554736ED8ED1CAB"
-					title: "解锁头衔：&e深入地幔"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest12E7C53A56C43097.reward.7301587815797431467.title}"
 					titleId: "kubejs:mantle_extractor"
 					type: "titles:title"
 				}
 			]
-			subtitle: "魔科学的最佳应用"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest12E7C53A56C43097.subtitle}"
 			tasks: [{
 				id: "7A9E166AA017CCB5"
 				item: "kubejs:mantle_energy_extractor"
 				type: "item"
 			}]
-			title: "筑成地幔能提取器"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest12E7C53A56C43097.title}"
 			x: 28.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3377828AA207E85A"]
 			description: [
-				"魔源汇聚晶体是一种&6极易损坏&r的物品。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EEE9F6B86438970.description1}"
 				""
-				"在使用地幔能提取器时，&6每次钻探都会有概率使魔源汇聚晶体损毁&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EEE9F6B86438970.description2}"
 				""
-				"因此在使用时请您多加关注，避免进行无意义暴力钻探浪费魔源汇聚晶体。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EEE9F6B86438970.description3}"
 				""
-				"除此之外，暴力开采还会消耗&6大量的魔源&r，因此您需要极其强大的魔源生产方式。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EEE9F6B86438970.description4}"
 			]
 			id: "6EEE9F6B86438970"
 			rewards: [{
@@ -479,24 +479,24 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "唯一魔源汇聚手段"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6EEE9F6B86438970.subtitle}"
 			tasks: [{
 				id: "0492F0FB78097163"
 				item: "kubejs:source_focus_crystal"
 				type: "item"
 			}]
-			title: "魔源汇聚晶体"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6EEE9F6B86438970.title}"
 			x: 34.15d
 			y: 13.52d
 		}
 		{
 			dependencies: ["12E7C53A56C43097"]
 			description: [
-				"在提取深度较低的情况，您可以在标靶槽中放置&6粗矿&r以复制对应的粗矿。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6A448983C7C3821F.description1}"
 				""
-				"&6标靶槽在机器的右下角&r，通过您在其中放入不同的物质，即可扭曲地幔能为对应的物质。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6A448983C7C3821F.description2}"
 				""
-				"随着深度的增加，您能够复制的物品种类会逐渐增多，最终或许能够复制任何物品！"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6A448983C7C3821F.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -507,7 +507,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "地幔能的正确用法"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6A448983C7C3821F.subtitle}"
 			tasks: [
 				{
 					id: "1CE95E6818584B9E"
@@ -518,7 +518,7 @@
 							value: "forge:raw_materials"
 						}
 					}
-					title: "任意粗矿"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest6A448983C7C3821F.task.2083300103813614494.title}"
 					type: "item"
 				}
 				{
@@ -526,28 +526,28 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "279EDFC7D82DBD1D"
 					kubeId: "mantle_energy_1"
-					title: "打开一阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest6A448983C7C3821F.task.2854965263217835293.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "一阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6A448983C7C3821F.title}"
 			x: 32.45d
 			y: 1.1d
 		}
 		{
 			dependencies: ["12E7C53A56C43097"]
 			description: [
-				"但是通过此种方式开采存在&6几个问题&r："
+				"{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.description1}"
 				""
-				"1. 目前的开采深度具有限制——我们&6无法开采到深度大于2000&r的更加自由的地幔能。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.description2}"
 				""
-				"2. 每次工序需要30秒，且仅能复制物品一次，&6效率太低&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.description3}"
 				""
-				"3. 当前深度下，&6能够复制的物品意义并不大&r，真正有价值的，理论存在的&6超自由地幔能&r可能存在在远比2000要深的地幔最深处。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.description4}"
 				""
-				"因此，我在您挖掘的过程中，进行了一项特殊的研究。只需要您能够搞到&d那样物品&r，我们就可以暴力开采地幔能，极大地提高我们的效率！"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.description5}"
 				""
-				"为此，我们需要制作一个&6耗竭的魔源汇聚晶体&r，并将其放置在胸腔中以补充其魔源。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.description6}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -563,7 +563,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "到达深度限制"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.subtitle}"
 			tasks: [{
 				id: "63107BC16188E15A"
 				item: {
@@ -575,7 +575,7 @@
 				}
 				type: "item"
 			}]
-			title: "临界状态"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest3377828AA207E85A.title}"
 			x: 28.5d
 			y: 13.52d
 		}
@@ -586,11 +586,11 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"地幔能被称作为一种&6数据&r——这只是对于我和您意义上来说的。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2F229123DEDB0987.description1}"
 				""
-				"在游戏中，其表现形式仍然为一种&6复杂的能量&r，只是我们所使用的地幔能提取器并非是一种常规的游戏机器，更像是介于游戏本身和数据层面之间的一种设备。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2F229123DEDB0987.description2}"
 				""
-				"正因如此，一部分无法利用的地幔能，会按照游戏逻辑，溢出并转变为一种称作为&6烈焰裂片&r的物品，其可以提供大量热值，能够用于各种各样的特异加工中。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2F229123DEDB0987.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -600,19 +600,19 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "纯粹的能量漏出"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest2F229123DEDB0987.subtitle}"
 			tasks: [{
 				id: "1C5C24E6298CA712"
 				item: "kubejs:flame_fragment"
 				type: "item"
 			}]
-			title: "地幔能量泄露"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest2F229123DEDB0987.title}"
 			x: 7.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["6A448983C7C3821F"]
-			description: ["在挖掘深度超过200之后，您可以在标靶位置放置&6宝石类&r物品，以转换地幔能成为各种宝石。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest5698C2BCBD15755E.description1}"]
 			hide_dependency_lines: true
 			icon: "minecraft:diamond"
 			id: "5698C2BCBD15755E"
@@ -621,7 +621,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "挖掘深度超过200"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest5698C2BCBD15755E.subtitle}"
 			tasks: [
 				{
 					id: "0261F66C79972539"
@@ -632,7 +632,7 @@
 							value: "forge:gems"
 						}
 					}
-					title: "任意宝石"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest5698C2BCBD15755E.task.171689206573638969.title}"
 					type: "item"
 				}
 				{
@@ -640,17 +640,17 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "66EBD34DD1D8900D"
 					kubeId: "mantle_energy_2"
-					title: "打开二阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest5698C2BCBD15755E.task.7416253542582226957.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "二阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest5698C2BCBD15755E.title}"
 			x: 32.45d
 			y: 3.8d
 		}
 		{
 			dependencies: ["5698C2BCBD15755E"]
-			description: ["在挖掘深度超过500之后，您可以在标靶位置放置&6花类&r物品，以转换地幔能成为各种花。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest6C072BC0C779A842.description1}"]
 			hide_dependency_lines: true
 			icon: "minecraft:blue_orchid"
 			id: "6C072BC0C779A842"
@@ -659,7 +659,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "挖掘深度超过500"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6C072BC0C779A842.subtitle}"
 			tasks: [
 				{
 					id: "612C8E6C50E4E4BB"
@@ -670,7 +670,7 @@
 							value: "minecraft:flowers"
 						}
 					}
-					title: "任意花"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest6C072BC0C779A842.task.7002128116519068859.title}"
 					type: "item"
 				}
 				{
@@ -678,20 +678,20 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "2A82CF0A8C44849D"
 					kubeId: "mantle_energy_3"
-					title: "打开三阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest6C072BC0C779A842.task.3063238340775281821.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "三阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6C072BC0C779A842.title}"
 			x: 32.45d
 			y: 6.8d
 		}
 		{
 			dependencies: ["6EEE9F6B86438970"]
 			description: [
-				"在挖掘深度超过2000之后，您可以在标靶位置放置&6书籍类&r物品，进而进行地幔能转化。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest9984D1A3CED172D.description1}"
 				""
-				"这允许您复制任意等级任意种类的&6附魔书&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest9984D1A3CED172D.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -711,7 +711,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "挖掘深度超过2000"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest9984D1A3CED172D.subtitle}"
 			tasks: [
 				{
 					id: "4C4DF7504C8E444E"
@@ -722,7 +722,7 @@
 							value: "forge:books"
 						}
 					}
-					title: "任意书籍"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest9984D1A3CED172D.task.5498322644343080014.title}"
 					type: "item"
 				}
 				{
@@ -730,17 +730,17 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "6520EBEC5B147103"
 					kubeId: "mantle_energy_5"
-					title: "打开五阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest9984D1A3CED172D.task.7287083597458338051.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "五阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest9984D1A3CED172D.title}"
 			x: 32.45d
 			y: 17.65d
 		}
 		{
 			dependencies: ["6C072BC0C779A842"]
-			description: ["在挖掘深度超过1000之后，您可以在标靶位置放置&6任意可食用类物品&r，以转换地幔能成为各种食物。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest35B97602E1EF9998.description1}"]
 			hide_dependency_lines: true
 			icon: "minecraft:enchanted_golden_apple"
 			id: "35B97602E1EF9998"
@@ -749,7 +749,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "挖掘深度超过1000"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest35B97602E1EF9998.subtitle}"
 			tasks: [
 				{
 					id: "294BC07AEA9283E6"
@@ -761,20 +761,20 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "0EF19C4B53B845C5"
 					kubeId: "mantle_energy_4"
-					title: "打开四阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest35B97602E1EF9998.task.1076813633259324869.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "四阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest35B97602E1EF9998.title}"
 			x: 32.45d
 			y: 10.65d
 		}
 		{
 			dependencies: ["09984D1A3CED172D"]
 			description: [
-				"在挖掘深度超过3000之后，您可以在标靶位置放置&6药水&r，进而进行地幔能转化。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2D3B9F0DC2C2E9A6.description1}"
 				""
-				"这允许您复制任意等级任意种类和复杂度的&6药水&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2D3B9F0DC2C2E9A6.description2}"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -790,7 +790,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "挖掘深度超过3000"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest2D3B9F0DC2C2E9A6.subtitle}"
 			tasks: [
 				{
 					id: "492DDD7834C8CB4D"
@@ -802,7 +802,7 @@
 						}
 					}
 					match_nbt: false
-					title: "任意种类药水"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest2D3B9F0DC2C2E9A6.task.5273114247072107341.title}"
 					type: "item"
 				}
 				{
@@ -810,20 +810,20 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "5AFE6AF77042F9ED"
 					kubeId: "mantle_energy_6"
-					title: "打开六阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest2D3B9F0DC2C2E9A6.task.6556795718470924781.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "六阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest2D3B9F0DC2C2E9A6.title}"
 			x: 32.45d
 			y: 24.3d
 		}
 		{
 			dependencies: ["1102A6F1A9DDBE96"]
 			description: [
-				"在挖掘深度超过7500之后，您可以在标靶位置放置&6任意模块化物品&r，进而进行地幔能转化。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4A18DD9C6C5C3D20.description1}"
 				""
-				"这允许您复制任意等级任意种类和复杂度的&6模块化工具&r，并且携带其强化属性。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4A18DD9C6C5C3D20.description2}"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -850,7 +850,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "挖掘深度超过7500"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest4A18DD9C6C5C3D20.subtitle}"
 			tasks: [
 				{
 					icon: {
@@ -879,7 +879,7 @@
 							value: "is_tetra_modular_item:[]"
 						}
 					}
-					title: "任意模块化工具"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest4A18DD9C6C5C3D20.task.6890305181021296565.title}"
 					type: "item"
 				}
 				{
@@ -887,20 +887,20 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "6C1779BEC9AAB170"
 					kubeId: "mantle_energy_8"
-					title: "打开八阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest4A18DD9C6C5C3D20.task.7788827940894716272.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "八阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest4A18DD9C6C5C3D20.title}"
 			x: 32.5d
 			y: 39.5d
 		}
 		{
 			dependencies: ["2D3B9F0DC2C2E9A6"]
 			description: [
-				"在挖掘深度超过5000之后，您可以在标靶位置放置&6任意原版非容器类物品&r，进而进行地幔能转化。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest1102A6F1A9DDBE96.description1}"
 				""
-				"这允许您复制任意等级任意种类和复杂度的&6原版物品&r，甚至包括高级附魔盔甲。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest1102A6F1A9DDBE96.description2}"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:dragon_egg"
@@ -910,7 +910,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "挖掘深度超过5000"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest1102A6F1A9DDBE96.subtitle}"
 			tasks: [
 				{
 					id: "558360FF0BBA99B0"
@@ -955,7 +955,7 @@
 							]
 						}
 					}
-					title: "任意原版非容器类物品"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest1102A6F1A9DDBE96.task.6161875363702675888.title}"
 					type: "item"
 				}
 				{
@@ -963,24 +963,24 @@
 					icon: "kubejs:mantle_energy_extractor"
 					id: "728F705B3AB9CFA6"
 					kubeId: "mantle_energy_7"
-					title: "打开七阶地幔能提取器"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest1102A6F1A9DDBE96.task.8254940179122999206.title}"
 					type: "maa:kube"
 				}
 			]
-			title: "七阶地幔能应用"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest1102A6F1A9DDBE96.title}"
 			x: 32.45d
 			y: 31.3d
 		}
 		{
 			dependencies: ["3377828AA207E85A"]
 			description: [
-				"&c似乎有点不对劲. . .&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest152583E592C60A6D.description1}"
 				""
-				"我建议您暂时先停止进行地幔能的利用，因为我收到了一系列不详的信号。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest152583E592C60A6D.description2}"
 				""
-				"提取地幔能似乎&6会导致区块内的生态群系发生不可逆的寒冷化转变&r。当一个区块完全寒冷时，将无法进行地幔能的进一步提取。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest152583E592C60A6D.description3}"
 				""
-				"我暂不清楚这是否会导致其他的一些问题，但目前最好的方案就是——&c暂时停止地幔能开采&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest152583E592C60A6D.description4}"
 			]
 			id: "152583E592C60A6D"
 			invisible: true
@@ -989,24 +989,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "区块变冷. . ."
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest152583E592C60A6D.subtitle}"
 			tasks: [{
 				biome: "minecraft:snowy_taiga"
 				icon: "minecraft:spruce_sapling"
 				id: "6EC82CFD9DF7FF58"
-				title: "访问积雪针叶林生态群系"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest152583E592C60A6D.task.7982679807302827864.title}"
 				type: "biome"
 			}]
-			title: "&c热能提取的代价&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest152583E592C60A6D.title}"
 			x: 28.5d
 			y: 15.98d
 		}
 		{
 			dependencies: ["2F229123DEDB0987"]
 			description: [
-				"您可以人工将烈焰裂片&6压缩成晶体&r，也可以通过一些更加暴力的方式来直接从地幔中提取此种晶体。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3C0B5BB105DAC17C.description1}"
 				""
-				"这种晶体具有一些极其特殊的性质，其可以有效辅助&6部分小型机械的运行&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3C0B5BB105DAC17C.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "3C0B5BB105DAC17C"
@@ -1015,26 +1015,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "将碎裂的地幔能压缩成块"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest3C0B5BB105DAC17C.subtitle}"
 			tasks: [{
 				id: "12AC157D6421FFC5"
 				item: "kubejs:flame_crystal"
 				type: "item"
 			}]
-			title: "人工制烈焰水晶"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest3C0B5BB105DAC17C.title}"
 			x: 7.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
 			description: [
-				"&6熔火核心&r，作为地幔能利用到极致的一种产物，其拥有着&6生物自升温&r的特性。即，该器官会对生物的行为做出对应的升温反应。"
+				"{ftbquests.chapter.79D02A9A3478432C.questEC549EA51DF850.description1}"
 				""
-				"随着熔火核心的温度升高，佩戴该器官的生物的攻击力也会逐渐提升，当温度升至最高时，其会转变成为&c心火核心&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.questEC549EA51DF850.description2}"
 				""
-				"心火核心状态下，会有着额外的攻击倍率加成，但温度会快速减少。等到温度归为零时，其将重新变为&6熔火核心&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.questEC549EA51DF850.description3}"
 				""
-				"&6倘若不是开采地幔能，或许我们永远无法制成这样的产物。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.questEC549EA51DF850.description4}"
 			]
 			id: "00EC549EA51DF850"
 			rewards: [{
@@ -1042,7 +1042,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "极致热能的产物"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.questEC549EA51DF850.subtitle}"
 			tasks: [{
 				id: "2E42903DC1747450"
 				item: {
@@ -1059,7 +1059,7 @@
 		}
 		{
 			dependencies: ["2432BC777BE5C4CC"]
-			description: ["地幔能富集在&6沙漠&r等温度较高的生态群系，在温度低的生态群系，&6地幔能提取器甚至无法正常运作&r，因此您需要适当的调整地幔能提取器的工作位置。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest3B9B37AD2559F7DE.description1}"]
 			hide_until_deps_complete: true
 			id: "3B9B37AD2559F7DE"
 			rewards: [{
@@ -1067,28 +1067,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "热量证明"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest3B9B37AD2559F7DE.subtitle}"
 			tasks: [{
 				biome: "minecraft:desert"
 				icon: "minecraft:sand"
 				id: "3E9490D79F92D23B"
-				title: "访问沙漠生态群系"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest3B9B37AD2559F7DE.task.4509388382674276923.title}"
 				type: "biome"
 			}]
-			title: "最佳地幔能提取地点"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest3B9B37AD2559F7DE.title}"
 			x: 40.0d
 			y: 13.5d
 		}
 		{
 			dependencies: ["6EEE9F6B86438970"]
 			description: [
-				"某些时候我们需要&6移动地幔能提取器&r，这会导致地幔能提取器的深度数据丢失，缓慢逐个提取增加深度的速度太慢，使用&6魔源汇聚水晶&r提取的速度虽然快，但是会经常损耗掉本就稀有的水晶. . ."
+				"{ftbquests.chapter.79D02A9A3478432C.quest2432BC777BE5C4CC.description1}"
 				""
-				"因此，您可以尝试在右下目标输入槽位中，放置烈焰水晶执行&6超深钻取配方&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2432BC777BE5C4CC.description2}"
 				""
-				"这个配方虽然不会产出任何物资，但是烈焰水晶会有效促进&6魔源汇聚水晶&r的钻探效率，在理想状态下，其可以一次性挖掘与当前所处深度相同的深度，即使当前的&6深度翻倍&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2432BC777BE5C4CC.description3}"
 				""
-				"因此，可以使用此配方迅速启动机器，短时间内到达极深的深度，但代价就是会有大量的自由&6地幔能流失&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2432BC777BE5C4CC.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "2432BC777BE5C4CC"
@@ -1097,26 +1097,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "错觉. . .？"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest2432BC777BE5C4CC.subtitle}"
 			tasks: [{
 				id: "594CF5D077F651D3"
 				item: "kubejs:flame_crystal"
 				type: "item"
 			}]
-			title: "最大功率挖掘方案"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest2432BC777BE5C4CC.title}"
 			x: 37.5d
 			y: 13.5d
 		}
 		{
 			dependencies: ["152583E592C60A6D"]
 			description: [
-				"&c请您暂时停止地幔能提取！这很重要！&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest314B2A11D139BA06.description1}"
 				""
-				"经过分析，我发现钻取深度超过2000的地幔能，会直接导致区块发生&6群系退化&r亦或者更准确些——区块的&b生态群系会发生降温&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest314B2A11D139BA06.description2}"
 				""
-				"我需要一些时间来分析，如果过度使用这种能源会导致什么样的结果。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest314B2A11D139BA06.description3}"
 				""
-				"在此期间请您&c不要再使用任何形式的地幔能&r，以避免事件走向不可逆转的方向！"
+				"{ftbquests.chapter.79D02A9A3478432C.quest314B2A11D139BA06.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "314B2A11D139BA06"
@@ -1125,28 +1125,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "我们的未来"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest314B2A11D139BA06.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "70E0F201C2EAA909"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest314B2A11D139BA06.task.8133767016410163465.title}"
 				type: "questsadditions:time"
 			}]
-			title: "地幔能提取危害分析"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest314B2A11D139BA06.title}"
 			x: 28.5d
 			y: 18.48d
 		}
 		{
 			dependencies: ["314B2A11D139BA06"]
 			description: [
-				"经过计算，若对世界执行&650次深层开采&r后，世界会因为自由地幔能的局部流失，引发全局性的地幔能全局平衡。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3E82624D0543D113.description1}"
 				""
-				"&c作为地幔能内部平衡的代价，所有生态群系、所有维度、所有世界的温度将会被降低至0℃以下，并且将会迎来永久的降雪天气。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3E82624D0543D113.description2}"
 				""
-				"目前，我们没有办法去主动避免这件事的发生——我们所能做的一切，就是尽可能不要&c进行深度超过2000的深层开采&r以及会严重影响地幔能平衡的&c最大功率采掘&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3E82624D0543D113.description3}"
 				""
-				"&6请您答应我，为了这次旅程，请您和您的同伴，不要再使用上述的两种采集模式。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest3E82624D0543D113.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "candlelight:note_paper"
@@ -1156,22 +1156,22 @@
 				item: "lightmanscurrency:coin_emerald"
 				type: "item"
 			}]
-			subtitle: "为了守护我们的明天"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest3E82624D0543D113.subtitle}"
 			tasks: [{
 				id: "1FA46ECD2B77B4C4"
-				title: "我将信守诺言"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest3E82624D0543D113.task.2280069138832929988.title}"
 				type: "checkmark"
 			}]
-			title: "思考后的结论"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest3E82624D0543D113.title}"
 			x: 28.5d
 			y: 20.98d
 		}
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
 			description: [
-				"通过烈焰水晶，我们还可以还原一些遗失的技艺——&c烈焰加压器&r便是其中之一。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2C1B075E75130280.description1}"
 				""
-				"烈焰加压器可以&6有效提高您在心火状态下的输出能力&r，亦或者是&6加快下一次进入心火状态的速度&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest2C1B075E75130280.description2}"
 			]
 			id: "2C1B075E75130280"
 			rewards: [{
@@ -1179,7 +1179,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "烈火超压！"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest2C1B075E75130280.subtitle}"
 			tasks: [{
 				id: "7EF2DD9D30FDB959"
 				item: {
@@ -1195,9 +1195,9 @@
 		{
 			dependencies: ["3C0B5BB105DAC17C"]
 			description: [
-				"通过烈焰水晶，我们还可以还原一些遗失的技艺——&c满溢能量瓶&r便是其中之一。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EF04F7A837C5858.description1}"
 				""
-				"满溢能量瓶可以&6有效提高您在心火状态下的输出能力&r。且允许同时佩戴多个能量瓶，能瞬间达到难以想象的巨大输出能力。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EF04F7A837C5858.description2}"
 			]
 			id: "6EF04F7A837C5858"
 			rewards: [{
@@ -1205,7 +1205,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "心火中烧"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6EF04F7A837C5858.subtitle}"
 			tasks: [{
 				id: "186DD97F1DA826A0"
 				item: {
@@ -1222,7 +1222,7 @@
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
-			description: ["革命继电器可以&6有效提高熔火积累耐久度的速度&r，进而更快的使您进入到心火阶段。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest47E4236EF5E0A69A.description1}"]
 			hide_dependency_lines: true
 			id: "47E4236EF5E0A69A"
 			rewards: [{
@@ -1230,7 +1230,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "加速熔火"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest47E4236EF5E0A69A.subtitle}"
 			tasks: [{
 				id: "63C89E1BD72D8CB9"
 				item: {
@@ -1245,7 +1245,7 @@
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
-			description: ["革命线缆可以有效地为机械器官提供&6少量最大生命值&r，保证机械器官使用者的基本生存能力。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest5A523568EA436E1E.description1}"]
 			hide_dependency_lines: true
 			id: "5A523568EA436E1E"
 			rewards: [{
@@ -1253,7 +1253,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "提高韧性"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest5A523568EA436E1E.subtitle}"
 			tasks: [{
 				id: "1A1A261C9151C03E"
 				item: {
@@ -1268,7 +1268,7 @@
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
-			description: ["革命断路器可以&6有效延长心火状态的持续时间&r，使每次心火状态发挥更加强大的作用。"]
+			description: ["{ftbquests.chapter.79D02A9A3478432C.quest3572DAA906773CCD.description1}"]
 			hide_dependency_lines: true
 			id: "3572DAA906773CCD"
 			rewards: [{
@@ -1276,7 +1276,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "减缓心火"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest3572DAA906773CCD.subtitle}"
 			tasks: [{
 				id: "1EFDA651AAC987BB"
 				item: {
@@ -1292,9 +1292,9 @@
 		{
 			dependencies: ["00EC549EA51DF850"]
 			description: [
-				"革命之钟可以在切换到心火状态时，&6自动启动烈焰加压器&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest7B8FD2D02BA5BCA3.description1}"
 				""
-				"其不仅降低了您的操作需求，更重要的是，它的加入允许&6非玩家类生物&r享受烈焰加压器的效果。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest7B8FD2D02BA5BCA3.description2}"
 			]
 			hide_dependency_lines: true
 			id: "7B8FD2D02BA5BCA3"
@@ -1303,7 +1303,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "器官自动化"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest7B8FD2D02BA5BCA3.subtitle}"
 			tasks: [{
 				id: "6E4F5126F3EA2876"
 				item: {
@@ -1319,13 +1319,13 @@
 		{
 			dependencies: ["1E56E0456EA6D888"]
 			description: [
-				"&7. . . 通讯重建中&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.description1}"
 				""
-				"&6有一件非常糟糕的消息需要通知您。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.description2}"
 				""
-				"&b现在，这个世界、其他的世界、其他您所知道的任何世界，现在都被严寒所笼罩。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.description3}"
 				""
-				"从数据信息来看，这应当是过度开采地幔能导致的. . .事到如今，再去后悔已经来不及了，我们需要迅速找出&6补救方案&r！"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.description4}"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:powder_snow_bucket"
@@ -1340,30 +1340,30 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "712D571209E7461D"
-					title: "解锁头衔：&e永恒风雪"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.reward.8155270235225015837.title}"
 					titleId: "kubejs:eternal_winter"
 					type: "titles:title"
 				}
 			]
-			subtitle: "[通讯中断]"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.subtitle}"
 			tasks: [{
 				icon: "minecraft:powder_snow_bucket"
 				id: "1E8C811581637DDE"
 				isServer: true
 				stage: "ftb_under_eternal_winter"
-				title: "凛冬已至"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.task.2201276247242407390.title}"
 				type: "maa:astages"
 			}]
-			title: "&b凛冬已至&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6EAC98701F6297E7.title}"
 			x: 21.5d
 			y: 32.5d
 		}
 		{
 			dependencies: ["6EAC98701F6297E7"]
 			description: [
-				"现在我大概能明白为什么如此简单的提取方法，在过去的日志中却仅有极少部分玩家使用——&6因为地幔能的重新平衡是一件非常“亏本”的事情&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4A6163EABA119B99.description1}"
 				""
-				"为了平衡地幔能，我们需要巨大量的常规燃料，以平衡之前所使用的那部分地幔能。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4A6163EABA119B99.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1376,10 +1376,10 @@
 					tag: { }
 				}
 				id: "66D17675EED64D7C"
-				title: "完成部分准备"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest4A6163EABA119B99.reward.7408833110891449724.title}"
 				type: "custom"
 			}]
-			subtitle: "平衡地幔能之法"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest4A6163EABA119B99.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 256L
@@ -1387,16 +1387,16 @@
 				item: "minecraft:coal_block"
 				type: "item"
 			}]
-			title: "&6地幔能平衡：煤炭块&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest4A6163EABA119B99.title}"
 			x: 18.5d
 			y: 31.0d
 		}
 		{
 			dependencies: ["4A6163EABA119B99"]
 			description: [
-				"使用熔岩可能会稍微划算一些. . .因为我们可以从&6下界&r或者其他地方大量的抽取这种燃料. . ."
+				"{ftbquests.chapter.79D02A9A3478432C.quest470BBE519FAFAC9B.description1}"
 				""
-				"但这一切真的值得吗？或者说&b现在的寒冬真的会影响到什么吗？&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest470BBE519FAFAC9B.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1410,10 +1410,10 @@
 					tag: { }
 				}
 				id: "42B174EED460DA8E"
-				title: "完成部分准备"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest470BBE519FAFAC9B.reward.4805750846495185550.title}"
 				type: "custom"
 			}]
-			subtitle: "平衡地幔能之法"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest470BBE519FAFAC9B.subtitle}"
 			tasks: [
 				{
 					id: "1706CEEB804CBE8A"
@@ -1427,7 +1427,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest470BBE519FAFAC9B.task.1659241023597756042.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1437,16 +1437,16 @@
 					type: "fluid"
 				}
 			]
-			title: "&6地幔能平衡：熔岩&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest470BBE519FAFAC9B.title}"
 			x: 24.5d
 			y: 31.0d
 		}
 		{
 			dependencies: ["470BBE519FAFAC9B"]
 			description: [
-				"倘若这样的冬日其实并不会对我们的生活造成什么影响——而我们又&b没有办法避免有人再步后尘&r. . ."
+				"{ftbquests.chapter.79D02A9A3478432C.quest30F907B76DF60A.description1}"
 				""
-				"我们拯救这个世界还有意义吗？或者说，保持这样的冬日不也可以吗？"
+				"{ftbquests.chapter.79D02A9A3478432C.quest30F907B76DF60A.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1459,10 +1459,10 @@
 					tag: { }
 				}
 				id: "66677DABDDD1E141"
-				title: "完成部分准备"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest30F907B76DF60A.reward.7379004691584246081.title}"
 				type: "custom"
 			}]
-			subtitle: "平衡地幔能之法"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest30F907B76DF60A.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 256L
@@ -1470,18 +1470,18 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			title: "&6地幔能平衡：烈焰蛋糕&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest30F907B76DF60A.title}"
 			x: 18.5d
 			y: 26.0d
 		}
 		{
 			dependencies: ["0030F907B76DF60A"]
 			description: [
-				"&o&7[通讯中断]&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest422C30F050C2356E.description1}"
 				""
-				"&o&7[恢复中]&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest422C30F050C2356E.description2}"
 				""
-				"&6我为什么会抱有那样的想法. . .向您道歉. . .我们应当全力以赴，来维护我们所珍惜的这个世界！&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest422C30F050C2356E.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1496,10 +1496,10 @@
 				id: "7E2A2113CC9B8BA4"
 				ignore_reward_blocking: true
 				kubeId: "balance_mantle_energy"
-				title: "完成地幔能平衡"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest422C30F050C2356E.reward.9091115166721608612.title}"
 				type: "maa:kube"
 			}]
-			subtitle: "平衡地幔能之法"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest422C30F050C2356E.subtitle}"
 			tasks: [{
 				consume_items: true
 				count: 8L
@@ -1507,20 +1507,20 @@
 				item: "cataclysm:lava_power_cell"
 				type: "item"
 			}]
-			title: "&6地幔能平衡：熔岩动力电池&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest422C30F050C2356E.title}"
 			x: 24.5d
 			y: 26.0d
 		}
 		{
 			dependencies: ["79404493E0C3DF1B"]
 			description: [
-				"&b曾经，一场巨大的冰雪灾难降临到这片世界. . .&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.description1}"
 				""
-				"这场危机曾经威胁到了我们的旅程. . .不过幸好，&6勇敢的人们及时发现了问题&r，并且挽救了整场危机。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.description2}"
 				""
-				"正因他们，我们现在才能够享受此等静谧、温暖、灿烂的阳光。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.description3}"
 				""
-				"&6尽管有人因贪婪而犯错，但最终一切还是回到正轨——请允许我向他们致敬。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.description4}"
 			]
 			icon: "minecraft:snowball"
 			id: "238304E64039192F"
@@ -1535,36 +1535,36 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "328E0F032A8AB679"
-					title: "解锁头衔：&e太阳花"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.reward.3642865654862362233.title}"
 					titleId: "kubejs:sun_flower"
 					type: "titles:title"
 				}
 			]
-			subtitle: "封存地幔能后的世界"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.subtitle}"
 			tasks: [{
 				icon: "minecraft:snowball"
 				id: "6C681FA151D7FE8E"
 				isServer: true
 				stage: "ftb_after_eternal_winter"
-				title: "凛冬之后"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.task.7811528331397430926.title}"
 				type: "maa:astages"
 			}]
-			title: "凛冬之后的新故事"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest238304E64039192F.title}"
 			x: 0.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["6EAC98701F6297E7"]
 			description: [
-				"&6温暖. . .&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.description1}"
 				""
-				"阳光再一次回到了这片土地之上——不久之后，永久凛冬的痕迹会逐渐消散吧。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.description2}"
 				""
-				"我考虑了一下，&b决定永久封存地幔能提取计划&r。其主要原因为，我们无法保证后来者能够遵守我们的约定。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.description3}"
 				""
-				"为了世界能够以更美好的姿态进行下去，希望您能够谅解。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.description4}"
 				""
-				"&6后来者会记住您的丰功伟业。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.description5}"
 			]
 			hide_dependency_lines: true
 			id: "636CDD764ADFA00D"
@@ -1578,36 +1578,36 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "2806BE4A2329B4B3"
-					title: "解锁头衔：&e暖心"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.reward.2884201837004174515.title}"
 					titleId: "kubejs:heart_warm"
 					type: "titles:title"
 				}
 			]
-			subtitle: "[通讯恢复]"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.subtitle}"
 			tasks: [{
 				icon: "simplehats:snowmanbaby"
 				id: "32A772C5B1E93BB2"
 				isServer: true
 				stage: "ftb_after_eternal_winter"
-				title: "地幔能暂时稳定"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.task.3650012216426052530.title}"
 				type: "maa:astages"
 			}]
-			title: "&6当阳光洒向大地&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest636CDD764ADFA00D.title}"
 			x: 21.5d
 			y: 24.0d
 		}
 		{
 			dependencies: ["238304E64039192F"]
 			description: [
-				"请原谅我上一个任务的多愁善感。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.description1}"
 				""
-				"简单说，&b这个世界曾经因为某些人随意提取地幔能，进而引发了一场永恒冰雪的世界级灾难&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.description2}"
 				""
-				"但他们最终还是想办法解决了这些问题，且从那以后，&c我决定彻底封存地幔能，杜绝同样的事情再度发生&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.description3}"
 				""
-				"因此，您现在看到的任务，其实是经过优化后，&c不包含地幔能提取部分的美化版任务&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.description4}"
 				""
-				"我的使命是保证您的旅途能够正常结束，因此，在各种权衡利弊下，只有通过此等方案，才能杜绝任何人步入后尘。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.description5}"
 			]
 			icon: "create:blaze_cake"
 			id: "67967AFA0EECD984"
@@ -1616,13 +1616,13 @@
 				item: "lightmanscurrency:coin_emerald"
 				type: "item"
 			}]
-			subtitle: "向后人讲述"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.subtitle}"
 			tasks: [{
 				id: "0822FD4343D3A7D8"
-				title: "好吧. . ."
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.task.586309366854166488.title}"
 				type: "checkmark"
 			}]
-			title: "地幔能的故事"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest67967AFA0EECD984.title}"
 			x: 3.0d
 			y: 11.5d
 		}
@@ -1632,11 +1632,11 @@
 				"133A28D884F01479"
 			]
 			description: [
-				"经检测，大世界计算机也可以进行类似的&6复制演算&r，通过凭空创造具有少量自由度的数据来满足类似于地幔能复制的要求。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest5BFA9E175D1944CF.description1}"
 				""
-				"但是大世界计算机的规模有限，目前只能够制造六阶及其以下的&6类地幔能&r以供复制使用，且效率较低。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest5BFA9E175D1944CF.description2}"
 				""
-				"通过在构建完成的大世界计算机中，在材料槽中输入异彩化合物和魔源汇聚水晶，即能&6消耗魔源汇聚水晶&r来进行一次复制工作。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest5BFA9E175D1944CF.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1648,26 +1648,26 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "大世界计算机对地幔能的模拟"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest5BFA9E175D1944CF.subtitle}"
 			tasks: [{
 				id: "700A3083AAAF8B82"
-				title: "我已了解"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest5BFA9E175D1944CF.task.8073318624077515650.title}"
 				type: "checkmark"
 			}]
-			title: "&6领域交差：大世界地幔能&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest5BFA9E175D1944CF.title}"
 			x: 9.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["00EC549EA51DF850"]
 			description: [
-				"经日志确认，这些器官还有极高的可拓展空间。如果我们能够寻找到这&6世界上最为炽热的东西&r，或许能够让它们的力量完全解放。"
+				"{ftbquests.chapter.79D02A9A3478432C.questC90052BA156B5F4.description1}"
 				""
-				"在您寻找到世界上最为炽热的东西后，通过日志里记载的控制程序和触发讯号，就可以解放这些器官的力量。"
+				"{ftbquests.chapter.79D02A9A3478432C.questC90052BA156B5F4.description2}"
 				""
-				"不灭的火山岩便是一个值得怀疑的对象，其可以让玩家一直保持在燃烧状态中，完全可以被称得上&c“最为炽热之物”&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.questC90052BA156B5F4.description3}"
 				""
-				"为了获得它，您需要击败&6焰魔&r，并且在焰魔将死之时，将器官从它的胸腔中取出。"
+				"{ftbquests.chapter.79D02A9A3478432C.questC90052BA156B5F4.description4}"
 			]
 			id: "0C90052BA156B5F4"
 			rewards: [{
@@ -1675,7 +1675,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "焰魔之魂"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.questC90052BA156B5F4.subtitle}"
 			tasks: [{
 				id: "6E33FF0F198F70DD"
 				item: {
@@ -1685,16 +1685,16 @@
 				}
 				type: "item"
 			}]
-			title: "永恒燃烧之物"
+			title: "{ftbquests.chapter.79D02A9A3478432C.questC90052BA156B5F4.title}"
 			x: 7.0d
 			y: 19.0d
 		}
 		{
 			dependencies: ["1E9E00D7BCF6405B"]
 			description: [
-				"还不够. . .目前为止，这些物品仅仅能够提供&c永恒燃烧&r的力量，但对于燃烧而言，温度也必不可少。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6AA1CAF275057D26.description1}"
 				""
-				"我们的第一个尝试可以从岩浆胶体开始。其能够在您受到攻击时，为您提供额外的&6燃烧持续时间&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6AA1CAF275057D26.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1708,7 +1708,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "更加炽热！"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6AA1CAF275057D26.subtitle}"
 			tasks: [{
 				id: "381304D9786C1574"
 				item: {
@@ -1718,18 +1718,18 @@
 				}
 				type: "item"
 			}]
-			title: "寻找更加炽热的东西"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6AA1CAF275057D26.title}"
 			x: 2.0d
 			y: 22.0d
 		}
 		{
 			dependencies: ["7480BAD551F85642"]
 			description: [
-				"为了驾驭足够强大的烈焰，我们需要一些防护烈焰的方法。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6B24B7537EE0151A.description1}"
 				""
-				"通过炽足兽胸腔中的物品，我们可以制成&6赤核&r，其可以让您&6免受持续的火焰灼烧。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6B24B7537EE0151A.description2}"
 				""
-				"但是这并不代表您可以免疫火焰或者岩浆的直接伤害，其仅仅会让您不会被持续的火焰伤害烦扰。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6B24B7537EE0151A.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1743,7 +1743,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "烈焰缠身"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6B24B7537EE0151A.subtitle}"
 			tasks: [{
 				id: "2DC762F8755B7ECE"
 				item: {
@@ -1753,16 +1753,16 @@
 				}
 				type: "item"
 			}]
-			title: "烈焰防护"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6B24B7537EE0151A.title}"
 			x: 2.0d
 			y: 19.0d
 		}
 		{
 			dependencies: ["6B24B7537EE0151A"]
 			description: [
-				"使用赤核会使得我们&c丧失对火焰的感知能力&r，因此，我们最好在胸腔中配备一个&6温度计&r，以随时查看我们被烤焦的程度。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest1E9E00D7BCF6405B.description1}"
 				""
-				"温度计会在物品栏右侧的器官效果栏中显示您当前的火焰效果持续时间，方便用于您评估当前的情形。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest1E9E00D7BCF6405B.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "1E9E00D7BCF6405B"
@@ -1771,7 +1771,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "烈焰计量器"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest1E9E00D7BCF6405B.subtitle}"
 			tasks: [{
 				id: "71DAF9F5A48E8265"
 				item: {
@@ -1781,18 +1781,18 @@
 				}
 				type: "item"
 			}]
-			title: "烈焰中的自我"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest1E9E00D7BCF6405B.title}"
 			x: 0.0d
 			y: 20.5d
 		}
 		{
 			dependencies: ["6AA1CAF275057D26"]
 			description: [
-				"尽管烈焰脊柱无法提高您自身的燃烧持续时间，但是其可以高效率的将您身上所持有的&6燃烧时间完美复制&r到另一个单位身上。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest471AE5AA85D6A899.description1}"
 				""
-				"在某些情况下，虽然您自己无法达到极高的燃烧持续时间，但是让其他生物达到极高的燃烧持续时间再想办法转化到您的身上或许也是一个不错的主意。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest471AE5AA85D6A899.description2}"
 				""
-				"除此之外，烈焰脊柱也是一个&6有效提高您输出&r的方式。其可以让对面持有&6相当长时间的异常状态&r，可以配合某些依赖于异常状态的攻击方式发挥出极强的效果。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest471AE5AA85D6A899.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -1806,7 +1806,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "灼热炎魂"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest471AE5AA85D6A899.subtitle}"
 			tasks: [{
 				id: "3D5BBA3F6E44152F"
 				item: {
@@ -1816,18 +1816,18 @@
 				}
 				type: "item"
 			}]
-			title: "将炽热赠予所有人"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest471AE5AA85D6A899.title}"
 			x: 4.5d
 			y: 22.0d
 		}
 		{
 			dependencies: ["0C90052BA156B5F4"]
 			description: [
-				"但是火山岩仅能够保证您身体的一小部分处于炽热状态。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest7480BAD551F85642.description1}"
 				""
-				"为了保证您全身各处都能够处于极高的温度，您需要使用&6岩浆生命循环系统&r来均衡这种热量。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest7480BAD551F85642.description2}"
 				""
-				"岩浆生命循环系统能够使用几种燃料提升您身上的火焰持续时长，最常见的类如&6岩浆&r或&6汽油&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest7480BAD551F85642.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "7480BAD551F85642"
@@ -1836,7 +1836,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "热量遍布全身"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest7480BAD551F85642.subtitle}"
 			tasks: [{
 				id: "77411F2946C9C5BE"
 				item: {
@@ -1846,18 +1846,18 @@
 				}
 				type: "item"
 			}]
-			title: "热量循环模式"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest7480BAD551F85642.title}"
 			x: 4.5d
 			y: 19.0d
 		}
 		{
 			dependencies: ["49C7349296812E64"]
 			description: [
-				"&6恭喜！在烈焰行至极端境界的那一刻，特殊的改造便已经悄然发生在您的身体内！"
-				"&r"
-				"这种被称为&6革命烈焰的&r特殊类型胸腔，能够极大化地优化大量机械的运行效率，并且能够忍受由内部而来的剧烈高温。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.description1}"
+				"{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.description2}"
+				"{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.description3}"
 				""
-				"曾经的世界中，或许永恒的寒冬也曾经到来过，但正是因为存在如此炽热的心，也能够使过去的玩家在没有我帮助的情况下重新构建起新的世界。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "56CAE9C01AF71671"
@@ -1872,7 +1872,7 @@
 					id: "12DAD9A3FAC93E6D"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.reward.1358637535916015213.title}"
 					type: "maa:kube"
 				}
 				{
@@ -1882,34 +1882,34 @@
 				}
 			]
 			shape: "none"
-			subtitle: "我奉行我之准则"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.subtitle}"
 			tasks: [{
 				entity: "minecraft:empty"
 				icon: "kubejs:revolution_machine_injection"
 				id: "77B5B3B36CC479C6"
 				inventoryType: "kubejs:cc_inventory_types/revolution_machine"
-				title: "打开革命机械胸腔"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.task.8625998244503386566.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "&6庆贺吧！此乃革命机械胸腔！&r"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.title}"
 			x: 7.0d
 			y: 27.0d
 		}
 		{
 			dependencies: ["56CAE9C01AF71671"]
 			description: [
-				"&6恭喜，程序按照预期完成了改造工作。&r"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.description1}"
 				""
-				"而我现在已能够将&6革命烈焰胸腔&r的模式装填入注射器中，以供后续快速切换胸腔类型使用。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.description2}"
 				""
-				"但由于革命胸腔的力量较为强大，其中更蕴含有可以通往&6真正无限的钥匙&r，贸然将这种技术公开可能导致一些不可预料的结果。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.description3}"
 				""
-				"因此我决定，将该技术是否公开的权利交给在这个世界上真正了解革命本意的玩家，即&6成功击退村庄袭击次数最多&r的玩家。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.description4}"
 				"{@pagebreak}"
-				"公开配方会使所有人都可以制作革命机械注射器。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.description5}"
 				""
-				"私有配方会使您成为唯一能够制作革命机械注射器的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.description6}"
 			]
 			hide_until_deps_complete: true
 			id: "4030B53E5FB37381"
@@ -1920,17 +1920,17 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			subtitle: "革命复制术"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.subtitle}"
 			tasks: [{
 				icon: "minecraft:totem_of_undying"
 				id: "245B3DB2341DC7DC"
 				leaderboard: "leaderboards:raids_won"
 				min: 1
 				rank: 1
-				title: "击退袭击称霸"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.task.2619755443833915356.title}"
 				type: "leaderboards:rank_task"
 			}]
-			title: "革命机械注射器配方"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest4030B53E5FB37381.title}"
 			x: 7.0d
 			y: 29.5d
 		}
@@ -1942,11 +1942,11 @@
 				"47E4236EF5E0A69A"
 			]
 			description: [
-				"在您制造了少许革命器官后，我在陈旧的信息中找到了一个名为&6“可编程自主核心”&r的特殊设备。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6CEFBF4EC3F421E.description1}"
 				""
-				"虽然不明白其具体的用途为何，但在历史的记录中曾在某个阶段中频繁的提到了它的名字。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6CEFBF4EC3F421E.description2}"
 				""
-				"或许这对于我们理解革命机械有些许帮助，请允许我将该配方的蓝图发送到您的&6手持打印机&r中。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest6CEFBF4EC3F421E.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -1970,7 +1970,7 @@
 					isServer: false
 					remove: false
 					stage: "ftb_programmable_automatic_core_1"
-					title: "可编程自主核心图纸"
+					title: "{ftbquests.chapter.79D02A9A3478432C.quest6CEFBF4EC3F421E.reward.8979990357518050683.title}"
 					type: "maa:astages"
 				}
 				{
@@ -1979,13 +1979,13 @@
 					type: "item"
 				}
 			]
-			subtitle: "由革命机械而来的启发"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest6CEFBF4EC3F421E.subtitle}"
 			tasks: [{
 				id: "53AE15F233DC4258"
-				title: "我已了解"
+				title: "{ftbquests.chapter.79D02A9A3478432C.quest6CEFBF4EC3F421E.task.6029781081092014680.title}"
 				type: "checkmark"
 			}]
-			title: "自发而行"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest6CEFBF4EC3F421E.title}"
 			x: 21.5d
 			y: 22.0d
 		}
@@ -1995,13 +1995,13 @@
 				"471AE5AA85D6A899"
 			]
 			description: [
-				"请您等下！或许我们找到了可编程自主核心的真正用途！"
+				"{ftbquests.chapter.79D02A9A3478432C.quest30D1D2606F1D61DE.description1}"
 				""
-				"在过去，有玩家利用&6可编程核心&r进行了大量的实验，希望于能够进一步发挥机械和生物融合后的力量。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest30D1D2606F1D61DE.description2}"
 				""
-				"但生物体本身的低耗能与机械的极高功率消耗形成了一种对立——直到他们发现可以&6通过巨大的生物热量驱动机械&r为止。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest30D1D2606F1D61DE.description3}"
 				""
-				"请您制造&6机械融合装置&r，我将向您解释如何完成这种改造！"
+				"{ftbquests.chapter.79D02A9A3478432C.quest30D1D2606F1D61DE.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "30D1D2606F1D61DE"
@@ -2010,7 +2010,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "机械为具、烈焰为魂"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest30D1D2606F1D61DE.subtitle}"
 			tasks: [{
 				id: "34FE4F031C07C16E"
 				item: {
@@ -2022,18 +2022,18 @@
 				}
 				type: "item"
 			}]
-			title: "以炎热驱动"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest30D1D2606F1D61DE.title}"
 			x: 7.0d
 			y: 22.0d
 		}
 		{
 			dependencies: ["30D1D2606F1D61DE"]
 			description: [
-				"为了驱动过去人们设计的义体改造装置，您需要极其灼热的“内在”。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest49C7349296812E64.description1}"
 				""
-				"在您的&6燃烧时间大于三分钟&r时，义体改造装置便会因为巨大的内能而自发的驱动改造进行，进而&6使您的胸腔转变成为完全崭新的形态&r。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest49C7349296812E64.description2}"
 				""
-				"为了能够达到如此长的燃烧时间，您需要使用&6汽油&r或&6岩浆&r作为燃料进行升温。"
+				"{ftbquests.chapter.79D02A9A3478432C.quest49C7349296812E64.description3}"
 			]
 			icon: {
 				Count: 1
@@ -2046,16 +2046,16 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "执行改造"
+			subtitle: "{ftbquests.chapter.79D02A9A3478432C.quest49C7349296812E64.subtitle}"
 			tasks: [{
 				id: "51934ACB19A6EB3D"
 				item: "createdieselgenerators:gasoline_bucket"
 				type: "item"
 			}]
-			title: "急剧升温的准则"
+			title: "{ftbquests.chapter.79D02A9A3478432C.quest49C7349296812E64.title}"
 			x: 7.0d
 			y: 24.5d
 		}
 	]
-	title: "传闻：地幔燃料"
+	title: "{ftbquests.chapter.79D02A9A3478432C.title}"
 }

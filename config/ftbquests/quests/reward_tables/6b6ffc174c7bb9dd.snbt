@@ -11,7 +11,7 @@
 			isServer: false
 			remove: false
 			stage: "ftb_genesis_integrity_process"
-			title: "私有真正的创世工艺"
+			title: "{ftbquests.loot_table.7741683461470796253.item_1}"
 			type: "maa:astages"
 		}
 		{
@@ -21,9 +21,9 @@
 			isServer: true
 			remove: false
 			stage: "ftb_genesis_integrity_process"
-			title: "公开真正的创世工艺"
+			title: "{ftbquests.loot_table.7741683461470796253.item_2}"
 			type: "maa:astages"
 		}
 	]
-	title: "真正的创世工艺"
+	title: "{ftbquests.loot_table.7741683461470796253.title}"
 }

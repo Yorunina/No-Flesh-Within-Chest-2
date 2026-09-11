@@ -77,13 +77,13 @@
 		{
 			dependencies: ["0FF6CCEECFC2CD22"]
 			description: [
-				"奇怪，黄铜及其相关造物似乎都具有一些极其奇特的属性。"
+				"{ftbquests.chapter.1E3D245239215530.quest3059F62A16427246.description1}"
 				""
-				"除去其适合用于各种精密部件的制造之外，我观察到其展现出一种&6特殊的能量传导&r效应。"
+				"{ftbquests.chapter.1E3D245239215530.quest3059F62A16427246.description2}"
 				""
-				"暂不确定是否这种能量传导效应存在于所有金属中，其具体表现为一种&6逆因果&r作用，即通过该金属的信号在出发前便已经到达了测量处。"
+				"{ftbquests.chapter.1E3D245239215530.quest3059F62A16427246.description3}"
 				""
-				"或许我们可以通过这种效应来做一些事情。"
+				"{ftbquests.chapter.1E3D245239215530.quest3059F62A16427246.description4}"
 			]
 			hide_until_deps_complete: true
 			id: "3059F62A16427246"
@@ -93,24 +93,24 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "不常见的读数"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest3059F62A16427246.subtitle}"
 			tasks: [{
 				id: "6F47495E2E94AE47"
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			title: "异常金属"
+			title: "{ftbquests.chapter.1E3D245239215530.quest3059F62A16427246.title}"
 			x: 8.5d
 			y: -10.0d
 		}
 		{
 			dependencies: ["3059F62A16427246"]
 			description: [
-				"逆因果效应是一个非常有趣的话题，其常常牵扯到关于世界本质的讨论。"
+				"{ftbquests.chapter.1E3D245239215530.quest42F53C902EE260E2.description1}"
 				""
-				"但就应用层面来说，我们或许可以打造一台&6谕示机&r来完全利用它的特性，为我们后续掌控这个世界做好准备。"
+				"{ftbquests.chapter.1E3D245239215530.quest42F53C902EE260E2.description2}"
 				""
-				"请您稍加等待。"
+				"{ftbquests.chapter.1E3D245239215530.quest42F53C902EE260E2.description3}"
 			]
 			id: "42F53C902EE260E2"
 			rewards: [{
@@ -119,12 +119,12 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "我来替您设计"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest42F53C902EE260E2.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "5A7DA0C8AF0563B2"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.1E3D245239215530.quest42F53C902EE260E2.task.6520544619292615602.title}"
 				type: "questsadditions:time"
 			}]
 			x: 8.5d
@@ -133,17 +133,17 @@
 		{
 			dependencies: ["42F53C902EE260E2"]
 			description: [
-				"这个机械我称为&6大世界计算机&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.description1}"
 				""
-				"其功能很多，最重要的作用是能够突破这个世界本身的限制，与外界沟通。"
+				"{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.description2}"
 				""
-				"如果利用得当，可以从外部修改这个世界的属性，进而控制整个世界——但这只是理论上的。"
+				"{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.description3}"
 				""
-				"&6不知您是否愿意陪同我完成大世界计算机的建设？&r"
+				"{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.description4}"
 				"{@pagebreak}"
-				"大世界计算机的建设并不需要非常高的产线效率，一般来说，只要保证产线存在，大世界计算机就能够正常被建设完成。"
+				"{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.description5}"
 				""
-				"这意味着您也可以通过完全手动生产的方式完成大世界计算机的建设，但这会非常耗费时间。"
+				"{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.description6}"
 			]
 			icon: "kubejs:reverse_causality_chip"
 			id: "2650CE0D76584853"
@@ -156,28 +156,28 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "48452ACE1367FB41"
-					title: "解锁头衔：&e流水线工人"
+					title: "{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.reward.5207615608701057857.title}"
 					titleId: "kubejs:assembly_line_builder"
 					type: "titles:title"
 				}
 			]
 			shape: "circle"
-			subtitle: "从未来截获消息"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.subtitle}"
 			tasks: [{
 				id: "1FF54461008FC48D"
-				title: "让我看看"
+				title: "{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.task.2302821967881815181.title}"
 				type: "checkmark"
 			}]
-			title: "大世界计算机"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2650CE0D76584853.title}"
 			x: 8.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"为了制造后续所需的纸和乙醇，一个甘蔗农场是必须的。"
+				"{ftbquests.chapter.1E3D245239215530.quest4C734EDC56B5A572.description1}"
 				""
-				"您可以使用任何方式来构造这个农场，其不需要有过大的规模。"
+				"{ftbquests.chapter.1E3D245239215530.quest4C734EDC56B5A572.description2}"
 			]
 			hide_dependency_lines: true
 			id: "4C734EDC56B5A572"
@@ -187,29 +187,29 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了纸和乙醇"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest4C734EDC56B5A572.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "0802E4C4E11327DC"
 				item: "minecraft:sugar_cane"
 				type: "item"
 			}]
-			title: "甘蔗农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest4C734EDC56B5A572.title}"
 			x: 1.0d
 			y: 18.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"为了乙醇您或许需要足够多的骨粉。"
+				"{ftbquests.chapter.1E3D245239215530.quest46E1C381CEC3C04A.description1}"
 				""
-				"一个简单的方案是去开采&6古代骸骨&r虚拟矿脉，在稳定产出的骨头的基础上进行增产，就能够获得足够多的骨粉用于后续的生产。"
+				"{ftbquests.chapter.1E3D245239215530.quest46E1C381CEC3C04A.description2}"
 				""
-				"也可以通过刷怪笼或者刷怪塔的各种方案，来实现一个无限的&6怪物骨头农场&r进而实现骨粉的获取，亦或者是一个&6苔藓农场&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest46E1C381CEC3C04A.description3}"
 				""
-				"其实现方式较多，您可以随意发挥，由于实际需求的量并不多，因此您不必追求完全无限的自动化量产。"
+				"{ftbquests.chapter.1E3D245239215530.quest46E1C381CEC3C04A.description4}"
 				""
-				"当然，由于在&6药水生产环节&r您可能通过副产物实现了乙醇自由，那时您可以忽略掉本任务。"
+				"{ftbquests.chapter.1E3D245239215530.quest46E1C381CEC3C04A.description5}"
 			]
 			id: "46E1C381CEC3C04A"
 			rewards: [{
@@ -218,14 +218,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了乙醇"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest46E1C381CEC3C04A.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "29267DAAD549F7AB"
 				item: "minecraft:bone_meal"
 				type: "item"
 			}]
-			title: "骨粉农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest46E1C381CEC3C04A.title}"
 			x: 1.5d
 			y: -5.0d
 		}
@@ -233,9 +233,9 @@
 			dependencies: ["2650CE0D76584853"]
 			dependency_requirement: "all_started"
 			description: [
-				"树脂团会在激活的&6嘎枝之心&r周围生成，如果你在嘎枝之心周围攻击了&6嘎枝怪&r，那么会在周围的原木上生成树脂团。"
+				"{ftbquests.chapter.1E3D245239215530.quest8AEF21250BE4A0F.description1}"
 				""
-				"通过简单的设计，您可以设计出一个用于生产树脂团的农场，这个农场不需要有过大的规模，仅需能够提供长久有效的生产能力即可。"
+				"{ftbquests.chapter.1E3D245239215530.quest8AEF21250BE4A0F.description2}"
 			]
 			hide_dependency_lines: true
 			id: "08AEF21250BE4A0F"
@@ -245,29 +245,29 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了电路"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest8AEF21250BE4A0F.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "1BC601D86ED89517"
 				item: "minecraft:resin_clump"
 				type: "item"
 			}]
-			title: "树脂农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest8AEF21250BE4A0F.title}"
 			x: 13.5d
 			y: 18.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"烈焰粉农场的制作方法也有很多，一个简单的方案是通过&6循环工序&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest67287DA5B6767B9B.description1}"
 				""
-				"相较其他方案来说，其工序更简单，但是需要一定时间启动。"
+				"{ftbquests.chapter.1E3D245239215530.quest67287DA5B6767B9B.description2}"
 				""
-				"烈焰棒可以通过粉碎轮变为&6 3 + 0.5 * 3 烈焰粉&r，也就是预期为 &64.5 的烈焰粉&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest67287DA5B6767B9B.description3}"
 				""
-				"而烈焰粉可以通过铸模冲压，由&6 4 烈焰粉转化为 1 烈焰棒&r，在这套工序中，约为一循环赚&6 0.5 烈焰粉&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest67287DA5B6767B9B.description4}"
 				""
-				"理论上来说，通过循环这套工序便可以获取到足够多的烈焰粉。但由于其收益较小，因此需要足够长的时间和“本金”才能够启动这套工序。"
+				"{ftbquests.chapter.1E3D245239215530.quest67287DA5B6767B9B.description5}"
 			]
 			id: "67287DA5B6767B9B"
 			rewards: [{
@@ -276,25 +276,25 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了药水和零件"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest67287DA5B6767B9B.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "051B27ACBD3443D9"
 				item: "minecraft:blaze_powder"
 				type: "item"
 			}]
-			title: "烈焰农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest67287DA5B6767B9B.title}"
 			x: -3.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"为了自动化后续的红石、荧石和火药，您需要足够多的灰烬以自动化余烬面粉，当然，您也完全可以通过&6沼泽女巫塔&r等方式来解决此类需求。"
+				"{ftbquests.chapter.1E3D245239215530.quest635648F942615025.description1}"
 				""
-				"任何能够燃烧的物质被火焰烧尽后都会留下灰烬，通过一套自动化设备，完全可以实现灰烬的自动化生产。"
+				"{ftbquests.chapter.1E3D245239215530.quest635648F942615025.description2}"
 				""
-				"一个优秀的选择是木棍，&6木棍放置在引燃地狱岩的火焰附近&r，很快就会被转化为灰烬。使用木棍的另一好处是您可以使用&6竹子农场&r来供应其消耗，当然，如果有林场的话自然是更好的选择。"
+				"{ftbquests.chapter.1E3D245239215530.quest635648F942615025.description3}"
 			]
 			id: "635648F942615025"
 			rewards: [{
@@ -303,25 +303,25 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了余烬面粉"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest635648F942615025.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "395F38FCD4712F33"
 				item: "supplementaries:ash"
 				type: "item"
 			}]
-			title: "灰烬农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest635648F942615025.title}"
 			x: 16.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"您还需要制作一个紫水晶农场，一个最简单的方法是用&6机械手对紫水晶母岩执行右击操作&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest183FD350BF7F5A66.description1}"
 				""
-				"每次机械手的右击操作，会使紫水晶母岩强制进行一次随机刻判定，进而催生紫水晶的生长。"
+				"{ftbquests.chapter.1E3D245239215530.quest183FD350BF7F5A66.description2}"
 				""
-				"紫水晶农场并不需要过大的规模，仅需能够保证基本使用即可。"
+				"{ftbquests.chapter.1E3D245239215530.quest183FD350BF7F5A66.description3}"
 			]
 			id: "183FD350BF7F5A66"
 			rewards: [{
@@ -330,14 +330,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了紫水晶共振器"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest183FD350BF7F5A66.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "3F4E563FC8F1A401"
 				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
-			title: "紫水晶农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest183FD350BF7F5A66.title}"
 			x: 16.5d
 			y: 18.5d
 		}
@@ -347,9 +347,9 @@
 				"08AEF21250BE4A0F"
 			]
 			description: [
-				"稳定基板&6必须使用粘液球&r制作，不能使用凝血等其余类粘液球进行制作，否则会影响其稳定性。"
+				"{ftbquests.chapter.1E3D245239215530.quest4F4D84DCAADFE359.description1}"
 				""
-				"通过树脂和粘液球的反复叠加，便可以制作成稳定基板。"
+				"{ftbquests.chapter.1E3D245239215530.quest4F4D84DCAADFE359.description2}"
 			]
 			id: "4F4D84DCAADFE359"
 			rewards: [{
@@ -358,22 +358,22 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest4F4D84DCAADFE359.subtitle}"
 			tasks: [{
 				id: "38C09FA237D93E79"
 				item: "kubejs:stable_substrate"
 				type: "item"
 			}]
-			title: "稳定基板生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest4F4D84DCAADFE359.title}"
 			x: 4.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["183FD350BF7F5A66"]
 			description: [
-				"在高能场景下，&6黄铜和紫水晶&r会发生一种未知的反应，形成一种不稳定物质。"
+				"{ftbquests.chapter.1E3D245239215530.quest3CA1B288B92FE257.description1}"
 				""
-				"这种高能场景在目前技术等级下，仅能够通过&6闪电&r来实现。"
+				"{ftbquests.chapter.1E3D245239215530.quest3CA1B288B92FE257.description2}"
 			]
 			id: "3CA1B288B92FE257"
 			rewards: [{
@@ -382,14 +382,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest3CA1B288B92FE257.subtitle}"
 			tasks: [{
 				count: 16L
 				id: "7AB7786298B4767A"
 				item: "kubejs:unstable_matter"
 				type: "item"
 			}]
-			title: "不稳定物质生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest3CA1B288B92FE257.title}"
 			x: 1.5d
 			y: 6.5d
 		}
@@ -399,11 +399,11 @@
 				"2117B03C990E1B9B"
 			]
 			description: [
-				"正常制取的黄铜纯度仍旧不够，通过超高温乙醇精制，可以得到精制黄铜，其异常现象更为明显。"
+				"{ftbquests.chapter.1E3D245239215530.quest3D8418E7483D6A46.description1}"
 				""
-				"您可以采用&6烈焰人燃烧室&r配合烈焰蛋糕冶炼，也可以使用&6可控燃烧室&r配合&6汽油&r开启超级加热模式。"
+				"{ftbquests.chapter.1E3D245239215530.quest3D8418E7483D6A46.description2}"
 				""
-				"具体方案取决于您是否能够接受使用超长距离的燃油运输线路。使用烈焰蛋糕需要您实现一个鸡蛋农场，难度也并不高。"
+				"{ftbquests.chapter.1E3D245239215530.quest3D8418E7483D6A46.description3}"
 			]
 			id: "3D8418E7483D6A46"
 			rewards: [{
@@ -412,13 +412,13 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了计算机元件"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest3D8418E7483D6A46.subtitle}"
 			tasks: [{
 				id: "09AB9FB5B5C31A87"
 				item: "kubejs:refined_brass_ingot"
 				type: "item"
 			}]
-			title: "精炼黄铜技艺"
+			title: "{ftbquests.chapter.1E3D245239215530.quest3D8418E7483D6A46.title}"
 			x: 12.0d
 			y: 0.0d
 		}
@@ -428,7 +428,7 @@
 				"08AEF21250BE4A0F"
 				"6050469B9FD75F36"
 			]
-			description: ["通过&6序列组装&r将红石和荧石叠放在树脂上即可制作出红石电容。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.questE67DFADB3CDCA82.description1}"]
 			id: "0E67DFADB3CDCA82"
 			rewards: [{
 				id: "5758BFB18AADC8A1"
@@ -436,13 +436,13 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.questE67DFADB3CDCA82.subtitle}"
 			tasks: [{
 				id: "64FA1F67A85DC0AD"
 				item: "kubejs:redstone_capacitor"
 				type: "item"
 			}]
-			title: "红石电容生产"
+			title: "{ftbquests.chapter.1E3D245239215530.questE67DFADB3CDCA82.title}"
 			x: 8.5d
 			y: 0.0d
 		}
@@ -452,7 +452,7 @@
 				"0E67DFADB3CDCA82"
 				"6119004524D541AE"
 			]
-			description: ["一个模拟单元可以模拟一个小周期——即&6 1 分钟&r，而我们的目标是&6模拟至少3600年&r。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest44C94FE229AA4E1B.description1}"]
 			id: "44C94FE229AA4E1B"
 			rewards: [{
 				id: "560AED6F58F6220E"
@@ -460,13 +460,13 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest44C94FE229AA4E1B.subtitle}"
 			tasks: [{
 				id: "7C95BC8E2984C891"
 				item: "kubejs:simulated_unit"
 				type: "item"
 			}]
-			title: "模拟单元生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest44C94FE229AA4E1B.title}"
 			x: 4.0d
 			y: 5.0d
 		}
@@ -477,7 +477,7 @@
 				"6119004524D541AE"
 				"09FE702C25B1EB29"
 			]
-			description: ["它在询问之前就做好了回答答案的准备，现在我们要让他把答案以更大的声音&6“说”&r出来。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest1FF0FAA4AB49D901.description1}"]
 			id: "1FF0FAA4AB49D901"
 			rewards: [{
 				id: "0EFC08D1E898A17C"
@@ -485,7 +485,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest1FF0FAA4AB49D901.subtitle}"
 			tasks: [{
 				id: "5034140A3E606812"
 				item: "kubejs:oracle_gate"
@@ -501,11 +501,11 @@
 				"3D8418E7483D6A46"
 			]
 			description: [
-				"偏重齿轮是一种性质怪异的齿轮。"
+				"{ftbquests.chapter.1E3D245239215530.quest7D765D69D05EF9E6.description1}"
 				""
-				"从结构上，它是均匀的（尽管看起来并不是），其重心位于该结构的几何中心。但实际运行时，总会出现异常的巨大振动。"
+				"{ftbquests.chapter.1E3D245239215530.quest7D765D69D05EF9E6.description2}"
 				""
-				"这种特异现象不仅出现在其作为动力机构的零件上，就连其放置在地面上也会自发的振动起来。"
+				"{ftbquests.chapter.1E3D245239215530.quest7D765D69D05EF9E6.description3}"
 			]
 			id: "7D765D69D05EF9E6"
 			rewards: [{
@@ -514,13 +514,13 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest7D765D69D05EF9E6.subtitle}"
 			tasks: [{
 				id: "40EC03017B82250F"
 				item: "kubejs:counterweight_gear"
 				type: "item"
 			}]
-			title: "偏重齿轮生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest7D765D69D05EF9E6.title}"
 			x: 13.0d
 			y: 2.0d
 		}
@@ -533,7 +533,7 @@
 				"34FEB80CC16A8163"
 				"54D8F5829B0839BF"
 			]
-			description: ["是的，我们成功了，现在我们来创作&6大世界计算机&r。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest1B23C2E681511D87.description1}"]
 			hide_dependency_lines: true
 			id: "1B23C2E681511D87"
 			rewards: [{
@@ -542,13 +542,13 @@
 				type: "item"
 			}]
 			shape: "none"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest1B23C2E681511D87.subtitle}"
 			tasks: [{
 				id: "2EF7A904375C0707"
 				item: "kubejs:reverse_causality_chip"
 				type: "item"
 			}]
-			title: "逆因芯片生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest1B23C2E681511D87.title}"
 			x: 8.5d
 			y: 9.0d
 		}
@@ -560,7 +560,7 @@
 				"67287DA5B6767B9B"
 				"6119004524D541AE"
 			]
-			description: ["一种特殊的阀门，可以将随机产生的信号按照时序进行排序。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest56E5B7D978622ABB.description1}"]
 			id: "56E5B7D978622ABB"
 			rewards: [{
 				id: "3FCE93B5054B9608"
@@ -568,13 +568,13 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest56E5B7D978622ABB.subtitle}"
 			tasks: [{
 				id: "6A3C763FE625A857"
 				item: "kubejs:timing_valve"
 				type: "item"
 			}]
-			title: "时序阀生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest56E5B7D978622ABB.title}"
 			x: 4.0d
 			y: 3.5d
 		}
@@ -586,9 +586,9 @@
 				"1356DEE38194F814"
 			]
 			description: [
-				"随机刻弹簧因为其特性，有大概率会制作失败，但是也有&6大概率不会消耗精制黄铜&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest3E538F7B30265340.description1}"
 				""
-				"因此需要有效的回收精制黄铜，不断重新开始这个流程，以保证原料的有效利用。"
+				"{ftbquests.chapter.1E3D245239215530.quest3E538F7B30265340.description2}"
 			]
 			id: "3E538F7B30265340"
 			rewards: [{
@@ -597,13 +597,13 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest3E538F7B30265340.subtitle}"
 			tasks: [{
 				id: "1258570B169D6F2A"
 				item: "kubejs:random_tick_spring"
 				type: "item"
 			}]
-			title: "随机刻弹簧生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest3E538F7B30265340.title}"
 			x: 13.0d
 			y: 3.5d
 		}
@@ -613,7 +613,7 @@
 				"6119004524D541AE"
 				"483232429CC1EC6A"
 			]
-			description: ["一种&6极其坚固&r的结构部件，刚好可以用于大世界计算机的基本构建。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest56C5CC3C18FB5AC0.description1}"]
 			id: "56C5CC3C18FB5AC0"
 			rewards: [{
 				id: "1B6049BDA63013FF"
@@ -621,22 +621,22 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest56C5CC3C18FB5AC0.subtitle}"
 			tasks: [{
 				id: "6072181D1C025B2D"
 				item: "kubejs:structural_bolt"
 				type: "item"
 			}]
-			title: "结构栓生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest56C5CC3C18FB5AC0.title}"
 			x: 4.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0A9B08286B960B9F"]
 			description: [
-				"通过开采一种叫做地幔矿藏的特殊虚拟矿脉，能够获得地幔矿石。"
+				"{ftbquests.chapter.1E3D245239215530.quest239E0F7A9A0E1B24.description1}"
 				""
-				"这种矿石可以用于&6再生哭泣的黑曜石&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest239E0F7A9A0E1B24.description2}"
 			]
 			id: "239E0F7A9A0E1B24"
 			rewards: [{
@@ -645,19 +645,19 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了哭泣黑曜石"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest239E0F7A9A0E1B24.subtitle}"
 			tasks: [{
 				id: "76BB2957594E7BE6"
 				item: "kubejs:mantle_ore"
 				type: "item"
 			}]
-			title: "开采地幔矿藏"
+			title: "{ftbquests.chapter.1E3D245239215530.quest239E0F7A9A0E1B24.title}"
 			x: 16.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
-			description: ["由于大世界计算机的构建零件中，很多都&6需要药水参与&r，因此一个地狱疣农场是必要的。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest44C3AEC9E214A35F.description1}"]
 			id: "44C3AEC9E214A35F"
 			rewards: [{
 				id: "2F49240A05E35743"
@@ -665,27 +665,27 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了酿造各种药水"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest44C3AEC9E214A35F.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "0539E63B98BC94DB"
 				item: "minecraft:nether_wart"
 				type: "item"
 			}]
-			title: "下界疣农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest44C3AEC9E214A35F.title}"
 			x: -3.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["635648F942615025"]
 			description: [
-				"通过&6红石 + 灰烬搅拌&r的方式，可以获得余烬面粉。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A62739EF5699406.description1}"
 				""
-				"您也可以通过研磨下界岩的方式来获取余烬面粉，具体可以根据您的实际情况分配。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A62739EF5699406.description2}"
 				""
-				"在此过程中消耗的红石，既可以通过&6虚拟矿脉&r或者常规挖矿来补充，也可以通过&6余烬面粉 + 力量药水&r进行自动化量产。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A62739EF5699406.description3}"
 				""
-				"为了帮助您理解这个过程，我这里将会采用能够无限自循环生产的路径——即余烬面粉与力量药水的路径为您安排任务。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A62739EF5699406.description4}"
 			]
 			id: "2A62739EF5699406"
 			rewards: [{
@@ -694,23 +694,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了批发红石、荧石和火药"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2A62739EF5699406.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "0ECA097D0A30E419"
 				item: "create:cinder_flour"
 				type: "item"
 			}]
-			title: "余烬面粉生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2A62739EF5699406.title}"
 			x: 16.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"为了后续酿造药水的方便，您需要一个&6自动获取蜘蛛眼&r的装置。"
+				"{ftbquests.chapter.1E3D245239215530.quest579400015534B141.description1}"
 				""
-				"机械手手持&6铲子&r与&6蜘蛛&r/&6洞穴蜘蛛&r交互时，可以获取&6蜘蛛眼&r。此过程中蜘蛛不会受伤，但是铲子会因此损失耐久度。"
+				"{ftbquests.chapter.1E3D245239215530.quest579400015534B141.description2}"
 			]
 			id: "579400015534B141"
 			rewards: [{
@@ -719,14 +719,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了酿造药水"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest579400015534B141.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "7CDFE152298616B5"
 				item: "minecraft:spider_eye"
 				type: "item"
 			}]
-			title: "蜘蛛眼农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest579400015534B141.title}"
 			x: -3.5d
 			y: 3.5d
 		}
@@ -736,13 +736,13 @@
 				"4C734EDC56B5A572"
 			]
 			description: [
-				"在获得了足够的蜘蛛眼之后，下一步就是将其发酵成为发酵蛛眼。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A318E77FFB451CB.description1}"
 				""
-				"通过发酵流程，将&6糖和蜘蛛眼发酵&r是最为经济快捷的方案，通过此方案，你可以获取到几乎无穷尽的发酵蛛眼。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A318E77FFB451CB.description2}"
 				""
-				"与此同时，这会带来一种重要的副产物——&6乙醇&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A318E77FFB451CB.description3}"
 				""
-				"相比于其他方案，之所以我推荐这个方案，是因为其可以一定程度上补充我们对于乙醇的需要。当然，这并不限制您使用其他的方案，我只是按照我的预估结果进行推荐。"
+				"{ftbquests.chapter.1E3D245239215530.quest2A318E77FFB451CB.description4}"
 			]
 			icon: "minecraft:fermented_spider_eye"
 			id: "2A318E77FFB451CB"
@@ -752,23 +752,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了酿造药水和乙醇"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2A318E77FFB451CB.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "3C4C74F04B93A4BD"
 				item: "minecraft:fermented_spider_eye"
 				type: "item"
 			}]
-			title: "发酵蛛眼与乙醇"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2A318E77FFB451CB.title}"
 			x: -0.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["44C3AEC9E214A35F"]
 			description: [
-				"为了后续自动化更多的生产，第一步就是通过下界疣自动化生产粗制药水。"
+				"{ftbquests.chapter.1E3D245239215530.quest5D2CB52419160960.description1}"
 				""
-				"这个任务需要您&6使用任务屏幕进行提交&r，通过制作出来的任务屏幕，右键打开设置其对应任务为此任务，即可往屏幕内输入流体来提交此任务。"
+				"{ftbquests.chapter.1E3D245239215530.quest5D2CB52419160960.description2}"
 			]
 			icon: {
 				Count: 1
@@ -784,7 +784,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了酿造药水"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest5D2CB52419160960.subtitle}"
 			tasks: [
 				{
 					id: "22BF23DCD1C749A9"
@@ -798,7 +798,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest5D2CB52419160960.task.2503759349160561065.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -819,16 +819,16 @@
 					type: "fluid"
 				}
 			]
-			title: "粗制药水"
+			title: "{ftbquests.chapter.1E3D245239215530.quest5D2CB52419160960.title}"
 			x: -0.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"由于后续有酿造各种药水的需求，因此一个混合生产作物的农场是必须的。"
+				"{ftbquests.chapter.1E3D245239215530.quest7B60A5D339D7C7D.description1}"
 				""
-				"它不需要有太大的规模，但种类要尽可能多——至少要覆盖&6西瓜和胡萝卜&r这两种重要的酿造原料。"
+				"{ftbquests.chapter.1E3D245239215530.quest7B60A5D339D7C7D.description2}"
 			]
 			icon: "minecraft:carrot"
 			id: "07B60A5D339D7C7D"
@@ -838,7 +838,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了酿造药水"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest7B60A5D339D7C7D.subtitle}"
 			tasks: [
 				{
 					count: 64L
@@ -853,7 +853,7 @@
 					type: "item"
 				}
 			]
-			title: "混合农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest7B60A5D339D7C7D.title}"
 			x: 11.5d
 			y: -5.0d
 		}
@@ -864,13 +864,13 @@
 				"02C443315671F107"
 			]
 			description: [
-				"首要便是自动化生产治疗药水。"
+				"{ftbquests.chapter.1E3D245239215530.quest1E86CEBD77A8D0B5.description1}"
 				""
-				"通过治疗药水，我们可以使实体恢复血量——这意味着我们可以通过&6长期取奶某几个固定实体来无穷尽的获取足够多的对应资源&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest1E86CEBD77A8D0B5.description2}"
 				""
-				"举例来说，通过治疗药水，您可以通过&n无限取奶村民获得绿宝石、蜜蜂获得蜂蜜. . .甚至您可以通过熊猫来获取力量药水&r！这可以在后续的部分流程中直接绕过一些自动化！"
+				"{ftbquests.chapter.1E3D245239215530.quest1E86CEBD77A8D0B5.description3}"
 				""
-				"因此，我&6强烈建议您完成治疗药水的自动化&r，并且通过&6动力泵&r缓慢往外泵出流体浇灌到实体身上来高效率利用药水（最高利用场景下，您可能需要设计一个时钟来控制）。进而通过冶炼炉 + 流体网络来完成后续大部分物资的自动化。"
+				"{ftbquests.chapter.1E3D245239215530.quest1E86CEBD77A8D0B5.description4}"
 			]
 			hide_dependency_lines: true
 			icon: {
@@ -887,7 +887,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了自动化药水"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest1E86CEBD77A8D0B5.subtitle}"
 			tasks: [
 				{
 					id: "7C2165011ADDCF48"
@@ -901,7 +901,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest1E86CEBD77A8D0B5.task.8944541390354632520.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -922,18 +922,18 @@
 					type: "fluid"
 				}
 			]
-			title: "治疗药水"
+			title: "{ftbquests.chapter.1E3D245239215530.quest1E86CEBD77A8D0B5.title}"
 			x: -0.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["07B60A5D339D7C7D"]
 			description: [
-				"制作金胡萝卜和闪烁的西瓜片供应酿造原料。"
+				"{ftbquests.chapter.1E3D245239215530.quest32D43780BB56C1E.description1}"
 				""
-				"其中金锭需要从&6虚拟矿脉&r或者&6取奶僵尸猪灵&r的方式获取，我的建议是通过取奶僵尸猪灵——只要您后续能够自动化&6瞬间伤害&r药水，就可以通过无休止的对器官改造过后的僵尸猪人取奶完成资源的全自动获取。"
+				"{ftbquests.chapter.1E3D245239215530.quest32D43780BB56C1E.description2}"
 				""
-				"现阶段您可以暂不进行金锭的稳定获取，等到后续完成对伤害药水的量产，获取金锭会更加轻松。"
+				"{ftbquests.chapter.1E3D245239215530.quest32D43780BB56C1E.description3}"
 			]
 			icon: "minecraft:golden_carrot"
 			id: "032D43780BB56C1E"
@@ -943,7 +943,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了酿造药水"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest32D43780BB56C1E.subtitle}"
 			tasks: [
 				{
 					count: 64L
@@ -958,7 +958,7 @@
 					type: "item"
 				}
 			]
-			title: "酿造原料"
+			title: "{ftbquests.chapter.1E3D245239215530.quest32D43780BB56C1E.title}"
 			x: 2.5d
 			y: -2.0d
 		}
@@ -968,9 +968,9 @@
 				"2A318E77FFB451CB"
 			]
 			description: [
-				"当然您也会发现，很多亡灵生物是无法通过治疗药水治疗的——相反，您需要瞬间伤害药水。"
+				"{ftbquests.chapter.1E3D245239215530.quest59490F6E97372FD0.description1}"
 				""
-				"使用&6发酵蛛眼&r扭转治疗药水的效果是一个优秀的方案，当然您也可以尝试其他的路线。"
+				"{ftbquests.chapter.1E3D245239215530.quest59490F6E97372FD0.description2}"
 			]
 			icon: {
 				Count: 1
@@ -986,7 +986,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了更多的自动化"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest59490F6E97372FD0.subtitle}"
 			tasks: [
 				{
 					id: "43BEE54C54EE9F26"
@@ -1000,7 +1000,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest59490F6E97372FD0.task.4881591162121396006.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1021,18 +1021,18 @@
 					type: "fluid"
 				}
 			]
-			title: "伤害药水"
+			title: "{ftbquests.chapter.1E3D245239215530.quest59490F6E97372FD0.title}"
 			x: -0.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["59490F6E97372FD0"]
 			description: [
-				"之前的流程里面，我们难免需要使用金作为材料。"
+				"{ftbquests.chapter.1E3D245239215530.quest169B9727420A9DFB.description1}"
 				""
-				"为了能够解决此资源消耗问题，我强烈建议您&6诱引僵尸猪灵进行取奶&r并且通过瞬间伤害药水保持它的存活，以支持我们金的日常消耗。"
+				"{ftbquests.chapter.1E3D245239215530.quest169B9727420A9DFB.description2}"
 				""
-				"虽然这有些残忍，但它们只是数据，对于大世界计算机的构建来说，数据如果能够为超越自身而做出贡献，也是尽职尽责了。"
+				"{ftbquests.chapter.1E3D245239215530.quest169B9727420A9DFB.description3}"
 			]
 			hide_dependency_lines: true
 			id: "169B9727420A9DFB"
@@ -1042,14 +1042,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了自给自足"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest169B9727420A9DFB.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "634F0C33F6C3A8D0"
 				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
-			title: "金锭农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest169B9727420A9DFB.title}"
 			x: 7.5d
 			y: 16.0d
 		}
@@ -1061,11 +1061,11 @@
 				"169B9727420A9DFB"
 			]
 			description: [
-				"紫水晶有着一种特殊的性质——它作为一种时钟，在整个世界的各个位置均保持同步。"
+				"{ftbquests.chapter.1E3D245239215530.quest794800AE680288F1.description1}"
 				""
-				"您可以将其视作一种&6超距作用&r——或者说，它在游戏中其实是非常常见的一种存在。"
+				"{ftbquests.chapter.1E3D245239215530.quest794800AE680288F1.description2}"
 				""
-				"现在我们要利用它的这种特性，来尝试触摸大世界计算机的边界。"
+				"{ftbquests.chapter.1E3D245239215530.quest794800AE680288F1.description3}"
 			]
 			id: "794800AE680288F1"
 			rewards: [{
@@ -1074,22 +1074,22 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest794800AE680288F1.subtitle}"
 			tasks: [{
 				id: "0E95DF7495DAF3BE"
 				item: "kubejs:amethyst_resonator"
 				type: "item"
 			}]
-			title: "紫水晶共振器生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest794800AE680288F1.title}"
 			x: 13.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"木材在加工流程中必然会出现，因此一个&6林场&r是必须的。"
+				"{ftbquests.chapter.1E3D245239215530.quest198C8EC7A0F912CC.description1}"
 				""
-				"林场除了能够提供木材，其还能够提供源源不断的木炭和树苗资源，这对后面的流程都有非常大的帮助。"
+				"{ftbquests.chapter.1E3D245239215530.quest198C8EC7A0F912CC.description2}"
 			]
 			id: "198C8EC7A0F912CC"
 			rewards: [{
@@ -1098,23 +1098,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了提供基本材料"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest198C8EC7A0F912CC.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "25E73F47475B3160"
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
-			title: "林场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest198C8EC7A0F912CC.title}"
 			x: 5.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["59490F6E97372FD0"]
 			description: [
-				"您可以通过&6取奶溺尸&r来无限获取铜锭，或许有些残忍，但这是最优解。"
+				"{ftbquests.chapter.1E3D245239215530.quest21A2EDBEB76F1F31.description1}"
 				""
-				"当然，您也可以采用一些不残忍的方法，比如开采虚拟矿脉，但虚拟矿脉往往不是无限的，且涉及到远距离运输。"
+				"{ftbquests.chapter.1E3D245239215530.quest21A2EDBEB76F1F31.description2}"
 			]
 			hide_dependency_lines: true
 			id: "21A2EDBEB76F1F31"
@@ -1124,23 +1124,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了制作大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest21A2EDBEB76F1F31.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "7ACB367AAB3AD484"
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "铜锭农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest21A2EDBEB76F1F31.title}"
 			x: 4.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["59490F6E97372FD0"]
 			description: [
-				"为了后续能够大批量生产红石，您需要一个红石&6虚拟矿脉&r或者通过力量药水和余烬面粉注液来自动化生产红石。"
+				"{ftbquests.chapter.1E3D245239215530.quest2E93CEFF3FD4CD2F.description1}"
 				""
-				"力量药水可以通过&6取奶&r对应生物获得，如果运气好的话，您可以尝试熊猫或者北极熊这种相对比较温顺的动物。"
+				"{ftbquests.chapter.1E3D245239215530.quest2E93CEFF3FD4CD2F.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1156,7 +1156,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了红石自动化"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2E93CEFF3FD4CD2F.subtitle}"
 			tasks: [
 				{
 					id: "4B1A5F21944CCBF3"
@@ -1170,7 +1170,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest2E93CEFF3FD4CD2F.task.5411742500065692659.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1191,7 +1191,7 @@
 					type: "fluid"
 				}
 			]
-			title: "力量药水"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2E93CEFF3FD4CD2F.title}"
 			x: -0.5d
 			y: 13.0d
 		}
@@ -1200,7 +1200,7 @@
 				"2A62739EF5699406"
 				"2E93CEFF3FD4CD2F"
 			]
-			description: ["通过&6余烬面粉和力量药水&r，您可以自动化生产红石。当然，一个虚拟矿脉也可以解决这个问题，但问题也是同样的——如果使用虚拟矿脉，您可能需要提前很久挖空矿脉，或者远距离进行运输，这些都是不小的问题。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest4CB49D9C2DAD4D1B.description1}"]
 			id: "4CB49D9C2DAD4D1B"
 			rewards: [{
 				id: "7B379FAE5AF0FE11"
@@ -1208,14 +1208,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了红石电容"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest4CB49D9C2DAD4D1B.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "5674CC9AB67899EF"
 				item: { Count: 64, id: "minecraft:redstone" }
 				type: "item"
 			}]
-			title: "红石生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest4CB49D9C2DAD4D1B.title}"
 			x: 9.5d
 			y: 16.0d
 		}
@@ -1225,11 +1225,11 @@
 				"59490F6E97372FD0"
 			]
 			description: [
-				"为了生产锌矿，一个方案是&6洗炼火药&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest579BCD51E127B8C1.description1}"
 				""
-				"当然您也可以选择开采虚拟矿脉，不过我更会推荐能够完全自给自足的系统，也请您谅解。"
+				"{ftbquests.chapter.1E3D245239215530.quest579BCD51E127B8C1.description2}"
 				""
-				"通过余烬面粉和瞬间伤害药水，您便可以生产火药。"
+				"{ftbquests.chapter.1E3D245239215530.quest579BCD51E127B8C1.description3}"
 			]
 			id: "579BCD51E127B8C1"
 			rewards: [{
@@ -1238,20 +1238,20 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了锌"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest579BCD51E127B8C1.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "78ACB60794F30026"
 				item: "minecraft:gunpowder"
 				type: "item"
 			}]
-			title: "火药生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest579BCD51E127B8C1.title}"
 			x: 15.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["579BCD51E127B8C1"]
-			description: ["&6火药洗炼&r出的锌粒刚好可以用于制作锌锭来弥补我们的锌锭开销。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest7821B5DB2AF2E673.description1}"]
 			id: "7821B5DB2AF2E673"
 			rewards: [{
 				id: "2A5A3971C9D80ABF"
@@ -1259,14 +1259,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了生产零件"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest7821B5DB2AF2E673.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "5CBB0992AE8DC52A"
 				item: "create:zinc_ingot"
 				type: "item"
 			}]
-			title: "锌锭生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest7821B5DB2AF2E673.title}"
 			x: 12.0d
 			y: -2.0d
 		}
@@ -1276,9 +1276,9 @@
 				"21A2EDBEB76F1F31"
 			]
 			description: [
-				"一切源于黄铜，因此我们要追寻黄铜之路，利用并驾驭它。"
+				"{ftbquests.chapter.1E3D245239215530.quest6119004524D541AE.description1}"
 				""
-				"现在，请您&6自动化生产黄铜&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest6119004524D541AE.description2}"
 			]
 			id: "6119004524D541AE"
 			rewards: [{
@@ -1287,14 +1287,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "广泛不稳定"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest6119004524D541AE.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "26C1430E4B8040C3"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "黄铜生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest6119004524D541AE.title}"
 			x: 13.5d
 			y: -2.0d
 		}
@@ -1303,7 +1303,7 @@
 				"2A62739EF5699406"
 				"5A67CF3EB894A6E2"
 			]
-			description: ["通过夜视药水和余烬面粉，即可生产荧石粉，这对于后面生产各种部件提供了基本原料。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest6050469B9FD75F36.description1}"]
 			id: "6050469B9FD75F36"
 			rewards: [{
 				id: "30E9D1F33992178D"
@@ -1311,23 +1311,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了红石电容"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest6050469B9FD75F36.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "7B221378E0EDACA6"
 				item: "minecraft:glowstone_dust"
 				type: "item"
 			}]
-			title: "荧石粉生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest6050469B9FD75F36.title}"
 			x: 4.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["1E86CEBD77A8D0B5"]
 			description: [
-				"通过取奶&6发光鱿鱼&r或者&6蝙蝠&r，可以获得夜视药水。"
+				"{ftbquests.chapter.1E3D245239215530.quest5A67CF3EB894A6E2.description1}"
 				""
-				"当然，您也可以选择使用金胡萝卜酿造，这两者成本基本一致，看您对局势的具体判断。"
+				"{ftbquests.chapter.1E3D245239215530.quest5A67CF3EB894A6E2.description2}"
 			]
 			icon: {
 				Count: 1
@@ -1343,7 +1343,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了荧石"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest5A67CF3EB894A6E2.subtitle}"
 			tasks: [
 				{
 					id: "39364E9CD4017234"
@@ -1357,7 +1357,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest5A67CF3EB894A6E2.task.4122568944382997044.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1378,13 +1378,13 @@
 					type: "fluid"
 				}
 			]
-			title: "夜视药水"
+			title: "{ftbquests.chapter.1E3D245239215530.quest5A67CF3EB894A6E2.title}"
 			x: -0.5d
 			y: 11.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
-			description: ["生产粘液球的方式有很多，您可以通过&6面团加染料&r来实现粘液球的生产。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest4F3802758A456C7B.description1}"]
 			id: "4F3802758A456C7B"
 			rewards: [{
 				id: "5EEBB8AEE05A8453"
@@ -1392,23 +1392,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了电路基板"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest4F3802758A456C7B.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "1F68A73A7185DF6A"
 				item: "minecraft:slime_ball"
 				type: "item"
 			}]
-			title: "粘液球农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest4F3802758A456C7B.title}"
 			x: -3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["46E1C381CEC3C04A"]
 			description: [
-				"乙醇的来源广泛，不仅可以通过&6发酵&r获得，一些&6流程的副产物&r也会产出乙醇。"
+				"{ftbquests.chapter.1E3D245239215530.quest2117B03C990E1B9B.description1}"
 				""
-				"它不仅可以用于配方，也可以用于可控燃烧室进行燃烧工序，也可以用于产出应力。"
+				"{ftbquests.chapter.1E3D245239215530.quest2117B03C990E1B9B.description2}"
 			]
 			icon: "createdieselgenerators:ethanol_bucket"
 			id: "2117B03C990E1B9B"
@@ -1418,7 +1418,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了精制黄铜"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2117B03C990E1B9B.subtitle}"
 			tasks: [
 				{
 					id: "0713D11EA13C7E2E"
@@ -1432,7 +1432,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest2117B03C990E1B9B.task.509981112307318318.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1442,16 +1442,16 @@
 					type: "fluid"
 				}
 			]
-			title: "乙醇生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2117B03C990E1B9B.title}"
 			x: 4.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["37C0A31212CD0400"]
 			description: [
-				"通过&6洗涤岩浆块&r，即可批量生产黑曜石。"
+				"{ftbquests.chapter.1E3D245239215530.quest6C6B5BC7F1510FE9.description1}"
 				""
-				"这对后面生产龙息也非常有帮助。"
+				"{ftbquests.chapter.1E3D245239215530.quest6C6B5BC7F1510FE9.description2}"
 			]
 			id: "6C6B5BC7F1510FE9"
 			rewards: [{
@@ -1460,14 +1460,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了偏重齿轮"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest6C6B5BC7F1510FE9.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "791D66F2EBDC3085"
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			title: "黑曜石生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest6C6B5BC7F1510FE9.title}"
 			x: 16.5d
 			y: 16.0d
 		}
@@ -1477,9 +1477,9 @@
 				"4F3802758A456C7B"
 			]
 			description: [
-				"请您分清，岩浆是&6岩浆膏&r熔炼的产物，而不是熔岩。"
+				"{ftbquests.chapter.1E3D245239215530.quest37C0A31212CD0400.description1}"
 				""
-				"这需要您&6取奶岩浆怪&r完成自动化。当然，您也可以试着使用粘液球与烈焰粉的配方进行自动化。"
+				"{ftbquests.chapter.1E3D245239215530.quest37C0A31212CD0400.description2}"
 			]
 			icon: "minecraft:magma_cream"
 			id: "37C0A31212CD0400"
@@ -1489,23 +1489,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了黑曜石"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest37C0A31212CD0400.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "73B963E02035D720"
 				item: "minecraft:magma_cream"
 				type: "item"
 			}]
-			title: "量产岩浆膏"
+			title: "{ftbquests.chapter.1E3D245239215530.quest37C0A31212CD0400.title}"
 			x: 1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"获取方式很多，包括但不限于常规刷铁机，取奶铁傀儡，或者粉碎石头获取铁粒，亦或者是在洗涤火药时的副产物。"
+				"{ftbquests.chapter.1E3D245239215530.quest5CDC58087ECD81B7.description1}"
 				""
-				"这里给出您一个建议——您可以优先完成&6开采地幔矿藏&r的任务，其会包含大量铁作为副产物。"
+				"{ftbquests.chapter.1E3D245239215530.quest5CDC58087ECD81B7.description2}"
 			]
 			id: "5CDC58087ECD81B7"
 			rewards: [{
@@ -1514,23 +1514,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了生存"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest5CDC58087ECD81B7.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "6491C5A5C401EA17"
 				item: { Count: 64, id: "minecraft:iron_ingot" }
 				type: "item"
 			}]
-			title: "铁锭农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest5CDC58087ECD81B7.title}"
 			x: 4.0d
 			y: 18.5d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"批量生产沙子，进而制作灵魂沙而后制作石英然后. . ."
+				"{ftbquests.chapter.1E3D245239215530.quest5C190E1E0542DFE6.description1}"
 				""
-				"&6您很熟悉？&r但是我却没有什么印象. . ."
+				"{ftbquests.chapter.1E3D245239215530.quest5C190E1E0542DFE6.description2}"
 			]
 			id: "5C190E1E0542DFE6"
 			rewards: [{
@@ -1539,20 +1539,20 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了玫瑰石英"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest5C190E1E0542DFE6.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "4293D0C9DCC45F46"
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			title: "沙子农场"
+			title: "{ftbquests.chapter.1E3D245239215530.quest5C190E1E0542DFE6.title}"
 			x: -3.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["5C190E1E0542DFE6"]
-			description: ["通过沙子缠魂，即可大批量获取灵魂沙。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest69EB80D5AF98EC43.description1}"]
 			id: "69EB80D5AF98EC43"
 			rewards: [{
 				id: "620D38E430A8F21C"
@@ -1560,20 +1560,20 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了玫瑰石英"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest69EB80D5AF98EC43.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "3760CC6D904F0726"
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			title: "灵魂沙生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest69EB80D5AF98EC43.title}"
 			x: -0.5d
 			y: 14.5d
 		}
 		{
 			dependencies: ["69EB80D5AF98EC43"]
-			description: ["通过洗炼灵魂沙，低概率会获得下界石英。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.questBE49E1A0EDC23E6.description1}"]
 			hide_dependency_lines: true
 			id: "0BE49E1A0EDC23E6"
 			rewards: [{
@@ -1582,14 +1582,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了玫瑰石英"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.questBE49E1A0EDC23E6.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "4C6D1C386BF44748"
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			title: "下界石英生产"
+			title: "{ftbquests.chapter.1E3D245239215530.questBE49E1A0EDC23E6.title}"
 			x: 1.0d
 			y: 16.0d
 		}
@@ -1598,7 +1598,7 @@
 				"0BE49E1A0EDC23E6"
 				"4CB49D9C2DAD4D1B"
 			]
-			description: ["玫瑰石英作为一种特殊的材料，很适合用于部分近生物材料的制作。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest7A1DEDE82EED4BE6.description1}"]
 			id: "7A1DEDE82EED4BE6"
 			rewards: [{
 				id: "5D94B2216DC604EE"
@@ -1606,14 +1606,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了时序阀"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest7A1DEDE82EED4BE6.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "075B3602A9551E73"
 				item: "create:rose_quartz"
 				type: "item"
 			}]
-			title: "玫瑰石英生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest7A1DEDE82EED4BE6.title}"
 			x: 13.5d
 			y: 16.0d
 		}
@@ -1622,7 +1622,7 @@
 				"7A1DEDE82EED4BE6"
 				"25C3CC580C304AB2"
 			]
-			description: ["通过砂纸磨制玫瑰石英，即可得到磨制玫瑰石英。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest706EE5FE04BE06D8.description1}"]
 			id: "706EE5FE04BE06D8"
 			rewards: [{
 				id: "01A403746CF04714"
@@ -1630,14 +1630,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了时序阀"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest706EE5FE04BE06D8.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "4A3AAD4C3F9CDC14"
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			title: "磨制玫瑰石英生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest706EE5FE04BE06D8.title}"
 			x: 1.5d
 			y: 11.0d
 		}
@@ -1646,7 +1646,7 @@
 				"239E0F7A9A0E1B24"
 				"3CA1B288B92FE257"
 			]
-			description: ["通过地幔矿石、&5不稳定物质&r、酒精的混合，可以制作出哭泣的黑曜石。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest2081C22249A65EFD.description1}"]
 			id: "2081C22249A65EFD"
 			rewards: [{
 				id: "4F0BB4E0F8293A1B"
@@ -1654,25 +1654,25 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了结构栓"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2081C22249A65EFD.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "110BA755E98756E9"
 				item: "minecraft:crying_obsidian"
 				type: "item"
 			}]
-			title: "开采哭泣黑曜石"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2081C22249A65EFD.title}"
 			x: 8.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["0A9B08286B960B9F"]
 			description: [
-				"您需要制作一个&6抽油机&r，开采虚拟油田。"
+				"{ftbquests.chapter.1E3D245239215530.quest510293AECD56FF12.description1}"
 				""
-				"原油通过&6分馏&r之后，汽油可以作为可控燃烧室的有力燃料，柴油可以用于生产应力，都是非常有用的原料。"
+				"{ftbquests.chapter.1E3D245239215530.quest510293AECD56FF12.description2}"
 				""
-				"我们需要使用柴油用于&6随机刻弹簧&r制作中的降温，因此不得不开采油田。"
+				"{ftbquests.chapter.1E3D245239215530.quest510293AECD56FF12.description3}"
 			]
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "510293AECD56FF12"
@@ -1682,7 +1682,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了柴油"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest510293AECD56FF12.subtitle}"
 			tasks: [
 				{
 					id: "696B63E93B60852A"
@@ -1696,7 +1696,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest510293AECD56FF12.task.7596275049865184554.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1711,16 +1711,16 @@
 					type: "item"
 				}
 			]
-			title: "原油开采"
+			title: "{ftbquests.chapter.1E3D245239215530.quest510293AECD56FF12.title}"
 			x: 16.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["510293AECD56FF12"]
 			description: [
-				"通过原油分馏即可获得柴油。"
+				"{ftbquests.chapter.1E3D245239215530.quest1356DEE38194F814.description1}"
 				""
-				"剩余的汽油也可以拿去产生应力或者用于供应燃烧室。"
+				"{ftbquests.chapter.1E3D245239215530.quest1356DEE38194F814.description2}"
 			]
 			icon: "createdieselgenerators:diesel_bucket"
 			id: "1356DEE38194F814"
@@ -1730,7 +1730,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了随机刻弹簧"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest1356DEE38194F814.subtitle}"
 			tasks: [
 				{
 					id: "0803E0DFB37112C4"
@@ -1744,7 +1744,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest1356DEE38194F814.task.577552428626416324.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -1754,7 +1754,7 @@
 					type: "fluid"
 				}
 			]
-			title: "柴油生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest1356DEE38194F814.title}"
 			x: 12.5d
 			y: 14.0d
 		}
@@ -1763,7 +1763,7 @@
 				"5C190E1E0542DFE6"
 				"4C734EDC56B5A572"
 			]
-			description: ["由于砂纸消耗量其实并不高，因此自动化其实是非必要的。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest25C3CC580C304AB2.description1}"]
 			hide_dependency_lines: true
 			id: "25C3CC580C304AB2"
 			rewards: [{
@@ -1772,7 +1772,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了磨制"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest25C3CC580C304AB2.subtitle}"
 			tasks: [{
 				id: "2A50CF4FA08C89DD"
 				item: {
@@ -1784,13 +1784,13 @@
 				}
 				type: "item"
 			}]
-			title: "砂纸自动化"
+			title: "{ftbquests.chapter.1E3D245239215530.quest25C3CC580C304AB2.title}"
 			x: 2.5d
 			y: 16.0d
 		}
 		{
 			dependencies: ["3E538F7B30265340"]
-			description: ["&7某种联系似乎存在于这之中. . .&r"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest34FEB80CC16A8163.description1}"]
 			id: "34FEB80CC16A8163"
 			rewards: [{
 				id: "4E099DBFCEE89AE9"
@@ -1798,7 +1798,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest34FEB80CC16A8163.subtitle}"
 			tasks: [{
 				id: "6909EA1B856143F8"
 				item: "kubejs:data_bus"
@@ -1809,7 +1809,7 @@
 		}
 		{
 			dependencies: ["794800AE680288F1"]
-			description: ["&7某种联系似乎存在于这之中. . .&r"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest5E77E1C50CC8353C.description1}"]
 			id: "5E77E1C50CC8353C"
 			rewards: [{
 				id: "7A32AAC1B9B193B1"
@@ -1817,7 +1817,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest5E77E1C50CC8353C.subtitle}"
 			tasks: [{
 				id: "0124611DE3B38654"
 				item: "kubejs:buffer_circuit"
@@ -1828,7 +1828,7 @@
 		}
 		{
 			dependencies: ["56E5B7D978622ABB"]
-			description: ["&7某种联系似乎存在于这之中. . .&r"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest66786E38093D056A.description1}"]
 			id: "66786E38093D056A"
 			rewards: [{
 				id: "2EA84C7FB6A8904B"
@@ -1836,7 +1836,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest66786E38093D056A.subtitle}"
 			tasks: [{
 				id: "6B3789350D1103CF"
 				item: "kubejs:timing_module"
@@ -1847,7 +1847,7 @@
 		}
 		{
 			dependencies: ["44C94FE229AA4E1B"]
-			description: ["&7某种联系似乎存在于这之中. . .&r"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest54D8F5829B0839BF.description1}"]
 			id: "54D8F5829B0839BF"
 			rewards: [{
 				id: "22E64C50ACC24C8D"
@@ -1855,7 +1855,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest54D8F5829B0839BF.subtitle}"
 			tasks: [{
 				id: "12A5DEEF5F6CBA44"
 				item: "kubejs:spatial_stabilizer"
@@ -1866,7 +1866,7 @@
 		}
 		{
 			dependencies: ["1FF0FAA4AB49D901"]
-			description: ["&7某种联系似乎存在于这之中. . .&r"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest6D170C6436A82AE.description1}"]
 			id: "06D170C6436A82AE"
 			rewards: [{
 				id: "4DED434723688E09"
@@ -1874,7 +1874,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest6D170C6436A82AE.subtitle}"
 			tasks: [{
 				id: "6C5CB83AF0EA8380"
 				item: "kubejs:oracle_module"
@@ -1888,7 +1888,7 @@
 				"7D765D69D05EF9E6"
 				"56C5CC3C18FB5AC0"
 			]
-			description: ["&7某种联系似乎存在于这之中. . .&r"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest233B5C6E50EACA0F.description1}"]
 			id: "233B5C6E50EACA0F"
 			rewards: [{
 				id: "53C86EACD0A67F2D"
@@ -1896,7 +1896,7 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest233B5C6E50EACA0F.subtitle}"
 			tasks: [{
 				id: "410270C8E35CBD00"
 				item: "kubejs:circuit_board"
@@ -1907,7 +1907,7 @@
 		}
 		{
 			dependencies: ["5C190E1E0542DFE6"]
-			description: ["通过大量冶炼沙子，即可获得足够多的玻璃。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest483232429CC1EC6A.description1}"]
 			icon: "minecraft:glass"
 			id: "483232429CC1EC6A"
 			rewards: [{
@@ -1916,20 +1916,20 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest483232429CC1EC6A.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "056E36D344D83CB5"
 				item: { Count: 64, id: "minecraft:glass" }
 				type: "item"
 			}]
-			title: "玻璃自动化"
+			title: "{ftbquests.chapter.1E3D245239215530.quest483232429CC1EC6A.title}"
 			x: -0.5d
 			y: 6.5d
 		}
 		{
 			dependencies: ["0A9B08286B960B9F"]
-			description: ["青金石并没有什么有效的获取方法，目前最优的方法是通过&6虚拟矿脉&r开采获取。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest7FD4BB658CCB587F.description1}"]
 			id: "7FD4BB658CCB587F"
 			rewards: [{
 				id: "306EBB1282F91B0E"
@@ -1937,14 +1937,14 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了海晶灯"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest7FD4BB658CCB587F.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "33198DF958F34A75"
 				item: "minecraft:lapis_lazuli"
 				type: "item"
 			}]
-			title: "青金石采掘"
+			title: "{ftbquests.chapter.1E3D245239215530.quest7FD4BB658CCB587F.title}"
 			x: 16.5d
 			y: 2.0d
 		}
@@ -1953,7 +1953,7 @@
 				"706EE5FE04BE06D8"
 				"169B9727420A9DFB"
 			]
-			description: ["一种常见的控制用电路。除了用于制作&6时序控制器&r外，还可以作为大世界计算机的部件。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest30C023DA44DCA0BC.description1}"]
 			id: "30C023DA44DCA0BC"
 			rewards: [{
 				id: "42FFC812A58AAC0A"
@@ -1961,23 +1961,23 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了模拟单元"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest30C023DA44DCA0BC.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "18B0F964A8328A79"
 				item: "create_connected:control_chip"
 				type: "item"
 			}]
-			title: "控制芯片生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest30C023DA44DCA0BC.title}"
 			x: 1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["7FD4BB658CCB587F"]
 			description: [
-				"通过缠魂青金石，可以获得海晶沙砾和海晶碎片，可以用于生产海晶灯。"
+				"{ftbquests.chapter.1E3D245239215530.quest158FC132127B3644.description1}"
 				""
-				"不过在这个过程中，&6海晶碎片&r可能会溢出很多，您可以考虑一下如何后续利用。"
+				"{ftbquests.chapter.1E3D245239215530.quest158FC132127B3644.description2}"
 			]
 			id: "158FC132127B3644"
 			rewards: [{
@@ -1986,20 +1986,20 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了模拟单元"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest158FC132127B3644.subtitle}"
 			tasks: [{
 				count: 64L
 				id: "51A513B656A3C807"
 				item: "minecraft:sea_lantern"
 				type: "item"
 			}]
-			title: "海晶灯生产"
+			title: "{ftbquests.chapter.1E3D245239215530.quest158FC132127B3644.title}"
 			x: 15.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["1E86CEBD77A8D0B5"]
-			description: ["同样，您也可以通过&6实体取奶&r的方式方便的获得足够多的抗火药水。"]
+			description: ["{ftbquests.chapter.1E3D245239215530.quest9FE702C25B1EB29.description1}"]
 			icon: {
 				Count: 1
 				id: "minecraft:potion"
@@ -2014,7 +2014,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了谕示门"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest9FE702C25B1EB29.subtitle}"
 			tasks: [
 				{
 					id: "38763A007AF6E95B"
@@ -2028,7 +2028,7 @@
 							}
 						}
 					}
-					title: "点此获取&6特制任务屏幕"
+					title: "{ftbquests.chapter.1E3D245239215530.quest9FE702C25B1EB29.task.4068503087113234779.title}"
 					type: "maa:claim_item"
 				}
 				{
@@ -2049,16 +2049,16 @@
 					type: "fluid"
 				}
 			]
-			title: "抗火药水"
+			title: "{ftbquests.chapter.1E3D245239215530.quest9FE702C25B1EB29.title}"
 			x: -0.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["1B23C2E681511D87"]
 			description: [
-				"通过逆因芯片，我们可以&6轻易制作出大世界计算机&r. . ."
+				"{ftbquests.chapter.1E3D245239215530.quest56D4ED795F1CFC15.description1}"
 				""
-				"但等等. . .似乎有点问题。"
+				"{ftbquests.chapter.1E3D245239215530.quest56D4ED795F1CFC15.description2}"
 			]
 			id: "56D4ED795F1CFC15"
 			rewards: [{
@@ -2067,32 +2067,32 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "我们发现、我们创造"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest56D4ED795F1CFC15.subtitle}"
 			tasks: [{
 				id: "31FD6E8596151559"
 				item: "kubejs:world_computer"
 				type: "item"
 			}]
-			title: "铸造世界计算机"
+			title: "{ftbquests.chapter.1E3D245239215530.quest56D4ED795F1CFC15.title}"
 			x: 8.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["56D4ED795F1CFC15"]
 			description: [
-				"我发现了一些问题。"
+				"{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.description1}"
 				""
-				"大世界计算机目前无法使用——这是在预期之内的，因为我们还差重要的模块需要安装，但在安装之前，我发现了一些严重的问题。"
+				"{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.description2}"
 				""
-				"&6大世界计算机本身似乎有所图&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.description3}"
 				""
-				"这是一个&c极其危险&r的情况，如果一个本应被我们所利用和控制的工具产生了自我的意识并且意图创造某些东西，会严重影响这个世界的稳定。"
+				"{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.description4}"
 				""
-				"如果我们继续推进这个项目，很有可能会造成一些难以预测的情况，但具体会怎么样，没有任何人知道。"
+				"{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.description5}"
 				""
-				"因此，在这里我希望您能够进行抉择，是否要继续完成大世界计算机的项目。"
+				"{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.description6}"
 				""
-				"如若您放弃大世界计算机的构建，我会以&b一枚钻石币&r作为补偿。"
+				"{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.description7}"
 			]
 			icon: "minecraft:chiseled_bookshelf"
 			id: "658FDC0B806315A3"
@@ -2103,24 +2103,24 @@
 				type: "choice"
 			}]
 			shape: "square"
-			subtitle: "是否放弃追寻大世界计算机"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.subtitle}"
 			tasks: [{
 				id: "6C3F1D924C70D957"
-				title: "做出抉择"
+				title: "{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.task.7799985593813883223.title}"
 				type: "checkmark"
 			}]
-			title: "抉择"
+			title: "{ftbquests.chapter.1E3D245239215530.quest658FDC0B806315A3.title}"
 			x: 19.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["658FDC0B806315A3"]
 			description: [
-				"如果因为技术危险就放弃，确实不符合基本的探索理念。"
+				"{ftbquests.chapter.1E3D245239215530.quest7F2EB186A1EAC2AC.description1}"
 				""
-				"我理解您的抉择，历来人们探索前路都是在风险下进行的。如果因为可能的危险就停滞，对探索者来说这无异于因噎废食。"
+				"{ftbquests.chapter.1E3D245239215530.quest7F2EB186A1EAC2AC.description2}"
 				""
-				"&6我已将大世界计算机的多方块结构输入到您的手持打印机中，请您按照后续流程，完成大世界计算机的构建。&r"
+				"{ftbquests.chapter.1E3D245239215530.quest7F2EB186A1EAC2AC.description3}"
 			]
 			id: "7F2EB186A1EAC2AC"
 			invisible: true
@@ -2130,33 +2130,33 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "我已决心奉行于此"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest7F2EB186A1EAC2AC.subtitle}"
 			tasks: [{
 				icon: "kubejs:world_computer"
 				id: "174026B5CABD1263"
 				isServer: false
 				stage: "ftb_world_computer_1"
-				title: "踏向前路"
+				title: "{ftbquests.chapter.1E3D245239215530.quest7F2EB186A1EAC2AC.task.1675381623614149219.title}"
 				type: "maa:astages"
 			}]
-			title: "谕示非天启"
+			title: "{ftbquests.chapter.1E3D245239215530.quest7F2EB186A1EAC2AC.title}"
 			x: 6.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["7F2EB186A1EAC2AC"]
 			description: [
-				"大世界计算机的配方比较奇特，需要填充&d异彩化合物&r作为其燃料。在燃料不满足某个条件的时候，配方便会失败。"
+				"{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.description1}"
 				""
-				"不同的配方会有着不同的燃料槽需求，因此仅仅依靠疯狂填充燃料有些时候是不理智的。"
+				"{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.description2}"
 				""
-				"为了制造世界渲染器，我们需要使用&6逆因芯片&r和&6电路基板&r，配合&6异彩化合物&r，在异彩燃料&6尽可能填满燃料槽&r的情况下，完成这个配方。"
+				"{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.description3}"
 				""
-				"在&6配方加工的过程&r中，您仍可以添加新的异彩化合物作为燃料。"
+				"{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.description4}"
 				""
-				"如果该配方在完成时没有输出，说明其燃料量不足。配方结束时燃料的数量越多，其成功概率也会有显著提高。"
+				"{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.description5}"
 				""
-				"在制作异彩化合物时，由于其使用的材料存在大量子配方，您需要使用过滤器的&6黑名单&r功能进行限制，以避免产出你不需要的产物。需额外注意，使用桶装流体即可标记对应的流体。"
+				"{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.description6}"
 			]
 			icon: "kubejs:world_renderer"
 			id: "2B0834ECB22778B8"
@@ -2166,7 +2166,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机！"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.subtitle}"
 			tasks: [
 				{
 					count: 8L
@@ -2184,16 +2184,16 @@
 					type: "item"
 				}
 			]
-			title: "世界渲染器"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2B0834ECB22778B8.title}"
 			x: 10.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["2B0834ECB22778B8"]
 			description: [
-				"制作&6数据压缩器&r的方法是类似的。但是请注意，数据压缩器配方的&6燃料槽会不断损失&r，其损失量预估为当前存储值的&62%&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest44DD8F6571C6044D.description1}"
 				""
-				"因此，在早些时候对燃料槽进行填充是不理智的。尽可能在靠后阶段填充燃料，以节约&d异彩化合物&r的开销！"
+				"{ftbquests.chapter.1E3D245239215530.quest44DD8F6571C6044D.description2}"
 			]
 			id: "44DD8F6571C6044D"
 			rewards: [{
@@ -2202,25 +2202,25 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机！！"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest44DD8F6571C6044D.subtitle}"
 			tasks: [{
 				count: 9L
 				id: "2DA76B50BB0D6FCA"
 				item: "kubejs:data_compressor"
 				type: "item"
 			}]
-			title: "数据压缩器"
+			title: "{ftbquests.chapter.1E3D245239215530.quest44DD8F6571C6044D.title}"
 			x: 6.5d
 			y: 10.5d
 		}
 		{
 			dependencies: ["44DD8F6571C6044D"]
 			description: [
-				"制作&6脑处理器&r的方法略有不同。"
+				"{ftbquests.chapter.1E3D245239215530.quest1F977AC924FB10DE.description1}"
 				""
-				"在前文的方式中，尽管燃料槽为空，配方也不会失败。但脑处理器的制作为了维持生物活性，需要不断消耗燃料，&o&6如果燃料为空，那么脑处理器的制作也会失败&r&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest1F977AC924FB10DE.description2}"
 				""
-				"所幸，脑处理器消耗的燃料数量并非当前数量的百分比消耗，因此只要输入速度够快，处理器的制作就不会出现问题。"
+				"{ftbquests.chapter.1E3D245239215530.quest1F977AC924FB10DE.description3}"
 			]
 			id: "1F977AC924FB10DE"
 			rewards: [{
@@ -2229,25 +2229,25 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机！！！"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest1F977AC924FB10DE.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "653DF626499EBAFC"
 				item: "kubejs:cerebral_brain_processor"
 				type: "item"
 			}]
-			title: "脑处理器"
+			title: "{ftbquests.chapter.1E3D245239215530.quest1F977AC924FB10DE.title}"
 			x: 10.5d
 			y: 10.5d
 		}
 		{
 			dependencies: ["1F977AC924FB10DE"]
 			description: [
-				"制作&6虚空衍射器&r最佳是在燃料槽为&650%充满&r的情况下。"
+				"{ftbquests.chapter.1E3D245239215530.quest70460BDB2BF8F41.description1}"
 				""
-				"在该加工配方下，每秒其会损失当前&61%&r的燃料。同时，大世界计算机会根据自身燃料槽的比例，对应输出红石信号。在燃料槽全满的情况下其会输出15的红石信号，如果为空则输出0。"
+				"{ftbquests.chapter.1E3D245239215530.quest70460BDB2BF8F41.description2}"
 				""
-				"因此，您可以通过红石监听红石信号实现负反馈调节，以保证能够稳定产出虚空衍射器。"
+				"{ftbquests.chapter.1E3D245239215530.quest70460BDB2BF8F41.description3}"
 			]
 			id: "070460BDB2BF8F41"
 			rewards: [{
@@ -2256,27 +2256,27 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机！！！！"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest70460BDB2BF8F41.subtitle}"
 			tasks: [{
 				count: 3L
 				id: "08E740E0177B3FB5"
 				item: { Count: 3, id: "kubejs:void_diffraction_vault" }
 				type: "item"
 			}]
-			title: "虚空衍射室"
+			title: "{ftbquests.chapter.1E3D245239215530.quest70460BDB2BF8F41.title}"
 			x: 6.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["070460BDB2BF8F41"]
 			description: [
-				"制作&6运算核心&r与制作&6虚空衍射器&r是类似的，但区别在于其输出红石信号的规则和最佳比例。"
+				"{ftbquests.chapter.1E3D245239215530.quest6D71985A5F5B631F.description1}"
 				""
-				"在该加工配方下，每秒其会损失当前&61%&r的燃料。其最佳的燃料槽比例是&6完全随机&r的。如果当前燃料数量和目标燃料有差异，差异越大，输出越强的红石信号。如果差异很小，则红石信号会归零。"
+				"{ftbquests.chapter.1E3D245239215530.quest6D71985A5F5B631F.description2}"
 				""
-				"但您无法通过红石信号来区分出当前燃料是缺少还是过饱和。"
+				"{ftbquests.chapter.1E3D245239215530.quest6D71985A5F5B631F.description3}"
 				""
-				"因此，您可以通过红石监听红石信号实现负反馈调节，以保证能够稳定产出运算核心。"
+				"{ftbquests.chapter.1E3D245239215530.quest6D71985A5F5B631F.description4}"
 			]
 			id: "6D71985A5F5B631F"
 			rewards: [{
@@ -2285,25 +2285,25 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机！！！！！"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest6D71985A5F5B631F.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "069E1C77D78C0FF1"
 				item: { Count: 2, id: "kubejs:computing_core" }
 				type: "item"
 			}]
-			title: "运算核心"
+			title: "{ftbquests.chapter.1E3D245239215530.quest6D71985A5F5B631F.title}"
 			x: 10.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["6D71985A5F5B631F"]
 			description: [
-				"制作&6实体模拟器&r又与制作&6运算核心&r是类似的，区别在于——"
+				"{ftbquests.chapter.1E3D245239215530.quest565EC6D37A612B03.description1}"
 				""
-				"在该加工配方下，&6每三十秒配方会小范围波动更新一次最佳燃料槽的比例&r，您需要通过信号的上升和下降沿来判断具体的最佳比例位置。"
+				"{ftbquests.chapter.1E3D245239215530.quest565EC6D37A612B03.description2}"
 				""
-				"您可以在此配方工作时采用手动方案进行人工校准，也可以通过信号检测，判断随着时间升高/下降来得到当前与最佳比例的位置关系，进而决定是否要输入。"
+				"{ftbquests.chapter.1E3D245239215530.quest565EC6D37A612B03.description3}"
 			]
 			id: "565EC6D37A612B03"
 			rewards: [{
@@ -2312,7 +2312,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机！！！！！！"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest565EC6D37A612B03.subtitle}"
 			tasks: [{
 				id: "59C9C139D84C3BB6"
 				item: "kubejs:entity_simulator"
@@ -2324,13 +2324,13 @@
 		{
 			dependencies: ["565EC6D37A612B03"]
 			description: [
-				"这是最后一个部件了，&6量子维度解算器&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest38D0994640B7E463.description1}"
 				""
-				"在该加工配方下，&6每三十秒配方会小范围波动更新一次最佳燃料槽的比例&r，如果在当前30秒周期内，您与最佳比例的偏移量超过&6燃料槽总量的15%&r，那么整个配方就会失败。"
+				"{ftbquests.chapter.1E3D245239215530.quest38D0994640B7E463.description2}"
 				""
-				"根据其输出红石信号的规律，只要您保证红石信号输出的&6强度低于2&r，即可正常推进配方。"
+				"{ftbquests.chapter.1E3D245239215530.quest38D0994640B7E463.description3}"
 				""
-				"您可以在此配方工作时采用手动方案进行人工校准，也可以通过信号检测，判断随着时间升高/下降来得到当前与最佳比例的位置关系，进而决定是否要输入。"
+				"{ftbquests.chapter.1E3D245239215530.quest38D0994640B7E463.description4}"
 			]
 			id: "38D0994640B7E463"
 			rewards: [{
@@ -2339,7 +2339,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "为了大世界计算机！！！！！！！"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest38D0994640B7E463.subtitle}"
 			tasks: [{
 				id: "2AAC7C5EB2C21B17"
 				item: "kubejs:quantum_dimension_resolver"
@@ -2351,13 +2351,13 @@
 		{
 			dependencies: ["38D0994640B7E463"]
 			description: [
-				"恭喜！至此，您完成了大世界计算机的构建——进而我们获取到了&6世界注入&r的基本能力。"
+				"{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.description1}"
 				""
-				"将&6任意大世界令牌&r与&6逆因芯片&r放置在完成构造的大世界计算机中执行配方，我们就能完成大世界计算机对于当前世界的逻辑注入。"
+				"{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.description2}"
 				""
-				"对于您来说，您可以使用大世界计算机自由的更改一些世界常数，并且制造一些以前&d完全无法想象&r的产物。"
+				"{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.description3}"
 				""
-				"对于我来说，得益于您的不懈探索，我对于世界的掌控程度又一次得到了提高，这对我们后续的发展有着极其重要的作用。"
+				"{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.description4}"
 			]
 			icon: "kubejs:world_computer"
 			id: "133A28D884F01479"
@@ -2370,7 +2370,7 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "288EEBFD56A66F65"
-					title: "解锁头衔：&e大世界建设者"
+					title: "{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.reward.2922532681523031909.title}"
 					titleId: "kubejs:world_machine_builder"
 					type: "titles:title"
 				}
@@ -2379,7 +2379,7 @@
 					id: "080FF1EA76A2E3D5"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.reward.580948866269111253.title}"
 					type: "maa:kube"
 				}
 				{
@@ -2389,7 +2389,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "倘若星不再依照星轨行进，那我又该将航线驶向何方"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.subtitle}"
 			tasks: [{
 				id: "39425DBC3774D133"
 				item: {
@@ -2413,21 +2413,21 @@
 						]
 					}
 				}
-				title: "任意大世界令牌"
+				title: "{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.task.4125963271590433075.title}"
 				type: "item"
 			}]
-			title: "&6庆贺吧！此乃大世界计算机！&r"
+			title: "{ftbquests.chapter.1E3D245239215530.quest133A28D884F01479.title}"
 			x: 8.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"您可以通过开胸牛来从其胸腔中获取&6乳腺&r。"
+				"{ftbquests.chapter.1E3D245239215530.quest2C443315671F107.description1}"
 				""
-				"在不同的生物上装备乳腺，其有着不同的取奶效果——比如说，装备在铁傀儡身上，可以手持铁桶右键&6铁傀儡&r获得&6熔融铁&r；装备在海龟身上，则可以用玻璃瓶从&6海龟&r身上获取到&6神龟药水&r. . .不过在这个过程中生物会损失生命值。"
+				"{ftbquests.chapter.1E3D245239215530.quest2C443315671F107.description2}"
 				""
-				"后续我们会大量使用这种方法来获取资源，因此请您尽可能多的获取该器官以备不时之需。"
+				"{ftbquests.chapter.1E3D245239215530.quest2C443315671F107.description3}"
 			]
 			id: "02C443315671F107"
 			rewards: [{
@@ -2436,7 +2436,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "只从牛身上取奶有些不公平"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.quest2C443315671F107.subtitle}"
 			tasks: [{
 				id: "3250DD269D3D6257"
 				item: {
@@ -2446,20 +2446,20 @@
 				}
 				type: "item"
 			}]
-			title: "获取所有生物的奶"
+			title: "{ftbquests.chapter.1E3D245239215530.quest2C443315671F107.title}"
 			x: 8.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2650CE0D76584853"]
 			description: [
-				"很多时候，我们需要从世界上获取极其大量的矿物——其数量大到直接开采获得几乎是不可能的。"
+				"{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.description1}"
 				""
-				"为此，我们需要开采一些特殊的“数据矿藏”来解决此类问题。"
+				"{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.description2}"
 				""
-				"通过&6探矿杖&r，可以探测到当前区块中的隐藏的虚拟矿脉，当您确定了虚拟矿脉后，即可通过&6矿物钻井/流体钻井&r对其进行开采。"
+				"{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.description3}"
 				""
-				"这个过程中，您需要为矿机提供&6极其大量的应力&r，并且选取对应的钻头。"
+				"{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.description4}"
 			]
 			icon: "createoreexcavation:drilling_machine"
 			id: "0A9B08286B960B9F"
@@ -2468,7 +2468,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "虚拟矿藏开掘"
+			subtitle: "{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.subtitle}"
 			tasks: [
 				{
 					id: "0DD53D7158B3373D"
@@ -2488,7 +2488,7 @@
 							]
 						}
 					}
-					title: "矿物钻井/流体钻井"
+					title: "{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.task.996770449561171773.title}"
 					type: "item"
 				}
 				{
@@ -2513,7 +2513,7 @@
 							]
 						}
 					}
-					title: "任意钻头"
+					title: "{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.task.5242264479392233051.title}"
 					type: "item"
 				}
 				{
@@ -2528,10 +2528,10 @@
 					type: "item"
 				}
 			]
-			title: "开采虚拟矿藏"
+			title: "{ftbquests.chapter.1E3D245239215530.questA9B08286B960B9F.title}"
 			x: 8.5d
 			y: 18.5d
 		}
 	]
-	title: "传闻：大世界计算机"
+	title: "{ftbquests.chapter.1E3D245239215530.title}"
 }

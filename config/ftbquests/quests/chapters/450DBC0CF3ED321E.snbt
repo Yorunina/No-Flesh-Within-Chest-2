@@ -142,11 +142,11 @@
 		{
 			dependencies: ["75FEA1DD7E2149B2"]
 			description: [
-				"所谓技艺，正是从千锤百炼中提纯而出的经验。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.questA95F8EA7CD79951.description1}"
 				""
-				"一切的工匠锻造都是从&6锤子&r开始，因为它并不是一个格外精密的部件，仅需要原始的组合，就可以组装出一个能堪一用的工具。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.questA95F8EA7CD79951.description2}"
 				""
-				"锤子的功效与其制作材质有关，此处请允许我&6以圆石制的锤子为例&r，请您按照配方制作一个锤子。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.questA95F8EA7CD79951.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "0A95F8EA7CD79951"
@@ -155,7 +155,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作工匠锤"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.questA95F8EA7CD79951.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -187,16 +187,16 @@
 				}
 				type: "item"
 			}]
-			title: "从锤子开始"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.questA95F8EA7CD79951.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0A95F8EA7CD79951"]
 			description: [
-				"工匠使用的工作台与常规的工作台有些许差异，您可以通过&6手持锤子右键工作台将其转换为加工台&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest5A1D7D83A92CCA53.description1}"
 				""
-				"加工台即是进行匠艺加工的核心方块。您可以将任何工具放置到加工台中间的空白处，即会显示该工具可供改造的部件。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest5A1D7D83A92CCA53.description2}"
 			]
 			id: "5A1D7D83A92CCA53"
 			rewards: [
@@ -208,40 +208,40 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "4FDF777E61EB30BF"
-					title: "解锁头衔：&e新世界工匠"
+					title: "{ftbquests.chapter.450DBC0CF3ED321E.quest5A1D7D83A92CCA53.reward.5755450233495171263.title}"
 					titleId: "kubejs:new_tinker"
 					type: "titles:title"
 				}
 			]
-			subtitle: "以锤锻态"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest5A1D7D83A92CCA53.subtitle}"
 			tasks: [{
 				block: "tetra:basic_workbench"
 				block_type: 0
 				checkItem: false
 				id: "725A7E4838E8888D"
 				isItemInteraction: false
-				title: "使用加工台"
+				title: "{ftbquests.chapter.450DBC0CF3ED321E.quest5A1D7D83A92CCA53.task.8240037316885252237.title}"
 				type: "questsadditions:use"
 				value: 1L
 			}]
-			title: "匠艺工作台"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest5A1D7D83A92CCA53.title}"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["5A1D7D83A92CCA53"]
 			description: [
-				"通过将常规的铲子放置在加工台上，便会展示这把铲子可以改造的&6槽位&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.description1}"
 				""
-				"铲子作为一柄&6单头工具&r，其具有一个&6头&r作为主要槽位，&6握把&r作为次要槽位。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.description2}"
 				""
-				"通过点击槽位，您可以看到这个槽位允许配置的&6模块&r和&6改良&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.description3}"
 				""
-				"您现在需要做的是，将一柄任意铲子的握把由脆弱的木制握把，更改为木制握把。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.description4}"
 				""
-				"通过&6点击握把槽位&r，&6选择基础握把&r，将任意种类&6木板放置在右侧的槽位合成&r，即可将脆弱的木制握把&6替换为木制握把&r。此时，工具会被替换称为模块化工具。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.description5}"
 				""
-				"不同的材料会对工具有着巨大的影响，绝大部分情况下，工具的迭代往往是材料的迭代，部分材料除了效果外还能够提供一系列复杂的属性，这导致材料的重要性进一步被提高。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.description6}"
 			]
 			hide_until_deps_complete: true
 			id: "60157CC9CB77916C"
@@ -250,7 +250,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "使用更好的材料"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -296,29 +296,29 @@
 						]
 					}
 				}
-				title: "任意模块化铲子"
+				title: "{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.task.3305966824715839096.title}"
 				type: "item"
 			}]
-			title: "研习如何更换部件材料"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest60157CC9CB77916C.title}"
 			x: 0.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["60157CC9CB77916C"]
 			description: [
-				"模块化工具的特点便是能够进行自由的组装和改进——因此，对于既有的工具，也可以通过更改部分槽位的部件来使其转换为其他种类的模块化工具。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.description1}"
 				""
-				"同样是&6基于铲子&r，您可以&6选中头部槽位&r，&6选择拐杖头&r模块，进而&6将铲子打造成一根拐杖&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.description2}"
 				""
-				"为了完成这个配方，您需要提供材料——其可以使用的材料类型您可以在材料栏位旁边的栏位点击查看。对于拐杖来说，您可以使用木料、石料、金属、宝石、骨料来完成拐杖头的制作。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.description3}"
 				""
-				"拐杖常用于作为移速增加道具，您可以使用&6任意种类木材&r来制作拐杖头，这样制成的拐杖持在主手会增加您的移动速度。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.description4}"
 				""
-				"此时，想必您也注意到，并不是所有材料都能够直接安装在工具上——某些&6材料会有一定加工技术&r的要求。比如说木材会需求某些等级的斧、金属宝石则是需求某些等级的锤。因此为了能够使用更高级别的材料，您的目标便是获得足够高等级的加工工具。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.description5}"
 				""
-				"不同工具能够提供的&6加工技术可以通过将工具放置在加工台内查看&r，其会以斧头、锤子、刀等图标出现在上方并且标注对应的加工等级。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.description6}"
 				""
-				"如果您要用常规木材加工拐杖头，您只需要保证物品栏内有一柄木斧以上的斧头即可。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.description7}"
 			]
 			id: "4352DE73166C1622"
 			rewards: [
@@ -337,7 +337,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "将工具类型转换"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -383,31 +383,31 @@
 						]
 					}
 				}
-				title: "任意模块化拐杖"
+				title: "{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.task.2487380797613053651.title}"
 				type: "item"
 			}]
-			title: "研习如何更换槽位部件"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest4352DE73166C1622.title}"
 			x: 3.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["60157CC9CB77916C"]
 			description: [
-				"工具在使用时，会逐渐积累名为&6“打磨值”&r的特殊工具经验。当打磨值积累满后，即可在加工台对对应的主要部件进行不同的打磨改良。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description1}"
 				""
-				"一般而言，打磨可以通过&6正常使用工具&r——即根据工具类型进行不同的工具行为——缓慢的积累。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description2}"
 				""
-				"不过对于有经验的工匠而言，也可以&6使用砂轮进行快速打磨&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description3}"
 				""
-				"手持可以打磨的工具&6右键砂轮&r，即可&6大幅度消耗工具的耐久少量提高打磨值&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description4}"
 				""
-				"如若您需要进行二级以上的打磨，则需要&6在加工台周围放置铁砧&r，且铁砧耐久会随着打磨而逐渐消耗。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description5}"
 				""
-				"在弹出提示音时，您便可以使用加工台对已经打磨完成的工具&6进行打磨改良&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description6}"
 				"{@pagebreak}"
-				"部分情况下，打磨需要周围放置有某些工作方块，一般来说&6放置砂轮和锻造台&r即可。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description7}"
 				""
-				"对于等级2以上的打磨精度，则需要您&6额外提供铁砧&r作为工作方块才可以完成。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.description8}"
 			]
 			icon: "minecraft:grindstone"
 			id: "40A0AFAD72A6CF5B"
@@ -416,7 +416,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "何为打磨及如何打磨"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -442,25 +442,25 @@
 						value: "tetra_hone_level:[1]"
 					}
 				}
-				title: "持有已经经过一次打磨改良的工具"
+				title: "{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.task.5591206531502692606.title}"
 				type: "item"
 			}]
-			title: "研习如何快速打磨"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest40A0AFAD72A6CF5B.title}"
 			x: 0.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["4352DE73166C1622"]
 			description: [
-				"前文有所提及，为了加工更多更复杂的材料，您需要不断提高您的加工等级。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.description1}"
 				""
-				"加工类型包含锤锻、劈砍、切削。不同类型的材料需要不同类型的加工方法。其对应的工具分别为锤、斧、刃。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.description2}"
 				""
-				"为了提高对应类型的加工等级，您需要使用更高等级的材料制作这些加工工具，并且保证在进行需要加工等级的加工时，这些工具位于您的背包内。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.description3}"
 				""
-				"因此，请您制作一柄&6以黑曜石为主要部件材料的锤&r，以获取&65级&r的锤锻加工等级。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.description4}"
 				""
-				"对于双头工具而言，加工等级会取决于等级较高的那个头。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.description5}"
 			]
 			hide_until_deps_complete: true
 			id: "14CF7124A3183190"
@@ -469,7 +469,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "提升加工等级"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -496,23 +496,23 @@
 						value: "hammer_dig>=5"
 					}
 				}
-				title: "任意具有5级以上加工能力的锤子"
+				title: "{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.task.8471424224660811183.title}"
 				type: "item"
 			}]
-			title: "研习加工等级"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest14CF7124A3183190.title}"
 			x: 6.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["14CF7124A3183190"]
 			description: [
-				"您在加工锤子的时候想必也遇到了工具完整度不足的情况——所谓&6完整度&r，即&6是工具能够承载改造能力的衡量&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest5A6906091865717B.description1}"
 				""
-				"一个工具的&6完整度往往由其类如手柄&r之类的次要槽位决定，高级的材料一般有更高的完整度要求。因此，在提升主要部件时，您也需要关注整把武器的完整度使用情况。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest5A6906091865717B.description2}"
 				""
-				"类似的，工具也有着一个名为魔法容量的概念，其代表了工具能够承载附魔的容量，如果超过了其容量，工具则会处在一种极其不稳定的状态，引发一系列奇特的反应。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest5A6906091865717B.description3}"
 				""
-				"至此，想必您大概了解了这些概念，请您将任意工具的手柄替换为任意一种更高级的、能够提供更多完整度的材料（比如诡异木、铁），&6使得整个工具的完整度达到6及其以上&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest5A6906091865717B.description4}"
 			]
 			icon: {
 				Count: 1
@@ -537,7 +537,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "了解完整度、魔法容量"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest5A6906091865717B.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -564,23 +564,23 @@
 						value: "integrity>=6.0"
 					}
 				}
-				title: "任意最大完整度≥6的工具"
+				title: "{ftbquests.chapter.450DBC0CF3ED321E.quest5A6906091865717B.task.7969704977150965203.title}"
 				type: "item"
 			}]
-			title: "研习工具属性"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest5A6906091865717B.title}"
 			x: 6.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["1571ABBF59F33928"]
 			description: [
-				"通过金属碎片，您可以制成锻锤——一种可以放置在工作台上方两格生效的特殊锤类锻造工具。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest75A6BEDA4695AFC6.description1}"
 				""
-				"在锻锤正确安装并且&6供能正常&r的情况下，您可以在&6背包、腰带、及周围工具架内不包含锤子&r的情况下，进行&6相当于5级锤&r的锻造加工。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest75A6BEDA4695AFC6.description2}"
 				""
-				"其更重要的是能够使用&6各种升级插件&r，提高锻造时武器的状态。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest75A6BEDA4695AFC6.description3}"
 				""
-				"倘若锻锤&6因故障而卡住无法正常收回&r，您仅需手持加工等级为4及其以上的锤子的&6对无法收回的部分右键&r即可。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest75A6BEDA4695AFC6.description4}"
 			]
 			id: "75A6BEDA4695AFC6"
 			rewards: [
@@ -592,27 +592,27 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "396EA469D30ABFDA"
-					title: "解锁头衔：&e锻锤"
+					title: "{ftbquests.chapter.450DBC0CF3ED321E.quest75A6BEDA4695AFC6.reward.4138425882019282906.title}"
 					titleId: "kubejs:forge_hammer"
 					type: "titles:title"
 				}
 			]
-			subtitle: "制作锻锤"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest75A6BEDA4695AFC6.subtitle}"
 			tasks: [{
 				id: "402C4AEE9BC0BE68"
 				item: "tetra:hammer_base"
 				type: "item"
 			}]
-			title: "研习锻造工坊"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest75A6BEDA4695AFC6.title}"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4352DE73166C1622"]
 			description: [
-				"您可能会发现在某些情况下，需要远超于黑曜石锤子的加工等级。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest1571ABBF59F33928.description1}"
 				""
-				"为了&6达到高于5的加工等级&r，您需要准备一套&6锻锤设备&r，而其制作所需的材料正是由&6烟熏铁混合物&r烧制而成的&6金属碎片&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest1571ABBF59F33928.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:iron_coal_mix"
@@ -622,7 +622,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作金属碎片"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest1571ABBF59F33928.subtitle}"
 			tasks: [
 				{
 					id: "148F528154F74706"
@@ -635,22 +635,22 @@
 					type: "item"
 				}
 			]
-			title: "研习更高的加工等级"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest1571ABBF59F33928.title}"
 			x: 3.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["75A6BEDA4695AFC6"]
 			description: [
-				"为了驱动锻锤，需要在其侧面安装&6至少两个热电池&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4BDC2BE32FB3E497.description1}"
 				""
-				"制作而来的热电池是不具备任何耐久度的，您可以使用几种不同的方法进行修复。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4BDC2BE32FB3E497.description2}"
 				""
-				"其中一种方法便是使用&6闪电轰击没有耐久度的热电池&r，其便会被闪电携带的热量充能。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4BDC2BE32FB3E497.description3}"
 				""
-				"为了在特定地点唤起闪电，您可以选择酿造&6落雷药水&r，在某个特定位置引发雷电；也可以使用避雷针，在雷暴时让自然的雷电击中避雷针进而为其充能。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4BDC2BE32FB3E497.description4}"
 				""
-				"当其充能完毕后，右键锻锤即可将其安装在锻锤的侧面。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest4BDC2BE32FB3E497.description5}"
 			]
 			id: "4BDC2BE32FB3E497"
 			rewards: [{
@@ -658,7 +658,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作热能电池并且为其充电"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest4BDC2BE32FB3E497.subtitle}"
 			tasks: [{
 				id: "3ACCCCF2008D0AEF"
 				item: {
@@ -671,16 +671,16 @@
 				match_nbt: true
 				type: "item"
 			}]
-			title: "研习锻锤充电技艺"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest4BDC2BE32FB3E497.title}"
 			x: 3.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4BDC2BE32FB3E497"]
 			description: [
-				"为了达到更高的锤类加工等级，您需要为锻锤安装额外的燃烧室，以提升其加工等级。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest61FA1FF097490BB2.description1}"
 				""
-				"安装&6两个燃烧室&r后，锻锤最高可以&6达到7的加工等级&r，代价是在使用锻锤时概率会点燃周围的方块。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest61FA1FF097490BB2.description2}"
 			]
 			id: "61FA1FF097490BB2"
 			rewards: [{
@@ -688,24 +688,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "提升锻锤的锻造等级"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest61FA1FF097490BB2.subtitle}"
 			tasks: [{
 				id: "2CAE4F73A292FEC5"
 				item: "tetra:combustion_chamber"
 				type: "item"
 			}]
-			title: "研习加力锻造之法"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest61FA1FF097490BB2.title}"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["4BDC2BE32FB3E497"]
 			description: [
-				"除了燃烧室之外，您也可以通过&6安装平面稳定器来提高锻锤的性能&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest1D4EDCC0A2B59307.description1}"
 				""
-				"安装了平面稳定器的锻锤可以在锻造时给部件添加&6“优质”&r效果，提供给工具额外的属性加成。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest1D4EDCC0A2B59307.description2}"
 				""
-				"在不需要较高加工等级的情况下，安装平面稳定器进行工具锻造是一个不错的主意。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest1D4EDCC0A2B59307.description3}"
 			]
 			id: "1D4EDCC0A2B59307"
 			rewards: [{
@@ -713,24 +713,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "使用平面稳定器"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest1D4EDCC0A2B59307.subtitle}"
 			tasks: [{
 				id: "5057851EFF06EE1F"
 				item: "tetra:planar_stabilizer"
 				type: "item"
 			}]
-			title: "研习稳定锻造之法"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest1D4EDCC0A2B59307.title}"
 			x: 6.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["1571ABBF59F33928"]
 			description: [
-				"在地下深处，层层叠叠的&6深板岩之间&r，偶尔你会看到一些零落的白色光球。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest3265BCAC65A9D699.description1}"
 				""
-				"这些光球是名为&6晶簇块&r的特殊矿石所散发出来的，其虽然外表与深板岩类似，但是挖掘它会获得名为晶簇的特殊物品。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest3265BCAC65A9D699.description2}"
 				""
-				"你可以&6在加工台上使用锤子敲开这些晶簇&r，进而获得里面所蕴藏的&6罕见宝石&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest3265BCAC65A9D699.description3}"
 			]
 			id: "3265BCAC65A9D699"
 			rewards: [{
@@ -738,24 +738,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "最为深邃处的宝石"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest3265BCAC65A9D699.subtitle}"
 			tasks: [{
 				id: "7575FFF58AFAA4EC"
 				item: "tetra:geode"
 				type: "item"
 			}]
-			title: "地底深处"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest3265BCAC65A9D699.title}"
 			x: 6.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["4352DE73166C1622"]
 			description: [
-				"某些部件蕴含有极其特殊的效果，且这些效果往往会被材料属性所影响。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest7366C04DCADEAAAA.description1}"
 				""
-				"以耦合器为例，&6越高的密度连锁采集的可采集范围会变大，越高的灵活度则是越高的连锁方块上限&r。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest7366C04DCADEAAAA.description2}"
 				""
-				"因此，对于平时挖矿连锁数量较低但范围需求较大的场景，您最好选择密度较高的材料制作耦合器——例如垂泪藤。"
+				"{ftbquests.chapter.450DBC0CF3ED321E.quest7366C04DCADEAAAA.description3}"
 			]
 			id: "7366C04DCADEAAAA"
 			rewards: [{
@@ -763,7 +763,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作耦合器"
+			subtitle: "{ftbquests.chapter.450DBC0CF3ED321E.quest7366C04DCADEAAAA.subtitle}"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -817,13 +817,13 @@
 						]
 					}
 				}
-				title: "任意绑定有耦合器的双头工具"
+				title: "{ftbquests.chapter.450DBC0CF3ED321E.quest7366C04DCADEAAAA.task.2040832351179529850.title}"
 				type: "item"
 			}]
-			title: "研习部件制作"
+			title: "{ftbquests.chapter.450DBC0CF3ED321E.quest7366C04DCADEAAAA.title}"
 			x: 3.0d
 			y: 7.5d
 		}
 	]
-	title: "常识：匠艺"
+	title: "{ftbquests.chapter.450DBC0CF3ED321E.title}"
 }

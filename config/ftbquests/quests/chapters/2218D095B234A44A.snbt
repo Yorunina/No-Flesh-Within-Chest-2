@@ -63,9 +63,9 @@
 		{
 			dependencies: ["28573ECFB4844619"]
 			description: [
-				"经过少部分生物扫描确认，绝大多数被扫描生物均绑定了一系列特殊属性，该部分属性会对生物本身的能力产生极大的影响。因此，我期望您能够协助我调查此认知的具体面貌。"
+				"{ftbquests.chapter.2218D095B234A44A.quest180947BC2C1A1516.description1}"
 				""
-				"与其关联度较高的物品则是名为&6“开胸器”&r的特殊工具，其拥有着&6“将生物不确定的特殊属性固定化”&r的特殊能力，使用它应该就可以可视化生物身上的特殊属性。"
+				"{ftbquests.chapter.2218D095B234A44A.quest180947BC2C1A1516.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "chestcavity:chest_opener"
@@ -82,26 +82,26 @@
 					type: "item"
 				}
 			]
-			subtitle: "一种特殊的生物属性"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest180947BC2C1A1516.subtitle}"
 			tasks: [{
 				id: "4007BD9251408DD1"
 				item: "chestcavity:chest_opener"
 				type: "item"
 			}]
-			title: "生物与胸腔"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest180947BC2C1A1516.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["180947BC2C1A1516"]
 			description: [
-				"经过检测，开胸器可以将一种名为&6“胸腔”&r的特殊容器附加给某个特定的生物——也包括您。"
+				"{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.description1}"
 				""
-				"一个生物在初始状态下，其不具备该胸腔的容器绑定状态，通过开胸器的开胸行为，可以为其绑定一个默认的胸腔。这个过程，我将其称作为&6「胸腔活化」&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.description2}"
 				""
-				"开胸的条件非常严苛，目前来看，仅自我开胸和对生命值较低生物开胸是有效的，进一步信息需要您开胸世界上的其他生物供我分析才能够提供给您。"
+				"{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.description3}"
 				""
-				"现在，当务之急就是&6&n打开您自己的胸腔&r，进而验证该传闻的真实性。"
+				"{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.description4}"
 			]
 			id: "6ACBA86B2F8BA384"
 			rewards: [
@@ -113,12 +113,12 @@
 				{
 					icon: "titles:title_scroll_common"
 					id: "5836B87D444ED6DC"
-					title: "解锁头衔：&e开膛手"
+					title: "{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.reward.6356470772236474076.title}"
 					titleId: "kubejs:chest_opener"
 					type: "titles:title"
 				}
 			]
-			subtitle: "胸腔开启类任务"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.subtitle}"
 			tasks: [{
 				entity: "minecraft:player"
 				icon: {
@@ -128,28 +128,28 @@
 				}
 				id: "7C235F5C7B4FC314"
 				inventoryType: "minecraft:empty"
-				title: "打开自己的胸腔"
+				title: "{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.task.8945098135698391828.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "活化自身胸腔"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest6ACBA86B2F8BA384.title}"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6ACBA86B2F8BA384"]
 			description: [
-				"现在，您可以尝试从胸腔内取出一个器官。"
+				"{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.description1}"
 				""
-				"请注意，&n在取出器官的瞬间，你的身体就会感知到胸腔的变化&r，进而产生对应的生理反应。"
+				"{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.description2}"
 				""
-				"如果您摘取了心脏，那么您会不断损失生命；如果您摘取了肺，您将无法呼吸. . ."
+				"{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.description3}"
 				""
-				"但这并不代表您必须需要心脏才能够生存。取决您是否能够正常生存的是这些器官上所记录的数据。"
+				"{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.description4}"
 				""
-				"一般而言，对生物来说，必须要具备有至少为1的&6健康&r和至少为1的&6神经效率&r，前者会保证你不会持续流血，后者可以保证你能移动。"
+				"{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.description5}"
 				""
-				"其他的属性也都有各自的作用，具体您可以使用&6固定提示框按键（默认为~）&r将物品提示固定住，而后将鼠标放在词条上观察。"
+				"{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.description6}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -170,7 +170,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "小心摘取你的器官！"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.subtitle}"
 			tasks: [{
 				id: "5934C16E1C3FE57E"
 				item: {
@@ -180,23 +180,23 @@
 						value: "kubejs:organ"
 					}
 				}
-				title: "任意一个器官"
+				title: "{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.task.6427975246829053310.title}"
 				type: "item"
 			}]
-			title: "尝试摘取器官"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest3706063CCC0981B2.title}"
 			x: -2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3706063CCC0981B2"]
 			description: [
-				"除了您自己的胸腔之外，您也可以打开其他生物的胸腔。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.description1}"
 				""
-				"但是打开胸腔需要一定的条件，这包括两部分——&6“生物生命值低于10%或者低于10”&r和&6“生物未穿戴胸甲”&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.description2}"
 				""
-				"很明显，&6猪/牛/羊等种种动物&r在天然状态下就满足这些条件，并且不会因为开胸造成的伤害一击致命。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.description3}"
 				""
-				"因此，请您使用开胸器打开猪的胸腔，您可以取出它的任意器官以实验不同属性会导致的效果。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.description4}"
 			]
 			icon: "simplehats:pighead"
 			id: "1D65BF71E2DCA300"
@@ -212,28 +212,28 @@
 					type: "item"
 				}
 			]
-			subtitle: "先从简单的生物开始"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.subtitle}"
 			tasks: [{
 				entity: "minecraft:empty"
 				icon: "simplehats:pighead"
 				id: "47FAF2FB24171CF5"
 				inventoryType: "kubejs:cc_inventory_types/medium_terra"
-				title: "打开中型动物的胸腔"
+				title: "{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.task.5186725081326755061.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "了解动物"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.title}"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2322A3BFAC31A4C2"]
 			description: [
-				"&c等等！在直接使用其他生物器官之前，我还有一件事要提醒您！&r"
+				"{ftbquests.chapter.2218D095B234A44A.quest3546342552F8444E.description1}"
 				""
-				"如果您直接使用其他生物的器官，会因为其原本不属于您，而和您的身体产生&6排异反应&r。您可以在物品提示上看到该器官原本应属于谁。"
+				"{ftbquests.chapter.2218D095B234A44A.quest3546342552F8444E.description2}"
 				""
-				"为了解决排异反应，我们需要一系列处理工序，当然您也可以硬顶着排异反应使用. . ."
+				"{ftbquests.chapter.2218D095B234A44A.quest3546342552F8444E.description3}"
 			]
 			icon: "biomancy:rejuvenation_serum"
 			id: "3546342552F8444E"
@@ -242,24 +242,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "请不要直接使用他人器官"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest3546342552F8444E.subtitle}"
 			tasks: [{
 				id: "17F8A0AD1F8FA187"
-				title: "了解了"
+				title: "{ftbquests.chapter.2218D095B234A44A.quest3546342552F8444E.task.1727307122515878279.title}"
 				type: "checkmark"
 			}]
-			title: "排异反应"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest3546342552F8444E.title}"
 			x: 5.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["3546342552F8444E"]
 			description: [
-				"为了解决排异问题，我们需要想办法唤出这个世界上存在的一种生物——&c肉块&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest25AF51750AAA5976.description1}"
 				""
-				"它可以食用未经排异的器官，将其处理为&6无主器官&r，进而解决排异问题。"
+				"{ftbquests.chapter.2218D095B234A44A.quest25AF51750AAA5976.description2}"
 				""
-				"而这套工序的第一步就是制作一个&6原初核心&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest25AF51750AAA5976.description3}"
 			]
 			id: "25AF51750AAA5976"
 			rewards: [{
@@ -267,22 +267,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "先从简单的开始"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest25AF51750AAA5976.subtitle}"
 			tasks: [{
 				id: "6CB3681058B893A5"
 				item: "biomancy:primordial_core"
 				type: "item"
 			}]
-			title: "制作原初核心"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest25AF51750AAA5976.title}"
 			x: 7.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["1D65BF71E2DCA300"]
 			description: [
-				"为了打开血量较高的生物，您需要一定程度上&6压低该生物的血线&r，以便您能够执行开胸操作。"
+				"{ftbquests.chapter.2218D095B234A44A.quest2322A3BFAC31A4C2.description1}"
 				""
-				"一个建议是，对于这种敌对生物，优先摘除其脊椎，使其移动能力完全丧失后慢慢处理。"
+				"{ftbquests.chapter.2218D095B234A44A.quest2322A3BFAC31A4C2.description2}"
 			]
 			id: "2322A3BFAC31A4C2"
 			rewards: [{
@@ -290,30 +290,30 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "稍微复杂的生物"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest2322A3BFAC31A4C2.subtitle}"
 			tasks: [{
 				entity: "minecraft:zombie"
 				icon: "minecraft:zombie_head"
 				id: "6598BB079F56E5D4"
 				inventoryType: "minecraft:empty"
-				title: "打开僵尸胸腔"
+				title: "{ftbquests.chapter.2218D095B234A44A.quest2322A3BFAC31A4C2.task.7320806835703178708.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "了解怪物"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest2322A3BFAC31A4C2.title}"
 			x: 2.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["25AF51750AAA5976"]
 			description: [
-				"通过原初摇篮，即可孵化出我们所需的肉块。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4BD8BC9319A7E1C.description1}"
 				""
-				"但直接制作出原初摇篮似乎有些困难. . .因为其需要&6尖牙&r——这是必须要通过&d抽筋剥骨&r附魔才能够获得的特殊战利品。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4BD8BC9319A7E1C.description2}"
 				""
-				"不过好在，在扫描过的胸腔物品中，我找到了一个能够让您迅速获得此类特殊战利品的物品。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4BD8BC9319A7E1C.description3}"
 				""
-				"请使用&6切石机&r打磨您的肋骨，制成&6肋骨牙刃&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4BD8BC9319A7E1C.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -327,12 +327,12 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "445CECC1351FFBE5"
-					title: "解锁头衔：&e骨刃"
+					title: "{ftbquests.chapter.2218D095B234A44A.quest4BD8BC9319A7E1C.reward.4926072407000611813.title}"
 					titleId: "kubejs:rib_blade"
 					type: "titles:title"
 				}
 			]
-			subtitle: "到最初的路径"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest4BD8BC9319A7E1C.subtitle}"
 			tasks: [{
 				id: "17401A697353AE87"
 				item: {
@@ -342,18 +342,18 @@
 				}
 				type: "item"
 			}]
-			title: "从肋骨牙刃开始"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest4BD8BC9319A7E1C.title}"
 			x: 0.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["04BD8BC9319A7E1C"]
 			description: [
-				"接下来说的可能有些残忍，您需要携带该器官的情况下，击杀&6狼&r、&6猫&r、&6蝙蝠&r或者&6疣猪兽&r，来获得他们额外的战利品——&6尖牙&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest7CCB3B294B86F7AA.description1}"
 				""
-				"您可以通过Alt键来查看器官具体的效果，其中，有一条称作“&a幸运概率&r”的描述，您可以通过将该物品描述通过&6固定提示框&r按键固定，而后通过鼠标阅读它的详细情报。"
+				"{ftbquests.chapter.2218D095B234A44A.quest7CCB3B294B86F7AA.description2}"
 				""
-				"简单来说，在一般情况下，在佩戴该器官的情况下，您有50%的概率会获得额外战利品，如果您的幸运越高，则会有更高的概率获得额外战利品。"
+				"{ftbquests.chapter.2218D095B234A44A.quest7CCB3B294B86F7AA.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "7CCB3B294B86F7AA"
@@ -362,29 +362,29 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "动物杀手"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest7CCB3B294B86F7AA.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "109C099D1C00E8B9"
 				item: "biomancy:mob_fang"
 				type: "item"
 			}]
-			title: "获取尖牙"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest7CCB3B294B86F7AA.title}"
 			x: 7.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["7CCB3B294B86F7AA"]
 			description: [
-				"终于，您可以制作原初摇篮了。"
+				"{ftbquests.chapter.2218D095B234A44A.quest714F4F7810E3D89C.description1}"
 				""
-				"原初摇篮是一个非常奇怪的东西——它会吃下几乎所有能吃的东西。但它最喜欢的物品是各种生肉。通过右键&6喂食生肉&r，其内部容量会逐渐填满。"
+				"{ftbquests.chapter.2218D095B234A44A.quest714F4F7810E3D89C.description2}"
 				""
-				"之后，您需要喂食给它各种治愈性物品以激活它的原初化进程。右键&6使用治疗药水&r、&6再生药水&r或者&6金苹果&r之类的物品，可以使其正面的“眼睛”充满荧光紫色。"
+				"{ftbquests.chapter.2218D095B234A44A.quest714F4F7810E3D89C.description3}"
 				""
-				"在两个步骤均完成后，其会进行一次原初化尝试，并且有概率孵化出&c肉团/原初肉团/饥饿肉团&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest714F4F7810E3D89C.description4}"
 				""
-				"如果失败了，您需要重复上述过程，直到孵化出肉块为止。"
+				"{ftbquests.chapter.2218D095B234A44A.quest714F4F7810E3D89C.description5}"
 			]
 			hide_until_deps_complete: true
 			id: "714F4F7810E3D89C"
@@ -401,26 +401,26 @@
 					type: "item"
 				}
 			]
-			subtitle: "从原初开始"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest714F4F7810E3D89C.subtitle}"
 			tasks: [{
 				id: "623C43EAF3E02C4D"
 				item: "biomancy:primordial_cradle"
 				type: "item"
 			}]
-			title: "养育原初摇篮"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest714F4F7810E3D89C.title}"
 			x: 7.5d
 			y: 7.5d
 		}
 		{
 			dependencies: ["714F4F7810E3D89C"]
 			description: [
-				"器官排异在这个世界上本质上是一种&6非原初化&r的表现。肉块可以以自身生命为代价将这些器官原初化。"
+				"{ftbquests.chapter.2218D095B234A44A.quest7EDB195FE22A8D47.description1}"
 				""
-				"您可以将曾经有主的器官&6丢弃在肉团附近&r，肉团会自己寻找可净化的器官食用，并且在&630s&r后，生成一个&6无主的同名器官&r在原地。"
+				"{ftbquests.chapter.2218D095B234A44A.quest7EDB195FE22A8D47.description2}"
 				""
-				"如果您&6关闭了生物破坏&r，则可以通过&6手持器官右键肉团&r的方式，让它强制净化器官。"
+				"{ftbquests.chapter.2218D095B234A44A.quest7EDB195FE22A8D47.description3}"
 				""
-				"虽然效率低一些，但考虑到这是完全免费的，多养几个肉块或许就可以解决您的数量焦虑。"
+				"{ftbquests.chapter.2218D095B234A44A.quest7EDB195FE22A8D47.description4}"
 			]
 			icon: "biomancy:flesh"
 			id: "7EDB195FE22A8D47"
@@ -429,22 +429,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "一种古老的生物抗排异方法"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest7EDB195FE22A8D47.subtitle}"
 			tasks: [{
 				id: "717E8277C5A6C299"
-				title: "我明白了"
+				title: "{ftbquests.chapter.2218D095B234A44A.quest7EDB195FE22A8D47.task.8178117424280158873.title}"
 				type: "checkmark"
 			}]
-			title: "逃离排异反应"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest7EDB195FE22A8D47.title}"
 			x: 10.0d
 			y: 7.5d
 		}
 		{
 			dependencies: ["70010BB6C23E4927"]
 			description: [
-				"为了生物炼金和生物锻造，您需要大量的生物材料。但有的生物不仅生成稀少，且原料来源不明，难度巨大。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1D2835C031D8C57F.description1}"
 				""
-				"&6分解器&r可以解决此类问题。通过放入一些常见物品，即可分解成生物材料。这会大大降低我们对生物资源的依赖程度。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1D2835C031D8C57F.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "1D2835C031D8C57F"
@@ -453,7 +453,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "除杀戮之外的方法"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest1D2835C031D8C57F.subtitle}"
 			tasks: [{
 				id: "43079E813DC5C257"
 				item: "biomancy:decomposer"
@@ -465,9 +465,9 @@
 		{
 			dependencies: ["5CF36FC89AB073E8"]
 			description: [
-				"生物锻造台可以用于各种&6基础生物制品&r的制造。您可以使用一些生物材料制作一些比较稀有的生物&6装备/方块/物品&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4FBC882804C1F6A9.description1}"
 				""
-				"但其需要投入一些&6食物&r以供给营养，否则合成配方将无法正常进行。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4FBC882804C1F6A9.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "4FBC882804C1F6A9"
@@ -476,7 +476,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "规范化血肉生产方案"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest4FBC882804C1F6A9.subtitle}"
 			tasks: [{
 				id: "66D3AB03FC391DFB"
 				item: "biomancy:bio_forge"
@@ -488,9 +488,9 @@
 		{
 			dependencies: ["1D2835C031D8C57F"]
 			description: [
-				"正常为生物锻造台等设备提供营养实在是过于浪费食物了。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1DAB27B9EFD466AD.description1}"
 				""
-				"通过&6消化体&r，预消化这些食物进而获得&6营养&r膏，不仅可以有效利用这些食物，还可以让这些物品不那么占据我们的存储空间。"
+				"{ftbquests.chapter.2218D095B234A44A.quest1DAB27B9EFD466AD.description2}"
 			]
 			id: "1DAB27B9EFD466AD"
 			rewards: [{
@@ -498,7 +498,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "有效利用营养"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest1DAB27B9EFD466AD.subtitle}"
 			tasks: [{
 				id: "389AC39F7477E2E3"
 				item: "biomancy:digester"
@@ -510,9 +510,9 @@
 		{
 			dependencies: ["714F4F7810E3D89C"]
 			description: [
-				"&6肉块&r在死亡时会掉落&6鲜活肉块&r，这是一种相当重要的生物原料。"
+				"{ftbquests.chapter.2218D095B234A44A.quest5CF36FC89AB073E8.description1}"
 				""
-				"因此，您不需要太过于关注肉块的生理状态——它终归是要归于此的。"
+				"{ftbquests.chapter.2218D095B234A44A.quest5CF36FC89AB073E8.description2}"
 			]
 			id: "5CF36FC89AB073E8"
 			rewards: [
@@ -524,12 +524,12 @@
 				{
 					icon: "titles:title_scroll_uncommon"
 					id: "2246016AAAAE2EA5"
-					title: "解锁头衔：&e肉团宝宝"
+					title: "{ftbquests.chapter.2218D095B234A44A.quest5CF36FC89AB073E8.reward.2469663003300998821.title}"
 					titleId: "kubejs:flesh_blob"
 					type: "titles:title"
 				}
 			]
-			subtitle: "肉块的遗物"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest5CF36FC89AB073E8.subtitle}"
 			tasks: [{
 				id: "6CB450636A1B360F"
 				item: "biomancy:living_flesh"
@@ -544,9 +544,9 @@
 				"1D2835C031D8C57F"
 			]
 			description: [
-				"一种特殊的炼金釜，能够用于制作各类生物制剂，其中包含一些效果强力的药剂，类如可以让生物成长的成长药剂。"
+				"{ftbquests.chapter.2218D095B234A44A.quest6668756163C6B317.description1}"
 				""
-				"通过与&6生物注射器&r的结合使用，能够发挥出各种各样的效果，大部分生物制剂需要使用&6有机试管&r来进行保存。"
+				"{ftbquests.chapter.2218D095B234A44A.quest6668756163C6B317.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "6668756163C6B317"
@@ -555,7 +555,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "生物炼金魔法"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest6668756163C6B317.subtitle}"
 			tasks: [{
 				id: "33F33D6909F8DC9C"
 				item: "biomancy:bio_lab"
@@ -567,11 +567,11 @@
 		{
 			dependencies: ["1D2835C031D8C57F"]
 			description: [
-				"在某些分解配方中，我们可以获得在自然中&6无法正常获取的特殊生物材料&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest19E83624556F5D0A.description1}"
 				""
-				"通过这些生物材料，我们可以&6制作更多种类的生物制品&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest19E83624556F5D0A.description2}"
 				""
-				"其中，一个重要的生物材料便是&6弹性纤维&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest19E83624556F5D0A.description3}"
 			]
 			id: "19E83624556F5D0A"
 			rewards: [{
@@ -579,7 +579,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "分解而来的罕见材料"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest19E83624556F5D0A.subtitle}"
 			tasks: [{
 				id: "218162F0D78485A4"
 				item: "biomancy:elastic_fibers"
@@ -591,9 +591,9 @@
 		{
 			dependencies: ["04BD8BC9319A7E1C"]
 			description: [
-				"通过击杀诸如&6牛&r、&6猪&r、&6马&r等常见生物，您可以获得胆汁腺。"
+				"{ftbquests.chapter.2218D095B234A44A.quest70010BB6C23E4927.description1}"
 				""
-				"该生物材料能够有效分解各种物质，因此极适合用于制作一种特殊的生物设备——&6分解体&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest70010BB6C23E4927.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "70010BB6C23E4927"
@@ -602,7 +602,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "分解一切生物的能力"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest70010BB6C23E4927.subtitle}"
 			tasks: [{
 				id: "5480485CEDB62B8F"
 				item: "biomancy:mob_gland"
@@ -613,14 +613,14 @@
 		}
 		{
 			dependencies: ["6668756163C6B317"]
-			description: ["为了能够有效注射炼金药剂，您需要制作&6生物注射器&r，以使用由&6有机试管&r装载的各类生物制剂。"]
+			description: ["{ftbquests.chapter.2218D095B234A44A.quest33146F235883D459.description1}"]
 			id: "33146F235883D459"
 			rewards: [{
 				id: "68AA4AE64BEAF7E5"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "注射炼金药剂"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest33146F235883D459.subtitle}"
 			tasks: [{
 				id: "08F566606181B7CE"
 				item: {
@@ -649,11 +649,11 @@
 		{
 			dependencies: ["4FBC882804C1F6A9"]
 			description: [
-				"在某些情况下，您会发现直接编辑胸腔器官不仅危险，且相当麻烦。如果要一次性更换大量器官的话，可能还需要进行多次开胸才能逐步替换完成，在这个过程中，您会损失大量的生命值。"
+				"{ftbquests.chapter.2218D095B234A44A.quest757A562B91CCD260.description1}"
 				""
-				"因此，您可以使用手术盒，&6通过潜行右键在体外编辑手术盒的胸腔&r，当您确定无误时&6长按右键手术盒替换自己的胸腔&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest757A562B91CCD260.description2}"
 				""
-				"这同样也适合用于您有多个器官搭配时，快速替换搭配的场景。"
+				"{ftbquests.chapter.2218D095B234A44A.quest757A562B91CCD260.description3}"
 			]
 			id: "757A562B91CCD260"
 			rewards: [{
@@ -661,22 +661,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "使用手术盒"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest757A562B91CCD260.subtitle}"
 			tasks: [{
 				id: "7B7AC363C5FF9B57"
 				item: "chestcavity:surgical_box"
 				type: "item"
 			}]
-			title: "体外编辑器官"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest757A562B91CCD260.title}"
 			x: 2.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["4FBC882804C1F6A9"]
 			description: [
-				"在您深入编辑器官时，经常无法快速计算得到自身的胸腔属性值。"
+				"{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.description1}"
 				""
-				"为了解决这个问题，您可以制作血样提取器——&6手持该设备长按右键&r，即可从您的体内提取出血样，进而在&6该物品的详细信息中显示出胸腔属性的具体数值&r。"
+				"{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.description2}"
 			]
 			hide_dependency_lines: true
 			id: "2D198179DC85AA3D"
@@ -685,22 +685,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "使用血样提取器"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.subtitle}"
 			tasks: [{
 				id: "17388D5FD8F3E7B8"
 				item: "kubejs:blood_extractor"
 				type: "item"
 			}]
-			title: "分析自身血样"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.title}"
 			x: 5.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["04BD8BC9319A7E1C"]
 			description: [
-				"仅使用肋骨刃牙获取特殊掉落效率实在过于低下。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4C9C986207ACC0AF.description1}"
 				""
-				"您可以制作&6血肉掠夺镰&r，在持有它击杀生物的情况下，生物会有更高概率掉落其对应的特殊掉落。"
+				"{ftbquests.chapter.2218D095B234A44A.quest4C9C986207ACC0AF.description2}"
 			]
 			id: "4C9C986207ACC0AF"
 			rewards: [{
@@ -708,7 +708,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "血肉掠夺方案"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest4C9C986207ACC0AF.subtitle}"
 			tasks: [{
 				id: "7AD877B2DCE04C06"
 				item: {
@@ -720,20 +720,20 @@
 				}
 				type: "item"
 			}]
-			title: "更高效的掠夺方案"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest4C9C986207ACC0AF.title}"
 			x: 2.5d
 			y: 5.0d
 		}
 		{
 			dependencies: ["4FBC882804C1F6A9"]
 			description: [
-				"在生物锻造台中，存在有一个专门的器官页面用于合成一些特殊器官。"
+				"{ftbquests.chapter.2218D095B234A44A.quest5B724E22912157A6.description1}"
 				""
-				"其中，一种叫作&6方向肝&r的器官可能对您的生存大有帮助。"
+				"{ftbquests.chapter.2218D095B234A44A.quest5B724E22912157A6.description2}"
 				""
-				"制作配套的&6结构角质皮&r和&6群系角质皮&r，通过角质皮选中你想要前往的特殊结构/群系，并将其放置在方向肝中，即可让方向肝将角质皮转换为对应位置的藏宝图。"
+				"{ftbquests.chapter.2218D095B234A44A.quest5B724E22912157A6.description3}"
 				""
-				"但某些时候，结构和群系太难以寻找，方向肝最多只能寻找到&68000格以内&r的结构——您可能需要重新选择您的目标。"
+				"{ftbquests.chapter.2218D095B234A44A.quest5B724E22912157A6.description4}"
 			]
 			hide_dependency_lines: true
 			id: "5B724E22912157A6"
@@ -754,7 +754,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "使用器官定位"
+			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest5B724E22912157A6.subtitle}"
 			tasks: [{
 				id: "4D2AB6EFD7776531"
 				item: {
@@ -764,10 +764,10 @@
 				}
 				type: "item"
 			}]
-			title: "找寻迷失的方向"
+			title: "{ftbquests.chapter.2218D095B234A44A.quest5B724E22912157A6.title}"
 			x: 7.5d
 			y: 10.0d
 		}
 	]
-	title: "常识：胸腔"
+	title: "{ftbquests.chapter.2218D095B234A44A.title}"
 }

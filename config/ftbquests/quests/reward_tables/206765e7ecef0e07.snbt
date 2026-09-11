@@ -11,10 +11,10 @@
 			isServer: false
 			remove: false
 			stage: "ftb_world_computer_1"
-			title: "继续项目"
+			title: "{ftbquests.loot_table.2334946978601831943.item_1}"
 			type: "maa:astages"
 		}
-		{ item: "lightmanscurrency:coin_diamond", title: "中止项目" }
+		{ item: "lightmanscurrency:coin_diamond", title: "{ftbquests.loot_table.2334946978601831943.item_2}" }
 	]
-	title: "大世界计算机抉择"
+	title: "{ftbquests.loot_table.2334946978601831943.title}"
 }

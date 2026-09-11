@@ -94,6 +94,10 @@ ContentPacks.putShared('ChampionPurityProtectionHover', ChampionPurityProtection
 ContentPacks.putShared('ChampionChaosProtectionHover', ChampionChaosProtectionHover)
 ContentPacks.putShared('ChampionStunAuraHover', ChampionStunAuraHover)
 
+// ================ 精英怪词条颜色 ================
+ContentPacks.putShared('ChampionColorConfig', ChampionColorConfig)
+ContentPacks.putShared('RegistryChampionColor', RegistryChampionColor)
+
 // ================ Tooltip 工具函数 ================
 ContentPacks.putShared('AddTextLines', AddTextLines)
 ContentPacks.putShared('AddTextFuncLines', AddTextFuncLines)

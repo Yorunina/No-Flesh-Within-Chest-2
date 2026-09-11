@@ -30,13 +30,13 @@
 		{
 			dependencies: ["4E805DA2B8D171E4"]
 			description: [
-				"在扫描后，确认了这个世界中有大量的日志信息残留，其信息量之大以至于通过我有限的性能无法完整读取其内容。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest227116C21A39F449.description1}"
 				""
-				"其大部分内容均类如之前&6玩家遗留的沟通记录、游玩日志&r等. . ."
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest227116C21A39F449.description2}"
 				""
-				"因为日志量较大，在某些情况下，我的自主发掘系统并不能以最高效率发掘到有效信息，因此您可以通过这里来为我提供&6日志搜索的关键词&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest227116C21A39F449.description3}"
 				""
-				"当关键词符合预期时，我会为您提供&6崭新的视野&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest227116C21A39F449.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -49,29 +49,29 @@
 			}
 			id: "227116C21A39F449"
 			shape: "none"
-			subtitle: "直接交流的窗口"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest227116C21A39F449.subtitle}"
 			tasks: [{
 				count: 1L
 				id: "4B07C324EB2D7BD7"
 				kubeId: "keep_contact"
 				textBoxRawTitle: "提供关键词"
-				title: "点击此处以提供关键词"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest227116C21A39F449.task.5406504441013435351.title}"
 				type: "maa:kube_text_input"
 			}]
-			title: "保持联络"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest227116C21A39F449.title}"
 			x: 20.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["4E805DA2B8D171E4"]
 			description: [
-				"在混乱中，我定位到了一些能够修复系统的可能性。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.description1}"
 				""
-				"这些可能性涉及的范围之广，以至于&6我相信以及确信&r在其中蕴含有&6修复未来的可能性&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.description2}"
 				""
-				"请您按照自己所擅长的，&6选择最适合您自己的道路进行探索&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.description3}"
 				""
-				"&6请注意，本章节的任务有着逻辑依赖关系——不推荐您在不了解章节内容的前提下跳过某些前置章节直接进行后续章节。&r"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.description4}"
 			]
 			icon: {
 				Count: 1
@@ -86,31 +86,31 @@
 				id: "3307540759179A65"
 				ignore_reward_blocking: true
 				kubeId: "chapter_complete_raw"
-				title: "章节完成"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.reward.3677000011307522661.title}"
 				type: "maa:kube"
 			}]
-			subtitle: "选择可能性"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.subtitle}"
 			tasks: [{
 				id: "58F19E48BFAED873"
-				title: "什么意思？"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.task.6409077780015667315.title}"
 				type: "checkmark"
 			}]
-			title: "无限的可能性"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest4F79F4816CF0D307.title}"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4F79F4816CF0D307"]
 			description: [
-				"&o&7标签：&6核心玩法&7、&6教程&7、&c胸腔&7、&c血肉重铸&7、&c生物改造&r"
-				"&o&7推荐指数：★★★★★（极推荐）"
-				"&o&7难度指数：★（难度低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.description3}"
 				""
-				"&6常识：胸腔&r是我基于对世界扫描后，对所有生物的共有&6胸腔机制&r总结而成的教学章节。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.description4}"
 				""
-				"在本章节中，我会向您介绍&6如何开启生物胸腔，如何利用生物胸腔中的器官以及如何进行简单的血肉加工&r。这些技术可能并不能在短期内让您产生极其剧烈的成长，但在后续的大量进阶章节中，这些技术将会被反复使用。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.description5}"
 				""
-				"因此，无论您想要在后续选择何样的未来，我都推荐您尝试通过本章节学习。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.description6}"
 			]
 			icon: {
 				Count: 1
@@ -118,28 +118,28 @@
 				tag: { }
 			}
 			id: "28573ECFB4844619"
-			subtitle: "解锁 常识 : 胸腔 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.subtitle}"
 			tasks: [{
 				id: "433D6A3380AB6F5E"
-				title: "解锁 常识 : 胸腔 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.task.4845145543555116894.title}"
 				type: "checkmark"
 			}]
-			title: "初入胸腔领域"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest28573ECFB4844619.title}"
 			x: 2.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["4F79F4816CF0D307"]
 			description: [
-				"&o&7标签：&6核心玩法&7、&6教程&7、&3模块化工具&r"
-				"&o&7推荐指数：★★★★★（极推荐）"
-				"&o&7难度指数：★☆（难度较低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.description3}"
 				""
-				"&6常识：匠艺&r是在我对世界扫描后，将所有的&6模块化工具&r制作经验总结而成的教学内容。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.description4}"
 				""
-				"在本章节中，将会向您介绍如何通过各种基本材料来锻造工具，以便让您在具体的使用过程中了解各种属性的差异，&6形成基本的模块化工具的打造常识&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.description5}"
 				""
-				"由于在后续的任务中，您需要大量的工具来辅助生存，因此无论您要游玩任何内容，我都&6推荐您游玩本章节&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.description6}"
 			]
 			icon: {
 				Count: 1
@@ -156,137 +156,137 @@
 				}
 			}
 			id: "75FEA1DD7E2149B2"
-			subtitle: "解锁 常识：匠艺 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.subtitle}"
 			tasks: [{
 				id: "6B72EB6ACB6CD491"
-				title: "解锁 常识：匠艺 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.task.7742509553315271825.title}"
 				type: "checkmark"
 			}]
-			title: "初入匠艺领域"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest75FEA1DD7E2149B2.title}"
 			x: 11.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["4F79F4816CF0D307"]
 			description: [
-				"&o&7标签：&6教程&7、&6自动化&7、&6机械动力&r"
-				"&o&7推荐指数：★★★☆（较推荐）"
-				"&o&7难度指数：★★（难度低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.description3}"
 				""
-				"&6常识：机械&r是我经过对该世界扫描后，将所有的自动化内容总结精炼而成的入门章节。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.description4}"
 				""
-				"本章节将会以机械动力为核心，向您介绍最简单的&6自动化应用方法和制作思路&r，进而在您后续生存中为您开拓新的自动化思路。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.description5}"
 			]
 			icon: "create:andesite_alloy"
 			id: "1AD43758DA5521C0"
-			subtitle: "解锁 常识：机械 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.subtitle}"
 			tasks: [{
 				id: "0BDCC751BCCF0D46"
-				title: "解锁 常识：机械 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.task.854777183167515974.title}"
 				type: "checkmark"
 			}]
-			title: "初入机械领域"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest1AD43758DA5521C0.title}"
 			x: 8.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["4F79F4816CF0D307"]
 			description: [
-				"&o&7标签：&6教程&7、&6自动化&7、&d新生魔艺&7"
-				"&o&7推荐指数：★★★（一般）"
-				"&o&7难度指数：★★（难度低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.description3}"
 				""
-				"&6常识：魔源&r是我经过对该世界扫描后，将所有魔艺内容总结而成的入门章节。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.description4}"
 				""
-				"本章节会以&6新生魔艺&r为核心，仅介绍最基本的新生魔艺使用方法，便于后续您对其他领域物品的加工。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.description5}"
 			]
 			icon: "ars_nouveau:source_gem"
 			id: "4FC5598C55413963"
-			subtitle: "解锁 常识：魔源 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.subtitle}"
 			tasks: [{
 				id: "027AA8DA3E8B8AE7"
-				title: "解锁 常识：魔源 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.task.178640790540225255.title}"
 				type: "checkmark"
 			}]
-			title: "初入魔源领域"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest4FC5598C55413963.title}"
 			x: 5.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["28573ECFB4844619"]
 			description: [
-				"&o&7标签：&6核心玩法&7、&c胸腔&7、&c血肉重铸&7、&c生物改造&r"
-				"&o&7推荐指数：★★★★☆（极推荐）"
-				"&o&7难度指数：★★★（难度一般）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest503656541D6410D.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest503656541D6410D.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest503656541D6410D.description3}"
 				""
-				"在无数的历史数据中，我找到了一系列特殊的记录。在该记录中，一些玩家似乎通过了一些方法来&6扩展了自己的胸腔&r. . .如若我们能够掌握这样技术，或许可以极大的提高我们的生存能力。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest503656541D6410D.description4}"
 			]
 			icon: "kubejs:player_27_injection"
 			id: "0503656541D6410D"
-			subtitle: "解锁 传闻：胸腔扩容 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest503656541D6410D.subtitle}"
 			tasks: [{
 				id: "368914724642CB3E"
-				title: "解锁 传闻：胸腔扩容 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest503656541D6410D.task.3929694630895078206.title}"
 				type: "checkmark"
 			}]
-			title: "探秘胸腔扩容"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest503656541D6410D.title}"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["1AD43758DA5521C0"]
 			description: [
-				"&o&7标签：&6自动化&7、&6资源获取&7、&6机械动力&r"
-				"&o&7推荐指数：★（不推荐）"
-				"&o&7难度指数：★★★★★（难度极高）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.description3}"
 				""
-				"这世界的&6黄铜&r似乎存在一些特殊性质。在众多材料中，我发现黄铜存在一种特异的逆因性。我们可以通过这些特性，建造一台名为&6“大世界计算机”&r的特殊设备，进而通过它操纵游戏中的一些内容。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.description4}"
 				""
-				"但这注定是一场极其漫长的旅途，&6大世界计算机需要极其大量的资源才能够完成建造&r，而相比于它能够做到的事情. . ."
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.description5}"
 			]
 			icon: "create:brass_ingot"
 			id: "0FF6CCEECFC2CD22"
-			subtitle: "解锁 传闻：大世界计算机 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.subtitle}"
 			tasks: [{
 				id: "06438311588D3B4C"
-				title: "解锁 传闻：大世界计算机 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.task.451348498190515020.title}"
 				type: "checkmark"
 			}]
-			title: "探秘大世界计算机"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.questFF6CCEECFC2CD22.title}"
 			x: 8.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["70FCE36692E184AD"]
 			description: [
-				"&o&7标签：&2探索&7、&2摄影&7、&6资源获取&r、&6维度探索&r"
-				"&o&7推荐指数：★★★★（推荐）"
-				"&o&7难度指数：★☆（难度低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFB97C6DBA850966.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFB97C6DBA850966.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFB97C6DBA850966.description3}"
 				""
-				"&6商店维度&r的存在似乎并非偶然，其背后代表了一种在本世界中存在的底层机制。我们或许可以通过一些方法，&6寻找到这些特殊维度&r的踪迹，进而利用它们来造福我们自己的生存历程。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.questFB97C6DBA850966.description4}"
 			]
 			icon: "exposure:camera"
 			id: "0FB97C6DBA850966"
-			subtitle: "解锁 传闻：重现黄金乡 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.questFB97C6DBA850966.subtitle}"
 			tasks: [{
 				id: "6D1B06B14C4D3160"
-				title: "解锁 传闻：重现黄金乡 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.questFB97C6DBA850966.task.7861884933064438112.title}"
 				type: "checkmark"
 			}]
-			title: "探秘重现黄金乡"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.questFB97C6DBA850966.title}"
 			x: 17.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["75FEA1DD7E2149B2"]
 			description: [
-				"&o&7标签：&3模块化工具&7、&6武器强化&r"
-				"&o&7推荐指数：★★★★（推荐）"
-				"&o&7难度指数：★★☆（难度一般）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.description3}"
 				""
-				"在进行模块化工具加工时，我探查到了一&6极其特殊的加工工序&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.description4}"
 				""
-				"这种加工工序被层层掩盖，只有具有足够经验的工匠在锻造时才可能让工具的属性中包含这个标签。倘若我们能够&6复现曾经工匠的工作&r，或许能够驾驭这种加工工序. . ."
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.description5}"
 			]
 			icon: {
 				Count: 1
@@ -303,26 +303,26 @@
 				}
 			}
 			id: "0826B6D55FFA146F"
-			subtitle: "解锁 传闻：创世工匠 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.subtitle}"
 			tasks: [{
 				id: "2A87ECD9FF0BA59C"
-				title: "解锁 传闻：创世工匠 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.task.3064678492479923612.title}"
 				type: "checkmark"
 			}]
-			title: "探秘创世工匠"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest826B6D55FFA146F.title}"
 			x: 11.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["0503656541D6410D"]
 			description: [
-				"&o&7标签：&c胸腔&7、&2食物制造&r"
-				"&o&7推荐指数：★★★★（推荐）"
-				"&o&7难度指数：★★★（难度一般）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.description3}"
 				""
-				"等下！在调查烹饪资料的时候，我发现在&6罐子中似乎隐藏有什么东西&r！"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.description4}"
 				""
-				"如果我们能够对这些&6隐藏的生物&r进行进一步的研究，或许能从中获取到一些启发，进而&6对我们自己的胸腔进行进一步改造&r. . ."
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.description5}"
 			]
 			icon: {
 				Count: 1
@@ -332,36 +332,36 @@
 				}
 			}
 			id: "14A4E17E4416A28C"
-			subtitle: "解锁 传闻：罐装美味 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.subtitle}"
 			tasks: [{
 				id: "4AFA16BDA03E80B0"
-				title: "解锁 传闻：罐装美味 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.task.5402655706677412016.title}"
 				type: "checkmark"
 			}]
-			title: "探秘罐装美味"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest14A4E17E4416A28C.title}"
 			x: 8.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["70FCE36692E184AD"]
 			description: [
-				"&o&7标签：&6战斗场景&7、&6资源获取&r"
-				"&o&7推荐指数：★★★（一般）"
-				"&o&7难度指数：★★★（难度一般）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.description3}"
 				""
-				"在您击败&6先驱者&r后，您可以制作一个名为&6永恒祭坛&r的设备，用以来窥探另一个世界的样貌。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.description4}"
 				""
-				"但这样的窥探，或许会&6招来很多的入侵者&r. . .或许我们应该做好准备。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.description5}"
 			]
 			icon: "kubejs:eternal_altar"
 			id: "61CC83511416B246"
-			subtitle: "解锁 传闻：永恒门扉 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.subtitle}"
 			tasks: [{
 				id: "59B34431D10230BD"
-				title: "解锁 传闻：永恒门扉 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.task.6463584870957461693.title}"
 				type: "checkmark"
 			}]
-			title: "探秘永恒门扉"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest61CC83511416B246.title}"
 			x: 14.0d
 			y: 6.0d
 		}
@@ -372,36 +372,36 @@
 				"0503656541D6410D"
 			]
 			description: [
-				"&o&7标签：&c胸腔&7、&6机械动力&7、&d新生魔艺&r"
-				"&o&7推荐指数：★★☆（一般）"
-				"&o&7难度指数：★★★☆（难度较高）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.description3}"
 				""
-				"在扫描日志时，我意外发现了这个世界中所谓“地热能”的存在——或者说是&6“地幔能”&r——我们可以利用组成这些物质的数据，对其进行重组，以复制我们需要的物质。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.description4}"
 				""
-				"除此之外，利用地幔能的副产物&6烈焰水晶&r，我们可以制作一些特殊的设备，进而&6对胸腔进行进一步的改造&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.description5}"
 			]
 			icon: "create:creative_blaze_cake"
 			id: "79404493E0C3DF1B"
-			subtitle: "解锁 传闻：地幔燃料 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.subtitle}"
 			tasks: [{
 				id: "1045F926AD8B17B8"
-				title: "解锁 传闻：地幔燃料 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.task.1172617222515529656.title}"
 				type: "checkmark"
 			}]
-			title: "探秘地幔燃料"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest79404493E0C3DF1B.title}"
 			x: 5.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["0503656541D6410D"]
 			description: [
-				"&o&7标签：&c胸腔&7"
-				"&o&7推荐指数：★★☆（一般）"
-				"&o&7难度指数：★★★☆（难度较高）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.description3}"
 				""
-				"似乎&6肿瘤神经元&r能够在胸腔中培育出一些&6未成型肿瘤&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.description4}"
 				""
-				"为了进一步将这些肿瘤培育成成型版本，我们最好制造一些&6培养仓&r——但等等，或许我们可以利用这些肿瘤，&6进一步改造我们的胸腔&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.description5}"
 			]
 			icon: {
 				Count: 1
@@ -409,36 +409,36 @@
 				tag: { }
 			}
 			id: "3805FCA2063189FF"
-			subtitle: "解锁 传闻：体外培养 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.subtitle}"
 			tasks: [{
 				id: "28966D37DE23FFD9"
-				title: "解锁 传闻：体外培养 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.task.2924645094741245913.title}"
 				type: "checkmark"
 			}]
-			title: "探秘体外培养"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest3805FCA2063189FF.title}"
 			x: 2.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["4F79F4816CF0D307"]
 			description: [
-				"&o&7标签：&6教程&7、&6体验改良&7、&d存储&7、&2探索&7"
-				"&o&7推荐指数：★★★★★（极推荐）"
-				"&o&7难度指数：☆（难度极低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.description3}"
 				""
-				"&6常识：世界&r是我经过对该世界扫描后，总结而成的一系列对您生存有帮助的信息。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.description4}"
 				""
-				"其包含了生存的各方面内容——如&6存储、地图探索、饮食改良等. . .&r能极大程度让您适应新世界的生活。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.description5}"
 			]
 			icon: "supplementaries:globe"
 			id: "70FCE36692E184AD"
-			subtitle: "解锁 常识：世界 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.subtitle}"
 			tasks: [{
 				id: "23FD31B7AEC24037"
-				title: "解锁 常识：世界 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.task.2593283625416015927.title}"
 				type: "checkmark"
 			}]
-			title: "初入世界之中"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest70FCE36692E184AD.title}"
 			x: 14.0d
 			y: 3.0d
 		}
@@ -448,36 +448,36 @@
 				"0503656541D6410D"
 			]
 			description: [
-				"&o&7标签：&c胸腔&7、&6机械动力&7、&6生产优化&r"
-				"&o&7推荐指数：★★☆（一般）"
-				"&o&7难度指数：★★★☆（难度较高）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.description3}"
 				""
-				"在无限维度之后，我找到了一个稳定利用无限维度的方法——通过这个方法，可以大幅度优化我们现有的产线，优化我们对胸腔的利用方式。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.description4}"
 				""
-				"我把这种利用方法称为&6超维利用&r，而我们利用的主要手段则是基于一个被称为&6压缩空间方块&r的设备。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.description5}"
 			]
 			icon: "compactmachines:wall"
 			id: "14EE172659669E78"
-			subtitle: "解锁 传闻：超维工厂 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.subtitle}"
 			tasks: [{
 				id: "217D8C8B976685DA"
-				title: "解锁 传闻：超维工厂 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.task.2413239506508875226.title}"
 				type: "checkmark"
 			}]
-			title: "探秘超维工厂"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest14EE172659669E78.title}"
 			x: 8.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["0503656541D6410D"]
 			description: [
-				"&o&7标签：&c胸腔&7、&2作物种植&7、&6资源获取&r"
-				"&o&7推荐指数：★★★☆（高）"
-				"&o&7难度指数：★★（难度低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.description3}"
 				""
-				"一些信息显示，这个世界中的作物要远比我们想的有潜力的多——不光指作物的产量，更是指作物的种类。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.description4}"
 				""
-				"想要完全发掘它们的潜力，我们需要制作&6作物架&r，并且使用特殊的方法进行培育。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.description5}"
 			]
 			icon: {
 				Count: 1
@@ -485,26 +485,26 @@
 				tag: { }
 			}
 			id: "113A1FBEF3E7EC83"
-			subtitle: "解锁 传闻：血肉孢子 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.subtitle}"
 			tasks: [{
 				id: "6B6AC667A14BFA56"
-				title: "解锁 传闻：血肉孢子 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.task.7740217057979660886.title}"
 				type: "checkmark"
 			}]
-			title: "探秘血肉孢子"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest113A1FBEF3E7EC83.title}"
 			x: 5.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["0503656541D6410D"]
 			description: [
-				"&o&7标签：&c胸腔&7、&6机械动力&7、&6生产优化&r"
-				"&o&7推荐指数：★★★☆（高）"
-				"&o&7难度指数：★★（难度低）"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.description1}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.description2}"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.description3}"
 				""
-				"在制作肋骨牙刃时，我便发现了存在另一特殊肋骨——其名称叫作&6闪耀肋骨&r。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.description4}"
 				""
-				"其指明了一系列改造方法，可以让遗物器官有效进化。"
+				"{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.description5}"
 			]
 			icon: {
 				Count: 1
@@ -514,16 +514,16 @@
 				}
 			}
 			id: "56C104161CB63D9C"
-			subtitle: "解锁 传闻：遗物觉醒 章节"
+			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.subtitle}"
 			tasks: [{
 				id: "6D18999A95379330"
-				title: "解锁 传闻：遗物觉醒 章节"
+				title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.task.7861202038782661424.title}"
 				type: "checkmark"
 			}]
-			title: "探秘遗物觉醒"
+			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest56C104161CB63D9C.title}"
 			x: 2.0d
 			y: 9.5d
 		}
 	]
-	title: "可能"
+	title: "{ftbquests.chapter.2F127C50E2FDB1F0.title}"
 }

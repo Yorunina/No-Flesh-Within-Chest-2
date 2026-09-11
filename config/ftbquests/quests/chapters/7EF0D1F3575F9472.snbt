@@ -89,13 +89,13 @@
 		{
 			dependencies: ["3E792F8B7AD6934C"]
 			description: [
-				"&6请您一定要使用您的心灵来观察和思考这个世界&r，只有这样我们才能&6顺利的完成预先设计好的游戏流程&r。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest38306E83FF2C4FA3.description1}"
 				""
-				"现在我们应该步入正轨了，请&6寻找一棵树木&r，长按左键采集它下方的&6原木&r，并拾取该物品至物品栏中。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest38306E83FF2C4FA3.description2}"
 				""
-				"本任务会&6定期检测您的背包&r，如果存在该物品，那么任务会被视作完成。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest38306E83FF2C4FA3.description3}"
 				""
-				"如果一样物品在反复切换显示——这意味着这些物品都被允许作为任务完成的材料。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest38306E83FF2C4FA3.description4}"
 			]
 			icon: "minecraft:oak_log"
 			id: "38306E83FF2C4FA3"
@@ -105,27 +105,27 @@
 				item: "minecraft:apple"
 				type: "item"
 			}]
-			subtitle: "获取类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest38306E83FF2C4FA3.subtitle}"
 			tasks: [{
 				icon: "minecraft:oak_log"
 				id: "781ECE22EC8D421C"
 				isServer: true
 				stage: "ftb_restart_success"
-				title: "任意原木"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest38306E83FF2C4FA3.task.8655582183245562396.title}"
 				type: "maa:astages"
 			}]
-			title: "砍下第一块原木"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest38306E83FF2C4FA3.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["38306E83FF2C4FA3"]
 			description: [
-				"如引言所说，我的任务是负责所有任务的引导，其中包含了任务系统本身的使用。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest741EF779923ACEF6.description1}"
 				""
-				"本任务要求您&6使用原木在合成栏中&r，将其分解为四个木板，而后将其制成&6工作台&r。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest741EF779923ACEF6.description2}"
 				""
-				"该任务仅会检测您的合成，因此请务必保证是您亲手完成该系列操作。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest741EF779923ACEF6.description3}"
 			]
 			id: "741EF779923ACEF6"
 			rewards: [{
@@ -133,29 +133,29 @@
 				item: "minecraft:golden_apple"
 				type: "item"
 			}]
-			subtitle: "合成类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest741EF779923ACEF6.subtitle}"
 			tasks: [{
 				id: "697F2D4E47A57AE3"
 				item: "minecraft:crafting_table"
 				only_from_crafting: true
 				type: "item"
 			}]
-			title: "制作工作台"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest741EF779923ACEF6.title}"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["741EF779923ACEF6"]
 			description: [
-				"&6您完成任务的速度真的很快&r，比历史记录中的任何一次都要快得多！"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.description1}"
 				""
-				"工作台的意义便是解锁更多的配方，在之后的旅途中，绝大多数的配方都需要在工作台中完成。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.description2}"
 				""
-				"当然，工作台也并不一定需要放置在地面上才能够使用。通过打开自己的背包，对工作台物品按下鼠标右键，可以直接在背包中打开对应的合成界面。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.description3}"
 				""
-				"现在，您需要合成出一个木镐，并且&n挖掘至少 3 块圆石类方块&r。随后，将您&n&6受损的木镐&r和&n&6圆石&r均提交到本任务&r中。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.description4}"
 				""
-				"本任务会消耗掉您的木镐和圆石，作为交换，会返还给您性能更为优秀的石镐。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.description5}"
 			]
 			icon: {
 				Count: 1
@@ -187,7 +187,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "提交类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.subtitle}"
 			tasks: [
 				{
 					consume_items: true
@@ -212,22 +212,22 @@
 							value: "forge:cobblestone"
 						}
 					}
-					title: "任意圆石"
+					title: "{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.task.8944673485920321337.title}"
 					type: "item"
 				}
 			]
-			title: "制作木镐"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest796D46EF3EB3956D.title}"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["796D46EF3EB3956D"]
 			description: [
-				"您是否有使用过我刚才为您提供的工具？虽然它很好用，但您仍要学习如何制造工具，&6未来的冒险中会有很多事情是需要您自己去解决的&r。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6C4F189783824F9E.description1}"
 				""
-				"为了制造工具，制作并且使用一个熔炉是一件非常重要的事情。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6C4F189783824F9E.description2}"
 				""
-				"通过&6工作台&r合成出&6熔炉&r，将其放置到地面上，使用&6鼠标右键打开其界面&r，便可以完成本任务。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6C4F189783824F9E.description3}"
 			]
 			id: "6C4F189783824F9E"
 			rewards: [{
@@ -235,27 +235,27 @@
 				item: "minecraft:blast_furnace"
 				type: "item"
 			}]
-			subtitle: "方块使用类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest6C4F189783824F9E.subtitle}"
 			tasks: [{
 				block: "minecraft:furnace"
 				block_type: 0
 				checkItem: false
 				id: "07B509D8E8BBB940"
 				isItemInteraction: false
-				title: "使用一次熔炉"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest6C4F189783824F9E.task.555360956272326976.title}"
 				type: "questsadditions:use"
 				value: 1L
 			}]
-			title: "使用熔炉进行加工"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest6C4F189783824F9E.title}"
 			x: 0.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["6C4F189783824F9E"]
 			description: [
-				"在预先设定好的游戏流程中，您需要在世界中向下挖掘，获取到一定量的&n&6铁矿石&r来提高您的挖掘等级。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest2B5EE534394F9950.description1}"
 				""
-				"但稍等. . . &c好像这个世界存在一些问题&r，我会在之后为您查明这些问题，暂且还&6请您先按照任务的要求挖掘对应数量的矿物&r。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest2B5EE534394F9950.description2}"
 			]
 			icon: "minecraft:iron_ingot"
 			id: "2B5EE534394F9950"
@@ -264,7 +264,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			subtitle: "挖掘类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest2B5EE534394F9950.subtitle}"
 			tasks: [{
 				id: "448DBCA53F59D4BD"
 				item: "minecraft:iron_ingot"
@@ -275,7 +275,7 @@
 		}
 		{
 			dependencies: ["2B5EE534394F9950"]
-			description: ["到这一步，您可以使用您自己的镐子或者我送给您的镐子，在世界上获取到&6钻石&r。获取钻石的流程也可能并非来源于采掘，在自然探索时也有很大可能得到钻石。"]
+			description: ["{ftbquests.chapter.7EF0D1F3575F9472.quest540807B4153D8E77.description1}"]
 			id: "540807B4153D8E77"
 			rewards: [{
 				id: "257841ABCA65BC1A"
@@ -288,19 +288,19 @@
 				}
 				type: "item"
 			}]
-			subtitle: "前往另一维度"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest540807B4153D8E77.subtitle}"
 			tasks: [{
 				id: "5FE0718EC5B6F731"
 				item: "minecraft:diamond"
 				type: "item"
 			}]
-			title: "更高效的采掘方案"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest540807B4153D8E77.title}"
 			x: 0.0d
 			y: -7.5d
 		}
 		{
 			dependencies: ["540807B4153D8E77"]
-			description: ["通过黑曜石搭建出下界门框架，您便可以轻松的访问&6下界维度&r。"]
+			description: ["{ftbquests.chapter.7EF0D1F3575F9472.quest55FB005BC9945A77.description1}"]
 			id: "55FB005BC9945A77"
 			rewards: [{
 				id: "57355DF88952D519"
@@ -313,24 +313,24 @@
 				}
 				type: "item"
 			}]
-			subtitle: "维度检测类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest55FB005BC9945A77.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "infinity:f4"
 				id: "1D0D1A2C4280346C"
-				title: "访问下界"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest55FB005BC9945A77.task.2093358179193730156.title}"
 				type: "dimension"
 			}]
-			title: "前往下界"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest55FB005BC9945A77.title}"
 			x: 0.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["55FB005BC9945A77"]
 			description: [
-				"有些时候，需要您获取流体来完成任务，此时&6您需要使用桶将流体装起&r，进而完成任务。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest24DDAC8CD4D8FFF3.description1}"
 				""
-				"因此，请您从下界获取一桶岩浆来提交任务。 "
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest24DDAC8CD4D8FFF3.description2}"
 			]
 			icon: "minecraft:lava_bucket"
 			id: "24DDAC8CD4D8FFF3"
@@ -339,22 +339,22 @@
 				item: "minecraft:ender_pearl"
 				type: "item"
 			}]
-			subtitle: "流体检测类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest24DDAC8CD4D8FFF3.subtitle}"
 			tasks: [{
 				id: "21CB6546152FE7F5"
 				item: "minecraft:lava_bucket"
 				type: "item"
 			}]
-			title: "将岩浆带回家"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest24DDAC8CD4D8FFF3.title}"
 			x: 0.0d
 			y: -10.5d
 		}
 		{
 			dependencies: ["24DDAC8CD4D8FFF3"]
 			description: [
-				"为了能够前往末地，完成我们的旅途，您需要获取烈焰棒进而制作末影之眼定位要塞。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest4F27095AEF8875E9.description1}"
 				""
-				"为了获得烈焰棒，&6您需要寻找到下界要塞&r。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest4F27095AEF8875E9.description2}"
 			]
 			id: "4F27095AEF8875E9"
 			rewards: [{
@@ -362,12 +362,12 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "结构寻找类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest4F27095AEF8875E9.subtitle}"
 			tasks: [{
 				icon: "minecraft:nether_bricks"
 				id: "27FD9C572CB08871"
 				structure: "minecraft:fortress"
-				title: "寻得下界要塞"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest4F27095AEF8875E9.task.2881631234812840049.title}"
 				type: "structure"
 			}]
 			x: 0.0d
@@ -376,9 +376,9 @@
 		{
 			dependencies: ["4F27095AEF8875E9"]
 			description: [
-				"在下界要塞中存在烈焰人刷怪笼以及大量的烈焰人。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest5E8C3B9C63101AF5.description1}"
 				""
-				"通过&6击杀烈焰人&r，您便可以取得烈焰棒用于制作末影之眼。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest5E8C3B9C63101AF5.description2}"
 			]
 			icon: {
 				Count: 1
@@ -391,34 +391,34 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "击杀类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest5E8C3B9C63101AF5.subtitle}"
 			tasks: [{
 				entity: "minecraft:blaze"
 				id: "5B237211658E903E"
-				title: "击杀烈焰人"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest5E8C3B9C63101AF5.task.6567218100680167486.title}"
 				type: "kill"
 				value: 1L
 			}]
-			title: "获取烈焰棒"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest5E8C3B9C63101AF5.title}"
 			x: 0.0d
 			y: -13.5d
 		}
 		{
 			dependencies: ["5E8C3B9C63101AF5"]
-			description: ["当您制作了足够数量的末影之眼后，便可以出发&6在主世界中寻找要塞&r了。"]
+			description: ["{ftbquests.chapter.7EF0D1F3575F9472.quest484563ABCA8D7297.description1}"]
 			id: "484563ABCA8D7297"
 			rewards: [{
 				id: "60438B9E7C36AA64"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "特殊条件检测类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest484563ABCA8D7297.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "minecraft:ender_eye"
 				id: "3C77FD5E17D454B8"
 				kubeId: "ender_eye_use"
-				title: "使用末影之眼定位要塞"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest484563ABCA8D7297.task.4357229745072788664.title}"
 				type: "maa:kube"
 			}]
 			x: 0.0d
@@ -427,9 +427,9 @@
 		{
 			dependencies: ["484563ABCA8D7297"]
 			description: [
-				"当您成功到达末地后，您需要等待片刻，在末影龙出现时，将其击杀，进而取得该成就。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest789D7D8227A711DC.description1}"
 				""
-				"击杀末影龙的方法很多，一般玩家会选择&6将周围的末影水晶全部拆除&r后，慢慢击杀。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest789D7D8227A711DC.description2}"
 			]
 			id: "789D7D8227A711DC"
 			rewards: [{
@@ -437,25 +437,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "成就检测类任务"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest789D7D8227A711DC.subtitle}"
 			tasks: [{
 				advancement: "minecraft:story/enter_the_end"
 				criterion: ""
 				id: "4670B9E1C0D28EAB"
 				type: "advancement"
 			}]
-			title: "击杀末影龙"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest789D7D8227A711DC.title}"
 			x: 0.0d
 			y: -16.5d
 		}
 		{
 			dependencies: ["789D7D8227A711DC"]
 			description: [
-				"在您击杀完成末影龙，取得成就后，仅需要跃入末地主岛中间出现的传送门即可返回主世界！"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest5695B074C95D2D17.description1}"
 				""
-				"&6在这个返回过程中，会展示终末之诗，以赞扬您能够顺利完成这趟短暂的旅程！&r"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest5695B074C95D2D17.description2}"
 				""
-				"而&6我的引导任务也会在您看完终末之诗后结束&r，希望在下个世界能再次和您相遇！"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest5695B074C95D2D17.description3}"
 			]
 			icon: {
 				Count: 1
@@ -472,26 +472,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "冒险故事圆满结束！"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest5695B074C95D2D17.subtitle}"
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "minecraft:grass_block"
 				id: "20EB0AB562722D0F"
-				title: "回到主世界"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest5695B074C95D2D17.task.2372001402897706255.title}"
 				type: "dimension"
 			}]
-			title: "&6我们的故事结束了&r"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest5695B074C95D2D17.title}"
 			x: 0.0d
 			y: -18.0d
 		}
 		{
 			dependencies: ["5695B074C95D2D17"]
 			description: [
-				"如我的创造者所计划的，如果您有闲心，还请在这里&6填写您对本次游戏流程的游玩意见！&r"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest1B332C3841A7CC3C.description1}"
 				""
-				"我们希望能够通过这些意见不断的改进我们的流程、改进我们的内容，因此，&6您的意见真的非常重要！&r"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest1B332C3841A7CC3C.description2}"
 				""
-				"非常感谢！"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest1B332C3841A7CC3C.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -512,52 +512,52 @@
 				{
 					icon: "titles:title_scroll_rare"
 					id: "1A0CF25A9A991030"
-					title: "解锁头衔：&e我的未来"
+					title: "{ftbquests.chapter.7EF0D1F3575F9472.quest1B332C3841A7CC3C.reward.1877141615661355056.title}"
 					titleId: "kubejs:my_future"
 					type: "titles:title"
 				}
 			]
 			shape: "none"
 			size: 2.0d
-			subtitle: "还请您留下宝贵意见"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest1B332C3841A7CC3C.subtitle}"
 			tasks: [{
 				count: 1L
 				id: "4806560976EB0238"
 				kubeId: "end_game_report"
 				textBoxRawTitle: ""
-				title: "填写游戏反馈"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest1B332C3841A7CC3C.task.5189930219240882744.title}"
 				type: "maa:kube_text_input"
 			}]
-			title: "还有一件事！"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest1B332C3841A7CC3C.title}"
 			x: 0.0d
 			y: -21.5d
 		}
 		{
 			dependencies: ["1B332C3841A7CC3C"]
 			description: [
-				"好奇怪，从一开始我就觉得很奇怪，&6为什么在已知的数据中存在有这么多的我完全不了解的任务设计&r. . ."
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description1}"
 				""
-				"现在，我或许有些明白了，也许我们的故事一开始就没有所谓的结束——&6所谓故事，正是读者演绎出的一切&r。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description2}"
 				""
-				"我的创作者让我作为中间人来叙述故事，来让故事得到最基本的延续——但或许，故事的延续本不需要任何的剧本，正是因为读者的存在、真正热衷之人的存在，才能够让故事以我所未知的方法得到延展。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description3}"
 				""
-				"我也许还没完全想起来，但又或许完全想起来了——&6请您放心，我们的冒险故事永远不会结束&r——请再等我一会，再等我一会！这世界上还有更多的传闻、秘闻、乃至各种无法知晓的奇迹存在！我向您保证！"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description4}"
 				""
-				"除此之外，我还有一个请求。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description5}"
 				""
-				"&6请您为我庆贺吧！我们的冒险故事，永远都不会迎来结局！&r"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description6}"
 				""
 				"{@pagebreak}"
 				"{@pagebreak}"
 				"{@pagebreak}"
 				"{@pagebreak}"
-				"对了，还有一件可以帮到您的事——"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description7}"
 				""
-				"在最开始的任务处，您可以尝试输入一些作弊码——但&6只有在单人世界才有效&r。"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description8}"
 				""
-				"比如说&6something for nothing、show me the money、black sheep wall&r这些. . .不过那要等到我们下一次见面了. . ."
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description9}"
 				""
-				"那么，请继续我们的庆典吧！"
+				"{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.description10}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -576,16 +576,16 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "愚钝如我，方才浅知故事之含义"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.subtitle}"
 			tasks: [{
 				count: 1L
 				id: "5565DB754DE21BCD"
 				kubeId: "end_game_celebrate"
 				textBoxRawTitle: "我们的冒险故事，永远不会结束！"
-				title: "请填写贺词"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.task.6153565762735971277.title}"
 				type: "maa:kube_text_input"
 			}]
-			title: "&6等下！故事还在继续！&r"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest6D86C160EFEE66B.title}"
 			x: 0.0d
 			y: -26.0d
 		}
@@ -603,17 +603,17 @@
 			id: "37D3DEA4E9074D5E"
 			shape: "none"
 			size: 2.0d
-			subtitle: "永无终止的故事"
+			subtitle: "{ftbquests.chapter.7EF0D1F3575F9472.quest37D3DEA4E9074D5E.subtitle}"
 			tasks: [{
 				icon: "supplementaries:hourglass"
 				id: "2019C8E3D745D682"
-				title: "新的故事将会到来"
+				title: "{ftbquests.chapter.7EF0D1F3575F9472.quest37D3DEA4E9074D5E.task.2313100764526270082.title}"
 				type: "custom"
 			}]
-			title: "这一次，由我来续写新的故事"
+			title: "{ftbquests.chapter.7EF0D1F3575F9472.quest37D3DEA4E9074D5E.title}"
 			x: 0.0d
 			y: -33.0d
 		}
 	]
-	title: "回归"
+	title: "{ftbquests.chapter.7EF0D1F3575F9472.title}"
 }

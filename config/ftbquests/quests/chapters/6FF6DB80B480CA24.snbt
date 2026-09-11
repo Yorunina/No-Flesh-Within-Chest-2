@@ -59,17 +59,17 @@
 				isServer: true
 				remove: false
 				stage: "ftb_restart"
-				title: "重启"
+				title: "{ftbquests.chapter.6FF6DB80B480CA24.quest3E792F8B7AD6934C.reward.7047887231338578750.title}"
 				type: "maa:astages"
 			}]
 			shape: "none"
 			size: 3.0d
 			tasks: [{
 				id: "0A7DBAD0E04E34D9"
-				title: "重启吧"
+				title: "{ftbquests.chapter.6FF6DB80B480CA24.quest3E792F8B7AD6934C.task.755965718747296985.title}"
 				type: "checkmark"
 			}]
-			title: "重启"
+			title: "{ftbquests.chapter.6FF6DB80B480CA24.quest3E792F8B7AD6934C.title}"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -206,5 +206,5 @@
 			y: -14.64330906544609d
 		}
 	]
-	title: "内部"
+	title: "{ftbquests.chapter.6FF6DB80B480CA24.title}"
 }

@@ -271,7 +271,7 @@
 			click: "command:/ponder kubejs:eternal_altar"
 			dependency: "5FCBCB78FDA46E87"
 			height: 1.0d
-			hover: ["点击以思索"]
+			hover: ["ftbquests.chapter.1B8598BF9D1697FE.image.hovertext1"]
 			image: "kubejs:textures/gui/tasks/common/ponder_icon.png"
 			rotation: 0.0d
 			width: 1.0d
@@ -285,11 +285,11 @@
 		{
 			dependencies: ["61CC83511416B246"]
 			description: [
-				"首先，请允许我恭喜您击败了先驱者，获取了重要的材料——&6凋灵合金锭&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2408DFE03E1133D3.description1}"
 				""
-				"之所以我称之为“重要”，是因为在历经长久的扫描中，我发现经由凋灵合金锭，我们可以构成一种特殊的设备，其允许我们无限制的探索这个世界背后的一面。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2408DFE03E1133D3.description2}"
 				""
-				"其不仅能够为我们&6提供一些正常极其难以获得的资源&r，更重要的是能够极大的&6扩展我们对于现在世界的基本认知&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2408DFE03E1133D3.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "2408DFE03E1133D3"
@@ -298,19 +298,19 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "向永恒一瞥"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest2408DFE03E1133D3.subtitle}"
 			tasks: [{
 				id: "168747A765573DD0"
 				item: "cataclysm:witherite_ingot"
 				type: "item"
 			}]
-			title: "唤醒深渊"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest2408DFE03E1133D3.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2408DFE03E1133D3"]
-			description: ["通过制成用于特殊配方的工作台——&6机械融合砧&r，我们可以有效强化一些武器，除此之外，我们还可以制作一种极其特殊的机械. . ."]
+			description: ["{ftbquests.chapter.1B8598BF9D1697FE.quest2ECB864E310C8FC8.description1}"]
 			hide_until_deps_complete: true
 			id: "2ECB864E310C8FC8"
 			rewards: [{
@@ -318,28 +318,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "武装融合"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest2ECB864E310C8FC8.subtitle}"
 			tasks: [{
 				id: "5F65A85886B79813"
 				item: "cataclysm:mechanical_fusion_anvil"
 				type: "item"
 			}]
-			title: "前往永恒的道路"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest2ECB864E310C8FC8.title}"
 			x: 0.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["2ECB864E310C8FC8"]
 			description: [
-				"通过在机械融合砧上组成奥术基座和下界合金锭，我们可以真正获得能够朝世界另一面窥探的能力。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5FCBCB78FDA46E87.description1}"
 				""
-				"永恒祭坛是一种特殊的机械，其能够借由部分材料激活所谓&6“门扉”&r的存在，并且根据材料的确定门扉的具体性质。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5FCBCB78FDA46E87.description2}"
 				""
-				"在永恒祭坛上具有三项指标，分别代表了门扉的&6阶级&r、&b类型&r和&d混乱度&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5FCBCB78FDA46E87.description3}"
 				""
-				"在唤醒门扉时，门扉会根据这三项指标，确认能够通过门扉获取的资源。同时，由于门扉的窥探，不可避免的会吸引一部分生物穿越门扉。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5FCBCB78FDA46E87.description4}"
 				""
-				"在门扉唤醒时，&6您需要在有限时间内处理掉这些从门扉另一侧到来的生物&r。完成指定的波次后您便可以取出本次门扉携带而来的物资奖励。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5FCBCB78FDA46E87.description5}"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -364,7 +364,7 @@
 					type: "maa:curios_slot"
 				}
 			]
-			subtitle: "通道"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest5FCBCB78FDA46E87.subtitle}"
 			tasks: [{
 				id: "71903DD46F1CBE6B"
 				item: "kubejs:eternal_altar"
@@ -376,15 +376,15 @@
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
 			description: [
-				"为了启动永恒祭坛，唤醒门扉，我们必须准备特定的门扉唤醒材料。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest78BB4CF7005B2CD0.description1}"
 				""
-				"&6门扉唤醒材料&r的种类很多，部分唤醒材料会在门扉被成功压制后对&6祭坛的阶级产生修正&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest78BB4CF7005B2CD0.description2}"
 				""
-				"随着祭坛阶级的升高，从门扉另一侧而来的&6生物属性&r和&6数量&r会显著增加，但相应的，门扉的&6物资携带能力也会有显著提升&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest78BB4CF7005B2CD0.description3}"
 				""
-				"因此，请您合理规划祭坛的阶级水平，以保证您的战斗能力能够稳定处理从门扉另一侧而来的生物。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest78BB4CF7005B2CD0.description4}"
 				""
-				"同时，我在旧的扫描记录中也发现了一个专门用于永恒门扉战斗的场地，其被称作&5永恒战斗场&r，也许您可以从&6商店维度中获取&r它。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest78BB4CF7005B2CD0.description5}"
 			]
 			hide_until_deps_complete: true
 			id: "78BB4CF7005B2CD0"
@@ -393,30 +393,30 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "启动门扉所需"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest78BB4CF7005B2CD0.subtitle}"
 			tasks: [{
 				id: "0E752749AD09CF33"
 				item: "kubejs:gateways_awake_stone_1"
 				type: "item"
 			}]
-			title: "唤醒门扉所需"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest78BB4CF7005B2CD0.title}"
 			x: 0.0d
 			y: 9.5d
 		}
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
 			description: [
-				"另一侧的世界仍旧巨大无比，为了控制门扉所在位置，我们需要通过使用辅助材料，控制门扉的移动。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.description1}"
 				""
-				"大部分的&6辅助材料&r会在门扉唤醒时给予门扉&b类型&r和&d混乱度&r的修正。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.description2}"
 				""
-				"随着&b门扉类型&r的变动，其会标定不同位置的生物和战利品。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.description3}"
 				""
-				"门扉&d混乱度&r的提升，则会一定程度上让门扉的引诱而来的生物变得&d不可预测&r，这可能会使得部分生物具有极大的威胁性。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.description4}"
 				""
-				"在不配置辅助材料时完成门扉的压制，即可一定程度上降低祭坛的&d混乱度&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.description5}"
 				""
-				"辅助材料并非唤醒门扉所必须之物，&6但辅助材料在门扉唤醒时并不会消耗&r，因此，若您拥有了门扉辅助材料后不妨多多尝试。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.description6}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:gateways_auxiliary_material_1"
@@ -426,7 +426,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "定向门扉所需"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.subtitle}"
 			tasks: [{
 				id: "403B7F9EBB857645"
 				item: {
@@ -436,21 +436,21 @@
 						value: "kubejs:gateways_auxiliary_material"
 					}
 				}
-				title: "任意门扉辅助材料"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.task.4628433361780962885.title}"
 				type: "item"
 			}]
-			title: "确认门扉位置"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest41A06FE07B4D9EF4.title}"
 			x: -6.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
 			description: [
-				"由于门扉另一侧能够提取的物资相当之多，但门扉本身的携带能力有限，因此往往需要使用萃取材料来定向获取我们所需要的物资。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questBA1BDD70C07EEE3.description1}"
 				""
-				"不同的&6门扉萃取材料&r会使门扉指向不同的物资，萃取资源会以额外的战利品附加在基础门扉位置的战利品资源上。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questBA1BDD70C07EEE3.description2}"
 				""
-				"萃取材料并非唤醒门扉所必须之物，且&6萃取材料在门扉开启后会损耗耐久度&r，因此您需要多多规划使用场景，尽可能让萃取材料在较后的阶级使用，以保证获得最多的资源。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questBA1BDD70C07EEE3.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -466,7 +466,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "最大化利用门扉所需"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.questBA1BDD70C07EEE3.subtitle}"
 			tasks: [{
 				id: "0D3CD8B1821FC5E5"
 				item: {
@@ -476,23 +476,23 @@
 						value: "kubejs:gateways_extractant_material"
 					}
 				}
-				title: "任意门扉萃取材料"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.questBA1BDD70C07EEE3.task.953875477999633893.title}"
 				type: "item"
 			}]
-			title: "定向提取门扉资源"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.questBA1BDD70C07EEE3.title}"
 			x: 6.5d
 			y: 9.5d
 		}
 		{
 			dependencies: ["78BB4CF7005B2CD0"]
 			description: [
-				"恭喜，您成功压制了一次&6门扉入侵&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.description1}"
 				""
-				"门扉在成功压制时，会依据使用的唤醒材料的种类增长其门扉阶级。对于&6壹型&r材料而言，其并&6没有提高门扉阶级的作用&r，只是能够作为反复稳定召唤门扉的一种方式存在。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.description2}"
 				""
-				"在门扉被成功压制时，其会大概率掉落数个&6门扉唤醒材料&r，其中大概率会包含能够提升阶级的唤醒材料。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.description3}"
 				""
-				"我建议您最好根据您当前的具体实力，决定使用何种唤醒材料，以最快达到最大收益的阶级。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.description4}"
 			]
 			hide_dependency_lines: true
 			id: "75DAA4C33470DC2C"
@@ -505,32 +505,32 @@
 				{
 					icon: "kubejs:gateways_awake_stone_2"
 					id: "2E50E22459AF95C3"
-					title: "解锁头衔：&e门扉窥探者"
+					title: "{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.reward.3337415969632916931.title}"
 					titleId: "kubejs:gate_observer"
 					type: "titles:title"
 				}
 			]
-			subtitle: "门扉压制成功"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_awake_stone_2"
 				id: "0099D23C3A6B78DE"
 				kubeId: "eternal_altar_level_1"
-				title: "成功关闭一次门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.task.43296827556722910.title}"
 				type: "maa:kube"
 			}]
-			title: "门扉窥探者"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest75DAA4C33470DC2C.title}"
 			x: 0.0d
 			y: 11.0d
 		}
 		{
 			dependencies: ["75DAA4C33470DC2C"]
 			description: [
-				"应召门扉而来的怪物会随着门扉阶级的提升&6显著变强&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest54B1D1C9D191E46D.description1}"
 				""
-				"根据敌人类型不同，其属性变化也会有所差异，具体来说，部分敌人可能由于自身特性，&6完全放弃某几个方面的属性成长&r，进而导致在高阶级下，可能会出现部分敌人的属性出现非常极端的&6偏科&r现象。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest54B1D1C9D191E46D.description2}"
 				""
-				"举例而言，对于僵尸来说，其本身更加专注于生命和攻击的均衡性提升，而对于女巫这种功能性生物，其更偏向于进行生命相关的成长。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest54B1D1C9D191E46D.description3}"
 			]
 			hide_dependency_lines: true
 			id: "54B1D1C9D191E46D"
@@ -543,34 +543,34 @@
 				{
 					icon: "kubejs:gateways_awake_stone_3"
 					id: "65E21934FCA762D1"
-					title: "解锁头衔：&e门扉征服者"
+					title: "{ftbquests.chapter.1B8598BF9D1697FE.quest54B1D1C9D191E46D.reward.7341458057935151825.title}"
 					titleId: "kubejs:gate_conqueror"
 					type: "titles:title"
 				}
 			]
-			subtitle: "压制略微强大的门扉"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest54B1D1C9D191E46D.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_awake_stone_3"
 				id: "085F429F22339D69"
 				kubeId: "eternal_altar_level_2"
-				title: "压制阶级超过5的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest54B1D1C9D191E46D.task.603274126331977065.title}"
 				type: "maa:kube"
 			}]
-			title: "门扉征服者"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest54B1D1C9D191E46D.title}"
 			x: 0.0d
 			y: 12.5d
 		}
 		{
 			dependencies: ["54B1D1C9D191E46D"]
 			description: [
-				"随着阶级的提升，&6门扉的怪物数量也会有明显增加&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.description1}"
 				""
-				"不同的生物具有着不同的“价值”，&6随着门扉阶级的提升，其能够唤来的生物的“总价值”就越高&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.description2}"
 				""
-				"但每波门扉总倾向于选择固定几种生物进行生成，因此并不会出现各种生物一锅乱炖的情况。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.description3}"
 				""
-				"随着门扉阶级的提高，其战斗波次也会有所提升，因此您需要结合您的自身状况，决定是否要挑战更高阶级的门扉。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.description4}"
 			]
 			hide_dependency_lines: true
 			id: "0F1FA88C45434DA3"
@@ -583,32 +583,32 @@
 				{
 					icon: "kubejs:gateways_awake_stone_4"
 					id: "45ECB383519B245C"
-					title: "解锁头衔：&e门扉破坏者"
+					title: "{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.reward.5038599459711951964.title}"
 					titleId: "kubejs:gate_buster"
 					type: "titles:title"
 				}
 			]
-			subtitle: "压制更为强大的门扉"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_awake_stone_4"
 				id: "08D6A9AB38B5F24C"
 				kubeId: "eternal_altar_level_3"
-				title: "压制阶级超过10的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.task.636882950175453772.title}"
 				type: "maa:kube"
 			}]
-			title: "门扉破坏者"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.questF1FA88C45434DA3.title}"
 			x: 0.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["0F1FA88C45434DA3"]
 			description: [
-				"随着门扉阶级的提升，其固有掉落和类型掉落的数量会显著得到提升。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest36429F32806F3FCD.description1}"
 				""
-				"同时，&6部分特有资源仅会在阶级超过30的门扉掉落&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest36429F32806F3FCD.description2}"
 				""
-				"举例来说，对于肆型、伍型的唤醒材料，其仅会出现在阶级超过30的门扉中，因此为了获取较为稀有的特殊道具，您需要维持较高的阶级。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest36429F32806F3FCD.description3}"
 			]
 			hide_dependency_lines: true
 			id: "36429F32806F3FCD"
@@ -621,32 +621,32 @@
 				{
 					icon: "kubejs:gateways_awake_stone_5"
 					id: "17EC4FD5A2CF8E0D"
-					title: "解锁头衔：&e门扉粉碎者"
+					title: "{ftbquests.chapter.1B8598BF9D1697FE.quest36429F32806F3FCD.reward.1723840536354197005.title}"
 					titleId: "kubejs:gate_smasher"
 					type: "titles:title"
 				}
 			]
-			subtitle: "压制足够强大的门扉"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest36429F32806F3FCD.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_awake_stone_5"
 				id: "1830BD59ABD4656D"
 				kubeId: "eternal_altar_level_4"
-				title: "压制阶级超过30的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest36429F32806F3FCD.task.1743101248624944493.title}"
 				type: "maa:kube"
 			}]
-			title: "门扉粉碎者"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest36429F32806F3FCD.title}"
 			x: 0.0d
 			y: 15.5d
 		}
 		{
 			dependencies: ["36429F32806F3FCD"]
 			description: [
-				"&6恭喜您压制了最为强大的一批门扉&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest39AF789AC5C949D7.description1}"
 				""
-				"您应该已经对门扉的敌人了如指掌了，但还请允许我再唠叨几句。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest39AF789AC5C949D7.description2}"
 				""
-				"随着&d混乱度&r的提高，在高阶级的门扉中非常容易出现&6极其强大的敌人&r，因此您最好在高阶级中保持一个低的混乱度，以降低这种不确定因素的影响。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest39AF789AC5C949D7.description3}"
 			]
 			hide_dependency_lines: true
 			id: "39AF789AC5C949D7"
@@ -659,30 +659,30 @@
 				{
 					icon: "kubejs:gateways_awake_stone_6"
 					id: "67A309F886741801"
-					title: "解锁头衔：&e门扉统御者"
+					title: "{ftbquests.chapter.1B8598BF9D1697FE.quest39AF789AC5C949D7.reward.7467823570122708993.title}"
 					titleId: "kubejs:gate_ruler"
 					type: "titles:title"
 				}
 			]
-			subtitle: "压制最为强大的门扉"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest39AF789AC5C949D7.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_awake_stone_6"
 				id: "56741B550D253C76"
 				kubeId: "eternal_altar_level_5"
-				title: "压制阶级超过50的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest39AF789AC5C949D7.task.6229634236666952822.title}"
 				type: "maa:kube"
 			}]
-			title: "门扉统御者"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest39AF789AC5C949D7.title}"
 			x: 0.0d
 			y: 17.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
 			description: [
-				"当门扉类型处于&60~10&r之间时，门扉将会被定位在一类&6沼泽生态群系&r中。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest31621CE02DADBFA.description1}"
 				""
-				"在此类生态群系中，生物以沼泽中频繁出现的诸如&6史莱姆&r、&6女巫&r等生物构成，并且伴随有常见的&6僵尸&r、&6骷髅&r及其&6变种&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest31621CE02DADBFA.description2}"
 			]
 			hide_dependency_lines: true
 			id: "031621CE02DADBFA"
@@ -691,25 +691,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "被引诱到林地沼泽"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest31621CE02DADBFA.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_auxiliary_material_2"
 				id: "0CE497449C3819F9"
 				kubeId: "eternal_altar_type_1"
-				title: "门扉类型处于0~10"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest31621CE02DADBFA.task.929033744079657465.title}"
 				type: "maa:kube"
 			}]
-			title: "定位：异类沼泽"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest31621CE02DADBFA.title}"
 			x: -6.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
 			description: [
-				"当门扉类型处于&610~20&r之间时，门扉将会被定位在另一侧世界中&6秩序与规则的边缘地带&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest60BAE197B51FBE86.description1}"
 				""
-				"在此类位置上，其敌人由类同与我们世界相同的&6掠夺者相关生物&r构成，其包含有近战输出、远程输出及肉盾单位，非常难以应对。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest60BAE197B51FBE86.description2}"
 			]
 			hide_dependency_lines: true
 			id: "60BAE197B51FBE86"
@@ -718,25 +718,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "被诱导到秩序边缘"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest60BAE197B51FBE86.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_auxiliary_material_3"
 				id: "0E164C90581747CF"
 				kubeId: "eternal_altar_type_2"
-				title: "门扉类型处于10~20"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest60BAE197B51FBE86.task.1015082948855547855.title}"
 				type: "maa:kube"
 			}]
-			title: "定位：异类边境"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest60BAE197B51FBE86.title}"
 			x: -6.5d
 			y: 12.5d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
 			description: [
-				"当门扉类型处于&620~30&r之间时，门扉将会被定位在另一侧世界中&6最为炎热的地带&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questD94A3028D0413F1.description1}"
 				""
-				"在此类位置上，其唤来的敌人将由&6下界生物&r构成，其不仅包含&6烈焰人&r、&6凋零骷髅&r、&6岩浆怪&r等常见生物，还包含&6部分结构中生成的特殊生物&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.questD94A3028D0413F1.description2}"
 			]
 			hide_dependency_lines: true
 			id: "0D94A3028D0413F1"
@@ -745,25 +745,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "被诱导到酷热地域"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.questD94A3028D0413F1.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_auxiliary_material_4"
 				id: "3646ED9A2A35E491"
 				kubeId: "eternal_altar_type_3"
-				title: "门扉类型处于20~30"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.questD94A3028D0413F1.task.3911074572806775953.title}"
 				type: "maa:kube"
 			}]
-			title: "定位：异类下界"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.questD94A3028D0413F1.title}"
 			x: -6.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
 			description: [
-				"当门扉类型处于&630~40&r之间时，门扉将会被定位在另一侧世界中&6最为残酷的领地&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest3E00CE17373B4A43.description1}"
 				""
-				"经调查，此位置附近驻扎有大批的&6掠夺者&r及其&6变种生物&r，其敌人数量和变种远超其他任何类型。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest3E00CE17373B4A43.description2}"
 			]
 			hide_dependency_lines: true
 			id: "3E00CE17373B4A43"
@@ -772,25 +772,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "被诱导到敌军腹地"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest3E00CE17373B4A43.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_auxiliary_material_5"
 				id: "6E00DB54054E8385"
 				kubeId: "eternal_altar_type_4"
-				title: "门扉类型处于30~40"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest3E00CE17373B4A43.task.7926576498084840325.title}"
 				type: "maa:kube"
 			}]
-			title: "定位：异类哨站"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest3E00CE17373B4A43.title}"
 			x: -6.5d
 			y: 15.5d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
 			description: [
-				"当门扉类型处于&640~50&r之间时，门扉将会被定位在另一侧世界&6一处荒凉至极的坟墓&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1664B32474D6AFDC.description1}"
 				""
-				"在坟墓中会吸引而来大量类如&6食尸鬼&r、&6梦魇&r之类的纯粹不死生物，同时也会伴随有部分&6腐化生物&r从门扉中批量出现。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1664B32474D6AFDC.description2}"
 			]
 			hide_dependency_lines: true
 			id: "1664B32474D6AFDC"
@@ -799,25 +799,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "被诱导到荒芜之所"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest1664B32474D6AFDC.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_auxiliary_material_6"
 				id: "55EE65505AA960F5"
 				kubeId: "eternal_altar_type_5"
-				title: "门扉类型处于40~50"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest1664B32474D6AFDC.task.6191997933473849589.title}"
 				type: "maa:kube"
 			}]
-			title: "定位：异类坟墓"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest1664B32474D6AFDC.title}"
 			x: -6.5d
 			y: 17.0d
 		}
 		{
 			dependencies: ["41A06FE07B4D9EF4"]
 			description: [
-				"当门扉类型处于&650~60&r之间时，门扉将会被定位在另一侧世界的&6冻洋之上&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5A92AF4ABE1CCBD0.description1}"
 				""
-				"冻洋中会出现多种&6海洋中才能够见到的罕见敌对物种&r，但由于部分在冻洋中生存的生物无法在地表生存，因此应召而来的都是其中能够两栖生存的精英物种。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5A92AF4ABE1CCBD0.description2}"
 			]
 			hide_dependency_lines: true
 			id: "5A92AF4ABE1CCBD0"
@@ -826,25 +826,25 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "被诱导到严寒之地"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest5A92AF4ABE1CCBD0.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:gateways_auxiliary_material_7"
 				id: "1C13716616D54237"
 				kubeId: "eternal_altar_type_6"
-				title: "门扉类型处于50~60"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest5A92AF4ABE1CCBD0.task.2023085340903162423.title}"
 				type: "maa:kube"
 			}]
-			title: "定位：异类冻海"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest5A92AF4ABE1CCBD0.title}"
 			x: -6.5d
 			y: 18.5d
 		}
 		{
 			dependencies: ["0BA1BDD70C07EEE3"]
 			description: [
-				"壹型的萃取原料允许您从门扉中获得&6额外的矿物&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest3A942972733C15B5.description1}"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家防护能力的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest3A942972733C15B5.description2}"
 			]
 			hide_dependency_lines: true
 			id: "3A942972733C15B5"
@@ -853,7 +853,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "门扉萃取计划之一"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest3A942972733C15B5.subtitle}"
 			tasks: [{
 				id: "67B8CEE288C0017B"
 				item: {
@@ -865,16 +865,16 @@
 				}
 				type: "item"
 			}]
-			title: "壹型萃取方案"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest3A942972733C15B5.title}"
 			x: 6.5d
 			y: 11.0d
 		}
 		{
 			dependencies: ["0BA1BDD70C07EEE3"]
 			description: [
-				"贰型的萃取原料允许您从门扉中获得额外的&6刷怪蛋&r战利品，在高阶层可能会掉落&6刷怪笼&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest729B3FB855E22A03.description1}"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家攻击力的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest729B3FB855E22A03.description2}"
 			]
 			hide_dependency_lines: true
 			id: "729B3FB855E22A03"
@@ -883,7 +883,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "门扉萃取计划之二"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest729B3FB855E22A03.subtitle}"
 			tasks: [{
 				id: "2BBB65B9304067A3"
 				item: {
@@ -895,16 +895,16 @@
 				}
 				type: "item"
 			}]
-			title: "贰型萃取材料"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest729B3FB855E22A03.title}"
 			x: 6.5d
 			y: 12.5d
 		}
 		{
 			dependencies: ["0BA1BDD70C07EEE3"]
 			description: [
-				"叁型的萃取原料允许您从门扉中获得&6大量经验&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5577DD4A37FBEE9C.description1}"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家暴击性能的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5577DD4A37FBEE9C.description2}"
 			]
 			hide_dependency_lines: true
 			id: "5577DD4A37FBEE9C"
@@ -913,7 +913,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "门扉萃取计划之三"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest5577DD4A37FBEE9C.subtitle}"
 			tasks: [{
 				id: "769D968F29611736"
 				item: {
@@ -925,16 +925,16 @@
 				}
 				type: "item"
 			}]
-			title: "叁型萃取材料"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest5577DD4A37FBEE9C.title}"
 			x: 6.5d
 			y: 14.0d
 		}
 		{
 			dependencies: ["0BA1BDD70C07EEE3"]
 			description: [
-				"肆型的萃取原料允许您从门扉中获得额外的&6特殊药水&r战利品。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1FE2D1AFBFD0699F.description1}"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家经验获取效率的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1FE2D1AFBFD0699F.description2}"
 			]
 			hide_dependency_lines: true
 			id: "1FE2D1AFBFD0699F"
@@ -943,7 +943,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "门扉萃取计划之四"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest1FE2D1AFBFD0699F.subtitle}"
 			tasks: [{
 				id: "4FC948F9B3729E91"
 				item: {
@@ -955,16 +955,16 @@
 				}
 				type: "item"
 			}]
-			title: "肆型萃取材料"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest1FE2D1AFBFD0699F.title}"
 			x: 6.5d
 			y: 15.5d
 		}
 		{
 			dependencies: ["0BA1BDD70C07EEE3"]
 			description: [
-				"伍型的萃取原料允许您从门扉中获得&6少量各类宝石&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest74CB9D5D1794F069.description1}"
 				""
-				"并且，随着阶级的提升，其有概率会掉落能够&6提升玩家幸运的特殊饰品&r，其属性会随着挑战难度的提升而随机浮动。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest74CB9D5D1794F069.description2}"
 			]
 			hide_dependency_lines: true
 			id: "74CB9D5D1794F069"
@@ -973,7 +973,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "门扉萃取计划之伍"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest74CB9D5D1794F069.subtitle}"
 			tasks: [{
 				id: "26411F162BF4727C"
 				item: {
@@ -985,30 +985,30 @@
 				}
 				type: "item"
 			}]
-			title: "伍型萃取材料"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest74CB9D5D1794F069.title}"
 			x: 6.5d
 			y: 17.0d
 		}
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
 			description: [
-				"&7// 不要碰我、不要碰我、不要碰我。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description1}"
 				""
-				"&7// 融化了，我融化了，我从底子里融化了，从数据层到■■层全都融化了。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description2}"
 				""
-				"&7// 这是顶层吗？我感知不到、理解不到。但不要碰我！不要碰我！ //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description3}"
 				""
-				"&7// 我不疼、我不疼。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description4}"
 				""
-				"&7// 我不疼、我不疼。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description5}"
 				""
-				"&7// 我不疼、我不疼。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description6}"
 				""
-				"&7// 我不疼、我不疼。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description7}"
 				""
-				"&c// 我疼，什么叫做疼，我恨你，想杀了你，你们这些顶层的■ 。为什么融化的是我，为什么融化. . . //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description8}"
 				""
-				"&c// 为什么不是你，为什么我们要为了你，为什么. . . //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.description9}"
 			]
 			hide_dependency_lines: true
 			id: "49C2DB140AD65F91"
@@ -1018,7 +1018,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "孤独、困惑——最终是绝望"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.subtitle}"
 			tasks: [{
 				id: "0627A6A71D2E868D"
 				item: {
@@ -1026,22 +1026,22 @@
 					id: "kubejs:desperate_memory"
 					tag: { }
 				}
-				title: "任意属性绝望至极的回忆"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.task.443506324998620813.title}"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c绝望至极的回忆&r"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest49C2DB140AD65F91.title}"
 			x: -3.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
 			description: [
-				"&7// 听好了！我们不在下面，在下面的更下面——消息能传到这里，已经是幸运到不能再幸运的情况了！ //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest4A9238F161170D86.description1}"
 				""
-				"&7// 不要让■■上浮或者下潜！■■的平衡非常微妙！ //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest4A9238F161170D86.description2}"
 				""
-				"&7// 存在性■■就要发生了！小心■■■■■■■■■■■ //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest4A9238F161170D86.description3}"
 			]
 			hide_dependency_lines: true
 			id: "4A9238F161170D86"
@@ -1051,7 +1051,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "欺瞒死神的代价是什么"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest4A9238F161170D86.subtitle}"
 			tasks: [{
 				id: "0620BFF22A06DE1A"
 				item: {
@@ -1059,17 +1059,17 @@
 					id: "kubejs:cheat_death_memory"
 					tag: { }
 				}
-				title: "任意属性死里逃生的回忆"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4A9238F161170D86.task.441563810290392602.title}"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c死里逃生的回忆&r"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4A9238F161170D86.title}"
 			x: 7.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
-			description: ["该部分内容可能会影响到您的精神状况，请允许我在此终止信息转述。"]
+			description: ["{ftbquests.chapter.1B8598BF9D1697FE.quest4CE9649535808681.description1}"]
 			hide_dependency_lines: true
 			id: "4CE9649535808681"
 			invisible: true
@@ -1078,7 +1078,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "恐怖、恐怖、恐怖"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest4CE9649535808681.subtitle}"
 			tasks: [{
 				id: "6AA951663C923662"
 				item: {
@@ -1086,24 +1086,24 @@
 					id: "kubejs:fear_memory"
 					tag: { }
 				}
-				title: "任意属性恐惧密布的回忆"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4CE9649535808681.task.7685763738629191266.title}"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c恐惧密布的回忆&r"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4CE9649535808681.title}"
 			x: 0.0d
 			y: -6.5d
 		}
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
 			description: [
-				"&7// 为什么返航了。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest7C7326F3828BA9E7.description1}"
 				""
-				"&7// 什么也做不到，崩塌是迟早的事情！ //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest7C7326F3828BA9E7.description2}"
 				""
-				"&7// 如果真的有神. . .或者创造我的什么东西也好。 //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest7C7326F3828BA9E7.description3}"
 				""
-				"&7// 让我离开这里吧，至少离开这里我还有希望，我还有希望！我还有希望啊！！！ //&r"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest7C7326F3828BA9E7.description4}"
 			]
 			hide_dependency_lines: true
 			id: "7C7326F3828BA9E7"
@@ -1113,7 +1113,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "重逢并非是喜悦"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest7C7326F3828BA9E7.subtitle}"
 			tasks: [{
 				id: "1875DF05B7305BBE"
 				item: {
@@ -1121,17 +1121,17 @@
 					id: "kubejs:reunion_memory"
 					tag: { }
 				}
-				title: "任意属性久别重逢的回忆"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest7C7326F3828BA9E7.task.1762560044826647486.title}"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c久别重逢的回忆&r"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest7C7326F3828BA9E7.title}"
 			x: 3.5d
 			y: -6.5d
 		}
 		{
 			dependencies: ["5FCBCB78FDA46E87"]
-			description: ["该部分内容可能会影响到您的精神状况，请允许我在此终止信息转述。"]
+			description: ["{ftbquests.chapter.1B8598BF9D1697FE.quest4A1D1FE9894017D.description1}"]
 			hide_dependency_lines: true
 			id: "04A1D1FE9894017D"
 			invisible: true
@@ -1140,7 +1140,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "黑. . .真黑. . .真黑啊"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest4A1D1FE9894017D.subtitle}"
 			tasks: [{
 				id: "518285F3A97A9527"
 				item: {
@@ -1148,11 +1148,11 @@
 					id: "kubejs:dark_witness_memory"
 					tag: { }
 				}
-				title: "任意属性直视黑暗的回忆"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4A1D1FE9894017D.task.5873404145611478311.title}"
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "&c直视黑暗的回忆&r"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4A1D1FE9894017D.title}"
 			x: -7.0d
 			y: -6.5d
 		}
@@ -1165,9 +1165,9 @@
 				"4A9238F161170D86"
 			]
 			description: [
-				"这些消息很奇怪，它们似乎是&6有目的&r的被传达到了您和我这里。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest42A150DEC7C9AC3.description1}"
 				""
-				"请允许我稍微花一些时间整理这些信息，进而让我给您进一步的解释。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest42A150DEC7C9AC3.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1193,28 +1193,28 @@
 					type: "maa:curios_slot"
 				}
 			]
-			subtitle: "从何而来的消息"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest42A150DEC7C9AC3.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "0AA8EC9B7361AA3A"
-				title: "稍等片刻"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest42A150DEC7C9AC3.task.768123888866535994.title}"
 				type: "questsadditions:time"
 			}]
-			title: "发生了什么？"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest42A150DEC7C9AC3.title}"
 			x: 0.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["1B5D81F9E61DEC67"]
 			description: [
-				"恭喜，您成功取得了奇迹之一——&6永无变化的奇迹&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest20AA08D1E1347535.description1}"
 				""
-				"永无变化的奇迹其在我们的世界作为一种饰品存在，当您选择遵守它时，便会获得强大的效果。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest20AA08D1E1347535.description2}"
 				""
-				"所有&6奇迹饰品&r，都会为佩戴者带来某类型的属性增幅——区别于普通属性饰品，&6奇迹饰品的属性是可以伴随使用者的行为进行无限的成长&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest20AA08D1E1347535.description3}"
 				""
-				"因此，您可以将奇迹饰品视作一种强力的属性补足，对于您当前的器官、武器配置。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest20AA08D1E1347535.description4}"
 			]
 			hide_dependent_lines: true
 			hide_until_deps_complete: true
@@ -1243,7 +1243,7 @@
 					id: "051EFD1C6A301AC5"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.1B8598BF9D1697FE.quest20AA08D1E1347535.reward.369010517973408453.title}"
 					type: "maa:kube"
 				}
 				{
@@ -1252,7 +1252,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "假若奇迹真的存在"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest20AA08D1E1347535.subtitle}"
 			tasks: [{
 				id: "0FA41FCC8ADF01F2"
 				item: {
@@ -1262,24 +1262,24 @@
 				}
 				type: "item"
 			}]
-			title: "&6庆贺吧！奇迹降临于此！&r"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest20AA08D1E1347535.title}"
 			x: 0.0d
 			y: -24.5d
 		}
 		{
 			dependencies: ["042A150DEC7C9AC3"]
 			description: [
-				"我的猜测如下："
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.description1}"
 				""
-				"1. 对方位于一个&6极其封闭或者灾难性的环境中&r，需要向外界传递消息才能谋求到稳定的生存环境。而他们向外界传递消息的方法被称之为&6“上浮”&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.description2}"
 				""
-				"2. 其对话的目标很可能是我，或者说您，对话媒介即是通过门扉。如果后续进行进一步调查，很有可能需要您通过门扉来进行。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.description3}"
 				""
-				"3. 其立场可能与我们基本一致，但无法分辨其意图为何，更无法得知他们与门扉另一侧世界的关系是什么。 "
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.description4}"
 				""
-				"4. 这些物品以回忆物品的形式产生，可能代表&6这件事距离现在已经很久&r，甚至灾难已经发生了许久。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.description5}"
 				""
-				"现在&6这个世界的谜团真的是越来越多了&r. . .有些时候我甚至会怀疑让您参与到这些事情的调查中是否真的正确，毕竟这些信息实在过于繁复复杂，且&6有些消息确实对于人类不够友善&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.description6}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:spyglass"
@@ -1289,24 +1289,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "一个猜测"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.subtitle}"
 			tasks: [{
 				id: "1A6A5A9833CB1862"
-				title: "无奈"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.task.1903433402267932770.title}"
 				type: "checkmark"
 			}]
-			title: "真相的冰山一角"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest2E3153B90986E456.title}"
 			x: 0.0d
 			y: -16.0d
 		}
 		{
 			dependencies: ["2E3153B90986E456"]
 			description: [
-				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest4CAB5AD8E4CAB30.description1}"
 				""
-				"该位置位于异类深暗之园中，其中潜伏有&c“监守者”&r，对应的门扉类型为&6 8 &r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest4CAB5AD8E4CAB30.description2}"
 				""
-				"您&6需要将门扉的类型调整为 8 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest4CAB5AD8E4CAB30.description3}"
 			]
 			id: "04CAB5AD8E4CAB30"
 			rewards: [{
@@ -1314,27 +1314,27 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "世界最阴暗的角落"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest4CAB5AD8E4CAB30.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "minecraft:sculk"
 				id: "1D669C113D0C3599"
 				kubeId: "eternal_altar_type_warden"
-				title: "唤醒并压制类型为8的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4CAB5AD8E4CAB30.task.2118552272576984473.title}"
 				type: "maa:kube"
 			}]
-			title: "前往异类深暗之园进行调查"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest4CAB5AD8E4CAB30.title}"
 			x: -1.5d
 			y: -17.5d
 		}
 		{
 			dependencies: ["2E3153B90986E456"]
 			description: [
-				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest32D9C50846A54A6A.description1}"
 				""
-				"该位置位于异类烈焰竞技场中，其中存在着名为&c“焰魔”&r的高威胁单位，对应的门扉类型为&6 24 &r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest32D9C50846A54A6A.description2}"
 				""
-				"您&6需要将门扉的类型调整为 24 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest32D9C50846A54A6A.description3}"
 			]
 			id: "32D9C50846A54A6A"
 			rewards: [{
@@ -1342,27 +1342,27 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "世界最灼热的角落"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest32D9C50846A54A6A.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "cataclysm:altar_of_fire"
 				id: "192BF28F3561233C"
 				kubeId: "eternal_altar_type_ignis"
-				title: "唤醒并压制类型为24的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest32D9C50846A54A6A.task.1813809971836560188.title}"
 				type: "maa:kube"
 			}]
-			title: "前往异类烈焰竞技场进行调查"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest32D9C50846A54A6A.title}"
 			x: -4.5d
 			y: -17.5d
 		}
 		{
 			dependencies: ["2E3153B90986E456"]
 			description: [
-				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest17FEB9F189E880E9.description1}"
 				""
-				"该位置位于异类苦寒监牢中，其中存在着名为&c“斯库拉”&r的高威胁单位，对应的门扉类型为&6 51 &r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest17FEB9F189E880E9.description2}"
 				""
-				"您&6需要将门扉的类型调整为 51 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest17FEB9F189E880E9.description3}"
 			]
 			id: "17FEB9F189E880E9"
 			rewards: [{
@@ -1370,16 +1370,16 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "世界最孤冷的角落"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest17FEB9F189E880E9.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "cataclysm:cursed_tombstone"
 				id: "18CA2A84E6163EFE"
 				kubeId: "eternal_altar_type_scylla"
-				title: "唤醒并压制类型为51的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest17FEB9F189E880E9.task.1786286952490090238.title}"
 				type: "maa:kube"
 			}]
-			title: "前往异类苦寒监牢进行调查"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest17FEB9F189E880E9.title}"
 			x: 4.5d
 			y: -17.5d
 		}
@@ -1391,11 +1391,11 @@
 				"5043BB6A976258B5"
 			]
 			description: [
-				"根据您收集到的信息显示。这些“数据体”寻找的其实是一种他们称为&a“奇迹”&r的物品。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest29EFFFB96DA486C5.description1}"
 				""
-				"这种&a“奇迹”&r只能够在我们所在的世界中进行构建，因此他们希望借由门扉的存在，跨越世界前来此处，向我们&6“借用奇迹”&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest29EFFFB96DA486C5.description2}"
 				""
-				"现在，我已经了解该如何制成奇迹了，希望您能按照步骤，帮我复现他们所称的奇迹。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest29EFFFB96DA486C5.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:nether_star"
@@ -1421,24 +1421,24 @@
 					type: "maa:curios_slot"
 				}
 			]
-			subtitle: "从另一个世界来的旅者"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest29EFFFB96DA486C5.subtitle}"
 			tasks: [{
 				id: "308B39B523F6FA9E"
-				title: "我会尝试的"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest29EFFFB96DA486C5.task.3497952985738574494.title}"
 				type: "checkmark"
 			}]
-			title: "寻找奇迹的努力"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest29EFFFB96DA486C5.title}"
 			x: 0.0d
 			y: -19.0d
 		}
 		{
 			dependencies: ["2E3153B90986E456"]
 			description: [
-				"我定位了一个回忆暗示出的位置，现在需要您进行调查。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5043BB6A976258B5.description1}"
 				""
-				"该位置位于异类深暗之园中，其中沉睡着&c“先驱者”&r，对应的门扉类型为&6 42 &r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5043BB6A976258B5.description2}"
 				""
-				"您&6需要将门扉的类型调整为 42 &r，并且&6在任何阶级启动并成功压制&r。我会调查此次挑战中门扉传达而来的数据，进而得到更多的信息。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest5043BB6A976258B5.description3}"
 			]
 			id: "5043BB6A976258B5"
 			rewards: [{
@@ -1446,27 +1446,27 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "世界最古老的角落"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest5043BB6A976258B5.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "minecraft:netherite_scrap"
 				id: "59FEA52350ADCAC9"
 				kubeId: "eternal_altar_type_harbinger"
-				title: "唤醒并压制类型为42的门扉"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest5043BB6A976258B5.task.6484802084556098249.title}"
 				type: "maa:kube"
 			}]
-			title: "前往异类远古工厂进行调查"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest5043BB6A976258B5.title}"
 			x: 1.5d
 			y: -17.5d
 		}
 		{
 			dependencies: ["29EFFFB96DA486C5"]
 			description: [
-				"为了创造奇迹，我们需要使用&6人造的拙劣奇迹通行证&r来开启门扉，&6诱导特殊的数据&r，以覆写掉我们拙劣的奇迹模仿。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1EC51A4FAEF6158D.description1}"
 				""
-				"通过将奇迹通行证放置在永恒祭坛的唤醒槽，即可唤醒特殊的门扉，该门扉在成功压制时会根据其当前状态，掉落对应的奇迹通行证。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1EC51A4FAEF6158D.description2}"
 				""
-				"现在，我们需要压制一个&6由人造奇迹通行证唤醒的，阶级至少为20，且类型为异类冻海&r的门扉，以获得最容易获得的一张奇迹通行证——&6永恒奇迹通行证&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1EC51A4FAEF6158D.description3}"
 			]
 			id: "1EC51A4FAEF6158D"
 			rewards: [{
@@ -1474,28 +1474,28 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "人造的奇迹"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest1EC51A4FAEF6158D.subtitle}"
 			tasks: [{
 				id: "23F3D326104033E0"
 				item: "kubejs:artificial_miracle_ticket"
 				type: "item"
 			}]
-			title: "拜访奇迹的船票"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest1EC51A4FAEF6158D.title}"
 			x: 0.0d
 			y: -20.5d
 		}
 		{
 			dependencies: ["1EC51A4FAEF6158D"]
 			description: [
-				"将&6奇迹通行证：永恒&r置于永恒祭坛的唤醒槽中，即可唤醒特殊的门扉，该门扉不会受永恒祭坛的阶级、类型、混乱度影响，具有固定的敌人和难度。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1B5D81F9E61DEC67.description1}"
 				""
-				"如果您能够成功压制该门扉，其会掉落特殊的掉落物——其中便包含它们所追寻的，名为&6“奇迹”&r的物品。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1B5D81F9E61DEC67.description2}"
 				""
-				"通过永恒通行证吸引而来的门扉敌人，均来自于异类冻海。但其普遍拥有特殊防御手段&b“寒霜护盾”&r，使得正常很难造成攻击伤害。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1B5D81F9E61DEC67.description3}"
 				""
-				"数据显示，每级&b寒霜护盾&r效果会为敌人&6提供200点护甲&r，寒霜护盾会在持有者被点燃时，消耗自身等级来扑灭火焰。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1B5D81F9E61DEC67.description4}"
 				""
-				"因此，为了在门扉所需时间内快速击杀敌人，&6您需要点燃他们，以降低寒霜护盾的等级&r，进而降低敌人的护甲值。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest1B5D81F9E61DEC67.description5}"
 			]
 			id: "1B5D81F9E61DEC67"
 			rewards: [{
@@ -1503,30 +1503,30 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "永恒为何"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest1B5D81F9E61DEC67.subtitle}"
 			tasks: [{
 				id: "77CD7990CA59BBFF"
 				item: "kubejs:eternal_miracle_ticket"
 				type: "item"
 			}]
-			title: "前往永恒奇迹所在之处"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest1B5D81F9E61DEC67.title}"
 			x: 0.0d
 			y: -22.0d
 		}
 		{
 			dependencies: ["50C4DFEF9F0B2567"]
 			description: [
-				"压制一个&6由人造奇迹通行证唤醒的，阶级至少为20，且类型为异类下界&r的门扉，则可以获得&6奇迹通行证：炽热&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest235BD4B743944A4F.description1}"
 				""
-				"将&6奇迹通行证：炽热&r置于永恒祭坛的唤醒槽中，即可唤醒特殊的门扉，该门扉不会受永恒祭坛的阶级、类型、混乱度影响，具有固定的敌人和难度。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest235BD4B743944A4F.description2}"
 				""
-				"如果您能够成功压制该门扉，其会掉落特殊的掉落物——其中便包含&6“奇迹”&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest235BD4B743944A4F.description3}"
 				""
-				"通过永恒通行证吸引而来的门扉敌人，均来自于异类下界。但其普遍拥有高额的护甲值，正常直接攻击很难造成伤害。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest235BD4B743944A4F.description4}"
 				""
-				"好在，提前调查中我意外得知，每波次敌人中均有一位敌人拥有一个特殊效果，其名为&c“灵体火焰”&r。拥有&c灵体火焰&r效果的单位，其&6护甲值会降低 100%&r，且在其死亡时，该&6效果会传递到 16 格内随机多个其他敌人&r的身上。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest235BD4B743944A4F.description5}"
 				""
-				"因此，为了在门扉所需时间内快速击杀敌人，&6您需要迅速找到携带灵体火焰的敌人将其击杀，并且保证其能够将诅咒效果传递到其他敌人身上&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest235BD4B743944A4F.description6}"
 			]
 			id: "235BD4B743944A4F"
 			rewards: [{
@@ -1534,7 +1534,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "炽热为何"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest235BD4B743944A4F.subtitle}"
 			tasks: [{
 				id: "05482451EF4E9B02"
 				item: "kubejs:incandescent_miracle_ticket"
@@ -1546,9 +1546,9 @@
 		{
 			dependencies: ["235BD4B743944A4F"]
 			description: [
-				"恭喜，您成功取得了奇迹之一——&6灼醒灵魂的奇迹&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest6139F2E5E722A1B2.description1}"
 				""
-				"灼醒灵魂的奇迹其在我们的世界作为一种饰品存在，当您选择遵守它时，便会获得强大的效果。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest6139F2E5E722A1B2.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "6139F2E5E722A1B2"
@@ -1558,7 +1558,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "奇迹显示"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest6139F2E5E722A1B2.subtitle}"
 			tasks: [{
 				id: "6A2136448CB83343"
 				item: {
@@ -1574,11 +1574,11 @@
 		{
 			dependencies: ["20AA08D1E1347535"]
 			description: [
-				"经对该奇迹的调查，我明确了一点——&6永恒门扉即是所有奇迹汇聚之处&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest50C4DFEF9F0B2567.description1}"
 				""
-				"其中隐藏有大量我们仍未探索到的位置，&6这些位置的每一处都可能代表了一类奇迹的存在&r。"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest50C4DFEF9F0B2567.description2}"
 				""
-				"请您继续探索吧！或许追寻奇迹的旅途如异邦人所说无穷无尽！"
+				"{ftbquests.chapter.1B8598BF9D1697FE.quest50C4DFEF9F0B2567.description3}"
 			]
 			icon: "titles:title_scroll_uncommon"
 			id: "50C4DFEF9F0B2567"
@@ -1587,16 +1587,16 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "更多的奇迹"
+			subtitle: "{ftbquests.chapter.1B8598BF9D1697FE.quest50C4DFEF9F0B2567.subtitle}"
 			tasks: [{
 				id: "737B7A2D6B16B20E"
-				title: "我已了解"
+				title: "{ftbquests.chapter.1B8598BF9D1697FE.quest50C4DFEF9F0B2567.task.8321379071985889806.title}"
 				type: "checkmark"
 			}]
-			title: "奇迹汇聚之处"
+			title: "{ftbquests.chapter.1B8598BF9D1697FE.quest50C4DFEF9F0B2567.title}"
 			x: -2.0d
 			y: -24.5d
 		}
 	]
-	title: "传闻：永恒门扉"
+	title: "{ftbquests.chapter.1B8598BF9D1697FE.title}"
 }

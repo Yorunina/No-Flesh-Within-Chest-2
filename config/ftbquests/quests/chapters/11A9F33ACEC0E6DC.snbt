@@ -150,11 +150,11 @@
 		{
 			dependencies: ["14A4E17E4416A28C"]
 			description: [
-				"等下，我好像在这个罐子中&6发现了什么东西&r. . ."
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2404C834CBCBB197.description1}"
 				""
-				"事实上，我一直在观察类似罐子的玻璃容器。在历史信息中，曾经在这种罐子中发现了一种特殊的&d寄生虫&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2404C834CBCBB197.description2}"
 				""
-				"如果我们使用一些有效的&6药水&r，或许可以将其从中显现。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2404C834CBCBB197.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "bakery:jar"
@@ -164,19 +164,19 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "神秘起源"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2404C834CBCBB197.subtitle}"
 			tasks: [{
 				id: "3E463CECA1A92FCF"
 				item: "bakery:jar"
 				type: "item"
 			}]
-			title: "迷之罐"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2404C834CBCBB197.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2404C834CBCBB197"]
-			description: ["制作&6火炉&r和&6烹饪锅&r，并且将烹饪锅放置在火炉上，即可组成用于烹饪的烹饪锅结构。"]
+			description: ["{ftbquests.chapter.11A9F33ACEC0E6DC.quest1E01A8A10DC713E3.description1}"]
 			icon: "farm_and_charm:cooking_pot"
 			id: "1E01A8A10DC713E3"
 			rewards: [{
@@ -184,7 +184,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "低温加热空白罐"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest1E01A8A10DC713E3.subtitle}"
 			tasks: [
 				{
 					id: "70F9538357C137EA"
@@ -197,16 +197,16 @@
 					type: "item"
 				}
 			]
-			title: "古老的烹饪技术"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest1E01A8A10DC713E3.title}"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1E01A8A10DC713E3"]
 			description: [
-				"&a史莱姆&r在罐子里逐渐干结成不可见的白色结晶。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest43DD1C0BA90A1ACB.description1}"
 				""
-				"现在，罐子里&6几乎&r什么都没有. . .正常来说是这样的。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest43DD1C0BA90A1ACB.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "43DD1C0BA90A1ACB"
@@ -215,7 +215,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "低温慢煮"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest43DD1C0BA90A1ACB.subtitle}"
 			tasks: [{
 				id: "46CBBACA8BC8FFC1"
 				item: {
@@ -225,16 +225,16 @@
 				}
 				type: "item"
 			}]
-			title: "一小罐“真空”"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest43DD1C0BA90A1ACB.title}"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["43DD1C0BA90A1ACB"]
 			description: [
-				"通过&6生物炼金釜&r的显像加工，罐子里被隐藏的生物终于浮出水面——它似乎是一种不定形态的生物，恰似一种&6变形虫&r. . .但又似乎是因为显像液所致. . ."
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1FA97EE58C47666D.description1}"
 				""
-				"现在，它还只是一个&6幼体&r。您可以为它提供一个环境使其成长，虽然有些令人厌恶，但这个环境的最优选择便是&c您的胸腔&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1FA97EE58C47666D.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "1FA97EE58C47666D"
@@ -243,7 +243,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "这是什么？"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest1FA97EE58C47666D.subtitle}"
 			tasks: [{
 				id: "6BA21292CC923295"
 				item: {
@@ -261,13 +261,13 @@
 		{
 			dependencies: ["1FA97EE58C47666D"]
 			description: [
-				"终于！在借用了您的&6身体循环&r后，我们得以窥见这神秘生物！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3786F4EF9AB65A30.description1}"
 				""
-				"其是一种特殊生物的幼体——可以暂时将其称作&6“美味虫”&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3786F4EF9AB65A30.description2}"
 				""
-				"该名称由来自一些来源未知的记录。其详细描述了美味虫广泛存在于各种餐具之中窃取滋味的行为特征，同时也包含了一些&6烹饪美味虫&r的食谱. . .。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3786F4EF9AB65A30.description3}"
 				""
-				"美味虫的幼体无法从您的胸腔直接取出，待您食用足够多的食物之后，其会自然而然进化为成虫，脱离寄生主体。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3786F4EF9AB65A30.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: {
@@ -283,7 +283,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "它破罐而出"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest3786F4EF9AB65A30.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: {
@@ -295,23 +295,23 @@
 				}
 				id: "6133C10DED520D7A"
 				kubeId: "jar_of_mystery_grow"
-				title: "蠕虫幼体破罐而出"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest3786F4EF9AB65A30.task.7004154111051566458.title}"
 				type: "maa:kube"
 			}]
-			title: "蠕虫幼体"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest3786F4EF9AB65A30.title}"
 			x: 5.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["3786F4EF9AB65A30"]
 			description: [
-				"罕见的情况！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest19FA069801FA43D1.description1}"
 				""
-				"本来应当成长为成体美味虫的幼体和&6心脏&r发生了&6共生融合&r！美味虫直接接管了器官的功能并且加以修正。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest19FA069801FA43D1.description2}"
 				""
-				"这个现象具有极其高的价值，而且其产生的结果——&d大胃王&r——也具有极高的利用价值。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest19FA069801FA43D1.description3}"
 				""
-				"如果我们能够有效利用其力量，或许能颠覆之前对器官体系的基本认知！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest19FA069801FA43D1.description4}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -322,7 +322,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "培育得当"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest19FA069801FA43D1.subtitle}"
 			tasks: [{
 				id: "3F53EF065D8036BC"
 				item: {
@@ -338,11 +338,11 @@
 		{
 			dependencies: ["3786F4EF9AB65A30"]
 			description: [
-				"在&a成长质量低于1&r时，幼虫总是倾向于成长为美味虫。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest4BFD35B09AF6436E.description1}"
 				""
-				"美味虫不仅可以作为&6器官&r，根据周围的食物属性触发效果，其本身更是一种独特的食材。经过不同的&6烹饪手段&r得到的美味虫，具有各种奇特的滋味。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest4BFD35B09AF6436E.description2}"
 				""
-				"除此之外，我对您的身体扫描后，发现在&6胸腔内的幼体美味虫似乎总是想要吃掉它周围的器官&r. . .虽然最后它似乎是放弃了，但感觉其并非善意。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest4BFD35B09AF6436E.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "4BFD35B09AF6436E"
@@ -351,7 +351,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "看起来并不那么美味"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest4BFD35B09AF6436E.subtitle}"
 			tasks: [{
 				id: "69AA8A29427732E0"
 				item: {
@@ -361,16 +361,16 @@
 				}
 				type: "item"
 			}]
-			title: "美味虫"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest4BFD35B09AF6436E.title}"
 			x: 5.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
 			description: [
-				"通过熔炉可以将美味虫烹饪成一种&6最简单的形态&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7CD591898F55BC60.description1}"
 				""
-				"日志记载，这种烹饪的美味虫味道一般，勉强比生食好过些许，无法满足饱腹之欲。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7CD591898F55BC60.description2}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -383,22 +383,22 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "只需加大火苗"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7CD591898F55BC60.subtitle}"
 			tasks: [{
 				id: "5920412A8288D785"
 				item: "kubejs:simple_cooked_taste_worm"
 				type: "item"
 			}]
-			title: "简单处理的美味虫"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7CD591898F55BC60.title}"
 			x: 11.79d
 			y: 7.32d
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
 			description: [
-				"通过将美味虫&6风干&r，可以获得能够长期储存的&6美味干&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest22116E44C81CA5C8.description1}"
 				""
-				"美味虫干易于磨碎成粉，进而用于各种调味制品的制作中。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest22116E44C81CA5C8.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -410,22 +410,22 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "风干技术"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest22116E44C81CA5C8.subtitle}"
 			tasks: [{
 				id: "3113001C7EE1D53A"
 				item: "kubejs:dried_taste_worm"
 				type: "item"
 			}]
-			title: "美味干"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest22116E44C81CA5C8.title}"
 			x: 11.75d
 			y: 5.05d
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
 			description: [
-				"通过&6煎炸处理&r后的美味虫味道有了极大的改善！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1EF30986B9E4ACBA.description1}"
 				""
-				"日志记载中，煎炸是处理美味虫的最简单的方式，不仅保留了其作为&6虫子美食&r的特点，而且还能尽可能发挥美味虫本身保留的美味。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1EF30986B9E4ACBA.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -437,7 +437,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "一种怪异的虫子美食"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest1EF30986B9E4ACBA.subtitle}"
 			tasks: [{
 				id: "04FEC43AB1D32DC5"
 				item: "kubejs:fried_taste_worm"
@@ -448,7 +448,7 @@
 		}
 		{
 			dependencies: ["4BFD35B09AF6436E"]
-			description: ["将美味虫&6打成肉馅&r也是一种常见的处理方式，虽然不知道为什么，这种虫子会有着如此饱满的肉质. . .但其处理中和处理后的模样实在是令人厌恶。"]
+			description: ["{ftbquests.chapter.11A9F33ACEC0E6DC.quest55329907B527DCE5.description1}"]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "55329907B527DCE5"
@@ -459,7 +459,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "呃. . .有点恶心"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest55329907B527DCE5.subtitle}"
 			tasks: [{
 				id: "0405F356EF8E2A48"
 				item: "kubejs:taste_worm_meat_filling"
@@ -471,11 +471,11 @@
 		{
 			dependencies: ["55329907B527DCE5"]
 			description: [
-				"往肉馅中添加少许&6淀粉&r和&6香料&r，就可以制成特殊的美味肉饼。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest307D2E9D0640B128.description1}"
 				""
-				"美味肉饼可以平替各种类型的汉堡肉，而且由于美味虫本身具有的滋味，其做出来的成品也&6别具一格&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest307D2E9D0640B128.description2}"
 				""
-				"但是煎炸肉饼的时候记得优先使用油进行润锅，再进行配方的工作。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest307D2E9D0640B128.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -487,7 +487,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "好像正常了些"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest307D2E9D0640B128.subtitle}"
 			tasks: [{
 				id: "6759C17333EAAADA"
 				item: "kubejs:taste_worm_meat_patty"
@@ -499,9 +499,9 @@
 		{
 			dependencies: ["22116E44C81CA5C8"]
 			description: [
-				"在记录中，&6美味粉&r被当做一种广泛使用的调味品。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F29416AEF85DA75.description1}"
 				""
-				"将美味干细细研磨后，即可得到可以长期使用的美味粉。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F29416AEF85DA75.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -513,7 +513,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "研磨美味干"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F29416AEF85DA75.subtitle}"
 			tasks: [{
 				id: "4BD731BC3A8B6268"
 				item: "kubejs:taste_worm_powder"
@@ -525,9 +525,9 @@
 		{
 			dependencies: ["7F29416AEF85DA75"]
 			description: [
-				"其实我不太能理解人类说的美味、难吃这种味觉描述。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest42DD41219B0D20CC.description1}"
 				""
-				"虽然日志中大量描述美味虫汤的&6诱人香味&r. . .但它的原料似乎完全关联不上. . ."
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest42DD41219B0D20CC.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -539,7 +539,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "好像有点. . ."
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest42DD41219B0D20CC.subtitle}"
 			tasks: [{
 				id: "4915FD9148741566"
 				item: "kubejs:tasty_worm_soup"
@@ -551,9 +551,9 @@
 		{
 			dependencies: ["7F29416AEF85DA75"]
 			description: [
-				"经过简单烘焙，面团在高温下蓬松，就可以制成美味虫独特风味的&6美味面包&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7466C43484204792.description1}"
 				""
-				"尽管美味面包本身可能没有过多的调味和配料，但其令人&6回味无穷&r. . .至少日志是这么描述的。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7466C43484204792.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -565,7 +565,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "真正美味的面包！"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7466C43484204792.subtitle}"
 			tasks: [{
 				id: "308960930EC42B4F"
 				item: "kubejs:tasty_bread"
@@ -577,11 +577,11 @@
 		{
 			dependencies: ["41FEB64150AA4A62"]
 			description: [
-				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2DFCF1B70C69B560.description1}"
 				""
-				"&6——回放中&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2DFCF1B70C69B560.description2}"
 				""
-				"&7**心. . .请让我们品尝你的心脏. . .**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2DFCF1B70C69B560.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -596,13 +596,13 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新感悟"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2DFCF1B70C69B560.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:tasty_hamburg"
 				id: "7DF0B9092828B067"
 				item: "kubejs:tasty_hamburg"
-				title: "品尝美味汉堡"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2DFCF1B70C69B560.task.9074956698131148903.title}"
 				type: "maa:eat_item"
 			}]
 			x: 22.0d
@@ -611,11 +611,11 @@
 		{
 			dependencies: ["42DD41219B0D20CC"]
 			description: [
-				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3CF6A52040DC32FD.description1}"
 				""
-				"&6——回放中"
-				"&r"
-				"&7**胃. . .请让我们品尝你的胃. . .**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3CF6A52040DC32FD.description2}"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3CF6A52040DC32FD.description3}"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3CF6A52040DC32FD.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -630,27 +630,27 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新感悟"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest3CF6A52040DC32FD.subtitle}"
 			tasks: [{
 				count: 1L
 				icon: "kubejs:tasty_worm_soup"
 				id: "411253B210587BF5"
 				item: "kubejs:tasty_worm_soup"
-				title: "品尝美味虫汤"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest3CF6A52040DC32FD.task.4688902186289626101.title}"
 				type: "maa:eat_item"
 			}]
-			title: "品尝美味虫汤"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest3CF6A52040DC32FD.title}"
 			x: 22.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["1EF30986B9E4ACBA"]
 			description: [
-				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest16CA184F429B7CE2.description1}"
 				""
-				"&6——回放中"
-				"&r"
-				"&7**骨. . .请让我们品尝你的骨骼. . .**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest16CA184F429B7CE2.description2}"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest16CA184F429B7CE2.description3}"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest16CA184F429B7CE2.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -665,24 +665,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新感悟"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest16CA184F429B7CE2.subtitle}"
 			tasks: [{
 				count: 1L
 				id: "21A76D694906846D"
 				item: "kubejs:fried_taste_worm"
-				title: "品尝煎炸美味虫"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest16CA184F429B7CE2.task.2425027223326458989.title}"
 				type: "maa:eat_item"
 			}]
-			title: "品尝煎炸美味虫"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest16CA184F429B7CE2.title}"
 			x: 22.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["7F29416AEF85DA75"]
 			description: [
-				"美味精酿是通过简易烹饪的美味虫&6发酵&r而成的特殊饮品。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questF4D1F2DD2B005CE.description1}"
 				""
-				"其仍旧是会随着美味虫本身的差异，有着&6千奇百怪&r的味道. . .更奇怪的是，似乎饮用再多也不会因此而醉酒。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questF4D1F2DD2B005CE.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -694,7 +694,7 @@
 			}]
 			shape: "none"
 			size: 2.0d
-			subtitle: "一种风味奇特的啤酒"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.questF4D1F2DD2B005CE.subtitle}"
 			tasks: [{
 				id: "76C3BC46D05E4584"
 				item: "kubejs:tasty_beer"
@@ -706,11 +706,11 @@
 		{
 			dependencies: ["0F4D1F2DD2B005CE"]
 			description: [
-				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questDF26FFC05523C2B.description1}"
 				""
-				"&6——回放中&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questDF26FFC05523C2B.description2}"
 				""
-				"&7**肝 . .请让我们品尝你的肝脏. . .**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questDF26FFC05523C2B.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -725,12 +725,12 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新感悟"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.questDF26FFC05523C2B.subtitle}"
 			tasks: [{
 				count: 1L
 				id: "10970EDA87FE51F8"
 				item: "kubejs:tasty_beer"
-				title: "品尝美味精酿"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.questDF26FFC05523C2B.task.1195440557837406712.title}"
 				type: "maa:eat_item"
 			}]
 			x: 22.0d
@@ -739,11 +739,11 @@
 		{
 			dependencies: ["7466C43484204792"]
 			description: [
-				"我接收到一系列特殊的数据，现在我将这些数据回放给您。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest67DAAFD99C02F670.description1}"
 				""
-				"&6——回放中&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest67DAAFD99C02F670.description2}"
 				""
-				"&7**肾. . .请让我们品尝你的肾脏. . .**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest67DAAFD99C02F670.description3}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -758,12 +758,12 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新感悟"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest67DAAFD99C02F670.subtitle}"
 			tasks: [{
 				count: 1L
 				id: "38E9BE5621ACA16A"
 				item: "kubejs:tasty_bread"
-				title: "品尝美味面包"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest67DAAFD99C02F670.task.4101018212838973802.title}"
 				type: "maa:eat_item"
 			}]
 			x: 22.0d
@@ -775,9 +775,9 @@
 				"7466C43484204792"
 			]
 			description: [
-				"&6复杂的口感。&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest41FEB64150AA4A62.description1}"
 				""
-				"日志中的描述非常模糊，似乎鲜有人吃过由&6美味面包&r和&6美味肉饼&r制作而成的汉堡。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest41FEB64150AA4A62.description2}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -789,7 +789,7 @@
 			}]
 			shape: "none"
 			size: 5.6d
-			subtitle: "两面包夹肉饼"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest41FEB64150AA4A62.subtitle}"
 			tasks: [{
 				id: "43D8A28B2134BF08"
 				item: "kubejs:tasty_hamburg"
@@ -801,11 +801,11 @@
 		{
 			dependencies: ["3786F4EF9AB65A30"]
 			description: [
-				"罕见的情况！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F73D4C9635221D9.description1}"
 				""
-				"本来应当成长为成体美味虫的幼体和&6肝脏&r发生了&6共生融合&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F73D4C9635221D9.description2}"
 				""
-				"融合产生的&6啤酒腺&r能够在胸腔有大胃王的环境下发挥巨大的作用。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F73D4C9635221D9.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -816,7 +816,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "培育得当"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F73D4C9635221D9.subtitle}"
 			tasks: [{
 				id: "00FC5CD7585F2D79"
 				item: {
@@ -832,11 +832,11 @@
 		{
 			dependencies: ["3786F4EF9AB65A30"]
 			description: [
-				"罕见的情况！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3D71247FDEF412F0.description1}"
 				""
-				"本来应当成长为成体美味虫的幼体和&6肾脏&r发生了&6共生融合&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3D71247FDEF412F0.description2}"
 				""
-				"融合产生的&6甜品腺&r能够在胸腔有大胃王的环境下发挥巨大的作用。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest3D71247FDEF412F0.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -847,7 +847,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "培育得当"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest3D71247FDEF412F0.subtitle}"
 			tasks: [{
 				id: "5210D5D8240242A0"
 				item: {
@@ -863,11 +863,11 @@
 		{
 			dependencies: ["3786F4EF9AB65A30"]
 			description: [
-				"罕见的情况！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7B97DAEAF7EC0C6B.description1}"
 				""
-				"本来应当成长为成体美味虫的幼体和&6胃&r发生了&6共生融合&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7B97DAEAF7EC0C6B.description2}"
 				""
-				"融合产生的&6寄生胃&r能够在您食用完食物后提供大量的伤害加成，这对生存有着巨大的帮助。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7B97DAEAF7EC0C6B.description3}"
 			]
 			hide_dependency_lines: true
 			id: "7B97DAEAF7EC0C6B"
@@ -877,7 +877,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "培育得当"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7B97DAEAF7EC0C6B.subtitle}"
 			tasks: [{
 				id: "2ED6881DD3B97F45"
 				item: {
@@ -893,11 +893,11 @@
 		{
 			dependencies: ["3786F4EF9AB65A30"]
 			description: [
-				"罕见的情况！"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest681B099458A589BD.description1}"
 				""
-				"本来应当成长为成体美味虫的幼体和&6骨骼&r发生了&6共生融合&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest681B099458A589BD.description2}"
 				""
-				"融合产生的&6贪婪喉管&r能够反复消化食物以提高食物的利用效率。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest681B099458A589BD.description3}"
 			]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
@@ -908,7 +908,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "培育得当"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest681B099458A589BD.subtitle}"
 			tasks: [{
 				id: "7CC4EE5D7DA2D293"
 				item: {
@@ -930,19 +930,19 @@
 				"7B97DAEAF7EC0C6B"
 			]
 			description: [
-				"&7**你的味道不错，大部分器官鲜嫩多汁，当咀嚼时爽脆的口感足够给你打到 8 /  10的分数**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.description1}"
 				""
-				"&7**或许，将那位寄宿在你的身上是一个好的选择**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.description2}"
 				""
-				"&7**渴望力量的人啊. . .为了你所寻求的滋味，献上你的全部吧。**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.description3}"
 				"{@pagebreak}"
-				"我和您的通讯似乎被&5劫持&r了，不过无需担心，只需要新开一个分页，就不会对我们产生任何影响。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.description4}"
 				""
-				"经分析，这应该是与之前的数据来源相同。其暗示了一个&c特殊的器官&r，并且指示您装备该器官且使其&6完全寄生&r您。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.description5}"
 				""
-				"我并不知晓这会引领向什么，也不知道对方&6为恶为善&r，日志中也没有相关信息的记载，但我会尽可能帮助您以避免类似进度锁定之类的事情发生。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.description6}"
 				""
-				"&6请您多加小心。&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.description7}"
 			]
 			hide_until_deps_complete: true
 			id: "7F02067DAA546C55"
@@ -952,7 +952,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "现在，我教授你方法"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.subtitle}"
 			tasks: [{
 				id: "07E4B35BE91A45CE"
 				item: {
@@ -962,18 +962,18 @@
 				}
 				type: "item"
 			}]
-			title: "暴食蠕虫"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest7F02067DAA546C55.title}"
 			x: 24.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["7F02067DAA546C55"]
 			description: [
-				"&7**味道不错，已经很久没有品尝到如此滋味. . .**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.description1}"
 				""
-				"&7**剩下的. . .你可以将其理解为我们的残羹剩饭. . .也可以理解成&5祂&7的实际模样. . .**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.description2}"
 				""
-				"&7**那么就此别过，期待下一次美餐。**&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "2227580EB38F9126"
@@ -989,7 +989,7 @@
 					id: "11482FE2866E4D84"
 					ignore_reward_blocking: true
 					kubeId: "chapter_complete_raw"
-					title: "章节完成"
+					title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.reward.1245297946932432260.title}"
 					type: "maa:kube"
 				}
 				{
@@ -999,36 +999,36 @@
 				}
 			]
 			shape: "none"
-			subtitle: "这是我们的谢礼"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.subtitle}"
 			tasks: [{
 				entity: "minecraft:empty"
 				icon: "kubejs:gula_injection"
 				id: "1A9684B086ED2608"
 				inventoryType: "kubejs:cc_inventory_types/gula"
-				title: "开启暴食胸腔"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.task.1915864585205523976.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "&6庆贺吧！此乃暴食胸腔！&r"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.title}"
 			x: 15.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["2227580EB38F9126"]
 			description: [
-				"虽然过程有些恶心，但还是恭喜您征服了美味虫. . .或者说是&d暴食胸腔&r。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.description1}"
 				""
-				"考虑到胸腔类型随时都可能变换，如果每次更换回暴食胸腔都要经历这种&6恶心&r的流程实在是令人. . ."
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.description2}"
 				""
-				"为此，我通过数据篡改，向常规注射器中写入了暴食的数据，可以通过合成配方轻而易举的批量制造暴食注射器。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.description3}"
 				""
-				"但考虑到暴食胸腔的危险性，让所有人都掌握这项技术显然并不合理. . .至少我认为这并不合理，因为我存在的意义便是完成、延续这场冒险。直接公开配方可能会极大的危害这个世界的长期稳定性。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.description4}"
 				""
-				"因此我决定将此配方交予某个能够称得上为&d暴食&r的人——如果您能够在&6食用蛋糕片数&r上，在整个世界称霸，那我将把这样抉择权交付于您。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.description5}"
 				"{@pagebreak}"
-				"公开配方会使所有人都可以制作暴食注射器。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.description6}"
 				""
-				"私有配方会使您成为唯一能够制作暴食注射器的人，如果其他玩家取而代之，并不会影响您已获得配方的使用。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.description7}"
 			]
 			hide_until_deps_complete: true
 			id: "37AD78091519F72E"
@@ -1039,30 +1039,30 @@
 				type: "choice"
 			}]
 			shape: "diamond"
-			subtitle: "多吃几口吧"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.subtitle}"
 			tasks: [{
 				icon: "minecraft:cake"
 				id: "7E8E0EEC4D61B788"
 				leaderboard: "leaderboards:cake_slices_eaten"
 				min: 1
 				rank: 1
-				title: "蛋糕称霸"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.task.9119242703545153416.title}"
 				type: "leaderboards:rank_task"
 			}]
-			title: "暴食注射器配方"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest37AD78091519F72E.title}"
 			x: 10.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["43DD1C0BA90A1ACB"]
 			description: [
-				"&6很奇怪。&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest4DB48FF831D57F33.description1}"
 				""
-				"这些虫子平常看不见，摸不着——却又能在某些条件下，转换成常规物质的存在。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest4DB48FF831D57F33.description2}"
 				""
-				"如果我们能够掌握它们的空间利用方式，或许能够开发出一些能够极大优化生存体验的工具。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest4DB48FF831D57F33.description3}"
 				""
-				"&6请您稍加等待，我需要进行信息的分析。&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest4DB48FF831D57F33.description4}"
 			]
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
@@ -1072,24 +1072,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "这些虫子是怎么居住在里面的？"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest4DB48FF831D57F33.subtitle}"
 			tasks: [{
 				elapsedTime: 30L
 				icon: "supplementaries:hourglass"
 				id: "44C6F5D93973EBDE"
-				title: "静候佳音"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest4DB48FF831D57F33.task.4955918753288416222.title}"
 				type: "questsadditions:time"
 			}]
-			title: "奇怪的空间利用"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest4DB48FF831D57F33.title}"
 			x: 8.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4DB48FF831D57F33"]
 			description: [
-				"经过确认，这种空间扩展能力不光存在在这种虫子身上，其在一些自然生成的生物中也有体现。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest54BBCB6C78712B0D.description1}"
 				""
-				"请您寻找到&6山羊&r，并且&6打开它的胸腔&r，你可以从中找到一个极其独特的器官战利品。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest54BBCB6C78712B0D.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:goat_spawn_egg"
@@ -1099,7 +1099,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "吃剩一半的状态"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest54BBCB6C78712B0D.subtitle}"
 			tasks: [{
 				entity: "minecraft:goat"
 				icon: "minecraft:goat_spawn_egg"
@@ -1108,22 +1108,22 @@
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
 			}]
-			title: "山羊的秘密"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest54BBCB6C78712B0D.title}"
 			x: 8.5d
 			y: -3.0d
 		}
 		{
 			dependencies: ["54BBCB6C78712B0D"]
 			description: [
-				"&7很难解释这个东西是怎么产生的，但其原理有点类似于美味虫会隐藏在异次元一样. . .&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1B46B8D5CAE53C58.description1}"
 				""
-				"丰饶之角的内部可以类似收纳袋一样，容纳大量的食物。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1B46B8D5CAE53C58.description2}"
 				""
-				"鼠标持食物对着袋子右键，即可将食物置于丰饶之角内。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1B46B8D5CAE53C58.description3}"
 				""
-				"在饥饿时，您可以直接手持丰饶之角右键，食用丰饶之角。&6其会自动选择性价比最高的食物进行食用&r，进而有效节约食物，避免浪费。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1B46B8D5CAE53C58.description4}"
 				""
-				"&7这真的不是什么节约粮食主题的儿童玩具吗. . .&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest1B46B8D5CAE53C58.description5}"
 			]
 			id: "1B46B8D5CAE53C58"
 			rewards: [{
@@ -1131,7 +1131,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "对. . .就是这个"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest1B46B8D5CAE53C58.subtitle}"
 			tasks: [{
 				id: "4D849405340E3580"
 				item: {
@@ -1143,18 +1143,18 @@
 				}
 				type: "item"
 			}]
-			title: "荒唐的号角"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest1B46B8D5CAE53C58.title}"
 			x: 5.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["54BBCB6C78712B0D"]
 			description: [
-				"&7或许丰饶之角啥的有些太耐人寻味了，使用午餐篮其实也差不太多。&r"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questD30AE8C07B44E8A.description1}"
 				""
-				"您可以通过将食物像存放在收纳袋一样，存放在&6午餐篮&r中。在您需要食用时，长按午餐篮可以切换食物，左键打开野餐篮即可通过野餐篮直接食用选中的食物。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questD30AE8C07B44E8A.description2}"
 				""
-				"但它绝对没有丰饶之角那样智能。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.questD30AE8C07B44E8A.description3}"
 			]
 			id: "0D30AE8C07B44E8A"
 			rewards: [{
@@ -1162,7 +1162,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "“科学”指的是不那么荒唐"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.questD30AE8C07B44E8A.subtitle}"
 			tasks: [{
 				id: "79820986A11DCDF9"
 				item: {
@@ -1179,20 +1179,20 @@
 				}
 				type: "item"
 			}]
-			title: "更科学的食物管理"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.questD30AE8C07B44E8A.title}"
 			x: 8.5d
 			y: -5.5d
 		}
 		{
 			dependencies: ["4DB48FF831D57F33"]
 			description: [
-				"经过检测，美味虫似乎是一种名为&6“维度虫”&r的特殊生物（数据）的变种。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest279EB57E529F3640.description1}"
 				""
-				"其不依赖于实际在游戏中具象化出来的实体存在，仅作为数据流窜在各个概念中。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest279EB57E529F3640.description2}"
 				""
-				"比如说，美味虫寄宿的概念即是&6食品容器&r，维度虫寄宿的概念是&6维度本身&r. . .因此，想要截获它们的实体甚至了解它们的数据模式都非常困难——因为&6我对这个世界的控制程度相当之低&r，对于此种流窜于概念中的原住民没有特别有效的方法。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest279EB57E529F3640.description3}"
 				""
-				"不过好在，借由本次探索，我们也能够了解到美味虫的&b冰山一角&r，相信未来迟早有一天，我们会搞清楚维度虫及其可能的其他变种的所有秘密。"
+				"{ftbquests.chapter.11A9F33ACEC0E6DC.quest279EB57E529F3640.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:dimensional_worm"
@@ -1202,18 +1202,18 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "维度缺口"
+			subtitle: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest279EB57E529F3640.subtitle}"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				icon: "infinity:f4"
 				id: "5D9D39C5CE05667C"
-				title: "访问下界"
+				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest279EB57E529F3640.task.6745611338598671996.title}"
 				type: "dimension"
 			}]
-			title: "美味虫的远房亲戚"
+			title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest279EB57E529F3640.title}"
 			x: 10.5d
 			y: 0.0d
 		}
 	]
-	title: "传闻：罐装美味"
+	title: "{ftbquests.chapter.11A9F33ACEC0E6DC.title}"
 }

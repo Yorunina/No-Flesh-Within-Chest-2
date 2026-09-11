@@ -1,15 +1,28 @@
-// priority: 500
-const ChampionColorConfig = {
-    'split_on_death': '#ec1aff',
-    'health_boost': '#66fc61',
-    'damage_aura': '#e82102',
-    'heal_aura': '#83fa7f',
-    'speed_aura': '#e7fc32',
-    'low_damage_restriction': '#00c6e4',
-    'low_freq_protection': '#00c6e4',
-    'high_damage_suppression': '#e49c00',
-    'high_freq_protection': '#e49c00',
+// priority: 1000
+/**
+ * 精英怪词条在 Jade 顶栏中的显示颜色
+ * @type {Object<string, string>}
+ */
+const ChampionColorConfig = {}
+
+/**
+ * 注册精英怪词条的 Jade 显示颜色。词条 id 须与 ChampionStrategyModel 的 id 一致。
+ * @param {string} affixId
+ * @param {string} color 颜色，如 '#ec1aff'
+ */
+function RegistryChampionColor(affixId, color) {
+    ChampionColorConfig[affixId] = color
 }
+
+RegistryChampionColor('split_on_death', '#ec1aff')
+RegistryChampionColor('health_boost', '#66fc61')
+RegistryChampionColor('damage_aura', '#e82102')
+RegistryChampionColor('heal_aura', '#83fa7f')
+RegistryChampionColor('speed_aura', '#e7fc32')
+RegistryChampionColor('low_damage_restriction', '#00c6e4')
+RegistryChampionColor('low_freq_protection', '#00c6e4')
+RegistryChampionColor('high_damage_suppression', '#e49c00')
+RegistryChampionColor('high_freq_protection', '#e49c00')
 
 
 JadeEvents.onClientRegistration(event => {

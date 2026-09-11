@@ -68,15 +68,15 @@
 		{
 			dependencies: ["1EC226A4AC012845"]
 			description: [
-				"将书本和所有的工具合为一体后，您便可以制成&6入门法术书&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.description1}"
 				""
-				"手持法术书按下&6打开法术书&r按键即可打开法术书的配置页面，您可以在此进行魔符的组装和配置。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.description2}"
 				""
-				"法术是魔符的排列组合，魔符的种类和出现顺序决定了法术的实际效果。其基础规则为法术必须且只能以一个&6形态魔符&r开头，后接多个&6效果魔符&r或&6增强魔符&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.description3}"
 				""
-				"通过点击书页中的魔符图标选择魔符到下方的槽位中（最多10个），对应法术消耗的魔力会显示在最下方的魔力条中。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.description4}"
 				""
-				"在选择完成后，点击右下角&6「制作」&r即可完成一个法术。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.description5}"
 			]
 			hide_until_deps_complete: true
 			id: "0F77217F484D0D20"
@@ -90,28 +90,28 @@
 					exclude_from_claim_all: true
 					id: "4E1F5696F65E9CA0"
 					table_id: 2341603259726464384L
-					title: "奖励法术书"
+					title: "{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.reward.5629313265614888096.title}"
 					type: "choice"
 				}
 			]
-			subtitle: "制作入门法术书"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.subtitle}"
 			tasks: [{
 				id: "1CDD7E9489EAC308"
 				item: "ars_nouveau:novice_spell_book"
 				type: "item"
 			}]
-			title: "万法合一"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.questF77217F484D0D20.title}"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["5764F8AEDDF6EC9E"]
 			description: [
-				"使用至高木原木便可以&6制作出抄写台&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest1EC226A4AC012845.description1}"
 				""
-				"抄写台是一种魔源探究中非常常用的工具，其用途主要是将对物质的认知转换为&6魔符&r的使用技艺。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest1EC226A4AC012845.description2}"
 				""
-				"但仅凭抄写台是无法进行魔源技艺的进一步探究的。为此您需要制作一本&6法术书&r来记录这些技艺。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest1EC226A4AC012845.description3}"
 			]
 			id: "1EC226A4AC012845"
 			rewards: [{
@@ -119,24 +119,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作抄写台"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest1EC226A4AC012845.subtitle}"
 			tasks: [{
 				id: "6A4DAB563B119EEA"
 				item: "ars_nouveau:scribes_table"
 				type: "item"
 			}]
-			title: "符文抄写"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest1EC226A4AC012845.title}"
 			x: 0.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["4FC5598C55413963"]
 			description: [
-				"可能您也发现了，在世界中偶尔会遇到一些颜色奇特的特殊木材，其被称为&6至高木&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest5764F8AEDDF6EC9E.description1}"
 				""
-				"至高木按照品种区分可以分为&6奔流&r、&6烈焰&r、&6恼人&r、&6繁茂&r四种，其不同种类的差异除了颜色，还包括其伴生的果实。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest5764F8AEDDF6EC9E.description2}"
 				""
-				"但不管怎么样，您在获得了至高木原木后，便可以利用其中蕴含的魔源力量制作抄写台。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest5764F8AEDDF6EC9E.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "ars_nouveau:blue_archwood_sapling"
@@ -146,7 +146,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "特殊木材"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest5764F8AEDDF6EC9E.subtitle}"
 			tasks: [{
 				id: "6DDF3257D352B1FA"
 				item: {
@@ -156,23 +156,23 @@
 						value: "forge:logs/archwood"
 					}
 				}
-				title: "任意至高木原木"
+				title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest5764F8AEDDF6EC9E.task.7917102022729576954.title}"
 				type: "item"
 			}]
-			title: "至高木"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest5764F8AEDDF6EC9E.title}"
 			x: 0.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5764F8AEDDF6EC9E"]
 			description: [
-				"灌注室是获取&6魔源宝石&r的主要途径，也是制作各种精华的重要设备。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest488ABDE769499C05.description1}"
 				""
-				"其可以缓慢从周围环境中提取魔源以用于配方加工，也可以在周围使用魔源提供设备为其提供魔源来加快配方的制作。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest488ABDE769499C05.description2}"
 				""
-				"对于简单的配方，您可以将&6物品右键置入灌注室&r中完成魔源注入。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest488ABDE769499C05.description3}"
 				""
-				"对于复杂配方，则可能还需要使用&6奥术基座&r来为其提供其他的输入物品。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest488ABDE769499C05.description4}"
 			]
 			id: "488ABDE769499C05"
 			rewards: [{
@@ -180,22 +180,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "魔法能量转换"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest488ABDE769499C05.subtitle}"
 			tasks: [{
 				id: "249046D54BD35BBA"
 				item: "ars_nouveau:imbuement_chamber"
 				type: "item"
 			}]
-			title: "魔源灌注"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest488ABDE769499C05.title}"
 			x: 5.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["488ABDE769499C05"]
 			description: [
-				"&6魔源宝石&r是新生魔艺中最基础的魔法能量载体，几乎所有高级魔法道具都需要它。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest174BAA671BBAFF57.description1}"
 				""
-				"您可以通过将&6青金石&r或者&6紫水晶&r右键放置在灌注室内转换获得。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest174BAA671BBAFF57.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "174BAA671BBAFF57"
@@ -211,26 +211,26 @@
 					type: "item"
 				}
 			]
-			subtitle: "魔法能量核心"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest174BAA671BBAFF57.subtitle}"
 			tasks: [{
 				id: "1C1A56D55D64FCF9"
 				item: "ars_nouveau:source_gem"
 				type: "item"
 			}]
-			title: "魔源宝石"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest174BAA671BBAFF57.title}"
 			x: 5.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
 			description: [
-				"为了满足后续多种多样的魔源需求，您现在迫切需要一种能够稳定提供大量魔源的方法。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest50ED9E24E038B01B.description1}"
 				""
-				"其中，有着大量被命名为&6魔源通道&r的物品，其能够在不同的条件下生产大量魔源——最为代表性的则是火山魔源通道。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest50ED9E24E038B01B.description2}"
 				""
-				"&6火山魔源通道通过燃烧燃料产生魔源&r——其在燃烧至高木原木时会产生更多的魔源。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest50ED9E24E038B01B.description3}"
 				""
-				"您可以将任意可以燃烧的物品丢在火山魔源通道的附近，其会吸收燃料，并且产生魔源。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest50ED9E24E038B01B.description4}"
 			]
 			hide_until_deps_complete: true
 			icon: "ars_nouveau:volcanic_sourcelink"
@@ -240,7 +240,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "能量收集与储存"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest50ED9E24E038B01B.subtitle}"
 			tasks: [
 				{
 					id: "6E0B2DF1B1F65286"
@@ -253,16 +253,16 @@
 					type: "item"
 				}
 			]
-			title: "能量收集"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest50ED9E24E038B01B.title}"
 			x: 2.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
 			description: [
-				"&6奥术基座&r是一种用于各类魔法仪式的&6常见物品基座&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2D0D6B1C80A70E8E.description1}"
 				""
-				"大部分的灌注配方都涉及到不止一个物品，因此对于非核心的物品，您需要将这些物品放置在&6灌注室附近的奥术基座&r上，配方才能够正常进行。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2D0D6B1C80A70E8E.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "2D0D6B1C80A70E8E"
@@ -271,22 +271,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "魔法工作台"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest2D0D6B1C80A70E8E.subtitle}"
 			tasks: [{
 				id: "4342DD23A8C118FA"
 				item: "ars_nouveau:arcane_pedestal"
 				type: "item"
 			}]
-			title: "奥术基座"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest2D0D6B1C80A70E8E.title}"
 			x: 5.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
 			description: [
-				"&6仪式火盆&r是一种重要的魔源技艺运用装置。其主要功能为消耗周围的魔源来启动仪式之板。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest10BC7DE5F1D8101D.description1}"
 				""
-				"根据板子类型的不同，仪式火盆的效果也会有所差异，"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest10BC7DE5F1D8101D.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "10BC7DE5F1D8101D"
@@ -295,41 +295,41 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "仪式激活设备"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest10BC7DE5F1D8101D.subtitle}"
 			tasks: [{
 				id: "5E8AE6622696CC6E"
 				item: "ars_nouveau:ritual_brazier"
 				type: "item"
 			}]
-			title: "仪式火盆"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest10BC7DE5F1D8101D.title}"
 			x: 10.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2F0C4C44BB2E8770"]
-			description: ["通过在附魔装置周围摆放&6四个奥术基座&r，在基座上分别摆放&6魔源宝石&r，再将&6种子&r放置在附魔装置内，一段时间后其便会转换为&6法师之花种子&r。"]
+			description: ["{ftbquests.chapter.3141E7EEF2FD1ABE.questB38CFA5F97E85EA.description1}"]
 			id: "0B38CFA5F97E85EA"
 			rewards: [{
 				id: "6F35AACD438923E0"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "魔法植物培育"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.questB38CFA5F97E85EA.subtitle}"
 			tasks: [{
 				id: "57D05622CCA65393"
 				item: "ars_nouveau:magebloom_crop"
 				type: "item"
 			}]
-			title: "法师花苗"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.questB38CFA5F97E85EA.title}"
 			x: 10.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["0B38CFA5F97E85EA"]
 			description: [
-				"通过种植法师之花种子，您便可以获得&6法师之花&r——一种对于魔源研究异常重要的作物。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest41ED757520A9CC5A.description1}"
 				""
-				"其本身不仅是很多装置的合成原料，更能够被加工成纤维和药水，多方面提高您的魔源技艺。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest41ED757520A9CC5A.description2}"
 			]
 			id: "41ED757520A9CC5A"
 			rewards: [{
@@ -337,13 +337,13 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "收获魔法材料"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest41ED757520A9CC5A.subtitle}"
 			tasks: [{
 				id: "2AF5847A033919EB"
 				item: "ars_nouveau:magebloom"
 				type: "item"
 			}]
-			title: "法师之花"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest41ED757520A9CC5A.title}"
 			x: 12.5d
 			y: -5.0d
 		}
@@ -353,11 +353,11 @@
 				"10BC7DE5F1D8101D"
 			]
 			description: [
-				"&6繁茂之板&r便是一种常见的仪式之板。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest48C600D10B76E90D.description1}"
 				""
-				"将其放置在仪式火盆上，其便会进入&6仪式准备阶段&r，在此阶段内您可以投入一些物品来增强仪式的效果。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest48C600D10B76E90D.description2}"
 				""
-				"仪式准备阶段时，&6再次右键仪式火盆便可以启动繁茂仪式&r。在繁茂仪式的启动期间，火盆周围一定范围内的作物会被催熟，&6每次催熟都会消耗一定量的魔源&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest48C600D10B76E90D.description3}"
 			]
 			id: "48C600D10B76E90D"
 			rewards: [{
@@ -365,22 +365,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "自然魔法仪式"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest48C600D10B76E90D.subtitle}"
 			tasks: [{
 				id: "17148899F07C51FD"
 				item: "ars_nouveau:ritual_overgrowth"
 				type: "item"
 			}]
-			title: "生长仪式"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest48C600D10B76E90D.title}"
 			x: 12.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["0F77217F484D0D20"]
 			description: [
-				"根据法术书的等级，您能够使用的魔符等级也会提升。据目前信息显示，&6最高魔符等级为三级&r，即您在此之后还可以再进行一次法术书的强化。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest77ABA489404AFF7A.description1}"
 				""
-				"因此，在能够提升法术书级别的时候，您应该努力提升其等级以扩展魔符种类。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest77ABA489404AFF7A.description2}"
 			]
 			id: "77ABA489404AFF7A"
 			rewards: [{
@@ -388,24 +388,24 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "解锁二级魔符"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest77ABA489404AFF7A.subtitle}"
 			tasks: [{
 				id: "03EC071CE1E26FF2"
 				item: "ars_nouveau:apprentice_spell_book"
 				type: "item"
 			}]
-			title: "法术升级"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest77ABA489404AFF7A.title}"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
 			description: [
-				"基础法术炮塔是一种自动化施法设备，您可以将法术书中配置好的法术&6右键铭刻给法术炮塔&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest597EB691DECA86EF.description1}"
 				""
-				"被铭刻的法术炮塔在&6接收到红石信号&r时能够&6抽取周围一定范围内魔源罐的魔源&r以释放铭刻的法术。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest597EB691DECA86EF.description2}"
 				""
-				"其广泛被用于一些自动化场景，为了简化应用，其还有着其他多种多样的版本如定时法术炮塔和附魔法术炮塔。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest597EB691DECA86EF.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "597EB691DECA86EF"
@@ -414,26 +414,26 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "自动化施法装置"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest597EB691DECA86EF.subtitle}"
 			tasks: [{
 				id: "11D35634916CDCF8"
 				item: "ars_nouveau:basic_spell_turret"
 				type: "item"
 			}]
-			title: "法术炮塔"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest597EB691DECA86EF.title}"
 			x: 10.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["0F77217F484D0D20"]
 			description: [
-				"手持新生魔艺法术书&6右键抄写台&r，您便可以打开一个用于&6学习魔符&r的页面。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F61B18D792F6F31.description1}"
 				""
-				"在其中您可以选择&6未学习的魔符&r，在选中后，通过将其需求的物品&6投掷到法术抄写台&r上，即可完成学习，进而在法术书中解锁魔符。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F61B18D792F6F31.description2}"
 				""
-				"如果您选中一个已经学会的魔符，则可以通过重复该学习操作来将魔符转换为物品提取出来。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F61B18D792F6F31.description3}"
 				""
-				"请您学习&6合成魔符&r，并且&6再次学习该魔符&r，将其物品化以完成本任务。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F61B18D792F6F31.description4}"
 			]
 			id: "2F61B18D792F6F31"
 			rewards: [{
@@ -441,22 +441,22 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "新的魔源技艺"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F61B18D792F6F31.subtitle}"
 			tasks: [{
 				id: "54EBDF17DC3F473B"
 				item: "ars_nouveau:glyph_craft"
 				type: "item"
 			}]
-			title: "学习如何学习"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F61B18D792F6F31.title}"
 			x: -2.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["174BAA671BBAFF57"]
 			description: [
-				"在制成魔源宝石后，您可以通过制作各种各样的饰品或者防具来为您提供法术辅助。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest524476026122733C.description1}"
 				""
-				"较为常用的包括&6节魔戒指&r以及本任务中提到的&6魔力提升项链&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest524476026122733C.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "524476026122733C"
@@ -465,41 +465,41 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "魔力增强饰品"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest524476026122733C.subtitle}"
 			tasks: [{
 				id: "276E6DF6ED094269"
 				item: "ars_nouveau:amulet_of_mana_boost"
 				type: "item"
 			}]
-			title: "魔力护符"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest524476026122733C.title}"
 			x: 10.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["77ABA489404AFF7A"]
-			description: ["与之前的制作相似，您需要学习&6抑制魔符&r，并且再次学习以让该魔符物品化，以完成本任务。"]
+			description: ["{ftbquests.chapter.3141E7EEF2FD1ABE.quest58CBA02692279DD2.description1}"]
 			id: "58CBA02692279DD2"
 			rewards: [{
 				id: "78717FFE53385CD3"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "学习并制作魔符"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest58CBA02692279DD2.subtitle}"
 			tasks: [{
 				id: "57C7AF44CE36F3F4"
 				item: "ars_nouveau:glyph_dampen"
 				type: "item"
 			}]
-			title: "制成抑制魔符"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest58CBA02692279DD2.title}"
 			x: -2.5d
 			y: -5.0d
 		}
 		{
 			dependencies: ["50ED9E24E038B01B"]
 			description: [
-				"为了将魔源通道产生的魔力导出，您需要使用&6支配之杖&r将魔源通道链接到&6魔源罐&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest3D36E9A8EB053A8D.description1}"
 				""
-				"&6手持支配之杖先右键魔源通道&r，而后&6再右键选择魔源罐&r，即可让魔源通道源源不断的将魔力传输到对应的魔源罐中。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest3D36E9A8EB053A8D.description2}"
 			]
 			icon: "ars_nouveau:source_jar"
 			id: "3D36E9A8EB053A8D"
@@ -508,7 +508,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "使用支配之杖"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest3D36E9A8EB053A8D.subtitle}"
 			tasks: [
 				{
 					id: "44D366142A21FD2D"
@@ -525,18 +525,18 @@
 					type: "item"
 				}
 			]
-			title: "魔源导出"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest3D36E9A8EB053A8D.title}"
 			x: 5.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["2D0D6B1C80A70E8E"]
 			description: [
-				"为了进行进一步的配方，您可能需要另一个区别于灌注室的更强力的魔源赋予装置——&6附魔装置&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F0C4C44BB2E8770.description1}"
 				""
-				"为了使用附魔装置，您还需要制造一个&6奥术核心&r，并&6将其放置在附魔装置下方&r。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F0C4C44BB2E8770.description2}"
 				""
-				"附魔装置的&6使用方法与灌注室基本类似&r，在复杂配方下也需要奥术基座来提供额外的物品输入。"
+				"{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F0C4C44BB2E8770.description3}"
 			]
 			icon: "ars_nouveau:enchanting_apparatus"
 			id: "2F0C4C44BB2E8770"
@@ -545,7 +545,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "制作附魔装置"
+			subtitle: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F0C4C44BB2E8770.subtitle}"
 			tasks: [
 				{
 					id: "772A6A5B5007CD14"
@@ -558,10 +558,10 @@
 					type: "item"
 				}
 			]
-			title: "魔源赋予装置"
+			title: "{ftbquests.chapter.3141E7EEF2FD1ABE.quest2F0C4C44BB2E8770.title}"
 			x: 7.5d
 			y: -5.0d
 		}
 	]
-	title: "常识：魔源"
+	title: "{ftbquests.chapter.3141E7EEF2FD1ABE.title}"
 }
