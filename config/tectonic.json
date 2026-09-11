@@ -2,10 +2,10 @@
   "biomes": {
     "temperature_multiplier": 1.0,
     "temperature_offset": 0.0,
-    "temperature_scale": 0.25,
+    "temperature_scale": 0.35,
     "vegetation_multiplier": 1.0,
     "vegetation_offset": 0.0,
-    "vegetation_scale": 0.25
+    "vegetation_scale": 0.35
   },
   "caves": {
     "carvers_enabled": true,
