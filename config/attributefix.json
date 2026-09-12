@@ -429,6 +429,28 @@
         "value": 2048
       }
     },
+    "ftbultimine:cooldown_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -1000000000,
+        "value": -1000000000
+      },
+      "max": {
+        "default": 1000000000,
+        "value": 1000000000
+      }
+    },
+    "ftbultimine:experience_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -1000000000,
+        "value": -1000000000
+      },
+      "max": {
+        "default": 1000000000,
+        "value": 1000000000
+      }
+    },
     "attributeslib:prot_pierce": {
       "enabled": false,
       "min": {
@@ -757,6 +779,17 @@
       "max": {
         "default": 2048,
         "value": 2048
+      }
+    },
+    "ftbultimine:max_blocks_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -1000000000,
+        "value": -1000000000
+      },
+      "max": {
+        "default": 1000000000,
+        "value": 1000000000
       }
     },
     "modulargolems:golem_jump": {
@@ -1230,6 +1263,17 @@
       "max": {
         "default": 64,
         "value": 64
+      }
+    },
+    "ftbultimine:exhaustion_modifier": {
+      "enabled": false,
+      "min": {
+        "default": -1000000000,
+        "value": -1000000000
+      },
+      "max": {
+        "default": 1000000000,
+        "value": 1000000000
       }
     },
     "ars_nouveau:ars_nouveau.perk.feather": {
