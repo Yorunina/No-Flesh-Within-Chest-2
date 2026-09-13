@@ -60,7 +60,7 @@
                     "kubejs:bone_inspiration": 1
                 },
                 "secondaryEffects": {
-                    "kubejs:bone_inspiration": 0.5
+                    "kubejs:bone_inspiration": 1
                 },
                 "tertiaryEffects": {
                     "kubejs:bone_inspiration": -0.5,

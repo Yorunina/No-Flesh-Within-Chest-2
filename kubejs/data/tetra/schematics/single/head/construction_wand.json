@@ -1,0 +1,25 @@
+{
+    "replace": true,
+    "slots": [ "single/head" ],
+    "materialSlotCount": 1,
+    "rarity": "basic",
+    "displayType": "improvement",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 16,
+        "textureY": 48
+    },
+    "translation": {
+        "secondaryEffects": {
+            "kubejs:construction": 1
+        }
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:fibre/", "tetra:skin/" ],
+            "improvements": {
+                "single_head/construction_wand/": 0
+            }
+        }
+    ]
+}
