@@ -17,5 +17,5 @@
       {"item": "kubejs:dragon_blood_kidney", "position": 14}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_ender"
+  "inventoryType": "kubejs:small_ender"
 }

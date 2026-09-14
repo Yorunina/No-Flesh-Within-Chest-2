@@ -21,5 +21,5 @@
     {"item": "kubejs:kidney", "position": 18}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/medium_terra"
+  "inventoryType": "kubejs:medium_terra"
 }

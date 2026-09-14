@@ -20,8 +20,8 @@ function SmallAcidTankEntityTick(customData, event, organItem, organIndex, slotT
 
     if (damage + 1 >= maxDamage) {
         RemoveChestCavityOrgan(customData, chestCavity, organIndex, slotType, true)
-        if (chestCavity.getInventoryType() == 'kubejs:cc_inventory_types/player_17') {
-            chestCavity.setInventoryType('kubejs:cc_inventory_types/player_21')
+        if (chestCavity.getInventoryType() == 'kubejs:player_17') {
+            chestCavity.setInventoryType('kubejs:player_21')
         }
         return
     }

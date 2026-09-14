@@ -3,5 +3,5 @@
     {"item": "kubejs:nightmare_core", "position": 10}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/medium_undead"
+  "inventoryType": "kubejs:medium_undead"
 }

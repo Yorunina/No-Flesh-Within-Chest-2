@@ -217,7 +217,7 @@
 				entity: "minecraft:empty"
 				icon: "simplehats:pighead"
 				id: "47FAF2FB24171CF5"
-				inventoryType: "kubejs:cc_inventory_types/medium_terra"
+				inventoryType: "kubejs:medium_terra"
 				title: "{ftbquests.chapter.2218D095B234A44A.quest1D65BF71E2DCA300.task.5186725081326755061.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L

@@ -3,5 +3,5 @@
     {"item": "kubejs:soul_core", "position": 8}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_undead"
+  "inventoryType": "kubejs:small_undead"
 }

@@ -22,5 +22,5 @@
             "value": "1"
         }
     ],
-    "inventoryType": "kubejs:cc_inventory_types/functional_entity.json"
+    "inventoryType": "kubejs:functional_entity"
 }

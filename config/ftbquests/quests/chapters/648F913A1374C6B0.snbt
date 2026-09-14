@@ -690,7 +690,7 @@
 				entity: "minecraft:empty"
 				icon: "kubejs:rose_injection"
 				id: "23269B6B3DC250C5"
-				inventoryType: "kubejs:cc_inventory_types/rose"
+				inventoryType: "kubejs:rose"
 				title: "{ftbquests.chapter.648F913A1374C6B0.quest5A2C4544B9011D4F.task.2532882725342433477.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L

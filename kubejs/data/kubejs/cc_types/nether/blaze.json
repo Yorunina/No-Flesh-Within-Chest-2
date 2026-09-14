@@ -7,5 +7,5 @@
     {"item": "minecraft:blaze_rod", "position": 13, "count":1}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_nether"
+  "inventoryType": "kubejs:small_nether"
 }

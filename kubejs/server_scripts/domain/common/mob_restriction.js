@@ -6,3 +6,7 @@ EntityEvents.spawned('cataclysm:lionfish', event => {
 EntityEvents.spawned('irons_spellbooks:priest', event => {
     event.cancel()
 })
+
+EntityEvents.spawned('irons_spellbooks:apothecarist',event => {
+    event.cancel()
+})

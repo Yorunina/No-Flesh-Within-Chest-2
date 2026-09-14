@@ -1,4 +1,10 @@
 {
+    "include": [
+        "./**/*.js",
+        "../../.probe/server/packages/**/*.d.ts",
+        "../../.probe/server/global/**/*.d.ts",
+        "../../.probe/shared/**/*.d.ts"
+    ],
     "compilerOptions": {
         "allowJs": true,
         "checkJs": false,
@@ -18,11 +24,5 @@
                 "../../.probe/shared/*"
             ]
         }
-    },
-    "include": [
-        "./**/*.js",
-        "../../.probe/server/packages/**/*.d.ts",
-        "../../.probe/server/global/**/*.d.ts",
-        "../../.probe/shared/**/*.d.ts"
-    ]
+    }
 }

@@ -328,7 +328,7 @@
 				entity: "minecraft:empty"
 				icon: "kubejs:transdimensional_mechanized_injection"
 				id: "2D8D4F70CB1B6C6B"
-				inventoryType: "kubejs:cc_inventory_types/transdimensional_mechanized"
+				inventoryType: "kubejs:transdimensional_mechanized"
 				title: "{ftbquests.chapter.2A1FB09A63C88A3C.questB6DD0B62C0B5118.task.3282367049285463147.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L

@@ -20,7 +20,7 @@ function CyborgizationDeviceEntityTick(customData, event, organItem, organIndex,
     let maxDamageValue = organItem.getMaxDamage()
     if (damageValue >= maxDamageValue) {
         RemoveChestCavityOrgan(customData, chestCavity, organIndex, slotType, true)
-        chestCavity.setInventoryType('kubejs:cc_inventory_types/revolution_machine')
+        chestCavity.setInventoryType('kubejs:revolution_machine')
         entity.setRemainingFireTicks(fireTicks - 3580)
         level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), 'ui.toast.challenge_complete', entity.getSoundSource(), 0.25, 1)
     } else {

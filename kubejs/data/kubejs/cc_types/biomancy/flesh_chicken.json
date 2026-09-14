@@ -17,5 +17,5 @@
     {"item": "kubejs:animal_spleen", "position": 14}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_vita"
+  "inventoryType": "kubejs:small_vita"
 }

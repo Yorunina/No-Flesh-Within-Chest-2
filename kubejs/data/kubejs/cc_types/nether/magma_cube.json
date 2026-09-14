@@ -7,5 +7,5 @@
     {"item":"minecraft:magma_cream", "position": 14, "count": 1}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_nether"
+  "inventoryType": "kubejs:small_nether"
 }

@@ -10,5 +10,5 @@
     {"item": "kubejs:koboleton_rib", "position": 18}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/medium_undead"
+  "inventoryType": "kubejs:medium_undead"
 }

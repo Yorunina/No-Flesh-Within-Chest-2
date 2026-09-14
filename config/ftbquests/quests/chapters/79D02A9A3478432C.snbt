@@ -1887,7 +1887,7 @@
 				entity: "minecraft:empty"
 				icon: "kubejs:revolution_machine_injection"
 				id: "77B5B3B36CC479C6"
-				inventoryType: "kubejs:cc_inventory_types/revolution_machine"
+				inventoryType: "kubejs:revolution_machine"
 				title: "{ftbquests.chapter.79D02A9A3478432C.quest56CAE9C01AF71671.task.8625998244503386566.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L

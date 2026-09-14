@@ -7,5 +7,5 @@
     {"item":"minecraft:snow", "position": 4, "count": 1}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_golem"
+  "inventoryType": "kubejs:small_golem"
 }

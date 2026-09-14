@@ -19,7 +19,7 @@ StartupEvents.registry('mob_effect', event => {
             if (entity.isPlayer()) {
                 if (level.dimension == 'compactmachines:compact_world') {
                     let chestCavity = entity.getChestCavityInstance()
-                    chestCavity.setInventoryType('kubejs:cc_inventory_types/transdimensional_mechanized')
+                    chestCavity.setInventoryType('kubejs:transdimensional_mechanized')
                 }
             }
             return true

@@ -315,7 +315,7 @@ function RegisterSponsorGiftCode(code, reward) {
 // })
 // RegisterSponsorGiftCode('心脏要逃走啦！', (event) => {
 //     const player = event.player
-//     player.give(Item.of('chestcavity:surgical_box', '{Inventory:[],InventoryType:"kubejs:cc_inventory_types/player_17",Size:17}'))
+//     player.give(Item.of('chestcavity:surgical_box', '{Inventory:[],InventoryType:"kubejs:player_17",Size:17}'))
 //     player.give(Item.of('kubejs:sweet_heart', "{display:{Name:'{\"text\":\"泷奈の心\"}'}}"))
 //     player.give(GetPlayerHeadItem('rainstorm_s'))
 // })

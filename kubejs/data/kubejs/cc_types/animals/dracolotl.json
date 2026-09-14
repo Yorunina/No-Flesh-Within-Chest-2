@@ -16,5 +16,5 @@
     {"item": "kubejs:animal_kidney", "position": 14}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_aquatic"
+  "inventoryType": "kubejs:small_aquatic"
 }

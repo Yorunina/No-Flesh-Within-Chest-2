@@ -3,5 +3,5 @@
     {"item":"kubejs:sulfur_cube_colloid", "position": 8, "count": 1}
   ],
   "baseOrganScores": [],
-  "inventoryType": "kubejs:cc_inventory_types/small_terra"
+  "inventoryType": "kubejs:small_terra"
 }

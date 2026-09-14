@@ -1004,7 +1004,7 @@
 				entity: "minecraft:empty"
 				icon: "kubejs:gula_injection"
 				id: "1A9684B086ED2608"
-				inventoryType: "kubejs:cc_inventory_types/gula"
+				inventoryType: "kubejs:gula"
 				title: "{ftbquests.chapter.11A9F33ACEC0E6DC.quest2227580EB38F9126.task.1915864585205523976.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L
