@@ -12,8 +12,18 @@
     "displayType": "minor",
     "glyph": {
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
-        "textureX": 0,
+        "textureX": 16,
         "textureY": 48
+    },
+    "translation": {
+        "primaryEffects": {
+            "kubejs:block_scry": [0, 1]
+        },
+        "tertiaryEffects": {
+            "kubejs:block_scry": 1
+        },
+        "durability": 2,
+        "integrity": 1
     },
     "outcomes": [
         {

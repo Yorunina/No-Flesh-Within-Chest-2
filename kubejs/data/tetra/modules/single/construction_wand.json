@@ -1,0 +1,44 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [ "single/head" ],
+    "improvements": [
+        "tetra:single/shared_head/",
+        "tetra:single/head/shared/",
+        "tetra:single/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:bone/", "tetra:gem/" ],
+            "key": "construction_wand/",
+            "attributes": {
+                "generic.attack_speed": -1
+            },
+            "effects": {
+                "kubejs:construction": [1, 0]
+            },
+            "aspects": {
+                "breakable": 2
+            },
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 0.2
+                },
+                "secondaryEffects": {
+                    "kubejs:construction": [1, 0]
+                },
+                "durability": 2,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 160,
+                    "textureY": 0
+                },
+                "availableTextures": [ "metal", "shiny", "crude", "gem" ],
+                "models": [{ "location": "tetra:item/module/single/head/construction_wand/" }]
+            }
+        }
+    ]
+}

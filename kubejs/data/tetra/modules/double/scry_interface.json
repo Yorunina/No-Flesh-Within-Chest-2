@@ -18,7 +18,7 @@
                 "integrity": 0.2,
                 "glyph": {
                     "textureLocation": "tetra:textures/gui/custom_glyph.png",
-                    "textureX": 0,
+                    "textureX": 16,
                     "textureY": 48
                 },
                 "availableTextures": [ "default" ],

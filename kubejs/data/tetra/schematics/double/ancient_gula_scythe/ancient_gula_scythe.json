@@ -20,6 +20,20 @@
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
         "textureX": 80
     },
+    "translation": {
+        "primaryAttributes": {
+            "generic.attack_damage": 4
+        },
+        "primaryEffects": {
+            "kubejs:hunger_strike": [1, 1]
+        },
+        "tertiaryEffects": {
+            "kubejs:hunger_strike": [1, 0]
+        },
+        "durability": 2,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
     "outcomes": [
         {
 			"materials": ["tetra:gem/", "tetra:wood/", "tetra:stone/", "tetra:metal/"],

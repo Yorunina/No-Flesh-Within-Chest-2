@@ -11,6 +11,13 @@
         "textureX": 0,
         "textureY": 48
     },
+    "translation": {
+        "secondaryAttributes": {
+            "ftbultimine:max_blocks_modifier": 3
+        },
+        "durability": 2,
+        "integrity": 2
+    },
     "outcomes": [
         {
             "materials": [ "tetra:fibre/", "tetra:skin/" ],

@@ -9,12 +9,15 @@
         "textureX": 16
     },
     "translation": {
-        "secondaryAttributes": {
-            "generic.attack_speed": -2
+        "primaryAttributes": {
+            "generic.attack_damage": 1
         },
-        "durability": 4,
-        "integrity": 3,
-        "magicCapacity": 1
+        "secondaryAttributes": {
+            "generic.attack_speed": -1
+        },
+        "durability": 3,
+        "integrity": 2,
+        "magicCapacity": 2
     },
     "outcomes": [
         {

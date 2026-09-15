@@ -17,7 +17,7 @@
 			"generic.attack_damage": 3
 		},
 		"tertiaryAttributes": {
-			"generic.attack_speed": 0.3
+			"generic.attack_speed": 1
 		},
 		"primaryEffects": {
 			"kubejs:burns": [0, 4]

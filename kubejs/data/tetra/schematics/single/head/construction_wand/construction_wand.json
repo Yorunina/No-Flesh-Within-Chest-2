@@ -1,0 +1,41 @@
+{
+    "replace": true,
+    "slots": [ "single/head" ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 160,
+        "textureY": 0
+    },
+    "translation": {
+        "primaryAttributes": {
+            "generic.attack_damage": 1
+        },
+        "secondaryEffects": {
+            "kubejs:construction": 1
+        },
+        "durability": 6,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": [
+                "tetra:wood/",
+                "tetra:stone/",
+                "tetra:metal/",
+                "tetra:bone/"
+            ],
+            "countFactor": 2,
+            "moduleKey": "single/construction_wand",
+            "moduleVariant": "construction_wand/"
+        },
+        {
+            "materials": [ "tetra:gem/" ],
+            "countFactor": 2,
+            "moduleKey": "single/construction_wand",
+            "moduleVariant": "construction_wand/"
+        }
+    ]
+}

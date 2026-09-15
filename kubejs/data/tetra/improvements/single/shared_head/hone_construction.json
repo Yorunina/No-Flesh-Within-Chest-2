@@ -1,0 +1,34 @@
+[
+    {
+        "key": "head_hone/construction",
+        "level": 1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "kubejs:construction": [1, 0]
+        }
+    },
+    {
+        "key": "head_hone/construction",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "kubejs:construction": [2, 0]
+        }
+    },
+    {
+        "key": "head_hone/construction",
+        "level": 3,
+        "integrity": -1,
+        "aspects": {
+            "honed": 3
+        },
+        "effects": {
+            "kubejs:construction": [3, 0]
+        }
+    }
+]

@@ -44,7 +44,7 @@
                 "secondaryEffects": {
                     "stun": 0.15
                 },
-                "tetriaryEffects": {
+                "tertiaryEffects": {
                     "stun": -0.1
                 },
                 "durability": 0.9,
@@ -93,7 +93,7 @@
                 "secondaryEffects": {
                     "stun": 0.15
                 },
-                "tetriaryEffects": {
+                "tertiaryEffects": {
                     "stun": -0.1
                 },
                 "durability": 0.9,

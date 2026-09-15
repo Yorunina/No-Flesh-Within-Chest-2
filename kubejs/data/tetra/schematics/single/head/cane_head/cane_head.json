@@ -12,20 +12,26 @@
     },
     "translation": {
         "primaryAttributes": {
-            "generic.attack_speed": 1,
+            "generic.attack_damage": 1,
             "generic.armor": 1
         },
         "secondaryAttributes": {
             "generic.attack_damage": 1,
             "generic.attack_speed": -1,
-            "generic.movement_speed": 2
+            "generic.movement_speed": -1
+        },
+        "tertiaryAttributes": {
+            "generic.armor": -1
         },
         "primaryEffects": {
             "stun": 1
         },
+        "secondaryEffects": {
+            "stun": 1
+        },
         "durability": 3,
         "integrity": -3,
-        "magicCapacity": 2
+        "magicCapacity": 4
     },
     "outcomes": [
         {

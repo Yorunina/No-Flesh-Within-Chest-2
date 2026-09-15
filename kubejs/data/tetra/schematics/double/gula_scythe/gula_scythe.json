@@ -20,6 +20,20 @@
         "textureLocation": "tetra:textures/gui/custom_glyph.png",
         "textureX": 64
     },
+    "translation": {
+        "primaryAttributes": {
+            "generic.attack_damage": 4
+        },
+        "primaryEffects": {
+            "kubejs:devour_blood": [1, -1]
+        },
+        "tertiaryEffects": {
+            "kubejs:devour_blood": [0, 2]
+        },
+        "durability": 2,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
     "outcomes": [
         {
 			"materials": ["tetra:gem/", "tetra:wood/", "tetra:stone/" , "tetra:metal/"],

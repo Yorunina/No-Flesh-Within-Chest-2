@@ -1,0 +1,34 @@
+[
+    {
+        "key": "head_hone/swift",
+        "level": 1,
+        "aspects": {
+            "honed": 1
+        },
+        "attributes": {
+            "generic.movement_speed": 0.02
+        }
+    },
+    {
+        "key": "head_hone/swift",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 2
+        },
+        "attributes": {
+            "generic.movement_speed": 0.04
+        }
+    },
+    {
+        "key": "head_hone/swift",
+        "level": 3,
+        "integrity": -1,
+        "aspects": {
+            "honed": 3
+        },
+        "attributes": {
+            "generic.movement_speed": 0.06
+        }
+    }
+]

@@ -1,0 +1,36 @@
+{
+    "replace": true,
+    "slots": [ "single/head" ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureX": 16,
+        "textureY": 240
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:module",
+                "module": "single/cane_head"
+            },
+            {
+                "type": "tetra:improvement",
+                "improvement": "head_hone/swift",
+                "level": 1
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "head_hone/swift": 2
+            }
+        }
+    ]
+}
