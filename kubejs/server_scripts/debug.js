@@ -1,6 +1,12 @@
 // priority: 500
 ItemEvents.rightClicked('stick', event => {
-    event.player.sendData('debug')
+    const player = event.player
+    const level = event.level
+    const hole = level.createEntity('kubejs:wormhole')
+    if (!hole) return
+    const facing = player.getForward()
+    hole.setPos(player.x + facing.x() * 2, player.y + 5, player.z + facing.z() * 2)
+    hole.spawn()
     // let pos = new BlockPos(0, 56, 0)
     // /**@type {Internal.ShellForgeBlockEntity} */
     // const blockEntity = level.getBlockEntity(pos)

@@ -1,0 +1,18 @@
+{
+  "type": "kubejs:void_arena",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "kubejs:biome_void_arena",
+      "lakes": false,
+      "features": false,
+      "layers": [
+        {
+          "block": "minecraft:barrier",
+          "height": 64
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

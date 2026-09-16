@@ -659,7 +659,7 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "7BCEE113CFCB696A"
-			min_required_dependencies: 3
+			min_required_dependencies: 1
 			rewards: [{
 				id: "732AC764323D787C"
 				item: "lightmanscurrency:coin_gold"
@@ -1038,7 +1038,7 @@
 			hide_until_deps_complete: true
 			icon: "supplementaries:hourglass"
 			id: "4BBFD32ECC9FB0B5"
-			min_required_dependencies: 3
+			min_required_dependencies: 1
 			rewards: [{
 				id: "72A8C645AA5A3063"
 				item: "lightmanscurrency:coin_gold"
@@ -1431,7 +1431,7 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "1EEF5DDAC832934C"
-			min_required_dependencies: 3
+			min_required_dependencies: 1
 			rewards: [{
 				id: "12AA3280DA5DD3D1"
 				item: "lightmanscurrency:coin_gold"
