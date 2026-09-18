@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:dying_heart')
+RegistryOrgan('kubejs:dying_heart').setRank(2)
     .addScore('chestcavity:health', 0.5)
     .setCanSpawn(true)
 /**

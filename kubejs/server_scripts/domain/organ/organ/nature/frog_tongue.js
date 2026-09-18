@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:frog_tongue')
+RegistryOrgan('kubejs:frog_tongue').setRank(2)
     .addScore('chestcavity:strength', 1.5)
     .addScore('chestcavity:knockback_resistant', 0.5)
     .setCanSpawn(true)

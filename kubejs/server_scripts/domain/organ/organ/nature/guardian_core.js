@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:guardian_core')
+RegistryOrgan('kubejs:guardian_core').setRank(2)
     .addScore('chestcavity:nerves', 1)
     .addScore('chestcavity:luck', 1)
 

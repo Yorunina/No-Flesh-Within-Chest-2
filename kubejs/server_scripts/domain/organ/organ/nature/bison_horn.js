@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:bison_horn')
+RegistryOrgan('kubejs:bison_horn').setRank(3)
     .addScore('kubejs:extreme_strength', 2)
     .addScore('chestcavity:defense', 1)
     .setCanSpawn(true)

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_poison_sand_gland')
+RegistryOrgan('kubejs:ancient_poison_sand_gland').setRank(3)
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:filtration', 1)
 

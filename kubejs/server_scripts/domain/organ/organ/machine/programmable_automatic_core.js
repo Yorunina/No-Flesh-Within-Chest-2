@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:programmable_automatic_core')
+RegistryOrgan('kubejs:programmable_automatic_core').setRank(2)
     .addScore('chestcavity:filtration', 1)
 
 /**

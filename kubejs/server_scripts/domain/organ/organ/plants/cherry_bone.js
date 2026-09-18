@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:cherry_bone')
+RegistryOrgan('kubejs:cherry_bone').setRank(2)
     .addScore('chestcavity:defense', 1.5)
     .addScore('kubejs:photosynthesis', 0.5)
 

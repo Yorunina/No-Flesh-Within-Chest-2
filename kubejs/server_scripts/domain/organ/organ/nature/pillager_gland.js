@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:pillager_gland')
+RegistryOrgan('kubejs:pillager_gland').setRank(3)
     .addScore('chestcavity:defense', -1)
     .addScore('chestcavity:endurance', 1)
     .setCanSpawn(true)

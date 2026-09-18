@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:navigating_liver')
+RegistryOrgan('kubejs:navigating_liver').setRank(3)
     .addScore('chestcavity:defense', -1)
     .addScore('chestcavity:detoxification', 1)
 

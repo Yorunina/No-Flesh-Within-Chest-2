@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:slime_colloid')
+RegistryOrgan('kubejs:slime_colloid').setRank(2)
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:endurance', 1)
     .setCanSpawn(true)

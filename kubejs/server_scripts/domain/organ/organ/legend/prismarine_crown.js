@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:prismarine_crown')
+RegistryOrgan('kubejs:prismarine_crown').setRank(6)
     .addScore('chestcavity:water_breath', 1)
     .addScore('chestcavity:swim_speed', 1)
 

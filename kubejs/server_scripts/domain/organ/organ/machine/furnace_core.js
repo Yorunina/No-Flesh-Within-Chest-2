@@ -1,10 +1,10 @@
 // priority: 500
-RegistryOrgan('kubejs:furnace_core')
+RegistryOrgan('kubejs:furnace_core').setRank(4)
     .addScore('chestcavity:knockback_resistant', 0.5)
     .addScore('chestcavity:strength', -3)
     .addScore('chestcavity:health', 1.5)
 
-RegistryOrgan('kubejs:burning_heart')
+RegistryOrgan('kubejs:burning_heart').setRank(4)
     .addScore('chestcavity:knockback_resistant', 0.5)
     .addScore('chestcavity:strength', -3)
     .addScore('chestcavity:health', 1.5)

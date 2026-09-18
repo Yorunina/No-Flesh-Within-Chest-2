@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:pressurized_arm')
+RegistryOrgan('kubejs:pressurized_arm').setRank(3)
     .addScore('kubejs:extreme_strength', 1)
     .addScore('chestcavity:knockback_resistant', 1)
 

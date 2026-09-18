@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:blood_crystal_factory')
+RegistryOrgan('kubejs:blood_crystal_factory').setRank(3)
     .addScore('chestcavity:health', 1.0)
     .addScore('chestcavity:luck', -1.0)
 

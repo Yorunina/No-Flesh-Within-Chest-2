@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:explosion_cavity')
+RegistryOrgan('kubejs:explosion_cavity').setRank(2)
     .addScore('chestcavity:breath_capacity', 3)
     .addScore('chestcavity:breath_recovery', 0.5)
     .setCanSpawn(true)

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:malignant_cavity_flesh')
+RegistryOrgan('kubejs:malignant_cavity_flesh').setRank(2)
     .addScore('chestcavity:health', 1.0)
     .addScore('chestcavity:endurance', -1.0)
 

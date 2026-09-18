@@ -1,6 +1,6 @@
 
 // priority: 500
-RegistryOrgan('kubejs:snail_shell')
+RegistryOrgan('kubejs:snail_shell').setRank(2)
     .addScore('chestcavity:defense', 2)
     .setCanSpawn(true)
 

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:beer_gland')
+RegistryOrgan('kubejs:beer_gland').setRank(3)
     .addScore('chestcavity:filtration', 1)
     .addScore('chestcavity:fire_resistant', -1)
 

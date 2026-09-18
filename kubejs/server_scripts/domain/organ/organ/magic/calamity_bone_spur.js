@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:calamity_bone_spur')
+RegistryOrgan('kubejs:calamity_bone_spur').setRank(2)
     .addScore('chestcavity:defense', 2)
     .addScore('kubejs:magic_capacity', 1)
     .setCanSpawn(true)

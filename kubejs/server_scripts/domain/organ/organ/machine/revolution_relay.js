@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:revolution_relay')
+RegistryOrgan('kubejs:revolution_relay').setRank(2)
     .addScore('chestcavity:nerves', 0.5)
 
 /**

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:witch_fibroma')
+RegistryOrgan('kubejs:witch_fibroma').setRank(2)
     .addScore('chestcavity:digestion', 1)
     .setCanSpawn(true)
 

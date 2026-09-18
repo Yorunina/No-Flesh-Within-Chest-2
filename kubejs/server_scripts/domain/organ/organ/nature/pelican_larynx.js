@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:pelican_larynx')
+RegistryOrgan('kubejs:pelican_larynx').setRank(2)
     .addScore('chestcavity:endurance', -1.5)
     .addScore('chestcavity:digestion', 1)
     .setCanSpawn(true)

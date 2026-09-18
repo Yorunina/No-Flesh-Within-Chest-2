@@ -1,5 +1,5 @@
 // priority: 501
-RegistryOrgan('kubejs:mammary_gland')
+RegistryOrgan('kubejs:mammary_gland').setRank(3)
     .addScore('chestcavity:breath_capacity', 1)
     .addScore('chestcavity:knockback_resistant', -1)
     .setCanSpawn(true)

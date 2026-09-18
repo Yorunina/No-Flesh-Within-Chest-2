@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ender_eye')
+RegistryOrgan('kubejs:ender_eye').setRank(3)
     .addScore('chestcavity:luck', 1)
     .addScore('chestcavity:nerves', 1)
     .setCanSpawn(true)

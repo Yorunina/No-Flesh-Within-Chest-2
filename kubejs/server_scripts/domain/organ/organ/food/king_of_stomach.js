@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:king_of_stomach')
+RegistryOrgan('kubejs:king_of_stomach').setRank(4)
     .addScore('chestcavity:endurance', -3)
     .addScore('chestcavity:nutrition', -1)
     .addScore('chestcavity:metabolism', 1)

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:underworld_knight_debris')
+RegistryOrgan('kubejs:underworld_knight_debris').setRank(2)
     .addScore('kubejs:extreme_fitness', 3)
     .addScore('chestcavity:endurance', 3)
     .addScore('chestcavity:health', -1)

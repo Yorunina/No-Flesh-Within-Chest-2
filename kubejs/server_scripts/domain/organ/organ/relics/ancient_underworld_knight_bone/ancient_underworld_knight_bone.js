@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_underworld_knight_bone')
+RegistryOrgan('kubejs:ancient_underworld_knight_bone').setRank(4)
     .addScore('kubejs:extreme_fitness', 1)
     .addScore('chestcavity:endurance', 1)
 

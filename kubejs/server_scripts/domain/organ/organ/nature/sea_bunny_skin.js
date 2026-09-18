@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:sea_bunny_skin')
+RegistryOrgan('kubejs:sea_bunny_skin').setRank(3)
     .addScore('kubejs:extreme_fitness', 2)
     .addScore('chestcavity:swim_speed', 1.5)
     .setCanSpawn(true)

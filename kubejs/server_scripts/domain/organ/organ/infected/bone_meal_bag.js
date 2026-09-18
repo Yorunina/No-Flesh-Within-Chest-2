@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:bone_meal_bag')
+RegistryOrgan('kubejs:bone_meal_bag').setRank(2)
     .addScore('chestcavity:digestion', 2)
     .addScore('chestcavity:detoxification', -0.5)
     .setCanSpawn(true)

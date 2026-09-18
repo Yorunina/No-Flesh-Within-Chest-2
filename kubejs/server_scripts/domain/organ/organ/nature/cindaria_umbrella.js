@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:cindaria_umbrella')
+RegistryOrgan('kubejs:cindaria_umbrella').setRank(2)
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:defense', -1)
     .setCanSpawn(true)

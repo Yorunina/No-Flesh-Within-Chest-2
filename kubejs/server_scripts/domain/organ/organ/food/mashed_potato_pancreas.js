@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:mashed_potato_pancreas')
+RegistryOrgan('kubejs:mashed_potato_pancreas').setRank(3)
     .addScore('chestcavity:digestion', 1.5)
     .addScore('chestcavity:defense', -1)
 

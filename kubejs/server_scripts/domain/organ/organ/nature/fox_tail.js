@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:fox_tail')
+RegistryOrgan('kubejs:fox_tail').setRank(2)
     .addScore('chestcavity:strength', 1)
     .setCanSpawn(true)
 

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_maledictus_wing')
+RegistryOrgan('kubejs:ancient_maledictus_wing').setRank(4)
     .addScore('chestcavity:speed', 2)
     .addScore('kubejs:creative_flight', 1)
 

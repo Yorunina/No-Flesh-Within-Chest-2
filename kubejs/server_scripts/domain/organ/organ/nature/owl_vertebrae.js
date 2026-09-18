@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:owl_vertebrae')
+RegistryOrgan('kubejs:owl_vertebrae').setRank(2)
     .addScore('chestcavity:nerves', 1)
     .addScore('chestcavity:defense', 0.5)
     .addScore('chestcavity:endurance', -1)

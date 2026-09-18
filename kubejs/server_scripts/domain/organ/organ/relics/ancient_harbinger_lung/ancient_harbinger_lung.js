@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_harbinger_lung')
+RegistryOrgan('kubejs:ancient_harbinger_lung').setRank(3)
     .addScore('chestcavity:breath_capacity', 1)
     .addScore('chestcavity:breath_recovery', 1)
 

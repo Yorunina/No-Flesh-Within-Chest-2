@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:rose_quartz_dialyzer')
+RegistryOrgan('kubejs:rose_quartz_dialyzer').setRank(3)
     .addScore('chestcavity:filtration', 2)
     .addScore('kubejs:rosy', 1)
 

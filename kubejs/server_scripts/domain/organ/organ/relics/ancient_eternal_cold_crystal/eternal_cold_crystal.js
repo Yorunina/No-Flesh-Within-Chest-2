@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:eternal_cold_crystal')
+RegistryOrgan('kubejs:eternal_cold_crystal').setRank(3)
     .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:knockback_resistant', 1)
 

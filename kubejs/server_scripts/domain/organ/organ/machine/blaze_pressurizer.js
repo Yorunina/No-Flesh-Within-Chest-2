@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:blaze_pressurizer')
+RegistryOrgan('kubejs:blaze_pressurizer').setRank(3)
     .addScore('kubejs:extreme_strength', 1)
     .addScore('chestcavity:defense', -1)
 

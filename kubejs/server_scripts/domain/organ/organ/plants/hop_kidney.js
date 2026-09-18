@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:hop_kidney')
+RegistryOrgan('kubejs:hop_kidney').setRank(3)
     .addScore('chestcavity:detoxification', 0.5)
     .addScore('chestcavity:filtration', 1.5)
     .addScore('kubejs:photosynthesis', 0.5)

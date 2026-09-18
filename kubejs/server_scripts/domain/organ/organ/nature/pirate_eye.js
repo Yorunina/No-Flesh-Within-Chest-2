@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:pirate_eye')
+RegistryOrgan('kubejs:pirate_eye').setRank(2)
     .addScore('chestcavity:luck', 1)
     .setCanSpawn(true)
 

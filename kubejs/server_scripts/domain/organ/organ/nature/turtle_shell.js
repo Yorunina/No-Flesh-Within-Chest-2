@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:turtle_shell')
+RegistryOrgan('kubejs:turtle_shell').setRank(2)
     .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:endurance', 1)
     .setCanSpawn(true)

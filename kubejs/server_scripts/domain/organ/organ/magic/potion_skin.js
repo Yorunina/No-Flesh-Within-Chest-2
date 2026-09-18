@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:potion_skin')
+RegistryOrgan('kubejs:potion_skin').setRank(6)
     .addScore('chestcavity:defense', 3)
 
 /**

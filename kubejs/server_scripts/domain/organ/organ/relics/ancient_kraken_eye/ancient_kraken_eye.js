@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_kraken_eye')
+RegistryOrgan('kubejs:ancient_kraken_eye').setRank(4)
     .addScore('chestcavity:nutrition', 1)
     .addScore('chestcavity:digestion', 1)
 

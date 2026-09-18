@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:chimera_heart')
+RegistryOrgan('kubejs:chimera_heart').setRank(3)
     .addScore('chestcavity:health', 1)
     .addScore('kubejs:extreme_fitness', 2)
     .setCanSpawn(true)

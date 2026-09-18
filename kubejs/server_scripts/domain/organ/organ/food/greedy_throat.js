@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:greedy_throat')
+RegistryOrgan('kubejs:greedy_throat').setRank(2)
     .addScore('chestcavity:breath_capacity', 1)
     .addScore('chestcavity:knockback_resistant', -1)
 

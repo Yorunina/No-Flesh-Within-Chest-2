@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_infernal_dragon_crystal')
+RegistryOrgan('kubejs:ancient_infernal_dragon_crystal').setRank(3)
     .addScore('kubejs:roll_energy', 1)
     .addScore('chestcavity:fire_resistant', 3)
 

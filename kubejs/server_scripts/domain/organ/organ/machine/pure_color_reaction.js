@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:pure_color_reaction')
+RegistryOrgan('kubejs:pure_color_reaction').setRank(4)
     .addScore('chestcavity:detoxification', 1.0)
     .addScore('chestcavity:filtration', -1.0)
 

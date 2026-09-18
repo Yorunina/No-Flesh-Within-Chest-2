@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:iron_repair_device')
+RegistryOrgan('kubejs:iron_repair_device').setRank(2)
     .addScore('chestcavity:fire_resistant', -2)
     .addScore('chestcavity:defense', -1)
     .setCanSpawn(true)

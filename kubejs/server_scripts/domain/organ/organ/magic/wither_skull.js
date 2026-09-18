@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:wither_skull')
+RegistryOrgan('kubejs:wither_skull').setRank(2)
     .addScore('chestcavity:health', -0.5)
     .addScore('kubejs:magic_capacity', 2)
     .setCanSpawn(true)

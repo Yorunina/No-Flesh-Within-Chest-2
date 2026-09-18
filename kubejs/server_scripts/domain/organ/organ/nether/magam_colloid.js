@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:magam_colloid')
+RegistryOrgan('kubejs:magam_colloid').setRank(2)
     .addScore('chestcavity:health', 1)
     .setCanSpawn(true)
 

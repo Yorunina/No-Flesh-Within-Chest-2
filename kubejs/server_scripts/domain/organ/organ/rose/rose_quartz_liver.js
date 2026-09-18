@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:rose_quartz_liver')
+RegistryOrgan('kubejs:rose_quartz_liver').setRank(4)
     .addScore('chestcavity:detoxification', 2)
     .addScore('kubejs:rosy', 1)
 

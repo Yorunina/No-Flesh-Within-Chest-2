@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ender_golem_line')
+RegistryOrgan('kubejs:ender_golem_line').setRank(2)
     .addScore('kubejs:extreme_fitness', 1)
     .addScore('chestcavity:nerves', 0.5)
     .setCanSpawn(true)

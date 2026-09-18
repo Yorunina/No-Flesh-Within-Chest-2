@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:gluten_muscle')
+RegistryOrgan('kubejs:gluten_muscle').setRank(3)
     .addScore('chestcavity:defense', 1.5)
     .addScore('chestcavity:digestion', 1)
 

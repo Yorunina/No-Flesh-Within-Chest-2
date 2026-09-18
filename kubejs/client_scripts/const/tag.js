@@ -1,5 +1,12 @@
 // priority: 4000
 const OrganTagMap = {
+    'kubejs:rank_0': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_0')).color('#a3a3a3'),
+    'kubejs:rank_1': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_1')).color('#84e45b'),
+    'kubejs:rank_2': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_2')).color('#4c9fff'),
+    'kubejs:rank_3': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_3')).color('#c77dff'),
+    'kubejs:rank_4': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_4')).color('#ff8c32'),
+    'kubejs:rank_5': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_5')).color('#ff4d4d'),
+    'kubejs:rank_6': Text.darkGray(Text.translatable('tooltips.kubejs.tag.kubejs:rank_6')),
     'kubejs:appendix': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:appendix')),
     'kubejs:heart': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:heart')),
     'kubejs:intestine': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:intestine')),
@@ -14,7 +21,6 @@ const OrganTagMap = {
     'kubejs:stomach': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:stomach')),
     'kubejs:machine': Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:machine')),
     'kubejs:magic': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:magic')).color('#00eded'),
-    'kubejs:candy': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:candy')).color('#e8a0dc'),
     'kubejs:rose': Text.darkRed(Text.translatable('tooltips.kubejs.tag.kubejs:rose')),
     'kubejs:resource': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:resource')),
     'kubejs:revolution': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:revolution')).color('#deaa00'),
@@ -22,7 +28,6 @@ const OrganTagMap = {
     'kubejs:legend': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:legend')).color('#d6e5ff'),
     'kubejs:nature': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:nature')).color('#84e45b'),
     'kubejs:basic': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:basic')).color('#a3a3a3'),
-    'kubejs:evolution': Text.green(Text.translatable('tooltips.kubejs.tag.kubejs:evolution')),
     'kubejs:food': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:food')).color('#f1b500'),
     'kubejs:huge': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:huge')).color('#a900fd'),
     'kubejs:warp': Text.darkPurple(Text.translatable('tooltips.kubejs.tag.kubejs:warp')),

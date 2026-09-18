@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:decayed_infernal_dragon_crystal')
+RegistryOrgan('kubejs:decayed_infernal_dragon_crystal').setRank(2)
     .addScore('chestcavity:strength', -1)
     .addScore('chestcavity:fire_resistant', 3)
 

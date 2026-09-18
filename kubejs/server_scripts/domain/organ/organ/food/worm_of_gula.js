@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:worm_of_gula')
+RegistryOrgan('kubejs:worm_of_gula').setRank(3)
     .addScore('chestcavity:digestion', 1)
     .addScore('chestcavity:nutrition', 1)
     .addScore('chestcavity:endurance', 1)

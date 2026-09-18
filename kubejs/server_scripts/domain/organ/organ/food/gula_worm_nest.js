@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:gula_worm_nest')
+RegistryOrgan('kubejs:gula_worm_nest').setRank(0)
     .addScore('chestcavity:health', 0.1)
     .addScore('chestcavity:filtration', 0.1)
     .addScore('chestcavity:nerves', 0.1)

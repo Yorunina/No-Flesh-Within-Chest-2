@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:revolution_cable')
+RegistryOrgan('kubejs:revolution_cable').setRank(2)
     .addScore('chestcavity:endurance', 1.5)
     .addScore('chestcavity:nerves', 0.5)
 

@@ -15,6 +15,7 @@ function OrganItemModel(itemId) {
     this.canSpawnInCavity = false
     this.organScores = []
     this.maxStackSize = 1
+    this.rank = 1
 }
 
 OrganItemModel.prototype = {
@@ -34,6 +35,13 @@ OrganItemModel.prototype = {
     },
     setCanSpawn: function (boolean) {
         this.canSpawnInCavity = boolean
+        return this
+    },
+    /**
+     * @param {number} rank 0-5 gameplay rank, 6 = unobtainable
+     */
+    setRank: function (rank) {
+        this.rank = rank
         return this
     },
 }
@@ -75,4 +83,11 @@ ServerEvents.tags('item', event => {
     event.add('kubejs:organ', OrganList.map(organ => organ.itemId))
     event.add('kubejs:pseudo_organ', PseudoOrganList.map(organ => organ.itemId))
     event.add('kubejs:spawn_in_cavity', OrganList.filter(organ => organ.canSpawnInCavity).map(organ => organ.itemId))
+    let allOrgans = OrganList.concat(PseudoOrganList)
+    for (let r = 0; r <= 6; r++) {
+        let rankIds = allOrgans.filter(organ => organ.rank == r).map(organ => organ.itemId)
+        if (rankIds.length > 0) {
+            event.add('kubejs:rank_' + r, rankIds)
+        }
+    }
 })

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:devour_teeth')
+RegistryOrgan('kubejs:devour_teeth').setRank(2)
     .addScore('chestcavity:strength', 1)
     .addScore('chestcavity:defense', 1)
     .setCanSpawn(true)

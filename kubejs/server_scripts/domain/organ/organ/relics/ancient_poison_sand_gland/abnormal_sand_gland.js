@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:abnormal_sand_gland')
+RegistryOrgan('kubejs:abnormal_sand_gland').setRank(2)
     .addScore('chestcavity:detoxification', 3)
     .addScore('chestcavity:filtration', 3)
 

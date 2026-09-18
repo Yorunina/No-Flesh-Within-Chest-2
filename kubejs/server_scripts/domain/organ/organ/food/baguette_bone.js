@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:baguette_bone')
+RegistryOrgan('kubejs:baguette_bone').setRank(3)
     .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:digestion', 1)
 

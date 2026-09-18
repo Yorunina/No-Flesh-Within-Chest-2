@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:blaze_spine')
+RegistryOrgan('kubejs:blaze_spine').setRank(2)
     .addScore('chestcavity:nerves', 1)
     .addScore('kubejs:crit_chance', 1)
     .setCanSpawn(true)

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:malignant_neuron_tumor')
+RegistryOrgan('kubejs:malignant_neuron_tumor').setRank(2)
     .addScore('chestcavity:digestion', -10)
     .addScore('chestcavity:nutrition', -10)
 /**

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:leaf_insect_exoskeleton')
+RegistryOrgan('kubejs:leaf_insect_exoskeleton').setRank(3)
     .addScore('chestcavity:defense', 1)
     .setCanSpawn(true)
 

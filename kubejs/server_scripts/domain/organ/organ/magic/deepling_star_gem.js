@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:deepling_star_gem')
+RegistryOrgan('kubejs:deepling_star_gem').setRank(2)
     .addScore('chestcavity:health', 1)
     .addScore('kubejs:magic_capacity', 1)
     .setCanSpawn(true)

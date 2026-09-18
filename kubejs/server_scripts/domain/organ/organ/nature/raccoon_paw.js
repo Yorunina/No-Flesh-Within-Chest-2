@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:raccoon_paw')
+RegistryOrgan('kubejs:raccoon_paw').setRank(3)
     .addScore('chestcavity:strength', 1)
     .addScore('kubejs:knockback', 3)
     .setCanSpawn(true)

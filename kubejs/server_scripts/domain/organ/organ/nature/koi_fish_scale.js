@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:koi_fish_scale')
+RegistryOrgan('kubejs:koi_fish_scale').setRank(2)
     .addScore('chestcavity:knockback_resistant', -0.5)
     .setCanSpawn(true)
 

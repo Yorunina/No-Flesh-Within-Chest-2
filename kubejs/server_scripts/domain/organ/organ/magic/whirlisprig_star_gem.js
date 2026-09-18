@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:whirlisprig_star_gem')
+RegistryOrgan('kubejs:whirlisprig_star_gem').setRank(2)
     .addScore('chestcavity:defense', 1)
     .addScore('kubejs:magic_capacity', 1)
     .setCanSpawn(true)

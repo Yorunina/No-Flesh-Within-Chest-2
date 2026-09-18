@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:sweets_gland')
+RegistryOrgan('kubejs:sweets_gland').setRank(3)
     .addScore('chestcavity:endurance', 1)
     .addScore('chestcavity:impact_resistant', -1)
 

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:silverfish_gland')
+RegistryOrgan('kubejs:silverfish_gland').setRank(2)
     .addScore('chestcavity:climbing', 0.5)
     .addScore('chestcavity:metabolism', 0.5)
     .setCanSpawn(true)

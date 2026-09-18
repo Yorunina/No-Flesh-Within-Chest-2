@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:roly_poly_shell')
+RegistryOrgan('kubejs:roly_poly_shell').setRank(2)
     .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:breath_capacity', -1)
     .setCanSpawn(true)

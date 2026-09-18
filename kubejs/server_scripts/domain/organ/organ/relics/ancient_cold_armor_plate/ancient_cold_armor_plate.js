@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_cold_armor_plate')
+RegistryOrgan('kubejs:ancient_cold_armor_plate').setRank(3)
     .addScore('chestcavity:defense', 2)
     .addScore('chestcavity:nerves', 2)
 

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:refill_agreement')
+RegistryOrgan('kubejs:refill_agreement').setRank(3)
     .addScore('chestcavity:luck', 1)
     .setCanSpawn(true)
 

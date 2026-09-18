@@ -1,5 +1,12 @@
 // priority: 500
 ChestCavityEvents.organHoloFilterTags(event => {
+    event.addTag('kubejs:rank_0', 'tooltips.kubejs.tag.kubejs:rank_0')
+    event.addTag('kubejs:rank_1', 'tooltips.kubejs.tag.kubejs:rank_1')
+    event.addTag('kubejs:rank_2', 'tooltips.kubejs.tag.kubejs:rank_2')
+    event.addTag('kubejs:rank_3', 'tooltips.kubejs.tag.kubejs:rank_3')
+    event.addTag('kubejs:rank_4', 'tooltips.kubejs.tag.kubejs:rank_4')
+    event.addTag('kubejs:rank_5', 'tooltips.kubejs.tag.kubejs:rank_5')
+    event.addTag('kubejs:rank_6', 'tooltips.kubejs.tag.kubejs:rank_6')
     event.addTag('kubejs:appendix', 'tooltips.kubejs.tag.kubejs:appendix')
     event.addTag('kubejs:heart', 'tooltips.kubejs.tag.kubejs:heart')
     event.addTag('kubejs:intestine', 'tooltips.kubejs.tag.kubejs:intestine')
@@ -15,7 +22,6 @@ ChestCavityEvents.organHoloFilterTags(event => {
     event.addTag('kubejs:stomach', 'tooltips.kubejs.tag.kubejs:stomach')
     event.addTag('kubejs:machine', 'tooltips.kubejs.tag.kubejs:machine')
     event.addTag('kubejs:magic', 'tooltips.kubejs.tag.kubejs:magic')
-    event.addTag('kubejs:candy', 'tooltips.kubejs.tag.kubejs:candy')
     event.addTag('kubejs:rose', 'tooltips.kubejs.tag.kubejs:rose')
     event.addTag('kubejs:resource', 'tooltips.kubejs.tag.kubejs:resource')
     event.addTag('kubejs:revolution', 'tooltips.kubejs.tag.kubejs:revolution')
@@ -23,7 +29,6 @@ ChestCavityEvents.organHoloFilterTags(event => {
     event.addTag('kubejs:legend', 'tooltips.kubejs.tag.kubejs:legend')
     event.addTag('kubejs:nature', 'tooltips.kubejs.tag.kubejs:nature')
     event.addTag('kubejs:basic', 'tooltips.kubejs.tag.kubejs:basic')
-    event.addTag('kubejs:evolution', 'tooltips.kubejs.tag.kubejs:evolution')
     event.addTag('kubejs:food', 'tooltips.kubejs.tag.kubejs:food')
     event.addTag('kubejs:dragon', 'tooltips.kubejs.tag.kubejs:dragon')
     event.addTag('kubejs:ender', 'tooltips.kubejs.tag.kubejs:ender')

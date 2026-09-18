@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:crimson_brain')
+RegistryOrgan('kubejs:crimson_brain').setRank(3)
     .addScore('chestcavity:nerves', 1.5)
     .addScore('kubejs:photosynthesis', 0.5)
 

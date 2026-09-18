@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:boar_nose')
+RegistryOrgan('kubejs:boar_nose').setRank(3)
     .addScore('chestcavity:endurance', 2)
     .setCanSpawn(true)
 

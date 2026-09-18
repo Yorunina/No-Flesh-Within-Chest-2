@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:heal_star_gem')
+RegistryOrgan('kubejs:heal_star_gem').setRank(2)
     .addScore('chestcavity:luck', 1)
     .addScore('kubejs:magic_capacity', 1)
 

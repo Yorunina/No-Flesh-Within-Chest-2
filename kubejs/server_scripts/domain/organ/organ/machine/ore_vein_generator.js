@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ore_vein_generator')
+RegistryOrgan('kubejs:ore_vein_generator').setRank(2)
     .addScore('chestcavity:nerves', -1)
     .addScore('chestcavity:defense', 1)
 

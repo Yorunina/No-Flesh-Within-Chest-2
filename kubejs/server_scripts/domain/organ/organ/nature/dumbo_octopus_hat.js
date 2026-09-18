@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:dumbo_octopus_hat')
+RegistryOrgan('kubejs:dumbo_octopus_hat').setRank(2)
     .addScore('chestcavity:defense', -0.5)
     .addScore('chestcavity:swim_speed', 1)
     .setCanSpawn(true)

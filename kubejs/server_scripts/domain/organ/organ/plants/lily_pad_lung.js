@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:lily_pad_lung')
+RegistryOrgan('kubejs:lily_pad_lung').setRank(3)
     .addScore('chestcavity:breath_capacity', 0.5)
     .addScore('chestcavity:breath_recovery', 1)
     .addScore('kubejs:photosynthesis', 0.5)

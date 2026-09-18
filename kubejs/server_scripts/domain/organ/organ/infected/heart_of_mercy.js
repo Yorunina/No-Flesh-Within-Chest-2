@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:heart_of_mercy')
+RegistryOrgan('kubejs:heart_of_mercy').setRank(2)
     .addScore('chestcavity:health', 1)
     .addScore('chestcavity:defense', -1)
 

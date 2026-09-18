@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:squirrel_tail')
+RegistryOrgan('kubejs:squirrel_tail').setRank(2)
     .addScore('kubejs:extreme_strength', -1)
     .addScore('chestcavity:digestion', 2)
     .setCanSpawn(true)

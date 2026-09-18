@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:soul_core')
+RegistryOrgan('kubejs:soul_core').setRank(0)
     .addScore('chestcavity:health', 1.5)
     .addScore('chestcavity:defense', -0.5)
     .setCanSpawn(true)

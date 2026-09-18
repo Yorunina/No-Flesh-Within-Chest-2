@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:broken_netherite_muscle')
+RegistryOrgan('kubejs:broken_netherite_muscle').setRank(3)
     .addScore('kubejs:extreme_strength', 3)
     .addScore('chestcavity:endurance', -3)
 

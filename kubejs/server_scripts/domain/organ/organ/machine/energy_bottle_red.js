@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:energy_bottle_red')
+RegistryOrgan('kubejs:energy_bottle_red').setRank(3)
     .addScore('chestcavity:nerves', -0.5)
     .addScore('chestcavity:strength', 1.5)
 

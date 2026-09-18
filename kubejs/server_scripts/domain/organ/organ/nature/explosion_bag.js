@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:explosion_bag')
+RegistryOrgan('kubejs:explosion_bag').setRank(2)
     .addScore('chestcavity:digestion', 1)
     .addScore('chestcavity:detoxification', 0.5)
     .setCanSpawn(true)

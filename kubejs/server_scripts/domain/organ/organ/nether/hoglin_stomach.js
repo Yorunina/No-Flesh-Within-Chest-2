@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:hoglin_rumen')
+RegistryOrgan('kubejs:hoglin_rumen').setRank(2)
     .addScore('chestcavity:digestion', 1)
     .addScore('chestcavity:fire_resistant', 1)
     .setCanSpawn(true)

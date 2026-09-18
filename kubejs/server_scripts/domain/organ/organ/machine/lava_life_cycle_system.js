@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:lava_life_cycle_system')
+RegistryOrgan('kubejs:lava_life_cycle_system').setRank(2)
     .addScore('chestcavity:health', 1.5)
     .addScore('chestcavity:digestion', 0.5)
 

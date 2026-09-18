@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:warden_core')
+RegistryOrgan('kubejs:warden_core').setRank(2)
     .addScore('chestcavity:health', 2)
     .addScore('chestcavity:endurance', -0.5)
     .setCanSpawn(true)

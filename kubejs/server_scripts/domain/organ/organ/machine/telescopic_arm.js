@@ -1,9 +1,9 @@
 // priority: 500
-RegistryOrgan('kubejs:telescopic_arm')
+RegistryOrgan('kubejs:telescopic_arm').setRank(2)
     .addScore('chestcavity:nerves', 0.5)
     .addScore('chestcavity:knockback_resistant', 1)
 
-RegistryOrgan('kubejs:telescopic_attack_arm')
+RegistryOrgan('kubejs:telescopic_attack_arm').setRank(2)
     .addScore('chestcavity:strength', 1)
     .addScore('chestcavity:knockback_resistant', 1)
 

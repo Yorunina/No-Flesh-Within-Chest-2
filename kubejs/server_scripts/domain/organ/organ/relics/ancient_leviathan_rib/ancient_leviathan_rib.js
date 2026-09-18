@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:ancient_leviathan_rib')
+RegistryOrgan('kubejs:ancient_leviathan_rib').setRank(4)
     .addScore('chestcavity:defense', 3)
     .addScore('chestcavity:swim_speed', 1)
 

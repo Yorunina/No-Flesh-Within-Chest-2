@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:cyborgization_device')
+RegistryOrgan('kubejs:cyborgization_device').setRank(3)
     .addScore('chestcavity:health', 1)
 
 /**

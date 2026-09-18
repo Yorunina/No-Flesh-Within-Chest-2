@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:crimson_rib')
+RegistryOrgan('kubejs:crimson_rib').setRank(2)
     .addScore('chestcavity:defense', 0.5)
     .addScore('chestcavity:detoxification', 0.5)
 

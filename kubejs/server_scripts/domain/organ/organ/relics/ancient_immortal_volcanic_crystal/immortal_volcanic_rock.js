@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:immortal_volcanic_rock')
+RegistryOrgan('kubejs:immortal_volcanic_rock').setRank(3)
     .addScore('chestcavity:strength', -1)
     .addScore('chestcavity:fire_resistant', -1)
 

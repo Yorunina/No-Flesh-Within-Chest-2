@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:vita_rose_liver')
+RegistryOrgan('kubejs:vita_rose_liver').setRank(4)
     .addScore('chestcavity:detoxification', 1.5)
     .addScore('chestcavity:filtration', 0.5)
     .addScore('kubejs:photosynthesis', 0.5)

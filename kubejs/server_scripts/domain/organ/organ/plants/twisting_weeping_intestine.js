@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:twisting_weeping_intestine')
+RegistryOrgan('kubejs:twisting_weeping_intestine').setRank(3)
     .addScore('chestcavity:nutrition', 1.5)
     .addScore('kubejs:photosynthesis', 0.5)
 

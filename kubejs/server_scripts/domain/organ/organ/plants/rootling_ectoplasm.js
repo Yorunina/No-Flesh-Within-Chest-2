@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:rootling_ectoplasm')
+RegistryOrgan('kubejs:rootling_ectoplasm').setRank(4)
     .addScore('kubejs:extreme_fitness', 2)
     .addScore('kubejs:photosynthesis', 1)
 

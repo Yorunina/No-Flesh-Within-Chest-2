@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:sweet_heart')
+RegistryOrgan('kubejs:sweet_heart').setRank(3)
     .addScore('chestcavity:health', 1.5)
     .addScore('chestcavity:nutrition', 1)
 

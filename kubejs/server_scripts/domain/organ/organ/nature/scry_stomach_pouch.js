@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:scry_stomach_pouch')
+RegistryOrgan('kubejs:scry_stomach_pouch').setRank(3)
     .addScore('chestcavity:nutrition', 1)
     .addScore('kubejs:magic_capacity', 2)
 

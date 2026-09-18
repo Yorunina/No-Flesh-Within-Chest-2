@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:dragon_blood_heart')
+RegistryOrgan('kubejs:dragon_blood_heart').setRank(2)
     .addScore('chestcavity:health', 2)
     .addScore('kubejs:dragon_blood', 1)
     .setCanSpawn(true)

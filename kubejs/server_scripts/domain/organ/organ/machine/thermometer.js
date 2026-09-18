@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:thermometer')
+RegistryOrgan('kubejs:thermometer').setRank(2)
     .addScore('chestcavity:fire_resistant', -2)
     .addScore('chestcavity:defense', 1)
 

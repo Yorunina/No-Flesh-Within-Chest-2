@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:parasitism_stomach')
+RegistryOrgan('kubejs:parasitism_stomach').setRank(3)
     .addScore('chestcavity:endurance', 0.5)
     .addScore('chestcavity:nutrition', 1)
 

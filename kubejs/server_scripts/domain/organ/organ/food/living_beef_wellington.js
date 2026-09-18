@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:living_beef_wellington')
+RegistryOrgan('kubejs:living_beef_wellington').setRank(3)
     .addScore('chestcavity:strength', 1)
     .addScore('kubejs:extreme_strength', -1)
     .addScore('chestcavity:defense', -1)

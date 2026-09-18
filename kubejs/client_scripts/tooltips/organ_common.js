@@ -7,11 +7,19 @@ ItemEvents.tooltip(tooltip => {
         let organTagTooltipsList = []
         const nbt = item.getOrCreateTag()
         const itemMaxStackSizeStr = item.getMaxStackSize().toFixed(0)
+        let rankTooltip = undefined
         item.getTags().toArray().forEach(/**@param {Internal.TagKey} tag*/tag => {
             let tagLocation = String(tag.location())
+            if (tagLocation.indexOf('kubejs:rank_') == 0) {
+                if (OrganTagMap[tagLocation]) rankTooltip = OrganTagMap[tagLocation]
+                return
+            }
             if (!OrganTagMap[tagLocation]) return
             organTagTooltipsList.push(OrganTagMap[tagLocation])
         })
+        if (rankTooltip) {
+            organTagTooltipsList = [rankTooltip].concat(organTagTooltipsList)
+        }
         if (organTagTooltipsList.length > 0) {
             lineNum = AddTextLines(text, [Text.of('🔎  ').append(JoinWithSeparator('   ', organTagTooltipsList))], lineNum)
         }

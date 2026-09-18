@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:endermite_gland')
+RegistryOrgan('kubejs:endermite_gland').setRank(3)
     .addScore('chestcavity:endurance', 1)
     .addScore('chestcavity:filtration', 1)
     .setCanSpawn(true)

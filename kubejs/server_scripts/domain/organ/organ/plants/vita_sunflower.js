@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:vita_sunflower')
+RegistryOrgan('kubejs:vita_sunflower').setRank(3)
     .addScore('chestcavity:health', 1.5)
     .addScore('kubejs:photosynthesis', 1)
 

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:soul_cage')
+RegistryOrgan('kubejs:soul_cage').setRank(6)
     .addScore('chestcavity:endurance', 1)
     .addScore('chestcavity:nerves', 1)
 

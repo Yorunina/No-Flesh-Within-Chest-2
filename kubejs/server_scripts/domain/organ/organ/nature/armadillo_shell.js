@@ -1,6 +1,6 @@
 
 // priority: 500
-RegistryOrgan('kubejs:armadillo_shell')
+RegistryOrgan('kubejs:armadillo_shell').setRank(2)
     .addScore('chestcavity:defense', 2)
     .setCanSpawn(true)
 

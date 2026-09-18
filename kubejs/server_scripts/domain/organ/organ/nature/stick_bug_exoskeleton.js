@@ -1,6 +1,6 @@
 
 // priority: 500
-RegistryOrgan('kubejs:stick_bug_exoskeleton')
+RegistryOrgan('kubejs:stick_bug_exoskeleton').setRank(2)
     .addScore('chestcavity:defense', 1)
     .addScore('chestcavity:endurance', 1)
     .setCanSpawn(true)

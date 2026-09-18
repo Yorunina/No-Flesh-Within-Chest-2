@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:bridge_mod')
+RegistryOrgan('kubejs:bridge_mod').setRank(4)
     .addScore('chestcavity:speed', -1)
 
 /**

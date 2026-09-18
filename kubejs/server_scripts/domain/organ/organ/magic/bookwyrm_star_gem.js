@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:bookwyrm_star_gem')
+RegistryOrgan('kubejs:bookwyrm_star_gem').setRank(2)
     .addScore('kubejs:magic_capacity', 1)
     .addScore('chestcavity:nerves', 1)
     .setCanSpawn(true)

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:rose_quartz_muscle')
+RegistryOrgan('kubejs:rose_quartz_muscle').setRank(3)
     .addScore('chestcavity:strength', 2)
     .addScore('kubejs:rosy', 1)
 

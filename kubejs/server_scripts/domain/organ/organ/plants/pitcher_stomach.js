@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:pitcher_stomach')
+RegistryOrgan('kubejs:pitcher_stomach').setRank(4)
     .addScore('chestcavity:nutrition', 0.5)
     .addScore('chestcavity:digestion', 1.5)
     .addScore('kubejs:photosynthesis', 0.5)

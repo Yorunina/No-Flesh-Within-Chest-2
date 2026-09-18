@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:sulfur_cube_colloid')
+RegistryOrgan('kubejs:sulfur_cube_colloid').setRank(2)
     .addScore('chestcavity:endurance', 1)
     .setCanSpawn(true)
 

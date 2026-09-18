@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:starbuncle_star_gem')
+RegistryOrgan('kubejs:starbuncle_star_gem').setRank(2)
     .addScore('kubejs:magic_capacity', 2)
     .setCanSpawn(true)
 /**

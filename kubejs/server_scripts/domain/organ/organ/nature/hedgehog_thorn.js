@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:hedgehog_thorn')
+RegistryOrgan('kubejs:hedgehog_thorn').setRank(2)
     .addScore('chestcavity:defense', 2)
     .setCanSpawn(true)
 /**

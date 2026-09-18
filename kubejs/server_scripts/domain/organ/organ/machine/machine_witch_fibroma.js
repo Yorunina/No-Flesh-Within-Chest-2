@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:machine_witch_fibroma')
+RegistryOrgan('kubejs:machine_witch_fibroma').setRank(2)
     .addScore('chestcavity:digestion', 1)
     .addScore('chestcavity:filtration', 1.5)
 

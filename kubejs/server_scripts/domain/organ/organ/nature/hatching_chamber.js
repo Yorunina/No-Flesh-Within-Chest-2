@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:hatching_chamber')
+RegistryOrgan('kubejs:hatching_chamber').setRank(2)
     .addScore('chestcavity:endurance', 1)
     .setCanSpawn(true)
 /**

@@ -1,6 +1,6 @@
 
 // priority: 500
-RegistryOrgan('kubejs:remnant_heart')
+RegistryOrgan('kubejs:remnant_heart').setRank(2)
     .addScore('chestcavity:health', 2)
     .addScore('chestcavity:fire_resistant', 1)
 

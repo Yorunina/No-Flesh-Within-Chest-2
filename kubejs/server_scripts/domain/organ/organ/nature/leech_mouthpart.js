@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:leech_mouthpart')
+RegistryOrgan('kubejs:leech_mouthpart').setRank(6)
     .addScore('kubejs:extreme_strength', 1)
     .addScore('chestcavity:digestion', 1)
 

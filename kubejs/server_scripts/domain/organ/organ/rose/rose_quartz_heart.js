@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:rose_quartz_heart')
+RegistryOrgan('kubejs:rose_quartz_heart').setRank(3)
     .addScore('chestcavity:health', 2)
     .addScore('kubejs:rosy', 1)
 

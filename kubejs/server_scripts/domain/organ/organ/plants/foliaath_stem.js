@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:foliaath_stem')
+RegistryOrgan('kubejs:foliaath_stem').setRank(2)
     .addScore('chestcavity:digestion', 1)
 
 /**

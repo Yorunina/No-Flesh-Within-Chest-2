@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:rib_blade')
+RegistryOrgan('kubejs:rib_blade').setRank(2)
     .addScore('chestcavity:defense', 0.5)
 
 /**

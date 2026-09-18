@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:shulker_eye')
+RegistryOrgan('kubejs:shulker_eye').setRank(2)
     .addScore('chestcavity:nerves', 1)
     .setCanSpawn(true)
 /**

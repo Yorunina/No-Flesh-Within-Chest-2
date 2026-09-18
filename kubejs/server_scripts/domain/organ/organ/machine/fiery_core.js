@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:fiery_core')
+RegistryOrgan('kubejs:fiery_core').setRank(3)
     .addScore('chestcavity:health', 0.5)
     .addScore('chestcavity:defense', -1)
     .setCanSpawn(true)

@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:urchinkin_stinger')
+RegistryOrgan('kubejs:urchinkin_stinger').setRank(2)
     .addScore('chestcavity:defense', 1.5)
     .addScore('chestcavity:endurance', 1)
     .setCanSpawn(true)

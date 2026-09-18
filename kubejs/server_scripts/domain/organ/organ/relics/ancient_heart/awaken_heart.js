@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:awaken_heart')
+RegistryOrgan('kubejs:awaken_heart').setRank(3)
     .addScore('chestcavity:detoxification', 1)
     .addScore('chestcavity:health', 1)
 
