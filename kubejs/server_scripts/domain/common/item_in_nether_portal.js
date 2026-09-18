@@ -33,7 +33,6 @@ RegisterPortalItem2DimId('lightmanscurrency:coin_gold', 'infinity:room')
 RegisterPortalItem2DimId('kaleidoscope_cookery:raw_noodles', 'infinity:noodles')
 RegisterPortalItem2DimId('lightmanscurrency:coin_diamond', 'kubejs:oath')
 RegisterPortalItem2DimId('minecraft:pink_stained_glass', 'bro:saturated')
-// RegisterPortalItem2DimId('minecraft:dirt', 'infinity:hunting')
 
 InfinityEvents.itemInPortal(event => {
     const itemEntity = event.entity
