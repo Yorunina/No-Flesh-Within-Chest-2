@@ -1,0 +1,22 @@
+{
+  "type": "kubejs:rogue_hunt",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "kubejs:biome_rogue_hunt",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:sandstone",
+          "height": 63
+        }
+      ],
+      "structure_overrides": []
+    }
+  }
+}

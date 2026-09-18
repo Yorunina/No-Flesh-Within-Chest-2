@@ -6,7 +6,7 @@ NativeEvents.onEvent($EntityMobGriefingEvent, /** @param {Internal.EntityMobGrie
         event.setResult('deny')
         return
     }
-    if (level.dimension == 'kubejs:amusement_park') {
+    if (level.dimension == 'kubejs:rogue_hunt') {
         event.setResult('deny')
         return
     }

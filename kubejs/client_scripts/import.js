@@ -37,3 +37,5 @@ const $TooltipGetterInteger = Java.loadClass('se.mickelus.tetra.gui.stats.getter
 
 const $SpriteResourceLoader = Java.loadClass('net.minecraft.client.renderer.texture.atlas.SpriteResourceLoader')
 const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
+const $Player = Java.loadClass('net.minecraft.world.entity.player.Player')
+const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')

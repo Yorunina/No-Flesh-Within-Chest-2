@@ -76,3 +76,8 @@ const $IceTombEntity = Java.loadClass('io.redspace.ironsspellbooks.entity.spells
 
 const $AbstractGeoEntityPart = Java.loadClass('net.unusual.block_factorys_bosses.entity.boss.part.AbstractGeoEntityPart')
 const $OwnableEntity = Java.loadClass('net.minecraft.world.entity.OwnableEntity')
+const $UUID = Java.loadClass('java.util.UUID')
+const $PlayerShellsAPI = Java.loadClass('com.ultramega.playershells.PlayerShellsAPI')
+const $FakePlayerFactory = Java.loadClass('net.minecraftforge.common.util.FakePlayerFactory')
+const $GameProfile = Java.loadClass('com.mojang.authlib.GameProfile')
+const $CuriosCapability = Java.loadClass('top.theillusivec4.curios.api.CuriosCapability')

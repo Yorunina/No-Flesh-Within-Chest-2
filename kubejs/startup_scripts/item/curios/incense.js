@@ -52,4 +52,21 @@ StartupEvents.registry('minecraft:item', event => {
             return true
         })
         .tag('curios:incense')
+
+    RegistryRogueHuntIncenseItem(event, 'undead_hunt_incense')
 })
+
+/**
+ * @param {Internal.ItemRegistryEventJS} event
+ * @param {string} id
+ */
+function RegistryRogueHuntIncenseItem(event, id) {
+    event.create(id, 'basic')
+        .texture(`kubejs:item/curios/${id}`)
+        .maxStackSize(1)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip(() => true)
+            .canUnequip(() => true)
+        )
+        .tag('curios:incense')
+}

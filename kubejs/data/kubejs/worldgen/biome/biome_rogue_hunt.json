@@ -1,0 +1,21 @@
+{
+  "has_precipitation": false,
+  "temperature_modifier": "none",
+  "temperature": 0.5,
+  "downfall": 0.0,
+  "spawn_costs": {},
+  "spawners": {},
+  "carvers": {},
+  "effects": {
+    "sky_color": 0,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "fog_color": 0
+  },
+  "creature_spawn_probability": 0,
+  "features": [
+    [
+      "kubejs:rogue_hunt_pavilion"
+    ]
+  ]
+}

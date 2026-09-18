@@ -1,8 +1,7 @@
 // priority: 999
 const PlayerTypeDimensionRule = {
     'default': { blackList: [] },
-    'amusement': { whiteList: [] },
-    'rouge': { whiteList: [] }
+    'rogue_hunt': { whiteList: ['kubejs:rogue_hunt'] }
 }
 MAAEvents.playerDimensionChange(event => {
     /**@type {Internal.ServerPlayer} */
@@ -20,6 +19,7 @@ MAAEvents.playerDimensionChange(event => {
     }
     if (config.whiteList) {
         if (config.whiteList.indexOf(toDim) == -1) {
+            player.statusMessage(Text.translatable('status_msg.kubejs.dimension_denied'))
             return event.cancel()
         }
     }

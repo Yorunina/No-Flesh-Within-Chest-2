@@ -187,3 +187,4 @@ const $BambooLeaves = Java.loadClass('net.minecraft.world.level.block.state.prop
 
 const $ImprovedNoise = Java.loadClass('net.minecraft.world.level.levelgen.synth.ImprovedNoise')
 const $RandomSource = Java.loadClass('net.minecraft.util.RandomSource')
+const $PlayerXpLevelChange = Java.loadClass('net.minecraftforge.event.entity.player.PlayerXpEvent$LevelChange')

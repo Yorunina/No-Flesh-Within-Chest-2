@@ -198,22 +198,11 @@
 			]
 			hide_dependency_lines: true
 			id: "1A23554F0563EDB6"
-			rewards: [
-				{
-					count: 1
-					icon: "kubejs:relics_incense"
-					id: "4D5C64111B9FA108"
-					ignore_reward_blocking: true
-					isPermanent: true
-					slot: "incense"
-					type: "maa:curios_slot"
-				}
-				{
-					id: "31838CFAE956E9C9"
-					item: "lightmanscurrency:coin_gold"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "31838CFAE956E9C9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			shape: "none"
 			subtitle: "{ftbquests.chapter.40F1AA2ECEA15525.quest1A23554F0563EDB6.subtitle}"
 			tasks: [{

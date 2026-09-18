@@ -38,6 +38,7 @@ ContentPacks.putShared('RegistryChampionStrategy', RegistryChampionStrategy)
 ContentPacks.putShared('CuriosStrategyModel', CuriosStrategyModel)
 ContentPacks.putShared('CuriosEventModel', CuriosEventModel)
 ContentPacks.putShared('RegistryCuriosStrategy', RegistryCuriosStrategy)
+ContentPacks.putShared('CreateMutatedSavingsJar', CreateMutatedSavingsJar)
 
 // ================ 策略表(只读查询) ================
 ContentPacks.putShared('OrganStrategyMap', OrganStrategyMap)
