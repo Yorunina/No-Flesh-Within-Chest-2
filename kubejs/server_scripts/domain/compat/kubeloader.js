@@ -40,10 +40,16 @@ ContentPacks.putShared('CuriosEventModel', CuriosEventModel)
 ContentPacks.putShared('RegistryCuriosStrategy', RegistryCuriosStrategy)
 ContentPacks.putShared('CreateMutatedSavingsJar', CreateMutatedSavingsJar)
 
+// ================ Tag 羁绊域 ================
+ContentPacks.putShared('TagStrategyModel', TagStrategyModel)
+ContentPacks.putShared('TagEventModel', TagEventModel)
+ContentPacks.putShared('RegistryTagStrategy', RegistryTagStrategy)
+
 // ================ 策略表(只读查询) ================
 ContentPacks.putShared('OrganStrategyMap', OrganStrategyMap)
 ContentPacks.putShared('ChampionStrategyMap', ChampionStrategyMap)
 ContentPacks.putShared('CuriosStrategyMap', CuriosStrategyMap)
+ContentPacks.putShared('TagStrategyMap', TagStrategyMap)
 
 // ================ 注册函数 ================
 ContentPacks.putShared('RegistryAttributeIdentifier', RegistryAttributeIdentifier)
@@ -105,6 +111,9 @@ ContentPacks.putShared('OrganEntityInteractEvent', OrganEntityInteractEvent)
 ContentPacks.putShared('OrganEntityBeInteractedEvent', OrganEntityBeInteractedEvent)
 ContentPacks.putShared('OrganExposureFrameAdded', OrganExposureFrameAdded)
 
+// ================ Tag 羁绊事件实例 ================
+ContentPacks.putShared('TagChestCavityUpdateStrategy', TagChestCavityUpdateStrategy)
+
 // ================ 精英怪事件实例 ================
 ContentPacks.putShared('ChampionEntitySpawnedEvent', ChampionEntitySpawnedEvent)
 ContentPacks.putShared('ChampionEntityTickEvent', ChampionEntityTickEvent)
@@ -129,6 +138,10 @@ ContentPacks.putShared('SetCustomData', SetCustomData)
 ContentPacks.putShared('SetCustomDataMap', SetCustomDataMap)
 ContentPacks.putShared('GetCustomDataMap', GetCustomDataMap)
 ContentPacks.putShared('RemoveCustomDataMap', RemoveCustomDataMap)
+ContentPacks.putShared('RebuildTagEffectState', RebuildTagEffectState)
+ContentPacks.putShared('GetTagEffectState', GetTagEffectState)
+ContentPacks.putShared('GetTagCount', GetTagCount)
+ContentPacks.putShared('GetPreviousTagCount', GetPreviousTagCount)
 // 腐败毒素/生命毒素
 ContentPacks.putShared('SetPutridToxinsDamage', SetPutridToxinsDamage)
 ContentPacks.putShared('GetPutridToxinsDamage', GetPutridToxinsDamage)

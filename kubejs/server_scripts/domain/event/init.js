@@ -18,6 +18,12 @@ const ChampionStrategyMap = {}
 const CuriosStrategyMap = {}
 
 /**
+ * 胸腔 Tag 羁绊：tagId -> TagStrategyModel
+ * @type {Object<string, TagStrategyModel>}
+ */
+const TagStrategyMap = {}
+
+/**
  * 
  * @param {OrganStrategyModel} strategyModel 
  */
@@ -39,4 +45,11 @@ function RegistryChampionStrategy(strategyModel) {
  */
 function RegistryCuriosStrategy(strategyModel) {
     CuriosStrategyMap[strategyModel.itemId] = strategyModel
+}
+
+/**
+ * @param {TagStrategyModel} strategyModel
+ */
+function RegistryTagStrategy(strategyModel) {
+    TagStrategyMap[strategyModel.tagId] = strategyModel
 }

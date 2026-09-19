@@ -10,7 +10,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:ghast_sac').food(food => food.hunger(2).saturation(1).effect('minecraft:fire_resistance', 200, 0, 1)).maxStackSize(1).texture('kubejs:item/organs/nether/ghast_sac').tag('kubejs:nether').tag('kubejs:lung')
 
-    event.create('kubejs:hoglin_rumen').food(food => food.hunger(2).saturation(1).effect('minecraft:fire_resistance', 200, 0, 1)).maxStackSize(1).tag('kubejs:nature').texture('kubejs:item/organs/nether/hoglin_rumen').tag('kubejs:stomach')
+    event.create('kubejs:hoglin_rumen').food(food => food.hunger(2).saturation(1).effect('minecraft:fire_resistance', 200, 0, 1)).maxStackSize(1).tag('kubejs:nether').texture('kubejs:item/organs/nether/hoglin_rumen').tag('kubejs:stomach')
 
     event.create('kubejs:golden_stone').maxStackSize(1).texture('kubejs:item/organs/nether/golden_stone').tag('kubejs:nether')
 

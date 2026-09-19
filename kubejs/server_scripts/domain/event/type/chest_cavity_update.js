@@ -1,6 +1,7 @@
 // priority: 999
 
 const OrganChestCavityUpdateStrategy = new OrganEventModel('chest_cavity_update')
+const TagChestCavityUpdateStrategy = new TagEventModel('chest_cavity_update')
 const OrganTakeOnStrategy = new OrganTakeOnStrategyModel()
 const OrganTakeOffStrategy = new OrganTakeOffStrategyModel()
     .addInit(
@@ -38,9 +39,11 @@ ChestCavityEvents.evaluateChestCavity(event => {
     const entity = event.entity
     let customData = {}
     if (!entity.isAlive()) return
+    RebuildTagEffectState(event.chestCavity)
     OrganTakeOffStrategy.run(entity, customData, [event])
     OrganTakeOnStrategy.run(entity, customData, [event])
     OrganChestCavityUpdateStrategy.run(entity, customData, [event])
+    TagChestCavityUpdateStrategy.run(entity, customData, [event])
     SlotChestCavityUpdateStrategy.run(entity, customData, [event])
     UpdateClientISSSpellDataEvent(customData, entity)
 })
