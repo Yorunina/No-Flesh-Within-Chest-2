@@ -1,4 +1,56 @@
 {
-  "Traders": [],
+  "Traders": [
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "maa_test_always",
+      "Name": "测试商店·常驻",
+      "OwnerName": "Server",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": { "ID": "minecraft:apple", "Count": 8 },
+          "Price": {
+            "type": "lightmanscurrency:coins",
+            "Chain": "main",
+            "Value": [ { "Coin": "lightmanscurrency:coin_copper", "Amount": 4 } ]
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "maa_test_hidden",
+      "Name": "测试商店·隐藏",
+      "OwnerName": "Server",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": { "ID": "minecraft:diamond", "Count": 1 },
+          "Price": {
+            "type": "lightmanscurrency:coins",
+            "Chain": "main",
+            "Value": [ { "Coin": "lightmanscurrency:coin_gold", "Amount": 1 } ]
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "maa_test_creative",
+      "Name": "测试商店·创造可见",
+      "OwnerName": "Server",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": { "ID": "minecraft:golden_apple", "Count": 1 },
+          "Price": {
+            "type": "lightmanscurrency:coins",
+            "Chain": "main",
+            "Value": [ { "Coin": "lightmanscurrency:coin_iron", "Amount": 1 } ]
+          }
+        }
+      ]
+    }
+  ],
   "Auctions": []
 }

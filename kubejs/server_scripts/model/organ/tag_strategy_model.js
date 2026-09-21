@@ -2,7 +2,8 @@
 /**
  * Tag 羁绊。内容：server_scripts/domain/organ/tag_effect/<tag>.js（priority 500）
  * 签名：(customData, event, tagId, count)
- * 件数在 evaluateChestCavity 写入 customDataMap.tagEffect；目前只派发 chest_cavity_update。
+ * 件数在 evaluateChestCavity 写入 customDataMap.tagEffect。
+ * 已派发：chest_cavity_update、food_eaten、mob_effect_applicable。
  */
 const TagEffectStateKey = 'tagEffect'
 
@@ -45,6 +46,34 @@ function GetPreviousTagCount(chestCavity, tagId) {
     if (!state || !state.previousCounts) return 0
     let count = state.previousCounts[tagId]
     return count ? count : 0
+}
+
+/**
+ * @param {Internal.LivingEntity} entity
+ * @param {string} effectId
+ * @param {number} count
+ * @param {number} minCount
+ */
+function RemovePlayerEffectIfTag(entity, effectId, count, minCount) {
+    if (count < minCount) return
+    if (!entity || !entity.isPlayer()) return
+    entity.removeEffect(effectId)
+}
+
+/**
+ * @param {Internal.MobEffectEvent$Applicable} event
+ * @param {Internal.MobEffect} mobEffect
+ * @param {number} count
+ * @param {number} minCount
+ */
+function DenyPlayerEffectIfTag(event, mobEffect, count, minCount) {
+    if (count < minCount) return
+    const entity = event.getEntity()
+    if (!entity || !entity.isPlayer()) return
+    const effectInstance = event.getEffectInstance()
+    if (!effectInstance) return
+    if (!effectInstance.getEffect().equals(mobEffect)) return
+    event.setResult('deny')
 }
 
 /**

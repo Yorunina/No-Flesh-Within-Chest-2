@@ -6,6 +6,10 @@
  *   const _MultiStateTooltip = ContentPacks.getShared('MultiStateTooltip')
  */
 
+// ================ Overlay HUD ================
+ContentPacks.putShared('RegistryOverlayHudOrganScore', RegistryOverlayHudOrganScore)
+ContentPacks.putShared('OverlayHudOrganScores', OverlayHudOrganScores)
+
 // ================ Tooltip 模型与注册 ================
 ContentPacks.putShared('RegistryOrganTooltip', RegistryOrganTooltip)
 ContentPacks.putShared('ApplyMultiStateTooltip', ApplyMultiStateTooltip)

@@ -672,30 +672,6 @@
 			y: 10.0d
 		}
 		{
-			dependencies: ["4FBC882804C1F6A9"]
-			description: [
-				"{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.description1}"
-				""
-				"{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.description2}"
-			]
-			hide_dependency_lines: true
-			id: "2D198179DC85AA3D"
-			rewards: [{
-				id: "494902D11F5A8BA2"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.subtitle}"
-			tasks: [{
-				id: "17388D5FD8F3E7B8"
-				item: "kubejs:blood_extractor"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.2218D095B234A44A.quest2D198179DC85AA3D.title}"
-			x: 5.0d
-			y: 10.0d
-		}
-		{
 			dependencies: ["04BD8BC9319A7E1C"]
 			description: [
 				"{ftbquests.chapter.2218D095B234A44A.quest4C9C986207ACC0AF.description1}"
@@ -765,7 +741,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.2218D095B234A44A.quest5B724E22912157A6.title}"
-			x: 7.5d
+			x: 5.0d
 			y: 10.0d
 		}
 	]

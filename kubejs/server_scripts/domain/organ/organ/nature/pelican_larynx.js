@@ -27,12 +27,18 @@ function PelicanLarynxEntityInteract(customData, event, organItem, organIndex, s
     if (organItem.hasNBT()) {
         itemNbt = organItem.getNbt()
         if (itemNbt.contains('type')) {
-            let targetNbt = itemNbt.get('entityNbt')
-            let targetId = itemNbt.getString('type')
-            let entity = level.createEntity(targetId)
-            entity.setNbt(targetNbt)
-            entity.setPos(target.getX(), target.getY(), target.getZ())
-            entity.spawn()
+            try {
+                let storedNbt = itemNbt.get('entityNbt')
+                let storedId = itemNbt.getString('type')
+                let entity = storedId ? level.createEntity(storedId) : null
+                if (entity && storedNbt) {
+                    entity.setNbt(storedNbt)
+                    entity.setPos(target.getX(), target.getY(), target.getZ())
+                    entity.spawn()
+                }
+            } catch (e) {
+                // 旧实体放不出来时丢掉，继续换成当前交互目标
+            }
         }
     }
     let targetNbt = target.getNbt()

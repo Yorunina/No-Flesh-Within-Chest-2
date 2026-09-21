@@ -2,6 +2,7 @@
 !.github/
 !.github/ISSUE_TEMPLATE/
 !.github/ISSUE_TEMPLATE/*.md
+.codex/
 .*.json
 .DS_Store
 /crash-reports/
@@ -76,3 +77,4 @@ config/pin_tooltips.json
 .curseclient
 .probe/*
 !.probe/probe-settings.json
+AGENTS.md

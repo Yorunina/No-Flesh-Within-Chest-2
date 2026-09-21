@@ -38,6 +38,12 @@ TagEventModel.prototype = {
         this.inits.forEach(init => {
             init.apply(null, args)
         })
+        if (this.eventId != 'chest_cavity_update') {
+            let tagState = GetTagEffectState(ccInstance)
+            if (!tagState || !tagState.byEvent || !tagState.byEvent[this.eventId]) {
+                RebuildTagEffectState(ccInstance)
+            }
+        }
         RunTagStrategies(this.eventId, ccInstance, args)
         this.defers.forEach(defer => {
             defer.apply(null, args)

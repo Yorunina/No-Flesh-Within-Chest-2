@@ -3,31 +3,6 @@
 StartupEvents.registry('item', event => {
     event.create('key_to_infinity').rarity('epic').texture('kubejs:item/tools/key_to_infinity').maxStackSize(1)
 
-    event.create('blood_extractor')
-        .texture('kubejs:item/tools/blood_extractor')
-        .maxStackSize(1)
-        .useDuration(itemStack => 20)
-        .useAnimation('bow')
-        .use((level, player, hand) => true)
-        .releaseUsing((itemstack, level, entity) => {
-            return itemstack
-        })
-        .finishUsing((itemstack, level, entity) => {
-            let nbt = itemstack.getOrCreateTag()
-            let organScores = new $CompoundTag()
-            let ray = entity.rayTrace(4, false)
-            let target = entity
-            if (ray.entity && ray.entity.isAlive()) target = ray.entity
-            let targetCC = target.getChestCavityInstance()
-            if (!targetCC) return itemstack
-            targetCC.getOrganScores().forEach((key, value) => {
-                organScores.putFloat(key, value)
-            })
-            nbt.put('organScores', organScores)
-            itemstack.setNbt(nbt)
-            return itemstack
-        })
-
     event.create('experience_injection').maxStackSize(1).texture('kubejs:item/injections/experience_injection')
         .useDuration(itemStack => 65)
         .useAnimation('none')
