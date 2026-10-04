@@ -54,6 +54,13 @@ StartupEvents.registry('minecraft:item', event => {
         .tag('curios:incense')
 
     RegistryRogueHuntIncenseItem(event, 'undead_hunt_incense')
+    RegistryRogueHuntIncenseItem(event, 'nether_hunt_incense')
+    RegistryRogueHuntIncenseItem(event, 'brood_hunt_incense')
+    RegistryRogueHuntIncenseItem(event, 'pillager_hunt_incense')
+    RegistryRogueHuntIncenseItem(event, 'vindicator_hunt_incense')
+    RegistryRogueHuntIncenseItem(event, 'occult_hunt_incense')
+    RegistryRogueHuntIncenseItem(event, 'wilden_hunt_incense')
+    RegistryRogueHuntIncenseItem(event, 'construct_hunt_incense')
 })
 
 /**
