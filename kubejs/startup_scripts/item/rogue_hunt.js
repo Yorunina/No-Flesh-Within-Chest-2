@@ -1,6 +1,23 @@
 // priority: 1000
-const RogueHuntPavilionChunks = [[-1, -1], [0, 0], [1, -1], [-1, 1], [1, 1], [-1, -3], [-3, -1], [1, -3], [-3, 1], [-3, -3], [3, -1], [-1, 3], [3, 1], [1, 3], [3, -3], [-3, 3], [-1, -5], [-5, -1], [1, -5], [-5, 1], [3, 3], [-3, -5], [-5, -3], [5, -1], [-1, 5], [3, -5], [5, 1], [-5, 3], [1, 5], [5, -3], [-3, 5], [-5, -5], [-1, -7], [-7, -1], [5, 3], [3, 5], [1, -7], [-7, 1], [-3, -7], [-7, -3], [5, -5], [-5, 5], [3, -7], [-7, 3], [7, -1], [-1, 7], [7, 1], [1, 7], [5, 5], [-5, -7], [-7, -5], [7, -3], [-3, 7]]
-const RogueHuntSavingsJarSlotUUID = UUID.fromString('8f3c1a6e-2b94-4d71-9c08-5e7a1b4d6f20')
+const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos')
+const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
+const $Direction = Java.loadClass('net.minecraft.core.Direction')
+const $FakePlayerFactory = Java.loadClass('net.minecraftforge.common.util.FakePlayerFactory')
+const $GameProfile = Java.loadClass('com.mojang.authlib.GameProfile')
+const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
+const $PositionReference = Java.loadClass('com.ultramega.playershells.utils.PositionReference')
+const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+const $ShellSavedData = Java.loadClass('com.ultramega.playershells.storage.ShellSavedData')
+const $ShellSelectionHooks = Java.loadClass('com.ultramega.playershells.utils.ShellSelectionHooks')
+const $ShellForgeBlockEntity = Java.loadClass('com.ultramega.playershells.blockentities.ShellForgeBlockEntity')
+const $CuriosCapability = Java.loadClass('top.theillusivec4.curios.api.CuriosCapability')
+const $UUID = Java.loadClass('java.util.UUID')
+
+const RogueHuntDimension = 'kubejs:rogue_hunt'
+const RogueHuntGatewayPos = new $BlockPos(8, 64, 8)
+const RogueHuntGatewayReference = new $PositionReference(RogueHuntGatewayPos, $Direction.SOUTH, new $ResourceLocation('kubejs', 'rogue_hunt'))
+const RogueHuntEnterOption = new $ResourceLocation('maa', 'enter_rogue_hunt')
+const RogueHuntSavingsJarSlotUUID = $UUID.fromString('8f3c1a6e-2b94-4d71-9c08-5e7a1b4d6f20')
 
 /**
  * @param {Internal.ServerLevel} level
@@ -21,42 +38,56 @@ function CreateRogueHuntPlayerData(level) {
     return playerData
 }
 
-function FindRogueHuntEmptyPavilion(level, player) {
-    let playerData = CreateRogueHuntPlayerData(level)
-    for (let i = 0; i < RogueHuntPavilionChunks.length; i++) {
-        let cx = RogueHuntPavilionChunks[i][0]
-        let cz = RogueHuntPavilionChunks[i][1]
-        let origin = new BlockPos(cx * 16 + 8, 64, cz * 16 + 8)
-        level.getChunk(cx, cz)
-        if ($PlayerShellsAPI.createForgeWithShell(level, origin, Direction.SOUTH, player.uuid, playerData)) return origin
+function FindRogueHuntShell(server, playerUuid) {
+    let shellData = $ShellSavedData.getShellData(server.overworld())
+    let iterator = shellData.getAll(playerUuid).iterator()
+    while (iterator.hasNext()) {
+        let state = iterator.next()
+        if (state != null && state.shellForgePos().dimension().toString() == RogueHuntDimension && shellData.isLiveShell(server, state)) return state
     }
     return null
 }
 
-StartupEvents.registry('item', event => {
-    event.create('kubejs:rogue_hunt_passport')
-        .maxStackSize(1)
-        .useDuration(itemStack => 40)
-        .useAnimation('bow')
-        .use((level, player, hand) => true)
-        .releaseUsing((itemstack, level, entity) => itemstack)
-        .finishUsing((itemstack, level, entity) => {
-            if (level.isClientSide()) return itemstack
-            let huntLevel = level.server.getLevel('kubejs:rogue_hunt')
-            if (!huntLevel) {
-                entity.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_no_dim'))
-                return itemstack
-            }
-            let found = FindRogueHuntEmptyPavilion(huntLevel, entity)
-            if (!found) {
-                entity.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_full'))
-                return itemstack
-            }
-            entity.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_ready', found.x, found.y, found.z))
-            return Item.empty
-        })
-        .texture('kubejs:item/rogue_hunt_passport')
+function EnterRogueHunt(player, source) {
+    if (player.level.dimension().location().toString() == RogueHuntDimension || source.dimension().toString() != player.level.dimension().location().toString()) return false
+    if (player.blockPosition().distSqr(source.pos()) > 64.0) return false
+    let sourceForge = player.level.getBlockEntity(source.pos())
+    if (sourceForge == null || sourceForge.isGateway() || sourceForge.getShellState().name() != 'CREATE') {
+        player.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.need_empty_forge'))
+        return true
+    }
+    let huntLevel = player.server.getLevel(RogueHuntDimension)
+    if (huntLevel == null) {
+        player.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.no_dim'))
+        return true
+    }
+    huntLevel.getChunkAt(RogueHuntGatewayPos)
+    let gateway = huntLevel.getBlockEntity(RogueHuntGatewayPos)
+    if (gateway == null || !gateway.isGateway()) {
+        if (!(gateway instanceof $ShellForgeBlockEntity)) {
+            player.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.no_gateway'))
+            return true
+        }
+        gateway.setGateway(true)
+    }
+    let resumeShell = FindRogueHuntShell(player.server, player.uuid)
+    let huntData = resumeShell == null ? CreateRogueHuntPlayerData(huntLevel) : resumeShell.playerData().copy()
+    if (player['playershells$isInfLifeShell']()) $ShellSavedData.getShellData(player.server.overworld()).putTrueBodyBackup(player.uuid, player['playershells$getData']())
+    sourceForge.transferPlayerFrom(player)
+    player['playershells$applyData'](huntData, RogueHuntGatewayReference)
+    if (resumeShell != null) {
+        let resumeLevel = player.server.getLevel(resumeShell.shellForgePos().dimension().toString())
+        let resumeForge = resumeLevel == null ? null : resumeLevel.getBlockEntity(resumeShell.shellForgePos().pos())
+        if (resumeForge != null) resumeForge.exterminateShell()
+    }
+    return true
+}
 
+$ShellSelectionHooks.registerOption(RogueHuntEnterOption, '潜入狩猎维度',
+    player => player.level.dimension().location().toString() != RogueHuntDimension,
+    (player, source) => EnterRogueHunt(player, source))
+
+StartupEvents.registry('item', event => {
     event.create('kubejs:xp_necklace')
         .texture('kubejs:item/curios/xp_necklace')
         .maxStackSize(1)
