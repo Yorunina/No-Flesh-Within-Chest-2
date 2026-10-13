@@ -1760,6 +1760,7 @@
     "status_msg.kubejs.rogue_hunt.need_empty_forge": "请使用空的普通仓潜入狩猎维度。",
     "status_msg.kubejs.rogue_hunt.no_dim": "无法加载狩猎维度。",
     "status_msg.kubejs.rogue_hunt.no_gateway": "狩猎维度入口尚未生成。",
+    "menu.kubejs.rogue_hunt.enter": "潜入狩猎维度",
     "status_msg.kubejs.dimension_denied": "你被禁止去往该维度",
     "_comment.jade": "高亮",
     "jade.kubejs.rogue_hunt.rank": "阶级%s",

@@ -1,22 +1,8 @@
 // priority: 1000
-const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos')
-const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
-const $Direction = Java.loadClass('net.minecraft.core.Direction')
-const $FakePlayerFactory = Java.loadClass('net.minecraftforge.common.util.FakePlayerFactory')
-const $GameProfile = Java.loadClass('com.mojang.authlib.GameProfile')
-const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier$Operation')
-const $PositionReference = Java.loadClass('com.ultramega.playershells.utils.PositionReference')
-const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
-const $ShellSavedData = Java.loadClass('com.ultramega.playershells.storage.ShellSavedData')
-const $ShellSelectionHooks = Java.loadClass('com.ultramega.playershells.utils.ShellSelectionHooks')
-const $ShellForgeBlockEntity = Java.loadClass('com.ultramega.playershells.blockentities.ShellForgeBlockEntity')
-const $CuriosCapability = Java.loadClass('top.theillusivec4.curios.api.CuriosCapability')
-const $UUID = Java.loadClass('java.util.UUID')
-
 const RogueHuntDimension = 'kubejs:rogue_hunt'
-const RogueHuntGatewayPos = new $BlockPos(8, 64, 8)
-const RogueHuntGatewayReference = new $PositionReference(RogueHuntGatewayPos, $Direction.SOUTH, new $ResourceLocation('kubejs', 'rogue_hunt'))
-const RogueHuntEnterOption = new $ResourceLocation('maa', 'enter_rogue_hunt')
+const RogueHuntGatewayPos = new BlockPos(8, 64, 8)
+const RogueHuntGatewayReference = new $PositionReference(RogueHuntGatewayPos, Direction.SOUTH, new ResourceLocation('kubejs', 'rogue_hunt'))
+const RogueHuntEnterOption = new ResourceLocation('maa', 'enter_rogue_hunt')
 const RogueHuntSavingsJarSlotUUID = $UUID.fromString('8f3c1a6e-2b94-4d71-9c08-5e7a1b4d6f20')
 
 /**
@@ -83,7 +69,7 @@ function EnterRogueHunt(player, source) {
     return true
 }
 
-$ShellSelectionHooks.registerOption(RogueHuntEnterOption, '潜入狩猎维度',
+$ShellSelectionHooks.registerOption(RogueHuntEnterOption, 'menu.kubejs.rogue_hunt.enter',
     player => player.level.dimension().location().toString() != RogueHuntDimension,
     (player, source) => EnterRogueHunt(player, source))
 
