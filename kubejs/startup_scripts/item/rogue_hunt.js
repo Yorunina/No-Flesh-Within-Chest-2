@@ -88,6 +88,15 @@ $ShellSelectionHooks.registerOption(RogueHuntEnterOption, '潜入狩猎维度',
     (player, source) => EnterRogueHunt(player, source))
 
 StartupEvents.registry('item', event => {
+    // 保留旧物品 ID，避免旧存档加载时出现未知物品；它不再负责进入狩猎维度。
+    event.create('kubejs:rogue_hunt_passport')
+        .texture('kubejs:item/rogue_hunt_passport')
+        .maxStackSize(1)
+        .use((level, player, hand) => {
+            if (!level.isClientSide()) player.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_retired'))
+            return true
+        })
+
     event.create('kubejs:xp_necklace')
         .texture('kubejs:item/curios/xp_necklace')
         .maxStackSize(1)
