@@ -1,0 +1,11 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "kubejs:fusion_pixel.ttf",
+      "size": 11.0,
+      "oversample": 1.0,
+      "shift": [0.0, 0.0]
+    }
+  ]
+}

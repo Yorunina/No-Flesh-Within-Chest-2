@@ -3,5 +3,4 @@ const GiantOrganTooltipNames = ['appendix', 'intestine', 'heart', 'kidney', 'liv
 GiantOrganTooltipNames.forEach(organ => RegistryOrganTooltip(
     new MultiStateTooltip(`kubejs:giant_${organ}`)
         .addDefault(Text.translatable('tooltips.kubejs.giant_organ.default.1').gray())
-        .addAlt(Text.translatable('tooltips.kubejs.giant_organ.alt.1'))
 ))

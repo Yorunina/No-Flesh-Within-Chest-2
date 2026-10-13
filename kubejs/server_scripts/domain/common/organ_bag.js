@@ -9,12 +9,17 @@ const OrganBagRankMap = {
 
 ItemEvents.rightClicked(event => {
     let rank = OrganBagRankMap[event.item.id]
-    if (rank == undefined) return
+    let category = global.OrganBagCategories.find(category => event.item.id == 'kubejs:' + category + '_organ_bag')
+    if (rank == undefined && category == undefined) return
     if (event.level.isClientSide()) return
 
     let pool = []
     OrganList.forEach(organ => {
-        if (organ.rank == rank) pool.push(organ.itemId)
+        if (category != undefined) {
+            if (organ.rank >= 0 && organ.rank < 6 && Item.of(organ.itemId).hasTag('kubejs:' + category)) pool.push(organ.itemId)
+        } else if (organ.rank == rank) {
+            pool.push(organ.itemId)
+        }
     })
     let organId = RandomGet(pool)
     if (!organId) return

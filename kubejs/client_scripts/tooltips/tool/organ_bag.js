@@ -23,3 +23,10 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:legendary_organ_bag')
     .addDefault(Text.translatable('tooltips.kubejs.legendary_organ_bag.default.1').gray())
     .addShift(Text.translatable('tooltips.kubejs.legendary_organ_bag.shift.1'))
 )
+
+global.OrganBagCategories.forEach(category => {
+    ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:' + category + '_organ_bag')
+        .addDefault(Text.translatable('tooltips.kubejs.tag_organ_bag.default.1').gray())
+        .addShift(Text.translatable('tooltips.kubejs.tag_organ_bag.shift.1', OrganTagMap['kubejs:' + category]))
+    )
+})

@@ -44,15 +44,15 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) return itemstack
             let huntLevel = level.server.getLevel('kubejs:rogue_hunt')
             if (!huntLevel) {
-                entity.statusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_no_dim'))
+                entity.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_no_dim'))
                 return itemstack
             }
             let found = FindRogueHuntEmptyPavilion(huntLevel, entity)
             if (!found) {
-                entity.statusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_full'))
+                entity.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_full'))
                 return itemstack
             }
-            entity.statusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_ready', found.x, found.y, found.z))
+            entity.setStatusMessage(Text.translatable('status_msg.kubejs.rogue_hunt.passport_ready', found.x, found.y, found.z))
             return Item.empty
         })
         .texture('kubejs:item/rogue_hunt_passport')

@@ -1,0 +1,28 @@
+{
+    "key": "rotten_flesh",
+    "category": "skin",
+    "primary": 2.8,
+    "secondary": 1.8,
+    "tertiary": 4.3,
+    "durability": 185,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 85,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "6f4938",
+        "texture": "8f5b45"
+    },
+    "textures": [
+        "skin",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:rotten_flesh" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

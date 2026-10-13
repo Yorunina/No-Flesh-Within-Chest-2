@@ -1,4 +1,6 @@
 // priority: 1000
+global.OrganBagCategories = ['rose', 'food', 'nature', 'machine', 'infected', 'plant', 'magic', 'nether', 'ender', 'relics']
+
 StartupEvents.registry('item', event => {
     let bags = [
         { id: 'common_organ_bag', rarity: 'common' },
@@ -7,6 +9,9 @@ StartupEvents.registry('item', event => {
         { id: 'epic_organ_bag', rarity: 'epic' },
         { id: 'legendary_organ_bag', rarity: 'epic' },
     ]
+    global.OrganBagCategories.forEach(category => {
+        bags.push({ id: category + '_organ_bag', rarity: 'common' })
+    })
     for (let i = 0; i < bags.length; i++) {
         let bag = bags[i]
         event.create('kubejs:' + bag.id)

@@ -19,7 +19,7 @@ MAAEvents.playerDimensionChange(event => {
     }
     if (config.whiteList) {
         if (config.whiteList.indexOf(toDim) == -1) {
-            player.statusMessage(Text.translatable('status_msg.kubejs.dimension_denied'))
+            player.setStatusMessage(Text.translatable('status_msg.kubejs.dimension_denied'))
             return event.cancel()
         }
     }

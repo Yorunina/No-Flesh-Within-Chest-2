@@ -12,8 +12,14 @@ function RegistryOverlayHudOrganScore(id) {
 }
 
 ChestCavityEvents.overlayHud(event => {
-    event.setScoreTitle('tooltips.kubejs.overlay.scores')
-    event.setTagTitle('tooltips.kubejs.overlay.tags')
+    event.setScoreTitle(
+        Text.translatable('tooltips.kubejs.overlay.scores')
+            .font('kubejs:fusion_pixel')
+    )
+    event.setTagTitle(
+        Text.translatable('tooltips.kubejs.overlay.tags')
+            .font('kubejs:fusion_pixel')
+    )
     for (let i = 0; i < OverlayHudOrganScores.length; i++) {
         OverlayOrganScore(event, OverlayHudOrganScores[i])
     }
@@ -27,26 +33,15 @@ function OverlayOrganScore(event, id) {
     event.addScore(id, line => {
         const key = `tooltips.organ_score.${id}`
         line.text(
-            Text.translate(key)
-                .hover([
-                    Text.translate(key).gold(),
-                    NewLine,
-                    Text.translate(`tooltips.organ_score.hover.${id}`)
-                ])
-                .yellow()
-                .underlined()
+            Text.translatable(key)
                 .append(Text.of(` ${RoundFix(line.value, 2)}`))
+                .font('kubejs:fusion_pixel')
         )
+            .hover([
+                Text.translatable(key).gold(),
+                Text.translatable(`tooltips.organ_score.hover.${id}`)
+            ])
     })
-}
-
-/**
- * @param {Internal.MutableComponent} text
- * @param {boolean} active
- * @returns {Internal.MutableComponent}
- */
-function overlayGoldIf(text, active) {
-    return active ? text.gold() : text.darkGray()
 }
 
 /**
@@ -59,18 +54,20 @@ function OverlayTagLine(event, id, tiers) {
         if (tiers.length <= 0) return
         const n = line.count
         const nameKey = `tooltips.kubejs.tag.${id}`
-        const hover = [Text.translate(nameKey).gold()]
+        const hover = [Text.translatable(nameKey).gold()]
         for (let i = 0; i < tiers.length; i++) {
             let tier = tiers[i]
-            hover.push(overlayGoldIf(
-                Text.translate(`tooltips.kubejs.overlay.${id}.${tier}`),
-                n >= tier
-            ))
+            hover.push(
+                Text.translatable(`tooltips.kubejs.overlay.${id}.${tier}`)
+                    .color(n >= tier ? 'gold' : 'dark_gray')
+            )
         }
-        line.text(overlayGoldIf(
-            Text.translate(nameKey).append(Text.of(` ${n}/${tiers[tiers.length - 1]}`)),
-            n >= tiers[0]
-        ))
+        line.text(
+            Text.translatable(nameKey).append(Text.of(` ${n}/${tiers[tiers.length - 1]}`))
+                .font('kubejs:fusion_pixel')
+                .color(n >= tiers[0] ? 'gold' : 'dark_gray')
+        )
+
         line.hover(hover)
     })
 }
