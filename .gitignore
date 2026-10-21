@@ -78,3 +78,14 @@ config/pin_tooltips.json
 .probe/*
 !.probe/probe-settings.json
 AGENTS.md
+
+# CurseForge local instance history and export selections
+/minecraftinstance.json
+/user-prefs.json
+
+# ProbeJS-generated editor configuration
+/kubejs/*_scripts/jsconfig.json
+
+# Local validation scratch directories
+/gate-smoke-*/
+/schema-smoke-*/
