@@ -24,6 +24,12 @@ function CreateRogueHuntPlayerData(level) {
     return playerData
 }
 
+/**
+ *
+ * @param {Internal.MinecraftServer} server
+ * @param {uuid} playerUuid
+ * @returns
+ */
 function FindRogueHuntShell(server, playerUuid) {
     let shellData = $ShellSavedData.getShellData(server.overworld())
     let iterator = shellData.getAll(playerUuid).iterator()
@@ -34,8 +40,14 @@ function FindRogueHuntShell(server, playerUuid) {
     return null
 }
 
+/**
+ *
+ * @param {Internal.Player} player
+ * @param {*} source
+ * @returns
+ */
 function EnterRogueHunt(player, source) {
-    if (player.level.dimension().location().toString() == RogueHuntDimension || source.dimension().toString() != player.level.dimension().location().toString()) return false
+    if (String(player.level.dimension) == RogueHuntDimension || source.dimension().toString() != String(player.level.dimension)) return false
     if (player.blockPosition().distSqr(source.pos()) > 64.0) return false
     let sourceForge = player.level.getBlockEntity(source.pos())
     if (sourceForge == null || sourceForge.isGateway() || sourceForge.getShellState().name() != 'CREATE') {
@@ -60,7 +72,9 @@ function EnterRogueHunt(player, source) {
     let huntData = resumeShell == null ? CreateRogueHuntPlayerData(huntLevel) : resumeShell.playerData().copy()
     if (player['playershells$isInfLifeShell']()) $ShellSavedData.getShellData(player.server.overworld()).putTrueBodyBackup(player.uuid, player['playershells$getData']())
     sourceForge.transferPlayerFrom(player)
-    player['playershells$applyData'](huntData, RogueHuntGatewayReference)
+    if (gateway.getShellState().name() != 'CREATE') gateway.exterminateShell()
+    gateway.createShellByData(player.uuid, huntData)
+    gateway.transferPlayerTo(player)
     if (resumeShell != null) {
         let resumeLevel = player.server.getLevel(resumeShell.shellForgePos().dimension().toString())
         let resumeForge = resumeLevel == null ? null : resumeLevel.getBlockEntity(resumeShell.shellForgePos().pos())
@@ -70,8 +84,9 @@ function EnterRogueHunt(player, source) {
 }
 
 $ShellSelectionHooks.registerOption(RogueHuntEnterOption, 'menu.kubejs.rogue_hunt.enter',
-    player => player.level.dimension().location().toString() != RogueHuntDimension,
-    (player, source) => EnterRogueHunt(player, source))
+    player => String(player.level.dimension) != RogueHuntDimension,
+    (player, source) => EnterRogueHunt(player, source),
+    RogueHuntGatewayReference)
 
 StartupEvents.registry('item', event => {
     // 保留旧物品 ID，避免旧存档加载时出现未知物品；它不再负责进入狩猎维度。
