@@ -25,14 +25,13 @@ OrganEventModel.prototype = {
     /**
      * @param {Internal.Entity} entity
      * @param {OrganEventCustomData} customData
-     * @param {any[]} args 
+     * @param {any[]} args
      */
     run: function (entity, customData, args) {
         let optional = $ChestCavityEntity.of(entity)
         if (!optional.isPresent()) return
         let ccEntity = optional.get()
         let ccInstance = ccEntity.getChestCavityInstance()
-        // 往往是Client事件导致
         if (!ccInstance) return
         args.unshift(customData)
         this.inits.forEach(init => {
@@ -48,18 +47,34 @@ OrganEventModel.prototype = {
                 if (!curItem || curItem.isEmpty()) return
                 let itemId = String(curItem.id)
                 let strategyModel = OrganStrategyMap[itemId]
-                if (!strategyModel) return
-                let organEventStrategy = strategyModel.strategyMap[this.eventId]
-                if (!organEventStrategy) return
-                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
-                    onlyMap.set(itemId, true)
-                    organEventStrategy['only'].forEach(e => {
-                        strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
-                    })
+                if (strategyModel) {
+                    let organEventStrategy = strategyModel.strategyMap[this.eventId]
+                    if (organEventStrategy) {
+                        if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                            onlyMap.set(itemId, true)
+                            organEventStrategy['only'].forEach(e => {
+                                strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
+                            })
+                        }
+                        if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
+                            organEventStrategy['default'].forEach(e => {
+                                strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
+                            })
+                        }
+                    }
                 }
-                if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
-                    organEventStrategy['default'].forEach(e => {
-                        strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
+
+                if (TetraJSUtils.isModularItem(curItem.getItem())) {
+                    let modularItem = curItem.getItem()
+                    let effects = modularItem.getEffects(curItem)
+                    effects.forEach(effect => {
+                        let effectStrategyModel = TetraOrganEffectStrategyMap[String(effect.getKey())]
+                        if (!effectStrategyModel) return
+                        let effectStrategy = effectStrategyModel.strategyMap[this.eventId]
+                        if (!effectStrategy) return
+                        effectStrategy.forEach(e => {
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(modularItem, effect)))
+                        })
                     })
                 }
             })

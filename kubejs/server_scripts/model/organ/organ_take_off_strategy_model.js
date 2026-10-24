@@ -26,7 +26,7 @@ OrganTakeOffStrategyModel.prototype = {
     /**
      * @param {Internal.LivingEntity} entity
      * @param {OrganEventCustomData} customData
-     * @param {any[]} args 
+     * @param {any[]} args
      */
     run: function (entity, customData, args) {
         const ccInstance = entity.chestCavityInstance
@@ -54,7 +54,7 @@ OrganTakeOffStrategyModel.prototype = {
                 let newItem = ccInv.getStackInSlot(i)
                 if (oldItem.equals(newItem, true) && oldSlotType == slotType) continue
             }
-            let itemId = oldItem.id
+            let itemId = String(oldItem.id)
             let strategyModel = OrganStrategyMap[itemId]
             if (strategyModel) {
                 if (entity.isPlayer() && IsItemNeedKeyActive(oldItem, slotType)) {
@@ -82,9 +82,19 @@ OrganTakeOffStrategyModel.prototype = {
                         })
                     }
                 }
-
             }
 
+            if (TetraJSUtils.isModularItem(oldItem.getItem())) {
+                let modularItem = oldItem.getItem()
+                let effects = modularItem.getEffects(oldItem)
+                effects.forEach(effect => {
+                    let effectStrategyModel = TetraOrganEffectStrategyMap[String(effect.getKey())]
+                    if (!effectStrategyModel) return
+                    Object.keys(effectStrategyModel.strategyMap).forEach(eventId => {
+                        ccInstance.removeListener(eventId, i)
+                    })
+                })
+            }
         }
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {
@@ -101,4 +111,3 @@ OrganTakeOffStrategyModel.prototype = {
         return
     },
 }
-
