@@ -12,6 +12,7 @@ ContentPacks.putShared('OverlayHudOrganScores', OverlayHudOrganScores)
 
 // ================ Tooltip 模型与注册 ================
 ContentPacks.putShared('RegistryOrganTooltip', RegistryOrganTooltip)
+ContentPacks.putShared('RegistryOrganTag', RegistryOrganTag)
 ContentPacks.putShared('ApplyMultiStateTooltip', ApplyMultiStateTooltip)
 ContentPacks.putShared('MultiStateTooltip', MultiStateTooltip)
 

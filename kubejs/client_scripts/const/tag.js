@@ -1,83 +1,87 @@
 // priority: 4000
-const OrganTagMap = {
-    'kubejs:rank_0': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_0')).color('#a3a3a3'),
-    'kubejs:rank_1': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_1')).color('#84e45b'),
-    'kubejs:rank_2': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_2')).color('#4c9fff'),
-    'kubejs:rank_3': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_3')).color('#c77dff'),
-    'kubejs:rank_4': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_4')).color('#ff8c32'),
-    'kubejs:rank_5': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_5')).color('#ff4d4d'),
-    'kubejs:rank_6': Text.darkGray(Text.translatable('tooltips.kubejs.tag.kubejs:rank_6')),
-    'kubejs:appendix': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:appendix')),
-    'kubejs:heart': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:heart')),
-    'kubejs:intestine': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:intestine')),
-    'kubejs:kidney': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:kidney')),
-    'kubejs:liver': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:liver')),
-    'kubejs:lung': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:lung')),
-    'kubejs:muscle': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:muscle')),
-    'kubejs:bone': Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:bone')),
-    'kubejs:spine': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:spine')).color('#cff9ff'),
-    'kubejs:spleen': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:spleen')),
-    'kubejs:pancreas': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:pancreas')),
-    'kubejs:stomach': Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:stomach')),
-    'kubejs:machine': Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:machine')),
-    'kubejs:magic': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:magic')).color('#00eded'),
-    'kubejs:rose': Text.darkRed(Text.translatable('tooltips.kubejs.tag.kubejs:rose')),
-    'kubejs:revolution': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:revolution')).color('#deaa00'),
-    'kubejs:relics': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:relics')).color('#ffe100'),
-    'kubejs:legend': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:legend')).color('#d6e5ff'),
-    'kubejs:nature': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:nature')).color('#84e45b'),
-    'kubejs:basic': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:basic')).color('#a3a3a3'),
-    'kubejs:food': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:food')).color('#f1b500'),
-    'kubejs:dragon': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:dragon')).color('#bc00bc'),
-    'kubejs:ender': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:ender')).color('#913dd1'),
-    'kubejs:nether': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:nether')).color('#d43c00'),
-    'kubejs:infected': Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:infected')).color('#00ba03'),
-    'kubejs:entity_loot': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_loot')),
-    'kubejs:entity_loot_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_loot_only')),
-    'kubejs:chest_loot': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_loot')),
-    'kubejs:chest_loot_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_loot_only')),
-    'kubejs:chest_cavity_update_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_cavity_update_only')),
-    'kubejs:chest_cavity_update': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_cavity_update')),
-    'kubejs:item_right_clicked_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_right_clicked_only')),
-    'kubejs:item_right_clicked': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_right_clicked')),
-    'kubejs:item_left_clicked_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_left_clicked_only')),
-    'kubejs:item_left_clicked': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_left_clicked')),
-    'kubejs:key_active': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:key_active')),
-    'kubejs:entity_do_damage_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_do_damage_only')),
-    'kubejs:entity_do_damage': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_do_damage')),
-    'kubejs:food_eaten_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:food_eaten_only')),
-    'kubejs:food_eaten': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:food_eaten')),
-    'kubejs:block_broken_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_broken_only')),
-    'kubejs:block_broken': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_broken')),
-    'kubejs:entity_be_hurt_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_hurt_only')),
-    'kubejs:entity_be_hurt': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_hurt')),
-    'kubejs:player_enchant_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_enchant_only')),
-    'kubejs:player_enchant': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_enchant')),
-    'kubejs:entity_tick_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick_only')),
-    'kubejs:entity_tick': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick')),
-    'kubejsiss_player_spell_cast_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast_only')),
-    'kubejs:iss_player_spell_cast': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast')),
-    'kubejs:entity_kill_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill_only')),
-    'kubejs:entity_kill': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill')),
-    'kubejs:entity_interact_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_interact_only')),
-    'kubejs:entity_interact': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_interact')),
-    'kubejs:entity_be_interacted_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_interacted_only')),
-    'kubejs:entity_be_interacted': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_interacted')),
-    'kubejs:block_right_clicked_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_right_clicked_only')),
-    'kubejs:block_right_clicked': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_right_clicked')),
-    'kubejs:entity_death_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death_only')),
-    'kubejs:entity_death': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death')),
-    'kubejs:plant': Text.green(Text.translatable('tooltips.kubejs.tag.kubejs:plant')),
-    'kubejs:organ_add_status_effect_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect_only')),
-    'kubejs:organ_add_status_effect': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect')),
-    'kubejs:exposure_frame_added_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added_only')),
-    'kubejs:exposure_frame_added': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added')),
-    'kubejs:entity_fall_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_fall_only')),
-    'kubejs:entity_fall': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_fall')),
-    'kubejs:shield_block_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block_only')),
-    'kubejs:shield_block': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block')),
-    'kubejs:player_dodge_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_dodge_only')),
-    'kubejs:player_dodge': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_dodge')),
-    'kubejs:villager_update_special_prices_only': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices_only')),
-    'kubejs:villager_update_special_prices': Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices')),
+const OrganTagMap = {}
+
+function RegistryOrganTag(tagId, text) {
+    OrganTagMap[tagId] = text
 }
+
+RegistryOrganTag('kubejs:rank_0', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_0')).color('#a3a3a3'))
+RegistryOrganTag('kubejs:rank_1', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_1')).color('#84e45b'))
+RegistryOrganTag('kubejs:rank_2', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_2')).color('#4c9fff'))
+RegistryOrganTag('kubejs:rank_3', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_3')).color('#c77dff'))
+RegistryOrganTag('kubejs:rank_4', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_4')).color('#ff8c32'))
+RegistryOrganTag('kubejs:rank_5', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:rank_5')).color('#ff4d4d'))
+RegistryOrganTag('kubejs:rank_6', Text.darkGray(Text.translatable('tooltips.kubejs.tag.kubejs:rank_6')))
+RegistryOrganTag('kubejs:appendix', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:appendix')))
+RegistryOrganTag('kubejs:heart', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:heart')))
+RegistryOrganTag('kubejs:intestine', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:intestine')))
+RegistryOrganTag('kubejs:kidney', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:kidney')))
+RegistryOrganTag('kubejs:liver', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:liver')))
+RegistryOrganTag('kubejs:lung', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:lung')))
+RegistryOrganTag('kubejs:muscle', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:muscle')))
+RegistryOrganTag('kubejs:bone', Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:bone')))
+RegistryOrganTag('kubejs:spine', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:spine')).color('#cff9ff'))
+RegistryOrganTag('kubejs:spleen', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:spleen')))
+RegistryOrganTag('kubejs:pancreas', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:pancreas')))
+RegistryOrganTag('kubejs:stomach', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:stomach')))
+RegistryOrganTag('kubejs:machine', Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:machine')))
+RegistryOrganTag('kubejs:magic', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:magic')).color('#00eded'))
+RegistryOrganTag('kubejs:rose', Text.darkRed(Text.translatable('tooltips.kubejs.tag.kubejs:rose')))
+RegistryOrganTag('kubejs:revolution', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:revolution')).color('#deaa00'))
+RegistryOrganTag('kubejs:relics', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:relics')).color('#ffe100'))
+RegistryOrganTag('kubejs:legend', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:legend')).color('#d6e5ff'))
+RegistryOrganTag('kubejs:nature', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:nature')).color('#84e45b'))
+RegistryOrganTag('kubejs:basic', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:basic')).color('#a3a3a3'))
+RegistryOrganTag('kubejs:food', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:food')).color('#f1b500'))
+RegistryOrganTag('kubejs:dragon', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:dragon')).color('#bc00bc'))
+RegistryOrganTag('kubejs:ender', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:ender')).color('#913dd1'))
+RegistryOrganTag('kubejs:nether', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:nether')).color('#d43c00'))
+RegistryOrganTag('kubejs:infected', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:infected')).color('#00ba03'))
+RegistryOrganTag('kubejs:entity_loot', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_loot')))
+RegistryOrganTag('kubejs:entity_loot_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_loot_only')))
+RegistryOrganTag('kubejs:chest_loot', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_loot')))
+RegistryOrganTag('kubejs:chest_loot_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_loot_only')))
+RegistryOrganTag('kubejs:chest_cavity_update_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_cavity_update_only')))
+RegistryOrganTag('kubejs:chest_cavity_update', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:chest_cavity_update')))
+RegistryOrganTag('kubejs:item_right_clicked_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_right_clicked_only')))
+RegistryOrganTag('kubejs:item_right_clicked', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_right_clicked')))
+RegistryOrganTag('kubejs:item_left_clicked_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_left_clicked_only')))
+RegistryOrganTag('kubejs:item_left_clicked', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:item_left_clicked')))
+RegistryOrganTag('kubejs:key_active', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:key_active')))
+RegistryOrganTag('kubejs:entity_do_damage_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_do_damage_only')))
+RegistryOrganTag('kubejs:entity_do_damage', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_do_damage')))
+RegistryOrganTag('kubejs:food_eaten_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:food_eaten_only')))
+RegistryOrganTag('kubejs:food_eaten', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:food_eaten')))
+RegistryOrganTag('kubejs:block_broken_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_broken_only')))
+RegistryOrganTag('kubejs:block_broken', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_broken')))
+RegistryOrganTag('kubejs:entity_be_hurt_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_hurt_only')))
+RegistryOrganTag('kubejs:entity_be_hurt', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_hurt')))
+RegistryOrganTag('kubejs:player_enchant_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_enchant_only')))
+RegistryOrganTag('kubejs:player_enchant', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_enchant')))
+RegistryOrganTag('kubejs:entity_tick_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick_only')))
+RegistryOrganTag('kubejs:entity_tick', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick')))
+RegistryOrganTag('kubejsiss_player_spell_cast_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast_only')))
+RegistryOrganTag('kubejs:iss_player_spell_cast', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast')))
+RegistryOrganTag('kubejs:entity_kill_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill_only')))
+RegistryOrganTag('kubejs:entity_kill', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill')))
+RegistryOrganTag('kubejs:entity_interact_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_interact_only')))
+RegistryOrganTag('kubejs:entity_interact', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_interact')))
+RegistryOrganTag('kubejs:entity_be_interacted_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_interacted_only')))
+RegistryOrganTag('kubejs:entity_be_interacted', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_be_interacted')))
+RegistryOrganTag('kubejs:block_right_clicked_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_right_clicked_only')))
+RegistryOrganTag('kubejs:block_right_clicked', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:block_right_clicked')))
+RegistryOrganTag('kubejs:entity_death_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death_only')))
+RegistryOrganTag('kubejs:entity_death', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_death')))
+RegistryOrganTag('kubejs:plant', Text.green(Text.translatable('tooltips.kubejs.tag.kubejs:plant')))
+RegistryOrganTag('kubejs:organ_add_status_effect_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect_only')))
+RegistryOrganTag('kubejs:organ_add_status_effect', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:organ_add_status_effect')))
+RegistryOrganTag('kubejs:exposure_frame_added_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added_only')))
+RegistryOrganTag('kubejs:exposure_frame_added', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:exposure_frame_added')))
+RegistryOrganTag('kubejs:entity_fall_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_fall_only')))
+RegistryOrganTag('kubejs:entity_fall', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_fall')))
+RegistryOrganTag('kubejs:shield_block_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block_only')))
+RegistryOrganTag('kubejs:shield_block', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:shield_block')))
+RegistryOrganTag('kubejs:player_dodge_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_dodge_only')))
+RegistryOrganTag('kubejs:player_dodge', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_dodge')))
+RegistryOrganTag('kubejs:villager_update_special_prices_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices_only')))
+RegistryOrganTag('kubejs:villager_update_special_prices', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices')))

@@ -77,7 +77,9 @@ config/pin_tooltips.json
 .curseclient
 .probe/*
 !.probe/probe-settings.json
-AGENTS.md
+# Local Vibe Kanban Indie integration and task runtime
+/AGENTS.md
+/ribcage-dev/
 
 # CurseForge local instance history and export selections
 /minecraftinstance.json
