@@ -56,4 +56,6 @@ TitlesEvent.onTitleRegistry(event => {
     regsitryTitleSimple('chest_cavity_universe', 'epic')
     regsitryTitleSimple('forever_incense', 'epic')
     regsitryTitleSimple('farmer_delight', 'epic')
+    regsitryTitleSimple('pokemon_master', 'uncommon')
+    regsitryTitleSimple('above_and_beyond', 'epic')
 })

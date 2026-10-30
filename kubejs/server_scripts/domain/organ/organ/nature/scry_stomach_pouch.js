@@ -14,7 +14,7 @@ function ScryStomachPouchKeyActiveOnly(customData, event, organItem, organIndex,
     const player = event.player
     const level = event.level
     const chestCavity = player.chestCavityInstance
-    const hasRockyKidney = GetCustomDataMap(chestCavity, 'hasRockyKidney', 0) != 0
+    const hasRockyKidney = chestCavity.getOrganQueryIndex().hasItem('kubejs:rocky_kidney', true, null)
     let renderList = []
     let processedCount = 0
     /** @type {string[]} */

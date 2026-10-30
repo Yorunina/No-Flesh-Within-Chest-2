@@ -477,6 +477,14 @@ ServerEvents.recipes(event => {
         .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
         .resetOnError()
 
+    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 1200)
+        .produceItem(Item.of('kubejs:world_computer_mechanism', 1))
+        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
+        .requireItem(Item.of('create:brass_ingot', 1), 'input_1')
+        .requireItem(Item.of('kubejs:reverse_causality_chip', 1), 'input_3')
+        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
+        .resetOnError()
+
 })
 
 /**

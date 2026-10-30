@@ -1,6 +1,12 @@
 // priority: 4000
 const OrganTagMap = {}
 
+/**
+ * 注册器官标签的提示文本。
+ * @param {string} tagId
+ * @param {Internal.MutableComponent} text
+ * @returns {void}
+ */
 function RegistryOrganTag(tagId, text) {
     OrganTagMap[tagId] = text
 }
@@ -60,7 +66,7 @@ RegistryOrganTag('kubejs:player_enchant_only', Text.gold(Text.translatable('tool
 RegistryOrganTag('kubejs:player_enchant', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_enchant')))
 RegistryOrganTag('kubejs:entity_tick_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick_only')))
 RegistryOrganTag('kubejs:entity_tick', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_tick')))
-RegistryOrganTag('kubejsiss_player_spell_cast_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast_only')))
+RegistryOrganTag('kubejs:iss_player_spell_cast_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast_only')))
 RegistryOrganTag('kubejs:iss_player_spell_cast', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:iss_player_spell_cast')))
 RegistryOrganTag('kubejs:entity_kill_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill_only')))
 RegistryOrganTag('kubejs:entity_kill', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:entity_kill')))
@@ -85,3 +91,5 @@ RegistryOrganTag('kubejs:player_dodge_only', Text.gold(Text.translatable('toolti
 RegistryOrganTag('kubejs:player_dodge', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:player_dodge')))
 RegistryOrganTag('kubejs:villager_update_special_prices_only', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices_only')))
 RegistryOrganTag('kubejs:villager_update_special_prices', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:villager_update_special_prices')))
+
+RegistryOrganTag('kubejs:factory', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:factory')).color('#0be599'))

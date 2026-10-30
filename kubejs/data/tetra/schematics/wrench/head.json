@@ -1,0 +1,25 @@
+{
+    "replace": true,
+    "slots": ["wrench/head"],
+    "materialSlotCount": 1,
+    "displayType": "minor",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/wrench_glyph.png",
+        "textureX": 0
+    },
+    "translation": {
+		"primaryAttributes": {"generic.attack_damage": -1},
+        "secondaryAttributes":{"generic.attack_damage": 3},
+        "tertiaryAttributes": {"generic.attack_damage": 2},
+		"durability": 1,
+        "integrity": -1
+	},
+    "outcomes": [
+        {
+            "materials": ["tetra:metal/"],
+            "countFactor": 3,
+            "moduleKey": "wrench/head",
+            "moduleVariant": "head/"
+        }
+    ]
+}

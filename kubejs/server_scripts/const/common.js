@@ -36,3 +36,9 @@ const DyeRGBRatioConfig = {
     'minecraft:magenta_dye': { r: 0.7, g: 0.0, b: 0.3 },
     'minecraft:pink_dye': { r: 0.5, g: 0.3, b: 0.2 },
 }
+
+const AutomationSlot = 'automation_slot'
+
+const FactoryCoreSlot = 'factory_core_slot'
+
+const FastWorkingSlot = 'fastworking_slot'

@@ -1,0 +1,37 @@
+{
+    "replace": true,
+    "slots": ["wrench/cogwheel"],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+	"tetra:wrench/cogwheel/",
+    "tetra:wrench/shared/",
+    "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": ["tetra:metal/", "tetra:wood/"],
+            "key": "cogwheel/",
+            "attributes": {},
+            "aspects": {"edged_weapon": 2, "breakable": 2},
+            "effects": {},
+            "durability": 20,
+            "integrity": 0,
+            "magicCapacity": 80,
+            "extract": {
+                "durability": 1,
+                "integrity": -1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/wrench_glyph.png",
+                    "textureX": 32,
+                    "textureY": 0
+                },
+                "availableTextures": ["default"],
+                "models": [
+                    {
+                        "location": "tetra:item/module/wrench/cogwheel/"
+                    }
+                ]
+            }
+        }
+    ]
+}

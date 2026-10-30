@@ -77,7 +77,7 @@ config/pin_tooltips.json
 .curseclient
 .probe/*
 !.probe/probe-settings.json
-# Local Vibe Kanban Indie integration and task runtime
+# Local agent instructions, development tools, task records and backups
 /AGENTS.md
 /ribcage-dev/
 
@@ -91,3 +91,19 @@ config/pin_tooltips.json
 # Local validation scratch directories
 /gate-smoke-*/
 /schema-smoke-*/
+
+# Regenerable Python bytecode and editor/patch scratch files
+__pycache__/
+*.pyc
+*.pyo
+*.tmp
+*.temp
+*.orig
+*.rej
+*~
+
+# CurseForge download staging (not pack content)
+/downloads/
+
+# i18n
+/FTBLang/

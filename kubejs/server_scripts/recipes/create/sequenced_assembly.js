@@ -199,3 +199,100 @@ ServerEvents.recipes(event => {
         .transitionalItem(CommonTransitionalItem)
         .loops(4)
 })
+
+ServerEvents.recipes(event => {
+    event.recipes.create
+        .sequenced_assembly([Item.of('kubejs:genius')], 'kubejs:witch_fibroma', [
+            event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'kubejs:world_computer_mechanism']),
+            event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'create:cogwheel']),
+            event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'create:mechanical_pump']),
+            event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'create:spout']),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:night_vision' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:invisibility' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:leaping' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:fire_resistance' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:swiftness' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:slowness' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:turtle_master' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:water_breathing' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:healing' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:harming' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:poison' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:regeneration' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:strength' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:weakness' })
+            ]),
+            event.recipes.create.filling('kubejs:incomplete_genius', [
+                'kubejs:incomplete_genius',
+                Fluid.of('create:potion', 1000, { Bottle: 'REGULAR', Potion: 'minecraft:slow_falling' })
+            ])
+        ])
+        .transitionalItem('kubejs:incomplete_genius')
+        .loops(1)
+    event.recipes.create
+        .sequenced_assembly([Item.of('kubejs:flesh_mechanism')], 'kubejs:flesh_sheet', [
+            event.recipes.create.deploying('kubejs:incomplete_flesh_mechanism', [
+                'kubejs:incomplete_flesh_mechanism',
+                'biomancy:bone_fragments'
+            ]),
+            event.recipes.create.deploying('kubejs:incomplete_flesh_mechanism', [
+                'kubejs:incomplete_flesh_mechanism',
+                'biomancy:elastic_fibers'
+            ]),
+            event.recipes.create.deploying('kubejs:incomplete_flesh_mechanism', [
+                'kubejs:incomplete_flesh_mechanism',
+                'biomancy:mineral_fragment'
+            ]),
+            event.recipes.create.deploying('kubejs:incomplete_flesh_mechanism', [
+                'kubejs:incomplete_flesh_mechanism',
+                'biomancy:bio_lumens'
+            ]),
+            event.recipes.create.deploying('kubejs:incomplete_flesh_mechanism', [
+                'kubejs:incomplete_flesh_mechanism',
+                'biomancy:exotic_dust'
+            ])
+        ])
+        .transitionalItem('kubejs:incomplete_flesh_mechanism')
+        .loops(3)
+})

@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "slots": [
+        "wrench/cogwheel"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "hone",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/wrench_glyph.png",
+        "textureX": 48,
+        "textureY": 0
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "wrench_sensor",
+        "level": 3
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:stone"
+            },
+            "improvements": {
+                "wrench_sensor": 4
+            }
+        }
+    ]
+}

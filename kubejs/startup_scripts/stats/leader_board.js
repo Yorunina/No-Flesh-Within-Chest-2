@@ -88,3 +88,16 @@ MAAEvents.registryLeaderboards(event => {
 	)
 
 })
+
+MAAEvents.registryLeaderboards(event => {
+    event.registerByLeaderboard(
+        global.STAT_ORGAN_PROCESSING_TABLE_RUNS,
+        new LeaderboardFromStat(
+            global.STAT_ORGAN_PROCESSING_TABLE_RUNS,
+            Text.translatable('leaderboard.kubejs.organ_processing_table_runs'),
+            Stats.CUSTOM.get(global.STAT_ORGAN_PROCESSING_TABLE_RUNS),
+            false,
+            StatFormatters.DEFAULT
+        )
+    )
+})

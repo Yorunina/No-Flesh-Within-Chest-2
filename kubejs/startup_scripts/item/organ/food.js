@@ -36,4 +36,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:tasty_gland').maxStackSize(1).food(food => food.hunger(3).saturation(1)).texture('kubejs:item/organs/food/tasty_gland').tag('kubejs:food')
 
+    // 生物工厂器官：与同类器官统一注册，保留原有标签和交互。
+    event.create('kubejs:gula_belt').texture('kubejs:item/organs/food/gula_belt').maxStackSize(1).tag('kubejs:factory').tag('kubejs:food')
+
+    event.create('kubejs:honeyed_stress').texture('kubejs:item/organs/food/honeyed_stress').maxStackSize(1).tag('kubejs:factory').tag('kubejs:food')
 })

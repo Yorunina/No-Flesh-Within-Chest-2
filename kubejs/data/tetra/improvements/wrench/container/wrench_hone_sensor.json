@@ -1,0 +1,33 @@
+[
+    {
+        "key": "wrench_sensor",
+        "level": 1,
+        "aspects": {
+            "honed": 1
+        }
+    },
+    {
+        "key": "wrench_sensor",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 2
+        }
+    },
+    {
+        "key": "wrench_sensor",
+        "level": 3,
+        "integrity": -1,
+        "aspects": {
+            "honed": 3
+        }
+    },
+    {
+        "key": "wrench_sensor",
+        "level": 4,
+        "integrity": -2,
+        "aspects": {
+            "honed": 4
+        }
+    }
+]

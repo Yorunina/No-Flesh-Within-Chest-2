@@ -1,0 +1,693 @@
+{
+  "id": "ponderer:advance_organ_processing_table",
+  "items": [
+    "kubejs:organ_processing_table"
+  ],
+  "title": {
+    "zh_cn": "器官加工台",
+    "en_us": "Organ Processing Table"
+  },
+  "structures": [
+    "ponderer:basic"
+  ],
+  "tags": [],
+  "editable": true,
+  "scenes": [
+    {
+      "id": "scene_1",
+      "title": {
+        "zh_cn": "器官加工台用法",
+        "en_us": "Tutorial"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:basic",
+          "scale": 1.0,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "create:creative_motor",
+          "blockProperties": {
+            "facing": "up"
+          },
+          "blockPos": [
+            2,
+            1,
+            2
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;566633197,1968981626,-1582855271,-301581909]}},HasAttachedComputer:0b,Network:{AddedCapacity:16384.0f,Capacity:262144.0f,Id:56899726192795L,Size:1,Stress:0.0f},ScrollValue:16,Speed:16.0f}",
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "down",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "提供256转速的应力",
+            "en_us": "Require 256 RPM"
+          },
+          "point": [
+            2.0,
+            1.5,
+            2.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:organ_processing_table",
+          "blockProperties": {
+            "facing": "north"
+          },
+          "blockPos": [
+            2,
+            2,
+            2
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;566633197,1968981626,-1582855271,-301581909]}},componentManager:{active:0b,data_component:{},fuel:0,items:[{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_1\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_2\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_3\"},{config:{BACK:1b,BOTTOM:1b,FRONT:1b,LEFT:1b,RIGHT:1b,TOP:1b,input:0b,output:0b},slotID:\"output_1\"}],maxFuel:0,radius:1},craftingManager:{phase:\"STARTING\",recipeProgressTime:0.0d,type:\"custommachinery:machine\"},machineID:\"kubejs:organ_processing_table\",message:'{\"text\":\"\"}',ownerID:\"21c622ed-755c-467a-a1a7-8b99ee0639ab\",ownerName:'{\"text\":\"six_ears\"}',status:\"running\"}",
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "down",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "text",
+          "duration": 20,
+          "text": {
+            "zh_cn": "放置器官加工台",
+            "en_us": "Place Organ Processing Table"
+          },
+          "point": [
+            2.0,
+            2.5,
+            2.5
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "show_controls",
+          "duration": 40,
+          "point": [
+            4.5,
+            0.0,
+            4.5
+          ],
+          "direction": "right",
+          "action": "right",
+          "item": "kubejs:organ_processing_table"
+        },
+        {
+          "type": "idle",
+          "duration": 40,
+          "attachKeyFrame": true
+        },
+        {
+          "type": "show_interface",
+          "point": [
+            0.514356542911969,
+            0.5987455265570816,
+            1.0
+          ],
+          "direction": "south",
+          "block": "kubejs:organ_processing_table",
+          "blockProperties": {
+            "facing": "south"
+          },
+          "blockPos": [
+            0,
+            0,
+            0
+          ],
+          "whileSneaking": false,
+          "enableNbt": false
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "change_interface_slot",
+          "attachKeyFrame": true,
+          "interfaceSlots": [
+            {
+              "slotIndex": 39,
+              "slotX": 16,
+              "slotY": 48,
+              "ingredientId": "biomancy:nutrient_paste",
+              "ingredientKind": "item"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "提供营养膏作为养料",
+            "en_us": "Provide Nutrient Paste"
+          },
+          "point": [
+            -0.605,
+            0.334,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "提供输入物",
+            "en_us": "Provide Input Item"
+          },
+          "point": [
+            -0.031,
+            0.551,
+            0.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 60
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "等待加工完成",
+            "en_us": "Waiting..."
+          },
+          "point": [
+            0.699,
+            0.548,
+            0.0
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    },
+    {
+      "id": "s_df457",
+      "title": {
+        "zh_cn": "高级器官加工台",
+        "en_us": "Advance Organ Processing Table"
+      },
+      "steps": [
+        {
+          "type": "show_structure",
+          "structure": "ponderer:basic_xxl",
+          "scale": 0.5
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            8,
+            1,
+            6
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            8,
+            1,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            6,
+            1,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            6,
+            1,
+            6
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            7,
+            1,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            6,
+            1,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            8,
+            1,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            7,
+            1,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:ornate_flesh",
+          "blockPos": [
+            8,
+            2,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:ornate_flesh",
+          "blockPos": [
+            6,
+            2,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:ornate_flesh",
+          "blockPos": [
+            8,
+            2,
+            6
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:ornate_flesh",
+          "blockPos": [
+            6,
+            2,
+            6
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:primal_permeable_membrane",
+          "blockPos": [
+            8,
+            2,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:primal_permeable_membrane",
+          "blockPos": [
+            7,
+            2,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:primal_permeable_membrane",
+          "blockPos": [
+            6,
+            2,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:organ_processing_table",
+          "blockProperties": {
+            "facing": "north"
+          },
+          "blockPos": [
+            7,
+            2,
+            6
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;566633197,1968981626,-1582855271,-301581909]}},componentManager:{active:0b,data_component:{},fuel:0,items:[{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_1\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_2\"},{config:{BACK:0b,BOTTOM:0b,FRONT:0b,LEFT:0b,RIGHT:0b,TOP:0b,input:0b,output:0b},slotID:\"input_3\"},{config:{BACK:1b,BOTTOM:1b,FRONT:1b,LEFT:1b,RIGHT:1b,TOP:1b,input:0b,output:0b},slotID:\"output_1\"}],maxFuel:0,radius:1},craftingManager:{phase:\"STARTING\",recipeProgressTime:0.0d,type:\"custommachinery:machine\"},machineID:\"kubejs:organ_processing_table\",message:'{\"text\":\"\"}',ownerID:\"21c622ed-755c-467a-a1a7-8b99ee0639ab\",ownerName:'{\"text\":\"six_ears\"}',status:\"running\"}",
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            8,
+            3,
+            6
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            8,
+            3,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            6,
+            3,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "kubejs:flesh_casing",
+          "blockPos": [
+            6,
+            3,
+            6
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            7,
+            3,
+            8
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            6,
+            3,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            8,
+            3,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            7,
+            3,
+            7
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "set_block",
+          "direction": "down",
+          "block": "biomancy:smooth_primal_flesh",
+          "blockPos": [
+            7,
+            3,
+            6
+          ],
+          "spawnParticles": false,
+          "immediateDisplay": false,
+          "smartDisplay": false,
+          "entranceAnimation": "simultaneous",
+          "entranceDuration": 20,
+          "entranceInterval": 1
+        },
+        {
+          "type": "text",
+          "duration": 40,
+          "text": {
+            "zh_cn": "建造高级器官加工台",
+            "en_us": "Building Organ Processing Table Structrue"
+          },
+          "point": [
+            7.5,
+            2.5,
+            6.0
+          ],
+          "placeNearTarget": true
+        },
+        {
+          "type": "idle",
+          "duration": 20
+        },
+        {
+          "type": "set_block",
+          "block": "create:creative_motor",
+          "blockProperties": {
+            "facing": "up"
+          },
+          "blockPos": [
+            7,
+            1,
+            6
+          ],
+          "nbt": "{ForgeCaps:{\"astages:owners\":{owner:[I;566633197,1968981626,-1582855271,-301581909]}},HasAttachedComputer:0b,Network:{AddedCapacity:16384.0f,Capacity:262144.0f,Id:56899726196891L,Size:1,Stress:0.0f},ScrollValue:16,Speed:16.0f}",
+          "immediateDisplay": true,
+          "entranceAnimation": "none"
+        },
+        {
+          "type": "text",
+          "duration": 60,
+          "text": {
+            "zh_cn": "别忘了提供256应力",
+            "en_us": "Don't Forgot provide 256 RPM"
+          },
+          "point": [
+            7.5,
+            1.5,
+            6.0
+          ],
+          "placeNearTarget": true
+        }
+      ]
+    }
+  ]
+}

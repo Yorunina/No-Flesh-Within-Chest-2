@@ -11,3 +11,31 @@ ServerEvents.recipes(event => {
 
     event.smoking(Item.of('kubejs:simple_cooked_taste_worm'), Item.of('kubejs:worm_of_taste'), '0.1')
 })
+
+ServerEvents.recipes(event => {
+    event.smelting('kubejs:sixth_fabritem', 'kubejs:fifth_fabritem')
+    event.smoking('kubejs:sixth_fabritem', 'kubejs:fifth_fabritem')
+})
+
+ServerEvents.recipes(event => {
+    event.custom({
+        type: 'farm_and_charm:stove',
+        ingredients: [
+            {
+                item: 'kubejs:search_everything'
+            },
+            {
+                item: 'kubejs:factory_ingot'
+            },
+            {
+                item: 'create_biotech:butter'
+            }
+        ],
+        result: {
+            item: 'kubejs:throat_fabritem',
+            count: 1
+        },
+        experience: 0.5,
+        requiresLearning: false
+    })
+})

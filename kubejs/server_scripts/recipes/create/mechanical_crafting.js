@@ -172,3 +172,12 @@ ServerEvents.recipes(event => {
 	})
 })
 
+ServerEvents.recipes(event => {
+    event.recipes.create.mechanical_crafting('kubejs:purgatory', ['  N  ', ' NBN ', 'NRFGN', 'NNNNN'], {
+        N: 'minecraft:netherrack',
+        B: 'minecraft:blaze_powder',
+        R: 'minecraft:redstone',
+        F: 'kubejs:factory_ingot',
+        G: 'minecraft:glowstone_dust'
+    })
+})

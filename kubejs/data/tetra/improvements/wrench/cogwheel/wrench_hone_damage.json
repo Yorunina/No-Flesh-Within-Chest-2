@@ -1,0 +1,56 @@
+[
+    {
+        "key": "wrench/damage",
+        "level": 1,
+        "aspects": {
+            "honed": 1
+        },
+        "attributes": {
+            "generic.attack_damage": 2.5
+        }
+    },
+    {
+        "key": "wrench/damage",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 2
+        },
+        "attributes": {
+            "generic.attack_damage": 5
+        }
+    },
+    {
+        "key": "wrench/damage",
+        "level": 3,
+        "integrity": -1,
+        "aspects": {
+            "honed": 3
+        },
+        "attributes": {
+            "generic.attack_damage": 7.5
+        }
+    },
+    {
+        "key": "wrench/damage",
+        "level": 4,
+        "integrity": -2,
+        "aspects": {
+            "honed": 4
+        },
+        "attributes": {
+            "generic.attack_damage": 10
+        }
+    },
+    {
+        "key": "wrench/damage",
+        "level": 5,
+        "integrity": -2,
+        "aspects": {
+            "honed": 5
+        },
+        "attributes": {
+            "generic.attack_damage": 15
+        }
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "item": "kubejs:wrench",
+    "archetype": "wrench",
+    "icon": {
+        "textureLocation": "tetra:textures/gui/wrench_holo.png",
+        "textureX": 0,
+        "textureY": 0
+    },
+    "position": 9
+}

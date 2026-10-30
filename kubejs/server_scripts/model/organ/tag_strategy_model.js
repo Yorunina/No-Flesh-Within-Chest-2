@@ -2,11 +2,16 @@
 /**
  * Tag 羁绊。内容：server_scripts/domain/organ/tag_effect/<tag>.js（priority 500）
  * 签名：(customData, event, tagId, count)
- * 件数在 evaluateChestCavity 写入 customDataMap.tagEffect。
+ * 件数读取 Java 正常重算快照；customDataMap.tagEffect 保留派发与前次计数。
  * 已派发：chest_cavity_update、food_eaten、mob_effect_applicable。
  */
 const TagEffectStateKey = 'tagEffect'
 
+/**
+ * 创建指定器官标签的羁绊策略集合。
+ * @constructor
+ * @param {string} tagId
+ */
 function TagStrategyModel(tagId) {
     this.tagId = tagId
     /** @type {Object<string, PriorityFuncModel[]>} */
@@ -16,9 +21,11 @@ function TagStrategyModel(tagId) {
 
 TagStrategyModel.prototype = {
     /**
+     * 添加标签羁绊策略；同一事件按优先级降序执行。
      * @param {$OrganEventIdType} eventId
-     * @param {any} func
-     * @param {number} priority
+     * @param {(customData: OrganEventCustomData & OrganChestCavityUpdateStrategyCustomData, event: Internal.EvaluateChestCavityJS | Internal.FoodEatenEventJS | Internal.MobEffectEvent$Applicable, tagId: string, count: number) => void} func
+     * @param {number} [priority=0]
+     * @returns {TagStrategyModel}
      */
     addStrategy: function (eventId, func, priority) {
         if (!this.strategyMap[eventId]) {
@@ -29,18 +36,33 @@ TagStrategyModel.prototype = {
     },
 }
 
+/**
+ * 读取胸腔缓存的标签计数及事件派发表。
+ * @param {Internal.ChestCavityInstance | null} chestCavity
+ * @returns {{counts: Object<string, number>, previousCounts: Object<string, number>, byEvent: Object<string, string[]>} | null}
+ */
 function GetTagEffectState(chestCavity) {
     if (!chestCavity) return null
     return GetCustomDataMap(chestCavity, TagEffectStateKey, null)
 }
 
+/**
+ * 读取 Java 查询索引中的当前标签件数。
+ * @param {Internal.ChestCavityInstance | null} chestCavity
+ * @param {string} tagId
+ * @returns {number}
+ */
 function GetTagCount(chestCavity, tagId) {
-    let state = GetTagEffectState(chestCavity)
-    if (!state || !state.counts) return 0
-    let count = state.counts[tagId]
-    return count ? count : 0
+    if (!chestCavity) return 0
+    return chestCavity.getOrganQueryIndex().getTagCount(tagId)
 }
 
+/**
+ * 读取上次重算前保存的标签件数。
+ * @param {Internal.ChestCavityInstance | null} chestCavity
+ * @param {string} tagId
+ * @returns {number}
+ */
 function GetPreviousTagCount(chestCavity, tagId) {
     let state = GetTagEffectState(chestCavity)
     if (!state || !state.previousCounts) return 0
@@ -88,7 +110,7 @@ function RebuildTagEffectState(chestCavity) {
     let tagIds = Object.keys(TagStrategyMap)
     for (let i = 0; i < tagIds.length; i++) {
         let tagId = tagIds[i]
-        let count = chestCavity.inventory.count('#' + tagId)
+        let count = GetTagCount(chestCavity, tagId)
         counts[tagId] = count
         let strategyModel = TagStrategyMap[tagId]
         if (!strategyModel || !strategyModel.strategyMap) continue

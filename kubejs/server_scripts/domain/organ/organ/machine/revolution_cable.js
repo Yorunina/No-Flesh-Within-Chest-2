@@ -12,8 +12,8 @@ RegistryOrgan('kubejs:revolution_cable').setRank(2)
 */
 function RevolutionCableChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const chestCavity = event.chestCavity
-    let machineCount = chestCavity.inventory.count('#kubejs:machine')
-    let revolutionCount = chestCavity.inventory.count('#kubejs:revolution')
+    let machineCount = GetTagCount(chestCavity, 'kubejs:machine')
+    let revolutionCount = GetTagCount(chestCavity, 'kubejs:revolution')
     let total = revolutionCount + machineCount
     switch (slotType) {
         case MachinaryLubricant:

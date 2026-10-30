@@ -18,6 +18,14 @@ function GetChestCavitySlotType(cc, index) {
     return cc.getInventoryTypeData().getSlotType(index)
 }
 
+/**
+ * 读取事件共享数据；值为假值时写入并返回默认值。
+ * @template T
+ * @param {Object<string, any>} customData
+ * @param {string} key
+ * @param {T} defaultValue
+ * @returns {T}
+ */
 function GetCustomDataOrDefault(customData, key, defaultValue) {
     if (!customData[key]) {
         customData[key] = defaultValue
@@ -25,6 +33,13 @@ function GetCustomDataOrDefault(customData, key, defaultValue) {
     return customData[key]
 }
 
+/**
+ * 写入事件共享数据。
+ * @param {Object<string, any>} customData
+ * @param {string} key
+ * @param {*} value
+ * @returns {void}
+ */
 function SetCustomData(customData, key, value) {
     customData[key] = value
 }
@@ -40,10 +55,12 @@ function SetCustomDataMap(cc, key, value) {
 }
 
 /**
- * 
- * @param {Internal.ChestCavityInstance} cc 
- * @param {*} key 
- * @param {*} defaultValue 
+ * 读取胸腔实例数据，不存在时返回默认值。
+ * @template T
+ * @param {Internal.ChestCavityInstance} cc
+ * @param {string} key
+ * @param {T} defaultValue
+ * @returns {T}
  */
 function GetCustomDataMap(cc, key, defaultValue) {
     return cc.customDataMap.getOrDefault(key, defaultValue)
@@ -213,4 +230,50 @@ function GetDirectionRelativeSlotByParam(invTypeData, organIndex, directionSet) 
         relativeSlots.push(slotDefinition)
     }
     return relativeSlots
+}
+
+/**
+ * 将产物写入目标槽或合并至已有堆叠；调用前须验证容量。
+ * @param {OrganEventCustomData} customData
+ * @param {Internal.ChestCavityInstance} chestCavity
+ * @param {Internal.ItemStack} outputItem
+ * @param {number} targetIndex
+ * @param {boolean} updateEmpty
+ * @returns {void}
+ */
+function SetChestCavityOutput(customData, chestCavity, outputItem, targetIndex, updateEmpty) {
+    let existingItem = chestCavity.inventory.getStackInSlot(targetIndex)
+    let output = outputItem.copy()
+    let update = updateEmpty
+    if (!existingItem.isEmpty()) {
+        output = existingItem.copy()
+        output.setCount(existingItem.getCount() + outputItem.getCount())
+        update = false
+    }
+    let slotType = chestCavity.inventoryTypeData.getSlotType(targetIndex)
+    SetChestCavityOrgan(customData, chestCavity, output, targetIndex, slotType, update)
+}
+
+const ItemDirectionOffsets = [
+    [0, -1],
+    [0, 1],
+    [-1, 0],
+    [1, 0]
+]
+
+/**
+ * 按物品保存的方向查找相邻槽，并将无效方向归零。
+ * @param {Internal.InventoryTypeData} invTypeData
+ * @param {Internal.ItemStack} organItem
+ * @param {number} organIndex
+ * @returns {Internal.ChestCavitySlotDefinition[]}
+ */
+function GetItemDirectionSlots(invTypeData, organItem, organIndex) {
+    let nbt = organItem.getOrCreateTag()
+    let state = nbt.getInt('direction_state')
+    if (state < 0 || state >= ItemDirectionOffsets.length) {
+        state = 0
+        nbt.putInt('direction_state', state)
+    }
+    return GetDirectionRelativeSlotByParam(invTypeData, organIndex, [ItemDirectionOffsets[state]])
 }

@@ -21,10 +21,11 @@ function RemoveBundleOneStack(stack) {
 }
 
 /**
- * 
- * @param {Internal.ItemStack} stack 
- * @param {number} index 
- * @returns 
+ * 按内容索引扣除物品数量，并移除耗尽的条目。
+ * @param {Internal.ItemStack} stack
+ * @param {number} index
+ * @param {number} count
+ * @returns {void}
  */
 function RemoveBundleItem(stack, index, count) {
     let nbt = stack.getNbt()
@@ -78,9 +79,9 @@ function PlayerBundleInsertSound(entity) {
 
 
 /**
- * 
- * @param {Internal.ItemStack} stack 
- * @returns {Internal.ItemStack[]}
+ * 读取收纳袋内容；无 NBT 时返回空数组，否则返回 Java 列表。
+ * @param {Internal.ItemStack} stack
+ * @returns {Internal.ItemStack[] | Internal.List<Internal.ItemStack>}
  */
 function GetBundleContents(stack) {
     let nbt = stack.getNbt()
@@ -91,17 +92,17 @@ function GetBundleContents(stack) {
     ).toList()
 }
 /**
- * 
+ * 预留的收纳袋写入接口，当前尚未实现。
  * @param {Internal.ItemStack[]} stacks
- * @returns {Internal.ItemStack[]}
+ * @returns {void}
  */
 function SetBundleContents(stacks) {
 }
 
 /**
- * 
- * @param {Internal.ItemStack} stack 
- * @param {function(Internal.ItemStack): number} weightFunc 
+ * 按每个物品的单件权重计算收纳袋总重量。
+ * @param {Internal.ItemStack} stack
+ * @param {(stack: Internal.ItemStack) => number} weightFunc
  * @returns {number}
  */
 function GetBundleCountentWeight(stack, weightFunc) {
@@ -120,12 +121,70 @@ function GetBundleStackWeight(stack) {
     return 64 / stack.getMaxStackSize()
 }
 
+
 /**
- * 
- * @param {Internal.ItemStack} bundleStack 
- * @param {Internal.ItemStack} insertedStack 
- * @param {number} maxWeight 
- * @param {function(Internal.ItemStack): number} weightFunc 
+ * 按物品及 NBT 分组，记录总数和原始内容索引。
+ * @param {Internal.ItemStack} stack
+ * @returns {Array<{item: Internal.ItemStack, count: number, indices: number[]}>}
+ */
+function GetBundleIngredientGroups(stack) {
+    let contents = GetBundleContents(stack)
+    let groups = []
+    for (let i = 0; i < contents.length; i++) {
+        let item = contents[i]
+        if (item.isEmpty()) continue
+        let group = null
+        for (let candidate of groups) {
+            if ($ItemStack.isSameItemSameTags(candidate.item, item)) {
+                group = candidate
+                break
+            }
+        }
+        if (!group) {
+            group = { item: item.copyWithCount(1), count: 0, indices: [] }
+            groups.push(group)
+        }
+        group.count += item.getCount()
+        group.indices.push(i)
+    }
+    return groups
+}
+
+
+/**
+ * 先验证分组快照与数量，再按原始索引扣除材料；失败时不修改内容。
+ * @param {Internal.ItemStack} stack
+ * @param {Array<{item: Internal.ItemStack, count: number, indices: number[]}>} groups
+ * @param {number[]} amounts
+ * @returns {boolean}
+ */
+function ConsumeBundleIngredients(stack, groups, amounts) {
+    let contents = GetBundleContents(stack)
+    let deductions = []
+    for (let i = 0; i < groups.length; i++) {
+        let remaining = amounts[i]
+        if (remaining == null || remaining < 0 || remaining != Math.floor(remaining)) return false
+        for (let index of groups[i].indices) {
+            if (remaining == 0) break
+            let item = contents[index]
+            if (!item || !$ItemStack.isSameItemSameTags(item, groups[i].item)) return false
+            let count = Math.min(remaining, item.getCount())
+            deductions.push({ index: index, count: count })
+            remaining -= count
+        }
+        if (remaining > 0) return false
+    }
+    deductions.sort((a, b) => b.index - a.index)
+    for (let deduction of deductions) RemoveBundleItem(stack, deduction.index, deduction.count)
+    return true
+}
+
+/**
+ * 按权重上限插入物品，返回实际存入数量；不扣除传入堆叠。
+ * @param {Internal.ItemStack} bundleStack
+ * @param {Internal.ItemStack} insertedStack
+ * @param {number} maxWeight
+ * @param {(stack: Internal.ItemStack) => number} weightFunc
  * @returns {number}
  */
 function AddItemIntoBundle(bundleStack, insertedStack, maxWeight, weightFunc) {
@@ -137,29 +196,26 @@ function AddItemIntoBundle(bundleStack, insertedStack, maxWeight, weightFunc) {
     }
     let currentWeight = GetBundleCountentWeight(bundleStack, weightFunc)
     let insertedWeight = weightFunc(insertedStack)
-    let insertCount = Math.min(insertedStack.getCount(), (maxWeight - currentWeight) / insertedWeight)
+    if (insertedWeight <= 0 || currentWeight >= maxWeight) return 0
+    let insertCount = Math.floor(Math.min(insertedStack.getCount(), (maxWeight - currentWeight) / insertedWeight))
 
-    if (insertCount == 0) return 0
+    if (insertCount <= 0) return 0
 
     let items = nbt.getList('Items', TAG_COMPOUND)
     let remainder = insertedStack.copyWithCount(insertCount)
-    let matchIdx = -1
-    for (let i = 0; i < items.size(); i++) {
-        if ($ItemStack.isSameItemSameTags($ItemStack.of(items.getCompound(i)), remainder)) {
-            matchIdx = i
-            break
-        }
+    for (let i = 0; i < items.size() && !remainder.isEmpty(); i++) {
+        let matchItem = $ItemStack.of(items.getCompound(i))
+        if (!$ItemStack.isSameItemSameTags(matchItem, remainder)) continue
+        let mergeCount = Math.min(remainder.getCount(), matchItem.getMaxStackSize() - matchItem.getCount())
+        if (mergeCount <= 0) continue
+        matchItem.grow(mergeCount)
+        items.set(i, matchItem.save(new $CompoundTag()))
+        remainder.shrink(mergeCount)
     }
-    if (matchIdx >= 0) {
-        let matchItem = $ItemStack.of(items.getCompound(matchIdx))
-        if (matchItem.getCount() >= matchItem.getMaxStackSize()) {
-            items.add(0, remainder.save(new $CompoundTag()))
-        } else {
-            matchItem.grow(remainder.getCount())
-            items.set(matchIdx, matchItem.save(new $CompoundTag()))
-        }
-    } else {
-        items.add(0, remainder.save(new $CompoundTag()))
+    while (!remainder.isEmpty()) {
+        let stackCount = Math.min(remainder.getCount(), remainder.getMaxStackSize())
+        items.add(0, remainder.copyWithCount(stackCount).save(new $CompoundTag()))
+        remainder.shrink(stackCount)
     }
     return insertCount
 }

@@ -1,0 +1,27 @@
+{
+    "key": "factory_ingot",
+    "category": "metal",
+    "primary": 7.4,
+    "secondary": 3.4,
+    "tertiary": 6.7,
+    "durability": 763,
+    "integrityCost": 4,
+    "integrityGain": 4,
+    "magicCapacity": 200,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 10,
+    "tints": {
+        "glyph": "05e095",
+        "texture": "05e095"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "kubejs:factory_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

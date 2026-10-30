@@ -1,0 +1,25 @@
+{
+  "name": {
+    "text": "block.kubejs.stress_extract"
+  },
+  "appearance": {
+    "running": {
+      "custommachinery:block": "kubejs:machine/stress_extract"
+    },
+    "custommachinery:block": "kubejs:machine/stress_extract_idle",
+    "custommachinery:item": "kubejs:machine/stress_extract"
+  },
+  "components": [
+    {
+      "type": "custommachinery:contraption",
+      "config": {
+        "TOP": "BOTH",
+        "BOTTOM": "NONE",
+        "FRONT": "NONE",
+        "RIGHT": "NONE",
+        "BACK": "NONE",
+        "LEFT": "NONE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+    "slotDefinitions": [
+        {"x": 119, "y": 123, "type": "automation_slot"},
+        {"x": 47, "y": 87},
+        {"x": 65, "y": 87},
+        {"x": 83, "y": 87},
+        {"x": 101, "y": 87},
+        {"x": 119, "y": 87},
+        {"x": 137, "y": 87},
+        {"x": 155, "y": 87},
+        {"x": 173, "y": 87},
+        {"x": 191, "y": 87},
+        {"x": 47, "y": 105, "type": "container_slot"},
+        {"x": 65, "y": 105, "type": "container_slot"},
+        {"x": 83, "y": 105, "type": "container_slot"},
+        {"x": 101, "y": 105, "type": "container_slot"},
+        {"x": 119, "y": 105, "type": "container_slot"},
+        {"x": 137, "y": 105, "type": "container_slot"},
+        {"x": 155, "y": 105, "type": "container_slot"},
+        {"x": 173, "y": 105, "type": "container_slot"},
+        {"x": 191, "y": 105, "type": "container_slot"},
+        {"x": 47, "y": 123},
+        {"x": 65, "y": 123},
+        {"x": 83, "y": 123},
+        {"x": 101, "y": 123},
+        {"x": 137, "y": 123},
+        {"x": 155, "y": 123},
+        {"x": 173, "y": 123},
+        {"x": 191, "y": 123},
+        {"x": 216, "y": 162, "type": "fastworking_slot"},
+        {"x": 216, "y": 180, "type": "fastworking_slot"},
+        {"x": 109, "y": 23, "type": "factory_core_slot"}
+    ],
+    "backgroundTexture": "kubejs:textures/gui/chest_cavity/factory.png",
+    "titlePosition": {
+        "x": 0,
+        "y": 24,
+        "hide": true
+    },
+    "backgroundSize": {
+        "x": 256,
+        "y": 256
+    },
+    "playerInventoryPosition": {
+        "x": 39,
+        "y": 69
+    },
+    "inventoryLabelPosition": {
+        "x": 10,
+        "y": -16,
+        "hide": true
+    }
+}

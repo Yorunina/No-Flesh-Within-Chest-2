@@ -14,11 +14,14 @@ RegistryChestCavityInjection('transdimensional_rose')
 RegistryChestCavityInjection('transdimensional_relics')
 RegistryChestCavityInjection('plant')
 RegistryChestCavityInjection('relics_awakening')
+RegistryChestCavityInjection('factory', 'kubejs:cc_inventory_types/factory')
 
 /**
  * @param {string} typeName
+ * @param {string} [typeLocation] 胸腔类型资源位置，默认使用 kubejs:<typeName>
  */
-function RegistryChestCavityInjection(typeName) {
+function RegistryChestCavityInjection(typeName, typeLocation) {
+    if (!typeLocation) typeLocation = `kubejs:${typeName}`
     StartupEvents.registry('item', event => {
         event.create(`${typeName}_injection`).maxStackSize(1).texture(`kubejs:item/injections/${typeName}_injection`)
             .useDuration(itemStack => 65)
@@ -36,7 +39,7 @@ function RegistryChestCavityInjection(typeName) {
             })
             .finishUsing((itemstack, level, entity) => {
                 if (level.isClientSide()) return Item.empty
-                entity.chestCavityInstance.setInventoryType(`kubejs:${typeName}`)
+                entity.chestCavityInstance.setInventoryType(typeLocation)
                 return Item.empty
             })
     })

@@ -77,3 +77,27 @@ ServerEvents.recipes(event => {
 
     event.recipes.biomancy.bio_forging([Item.of('kubejs:transdimensional_mechanized_injection', 1), Item.of('kubejs:relics_awakening_injection', 1)], Item.of('kubejs:transdimensional_relics_injection'), 'biomancy:organ', 100).id('kubejs:transdimensional_relics_injection')
 })
+
+AStages.addRestrictionForRecipe('kubejs/factory_injection_recipe', 'ftb_factory_injection_recipe', 'biomancy:bio_forging', [
+    'kubejs:factory_injection'
+])
+
+ServerEvents.recipes(event => {
+    event.recipes.biomancy
+        .bio_forging(
+            [Item.of('kubejs:player_27_injection'), Item.of('kubejs:factory_ingot')],
+            Item.of('kubejs:factory_injection', 1),
+            'biomancy:organ',
+            100
+        )
+        .id('kubejs:factory_injection')
+})
+
+ServerEvents.recipes(event => {
+    event.recipes.biomancy.bio_forging(
+        [Item.of('create:honeyed_apple'), Item.of('kubejs:water_wheel'), Item.of('biomancy:healing_additive')],
+        Item.of('kubejs:honeyed_stress'),
+        'biomancy:organ',
+        10
+    )
+})

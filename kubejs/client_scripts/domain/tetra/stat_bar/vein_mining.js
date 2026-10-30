@@ -27,3 +27,19 @@ MAAEvents.canUltimine(event => {
     if (item.getEffectLevel(stack, 'kubejs:vein_mining') <= 0) return
     event.success()
 })
+
+MAAEvents.canUltimine(event => {
+    const player = event.player
+    if (!player || !player.chestCavityInstance) return
+    let chestCavity = player.chestCavityInstance
+    let inventory = chestCavity.inventory
+    let typeData = chestCavity.getInventoryTypeData()
+    for (let i = 0; i < inventory.getContainerSize(); i++) {
+        if (typeData.getSlotType(i) == 'container_slot') continue
+        let item = inventory.getStackInSlot(i)
+        if (item && !item.isEmpty() && String(item.id) == 'kubejs:mechanical_drill') {
+            if (chestCavity.getOrganScore('kubejs:stress') >= 0) event.success()
+            return
+        }
+    }
+})

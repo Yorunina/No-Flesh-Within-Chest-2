@@ -1,0 +1,29 @@
+{
+  "id": "kubejs:wrench",
+  "honeable": true,
+  "honeBase": 100,
+  "honeIntegrityMultiplier": 100,
+  "slots": [
+    {
+      "key": "wrench/cogwheel",
+      "major": true,
+      "required": true,
+      "x": 15,
+      "y": 15
+    },
+    {
+      "key": "wrench/handle",
+      "major": false,
+      "required": true,
+      "x": 35,
+      "y": 15
+    },
+    {
+      "key": "wrench/head",
+      "major": false,
+      "required": true,
+      "x": 55,
+      "y": 15
+    }
+  ]
+}

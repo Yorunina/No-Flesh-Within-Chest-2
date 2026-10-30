@@ -17,3 +17,7 @@ ServerEvents.recipes(event => {
     // 颜色碳化
     event.blasting(Item.of('minecraft:black_dye'), Item.of('minecraft:white_dye'), '0.1')
 })
+
+ServerEvents.recipes(event => {
+    event.recipes.create.splashing('kubejs:sixth_fabritem', 'kubejs:fifth_fabritem')
+})

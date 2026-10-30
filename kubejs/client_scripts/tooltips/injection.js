@@ -100,4 +100,10 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:empty_injection')
     .addShift(Text.translatable('tooltips.kubejs.empty_injection.shift.1', Player17TypeHover, Player21TypeHover, Player25TypeHover, Player27TypeHover))
 )
 
-
+ApplyMultiStateTooltip(
+    new MultiStateTooltip('kubejs:factory_injection')
+        .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+        .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+        .addDefault(Text.translatable('tooltips.kubejs.factory_injection.default.1').gray())
+        .addShift(Text.translatable('tooltips.kubejs.factory_injection.shift.1', ChestcavityTypeHover, FactoryTypeHover))
+)

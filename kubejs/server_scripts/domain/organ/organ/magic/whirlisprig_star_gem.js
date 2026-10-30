@@ -6,31 +6,6 @@ RegistryOrgan('kubejs:whirlisprig_star_gem').setRank(2)
 
 /**
 * @param {OrganEventCustomData} customData
-* @param {Internal.EvaluateChestCavityJS} event
-* @param {Internal.ItemStack} organItem
-* @param {number} organIndex
-* @param {string} slotType
-*/
-function WhirlisprigStarGemChestCavityTakeOn(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    SetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 1)
-}
-
-/**
-* @param {OrganEventCustomData} customData
-* @param {Internal.EvaluateChestCavityJS} event
-* @param {Internal.ItemStack} organItem
-* @param {number} organIndex
-* @param {string} slotType
-*/
-function WhirlisprigStarGemChestCavityTakeOff(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    RemoveCustomDataMap(chestCavity, 'hasWhirlisprigStarGem')
-}
-
-
-/**
-* @param {OrganEventCustomData} customData
 * @param {Internal.EffectResolveEvent$Post} event
 * @param {Internal.ItemStack} organItem
 * @param {number} organIndex
@@ -57,7 +32,5 @@ function WhirlisprigStarGemArsEffectResolvePost(customData, event, organItem, or
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:whirlisprig_star_gem')
-        .addOnlyStrategy('organ_take_on', WhirlisprigStarGemChestCavityTakeOn)
-        .addOnlyStrategy('organ_take_off', WhirlisprigStarGemChestCavityTakeOff)
         .addOnlyStrategy('ars_effect_resolve_post', WhirlisprigStarGemArsEffectResolvePost)
 )

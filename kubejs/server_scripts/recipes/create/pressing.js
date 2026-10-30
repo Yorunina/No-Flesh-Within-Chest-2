@@ -8,3 +8,7 @@ ServerEvents.recipes(event => {
         [Item.of('kaleidoscope_cookery:oil', 1)],
         [Fluid.of('kubejs:blood_fat_fluid', 250)], 'createdieselgenerators:bowl')
 })
+
+ServerEvents.recipes(event => {
+    event.recipes.create.pressing('kubejs:first_fabritem', 'kubejs:factory_ingot')
+})

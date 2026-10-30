@@ -24,4 +24,11 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:calamity_bone_spur').maxStackSize(1).tag('kubejs:magic').tag('kubejs:bone').texture('kubejs:item/organs/magic/calamity_bone_spur')
     event.create('kubejs:potion_skin').maxStackSize(1).tag('kubejs:magic').texture('kubejs:item/organs/magic/potion_skin')
     event.create('kubejs:exhausted_source_focus_crystal').maxStackSize(1).maxDamage(100).texture('kubejs:item/organs/magic/exhausted_source_focus_crystal').tag('kubejs:magic')
+
+    // 生物工厂器官：与同类器官统一注册，保留原有标签和交互。
+    event.create('kubejs:enchanting_stresssourse')
+        .maxStackSize(1)
+        .parentModel('kubejs:item/enchanting')
+        .tag('kubejs:factory')
+        .tag('kubejs:magic')
 })

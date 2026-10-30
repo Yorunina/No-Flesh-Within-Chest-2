@@ -1,10 +1,11 @@
 // priority: 3000
 
 /**
- * @param {Internal.List<any>} text 
- * @param {any[]} textLines 
- * @param {Number} initNum 
- * @returns 
+ * 在指定位置插入提示行，返回下一行的插入位置。
+ * @param {Internal.List<Internal.Component>} text
+ * @param {Internal.Component[]} textLines
+ * @param {number} initNum
+ * @returns {number}
  */
 function AddTextLines(text, textLines, initNum) {
     textLines.forEach(line => {
@@ -14,10 +15,12 @@ function AddTextLines(text, textLines, initNum) {
 }
 
 /**
- * @param {Internal.List<any>} text 
- * @param {any[]} textLines 
- * @param {Number} initNum 
- * @returns 
+ * 展开动态提示行并插入列表，返回下一行的插入位置。
+ * @param {Internal.List<Internal.Component>} text
+ * @param {Array<Internal.Component | ((lines: Internal.List<Internal.Component>, item: Internal.ItemStack) => Internal.Component[])>} textLines
+ * @param {Internal.ItemStack} item
+ * @param {number} initNum
+ * @returns {number}
  */
 function AddTextFuncLines(text, textLines, item, initNum) {
     textLines.forEach(line => {
@@ -41,9 +44,10 @@ function GetMobNameByType(mobType) {
 }
 
 /**
- * 
- * @param {string} separator 
- * @param {Internal.MutableComponent[]} list 
+ * 使用分隔符连接文本组件。
+ * @param {string} separator
+ * @param {Internal.MutableComponent[]} list
+ * @returns {Internal.MutableComponent}
  */
 function JoinWithSeparator(separator, list) {
     let result = Text.empty()
@@ -58,10 +62,11 @@ function JoinWithSeparator(separator, list) {
 }
 
 /**
+ * 生成按时间轮换显示一行文本的提示回调。
  * @param {Internal.MutableComponent[]} tooltips
- * @param {Number} intervalMs
- * @param {Number} phase
- * @returns {function(Internal.List<any>, Internal.ItemStack): Internal.MutableComponent[]}
+ * @param {number} [intervalMs=1000]
+ * @param {number} [phase=0]
+ * @returns {(text: Internal.List<Internal.Component>, item: Internal.ItemStack) => Internal.MutableComponent[]}
  */
 function RotatingTooltip(tooltips, intervalMs, phase) {
     intervalMs = intervalMs || 1000
@@ -72,4 +77,19 @@ function RotatingTooltip(tooltips, intervalMs, phase) {
         if (index < 0) index += tooltips.length
         return [tooltips[index]]
     }
+}
+
+const ItemDirectionNames = ['up', 'down', 'left', 'right']
+
+/**
+ * 读取物品保存的方向并生成提示行。
+ * @param {Internal.List<Internal.Component>} lines
+ * @param {Internal.ItemStack} item
+ * @returns {Internal.MutableComponent[]}
+ */
+function ItemDirectionTooltip(lines, item) {
+    let state = item.getOrCreateTag().getInt('direction_state')
+    if (state < 0 || state >= ItemDirectionNames.length) state = 0
+    let direction = Text.translatable('direction.kubejs.' + ItemDirectionNames[state]).yellow()
+    return [Text.translatable('tooltips.kubejs.' + item.id.split(':')[1] + '.default.1', direction)]
 }

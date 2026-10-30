@@ -8,4 +8,13 @@ StartupEvents.registry('block', event => {
         .machine('kubejs:mantle_energy_extractor')
     event.create('kubejs:growth_vat', 'custommachinery')
         .machine('kubejs:growth_vat')
+
+    event.create('kubejs:flesh_casing', 'basic')
+        .requiresTool(true)
+        .tagBlock('minecraft:mineable/pickaxe')
+        .tagBlock('minecraft:mineable/axe')
+        .tagBlock('minecraft:needs_wooden_tool')
+        .tag('create:wrench_pickup')
+    event.create('kubejs:organ_processing_table', 'custommachinery').machine('kubejs:organ_processing_table')
+    event.create('kubejs:stress_extract', 'custommachinery').machine('kubejs:stress_extract')
 })

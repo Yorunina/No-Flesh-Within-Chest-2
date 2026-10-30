@@ -60,3 +60,7 @@ ServerEvents.recipes(event => {
         ['createutilities:void_steel_ingot'],
         ['minecraft:iron_ingot', 'minecraft:end_stone'], 20 * 10).heated()
 })
+
+ServerEvents.recipes(event => {
+    event.recipes.create.mixing(['kubejs:second_fabritem', 'kubejs:other_fabritem'], 'kubejs:first_fabritem')
+})

@@ -4,35 +4,6 @@ RegistryOrgan('kubejs:pumpkin_shooter')
     .setCanSpawn(true)
 
 /**
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event 
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- */
-function PumpkinShooterChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
-    const chestCavity = event.chestCavity
-    const ccInv = chestCavity.inventory
-    let llamaGlandCount = 0
-    let ghastSacCount = 0
-    let weevilMouthCount = 0
-    ccInv.allItems.forEach(pItem => {
-        if (pItem.isEmpty()) return
-        if (pItem.is('kubejs:llama_gland')) {
-            llamaGlandCount++
-        } else if (pItem.is('kubejs:ghast_sac')) {
-            ghastSacCount++
-        } else if (pItem.is('kubejs:weevil_mouth')) {
-            weevilMouthCount++
-        }
-    })
-    SetCustomDataMap(chestCavity, 'llamaGlandCount', llamaGlandCount)
-    SetCustomDataMap(chestCavity, 'ghastSacCount', ghastSacCount)
-    SetCustomDataMap(chestCavity, 'weevilMouthCount', weevilMouthCount)
-}
-
-
-/**
  * @param {OrganEventCustomData} customData
  * @param {Internal.OpenedEntityTickJS} event 
  * @param {Internal.ItemStack} organItem
@@ -43,11 +14,12 @@ function PumpkinShooterEntityTick(customData, event, organItem, organIndex, slot
     const entity = event.entity
     const level = event.level
     const chestCavity = entity.chestCavityInstance
-    if (GetCustomDataMap(chestCavity, 'llamaGlandCount', 0) > 0) {
+    const query = chestCavity.getOrganQueryIndex()
+    if (query.getItemSlotCount('kubejs:llama_gland', false, null) > 0) {
         SpitTowardFacing(entity, level)
-    } else if (GetCustomDataMap(chestCavity, 'ghastSacCount', 0) > 0) {
+    } else if (query.getItemSlotCount('kubejs:ghast_sac', false, null) > 0) {
         SummonFireballTowardFacing(entity, level)
-    } else if (GetCustomDataMap(chestCavity, 'weevilMouthCount', 0) > 0) {
+    } else if (query.getItemSlotCount('kubejs:weevil_mouth', false, null) > 0) {
         SummonMudTowardFacing(entity, level)
     } else {
         SummonSnowballTowardFacing(entity, level)
@@ -57,5 +29,4 @@ function PumpkinShooterEntityTick(customData, event, organItem, organIndex, slot
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:pumpkin_shooter')
         .addOnlyStrategy('entity_tick', PumpkinShooterEntityTick)
-        .addOnlyStrategy('chest_cavity_update', PumpkinShooterChestCavityUpdate)
 )

@@ -35,4 +35,5 @@ ChestCavityEvents.organHoloFilterTags(event => {
     event.addTag('kubejs:infected', 'tooltips.kubejs.tag.kubejs:infected')
     event.addTag('kubejs:plant', 'tooltips.kubejs.tag.kubejs:plant')
 
+    event.addTag('kubejs:factory', 'tooltips.kubejs.tag.kubejs:factory')
 })

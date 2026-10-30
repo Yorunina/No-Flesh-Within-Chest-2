@@ -15,6 +15,9 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
     const level = event.level
     const chestCavity = event.chestCavity
     if (entity.isPlayer() && !entity.isCrouching()) return
+    const query = chestCavity.getOrganQueryIndex()
+    const hasHarvester = query.hasItem('kubejs:tentacles_harvester', true, null)
+    const keepGrowth = hasHarvester && query.hasItem('kubejs:whirlisprig_star_gem', true, null)
     const radius = 4
     const entityPos = entity.position()
 
@@ -22,18 +25,12 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
         for (let i = 0; i <= l; i = i > 0 ? -i : 1 - i) {
             for (let j = i < l && i > -l ? l : 0; j <= l; j = j > 0 ? -j : 1 - j) {
                 let targetBlockPos = new BlockPos(Math.floor(entityPos.x() + i), Math.ceil(entityPos.y()), Math.floor(entityPos.z() + j))
+                if (!level.hasChunkAt(targetBlockPos)) continue
                 let targetBlockState = level.getBlockState(targetBlockPos)
                 let targetBlock = targetBlockState.block
+                TryBonemeal(level, targetBlockPos, entity, 'minecraft:glow', false)
 
-                if (targetBlock instanceof $BonemealableBlock && targetBlock.isValidBonemealTarget(level, targetBlockPos, targetBlockState, false)) {
-                    if (targetBlock.isBonemealSuccess(level, level.random, targetBlockPos, targetBlockState)) {
-                        targetBlock.performBonemeal(level, level.random, targetBlockPos, targetBlockState)
-                        level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
-                        level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-                    }
-                }
-
-                if (GetCustomDataMap(chestCavity, 'hasTentaclesHarvester', 0) == 0) continue
+                if (!hasHarvester) continue
 
                 if (targetBlockState.hasProperty(BlockProperties.AGE_2) && targetBlockState.getValue(BlockProperties.AGE_2).intValue() == 2) {
                     let lootContext = new $LootParamsBuilder(level)
@@ -46,7 +43,7 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
                     })
                     level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
                     level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-                    if (GetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 0) == 0) {
+                    if (!keepGrowth) {
                         targetBlockState = targetBlockState.setValue(BlockProperties.AGE_2, Int2Integer(0))
                         level.setBlockAndUpdate(targetBlockPos, targetBlockState)
                     }
@@ -64,7 +61,7 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
                     })
                     level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
                     level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-                    if (GetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 0) == 0) {
+                    if (!keepGrowth) {
                         targetBlockState = targetBlockState.setValue(BlockProperties.AGE_7, Int2Integer(0))
                         level.setBlockAndUpdate(targetBlockPos, targetBlockState)
                     }
@@ -80,7 +77,7 @@ function RootlingEctoplasmEntityTick(customData, event, organItem, organIndex, s
                     })
                     level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.2, targetBlockPos.y + 0.3, targetBlockPos.z - 0.4, 0, 0.1, 0, 2, 0)
                     level.spawnParticles('minecraft:glow', true, targetBlockPos.x + 0.1, targetBlockPos.y + 0.2, targetBlockPos.z + 0.3, 0, 0.1, 0, 2, 0)
-                    if (GetCustomDataMap(chestCavity, 'hasWhirlisprigStarGem', 0) == 0) {
+                    if (!keepGrowth) {
                         pBlockEntity.setGrowthStage(pBlockEntity.getPlant().getGrowthStageAfterHarvest())
                     }
                     pBlockEntity.getPlant().onHarvest(pBlockEntity, entity)

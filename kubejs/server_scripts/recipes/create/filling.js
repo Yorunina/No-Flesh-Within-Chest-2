@@ -20,3 +20,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling([Item.of('biomancy:cleansing_serum', 1)], [Item.of('biomancy:vial'), Fluid.of('minecraft:milk', 250)])
     event.recipes.create.filling([Item.of('kubejs:transdimensional_mechanized_injection', 1)], [Item.of('kubejs:player_27_injection'), Fluid.of('create_biotech:teleportation', 1000)])
 })
+
+ServerEvents.recipes(event => {
+    event.recipes.create.filling('kubejs:fifth_fabritem', ['kubejs:fourth_fabritem', Fluid.of('kubejs:other_fluid', 1000)])
+})

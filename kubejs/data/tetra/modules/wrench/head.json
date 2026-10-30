@@ -1,0 +1,38 @@
+{
+    "replace": true,
+    "slots": ["wrench/head"],
+    "type": "tetra:basic_module",
+    "variants": [
+        {
+            "materials": ["tetra:metal/"],
+            "key": "head/",
+            "attributes": {
+                "generic.attack_damage": 3
+            },
+            "aspects": {},
+            "effects": {"sweeping": 1},
+            "durability": 20,
+            "integrity": 0,
+            "extract": {
+                "primaryAttributes": {
+                "generic.attack_damage": -1
+            },
+                "secondaryAttributes":{"generic.attack_damage": 3},
+                "tertiaryAttributes": {"generic.attack_damage": 2},
+                "durability": 1,
+                "integrity": -1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/wrench_glyph.png",
+                    "textureX": 0,
+                    "textureY": 0
+                },
+                "availableTextures": ["default"],
+                "models": [
+                    {
+                        "location": "tetra:item/module/wrench/head/"
+                    }
+                ]
+            }
+        }
+    ]
+}

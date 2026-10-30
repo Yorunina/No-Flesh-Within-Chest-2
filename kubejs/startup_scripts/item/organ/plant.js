@@ -14,46 +14,11 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:tentacles_harvester').maxStackSize(1).texture('kubejs:item/organs/plant/tentacles_harvester').tag('kubejs:plant').tag('kubejs:muscle')
 
     event.create('kubejs:hop_kidney')
-        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
-            if (stack.getCount() != 1 || action != ClickAction.SECONDARY || !slot.allowModification(player)) return false
-            if (oStack.isEmpty()) {
-                RemoveBundleOneStack(stack).ifPresent(pStack => {
-                    PlayBundleRemoveSound(player)
-                    access.set(pStack)
-                })
-            } else if (oStack.hasTag('kubejs:beer')) {
-                let added = AddItemIntoBundle(stack, oStack, 1, (pStack) => 1)
-                if (added > 0) {
-                    PlayerBundleInsertSound(player)
-                    oStack.shrink(added)
-                }
-            }
-            return true
-        })
-        .overrideStackedOnOther((stack, slot, action, player) => {
-            if (stack.getCount() != 1 || action != ClickAction.SECONDARY) return false
-            let oStack = slot.getItem()
-            if (oStack.isEmpty()) {
-                PlayBundleRemoveSound(player)
-                RemoveBundleOneStack(stack).ifPresent((pStack) => slot.safeInsert(pStack))
-            } else if (oStack.hasTag('kubejs:beer')) {
-                let taken = slot.safeTake(oStack.getCount(), 65535, player)
-                let added = AddItemIntoBundle(stack, taken, 1, (pStack) => 1)
-                if (added > 0) PlayerBundleInsertSound(player)
-                if (taken.getCount() > added) slot.safeInsert(taken.copyWithCount(taken.getCount() - added))
-            }
-            return true
-        })
-        .barWidth((stack) => {
-            let stackList = GetBundleContents(stack)
-            return Math.min(1 + 12 * stackList.length, 13)
-        })
+        .overrideOtherStackedOnMe(BundleStackedOnMe(1, item => item.hasTag('kubejs:beer'), true))
+        .overrideStackedOnOther(BundleStackedOnOther(1, item => item.hasTag('kubejs:beer'), true))
+        .barWidth(BundleBarWidth)
         .barColor(() => Color.DARK_BLUE)
-        .tooltipImage((stack) => {
-            let itemList = $NonNullList.create()
-            GetBundleContents(stack).forEach((pStack) => itemList.add(pStack))
-            return Optional.of(new $BundleTooltip(itemList, GetBundleCountentWeight(stack, (pStack) => 1)))
-        })
+        .tooltipImage(BundleTooltip)
         .food(food => food.hunger(2).saturation(1).effect('brewery:drunk', 200, 0, 1))
         .maxStackSize(1)
         .texture('kubejs:item/organs/plant/hop_kidney')

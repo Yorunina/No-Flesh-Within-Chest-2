@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+        "front": "kubejs:block/organ_processing_table_front_idle",
+        "side": "kubejs:block/organ_processing_table_side",
+        "top": "kubejs:block/organ_processing_table_side",
+        "bottom": "kubejs:block/organ_processing_table_bottom"
+    }
+}

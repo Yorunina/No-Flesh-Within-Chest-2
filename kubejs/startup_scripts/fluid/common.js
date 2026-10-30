@@ -54,4 +54,6 @@ StartupEvents.registry('fluid', event => {
         .bucketColor(0xFFFF5F)
         .stillTexture('kubejs:block/fluid/ageing_fluid')
         .flowingTexture('kubejs:block/fluid/ageing_fluid')
+
+    event.create('kubejs:other_fluid').thickTexture('#0be599').thinTexture('#0be599').translucent().noBlock()
 })

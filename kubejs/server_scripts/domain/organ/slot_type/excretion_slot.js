@@ -50,6 +50,10 @@ function RemoveChestCavityOrgan(customData, ccInstance, organIndex, slotType, ne
  */
 function ExcretionSlotEvent(customData, ccInstance) {
     if (!customData['excretionOrganList']) return
+    if (ccInstance.getOrganQueryIndex().hasItem('kubejs:gula_belt', true, null)) {
+        customData['excretionOrganList'].clear()
+        return
+    }
     const onlyMap = new Map()
     const invTypeData = ccInstance.getInventoryTypeData()
     let strategyFuncList = []

@@ -243,3 +243,35 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:task_singularity_11')
     .addDefault(Text.translatable('tooltips.kubejs.task_singularity_11.default.1').gray())
     .addShift(Text.translatable('tooltips.kubejs.task_singularity_11.shift.1'))
 )
+
+const factoryTooltipItems = [
+    'the_witness',
+    'world_computer_mechanism',
+    'final_fabritem',
+    'flesh_sheet',
+    'flesh_mechanism',
+    'flesh_ingot',
+    'factory_ingot',
+    'search_everything',
+    'organ_processing_table',
+    'stress_extract',
+    'throat_fabritem',
+    'furnace_fabritem',
+    'burning_fabritem',
+    'first_fabritem',
+    'compact_fabritem'
+]
+
+for (let itemId of factoryTooltipItems) {
+    let shiftKey = 'tooltips.kubejs.' + itemId + '.shift.1'
+    let description = Text.translatable(shiftKey)
+    if (itemId == 'final_fabritem') description = Text.translatable(shiftKey, FactoryHeartUniqueHover)
+    if (itemId == 'stress_extract') description = Text.translatable(shiftKey, StressHover)
+    ApplyMultiStateTooltip(
+        new MultiStateTooltip('kubejs:' + itemId)
+            .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+            .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+            .addDefault(Text.translatable('tooltips.kubejs.' + itemId + '.default.1').gray())
+            .addShift(description)
+    )
+}

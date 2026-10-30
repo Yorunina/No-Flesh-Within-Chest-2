@@ -17,6 +17,12 @@ function DeserializeItemFromNbt(data) {
     return res
 }
 
+/**
+ * 创建标记指定坐标的藏宝图。
+ * @param {Internal.ServerLevel} level
+ * @param {Internal.BlockPos} pos
+ * @returns {Internal.ItemStack}
+ */
 function GetTreaseMapItem(level, pos) {
     let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
     $MapItem.renderBiomePreviewMap(level, mapItem)
@@ -197,4 +203,103 @@ function GetPlayerHeadItem(playerName) {
     let nbt = new $CompoundTag()
     nbt.putString('SkullOwner', playerName)
     return Item.of('minecraft:player_head', nbt)
+}
+
+/**
+ * 按增量调整器官损伤；超过最大损伤时不写入。
+ * @param {Internal.ItemStack} organItem
+ * @param {number} amount
+ * @returns {void}
+ */
+function ChangeItemDamage(organItem, amount) {
+    let damage = organItem.getDamageValue() + amount
+    if (damage <= organItem.getMaxDamage()) organItem.setDamageValue(damage)
+}
+
+/**
+ * 检查产物能否完整放入目标堆叠，同时遵守物品与槽位上限。
+ * @param {Internal.ItemStack} existingItem
+ * @param {Internal.ItemStack | null} outputItem
+ * @param {number} [slotLimit]
+ * @returns {boolean}
+ */
+function CanMergeItemStacks(existingItem, outputItem, slotLimit) {
+    if (!outputItem || outputItem.isEmpty()) return false
+    let limit = outputItem.getMaxStackSize()
+    if (slotLimit != null) limit = Math.min(limit, slotLimit)
+    if (existingItem.isEmpty()) return outputItem.getCount() <= limit
+    return $ItemStack.isSameItemSameTags(existingItem, outputItem)
+        && existingItem.getCount() + outputItem.getCount() <= Math.min(limit, existingItem.getMaxStackSize())
+}
+
+/**
+ * 按顺序查找 Create 加工配方，每次调用重新抽取随机产物。
+ * @param {Internal.Level} level
+ * @param {Internal.ItemStack} inputItem
+ * @param {Internal.AllRecipeTypes[]} recipeTypes
+ * @param {object | null} [scope]
+ * @param {number | string} [position]
+ * @returns {Internal.ItemStack[]}
+ */
+function GetProcessingRecipeResults(level, inputItem, recipeTypes, scope, position) {
+    let findRecipe = () => {
+        let inventory = new $ProcessingInventory(ctx => {})
+        inventory.insertItem(inputItem, false)
+        let wrapper = new $RecipeWrapper(inventory)
+        for (let recipeType of recipeTypes) {
+            let recipe = recipeType.find(wrapper, level)
+            if (recipe.isPresent()) return recipe.get()
+        }
+        return null
+    }
+    let recipe = scope
+        ? GetCachedNativeRecipe(scope, position, 'create|' + recipeTypes.join('|') + '|' + String(level.dimension), inputItem, findRecipe)
+        : findRecipe()
+    let results = []
+    if (recipe) for (let output of recipe.rollResults()) results.push(output)
+    return results
+}
+
+/**
+ * 复制产物并按倍数调整数量，保留原始堆叠。
+ * @param {Internal.ItemStack[]} outputs
+ * @param {number} count
+ * @returns {Internal.ItemStack[]}
+ */
+function ScaleItemOutputs(outputs, count) {
+    let result = []
+    for (let output of outputs) {
+        let stack = output.copy()
+        stack.setCount(output.getCount() * count)
+        result.push(stack)
+    }
+    return result
+}
+
+/**
+ * 读取匹配 Tetra 增益键的等级，未找到时返回 0。
+ * @param {Internal.ItemStack | null} stack
+ * @param {string} improvementKey
+ * @returns {number}
+ */
+function GetImprovementLevel(stack, improvementKey) {
+    if (!stack || !stack.hasNBT()) return 0
+    let level = 0
+    stack.getNbt()
+        .getAllKeys()
+        .forEach(key => {
+            if (key.endsWith(':' + improvementKey)) level = stack.getNbt().getInt(key)
+        })
+    return level
+}
+
+/**
+ * 循环切换物品 NBT 中保存的四向状态。
+ * @param {Internal.ItemClickedEventJS} event
+ * @returns {void}
+ */
+function CycleItemDirection(event) {
+    let nbt = event.item.getOrCreateTag()
+    let state = Math.max(0, Math.min(4 - 1, nbt.getInt('direction_state')))
+    nbt.putInt('direction_state', (state + 1) % 4)
 }

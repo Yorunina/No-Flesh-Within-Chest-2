@@ -1,4 +1,8 @@
 // priority: 1900
+/**
+ * 创建器官安装事件执行器。
+ * @constructor
+ */
 function OrganTakeOnStrategyModel() {
     this.eventId = 'organ_take_on'
     /**@type {function[]} */
@@ -10,14 +14,18 @@ function OrganTakeOnStrategyModel() {
 
 OrganTakeOnStrategyModel.prototype = {
     /**
-     * @param {function(...any): void} data
+     * 注册在器官安装策略前运行的回调。
+     * @param {(customData: OrganChestCavityUpdateStrategyCustomData, event: Internal.EvaluateChestCavityJS) => void} initFunc
+     * @returns {OrganTakeOnStrategyModel}
      */
     addInit: function (initFunc) {
         this.inits.push(initFunc)
         return this
     },
     /**
-     * @param {function(...any): void} data
+     * 注册在器官安装策略后运行的回调。
+     * @param {(customData: OrganChestCavityUpdateStrategyCustomData, event: Internal.EvaluateChestCavityJS) => void} deferFunc
+     * @returns {OrganTakeOnStrategyModel}
      */
     addDefer: function (deferFunc) {
         this.defers.push(deferFunc)
@@ -27,6 +35,7 @@ OrganTakeOnStrategyModel.prototype = {
      * @param {Internal.LivingEntity} entity
      * @param {OrganEventCustomData} customData
      * @param {any[]} args
+     * @returns {void}
      */
     run: function (entity, customData, args) {
         const ccInstance = entity.chestCavityInstance

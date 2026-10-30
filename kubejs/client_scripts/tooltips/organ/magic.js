@@ -120,3 +120,13 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:bridge_mod')
     .addDefault(Text.translatable('tooltips.kubejs.bridge_mod.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.bridge_mod.alt.1'))
 )
+
+RegistryOrganTooltip(
+    new MultiStateTooltip('kubejs:enchanting_stresssourse')
+        .addDefault((text, item) => {
+            let size = item.getEnchantments().size()
+            return [Text.translatable('tooltips.kubejs.enchanting_stresssourse.default.1', Text.yellow(size.toFixed(0)))]
+        })
+        .addAlt(Text.translatable('tooltips.kubejs.enchanting_stresssourse.alt.1', NearbyOrganHover))
+        .addAlt(Text.translatable('tooltips.kubejs.enchanting_stresssourse.alt.2', StressHover))
+)

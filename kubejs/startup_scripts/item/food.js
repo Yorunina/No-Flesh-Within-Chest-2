@@ -41,4 +41,9 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:magic_mushroom').texture('kubejs:item/food/magic_mushroom').maxStackSize(64).food(food => food.hunger(3).saturation(4).effect('chestcavity:surgical_anesthesia', 600, 0, 1))
     event.create('kubejs:magic_mushroom_colloid').texture('kubejs:item/food/magic_mushroom_colloid').maxStackSize(64).food(food => food.hunger(12).saturation(0.2).effect('chestcavity:surgical_anesthesia', 600, 0, 1))
+
+    event.create('kubejs:throat_fabritem')
+        .texture('kubejs:item/food/throat_fabritem')
+        .food(food => food.hunger(10).saturation(0.6).alwaysEdible())
+        .tag('kubejs:factory')
 })

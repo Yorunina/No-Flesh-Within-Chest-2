@@ -7,3 +7,8 @@ JEIEvents.removeCategories(event => {
 JEIEvents.hideItems(event => {
     event.hide('@irons_spellbooks')
 })
+
+JEIEvents.hideItems(event => {
+    event.hide('kubejs:incomplete_genius')
+    event.hide('kubejs:incomplete_flesh_mechanism')
+})

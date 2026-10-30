@@ -1,0 +1,27 @@
+{
+    "key": "flesh_ingot",
+    "category": "metal",
+    "primary": 3.2,
+    "secondary": 3,
+    "tertiary": 5.5,
+    "durability": 663,
+    "integrityCost": 3,
+    "integrityGain": 3,
+    "magicCapacity": 130,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "d04343",
+        "texture": "d04343"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "kubejs:flesh_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:iron"
+    }
+}

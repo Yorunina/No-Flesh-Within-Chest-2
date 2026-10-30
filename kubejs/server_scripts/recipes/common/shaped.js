@@ -183,3 +183,24 @@ ServerEvents.recipes(event => {
     event.shapeless(Item.of('agricraft:netherite_sliver', 9), ['minecraft:netherite_scrap'])
     event.shapeless(Item.of('agricraft:amathyllis_petal', 9), ['minecraft:amethyst_shard'])
 })
+
+ServerEvents.recipes(event => {
+    event.shapeless(Item.of('kubejs:mechanical_press'), ['create_biotech:bionic_mechanism', 'createdieselgenerators:hammer'])
+    event.shapeless(Item.of('kubejs:factory_ingot'), [
+        'create:andesite_alloy',
+        'minecraft:copper_ingot',
+        'create:zinc_ingot',
+        'create:brass_ingot',
+        'create_biotech:asurine_alloy',
+        'kubejs:flesh_ingot',
+        'create:refined_radiance',
+        'createutilities:void_steel_ingot',
+        'create:shadow_steel'
+    ])
+    event.shapeless(Item.of('kubejs:output_brass_funnel'), ['kubejs:brass_funnel'])
+    event.shapeless(Item.of('kubejs:brass_funnel'), ['kubejs:output_brass_funnel'])
+    event.shaped('2x kubejs:throat_fabritem', ['AAA', 'ABA', 'AAA'], {
+        A: '#c:foods/raw_meat',
+        B: 'kubejs:throat_fabritem'
+    })
+})

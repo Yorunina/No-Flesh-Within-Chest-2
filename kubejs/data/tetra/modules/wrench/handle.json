@@ -1,0 +1,32 @@
+{
+    "replace": true,
+    "slots": ["wrench/handle"],
+    "type": "tetra:basic_module",
+    "variants": [
+        {
+            "materials": ["tetra:wood/", "tetra:metal/"],
+            "key": "handle/",
+            "attributes": {},
+            "aspects": {},
+            "effects": {},
+            "durability": 200,
+            "integrity": 0,
+            "models":[{"location": "tetra:item/module/wrench/handle/decoration"}],
+            "extract": {
+                "durability": 1,
+                "integrity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/wrench_glyph.png",
+                    "textureX": 16,
+                    "textureY": 0
+                },
+                "availableTextures": ["default"],
+                "models": [
+                    {
+                        "location": "tetra:item/module/wrench/handle/"
+                    }
+                ]
+            }
+        }
+    ]
+}

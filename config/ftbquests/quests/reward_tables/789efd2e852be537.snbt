@@ -1,0 +1,29 @@
+{
+	icon: "kubejs:factory_injection"
+	id: "789EFD2E852BE537"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "kubejs:factory_injection"
+			ignore_reward_blocking: true
+			isServer: false
+			remove: false
+			stage: "ftb_factory_injection_recipe"
+			title: "{ftbquests.loot_table.8691662707116205367.item_1}"
+			type: "maa:astages"
+		}
+		{
+			auto: "invisible"
+			icon: "kubejs:factory_injection"
+			ignore_reward_blocking: true
+			isServer: true
+			remove: false
+			stage: "ftb_factory_injection_recipe"
+			title: "{ftbquests.loot_table.8691662707116205367.item_2}"
+			type: "maa:astages"
+		}
+	]
+	title: "{ftbquests.loot_table.8691662707116205367.title}"
+}

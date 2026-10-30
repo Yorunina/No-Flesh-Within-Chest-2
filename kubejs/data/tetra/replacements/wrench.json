@@ -1,0 +1,14 @@
+[
+  {
+    "predicate": {
+      "items": ["create:wrench"]
+    },
+    "item": "kubejs:wrench",
+    "archetype": "wrench",
+    "modules": {
+      "wrench/cogwheel": ["wrench/cogwheel", "cogwheel/oak"],
+      "wrench/handle": ["wrench/handle", "handle/oak"],
+      "wrench/head": ["wrench/head", "head/gold"]
+    }
+  }
+]

@@ -21,10 +21,15 @@ function VitaRoseLiverDoDamage(customData, event, organItem, organIndex, slotTyp
     target.potionEffects.add('kubejs:vita_toxins', 20 * 60, 0, false, false)
 
     SetVitaToxinsSource(target, sourceEntity.getUuid())
-    if (GetCustomDataMap(sourceEntity.chestCavityInstance, 'hasVitaBerry', 0) == 1) {
+    const query = sourceEntity.chestCavityInstance.getOrganQueryIndex()
+    const berryIndex = query.findItem('kubejs:vita_berry', true, null)
+    // 与安装遍历一致，按首个有效格子选择分支，不自动挑选槽位加成。
+    const hasBerry = berryIndex >= 0
+    const fertileBerry = hasBerry && query.getSlotType(berryIndex) == FertileSlot
+    if (hasBerry && !fertileBerry) {
         SetVitaToxinsType(target, 'max_health')
         SetVitaToxinsCoe(target, slotType == FertileSlot ? 10 : 2)
-    } else if (GetCustomDataMap(sourceEntity.chestCavityInstance, 'hasVitaBerry', 0) == 2) {
+    } else if (fertileBerry) {
         SetVitaToxinsType(target, 'armor')
         SetVitaToxinsCoe(target, slotType == FertileSlot ? 10 : 2)
     } else {

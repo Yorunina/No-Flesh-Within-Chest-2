@@ -1,0 +1,29 @@
+{
+    "replace": true,
+    "slots": [
+        "wrench/cogwheel"
+    ],
+    "requirement":{
+        "type":"tetrajs:custom",
+        "key":"genesis_process_done"
+    },
+    "rarity": "infinite",
+    "materialSlotCount": 0,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+		"textureX": 80,
+		"textureY": 32
+    },
+    "outcomes": [
+        {
+            "experienceCost": 30,
+            "requiredTools": {
+                "hammer_dig": "minecraft:diamond"
+            },
+            "improvements": {
+                "genesis_attack_multi_process": 1
+            }
+        }
+    ]
+}

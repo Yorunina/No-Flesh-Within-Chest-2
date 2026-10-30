@@ -127,3 +127,15 @@ RegistryOrganTooltip(new MultiStateTooltip('kubejs:tasty_gland')
     .addDefault(Text.translatable('tooltips.kubejs.tasty_gland.default.1').gray())
     .addAlt(Text.translatable('tooltips.kubejs.tasty_gland.alt.1'))
 )
+
+RegistryOrganTooltip(
+    new MultiStateTooltip('kubejs:gula_belt')
+        .addDefault(Text.translatable('tooltips.kubejs.gula_belt.default.1').gray())
+        .addAlt(Text.translatable('tooltips.kubejs.gula_belt.alt.1'))
+)
+
+RegistryOrganTooltip(
+    new MultiStateTooltip('kubejs:honeyed_stress')
+        .addDefault(Text.translatable('tooltips.kubejs.honeyed_stress.default.1').gray())
+        .addAlt(Text.translatable('tooltips.kubejs.honeyed_stress.alt.1', StressHover))
+)
