@@ -1,5 +1,5 @@
 // priority: 500
-RegistryOrgan('kubejs:basin')
+RegistryOrgan('kubejs:basin').setRank(2).setCanSpawn(false)
 /**
  * 处理器官事件：chest_cavity_update。
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -9,7 +9,7 @@ RegistryOrgan('kubejs:basin')
  * @param {string} slotType
  * @returns {void}
  */
-function basinChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function BasinChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const chestCavity = player.chestCavityInstance
     const ccInv = chestCavity.inventory
@@ -31,5 +31,5 @@ function basinChestCavityUpdate(customData, event, organItem, organIndex, slotTy
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:basin')
-        .addStrategy('chest_cavity_update', basinChestCavityUpdate)
+        .addStrategy('chest_cavity_update', BasinChestCavityUpdate)
 )

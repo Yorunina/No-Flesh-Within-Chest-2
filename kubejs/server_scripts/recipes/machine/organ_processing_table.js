@@ -232,35 +232,6 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
-            let nutritionbar = data.getInt('nutrition_bar')
-            if (nutritionbar < 200) return ctx.error('')
-            return ctx.success()
-        })
-        .requireSU(256)
-        .requireFunctionOnEnd(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
-            let nutritionbar = data.getInt('nutrition_bar')
-            data.putInt('nutrition_bar', nutritionbar - 200)
-            incrORGANPROCESSINGTABLERuns(machine.owner)
-            return ctx.success()
-        })
-        .requireStructure(organProcessingTableStructure, organProcessingTableStructureMapping)
-        .requireItem(
-            Item.of(
-                'create_biotech:large_cardboard_box',
-                '{CapturedEntity:{id:"minecraft:wither"},CapturedEntityDescId:"entity.minecraft.wither"}'
-            ).weakNBT(),
-            'input_1'
-        )
-        .requireItem(Item.of('kubejs:flesh_mechanism'), 'input_2')
-        .produceItem(Item.of('kubejs:mechanical_drill', 1), 'output_1')
-        .resetOnError()
-    event.recipes.custommachinery
-        .custom_machine('kubejs:organ_processing_table', 200)
-        .requireFunctionToStart(ctx => {
-            const machine = ctx.getMachine()
-            const data = machine.getData()
             const item = machine.getItemStored('input_2')
             if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
@@ -285,8 +256,6 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
-            const item = machine.getItemStored('input_2')
-            if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
             if (nutritionbar < 300) return ctx.error('')
             return ctx.success()
@@ -309,8 +278,6 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
-            const item = machine.getItemStored('input_2')
-            if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
             if (nutritionbar < 300) return ctx.error('')
             return ctx.success()
@@ -333,8 +300,6 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
-            const item = machine.getItemStored('input_2')
-            if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
             if (nutritionbar < 300) return ctx.error('')
             return ctx.success()
@@ -452,8 +417,6 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
-            const item = machine.getItemStored('input_2')
-            if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
             if (nutritionbar < 300) return ctx.error('')
             return ctx.success()
@@ -476,8 +439,6 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
-            const item = machine.getItemStored('input_2')
-            if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
             if (nutritionbar < 300) return ctx.error('')
             return ctx.success()
@@ -500,8 +461,6 @@ ServerEvents.recipes(event => {
         .requireFunctionToStart(ctx => {
             const machine = ctx.getMachine()
             const data = machine.getData()
-            const item = machine.getItemStored('input_2')
-            if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
             if (nutritionbar < 300) return ctx.error('')
             return ctx.success()

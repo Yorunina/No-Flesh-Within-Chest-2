@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:mechanical_mixer')
     .addScore('kubejs:stress', -1)
+    .setRank(2)
+    .setCanSpawn(false)
 const mechanicalMixerUUID = UUID.fromString('8FF6968C-B438-4F7E-B5F5-C8965141B0E4')
 /**
  * 处理器官事件：entity_tick。
@@ -12,7 +14,7 @@ const mechanicalMixerUUID = UUID.fromString('8FF6968C-B438-4F7E-B5F5-C8965141B0E
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalMixerEntityTick(customData, event, organItem, organIndex, slotType) {
+function MechanicalMixerEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -59,7 +61,7 @@ function mechanicalMixerEntityTick(customData, event, organItem, organIndex, slo
                     let query = chestCavity.getOrganQueryIndex()
                     let deployerIndex = query.findItem('kubejs:deployer', false, null)
                     let deployerItem = deployerIndex < 0 ? null : ccInv.getStackInSlot(deployerIndex)
-                    if (query.hasItem('create:package_frogport', false, null) && deployerItem && deployerItem.getCount() == 1 && deployerItem.getId() == 'kubejs:deployer') {
+                    if (deployerItem && deployerItem.getCount() == 1 && deployerItem.getId() == 'kubejs:deployer') {
                         let remainder = outputItem1.copy()
                         let available = 64 - GetBundleCountentWeight(deployerItem, pStack => 1)
                         if (available > 0) {
@@ -88,34 +90,32 @@ function mechanicalMixerEntityTick(customData, event, organItem, organIndex, slo
 }
 
 /**
- * 处理器官事件：entity_be_hurt。
+ * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
- * @param {Internal.LivingDamageEvent} event
+ * @param {Internal.OpenedEntityTickJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalMixerSwitch(customData, event, organItem, organIndex, slotType) {
-    if (organItem.getDamageValue() == 100) {
-        let staleAttribute = event.entity.getAttribute('minecraft:generic.armor')
-        if (staleAttribute) staleAttribute.removeModifier(mechanicalMixerUUID)
-        return
-    }
+function MechanicalMixerAttributeEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     if (!player.isPlayer()) return
-    const chestCavity = player.chestCavityInstance
-    let stressValue = chestCavity.getOrganScore('kubejs:stress')
-    if (stressValue < 0) {
+    if (organItem.getDamageValue() == 100) {
         let staleAttribute = player.getAttribute('minecraft:generic.armor')
         if (staleAttribute) staleAttribute.removeModifier(mechanicalMixerUUID)
         return
     }
-    let remaining = organItem.getMaxDamage() - organItem.getDamageValue()
-    let value = stressValue * Math.ceil(remaining / 10) * 0.5
-
+    const chestCavity = player.chestCavityInstance
     const attributeInstance = player.getAttribute('minecraft:generic.armor')
     if (!attributeInstance) return
+    let stressValue = chestCavity.getOrganScore('kubejs:stress')
+    if (stressValue < 0) {
+        attributeInstance.removeModifier(mechanicalMixerUUID)
+        return
+    }
+    let remaining = organItem.getMaxDamage() - organItem.getDamageValue()
+    let value = stressValue * Math.ceil(remaining / 10) * 0.5
 
     attributeInstance.removeModifier(mechanicalMixerUUID)
     let attributeModifier = new $AttributeModifier(mechanicalMixerUUID, 'MechanicalMixer', value, $Operation.ADDITION)
@@ -131,7 +131,7 @@ function mechanicalMixerSwitch(customData, event, organItem, organIndex, slotTyp
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalMixerTakeOff(customData, event, organItem, organIndex, slotType) {
+function MechanicalMixerOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
     const attributeInstance = entity.getAttribute('minecraft:generic.armor')
     if (attributeInstance) {
@@ -139,30 +139,11 @@ function mechanicalMixerTakeOff(customData, event, organItem, organIndex, slotTy
     }
 }
 
-/**
- * 处理器官事件：entity_tick / chest_cavity_update。
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS | Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function mechanicalMixerClearInvalidAttribute(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    if (organItem.getDamageValue() < organItem.getMaxDamage() && chestCavity.getOrganScore('kubejs:stress') >= 0) return
-    const attribute = entity.getAttribute('minecraft:generic.armor')
-    if (attribute) attribute.removeModifier(mechanicalMixerUUID)
-}
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:mechanical_mixer')
-        .addStrategy('entity_tick', mechanicalMixerEntityTick)
-        .addOnlyStrategy('entity_be_hurt', mechanicalMixerSwitch, 1)
-        .addOnlyStrategy('organ_take_off', mechanicalMixerTakeOff, 1)
-        .addOnlyStrategy('entity_tick', mechanicalMixerClearInvalidAttribute, -1)
-        .addOnlyStrategy('chest_cavity_update', mechanicalMixerClearInvalidAttribute, -1)
+        .addStrategy('entity_tick', MechanicalMixerEntityTick)
+        .addOnlyStrategy('entity_tick', MechanicalMixerAttributeEntityTick, -1)
+        .addOnlyStrategy('organ_take_off', MechanicalMixerOrganTakeOff)
 )
 
 const mixerRecipes = []

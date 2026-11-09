@@ -1,6 +1,8 @@
 // priority: 500
 
 RegistryOrgan('kubejs:mechanized_belt')
+    .setRank(3)
+    .setCanSpawn(false)
 
 /**
  * 处理器官事件：organ_take_on。
@@ -11,7 +13,7 @@ RegistryOrgan('kubejs:mechanized_belt')
  * @param {string} slotType
  * @returns {void}
  */
-function machineBeltTakeOn(customData, event, organItem, organIndex, slotType) {
+function MechanizedBeltOrganTakeOn(customData, event, organItem, organIndex, slotType) {
     if (slotType == MachinaryLubricant) {
         RemoveCustomDataMap(event.entity.chestCavityInstance, 'beltEnabled')
     }
@@ -19,5 +21,5 @@ function machineBeltTakeOn(customData, event, organItem, organIndex, slotType) {
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:mechanized_belt')
-        .addOnlyStrategy('organ_take_on', machineBeltTakeOn)
+        .addOnlyStrategy('organ_take_on', MechanizedBeltOrganTakeOn)
 )

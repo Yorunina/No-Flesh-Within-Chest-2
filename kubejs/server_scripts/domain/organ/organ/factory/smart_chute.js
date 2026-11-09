@@ -1,6 +1,8 @@
 // priority: 500
 
 RegistryOrgan('kubejs:smart_chute')
+    .setRank(3)
+    .setCanSpawn(false)
 /**
  * 处理器官事件：chest_cavity_update。
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -10,7 +12,7 @@ RegistryOrgan('kubejs:smart_chute')
  * @param {string} slotType
  * @returns {void}
  */
-function smartChuteChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function SmartChuteChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -40,5 +42,5 @@ function smartChuteChestCavityUpdate(customData, event, organItem, organIndex, s
 }
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:smart_chute')
-        .addStrategy('chest_cavity_update', smartChuteChestCavityUpdate)
+        .addStrategy('chest_cavity_update', SmartChuteChestCavityUpdate)
 )

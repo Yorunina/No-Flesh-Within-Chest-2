@@ -2,7 +2,10 @@
 
 RegistryOrgan('kubejs:spout')
     .addScore('kubejs:stress', -1)
+    .setRank(2)
+    .setCanSpawn(false)
 const spoutUUID = UUID.fromString('712EA98A-C8AD-6AAF-5B11-656D0EED2DE9')
+
 /**
  * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
@@ -12,7 +15,7 @@ const spoutUUID = UUID.fromString('712EA98A-C8AD-6AAF-5B11-656D0EED2DE9')
  * @param {string} slotType
  * @returns {void}
  */
-function spoutEntityTick(customData, event, organItem, organIndex, slotType) {
+function SpoutEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -57,9 +60,9 @@ function spoutEntityTick(customData, event, organItem, organIndex, slotType) {
     // Quantity is an execution condition, not part of recipe identity.
     if (!tankFluid.containsFluid(fluidToRemove)) return
     let simulated = tankHandler.drain(fluidToRemove, 'simulate')
-    if (!simulated || simulated.getAmount() != fluidToRemove.getAmount() || !simulated.isFluidEqual(fluidToRemove)) return
+    if (simulated.getAmount() != fluidToRemove.getAmount() || !simulated.containsFluid(fluidToRemove)) return
     let drained = tankHandler.drain(fluidToRemove, 'execute')
-    if (!drained || drained.getAmount() != fluidToRemove.getAmount() || !drained.isFluidEqual(fluidToRemove)) return
+    if (drained.getAmount() != fluidToRemove.getAmount() || !drained.containsFluid(fluidToRemove)) return
 
     organItem.getNbt().getList('Items', TAG_COMPOUND).set(0, tankHandler.getContainer().save(new $CompoundTag()))
     inputItem.shrink(1)
@@ -83,21 +86,21 @@ function spoutEntityTick(customData, event, organItem, organIndex, slotType) {
 }
 
 /**
- * 处理器官事件：entity_be_hurt。
+ * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
- * @param {Internal.LivingDamageEvent} event
+ * @param {Internal.OpenedEntityTickJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  * @returns {void}
  */
-function spoutSwitch(customData, event, organItem, organIndex, slotType) {
+function SpoutAttributeEntityTick(customData, event, organItem, organIndex, slotType) {
+    const player = event.entity
     if (organItem.getDamageValue() == 100) {
-        let staleAttribute = event.entity.getAttribute('minecraft:generic.max_health')
+        let staleAttribute = player.getAttribute('minecraft:generic.max_health')
         if (staleAttribute) staleAttribute.removeModifier(spoutUUID)
         return
     }
-    const player = event.entity
     const chestCavity = player.chestCavityInstance
     let stressValue = chestCavity.getOrganScore('kubejs:stress')
     if (stressValue < 0) {
@@ -123,7 +126,7 @@ function spoutSwitch(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  * @returns {void}
  */
-function spoutTakeOff(customData, event, organItem, organIndex, slotType) {
+function SpoutOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
     const attributeInstance = entity.getAttribute('minecraft:generic.max_health')
     if (attributeInstance) {
@@ -131,30 +134,11 @@ function spoutTakeOff(customData, event, organItem, organIndex, slotType) {
     }
 }
 
-/**
- * 处理器官事件：entity_tick / chest_cavity_update。
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS | Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function spoutClearInvalidAttribute(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    if (organItem.getDamageValue() < organItem.getMaxDamage() && chestCavity.getOrganScore('kubejs:stress') >= 0) return
-    const attribute = entity.getAttribute('minecraft:generic.max_health')
-    if (attribute) attribute.removeModifier(spoutUUID)
-}
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:spout')
-        .addStrategy('entity_tick', spoutEntityTick)
-        .addOnlyStrategy('entity_be_hurt', spoutSwitch, 1)
-        .addOnlyStrategy('organ_take_off', spoutTakeOff)
-        .addOnlyStrategy('entity_tick', spoutClearInvalidAttribute, -1)
-        .addOnlyStrategy('chest_cavity_update', spoutClearInvalidAttribute, -1)
+        .addStrategy('entity_tick', SpoutEntityTick)
+        .addOnlyStrategy('entity_tick', SpoutAttributeEntityTick, -1)
+        .addOnlyStrategy('organ_take_off', SpoutOrganTakeOff)
 )
 
 const spoutRecipes = []
@@ -185,7 +169,7 @@ function spoutOrganRecipe(inputItem, tankHandler) {
         if (recipe.input != null) {
             if (inputItem != recipe.input) continue
         }
-        if (!tankHandler.getFluid().isFluidEqual(recipe.requiredFluid)) continue
+        if (!tankHandler.getFluid().containsFluid(recipe.requiredFluid)) continue
         return {
             output: Item.of(recipe.output),
             fluidToRemove: recipe.requiredFluid

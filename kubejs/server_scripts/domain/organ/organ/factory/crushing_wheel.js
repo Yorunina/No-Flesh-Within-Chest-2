@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:crushing_wheel')
     .addScore('kubejs:stress', -1)
+    .setRank(2)
+    .setCanSpawn(true)
 const crushingWheelUUID = UUID.fromString('10381375-F52C-FE3C-07EB-1853B244CCAA')
 /**
  * 处理器官事件：entity_tick。
@@ -12,7 +14,7 @@ const crushingWheelUUID = UUID.fromString('10381375-F52C-FE3C-07EB-1853B244CCAA'
  * @param {string} slotType
  * @returns {void}
  */
-function crushingWheelEntityTick(customData, event, organItem, organIndex, slotType) {
+function CrushingWheelEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -87,7 +89,7 @@ function crushingWheelEntityTick(customData, event, organItem, organIndex, slotT
  * @param {string} slotType
  * @returns {void}
  */
-function crushingWheelKeyActive(customData, event, organItem, organIndex, slotType) {
+function CrushingWheelKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -118,26 +120,22 @@ function crushingWheelKeyActive(customData, event, organItem, organIndex, slotTy
 }
 
 /**
- * 处理器官事件：entity_do_damage。
+ * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.OpenedEntityTickJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  * @returns {void}
  */
-function crushingWheelDamage(customData, event, organItem, organIndex, slotType) {
+function CrushingWheelAttributeEntityTick(customData, event, organItem, organIndex, slotType) {
+    const player = event.entity
+    if (!player.isPlayer()) return
     if (organItem.getDamageValue() == 100) {
-        let stalePlayer = event.source.actual
-        if (stalePlayer && stalePlayer.isPlayer()) {
-            let staleAttribute = stalePlayer.getAttribute('minecraft:generic.attack_damage')
-            if (staleAttribute) staleAttribute.removeModifier(crushingWheelUUID)
-        }
+        let staleAttribute = player.getAttribute('minecraft:generic.attack_damage')
+        if (staleAttribute) staleAttribute.removeModifier(crushingWheelUUID)
         return
     }
-    /**@type {Internal.LivingEntity} */
-    const player = event.source.actual
-    if (!player.isPlayer()) return
     const chestCavity = player.chestCavityInstance
     const attributeInstance = player.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
@@ -177,39 +175,18 @@ function crushingWheelDamage(customData, event, organItem, organIndex, slotType)
  * @param {string} slotType
  * @returns {void}
  */
-function crushingWheelTakeOff(customData, event, organItem, organIndex, slotType) {
+function CrushingWheelOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     ClearCachedNativeRecipe(event.entity.chestCavityInstance, organIndex)
     let attribute = event.entity.getAttribute('minecraft:generic.attack_damage')
     if (attribute) attribute.removeModifier(crushingWheelUUID)
 }
 
-/**
- * 处理器官事件：entity_tick / chest_cavity_update。
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS | Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function crushingWheelClearInvalidAttribute(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    let mainhand = entity.mainHandItem
-    if (organItem.getDamageValue() < organItem.getMaxDamage() && chestCavity.getOrganScore('kubejs:stress') >= 0
-        && !mainhand.isEmpty() && mainhand.hasTag('forge:tools/wrench')) return
-    const attribute = entity.getAttribute('minecraft:generic.attack_damage')
-    if (attribute) attribute.removeModifier(crushingWheelUUID)
-}
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:crushing_wheel')
-        .addStrategy('entity_tick', crushingWheelEntityTick)
-        .addOnlyStrategy('key_active', crushingWheelKeyActive)
-        .addOnlyStrategy('entity_do_damage', crushingWheelDamage)
-        .addOnlyStrategy('organ_take_off', crushingWheelTakeOff)
-        .addOnlyStrategy('entity_tick', crushingWheelClearInvalidAttribute, -1)
-        .addOnlyStrategy('chest_cavity_update', crushingWheelClearInvalidAttribute, -1)
+        .addStrategy('entity_tick', CrushingWheelEntityTick)
+        .addOnlyStrategy('key_active', CrushingWheelKeyActive)
+        .addOnlyStrategy('entity_tick', CrushingWheelAttributeEntityTick, -1)
+        .addOnlyStrategy('organ_take_off', CrushingWheelOrganTakeOff)
 )
 
 const crushingRecipes = []

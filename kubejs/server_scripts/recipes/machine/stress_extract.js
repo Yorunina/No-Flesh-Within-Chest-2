@@ -9,6 +9,13 @@ ServerEvents.recipes(event => {
         [20, Infinity, 576]
     ]
     for (let range of stressRanges) {
+        registerStressRange(range)
+    }
+
+    /**
+     * @param {number[]} currentRange
+     */
+    function registerStressRange(currentRange) {
         event.recipes.custommachinery
             .custom_machine('kubejs:stress_extract', 1200)
             .requireFunctionToStart(ctx => {
@@ -17,9 +24,9 @@ ServerEvents.recipes(event => {
                 let chestCavity = owner.chestCavityInstance
                 if (!chestCavity) return ctx.error('')
                 let stress = chestCavity.getOrganScore('kubejs:stress')
-                return stress > range[0] && stress <= range[1] ? ctx.success() : ctx.error('')
+                return stress > currentRange[0] && stress <= currentRange[1] ? ctx.success() : ctx.error('')
             })
-            .produceSU(256, range[2])
+            .produceSU(256, currentRange[2])
             .resetOnError()
             .hide()
     }

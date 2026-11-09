@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:purgatory')
     .addScore('chestcavity:defense', -2)
+    .setRank(3)
+    .setCanSpawn(false)
 /**
  * 处理器官事件：entity_do_damage。
  * @param {OrganEventCustomData} customData
@@ -11,7 +13,7 @@ RegistryOrgan('kubejs:purgatory')
  * @param {string} slotType
  * @returns {void}
  */
-function purgatoryEntityDodamage(customData, event, organItem, organIndex, slotType) {
+function PurgatoryEntityDoDamage(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.LivingEntity} */
     const player = event.source.actual
     const chestCavity = player.chestCavityInstance
@@ -47,5 +49,5 @@ function purgatoryEntityDodamage(customData, event, organItem, organIndex, slotT
 }
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:purgatory')
-        .addOnlyStrategy('entity_do_damage', purgatoryEntityDodamage)
+        .addOnlyStrategy('entity_do_damage', PurgatoryEntityDoDamage)
 )

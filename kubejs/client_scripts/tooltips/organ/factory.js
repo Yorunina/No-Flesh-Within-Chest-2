@@ -60,16 +60,13 @@ RegistryOrganTooltip(
     new MultiStateTooltip('kubejs:factory_heart')
         .addDefault(Text.translatable('tooltips.kubejs.factory_heart.default.1').gray())
         .addCtrl(FactoryCoreSlotType)
-        .addCtrl(Text.translatable('tooltips.kubejs.factory_heart.ctrl.1', FactoryHeartOrganScoreUniqueHover))
-        .addCtrl(Text.translatable('tooltips.kubejs.factory_heart.ctrl.2', FactoryHeartUniqueHover))
+        .addCtrl(Text.translatable('tooltips.kubejs.factory_heart.ctrl.1', FactoryHeartUniqueHover))
 )
 
 RegistryOrganTooltip(
     new MultiStateTooltip('kubejs:genius')
         .addDefault(Text.translatable('tooltips.kubejs.genius.default.1').gray())
-        .addAlt(Text.translatable('tooltips.kubejs.genius.alt.1', KeyActiveHover))
-        .addAlt(Text.translatable('tooltips.kubejs.genius.alt.2', KeyActiveHover))
-        .addAlt(Text.translatable('tooltips.kubejs.genius.alt.3', StressHover))
+        .addAlt(Text.translatable('tooltips.kubejs.genius.alt.1', StressHover))
 )
 
 RegistryOrganTooltip(
@@ -87,13 +84,6 @@ RegistryOrganTooltip(
         .addAlt(Text.translatable('tooltips.kubejs.magnetic_stomach.alt.1'))
         .addAlt(Text.translatable('tooltips.kubejs.magnetic_stomach.alt.2'))
         .addAlt(Text.translatable('tooltips.kubejs.magnetic_stomach.alt.3'))
-)
-
-RegistryOrganTooltip(
-    new MultiStateTooltip('kubejs:mechanical_drill')
-        .addDefault(Text.translatable('tooltips.kubejs.mechanical_drill.default.1').gray())
-        .addAlt(Text.translatable('tooltips.kubejs.mechanical_drill.alt.1', StressHover))
-        .addAlt(Text.translatable('tooltips.kubejs.mechanical_drill.alt.2'))
 )
 
 RegistryOrganTooltip(

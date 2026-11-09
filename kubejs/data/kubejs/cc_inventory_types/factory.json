@@ -29,7 +29,7 @@
         {"x": 191, "y": 123},
         {"x": 216, "y": 162, "type": "fastworking_slot"},
         {"x": 216, "y": 180, "type": "fastworking_slot"},
-        {"x": 109, "y": 23, "type": "factory_core_slot"}
+        {"x": 215, "y": 105, "type": "factory_core_slot"}
     ],
     "backgroundTexture": "kubejs:textures/gui/chest_cavity/factory.png",
     "titlePosition": {

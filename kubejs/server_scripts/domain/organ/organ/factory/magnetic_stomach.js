@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:magnetic_stomach')
     .addScore('chestcavity:digestion', 1)
+    .setRank(3)
+    .setCanSpawn(false)
 
 /**
  * 处理器官事件：entity_be_interacted。
@@ -12,7 +14,7 @@ RegistryOrgan('kubejs:magnetic_stomach')
  * @param {string} slotType
  * @returns {void}
  */
-function magneticStomachEntityBeInteracted(customData, event, organItem, organIndex, slotType) {
+function MagneticStomachEntityBeInteracted(customData, event, organItem, organIndex, slotType) {
     /**@type {Internal.ServerPlayer} */
     const entity = event.target
     if (!(entity instanceof $LivingEntity)) return
@@ -61,7 +63,7 @@ function magneticStomachEntityBeInteracted(customData, event, organItem, organIn
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:magnetic_stomach')
-        .addStrategy('entity_be_interacted', magneticStomachEntityBeInteracted)
+        .addStrategy('entity_be_interacted', MagneticStomachEntityBeInteracted)
 )
 
 ItemEvents.rightClicked('kubejs:magnetic_stomach', CycleItemDirection)

@@ -1,6 +1,8 @@
 // priority: 500
 RegistryOrgan('kubejs:steam_engine')
     .addScore('kubejs:stress', 3)
+    .setRank(2)
+    .setCanSpawn(false)
 /**
  * 处理器官事件：chest_cavity_update。
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
@@ -10,7 +12,7 @@ RegistryOrgan('kubejs:steam_engine')
  * @param {string} slotType
  * @returns {void}
  */
-function steamEngineChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function SteamEngineChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const chestCavity = player.chestCavityInstance
     if (slotType == RevolutionFlame) {
@@ -25,5 +27,5 @@ function steamEngineChestCavityUpdate(customData, event, organItem, organIndex, 
 }
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:steam_engine')
-        .addStrategy('chest_cavity_update', steamEngineChestCavityUpdate, 5)
+        .addStrategy('chest_cavity_update', SteamEngineChestCavityUpdate, 5)
 )

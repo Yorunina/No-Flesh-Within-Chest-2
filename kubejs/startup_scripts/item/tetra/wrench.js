@@ -8,5 +8,4 @@ StartupEvents.registry('item', event => {
         .tjs$addMinorSlot('wrench/handle', -15, 30, true)
         .tjs$addMinorSlot('wrench/head', -15, 0, true)
         .tag('forge:tools/wrench')
-        .tag('kubejs:factory')
 })

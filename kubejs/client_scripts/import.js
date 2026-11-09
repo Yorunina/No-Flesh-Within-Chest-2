@@ -39,3 +39,5 @@ const $SpriteResourceLoader = Java.loadClass('net.minecraft.client.renderer.text
 const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob')
 const $Player = Java.loadClass('net.minecraft.world.entity.player.Player')
 const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
+
+const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')

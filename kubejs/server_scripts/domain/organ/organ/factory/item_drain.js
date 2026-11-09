@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:item_drain')
     .addScore('kubejs:stress', -1)
+    .setRank(2)
+    .setCanSpawn(false)
 const itemDrainUUID = UUID.fromString('BEC13193-1626-7A02-C1E4-CE130630EBEF')
 /**
  * 处理器官事件：entity_tick。
@@ -12,7 +14,7 @@ const itemDrainUUID = UUID.fromString('BEC13193-1626-7A02-C1E4-CE130630EBEF')
  * @param {string} slotType
  * @returns {void}
  */
-function itemDrainEntityTick(customData, event, organItem, organIndex, slotType) {
+function ItemDrainEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -94,26 +96,22 @@ function itemDrainEntityTick(customData, event, organItem, organIndex, slotType)
 }
 
 /**
- * 处理器官事件：entity_do_damage。
+ * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.OpenedEntityTickJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  * @returns {void}
  */
-function itemDrainSwitch(customData, event, organItem, organIndex, slotType) {
+function ItemDrainAttributeEntityTick(customData, event, organItem, organIndex, slotType) {
+    const player = event.entity
+    if (!player.isPlayer()) return
     if (organItem.getDamageValue() == 100) {
-        let stalePlayer = event.source.actual
-        if (stalePlayer && stalePlayer.isPlayer()) {
-            let staleAttribute = stalePlayer.getAttribute('attributeslib:life_steal')
-            if (staleAttribute) staleAttribute.removeModifier(itemDrainUUID)
-        }
+        let staleAttribute = player.getAttribute('attributeslib:life_steal')
+        if (staleAttribute) staleAttribute.removeModifier(itemDrainUUID)
         return
     }
-    /**@type {Internal.LivingEntity} */
-    const player = event.source.actual
-    if (!player.isPlayer()) return
     const chestCavity = player.chestCavityInstance
     const attributeInstance = player.getAttribute('attributeslib:life_steal')
     if (!attributeInstance) return
@@ -137,7 +135,7 @@ function itemDrainSwitch(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  * @returns {void}
  */
-function itemDrainTakeOff(customData, event, organItem, organIndex, slotType) {
+function ItemDrainOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     const { entity } = event
     const attributeInstance = entity.getAttribute('attributeslib:life_steal')
     if (attributeInstance) {
@@ -145,30 +143,11 @@ function itemDrainTakeOff(customData, event, organItem, organIndex, slotType) {
     }
 }
 
-/**
- * 处理器官事件：entity_tick / chest_cavity_update。
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS | Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function itemDrainClearInvalidAttribute(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    if (organItem.getDamageValue() < organItem.getMaxDamage() && chestCavity.getOrganScore('kubejs:stress') >= 0) return
-    const attribute = entity.getAttribute('attributeslib:life_steal')
-    if (attribute) attribute.removeModifier(itemDrainUUID)
-}
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:item_drain')
-        .addStrategy('entity_tick', itemDrainEntityTick)
-        .addOnlyStrategy('entity_do_damage', itemDrainSwitch)
-        .addOnlyStrategy('organ_take_off', itemDrainTakeOff)
-        .addOnlyStrategy('entity_tick', itemDrainClearInvalidAttribute, -1)
-        .addOnlyStrategy('chest_cavity_update', itemDrainClearInvalidAttribute, -1)
+        .addStrategy('entity_tick', ItemDrainEntityTick)
+        .addOnlyStrategy('entity_tick', ItemDrainAttributeEntityTick, -1)
+        .addOnlyStrategy('organ_take_off', ItemDrainOrganTakeOff)
 )
 
 const itemDrainRecipes = []

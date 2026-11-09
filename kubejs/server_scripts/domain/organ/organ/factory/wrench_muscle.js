@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:wrench_muscle')
     .addScore('chestcavity:strength', 1)
+    .setRank(3)
+    .setCanSpawn(false)
 
 const targetItems = [
     'kubejs:mechanical_press',
@@ -22,7 +24,7 @@ const targetItems = [
  * @param {string} slotType
  * @returns {void}
  */
-function wrenchMuscleItemRightClicked(customData, event, organItem, organIndex, slotType) {
+function WrenchMuscleItemRightClicked(customData, event, organItem, organIndex, slotType) {
     const item = event.item
     if (item.isEmpty()) return
     let itemId = item.getId()
@@ -38,5 +40,5 @@ function wrenchMuscleItemRightClicked(customData, event, organItem, organIndex, 
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:wrench_muscle')
-        .addOnlyStrategy('item_right_clicked', wrenchMuscleItemRightClicked)
+        .addOnlyStrategy('item_right_clicked', WrenchMuscleItemRightClicked)
 )

@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:encased_fan')
     .addScore('kubejs:stress', -1)
+    .setRank(2)
+    .setCanSpawn(false)
 const encasedFanUUID = UUID.fromString('57FB6D2E-FBD6-3588-1674-40F15BB04088')
 
 /**
@@ -13,7 +15,7 @@ const encasedFanUUID = UUID.fromString('57FB6D2E-FBD6-3588-1674-40F15BB04088')
  * @param {string} slotType
  * @returns {void}
  */
-function encasedFanEntityTick(customData, event, organItem, organIndex, slotType) {
+function EncasedFanEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const registryAccess = level.registryAccess()
@@ -102,7 +104,7 @@ function encasedFanResetGreedyThroatCooldown(player, chestCavity) {
  * @param {string} slotType
  * @returns {void}
  */
-function encasedFanKeyActive(customData, event, organItem, organIndex, slotType) {
+function EncasedFanKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const registryAccess = level.registryAccess()
@@ -143,19 +145,19 @@ function encasedFanKeyActive(customData, event, organItem, organIndex, slotType)
  * @param {string} slotType
  * @returns {void}
  */
-function encasedFanSwitch(customData, event, organItem, organIndex, slotType) {
-    if (organItem.getDamageValue() == 100) {
-        let staleAttribute = event.entity.getAttribute('ars_nouveau:ars_nouveau.perk.mana_regen')
-        if (staleAttribute) staleAttribute.removeModifier(encasedFanUUID)
-        return
-    }
+function EncasedFanModeEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     if (!player.isPlayer()) return
-    const level = player.level
-    const chestCavity = event.chestCavity
     if (slotType == DigestSlot) {
         ChangeItemDamage(organItem, -5)
     }
+    if (organItem.getDamageValue() == 100) {
+        let staleAttribute = player.getAttribute('ars_nouveau:ars_nouveau.perk.mana_regen')
+        if (staleAttribute) staleAttribute.removeModifier(encasedFanUUID)
+        return
+    }
+    const level = player.level
+    const chestCavity = event.chestCavity
     let stressValue = chestCavity.getOrganScore('kubejs:stress')
     if (stressValue < 0) {
         let staleAttribute = player.getAttribute('ars_nouveau:ars_nouveau.perk.mana_regen')
@@ -164,6 +166,10 @@ function encasedFanSwitch(customData, event, organItem, organIndex, slotType) {
     }
     let remaining = organItem.getMaxDamage() - organItem.getDamageValue()
     const fanEffect = encasedFanMode(organItem)
+    if (fanEffect != 3) {
+        let staleAttribute = player.getAttribute('ars_nouveau:ars_nouveau.perk.mana_regen')
+        if (staleAttribute) staleAttribute.removeModifier(encasedFanUUID)
+    }
     if (fanEffect == 1) {
         let fireTick = player.getRemainingFireTicks()
         if (remaining != 0) {
@@ -209,7 +215,7 @@ function encasedFanSwitch(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  * @returns {void}
  */
-function encasedFanTakeOff(customData, event, organItem, organIndex, slotType) {
+function EncasedFanOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     ClearCachedNativeRecipe(event.entity.chestCavityInstance, organIndex)
     const { entity } = event
     const attributeInstance = entity.getAttribute('ars_nouveau:ars_nouveau.perk.mana_regen')
@@ -234,32 +240,12 @@ function encasedFanMode(organItem) {
     return 0
 }
 
-/**
- * 处理器官事件：entity_tick / chest_cavity_update。
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS | Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function encasedFanClearInvalidAttribute(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    if (organItem.getDamageValue() < organItem.getMaxDamage() && chestCavity.getOrganScore('kubejs:stress') >= 0
-        && encasedFanMode(organItem) == 3) return
-    const attribute = entity.getAttribute('ars_nouveau:ars_nouveau.perk.mana_regen')
-    if (attribute) attribute.removeModifier(encasedFanUUID)
-}
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:encased_fan')
-        .addStrategy('entity_tick', encasedFanEntityTick)
-        .addOnlyStrategy('key_active', encasedFanKeyActive)
-        .addOnlyStrategy('entity_tick', encasedFanSwitch)
-        .addOnlyStrategy('organ_take_off', encasedFanTakeOff)
-        .addOnlyStrategy('entity_tick', encasedFanClearInvalidAttribute, -1)
-        .addOnlyStrategy('chest_cavity_update', encasedFanClearInvalidAttribute, -1)
+        .addStrategy('entity_tick', EncasedFanEntityTick)
+        .addOnlyStrategy('key_active', EncasedFanKeyActive)
+        .addOnlyStrategy('entity_tick', EncasedFanModeEntityTick, -1)
+        .addOnlyStrategy('organ_take_off', EncasedFanOrganTakeOff)
 )
 
 const encasedFanRecipes = []

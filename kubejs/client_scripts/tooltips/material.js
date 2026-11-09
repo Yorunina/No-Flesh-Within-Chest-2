@@ -245,14 +245,7 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:task_singularity_11')
 )
 
 const factoryTooltipItems = [
-    'the_witness',
-    'world_computer_mechanism',
     'final_fabritem',
-    'flesh_sheet',
-    'flesh_mechanism',
-    'flesh_ingot',
-    'factory_ingot',
-    'search_everything',
     'organ_processing_table',
     'stress_extract',
     'throat_fabritem',

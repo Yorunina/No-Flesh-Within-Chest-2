@@ -55,15 +55,6 @@
 			y: 14.5d
 		}
 		{
-			dependency: "6FC7987D3A2BFF96"
-			height: 2.0d
-			image: "kubejs:textures/gui/tasks/mantle_fuel/world_machine_frame.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: -10.5d
-			y: 10.0d
-		}
-		{
 			dependency: "3F496B2E690EA137"
 			height: 4.0d
 			image: "kubejs:textures/gui/tasks/tail.png"
@@ -561,9 +552,6 @@
 				"{ftbquests.chapter.14409C4AEBA1888C.quest7218DEB02B1E86F9.description1}"
 				""
 				"{ftbquests.chapter.14409C4AEBA1888C.quest7218DEB02B1E86F9.description2}"
-				"{ftbquests.chapter.14409C4AEBA1888C.quest7218DEB02B1E86F9.description3}"
-				"{ftbquests.chapter.14409C4AEBA1888C.quest7218DEB02B1E86F9.description4}"
-				"{ftbquests.chapter.14409C4AEBA1888C.quest7218DEB02B1E86F9.description5}"
 			]
 			hide_dependency_lines: true
 			id: "7218DEB02B1E86F9"
@@ -630,29 +618,6 @@
 			y: 11.5d
 		}
 		{
-			dependencies: [
-				"133A28D884F01479"
-				"1912855FF1B51A51"
-			]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest6FC7987D3A2BFF96.description1}"]
-			hide_until_deps_complete: true
-			id: "6FC7987D3A2BFF96"
-			rewards: [{
-				id: "51C4943E639468E0"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest6FC7987D3A2BFF96.subtitle}"
-			tasks: [{
-				id: "7422A34E2086811A"
-				item: "kubejs:world_computer_mechanism"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.14409C4AEBA1888C.quest6FC7987D3A2BFF96.title}"
-			x: -10.5d
-			y: 10.0d
-		}
-		{
 			dependencies: ["28E8463EBD3FA2CB"]
 			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest7AE8BCB0965060F8.description1}"]
 			hide_until_deps_complete: true
@@ -674,29 +639,6 @@
 			}]
 			x: -3.0d
 			y: 16.0d
-		}
-		{
-			dependencies: ["6FC7987D3A2BFF96"]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest5A8A6D7AB78862EA.description1}"]
-			hide_until_deps_complete: true
-			id: "5A8A6D7AB78862EA"
-			rewards: [{
-				id: "684DF3595DCE3812"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest5A8A6D7AB78862EA.subtitle}"
-			tasks: [{
-				id: "225E50DF4B9324D9"
-				item: {
-					Count: 1
-					id: "kubejs:genius"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -12.0d
-			y: 10.0d
 		}
 		{
 			dependencies: ["556704809E719293"]
@@ -838,56 +780,6 @@
 			}]
 			x: 6.0d
 			y: 8.5d
-		}
-		{
-			dependencies: ["254A9E2C77548347"]
-			description: [
-				"{ftbquests.chapter.14409C4AEBA1888C.quest311E126807DAFBAF.description1}"
-				""
-				"{ftbquests.chapter.14409C4AEBA1888C.quest311E126807DAFBAF.description2}"
-			]
-			hide_until_deps_complete: true
-			id: "311E126807DAFBAF"
-			rewards: [{
-				id: "7AA0824E43392E97"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest311E126807DAFBAF.subtitle}"
-			tasks: [{
-				id: "00FE758D0B2F2DD0"
-				item: {
-					Count: 1
-					id: "kubejs:brass_funnel"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -10.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["254A9E2C77548347"]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest7F0EE556C17FF345.description1}"]
-			hide_until_deps_complete: true
-			id: "7F0EE556C17FF345"
-			rewards: [{
-				id: "6E6644C5C261036C"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest7F0EE556C17FF345.subtitle}"
-			tasks: [{
-				id: "7396004B7AEF957A"
-				item: {
-					Count: 1
-					id: "kubejs:smart_chute"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -13.5d
-			y: 1.0d
 		}
 		{
 			dependencies: ["7218DEB02B1E86F9"]
@@ -1209,29 +1101,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["254A9E2C77548347"]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest1F8F4F67C5C1EDF7.description1}"]
-			hide_until_deps_complete: true
-			id: "1F8F4F67C5C1EDF7"
-			rewards: [{
-				id: "6DA540A4A479B7A4"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest1F8F4F67C5C1EDF7.subtitle}"
-			tasks: [{
-				id: "58DA7F42B53EB816"
-				item: {
-					Count: 1
-					id: "kubejs:output_brass_funnel"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -12.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["5ADB336C403D6716"]
 			description: [
 				"{ftbquests.chapter.14409C4AEBA1888C.quest74CD1E8D7FEAD538.description1}"
@@ -1253,29 +1122,6 @@
 			}]
 			x: -6.0d
 			y: 14.5d
-		}
-		{
-			dependencies: ["254A9E2C77548347"]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest3FD3121ED8C282F5.description1}"]
-			hide_until_deps_complete: true
-			id: "3FD3121ED8C282F5"
-			rewards: [{
-				id: "4932E011E18B0430"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest3FD3121ED8C282F5.subtitle}"
-			tasks: [{
-				id: "73098D50124E14C9"
-				item: {
-					Count: 1
-					id: "kubejs:magnetic_stomach"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -19.5d
-			y: 1.0d
 		}
 		{
 			dependencies: ["7BE727A47286042F"]
@@ -1553,54 +1399,6 @@
 			y: 16.0d
 		}
 		{
-			dependencies: ["254A9E2C77548347"]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest71A29F2621D70383.description1}"]
-			hide_until_deps_complete: true
-			id: "71A29F2621D70383"
-			rewards: [{
-				id: "7BB5901B83B551CF"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest71A29F2621D70383.subtitle}"
-			tasks: [{
-				id: "7C407A3AF3548C75"
-				item: {
-					Count: 1
-					id: "kubejs:teleport_intestine"
-					tag: {
-						direction_state: 0
-					}
-				}
-				type: "item"
-			}]
-			x: -16.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["254A9E2C77548347"]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest1BA048EFF8F88A93.description1}"]
-			hide_until_deps_complete: true
-			id: "1BA048EFF8F88A93"
-			rewards: [{
-				id: "29BB458C31B22F68"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest1BA048EFF8F88A93.subtitle}"
-			tasks: [{
-				id: "05C2B678119D700F"
-				item: {
-					Count: 1
-					id: "kubejs:recovery_spleen"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -18.0d
-			y: 1.0d
-		}
-		{
 			dependencies: ["74CD1E8D7FEAD538"]
 			description: [
 				"{ftbquests.chapter.14409C4AEBA1888C.quest1912855FF1B51A51.description1}"
@@ -1625,28 +1423,6 @@
 			}]
 			x: -9.0d
 			y: 10.0d
-		}
-		{
-			dependencies: ["254A9E2C77548347"]
-			description: ["{ftbquests.chapter.14409C4AEBA1888C.quest241FD31057AD16D5.description1}"]
-			id: "241FD31057AD16D5"
-			rewards: [{
-				id: "306F9D909FC34B2B"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.14409C4AEBA1888C.quest241FD31057AD16D5.subtitle}"
-			tasks: [{
-				id: "312809A0E937F8F7"
-				item: {
-					Count: 1
-					id: "kubejs:wrench_muscle"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -15.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["765199F59D11849F"]

@@ -1,8 +1,8 @@
 {
     "key": "factory_ingot",
     "category": "metal",
-    "primary": 7.4,
-    "secondary": 3.4,
+    "primary": 2.1,
+    "secondary": 5.3,
     "tertiary": 6.7,
     "durability": 763,
     "integrityCost": 4,

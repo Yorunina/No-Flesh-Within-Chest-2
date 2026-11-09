@@ -6,7 +6,7 @@ EncasedFanDecorator.setRender(ctx => {
     const guiGraphics = ctx.guiGraphics
     if (!item.isEmpty() && item.getId() == 'kubejs:encased_fan') {
         let contents = getBundleContents(item)
-        if (contents.isEmpty()) return
+        if (contents.length == 0) return
         let curItem = contents[0]
         if (curItem.isEmpty()) return
         let itemId = curItem.getId()
@@ -81,10 +81,9 @@ function getBundleContents(stack) {
     let nbt = stack.getNbt()
     if (nbt == null) return []
     let listTag = nbt.getList('Items', TAG_COMPOUND)
-    return listTag
-        .stream()
-        .map(pTag => $ItemStack.of(pTag))
-        .toList()
+    let contents = []
+    listTag.forEach(pTag => contents.push($ItemStack.of(pTag)))
+    return contents
 }
 
 const otherBeltModeDecorator = RenderJSItemDecoratorHandler.registerForAllItem('otherbeltmode', ctx => {})

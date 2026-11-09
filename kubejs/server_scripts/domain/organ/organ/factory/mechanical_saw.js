@@ -1,6 +1,8 @@
 // priority: 500
 RegistryOrgan('kubejs:mechanical_saw')
     .addScore('kubejs:stress', -1)
+    .setRank(2)
+    .setCanSpawn(false)
 const mechanicalSawUUID = UUID.fromString('5925BB46-AA14-3CD5-2EAE-A6BFBBA6087C')
 /**
  * 处理器官事件：entity_tick。
@@ -11,7 +13,7 @@ const mechanicalSawUUID = UUID.fromString('5925BB46-AA14-3CD5-2EAE-A6BFBBA6087C'
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalSawEntityTick(customData, event, organItem, organIndex, slotType) {
+function MechanicalSawEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -68,7 +70,7 @@ function mechanicalSawEntityTick(customData, event, organItem, organIndex, slotT
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalSawKeyActive(customData, event, organItem, organIndex, slotType) {
+function MechanicalSawKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -101,7 +103,7 @@ function mechanicalSawKeyActive(customData, event, organItem, organIndex, slotTy
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalSawBlockRightClicked(customData, event, organItem, organIndex, slotType) {
+function MechanicalSawBlockRightClicked(customData, event, organItem, organIndex, slotType) {
     const level = event.level
     const block = event.block
     if (event.hand != 'main_hand') return
@@ -113,26 +115,22 @@ function mechanicalSawBlockRightClicked(customData, event, organItem, organIndex
 }
 
 /**
- * 处理器官事件：entity_do_damage。
+ * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.OpenedEntityTickJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalSawSwitch(customData, event, organItem, organIndex, slotType) {
+function MechanicalSawAttributeEntityTick(customData, event, organItem, organIndex, slotType) {
+    const player = event.entity
+    if (!player.isPlayer()) return
     if (organItem.getDamageValue() == 100) {
-        let stalePlayer = event.source.actual
-        if (stalePlayer && stalePlayer.isPlayer()) {
-            let staleAttribute = stalePlayer.getAttribute('attributeslib:armor_pierce')
-            if (staleAttribute) staleAttribute.removeModifier(mechanicalSawUUID)
-        }
+        let staleAttribute = player.getAttribute('attributeslib:armor_pierce')
+        if (staleAttribute) staleAttribute.removeModifier(mechanicalSawUUID)
         return
     }
-    /**@type {Internal.LivingEntity} */
-    const player = event.source.actual
-    if (!player.isPlayer()) return
     const chestCavity = player.chestCavityInstance
     const attributeInstance = player.getAttribute('attributeslib:armor_pierce')
     if (!attributeInstance) return
@@ -156,7 +154,7 @@ function mechanicalSawSwitch(customData, event, organItem, organIndex, slotType)
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalSawTakeOff(customData, event, organItem, organIndex, slotType) {
+function MechanicalSawOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     ClearCachedNativeRecipe(event.entity.chestCavityInstance, organIndex)
     const { entity } = event
     const attributeInstance = entity.getAttribute('attributeslib:armor_pierce')
@@ -165,32 +163,14 @@ function mechanicalSawTakeOff(customData, event, organItem, organIndex, slotType
     }
 }
 
-/**
- * 处理器官事件：entity_tick / chest_cavity_update。
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS | Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function mechanicalSawClearInvalidAttribute(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    if (organItem.getDamageValue() < organItem.getMaxDamage() && chestCavity.getOrganScore('kubejs:stress') >= 0) return
-    const attribute = entity.getAttribute('attributeslib:armor_pierce')
-    if (attribute) attribute.removeModifier(mechanicalSawUUID)
-}
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:mechanical_saw')
-        .addStrategy('entity_tick', mechanicalSawEntityTick)
-        .addOnlyStrategy('key_active', mechanicalSawKeyActive)
-        .addOnlyStrategy('block_right_clicked', mechanicalSawBlockRightClicked)
-        .addOnlyStrategy('entity_do_damage', mechanicalSawSwitch)
-        .addOnlyStrategy('organ_take_off', mechanicalSawTakeOff)
-        .addOnlyStrategy('entity_tick', mechanicalSawClearInvalidAttribute, -1)
-        .addOnlyStrategy('chest_cavity_update', mechanicalSawClearInvalidAttribute, -1)
+        .addStrategy('entity_tick', MechanicalSawEntityTick)
+        .addOnlyStrategy('key_active', MechanicalSawKeyActive)
+        .addOnlyStrategy('block_right_clicked', MechanicalSawBlockRightClicked)
+        .addOnlyStrategy('entity_tick', MechanicalSawAttributeEntityTick, -1)
+        .addOnlyStrategy('organ_take_off', MechanicalSawOrganTakeOff)
 )
 
 const sawRecipes = []

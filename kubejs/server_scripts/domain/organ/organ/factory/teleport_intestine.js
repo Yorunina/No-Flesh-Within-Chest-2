@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:teleport_intestine')
     .addScore('chestcavity:nutrition', 1)
+    .setRank(3)
+    .setCanSpawn(false)
 
 /**
  * 处理器官事件：item_right_clicked。
@@ -12,7 +14,7 @@ RegistryOrgan('kubejs:teleport_intestine')
  * @param {string} slotType
  * @returns {void}
  */
-function teleportIntestineItemRightClicked(customData, event, organItem, organIndex, slotType) {
+function TeleportIntestineItemRightClicked(customData, event, organItem, organIndex, slotType) {
     const item = event.item
     if (item.isEmpty() || item.getMod() == 'chestcavity' || item.is('kubejs:blood_extractor')) return
     const entity = event.entity
@@ -42,7 +44,7 @@ function teleportIntestineItemRightClicked(customData, event, organItem, organIn
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:teleport_intestine')
-        .addOnlyStrategy('item_right_clicked', teleportIntestineItemRightClicked)
+        .addOnlyStrategy('item_right_clicked', TeleportIntestineItemRightClicked)
 )
 
 ItemEvents.rightClicked('kubejs:teleport_intestine', CycleItemDirection)

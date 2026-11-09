@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
 ServerEvents.recipes(event => {
     event.recipes.create
         .sequenced_assembly([Item.of('kubejs:genius')], 'kubejs:witch_fibroma', [
-            event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'kubejs:world_computer_mechanism']),
+            event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'kubejs:factory_ingot']),
             event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'create:cogwheel']),
             event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'create:mechanical_pump']),
             event.recipes.create.deploying('kubejs:incomplete_genius', ['kubejs:incomplete_genius', 'create:spout']),

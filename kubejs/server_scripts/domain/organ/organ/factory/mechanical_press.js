@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:mechanical_press')
     .addScore('kubejs:stress', -1)
+    .setRank(1)
+    .setCanSpawn(false)
 const mechanicalPressUUID = UUID.fromString('6E1F5205-9D0F-3A3C-B61E-675E162ABD55')
 
 /**
@@ -13,7 +15,7 @@ const mechanicalPressUUID = UUID.fromString('6E1F5205-9D0F-3A3C-B61E-675E162ABD5
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalPressEntityTick(customData, event, organItem, organIndex, slotType) {
+function MechanicalPressEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -77,7 +79,7 @@ function mechanicalPressEntityTick(customData, event, organItem, organIndex, slo
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalPressKeyActive(customData, event, organItem, organIndex, slotType) {
+function MechanicalPressKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -110,26 +112,22 @@ function mechanicalPressKeyActive(customData, event, organItem, organIndex, slot
 }
 
 /**
- * 处理器官事件：entity_do_damage。
+ * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.OpenedEntityTickJS} event
  * @param {Internal.ItemStack} organItem
  * @param {number} organIndex
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalPressSwitch(customData, event, organItem, organIndex, slotType) {
+function MechanicalPressAttributeEntityTick(customData, event, organItem, organIndex, slotType) {
+    const player = event.entity
+    if (!player.isPlayer()) return
     if (organItem.getDamageValue() == 100) {
-        let stalePlayer = event.source.actual
-        if (stalePlayer && stalePlayer.isPlayer()) {
-            let staleAttribute = stalePlayer.getAttribute('minecraft:generic.attack_damage')
-            if (staleAttribute) staleAttribute.removeModifier(mechanicalPressUUID)
-        }
+        let staleAttribute = player.getAttribute('minecraft:generic.attack_damage')
+        if (staleAttribute) staleAttribute.removeModifier(mechanicalPressUUID)
         return
     }
-    /**@type {Internal.LivingEntity} */
-    const player = event.source.actual
-    if (!player.isPlayer()) return
     const chestCavity = player.chestCavityInstance
     const attributeInstance = player.getAttribute('minecraft:generic.attack_damage')
     if (!attributeInstance) return
@@ -150,26 +148,6 @@ function mechanicalPressSwitch(customData, event, organItem, organIndex, slotTyp
 }
 
 /**
- * 处理器官事件：organ_take_on。
- * @param {OrganChestCavityUpdateStrategyCustomData} customData
- * @param {Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function mechanicalPressTakeOn(customData, event, organItem, organIndex, slotType) {
-    const player = event.entity
-    const chestCavity = player.chestCavityInstance
-    if (slotType == MachinaryLubricant) {
-        let organEffect = new OragnEffectModel(organItem)
-            .setPriority(organIndex)
-            .setCustomText((organItem.getMaxDamage() - organItem.getDamageValue()).toFixed(0))
-        SetOrganEffect(chestCavity, organEffect)
-    }
-}
-
-/**
  * 处理器官事件：organ_take_off。
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
  * @param {Internal.EvaluateChestCavityJS} event
@@ -178,7 +156,7 @@ function mechanicalPressTakeOn(customData, event, organItem, organIndex, slotTyp
  * @param {string} slotType
  * @returns {void}
  */
-function mechanicalPressTakeOff(customData, event, organItem, organIndex, slotType) {
+function MechanicalPressOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     ClearCachedNativeRecipe(event.entity.chestCavityInstance, organIndex)
     const { entity } = event
     const player = event.entity
@@ -190,32 +168,12 @@ function mechanicalPressTakeOff(customData, event, organItem, organIndex, slotTy
     }
 }
 
-/**
- * 处理器官事件：entity_tick / chest_cavity_update。
- * @param {OrganEventCustomData} customData
- * @param {Internal.OpenedEntityTickJS | Internal.EvaluateChestCavityJS} event
- * @param {Internal.ItemStack} organItem
- * @param {number} organIndex
- * @param {string} slotType
- * @returns {void}
- */
-function mechanicalPressClearInvalidAttribute(customData, event, organItem, organIndex, slotType) {
-    const entity = event.entity
-    const chestCavity = entity.chestCavityInstance
-    if (organItem.getDamageValue() < organItem.getMaxDamage() && chestCavity.getOrganScore('kubejs:stress') >= 0) return
-    const attribute = entity.getAttribute('minecraft:generic.attack_damage')
-    if (attribute) attribute.removeModifier(mechanicalPressUUID)
-}
-
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:mechanical_press')
-        .addStrategy('entity_tick', mechanicalPressEntityTick)
-        .addOnlyStrategy('entity_do_damage', mechanicalPressSwitch)
-        .addOnlyStrategy('organ_take_on', mechanicalPressTakeOn)
-        .addOnlyStrategy('organ_take_off', mechanicalPressTakeOff)
-        .addOnlyStrategy('key_active', mechanicalPressKeyActive)
-        .addOnlyStrategy('entity_tick', mechanicalPressClearInvalidAttribute, -1)
-        .addOnlyStrategy('chest_cavity_update', mechanicalPressClearInvalidAttribute, -1)
+        .addStrategy('entity_tick', MechanicalPressEntityTick)
+        .addOnlyStrategy('entity_tick', MechanicalPressAttributeEntityTick, -1)
+        .addOnlyStrategy('organ_take_off', MechanicalPressOrganTakeOff)
+        .addOnlyStrategy('key_active', MechanicalPressKeyActive)
 )
 
 const pressRecipes = []

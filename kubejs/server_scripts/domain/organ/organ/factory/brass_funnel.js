@@ -1,6 +1,6 @@
 // priority: 500
 
-RegistryOrgan('kubejs:brass_funnel')
+RegistryOrgan('kubejs:brass_funnel').setRank(3).setCanSpawn(false)
 
 /**
  * 处理器官事件：chest_cavity_update。
@@ -11,7 +11,7 @@ RegistryOrgan('kubejs:brass_funnel')
  * @param {string} slotType
  * @returns {void}
  */
-function brassFunnelChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
+function BrassFunnelChestCavityUpdate(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
 
     const chestCavity = player.chestCavityInstance
@@ -58,5 +58,5 @@ function brassFunnelChestCavityUpdate(customData, event, organItem, organIndex, 
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:brass_funnel')
-        .addStrategy('chest_cavity_update', brassFunnelChestCavityUpdate)
+        .addStrategy('chest_cavity_update', BrassFunnelChestCavityUpdate)
 )

@@ -424,17 +424,17 @@ const ChampionStunAuraHover = Text.translatable('tooltips.kubejs.hover.champion_
     ]))
 
 const FactoryTypeHover = Text.translatable('tooltips.kubejs.hover.factory_type.0')
-    .color('#0be599')
+    .color('#eec168')
     .underlined()
     .hover(
         HoverTextList([
-            Text.translatable('tooltips.kubejs.hover.factory_type.0').color('#0be599'),
+            Text.translatable('tooltips.kubejs.hover.factory_type.0').color('#eec168'),
             Text.translatable('tooltips.kubejs.hover.factory_type.1'),
             Text.translatable('tooltips.kubejs.hover.factory_type.2')
         ])
     )
-const AutomationSlotType = Text.translatable('slot_type.kubejs.automation_slot.1').color('#73ae9d')
-const FastWorkingSlotType = Text.translatable('slot_type.kubejs.fastworking_slot.1').color('#66efba')
+const AutomationSlotType = Text.translatable('slot_type.kubejs.automation_slot.1').color('#eec168')
+const FastWorkingSlotType = Text.translatable('slot_type.kubejs.fastworking_slot.1').color('#d7aa5e')
 const FactoryCoreSlotType = Text.translatable('slot_type.kubejs.factory_core_slot.1').color('#0be599')
 const StressHover = Text.translatable('tooltips.organ_score.kubejs:stress')
     .yellow()
@@ -454,29 +454,12 @@ const FactoryHeartUniqueHover = Text.translatable('tooltips.kubejs.hover.factory
             Text.translatable('tooltips.kubejs.hover.factory_heart_unique.1').color('#0be599')
         ])
     )
-const FactoryHeartOrganScoreUniqueHover = Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.0')
-    .gold()
-    .underlined()
-    .hover(
-        HoverTextList([
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.0'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.1'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.2'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.3'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.4'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.5'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.6'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.7'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.8'),
-            Text.translatable('tooltips.kubejs.hover.factory_heart_organ_unique.9')
-        ])
-    )
 const WorkOrgansHover = Text.translatable('tooltips.kubejs.hover.wrok_organs.0')
-    .color('#0be599')
+    .color('#eec168')
     .underlined()
     .hover(
         HoverTextList([
-            Text.translatable('tooltips.kubejs.hover.wrok_organs.0').color('#0be599'),
+            Text.translatable('tooltips.kubejs.hover.wrok_organs.0').color('#eec168'),
             Text.translatable('tooltips.kubejs.hover.wrok_organs.1')
         ])
     )

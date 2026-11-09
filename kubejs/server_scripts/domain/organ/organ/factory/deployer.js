@@ -2,6 +2,8 @@
 
 RegistryOrgan('kubejs:deployer')
     .addScore('kubejs:stress', -1)
+    .setRank(3)
+    .setCanSpawn(false)
 /**
  * 处理器官事件：entity_tick。
  * @param {OrganEventCustomData} customData
@@ -11,7 +13,7 @@ RegistryOrgan('kubejs:deployer')
  * @param {string} slotType
  * @returns {void}
  */
-function deployerEntityTick(customData, event, organItem, organIndex, slotType) {
+function DeployerEntityTick(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -73,7 +75,7 @@ function deployerEntityTick(customData, event, organItem, organIndex, slotType) 
  * @param {string} slotType
  * @returns {void}
  */
-function deployerKeyActive(customData, event, organItem, organIndex, slotType) {
+function DeployerKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const level = player.level
     const chestCavity = player.chestCavityInstance
@@ -111,7 +113,7 @@ function deployerKeyActive(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  * @returns {void}
  */
-function deployerBlockRightClicked(customData, event, organItem, organIndex, slotType) {
+function DeployerBlockRightClicked(customData, event, organItem, organIndex, slotType) {
     const level = event.level
     const block = event.block
     const player = event.entity
@@ -131,9 +133,9 @@ function deployerBlockRightClicked(customData, event, organItem, organIndex, slo
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:deployer')
-        .addStrategy('entity_tick', deployerEntityTick)
-        .addOnlyStrategy('key_active', deployerKeyActive)
-        .addOnlyStrategy('block_right_clicked', deployerBlockRightClicked)
+        .addStrategy('entity_tick', DeployerEntityTick)
+        .addOnlyStrategy('key_active', DeployerKeyActive)
+        .addOnlyStrategy('block_right_clicked', DeployerBlockRightClicked)
 )
 
 const deployerRecipes = []

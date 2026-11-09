@@ -2,6 +2,8 @@
 RegistryOrgan('kubejs:honeyed_stress')
     .addScore('kubejs:stress', 1)
     .addScore('chestcavity:defense', 1)
+    .setRank(3)
+    .setCanSpawn(false)
 
 /**
  * 处理器官事件：chest_cavity_update。

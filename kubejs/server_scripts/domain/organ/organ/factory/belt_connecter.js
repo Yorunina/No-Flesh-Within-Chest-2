@@ -1,6 +1,6 @@
 // priority: 500
 
-RegistryOrgan('kubejs:belt_connecter')
+RegistryOrgan('kubejs:belt_connecter').setRank(4).setCanSpawn(false)
 
 /**
  * 处理器官事件：organ_take_on。
@@ -11,7 +11,7 @@ RegistryOrgan('kubejs:belt_connecter')
  * @param {string} slotType
  * @returns {void}
  */
-function beltTakeOn(customData, event, organItem, organIndex, slotType) {
+function BeltConnecterOrganTakeOn(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const chestCavity = player.chestCavityInstance
     if (slotType == AutomationSlot) {
@@ -30,7 +30,7 @@ function beltTakeOn(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  * @returns {void}
  */
-function beltKeyActive(customData, event, organItem, organIndex, slotType) {
+function BeltConnecterKeyActive(customData, event, organItem, organIndex, slotType) {
     const player = event.player
     const chestCavity = player.chestCavityInstance
     if (slotType == AutomationSlot) {
@@ -52,7 +52,7 @@ function beltKeyActive(customData, event, organItem, organIndex, slotType) {
  * @param {string} slotType
  * @returns {void}
  */
-function beltTakeOff(customData, event, organItem, organIndex, slotType) {
+function BeltConnecterOrganTakeOff(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const chestCavity = player.chestCavityInstance
     const query = chestCavity.getOrganQueryIndex()
@@ -65,9 +65,9 @@ function beltTakeOff(customData, event, organItem, organIndex, slotType) {
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:belt_connecter')
-        .addOnlyStrategy('organ_take_on', beltTakeOn)
-        .addOnlyStrategy('organ_take_off', beltTakeOff)
-        .addOnlyStrategy('key_active', beltKeyActive)
+        .addOnlyStrategy('organ_take_on', BeltConnecterOrganTakeOn)
+        .addOnlyStrategy('organ_take_off', BeltConnecterOrganTakeOff)
+        .addOnlyStrategy('key_active', BeltConnecterKeyActive)
 )
 
 /**

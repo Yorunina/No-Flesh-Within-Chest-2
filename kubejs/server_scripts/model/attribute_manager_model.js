@@ -27,7 +27,7 @@ AttributeManagerModel.prototype = {
      * @returns {number}
      */
     calResult: function () {
-        return (this.attr * (1 + this.baseMultiModifier) + this.baseAddModifier) * (1 + this.allMultiModifier.reduce((a, b) => a * (1 + b), 1)) + this.allAddModifier
+        return (this.attr * (1 + this.baseMultiModifier) + this.baseAddModifier) * this.allMultiModifier.reduce((a, b) => a * (1 + b), 1) + this.allAddModifier
     },
     /**
      * 

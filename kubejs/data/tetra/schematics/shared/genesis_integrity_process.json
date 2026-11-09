@@ -1,6 +1,7 @@
 {
     "replace": true,
-    "slots": [ 
+    "slots": [
+        "wrench/cogwheel",
         "sword/blade",
         "double/head_left",
         "double/head_right",

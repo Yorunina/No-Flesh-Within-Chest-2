@@ -64,18 +64,12 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/factory/encased_fan')
 
     event.create('kubejs:factory_heart')
-        .parentModel('kubejs:item/factory_heart_model')
+        .texture('kubejs:item/organs/factory/factory_heart')
         .maxStackSize(1)
         .tag('kubejs:factory')
         .tag('kubejs:heart')
 
     event.create('kubejs:genius')
-        .overrideOtherStackedOnMe(BundleStackedOnMe(1, item => !$PotionUtils.getPotion(item).effects.isEmpty(), true))
-        .overrideStackedOnOther(BundleStackedOnOther(1, item => !$PotionUtils.getPotion(item).effects.isEmpty(), true))
-        .barWidth(BundleBarWidth)
-        .barColor(() => Color.DARK_BLUE)
-        .tooltipImage(BundleTooltip)
-        .canFitInsideContainerItems(false)
         .texture('kubejs:item/organs/factory/genius')
         .maxStackSize(1)
         .tag('kubejs:factory')
@@ -101,8 +95,6 @@ StartupEvents.registry('item', event => {
         .barColor(() => Color.DARK_BLUE)
         .canFitInsideContainerItems(false)
         .tooltipImage(BundleTooltip)
-
-    event.create('kubejs:mechanical_drill').texture('kubejs:item/organs/factory/mechanical_drill').maxStackSize(1).tag('kubejs:factory')
 
     event.create('kubejs:mechanical_mixer').texture('kubejs:item/organs/factory/mechanical_mixer').maxStackSize(1).maxDamage(100).tag('kubejs:factory')
 

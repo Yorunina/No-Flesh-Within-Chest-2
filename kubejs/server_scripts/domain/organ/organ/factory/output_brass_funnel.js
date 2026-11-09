@@ -1,6 +1,8 @@
 // priority: 500
 
 RegistryOrgan('kubejs:output_brass_funnel')
+    .setRank(3)
+    .setCanSpawn(false)
 
 /**
  * 处理器官事件：entity_be_hurt。
@@ -11,7 +13,7 @@ RegistryOrgan('kubejs:output_brass_funnel')
  * @param {string} slotType
  * @returns {void}
  */
-function outputBrassFunnelEntityBeHurt(customData, event, organItem, organIndex, slotType) {
+function OutputBrassFunnelEntityBeHurt(customData, event, organItem, organIndex, slotType) {
     const player = event.entity
     const chestCavity = player.chestCavityInstance
     const inventory = chestCavity.inventory
@@ -69,5 +71,5 @@ function outputBrassFunnelEntityBeHurt(customData, event, organItem, organIndex,
 
 RegistryOrganStrategy(
     new OrganStrategyModel('kubejs:output_brass_funnel')
-        .addOnlyStrategy('entity_be_hurt', outputBrassFunnelEntityBeHurt)
+        .addOnlyStrategy('entity_be_hurt', OutputBrassFunnelEntityBeHurt)
 )

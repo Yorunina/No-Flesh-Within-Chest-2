@@ -2,6 +2,8 @@
 RegistryOrgan('kubejs:enchanting_stresssourse')
     .addScore('kubejs:stress', 1)
     .addScore('kubejs:magic_capacity', 2)
+    .setRank(3)
+    .setCanSpawn(false)
 /**
  * 处理器官事件：chest_cavity_update。
  * @param {OrganChestCavityUpdateStrategyCustomData} customData
