@@ -1,14 +1,12 @@
 
 [global]
-	#Global switch for all Create Structures Arise structures. Set to false to prevent every structure from generating. Live reload affects newly generated chunks only.
+	#Global switch for all Create Structures Arise structures. Set to false to prevent every structure from generating.
 	enabled = true
-	#Global spawn density multiplier. 1.0 keeps original spacing, values above 1.0 spawn more often, values below 1.0 spawn less often, and 0 blocks generation. Live reload affects newly generated chunks only.
-	#Range: 0.0 ~ 1000.0
+	#Global spawn density multiplier. 1.0 keeps original spacing, values above 1.0 spawn more often, values below 1.0 spawn less often, and 0 blocks generation.
 	spawn_multiplier = 1.0
 
 [spawn_rates]
-	#Additional global multiplier for all Create Structures Arise structure spawn rates. 1.0 preserves current behavior, lower values make structures less frequent, and 0 blocks generation. Live reload affects newly generated chunks only.
-	#Range: 0.0 ~ 1000.0
+	#Additional global multiplier for all Create Structures Arise structure spawn rates. 1.0 preserves current behavior, lower values make structures less frequent, and 0 blocks generation.
 	global_structure_multiplier = 1.0
 
 [debug]
@@ -30,610 +28,524 @@
 		replacement_block = "minecraft:air"
 
 	[compatibility.worldgen]
-		#When true, airborne structures avoid known mountain, hill, peak, cliff, skyland, and extreme-terrain biome tags. Live reload affects newly generated chunks only.
+		#When true, airborne structures avoid known mountain, hill, peak, cliff, skyland, and extreme-terrain biome tags.
 		avoid_mountain_biomes_for_airborne_structures = true
-		#When true, airborne structures sample nearby terrain and refuse generation when the area is too steep. Live reload affects newly generated chunks only.
+		#When true, airborne structures sample nearby terrain and refuse generation when the area is too steep.
 		avoid_steep_terrain = true
-		#Maximum allowed difference between sampled minimum and maximum terrain height for airborne structures. Live reload affects newly generated chunks only.
-		#Range: 1 ~ 512
+		#Maximum allowed difference between sampled minimum and maximum terrain height for airborne structures.
 		max_allowed_height_difference = 18
-		#Block radius used for airborne steep-terrain sampling. North, south, east, west, and corner points are checked. Live reload affects newly generated chunks only.
-		#Range: 1 ~ 512
+		#Block radius used for airborne steep-terrain sampling. North, south, east, west, and corner points are checked.
 		check_radius = 32
-		#When true, airborne structures avoid Tectonic mountain/extreme-terrain compatibility biome tags when present. Live reload affects newly generated chunks only.
+		#When true, airborne structures avoid Tectonic mountain/extreme-terrain compatibility biome tags when present.
 		blacklist_tectonic_mountain_biomes = true
-		#When true, airborne structures avoid Terralith mountain, cliff, peak, skyland, and extreme-terrain compatibility biome tags when present. Live reload affects newly generated chunks only.
+		#When true, airborne structures avoid Terralith mountain, cliff, peak, skyland, and extreme-terrain compatibility biome tags when present.
 		blacklist_terralith_mountain_biomes = true
-		#When true, airborne structures avoid Biomes O' Plenty mountain, highland, cliff, and crag compatibility biome tags when present. Live reload affects newly generated chunks only.
+		#When true, airborne structures avoid Biomes O' Plenty mountain, highland, cliff, and crag compatibility biome tags when present.
 		blacklist_biomes_o_plenty_mountain_biomes = true
 
 [structures]
 
 	[structures.windmill]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 10
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.pillager_boat]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 150
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 70
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.create_dungeon_base]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 200
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 4
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createlittleman]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 120
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createdesertwell]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 120
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 2
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createpickaxestatue]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createlosttrainstation]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 30
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createcushercrane]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 120
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.pillagersteampunkairship]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 150
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 50
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.minetrain]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 100
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 20
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.crimsite_tower]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 150
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 2
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.chocolate_pit]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 130
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 10
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.honey_pit]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 130
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 10
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createfluidtank]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 30
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.create_copper_statue]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createwitchhut]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 120
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 2
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createhouse]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 120
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 70
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.darkcastle]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 100
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 70
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createairdrop]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 30
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.create_ruined_castle]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.create_bastion]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 100
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 10
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createoldruine]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createmonsterroom]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 90
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 2
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.obsidiantemple]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 60
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.towerofochrum]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 180
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 10
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.deadlordshouse]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 50
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 15
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createcontainer]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 120
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 30
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 
 	[structures.createminiskyvillage]
-		#Enables this structure. Set to false to prevent this structure from generating. Live reload affects newly generated chunks only.
+		#Enables this structure. Set to false to prevent this structure from generating.
 		enabled = true
-		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common. Live reload affects newly generated chunks only.
-		#Range: > 0
+		#Generation weight for this structure. Cannot be negative. Set to 0 to prevent this structure from generating. Values above 1 make this structure more common.
 		weight = 1
-		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 1
+		#Average chunk spacing for this structure before the global spawn multiplier is applied. Must be greater than separation.
 		spacing = 120
-		#Minimum chunk separation for this structure. Must be lower than spacing. Live reload affects newly generated chunks only; existing chunks require world/chunk regeneration.
-		#Range: > 0
+		#Minimum chunk separation for this structure. Must be lower than spacing.
 		separation = 22
-		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure may generate. Empty list means all dimensions are allowed unless blacklisted.
 		dimension_whitelist = []
-		#Dimension IDs where this structure must not generate. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Dimension IDs where this structure must not generate. Entries here override the whitelist.
 		dimension_blacklist = []
-		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure may generate. Use '#namespace:tag' for tags. Empty list means all original datapack biomes are allowed unless blacklisted.
 		biome_whitelist = []
-		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist. Live reload affects newly generated chunks only.
+		#Biome IDs or biome tags where this structure must not generate. Use '#namespace:tag' for tags. Entries here override the whitelist.
 		biome_blacklist = []
 

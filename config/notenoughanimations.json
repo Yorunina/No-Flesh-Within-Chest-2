@@ -1,5 +1,5 @@
 {
-  "configVersion": 11,
+  "configVersion": 12,
   "animationSmoothingSpeed": 0.2,
   "holdingItems": [
     "quad-mstv-mtv:pale_oak_torch",
@@ -49,6 +49,7 @@
   "freezeArmsInBed": true,
   "rotationLock": "NONE",
   "limitRotationLockToFP": true,
+  "applyRotationLockToEveryone": false,
   "showLastUsedSword": false,
   "sheathSwords": [
     "minecraft:golden_sword",
@@ -71,8 +72,25 @@
   "freezingAnimation": true,
   "huggingAnimation": true,
   "narutoRunning": false,
-  "enableInWorldBookRendering": false,
   "disableLegSmoothing": false,
   "bowAnimation": "CUSTOM_V1",
-  "burningAnimation": false
+  "customBowRotationLock": false,
+  "clampCrossbowAnimations": false,
+  "burningAnimation": false,
+  "hideItemsForTheseBows": [],
+  "animateLanterns": true,
+  "lanternItems": [
+    "minecraft:waxed_copper_lantern",
+    "minecraft:waxed_exposed_copper_lantern",
+    "minecraft:soul_lantern",
+    "minecraft:waxed_oxidized_copper_lantern",
+    "minecraft:exposed_copper_lantern",
+    "minecraft:lantern",
+    "minecraft:waxed_weathered_copper_lantern",
+    "minecraft:weathered_copper_lantern",
+    "minecraft:oxidized_copper_lantern",
+    "minecraft:copper_lantern"
+  ],
+  "maxBlockingAngle": 15.0,
+  "maxNormalAngle": 50.0
 }

@@ -374,6 +374,17 @@
         "value": 1024
       }
     },
+    "irons_lib:projectile_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
     "minecraft:generic.attack_speed": {
       "enabled": true,
       "min": {

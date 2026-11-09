@@ -7,6 +7,10 @@
 	"waterstructureSize": 15,
 	// Maximum distance the structure pieces can be from the center (1 to 128)
 	"watermaxDistanceFromCenter": 116,
+	// Structure spacing (distance between structure attempts). Requires restart.
+	"structureSpacing": 72,
+	// Structure separation (minimum distance between structures). Requires restart.
+	"structureSeparation": 32,
 	// Enable or disable the welcome message, Requires game restart after changing this setting.
 	"ENABLE_IN_GAME_MESSAGE": false
 }

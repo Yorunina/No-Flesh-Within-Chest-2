@@ -7,21 +7,37 @@ blueprintCarrierItem = "create:handheld_worldshaper"
 developerMode = false
 #Default editable value for newly created scenes and scenes without an explicit editable flag.
 defaultEditable = true
+#Show the text progress panel by default when opening a Ponder scene.
+#Right-click the Comfy Reading button to toggle this default; left-click toggles the current panel.
+defaultTextProgress = true
+#Automatically sync server Ponder scenes and their structures: 'auto', 'on', or 'off'.
+#Auto disables syncing in singleplayer and enables it in multiplayer, including LAN worlds.
+#Off stays disabled across reconnects. Manual pulls and conflict resolution remain available.
+autoSyncServerPonders = "auto"
+#Wall-clock budget for one AI run, including references, tools and retries.
+#Range: 30 ~ 7200
+maxRunSeconds = 900
+#Total input plus output tokens across the run. Missing usage is estimated.
+#Range: 4096 ~ 8000000
+maxRunTokens = 524288
+#Estimated per-request context ceiling; set to the selected model's actual context capacity.
+#Range: 4096 ~ 2000000
+contextTokens = 131072
+#Stop after this many consecutive turns without new evidence or draft changes.
+#Range: 2 ~ 12
+noProgressTurns = 4
 
 [ai]
-	#LLM provider type: 'anthropic' or 'openai' (OpenAI-compatible).
-	#Use 'openai' for OpenAI, DeepSeek, Groq, Ollama, LM Studio, etc.
-	provider = "openai"
-	#API base URL. Leave empty to use provider defaults.
-	#Anthropic default: https://api.anthropic.com
-	#OpenAI default: https://api.openai.com
-	#For compatible APIs, set to e.g. https://api.deepseek.com
+	#API base URL. Leave empty to use the selected protocol's default.
+	#Anthropic default: https://api.anthropic.com/v1
+	#OpenAI default: https://api.openai.com/v1
+	#Include any required path prefix, such as /v1; it is not added automatically.
 	apiBaseUrl = ""
-	#API key for the selected provider.
+	#API key for the selected service.
 	apiKey = ""
-	#Model name. Leave empty to use provider defaults.
-	#Anthropic default: claude-sonnet-4-20250514
-	#OpenAI default: gpt-4o
+	#Model name. Leave empty to use the selected protocol's default.
+	#Anthropic default: claude-sonnet-5-5
+	#OpenAI default: gpt-6-astra
 	model = ""
 	#HTTP proxy for AI API calls. Format: host:port (e.g. 127.0.0.1:7890).
 	#Leave empty for no proxy.
@@ -34,18 +50,44 @@ defaultEditable = true
 	#When enabled, reference URL requests go through the proxy configured above.
 	#When disabled, reference URLs are fetched with a direct connection.
 	webUseProxy = false
-	#Maximum number of tokens the LLM can generate per request.
-	#Increase this if complex scenes are being cut off.
-	#WARNING: Some models have lower limits:
-	#  - Claude 3.5 Haiku: max 8192 tokens
-	#  - Other Claude models: max 4096 tokens
-	#  - GPT-4o / GPT-4o mini: max 4096 tokens
-	#Default: 16384. Range: 1024-65536. Adjust based on your model limits.
-	#Range: 1024 ~ 65536
-	maxTokens = 16384
+	#Maximum output tokens per request, including reasoning tokens on thinking models.
+	#This is a ceiling, not a target or a total budget for the entire agent run.
+	#Leave room for both reasoning and the complete scene JSON. Higher limits can increase cost.
+	#Default: 65536. Range: 1024-262144. Stay within your model's supported output limit.
+	#Applies to all configuration sources. On first upgrade, lower saved limits are raised to 65536.
+	#After migration, manually chosen lower limits are preserved.
+	#Range: 1024 ~ 262144
+	maxTokens = 65536
 	#AI configuration source: 'custom', 'codex', or 'claude_code'.
 	#Custom uses the fields below. Codex and Claude Code read local tool configuration.
 	configSource = "custom"
+	#Custom API protocol: 'auto', 'responses', 'chat', or 'anthropic' (Messages).
+	#Auto detects official OpenAI/Anthropic URLs and uses Chat Completions for other services.
+	#Legacy provider settings are migrated once. Choose a protocol explicitly for gateways.
+	#The protocol determines the default API URL and model. Imported configs keep their own protocol.
+	wireApi = "auto"
+	#Maximum number of LLM turns in one AI scene-agent run.
+	#Read-only tools may be batched within a turn.
+	#Up to four tools may run per turn; there is no separate 16-call cap.
+	#Default: 12. Range: 2-64. More turns can increase latency and cost.
+	#Range: 2 ~ 64
+	maxAgentTurns = 12
+	#Reasoning effort: '', 'none', 'minimal', 'low', 'medium', 'high', 'xhigh', or 'max'.
+	#Leave empty to inherit the selected source's effort, or use the API default if unset.
+	#An explicit value overrides every configuration source. Choose a level supported by your model.
+	#Anthropic supports low/medium/high/xhigh/max on compatible models; none/minimal are OpenAI-only.
+	reasoningEffort = ""
+	#Timeout in seconds for each AI API request, including reasoning and output generation.
+	#Default: 300. Range: 30-1800. Applies to all configuration sources.
+	#Range: 30 ~ 1800
+	requestTimeoutSeconds = 300
+	#Internal AI configuration migration version. Do not edit.
+	#Range: > 0
+	configVersion = 1
+	#Tool calling transport: auto uses native tools for official OpenAI, Responses and Anthropic; native forces tools; json keeps text protocol compatibility.
+	toolCalling = "auto"
+	#Stream AI responses for incremental progress. Disable for endpoints without SSE support.
+	streaming = true
 
 [pack]
 	#Show a chat prompt when a registered pack's scripts have all been deleted.

@@ -9,16 +9,6 @@
 				"spawn_overrides": {
 				}
 			}
-		},
-		{
-			"weight": 1.0,
-			"key": {
-				"step": "surface_structures",
-				"id": "underground_village:underwater_village",
-				"terrain_adaptation": "none",
-				"spawn_overrides": {
-				}
-			}
 		}
 	]
 }

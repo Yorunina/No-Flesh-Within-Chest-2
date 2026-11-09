@@ -5,8 +5,8 @@
 	#Default screen scale for Keybind Atlas. Valid values: X1, X2.
 	#Allowed Values: X1, X2
 	defaultPixelScale = "X1"
-	#Keyboard layout shown by Keybind Atlas. Valid values: US_QWERTY, UK_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO. Legacy values AZERTY and QWERTZ are still accepted.
-	#Allowed Values: US_QWERTY, UK_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO, AZERTY, QWERTZ
+	#Keyboard layout shown by Keybind Atlas. Valid values: US_QWERTY, UK_QWERTY, PORTUGUESE_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO. Legacy values AZERTY and QWERTZ are still accepted.
+	#Allowed Values: US_QWERTY, UK_QWERTY, PORTUGUESE_QWERTY, ABNT2, FRENCH_AZERTY, BELGIAN_AZERTY, GERMAN_QWERTZ, SWISS_QWERTZ, SPANISH, ITALIAN, NORDIC_ISO, AZERTY, QWERTZ
 	keyboardLayout = "US_QWERTY"
 	#Enables box entrance, connector draw-in, and hover transition animations.
 	animationsEnabled = true
@@ -52,6 +52,23 @@
 	disabledMods = []
 	#Individual bindings disabled in the mod filter list. Format: 'ModName::BindingLabel'.
 	disabledBindings = []
+	#Show category assignment help. Remembers the info-button toggle.
+	categoryHelpVisible = true
+	#Show edit mode help. Remembers the info-button toggle.
+	editHelpVisible = true
+	#Show search mode help. Remembers the info-button toggle.
+	searchHelpVisible = true
+	#Show keybind sets help. Remembers the info-button toggle.
+	setsHelpVisible = true
+	#Remember whether the legend is collapsed when opening the atlas.
+	legendCollapsed = false
+	#Active keybind set; empty means no set is selected.
+	selectedKeybindSet = ""
+	#When enabled, compact unhovered binding boxes truncate long keybind names with an ellipsis. Hovered boxes still show full names.
+	compactKeybindTextLimitEnabled = true
+	#Maximum characters shown for each keybind name in compact unhovered binding boxes. Default: 32.
+	#Range: 8 ~ 80
+	maxCompactKeybindTextLength = 32
 
 #Color values use RGBA hex format, for example #0161CCFF.
 [colors]
@@ -95,4 +112,40 @@
 		default = "#8A8F96FF"
 		defaultAlt = "#5C6068FF"
 		hover = "#86BCFFFF"
+
+#Box layout and connector routing. Defaults preserve the original layout.
+[layout]
+	#Scales the box width limit. Text still determines the actual width.
+	#Range: 60 ~ 160
+	box_width = 100
+	#Scales vertical padding and row spacing without clipping text.
+	#Range: 60 ~ 200
+	box_height = 100
+	#Minimum preferred space between info boxes.
+	#Range: 0 ~ 20
+	box_gap = 5
+	#Space above the keyboard before the first box lane.
+	#Range: 4 ~ 40
+	top_gap = 17
+	#Space below the keyboard before the first box lane.
+	#Range: 4 ~ 40
+	bottom_gap = 15
+	#Space between the keyboard and side boxes.
+	#Range: 2 ~ 32
+	side_gap = 10
+	#Higher values favor straighter lines. Lower values allow more turns.
+	#Range: 0 ~ 80
+	bend_cost = 18
+	#Penalty for crossing another connector when a crossing is necessary.
+	#Range: 0 ~ 3000
+	crossing_cost = 1400
+	#Higher values discourage lines from running immediately beside each other.
+	#Range: 0 ~ 40
+	line_separation = 10
+	#Keep assigned keys as routing obstacles, except the source key.
+	avoid_keys = true
+	#Try a crossing-free route first; allow crossings as a fallback.
+	avoid_crossings = true
+	#Use the existing smaller text and widths when many boxes are visible.
+	auto_compact = true
 

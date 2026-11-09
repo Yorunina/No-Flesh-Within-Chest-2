@@ -148,5 +148,41 @@
   ],
   "disabledEntities": [],
   "logMoreStatistics": false,
-  "showInGameNames": true
+  "showInGameNames": true,
+  "defaultBlockLootConditions": [
+    "minecraft:survives_explosion"
+  ],
+  "defaultBlockLootFunctions": [
+    "minecraft:explosion_decay"
+  ],
+  "ignoredPredicateConditions": [
+    "minecraft:random_chance",
+    "minecraft:random_chance_with_looting",
+    "minecraft:table_bonus",
+    "minecraft:survives_explosion"
+  ],
+  "entityLootTables": {},
+  "tooltipColors": {
+    "text": "gold",
+    "value": "aqua",
+    "error": "red",
+    "branch": "dark_gray",
+    "secondary": "gray",
+    "levels": [
+      "green",
+      "yellow",
+      "light_purple",
+      "blue",
+      "red",
+      "gold"
+    ]
+  },
+  "spawnInfo": {
+    "entities": [],
+    "whitelist": false
+  },
+  "hideDefaultBlockLoot": true,
+  "showUnboundedGlobalLootModifiers": false,
+  "showEntitiesWithoutLoot": false,
+  "showCharts": true
 }
