@@ -1,0 +1,34 @@
+[
+    {
+        "key": "single/tearing",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:tearing": [ 5 , 2.5 ]
+        }
+    },
+    {
+        "key": "single/tearing",
+        "level": 2,
+        "integrity": -1,
+        "effects": {
+            "kubejs:tearing": [ 5 , 5 ]
+        }
+    },
+    {
+        "key": "single/tearing",
+        "level": 3,
+        "integrity": -2,
+        "effects": {
+            "kubejs:tearing": [ 10 , 7.5 ]
+        }
+    },
+    {
+        "key": "single/tearing",
+        "level": 4,
+        "integrity": -2,
+        "effects": {
+            "kubejs:tearing": [ 10 , 10 ]
+        }
+    }
+]

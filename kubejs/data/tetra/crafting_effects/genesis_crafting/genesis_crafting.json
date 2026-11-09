@@ -1,0 +1,32 @@
+{
+    "replace": true,
+    "requirement": {
+        "type": "tetra:or",
+        "requirements": [
+            {
+                "type": "tetra:locked",
+                "key": "tetra:genesis_crafting"
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "type": "tetra:per_slot",
+                "outcome": {
+                    "type": "tetra:apply_improvements",
+                    "improvements": {
+                        "quality": 2,
+                        "settled": 2
+                    }
+                },
+            "major": true,
+            "minor": false
+        },
+        {
+            "type": "tetra:apply_nbt",
+            "nbt": {
+                "hone_ready": 1
+            }
+        }
+    ]
+}

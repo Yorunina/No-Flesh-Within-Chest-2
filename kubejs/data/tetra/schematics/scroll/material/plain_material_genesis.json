@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "slots": [
+        "scroll/material"
+    ],
+    "materialSlotCount": 0,
+    "materialRevealSlot": 0,
+	"rarity": "temporary",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 16,
+        "textureY": 16
+    },
+    "translation": {
+        "kubejs:genesis_inspiration": 2
+    },
+    "outcomes": [
+        {
+	        "material": {
+                "items": [ "kubejs:genesis_slate" ]
+            },
+            "moduleKey": "scroll/plain_material_genesis",
+            "moduleVariant": "plain_material/genesis_slate"
+        }
+    ]
+}

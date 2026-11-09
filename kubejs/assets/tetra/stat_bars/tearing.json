@@ -1,0 +1,52 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:tearing",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 100,
+    "stat": {
+        "type": "tetra:multiply",
+        "stats": [
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:tearing"
+            }
+        ],
+        "factor": 1
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "percentage",
+        "diff_format": "percentage"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:tearing.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:tearing"
+            },
+            {
+                "type": "tetra:multiply",
+                "stats": [
+                    {
+                        "type": "tetra:effect_level",
+                        "effect": "kubejs:tearing"
+                    }
+                ],
+                "factor": 0.1
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "percentage"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "percentage_decimal"
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "key": "dragon_bone",
+    "category": "bone",
+    "primary": 6.1,
+    "secondary": 2.9,
+    "tertiary": 5.8,
+    "durability": 368,
+    "integrityCost": 2,
+    "integrityGain": 4,
+    "magicCapacity": 168,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "806659",
+        "texture": "806659"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "block_factorys_bosses:dragon_bone" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

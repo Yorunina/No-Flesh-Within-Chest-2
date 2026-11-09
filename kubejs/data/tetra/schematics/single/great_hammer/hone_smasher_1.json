@@ -1,0 +1,38 @@
+{
+    "replace": true,
+    "slots": [ "single/head" ],
+    "materialSlotCount": 0,
+    "rarity": "hone",
+    "displayType": "improvement",
+    "glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 80,
+        "textureY": 80
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:module",
+                "module": "single/great_hammer"
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "single/smasher"
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "single/smasher": 1
+            }
+        }
+    ]
+}

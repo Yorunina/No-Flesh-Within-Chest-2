@@ -1,5 +1,9 @@
 // priority: 500
-BlockEvents.rightClicked('create_biotech:budding_experience', event => {
+/**
+ * @param {Object} customData
+ * @param {Internal.BlockRightClickedEventJS} event
+ */
+function ExperienceContainerRightClicked(customData, event) {
     const player = event.player
     const level = event.level
     const stack = event.item
@@ -22,4 +26,9 @@ BlockEvents.rightClicked('create_biotech:budding_experience', event => {
         1
     )
     stack.setDamageValue(stack.getMaxDamage() - 1)
-})
+}
+
+RegistryTetraEffectStrategy(
+    new TetraEffectStrategyModel('kubejs:experience_container')
+        .addStrategy('experience_container_right_clicked', ExperienceContainerRightClicked)
+)

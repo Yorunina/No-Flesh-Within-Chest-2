@@ -1,0 +1,17 @@
+[
+    {
+        "variant": "sword_binding/bolt_mega",
+        "key": "sword_tweak/binding_bolt",
+        "steps": 8,
+        "properties": {
+            "attributes": {
+                "**generic.attack_damage": 0.04
+            },
+            "tools": {
+                "pickaxe_dig": [ 0, 1.25 ],
+                "cut": [ 0, 1.25 ]
+            },
+            "durabilityMultiplier": 0.9
+        }
+    }
+]

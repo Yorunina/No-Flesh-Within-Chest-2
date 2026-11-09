@@ -1,0 +1,45 @@
+{
+  "type": "tetra:default",
+  "key": "tetra.stats.dodge_chance",
+  "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+  "min": 0,
+  "max": 100,
+  "stat": {
+    "type": "tetra:multiply",
+    "stats": [
+      {
+        "type": "tetra:attribute",
+        "attribute": "attributeslib:dodge_chance"
+      }
+    ],
+        "factor": 100
+  },
+  "label": {
+    "type": "tetra:basic",
+    "format": "percentage",
+    "diff_format": "percentage"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "tetra.stats.dodge_chance.tooltip",
+    "stats": [
+      {
+      "type": "tetra:multiply",
+      "stats": [
+        {
+          "type": "tetra:attribute",
+          "attribute": "attributeslib:dodge_chance"
+        }
+      ],
+        "factor": 100
+      }
+    ],
+    "formatters": [
+      {
+        "type": "tetra:basic",
+        "format": "percentage"
+      }
+    ]
+  },
+  "indicators": [ "tetra:attributeslib_dodge_chance/" ]
+}

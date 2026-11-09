@@ -1,0 +1,41 @@
+{
+    "replace": true,
+    "slots": [
+        "toolbelt/slot1",
+        "toolbelt/slot2",
+        "toolbelt/slot3"
+    ],
+    "keySuffixes": [
+        "_slot1",
+        "_slot2",
+        "_slot3"
+    ],
+    "materialSlotCount": 2,
+    "materialRevealSlot": 0,
+    "rarity": "temporary",
+    "glyph": {
+        "textureX": 176,
+        "textureY": 48
+    },
+    "displayType": "major",
+    "outcomes": [
+        {
+            "material": {
+                "items": [ "kubejs:random_tick_spring"]
+            },
+            "materialSlot":0,
+            "requiredTools": {
+                "hammer_dig": "minecraft:iron"
+            },
+            "moduleKey": "toolbelt/accelerator",
+            "moduleVariant": "accelerator/accelerator"
+        },
+        {
+            "material": {
+                "items": ["kubejs:counterweight_gear"],
+                "count": 2
+            },
+            "materialSlot":1
+        }
+    ]
+}

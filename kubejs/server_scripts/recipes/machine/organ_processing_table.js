@@ -396,7 +396,7 @@ ServerEvents.recipes(event => {
             const item = machine.getItemStored('input_2')
             const entity = machine.owner
             const chestCavity = entity.chestCavityInstance
-            if (chestCavity.getInventoryType() == 'kubejs:cc_inventory_types/factory') return ctx.error('')
+            if (chestCavity.getInventoryType() == 'kubejs:factory') return ctx.error('')
             if (item.getId() != 'kubejs:factory_heart') return ctx.error('')
             let nutritionbar = data.getInt('nutrition_bar')
             if (nutritionbar < 980) return ctx.error('')
@@ -411,7 +411,7 @@ ServerEvents.recipes(event => {
             incrORGANPROCESSINGTABLERuns(machine.owner)
             const entity = machine.owner
             const chestCavity = entity.chestCavityInstance
-            chestCavity.setInventoryType('kubejs:cc_inventory_types/factory')
+            chestCavity.setInventoryType('kubejs:factory')
             return ctx.success()
         })
         .requireStructure(organProcessingTableStructure, organProcessingTableStructureMapping)

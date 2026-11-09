@@ -1,0 +1,18 @@
+[
+    {
+        "variant": "double_binding/bolt_mega",
+        "key": "double_tweak/binding_bolt",
+        "steps": 8,
+        "properties": {
+            "durabilityMultiplier": 0.9,
+            "tools": {
+                "hammer_dig": [ 0, 1.25 ],
+                "axe_dig": [ 0, 1.25 ],
+                "pickaxe_dig": [ 0, 1.25 ],
+                "shovel_dig": [ 0, 1.25 ],
+                "cut": [ 0, 1.25 ],
+                "pry": [ 0, 1.25 ]
+            }
+        }
+    }
+]

@@ -1,0 +1,44 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:armor",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 20,
+    "stat": {
+        "type": "tetra:multiply",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:armor"
+            }
+        ],
+        "factor": 0.1
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "single_decimal",
+        "diff_format": "single_decimal"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:armor.tooltip",
+        "stats": [
+            {
+                "type": "tetra:multiply",
+                "stats": [
+                    {
+                        "type": "tetra:effect_level",
+                        "effect": "kubejs:armor"
+                    }
+                ],
+                "factor": 0.1
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "single_decimal"
+            }
+        ]
+    }
+}

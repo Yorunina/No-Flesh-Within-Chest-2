@@ -1,0 +1,27 @@
+{
+    "replace": true,
+    "type": "tetra:basic_module",
+    "slots": [ "single/binding" ],
+    "renderLayer": "higher",
+    "tweakKey": "tetra:single/bolt_mega",
+    "variants": [
+        {
+            "key": "single_binding/bolt_mega",
+            "durability": 30,
+            "attributes": {
+                "generic.attack_speed": 0.1
+            },
+            "glyph": {
+                "tint": "F0D700",
+                "textureX": 80,
+                "textureY": 112
+            },
+            "models": [
+                {
+                    "location": "tetra:item/module/single/binding/binding/bolt",
+                    "tint": "F0D700"
+                }
+            ]
+        }
+    ]
+}

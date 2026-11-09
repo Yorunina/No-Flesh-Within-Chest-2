@@ -1,0 +1,50 @@
+{
+    "replace": true,
+    "slots": [
+        "double/head_left"
+    ],
+    "keySuffixes": [
+        "_left"
+    ],
+    "requirement": {
+        "type": "tetra:or",
+        "requirements": [
+            {
+                "type": "tetra:improvement",
+                "improvement": "potentiality/bloodshed_scythe_left"
+            },
+            {
+                "type": "tetra:improvement",
+                "improvement": "potentiality/bloodshed_scythe_left_awaken"
+            }
+        ]
+    },
+    "materialSlotCount": 1,
+    "materialRevealSlot": 0,
+    "rarity": "temporary",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 64
+    },
+    "outcomes": [
+        {
+			"materials": ["tetra:gem/", "tetra:wood/", "tetra:stone/" , "tetra:metal/"],
+			"countFactor": 2,
+			"moduleKey": "double/bloodshed_scythe",
+			"moduleVariant": "bloodshed_scythe/",
+            "improvements": {
+                "potentiality/bloodshed_scythe_left_awaken": 0
+            }
+		},
+        {
+			"materials": [ "tetra:bone/" ],
+			"countFactor": 2,
+			"moduleKey": "double/bloodshed_scythe",
+			"moduleVariant": "bloodshed_scythe/",
+            "improvements": {
+                "potentiality/bloodshed_scythe_left_awaken": 0
+            }
+		}
+    ]
+}

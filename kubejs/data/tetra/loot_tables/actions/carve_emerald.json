@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "name": "carve_emerald",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tetra:pristine_emerald",
+                    "weight": 1
+                },
+                {
+                    "type": "empty",
+                    "weight": 19
+                }
+            ]
+        }
+    ]
+}

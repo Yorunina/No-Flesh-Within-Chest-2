@@ -1,0 +1,37 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "materialSlotCount": 1,
+    "requirement": {
+        "type": "tetra:locked",
+        "key": "tetra:sword/katana"
+    },
+    "rarity": "temporary",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureY": 80
+    },
+    "translation": {
+        "primaryAttributes": {
+            "generic.attack_damage": 4
+        },
+        "secondaryAttributes": {
+            "generic.attack_speed": -1
+        },
+        "primaryEffects": {
+            "sweeping": 2
+        },
+        "durability": 3,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:metal/", "tetra:stone/", "tetra:wood/", "tetra:bone/", "tetra:gem/" ],
+            "countFactor": 3,
+            "moduleKey": "sword/katana",
+            "moduleVariant": "katana/"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "key": "potentiality/bloodshed_scythe_left",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        }
+    },
+    {
+        "key": "potentiality/bloodshed_scythe_right",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        }
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "key": "single/smasher",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:slam": [10, 0]
+        }
+    },
+    {
+        "key": "single/smasher",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "kubejs:slam": [20, 0.5]
+        }
+    },
+    {
+        "key": "single/smasher",
+        "level": 3,
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "kubejs:slam": [30, 1]
+        }
+    }
+]

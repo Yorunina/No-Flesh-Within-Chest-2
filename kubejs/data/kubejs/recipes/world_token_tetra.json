@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:writable_book"
+    },
+    {
+      "item": "tetra:metal_scrap"
+    }
+  ],
+  "keepHeldItem": false,
+  "results": [
+    {
+      "item": "kubejs:world_token_tetra"
+    }
+  ]
+}

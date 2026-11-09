@@ -3,8 +3,19 @@ const WorldComputerMachineStructure = [["AAAAA", "ACCCA", "ACCCA", "ACCCA", "AAA
 const WorldComputerMachineStructureMapping = { "F": "kubejs:computing_core", "I": "kubejs:world_renderer", "M": "biomancy:impermeable_membrane", "B": "createprism:brass_glass_casing", "A": "create:brass_casing", "H": "create_connected:kinetic_battery", "O": "kubejs:entity_simulator", "C": "kubejs:data_compressor", "K": "biomancy:flesh", "L": "kubejs:cerebral_brain_processor", "N": "create_power_loader:brass_chunk_loader", "D": "kubejs:quantum_dimension_resolver", "E": "kubejs:void_diffraction_vault" }
 const WorldTokenGameRuleList = ['disableRaids', 'doDaylightCycle', 'doEntityDrops', 'doFireTick', 'doInsomnia', 'doMobLoot', 'doMobSpawning', 'doPatrolSpawning', 'doTraderSpawning', 'doVinesSpread', 'doWardenSpawning', 'doWeatherCycle', 'drowningDamage', 'fallDamage', 'fireDamage', 'freezeDamage', 'keepInventory', 'keepWallet', 'mobExplosionDropDecay', 'mobGriefing', 'naturalRegeneration', 'showDeathMessages', 'tntExplosionDropDecay', 'waterSourceConversion']
 const WorldTokenCreativeList = ['create:creative_blaze_cake', 'create:creative_motor', 'minecraft:command_block', 'ars_nouveau:creative_source_jar', 'ars_nouveau:creative_spell_book', 'functionalstorage:max_storage_upgrade', 'sophisticatedbackpacks:stack_upgrade_omega_tier', 'sophisticatedbackpacks:inception_upgrade', 'kubejs:key_to_infinity', 'kubejs:bridge_mod']
+const WorldTokenTetraList = ['kubejs:genesis_slate', 'kubejs:genesis_pillar']
 
 ServerEvents.recipes(event => {
+    event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
+        .requireFunctionToStart(ctx => ProcessWorldTokenTetraRecipe(ctx, false))
+        .requireFunctionOnStart(ctx => ProcessWorldTokenTetraRecipe(ctx, false))
+        .requireFunctionOnEnd(ctx => ProcessWorldTokenTetraRecipe(ctx, true))
+        .requireStructure(WorldComputerMachineStructure, WorldComputerMachineStructureMapping)
+        .requireItem(Item.of('kubejs:reverse_causality_chip', 16), 'input_3')
+        .requireItem(Item.of('create:chromatic_compound', 16), 'input_2')
+        .requireItem(Item.of('kubejs:world_token_tetra'), 'input_1', false)
+        // 保留结束阶段，输出受阻时清空输出栏即可继续，不重置已扣料的加工。
+
     event.recipes.custommachinery.custom_machine('kubejs:world_computer', 3600)
         .requireFunctionOnStart(ctx => {
             const machine = ctx.getMachine()
@@ -499,4 +510,27 @@ function validWorldMantleInputTarget(input) {
     if (input.hasTag('forge:books')) return true
     if (String(input.id) == 'minecraft:potion') return true
     return false
+}
+
+/**
+ * 检查工匠令牌及空输出栏；开始加工和写入产物前共用。
+ * @param {Internal.Context} ctx
+ * @param {boolean} produce 是否在检查通过后产出
+ * @returns {Internal.Result}
+ */
+function ProcessWorldTokenTetraRecipe(ctx, produce) {
+    let machine = ctx.getMachine()
+    if (!machine.getItemStored('output_1').isEmpty()) {
+        return ctx.error(Text.translatable('message.kubejs.world_token_tetra.output_occupied'))
+    }
+    let token = machine.getItemStored('input_1')
+    if (!token.is('kubejs:world_token_tetra')) {
+        return ctx.error(Text.translatable('message.kubejs.world_token_tetra.invalid_state'))
+    }
+    let state = token.getOrCreateTag().getInt('state')
+    if (state < 0 || state >= WorldTokenTetraList.length) {
+        return ctx.error(Text.translatable('message.kubejs.world_token_tetra.invalid_state'))
+    }
+    if (produce) machine.setItemStored('output_1', Item.of(WorldTokenTetraList[state]))
+    return ctx.success()
 }

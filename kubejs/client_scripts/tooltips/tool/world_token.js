@@ -57,3 +57,22 @@ ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:world_token_weather')
         ]
     })
 )
+
+const WorldTokenTetraList = ['kubejs:genesis_slate', 'kubejs:genesis_pillar']
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:world_token_tetra')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.world_token.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.world_token.shift_holding.1'))
+    .setAltDescription(Text.translatable('tooltips.kubejs.world_token.alt.1'))
+    .setAltHoldingDescription(Text.translatable('tooltips.kubejs.world_token.alt_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.world_token_tetra.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.world_token_tetra.shift.1'))
+    .addShift(Text.translatable('tooltips.kubejs.world_token_tetra.shift.2'))
+    .addAlt((text, item) => {
+        const nbt = item.getOrCreateTag()
+        const state = nbt.getInt('state')
+        return [
+            Text.translatable('tooltips.kubejs.world_token_tetra.alt.1', Item.of(WorldTokenTetraList[state] || WorldTokenTetraList[0]).displayName)
+        ]
+    })
+)

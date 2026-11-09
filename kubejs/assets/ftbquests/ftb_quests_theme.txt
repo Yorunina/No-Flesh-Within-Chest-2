@@ -61,3 +61,7 @@ background: {"id":"animation","icons":["kubejs:textures/gui/tasks/background/tru
 quest_completed_color: #dba213
 dependency_line_texture: kubejs:textures/gui/tasks/background/dependency_1.png
 dependency_line_completed_color: #ffffff
+
+# 传闻：羖的工具包
+[629F40F1AD701A38]
+background: kubejs:textures/gui/tasks/gud_background.png; color=rgb(0, 0, 0); tile_size=64

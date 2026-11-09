@@ -1,0 +1,25 @@
+{
+  "type": "ars_nouveau:enchanting_apparatus",
+  "keepNbtOfReagent": false,
+  "level": 5,
+  "output": {
+    "item": "kubejs:awaken_emerald"
+  },
+  "pedestalItems": [
+    {
+      "tag": "forge:gems/source"
+    },
+    {
+      "tag": "forge:gems/source"
+    },
+    {
+      "tag": "forge:gems/source"
+    }
+  ],
+  "reagent": [
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "sourceCost": 1000
+}

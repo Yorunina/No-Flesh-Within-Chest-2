@@ -1,0 +1,26 @@
+[
+    {
+        "key": "bloodshed_scythe/fine_offerings",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:devour": [0, -2]
+        }
+    },
+    {
+        "key": "bloodshed_scythe/fine_offerings",
+        "level": 2,
+        "integrity": -2,
+        "effects": {
+            "kubejs:devour": [0.5, -3.5]
+        }
+    },
+    {
+        "key": "bloodshed_scythe/fine_offerings",
+        "level": 3,
+        "integrity": -3,
+        "effects": {
+            "kubejs:devour": [1, -5]
+        }
+    }
+]

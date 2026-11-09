@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "slots": [
+        "sword/guard"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "minor",
+    "glyph": {
+        "textureX": 88,
+        "textureY": 112
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [ "kubejs:structural_bolt" ]
+            },
+            "moduleKey": "sword/bolt_mega",
+            "moduleVariant": "sword_binding/bolt_mega"
+        }
+    ]
+}

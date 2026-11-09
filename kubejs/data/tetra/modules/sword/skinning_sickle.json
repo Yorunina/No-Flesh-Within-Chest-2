@@ -1,0 +1,60 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:sword/skinning_sickle/",
+        "tetra:sword/shared_blade/",
+        "tetra:sword/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": ["tetra:gem/", "tetra:stone/" , "tetra:metal/", "tetra:bone/"],
+            "key": "skinning_sickle/",
+            "attributes": {
+                "generic.attack_damage": 1,
+                "generic.attack_speed": -0.5
+            },
+            "aspects": {
+                "block_breaker": 1,
+                "edged_weapon": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "kubejs:skinning": [1, 0]
+            },
+            "durability": -10,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 0.8
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.1
+                },
+                "primaryEffects": {
+                    "kubejs:skinning": [-0.1, 6]
+                },
+                "tertiaryEffects": {
+                    "kubejs:skinning": [0.2, 3]
+                },
+                "tools": {
+                    "cut": [ 0.7, 1.2 ],
+                    "hoe_dig": [ 0.6, 1.5 ]
+                },
+                "durability": 0.6,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 32,
+                    "textureY": 64
+                },
+                "availableTextures": [ "default"],
+                "models": [{
+                    "location": "tetra:item/module/sword/blade/skinning_sickle/"
+                }]
+            }
+        }
+    ]
+}

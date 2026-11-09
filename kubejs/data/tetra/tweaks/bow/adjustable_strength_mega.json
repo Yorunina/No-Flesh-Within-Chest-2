@@ -1,0 +1,13 @@
+[
+    {
+        "variant": "adjustable_strength/bolt_mega",
+        "key": "bow/adjustable_strength",
+        "steps": 5,
+        "properties": {
+            "attributes": {
+                "**tetra:draw_speed": 0.15,
+                "**tetra:draw_strength": 0.15
+            }
+        }
+    }
+]

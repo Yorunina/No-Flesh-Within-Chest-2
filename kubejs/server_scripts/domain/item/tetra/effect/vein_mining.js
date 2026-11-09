@@ -1,5 +1,9 @@
 // priority: 500
-MAAEvents.canUltimine(event => {
+/**
+ * @param {Object} customData
+ * @param {Internal.CanUltimineEventJS} event
+ */
+function VeinMiningCanUltimine(customData, event) {
     const player = event.player
     if (!player) return
     const stack = player.mainHandItem
@@ -9,4 +13,9 @@ MAAEvents.canUltimine(event => {
     if (!TetraJSUtils.isModularItem(item)) return
     if (item.getEffectLevel(stack, 'kubejs:vein_mining') <= 0) return
     event.success()
-})
+}
+
+RegistryTetraEffectStrategy(
+    new TetraEffectStrategyModel('kubejs:vein_mining')
+        .addStrategy('can_ultimine', VeinMiningCanUltimine)
+)

@@ -1,0 +1,22 @@
+[
+    {
+        "variant": "extended_rest/bolt_mega",
+        "key": "bow/multishot_count",
+        "steps": 5,
+        "properties": {
+            "effects": {
+                "multishot": 1
+            }
+        }
+    },
+    {
+        "variant": "extended_rest/bolt_mega",
+        "key": "bow/multishot_spread",
+        "steps": 9,
+        "properties": {
+            "effects": {
+                "multishot": [ 0, 1 ]
+            }
+        }
+    }
+]

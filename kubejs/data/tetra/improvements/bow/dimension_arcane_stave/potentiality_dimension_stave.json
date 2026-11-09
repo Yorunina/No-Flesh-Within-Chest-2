@@ -1,0 +1,47 @@
+[
+    {
+        "key": "potentiality/dimension_stave",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        }
+    },
+    {
+        "key": "potentiality/dimension_stave_awaken",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        },
+        "effects":{
+            "kubejs:magic_shot":[0, 1]
+        },
+        "models": [
+            {
+                "type": "tetra:filtered_grid_texture",
+                "location": "tetra:item/module/bow/stave/arcane/dimension_stave",
+                "filter": "undrawn",
+                "emission": 15
+            },
+            {
+                "type": "tetra:filtered_grid_texture",
+                "location": "tetra:item/module/bow/stave/arcane/dimension_stave_0",
+                "filter": "draw_0",
+                "emission": 15
+            },
+            {
+                "type": "tetra:filtered_grid_texture",
+                "location": "tetra:item/module/bow/stave/arcane/dimension_stave_0",
+                "filter": "draw_1",
+                "emission": 15
+            },
+            {
+                "type": "tetra:filtered_grid_texture",
+                "location": "tetra:item/module/bow/stave/arcane/dimension_stave_1",
+                "filter": "draw_2",
+                "emission": 15
+            }
+        ]
+    }
+]

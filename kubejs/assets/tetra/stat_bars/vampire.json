@@ -1,0 +1,40 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:vampire",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 100,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "kubejs:vampire"
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "percentage",
+        "diff_format": "percentage"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:vampire.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:vampire"
+            },
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:vampire"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "percentage"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

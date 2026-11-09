@@ -1,0 +1,43 @@
+{
+    "key": "genesis_pillar",
+    "category": "misc",
+    "primary": 10,
+    "secondary": 2,
+    "tertiary": 8,
+    "durability": 999,
+    "integrityCost": 4,
+    "integrityGain": 24,
+    "magicCapacity": 888,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "FCC424",
+        "texture": "forged_beam"
+    },
+	"effects": {
+        "unbreaking":64
+	},
+    "improvements": {
+        "quality":2
+    },
+    "textureOverrides": [
+        "item/module/sword/hilt/basic/",
+        "item/module/sword/hilt/tough/",
+        "item/module/single/handle/basic/",
+        "item/module/single/handle/light/",
+        "item/module/single/handle/long/",
+        "item/module/single/handle/grinding/",
+        "item/module/single/handle/heat/",
+        "item/module/double/handle/basic/",
+        "item/module/double/handle/grinding/",
+        "item/module/double/handle/heat/",
+        "item/module/scroll/simple_shaft/"
+    ],
+    "textures": [
+        "genesis_pillar",
+        "default"
+    ],
+    "material": {
+        "items": [ "kubejs:genesis_pillar" ]
+    }
+}

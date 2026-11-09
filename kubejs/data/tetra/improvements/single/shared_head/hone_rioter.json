@@ -1,0 +1,32 @@
+[
+    {
+        "key": "single/rioter",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:concussion": [5, 0]
+        }
+    },
+    {
+        "key": "single/rioter",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "kubejs:concussion": [10, 0]
+        }
+    },
+    {
+        "key": "single/rioter",
+        "level": 3,
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "kubejs:concussion": [15, 0]
+        }
+    }
+]

@@ -1,13 +1,10 @@
 // priority: 500
-TetraJSEvents.createArrow('bow', event => {
-    if (event.drawProgress < 18) return
-    applyFragArrowEffect(event)
-})
-TetraJSEvents.createArrow('crossbow', event => {
-    applyFragArrowEffect(event)
-})
 
-function applyFragArrowEffect(event) {
+/**
+ * @param {Object} customData
+ * @param {Internal.CreateArrowEventJS} event
+ */
+function FragArrowCreateArrow(customData, event) {
     const player = event.player
     if (!player) return
     let heldItem = event.item
@@ -23,3 +20,8 @@ function applyFragArrowEffect(event) {
     aoeArrowEntity.persistentData.putFloat('kubejs_aoe_size', 2 + effectLevel * 0.5)
     event.setProjectile(aoeArrowEntity)
 }
+
+RegistryTetraEffectStrategy(
+    new TetraEffectStrategyModel('kubejs:frag_arrow')
+        .addStrategy('create_arrow', FragArrowCreateArrow, -10)
+)

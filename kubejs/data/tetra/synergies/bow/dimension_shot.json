@@ -1,0 +1,21 @@
+[
+    {
+        "moduleVariants": ["sights/echo_shard"],
+        "improvements": ["arcane_stave/dimension_shoot"],
+        "visibilityKey": "sights/echo_shard",
+        "effects": {
+            "zoom": 4,
+            "kubejs:planar_sniper": 1
+	    }
+    },
+    {
+        "moduleVariants": ["stabilizer/linear"],
+        "improvements": ["arcane_stave/dimension_shoot"],
+        "visibilityKey": "stabilizer/linear",
+        "effects": {
+            "kubejs:blink": [1, 1],
+            "kubejs:magic_shot": [0, -1],
+            "velocity": 30
+	    }
+    }
+]

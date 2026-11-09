@@ -1,0 +1,68 @@
+{
+    "replace": true,
+    "slots": [
+        "shield/plate"
+    ],
+    "materialSlotCount": 1,
+    "requirement": {
+        "type": "tetra:or",
+        "requirements": [
+            {
+                "type": "tetra:and",
+                "requirements": [
+                    {
+                    "type": "tetra:improvement",
+                    "improvement": "potentiality/frost_fortress"
+                    },
+                    {
+                    "type": "tetra:module",
+                    "module": "shield/buckler"
+                    }
+                ]
+            },
+            {
+                "type": "tetra:and",
+                "requirements": [
+                    {
+                    "type": "tetra:improvement",
+                    "improvement": "potentiality/frost_fortress_awaken"
+                    },
+                    {
+                    "type": "tetra:module",
+                    "module": "shield/gladiator"
+                    }
+                ]
+            }
+        ]
+    },
+    "rarity": "ancient",
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 64,
+        "textureY": 80
+    },
+    "translation": {
+        "primaryAttributes": {
+            "tetra:ability_damage": 2,
+            "attributeslib:dodge_chance": 1
+        },
+        "secondaryAttributes": {
+            "tetra:ability_damage": 1,
+            "tetra:ability_cooldown": -1
+        },
+        "durability": 3,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/"],
+            "moduleKey": "shield/gladiator",
+            "moduleVariant": "gladiator/",
+            "improvements": {
+                "potentiality/frost_fortress_awaken": 0
+            }
+        }
+    ]
+}

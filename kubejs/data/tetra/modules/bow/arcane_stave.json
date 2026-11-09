@@ -1,0 +1,188 @@
+{
+    "replace": false,
+    "slots": [
+        "bow/stave"
+    ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:bow/arcane_stave/",
+        "tetra:bow/shared_stave/",
+        "tetra:bow/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/"],
+            "key": "arcane_stave/",
+            "attributes": {
+                "tetra:draw_speed": 1.5,
+                "tetra:draw_strength": 1.5
+            },
+            "aspects": {
+                "bow": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "spread": [ 0, 90 ]
+            },
+            "durability": 80,
+            "extract": {
+                "primaryAttributes": {
+                    "tetra:draw_speed": 0.15,
+                    "tetra:draw_strength": 1.4
+                },
+                "tertiaryAttributes": {
+                    "tetra:draw_speed": -0.03,
+                    "tetra:draw_strength": 0.8
+                },
+                "secondaryEffects": {
+                    "velocity": 12
+                },
+                "tertiaryEffects": {
+                    "spread": [ 0, 1.2 ]
+                },
+                "durability": 0.85,
+                "integrity": -1,
+                "magicCapacity": 1.2,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 32,
+                    "textureY": 80
+                },
+                "availableTextures": [ "crude" ],
+                "models": [
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "undrawn"
+                    },
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "draw_0"
+                    },
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "draw_1"
+                    },
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "draw_2"
+                    }
+                ]
+            },
+            "models": [
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave",
+                    "filter": "undrawn",
+                    "emission": 15
+                },
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave_0",
+                    "filter": "draw_0",
+                    "emission": 15
+                },
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave_0",
+                    "filter": "draw_1",
+                    "emission": 15
+                },
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave_1",
+                    "filter": "draw_2",
+                    "emission": 15
+                }
+            ]
+        },
+        {
+            "materials": [ "tetra:rod/end_rod" ],
+            "key": "arcane_stave/",
+            "attributes": {
+                "tetra:draw_speed": 1.5,
+                "tetra:draw_strength": 1.5
+            },
+            "aspects": {
+                "bow": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "spread": [ 0, 100 ],
+                "velocity": 50
+            },
+            "durability": 80,
+            "extract": {
+                "primaryAttributes": {
+                    "tetra:draw_speed": 0.15,
+                    "tetra:draw_strength": 1.4
+                },
+                "tertiaryAttributes": {
+                    "tetra:draw_speed": -1,
+                    "tetra:draw_strength": 0.8
+                },
+                "durability": 0.85,
+                "integrity": -1,
+                "magicCapacity": 1.2,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 32,
+                    "textureY": 80
+                },
+                "availableTextures": [ "crude" ],
+                "models": [
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "undrawn"
+                    },
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "draw_0"
+                    },
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "draw_1"
+                    },
+                    {
+                        "type": "tetra:filtered_grid_texture",
+                        "location": "tetra:item/module/bow/stave/arcane/",
+                        "filter": "draw_2"
+                    }
+                ]
+            },
+            "models": [
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave",
+                    "filter": "undrawn",
+                    "emission": 15
+                },
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave_0",
+                    "filter": "draw_0",
+                    "emission": 15
+                },
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave_0",
+                    "filter": "draw_1",
+                    "emission": 15
+                },
+                {
+                    "type": "tetra:filtered_grid_texture",
+                    "location": "tetra:item/module/bow/stave/arcane/arcane_stave_1",
+                    "filter": "draw_2",
+                    "emission": 15
+                }
+            ]
+        }
+    ]
+}

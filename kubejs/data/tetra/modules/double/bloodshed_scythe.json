@@ -1,0 +1,104 @@
+{
+    "replace": true,
+    "type": "tetra:multi_major_module",
+    "slots": [
+        "double/head_left",
+        "double/head_right"
+    ],
+    "slotSuffixes": [
+        "_left",
+        "_right"
+    ],
+    "improvements": [
+        "tetra:double/bloodshed_scythe/",
+        "tetra:double/gula_scythe/",
+        "tetra:double/shared_head/",
+        "tetra:double/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": ["tetra:gem/", "tetra:wood/", "tetra:stone/" , "tetra:metal/"],
+            "key": "bloodshed_scythe/",
+            "attributes": {
+                "generic.attack_damage": 1.5,
+                "generic.attack_speed": -1.5
+            },
+            "aspects": {
+                "block_breaker": 1,
+                "edged_weapon": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "sweepingStrike": 1,
+                "sweeping": 1,
+                "kubejs:devour":[1, 15]
+            },
+            "durability": -10,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 3
+                },
+                "primaryEffects": {
+                    "kubejs:vampire": [8, 0]
+                },
+                "tertiaryEffects": {
+                    "kubejs:vampire": [0, 4]
+                },
+                "durability": 0.6,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 64
+                },
+                "availableTextures": [ "metal"],
+                "models": [{
+                    "location": "tetra:item/module/double/head/gula_scythe/"
+                }]
+            }
+        },
+        {
+            "materials": ["tetra:bone/"],
+            "key": "bloodshed_scythe/",
+            "attributes": {
+                "generic.attack_damage": 1.0,
+                "generic.attack_speed": -1.3
+            },
+            "aspects": {
+                "block_breaker": 1,
+                "edged_weapon": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "sweepingStrike": 1,
+                "sweeping": 1,
+                "truesweep": 1,
+                "kubejs:devour":[1.5, 10]
+            },
+            "durability": -10,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 1
+                },
+                "primaryEffects": {
+                    "kubejs:vampire": [12, 0]
+                },
+                "tertiaryEffects": {
+                    "kubejs:vampire": [0, 6]
+                },
+                "durability": 0.6,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                    "textureX": 64
+                },
+                "availableTextures": [ "crude"],
+                "models": [{
+                    "location": "tetra:item/module/double/head/gula_scythe/"
+                }]
+            }
+        }
+    ]
+}

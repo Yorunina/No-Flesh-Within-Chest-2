@@ -1,0 +1,45 @@
+{
+	"replace": true,
+    "slots": [ "single/head" ],
+	"type": "tetra:basic_major_module",
+    "tweakKey": "tetra:single/genesis_tool",
+	"improvements": [
+		"tetra:shared/"
+	],
+	"variants": [
+		{
+			"key": "genesis_tool/genesis_tool",
+			"integrity": -12,
+			"magicCapacity": 333,
+			"attributes":{
+				"forge:block_reach":4,
+				"forge:entity_reach":4
+			},
+			"durability": 500,
+			"effects": {
+                "unbreaking":10000
+			},
+            "tools": {
+                "pickaxe_dig": [99,100],
+                "axe_dig": [99,100],
+                "shovel_dig": [99,100],
+                "hoe_dig": [99,100],
+                "hammer_dig":[99,100],
+                "cut": [99,100],
+                "pry": [99,100],
+                "axe_strip": [ 1, 1 ],
+                "axe_scrape": [ 1, 1 ],
+                "axe_wax_off": [ 1, 1 ],
+                "dowse": 1,
+                "shovel_flatten": 1,
+                "till": 1
+            },
+			"glyph": {
+				"textureLocation": "tetra:textures/gui/gud_glyph.png",
+				"textureX": 240,
+				"textureY": 240
+			},
+			"models": [{ "location": "tetra:item/module/single/head/genesis_tool/genesis_tool" }]
+		}
+	]
+}

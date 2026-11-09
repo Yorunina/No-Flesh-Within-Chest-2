@@ -1,13 +1,15 @@
 // priority: 500
 /**
- * 造成伤害（未过护甲结算）节点，适合用于结算造成伤害效果
+ * 在器官结算前执行，保留本效果的物品读取时机。
+ * @param {Object} customData
+ * @param {Internal.LivingHurtEvent} event
  */
-NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} event */ event => {
+function DevourBloodEntityDoDamage(customData, event) {
     /**@type {Player} */
     const sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isPlayer()) return
-    if (!IsFullChargeAttck(sourceEntity)) return
-    let heldItem = sourceEntity.mainHandItem
+    if (!TetraAttackFullCharge(event, sourceEntity)) return
+    let heldItem = TetraAttackItem(event, sourceEntity)
     /**@type {Internal.ModularItem} */
     let modularItem = heldItem.getItem()
     if (!TetraJSUtils.isModularItem(modularItem)) return
@@ -19,4 +21,9 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     const foodData = sourceEntity.getFoodData()
     let saturationLevel = foodData.getSaturationLevel()
     foodData.setSaturation(saturationLevel + effectEfficiency * 0.1)
-})
+}
+
+RegistryTetraEffectStrategy(
+    new TetraEffectStrategyModel('kubejs:devour_blood')
+        .addStrategy('entity_do_damage_before', DevourBloodEntityDoDamage, -20)
+)

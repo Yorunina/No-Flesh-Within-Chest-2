@@ -1,0 +1,71 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:sword/katana/",
+        "tetra:sword/shared_blade/",
+        "tetra:sword/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:metal/", "tetra:stone/", "tetra:wood/", "tetra:bone/", "tetra:gem/" ],
+            "key": "katana/",
+            "attributes": {
+                "generic.attack_speed": -1.5,
+                "attributeslib:crit_chance": 0.05
+            },
+            "aspects": {
+                "edged_weapon": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "sweeping": [ 4, 0 ],
+                "truesweep": 1
+            },
+            "tools": {
+                "cut": [ 1, 4 ]
+            },
+            "integrity": -1,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 1.1
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.12
+                },
+                "tertiaryAttributes": {
+                    "attributeslib:crit_damage": 0.06
+                },
+                "durability": 0.8,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureY": 80
+                },
+                "availableTextures": [ "metal", "shiny", "grainy", "crude" ],
+                "models": [
+                {
+                    "invertPerspectives": true,
+                    "perspectives": [
+                        "gui"
+                    ],
+                    "transform": {
+                        "translation": [ 0.125, 0, 0.0025 ],
+                        "scale": [ 1, 1, 0.995 ]
+                    },
+                    "location": "tetra:item/module/sword/blade/katana/"
+                },
+                {
+                    "perspectives": [
+                        "gui"
+                    ],
+                    "location": "tetra:item/module/sword/blade/katana_gui/"
+                }
+            ]
+            }
+        }
+    ]
+}

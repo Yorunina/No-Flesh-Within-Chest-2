@@ -1,0 +1,32 @@
+[
+    {
+        "key": "trident/shockwave_blast",
+        "level": 1,
+        "integrity": -1,
+        "group": "thundering",
+        "effects": {
+            "kubejs:shockwave_blast": [20, 1],
+            "kubejs:blink": 1
+        }
+    },
+    {
+        "key": "trident/shockwave_blast",
+        "level": 2,
+        "integrity": -2,
+        "group": "thundering",
+        "effects": {
+            "kubejs:shockwave_blast": [40, 2],
+            "kubejs:blink": 1
+        }
+    },
+    {
+        "key": "trident/shockwave_blast",
+        "level": 3,
+        "integrity": -3,
+        "group": "thundering",
+        "effects": {
+            "kubejs:shockwave_blast": [80, 3],
+            "kubejs:blink": 1
+        }
+    }
+]

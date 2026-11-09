@@ -1,0 +1,40 @@
+{
+	"replace": true,
+	"slots": [ "single/head" ],
+	"materialSlotCount": 1,
+	"rarity": "temporary",
+	"displayType": "major",
+	"requirement":{
+        "type":"tetrajs:custom",
+        "key":"tearing_spear"
+    },
+	"glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+		"textureY": 64
+	},
+	"translation": {
+		"primaryAttributes": {
+			"generic.attack_damage": 2
+		},
+		"secondaryAttributes": {
+			"generic.attack_speed": -1
+		},
+		"primaryEffects": {
+			"severing": [1, 0]
+		},
+		"secondaryEffects": {
+			"severing": [0, 1]
+		},
+		"durability": 4,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"materials": [ "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+			"countFactor": 3,
+			"moduleKey": "single/tearing_spear",
+			"moduleVariant": "tearing_spear/"
+		}
+	]
+}

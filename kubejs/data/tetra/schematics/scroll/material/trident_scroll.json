@@ -1,0 +1,32 @@
+{
+    "replace": false,
+    "slots": [
+        "scroll/material"
+    ],
+    "materialSlotCount": 0,
+    "materialRevealSlot": 0,
+    "rarity": "inspired",
+    "displayType": "improvement",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 32,
+        "textureY": 16
+    },
+    "requirement": {
+        "type": "tetra:not",
+        "requirement": {
+            "type": "tetra:improvement",
+            "improvement": "trident_scroll"
+        }
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [ "minecraft:trident","block_factorys_bosses:kraken_trident" ]
+            },
+            "improvements": {
+                "trident_scroll": 0
+            }
+        }
+    ]
+}

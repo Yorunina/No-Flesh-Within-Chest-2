@@ -275,3 +275,17 @@ for (let itemId of factoryTooltipItems) {
             .addShift(description)
     )
 }
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:genesis_slate')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.genesis_slate.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.genesis_slate.shift.1'))
+)
+
+ApplyMultiStateTooltip(new MultiStateTooltip('kubejs:genesis_pillar')
+    .setShiftDescription(Text.translatable('tooltips.kubejs.tool.shift.1'))
+    .setShiftHoldingDescription(Text.translatable('tooltips.kubejs.tool.shift_holding.1'))
+    .addDefault(Text.translatable('tooltips.kubejs.genesis_pillar.default.1').gray())
+    .addShift(Text.translatable('tooltips.kubejs.genesis_pillar.shift.1'))
+)

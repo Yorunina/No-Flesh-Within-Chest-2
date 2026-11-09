@@ -1,5 +1,9 @@
 // priority: 500
-BlockEvents.broken(event => {
+/**
+ * @param {Object} customData
+ * @param {Internal.BlockBrokenEventJS} event
+ */
+function BlockScryBlockBroken(customData, event) {
     const player = event.player
     const block = event.block
     const level = event.level
@@ -41,4 +45,9 @@ BlockEvents.broken(event => {
     if (renderList.length > 0) {
         HighlightBlockPos(player, renderList)
     }
-})
+}
+
+RegistryTetraEffectStrategy(
+    new TetraEffectStrategyModel('kubejs:block_scry')
+        .addStrategy('block_broken', BlockScryBlockBroken)
+)

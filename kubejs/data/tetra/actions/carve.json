@@ -1,0 +1,42 @@
+[
+    {
+        "key": "carve_diamond_action",
+        "requirement": {
+            "items": [ "minecraft:diamond" ]
+        },
+        "requiredTools": {
+            "pry": "minecraft:iron"
+        },
+        "lootTable": "tetra:actions/carve_diamond"
+    },
+    {
+        "key": "carve_emerald_action",
+        "requirement": {
+            "items": [ "minecraft:emerald" ]
+        },
+        "requiredTools": {
+            "pry": "minecraft:iron"
+        },
+        "lootTable": "tetra:actions/carve_emerald"
+    },
+    {
+        "key": "carve_lapis_action",
+        "requirement": {
+            "items": [ "minecraft:lapis_lazuli" ]
+        },
+        "requiredTools": {
+            "pry": "minecraft:iron"
+        },
+        "lootTable": "tetra:actions/carve_lapis"
+    },
+    {
+        "key": "carve_amethyst_action",
+        "requirement": {
+            "items": [ "minecraft:amethyst_shard" ]
+        },
+        "requiredTools": {
+            "pry": "minecraft:iron"
+        },
+        "lootTable": "tetra:actions/carve_amethyst"
+    }
+]

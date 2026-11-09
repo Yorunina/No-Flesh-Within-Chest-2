@@ -85,3 +85,9 @@ const $ShellForgeBlockEntity = Java.loadClass('com.ultramega.playershells.blocke
 const $FakePlayerFactory = Java.loadClass('net.minecraftforge.common.util.FakePlayerFactory')
 const $GameProfile = Java.loadClass('com.mojang.authlib.GameProfile')
 const $CuriosCapability = Java.loadClass('top.theillusivec4.curios.api.CuriosCapability')
+
+const $ForgeRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
+const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+const $SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')
+const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
+const $ServerLevel = Java.loadClass('net.minecraft.server.level.ServerLevel')

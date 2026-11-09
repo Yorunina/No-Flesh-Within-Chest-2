@@ -1,0 +1,1850 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "629F40F1AD701A38"
+	group: "0B365C36A50478AA"
+	icon: "kubejs:genesis_slate"
+	id: "629F40F1AD701A38"
+	images: [
+		{
+			height: 3.22d
+			image: "kubejs:textures/gui/tasks/gud_toolkit.png"
+			rotation: 0.0d
+			width: 36.64d
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependency: "133A28D884F01479"
+			height: 2.75d
+			image: "kubejs:textures/gui/tasks/mantle_fuel/world_machine_frame.png"
+			rotation: 0.0d
+			width: 2.75d
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependency: "4C291E94F00EA4DE"
+			height: 18.96d
+			hideDependency: "4E94BCA2D31CC38A"
+			image: "kubejs:textures/gui/tasks/obelisk.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -0.1d
+			y: 4.0d
+		}
+		{
+			dependency: "4E94BCA2D31CC38A"
+			height: 18.96d
+			image: "kubejs:textures/gui/tasks/obelisk_lit.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -0.1d
+			y: 4.0d
+		}
+		{
+			dependency: "4C291E94F00EA4DE"
+			height: 19.4d
+			image: "kubejs:textures/gui/tasks/leading_lines_1.png"
+			rotation: 0.0d
+			width: 9.7d
+			x: 0.0d
+			y: 4.05d
+		}
+		{
+			dependency: "4E94BCA2D31CC38A"
+			height: 4.0d
+			image: "kubejs:textures/gui/tasks/scrolls_2.png"
+			rotation: 0.0d
+			width: 5.79d
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependency: "72CC4F516FCC62C7"
+			height: 1.5d
+			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/bd_accomplish.png"
+			rotation: 0.0d
+			width: 1.5d
+			x: 0.0d
+			y: 25.5d
+		}
+	]
+	order_index: 12
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6B40B48901CC8C0C"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.description3}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.description4}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.description5}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.description6}"
+			]
+			hide_until_deps_complete: true
+			icon: "minecraft:echo_shard"
+			id: "4C291E94F00EA4DE"
+			rewards: [{
+				id: "5F453EA2A9BF8A23"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "kubejs:warden_core"
+					tag: { }
+				}
+				id: "5D0D966F38FFDD16"
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.task.6705180824666365206.title}"
+				type: "maa:auto_complete"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest4C291E94F00EA4DE.title}"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4C291E94F00EA4DE"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest486521603490981F.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest486521603490981F.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest486521603490981F.description3}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "486521603490981F"
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest486521603490981F.subtitle}"
+			tasks: [{
+				icon: "biomancy:bio_forge"
+				id: "15C50B31FA20EBD5"
+				observe_type: 0
+				timer: 0L
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest486521603490981F.task.1568672354486250453.title}"
+				to_observe: "biomancy:bio_forge"
+				type: "observation"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest486521603490981F.title}"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C291E94F00EA4DE"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest1574AFBA1170F0C9.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest1574AFBA1170F0C9.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest1574AFBA1170F0C9.description3}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "1574AFBA1170F0C9"
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest1574AFBA1170F0C9.subtitle}"
+			tasks: [{
+				icon: "cataclysm:mechanical_fusion_anvil"
+				id: "7A99907D5586B097"
+				observe_type: 0
+				timer: 0L
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest1574AFBA1170F0C9.task.8834251012044140695.title}"
+				to_observe: "cataclysm:mechanical_fusion_anvil"
+				type: "observation"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["486521603490981F"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7081.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7081.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7081.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "3A1B9C4D5E6F7081"
+			rewards: [{
+				id: "7B3BC0A2A51759A9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7081.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 305
+						id: "4ba95dcd-35a5-42e8-aa32-ad4e2d518d73"
+						"sword/basic_blade_material": "basic_blade/netherite"
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/basic_blade"
+						"sword/decorative_pommel_material": "decorative_pommel/netherite"
+						"sword/guard": "sword/makeshift_guard"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/hilt:basic_hilt/soot": 0
+						"sword/hilt:hilt/wrap/dragon_sinew": 0
+						"sword/makeshift_guard_material": "makeshift_guard/netherite"
+						"sword/pommel": "sword/decorative_pommel"
+					}
+				}
+				id: "319E7687E7DDA5AD"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "is_tetra_preforged:[skinning_sickle]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7081.task.3575425480261477805.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7081.title}"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A1B9C4D5E6F7081"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7082.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7082.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7082.description3}"
+			]
+			id: "3A1B9C4D5E6F7082"
+			rewards: [{
+				id: "116B45A03161ED19"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7082.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 239
+						id: "2e3de7b9-2910-445e-b90e-9014ec5dc90f"
+						preForgeType: "skinning_sickle"
+						repairCount: 2
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/skinning_sickle"
+						"sword/decorative_pommel_material": "decorative_pommel/netherite"
+						"sword/guard": "sword/makeshift_guard"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/hilt:basic_hilt/soot": 0
+						"sword/hilt:hilt/wrap/dragon_sinew": 0
+						"sword/makeshift_guard_material": "makeshift_guard/netherite"
+						"sword/pommel": "sword/decorative_pommel"
+						"sword/skinning_sickle_material": "skinning_sickle/bone"
+					}
+				}
+				id: "0C615B3CF2C75F40"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[sword/blade]:[sword/skinning_sickle]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7082.task.892094518525386560.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7082.title}"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3A1B9C4D5E6F7082"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7083.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7083.description2}"
+			]
+			id: "3A1B9C4D5E6F7083"
+			rewards: [{
+				id: "6156F1D18748F680"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7083.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 279
+						id: "389ee4a0-8fd4-4987-ba91-9590f3fb0420"
+						preForgeType: "skinning_sickle"
+						repairCount: 2
+						"sword/basic_hilt_material": "basic_hilt/stick"
+						"sword/blade": "sword/skinning_sickle"
+						"sword/blade/settle_progress": 350
+						"sword/decorative_pommel_material": "decorative_pommel/netherite"
+						"sword/hilt": "sword/basic_hilt"
+						"sword/hilt/settle_progress": 314
+						"sword/hilt:basic_hilt/soot": 0
+						"sword/hilt:hilt/wrap/dragon_sinew": 0
+						"sword/pommel": "sword/decorative_pommel"
+						"sword/skinning_sickle_material": "skinning_sickle/dragon_bone"
+					}
+				}
+				id: "070A101FE3F439EF"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "tetra_effect_check:[efficiency,kubejs:skinning,>=,60]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7083.task.507235637187066351.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7083.title}"
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3A1B9C4D5E6F7083"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7084.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7084.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7084.description3}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7084.description4}"
+			]
+			id: "3A1B9C4D5E6F7084"
+			rewards: [{
+				id: "35AD2099630C826B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7084.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_sword"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_count: 7
+						honing_progress: 565
+						id: "5f86ca4c-cee3-478a-b4b0-738d714d83ab"
+						preForgeType: "skinning_sickle"
+						repairCount: 2
+						"sword/ancient_skinning_sickle_material": "ancient_skinning_sickle/ancient_metal"
+						"sword/blade": "sword/ancient_skinning_sickle"
+						"sword/forefinger_ring_material": "forefinger_ring/ancient_metal"
+						"sword/grip_loop_material": "grip_loop/dragon_sinew"
+						"sword/guard": "sword/forefinger_ring"
+						"sword/hilt": "sword/tough_hilt"
+						"sword/hilt:hilt_hone/damage": 1
+						"sword/hilt:quality": 2
+						"sword/pommel": "sword/grip_loop"
+						"sword/tough_hilt_material": "tough_hilt/forged_beam"
+					}
+				}
+				id: "36850B4F7F4FC559"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[sword/blade]:[sword/ancient_skinning_sickle]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7084.task.3928558686016882009.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest3A1B9C4D5E6F7084.title}"
+			x: -3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1574AFBA1170F0C9"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8091.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8091.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8091.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "7B2C8D4E9F1A8091"
+			rewards: [{
+				id: "4D5E6F70819A2B3C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8091.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_single"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 300
+						id: "00323a5e-a365-4ba4-a97c-0e17c2caf643"
+						preForgeType: "tearing_spear"
+						repairCount: 1
+						"single/handle": "single/light_handle"
+						"single/head": "single/spearhead"
+						"single/light_handle_material": "light_handle/stick"
+						"single/spearhead_material": "spearhead/black_steel"
+					}
+				}
+				id: "4D5E6F70819A2B3D"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "is_tetra_preforged:[tearing_spear]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8091.task.5575015917732637501.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8091.title}"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7B2C8D4E9F1A8091"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8092.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8092.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8092.description3}"
+			]
+			id: "7B2C8D4E9F1A8092"
+			rewards: [{
+				id: "4D5E6F70819A2B3E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8092.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_single"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 299
+						id: "a146265b-311c-488b-904c-d14272bb8b2f"
+						preForgeType: "tearing_spear"
+						repairCount: 1
+						"single/handle": "single/long_handle"
+						"single/head": "single/tearing_spear"
+						"single/long_handle_material": "long_handle/stick"
+						"single/tearing_spear_material": "tearing_spear/dragon_bone"
+					}
+				}
+				id: "4D5E6F70819A2B3F"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[single/head]:[single/tearing_spear]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8092.task.5575015917732637503.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8092.title}"
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7B2C8D4E9F1A8092"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8093.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8093.description2}"
+			]
+			id: "7B2C8D4E9F1A8093"
+			rewards: [{
+				id: "4D5E6F70819A2B40"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8093.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_single"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_count: 3
+						id: "43b5a9da-1d53-40e1-ad7f-86998914efe9"
+						preForgeType: "tearing_spear"
+						repairCount: 1
+						"single/handle": "single/long_handle"
+						"single/handle:single_handle/wrap/wool_red": 0
+						"single/head": "single/tearing_spear"
+						"single/head:single/hook": 3
+						"single/long_handle_material": "long_handle/forged_beam"
+						"single/tearing_spear_material": "tearing_spear/ignitium"
+					}
+				}
+				id: "4D5E6F70819A2B41"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "tetra_effect_check:[level,severing,>=,50]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8093.task.5575015917732637505.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8093.title}"
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7B2C8D4E9F1A8093"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8094.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8094.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8094.description3}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8094.description4}"
+			]
+			id: "7B2C8D4E9F1A8094"
+			rewards: [{
+				id: "4D5E6F70819A2B42"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8094.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_single"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_count: 3
+						honing_progress: 420
+						id: "01bdfac8-db23-4182-a587-a98a1022d559"
+						preForgeType: "tearing_spear"
+						repairCount: 1
+						"single/ancient_tearing_spear_material": "ancient_tearing_spear/relics_metal"
+						"single/handle": "single/long_handle"
+						"single/handle:single_handle/wrap/wool_red": 0
+						"single/head": "single/ancient_tearing_spear"
+						"single/long_handle_material": "long_handle/cursium"
+					}
+				}
+				id: "4D5E6F70819A2B43"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[single/head]:[single/ancient_tearing_spear]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8094.task.5575015917732637507.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C8D4E9F1A8094.title}"
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"539289784FDA630E"
+				"7B2C8D4E9F1A8094"
+				"3A1B9C4D5E6F7084"
+			]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest4E94BCA2D31CC38A.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4E94BCA2D31CC38A.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4E94BCA2D31CC38A.description3}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tetra:dynamic_handheld"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					archetype: "modular_scroll"
+					honing_progress: 10
+					id: "a8dcc1fc-427b-4a11-b317-723199b3a4f7"
+					"scroll/material": "scroll/plain_material"
+					"scroll/plain_material_material": "plain_material/paper"
+					"scroll/shaft": "scroll/simple_shaft"
+					"scroll/simple_shaft_material": "simple_shaft/oak"
+					"scroll/socket": "scroll/socket"
+					"scroll/socket_material": "socket/socket_echo_shard"
+				}
+			}
+			id: "4E94BCA2D31CC38A"
+			min_required_dependencies: 2
+			rewards: [{
+				id: "6ED57CB950DE88FE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest4E94BCA2D31CC38A.subtitle}"
+			tasks: [{
+				icon: "minecraft:jukebox"
+				id: "66C8CB36DEA2E69A"
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest4E94BCA2D31CC38A.task.7406393023734671002.title}"
+				type: "maa:auto_complete"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest4E94BCA2D31CC38A.title}"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4E94BCA2D31CC38A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest60742FF227EF32FC.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest60742FF227EF32FC.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest60742FF227EF32FC.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tetra:modular_sword"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					honing_progress: 300
+					id: "932722cb-3291-4038-8e8e-948e497e7def"
+					preForgeType: "skinning_sickle"
+					repairCount: 2
+					"sword/blade": "sword/whip_sword"
+					"sword/grip_loop_material": "grip_loop/iron"
+					"sword/guard": "sword/socket"
+					"sword/hilt": "sword/tough_hilt"
+					"sword/pommel": "sword/grip_loop"
+					"sword/socket_material": "sword_socket/socket_echo_shard"
+					"sword/tough_hilt_material": "tough_hilt/iron"
+					"sword/whip_sword_material": "whip_sword/iron"
+				}
+			}
+			id: "60742FF227EF32FC"
+			rewards: [{
+				id: "7D19E8541404C2E9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest60742FF227EF32FC.subtitle}"
+			tasks: [{
+				id: "492725E078FBFF19"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "tetra/whip_sword"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest60742FF227EF32FC.task.5271223534893137689.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest60742FF227EF32FC.title}"
+			x: 3.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4E94BCA2D31CC38A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest1CC6230AE0967D7B.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest1CC6230AE0967D7B.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest1CC6230AE0967D7B.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tetra:modular_sword"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					honing_progress: 435
+					id: "e29306ad-3106-472a-8139-17f39591f68e"
+					"sword/blade": "sword/katana"
+					"sword/grip_loop_material": "grip_loop/netherite"
+					"sword/guard": "sword/socket"
+					"sword/hilt": "sword/tough_hilt"
+					"sword/katana_material": "katana/netherite"
+					"sword/pommel": "sword/grip_loop"
+					"sword/socket_material": "sword_socket/socket_pristine_emerald"
+					"sword/tough_hilt_material": "tough_hilt/netherite"
+				}
+			}
+			id: "1CC6230AE0967D7B"
+			rewards: [{
+				id: "1C5C98EAE2E53F8B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest1CC6230AE0967D7B.subtitle}"
+			tasks: [{
+				id: "6287DD9F32A60661"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "tetra/katana"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest1CC6230AE0967D7B.task.7099887013392156257.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest1CC6230AE0967D7B.title}"
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4E94BCA2D31CC38A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest28E943D8C8B9A45A.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest28E943D8C8B9A45A.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest28E943D8C8B9A45A.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tetra:modular_single"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					honing_progress: 239
+					id: "ca2062c5-39c1-486b-a408-b4de443254fe"
+					"single/binding": "single/binding"
+					"single/binding_material": "single_binding/prismarine"
+					"single/handle": "single/light_handle"
+					"single/handle/settle_progress": 399
+					"single/head": "single/trident"
+					"single/head/settle_progress": 301
+					"single/head:spearhead/tempered": 1
+					"single/light_handle_material": "light_handle/prismarine"
+					"single/trident_material": "trident/trident"
+				}
+			}
+			id: "28E943D8C8B9A45A"
+			rewards: [{
+				id: "055E79E5119600EA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest28E943D8C8B9A45A.subtitle}"
+			tasks: [{
+				id: "69B4356CC4DF919B"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "tetra/trident"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest28E943D8C8B9A45A.task.7616771611066077595.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest28E943D8C8B9A45A.title}"
+			x: 1.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["4E94BCA2D31CC38A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest0D879D98AD7EB2F4.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest0D879D98AD7EB2F4.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest0D879D98AD7EB2F4.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tetra:modular_shield"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					honing_progress: 144
+					id: "3c1ba8a6-a907-4796-9f7c-9c23961fb01d"
+					"shield/basic_grip_material": "basic_grip/iron"
+					"shield/fortress_material": "fortress/black_steel"
+					"shield/grip": "shield/basic_grip"
+					"shield/plate": "shield/fortress"
+					"shield/plate:potentiality/frost_fortress": 0
+				}
+			}
+			id: "0D879D98AD7EB2F4"
+			rewards: [{
+				id: "0B53E499A0B2218F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest0D879D98AD7EB2F4.subtitle}"
+			tasks: [{
+				id: "473AB5AC711DC42C"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "tetra/fortress"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest0D879D98AD7EB2F4.task.5132614477578880044.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest0D879D98AD7EB2F4.title}"
+			x: -1.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["4E94BCA2D31CC38A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest3AD5A4168D94A137.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3AD5A4168D94A137.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest3AD5A4168D94A137.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "tetra:modular_bow"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					"bow/arcane_stave_material": "arcane_stave/cursium"
+					"bow/basic_string_material": "basic_string/string"
+					"bow/stave": "bow/arcane_stave"
+					"bow/stave:potentiality/dimension_stave": 0
+					"bow/string": "bow/basic_string"
+					honing_progress: 176
+					id: "02526907-3e20-46a8-a8c6-7b9213739f70"
+				}
+			}
+			id: "3AD5A4168D94A137"
+			rewards: [{
+				id: "1475EE5D85116DEC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest3AD5A4168D94A137.subtitle}"
+			tasks: [{
+				id: "2067FD6A10514A3B"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "tetra/arcane_stave"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest3AD5A4168D94A137.task.2335113563797015099.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest3AD5A4168D94A137.title}"
+			x: -4.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["28E943D8C8B9A45A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest5D66218379F23006.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest5D66218379F23006.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest5D66218379F23006.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "kubejs:ancient_cold_armor_plate"
+				tag: { }
+			}
+			id: "5D66218379F23006"
+			rewards: [{
+				id: "43C941B52391FF56"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest5D66218379F23006.subtitle}"
+			tasks: [{
+				id: "0547916FE840DA03"
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest5D66218379F23006.task.380432603360057859.title}"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["0D879D98AD7EB2F4"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest4E8291028BC9C730.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4E8291028BC9C730.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4E8291028BC9C730.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "kubejs:ancient_eternal_cold_crystal"
+				tag: { }
+			}
+			id: "4E8291028BC9C730"
+			rewards: [{
+				id: "076C2C5F112D341C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest4E8291028BC9C730.subtitle}"
+			tasks: [{
+				id: "6C23DF718FA65A92"
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest4E8291028BC9C730.task.7792317459115432594.title}"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 20.0d
+		}
+		{
+			dependencies: ["3AD5A4168D94A137"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest2FAB38A8CE12BF54.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest2FAB38A8CE12BF54.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest2FAB38A8CE12BF54.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "kubejs:ancient_kraken_eye"
+				tag: { }
+			}
+			id: "2FAB38A8CE12BF54"
+			rewards: [{
+				id: "3B31007E13990542"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest2FAB38A8CE12BF54.subtitle}"
+			tasks: [{
+				id: "5B6C72BD477769E0"
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest2FAB38A8CE12BF54.task.6587766512209586656.title}"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["5D66218379F23006"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest667B22586990FF25.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest667B22586990FF25.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_single"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					honing_progress: 360
+					id: "7520da88-3d2e-4f07-bb13-3dbb63833087"
+					"single/binding": "single/binding"
+					"single/binding_material": "single_binding/prismarine"
+					"single/handle": "single/long_handle"
+					"single/head": "single/thundering_trident_head"
+					"single/head:potentiality/thundering_trident_awaken": 0
+					"single/long_handle_material": "long_handle/cursium"
+					"single/thundering_trident_head_material": "thundering_trident_head/cursium"
+				}
+			}
+			id: "667B22586990FF25"
+			rewards: [{
+				id: "555F35D422540A77"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest667B22586990FF25.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_single"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 360
+						id: "7520da88-3d2e-4f07-bb13-3dbb63833087"
+						"single/binding": "single/binding"
+						"single/binding_material": "single_binding/prismarine"
+						"single/handle": "single/long_handle"
+						"single/head": "single/thundering_trident_head"
+						"single/head:potentiality/thundering_trident_awaken": 0
+						"single/long_handle_material": "long_handle/cursium"
+						"single/thundering_trident_head_material": "thundering_trident_head/cursium"
+					}
+				}
+				id: "7DD740E90A36860F"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "tetra_effect_check:[improvement,potentiality/thundering_trident_awaken,>=,1]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest667B22586990FF25.task.9067787744376686095.title}"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["4E8291028BC9C730"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest5DDDBB24CA51024A.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest5DDDBB24CA51024A.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_shield"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					honing_progress: 78
+					id: "3c05049f-a0ae-455f-a81c-5640396552ac"
+					repairCount: 2
+					"shield/basic_grip_material": "basic_grip/iron"
+					"shield/frost_fortress_material": "frost_fortress/irons_spellbooks_frozen_bone"
+					"shield/grip": "shield/basic_grip"
+					"shield/grip/settle_progress": 312
+					"shield/plate": "shield/frost_fortress"
+					"shield/plate:potentiality/frost_fortress_awaken": 0
+				}
+			}
+			id: "5DDDBB24CA51024A"
+			rewards: [{
+				id: "359C7B559174BAE5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest5DDDBB24CA51024A.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_shield"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_progress: 78
+						id: "3c05049f-a0ae-455f-a81c-5640396552ac"
+						repairCount: 2
+						"shield/basic_grip_material": "basic_grip/iron"
+						"shield/frost_fortress_material": "frost_fortress/irons_spellbooks_frozen_bone"
+						"shield/grip": "shield/basic_grip"
+						"shield/grip/settle_progress": 312
+						"shield/plate": "shield/frost_fortress"
+						"shield/plate:potentiality/frost_fortress_awaken": 0
+					}
+				}
+				id: "7A6B11473D624583"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "tetra_effect_check:[improvement,potentiality/frost_fortress_awaken,>=,1]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest5DDDBB24CA51024A.task.8821163292805449091.title}"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["2FAB38A8CE12BF54"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest44A6D89535EAD4B0.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest44A6D89535EAD4B0.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_bow"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					"bow/basic_string_material": "basic_string/string"
+					"bow/dimension_arcane_stave_material": "dimension_arcane_stave/end_rod"
+					"bow/stave": "bow/dimension_arcane_stave"
+					"bow/stave:potentiality/dimension_stave_awaken": 0
+					"bow/string": "bow/basic_string"
+					honing_progress: 112
+					id: "be8d71e0-97b1-4075-af8f-bb81d86a2ba8"
+				}
+			}
+			id: "44A6D89535EAD4B0"
+			rewards: [{
+				id: "61C14AC1A6256284"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest44A6D89535EAD4B0.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_bow"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						"bow/basic_string_material": "basic_string/string"
+						"bow/dimension_arcane_stave_material": "dimension_arcane_stave/end_rod"
+						"bow/stave": "bow/dimension_arcane_stave"
+						"bow/stave:potentiality/dimension_stave_awaken": 0
+						"bow/string": "bow/basic_string"
+						honing_progress: 112
+						id: "be8d71e0-97b1-4075-af8f-bb81d86a2ba8"
+					}
+				}
+				id: "71071ACA1BF1DC1D"
+				item: {
+					Count: 1
+					id: "maa:kube_custom"
+					tag: {
+						value: "tetra_effect_check:[improvement,potentiality/dimension_stave_awaken,>=,1]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest44A6D89535EAD4B0.task.8144507906477382685.title}"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["133A28D884F01479"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest235761180CC8A85E.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest235761180CC8A85E.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest235761180CC8A85E.description3}"
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:world_computer"
+			id: "235761180CC8A85E"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "33D4F82CB3E259BB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest235761180CC8A85E.subtitle}"
+			tasks: [{
+				id: "7C726454DEB6226E"
+				item: "kubejs:world_token_tetra"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest235761180CC8A85E.title}"
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["235761180CC8A85E"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest2C931EC08A435CE0.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest2C931EC08A435CE0.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest2C931EC08A435CE0.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "2C931EC08A435CE0"
+			rewards: [{
+				id: "7A1883ADE9627690"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest2C931EC08A435CE0.subtitle}"
+			tasks: [{
+				id: "1F94F9838B6726B5"
+				item: "kubejs:genesis_slate"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -13.5d
+		}
+		{
+			dependencies: ["235761180CC8A85E"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest2F4895091A30F65E.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest2F4895091A30F65E.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "2F4895091A30F65E"
+			rewards: [{
+				id: "0663BEEFA2D875B1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest2F4895091A30F65E.subtitle}"
+			tasks: [{
+				id: "25E320254C9D3F8B"
+				item: "kubejs:genesis_pillar"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"2F4895091A30F65E"
+				"2C931EC08A435CE0"
+			]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest66EBEBF6DC64C1B8.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest66EBEBF6DC64C1B8.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:dynamic_handheld"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					archetype: "modular_scroll"
+					honing_progress: 10
+					id: "2ef71437-e641-43e1-b7ab-967df04ddc41"
+					"scroll/material": "scroll/plain_material_genesis"
+					"scroll/plain_material_genesis_material": "plain_material/genesis_slate"
+					"scroll/shaft": "scroll/simple_shaft_genesis"
+					"scroll/simple_shaft_genesis_material": "simple_shaft/genesis_pillar"
+					"scroll/socket": "scroll/socket"
+					"scroll/socket_material": "socket/socket_echo_shard"
+				}
+			}
+			id: "66EBEBF6DC64C1B8"
+			rewards: [{
+				id: "36A0F6C3C786BAEF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest66EBEBF6DC64C1B8.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:dynamic_handheld"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						archetype: "modular_scroll"
+						honing_progress: 10
+						id: "2ef71437-e641-43e1-b7ab-967df04ddc41"
+						"scroll/material": "scroll/plain_material_genesis"
+						"scroll/plain_material_genesis_material": "plain_material/genesis_slate"
+						"scroll/shaft": "scroll/simple_shaft_genesis"
+						"scroll/simple_shaft_genesis_material": "simple_shaft/genesis_pillar"
+						"scroll/socket": "scroll/socket"
+						"scroll/socket_material": "socket/socket_echo_shard"
+					}
+				}
+				id: "4256155DC53DACFA"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "genesis_crafting"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest66EBEBF6DC64C1B8.task.4780031546985655546.title}"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["66EBEBF6DC64C1B8"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest01DA370A220DADFB.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest01DA370A220DADFB.description2}"
+				""
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest01DA370A220DADFB.description3}"
+			]
+			id: "01DA370A220DADFB"
+			rewards: [{
+				id: "4735969BEE0A1F56"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest01DA370A220DADFB.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_single"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						honing_available: 1b
+						honing_count: 1
+						honing_progress: 0
+						id: "caa76395-d3b4-4eb0-ba54-0bc2b1719c3c"
+						preForgeType: "tearing_spear"
+						repairCount: 1
+						"single/basic_handle_material": "basic_handle/genesis_pillar"
+						"single/genesis_tool_material": "genesis_tool/genesis_tool"
+						"single/handle": "single/basic_handle"
+						"single/handle:quality": 2
+						"single/handle:settled": 2
+						"single/head": "single/genesis_tool"
+						"single/head:quality": 2
+						"single/head:settled": 2
+					}
+				}
+				id: "6AE9C3A2BF0BD512"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[single/head]:[single/genesis_tool]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest01DA370A220DADFB.task.7703903741351286034.title}"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -16.5d
+		}
+		{
+			dependencies: [
+				"5DDDBB24CA51024A"
+				"44A6D89535EAD4B0"
+				"667B22586990FF25"
+				"7B2C911A7F59A9E6"
+			]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest72CC4F516FCC62C7.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest72CC4F516FCC62C7.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest72CC4F516FCC62C7.description3}"
+				"{ftbquests.chapter.629F40F1AD701A38.quest72CC4F516FCC62C7.description4}"
+			]
+			hide_until_deps_complete: true
+			id: "72CC4F516FCC62C7"
+			min_required_dependencies: 2
+			rewards: [
+				{
+					id: "1C79A66DC4828AC6"
+					item: "lightmanscurrency:coin_emerald"
+					type: "item"
+				}
+				{
+					auto: "invisible"
+					id: "36D0BC1A0837E4F1"
+					ignore_reward_blocking: true
+					kubeId: "chapter_complete_raw"
+					title: "{ftbquests.chapter.629F40F1AD701A38.quest72CC4F516FCC62C7.reward.3949863693196977393.title}"
+					type: "maa:kube"
+				}
+			]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest72CC4F516FCC62C7.subtitle}"
+			tasks: [{
+				icon: "kubejs:key_to_infinity"
+				id: "55B90F0916989957"
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest72CC4F516FCC62C7.task.6176984895623567703.title}"
+				type: "maa:auto_complete"
+			}]
+			x: 0.0d
+			y: 25.5d
+		}
+		{
+			dependencies: ["4C291E94F00EA4DE"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest377398AA89EEF7FE.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest377398AA89EEF7FE.description2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "377398AA89EEF7FE"
+			rewards: [{
+				id: "11AEADCB7BFF2C55"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest377398AA89EEF7FE.subtitle}"
+			tasks: [{
+				id: "0E16CFC9067EF491"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "tetra:pristine_diamond"
+							}
+							{
+								Count: 1b
+								id: "tetra:pristine_lapis"
+							}
+							{
+								Count: 1b
+								id: "tetra:pristine_emerald"
+							}
+							{
+								Count: 1b
+								id: "tetra:pristine_amethyst"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest377398AA89EEF7FE.task.1015227228322985105.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest377398AA89EEF7FE.title}"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4C291E94F00EA4DE"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest40B27A431C057D30.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest40B27A431C057D30.description2}"
+			]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "40B27A431C057D30"
+			rewards: [{
+				id: "70B3EFEC1033EDC5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest40B27A431C057D30.subtitle}"
+			tasks: [{
+				id: "2C4B8ADD07180A5D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:awaken_diamond"
+							}
+							{
+								Count: 1b
+								id: "kubejs:awaken_lapis"
+							}
+							{
+								Count: 1b
+								id: "kubejs:awaken_emerald"
+							}
+							{
+								Count: 1b
+								id: "kubejs:awaken_amethyst"
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest40B27A431C057D30.task.3191797442833549917.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest40B27A431C057D30.title}"
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4E94BCA2D31CC38A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest11EC77CD1B223040.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest11EC77CD1B223040.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest11EC77CD1B223040.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_single"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					honing_progress: 259
+					id: "563474bd-402a-4388-9f7b-58ad8793d081"
+					repairCount: 1
+					"single/great_hammer_material": "great_hammer/relics_metal"
+					"single/handle": "single/long_handle"
+					"single/handle/settle_progress": 388
+					"single/head": "single/great_hammer"
+					"single/head/settle_progress": 576
+					"single/long_handle_material": "long_handle/forged_beam"
+				}
+			}
+			id: "11EC77CD1B223040"
+			rewards: [{
+				id: "3226803D4BFA0D83"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest11EC77CD1B223040.subtitle}"
+			tasks: [{
+				id: "0607335EB6C9EFCE"
+				item: {
+					Count: 1
+					id: "maa:tetra_scroll"
+					tag: {
+						value: "tetra/great_hammer"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest11EC77CD1B223040.task.434372370951172046.title}"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4E94BCA2D31CC38A"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest2FDD3E140DCD7C3C.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest2FDD3E140DCD7C3C.description2}"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					HideFlags: 3
+					"double/basic_handle_material": "basic_handle/irons_spellbooks_frozen_bone"
+					"double/gula_scythe_left_material": "gula_scythe/irons_spellbooks_frozen_bone"
+					"double/gula_scythe_right_material": "gula_scythe/irons_spellbooks_frozen_bone"
+					"double/handle": "double/basic_handle"
+					"double/handle/settle_progress": 332
+					"double/handle:settled": 2
+					"double/head_left": "double/gula_scythe_left"
+					"double/head_left:double/fine_offerings": 3
+					"double/head_right": "double/gula_scythe_right"
+					"double/head_right:double/fine_offerings": 1
+					honing_count: 6
+					honing_progress: 290
+					id: "e28f1925-8cf3-46c1-a402-3d4267399edd"
+				}
+			}
+			id: "2FDD3E140DCD7C3C"
+			rewards: [{
+				id: "29F736FE015E03EF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest2FDD3E140DCD7C3C.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						"double/basic_handle_material": "basic_handle/irons_spellbooks_frozen_bone"
+						"double/gula_scythe_left_material": "gula_scythe/irons_spellbooks_frozen_bone"
+						"double/gula_scythe_right_material": "gula_scythe/irons_spellbooks_frozen_bone"
+						"double/handle": "double/basic_handle"
+						"double/handle/settle_progress": 332
+						"double/handle:settled": 2
+						"double/head_left": "double/gula_scythe_left"
+						"double/head_left:double/fine_offerings": 3
+						"double/head_right": "double/gula_scythe_right"
+						"double/head_right:double/fine_offerings": 1
+						honing_count: 6
+						honing_progress: 290
+						id: "e28f1925-8cf3-46c1-a402-3d4267399edd"
+					}
+				}
+				id: "2A3F66C34A788C5D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "maa:tetra_module"
+								tag: {
+									value: "[double/head_left]:[double/gula_scythe_left]"
+								}
+							}
+							{
+								Count: 1b
+								id: "maa:tetra_module"
+								tag: {
+									value: "[double/head_right]:[double/gula_scythe_right]"
+								}
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest2FDD3E140DCD7C3C.task.3044264862079814749.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.629F40F1AD701A38.quest2FDD3E140DCD7C3C.title}"
+			x: 4.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["2FDD3E140DCD7C3C"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest285F54999D74209F.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest285F54999D74209F.description2}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest285F54999D74209F.description3}"
+			]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "kubejs:dying_heart"
+				tag: { }
+			}
+			id: "285F54999D74209F"
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest285F54999D74209F.subtitle}"
+			tasks: [{
+				id: "324FACB730DB1B93"
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest285F54999D74209F.task.3625306127855197075.title}"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["285F54999D74209F"]
+			description: ["{ftbquests.chapter.629F40F1AD701A38.quest7B2C911A7F59A9E6.description1}"]
+			id: "7B2C911A7F59A9E6"
+			rewards: [{
+				id: "7C16E40E05EB5395"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C911A7F59A9E6.subtitle}"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						HideFlags: 3
+						"double/basic_handle_material": "basic_handle/dragon_bone"
+						"double/bloodshed_scythe_left_material": "bloodshed_scythe/dragon_bone"
+						"double/bloodshed_scythe_right_material": "bloodshed_scythe/dragon_bone"
+						"double/handle": "double/basic_handle"
+						"double/handle/settle_progress": 332
+						"double/handle:settled": 2
+						"double/head_left": "double/bloodshed_scythe_left"
+						"double/head_left/settle_progress": 379
+						"double/head_left:bloodshed_scythe/fine_offerings": 3
+						"double/head_left:double/fine_offerings": 3
+						"double/head_left:potentiality/bloodshed_scythe_left_awaken": 0
+						"double/head_left:settled": 2
+						"double/head_right": "double/bloodshed_scythe_right"
+						"double/head_right/settle_progress": 523
+						"double/head_right:bloodshed_scythe/fine_offerings": 3
+						"double/head_right:double/fine_offerings": 1
+						"double/head_right:potentiality/bloodshed_scythe_right_awaken": 0
+						"double/head_right:settled": 2
+						honing_count: 6
+						honing_progress: 866
+						id: "58a3c6b9-1834-4f0a-b99a-fd48d1522e82"
+					}
+				}
+				id: "58B007247B452055"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "maa:tetra_module"
+								tag: {
+									value: "[double/head_left]:[double/bloodshed_scythe_left]"
+								}
+							}
+							{
+								Count: 1b
+								id: "maa:tetra_module"
+								tag: {
+									value: "[double/head_right]:[double/bloodshed_scythe_right]"
+								}
+							}
+						]
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest7B2C911A7F59A9E6.task.6390615724507078741.title}"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 22.5d
+		}
+		{
+			dependencies: ["4C291E94F00EA4DE"]
+			description: ["{ftbquests.chapter.629F40F1AD701A38.quest70517A0E1C3C1124.description1}"]
+			hide_dependency_lines: true
+			id: "70517A0E1C3C1124"
+			rewards: [{
+				id: "708CC9246965A1A7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest70517A0E1C3C1124.subtitle}"
+			tasks: [{
+				id: "29EF7179924FC1A3"
+				item: {
+					Count: 1
+					id: "maa:tetra_module"
+					tag: {
+						value: "[toolbelt/belt]:[toolbelt/belt]"
+					}
+				}
+				title: "{ftbquests.chapter.629F40F1AD701A38.quest70517A0E1C3C1124.task.3021758641948574115.title}"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["70517A0E1C3C1124"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest55C2022B5156494B.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest55C2022B5156494B.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "55C2022B5156494B"
+			rewards: [{
+				id: "284622046BF3BEF9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest55C2022B5156494B.subtitle}"
+			tasks: [{
+				id: "68C20776200D8595"
+				item: "tetra:planar_stabilizer"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["70517A0E1C3C1124"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest398041AD0A3890CB.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest398041AD0A3890CB.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "398041AD0A3890CB"
+			rewards: [{
+				id: "7872BDAFDB777418"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest398041AD0A3890CB.subtitle}"
+			tasks: [{
+				id: "79375957DE0C7F7F"
+				item: "supplementaries:enderman_head"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["70517A0E1C3C1124"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest103C4F6048727035.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest103C4F6048727035.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "103C4F6048727035"
+			rewards: [{
+				id: "0693262D035E2E15"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest103C4F6048727035.subtitle}"
+			tasks: [{
+				id: "24B09445D632FC86"
+				item: "compactcrafting:field_projector"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["70517A0E1C3C1124"]
+			description: [
+				"{ftbquests.chapter.629F40F1AD701A38.quest4D19028C087B8D2B.description1}"
+				""
+				"{ftbquests.chapter.629F40F1AD701A38.quest4D19028C087B8D2B.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "4D19028C087B8D2B"
+			rewards: [{
+				id: "7301AEA1FF89E429"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.629F40F1AD701A38.quest4D19028C087B8D2B.subtitle}"
+			tasks: [
+				{
+					id: "3256C97119ACEAD5"
+					item: "kubejs:random_tick_spring"
+					type: "item"
+				}
+				{
+					id: "2CAA5A8CA1DA3DFD"
+					item: "kubejs:counterweight_gear"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 4.0d
+		}
+	]
+	title: "{ftbquests.chapter.629F40F1AD701A38.title}"
+}

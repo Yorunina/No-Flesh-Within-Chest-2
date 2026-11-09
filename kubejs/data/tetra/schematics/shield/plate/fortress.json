@@ -1,0 +1,40 @@
+{
+    "replace": true,
+    "slots": [
+        "shield/plate"
+    ],
+    "materialSlotCount": 1,
+    "requirement": {
+        "type": "tetra:locked",
+        "key": "tetra:shield/fortress"
+    },
+    "rarity": "temporary",
+    "displayType": "major",
+    "glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 16,
+		"textureY": 80
+    },
+    "translation": {
+        "primaryAttributes": {
+            "tetra:ability_damage": 3
+        },
+        "secondaryAttributes": {
+            "tetra:ability_damage": 2,
+            "tetra:ability_cooldown": -3
+        },
+        "tertiaryAttributes": {
+            "tetra:ability_cooldown": 1
+        },
+        "durability": 4,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:stone/", "tetra:bone/" ],
+            "moduleKey": "shield/fortress",
+            "moduleVariant": "fortress/"
+        }
+    ]
+}

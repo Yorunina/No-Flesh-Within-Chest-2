@@ -1,0 +1,20 @@
+{
+    "replace": true,
+    "type": "tetra:toolbelt_module",
+    "slots": [ "toolbelt/slot1", "toolbelt/slot2", "toolbelt/slot3" ],
+    "slotSuffixes": [ "_slot1", "_slot2", "_slot3" ],
+    "variants": [
+        {
+            "key": "wings_projector/wings_projector",
+            "integrity": -2,
+            "glyph": {
+                "tint": "ffffff",
+                "textureX": 176,
+                "textureY": 48
+            },
+            "effects": {
+                "kubejs:projection_wings": 1
+            }
+        }
+    ]
+}

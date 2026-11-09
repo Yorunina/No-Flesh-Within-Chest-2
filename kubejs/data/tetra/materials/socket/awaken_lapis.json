@@ -1,0 +1,26 @@
+{
+    "key": "socket_awaken_lapis",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 32,
+    "integrityCost": 1,
+    "integrityGain": 0,
+    "magicCapacity": 80,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "kubejs:knowledge": 8
+    },
+    "tints": {
+        "glyph": "lapis_glyph",
+        "texture": "lapis"
+    },
+    "textures": ["default"],
+    "experienceCost": 3,
+    "material": {
+        "items": ["kubejs:awaken_lapis"]
+    }
+}

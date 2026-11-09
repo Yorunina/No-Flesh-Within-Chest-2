@@ -1,0 +1,52 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:demon_devour",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 100,
+    "stat": {
+        "type": "tetra:multiply",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:demon_devour"
+            }
+        ],
+        "factor": 10
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "percentage",
+        "diff_format": "percentage"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:demon_devour.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:demon_devour"
+            },
+            {
+                "type": "tetra:multiply",
+                "stats": [
+                    {
+                        "type": "tetra:effect_level",
+                        "effect": "kubejs:demon_devour"
+                    }
+                ],
+                "factor": 10
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "percentage"
+            }
+        ]
+    }
+}

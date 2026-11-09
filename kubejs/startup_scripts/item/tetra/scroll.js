@@ -15,3 +15,16 @@ StartupEvents.modifyCreativeTab('kubejs:tab', event => {
         TetraJSUtils.setupScrollData('thunder_inspiration', 'thunder_inspiration', [], ['thunder_inspiration'], false, 0, 0xf5f573, [15, 14, 15, 15]),
     ])
 })
+
+StartupEvents.modifyCreativeTab('kubejs:tab', event => {
+    event.add([
+        TetraJSUtils.setupScrollData('genesis_crafting', 'genesis_crafting', ['genesis_crafting'], ['genesis_crafting'], true, 2, 0xE7EB56, [13, 10, 8, 7]),
+        TetraJSUtils.setupScrollData('tetra/trident', 'relic', ['single/trident'], [], false, 0, 0x0000FF, [6, 15, 4, 8]),
+        TetraJSUtils.setupScrollData('tetra/fortress', 'relic', ['shield/fortress'], [], false, 0, 0x7A7A7A, [6, 15, 4, 8]),
+        TetraJSUtils.setupScrollData('tetra/arcane_stave', 'relic', ['bow/arcane_stave'], [], false, 0, 0x9641FC, [6, 15, 4, 8]),
+        TetraJSUtils.setupScrollData('tetra/whip_sword', 'relic', ['sword/whip_sword'], [], false, 0, 0xFFFFFF, [6, 15, 4, 8]),
+        TetraJSUtils.setupScrollData('tetra/great_hammer', 'relic', ['single/great_hammer'], [], false, 0, 0x727D80, [6, 15, 4, 8]),
+        TetraJSUtils.setupScrollData('tetra/katana', 'relic', ['sword/katana'], [], false, 0, 0xFF0000, [6, 15, 4, 8]),
+        TetraJSUtils.setupScrollData('tetra/thousand_cold_nights', 'relic', ['sword/katana', 'katana/thousand_cold_nights'], [], true, 2, 0xFF0000, [6, 15, 4, 8]),
+    ])
+})

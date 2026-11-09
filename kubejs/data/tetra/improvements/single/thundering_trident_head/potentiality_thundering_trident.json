@@ -1,0 +1,28 @@
+[
+    {
+        "key": "potentiality/thundering_trident",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        }
+    },
+    {
+        "key": "potentiality/thundering_trident_awaken",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        },
+        "effects": {
+            "kubejs:lightning_immune": 1
+        },
+       "models": [
+            {
+                "location": "tetra:item/module/single/head/trident_head/improvements/thundering_trident",
+                "renderLayer": "low",
+                "emission": 15
+            }
+        ]
+    }
+]

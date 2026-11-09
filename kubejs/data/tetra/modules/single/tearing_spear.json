@@ -1,0 +1,52 @@
+{
+	"replace": true,
+    "slots": [ "single/head" ],
+	"type": "tetra:basic_major_module",
+	"improvements": [
+		"tetra:single/tearing_spear/",
+		"tetra:single/shared_head/",
+		"tetra:single/shared/",
+		"tetra:shared/"
+	],
+	"variants": [
+		{
+			"materials": [ "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+			"key": "tearing_spear/",
+			"attributes": {
+				"generic.attack_speed": -1,
+				"generic.attack_damage": 0.5
+			},
+            "aspects": {
+                "pointy_weapon": 1,
+                "throwable": 1,
+                "breakable": 2
+            },
+			"durability": -20,
+			"extract": {
+				"primaryAttributes": {
+					"generic.attack_damage": 1.2
+				},
+				"secondaryAttributes": {
+					"generic.attack_speed": -0.12
+				},
+				"primaryEffects": {
+					"severing": [5, 0]
+				},
+				"secondaryEffects": {
+					"severing": [0, 0.8]
+				},
+				"durability": 0.8,
+				"integrity": -1,
+				"magicCapacity": 1,
+				"glyph": {
+					"textureLocation": "tetra:textures/gui/gud_glyph.png",
+					"textureY": 64
+				},
+				"availableTextures": [ "metal", "shiny", "crude" ],
+				"models": [{
+					"location": "tetra:item/module/single/head/tearing_spear/"
+				}]
+			}
+		}
+	]
+}

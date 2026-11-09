@@ -1,0 +1,44 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:runner",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 100,
+    "stat": {
+        "type": "tetra:multiply",
+        "factor": 20,
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:runner"
+            }
+        ]
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "percentage",
+        "diff_format": "percentage"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:runner.tooltip",
+        "stats": [
+            {
+                "type": "tetra:multiply",
+                "factor": 20,
+                "stats": [
+                    {
+                        "type": "tetra:effect_level",
+                        "effect": "kubejs:runner"
+                    }
+                ]
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "percentage"
+            }
+        ]
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "replace": true,
+    "slots": [
+        "double/head_left",
+        "double/head_right"
+    ],
+    "keySuffixes": [
+        "_left",
+        "_right"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 64
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "bloodshed_scythe/fine_offerings",
+        "level": 2
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "bloodshed_scythe/fine_offerings": 3
+            }
+        }
+    ]
+}

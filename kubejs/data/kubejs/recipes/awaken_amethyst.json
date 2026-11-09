@@ -1,0 +1,25 @@
+{
+  "type": "ars_nouveau:enchanting_apparatus",
+  "keepNbtOfReagent": false,
+  "level": 5,
+  "output": {
+    "item": "kubejs:awaken_amethyst"
+  },
+  "pedestalItems": [
+    {
+      "tag": "forge:gems/source"
+    },
+    {
+      "tag": "forge:gems/source"
+    },
+    {
+      "tag": "forge:gems/source"
+    }
+  ],
+  "reagent": [
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "sourceCost": 1000
+}

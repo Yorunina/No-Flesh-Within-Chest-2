@@ -1,0 +1,25 @@
+{
+	"replace": true,
+	"slots": [ "single/head" ],
+	"rarity": "inspired",
+    "materialRevealSlot": 0,
+	"displayType": "major",
+    "requirement": {
+        "type": "tetra:locked",
+        "key": "tetra:genesis_crafting"
+    },
+	"glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+		"textureX": 240,
+		"textureY": 240
+	},
+	"outcomes": [
+		{
+	        "material": {
+                "items": [ "kubejs:genesis_slate" ]
+            },
+			"moduleKey": "single/genesis_tool",
+			"moduleVariant": "genesis_tool/genesis_tool"
+		}
+	]
+}

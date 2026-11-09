@@ -3,6 +3,8 @@ const PreForgeTypeFlamberge = 'flamberge'
 const PreForgeTypePrimordialCradle = 'primordial_cradle'
 const PreForgeTypeMechanicalSaw = 'mechanical_saw'
 const PreForgeTypeContainer = 'container'
+const PreForgeTypeTearingSpear = 'tearing_spear'
+const PreForgeTypeSkinningSickle = 'skinning_sickle'
 
 /**
  * 

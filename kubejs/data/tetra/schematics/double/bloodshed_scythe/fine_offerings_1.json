@@ -1,0 +1,54 @@
+{
+    "replace": true,
+    "slots": [
+        "double/head_left",
+        "double/head_right"
+    ],
+    "keySuffixes": [
+        "_left",
+        "_right"
+    ],
+    "materialSlotCount": 0,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/custom_glyph.png",
+        "textureX": 64
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:or",
+                "requirements": [
+                    {
+                        "type": "tetra:improvement",
+                        "improvement": "potentiality/bloodshed_scythe_left_awaken"
+                    },
+                    {
+                        "type": "tetra:improvement",
+                        "improvement": "potentiality/bloodshed_scythe_right_awaken"
+                    }
+                ]
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "bloodshed_scythe/fine_offerings"
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "experienceCost":5,
+            "improvements": {
+                "bloodshed_scythe/fine_offerings": 1
+            }
+        }
+    ]
+}

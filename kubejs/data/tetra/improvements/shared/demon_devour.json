@@ -1,0 +1,12 @@
+[
+    {
+        "key": "demon_devour",
+        "level": 0,
+        "effects": {
+            "kubejs:demon_devour": [5, 5]
+        },
+        "glyph": {
+            "tint": "FF5555"
+        }
+    }
+]

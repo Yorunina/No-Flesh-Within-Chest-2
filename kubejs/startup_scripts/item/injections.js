@@ -14,7 +14,7 @@ RegistryChestCavityInjection('transdimensional_rose')
 RegistryChestCavityInjection('transdimensional_relics')
 RegistryChestCavityInjection('plant')
 RegistryChestCavityInjection('relics_awakening')
-RegistryChestCavityInjection('factory', 'kubejs:cc_inventory_types/factory')
+RegistryChestCavityInjection('factory')
 
 /**
  * @param {string} typeName

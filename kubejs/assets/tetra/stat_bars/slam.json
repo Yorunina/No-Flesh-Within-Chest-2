@@ -1,0 +1,41 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:slam",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 100,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "kubejs:slam"
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "percentage",
+        "diff_format": "percentage"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:slam.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:slam"
+            },
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:slam"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "single_decimal"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "percentage"
+            }
+        ]
+    },
+    "indicators": [ "tetra:slam/" ]
+}

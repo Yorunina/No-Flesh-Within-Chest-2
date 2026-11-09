@@ -1,5 +1,13 @@
 // priority: 2000
-const $ChampionEventIdType = 'entity_be_hurt' || 'entity_tick' || 'entity_death' || 'entity_kill' || 'entity_spawned'
+/**
+ * @typedef {
+ *     'entity_be_hurt'
+ *     | 'entity_tick'
+ *     | 'entity_death'
+ *     | 'entity_kill'
+ *     | 'entity_spawned'
+ * } $ChampionEventIdType
+ */
 
 function ChampionStrategyModel(id) {
     /** @type {String} */

@@ -1,0 +1,47 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+	    " b ",
+        "cad",
+        " e "
+	],
+	"key": {
+		"a": {
+            "type": "tetra:scroll",
+            "key": "tetra/katana",
+            "intricate": false,
+            "material": 0,
+            "ribbon": "FF0000",
+            "schematics": [ " " ]
+		},
+		"b": {
+			"item": "kubejs:bone_cage"
+		},
+		"c": {
+			"item": "kubejs:freezing_bone_cage"
+		},
+		"d": {
+			"item": "kubejs:flaming_bone_cage"
+		},
+		"e": {
+			"item": "kubejs:wither_bone_cage"
+		}
+	},
+	"result": {
+		"item": "tetra:scroll_rolled",
+		"count": 1,
+		"nbt": {
+			"BlockEntityTag": {
+				"data": [{
+                    "key": "tetra/thousand_cold_nights",
+                    "intricate": true,
+					"details": "relic",
+					"material": 2,
+                    "ribbon": "FF0000",
+                    "glyphs": [6, 15, 4, 8],
+                    "schematics": [ "tetra:sword/katana", "tetra:katana/thousand_cold_nights" ]
+				}]
+			}
+		}
+	}
+}

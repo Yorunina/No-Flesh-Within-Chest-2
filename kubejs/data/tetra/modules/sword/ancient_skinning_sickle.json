@@ -1,0 +1,63 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:sword/ancient_skinning_sickle/",
+        "tetra:sword/shared_blade/",
+        "tetra:sword/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": ["tetra:gem/", "tetra:stone/" , "tetra:metal/", "tetra:bone/"],
+            "key": "ancient_skinning_sickle/",
+            "attributes": {
+                "generic.attack_damage": 1.5,
+                "generic.attack_speed": -0.5
+            },
+            "aspects": {
+                "block_breaker": 1,
+                "edged_weapon": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "kubejs:gutting": 5
+            },
+            "durability": -10,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 0.8
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.1
+                },
+                "primaryEffects": {
+                    "kubejs:gutting": 2
+                },
+                "tertiaryEffects": {
+                    "kubejs:gutting": 1
+                },
+                "tools": {
+                    "cut": [ 0.6, 1.3 ]
+                },
+                "durability": 0.55,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 48,
+                    "textureY": 64
+                },
+                "availableTextures": [ "default"],
+                "models": [{
+                    "location": "tetra:item/module/sword/blade/ancient_skinning_sickle/"
+                }]
+            },
+            "models": [{
+                "location": "tetra:item/module/sword/blade/ancient_skinning_sickle/ancient_sigh"
+            }]
+        }
+    ]
+
+}

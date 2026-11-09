@@ -1,0 +1,28 @@
+{
+    "replace": false,
+    "slots": [ "bow/riser" ],
+    "materialSlotCount": 1,
+    "displayType": "minor",
+    "glyph": {
+        "textureX": 128,
+        "textureY": 112
+    },
+    "translation": {
+        "primaryEffects": {
+            "multishot": 3
+        },
+        "tertiaryEffects": {
+            "multishot": [ 0, -3 ]
+        },
+        "durability": 1
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [ "kubejs:structural_bolt" ]
+            },
+            "moduleKey": "bow/extended_rest_mega",
+            "moduleVariant": "extended_rest/bolt_mega"
+        }
+    ]
+}

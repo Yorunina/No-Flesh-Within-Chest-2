@@ -1,0 +1,92 @@
+{
+	"replace": true,
+    "slots": [ "single/head" ],
+	"type": "tetra:basic_major_module",
+	"improvements": [
+		"tetra:single/great_hammer/",
+		"tetra:single/shared_head/",
+		"tetra:single/shared/",
+		"tetra:shared/"
+	],
+	"variants": [
+		{
+			"materials": [ "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+			"key": "great_hammer/",
+			"attributes": {
+				"generic.attack_speed": -1,
+				"generic.attack_damage": 0.5
+			},
+			"effects":{
+				"kubejs:slam": [10, 1],
+				"kubejs:trueslam": 1,
+				"kubejs:concussion": [10, 2]
+			},
+            "aspects": {
+                "pointy_weapon": 1,
+                "throwable": 1,
+                "breakable": 2
+            },
+			"durability": -20,
+			"extract": {
+				"primaryAttributes": {
+					"generic.attack_damage": 1.2
+				},
+				"secondaryAttributes": {
+					"generic.attack_speed": -0.15
+				},
+				"primaryEffects": {
+					"kubejs:slam": [6, 0]
+				},
+				"secondaryEffects": {
+					"kubejs:slam": [0, 0.3],
+					"kubejs:concussion": [5, 0.8]
+				},
+				"durability": 0.8,
+				"integrity": -1,
+				"magicCapacity": 1,
+				"glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 80,
+                    "textureY": 80
+				},
+				"availableTextures": [ "metal", "shiny", "crude" ],
+				"models": [{
+                    "perspectives": ["gui"],
+					"location": "tetra:item/module/single/head/great_hammer/"
+					},
+					{
+					"invertPerspectives": true,
+                    "perspectives": ["gui"],
+                    "transform": {
+                        "translation": [ -0.001, -0.001, -0.09375 ]
+                    },
+					"location": "tetra:item/module/single/head/great_hammer_model/outside/"
+					},
+					{
+					"invertPerspectives": true,
+                    "perspectives": ["gui"],
+                    "transform": {
+                        "translation": [ -0.001, -0.001, -0.03125 ]
+                    },
+					"location": "tetra:item/module/single/head/great_hammer_model/inside_1/"
+					},
+					{
+					"invertPerspectives": true,
+                    "perspectives": ["gui"],
+                    "transform": {
+                        "translation": [ -0.001, -0.001, 0.03125 ]
+                    },
+					"location": "tetra:item/module/single/head/great_hammer_model/inside_2/"
+					},
+					{
+					"invertPerspectives": true,
+                    "perspectives": ["gui"],
+                    "transform": {
+                        "translation": [ -0.001, -0.001, 0.09375 ]
+                    },
+					"location": "tetra:item/module/single/head/great_hammer_model/outside/"
+				}]
+			}
+		}
+	]
+}

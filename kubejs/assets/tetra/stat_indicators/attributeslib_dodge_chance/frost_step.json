@@ -1,0 +1,26 @@
+{
+    "key": "tetra.stats.kubejs:frost_step",
+    "texture": "tetra:textures/gui/gud_glyph.png",
+    "textureX": 16,
+    "textureY": 248,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "kubejs:frost_step"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:frost_step.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:frost_step"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

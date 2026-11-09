@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 0,
+    "rarity": "hone",
+    "hone": true,
+    "displayType": "improvement",
+    "glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 32,
+        "textureY": 80
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "bow/piercing",
+        "level": 1
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "bow/piercing": 2
+            }
+        }
+    ]
+}

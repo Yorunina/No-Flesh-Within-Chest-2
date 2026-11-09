@@ -1,0 +1,39 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "materialSlotCount": 0,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureY": 80
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "katana/thousand_cold_nights"
+                }
+            },
+            {
+                "type": "tetra:locked",
+                "key": "tetra:katana/thousand_cold_nights"
+            },
+            {
+                "type": "tetra:module",
+                "module": "sword/katana"
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "improvements": {
+                "katana/thousand_cold_nights": 0,
+                "demon_devour": 0
+            }
+        }
+    ]
+}

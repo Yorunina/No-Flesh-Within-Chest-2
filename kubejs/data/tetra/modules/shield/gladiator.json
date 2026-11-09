@@ -1,0 +1,64 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "shield/plate"
+    ],
+    "improvements": [
+        "tetra:shield/plate/gladiator/",
+        "tetra:shield/plate/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:bone/" ],
+            "key": "gladiator/",
+            "attributes": {
+                "tetra:ability_damage": 1,
+                "tetra:ability_cooldown": 1,
+                "generic.armor_toughness": 0.5
+            },
+            "effects":{
+                "kubejs:frost_step": [10, 3 ]
+            },
+            "aspects": {
+                "blunt_weapon": 1,
+                "breakable": 2
+            },
+            "extract": {
+                "primaryAttributes": {
+                    "tetra:ability_damage": 0.4,
+                    "attributeslib:dodge_chance": 0.03
+                },
+                "secondaryAttributes": {
+                    "tetra:ability_damage": 0.1,
+                    "tetra:ability_cooldown": 0.15
+                },
+                "primaryEffects": {
+                    "kubejs:armor": 5
+                },
+                "durability": 0.8,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 64,
+                    "textureY": 80
+                },
+                "availableTextures": [ "wooden", "metal", "bone" ],
+                "models": [
+                    {
+                        "type": "tetra:shield",
+                        "model": "tetra:plate/gladiator_main",
+                        "texture": "tetra:item/module/shield/plate/buckler/"
+                    },
+                    {
+                        "type": "tetra:shield",
+                        "model": "tetra:plate/gladiator_side",
+                        "texture": "tetra:item/module/shield/plate/buckler/"
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "replace": false,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "single/head"
+    ],
+    "improvements": [
+        "tetra:single/trident_head/",
+        "tetra:single/shared_head/",
+        "tetra:single/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+            "key": "trident_head/",
+            "attributes": {
+                "generic.attack_speed": -0.9
+            },
+            "aspects": {
+                "pointy_weapon": 2,
+                "throwable": 2,
+                "breakable": 2
+            },
+            "durability": -20,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage": 1.5
+                },
+                "primaryEffects": {
+                    "armorPenetration": 5
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.12,
+                    "generic.attack_damage": 0.15
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureX": 192,
+                    "textureY": 32
+                            },
+                "availableTextures": [ "metal", "shiny", "crude" ],
+                "models": [ { "location": "tetra:item/module/single/head/trident_head/" } ]
+            }
+        }
+    ]
+}

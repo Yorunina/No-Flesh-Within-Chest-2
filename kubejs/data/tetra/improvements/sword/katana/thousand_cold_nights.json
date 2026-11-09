@@ -1,0 +1,39 @@
+[
+    {
+        "key": "katana/thousand_cold_nights",
+        "level": 0,
+        "rarity": "epic",
+        "prefixPriority": "highest",
+        "glyph": {
+            "tint": "5555FF"
+        },
+        "integrity": -2,
+        "attributes": {
+            "generic.attack_damage": 5,
+            "attributeslib:crit_chance": 0.15,
+            "attributeslib:crit_damage": 0.8
+        },
+        "effects": {
+            "kubejs:execute": [15, 5]
+        },
+        "models": [
+            {
+            "invertPerspectives": true,
+            "perspectives": [
+                "gui"
+            ],
+            "transform": {
+                "translation": [ 0.1245, -0.005, 0.001 ],
+                "scale": [ 1.01, 1.01, 0.998 ]
+            },
+            "location": "tetra:item/module/sword/blade/katana/thousand_cold_nights"
+            },
+            {
+            "perspectives": [
+                "gui"
+            ],
+            "location": "tetra:item/module/sword/blade/katana_gui/thousand_cold_nights"
+            }
+        ]
+    }
+]

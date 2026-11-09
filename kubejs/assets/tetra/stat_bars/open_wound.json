@@ -1,0 +1,32 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:open_wound",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 10,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "kubejs:open_wound"
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "integer",
+        "diff_format": "integer"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:open_wound.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:open_wound"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

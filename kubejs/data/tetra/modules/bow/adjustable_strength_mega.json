@@ -1,0 +1,23 @@
+{
+    "replace": true,
+    "slots": [ "bow/riser" ],
+    "type": "tetra:basic_module",
+    "tweakKey": "tetra:bow/adjustable_strength_mega",
+    "variants": [
+        {
+            "key": "adjustable_strength/bolt_mega",
+            "durability": 75,
+            "integrity": -2,
+            "glyph": {
+                "tint": "F0D700",
+                "textureX": 80,
+                "textureY": 112
+            },
+            "models": [
+                {
+                    "location": "tetra:item/module/bow/riser/adjustable_strength/bolt_mega"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "name": "carve_diamond",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "tetra:pristine_diamond",
+                    "weight": 1
+                },
+                {
+                    "type": "empty",
+                    "weight": 19
+                }
+            ]
+        }
+    ]
+}

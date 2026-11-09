@@ -1,0 +1,32 @@
+[
+    {
+        "key": "sword/corrosion",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:corrosion": 1
+        }
+    },
+    {
+        "key": "sword/corrosion",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "kubejs:corrosion": 2
+        }
+    },
+    {
+        "key": "sword/corrosion",
+        "level": 3,
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "kubejs:corrosion": [3, 1]
+        }
+    }
+]

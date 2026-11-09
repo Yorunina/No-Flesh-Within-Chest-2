@@ -1,0 +1,43 @@
+{
+    "replace": true,
+    "slots": [ "shield/plate" ],
+    "materialSlotCount": 0,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 16,
+		"textureY": 80
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:module",
+                "module": "shield/frost_fortress"
+            },
+            {
+                "type": "tetra:improvement",
+                "improvement": "potentiality/frost_fortress_awaken"
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "fortress/frost_bulwark"
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "experienceCost":5,
+            "improvements": {
+                "fortress/frost_bulwark": 1
+            }
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "replace": true,
+    "slots": [ "sword/blade" ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:sword/whip_sword/",
+        "tetra:sword/shared_blade/",
+        "tetra:sword/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": ["tetra:gem/", "tetra:metal/", "tetra:bone/"],
+            "key": "whip_sword/",
+            "attributes": {
+                "generic.attack_damage": 0.8,
+                "generic.attack_speed": -1.5,
+                "forge:entity_reach": 0.5
+            },
+            "aspects": {
+                "edged_weapon": 2,
+                "breakable": 2
+            },
+            "effects": {
+                "truesweep": 1,
+                "sweeping": [2, 0.5],
+                "kubejs:shredder": [1, 2],
+                "kubejs:open_wound": [0, 1],
+                "kubejs:corrosion": [0, 1]
+            },
+            "durability": -10,
+            "extract": {
+                "primaryAttributes": {
+                    "generic.attack_damage":0.8
+                },
+                "secondaryAttributes": {
+                    "generic.attack_speed": -0.16
+                },
+                "tertiaryAttributes": {
+                    "**generic.attack_damage": -0.02,
+                    "forge:entity_reach": 0.4
+                },
+                "primaryEffects": {
+                    "sweeping": [0.8, 0],
+                    "kubejs:open_wound": [0, 2]
+                },
+                "secondaryEffects": {
+                    "kubejs:corrosion": [0, 1]
+                },
+                "tertiaryEffects": {
+                    "sweeping": [0, 0.4],
+                    "kubejs:shredder": [0.5, 0.5]
+                },
+                "durability": 1,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 48,
+                    "textureY": 80
+                },
+                "availableTextures": [ "default"],
+                "models": [
+                {
+                    "invertPerspectives": true,
+                    "perspectives": [
+                        "gui"
+                    ],
+                    "transform": {
+                        "translation": [ 0.125, 0.125, 0.0025 ],
+                        "scale": [ 1, 1, 0.995 ]
+                    },
+                    "location": "tetra:item/module/sword/blade/whip_sword/"
+                },
+                {
+                    "perspectives": [
+                        "gui"
+                    ],
+                    "location": "tetra:item/module/sword/blade/whip_sword_gui/"
+                }
+            ]
+            }
+        }
+    ]
+}

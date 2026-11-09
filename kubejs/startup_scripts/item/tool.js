@@ -113,4 +113,15 @@ StartupEvents.registry('item', event => {
             return false
         })
 
+    event.create('kubejs:world_token_tetra').texture('kubejs:item/tools/world_token_tetra').maxStackSize(1)
+        .overrideOtherStackedOnMe((stack, oStack, slot, action, player, access) => {
+            if ((!oStack || oStack.isEmpty()) && action == ClickAction.SECONDARY && slot.allowModification(player)) {
+                if (!stack.hasNBT()) stack.setNbt(new $CompoundTag())
+                const nbt = stack.getNbt()
+                let state = nbt.getInt('state')
+                nbt.putInt('state', (state + 1) % 2)
+                return true
+            }
+            return false
+        })
 })

@@ -1,0 +1,33 @@
+{
+    "replace": false,
+    "slots": [
+        "scroll/shaft"
+    ],
+    "type": "tetra:basic_major_module",
+    "improvements": [
+        "tetra:scroll/shaft/simple_shaft",
+        "tetra:scroll/shaft/shared",
+        "tetra:scroll/shared/"
+    ],
+    "variants": [
+        {
+            "key": "simple_shaft/genesis_pillar",
+            "effects": {
+                "kubejs:genesis_inspiration": 1
+            },
+            "durability": 10,
+            "integrity": 5,
+            "glyph": {
+                "textureLocation": "tetra:textures/gui/custom_glyph.png",
+                "textureX": 0,
+                "textureY": 16,
+                "tint":"FCC424"
+            },
+            "models": [
+                {
+                    "location": "tetra:item/module/scroll/simple_shaft/genesis_pillar"
+                }
+            ]
+        }
+    ]
+}

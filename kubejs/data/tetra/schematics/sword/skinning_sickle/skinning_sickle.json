@@ -1,0 +1,44 @@
+{
+	"replace": true,
+	"slots": [ "sword/blade" ],
+	"materialSlotCount": 1,
+	"rarity": "temporary",
+	"displayType": "major",
+	"requirement":{
+        "type":"tetrajs:custom",
+        "key":"skinning_sickle"
+    },
+	"glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+		"textureX": 32,
+		"textureY": 64
+	},
+	"translation": {
+		"primaryAttributes": {
+			"generic.attack_damage": 2
+		},
+		"secondaryAttributes": {
+			"generic.attack_speed": -1
+		},
+		"primaryEffects": {
+			"kubejs:skinning": [ -1, 3 ]
+		},
+		"tertiaryEffects": {
+			"kubejs:skinning": [ 2, 2 ]
+		},
+        "tools": {
+            "cut": [ 3, 2 ]
+        },
+		"durability": 4,
+		"integrity": -3,
+		"magicCapacity": 3
+	},
+	"outcomes": [
+		{
+			"materials": [ "tetra:stone/", "tetra:metal/", "tetra:gem/", "tetra:bone/" ],
+			"countFactor": 2,
+			"moduleKey": "sword/skinning_sickle",
+			"moduleVariant": "skinning_sickle/"
+		}
+	]
+}

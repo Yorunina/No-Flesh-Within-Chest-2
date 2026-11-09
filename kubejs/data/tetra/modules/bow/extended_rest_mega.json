@@ -1,0 +1,26 @@
+{
+    "replace": true,
+    "slots": [ "bow/riser" ],
+    "type": "tetra:basic_module",
+    "tweakKey": "tetra:bow/extended_rest_mega",
+    "variants": [
+        {
+            "key": "extended_rest/bolt_mega",
+            "effects": {
+                "multishot": [ 6, 8 ]
+            },
+            "durability": 50,
+            "integrity": -2,
+            "glyph": {
+                "tint": "F0D700",
+                "textureX": 128,
+                "textureY": 112
+            },
+            "models": [
+                {
+                    "location": "tetra:item/module/bow/riser/extended_rest/bolt_mega"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:frost_bulwark",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 100,
+    "stat": {
+        "type": "tetra:multiply",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:frost_bulwark"
+            }
+        ],
+        "factor": 1
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "percentage",
+        "diff_format": "percentage"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:frost_bulwark.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:frost_bulwark"
+            },
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:frost_bulwark"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "percentage"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

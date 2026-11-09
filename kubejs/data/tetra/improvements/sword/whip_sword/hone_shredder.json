@@ -1,0 +1,13 @@
+[
+    {
+        "key": "sword/shredder",
+        "level": 0,
+        "integrity": -2,
+        "attributes": {
+            "generic.attack_damage": -0.05
+        },
+        "effects": {
+            "kubejs:shredder": [2, 2]
+        }
+    }
+]

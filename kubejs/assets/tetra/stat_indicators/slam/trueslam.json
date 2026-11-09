@@ -1,0 +1,26 @@
+{
+    "key": "tetra.stats.kubejs:trueslam",
+    "texture": "tetra:textures/gui/gud_glyph.png",
+    "textureX": 0,
+    "textureY": 248,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "kubejs:trueslam"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:trueslam.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:trueslam"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "replace": false,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 1,
+    "requirement": {
+        "type": "tetra:locked",
+        "key": "tetra:bow/arcane_stave"
+    },
+    "displayType": "major",
+    "rarity": "temporary",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 32,
+        "textureY": 80
+    },
+    "translation": {
+        "primaryAttributes": {
+            "tetra:draw_speed": -3,
+            "tetra:draw_strength": 4
+        },
+        "tertiaryAttributes": {
+            "tetra:draw_speed": 1,
+            "tetra:draw_strength": 2
+        },
+        "secondaryEffects": {
+            "velocity": 1
+        },
+        "durability": 4,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [ "minecraft:end_rod" ],
+                "count": 3
+            },
+            "moduleKey": "bow/arcane_stave",
+            "moduleVariant": "arcane_stave/end_rod"
+        },
+        {
+            "materials": [ "tetra:wood/" ],
+            "countFactor": 2,
+            "moduleKey": "bow/arcane_stave",
+            "moduleVariant": "arcane_stave/"
+        },
+        {
+            "materials": [ "tetra:metal/" ],
+            "countFactor": 3,
+            "moduleKey": "bow/arcane_stave",
+            "moduleVariant": "arcane_stave/"
+        }
+    ]
+}

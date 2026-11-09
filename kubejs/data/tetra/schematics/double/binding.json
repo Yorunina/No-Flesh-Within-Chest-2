@@ -1,0 +1,21 @@
+{
+    "replace": false,
+    "slots": [
+        "double/binding"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "minor",
+    "glyph": {
+        "textureX": 88,
+        "textureY": 112
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [ "kubejs:structural_bolt" ]
+            },
+            "moduleKey": "double/bolt_mega",
+            "moduleVariant": "double_binding/bolt_mega"
+        }
+    ]
+}

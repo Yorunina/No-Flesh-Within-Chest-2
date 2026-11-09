@@ -1,0 +1,71 @@
+{
+    "replace": false,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 1,
+    "requirement": {
+        "type": "tetra:or",
+        "requirements": [
+            {
+                "type": "tetra:improvement",
+                "improvement": "potentiality/dimension_stave"
+            },
+            {
+                "type": "tetra:improvement",
+                "improvement": "potentiality/dimension_stave_awaken"
+            }
+        ]
+    },
+    "displayType": "major",
+    "rarity": "ancient",
+    "glyph": {
+        "textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 32,
+        "textureY": 80
+    },
+    "translation": {
+        "primaryAttributes": {
+            "tetra:draw_speed": -3,
+            "tetra:draw_strength": 4
+        },
+        "tertiaryAttributes": {
+            "tetra:draw_speed": 1,
+            "tetra:draw_strength": 2
+        },
+        "durability": 4,
+        "integrity": -3,
+        "magicCapacity": 3
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [ "minecraft:end_rod" ],
+                "count": 3
+            },
+            "moduleKey": "bow/dimension_arcane_stave",
+            "moduleVariant": "dimension_arcane_stave/end_rod",
+            "improvements": {
+                "potentiality/dimension_stave_awaken": 0
+            }
+        },
+        {
+            "materials": [ "tetra:wood/" ],
+            "countFactor": 2,
+            "moduleKey": "bow/dimension_arcane_stave",
+            "moduleVariant": "dimension_arcane_stave/",
+            "improvements": {
+                "potentiality/dimension_stave_awaken": 0
+            }
+        },
+        {
+            "materials": [ "tetra:metal/" ],
+            "countFactor": 3,
+            "moduleKey": "bow/dimension_arcane_stave",
+            "moduleVariant": "dimension_arcane_stave/",
+            "improvements": {
+                "potentiality/dimension_stave_awaken": 0
+            }
+        }
+    ]
+}

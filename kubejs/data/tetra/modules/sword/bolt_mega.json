@@ -1,0 +1,27 @@
+{
+    "replace": true,
+    "slots": [ "sword/guard" ],
+    "type": "tetra:basic_module",
+    "renderLayer": "higher",
+    "tweakKey": "tetra:sword/bolt_mega",
+    "variants": [
+        {
+            "key": "sword_binding/bolt_mega",
+            "durability": 30,
+            "attributes": {
+                "generic.attack_speed": 0.1
+            },
+            "glyph": {
+                "tint": "F0D700",
+                "textureX": 80,
+                "textureY": 112
+            },
+            "models": [
+                {
+                    "location": "tetra:item/module/sword/guard/binding/bolt",
+                    "tint": "F0D700"
+                }
+            ]
+        }
+    ]
+}

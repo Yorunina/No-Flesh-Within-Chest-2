@@ -23,6 +23,7 @@ OrganEventModel.prototype = {
         return this
     },
     /**
+     * 逐策略隔离普通异常；胸腔属性重算失败时终止，避免提交不完整贡献。
      * @param {Internal.Entity} entity
      * @param {OrganEventCustomData} customData
      * @param {any[]} args
@@ -83,7 +84,17 @@ OrganEventModel.prototype = {
                     return b.getPriority() - a.getPriority()
                 })
                 strategyFuncList.forEach((model) => {
-                    model.getFunc().apply(null, model.getArgs())
+                    let func = model.getFunc()
+                    let strategyArgs = model.getArgs()
+                    if (this.eventId == 'chest_cavity_update') {
+                        func.apply(null, strategyArgs)
+                        return
+                    }
+                    try {
+                        func.apply(null, strategyArgs)
+                    } catch (err) {
+                        HandleStrategyError(err, this.eventId, func.name)
+                    }
                 })
             }
             ExcretionSlotEvent(customData, ccInstance)

@@ -1,0 +1,50 @@
+[
+    {
+        "key": "trident_scroll",
+        "level": 0,
+        "group": "scroll_writing",
+        "effects": {
+            "kubejs:scroll_writing_trident": 1
+        }
+    },
+    {
+        "key": "fortress_scroll",
+        "level": 0,
+        "group": "scroll_writing",
+        "effects": {
+            "kubejs:scroll_writing_fortress": 1
+        }
+    },
+    {
+        "key": "arcane_stave_scroll",
+        "level": 0,
+        "group": "scroll_writing",
+        "effects": {
+            "kubejs:scroll_writing_arcane_stave": 1
+        }
+    },
+    {
+        "key": "katana_scroll",
+        "level": 0,
+        "group": "scroll_writing",
+        "effects": {
+            "kubejs:scroll_writing_katana": 1
+        }
+    },
+    {
+        "key": "whip_sword_scroll",
+        "level": 0,
+        "group": "scroll_writing",
+        "effects": {
+            "kubejs:scroll_writing_whip_sword": 1
+        }
+    },
+    {
+        "key": "great_hammer_scroll",
+        "level": 0,
+        "group": "scroll_writing",
+        "effects": {
+            "kubejs:scroll_writing_great_hammer": 1
+        }
+    }
+]

@@ -1,5 +1,16 @@
 // priority: 2000
-const $CuriosEventIdType = 'entity_spawned' || 'entity_death' || 'entity_kill' || 'entity_loot' || 'chest_loot' || 'new_day' || 'player_tick' || 'xp_level_change'
+/**
+ * @typedef {
+ *     'entity_spawned'
+ *     | 'entity_death'
+ *     | 'entity_kill'
+ *     | 'entity_loot'
+ *     | 'chest_loot'
+ *     | 'new_day'
+ *     | 'player_tick'
+ *     | 'xp_level_change'
+ * } $CuriosEventIdType
+ */
 
 function CuriosStrategyModel(id) {
     /** @type {String} */

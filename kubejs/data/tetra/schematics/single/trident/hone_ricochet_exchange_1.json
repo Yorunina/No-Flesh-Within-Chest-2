@@ -1,0 +1,35 @@
+{
+    "replace": true,
+    "slots": [ "single/head" ],
+    "materialSlotCount": 0,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+        "textureX": 192,
+        "textureY": 32
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:improvement",
+                "improvement": "trident/volt_rush"
+            },
+            {
+                "type": "tetra:improvement",
+                "improvement": "single/ricochet",
+                "level": 1
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "single/ricochet_exchange": 1
+            }
+        }
+    ]
+}

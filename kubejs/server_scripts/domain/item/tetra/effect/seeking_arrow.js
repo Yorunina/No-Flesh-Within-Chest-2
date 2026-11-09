@@ -1,14 +1,10 @@
 // priority: 500
-TetraJSEvents.createArrow('bow', event => {
-    if (event.drawProgress < 18) return
-    applySeekingArrowEffect(event)
-})
 
-TetraJSEvents.createArrow('crossbow', event => {
-    applySeekingArrowEffect(event)
-})
-
-function applySeekingArrowEffect(event) {
+/**
+ * @param {Object} customData
+ * @param {Internal.CreateArrowEventJS} event
+ */
+function SeekingArrowCreateArrow(customData, event) {
     const player = event.player
     if (!player) return
     let heldItem = event.item
@@ -26,3 +22,8 @@ function applySeekingArrowEffect(event) {
     seekingArrowEntity.persistentData.putFloat('kubejs_seeking_speed_factor', 1 + effectEfficiency * 0.25)
     event.setProjectile(seekingArrowEntity)
 }
+
+RegistryTetraEffectStrategy(
+    new TetraEffectStrategyModel('kubejs:seeking_arrow')
+        .addStrategy('create_arrow', SeekingArrowCreateArrow, -30)
+)

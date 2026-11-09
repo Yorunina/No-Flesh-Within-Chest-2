@@ -1,0 +1,52 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:devour",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 16,
+    "stat": {
+        "type": "tetra:multiply",
+        "factor": 2,
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:devour"
+            }
+        ]
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "integer",
+        "diff_format": "integer"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:devour.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:devour"
+            },
+            {
+                "type": "tetra:multiply",
+                "factor": 2,
+                "stats": [
+                    {
+                        "type": "tetra:effect_level",
+                        "effect": "kubejs:devour"
+                    }
+                ]
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

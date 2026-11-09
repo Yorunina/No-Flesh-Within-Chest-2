@@ -1,14 +1,16 @@
 // priority: 500
 /**
- * 造成伤害（未过护甲结算）节点，适合用于结算造成伤害效果
+ * 在器官结算前执行，保留本效果的物品读取时机。
+ * @param {Object} customData
+ * @param {Internal.LivingHurtEvent} event
  */
-NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} event */ event => {
+function BurnsEntityDoDamage(customData, event) {
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     const targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
-    if (sourceEntity.isPlayer() && !IsFullChargeAttck(sourceEntity)) return
-    let heldItem = sourceEntity.mainHandItem
+    if (sourceEntity.isPlayer() && !TetraAttackFullCharge(event, sourceEntity)) return
+    let heldItem = TetraAttackItem(event, sourceEntity)
     /**@type {Internal.ModularItem} */
     let modularItem = heldItem.getItem()
     if (!TetraJSUtils.isModularItem(modularItem)) return
@@ -20,5 +22,10 @@ NativeEvents.onEvent($LivingHurtEvent, /** @param {Internal.LivingHurtEvent} eve
     } else if (effectLevel > 0 && effectLevel * 10 > Math.random() * 100) {
         targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() + effectEfficiency * 20)
     }
-})
+}
+
+RegistryTetraEffectStrategy(
+    new TetraEffectStrategyModel('kubejs:burns')
+        .addStrategy('entity_do_damage_before', BurnsEntityDoDamage, -10)
+)
 

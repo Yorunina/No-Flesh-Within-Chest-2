@@ -1,0 +1,5 @@
+{
+    "message_id": "kubejs.damage_echo",
+    "exhaustion": 0.1,
+    "scaling": "never"
+}

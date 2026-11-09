@@ -1,0 +1,40 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:ender_curtain",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 15,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "kubejs:ender_curtain"
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "integer",
+        "diff_format": "integer"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:ender_curtain.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:ender_curtain"
+            },
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:ender_curtain"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

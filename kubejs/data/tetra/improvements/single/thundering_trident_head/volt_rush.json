@@ -1,0 +1,32 @@
+[
+    {
+        "key": "trident/volt_rush",
+        "level": 1,
+        "integrity": -1,
+        "group": "thundering",
+        "effects": {
+            "kubejs:volt_rush": 30,
+            "throwable": -1
+        }
+    },
+    {
+        "key": "trident/volt_rush",
+        "level": 2,
+        "integrity": -2,
+        "group": "thundering",
+        "effects": {
+            "kubejs:volt_rush": 60,
+            "throwable": -1
+        }
+    },
+    {
+        "key": "trident/volt_rush",
+        "level": 3,
+        "integrity": -3,
+        "group": "thundering",
+        "effects": {
+            "kubejs:volt_rush": 100,
+            "throwable": -1
+        }
+    }
+]

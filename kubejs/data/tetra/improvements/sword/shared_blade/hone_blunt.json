@@ -1,0 +1,33 @@
+[
+    {
+        "key": "sword/blunt",
+        "level": 1,
+        "integrity": -1,
+        "attributes": {
+            "attributeslib:crit_damage": 0.1
+        }
+    },
+    {
+        "key": "sword/blunt",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "attributes": {
+            "attributeslib:crit_damage": 0.2
+        }
+    },
+    {
+        "key": "sword/blunt",
+        "level": 3,
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "attributes": {
+            "attributeslib:crit_damage": 0.35,
+            "attributeslib:crit_chance": 0.05
+        }
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "key": "socket_awaken_diamond",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 256,
+    "integrityCost": 1,
+    "integrityGain": 0,
+    "magicCapacity": 60,
+    "toolLevel": 0,
+    "toolEfficiency": 2,
+    "effects": {
+        "kubejs:purity": [25, 1]
+    },
+    "tints": {
+        "glyph": "diamond_glyph",
+        "texture": "diamond"
+    },
+    "textures": ["default"],
+    "experienceCost": 3,
+    "material": {
+        "items": ["kubejs:awaken_diamond"]
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 0,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 32,
+        "textureY": 80
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:improvement",
+                "improvement": "potentiality/dimension_stave_awaken"
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "arcane_stave/dimension_shoot"
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "experienceCost":5,
+            "improvements": {
+                "arcane_stave/dimension_shoot": 1
+            }
+        }
+    ]
+}

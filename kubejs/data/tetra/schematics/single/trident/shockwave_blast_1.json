@@ -1,0 +1,45 @@
+{
+    "replace": true,
+    "slots": [ "single/head" ],
+    "materialSlotCount": 0,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+        "textureX": 192,
+        "textureY": 32
+    },
+    "requirement": {
+        "type": "tetra:and",
+        "requirements": [
+            {
+                "type": "tetra:improvement",
+                "improvement": "potentiality/thundering_trident_awaken"
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetrajs:custom",
+                    "key": "enchantment_minecraft_riptide"
+                }
+            },
+            {
+                "type": "tetra:not",
+                "requirement": {
+                    "type": "tetra:improvement",
+                    "improvement": "trident/shockwave_blast"
+                }
+            }
+        ]
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "experienceCost":5,
+            "improvements": {
+                "trident/shockwave_blast": 1
+            }
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "key": "arcane_stave/dimension_shoot",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:magic_shot": 5
+        }
+    },
+    {
+        "key": "arcane_stave/dimension_shoot",
+        "level": 2,
+        "integrity": -2,
+        "effects": {
+            "kubejs:magic_shot": 8
+        }
+    },
+    {
+        "key": "arcane_stave/dimension_shoot",
+        "level": 3,
+        "integrity": -3,
+        "effects": {
+            "kubejs:magic_shot": 12
+        }
+    }
+]

@@ -1,0 +1,30 @@
+{
+    "replace": true,
+    "slots": [
+        "bow/stave"
+    ],
+    "materialSlotCount": 0,
+    "hone": true,
+    "rarity": "ancient",
+    "displayType": "improvement",
+    "glyph": {
+		"textureLocation": "tetra:textures/gui/gud_glyph.png",
+        "textureX": 32,
+        "textureY": 80
+    },
+    "requirement": {
+        "type": "tetra:improvement",
+        "improvement": "arcane_stave/dimension_shoot",
+        "level": 1
+    },
+    "outcomes": [
+        {
+            "requiredTools": {
+                "hammer_dig": "minecraft:gold"
+            },
+            "improvements": {
+                "arcane_stave/dimension_shoot": 2
+            }
+        }
+    ]
+}

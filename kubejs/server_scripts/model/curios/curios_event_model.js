@@ -24,6 +24,7 @@ CuriosEventModel.prototype = {
         return this
     },
     /**
+     * 逐策略隔离普通异常，事件中断继续向外传播。
      * @param {Internal.Entity} entity
      * @param {CuriosEventCustomData} customData
      * @param {any[]} args 
@@ -52,7 +53,13 @@ CuriosEventModel.prototype = {
                 return b.getPriority() - a.getPriority()
             })
             strategyFuncList.forEach((model) => {
-                model.getFunc().apply(null, model.getArgs())
+                let func = model.getFunc()
+                let strategyArgs = model.getArgs()
+                try {
+                    func.apply(null, strategyArgs)
+                } catch (err) {
+                    HandleStrategyError(err, this.eventId, func.name)
+                }
             })
         }
 

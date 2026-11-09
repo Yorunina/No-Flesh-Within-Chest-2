@@ -1,0 +1,68 @@
+[
+    {
+        "key": "single/ricochet",
+        "level": 1,
+        "group": "trident/ricochet",
+        "integrity": -1,
+        "effects": {
+            "ricochet": 2
+        }
+    },
+    {
+        "key": "single/ricochet",
+        "level": 2,
+        "group": "trident/ricochet",
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "ricochet": 3
+        }
+    },
+    {
+        "key": "single/ricochet",
+        "level": 3,
+        "group": "trident/ricochet",
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "ricochet": 5
+        }
+    },
+    {
+        "key": "single/ricochet_exchange",
+        "level": 1,
+        "group": "trident/ricochet",
+        "integrity": -1,
+        "effects": {
+            "kubejs:magic_reduction": 10
+        }
+    },
+    {
+        "key": "single/ricochet_exchange",
+        "level": 2,
+        "group": "trident/ricochet",
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "kubejs:magic_reduction": 25
+        }
+    },
+    {
+        "key": "single/ricochet_exchange",
+        "level": 3,
+        "group": "trident/ricochet",
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "kubejs:magic_reduction": 50
+        }
+    }
+]

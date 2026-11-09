@@ -1,0 +1,37 @@
+{
+  "type": "tetra:default",
+  "key": "tetra.stats.crit_damage",
+  "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+  "min": 1.5,
+  "max": 10,
+  "stat": {
+    "type": "tetra:sum",
+    "stats": [
+      {
+        "type": "tetra:attribute",
+        "attribute": "attributeslib:crit_damage"
+      }
+    ]
+  },
+  "label": {
+    "type": "tetra:basic",
+    "format": "double_decimal",
+    "diff_format": "double_decimal"
+  },
+  "tooltip": {
+    "type": "tetra:default",
+    "key": "tetra.stats.crit_damage.tooltip",
+    "stats": [
+      {
+        "type": "tetra:attribute",
+        "attribute": "attributeslib:crit_damage"
+      }
+    ],
+    "formatters": [
+      {
+        "type": "tetra:basic",
+        "format": "double_decimal"
+      }
+    ]
+  }
+}

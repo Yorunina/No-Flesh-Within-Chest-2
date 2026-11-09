@@ -1,0 +1,38 @@
+[
+    {
+        "key": "potentiality/frost_fortress",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        }
+    },
+    {
+        "key": "potentiality/frost_fortress_awaken",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        },
+        "effects": {
+            "kubejs:freezing_immune": 1
+        },
+        "models": [
+            {
+                "type": "tetra:shield",
+                "model": "tetra:plate/frost_fortress_main",
+                "texture": "tetra:item/module/shield/plate/fortress/frost_fortress_main"
+            },
+            {
+                "type": "tetra:shield",
+                "model": "tetra:plate/frost_fortress_left",
+                "texture": "tetra:item/module/shield/plate/fortress/frost_fortress_left"
+            },
+            {
+                "type": "tetra:shield",
+                "model": "tetra:plate/frost_fortress_right",
+                "texture": "tetra:item/module/shield/plate/fortress/frost_fortress_right"
+            }
+        ]
+    }
+]

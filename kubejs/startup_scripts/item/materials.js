@@ -83,4 +83,11 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:furnace_fabritem').texture('kubejs:item/materials/furnace_fabritem').maxStackSize(1).tag('kubejs:factory')
     event.create('kubejs:burning_fabritem').texture('kubejs:item/materials/burning_fabritem').maxStackSize(1).tag('kubejs:factory')
     event.create('kubejs:compact_fabritem').texture('kubejs:item/materials/compact_fabritem').tag('kubejs:factory')
+
+    event.create('kubejs:awaken_lapis').texture('kubejs:item/materials/awaken_lapis')
+    event.create('kubejs:awaken_amethyst').texture('kubejs:item/materials/awaken_amethyst')
+    event.create('kubejs:awaken_emerald').texture('kubejs:item/materials/awaken_emerald')
+    event.create('kubejs:awaken_diamond').texture('kubejs:item/materials/awaken_diamond')
+    event.create('kubejs:genesis_slate').texture('kubejs:item/materials/genesis_slate').maxStackSize(1)
+    event.create('kubejs:genesis_pillar').texture('kubejs:item/materials/genesis_pillar')
 })

@@ -545,9 +545,33 @@
 			subtitle: "{ftbquests.chapter.2F127C50E2FDB1F0.quest64C98D07C3707549.subtitle}"
 			tasks: [{
 				id: "31E6643BB0E3E202"
+				title: "解锁 传闻：捕获生物 章节"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.2F127C50E2FDB1F0.quest64C98D07C3707549.title}"
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["0826B6D55FFA146F"]
+			description: [
+				"&o&7标签：&3模块化工具&7、&6武器强化&r"
+				"&o&7推荐指数：★★★★（推荐）"
+				"&o&7难度指数：★★☆（难度一般）"
+				""
+				"自铁砧叮当之间，我们收到了&6新的来信&r. . ."
+			]
+			hide_until_deps_complete: true
+			icon: "kubejs:genesis_slate"
+			id: "6B40B48901CC8C0C"
+			size: 1.0d
+			subtitle: "解锁 传闻：深谷来电 章节"
+			tasks: [{
+				id: "5AF2ABB68FACC870"
+				title: "解锁 传闻：深谷来电 章节"
+				type: "checkmark"
+			}]
+			title: "探秘深谷来电"
 			x: 11.0d
 			y: 9.5d
 		}

@@ -799,7 +799,7 @@
 				entity: "minecraft:empty"
 				icon: "kubejs:factory_injection"
 				id: "0D9CF2C42C1791C1"
-				inventoryType: "kubejs:cc_inventory_types/factory"
+				inventoryType: "kubejs:factory"
 				title: "{ftbquests.chapter.14409C4AEBA1888C.quest556704809E719293.task.980925743227179457.title}"
 				type: "chestcavity:open_chest_cavity_task"
 				value: 1L

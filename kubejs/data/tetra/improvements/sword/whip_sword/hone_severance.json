@@ -1,0 +1,32 @@
+[
+    {
+        "key": "sword/severance",
+        "level": 1,
+        "integrity": -1,
+        "effects": {
+            "kubejs:open_wound": 1
+        }
+    },
+    {
+        "key": "sword/severance",
+        "level": 2,
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "kubejs:open_wound": [3, 0.5]
+        }
+    },
+    {
+        "key": "sword/severance",
+        "level": 3,
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "kubejs:open_wound": [5, 1]
+        }
+    }
+]

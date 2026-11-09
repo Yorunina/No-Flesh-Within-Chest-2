@@ -1,0 +1,46 @@
+[
+    {
+        "key": "potentiality/bloodshed_scythe_left",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        }
+    },
+    {
+        "key": "potentiality/bloodshed_scythe_left_awaken",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        },
+       "models": [
+            {
+                "location": "tetra:item/module/double/head/bloodshed_scythe/improvements/bloodshed_scythe",
+                "renderLayer": "high"
+            }
+        ]
+    },
+    {
+        "key": "potentiality/bloodshed_scythe_right",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        }
+    },
+    {
+        "key": "potentiality/bloodshed_scythe_right_awaken",
+        "level": 0,
+        "group": "potentiality",
+        "glyph": {
+            "tint": "55FFFF"
+        },
+       "models": [
+            {
+                "location": "tetra:item/module/double/head/bloodshed_scythe/improvements/bloodshed_scythe",
+                "renderLayer": "high"
+            }
+        ]
+    }
+]

@@ -1,0 +1,47 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:shockwave_blast",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 100,
+    "stat": {
+        "type": "tetra:multiply",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:shockwave_blast"
+            }
+        ],
+        "factor": 1
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "percentage",
+        "diff_format": "percentage"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:shockwave_blast.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_efficiency",
+                "effect": "kubejs:shockwave_blast"
+            },
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:shockwave_blast"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            },
+            {
+                "type": "tetra:basic",
+                "format": "percentage"
+            }
+        ]
+    },
+    "indicators": [ "tetra:magic_amplifier/" ]
+}

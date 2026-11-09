@@ -1,0 +1,58 @@
+{
+    "replace": true,
+    "type": "tetra:basic_major_module",
+    "slots": [
+        "shield/plate"
+    ],
+    "improvements": [
+        "tetra:shield/plate/fortress/",
+        "tetra:shield/plate/shared/",
+        "tetra:shared/"
+    ],
+    "variants": [
+        {
+            "materials": [ "tetra:wood/", "tetra:metal/", "tetra:stone/", "tetra:bone/" ],
+            "key": "fortress/",
+            "attributes": {
+                "**tetra:ability_cooldown": -1
+            },
+            "aspects": {
+                "blunt_weapon": 1,
+                "breakable": 2
+            },
+            "effects": {
+                "blocking": 16,
+                "kubejs:full_block": 1
+            },
+            "durability": 120,
+            "extract": {
+                "durability": 1.5,
+                "integrity": -1,
+                "magicCapacity": 1,
+                "glyph": {
+                    "textureLocation": "tetra:textures/gui/gud_glyph.png",
+                    "textureX": 16,
+                    "textureY": 80
+                },
+                "availableTextures": [ "wooden", "metal", "bone", "grainy" ],
+                "models": [
+                    {
+                        "type": "tetra:shield",
+                        "model": "tetra:plate/fortress_main",
+                        "texture": "tetra:item/module/shield/plate/fortress/main/"
+                    },
+                    {
+                        "type": "tetra:shield",
+                        "model": "tetra:plate/fortress_left",
+                        "texture": "tetra:item/module/shield/plate/fortress/left/"
+                    },
+                    {
+                        "type": "tetra:shield",
+                        "model": "tetra:plate/fortress_right",
+                        "texture": "tetra:item/module/shield/plate/fortress/right/"
+                    }
+                ]
+            }
+        }
+    ]
+}

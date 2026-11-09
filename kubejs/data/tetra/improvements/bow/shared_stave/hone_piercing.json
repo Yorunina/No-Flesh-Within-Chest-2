@@ -1,0 +1,68 @@
+[
+    {
+        "key": "bow/piercing",
+        "level": 1,
+        "group": "bow/piercing",
+        "integrity": -1,
+        "effects": {
+            "piercing": 1
+        }
+    },
+    {
+        "key": "bow/piercing",
+        "level": 2,
+        "group": "bow/piercing",
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "effects": {
+            "piercing": 2
+        }
+    },
+    {
+        "key": "bow/piercing",
+        "level": 3,
+        "group": "bow/piercing",
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "effects": {
+            "piercing": 4
+        }
+    },
+    {
+        "key": "bow/piercing_exchange",
+        "level": 1,
+        "group": "bow/piercing",
+        "integrity": -1,
+        "attributes": {
+            "*tetra:draw_speed": -0.2
+        }
+    },
+    {
+        "key": "bow/piercing_exchange",
+        "level": 2,
+        "group": "bow/piercing",
+        "integrity": -1,
+        "aspects": {
+            "honed": 1
+        },
+        "attributes": {
+            "*tetra:draw_speed": -0.3
+        }
+    },
+    {
+        "key": "bow/piercing_exchange",
+        "level": 3,
+        "group": "bow/piercing",
+        "integrity": -2,
+        "aspects": {
+            "honed": 2
+        },
+        "attributes": {
+            "*tetra:draw_speed": -0.5
+        }
+    }
+]

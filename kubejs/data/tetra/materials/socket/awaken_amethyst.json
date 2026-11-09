@@ -1,0 +1,26 @@
+{
+    "key": "socket_awaken_amethyst",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 32,
+    "integrityCost": 1,
+    "integrityGain": 0,
+    "magicCapacity": 80,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "extraction": 2
+    },
+    "tints": {
+        "glyph": "bd9cf6",
+        "texture": "bd9cf6"
+    },
+    "textures": [ "default" ],
+    "experienceCost": 3,
+    "material": {
+        "items": [ "kubejs:awaken_amethyst" ]
+    }
+}

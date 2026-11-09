@@ -1,0 +1,35 @@
+[
+    {
+        "key": "shield/armor",
+        "level": 1,
+        "integrity": -1,
+        "attributes": {
+            "generic.armor": 2,
+            "**generic.armor": 0.2
+        }
+    },
+    {
+        "key": "shield/armor",
+        "level": 2,
+        "integrity": -2,
+        "aspects": {
+            "honed": 1
+        },
+        "attributes": {
+            "generic.armor": 3,
+            "**generic.armor": 0.5
+        }
+    },
+    {
+        "key": "shield/armor",
+        "level": 3,
+        "integrity": -3,
+        "aspects": {
+            "honed": 2
+        },
+        "attributes": {
+            "generic.armor": 5,
+            "**generic.armor": 1
+        }
+    }
+]

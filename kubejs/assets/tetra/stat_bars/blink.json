@@ -1,0 +1,32 @@
+{
+    "type": "tetra:default",
+    "key": "tetra.stats.kubejs:blink",
+    "contexts": [ "tetra:workbench", "tetra:holosphere" ],
+    "min": 0,
+    "max": 1,
+    "stat": {
+        "type": "tetra:effect_level",
+        "effect": "kubejs:blink"
+    },
+    "label": {
+        "type": "tetra:basic",
+        "format": "integer",
+        "diff_format": "integer"
+    },
+    "tooltip": {
+        "type": "tetra:default",
+        "key": "tetra.stats.kubejs:blink.tooltip",
+        "stats": [
+            {
+                "type": "tetra:effect_level",
+                "effect": "kubejs:blink"
+            }
+        ],
+        "formatters": [
+            {
+                "type": "tetra:basic",
+                "format": "integer"
+            }
+        ]
+    }
+}

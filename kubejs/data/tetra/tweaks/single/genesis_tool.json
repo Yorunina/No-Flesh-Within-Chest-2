@@ -1,0 +1,24 @@
+[
+    {
+        "variant": "genesis_tool/genesis_tool",
+        "key": "genesis_tool/preprocessing",
+        "steps": 1,
+        "properties": {
+            "effects": {
+                "kubejs:auto_smelt": 1,
+                "kubejs:auto_smash": -1
+            }
+        }
+    },
+    {
+        "variant": "genesis_tool/genesis_tool",
+        "key": "genesis_tool/reprocessing",
+        "steps": 1,
+        "properties": {
+            "effects": {
+                "janking": [2, 0],
+                "kubejs:knowledge": -20
+            }
+        }
+    }
+]

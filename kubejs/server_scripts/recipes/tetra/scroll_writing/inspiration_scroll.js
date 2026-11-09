@@ -1,159 +1,73 @@
 // priority: 500
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:fabric_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:gem_inspiration')
-        return socketData.key == 'socket/socket_pristine_amethyst' && effectLevelA >= 3 && effectLevelB >= 3
+
+/** @type {{key: string, socket: string, effectA: string, effectB: string}[]} */
+const InspirationScrollWritingList = [
+    {
+        key: 'starry_inspiration',
+        socket: 'socket/socket_pristine_amethyst',
+        effectA: 'kubejs:fabric_inspiration',
+        effectB: 'kubejs:gem_inspiration'
     },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('starry_inspiration', 'starry_inspiration', [], ['starry_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
+    {
+        key: 'strength_inspiration',
+        socket: 'socket/socket_pristine_diamond',
+        effectA: 'kubejs:stone_inspiration',
+        effectB: 'kubejs:fibre_inspiration'
     },
-    200
-)
-
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:stone_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:fibre_inspiration')
-        return socketData.key == 'socket/socket_pristine_diamond' && effectLevelA >= 3 && effectLevelB >= 3
+    {
+        key: 'enchant_inspiration',
+        socket: 'socket/socket_pristine_emerald',
+        effectA: 'kubejs:skin_inspiration',
+        effectB: 'kubejs:bone_inspiration'
     },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('strength_inspiration', 'strength_inspiration', [], ['strength_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
+    {
+        key: 'durability_inspiration',
+        socket: 'socket/socket_pristine_lapis',
+        effectA: 'kubejs:metal_inspiration',
+        effectB: 'kubejs:scale_inspiration'
     },
-    200
-)
-
-
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:skin_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:bone_inspiration')
-        return socketData.key == 'socket/socket_pristine_emerald' && effectLevelA >= 3 && effectLevelB >= 3
+    {
+        key: 'exhaustion_inspiration',
+        socket: 'socket/socket_amethyst',
+        effectA: 'kubejs:fibre_inspiration',
+        effectB: 'kubejs:wood_inspiration'
     },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('enchant_inspiration', 'enchant_inspiration', [], ['enchant_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
+    {
+        key: 'effect_inspiration',
+        socket: 'socket/socket_diamond',
+        effectA: 'kubejs:gem_inspiration',
+        effectB: 'kubejs:fabric_inspiration'
     },
-    200
-)
-
-
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:metal_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:scale_inspiration')
-        return socketData.key == 'socket/socket_pristine_lapis' && effectLevelA >= 3 && effectLevelB >= 3
+    {
+        key: 'blood_inspiration',
+        socket: 'socket/socket_emerald',
+        effectA: 'kubejs:bone_inspiration',
+        effectB: 'kubejs:fabric_inspiration'
     },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('durability_inspiration', 'durability_inspiration', [], ['durability_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
-    },
-    200
-)
+    {
+        key: 'thunder_inspiration',
+        socket: 'socket/socket_lapis',
+        effectA: 'kubejs:skin_inspiration',
+        effectB: 'kubejs:metal_inspiration'
+    }
+]
 
-
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:fibre_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:wood_inspiration')
-        return socketData.key == 'socket/socket_amethyst' && effectLevelA >= 3 && effectLevelB >= 3
-    },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('exhaustion_inspiration', 'exhaustion_inspiration', [], ['exhaustion_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
-    },
-    200
-)
-
-
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:gem_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:fabric_inspiration')
-        return socketData.key == 'socket/socket_diamond' && effectLevelA >= 3 && effectLevelB >= 3
-    },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('effect_inspiration', 'effect_inspiration', [], ['effect_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
-    },
-    200
-)
-
-
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:bone_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:fabric_inspiration')
-        return socketData.key == 'socket/socket_emerald' && effectLevelA >= 3 && effectLevelB >= 3
-    },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('blood_inspiration', 'blood_inspiration', [], ['blood_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
-    },
-    200
-)
-
-
-RegisterScrollWritingStrategy(
-    (event) => {
-        const targetStack = event.targetStack
-        /**@type {Internal.ModularItem} */
-        const item = targetStack.getItem()
-        let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
-        if (!socketModule) return false
-        let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
-        let effectLevelA = item.getEffectLevel(targetStack, 'kubejs:skin_inspiration')
-        let effectLevelB = item.getEffectLevel(targetStack, 'kubejs:metal_inspiration')
-        return socketData.key == 'socket/socket_lapis' && effectLevelA >= 3 && effectLevelB >= 3
-    },
-    (event) => {
-        event.setUpgradedStack(TetraJSUtils.setupScrollData('thunder_inspiration', 'thunder_inspiration', [], ['thunder_inspiration'], false, 0, 0x9dbfed, [15, 14, 15, 15]))
-    },
-    200
-)
-
-
-
-
-
-
-
-
+InspirationScrollWritingList.forEach(data => {
+    RegisterScrollWritingStrategy(
+        (event) => {
+            const targetStack = event.targetStack
+            /** @type {Internal.ModularItem} */
+            const item = targetStack.getItem()
+            let socketModule = item.getModuleFromSlot(targetStack, 'scroll/socket')
+            if (!socketModule) return false
+            let socketData = socketModule["getVariantData(net.minecraft.world.item.ItemStack)"](targetStack)
+            let effectLevelA = item.getEffectLevel(targetStack, data.effectA)
+            let effectLevelB = item.getEffectLevel(targetStack, data.effectB)
+            return socketData.key == data.socket && effectLevelA >= 3 && effectLevelB >= 3
+        },
+        (event) => {
+            event.setUpgradedStack(TetraJSUtils.setupScrollData(data.key, data.key, [], [data.key], false, 0, 0x9dbfed, [15, 14, 15, 15]))
+        },
+        200
+    )
+})

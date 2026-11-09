@@ -1,0 +1,26 @@
+{
+    "key": "socket_awaken_emerald",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 32,
+    "integrityCost": 1,
+    "integrityGain": 0,
+    "magicCapacity": 64,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "kubejs:wealthy": [30, 2]
+    },
+    "tints": {
+        "glyph": "emerald_glyph",
+        "texture": "emerald"
+    },
+    "textures": ["default"],
+    "experienceCost": 3,
+    "material": {
+        "items": ["kubejs:awaken_emerald"]
+    }
+}
