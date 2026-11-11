@@ -6,7 +6,8 @@
     "type": "tetra:basic_major_module",
     "improvements": [
         "tetra:scroll/shaft/simple_shaft/",
-        "tetra:scroll/shaft/shared/"
+        "tetra:scroll/shaft/shared/",
+        "tetra:scroll/shared/"
     ],
     "variants": [
         {
