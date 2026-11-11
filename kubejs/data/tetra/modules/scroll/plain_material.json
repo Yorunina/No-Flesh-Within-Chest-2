@@ -5,8 +5,8 @@
     ],
     "type": "tetra:basic_major_module",
     "improvements": [
-        "tetra:scroll/material/plain_material",
-        "tetra:scroll/material/shared",
+        "tetra:scroll/material/plain_material/",
+        "tetra:scroll/material/shared/",
         "tetra:scroll/shared/"
     ],
     "variants": [
