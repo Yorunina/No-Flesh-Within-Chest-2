@@ -1069,7 +1069,7 @@
     "gui.chestcavity.organ_holo.obtain.kubejs:roly_poly_shell": "通过开胸§l球鼠妇§r获取",
     "item.kubejs.ladybug_wing": "瓢虫翅膀",
     "tooltips.kubejs.ladybug_wing.default.1": "优雅舞步",
-    "tooltips.kubejs.ladybug_wing.alt.1": "    §6★§r 每十秒会给周围的已驯养生物提供§6再生§r",
+    "tooltips.kubejs.ladybug_wing.alt.1": "    §6★§r 击杀生物后，持有者会获得10秒§6真实隐身§r",
     "gui.chestcavity.organ_holo.obtain.kubejs:ladybug_wing": "通过开胸§l瓢虫§r获取",
     "item.kubejs.weevil_mouth": "象鼻虫口器",
     "tooltips.kubejs.weevil_mouth.default.1": "只是泥巴！",

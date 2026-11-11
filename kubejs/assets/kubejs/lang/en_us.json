@@ -1070,7 +1070,7 @@
     "gui.chestcavity.organ_holo.obtain.kubejs:roly_poly_shell": "Obtained by opening the Chest Cavity of §lRoly-Poly§r",
     "item.kubejs.ladybug_wing": "Ladybug Wing",
     "tooltips.kubejs.ladybug_wing.default.1": "An elegant dance",
-    "tooltips.kubejs.ladybug_wing.alt.1": "    §6★§r Every ten seconds, grant §6Regeneration§r to nearby tamed mobs",
+    "tooltips.kubejs.ladybug_wing.alt.1": "    §6★§r Killing an entity grants the holder §6True Invisibility§r for 10 seconds",
     "gui.chestcavity.organ_holo.obtain.kubejs:ladybug_wing": "Obtained by opening the Chest Cavity of §lLadybug§r",
     "item.kubejs.weevil_mouth": "Weevil Mouthparts",
     "tooltips.kubejs.weevil_mouth.default.1": "It's just mud!",
