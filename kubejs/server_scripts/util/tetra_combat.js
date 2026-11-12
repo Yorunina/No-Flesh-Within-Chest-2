@@ -2,6 +2,7 @@
 
 let TETRA_DAMAGE_ECHO = $ResourceKey.create($Registries.DAMAGE_TYPE, new $ResourceLocation('kubejs:damage_echo'))
 const CombatDataKey = 'combat'
+const WeaponDataKey = 'weapon'
 
 /** 派生伤害的数据属于来源实例，不依赖当前事件或临时全局状态。 */
 function TetraAttackData(source) {
@@ -12,9 +13,8 @@ function TetraAttackData(source) {
 
 /** 攻击武器；追击读取触发时快照，普通攻击读取当前主手。 */
 function TetraAttackItem(event, sourceEntity) {
-    let data = TetraAttackData(event.source)
-    if (!data || !data.contains('weapon', TAG_COMPOUND)) return sourceEntity.mainHandItem
-    return $ItemStack.of(data.getCompound('weapon'))
+    if (!MAADamageSources.supportsData(event.source)) return sourceEntity.mainHandItem
+    return event.source.getObjectData(WeaponDataKey) ?? sourceEntity.mainHandItem
 }
 
 /** 追击继承触发时的蓄力；非玩家没有蓄力门槛。 */
