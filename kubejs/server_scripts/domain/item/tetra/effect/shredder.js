@@ -13,7 +13,7 @@ function ShredderEntityDoDamage(customData, event) {
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (!TetraAttackIsMelee(event, sourceEntity) || !TetraAttackFullCharge(event, sourceEntity)) return
 
-    let stack = sourceEntity.mainHandItem
+    let stack = TetraAttackItem(event, sourceEntity)
     let item = stack.getItem()
     if (!TetraJSUtils.isModularItem(item)) return
     let effectLevel = item.getEffectLevel(stack, 'kubejs:shredder')
