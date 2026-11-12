@@ -14,7 +14,7 @@ function TetraAttackData(source) {
 /** 攻击武器；追击读取触发时快照，普通攻击读取当前主手。 */
 function TetraAttackItem(event, sourceEntity) {
     if (!MAADamageSources.supportsData(event.source)) return sourceEntity.mainHandItem
-    return event.source.getObjectData(WeaponDataKey) ?? sourceEntity.mainHandItem
+    return event.source.getItemData(WeaponDataKey) ?? sourceEntity.mainHandItem
 }
 
 /** 追击继承触发时的蓄力；非玩家没有蓄力门槛。 */
