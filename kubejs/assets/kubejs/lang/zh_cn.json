@@ -3537,7 +3537,6 @@
     "item.kubejs.giant_spine": "巨型脊柱",
     "item.kubejs.giant_spleen": "巨型脾脏",
     "item.kubejs.giant_stomach": "巨型胃",
-    "tooltips.kubejs.giant_organ.default.1": "巨型器官：提供对应普通器官4倍的基础属性",
   "item.kubejs.flesh_sheet": "血肉板",
   "item.kubejs.flesh_mechanism": "血肉构件",
   "item.kubejs.flesh_ingot": "血肉锭",
@@ -4469,5 +4468,9 @@
     "tooltips.kubejs.hover.small_ender_type.0": "小型末影胸腔",
     "tooltips.kubejs.hover.small_golem_type.0": "小型傀儡胸腔",
     "tooltips.kubejs.hover.small_terra_type.0": "小型自然胸腔",
-    "tooltips.kubejs.hover.small_vita_type.0": "小型血肉胸腔"
+    "tooltips.kubejs.hover.small_vita_type.0": "小型血肉胸腔",
+    "tooltips.kubejs.tag.kubejs:giant_organ": "巨型器官",
+    "tooltips.kubejs.overlay.kubejs:giant_organ.3": "（3）最大生命值降低25%",
+    "tooltips.kubejs.overlay.kubejs:giant_organ.6": "（6）最大生命值再降低25%",
+    "tooltips.kubejs.overlay.kubejs:giant_organ.9": "（9）最大生命值再降低50%"
 }

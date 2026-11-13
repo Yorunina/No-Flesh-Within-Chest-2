@@ -3538,7 +3538,6 @@
     "item.kubejs.giant_spine": "Giant Spine",
     "item.kubejs.giant_spleen": "Giant Spleen",
     "item.kubejs.giant_stomach": "Giant Stomach",
-    "tooltips.kubejs.giant_organ.default.1": "Giant organ: provides four times the base attributes of its ordinary counterpart",
     "item.kubejs.flesh_sheet": "Flesh Sheet",
     "item.kubejs.flesh_mechanism": "Flesh Mechanism",
     "item.kubejs.flesh_ingot": "Flesh Ingot",
@@ -3834,5 +3833,9 @@
     "gui.chestcavity.organ_holo.obtain.kubejs:mechanized_belt": "Crafted through an §lOrgan Processing Table recipe§r",
     "item.kubejs.compact_fabritem": "Compressed Fabritem",
     "tooltips.kubejs.compact_fabritem.default.1": "The product of compression technology",
-    "tooltips.kubejs.compact_fabritem.shift.1": "    A Fabritem with a special use"
+    "tooltips.kubejs.compact_fabritem.shift.1": "    A Fabritem with a special use",
+    "tooltips.kubejs.tag.kubejs:giant_organ": "Giant Organ",
+    "tooltips.kubejs.overlay.kubejs:giant_organ.3": "(3) Max Health reduced by 25%",
+    "tooltips.kubejs.overlay.kubejs:giant_organ.6": "(6) Max Health reduced by another 25%",
+    "tooltips.kubejs.overlay.kubejs:giant_organ.9": "(9) Max Health reduced by another 50%"
 }
