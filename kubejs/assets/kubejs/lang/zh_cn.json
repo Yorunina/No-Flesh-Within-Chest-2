@@ -4472,5 +4472,11 @@
     "tooltips.kubejs.tag.kubejs:giant_organ": "巨型器官",
     "tooltips.kubejs.overlay.kubejs:giant_organ.3": "（3）最大生命值降低25%",
     "tooltips.kubejs.overlay.kubejs:giant_organ.6": "（6）最大生命值再降低25%",
-    "tooltips.kubejs.overlay.kubejs:giant_organ.9": "（9）最大生命值再降低50%"
+    "tooltips.kubejs.overlay.kubejs:giant_organ.9": "（9）最大生命值再降低50%",
+    "tooltips.kubejs.hover.medium_ender_type.0": "末影胸腔",
+    "tooltips.kubejs.hover.medium_nether_type.0": "下界胸腔",
+    "tooltips.kubejs.hover.small_aquatic_type.0": "小型水生胸腔",
+    "tooltips.kubejs.hover.small_nether_type.0": "小型下界胸腔",
+    "tooltips.kubejs.hover.small_undead_type.0": "小型亡灵胸腔",
+    "tooltips.kubejs.hover.large_golem_type.0": "大型傀儡胸腔"
 }

@@ -3837,5 +3837,11 @@
     "tooltips.kubejs.tag.kubejs:giant_organ": "Giant Organ",
     "tooltips.kubejs.overlay.kubejs:giant_organ.3": "(3) Max Health reduced by 25%",
     "tooltips.kubejs.overlay.kubejs:giant_organ.6": "(6) Max Health reduced by another 25%",
-    "tooltips.kubejs.overlay.kubejs:giant_organ.9": "(9) Max Health reduced by another 50%"
+    "tooltips.kubejs.overlay.kubejs:giant_organ.9": "(9) Max Health reduced by another 50%",
+    "tooltips.kubejs.hover.medium_ender_type.0": "Ender Chest Cavity",
+    "tooltips.kubejs.hover.medium_nether_type.0": "Nether Chest Cavity",
+    "tooltips.kubejs.hover.small_aquatic_type.0": "Small Aquatic Chest Cavity",
+    "tooltips.kubejs.hover.small_nether_type.0": "Small Nether Chest Cavity",
+    "tooltips.kubejs.hover.small_undead_type.0": "Small Undead Chest Cavity",
+    "tooltips.kubejs.hover.large_golem_type.0": "Large Golem Chest Cavity"
 }
