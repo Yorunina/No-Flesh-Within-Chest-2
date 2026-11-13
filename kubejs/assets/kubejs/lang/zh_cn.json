@@ -4460,5 +4460,14 @@
     "death.attack.kubejs.damage_echo.player": "%1$s 被 %2$s 的伤害回响击败了",
     "death.attack.kubejs.damage_echo.item": "%1$s 被 %2$s 使用 %3$s 的伤害回响击败了",
     "tooltips.kubejs.overlay.kubejs:factory.4": "（4）肺活量和呼吸效率若低于2则设为2",
-    "tooltips.kubejs.overlay.kubejs:factory.8": "（8）血液过滤效率若低于2则设为2"
+    "tooltips.kubejs.overlay.kubejs:factory.8": "（8）血液过滤效率若低于2则设为2",
+    "tooltips.kubejs.hover.medium_aquatic_type.0": "水生胸腔",
+    "tooltips.kubejs.hover.medium_golem_type.0": "傀儡胸腔",
+    "tooltips.kubejs.hover.medium_terra_type.0": "自然胸腔",
+    "tooltips.kubejs.hover.medium_undead_type.0": "亡灵胸腔",
+    "tooltips.kubejs.hover.medium_vita_type.0": "血肉胸腔",
+    "tooltips.kubejs.hover.small_ender_type.0": "小型末影胸腔",
+    "tooltips.kubejs.hover.small_golem_type.0": "小型傀儡胸腔",
+    "tooltips.kubejs.hover.small_terra_type.0": "小型自然胸腔",
+    "tooltips.kubejs.hover.small_vita_type.0": "小型血肉胸腔"
 }
