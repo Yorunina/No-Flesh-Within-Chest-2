@@ -16,8 +16,9 @@
                 "improvement": "potentiality/thundering_trident_awaken"
             },
             {
-                "type": "tetrajs:custom",
-                "key": "enchantment_minecraft_riptide"
+                "type": "tetrajs:enchantment",
+                "enchantment": "minecraft:riptide",
+                "level": 1
             },
             {
                 "type": "tetra:not",
