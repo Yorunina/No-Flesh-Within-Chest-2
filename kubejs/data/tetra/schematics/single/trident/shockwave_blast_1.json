@@ -18,8 +18,9 @@
             {
                 "type": "tetra:not",
                 "requirement": {
-                    "type": "tetrajs:custom",
-                    "key": "enchantment_minecraft_riptide"
+                    "type": "tetrajs:enchantment",
+                    "enchantment": "minecraft:riptide",
+                    "level": 1
                 }
             },
             {

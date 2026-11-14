@@ -4454,7 +4454,7 @@
     "tetrajs.holo.custom_requirement.ancient_tearing_spear": "断裂等级至少50，或完成创世进程",
     "tetrajs.holo.custom_requirement.skinning_sickle": "在生物锻造台完成预锻，或完成创世进程",
     "tetrajs.holo.custom_requirement.tearing_spear": "在机械融合砧完成预锻，或完成创世进程",
-    "tetrajs.holo.custom_requirement.enchantment_minecraft_riptide": "物品带有激流附魔",
+
     "death.attack.kubejs.damage_echo": "%1$s 被 %2$s 的伤害回响击败了",
     "death.attack.kubejs.damage_echo.player": "%1$s 被 %2$s 的伤害回响击败了",
     "death.attack.kubejs.damage_echo.item": "%1$s 被 %2$s 使用 %3$s 的伤害回响击败了",
