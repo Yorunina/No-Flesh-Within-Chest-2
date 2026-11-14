@@ -1,20 +1,16 @@
 // priority: 3000
 
 let TETRA_DAMAGE_ECHO = $ResourceKey.create($Registries.DAMAGE_TYPE, new $ResourceLocation('kubejs:damage_echo'))
-const CombatDataKey = 'combat'
-const WeaponDataKey = 'weapon'
 
-/** 派生伤害的数据属于来源实例，不依赖当前事件或临时全局状态。 */
 function TetraAttackData(source) {
     if (!MAADamageSources.supportsData(source) || !source.hasCustomData()) return null
     let data = source.customData
-    return data.contains(CombatDataKey, TAG_COMPOUND) ? data.getCompound(CombatDataKey) : null
+    return data.contains('combat', TAG_COMPOUND) ? data.getCompound('combat') : null
 }
 
-/** 攻击武器；追击读取触发时快照，普通攻击读取当前主手。 */
 function TetraAttackItem(event, sourceEntity) {
     if (!MAADamageSources.supportsData(event.source)) return sourceEntity.mainHandItem
-    return event.source.getItemData(WeaponDataKey) ?? sourceEntity.mainHandItem
+    return event.source.getItemData('weapon') ?? sourceEntity.mainHandItem
 }
 
 /** 追击继承触发时的蓄力；非玩家没有蓄力门槛。 */
@@ -39,7 +35,7 @@ function TetraAttackSource(level, id, sourceEntity, kind) {
     let source = MAADamageSources.create(level, id, sourceEntity)
     let data = new $CompoundTag()
     data.putString('kind', kind)
-    source.customData.put(CombatDataKey, data)
+    source.customData.put('combat', data)
     return source
 }
 

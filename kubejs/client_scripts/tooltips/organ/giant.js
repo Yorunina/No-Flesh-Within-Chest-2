@@ -1,5 +1,3 @@
 // priority: 900
-const GiantOrganTooltipNames = ['appendix', 'intestine', 'heart', 'kidney', 'liver', 'lung', 'muscle', 'rib', 'spine', 'spleen', 'stomach']
-GiantOrganTooltipNames.forEach(organ => RegistryOrganTooltip(
-    new MultiStateTooltip(`kubejs:giant_${organ}`)
-))
+const GiantOrganNames = ['appendix', 'intestine', 'heart', 'kidney', 'liver', 'lung', 'muscle', 'rib', 'spine', 'spleen', 'stomach']
+GiantOrganNames.forEach(organ => RegistryOrganTooltip(new MultiStateTooltip(`kubejs:giant_${organ}`)))
