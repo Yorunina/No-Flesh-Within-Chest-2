@@ -1,8 +1,8 @@
 // priority: 3000
 
 let TETRA_DAMAGE_ECHO = $ResourceKey.create($Registries.DAMAGE_TYPE, new $ResourceLocation('kubejs:damage_echo'))
-const CombatDataKey = 'ribcage:combat'
-const WeaponDataKey = 'ribcage:weapon'
+const CombatDataKey = 'combat'
+const WeaponDataKey = 'weapon'
 
 function TetraAttackData(source) {
     if (!MAADamageSources.supportsData(source) || !source.hasCustomData()) return null
@@ -11,7 +11,7 @@ function TetraAttackData(source) {
 }
 
 function TetraAttackItem(event, sourceEntity) {
-    if (!TetraAttackData(event.source)) return sourceEntity.mainHandItem
+    if (!MAADamageSources.supportsData(event.source)) return sourceEntity.mainHandItem
     return event.source.getItemData(WeaponDataKey) ?? sourceEntity.mainHandItem
 }
 

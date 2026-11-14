@@ -3,6 +3,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:giant_rib')
         .maxStackSize(1)
         .texture('kubejs:item/organs/giant/giant_rib')
-        .tag('kubejs:giant_organ')
+        .tag('kubejs:giant')
         .tag('kubejs:bone')
 })

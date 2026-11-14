@@ -6,6 +6,6 @@ function GiantOrganTagChestCavityUpdate(customData, event, tagId, count) {
 }
 
 RegistryTagStrategy(
-    new TagStrategyModel('kubejs:giant_organ')
+    new TagStrategyModel('kubejs:giant')
         .addStrategy('chest_cavity_update', GiantOrganTagChestCavityUpdate)
 )
