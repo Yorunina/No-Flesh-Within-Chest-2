@@ -12,4 +12,5 @@ ChestCavityEvents.overlayHud(event => {
     OverlayTagLine(event, 'kubejs:rose', [8])
     OverlayTagLine(event, 'kubejs:revolution', [3, 6])
     OverlayTagLine(event, 'kubejs:factory', [4, 8])
+    OverlayTagLine(event, 'kubejs:giant_organ', [3, 6, 9])
 })

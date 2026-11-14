@@ -30,6 +30,7 @@ RegistryOrganTag('kubejs:spine', Text.of(Text.translatable('tooltips.kubejs.tag.
 RegistryOrganTag('kubejs:spleen', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:spleen')))
 RegistryOrganTag('kubejs:pancreas', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:pancreas')))
 RegistryOrganTag('kubejs:stomach', Text.aqua(Text.translatable('tooltips.kubejs.tag.kubejs:stomach')))
+RegistryOrganTag('kubejs:giant_organ', Text.gold(Text.translatable('tooltips.kubejs.tag.kubejs:giant_organ')))
 RegistryOrganTag('kubejs:machine', Text.gray(Text.translatable('tooltips.kubejs.tag.kubejs:machine')))
 RegistryOrganTag('kubejs:magic', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:magic')).color('#00eded'))
 RegistryOrganTag('kubejs:rose', Text.darkRed(Text.translatable('tooltips.kubejs.tag.kubejs:rose')))

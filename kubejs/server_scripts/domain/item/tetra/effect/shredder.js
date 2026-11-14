@@ -27,7 +27,7 @@ function ShredderEntityDoDamage(customData, event) {
     let data = TetraAttackData(source)
     data.putBoolean('full_charge', true)
     data.putBoolean('melee', true)
-    source.setItemData('weapon', stack.copy())
+    source.setItemData(WeaponDataKey, stack.copy())
     let attack = {
         entity: event.entity,
         source: source,
