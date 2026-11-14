@@ -13,7 +13,7 @@ function ShredderEntityDoDamage(customData, event) {
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (!TetraAttackIsMelee(event, sourceEntity) || !TetraAttackFullCharge(event, sourceEntity)) return
 
-    let stack = sourceEntity.mainHandItem
+    let stack = TetraAttackItem(event, sourceEntity)
     let item = stack.getItem()
     if (!TetraJSUtils.isModularItem(item)) return
     let effectLevel = item.getEffectLevel(stack, 'kubejs:shredder')
@@ -25,9 +25,9 @@ function ShredderEntityDoDamage(customData, event) {
 
     let source = TetraAttackSource(event.entity.level, 'kubejs:damage_echo', sourceEntity, 'shredder_segment')
     let data = TetraAttackData(source)
-    data.put('weapon', stack.save(new $CompoundTag()))
     data.putBoolean('full_charge', true)
     data.putBoolean('melee', true)
+    source.setItemData(WeaponDataKey, stack.copy())
     let attack = {
         entity: event.entity,
         source: source,
