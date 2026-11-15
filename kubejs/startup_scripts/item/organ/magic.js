@@ -28,7 +28,7 @@ StartupEvents.registry('item', event => {
     // 生物工厂器官：与同类器官统一注册，保留原有标签和交互。
     event.create('kubejs:enchanting_stresssourse')
         .maxStackSize(1)
-        .parentModel('kubejs:item/enchanting')
+        .texture('kubejs:item/organs/magic/enchanting_stresssourse')
         .tag('kubejs:factory')
         .tag('kubejs:magic')
 })
