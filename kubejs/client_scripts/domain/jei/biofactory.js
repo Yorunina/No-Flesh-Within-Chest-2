@@ -488,18 +488,18 @@ JEIAddedEvents.registerRecipes(event => {
 //添加jei显示的催化剂
 JEIAddedEvents.registerRecipeCatalysts(event=>{
     event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
-        Item.of('factory:mechanical_press'), new ResourceLocation('create', 'pressing')
+        Item.of('kubejs:mechanical_press'), new ResourceLocation('create', 'pressing')
     )
     event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
-        Item.of('factory:crushing_wheel'), new ResourceLocation('create', 'crushing')
+        Item.of('kubejs:crushing_wheel'), new ResourceLocation('create', 'crushing')
     )
     event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
-        Item.of('factory:mechanical_saw'), new ResourceLocation('create', 'sawing')
+        Item.of('kubejs:mechanical_saw'), new ResourceLocation('create', 'sawing')
     )
     event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
-        Item.of('factory:encased_fan'), new ResourceLocation('create', 'fan_blasting')
+        Item.of('kubejs:encased_fan'), new ResourceLocation('create', 'fan_blasting')
     )
     event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
-        Item.of('factory:encased_fan'), new ResourceLocation('create', 'fan_smoking')
+        Item.of('kubejs:encased_fan'), new ResourceLocation('create', 'fan_smoking')
     )
 })
