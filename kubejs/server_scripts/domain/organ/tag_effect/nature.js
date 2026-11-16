@@ -18,8 +18,8 @@ function NatureTagChestCavityUpdate(customData, event, tagId, count) {
  * @param {number} count
  */
 function NatureTagMobEffectApplicable(customData, event, tagId, count) {
-    DenyPlayerEffectIfTag(event, $MobEffects.POISON, count, 3)
-    DenyPlayerEffectIfTag(event, $MobEffects.HUNGER, count, 6)
+    DenyPlayerEffectIfTag(event, $MobEffects.HUNGER, count, 4)
+    DenyPlayerEffectIfTag(event, $MobEffects.POISON, count, 6)
 }
 
 RegistryTagStrategy(
