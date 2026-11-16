@@ -1,6 +1,5 @@
 // priority: 500
 ChestCavityEvents.overlayHud(event => {
-    OverlayTagLine(event, 'kubejs:nature', [3, 6])
     OverlayTagLine(event, 'kubejs:magic', [3, 6])
     OverlayTagLine(event, 'kubejs:relics', [4, 5, 10])
     OverlayTagLine(event, 'kubejs:infected', [2, 5, 9])
