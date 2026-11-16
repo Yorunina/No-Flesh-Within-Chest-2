@@ -11,6 +11,9 @@ const ARENA_RETURN_PITCH = 'kubejs_arena_return_pitch'
 const WORMHOLE_COOL = 'kubejs_wormhole_cool'
 const ENTRY_BASE_TICKS = 200
 const TELEPORT_COOLDOWN = 40
+const ARENA_PLAYER_X = 0
+const ARENA_PLAYER_Y = 64
+const ARENA_PLAYER_Z = 0
 
 function VoidArenaGameTime(player) {
     return player.server.getLevel('minecraft:overworld').gameTime
@@ -44,6 +47,12 @@ function TeleportFromWormholeExit(player) {
     } else {
         player.teleportTo(dim, data.getDouble(ARENA_RETURN_X), data.getDouble(ARENA_RETURN_Y), data.getDouble(ARENA_RETURN_Z), data.getFloat(ARENA_RETURN_YAW), data.getFloat(ARENA_RETURN_PITCH))
     }
+    data.remove(ARENA_RETURN_DIM)
+    data.remove(ARENA_RETURN_X)
+    data.remove(ARENA_RETURN_Y)
+    data.remove(ARENA_RETURN_Z)
+    data.remove(ARENA_RETURN_YAW)
+    data.remove(ARENA_RETURN_PITCH)
     MarkWormholeCool(player)
 }
 
