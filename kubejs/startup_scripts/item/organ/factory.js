@@ -14,13 +14,13 @@ StartupEvents.registry('item', event => {
         .tooltipImage(BundleTooltip)
         .canFitInsideContainerItems(false)
         .maxStackSize(1)
-        .parentModel('kubejs:item/basin_model')
+        .texture('kubejs:item/organs/factory/basin')
         .tag('kubejs:factory')
 
     event.create('kubejs:belt_connecter').texture('kubejs:item/organs/factory/belt_connecter').maxStackSize(1).tag('kubejs:factory')
 
     event.create('kubejs:brass_funnel')
-        .parentModel('kubejs:item/brass_funnel_model')
+        .texture('kubejs:item/organs/factory/brass_funnel')
         .maxStackSize(1)
         .tag('kubejs:factory')
         .overrideOtherStackedOnMe(BundleStackedOnMe(1))
@@ -105,7 +105,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:mechanized_belt').texture('kubejs:item/organs/factory/mechanized_belt').maxStackSize(1).tag('kubejs:factory').tag('kubejs:machine').tag('kubejs:revolution')
 
     event.create('kubejs:output_brass_funnel')
-        .parentModel('kubejs:item/output_brass_funnel_model')
+        .texture('kubejs:item/organs/factory/output_brass_funnel')
         .maxStackSize(1)
         .tag('kubejs:factory')
         .overrideOtherStackedOnMe(BundleStackedOnMe(1))
@@ -141,7 +141,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/factory/spout')
 
     event.create('kubejs:steam_engine')
-        .parentModel('kubejs:item/steam_engine_model')
+        .texture('kubejs:item/organs/factory/steam_engine')
         .maxStackSize(1)
         .tag('kubejs:factory')
         .tag('kubejs:machine')
