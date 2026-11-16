@@ -485,3 +485,21 @@ JEIAddedEvents.registerRecipes(event => {
     registryOrganSpoutRecipe(Item.of('minecraft:orange_dye'), Item.of('minecraft:yellow_dye'), Fluid.of('create:honey', 1))
     registryOrganSpoutRecipe(Item.of('kubejs:furnace_core'), Item.of('kubejs:burning_heart'), Fluid.of('minecraft:lava', 1000))
 })
+//添加jei显示的催化剂
+JEIAddedEvents.registerRecipeCatalysts(event=>{
+    event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
+        Item.of('factory:mechanical_press'), new ResourceLocation('create', 'pressing')
+    )
+    event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
+        Item.of('factory:crushing_wheel'), new ResourceLocation('create', 'crushing')
+    )
+    event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
+        Item.of('factory:mechanical_saw'), new ResourceLocation('create', 'sawing')
+    )
+    event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
+        Item.of('factory:encased_fan'), new ResourceLocation('create', 'fan_blasting')
+    )
+    event.data["addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])"](
+        Item.of('factory:encased_fan'), new ResourceLocation('create', 'fan_smoking')
+    )
+})
