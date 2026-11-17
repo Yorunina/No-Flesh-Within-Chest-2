@@ -6,6 +6,7 @@ const ARENA_PHASE = 'kubejs_arena_phase'
 const ARENA_START_TIME = 'kubejs_arena_start_time'
 const ARENA_RETURN_TIME = 'kubejs_arena_return_time'
 const ARENA_EXIT_SPAWNED = 'kubejs_arena_exit_spawned'
+const VOID_ARENA_SUMMON_ID = 'kubejs_arena_summon'
 const ARENA_PHASE_BATTLE = 'battle'
 const ARENA_PHASE_VICTORY = 'victory'
 const ARENA_TIMEOUT_TICKS = 20 * 60 * 10
@@ -13,10 +14,6 @@ const ARENA_RETURN_DELAY_TICKS = 20 * 10
 const ARENA_BOSS_X = 32
 const ARENA_BOSS_Y = 64
 const ARENA_BOSS_Z = 32
-
-function SelectVoidArenaBoss(player) {
-    return 'minecraft:wither'
-}
 
 function SetVoidArenaPhase(level, phase) {
     level.persistentData.putString(ARENA_PHASE, phase)
@@ -34,8 +31,13 @@ function IsVoidArenaOccupied(level) {
 }
 
 function SpawnVoidArenaBoss(level, player) {
-    const boss = level.createEntity(SelectVoidArenaBoss(player))
+    const summonId = player.persistentData.getString(VOID_ARENA_SUMMON_ID)
+    const summon = summonId ? VoidArenaSummonMap[summonId] : null
+    const boss = summon && summon.createBossFunc
+        ? summon.createBossFunc({ level: level, player: player, entity: null })
+        : level.createEntity('minecraft:wither')
     if (!boss) return false
+    player.persistentData.remove(VOID_ARENA_SUMMON_ID)
     const isBossPart = boss.entityType.is(RelicsBossPartTagKey)
     if (!isBossPart) {
         boss.persistentData.putBoolean(ARENA_BOSS_FLAG, true)

@@ -1,5 +1,6 @@
 // priority: 1000
 const VOID_ARENA_DIM = 'kubejs:void_arena'
+const ARENA_SUMMON_ID = 'kubejs_arena_summon'
 const ARENA_DESPAWN = 'kubejs_arena_despawn'
 const ARENA_RETURN_DIM = 'kubejs_arena_return_dim'
 const ARENA_RETURN_X = 'kubejs_arena_return_x'
@@ -39,6 +40,8 @@ function SaveArenaReturnPoint(player) {
 
 function TeleportIntoVoidArena(player, hole) {
     SaveArenaReturnPoint(player)
+    const summonId = hole.persistentData.getString(ARENA_SUMMON_ID)
+    if (summonId) player.persistentData.putString(ARENA_SUMMON_ID, summonId)
     player.teleportTo(VOID_ARENA_DIM, ARENA_PLAYER_X, ARENA_PLAYER_Y, ARENA_PLAYER_Z, player.yaw, player.pitch)
     const data = hole.persistentData
     data.putInt(ARENA_DESPAWN, data.contains(ARENA_DESPAWN) ? data.getInt(ARENA_DESPAWN) + ENTRY_BASE_TICKS : ENTRY_BASE_TICKS)
