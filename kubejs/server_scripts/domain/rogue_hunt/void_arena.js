@@ -90,7 +90,9 @@ function ReturnVoidArenaPlayer(player) {
 }
 
 function ReturnVoidArenaPlayers(level) {
-    level.players.toArray().forEach(player => ReturnVoidArenaPlayer(player))
+    level.players.toArray().forEach(player => {
+        if (player.isAlive()) ReturnVoidArenaPlayer(player)
+    })
     ClearVoidArena(level)
 }
 
