@@ -1,14 +1,15 @@
 // priority: 500
 const VOID_ARENA_DIM = 'kubejs:void_arena'
 const ARENA_BOSS_FLAG = 'kubejs_arena_boss'
-const ARENA_EXIT_FLAG = 'kubejs_arena_exit'
 const ARENA_BOSS_UUID = 'kubejs_arena_boss_uuid'
 const ARENA_PHASE = 'kubejs_arena_phase'
 const ARENA_START_TIME = 'kubejs_arena_start_time'
+const ARENA_RETURN_TIME = 'kubejs_arena_return_time'
 const ARENA_EXIT_SPAWNED = 'kubejs_arena_exit_spawned'
 const ARENA_PHASE_BATTLE = 'battle'
 const ARENA_PHASE_VICTORY = 'victory'
 const ARENA_TIMEOUT_TICKS = 20 * 60 * 10
+const ARENA_RETURN_DELAY_TICKS = 20 * 10
 const ARENA_BOSS_X = 32
 const ARENA_BOSS_Y = 64
 const ARENA_BOSS_Z = 32
@@ -45,24 +46,15 @@ function SpawnVoidArenaBoss(level, player) {
     return true
 }
 
-function SpawnVoidArenaExit(level) {
-    if (level.persistentData.getBoolean(ARENA_EXIT_SPAWNED)) return
-    const hole = level.createEntity('kubejs:wormhole')
-    if (!hole) return
-    hole.persistentData.putBoolean(ARENA_EXIT_FLAG, true)
-    hole.setPos(0, 65, 8)
-    hole.spawn()
-    level.persistentData.putBoolean(ARENA_EXIT_SPAWNED, true)
-}
-
 function ClearVoidArena(level) {
     const boss = GetVoidArenaBoss(level)
     if (boss && boss.isAlive()) boss.discard()
     level.persistentData.remove(ARENA_BOSS_UUID)
     level.persistentData.remove(ARENA_PHASE)
     level.persistentData.remove(ARENA_START_TIME)
+    level.persistentData.remove(ARENA_RETURN_TIME)
     level.persistentData.remove(ARENA_EXIT_SPAWNED)
-    MAAUtils.unloadArena(level)
+    if (level.players.isEmpty()) MAAUtils.unloadArena(level)
 }
 
 function BeginVoidArena(level, player) {
@@ -75,17 +67,48 @@ function BeginVoidArena(level, player) {
     level.persistentData.putLong(ARENA_START_TIME, level.gameTime)
 }
 
+function SetVoidArenaVictory(level) {
+    SetVoidArenaPhase(level, ARENA_PHASE_VICTORY)
+    level.persistentData.putLong(ARENA_RETURN_TIME, level.gameTime + ARENA_RETURN_DELAY_TICKS)
+}
+
+function ReturnVoidArenaPlayer(player) {
+    const data = player.persistentData
+    const dim = data.getString('kubejs_arena_return_dim')
+    if (!dim) {
+        const spawn = player.server.getLevel('minecraft:overworld').sharedSpawnPos
+        player.teleportTo('minecraft:overworld', spawn.x, spawn.y, spawn.z, 0, 0)
+    } else {
+        player.teleportTo(dim, data.getDouble('kubejs_arena_return_x'), data.getDouble('kubejs_arena_return_y'), data.getDouble('kubejs_arena_return_z'), data.getFloat('kubejs_arena_return_yaw'), data.getFloat('kubejs_arena_return_pitch'))
+    }
+    data.remove('kubejs_arena_return_dim')
+    data.remove('kubejs_arena_return_x')
+    data.remove('kubejs_arena_return_y')
+    data.remove('kubejs_arena_return_z')
+    data.remove('kubejs_arena_return_yaw')
+    data.remove('kubejs_arena_return_pitch')
+}
+
+function ReturnVoidArenaPlayers(level) {
+    level.players.toArray().forEach(player => ReturnVoidArenaPlayer(player))
+    ClearVoidArena(level)
+}
+
 function TickVoidArena(level) {
     if (!level) return
     if (level.players.isEmpty()) {
         const data = level.persistentData
-        if (data.contains(ARENA_BOSS_UUID) || data.getString(ARENA_PHASE) == ARENA_PHASE_VICTORY || data.getBoolean(ARENA_EXIT_SPAWNED)) ClearVoidArena(level)
+        if (data.contains(ARENA_BOSS_UUID) || data.getString(ARENA_PHASE) || data.getBoolean(ARENA_EXIT_SPAWNED)) ClearVoidArena(level)
         return
     }
     const phase = level.persistentData.getString(ARENA_PHASE)
+    if (phase == ARENA_PHASE_VICTORY) {
+        if (level.gameTime >= level.persistentData.getLong(ARENA_RETURN_TIME)) ReturnVoidArenaPlayers(level)
+        return
+    }
     if (phase != ARENA_PHASE_BATTLE) return
     if (!IsVoidArenaOccupied(level)) {
-        ClearVoidArena(level)
+        SetVoidArenaVictory(level)
         return
     }
     const startTime = level.persistentData.getLong(ARENA_START_TIME)
@@ -93,8 +116,7 @@ function TickVoidArena(level) {
         const boss = GetVoidArenaBoss(level)
         if (boss && boss.isAlive()) boss.discard()
         level.persistentData.remove(ARENA_BOSS_UUID)
-        SetVoidArenaPhase(level, ARENA_PHASE_VICTORY)
-        SpawnVoidArenaExit(level)
+        SetVoidArenaVictory(level)
     }
 }
 
@@ -107,12 +129,6 @@ MAAEvents.playerDimensionChange(event => {
 ServerEvents.tick(event => {
     if (event.server.tickCount % 20 != 0) return
     TickVoidArena(event.server.getLevel(VOID_ARENA_DIM))
-})
-
-PlayerEvents.respawned(event => {
-    const player = event.player
-    if (player.level.dimension != VOID_ARENA_DIM) return
-    TeleportFromWormholeExit(player)
 })
 
 EntityEvents.spawned(event => {
@@ -137,12 +153,11 @@ EntityEvents.death(event => {
     const uuidStr = level.persistentData.getString(ARENA_BOSS_UUID)
     if (uuidStr && String(entity.uuid) != uuidStr) return
     level.persistentData.remove(ARENA_BOSS_UUID)
-    SetVoidArenaPhase(level, ARENA_PHASE_VICTORY)
     if (level.players.isEmpty()) {
         ClearVoidArena(level)
         return
     }
-    SpawnVoidArenaExit(level)
+    SetVoidArenaVictory(level)
 })
 
 BlockEvents.placed(event => {

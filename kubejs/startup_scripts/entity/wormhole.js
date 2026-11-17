@@ -1,6 +1,5 @@
 // priority: 1000
 const VOID_ARENA_DIM = 'kubejs:void_arena'
-const ARENA_EXIT_FLAG = 'kubejs_arena_exit'
 const ARENA_DESPAWN = 'kubejs_arena_despawn'
 const ARENA_RETURN_DIM = 'kubejs_arena_return_dim'
 const ARENA_RETURN_X = 'kubejs_arena_return_x'
@@ -38,27 +37,9 @@ function SaveArenaReturnPoint(player) {
     data.putFloat(ARENA_RETURN_PITCH, player.pitch)
 }
 
-function TeleportFromWormholeExit(player) {
-    const data = player.persistentData
-    const dim = data.getString(ARENA_RETURN_DIM)
-    if (!dim) {
-        const spawn = player.server.getLevel('minecraft:overworld').sharedSpawnPos
-        player.teleportTo('minecraft:overworld', spawn.x, spawn.y, spawn.z, 0, 0)
-    } else {
-        player.teleportTo(dim, data.getDouble(ARENA_RETURN_X), data.getDouble(ARENA_RETURN_Y), data.getDouble(ARENA_RETURN_Z), data.getFloat(ARENA_RETURN_YAW), data.getFloat(ARENA_RETURN_PITCH))
-    }
-    data.remove(ARENA_RETURN_DIM)
-    data.remove(ARENA_RETURN_X)
-    data.remove(ARENA_RETURN_Y)
-    data.remove(ARENA_RETURN_Z)
-    data.remove(ARENA_RETURN_YAW)
-    data.remove(ARENA_RETURN_PITCH)
-    MarkWormholeCool(player)
-}
-
 function TeleportIntoVoidArena(player, hole) {
     SaveArenaReturnPoint(player)
-    player.teleportTo(VOID_ARENA_DIM, 0, 64, 0, player.yaw, player.pitch)
+    player.teleportTo(VOID_ARENA_DIM, ARENA_PLAYER_X, ARENA_PLAYER_Y, ARENA_PLAYER_Z, player.yaw, player.pitch)
     const data = hole.persistentData
     data.putInt(ARENA_DESPAWN, data.contains(ARENA_DESPAWN) ? data.getInt(ARENA_DESPAWN) + ENTRY_BASE_TICKS : ENTRY_BASE_TICKS)
     MarkWormholeCool(player)
@@ -69,17 +50,6 @@ function WormholeTick(entity) {
     if (level.isClientSide()) return
     const data = entity.persistentData
     const players = level.getEntitiesOfClass($Player, entity.getBoundingBox().inflate(1.5))
-
-    if (data.getBoolean(ARENA_EXIT_FLAG)) {
-        players.forEach(player => {
-            if (!IsWormholeCooling(player)) TeleportFromWormholeExit(player)
-        })
-        if (level.players.isEmpty()) {
-            MAAUtils.unloadArena(level)
-            entity.discard()
-        }
-        return
-    }
 
     players.forEach(player => {
         if (!IsWormholeCooling(player)) TeleportIntoVoidArena(player, entity)
