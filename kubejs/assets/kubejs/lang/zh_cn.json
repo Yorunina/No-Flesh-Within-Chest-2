@@ -2145,6 +2145,7 @@
     "item.kubejs.nether_organ_bag": "下界器官袋",
     "item.kubejs.ender_organ_bag": "末影器官袋",
     "item.kubejs.relics_organ_bag": "遗物器官袋",
+    "item.kubejs.factory_organ_bag": "工厂器官袋",
     "tooltips.kubejs.tag_organ_bag.default.1": "按标签分类的器官袋",
     "tooltips.kubejs.tag_organ_bag.shift.1": "    §6★§r 右键打开，随机获得一个带有%s标签的可获取器官",
     "item.kubejs.common_organ_bag": "普通器官袋",

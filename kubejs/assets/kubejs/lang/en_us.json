@@ -2145,6 +2145,7 @@
     "item.kubejs.nether_organ_bag": "Nether Organ Bag",
     "item.kubejs.ender_organ_bag": "Ender Organ Bag",
     "item.kubejs.relics_organ_bag": "Relic Organ Bag",
+    "item.kubejs.factory_organ_bag": "Factory Organ Bag",
     "tooltips.kubejs.tag_organ_bag.default.1": "An organ bag sorted by tag",
     "tooltips.kubejs.tag_organ_bag.shift.1": "    §6★§r Right-click to get a random obtainable organ with the %s tag",
     "item.kubejs.common_organ_bag": "Common Organ Bag",
