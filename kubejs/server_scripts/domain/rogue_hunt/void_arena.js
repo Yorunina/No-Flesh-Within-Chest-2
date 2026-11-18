@@ -5,7 +5,6 @@ const ARENA_BOSS_UUID = 'kubejs_arena_boss_uuid'
 const ARENA_PHASE = 'kubejs_arena_phase'
 const ARENA_START_TIME = 'kubejs_arena_start_time'
 const ARENA_RETURN_TIME = 'kubejs_arena_return_time'
-const ARENA_EXIT_SPAWNED = 'kubejs_arena_exit_spawned'
 const VOID_ARENA_SUMMON_ID = 'kubejs_arena_summon'
 const ARENA_PHASE_BATTLE = 'battle'
 const ARENA_PHASE_VICTORY = 'victory'
@@ -28,6 +27,10 @@ function GetVoidArenaBoss(level) {
 function IsVoidArenaOccupied(level) {
     const boss = GetVoidArenaBoss(level)
     return !!(boss && boss.isAlive() && boss.persistentData.getBoolean(ARENA_BOSS_FLAG))
+}
+
+function IsVoidArenaReady(level) {
+    return !!level && !level.persistentData.getString(ARENA_PHASE) && !IsVoidArenaOccupied(level)
 }
 
 function SpawnVoidArenaBoss(level, player) {
@@ -55,7 +58,6 @@ function ClearVoidArena(level) {
     level.persistentData.remove(ARENA_PHASE)
     level.persistentData.remove(ARENA_START_TIME)
     level.persistentData.remove(ARENA_RETURN_TIME)
-    level.persistentData.remove(ARENA_EXIT_SPAWNED)
     if (level.players.isEmpty()) MAAUtils.unloadArena(level)
 }
 
@@ -102,7 +104,7 @@ function TickVoidArena(level) {
     if (!level) return
     if (level.players.isEmpty()) {
         const data = level.persistentData
-        if (data.contains(ARENA_BOSS_UUID) || data.getString(ARENA_PHASE) || data.getBoolean(ARENA_EXIT_SPAWNED)) ClearVoidArena(level)
+        if (data.contains(ARENA_BOSS_UUID) || data.getString(ARENA_PHASE)) ClearVoidArena(level)
         return
     }
     const phase = level.persistentData.getString(ARENA_PHASE)
