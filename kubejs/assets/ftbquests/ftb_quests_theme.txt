@@ -64,4 +64,4 @@ dependency_line_completed_color: #ffffff
 
 # 传闻：羖的工具包
 [629F40F1AD701A38]
-background: kubejs:textures/gui/tasks/gud/gud_background.png; color=rgb(0, 0, 0); tile_size=64
+background: kubejs:textures/gui/tasks/deep_valley_call/gud_background.png; color=rgb(0, 0, 0); tile_size=64

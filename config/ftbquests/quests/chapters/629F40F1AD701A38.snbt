@@ -8,7 +8,7 @@
 	images: [
 		{
 			height: 3.22d
-			image: "kubejs:textures/gui/tasks/gud/gud_toolkit.png"
+			image: "kubejs:textures/gui/tasks/deep_valley_call/gud_toolkit.png"
 			rotation: 0.0d
 			width: 36.64d
 			x: 0.0d
@@ -27,7 +27,7 @@
 			dependency: "4C291E94F00EA4DE"
 			height: 18.96d
 			hideDependency: "4E94BCA2D31CC38A"
-			image: "kubejs:textures/gui/tasks/gud/obelisk.png"
+			image: "kubejs:textures/gui/tasks/deep_valley_call/obelisk.png"
 			rotation: 0.0d
 			width: 10.0d
 			x: -0.1d
@@ -36,7 +36,7 @@
 		{
 			dependency: "4E94BCA2D31CC38A"
 			height: 18.96d
-			image: "kubejs:textures/gui/tasks/gud/obelisk_lit.png"
+			image: "kubejs:textures/gui/tasks/deep_valley_call/obelisk_lit.png"
 			rotation: 0.0d
 			width: 10.0d
 			x: -0.1d
@@ -45,7 +45,7 @@
 		{
 			dependency: "4C291E94F00EA4DE"
 			height: 19.4d
-			image: "kubejs:textures/gui/tasks/gud/leading_lines_1.png"
+			image: "kubejs:textures/gui/tasks/deep_valley_call/leading_lines_1.png"
 			rotation: 0.0d
 			width: 9.7d
 			x: 0.0d
@@ -54,7 +54,7 @@
 		{
 			dependency: "4E94BCA2D31CC38A"
 			height: 4.0d
-			image: "kubejs:textures/gui/tasks/gud/scrolls_2.png"
+			image: "kubejs:textures/gui/tasks/deep_valley_call/scrolls_2.png"
 			rotation: 0.0d
 			width: 5.79d
 			x: 0.0d
@@ -63,7 +63,7 @@
 		{
 			dependency: "72CC4F516FCC62C7"
 			height: 1.5d
-			image: "kubejs:textures/gui/tasks/back_to_ei_dorado/bd_accomplish.png"
+			image: "kubejs:textures/gui/tasks/deep_valley_call/bd_accomplish.png"
 			rotation: 0.0d
 			width: 1.5d
 			x: 0.0d
