@@ -16,8 +16,6 @@ function VoidArenaSummonModel(id, threshold) {
     this.matchFunc = entity => false
     /** @type {function(VoidArenaSummonContext): boolean} */
     this.conditionFunc = () => true
-    /** @type {function(VoidArenaSummonContext): boolean} */
-    this.canStartFunc = null
     /** @type {function(VoidArenaSummonContext): Internal.Entity} */
     this.createBossFunc = null
     /** @type {function(VoidArenaSummonContext): void} */
@@ -40,14 +38,6 @@ VoidArenaSummonModel.prototype = {
      */
     condition: function (func) {
         this.conditionFunc = func
-        return this
-    },
-    /**
-     * 覆盖默认的竞技场可用判断
-     * @param {function(VoidArenaSummonContext): boolean} func
-     */
-    canStart: function (func) {
-        this.canStartFunc = func
         return this
     },
     /**
