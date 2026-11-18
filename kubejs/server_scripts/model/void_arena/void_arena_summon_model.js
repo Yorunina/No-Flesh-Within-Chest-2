@@ -20,6 +20,8 @@ function VoidArenaSummonModel(id, threshold) {
     this.canStartFunc = null
     /** @type {function(VoidArenaSummonContext): Internal.Entity} */
     this.createBossFunc = null
+    /** @type {function(VoidArenaSummonContext): void} */
+    this.lootFunc = null
     return this
 }
 
@@ -54,6 +56,14 @@ VoidArenaSummonModel.prototype = {
      */
     createBoss: function (func) {
         this.createBossFunc = func
+        return this
+    },
+    /**
+     * 生成该召唤类型的额外掉落物
+     * @param {function(VoidArenaSummonContext): void} func
+     */
+    loot: function (func) {
+        this.lootFunc = func
         return this
     },
 }

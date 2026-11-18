@@ -1,7 +1,9 @@
 // priority: 1000
 const VOID_ARENA_DIM = 'kubejs:void_arena'
 const ARENA_SUMMON_ID = 'kubejs_arena_summon'
+const ARENA_EXIT_FLAG = 'kubejs_arena_exit'
 const ARENA_DESPAWN = 'kubejs_arena_despawn'
+const ARENA_ENTERED = 'kubejs_arena_entered'
 const ARENA_RETURN_DIM = 'kubejs_arena_return_dim'
 const ARENA_RETURN_X = 'kubejs_arena_return_x'
 const ARENA_RETURN_Y = 'kubejs_arena_return_y'
@@ -9,7 +11,7 @@ const ARENA_RETURN_Z = 'kubejs_arena_return_z'
 const ARENA_RETURN_YAW = 'kubejs_arena_return_yaw'
 const ARENA_RETURN_PITCH = 'kubejs_arena_return_pitch'
 const WORMHOLE_COOL = 'kubejs_wormhole_cool'
-const ENTRY_BASE_TICKS = 200
+const ENTRY_BASE_TICKS = 20 * 30
 const TELEPORT_COOLDOWN = 40
 const ARENA_PLAYER_X = 0
 const ARENA_PLAYER_Y = 64
@@ -38,13 +40,35 @@ function SaveArenaReturnPoint(player) {
     data.putFloat(ARENA_RETURN_PITCH, player.pitch)
 }
 
+function ClearArenaReturnPoint(player) {
+    const data = player.persistentData
+    data.remove(ARENA_RETURN_DIM)
+    data.remove(ARENA_RETURN_X)
+    data.remove(ARENA_RETURN_Y)
+    data.remove(ARENA_RETURN_Z)
+    data.remove(ARENA_RETURN_YAW)
+    data.remove(ARENA_RETURN_PITCH)
+}
+
+function TeleportFromWormholeExit(player, entity) {
+    const data = entity.persistentData
+    const dim = data.getString('kubejs_arena_exit_dim')
+    if (!dim) return
+    player.teleportTo(dim, data.getDouble('kubejs_arena_exit_x'), data.getDouble('kubejs_arena_exit_y'), data.getDouble('kubejs_arena_exit_z'), data.getFloat('kubejs_arena_exit_yaw'), data.getFloat('kubejs_arena_exit_pitch'))
+    ClearArenaReturnPoint(player)
+    MarkWormholeCool(player)
+}
+
 function TeleportIntoVoidArena(player, hole) {
     SaveArenaReturnPoint(player)
     const summonId = hole.persistentData.getString(ARENA_SUMMON_ID)
     if (summonId) player.persistentData.putString(ARENA_SUMMON_ID, summonId)
     player.teleportTo(VOID_ARENA_DIM, ARENA_PLAYER_X, ARENA_PLAYER_Y, ARENA_PLAYER_Z, player.yaw, player.pitch)
     const data = hole.persistentData
-    data.putInt(ARENA_DESPAWN, data.contains(ARENA_DESPAWN) ? data.getInt(ARENA_DESPAWN) + ENTRY_BASE_TICKS : ENTRY_BASE_TICKS)
+    if (!data.getBoolean(ARENA_ENTERED)) {
+        data.putBoolean(ARENA_ENTERED, true)
+        data.putInt(ARENA_DESPAWN, ENTRY_BASE_TICKS)
+    }
     MarkWormholeCool(player)
 }
 
@@ -54,9 +78,15 @@ function WormholeTick(entity) {
     const data = entity.persistentData
     const players = level.getEntitiesOfClass($Player, entity.getBoundingBox().inflate(1.5))
 
-    players.forEach(player => {
-        if (!IsWormholeCooling(player)) TeleportIntoVoidArena(player, entity)
-    })
+    if (data.getBoolean(ARENA_EXIT_FLAG)) {
+        players.forEach(player => {
+            if (!IsWormholeCooling(player)) TeleportFromWormholeExit(player, entity)
+        })
+    } else {
+        players.forEach(player => {
+            if (!IsWormholeCooling(player)) TeleportIntoVoidArena(player, entity)
+        })
+    }
 
     if (!data.contains(ARENA_DESPAWN)) return
     const left = data.getInt(ARENA_DESPAWN) - 1
