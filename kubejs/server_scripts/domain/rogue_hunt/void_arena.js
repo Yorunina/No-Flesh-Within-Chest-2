@@ -191,6 +191,7 @@ EntityEvents.death(event => {
     const summon = summonId ? VoidArenaSummonMap[summonId] : null
     if (summon && summon.lootFunc) summon.lootFunc({ level: level, player: null, entity: entity })
     if (level.players.isEmpty()) {
+        MoveVoidArenaItems(level)
         ClearVoidArena(level)
         return
     }
