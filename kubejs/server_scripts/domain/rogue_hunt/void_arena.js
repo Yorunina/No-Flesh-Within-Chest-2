@@ -73,7 +73,8 @@ function ClearVoidArenaReturnPoint(player) {
 
 function TeleportToPlayerRespawn(player) {
     const respawnPos = player.getRespawnPosition()
-    const respawnDim = respawnPos ? String(player.getRespawnDimension()) : ''
+    const respawnKey = respawnPos ? player.getRespawnDimension() : null
+    const respawnDim = respawnKey ? String(respawnKey.location()) : ''
     const respawnLevel = respawnDim ? player.server.getLevel(respawnDim) : null
     if (respawnPos && respawnLevel) {
         player.teleportTo(respawnDim, respawnPos.x + 0.5, respawnPos.y, respawnPos.z + 0.5, player.getRespawnAngle(), 0)
