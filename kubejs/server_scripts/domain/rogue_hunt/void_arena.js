@@ -1,6 +1,5 @@
 // priority: 500
 const VOID_ARENA_DIM = 'kubejs:void_arena'
-const ARENA_BOSS_FLAG = 'kubejs_arena_boss'
 const ARENA_EXIT_FLAG = 'kubejs_arena_exit'
 const ARENA_BOSS_UUID = 'kubejs_arena_boss_uuid'
 const ARENA_PHASE = 'kubejs_arena_phase'
@@ -14,12 +13,14 @@ const ARENA_BOSS_X = 32
 const ARENA_BOSS_Y = 64
 const ARENA_BOSS_Z = 32
 
-function SelectVoidArenaBoss() {
-    return 'minecraft:wither'
-}
-
 function SetVoidArenaPhase(level, phase) {
     level.persistentData.putString(ARENA_PHASE, phase)
+}
+
+function GetVoidArenaSummonModel(level) {
+    const id = level.persistentData.getString(ARENA_SUMMON_ID)
+    if (!id) return null
+    return VoidArenaSummonMap[id]
 }
 
 function GetVoidArenaBoss(level) {
@@ -30,19 +31,17 @@ function GetVoidArenaBoss(level) {
 
 function IsVoidArenaOccupied(level) {
     const boss = GetVoidArenaBoss(level)
-    return !!(boss && boss.isAlive() && boss.persistentData.getBoolean(ARENA_BOSS_FLAG))
+    return !!(boss && boss.isAlive())
 }
 
 function SpawnVoidArenaBoss(level, player) {
-    const boss = level.createEntity(SelectVoidArenaBoss())
-    if (!boss) return false
-    const isBossPart = boss.entityType.is(RelicsBossPartTagKey)
-    if (!isBossPart) {
-        boss.persistentData.putBoolean(ARENA_BOSS_FLAG, true)
-        level.persistentData.putString(ARENA_BOSS_UUID, String(boss.uuid))
-    }
+    const model = GetVoidArenaSummonModel(level)
+    if (!model || !model.createBossFunc) return false
+    const boss = model.createBossFunc({ level: level, player: player, entity: null })
+    if (!boss || boss.entityType.is(RelicsBossPartTagKey)) return false
     boss.setPos(ARENA_BOSS_X, ARENA_BOSS_Y, ARENA_BOSS_Z)
     boss.spawn()
+    level.persistentData.putString(ARENA_BOSS_UUID, String(boss.uuid))
     return true
 }
 
@@ -61,6 +60,7 @@ function ClearVoidArena(level) {
     const boss = GetVoidArenaBoss(level)
     if (boss && boss.isAlive()) boss.discard()
     level.persistentData.remove(ARENA_BOSS_UUID)
+    level.persistentData.remove(ARENA_SUMMON_ID)
     level.persistentData.remove(ARENA_PHASE)
     level.persistentData.remove(ARENA_START_TIME)
     level.persistentData.remove(ARENA_EXIT_SPAWNED)
@@ -75,7 +75,7 @@ function CompleteVoidArena(level) {
     SpawnVoidArenaExit(level)
 }
 
-function BeginVoidArena(level) {
+function BeginVoidArena(level, player) {
     const oldPhase = level.persistentData.getString(ARENA_PHASE)
     if (oldPhase == ARENA_PHASE_VICTORY) {
         MAAUtils.forceLoadArena(level)
@@ -84,7 +84,10 @@ function BeginVoidArena(level) {
     }
     MAAUtils.forceLoadArena(level)
     if (IsVoidArenaOccupied(level)) return
-    if (!SpawnVoidArenaBoss(level)) return
+    if (!SpawnVoidArenaBoss(level, player)) {
+        ClearVoidArena(level)
+        return
+    }
     SetVoidArenaPhase(level, ARENA_PHASE_BATTLE)
     level.persistentData.putLong(ARENA_START_TIME, level.gameTime)
 }
@@ -113,7 +116,7 @@ function TickVoidArena(level) {
 MAAEvents.playerDimensionChange(event => {
     const level = event.player.level
     if (level.dimension != VOID_ARENA_DIM) return
-    BeginVoidArena(level)
+    BeginVoidArena(level, event.player)
 })
 
 ServerEvents.tick(event => {
@@ -127,27 +130,12 @@ PlayerEvents.respawned(event => {
     TeleportFromWormholeExit(player)
 })
 
-EntityEvents.spawned(event => {
-    const entity = event.entity
-    if (!entity || !entity.isLiving() || entity.isPlayer()) return
-    if (entity.level.dimension != VOID_ARENA_DIM) return
-    const isBossPart = entity.entityType.is(RelicsBossPartTagKey)
-    const isBoss = entity.entityType.is(RelicsBossTagKey)
-    if (isBossPart) {
-        entity.persistentData.remove(ARENA_BOSS_FLAG)
-        return
-    }
-    if (isBoss) entity.persistentData.putBoolean(ARENA_BOSS_FLAG, true)
-})
-
 EntityEvents.death(event => {
     const entity = event.entity
-    if (!entity.persistentData.getBoolean(ARENA_BOSS_FLAG)) return
-    if (entity.entityType.is(RelicsBossPartTagKey)) return
     const level = entity.level
     if (level.dimension != VOID_ARENA_DIM) return
     const uuidStr = level.persistentData.getString(ARENA_BOSS_UUID)
-    if (uuidStr && String(entity.uuid) != uuidStr) return
+    if (!uuidStr || String(entity.uuid) != uuidStr) return
     level.persistentData.remove(ARENA_BOSS_UUID)
     SetVoidArenaPhase(level, ARENA_PHASE_VICTORY)
     if (level.players.isEmpty()) {

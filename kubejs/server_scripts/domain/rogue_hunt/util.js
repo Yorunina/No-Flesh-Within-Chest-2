@@ -4,6 +4,7 @@ const ROGUE_HUNT_RANK_STEP = 32
 const ROGUE_HUNT_MOB_FLAG = 'rogue_hunt_mob'
 const ROGUE_HUNT_DIM = 'kubejs:rogue_hunt'
 const ROGUE_HUNT_PLAYER_TYPE = 'rogue_hunt'
+const ARENA_SUMMON_ID = 'kubejs_arena_summon_id'
 const RogueHuntHealthUUID = UUID.fromString('3c7d2a91-6e54-4b18-9f0d-1a8c4b7e2f63')
 const RogueHuntAttackUUID = UUID.fromString('a91f4c22-0b7e-4d65-8c13-9e6a2d5f84b0')
 const RogueHuntArmorUUID = UUID.fromString('51b8e0d4-9c27-4f1a-a6d3-08e7c4b92f15')

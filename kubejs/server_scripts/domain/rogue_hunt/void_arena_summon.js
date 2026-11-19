@@ -20,6 +20,8 @@ function IncreaseVoidArenaSummon(model, player, entity) {
 
 function SpawnVoidArenaSummonPortal(server, level, id, pos) {
     const arena = server.getLevel(VOID_ARENA_DIM)
+    const model = VoidArenaSummonMap[id]
+    if (!model || !model.createBossFunc) return false
     if (!arena || arena.persistentData.getString(ARENA_PHASE)) return false
     if (server.persistentData.getString(VOID_ARENA_SERVER_PHASE)) return false
     const hole = level.createEntity('kubejs:wormhole')
