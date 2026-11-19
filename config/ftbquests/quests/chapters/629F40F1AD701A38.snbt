@@ -7,7 +7,7 @@
 	id: "629F40F1AD701A38"
 	images: [
 		{
-			height: 3.22d
+			height: 3.52d
 			image: "kubejs:textures/gui/tasks/deep_valley_call/gud_toolkit.png"
 			rotation: 0.0d
 			width: 36.64d

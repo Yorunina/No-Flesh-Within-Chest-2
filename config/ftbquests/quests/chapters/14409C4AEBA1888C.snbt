@@ -103,7 +103,7 @@
 		}
 		{
 			dependency: "64C98D07C3707549"
-			height: 4.0d
+			height: 4.11d
 			image: "kubejs:textures/gui/tasks/capturing_creatures/title.png"
 			rotation: 0.0d
 			width: 28.82d
