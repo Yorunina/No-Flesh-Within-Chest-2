@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 39874521,
+    "separation": 5,
+    "spacing": 32,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "kubejs:sunken_glass_container",
+      "weight": 1
+    },
+    {
+      "structure": "kubejs:sunken_metal_container",
+      "weight": 1
+    }
+  ]
+}
