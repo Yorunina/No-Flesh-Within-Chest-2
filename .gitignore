@@ -16,8 +16,6 @@ fancymenu_setups
 /logs/
 /modernfix/
 /moreplayermodels/
-No Flesh Within Chest 2-natives/
-/options.txt
 patchouli_data.json
 /PCL/
 /quests_structures
@@ -29,7 +27,8 @@ rhino.local.properties
 !/schematics/schematic.*.nbt
 /screenshots/
 /servers*
-/shaderpacks/
+/shaderpacks/*
+!/shaderpacks/*.zip
 /TrashSlotSaveState.json
 /usercache.json
 /usernamecache.json
@@ -73,7 +72,6 @@ config/ModernUI/bootstrap.properties
 /config/stampalbum
 bivrik/
 config/RuOK.toml
-config/pin_tooltips.json
 .curseclient
 .probe/*
 !.probe/probe-settings.json

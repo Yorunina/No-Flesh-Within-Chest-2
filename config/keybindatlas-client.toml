@@ -69,6 +69,13 @@
 	#Maximum characters shown for each keybind name in compact unhovered binding boxes. Default: 32.
 	#Range: 8 ~ 80
 	maxCompactKeybindTextLength = 32
+	#Show controller radial help. Remembers the info-button toggle.
+	radialHelpVisible = true
+	#Active controller set, stored separately from keyboard sets.
+	selectedControllerSet = ""
+	#Controller diagram and button symbols. Does not change assignments.
+	#Allowed Values: PLAYSTATION, XBOX
+	controllerLayout = "PLAYSTATION"
 
 #Color values use RGBA hex format, for example #0161CCFF.
 [colors]
