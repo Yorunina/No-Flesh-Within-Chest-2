@@ -36,6 +36,12 @@ const CuriosStrategyMap = {}
 const TagStrategyMap = {}
 
 /**
+ * Void arena summon id -> summon model
+ * @type {Object<string, VoidArenaSummonModel>}
+ */
+const VoidArenaSummonMap = {}
+
+/**
  * @param {OrganStrategyModel} strategyModel
  */
 function RegistryOrganStrategy(strategyModel) {
@@ -78,4 +84,11 @@ function RegistryCuriosStrategy(strategyModel) {
  */
 function RegistryTagStrategy(strategyModel) {
     TagStrategyMap[strategyModel.tagId] = strategyModel
+}
+
+/**
+ * @param {VoidArenaSummonModel} summonModel
+ */
+function RegistryVoidArenaSummon(summonModel) {
+    VoidArenaSummonMap[summonModel.id] = summonModel
 }

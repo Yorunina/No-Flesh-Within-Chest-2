@@ -1,7 +1,7 @@
 {
     "has_precipitation": false,
     "temperature_modifier": "none",
-    "temperature": 0.5,
+    "temperature": 0.0,
     "downfall": 0.0,
     "spawn_costs": {},
     "spawners": {},

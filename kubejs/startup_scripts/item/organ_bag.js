@@ -1,5 +1,5 @@
 // priority: 1000
-global.OrganBagCategories = ['rose', 'food', 'nature', 'machine', 'infected', 'plant', 'magic', 'nether', 'ender', 'relics']
+global.OrganBagCategories = ['rose', 'food', 'nature', 'machine', 'infected', 'plant', 'magic', 'nether', 'ender', 'relics', 'factory']
 
 StartupEvents.registry('item', event => {
     let bags = [

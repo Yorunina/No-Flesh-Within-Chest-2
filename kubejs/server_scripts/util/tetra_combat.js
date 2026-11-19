@@ -26,8 +26,8 @@ function TetraAttackFullCharge(event, sourceEntity) {
 function TetraAttackIsMelee(event, sourceEntity) {
     let data = TetraAttackData(event.source)
     if (data && data.contains('melee')) return data.getBoolean('melee')
-    let direct = event.source.getDirectEntity()
-    if (!direct || !direct.equals(sourceEntity)) return false
+    let actual = event.source.actual
+    if (!actual || !actual.equals(sourceEntity)) return false
     return sourceEntity.isPlayer() ? event.source.is($DamageTypes.PLAYER_ATTACK)
         : event.source.is($DamageTypes.MOB_ATTACK) || event.source.is($DamageTypes.MOB_ATTACK_NO_AGGRO)
 }

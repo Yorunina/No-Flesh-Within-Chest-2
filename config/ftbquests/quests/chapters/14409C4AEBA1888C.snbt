@@ -9,7 +9,7 @@
 		{
 			dependency: "3F496B2E690EA137"
 			height: 2.0d
-			image: "kubejs:textures/gui/tasks/snake_top.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_top.png"
 			rotation: 0.0d
 			width: 16.0d
 			x: -2.9d
@@ -18,7 +18,7 @@
 		{
 			dependency: "5ADB336C403D6716"
 			height: 2.0d
-			image: "kubejs:textures/gui/tasks/snake_top.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_top.png"
 			rotation: 180.0d
 			width: 16.0d
 			x: -1.6d
@@ -27,7 +27,7 @@
 		{
 			dependency: "2B3A96AD4B612CB1"
 			height: 2.0d
-			image: "kubejs:textures/gui/tasks/snake_top.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_top.png"
 			rotation: 90.0d
 			width: 16.0d
 			x: 4.5d
@@ -57,7 +57,7 @@
 		{
 			dependency: "3F496B2E690EA137"
 			height: 4.0d
-			image: "kubejs:textures/gui/tasks/tail.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/tail.png"
 			rotation: 0.0d
 			width: 2.0d
 			x: -8.9d
@@ -66,7 +66,7 @@
 		{
 			dependency: "17ADD9D08C24FA90"
 			height: 12.0d
-			image: "kubejs:textures/gui/tasks/snake_left.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_left.png"
 			order: -1
 			rotation: 0.0d
 			width: 2.0d
@@ -76,7 +76,7 @@
 		{
 			dependency: "17ADD9D08C24FA90"
 			height: 3.25d
-			image: "kubejs:textures/gui/tasks/head.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/head.png"
 			order: -1
 			rotation: 0.0d
 			width: 3.25d
@@ -86,7 +86,7 @@
 		{
 			dependency: "4A3A35A63B8A869C"
 			height: 6.0d
-			image: "kubejs:textures/gui/tasks/organ_processing_table.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/organ_processing_table.png"
 			rotation: 0.0d
 			width: 8.0d
 			x: -0.5d
@@ -95,7 +95,7 @@
 		{
 			dependency: "17ADD9D08C24FA90"
 			height: 2.5d
-			image: "kubejs:textures/gui/tasks/factory_frame.png"
+			image: "kubejs:textures/gui/tasks/capturing_creatures/factory_frame.png"
 			rotation: 0.0d
 			width: 2.5d
 			x: -6.0d
@@ -103,8 +103,8 @@
 		}
 		{
 			dependency: "64C98D07C3707549"
-			height: 4.0d
-			image: "kubejs:textures/gui/tasks/title.png"
+			height: 4.11d
+			image: "kubejs:textures/gui/tasks/capturing_creatures/title.png"
 			rotation: 0.0d
 			width: 28.82d
 			x: -1.5d
