@@ -10,10 +10,12 @@
 function VoidArenaSummonModel(id, threshold) {
     /** @type {String} */
     this.id = id
+    /** @type {String} */
+    this.summonId = id
     /** @type {number} */
     this.threshold = threshold
-    /** @type {function(Internal.LivingEntity): boolean} */
-    this.matchFunc = entity => false
+    /** @type {function(VoidArenaSummonContext): boolean} */
+    this.entityKilledFunc = () => false
     /** @type {function(VoidArenaSummonContext): boolean} */
     this.conditionFunc = () => true
     /** @type {function(VoidArenaSummonContext): Internal.Entity} */
@@ -25,11 +27,19 @@ function VoidArenaSummonModel(id, threshold) {
 
 VoidArenaSummonModel.prototype = {
     /**
-     * 判断击杀目标是否计入该召唤
-     * @param {function(Internal.LivingEntity): boolean} func
+     * 设置全服计数使用的竞技场召唤 id
+     * @param {String} summonId
      */
-    match: function (func) {
-        this.matchFunc = func
+    setSummonId: function (summonId) {
+        this.summonId = summonId
+        return this
+    },
+    /**
+     * 判断一次生物击杀是否计入该召唤
+     * @param {function(VoidArenaSummonContext): boolean} func
+     */
+    onEntityKilled: function (func) {
+        this.entityKilledFunc = func
         return this
     },
     /**
