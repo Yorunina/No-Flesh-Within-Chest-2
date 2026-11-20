@@ -124,6 +124,16 @@ ServerEvents.highPriorityData(event => {
 
 ServerEvents.tags('item', event => {
     event.add('kubejs:organ', OrganList.map(organ => organ.itemId))
+    event.add('kubejs:tetra_organ', [
+        'tetra:modular_bow',
+        'tetra:modular_crossbow',
+        'tetra:modular_double',
+        'tetra:modular_shield',
+        'tetra:modular_single',
+        'tetra:modular_sword',
+        'tetra:modular_toolbelt',
+        'kubejs:wrench'
+    ])
     event.add('kubejs:pseudo_organ', PseudoOrganList.map(organ => organ.itemId))
     event.add('kubejs:spawn_in_cavity', OrganList.filter(organ => organ.canSpawnInCavity).map(organ => organ.itemId))
     let allOrgans = OrganList.concat(PseudoOrganList)

@@ -1,7 +1,7 @@
 // priority: 800
 ItemEvents.tooltip(tooltip => {
     tooltip.addAdvancedToAll((item, advanced, text) => {
-        if (!item.hasTag('kubejs:organ')) return
+        if (!item.hasTag('kubejs:organ') && !item.hasTag('kubejs:tetra_organ')) return
 
         let lineNum = 1
         let organTagTooltipsList = []
