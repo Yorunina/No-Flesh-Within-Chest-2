@@ -12,7 +12,8 @@
 
 ## 开发与提交
 
-- 所有 AI 改动直接提交到 `ai-dev`，不要为每个需求单独开分支。
+- 所有 AI 改动在 `ai-dev` 工作树上进行，不要为每个需求单独开分支。
+- 默认不执行 `git commit`。只有请求方明确要求提交时，才在确认当前位于 `ai-dev` 后创建提交。
 - 允许在 `ai-dev` 上保留多个需求并行推进；提交信息使用 `type(scope): 中文变更说明`。
 - 提交前至少执行与改动范围匹配的静态检查：JS 用 `node --check`，JSON 用解析校验，资源改动核对尺寸、引用和动画元数据，`git diff --check`。
 - 启动注册、Java jar、mixin、Tetra 或 Chest Cavity 接口改动必须完整重启验证；`/reload` 只适用于 server/client/data 脚本。
@@ -38,6 +39,7 @@
 ## 合入与回写
 
 - PR 合并由人工决定，AI 不自动合并。
+- 分支流转顺序为 `ai-dev` → `feat-i18n-en` → `main`，每一步由人工推进和合入。
 - 请求方要求回改已开的 PR 时，直接在 `ai-dev` 追加提交并更新同一个 PR，不新建分支。
 - 合并后由人工把 `feat-i18n-en` 推进；AI 在下次任务开始时从 `feat-i18n-en` 同步 `ai-dev`。
 
