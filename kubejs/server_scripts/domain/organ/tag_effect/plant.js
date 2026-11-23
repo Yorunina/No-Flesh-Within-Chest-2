@@ -6,7 +6,7 @@
  * @param {string} tagId
  * @param {number} count
  */
-function PlantTagChestCavityUpdate(customData, event, tagId, count) {
+function PlantChestCavityUpdate(customData, event, tagId, count) {
     const chestCavity = event.chestCavity
     if (count >= 9) {
         chestCavity.setOrganScore('kubejs:photosynthesis', chestCavity.getOrganScore('kubejs:photosynthesis') + count)
@@ -22,5 +22,5 @@ function PlantTagChestCavityUpdate(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:plant')
-        .addStrategy('chest_cavity_update', PlantTagChestCavityUpdate)
+        .addStrategy('chest_cavity_update', PlantChestCavityUpdate)
 )

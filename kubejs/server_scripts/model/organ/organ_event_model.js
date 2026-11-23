@@ -74,7 +74,7 @@ OrganEventModel.prototype = {
                         let effectStrategy = effectStrategyModel.strategyMap[this.eventId]
                         if (!effectStrategy) return
                         effectStrategy.forEach(e => {
-                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(modularItem, effect)))
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(modularItem, effect, curItem, slotIndex, slotType)))
                         })
                     })
                 }

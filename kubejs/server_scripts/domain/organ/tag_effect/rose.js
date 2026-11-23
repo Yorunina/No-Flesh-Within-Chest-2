@@ -6,7 +6,7 @@
  * @param {string} tagId
  * @param {number} count
  */
-function RoseTagChestCavityUpdate(customData, event, tagId, count) {
+function RoseChestCavityUpdate(customData, event, tagId, count) {
     if (count < 8) return
     let rosy = event.chestCavity.getOrganScore('kubejs:rosy')
     customData.attackDamage.addAttributeModifier(rosy * 0.03, 'multiple', 'base')
@@ -15,5 +15,5 @@ function RoseTagChestCavityUpdate(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:rose')
-        .addStrategy('chest_cavity_update', RoseTagChestCavityUpdate)
+        .addStrategy('chest_cavity_update', RoseChestCavityUpdate)
 )

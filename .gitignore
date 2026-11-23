@@ -79,6 +79,10 @@ config/RuOK.toml
 /AGENTS.md
 /ribcage-dev/
 
+# Project maintenance documentation is managed outside this pack repository
+aoci.*
+/docs
+
 # CurseForge local instance history and export selections
 /minecraftinstance.json
 /user-prefs.json
