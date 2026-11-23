@@ -6,7 +6,7 @@
  * @param {string} tagId
  * @param {number} count
  */
-function RelicsTagChestCavityUpdate(customData, event, tagId, count) {
+function RelicsChestCavityUpdate(customData, event, tagId, count) {
     if (count >= 10) {
         customData.attackDamage.addAttributeModifier(0.5, 'multiple', 'base')
         customData.maxHealth.addAttributeModifier(0.5, 'multiple', 'base')
@@ -22,5 +22,5 @@ function RelicsTagChestCavityUpdate(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:relics')
-        .addStrategy('chest_cavity_update', RelicsTagChestCavityUpdate)
+        .addStrategy('chest_cavity_update', RelicsChestCavityUpdate)
 )

@@ -59,8 +59,6 @@ StartupEvents.registry('item', event => {
         .maxDamage(100)
         .tag('kubejs:factory')
         .tag('kubejs:machine')
-        .tag('kubejs:magic')
-        .tag('kubejs:food')
         .texture('kubejs:item/organs/factory/encased_fan')
 
     event.create('kubejs:factory_heart')

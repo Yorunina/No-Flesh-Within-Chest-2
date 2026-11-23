@@ -6,7 +6,7 @@
  * @param {string} tagId
  * @param {number} count
  */
-function FoodTagFoodEaten(customData, event, tagId, count) {
+function FoodEaten(customData, event, tagId, count) {
     const player = event.getPlayer()
     if (!player) return
     if (count >= 3) {
@@ -19,5 +19,5 @@ function FoodTagFoodEaten(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:food')
-        .addStrategy('food_eaten', FoodTagFoodEaten)
+        .addStrategy('food_eaten', FoodEaten)
 )

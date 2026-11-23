@@ -6,7 +6,7 @@
  * @param {string} tagId
  * @param {number} count
  */
-function MachineTagChestCavityUpdate(customData, event, tagId, count) {
+function MachineChestCavityUpdate(customData, event, tagId, count) {
     const chestCavity = event.chestCavity
     if (count >= 3) {
         let nerves = chestCavity.getOrganScore('chestcavity:nerves')
@@ -24,5 +24,5 @@ function MachineTagChestCavityUpdate(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:machine')
-        .addStrategy('chest_cavity_update', MachineTagChestCavityUpdate)
+        .addStrategy('chest_cavity_update', MachineChestCavityUpdate)
 )

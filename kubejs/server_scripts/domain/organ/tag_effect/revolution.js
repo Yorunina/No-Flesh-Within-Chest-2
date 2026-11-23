@@ -6,7 +6,7 @@
  * @param {string} tagId
  * @param {number} count
  */
-function RevolutionTagChestCavityUpdate(customData, event, tagId, count) {
+function RevolutionChestCavityUpdate(customData, event, tagId, count) {
     const chestCavity = event.chestCavity
     if (count >= 3) {
         let strength = chestCavity.getOrganScore('chestcavity:strength')
@@ -20,5 +20,5 @@ function RevolutionTagChestCavityUpdate(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:revolution')
-        .addStrategy('chest_cavity_update', RevolutionTagChestCavityUpdate)
+        .addStrategy('chest_cavity_update', RevolutionChestCavityUpdate)
 )

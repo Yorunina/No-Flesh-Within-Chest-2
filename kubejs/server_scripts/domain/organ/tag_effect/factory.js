@@ -6,7 +6,7 @@
  * @param {string} tagId
  * @param {number} count
  */
-function FactoryTagChestCavityUpdate(customData, event, tagId, count) {
+function FactoryChestCavityUpdate(customData, event, tagId, count) {
     const chestCavity = event.chestCavity
     if (count >= 4) {
         let breathrecovery = chestCavity.getOrganScore('chestcavity:breath_recovery')
@@ -28,5 +28,5 @@ function FactoryTagChestCavityUpdate(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:factory')
-        .addStrategy('chest_cavity_update', FactoryTagChestCavityUpdate)
+        .addStrategy('chest_cavity_update', FactoryChestCavityUpdate)
 )

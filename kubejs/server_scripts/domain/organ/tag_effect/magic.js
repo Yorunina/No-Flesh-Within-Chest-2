@@ -8,7 +8,7 @@ const MagicTagMaxManaIdentifier = 'MagicTagMaxMana'
  * @param {string} tagId
  * @param {number} count
  */
-function MagicTagChestCavityUpdate(customData, event, tagId, count) {
+function MagicChestCavityUpdate(customData, event, tagId, count) {
     const attributeInstance = event.entity.getAttribute('ars_nouveau:ars_nouveau.perk.max_mana')
     if (!attributeInstance) return
     attributeInstance.removeModifier(MagicTagMaxManaUUID)
@@ -27,5 +27,5 @@ function MagicTagChestCavityUpdate(customData, event, tagId, count) {
 
 RegistryTagStrategy(
     new TagStrategyModel('kubejs:magic')
-        .addStrategy('chest_cavity_update', MagicTagChestCavityUpdate)
+        .addStrategy('chest_cavity_update', MagicChestCavityUpdate)
 )
