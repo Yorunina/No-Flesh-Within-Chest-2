@@ -38,7 +38,6 @@ RegistryOrganTag('kubejs:revolution', Text.of(Text.translatable('tooltips.kubejs
 RegistryOrganTag('kubejs:relics', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:relics')).color('#ffe100'))
 RegistryOrganTag('kubejs:legend', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:legend')).color('#d6e5ff'))
 RegistryOrganTag('kubejs:nature', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:nature')).color('#84e45b'))
-RegistryOrganTag('kubejs:basic', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:basic')).color('#a3a3a3'))
 RegistryOrganTag('kubejs:food', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:food')).color('#f1b500'))
 RegistryOrganTag('kubejs:dragon', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:dragon')).color('#bc00bc'))
 RegistryOrganTag('kubejs:ender', Text.of(Text.translatable('tooltips.kubejs.tag.kubejs:ender')).color('#913dd1'))

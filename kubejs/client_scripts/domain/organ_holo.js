@@ -27,7 +27,6 @@ ChestCavityEvents.organHoloFilterTags(event => {
     event.addTag('kubejs:relics', 'tooltips.kubejs.tag.kubejs:relics')
     event.addTag('kubejs:legend', 'tooltips.kubejs.tag.kubejs:legend')
     event.addTag('kubejs:nature', 'tooltips.kubejs.tag.kubejs:nature')
-    event.addTag('kubejs:basic', 'tooltips.kubejs.tag.kubejs:basic')
     event.addTag('kubejs:food', 'tooltips.kubejs.tag.kubejs:food')
     event.addTag('kubejs:dragon', 'tooltips.kubejs.tag.kubejs:dragon')
     event.addTag('kubejs:ender', 'tooltips.kubejs.tag.kubejs:ender')
