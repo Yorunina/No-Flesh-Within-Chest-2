@@ -9,3 +9,7 @@ ItemEvents.foodEaten(event => {
     OrganFoodEatenEvent.run(entity, customData, [event])
     TagFoodEatenStrategy.run(entity, customData, [event])
 })
+
+ItemEvents.foodEaten('kubejs:succulent_pod', event => {
+    if (event.entity) event.entity.removeAllEffects()
+})

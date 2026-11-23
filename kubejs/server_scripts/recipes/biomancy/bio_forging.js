@@ -100,4 +100,16 @@ ServerEvents.recipes(event => {
         'biomancy:organ',
         10
     )
+
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_heart')], Item.of('kubejs:plant_heart'), 'biomancy:organ', 30).id('kubejs:plant_heart')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_rib')], Item.of('kubejs:plant_rib'), 'biomancy:organ', 30).id('kubejs:plant_rib')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_muscle')], Item.of('kubejs:plant_muscle'), 'biomancy:organ', 30).id('kubejs:plant_muscle')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_kidney'), Item.of('biomancy:nutrient_paste', 5)], Item.of('kubejs:plant_lung'), 'biomancy:organ', 30).id('kubejs:plant_lung')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_kidney')], Item.of('kubejs:plant_kidney'), 'biomancy:organ', 30).id('kubejs:plant_kidney')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_liver')], Item.of('kubejs:plant_liver'), 'biomancy:organ', 30).id('kubejs:plant_liver')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_stomach')], Item.of('kubejs:plant_stomach'), 'biomancy:organ', 30).id('kubejs:plant_stomach')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_spine')], Item.of('kubejs:plant_spine'), 'biomancy:organ', 30).id('kubejs:plant_spine')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_spleen')], Item.of('kubejs:plant_spleen'), 'biomancy:organ', 30).id('kubejs:plant_spleen')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_appendix')], Item.of('kubejs:plant_appendix'), 'biomancy:organ', 30).id('kubejs:plant_appendix')
+    event.recipes.biomancy.bio_forging([Item.of('kubejs:succulent_pod'), Item.of('kubejs:animal_intestine')], Item.of('kubejs:plant_intestine'), 'biomancy:organ', 30).id('kubejs:plant_intestine')
 })
