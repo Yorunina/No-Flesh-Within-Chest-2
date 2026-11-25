@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "kubejs:item/seed/brain_seed"
+    "layer0": "kubejs:item/seed/brain_melon_seed"
   }
 }

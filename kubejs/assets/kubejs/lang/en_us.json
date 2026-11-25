@@ -1,4 +1,4 @@
-{
+﻿{
     "_comment.base_info": "Basic info",
     "kubejs.gameinfo.modpack.name": "No Flesh Within Chest",
     "key.categories.kubejs": "KubeJS",
@@ -711,8 +711,7 @@
     "tooltips.kubejs.cherry_bone.ctrl.1": "    §6★§r Effect type changes from %s to %s",
     "gui.chestcavity.organ_holo.obtain.kubejs:cherry_bone": "Obtained when harvesting §lBilung Cherry§r",
     "item.kubejs.crimson_brain": "Crimson Brain",
-    "item.kubejs.brain_seed": "Brain Seed",
-    "item.kubejs.brain_flower": "Brain Blossom",
+    "item.kubejs.brain_melon_seed": "Brain Seed",
     "tooltips.kubejs.crimson_brain.default.1": "It is extra sensitive to death",
     "tooltips.kubejs.crimson_brain.alt.1": "    §6★§r When you kill a mob that has %s, that %s transfers to mobs in a §64-block§r radius",
     "tooltips.kubejs.crimson_brain.alt.2": "    §6★§r That effect is not applied to §6players§r, §6player-tamed mobs§r, or the §6kill source§r",

@@ -1,0 +1,7 @@
+{
+  "parent": "agricraft:crop/crop_gourd",
+  "textures": {
+    "crop": "kubejs:block/crop/brain_melon_stage3",
+    "gourd": "kubejs:block/crop/brain_melon_fruit"
+  }
+}

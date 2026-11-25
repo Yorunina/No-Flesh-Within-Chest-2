@@ -1,6 +1,0 @@
-{
-  "parent": "agricraft:crop/crop_cross",
-  "textures": {
-    "crop": "agricraft:plant/brainpumpkin_stage0"
-  }
-}

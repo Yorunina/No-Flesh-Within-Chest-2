@@ -7,7 +7,7 @@
   "products": [
     {
       "chance": 1.0,
-      "item": "kubejs:brain_seed",
+      "item": "kubejs:brain_melon_seed",
       "max": 2,
       "min": 1,
       "required": true
@@ -15,13 +15,6 @@
     {
       "chance": 0.5,
       "item": "kubejs:succulent_pod",
-      "max": 1,
-      "min": 1,
-      "required": false
-    },
-    {
-      "chance": 1.0,
-      "item": "kubejs:brain_flower",
       "max": 1,
       "min": 1,
       "required": false
@@ -54,7 +47,7 @@
   "seeds": [
     {
       "grass_drop_chance": 0.0,
-      "item": "kubejs:brain_seed",
+      "item": "kubejs:brain_melon_seed",
       "override_planting": true,
       "seed_drop_bonus": 0.0,
       "seed_drop_chance": 1.0
@@ -63,12 +56,12 @@
   "spread_chance": 0.1,
   "stages": [
     2,
+    3,
     4,
+    5,
     6,
+    7,
     8,
-    10,
-    12,
-    14,
-    16
+    9
   ]
 }
