@@ -118,7 +118,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:recovery_spleen').texture('kubejs:item/organs/factory/recovery_spleen').maxStackSize(1).tag('kubejs:factory').tag('kubejs:spleen')
 
     event.create('kubejs:smart_chute')
-        .parentModel('kubejs:item/smart_chute_model')
+        .texture('kubejs:item/organs/factory/smart_chute')
         .maxStackSize(1)
         .tag('kubejs:factory')
         .overrideOtherStackedOnMe(BundleStackedOnMe(1))
