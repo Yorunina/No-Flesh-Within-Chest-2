@@ -711,7 +711,6 @@
     "tooltips.kubejs.cherry_bone.ctrl.1": "    §6★§r 效果类型由%s变更为%s",
     "gui.chestcavity.organ_holo.obtain.kubejs:cherry_bone": "收获§l作物肺樱§r时获取",
     "item.kubejs.crimson_brain": "绯红脑",
-    "item.kubejs.brain_melon_seed": "脑瓜籽",
     "tooltips.kubejs.crimson_brain.default.1": "它对于死亡格外敏感",
     "tooltips.kubejs.crimson_brain.alt.1": "    §6★§r 当你杀死一个具有%s的生物时，其所具有的%s会转移到§6周围 4 格§r范围内的生物身上",
     "tooltips.kubejs.crimson_brain.alt.2": "    §6★§r 该效果不会赋予给§6玩家§r、§6玩家驯养的生物§r和§6击杀来源§r",
