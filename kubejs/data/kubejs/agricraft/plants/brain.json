@@ -7,7 +7,7 @@
   "products": [
     {
       "chance": 1.0,
-      "item": "kubejs:crimson_brain",
+      "item": "kubejs:brain_seed",
       "max": 2,
       "min": 1,
       "required": true
@@ -47,7 +47,7 @@
   "seeds": [
     {
       "grass_drop_chance": 0.0,
-      "item": "kubejs:crimson_brain",
+      "item": "kubejs:brain_seed",
       "override_planting": true,
       "seed_drop_bonus": 0.0,
       "seed_drop_chance": 1.0

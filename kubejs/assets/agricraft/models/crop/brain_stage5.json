@@ -1,7 +1,6 @@
 {
-  "parent": "agricraft:crop/crop_gourd",
+  "parent": "agricraft:crop/crop_cross",
   "textures": {
-    "crop": "agricraft:plant/brainpumpkin_stage3",
-    "gourd": "agricraft:plant/brain_fruit"
+    "crop": "agricraft:plant/brainpumpkin_stage3"
   }
 }

@@ -1,0 +1,6 @@
+{
+  "chance": 0.25,
+  "child": "kubejs:brain",
+  "parent1": "minecraft:pumpkin",
+  "parent2": "kubejs:meat_mushroom"
+}

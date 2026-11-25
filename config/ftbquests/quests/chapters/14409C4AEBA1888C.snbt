@@ -7,33 +7,6 @@
 	id: "14409C4AEBA1888C"
 	images: [
 		{
-			dependency: "3F496B2E690EA137"
-			height: 2.0d
-			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_top.png"
-			rotation: 0.0d
-			width: 16.0d
-			x: -2.9d
-			y: 1.0d
-		}
-		{
-			dependency: "5ADB336C403D6716"
-			height: 2.0d
-			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_top.png"
-			rotation: 180.0d
-			width: 16.0d
-			x: -1.6d
-			y: 14.5d
-		}
-		{
-			dependency: "2B3A96AD4B612CB1"
-			height: 2.0d
-			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_top.png"
-			rotation: 90.0d
-			width: 16.0d
-			x: 4.5d
-			y: 7.1d
-		}
-		{
 			click: "command:/ponder kubejs:organ_processing_table"
 			dependency: "4A3A35A63B8A869C"
 			height: 1.0d
@@ -42,46 +15,8 @@
 			order: 1
 			rotation: 0.0d
 			width: 1.0d
-			x: 3.0d
-			y: 13.2d
-		}
-		{
-			dependency: "28E8463EBD3FA2CB"
-			height: 1.25d
-			image: "ars_nouveau:block/fire_1"
-			rotation: 0.0d
-			width: 1.25d
-			x: -3.0d
-			y: 14.5d
-		}
-		{
-			dependency: "3F496B2E690EA137"
-			height: 4.0d
-			image: "kubejs:textures/gui/tasks/capturing_creatures/tail.png"
-			rotation: 0.0d
-			width: 2.0d
-			x: -8.9d
-			y: 3.35d
-		}
-		{
-			dependency: "17ADD9D08C24FA90"
-			height: 12.0d
-			image: "kubejs:textures/gui/tasks/capturing_creatures/snake_left.png"
-			order: -1
-			rotation: 0.0d
-			width: 2.0d
-			x: -9.0d
-			y: 10.1d
-		}
-		{
-			dependency: "17ADD9D08C24FA90"
-			height: 3.25d
-			image: "kubejs:textures/gui/tasks/capturing_creatures/head.png"
-			order: -1
-			rotation: 0.0d
-			width: 3.25d
-			x: -9.0d
-			y: 4.75d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependency: "4A3A35A63B8A869C"
@@ -89,8 +24,8 @@
 			image: "kubejs:textures/gui/tasks/capturing_creatures/organ_processing_table.png"
 			rotation: 0.0d
 			width: 8.0d
-			x: -0.5d
-			y: 10.5d
+			x: 0.5d
+			y: -2.5d
 		}
 		{
 			dependency: "17ADD9D08C24FA90"
@@ -98,17 +33,37 @@
 			image: "kubejs:textures/gui/tasks/capturing_creatures/factory_frame.png"
 			rotation: 0.0d
 			width: 2.5d
-			x: -6.0d
-			y: 5.5d
+			x: -0.3214285714285694d
+			y: 10.96071428571431d
 		}
 		{
 			dependency: "64C98D07C3707549"
-			height: 4.11d
+			height: 2.14d
 			image: "kubejs:textures/gui/tasks/capturing_creatures/title.png"
 			rotation: 0.0d
-			width: 28.82d
-			x: -1.5d
-			y: -1.5d
+			width: 15.0d
+			x: -0.5119047619047521d
+			y: 8.258333333333347d
+		}
+		{
+			dependency: "7337F1E7EBA440FA"
+			height: 31.0d
+			image: "kubejs:textures/gui/tasks/capturing_creatures/capturing_creatures_illustration.png"
+			order: -1
+			rotation: 0.0d
+			width: 31.0d
+			x: 2.5d
+			y: 9.5d
+		}
+		{
+			dependency: "64C98D07C3707549"
+			height: 31.0d
+			image: "kubejs:textures/gui/tasks/capturing_creatures/capturing_creatures_illustration0.png"
+			order: -2
+			rotation: 0.0d
+			width: 31.0d
+			x: 2.5d
+			y: 9.5d
 		}
 	]
 	order_index: 11
@@ -131,8 +86,8 @@
 				item: "create_biotech:large_cardboard_box"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 1.0d
+			x: -5.208333333333336d
+			y: 1.4547619047619236d
 		}
 		{
 			dependencies: ["2095C55009D9757A"]
@@ -180,8 +135,8 @@
 				weak_nbt_match: true
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest3F496B2E690EA137.title}"
-			x: -4.5d
-			y: 1.0d
+			x: -3.8511904761904816d
+			y: 1.4547619047619236d
 		}
 		{
 			dependencies: ["6AE5828E67D3081C"]
@@ -229,8 +184,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest115A95A2FFBD9D3F.title}"
-			x: -3.0d
-			y: 1.0d
+			x: -2.4940476190476204d
+			y: 1.4547619047619236d
 		}
 		{
 			dependencies: ["2095C55009D9757A"]
@@ -261,8 +216,8 @@
 				weak_nbt_match: true
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest1619B2B5F3AE2C95.title}"
-			x: 3.0d
-			y: 1.0d
+			x: 4.113095238095227d
+			y: 1.4369047619047848d
 		}
 		{
 			dependencies: ["7337F1E7EBA440FA"]
@@ -290,8 +245,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 2.5d
+			x: 8.071428571428562d
+			y: 1.496428571428595d
 		}
 		{
 			dependencies: ["7337F1E7EBA440FA"]
@@ -315,8 +270,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.0d
+			x: 8.35714285714284d
+			y: 4.448809523809551d
 		}
 		{
 			dependencies: ["115A95A2FFBD9D3F"]
@@ -340,8 +295,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 5.5d
+			x: 8.071428571428562d
+			y: 6.925000000000026d
 		}
 		{
 			dependencies: ["64F795E2EA07DFC4"]
@@ -365,8 +320,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 8.5d
+			x: 8.071428571428562d
+			y: 9.591666666666697d
 		}
 		{
 			dependencies: ["25EAE1DFEC46400D"]
@@ -390,8 +345,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 7.0d
+			x: 8.071428571428562d
+			y: 8.258333333333361d
 		}
 		{
 			dependencies: ["0B6EE87A96ACF4CC"]
@@ -415,8 +370,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 10.0d
+			x: 8.071428571428562d
+			y: 10.925000000000033d
 		}
 		{
 			dependencies: ["7218DEB02B1E86F9"]
@@ -441,8 +396,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 13.0d
+			x: 8.071428571428562d
+			y: 13.615476190476222d
 		}
 		{
 			dependencies: ["17ADD9D08C24FA90"]
@@ -465,8 +420,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 1.0d
+			x: -9.327380952380963d
+			y: 5.383333333333347d
 		}
 		{
 			dependencies: ["2B3A96AD4B612CB1"]
@@ -485,8 +440,8 @@
 				item: "kubejs:flesh_sheet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 14.5d
+			x: 3.8988095238095397d
+			y: 16.204761904761924d
 		}
 		{
 			dependencies: ["5EEF875DA01C54BC"]
@@ -504,8 +459,8 @@
 				item: "kubejs:flesh_mechanism"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 14.5d
+			x: 2.5773809523809703d
+			y: 16.169047619047646d
 		}
 		{
 			dependencies: ["3F496B2E690EA137"]
@@ -543,8 +498,8 @@
 				value: 1L
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest4A3A35A63B8A869C.title}"
-			x: 3.0d
-			y: 14.5d
+			x: -3.833333333333343d
+			y: 0.3059523809524052d
 		}
 		{
 			dependencies: ["1619B2B5F3AE2C95"]
@@ -566,8 +521,8 @@
 				item: "create_biotech:creeper_blast_chamber"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 14.5d
+			x: 5.255952380952401d
+			y: 16.204761904761924d
 		}
 		{
 			dependencies: ["4A3A35A63B8A869C"]
@@ -590,8 +545,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 13.0d
+			x: -9.309523809523789d
+			y: 13.401190476190493d
 		}
 		{
 			dependencies: ["7218DEB02B1E86F9"]
@@ -614,8 +569,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.0d
-			y: 11.5d
+			x: -9.309523809523789d
+			y: 12.067857142857157d
 		}
 		{
 			dependencies: ["28E8463EBD3FA2CB"]
@@ -637,8 +592,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 16.0d
+			x: -1.3095238095238244d
+			y: 19.044047619047646d
 		}
 		{
 			dependencies: ["556704809E719293"]
@@ -675,8 +630,8 @@
 				type: "leaderboards:rank_task"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.questC6869977312EEA2.title}"
-			x: -3.5d
-			y: 5.5d
+			x: -0.261904761904745d
+			y: 13.058333333333351d
 		}
 		{
 			dependencies: ["7B66ED98065C1FD7"]
@@ -712,8 +667,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest17ADD9D08C24FA90.title}"
-			x: -9.0d
-			y: 5.5d
+			x: -9.309523809523789d
+			y: 6.758333333333347d
 		}
 		{
 			dependencies: ["17ADD9D08C24FA90"]
@@ -747,8 +702,8 @@
 				value: 1L
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest556704809E719293.title}"
-			x: -6.0d
-			y: 5.5d
+			x: -0.2678571428571459d
+			y: 10.996428571428602d
 		}
 		{
 			dependencies: [
@@ -778,8 +733,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.0d
-			y: 8.5d
+			x: 9.309523809523796d
+			y: 9.615476190476215d
 		}
 		{
 			dependencies: ["7218DEB02B1E86F9"]
@@ -804,8 +759,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 11.5d
+			x: 8.071428571428562d
+			y: 12.282142857142887d
 		}
 		{
 			dependencies: ["6AE5828E67D3081C"]
@@ -857,8 +812,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest25EAE1DFEC46400D.title}"
-			x: -1.5d
-			y: 1.0d
+			x: 0.1488095238095184d
+			y: 1.4547619047619236d
 		}
 		{
 			dependencies: [
@@ -880,8 +835,8 @@
 				item: "kubejs:final_fabritem"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 7.0d
+			x: -9.309523809523789d
+			y: 8.091666666666683d
 		}
 		{
 			dependencies: ["0CAF93ABAEF0D2FE"]
@@ -948,8 +903,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest28E8463EBD3FA2CB.title}"
-			x: -3.0d
-			y: 14.5d
+			x: -1.3035714285714306d
+			y: 16.160714285714285d
 		}
 		{
 			dependencies: ["28E8463EBD3FA2CB"]
@@ -975,8 +930,8 @@
 				type: "maa:astages"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest5ADB336C403D6716.title}"
-			x: -4.5d
-			y: 14.5d
+			x: -3.4464285714285694d
+			y: 16.17857142857143d
 		}
 		{
 			dependencies: ["74CD1E8D7FEAD538"]
@@ -995,8 +950,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest35644736C07C5009.title}"
-			x: -7.5d
-			y: 14.5d
+			x: -6.625d
+			y: 16.160714285714285d
 		}
 		{
 			dependencies: ["6AE5828E67D3081C"]
@@ -1044,8 +999,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest64F795E2EA07DFC4.title}"
-			x: 0.0d
-			y: 1.0d
+			x: 1.4702380952380878d
+			y: 1.4547619047619236d
 		}
 		{
 			dependencies: ["5ADB336C403D6716"]
@@ -1097,8 +1052,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.questB6EE87A96ACF4CC.title}"
-			x: 1.5d
-			y: 1.0d
+			x: 2.7916666666666643d
+			y: 1.4369047619047777d
 		}
 		{
 			dependencies: ["5ADB336C403D6716"]
@@ -1120,8 +1075,8 @@
 				item: "kubejs:factory_ingot"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 14.5d
+			x: -4.946428571428569d
+			y: 16.17857142857143d
 		}
 		{
 			dependencies: ["7BE727A47286042F"]
@@ -1161,8 +1116,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest1967396D4CC34008.title}"
-			x: 6.0d
-			y: 4.0d
+			x: 11.023809523809504d
+			y: 4.448809523809551d
 		}
 		{
 			dependencies: ["063D3AD97E2A0FC7"]
@@ -1207,8 +1162,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest7352B79DED6C9284.title}"
-			x: 9.0d
-			y: 4.0d
+			x: 13.880952380952365d
+			y: 4.448809523809551d
 		}
 		{
 			dependencies: [
@@ -1236,8 +1191,8 @@
 				type: "observation"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest63D3AD97E2A0FC7.title}"
-			x: 7.5d
-			y: 4.0d
+			x: 12.309523809523796d
+			y: 4.448809523809551d
 		}
 		{
 			dependencies: ["7352B79DED6C9284"]
@@ -1286,8 +1241,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest3F11DC02C0CC6F5C.title}"
-			x: 10.5d
-			y: 4.0d
+			x: 15.166666666666657d
+			y: 5.829761904761931d
 		}
 		{
 			dependencies: ["3F11DC02C0CC6F5C"]
@@ -1341,8 +1296,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest7B5951F34868E157.title}"
-			x: 12.0d
-			y: 4.0d
+			x: 15.166666666666657d
+			y: 7.305952380952405d
 		}
 		{
 			dependencies: [
@@ -1372,8 +1327,8 @@
 				}
 				type: "item"
 			}]
-			x: 13.5d
-			y: 4.0d
+			x: 15.166666666666657d
+			y: 8.63928571428574d
 		}
 		{
 			dependencies: ["35644736C07C5009"]
@@ -1395,8 +1350,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 16.0d
+			x: -6.595238095238109d
+			y: 18.996428571428602d
 		}
 		{
 			dependencies: ["74CD1E8D7FEAD538"]
@@ -1421,8 +1376,8 @@
 				item: "kubejs:stress_extract"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 10.0d
+			x: -9.309523809523789d
+			y: 10.734523809523829d
 		}
 		{
 			dependencies: ["765199F59D11849F"]
@@ -1440,8 +1395,8 @@
 				item: "kubejs:throat_fabritem"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 19.0d
+			x: -6.547619047619058d
+			y: 21.663095238095273d
 		}
 		{
 			dependencies: ["634B518F5B2BCA23"]
@@ -1467,8 +1422,8 @@
 					type: "item"
 				}
 			]
-			x: -3.0d
-			y: 19.0d
+			x: -1.3095238095238244d
+			y: 21.663095238095273d
 		}
 		{
 			dependencies: ["74CD1E8D7FEAD538"]
@@ -1487,8 +1442,8 @@
 				item: "kubejs:first_fabritem"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 8.5d
+			x: -9.309523809523789d
+			y: 9.401190476190486d
 		}
 		{
 			dependencies: ["5ADB336C403D6716"]
@@ -1544,8 +1499,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.14409C4AEBA1888C.quest36410B6ED7E3BB82.title}"
-			x: -4.5d
-			y: 16.0d
+			x: -3.5d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -1570,8 +1525,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: 17.5d
+			x: -6.547619047619058d
+			y: 20.37738095238099d
 		}
 		{
 			dependencies: [
@@ -1596,8 +1551,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
-			y: 17.5d
+			x: -1.3095238095238244d
+			y: 20.37738095238099d
 		}
 	]
 	title: "{ftbquests.chapter.14409C4AEBA1888C.title}"
