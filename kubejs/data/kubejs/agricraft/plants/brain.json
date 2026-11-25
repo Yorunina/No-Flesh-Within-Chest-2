@@ -18,6 +18,13 @@
       "max": 1,
       "min": 1,
       "required": false
+    },
+    {
+      "chance": 1.0,
+      "item": "kubejs:brain_flower",
+      "max": 1,
+      "min": 1,
+      "required": false
     }
   ],
   "requirement": {
