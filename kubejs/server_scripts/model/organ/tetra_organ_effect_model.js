@@ -32,10 +32,7 @@ function BuildTetraOrganEffectsByEvent(modularItem, stack) {
  */
 function CacheTetraOrganEffectsByEvent(chestCavity, slotIndex, modularItem, stack) {
     const byEvent = BuildTetraOrganEffectsByEvent(modularItem, stack)
-    chestCavity.setSlotData(slotIndex, TetraOrganEffectSlotDataKey, {
-        revision: TetraOrganEffectRegistryRevision,
-        byEvent: byEvent,
-    })
+    chestCavity.setSlotData(slotIndex, TetraOrganEffectSlotDataKey, byEvent)
     return byEvent
 }
 
@@ -48,9 +45,9 @@ function CacheTetraOrganEffectsByEvent(chestCavity, slotIndex, modularItem, stac
  */
 function GetTetraOrganEffectsByEvent(chestCavity, slotIndex, modularItem, stack) {
     const cached = chestCavity.getSlotData(slotIndex, TetraOrganEffectSlotDataKey)
-    if (cached && cached.revision === TetraOrganEffectRegistryRevision) return cached.byEvent
+    if (cached) return cached
 
-    // 槽位数据会跨脚本重载保留，策略注册代次变更后要重新筛选候选。
+    // 槽位缓存缺失时，用当前堆叠回填事件候选。
     return CacheTetraOrganEffectsByEvent(chestCavity, slotIndex, modularItem, stack)
 }
 
