@@ -23,5 +23,5 @@ function FragArrowCreateArrow(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:frag_arrow')
-        .addStrategy('create_arrow', FragArrowCreateArrow, -10)
+        .addOnlyStrategy('create_arrow', FragArrowCreateArrow)
 )

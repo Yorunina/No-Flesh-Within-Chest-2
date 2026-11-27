@@ -53,6 +53,7 @@ OrganTakeOnStrategyModel.prototype = {
         let newContainerSize = ccInv.getContainerSize()
 
         let strategyFuncList = []
+        const onlyEffectMap = new Map()
         for (let i = 0; i < newContainerSize; i++) {
             let slotType = invTypeData.getSlotType(i)
             if (IsContainerSlot(slotType)) continue
@@ -93,19 +94,19 @@ OrganTakeOnStrategyModel.prototype = {
                 }
             }
 
-            if (TetraJSUtils.isModularItem(newItem.getItem())) {
-                let modularItem = newItem.getItem()
-                let effects = modularItem.getEffects(newItem)
-                effects.forEach(effect => {
-                    let effectStrategyModel = TetraOrganEffectStrategyMap[String(effect.getKey())]
-                    if (!effectStrategyModel) return
-                    Object.keys(effectStrategyModel.strategyMap).forEach(eventId => {
-                        ccInstance.addListener(eventId, i)
-                    })
+            let modularItem = newItem.getItem()
+            if (TetraJSUtils.isModularItem(modularItem)) {
+                // 为本次装入的 Tetra 物品登记后续事件，并用新堆叠收集安装回调。
+                let byEvent = CacheTetraOrganEffectsByEvent(ccInstance, i, modularItem, newItem)
+                Object.keys(byEvent).forEach(eventId => {
+                    ccInstance.addListener(eventId, i)
                 })
+                CollectTetraOrganEffectStrategies(byEvent[this.eventId], this.eventId, args,
+                    { modularItem: modularItem, stack: newItem, slotIndex: i, slotType: slotType }, strategyFuncList, onlyEffectMap)
             }
         }
 
+        QueueOnlyTetraOrganEffectStrategies(onlyEffectMap, strategyFuncList)
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {
                 return b.getPriority() - a.getPriority()

@@ -40,5 +40,5 @@ function AutoSmeltBlockLoot(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:auto_smelt')
-        .addStrategy('block_loot_before', AutoSmeltBlockLoot, -20)
+        .addOnlyStrategy('block_loot', AutoSmeltBlockLoot)
 )

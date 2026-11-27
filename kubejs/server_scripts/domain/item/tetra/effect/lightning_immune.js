@@ -1,17 +1,16 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function LightningImmuneEntityDoDamage(customData, event) {
+function LightningImmuneEntityBeHurt(customData, event, effectSource) {
     if (event.source.getType() != 'lightningBolt') return
-    let entity = customData.entity
-    if (!entity.isPlayer()) return
-    if (TetraHurtTargetHas(customData, 'kubejs:lightning_immune')) event.cancel()
+    if (!event.entity.isPlayer()) return
+    if (effectSource.level > 0) event.setCanceled(true)
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:lightning_immune')
-        .addStrategy('entity_do_damage', LightningImmuneEntityDoDamage, -90)
+        .addOnlyStrategy('entity_be_hurt', LightningImmuneEntityBeHurt)
 )

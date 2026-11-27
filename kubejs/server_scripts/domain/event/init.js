@@ -10,6 +10,7 @@ const OrganStrategyMap = {}
  * @type {Object<string, TetraOrganEffectModel>}
  */
 const TetraOrganEffectStrategyMap = {}
+let TetraOrganEffectRegistryRevision = {}
 
 /**
  * Tetra weapon effect key -> event -> priority strategies
@@ -53,6 +54,7 @@ function RegistryOrganStrategy(strategyModel) {
  */
 function RegistryTetraOrganEffectStrategy(strategyModel) {
     TetraOrganEffectStrategyMap[strategyModel.effectId] = strategyModel
+    TetraOrganEffectRegistryRevision = {}
 }
 
 /**

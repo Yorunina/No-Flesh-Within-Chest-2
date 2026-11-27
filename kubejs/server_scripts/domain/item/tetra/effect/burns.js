@@ -4,28 +4,22 @@
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function BurnsEntityDoDamage(customData, event) {
+function BurnsEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
     const sourceEntity = event.source.actual
     const targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (sourceEntity.isPlayer() && !TetraAttackFullCharge(event, sourceEntity)) return
-    let heldItem = TetraAttackItem(event, sourceEntity)
-    /**@type {Internal.ModularItem} */
-    let modularItem = heldItem.getItem()
-    if (!TetraJSUtils.isModularItem(modularItem)) return
-    let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:burns')
-    let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:burns')
-    if (effectEfficiency <= 0 || effectLevel <= 0) return
-    if (effectLevel >= 10) {
-        targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() + Math.floor(effectEfficiency * (effectLevel / 10)) * 20)
-    } else if (effectLevel > 0 && effectLevel * 10 > Math.random() * 100) {
-        targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() + effectEfficiency * 20)
+    if (effectSource.efficiency <= 0 || effectSource.level <= 0) return
+    if (effectSource.level >= 10) {
+        targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() + Math.floor(effectSource.efficiency * (effectSource.level / 10)) * 20)
+    } else if (effectSource.level > 0 && effectSource.level * 10 > Math.random() * 100) {
+        targetEntity.setRemainingFireTicks(targetEntity.getRemainingFireTicks() + effectSource.efficiency * 20)
     }
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:burns')
-        .addStrategy('entity_do_damage_before', BurnsEntityDoDamage, -10)
+        .addStrategy('entity_damage_first', BurnsEntityDoDamage)
 )
 

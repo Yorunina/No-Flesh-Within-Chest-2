@@ -1,5 +1,6 @@
 // priority: 999
 const OrganBlockRightClickedEvent = new OrganEventModel('block_right_clicked')
+const TetraBlockRightClickedEvent = new TetraEffectEventModel('block_right_clicked')
 
 
 BlockEvents.rightClicked(event => {
@@ -7,4 +8,5 @@ BlockEvents.rightClicked(event => {
     if (!entity) return
     let customData = {}
     OrganBlockRightClickedEvent.run(entity, customData, [event])
+    TetraBlockRightClickedEvent.run(entity, customData, [event])
 })

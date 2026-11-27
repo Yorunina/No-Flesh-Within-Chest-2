@@ -25,5 +25,5 @@ function SeekingArrowCreateArrow(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:seeking_arrow')
-        .addStrategy('create_arrow', SeekingArrowCreateArrow, -30)
+        .addOnlyStrategy('create_arrow', SeekingArrowCreateArrow)
 )

@@ -59,7 +59,7 @@ function AncientHarbingerLungItemLeftClicked(customData, event, organItem, organ
         if (targetEntity.position().subtract(entity.getEyePosition()).dot(forward) < 0) continue
         if (entity.distanceToSqr(targetEntity) >= radius * radius) continue
 
-        const offsetVector = targetEntity.getBoundingBox().getCenter().subtract(entity.getEyePosition())
+        let offsetVector = targetEntity.getBoundingBox().getCenter().subtract(entity.getEyePosition())
         if (offsetVector.dot(forward) < 0) continue
 
         if (targetEntity.attack(damageSource, damage)) {

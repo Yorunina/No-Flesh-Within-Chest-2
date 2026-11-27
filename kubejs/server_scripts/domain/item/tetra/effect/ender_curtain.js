@@ -33,7 +33,7 @@ function EnderCurtainApply(player, stack) {
  */
 function EnderCurtainCurioChange(customData, event) {
     let player = event.entity
-    if (player.level.isClientSide() || !player.isPlayer()) return
+    if (!player.isPlayer()) return
     if (!EnderCurtainEnabled(event.from) && EnderCurtainEnabled(event.to)) {
         EnderCurtainApply(player, event.to)
     }
@@ -56,5 +56,5 @@ RegistryCuriosStrategy(EnderCurtainCuriosStrategy.addStrategy('player_tick', End
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:ender_curtain')
-        .addStrategy('curio_change', EnderCurtainCurioChange, 10)
+        .addOnlyStrategy('curio_change', EnderCurtainCurioChange)
 )

@@ -60,7 +60,7 @@ function ShockwaveBlastCast(player, projectile, stack, cx, cy, cz) {
  */
 function ShockwaveBlastProjectileImpact(customData, event) {
     let projectile = event.projectile
-    if (!projectile || projectile.level.isClientSide()) return
+    if (!projectile) return
     let result = event.rayTraceResult
     if (!result) return
 
@@ -89,6 +89,6 @@ function ShockwaveBlastProjectileImpact(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:shockwave_blast')
-        .addStrategy('create_thrown_item', ShockwaveBlastCreateThrownItem)
-        .addStrategy('projectile_impact', ShockwaveBlastProjectileImpact, -20)
+        .addOnlyStrategy('create_thrown_item', ShockwaveBlastCreateThrownItem)
+        .addOnlyStrategy('projectile_impact', ShockwaveBlastProjectileImpact)
 )

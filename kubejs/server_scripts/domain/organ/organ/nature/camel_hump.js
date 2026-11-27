@@ -19,7 +19,7 @@ function CamelHumpEntityFall(customData, event, organItem, organIndex, slotType)
     let belowBlockState = level.getBlockState(belowBlockPos)
     if (belowBlockState.isAir()) return
     level.setBlockAndUpdate(curBlockPos, Blocks.WATER.defaultBlockState())
-    event.cancel()
+    event.setCanceled(true)
 }
 
 /**

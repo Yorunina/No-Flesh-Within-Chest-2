@@ -1,27 +1,25 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function TearingEntityDoDamage(customData, event) {
+function TearingEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
-    let targetEntity = customData.entity
+    let sourceEntity = event.source.actual
+    let targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (!TetraAttackIsMelee(event, sourceEntity)) return
     if (!TetraAttackFullCharge(event, sourceEntity)) return
     if (event.source.getType() == 'generic') return
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:tearing')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:tearing')
-    let chance = Math.max(0, Math.min(1, effectEfficiency / 100))
+    let chance = Math.max(0, Math.min(1, effectSource.efficiency / 100))
     if (Math.random() >= chance) return
-    let threshold = targetEntity.maxHealth * effectLevel / 1000
+    let threshold = targetEntity.maxHealth * effectSource.level / 1000
     if (threshold <= 0) return
     if (event.amount < threshold) event.amount = threshold
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:tearing')
-        .addStrategy('entity_do_damage', TearingEntityDoDamage, -140)
+        .addStrategy('entity_do_damage', TearingEntityDoDamage)
 )

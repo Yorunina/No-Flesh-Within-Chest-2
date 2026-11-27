@@ -21,6 +21,8 @@ const $PathfinderMob = Java.loadClass('net.minecraft.world.entity.PathfinderMob'
 
 const $FireBomb = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magma_ball.FireBomb')
 const $AbstractSpell = Java.loadClass('io.redspace.ironsspellbooks.api.spells.AbstractSpell')
+const $ISSParticleRegistry = Java.loadClass('io.redspace.ironsspellbooks.registries.ParticleRegistry')
+const $ISSSoundRegistry = Java.loadClass('io.redspace.ironsspellbooks.registries.SoundRegistry')
 
 const $SummonedZombie = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedZombie')
 const $SummonedSkeleton = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.SummonedSkeleton')
@@ -62,8 +64,6 @@ const $AbstractGolem = Java.loadClass('dev.xkmc.modulargolems.content.entity.com
 const $EntityHitResult = Java.loadClass('net.minecraft.world.phys.EntityHitResult')
 const $BlockHitResult = Java.loadClass('net.minecraft.world.phys.BlockHitResult')
 const $SpellUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SpellUtil')
-const $ClientboundSetEntityMotionPacket = Java.loadClass('net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket')
-const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
 const $FlameStrikeParticleOptions = Java.loadClass('io.redspace.ironsspellbooks.particle.FlameStrikeParticleOptions')
 const $FireEruptionAoe = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.FireEruptionAoe')
 const $ShockwaveParticlesPacket = Java.loadClass('io.redspace.ironsspellbooks.network.particles.ShockwaveParticlesPacket')
@@ -91,3 +91,11 @@ const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocati
 const $SoundSource = Java.loadClass('net.minecraft.sounds.SoundSource')
 const $ServerPlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
 const $ServerLevel = Java.loadClass('net.minecraft.server.level.ServerLevel')
+
+// Client-only classes
+let $Axis
+let $ISSMagicArrowRenderer
+if (Platform.isClientEnvironment()) {
+    $Axis = Java.loadClass('com.mojang.math.Axis')
+    $ISSMagicArrowRenderer = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magic_arrow.MagicArrowRenderer')
+}

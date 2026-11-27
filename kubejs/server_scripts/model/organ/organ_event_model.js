@@ -29,6 +29,7 @@ OrganEventModel.prototype = {
      * @param {any[]} args
      */
     run: function (entity, customData, args) {
+        let event = args[0]
         let optional = $ChestCavityEntity.of(entity)
         if (!optional.isPresent()) return
         let ccEntity = optional.get()
@@ -40,9 +41,11 @@ OrganEventModel.prototype = {
         })
         let ccInv = ccInstance.inventory
         const onlyMap = new Map()
+        // 按事件登记的槽位分发，避免在高频事件中扫描整个胸腔。
         let slotMap = ccInstance.getListenerMap(this.eventId)
         if (slotMap && slotMap.size() > 0) {
             let strategyFuncList = []
+            const onlyEffectMap = new Map()
             slotMap.forEach((slotIndex, slotType) => {
                 let curItem = ccInv.getStackInSlot(slotIndex)
                 if (!curItem || curItem.isEmpty()) return
@@ -65,37 +68,32 @@ OrganEventModel.prototype = {
                     }
                 }
 
-                if (TetraJSUtils.isModularItem(curItem.getItem())) {
-                    let modularItem = curItem.getItem()
-                    let effects = modularItem.getEffects(curItem)
-                    effects.forEach(effect => {
-                        let effectStrategyModel = TetraOrganEffectStrategyMap[String(effect.getKey())]
-                        if (!effectStrategyModel) return
-                        let effectStrategy = effectStrategyModel.strategyMap[this.eventId]
-                        if (!effectStrategy) return
-                        effectStrategy.forEach(e => {
-                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(modularItem, effect, curItem, slotIndex, slotType)))
-                        })
-                    })
+                let modularItem = curItem.getItem()
+                if (TetraJSUtils.isModularItem(modularItem)) {
+                    const byEvent = GetTetraOrganEffectsByEvent(ccInstance, slotIndex, modularItem, curItem)
+                    CollectTetraOrganEffectStrategies(byEvent[this.eventId], this.eventId, args,
+                        { modularItem: modularItem, stack: curItem, slotIndex: slotIndex, slotType: slotType }, strategyFuncList, onlyEffectMap)
                 }
             })
+            QueueOnlyTetraOrganEffectStrategies(onlyEffectMap, strategyFuncList)
             if (strategyFuncList.length > 0) {
                 strategyFuncList.sort((a, b) => {
                     return b.getPriority() - a.getPriority()
                 })
-                strategyFuncList.forEach((model) => {
+                for (let model of strategyFuncList) {
+                    if (event && event.isCanceled && event.isCanceled()) break
                     let func = model.getFunc()
                     let strategyArgs = model.getArgs()
                     if (this.eventId == 'chest_cavity_update') {
                         func.apply(null, strategyArgs)
-                        return
+                        continue
                     }
                     try {
                         func.apply(null, strategyArgs)
                     } catch (err) {
                         HandleStrategyError(err, this.eventId, func.name)
                     }
-                })
+                }
             }
             ExcretionSlotEvent(customData, ccInstance)
         }

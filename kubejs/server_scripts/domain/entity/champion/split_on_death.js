@@ -13,26 +13,26 @@ function ChampionSplitOnDeathEntityDeath(customData, event, championKey, champio
     const splitCount = Math.min(championLevel + 1, 5)
 
     for (let i = 0; i < splitCount; i++) {
-        const offsetX = (Math.random() - 0.5) * 2
-        const offsetZ = (Math.random() - 0.5) * 2
-        const spawnPos = pos.add(offsetX, 0, offsetZ)
+        let offsetX = (Math.random() - 0.5) * 2
+        let offsetZ = (Math.random() - 0.5) * 2
+        let spawnPos = pos.add(offsetX, 0, offsetZ)
 
-        const entityType = entity.entityType
-        const spawnedEntity = entityType.create(level)
+        let entityType = entity.entityType
+        let spawnedEntity = entityType.create(level)
 
         if (spawnedEntity && spawnedEntity.isLiving()) {
             spawnedEntity.setPos(spawnPos.x(), spawnPos.y(), spawnPos.z())
 
 
-            const healthAttr = spawnedEntity.getAttribute('minecraft:generic.max_health')
+            let healthAttr = spawnedEntity.getAttribute('minecraft:generic.max_health')
             if (healthAttr) {
-                const originalMaxHealth = entity.maxHealth
-                const newMaxHealth = originalMaxHealth * 0.3
+                let originalMaxHealth = entity.maxHealth
+                let newMaxHealth = originalMaxHealth * 0.3
                 healthAttr.setBaseValue(newMaxHealth)
                 spawnedEntity.health = newMaxHealth
             }
 
-            const damageAttr = spawnedEntity.getAttribute('minecraft:generic.attack_damage')
+            let damageAttr = spawnedEntity.getAttribute('minecraft:generic.attack_damage')
             if (damageAttr) {
                 damageAttr.setBaseValue(damageAttr.getBaseValue() * 0.5)
             }

@@ -21,7 +21,7 @@ function FrostBulwarkFreeze(target) {
  */
 function FrostBulwarkShieldBlock(customData, event) {
     let defender = event.entity
-    if (defender.level.isClientSide() || event.blockedDamage <= 0) return
+    if (event.blockedDamage <= 0) return
     let shield = defender.getUseItem()
     let item = shield.getItem()
     if (!TetraJSUtils.isModularItem(item)) return
@@ -53,6 +53,6 @@ function FrostBulwarkItemCooldownStarted(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:frost_bulwark')
-        .addStrategy('shield_block', FrostBulwarkShieldBlock)
-        .addStrategy('item_cooldown_started', FrostBulwarkItemCooldownStarted)
+        .addOnlyStrategy('shield_block', FrostBulwarkShieldBlock)
+        .addOnlyStrategy('item_cooldown_started', FrostBulwarkItemCooldownStarted)
 )

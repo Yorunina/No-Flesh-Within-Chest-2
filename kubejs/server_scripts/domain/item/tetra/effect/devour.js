@@ -1,32 +1,23 @@
 // priority: 500
-
 /**
  * @param {Object} customData
  * @param {Internal.LivingDeathEvent} event
  */
-function DevourEntityKill(customData, event) {
-    if (event.entity.level.isClientSide()) return
-    /**@type {Internal.LivingEntity} */
+function DevourEntityKill(customData, event, effectSource) {
     let sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isLiving()) return
 
-    let heldItem = TetraAttackItem(event, sourceEntity)
-    /**@type {Internal.ModularItem} */
-    let modularItem = heldItem.getItem()
-    if (!TetraJSUtils.isModularItem(modularItem)) return
-    let effectLevel = modularItem.getEffectLevel(heldItem, 'kubejs:devour')
-    if (effectLevel <= 0) return
+    if (effectSource.level <= 0) return
 
     let target = event.entity
-    let effectEfficiency = modularItem.getEffectEfficiency(heldItem, 'kubejs:devour')
-    if (effectEfficiency > 0 && target.maxHealth < effectEfficiency) return
+    if (effectSource.efficiency > 0 && target.maxHealth < effectSource.efficiency) return
     let level = target.level
 
     let VIGOR_ID = 'irons_spellbooks:vigor'
     let inst = sourceEntity.getEffect(VIGOR_ID)
     let curAmp = inst ? inst.getAmplifier() : -1
-    if (sourceEntity.maxHealth >= 4 * (curAmp + 1) + 2 * effectLevel) {
-        sourceEntity.potionEffects.add(VIGOR_ID, 3600, curAmp + effectLevel, false, true)
+    if (sourceEntity.maxHealth >= 4 * (curAmp + 1) + 2 * effectSource.level) {
+        sourceEntity.potionEffects.add(VIGOR_ID, 3600, curAmp + effectSource.level, false, true)
     } else if (inst) {
         sourceEntity.potionEffects.add(VIGOR_ID, 3600, curAmp, false, true)
     }
@@ -55,5 +46,5 @@ function DevourEntityKill(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:devour')
-        .addStrategy('entity_kill_before', DevourEntityKill)
+        .addOnlyStrategy('entity_kill', DevourEntityKill)
 )

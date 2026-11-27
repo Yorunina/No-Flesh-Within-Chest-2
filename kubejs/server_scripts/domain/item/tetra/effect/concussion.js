@@ -1,14 +1,13 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function ConcussionEntityDoDamage(customData, event) {
-    if (event.entity.level.isClientSide()) return
+function ConcussionEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
-    let targetEntity = customData.entity
+    let sourceEntity = event.source.actual
+    let targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
 
     let isSlamSplash = SlamIsSplash(event.source)
@@ -18,19 +17,17 @@ function ConcussionEntityDoDamage(customData, event) {
         if (!TetraAttackFullCharge(event, sourceEntity)) return
     }
 
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:concussion')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:concussion')
-    if (effectLevel <= 0 || effectEfficiency <= 0) return
+    if (effectSource.level <= 0 || effectSource.efficiency <= 0) return
 
     if (targetEntity.getEffect('cataclysm:stun')) return
 
     let rand = new $JavaRandom()
-    if (rand.nextFloat() >= effectLevel / 100) return
+    if (rand.nextFloat() >= effectSource.level / 100) return
 
-    targetEntity.potionEffects.add('cataclysm:stun', Math.round(effectEfficiency * 20), 0, false, true)
+    targetEntity.potionEffects.add('cataclysm:stun', Math.round(effectSource.efficiency * 20), 0, false, true)
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:concussion')
-        .addStrategy('entity_do_damage', ConcussionEntityDoDamage, -20)
+        .addStrategy('entity_damage_first', ConcussionEntityDoDamage)
 )

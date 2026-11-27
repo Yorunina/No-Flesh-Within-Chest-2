@@ -5,6 +5,7 @@
  *     | 'item_left_clicked'
  *     | 'key_active'
  *     | 'entity_do_damage'
+ *     | 'entity_final_damage'
  *     | 'chest_cavity_update'
  *     | 'food_eaten'
  *     | 'block_broken'
@@ -24,6 +25,7 @@
  *     | 'iss_player_spell_cast'
  *     | 'iss_entity_spell_cast'
  *     | 'block_right_clicked'
+ *     | 'item_cooldown_started'
  *     | 'organ_add_status_effect'
  *     | 'shield_block'
  *     | 'exposure_frame_added'
@@ -31,6 +33,7 @@
  *     | 'villager_update_special_prices'
  *     | 'player_spawn_phantoms'
  *     | 'player_dodge'
+     *     | 'damage_dodge'
  *     | 'trade_with_villager'
  *     | 'player_respawned'
  * } $OrganEventIdType

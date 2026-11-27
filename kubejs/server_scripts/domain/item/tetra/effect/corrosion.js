@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 let CORROSION_EFFECT_ID = 'biomancy:corrosive'
 
@@ -6,18 +6,15 @@ let CORROSION_EFFECT_ID = 'biomancy:corrosive'
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function CorrosionEntityDoDamage(customData, event) {
-    if (event.entity.level.isClientSide()) return
+function CorrosionEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
+    let sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isLiving()) return
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:corrosion')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:corrosion')
-    if (effectLevel <= 0 || effectEfficiency <= 0) return
+    if (effectSource.level <= 0 || effectSource.efficiency <= 0) return
 
     let target = event.entity
-    let gain = Math.round(effectLevel)
-    let duration = Math.round(effectEfficiency * 20)
+    let gain = Math.round(effectSource.level)
+    let duration = Math.round(effectSource.efficiency * 20)
     let inst = target.getEffect(CORROSION_EFFECT_ID)
     if (inst) {
         let newAmp = inst.getAmplifier() + gain
@@ -31,5 +28,5 @@ function CorrosionEntityDoDamage(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:corrosion')
-        .addStrategy('entity_do_damage', CorrosionEntityDoDamage, -30)
+        .addStrategy('entity_damage_first', CorrosionEntityDoDamage)
 )

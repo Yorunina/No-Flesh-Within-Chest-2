@@ -22,5 +22,5 @@ function BeheadingEntityLoot(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:beheading')
-        .addStrategy('entity_loot_before', BeheadingEntityLoot)
+        .addOnlyStrategy('entity_loot', BeheadingEntityLoot)
 )

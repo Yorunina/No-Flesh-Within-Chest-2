@@ -90,7 +90,7 @@ StartupEvents.registry('mob_effect', event => {
             let level = lvl + 1
             let damage = entity.health * level * CURSE_DAMAGE_PER_LEVEL
             entity.attack(entity.damageSources().magic(), damage)
-            let sound = $ForgeRegistries.SOUND_EVENTS.getValue(new $ResourceLocation(CURSE_SETTLE_SOUND))
+            let sound = $ForgeRegistries.SOUND_EVENTS.getValue(CURSE_SETTLE_SOUND)
             if (sound) {
                 entity.level.playSound(null, entity.x, entity.y, entity.z, sound, $SoundSource.PLAYERS, 1.0, 1.0)
             }

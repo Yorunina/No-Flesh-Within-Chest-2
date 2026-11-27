@@ -5,6 +5,7 @@ const ChampionEntityDeathEvent = new ChampionEventModel('entity_death')
 const ChampionEntityKillEvent = new ChampionEventModel('entity_kill')
 const CuriosEntityDeathEvent = new CuriosEventModel('entity_death')
 const CuriosEntityKillEvent = new CuriosEventModel('entity_kill')
+const TetraEntityKillEvent = new TetraEffectEventModel('entity_kill')
 
 EntityEvents.death(event => {
     const entity = event.entity
@@ -21,5 +22,6 @@ EntityEvents.death(event => {
         CuriosEntityKillEvent.run(killer, customData, [event])
         OrganEntityKillEvent.run(killer, customData, [event])
         ChampionEntityKillEvent.run(killer, customData, [event])
+        TetraEntityKillEvent.run(killer, customData, [event])
     }
 })

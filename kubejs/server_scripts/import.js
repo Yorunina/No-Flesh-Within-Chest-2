@@ -36,12 +36,10 @@ const $Operation = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attr
 const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const $DamageTypes = Java.loadClass('net.minecraft.world.damagesource.DamageTypes')
-const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const $GameRules = Java.loadClass('net.minecraft.world.level.GameRules')
 
 const $ChestCavityEntity = Java.loadClass('net.tigereye.chestcavity.interfaces.ChestCavityEntity')
 
-const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
 
 const $ItemEntity = Java.loadClass('net.minecraft.world.entity.item.ItemEntity')
 const $InfestedBlock = Java.loadClass('net.minecraft.world.level.block.InfestedBlock')
@@ -202,7 +200,6 @@ const $ImprovedNoise = Java.loadClass('net.minecraft.world.level.levelgen.synth.
 const $RandomSource = Java.loadClass('net.minecraft.util.RandomSource')
 const $PlayerXpLevelChange = Java.loadClass('net.minecraftforge.event.entity.player.PlayerXpEvent$LevelChange')
 
-const $ALAttributeEvents = Java.loadClass('dev.shadowsoffire.attributeslib.impl.AttributeEvents')
 const $Axis = Java.loadClass('net.minecraft.core.Direction$Axis')
 const $Direction = Java.loadClass('net.minecraft.core.Direction')
 const $HitResultType = Java.loadClass('net.minecraft.world.phys.HitResult$Type')
@@ -218,7 +215,6 @@ const $EnchantmentHelper = Java.loadClass('net.minecraft.world.item.enchantment.
 const $EventPriority = Java.loadClass('net.minecraftforge.eventbus.api.EventPriority')
 const $FrozenHumanoid = Java.loadClass('io.redspace.ironsspellbooks.entity.mobs.frozen_humanoid.FrozenHumanoid')
 const $GolemFlags = Java.loadClass('dev.xkmc.modulargolems.content.entity.common.GolemFlags')
-const $ISSMagicArrow = Java.loadClass('io.redspace.ironsspellbooks.entity.spells.magic_arrow.MagicArrowProjectile')
 const $ISSUtils = Java.loadClass('io.redspace.ironsspellbooks.api.util.Utils')
 const $JavaRandom = Java.loadClass('java.util.Random')
 const $LivingAttackEvent = Java.loadClass('net.minecraftforge.event.entity.living.LivingAttackEvent')
@@ -227,6 +223,8 @@ const $MagicData = Java.loadClass('io.redspace.ironsspellbooks.api.magic.MagicDa
 const $Mth = Java.loadClass('net.minecraft.util.Mth')
 const $PlayerTickEvent = Java.loadClass('net.minecraftforge.event.TickEvent$PlayerTickEvent')
 const $ProjectileImpactEvent = Java.loadClass('net.minecraftforge.event.entity.ProjectileImpactEvent')
+const $Projectile = Java.loadClass('net.minecraft.world.entity.projectile.Projectile')
+const $TetraThrownModularItemEntity = Java.loadClass('se.mickelus.tetra.items.modular.ThrownModularItemEntity')
 const $SacrificeSpell = Java.loadClass('io.redspace.ironsspellbooks.spells.blood.SacrificeSpell')
 const $SpellOnCastEvent = Java.loadClass('io.redspace.ironsspellbooks.api.events.SpellOnCastEvent')
 const $Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3')

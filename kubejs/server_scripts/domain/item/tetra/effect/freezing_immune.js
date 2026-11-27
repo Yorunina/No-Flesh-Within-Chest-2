@@ -1,17 +1,16 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function FreezingImmuneEntityDoDamage(customData, event) {
+function FreezingImmuneEntityBeHurt(customData, event, effectSource) {
     if (event.source.getType() != 'freeze') return
-    let entity = customData.entity
-    if (!entity.isPlayer()) return
-    if (TetraHurtTargetHas(customData, 'kubejs:freezing_immune')) event.cancel()
+    if (!event.entity.isPlayer()) return
+    if (effectSource.level > 0) event.setCanceled(true)
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:freezing_immune')
-        .addStrategy('entity_do_damage', FreezingImmuneEntityDoDamage, -70)
+        .addOnlyStrategy('entity_be_hurt', FreezingImmuneEntityBeHurt)
 )

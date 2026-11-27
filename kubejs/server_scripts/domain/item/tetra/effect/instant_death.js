@@ -1,20 +1,19 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function InstantDeathEntityDoDamage(customData, event) {
+function InstantDeathEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
-    let targetEntity = customData.entity
+    let sourceEntity = event.source.actual
+    let targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:instant_death')
-    if (effectLevel < 1) return
+    if (effectSource.level < 1) return
     targetEntity.health = 0
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:instant_death')
-        .addStrategy('entity_do_damage', InstantDeathEntityDoDamage, -80)
+        .addOnlyStrategy('entity_do_damage', InstantDeathEntityDoDamage)
 )

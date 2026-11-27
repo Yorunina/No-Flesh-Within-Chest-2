@@ -38,11 +38,11 @@ RegistryCuriosStrategy(ProjectionWingsCuriosStrategy.addStrategy('player_tick', 
  */
 function ProjectionWingsCurioChange(customData, event) {
     let player = event.entity
-    if (player.level.isClientSide() || !player.isPlayer()) return
+    if (!player.isPlayer()) return
     if (!ProjectionWingsEnabled(event.from) && ProjectionWingsEnabled(event.to)) ProjectionWingsApply(player)
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:projection_wings')
-        .addStrategy('curio_change', ProjectionWingsCurioChange)
+        .addOnlyStrategy('curio_change', ProjectionWingsCurioChange)
 )

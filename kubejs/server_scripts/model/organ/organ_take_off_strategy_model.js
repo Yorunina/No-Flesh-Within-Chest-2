@@ -53,6 +53,7 @@ OrganTakeOffStrategyModel.prototype = {
         let newContainerSize = ccInv.getContainerSize()
 
         let strategyFuncList = []
+        const onlyEffectMap = new Map()
         for (let i = 0; i < oldContainerSize; i++) {
             let oldSlotType = oldInvTypeData.getSlotType(i)
             if (IsContainerSlot(oldSlotType)) continue
@@ -93,18 +94,19 @@ OrganTakeOffStrategyModel.prototype = {
                 }
             }
 
-            if (TetraJSUtils.isModularItem(oldItem.getItem())) {
-                let modularItem = oldItem.getItem()
-                let effects = modularItem.getEffects(oldItem)
-                effects.forEach(effect => {
-                    let effectStrategyModel = TetraOrganEffectStrategyMap[String(effect.getKey())]
-                    if (!effectStrategyModel) return
-                    Object.keys(effectStrategyModel.strategyMap).forEach(eventId => {
-                        ccInstance.removeListener(eventId, i)
-                    })
+            let modularItem = oldItem.getItem()
+            if (TetraJSUtils.isModularItem(modularItem)) {
+                // 用移除前的堆叠撤销监听并收集卸载回调，替换物品时也走这条路径。
+                let byEvent = BuildTetraOrganEffectsByEvent(modularItem, oldItem)
+                Object.keys(byEvent).forEach(eventId => {
+                    ccInstance.removeListener(eventId, i)
                 })
+                CollectTetraOrganEffectStrategies(byEvent[this.eventId], this.eventId, args,
+                    { modularItem: modularItem, stack: oldItem, slotIndex: i, slotType: oldSlotType }, strategyFuncList, onlyEffectMap)
             }
+            ccInstance.removeSlotData(i, TetraOrganEffectSlotDataKey)
         }
+        QueueOnlyTetraOrganEffectStrategies(onlyEffectMap, strategyFuncList)
         if (strategyFuncList.length > 0) {
             strategyFuncList.sort((a, b) => {
                 return b.getPriority() - a.getPriority()

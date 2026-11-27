@@ -3,6 +3,7 @@ const EventId2TagId = {
     'item_right_clicked': 'kubejs:item_right_clicked',
     'item_left_clicked': 'kubejs:item_left_clicked',
     'entity_do_damage': 'kubejs:entity_do_damage',
+    'entity_final_damage': 'kubejs:entity_final_damage',
     'chest_cavity_update': 'kubejs:chest_cavity_update',
     'food_eaten': 'kubejs:food_eaten',
     'block_broken': 'kubejs:block_broken',
@@ -16,12 +17,14 @@ const EventId2TagId = {
     'entity_be_interacted': 'kubejs:entity_be_interacted',
     'entity_interact': 'kubejs:entity_interact',
     'block_right_clicked': 'kubejs:block_right_clicked',
+    'item_cooldown_started': 'kubejs:item_cooldown_started',
     'organ_add_status_effect': 'kubejs:organ_add_status_effect',
     'exposure_frame_added': 'kubejs:exposure_frame_added',
     'entity_fall': 'kubejs:entity_fall',
     'villager_update_special_prices': 'kubejs:villager_update_special_prices',
     'shield_block': 'kubejs:shield_block',
     'player_dodge': 'kubejs:player_dodge',
+    'damage_dodge': 'kubejs:damage_dodge',
     'entity_death': 'kubejs:entity_death',
 }
 

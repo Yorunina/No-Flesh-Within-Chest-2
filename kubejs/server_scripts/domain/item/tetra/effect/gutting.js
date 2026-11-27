@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 let GUTTING_DURABILITY_CHANCE = 0.4
 
@@ -56,5 +56,5 @@ function GuttingApply(killer, entity, ctx, stack) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:gutting')
-        .addStrategy('entity_loot', GuttingEntityLoot, -10)
+        .addOnlyStrategy('entity_loot', GuttingEntityLoot)
 )

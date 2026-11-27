@@ -1,5 +1,4 @@
-// priority: 0
-
+// priority: 500
 let PURITY_BLACKLIST = [
 ]
 
@@ -12,18 +11,16 @@ function PurityGetEffectId(mobEffect) {
 
 /**
  * @param {Object} customData
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.LivingDamageEvent} event
  */
-function PurityEntityDoDamage(customData, event) {
+function PurityEntityFinalDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
-    let targetEntity = customData.entity
+    let sourceEntity = event.source.actual
+    let targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (sourceEntity.isPlayer() && !TetraAttackFullCharge(event, sourceEntity)) return
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:purity')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:purity')
-    if (effectLevel <= 0 || effectEfficiency <= 0) return
-    if (Math.random() >= effectLevel / 100) return
+    if (effectSource.level <= 0 || effectSource.efficiency <= 0) return
+    if (Math.random() >= effectSource.level / 100) return
     let candidates = []
     targetEntity.getActiveEffectsMap().forEach((effect, inst) => {
         let id = PurityGetEffectId(effect)
@@ -39,7 +36,7 @@ function PurityEntityDoDamage(customData, event) {
         effectDamage = targetEntity.maxHealth * 0.1
     } else {
         let amplifier = inst.getAmplifier() + 1
-        effectDamage = amplifier * (duration / 20) * effectEfficiency / 10
+        effectDamage = amplifier * (duration / 20) * effectSource.efficiency / 10
     }
     targetEntity.removeEffect(pick.id)
     if (event.amount < effectDamage) event.amount = effectDamage
@@ -47,5 +44,5 @@ function PurityEntityDoDamage(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:purity')
-        .addStrategy('entity_do_damage', PurityEntityDoDamage, -110)
+        .addStrategy('entity_final_damage', PurityEntityFinalDamage)
 )

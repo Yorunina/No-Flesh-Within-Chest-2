@@ -49,5 +49,5 @@ function BlockScryBlockBroken(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:block_scry')
-        .addStrategy('block_broken', BlockScryBlockBroken)
+        .addOnlyStrategy('block_broken', BlockScryBlockBroken)
 )

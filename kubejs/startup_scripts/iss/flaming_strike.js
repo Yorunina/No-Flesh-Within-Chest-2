@@ -45,7 +45,7 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
                 }
             }
 
-            const mirrored = playerMagicData.getCastingEquipmentSlot().equals($SpellSelectionManager.OFFHAND)
+            const mirrored = String(playerMagicData.getCastingEquipmentSlot()) === 'offhand'
             MagicManager.spawnParticles(level, new $FlameStrikeParticleOptions(forward.x(), forward.y(), forward.z(), mirrored, false, 1.0), hitLocation.x(), hitLocation.y() + 0.5, hitLocation.z(), 1, 0, 0, 0, 0, true)
         })
         .getDamageSource(ctx => {

@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 let SKINNING_DURABILITY_COST = 1
 
@@ -67,5 +67,5 @@ function SkinningApply(killer, entity, ctx, stack) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:skinning')
-        .addStrategy('entity_loot', SkinningEntityLoot, -30)
+        .addOnlyStrategy('entity_loot', SkinningEntityLoot)
 )

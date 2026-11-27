@@ -1,5 +1,4 @@
 // priority: 500
-
 /**
  * @param {Internal.ItemStack} stack
  * @param {string} moduleKey
@@ -30,7 +29,6 @@ function PotentialityTryAwaken(stack, moduleKey, impKey) {
  */
 function PotentialityAwakenOnCast(triggerSpells, moduleKey, impKey) {
     NativeEvents.onEvent($SpellOnCastEvent, /** @param {Internal.SpellOnCastEvent} event */ event => {
-        if (event.entity.level.isClientSide()) return
         if (triggerSpells.indexOf(event.getSpellId()) == -1) return
         let entity = event.entity
         if (PotentialityTryAwaken(entity.getMainHandItem(), moduleKey, impKey)) return

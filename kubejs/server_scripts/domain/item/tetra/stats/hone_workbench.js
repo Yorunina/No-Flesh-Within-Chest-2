@@ -1,8 +1,7 @@
-// priority: 0
+// priority: 500
 
 // 在卷轴书写等产物替换监听之后，处理工作台最终产物。
 TetraJSEvents.workbenchTileCraft(/** @param {Internal.WorkbenchTileCraftEventJS} event */ event => {
-    if (event.level.isClientSide()) return
     let stack = event.upgradedStack
     if (stack.isEmpty() || !stack.hasNBT()) return
     let nbt = stack.getNbt()

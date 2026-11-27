@@ -1,24 +1,6 @@
 // priority: 500
 
 /**
- * 从双手选择霜步等级较高的模块物品。
- * @param {Internal.Player} player
- * @returns {{level: number, efficiency: number}|null}
- */
-function FrostStepFind(player) {
-    let best = null
-    for (let stack of [player.getMainHandItem(), player.getOffhandItem()]) {
-        if (!TetraJSUtils.isModularItem(stack.getItem())) continue
-        let item = stack.getItem()
-        let level = item.getEffectLevel(stack, 'kubejs:frost_step')
-        if (level > 0 && (!best || level > best.level)) {
-            best = {level: level, efficiency: item.getEffectEfficiency(stack, 'kubejs:frost_step')}
-        }
-    }
-    return best
-}
-
-/**
  * 沿身后扫描，受阻则尝试身前；没有安全落点时返回空值。
  * @param {Internal.Player} player
  * @param {number} distance
@@ -52,49 +34,26 @@ function FrostStepFindLanding(player, distance) {
 
 /**
  * AttributesLib 成功闪避后生成冰分身并尝试安全后撤。
- * @param {Internal.Player} player
  */
-function FrostStepTrigger(player) {
-    let effect = FrostStepFind(player)
-    if (!effect) return
+function FrostStepDamageDodge(customData, event, effectSource) {
+    let player = event.entity
+    if (!player.isPlayer() || effectSource.level <= 0) return
     let now = Date.now()
     let data = player.persistentData
     if (data.contains('kubejs:frost_step_cd') && now - data.getLong('kubejs:frost_step_cd') < 500) return
     data.putLong('kubejs:frost_step_cd', now)
     let clone = new $FrozenHumanoid(player.level, player)
     clone.setShatterDamage(5)
-    clone.setDeathTimer(effect.level * 20)
+    clone.setDeathTimer(effectSource.level * 20)
     player.level.addFreshEntity(clone)
     $ISSUtils.performTaunt(clone, 10, entity => entity != player)
-    let landing = FrostStepFindLanding(player, effect.efficiency)
+    let landing = FrostStepFindLanding(player, effectSource.efficiency)
     if (!landing) return
     let spell = SpellRegistry['getSpell(java.lang.String)']('irons_spellbooks:frost_step')
     $ISSUtils.handleSpellTeleport(spell, player, landing)
 }
 
-/**
- * @param {Object} customData
- * @param {Internal.LivingAttackEvent} event
- */
-function FrostStepEntityAttackCanceled(customData, event) {
-    let player = event.entity
-    if (!event.isCanceled() || player.level.isClientSide() || !player.isPlayer()) return
-    if ($ALAttributeEvents.isDodging(player)) FrostStepTrigger(player)
-}
-
-/**
- * @param {Object} customData
- * @param {Internal.ProjectileImpactEvent} event
- */
-function FrostStepProjectileImpactCanceled(customData, event) {
-    if (!event.isCanceled() || !(event.rayTraceResult instanceof $EntityHitResult)) return
-    let player = event.rayTraceResult.entity
-    if (player.level.isClientSide() || !player.isPlayer()) return
-    if ($ALAttributeEvents.isDodging(player)) FrostStepTrigger(player)
-}
-
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:frost_step')
-        .addStrategy('entity_attack_canceled', FrostStepEntityAttackCanceled)
-        .addStrategy('projectile_impact_canceled', FrostStepProjectileImpactCanceled)
+        .addOnlyStrategy('damage_dodge', FrostStepDamageDodge)
 )

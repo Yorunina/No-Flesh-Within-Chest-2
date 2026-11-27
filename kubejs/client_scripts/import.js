@@ -1,7 +1,6 @@
 // priority: 5000
 const $ClientMagicData = Java.loadClass('io.redspace.ironsspellbooks.player.ClientMagicData')
 const $Block = Java.loadClass('net.minecraft.world.level.block.Block')
-const $SpellSelectionManager = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager')
 const $SpellSelectionEvent = Java.loadClass('io.redspace.ironsspellbooks.api.magic.SpellSelectionManager$SpellSelectionEvent')
 const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $OverlayTexture = Java.loadClass('net.minecraft.client.renderer.texture.OverlayTexture')

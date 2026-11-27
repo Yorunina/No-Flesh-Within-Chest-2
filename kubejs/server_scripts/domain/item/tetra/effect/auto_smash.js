@@ -40,5 +40,5 @@ function AutoSmashBlockLoot(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:auto_smash')
-        .addStrategy('block_loot_before', AutoSmashBlockLoot, -10)
+        .addOnlyStrategy('block_loot', AutoSmashBlockLoot)
 )

@@ -1,38 +1,34 @@
-// priority: 0
+// priority: 500
 
 /**
- * 原攻击作为首段，在主包和工具命中效果之前拆分伤害。
+ * 在器官伤害结算前拆分伤害，原攻击作为首段。
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function ShredderEntityDoDamage(customData, event) {
-    if (event.entity.level.isClientSide() || event.amount <= 0) return
+function ShredderEntityDoDamage(customData, event, effectSource) {
+    if (event.amount <= 0) return
     // 回响永不再次拆段；砸地等其他已标识的派生伤害也不能生成绞碎。
     if (event.source.is(TETRA_DAMAGE_ECHO) || TetraAttackData(event.source)) return
     let sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (!TetraAttackIsMelee(event, sourceEntity) || !TetraAttackFullCharge(event, sourceEntity)) return
 
-    let stack = TetraAttackItem(event, sourceEntity)
-    let item = stack.getItem()
-    if (!TetraJSUtils.isModularItem(item)) return
-    let effectLevel = item.getEffectLevel(stack, 'kubejs:shredder')
-    if (effectLevel <= 0) return
-    let effectEfficiency = item.getEffectEfficiency(stack, 'kubejs:shredder')
-    if (effectEfficiency <= 0) return
-    let damage = event.amount / effectEfficiency
+    if (effectSource.level <= 0) return
+    if (effectSource.efficiency <= 0) return
+    let damage = event.amount / effectSource.efficiency
     if (!isFinite(damage) || damage <= 0) return
 
     let source = TetraAttackSource(event.entity.level, 'kubejs:damage_echo', sourceEntity, 'shredder_segment')
     let data = TetraAttackData(source)
     data.putBoolean('full_charge', true)
     data.putBoolean('melee', true)
-    source.setItemData(WeaponDataKey, stack.copy())
+    data.putString('weapon_source', effectSource.location)
+    source.setItemData('weapon', effectSource.stack.copy())
     let attack = {
         entity: event.entity,
         source: source,
         damage: damage,
-        remaining: effectLevel - 1,
+        remaining: effectSource.level - 1,
         first: event
     }
     event.amount = damage
@@ -41,7 +37,7 @@ function ShredderEntityDoDamage(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:shredder')
-        .addStrategy('entity_do_damage_first', ShredderEntityDoDamage)
+        .addOnlyStrategy('entity_damage_first', ShredderEntityDoDamage)
 )
 
 /**

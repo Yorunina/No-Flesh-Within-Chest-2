@@ -1,6 +1,7 @@
 // priority: 999
 const OrganEntityBeHurtEvent = new OrganEventModel('entity_be_hurt')
 const ChampionEntityBeHurtEvent = new ChampionEventModel('entity_be_hurt')
+const TetraEntityBeHurtEvent = new TetraEffectEventModel('entity_be_hurt')
 
 /**
  * 
@@ -11,5 +12,6 @@ function EntityBeHurt(event, customData) {
     const entity = event.entity
     OrganEntityBeHurtEvent.run(entity, customData, [event])
     ChampionEntityBeHurtEvent.run(entity, customData, [event])
+    TetraEntityBeHurtEvent.run(entity, customData, [event])
     MarkingEffectBeHurt(event, customData)
 }

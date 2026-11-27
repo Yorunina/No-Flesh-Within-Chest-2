@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 let OPEN_WOUND_EFFECT_ID = 'tetra:bleeding'
 
@@ -6,18 +6,15 @@ let OPEN_WOUND_EFFECT_ID = 'tetra:bleeding'
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function OpenWoundEntityDoDamage(customData, event) {
-    if (event.entity.level.isClientSide()) return
+function OpenWoundEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
+    let sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isLiving()) return
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:open_wound')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:open_wound')
-    if (effectLevel <= 0 || effectEfficiency <= 0) return
+    if (effectSource.level <= 0 || effectSource.efficiency <= 0) return
 
     let target = event.entity
-    let gain = Math.round(effectLevel)
-    let duration = Math.round(effectEfficiency * 20)
+    let gain = Math.round(effectSource.level)
+    let duration = Math.round(effectSource.efficiency * 20)
     // Tetra 每跳直接以 amplifier 作为基础伤害；药水显示等级为 amplifier + 1。
     let inst = target.getEffect(OPEN_WOUND_EFFECT_ID)
     if (inst) {
@@ -32,5 +29,5 @@ function OpenWoundEntityDoDamage(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:open_wound')
-        .addStrategy('entity_do_damage', OpenWoundEntityDoDamage, -100)
+        .addStrategy('entity_damage_first', OpenWoundEntityDoDamage)
 )

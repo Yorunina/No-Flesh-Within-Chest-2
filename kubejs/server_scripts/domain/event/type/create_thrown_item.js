@@ -1,8 +1,7 @@
-// priority: 500
-
+// priority: 999
 const TetraCreateThrownItemEvent = new TetraEffectEventModel('create_thrown_item')
 
 TetraJSEvents.createThrownItem(/** @param {Internal.CreateThrownItemEventJS} event */ event => {
     let customData = {}
-    TetraCreateThrownItemEvent.run(customData, [event])
+    TetraCreateThrownItemEvent.run(event.player, customData, [event])
 })

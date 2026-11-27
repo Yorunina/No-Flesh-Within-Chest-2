@@ -1,24 +1,22 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function ExecuteEntityDoDamage(customData, event) {
+function ExecuteEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
-    let targetEntity = customData.entity
+    let sourceEntity = event.source.actual
+    let targetEntity = event.entity
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (sourceEntity.isPlayer() && !TetraAttackFullCharge(event, sourceEntity)) return
     if (event.source.getType() == 'generic') return
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:execute')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:execute')
-    if (effectLevel <= 0 && effectEfficiency <= 0) return
+    if (effectSource.level <= 0 && effectSource.efficiency <= 0) return
     let maxHealth = targetEntity.maxHealth
     if (maxHealth <= 0) return
     let healthPercent = targetEntity.health / maxHealth
-    event.amount = event.amount * (1 + (1 - healthPercent) * effectLevel / 10)
-    if (effectEfficiency > 0 && healthPercent < effectEfficiency / 100) {
+    event.amount = event.amount * (1 + (1 - healthPercent) * effectSource.level / 10)
+    if (effectSource.efficiency > 0 && healthPercent < effectSource.efficiency / 100) {
         targetEntity.health = 0
     }
 }
@@ -27,17 +25,12 @@ function ExecuteEntityDoDamage(customData, event) {
  * @param {Object} customData
  * @param {Internal.LivingDeathEvent} event
  */
-function ExecuteEntityKill(customData, event) {
-    if (event.entity.level.isClientSide()) return
+function ExecuteEntityKill(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
     let sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isLiving()) return
 
-    let heldItem = TetraAttackItem(event, sourceEntity)
-    /**@type {Internal.ModularItem} */
-    let modularItem = heldItem.getItem()
-    if (!TetraJSUtils.isModularItem(modularItem)) return
-    if (modularItem.getEffectLevel(heldItem, 'kubejs:execute') <= 0) return
+    if (effectSource.level <= 0) return
 
     let target = event.entity
     let bloodSource = sourceEntity.isPlayer()
@@ -48,6 +41,6 @@ function ExecuteEntityKill(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:execute')
-        .addStrategy('entity_do_damage', ExecuteEntityDoDamage, -60)
-        .addStrategy('entity_kill', ExecuteEntityKill)
+        .addStrategy('entity_do_damage', ExecuteEntityDoDamage)
+        .addOnlyStrategy('entity_kill', ExecuteEntityKill)
 )

@@ -11,7 +11,6 @@ ItemEvents.rightClicked(event => {
     let rank = OrganBagRankMap[event.item.id]
     let category = global.OrganBagCategories.find(category => event.item.id == 'kubejs:' + category + '_organ_bag')
     if (rank == undefined && category == undefined) return
-    if (event.level.isClientSide()) return
 
     let pool = []
     OrganList.forEach(organ => {

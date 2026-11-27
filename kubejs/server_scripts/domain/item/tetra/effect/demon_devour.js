@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 let DEMON_CURSE_EFFECT_ID = 'kubejs:demon_curse'
 
@@ -6,16 +6,14 @@ let DEMON_CURSE_EFFECT_ID = 'kubejs:demon_curse'
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function DemonDevourEntityDoDamage(customData, event) {
+function DemonDevourEntityDoDamage(customData, event, effectSource) {
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
+    let sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (sourceEntity.isPlayer() && sourceEntity.isCreative()) return
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:demon_devour')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:demon_devour')
-    if (effectLevel <= 0 || effectEfficiency <= 0) return
-    let amplifier = Math.max(0, Math.round(effectLevel) - 1)
-    let duration = Math.round(effectEfficiency * 20)
+    if (effectSource.level <= 0 || effectSource.efficiency <= 0) return
+    let amplifier = Math.max(0, Math.round(effectSource.level) - 1)
+    let duration = Math.round(effectSource.efficiency * 20)
     let inst = sourceEntity.getEffect(DEMON_CURSE_EFFECT_ID)
     if (inst) {
         inst.setDuration(duration)
@@ -29,5 +27,5 @@ function DemonDevourEntityDoDamage(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:demon_devour')
-        .addStrategy('entity_do_damage', DemonDevourEntityDoDamage, -50)
+        .addStrategy('entity_damage_first', DemonDevourEntityDoDamage)
 )

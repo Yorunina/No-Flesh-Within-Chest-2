@@ -1,21 +1,17 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Object} customData
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.LivingDamageEvent} event
  */
-function DefenseEntityDoDamage(customData, event) {
-    let entity = customData.entity
-    if (entity.level.isClientSide()) return
-
-    let defense = Math.min(TetraHurtTargetLevel(customData, 'kubejs:defense'), 100)
+function DefenseEntityBeHurt(customData, event, effectSource) {
+    let defense = Math.min(effectSource.level, 100)
     if (defense <= 0) return
 
     event.amount = event.amount * (1 - defense / 100)
-    if (event.amount < 0.01) event.amount = 0.01
 }
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:defense')
-        .addStrategy('entity_do_damage', DefenseEntityDoDamage, -40)
+        .addOnlyStrategy('entity_be_hurt', DefenseEntityBeHurt)
 )

@@ -1,5 +1,4 @@
 // priority: 500
-
 BlockEvents.rightClicked('biomancy:bio_forge', /** @param {Internal.BlockRightClickedEventJS} event */ event => {
     const player = event.player
     const level = event.level

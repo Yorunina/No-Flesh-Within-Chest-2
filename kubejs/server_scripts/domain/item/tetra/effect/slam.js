@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 /**
  * @param {Internal.Level} level
@@ -61,34 +61,31 @@ function SlamIsSplash(source) {
  * @param {Object} customData
  * @param {Internal.LivingHurtEvent} event
  */
-function SlamEntityDoDamage(customData, event) {
-    if (event.entity.level.isClientSide()) return
+function SlamEntityDoDamage(customData, event, effectSource) {
 
-    let target = customData.entity
+    let target = event.entity
     if (SlamIsSplash(event.source)) return
 
     /**@type {Internal.LivingEntity} */
-    let sourceEntity = TetraHurtSourceEntity(customData)
+    let sourceEntity = event.source.actual
     if (!sourceEntity || !sourceEntity.isLiving()) return
     if (!TetraAttackIsMelee(event, sourceEntity)) return
     if (!TetraAttackFullCharge(event, sourceEntity)) return
 
-    let effectLevel = TetraHurtSourceLevel(customData, 'kubejs:slam')
-    let effectEfficiency = TetraHurtSourceEfficiency(customData, 'kubejs:slam')
-    if (effectLevel <= 0 || effectEfficiency <= 0) return
+    if (effectSource.level <= 0 || effectSource.efficiency <= 0) return
 
-    let splashAmount = event.amount * effectLevel / 100
+    let splashAmount = event.amount * effectSource.level / 100
     if (splashAmount <= 0) return
 
     let level = target.level
     let center = target.position()
 
-    SlamGroundParticles(target, effectEfficiency)
+    SlamGroundParticles(target, effectSource.efficiency)
 
     level.playSound(null, target.getX(), target.getY(), target.getZ(),
         'minecraft:entity.zombie.attack_iron_door', target.getSoundSource(), 1, 1)
 
-    let victims = GetLivingWithinRadiusVec3d(level, center, effectEfficiency,
+    let victims = GetLivingWithinRadiusVec3d(level, center, effectSource.efficiency,
         (lvl, e) => e != target && e != sourceEntity)
     if (victims.length == 0) return
 
@@ -115,7 +112,7 @@ function SlamEntityDoDamage(customData, event) {
  */
 function SlamBlockLeftClicked(customData, event) {
     let player = event.player
-    if (!player || player.level.isClientSide()) return
+    if (!player) return
     let stack = player.getMainHandItem()
     if (stack.isEmpty() || !TetraJSUtils.isModularItem(stack.getItem())) return
     let slamLv = stack.getItem().getEffectLevel(stack, 'kubejs:slam')
@@ -159,6 +156,6 @@ function SlamBlockLeftClicked(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:slam')
-        .addStrategy('entity_do_damage', SlamEntityDoDamage, -130)
-        .addStrategy('block_left_clicked', SlamBlockLeftClicked)
+        .addOnlyStrategy('entity_do_damage', SlamEntityDoDamage)
+        .addOnlyStrategy('block_left_clicked', SlamBlockLeftClicked)
 )

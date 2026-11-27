@@ -1,3 +1,4 @@
+// priority: 500
 let VOLT_RUSH_SPEED = 3.0
 let VOLT_RUSH_UP_MULT = 0.6
 let VOLT_RUSH_UP_GROUND = 0.15
@@ -7,8 +8,7 @@ let VOLT_RUSH_DURABILITY_COST = 2
 let VOLT_RUSH_MANA_COST = 25
 
 function VoltRushRiptideLevel(stack) {
-    let enchantment = $ForgeRegistries.ENCHANTMENTS.getValue(new $ResourceLocation('minecraft:riptide'))
-    return enchantment == null ? 0 : stack.getEnchantmentLevel(enchantment)
+    return stack.getEnchantmentLevel('minecraft:riptide')
 }
 
 function VoltRushAvailable(item, stack) {

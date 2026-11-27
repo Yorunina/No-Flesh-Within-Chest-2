@@ -40,7 +40,7 @@ EntityEvents.death(event => {
     const killer = event.source.actual ? event.source.actual : entity.getKillCredit()
     if (!killer || !killer.isPlayer()) return
     for (const id in VoidArenaSummonMap) {
-        const model = VoidArenaSummonMap[id]
+        let model = VoidArenaSummonMap[id]
         if (!model.entityKilledFunc({ level: entity.level, player: killer, entity: entity })) continue
         IncreaseVoidArenaSummon(model, killer, entity)
     }

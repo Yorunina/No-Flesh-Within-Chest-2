@@ -27,7 +27,7 @@ function BlinkTeleportFx(player, fx0, fy0, fz0, tx, ty, tz) {
  */
 function BlinkProjectileImpact(customData, event) {
     let projectile = event.projectile
-    if (!projectile || projectile.level.isClientSide()) return
+    if (!projectile) return
     let result = event.rayTraceResult
     if (!result) return
 
@@ -108,5 +108,5 @@ function BlinkProjectileImpact(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:blink')
-        .addStrategy('projectile_impact', BlinkProjectileImpact, -10)
+        .addOnlyStrategy('projectile_impact', BlinkProjectileImpact)
 )

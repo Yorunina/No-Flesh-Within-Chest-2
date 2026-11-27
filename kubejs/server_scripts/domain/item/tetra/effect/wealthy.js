@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 /**
  * 按概率从当前掉落中随机复制 rolls 份（跳过器官），加入掉落列表
@@ -44,5 +44,5 @@ function WealthyEntityLoot(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:wealthy')
-        .addStrategy('entity_loot', WealthyEntityLoot, -40)
+        .addOnlyStrategy('entity_loot', WealthyEntityLoot)
 )

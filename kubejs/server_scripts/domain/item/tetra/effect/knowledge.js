@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 500
 
 /**
  * 在指定位置逐个生成 value 点经验的经验球
@@ -63,6 +63,6 @@ function KnowledgeBlockLoot(customData, event) {
 
 RegistryTetraEffectStrategy(
     new TetraEffectStrategyModel('kubejs:knowledge')
-        .addStrategy('entity_loot', KnowledgeEntityLoot, -20)
-        .addStrategy('block_loot', KnowledgeBlockLoot)
+        .addOnlyStrategy('entity_loot', KnowledgeEntityLoot)
+        .addOnlyStrategy('block_loot', KnowledgeBlockLoot)
 )
