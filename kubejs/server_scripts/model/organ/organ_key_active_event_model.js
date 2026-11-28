@@ -47,21 +47,29 @@ OrganKeyActiveEventModel.prototype = {
                 let curItem = ccInv.getStackInSlot(slotIndex)
                 if (!curItem || curItem.isEmpty() || curItem.id != itemId) return
                 let strategyModel = OrganStrategyMap[itemId]
-                if (!strategyModel) return
-                let organEventStrategy = strategyModel.strategyMap[this.eventId]
-                if (!organEventStrategy) return
-                if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
-                    onlyMap.set(itemId, true)
-                    organEventStrategy['only'].forEach(e => {
-                        strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
-                    })
+                let organEventStrategy = strategyModel ? strategyModel.strategyMap[this.eventId] : null
+                if (organEventStrategy) {
+                    if (organEventStrategy['only'] && !onlyMap.has(itemId)) {
+                        onlyMap.set(itemId, true)
+                        organEventStrategy['only'].forEach(e => {
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
+                        })
+                    }
+                    if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
+                        organEventStrategy['default'].forEach(e => {
+                            strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
+                        })
+                    }
                 }
-                if (organEventStrategy['default'] && organEventStrategy['default'].length > 0) {
-                    organEventStrategy['default'].forEach(e => {
-                        strategyFuncList.push(new PriorityArgsModel(e, args.concat(curItem, slotIndex, slotType)))
-                    })
+
+                let modularItem = curItem.getItem()
+                if (TetraJSUtils.isModularItem(modularItem)) {
+                    const byEvent = GetTetraOrganEffectsByEvent(ccInstance, slotIndex, modularItem, curItem)
+                    CollectTetraOrganEffectStrategies(byEvent[this.eventId], this.eventId, args,
+                        { modularItem: modularItem, stack: curItem, slotIndex: slotIndex, slotType: slotType }, strategyFuncList, onlyEffectMap)
                 }
             })
+            QueueOnlyTetraOrganEffectStrategies(onlyEffectMap, strategyFuncList)
 
             if (strategyFuncList.length > 0) {
                 strategyFuncList.sort((a, b) => {

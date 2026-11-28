@@ -68,11 +68,7 @@ OrganTakeOffStrategyModel.prototype = {
             let strategyModel = OrganStrategyMap[itemId]
             if (strategyModel) {
                 if (entity.isPlayer() && IsItemNeedKeyActive(oldItem, slotType)) {
-                    let data = new $CompoundTag()
-                    data.putString('type', 'delete')
-                    data.putInt('slot', i)
-                    data.putString('itemId', itemId)
-                    EnqueueSendData(entity, 'update_organ_skill_wheel_item', data)
+                    SendOrganSkillWheelItem(entity, 'delete', i)
                 }
                 Object.keys(strategyModel.strategyMap).forEach(eventId => {
                     ccInstance.removeListener(eventId, i)
@@ -101,6 +97,9 @@ OrganTakeOffStrategyModel.prototype = {
                 Object.keys(byEvent).forEach(eventId => {
                     ccInstance.removeListener(eventId, i)
                 })
+                if (entity.isPlayer() && byEvent['key_active']) {
+                    SendOrganSkillWheelItem(entity, 'delete', i)
+                }
                 CollectTetraOrganEffectStrategies(byEvent[this.eventId], this.eventId, args,
                     { modularItem: modularItem, stack: oldItem, slotIndex: i, slotType: oldSlotType }, strategyFuncList, onlyEffectMap)
             }

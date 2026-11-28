@@ -91,3 +91,23 @@ function IsItemNeedKeyActive(item, slotType) {
     if (item.hasTag('kubejs:key_active')) return true
     return false
 }
+
+/**
+ * @param {Internal.ServerPlayer} player
+ * @param {string} type
+ * @param {number} slot
+ * @param {Internal.ItemStack} [item] add 时传入胸腔内的物品，用于轮盘图标
+ */
+function SendOrganSkillWheelItem(player, type, slot, item) {
+    let data = new $CompoundTag()
+    data.putString('type', type)
+    data.putInt('slot', slot)
+    if (item) {
+        let wheelItem = item.copy()
+        let wheelData = new $CompoundTag()
+        wheelData.putInt('slot', slot)
+        wheelItem.getOrCreateTag().put('kubejs_skill_wheel', wheelData)
+        data.put('stack', wheelItem.save(new $CompoundTag()))
+    }
+    EnqueueSendData(player, 'update_organ_skill_wheel_item', data)
+}
